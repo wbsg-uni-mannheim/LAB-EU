@@ -1,6 +1,6 @@
 LAB-EU is a benchmark for evaluating the capabilities of LLM agents to apply German, French and other European laws and to writie long-form legal document in accordance with different European laws.
 
-LAB-EU builds on Harvey Legal Agent Benchmark (LAB). LAB-EU extends LAB with tasks in different languages covering different European legislations.
+LAB-EU builds on Harvey Legal Agent Benchmark (LAB). LAB-EU extends LAB with tasks in different languages covering different European jurisdictions.
 
 
 ## LAB-EU Task Model
@@ -37,4 +37,3 @@ Important `task.json` fields:
 | `license` | License terms that apply to this task |
 
 ---
-
