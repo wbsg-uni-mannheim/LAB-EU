@@ -264,34 +264,6 @@ So wie im Rahmen der Zulässigkeit um die Notwendigkeit des Vorliegens einer Kla
 
 Eine Nichtigkeitsfeststellungsklage des A gegen die Nebenbestimmungen wäre mithin zulässig und begründet.
 
-# Fußnoten
-
-NewPP limit report
-Parsed by mw‐web.eqiad.main‐569c88689c‐rwbkh
-Cached time: 20260624141643
-Cache expiry: 2592000
-Reduced expiry: false
-Complications: [show‐toc]
-CPU time usage: 0.061 seconds
-Real time usage: 0.065 seconds
-Preprocessor visited node count: 911/1000000
-Revision size: 73164/2097152 bytes
-Post‐expand include size: 8527/2097152 bytes
-Template argument size: 4040/2097152 bytes
-Highest expansion depth: 8/100
-Expensive parser function count: 0/500
-Unstrip recursion depth: 0/20
-Unstrip post‐expand size: 13245/5000000 bytes
-Number of Wikibase entities loaded: 0/500
-Transclusion expansion time report (%,ms,calls,template)
-100.00% 21.545 1 -total
-20.88% 4.499 2 Vorlage:Kasten
-14.69% 3.165 2 Vorlage:HTMLTag
-4.33% 0.933 2 Vorlage:VendorCSS
-3.65% 0.786 1 Vorlage:TOC_limit
-Render ID 5337a450-6fd7-11f1-9dcc-13dd4632c2bd
-Saved in parser cache with key dewikibooks:pcache:106967:|#|:idhash:canonical and timestamp 20260624141643 and revision id 894576. Rendering was triggered because: page_view
-
 ## Fußnoten
 
 [^1]: Alternativ könnte der A auch eine *behördliche* Feststellung der teilweisen Nichtigkeit gemäß § 44 V Hs. 2 VwVfG NRW oder eine Rücknahme der (nichtigen) Nebenbestimmungen gemäß § 48 VwVfG NRW (str.) beantragen, wobei die Annahme einer Reduktion des Rücknahmeermessens der Behörde auf Null wegen offensichtlicher Rechtswidrigkeit der Nebenbestimmung hier gut vertretbar wäre. S. zu anderen Optionen ausführlich Brings-Wiesen, in: Eisentraut, Verwaltungsrecht in der Klausur, 2020, § 6 Rn. 166 ff. (<https://de.wikibooks.org/wiki/Verwaltungsrecht_in_der_Klausur/_%C2%A7_6_Die_Feststellungsklage>) sowie Brings-Wiesen, in: Eisentraut, Verwaltungsrecht in der Klausur, 2020, § 2 Rn. 862, 923 (<https://de.wikibooks.org/wiki/Verwaltungsrecht_in_der_Klausur/_%C2%A7_2_Die_Anfechtungsklage>).
