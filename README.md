@@ -39,7 +39,7 @@ Important `task.json` fields:
 
 ---
 
-See [docs/rubric-generation.md](docs/rubric-generation.md) for the proposed workflow for deriving Boolean rubrics from human solutions.
+See [docs/generating-rubrics.md](docs/generating-rubrics.md) for the step-by-step guide to generating rubrics (single task and cheaper multi-task batch), and [docs/rubric-generation.md](docs/rubric-generation.md) for the design rationale.
 Active prompt templates live under [prompts/](prompts/README.md), separated from code for legal review.
 
 To generate a calibrated draft rubric for a task (three generator roles, then a

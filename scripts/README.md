@@ -56,6 +56,45 @@ pass `--no-cache` to force a fresh run. Token usage is logged per call as
 `tokens[step]: ...` on stderr and recorded in `rubric.generated.json`; there
 are no output-token caps.
 
+## Batch-generate rubrics for many tasks (cheaper)
+
+For more than a handful of tasks, use the batch orchestrator. It runs the
+cheap draft steps synchronously, then routes the expensive part - all round-1
+calibration judge votes across all tasks - through the OpenAI Batch API at 50%
+of the synchronous price:
+
+```bash
+env/bin/python scripts/generate_rubrics_batch.py \
+  tasks/de/verwaltungsrecht/anfechtungsklage/fall-02-anfechtungsklage-bei-nebenbestimmungen \
+  tasks/de/verwaltungsrecht/anfechtungsklage/fall-03-drittanfechtungsklage-gegen-eine-baugenehmigung \
+  --model gpt-5.5
+```
+
+Phases: draft (sync, parallel) -> build vote requests (votes already in a
+task's step cache are skipped) -> submit batch files and poll -> write results
+into each task's `evals/.rubric-cache` -> finalize each task with a normal
+`generate_rubric.py --write-final` run, in which every round-1 vote is a cache
+hit and only refine, re-judging, and tagging run synchronously.
+
+Batches usually finish well within the 24h window. If the script is
+interrupted after submitting, re-run with `--resume runs/rubric-batches/<id>`.
+Failed batch lines are simply re-judged synchronously during finalize.
+`--prepare-only` writes the batch input files without uploading, for
+inspection. Everything is idempotent through the step cache: re-running a
+partially completed run only pays for what is missing.
+
+Cost notes:
+
+- The Batch API halves the price of the calibration votes, which dominate
+  rubric-generation cost (~1.5-4M input tokens per task).
+- The judge prompt is ordered so that the large invariant blocks (rules, task,
+  gold solution or answer) form one shared prefix and the per-criterion parts
+  come last; on the synchronous path OpenAI prompt caching then bills most of
+  each call's input at the cached rate. The same idea applies to the three
+  candidate-role calls, which share the full task payload as prefix.
+- Watch `cached=` in the per-call `tokens[...]` log lines and
+  `cached_input_tokens` in usage summaries to verify caching is working.
+
 To re-check an already-frozen rubric by hand (for example after editing
 criteria), score the gold solution against it:
 

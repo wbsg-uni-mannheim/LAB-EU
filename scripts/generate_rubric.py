@@ -326,8 +326,9 @@ def api_call(
     if label:
         usage = usage_summary(response_data)
         reasoning_tokens = (usage.get("output_tokens_details") or {}).get("reasoning_tokens")
+        cached_tokens = (usage.get("input_tokens_details") or {}).get("cached_tokens")
         print(
-            f"tokens[{label}]: input={usage.get('input_tokens')} "
+            f"tokens[{label}]: input={usage.get('input_tokens')} (cached={cached_tokens}) "
             f"output={usage.get('output_tokens')} (reasoning={reasoning_tokens})",
             file=sys.stderr,
         )
@@ -445,11 +446,14 @@ def generate_role_candidates(
     cache_dir: pathlib.Path | None,
 ) -> tuple[str, dict[str, Any], dict[str, Any]]:
     role_text = read_prompt_template(f"roles/{role_name}.txt")
+    # Role focus goes at the END of the user message, not into the system prompt:
+    # the three role calls then share one long identical prefix (system + full
+    # task payload), which OpenAI prompt caching can reuse across the calls.
     parsed, response = api_call(
         client=client,
         model=model,
-        system=candidate_system + "\n\n" + role_text,
-        user=candidate_user,
+        system=candidate_system,
+        user=candidate_user + "\n\n" + role_text,
         required_keys={"language", "criteria", "generation_notes"},
         reasoning_effort=reasoning_effort,
         label=f"candidates/{role_name}",
@@ -486,7 +490,7 @@ def trimmed_vote(vote: dict[str, Any]) -> dict[str, Any]:
 
 
 def add_usage(total: dict[str, int], usage: dict[str, Any]) -> None:
-    for key in ["input_tokens", "output_tokens", "total_tokens"]:
+    for key in ["input_tokens", "output_tokens", "total_tokens", "cached_input_tokens"]:
         if isinstance(usage.get(key), int):
             total[key] = total.get(key, 0) + usage[key]
 
