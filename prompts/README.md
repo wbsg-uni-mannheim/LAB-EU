@@ -7,8 +7,16 @@ Bitte Platzhalter in geschweiften Klammern wie `{task_title}` oder `{agent_outpu
 ## Verzeichnisstruktur
 
 - `rubric_generation/`: Prompts für die Erzeugung von Rubrics aus menschlichen Lösungen.
-- `evaluation/`: Prompts für die Bewertung einer Agentenantwort gegen ein einzelnes Rubric-Kriterium.
-- `harness/`: Prompts, die an den Solver-Agenten für eine Benchmark-Aufgabe gehen.
+  - `atomize_solution.*`: Zerlegung der Lösung in prüfbare Antwort-Atome.
+  - `generate_candidate_criteria.*`: Erzeugung des Kandidaten-Pools. Wird dreimal ausgeführt, je einmal pro Generator-Rolle.
+  - `roles/`: Die drei Generator-Rollen (doctrine, fact_grounding, adversary), die an den Candidate-System-Prompt angehängt werden.
+  - `prune_rubric.*`: Deduplizierung des Kandidaten-Pools zu einem atomaren Rubric.
+  - `refine_rubric.*`: Reparatur von Kriterien, die die Musterlösung in der Kalibrierung nicht bestanden hat.
+  - `tag_criteria.*`: Nicht bewertende Analyse-Tags pro Kriterium (Funktion nach Gutachtenstil-Schritten und Prüfungsstation), für Auswertungen nach juristischen Kategorien.
+- `evaluation/`: Prompts für die Bewertung einer Agentenantwort gegen ein einzelnes Rubric-Kriterium (Evidenz-Zitate, Begründung, dann Verdikt).
+- `harness/`: Prompts, die an den Solver für eine Benchmark-Aufgabe gehen.
+  - `solve_task.txt`: Agenten-Harness (OpenCode) mit Datei-Workspace.
+  - `solve_task_baseline.txt`: Einzelaufruf-Baseline ohne Agentenschleife; Dokumente werden direkt in den Prompt eingefügt.
 
 ## Review-Hinweise
 

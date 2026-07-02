@@ -103,7 +103,7 @@ Every criterion must pass these checks before human review:
 
 Before freezing a rubric:
 
-- Score the human solution. It should pass unless the solution is intentionally partial.
+- Score the human solution. It should pass unless the solution is intentionally partial. This works today without extra tooling: `env/bin/python -m evaluation.run <task-dir> <task-dir>/evals/loesung.md` (see scripts/README.md).
 - Score one weak baseline answer and one strong LLM answer.
 - Inspect all false passes first, then false fails.
 - Rewrite criteria that judges apply inconsistently.
@@ -120,9 +120,20 @@ The frozen rubric should include:
 - reviewer identity or review status;
 - rubric version.
 
-## Avoid Fixed Rubric Categories
+## Avoid Fixed Rubric Categories (in Generation)
 
-Do not force generated criteria into a predefined category taxonomy. Even broad labels such as `issue_spotting`, `legal_basis`, or `application` can bias generation toward a particular legal-writing model and away from the structure of the human solution. The generator should instead derive the material checks from the solution itself and let the human reviewer decide later whether any non-scoring analysis tags are useful.
+Do not force generated criteria into a predefined category taxonomy. Even broad labels such as `issue_spotting`, `legal_basis`, or `application` can bias generation toward a particular legal-writing model and away from the structure of the human solution. The generator should instead derive the material checks from the solution itself.
+
+## Post-Hoc Analysis Tags
+
+Categories are still valuable for reporting, so tagging happens in a separate pass after calibration, on the frozen criteria, as non-scoring metadata (`analysis_tags` per criterion). This keeps generation category-free while letting evaluation report pass rates in categories lawyers understand.
+
+Germany has no single official assessment taxonomy for legal exams - grading under the 1981 Noten- und Punkteverordnung is holistic. The two structures every German lawyer knows are used instead:
+
+- `function`: the kind of legal work checked, following the Gutachtenstil steps plus structure and form: `structure`, `legal_basis`, `rule_statement`, `application`, `argumentation`, `conclusion`, `form_citation`. This maps onto the French syllogisme juridique (majeure = rule_statement, mineure = application, conclusion), so the axis is jurisdiction-portable.
+- `station_path`: where the criterion sits in the case's own Prüfungsaufbau, in the case language, e.g. `["Zulässigkeit", "Klagebefugnis"]` or `["Begründetheit", "Materielle Rechtmäßigkeit", "Verhältnismäßigkeit"]`. Stations are derived per case, not from a global list.
+
+`evaluation.run` aggregates verdicts into `breakdown_by_station` and `breakdown_by_function` in `scores.json` whenever the rubric carries tags.
 
 ## Suggested Criterion JSON
 
@@ -164,12 +175,24 @@ The implementation uses the prompt templates in `prompts/` as the source of trut
 - `prompts/rubric_generation/atomize_solution.user.txt`
 - `prompts/rubric_generation/generate_candidate_criteria.system.txt`
 - `prompts/rubric_generation/generate_candidate_criteria.user.txt`
+- `prompts/rubric_generation/roles/doctrine.txt`
+- `prompts/rubric_generation/roles/fact_grounding.txt`
+- `prompts/rubric_generation/roles/adversary.txt`
 - `prompts/rubric_generation/prune_rubric.system.txt`
 - `prompts/rubric_generation/prune_rubric.user.txt`
+- `prompts/rubric_generation/refine_rubric.system.txt`
+- `prompts/rubric_generation/refine_rubric.user.txt`
 - `prompts/evaluation/rubric_criterion.txt`
 - `prompts/harness/solve_task.txt`
+- `prompts/harness/solve_task_baseline.txt`
 
 Legal reviewers should edit those files directly rather than copying prompt text from this design document.
+
+Implementation status: the multi-role proposal step (section 3) runs as three
+parallel candidate calls with the role prompts above, and the calibration step
+(section 6) is built into `scripts/generate_rubric.py` as a judge/refine loop
+against the gold solution with majority voting. Criteria that fail calibration
+never reach `evals/rubric.json`. See `scripts/README.md` for the flags.
 
 ## Recommended First Iteration
 

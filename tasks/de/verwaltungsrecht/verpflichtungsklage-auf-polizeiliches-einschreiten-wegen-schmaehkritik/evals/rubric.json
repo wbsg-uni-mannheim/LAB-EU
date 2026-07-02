@@ -1,94 +1,111 @@
 {
-  "schema_version": "0.1",
-  "generated_at": "2026-07-01T09:51:38.688653+00:00",
-  "review_status": "generated_needs_human_review",
+  "schema_version": "0.2",
+  "generated_at": "2026-07-02T11:09:28.420955+00:00",
+  "review_status": "generated_calibrated_needs_human_review",
   "language": "de",
   "task_title": "Verpflichtungsklage auf polizeiliches Einschreiten wegen Schmähkritik",
   "criteria": [
     {
       "id": "C-001",
       "criticality": "must_pass",
-      "title": "Prüfungsaufbau der Erfolgsaussichten",
-      "match_criteria": "ERFÜLLT, wenn die Antwort die Erfolgsaussichten der Klage anhand von Zulässigkeit und Begründetheit im verwaltungsrechtlichen Gutachten- oder Anspruchsaufbau prüft. NICHT ERFÜLLT, wenn sie nur ergebnisorientiert oder ausschließlich materiell-rechtlich argumentiert.",
+      "title": "§ 40 Abs. 1 Satz 1 VwGO als Ausgangspunkt",
+      "match_criteria": "ERFÜLLT, wenn die Antwort den Verwaltungsrechtsweg für Js Klage mangels aufdrängender Sonderzuweisung nach § 40 Abs. 1 Satz 1 VwGO prüft. NICHT ERFÜLLT, wenn sie den Rechtsweg ohne § 40 Abs. 1 Satz 1 VwGO bestimmt oder wegen des Ehrschutzbezugs allein den Zivilrechtsweg annimmt.",
       "deliverables": [
         "fallloesung-sut.md"
       ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
+      "sources": [],
       "derived_from_atoms": [
         "A-001"
       ],
-      "review_notes": [
-        "Die genaue Reihenfolge ist nicht entscheidend."
-      ],
+      "review_notes": [],
       "candidate_ids_merged": [
-        "K-001"
-      ]
+        "K-DOC-001",
+        "K-ADV-001"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "legal_basis",
+        "station_path": [
+          "Zulässigkeit",
+          "Verwaltungsrechtsweg"
+        ]
+      }
     },
     {
       "id": "C-002",
       "criticality": "must_pass",
-      "title": "Statthafte Verpflichtungsklage im Verwaltungsrechtsweg",
-      "match_criteria": "ERFÜLLT, wenn der Verwaltungsrechtsweg nach § 40 Abs. 1 Satz 1 VwGO bejaht und die Klage als Verpflichtungsklage nach § 42 Abs. 1 Alt. 2 VwGO auf Erlass einer Löschungsanordnung als Verwaltungsakt eingeordnet wird. NICHT ERFÜLLT, wenn eine unpassende Klageart oder ein anderer Rechtsweg tragend zugrunde gelegt wird.",
+      "title": "Öffentlich-rechtliche Streitigkeit",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Streitigkeit um ein Einschreiten der ADD gegen X als öffentlich-rechtlich einordnet, weil § 59 Abs. 3 RStV oder § 9 Abs. 1 POG Hoheitsträger als solche berechtigen oder verpflichten. NICHT ERFÜLLT, wenn sie die Streitigkeit wegen der Persönlichkeitsrechtsverletzung als rein privatrechtlich behandelt.",
       "deliverables": [
         "fallloesung-sut.md"
       ],
       "sources": [
-        "documents/sachverhalt.md",
         "documents/auszug-rundfunkstaatsvertrag.md",
         "documents/auszug-polizeigesetz.md"
       ],
       "derived_from_atoms": [
-        "A-002",
-        "A-003",
-        "A-004",
-        "A-005"
+        "A-002"
       ],
-      "review_notes": [
-        "Versagungsgegenklage und Verwaltungsaktqualität müssen in der Sache erkannt werden."
-      ],
+      "review_notes": [],
       "candidate_ids_merged": [
-        "K-002",
-        "K-003",
-        "K-004"
-      ]
+        "K-DOC-002",
+        "K-FACT-001",
+        "K-ADV-002"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Zulässigkeit",
+          "Verwaltungsrechtsweg"
+        ]
+      }
     },
     {
       "id": "C-003",
       "criticality": "must_pass",
-      "title": "Klagebefugnis und subjektiver Schutz der J",
-      "match_criteria": "ERFÜLLT, wenn J nach § 42 Abs. 2 VwGO als klagebefugt behandelt wird, weil nach der Schutznormtheorie ein subjektiver Anspruch auf ermessensfehlerfreie Entscheidung oder Einschreiten aus individualschützenden ordnungsrechtlichen Normen möglich ist und J persönlich in Ehre oder Persönlichkeitsrecht betroffen ist. NICHT ERFÜLLT, wenn jeder subjektive Schutz trotz persönlicher Betroffenheit pauschal verneint wird.",
+      "title": "Keine verfassungsrechtliche Streitigkeit und keine abdrängende Sonderzuweisung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort den Verwaltungsrechtsweg nicht an einer verfassungsrechtlichen Streitigkeit oder einer abdrängenden Sonderzuweisung scheitern lässt, insbesondere weil keine doppelte Verfassungsunmittelbarkeit vorliegt. NICHT ERFÜLLT, wenn sie ohne tragfähige Begründung eine Verfassungsstreitigkeit oder eine abdrängende Sonderzuweisung annimmt.",
       "deliverables": [
         "fallloesung-sut.md"
       ],
       "sources": [
-        "documents/sachverhalt.md",
-        "documents/auszug-polizeigesetz.md",
-        "documents/auszug-rundfunkstaatsvertrag.md"
+        "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-006",
-        "A-007",
-        "A-008",
-        "A-010",
-        "A-047"
+        "A-003"
       ],
-      "review_notes": [
-        "Eine tragfähige Herleitung über § 9 POG genügt."
-      ],
+      "review_notes": [],
       "candidate_ids_merged": [
-        "K-005",
-        "K-006",
-        "K-007",
-        "K-008"
-      ]
+        "K-FACT-002",
+        "K-ADV-003"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "conclusion",
+        "station_path": [
+          "Zulässigkeit",
+          "Verwaltungsrechtsweg"
+        ]
+      }
     },
     {
       "id": "C-004",
       "criticality": "must_pass",
-      "title": "Vorverfahren und Wiedereinsetzung",
-      "match_criteria": "ERFÜLLT, wenn das erforderliche Widerspruchsverfahren geprüft wird, der Widerspruch vom 07.03.2019 nach Fristende am 06.03.2019 als verspätet erkannt wird, § 60 VwGO über § 70 Abs. 2 VwGO angewandt wird und Wiedereinsetzung wegen unverschuldeten Unfalls einschließlich fehlenden Elternverschuldens sowie rechtzeitiger Nachholung ohne ausdrücklichen Antrag berücksichtigt wird. NICHT ERFÜLLT, wenn die Klage wegen der Fristversäumung endgültig scheitern soll oder der Widerspruch ohne Wiedereinsetzung als fristgerecht behandelt wird.",
+      "title": "Klagebegehren Löschungsanordnung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort Js Begehren als Erlass einer Löschungsanordnung der ADD gegen X wegen der beanstandeten Blogäußerungen bestimmt. NICHT ERFÜLLT, wenn sie nur eine Anfechtung des Blogbeitrags, eine bloße Feststellung oder eine zivilrechtliche Unterlassungsklage gegen X zugrunde legt.",
       "deliverables": [
         "fallloesung-sut.md"
       ],
@@ -96,31 +113,32 @@
         "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-011",
-        "A-012",
-        "A-013",
-        "A-014",
-        "A-015",
-        "A-016",
-        "A-017"
+        "A-004"
       ],
-      "review_notes": [
-        "Die fehlende positive Wiedereinsetzungsentscheidung der Widerspruchsbehörde darf nicht als zwingendes Hindernis behandelt werden."
-      ],
+      "review_notes": [],
       "candidate_ids_merged": [
-        "K-009",
-        "K-010",
-        "K-011",
-        "K-012",
-        "K-013",
-        "K-014"
-      ]
+        "K-DOC-003",
+        "K-FACT-003",
+        "K-ADV-004"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Zulässigkeit",
+          "Statthafte Klageart"
+        ]
+      }
     },
     {
       "id": "C-005",
       "criticality": "must_pass",
-      "title": "Weitere prozessuale Anforderungen",
-      "match_criteria": "ERFÜLLT, wenn das Land Rheinland-Pfalz als richtiger Klagegegner, die wirksame Vertretung der minderjährigen J durch ihre Eltern, die frist- und formgerechte Klageerhebung sowie die notwendige Beiladung des X wegen der ihn belastenden begehrten Verfügung zutreffend behandelt werden. NICHT ERFÜLLT, wenn die Klage aus einem dieser Punkte ohne tragfähige Grundlage als unzulässig angesehen oder X fälschlich als Beklagter behandelt wird.",
+      "title": "Löschungsanordnung als Verwaltungsakt",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die begehrte Löschungsanordnung gegenüber X als Verwaltungsakt im Sinne von § 35 Satz 1 VwVfG einordnet, etwa als hoheitliche Einzelfallregelung mit Außenwirkung. NICHT ERFÜLLT, wenn sie die Verwaltungsaktqualität verneint oder die Anordnung nur als schlichtes Verwaltungshandeln behandelt.",
       "deliverables": [
         "fallloesung-sut.md"
       ],
@@ -128,180 +146,1200 @@
         "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-019",
-        "A-020",
-        "A-022",
-        "A-023",
-        "A-025"
+        "A-005"
       ],
-      "review_notes": [
-        "Eine knappe Behandlung genügt."
-      ],
+      "review_notes": [],
       "candidate_ids_merged": [
-        "K-015",
-        "K-016",
-        "K-017",
-        "K-019"
-      ]
+        "K-DOC-004",
+        "K-FACT-004",
+        "K-ADV-005"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Zulässigkeit",
+          "Statthafte Klageart"
+        ]
+      }
     },
     {
       "id": "C-006",
       "criticality": "must_pass",
-      "title": "Begründetheitsmaßstab und Anspruchsvoraussetzung",
-      "match_criteria": "ERFÜLLT, wenn die Antwort § 113 Abs. 5 VwGO oder einen gleichwertigen Anspruchsmaßstab verwendet und erkennt, dass J die konkrete Löschungsanordnung nur verlangen kann, wenn diese rechtmäßig wäre und das behördliche Ermessen entsprechend reduziert ist. NICHT ERFÜLLT, wenn aus jeder Gefahr automatisch ein Anspruch auf die gewünschte Maßnahme abgeleitet oder der Anspruch der J gar nicht geprüft wird.",
+      "title": "Statthafte Verpflichtungsklage",
+      "match_criteria": "ERFÜLLT, wenn die Antwort als statthafte Klageart die Verpflichtungsklage nach § 42 Abs. 1 Alt. 2 VwGO in Form der Versagungsgegenklage nennt. NICHT ERFÜLLT, wenn sie Anfechtungs-, Leistungs- oder Feststellungsklage als statthaft ansieht.",
       "deliverables": [
         "fallloesung-sut.md"
       ],
       "sources": [
-        "documents/sachverhalt.md",
-        "documents/auszug-polizeigesetz.md"
+        "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-026",
-        "A-027"
+        "A-006"
       ],
-      "review_notes": [
-        "Ein Anspruchsaufbau ist einem Bescheidaufbau gleichwertig."
-      ],
+      "review_notes": [],
       "candidate_ids_merged": [
-        "K-020",
-        "K-021"
-      ]
+        "K-DOC-005",
+        "K-FACT-005",
+        "K-ADV-006"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "conclusion",
+        "station_path": [
+          "Zulässigkeit",
+          "Statthafte Klageart"
+        ]
+      }
     },
     {
       "id": "C-007",
       "criticality": "must_pass",
-      "title": "Ermächtigungsgrundlage, Telemedienbezug und Zuständigkeit",
-      "match_criteria": "ERFÜLLT, wenn der Blog als Telemedium behandelt, Jugendmedienschutzrecht ausgeklammert, das Verhältnis von § 59 Abs. 3 RStV zu § 9 POG problematisiert und eine tragfähige Ermächtigungsgrundlage sowie Zuständigkeit der ADD fallbezogen begründet werden. NICHT ERFÜLLT, wenn mangels Spezialermächtigung jede Befugnis verneint, § 59 RStV als vollständige Sperre behandelt oder die ADD wegen nicht fallbezogener Zuständigkeitsüberlegungen abgelehnt wird.",
+      "title": "Klagebefugnis als Möglichkeit eigener Rechtsverletzung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort bei § 42 Abs. 2 VwGO prüft, ob J durch die Ablehnung der Löschungsanordnung möglicherweise in eigenen subjektiven Rechten verletzt ist. NICHT ERFÜLLT, wenn sie eine Popularklage genügen lässt oder die Klagebefugnis nur auf ein allgemeines Interesse an rechtmäßiger Verwaltung stützt.",
       "deliverables": [
         "fallloesung-sut.md"
       ],
-      "sources": [
-        "documents/sachverhalt.md",
-        "documents/auszug-rundfunkstaatsvertrag.md",
-        "documents/auszug-polizeigesetz.md"
-      ],
+      "sources": [],
       "derived_from_atoms": [
-        "A-028",
-        "A-029",
-        "A-030",
-        "A-031",
-        "A-032",
-        "A-033",
-        "A-034",
-        "A-076",
-        "A-078"
+        "A-007"
       ],
-      "review_notes": [
-        "Vertretbar ist entweder der Rückgriff auf § 9 POG oder eine sauber begründete Anwendung von § 59 Abs. 3 RStV."
-      ],
+      "review_notes": [],
       "candidate_ids_merged": [
-        "K-022",
-        "K-023",
-        "K-024",
-        "K-025",
-        "K-026",
-        "K-027",
-        "K-061"
-      ]
+        "K-DOC-006",
+        "K-ADV-007"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Zulässigkeit",
+          "Klagebefugnis"
+        ]
+      }
     },
     {
       "id": "C-008",
       "criticality": "must_pass",
-      "title": "Zivilrechtsweg sperrt ordnungsbehördliches Einschreiten nicht",
-      "match_criteria": "ERFÜLLT, wenn die Möglichkeit zivilgerichtlichen Rechtsschutzes das ordnungsbehördliche Einschreiten hier nicht ausschließt, weil wegen möglicher Strafrechtsverstöße öffentliche Interessen und die öffentliche Sicherheit betroffen sind. NICHT ERFÜLLT, wenn die Sache als rein private Ehrstreitigkeit behandelt und die Klage allein auf den Zivilrechtsweg verwiesen wird.",
+      "title": "Schutznormtheorie",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die subjektiv-rechtliche Wirkung von § 9 Abs. 1 POG oder § 59 Abs. 3 RStV nach der Schutznormtheorie beurteilt. NICHT ERFÜLLT, wenn sie aus jeder Eingriffsbefugnis automatisch einen Individualanspruch ableitet oder die Drittschutzfrage überspringt.",
       "deliverables": [
         "fallloesung-sut.md"
       ],
       "sources": [
-        "documents/sachverhalt.md",
         "documents/auszug-polizeigesetz.md",
         "documents/auszug-rundfunkstaatsvertrag.md"
       ],
       "derived_from_atoms": [
-        "A-035",
-        "A-036",
-        "A-037"
+        "A-008"
       ],
-      "review_notes": [
-        "Die Prüfung kann bei Zuständigkeit, Gefahr oder Ermessen erfolgen."
-      ],
+      "review_notes": [],
       "candidate_ids_merged": [
-        "K-028",
-        "K-029"
-      ]
+        "K-DOC-007",
+        "K-FACT-006",
+        "K-ADV-008"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Zulässigkeit",
+          "Klagebefugnis"
+        ]
+      }
     },
     {
       "id": "C-009",
       "criticality": "must_pass",
-      "title": "Rechtswidrigkeit der Blogäußerungen",
-      "match_criteria": "ERFÜLLT, wenn die Antwort die öffentliche Sicherheit als Schutz der Rechtsordnung und Individualrechtsgüter erfasst, die Schimpfworte einschließlich „nicht lebenswert“ als Beleidigung, Schmähkritik bzw. menschenwürderelevanten Angriff ohne durchgreifenden Schutz aus Art. 5 GG einordnet und die Schulverweisbehauptung als wissentlich unwahre ehrverletzende Tatsachenbehauptung im Sinne von § 187 StGB behandelt. NICHT ERFÜLLT, wenn die Äußerungen insgesamt als zulässige Meinung oder rechtlich unbeachtliche Kritik gewertet werden.",
+      "title": "Drittschutz des § 9 Abs. 1 POG",
+      "match_criteria": "ERFÜLLT, wenn die Antwort erkennt, dass § 9 Abs. 1 POG individualschützend wirken kann, weil die öffentliche Sicherheit auch Individualrechtsgüter wie Ehre oder Persönlichkeitsrecht schützt. NICHT ERFÜLLT, wenn sie § 9 Abs. 1 POG pauschal als ausschließlich objektiv-rechtlich behandelt.",
       "deliverables": [
         "fallloesung-sut.md"
       ],
       "sources": [
-        "documents/sachverhalt.md",
         "documents/auszug-polizeigesetz.md"
       ],
       "derived_from_atoms": [
-        "A-038",
-        "A-039",
-        "A-040",
-        "A-041",
-        "A-042",
-        "A-043",
-        "A-044",
-        "A-045",
-        "A-046",
-        "A-047"
+        "A-009"
       ],
-      "review_notes": [
-        "Der fehlende Sachbezug zu Js politischem Engagement muss in der Schmähkritikprüfung verwertet werden."
-      ],
+      "review_notes": [],
       "candidate_ids_merged": [
-        "K-030",
-        "K-031",
-        "K-032",
-        "K-033",
-        "K-034",
-        "K-035",
-        "K-036",
-        "K-037",
-        "K-038"
-      ]
+        "K-DOC-008",
+        "K-FACT-007",
+        "K-ADV-009"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Zulässigkeit",
+          "Klagebefugnis"
+        ]
+      }
     },
     {
       "id": "C-010",
       "criticality": "must_pass",
-      "title": "Gefahr, Störung und Verantwortlichkeit des X",
-      "match_criteria": "ERFÜLLT, wenn wegen der bereits online abrufbaren strafbaren und ehrverletzenden Inhalte eine polizeirechtliche Gefahr bzw. Störung bejaht und X als Handlungsstörer sowie Verantwortlicher für eigene Bloginhalte behandelt wird. NICHT ERFÜLLT, wenn eine Gefahr mangels zukünftigen Schadens oder Xs Verantwortlichkeit wegen Telemedienhaftungsprivilegien verneint wird.",
+      "title": "Drittschutz des medienrechtlichen Ehrschutzes",
+      "match_criteria": "ERFÜLLT, wenn die Antwort § 59 Abs. 3 RStV jedenfalls als möglicherweise individualschützend behandelt, soweit gesetzliche Bestimmungen zum Schutz der persönlichen Ehre durchgesetzt werden sollen. NICHT ERFÜLLT, wenn sie den Ehrschutzbezug ohne Begründung als ausschließlich allgemeinwohlbezogen einordnet.",
       "deliverables": [
         "fallloesung-sut.md"
       ],
       "sources": [
-        "documents/sachverhalt.md",
-        "documents/auszug-polizeigesetz.md",
-        "documents/auszug-telemediengesetz.md"
+        "documents/auszug-rundfunkstaatsvertrag.md"
       ],
       "derived_from_atoms": [
-        "A-048",
-        "A-049",
-        "A-050"
+        "A-010"
       ],
-      "review_notes": [
-        "§ 7 Abs. 1 TMG oder der Gedanke eigener Inhalte genügt."
-      ],
+      "review_notes": [],
       "candidate_ids_merged": [
-        "K-039",
-        "K-040",
-        "K-041"
-      ]
+        "K-DOC-009",
+        "K-FACT-008",
+        "K-ADV-010"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Zulässigkeit",
+          "Klagebefugnis"
+        ]
+      }
     },
     {
       "id": "C-011",
       "criticality": "must_pass",
-      "title": "Verhältnismäßigkeit der Löschungsanordnung",
-      "match_criteria": "ERFÜLLT, wenn die Löschungsanordnung als Maßnahme des Auswahlermessens am Verhältnismäßigkeitsgrundsatz gemessen, mit dem Schutz vor Beleidigung, Verleumdung und Persönlichkeitsrechtsverletzung legitimiert, als geeignet und erforderlich behandelt und auf die konkret rechtswidrigen Passagen begrenzt wird. NICHT ERFÜLLT, wenn die Löschung ohne Verhältnismäßigkeitsprüfung bejaht oder pauschal der gesamte Blog als zu löschen angesehen wird.",
+      "title": "J als geschützte Betroffene",
+      "match_criteria": "ERFÜLLT, wenn die Antwort J als zum geschützten Personenkreis gehörend ansieht, weil X die Blogäußerungen namentlich gegen J gerichtet hat. NICHT ERFÜLLT, wenn sie J trotz Namensnennung nur als mittelbar oder gar nicht betroffen behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-011"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-010",
+        "K-FACT-009",
+        "K-ADV-011"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Zulässigkeit",
+          "Klagebefugnis"
+        ]
+      }
+    },
+    {
+      "id": "C-012",
+      "criticality": "must_pass",
+      "title": "Konkrete Löschung nur bei Ermessensreduzierung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort erkennt, dass J die konkrete Löschungsanordnung wegen des behördlichen Ermessens aus § 9 Abs. 1 POG oder § 59 Abs. 3 RStV nur bei Ermessensreduzierung auf Null verlangen kann; bei fortbestehendem Ermessen kommt allenfalls ein Bescheidungsanspruch in Betracht. NICHT ERFÜLLT, wenn sie trotz fortbestehenden Ermessens unmittelbar einen gebundenen Anspruch auf genau die Löschung annimmt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-polizeigesetz.md",
+        "documents/auszug-rundfunkstaatsvertrag.md"
+      ],
+      "derived_from_atoms": [
+        "A-012",
+        "A-032"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-011",
+        "K-DOC-027",
+        "K-DOC-099",
+        "K-FACT-010",
+        "K-ADV-012",
+        "K-ADV-028"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Zulässigkeit",
+          "Klagebefugnis"
+        ]
+      }
+    },
+    {
+      "id": "C-013",
+      "criticality": "must_pass",
+      "title": "Erforderlichkeit des Vorverfahrens",
+      "match_criteria": "ERFÜLLT, wenn die Antwort wegen der Ablehnung des beantragten Verwaltungsakts ein Vorverfahren nach § 68 Abs. 1 und 2 VwGO verlangt. NICHT ERFÜLLT, wenn sie das Widerspruchsverfahren ohne einschlägige Ausnahme für entbehrlich hält.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-013"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-012",
+        "K-FACT-011",
+        "K-ADV-013"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "legal_basis",
+        "station_path": [
+          "Zulässigkeit",
+          "Vorverfahren"
+        ]
+      }
+    },
+    {
+      "id": "C-014",
+      "criticality": "must_pass",
+      "title": "Ende der Widerspruchsfrist",
+      "match_criteria": "ERFÜLLT, wenn die Antwort aus der Bekanntgabe des Ablehnungsbescheids am 06.02.2019 das Ende der einmonatigen Widerspruchsfrist auf den 06.03.2019 berechnet. NICHT ERFÜLLT, wenn sie ein anderes Fristende zugrunde legt, nach dem der Widerspruch vom 07.03.2019 fristgerecht wäre.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-014"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-013",
+        "K-FACT-012",
+        "K-ADV-014"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Zulässigkeit",
+          "Vorverfahren",
+          "Widerspruchsfrist"
+        ]
+      }
+    },
+    {
+      "id": "C-015",
+      "criticality": "must_pass",
+      "title": "Verspäteter Widerspruch",
+      "match_criteria": "ERFÜLLT, wenn die Antwort feststellt, dass der am 07.03.2019 eingelegte Widerspruch die Monatsfrist des § 70 Abs. 1 VwGO um einen Tag verfehlt hat. NICHT ERFÜLLT, wenn sie den Widerspruch ohne Wiedereinsetzung als fristgerecht behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-015"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-014",
+        "K-FACT-013",
+        "K-ADV-015"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "conclusion",
+        "station_path": [
+          "Zulässigkeit",
+          "Vorverfahren",
+          "Widerspruchsfrist"
+        ]
+      }
+    },
+    {
+      "id": "C-016",
+      "criticality": "must_pass",
+      "title": "Wiedereinsetzung im Widerspruchsverfahren",
+      "match_criteria": "ERFÜLLT, wenn die Antwort § 60 VwGO über § 70 Abs. 2 VwGO auf die versäumte Widerspruchsfrist anwendet. NICHT ERFÜLLT, wenn sie Wiedereinsetzung für Widerspruchsfristen generell ausschließt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [],
+      "derived_from_atoms": [
+        "A-016"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-015",
+        "K-FACT-014",
+        "K-ADV-016"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "legal_basis",
+        "station_path": [
+          "Zulässigkeit",
+          "Vorverfahren",
+          "Wiedereinsetzung"
+        ]
+      }
+    },
+    {
+      "id": "C-017",
+      "criticality": "must_pass",
+      "title": "Unverschuldeter Unfall der J",
+      "match_criteria": "ERFÜLLT, wenn die Antwort den unverschuldeten Verkehrsunfall der J auf dem Weg zum Briefkasten als unverschuldetes Hindernis im Sinne von § 60 Abs. 1 VwGO bewertet. NICHT ERFÜLLT, wenn sie J trotz dieses Unfalls eigenes Verschulden an der Fristversäumung zuschreibt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-017"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-016",
+        "K-FACT-015",
+        "K-ADV-017"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Zulässigkeit",
+          "Vorverfahren",
+          "Wiedereinsetzung"
+        ]
+      }
+    },
+    {
+      "id": "C-018",
+      "criticality": "must_pass",
+      "title": "Kein zurechenbares Elternverschulden",
+      "match_criteria": "ERFÜLLT, wenn die Antwort berücksichtigt, dass auch Js Eltern als gesetzliche Vertreter unverschuldet an der Widerspruchseinlegung gehindert waren. NICHT ERFÜLLT, wenn sie die Wiedereinsetzung wegen angeblichen Vertreterverschuldens ablehnt, ohne die unverschuldete Verhinderung der Eltern zu würdigen.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-018"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-017",
+        "K-FACT-016",
+        "K-ADV-018"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Zulässigkeit",
+          "Vorverfahren",
+          "Wiedereinsetzung"
+        ]
+      }
+    },
+    {
+      "id": "C-019",
+      "criticality": "must_pass",
+      "title": "Entbehrlicher Wiedereinsetzungsantrag",
+      "match_criteria": "ERFÜLLT, wenn die Antwort erklärt, dass ein ausdrücklicher Wiedereinsetzungsantrag nach § 60 Abs. 2 Satz 4 VwGO entbehrlich ist, wenn die versäumte Rechtshandlung innerhalb der Antragsfrist nachgeholt wird. NICHT ERFÜLLT, wenn sie Wiedereinsetzung allein wegen fehlenden ausdrücklichen Antrags verweigert.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [],
+      "derived_from_atoms": [
+        "A-019"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-018",
+        "K-FACT-017",
+        "K-ADV-019"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Zulässigkeit",
+          "Vorverfahren",
+          "Wiedereinsetzung"
+        ]
+      }
+    },
+    {
+      "id": "C-020",
+      "criticality": "must_pass",
+      "title": "Rechtzeitige Nachholung am 07.03.2019",
+      "match_criteria": "ERFÜLLT, wenn die Antwort den am 07.03.2019 nach Wegfall des Hindernisses eingelegten Widerspruch als rechtzeitige Nachholung innerhalb der Zweiwochenfrist des § 60 Abs. 2 VwGO behandelt. NICHT ERFÜLLT, wenn sie die Nachholung als verspätet ansieht, obwohl J laut Sachverhalt erst am 07.03.2019 wieder handeln konnte.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-020"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-019",
+        "K-FACT-018",
+        "K-ADV-020"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Zulässigkeit",
+          "Vorverfahren",
+          "Wiedereinsetzung"
+        ]
+      }
+    },
+    {
+      "id": "C-021",
+      "criticality": "must_pass",
+      "title": "Gerichtliche Berücksichtigung der Wiedereinsetzung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort entweder annimmt, dass das Verwaltungsgericht die Voraussetzungen des § 60 VwGO trotz fehlender positiver behördlicher Wiedereinsetzungsentscheidung im Rahmen der Zulässigkeit berücksichtigen darf, oder ausdrücklich die Gegenansicht wählt, dass nur die Widerspruchsbehörde über die Wiedereinsetzung bezüglich der Widerspruchsfrist entscheiden könne, und daraus eine prozessual folgerichtige Konsequenz zieht. NICHT ERFÜLLT, wenn sie die Zurückweisung des Widerspruchs als unzulässig ungeprüft übernimmt oder die Kompetenzfrage widersprüchlich behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [],
+      "derived_from_atoms": [
+        "A-021",
+        "A-022"
+      ],
+      "review_notes": [
+        "Die Gegenansicht muss ausdrücklich benannt und konsequent durchgeführt werden."
+      ],
+      "candidate_ids_merged": [
+        "K-DOC-020",
+        "K-FACT-019",
+        "K-ADV-021"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "station_path": [
+          "Zulässigkeit",
+          "Vorverfahren",
+          "Wiedereinsetzung"
+        ]
+      }
+    },
+    {
+      "id": "C-022",
+      "criticality": "must_pass",
+      "title": "Richtiger Klagegegner",
+      "match_criteria": "ERFÜLLT, wenn die Antwort das Land Rheinland-Pfalz als richtigen Klagegegner beziehungsweise Rechtsträger der ADD nach § 78 Abs. 1 Nr. 1 VwGO nennt. NICHT ERFÜLLT, wenn sie X oder die ADD als alleinigen Rechtsträger der Verpflichtungsklage behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-023"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-021",
+        "K-FACT-020",
+        "K-ADV-022"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Zulässigkeit",
+          "Klagegegner"
+        ]
+      }
+    },
+    {
+      "id": "C-023",
+      "criticality": "must_pass",
+      "title": "Beteiligungsfähigkeit der J",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die 16-jährige J als natürliche Person als beteiligungsfähig im Verwaltungsprozess behandelt. NICHT ERFÜLLT, wenn sie J die Beteiligungsfähigkeit allein wegen ihrer Minderjährigkeit abspricht.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-024"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Zulässigkeit",
+          "Beteiligungs- und Prozessfähigkeit"
+        ]
+      }
+    },
+    {
+      "id": "C-024",
+      "criticality": "must_pass",
+      "title": "Prozessvertretung der minderjährigen J",
+      "match_criteria": "ERFÜLLT, wenn die Antwort erkennt, dass J als Minderjährige jedenfalls durch ihre Eltern als gesetzliche Vertreter nach § 1629 Abs. 1 BGB wirksam prozessual handeln kann. NICHT ERFÜLLT, wenn sie die Klage wegen Minderjährigkeit der J trotz elterlicher Vertretung als unzulässig ansieht.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-025"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-022",
+        "K-FACT-021",
+        "K-ADV-023"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Zulässigkeit",
+          "Beteiligungs- und Prozessfähigkeit"
+        ]
+      }
+    },
+    {
+      "id": "C-025",
+      "criticality": "must_pass",
+      "title": "Klagefrist nach Widerspruchsbescheid",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die zwei Tage nach Erhalt des Widerspruchsbescheids erhobene Klage als fristgerecht nach § 74 Abs. 1 und 2 VwGO behandelt. NICHT ERFÜLLT, wenn sie die verwaltungsgerichtliche Klage ohne tragfähige Berechnung als verspätet ansieht.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-027"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-023",
+        "K-FACT-022",
+        "K-ADV-024"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Zulässigkeit",
+          "Form und Frist"
+        ]
+      }
+    },
+    {
+      "id": "C-026",
+      "criticality": "must_pass",
+      "title": "Notwendige Beiladung des X",
+      "match_criteria": "ERFÜLLT, wenn die Antwort X nach § 65 Abs. 2 VwGO als notwendig beizuladenden Dritten behandelt, weil J den Erlass eines an X gerichteten belastenden Verwaltungsakts begehrt. NICHT ERFÜLLT, wenn sie die unmittelbare rechtliche Betroffenheit des X durch eine Löschungsanordnung übersieht.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-029"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-024",
+        "K-FACT-023",
+        "K-ADV-025"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Notwendige Beiladung"
+        ]
+      }
+    },
+    {
+      "id": "C-027",
+      "criticality": "must_pass",
+      "title": "Begründetheitsmaßstab der Verpflichtungsklage",
+      "match_criteria": "ERFÜLLT, wenn die Antwort § 113 Abs. 5 Satz 1 VwGO zugrunde legt und fragt, ob J einen spruchreifen Anspruch auf Erlass der Löschungsanordnung gegen X hat. NICHT ERFÜLLT, wenn sie nur die Rechtmäßigkeit des Ablehnungsbescheids nach Anfechtungsklagelogik prüft.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [],
+      "derived_from_atoms": [
+        "A-030"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-025",
+        "K-FACT-024",
+        "K-ADV-026"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit"
+        ]
+      }
+    },
+    {
+      "id": "C-028",
+      "criticality": "must_pass",
+      "title": "Rechtmäßigkeit der begehrten Löschungsverfügung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort erkennt, dass J nur den Erlass einer Löschungsanordnung verlangen kann, die gegenüber X rechtmäßig ergehen dürfte. NICHT ERFÜLLT, wenn sie einen Anspruch auf Erlass eines rechtswidrigen Verwaltungsakts für möglich hält.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-031"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-026",
+        "K-ADV-027"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Rechtmäßigkeit der Löschungsanordnung"
+        ]
+      }
+    },
+    {
+      "id": "C-029",
+      "criticality": "must_pass",
+      "title": "Blog des X als Telemedium",
+      "match_criteria": "ERFÜLLT, wenn die Antwort den Blog des X entsprechend dem Bearbeitungshinweis als Telemedium im Sinne der §§ 54 ff. RStV behandelt. NICHT ERFÜLLT, wenn sie die Anwendbarkeit der Telemedienvorschriften mit der Begründung ablehnt, der Blog sei kein Telemedium.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-035"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-028",
+        "K-FACT-025",
+        "K-ADV-029"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Ermächtigungsgrundlage"
+        ]
+      }
+    },
+    {
+      "id": "C-030",
+      "criticality": "must_pass",
+      "title": "§ 59 Abs. 3 RStV als mögliche Aufsichtsbefugnis",
+      "match_criteria": "ERFÜLLT, wenn die Antwort § 59 Abs. 3 Satz 1 RStV zumindest als mögliche medienaufsichtsrechtliche Ermächtigungsgrundlage für erforderliche Maßnahmen gegenüber dem Anbieter eines Telemediums prüft. NICHT ERFÜLLT, wenn sie § 59 Abs. 3 RStV trotz Telemedienbezugs überhaupt nicht in Betracht zieht.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-rundfunkstaatsvertrag.md"
+      ],
+      "derived_from_atoms": [
+        "A-033"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-029",
+        "K-ADV-030"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "legal_basis",
+        "station_path": [
+          "Begründetheit",
+          "Ermächtigungsgrundlage"
+        ]
+      }
+    },
+    {
+      "id": "C-031",
+      "criticality": "must_pass",
+      "title": "Ehrschutzpflicht aus § 54 Abs. 1 Satz 3 RStV",
+      "match_criteria": "ERFÜLLT, wenn die Antwort § 54 Abs. 1 Satz 3 RStV als Pflicht von Telemedien zur Einhaltung allgemeiner Gesetze und gesetzlicher Bestimmungen zum Schutz der persönlichen Ehre nennt. NICHT ERFÜLLT, wenn sie den medienrechtlichen Ehrschutzbezug der Blogäußerungen verkennt oder einer falschen Norm zuschreibt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-rundfunkstaatsvertrag.md"
+      ],
+      "derived_from_atoms": [
+        "A-037"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-032",
+        "K-FACT-027",
+        "K-ADV-031"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "legal_basis",
+        "station_path": [
+          "Begründetheit",
+          "Ermächtigungsgrundlage"
+        ]
+      }
+    },
+    {
+      "id": "C-032",
+      "criticality": "must_pass",
+      "title": "Ausschluss des § 54 RStV in § 59 Abs. 3 RStV",
+      "match_criteria": "ERFÜLLT, wenn die Antwort entweder aus dem Wortlaut des § 59 Abs. 3 RStV herleitet, dass Verstöße gegen § 54 RStV nicht erfasst sind und § 59 Abs. 3 RStV deshalb für die hier allein gerügten Ehrschutz- und Strafgesetzverstöße nicht unmittelbar trägt, oder ausdrücklich die Gegenansicht wählt, dass der Ausschluss des gesamten § 54 RStV als Redaktionsversehen teleologisch zu korrigieren sei, und § 59 Abs. 3 RStV dann konsistent anwendet. NICHT ERFÜLLT, wenn sie § 59 Abs. 3 RStV ohne Auseinandersetzung mit dem Ausschluss des § 54 RStV unmittelbar anwendet.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-rundfunkstaatsvertrag.md",
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-036",
+        "A-038"
+      ],
+      "review_notes": [
+        "Zulässige Alternative ist nur die ausdrücklich begründete Redaktionsversehenslösung."
+      ],
+      "candidate_ids_merged": [
+        "K-DOC-031",
+        "K-DOC-033",
+        "K-FACT-026",
+        "K-FACT-028",
+        "K-ADV-032"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "station_path": [
+          "Begründetheit",
+          "Ermächtigungsgrundlage"
+        ]
+      }
+    },
+    {
+      "id": "C-033",
+      "criticality": "must_pass",
+      "title": "Keine Sperrwirkung nach § 59 Abs. 3 Satz 7 RStV",
+      "match_criteria": "ERFÜLLT, wenn die Antwort § 59 Abs. 3 Satz 7 RStV dahin versteht, dass Befugnisse der Aufsichtsbehörden zur Durchsetzung allgemeiner Gesetze und Ehrschutzgesetze unberührt bleiben. NICHT ERFÜLLT, wenn sie aus § 59 RStV eine vollständige Sperre ordnungsrechtlicher Befugnisse gegen ehrverletzende Telemedieninhalte ableitet.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-rundfunkstaatsvertrag.md"
+      ],
+      "derived_from_atoms": [
+        "A-039"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-034",
+        "K-FACT-029",
+        "K-ADV-034"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Ermächtigungsgrundlage"
+        ]
+      }
+    },
+    {
+      "id": "C-034",
+      "criticality": "must_pass",
+      "title": "Rückgriff auf die ordnungsbehördliche Generalklausel",
+      "match_criteria": "ERFÜLLT, wenn die Antwort bei fehlender spezialgesetzlicher Sperrwirkung für ehrverletzende Telemedieninhalte den Rückgriff auf § 9 Abs. 1 POG Rheinland-Pfalz zulässt. NICHT ERFÜLLT, wenn sie wegen fehlender unmittelbarer Anwendbarkeit von § 59 Abs. 3 RStV jede Ermächtigungsgrundlage verneint, obwohl § 59 Abs. 3 Satz 7 RStV andere Befugnisse unberührt lässt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-rundfunkstaatsvertrag.md",
+        "documents/auszug-polizeigesetz.md"
+      ],
+      "derived_from_atoms": [
+        "A-040"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-035",
+        "K-FACT-030",
+        "K-ADV-035"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "legal_basis",
+        "station_path": [
+          "Begründetheit",
+          "Ermächtigungsgrundlage"
+        ]
+      }
+    },
+    {
+      "id": "C-035",
+      "criticality": "must_pass",
+      "title": "§ 9 Abs. 2 POG bei medienaufsichtlicher Aufgabe",
+      "match_criteria": "ERFÜLLT, wenn die Antwort § 9 Abs. 2 POG heranzieht, weil der ADD durch § 59 Abs. 2 RStV eine Überwachungsaufgabe übertragen ist und der RStV für die hier betroffene Ehrschutzdurchsetzung keine abschließende Befugnis regelt. NICHT ERFÜLLT, wenn sie die Anwendung des POG allein deshalb ablehnt, weil die Aufgabe aus dem RStV stammt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-polizeigesetz.md",
+        "documents/auszug-rundfunkstaatsvertrag.md"
+      ],
+      "derived_from_atoms": [
+        "A-041"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-036",
+        "K-FACT-031",
+        "K-ADV-036"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "legal_basis",
+        "station_path": [
+          "Begründetheit",
+          "Ermächtigungsgrundlage"
+        ]
+      }
+    },
+    {
+      "id": "C-036",
+      "criticality": "must_pass",
+      "title": "ADD als Landesordnungsbehörde",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die ADD als Landesordnungsbehörde im Sinne von § 89 Abs. 3 POG behandelt, der § 9 Abs. 1 POG grundsätzlich zur Verfügung steht. NICHT ERFÜLLT, wenn sie § 9 Abs. 1 POG allein deshalb ablehnt, weil die ADD keine Polizeibehörde im engeren Sinne sei.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-polizeigesetz.md",
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-042"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-037",
+        "K-FACT-032",
+        "K-ADV-037"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Ermächtigungsgrundlage"
+        ]
+      }
+    },
+    {
+      "id": "C-037",
+      "criticality": "must_pass",
+      "title": "Einschlägige Ermächtigungsgrundlage",
+      "match_criteria": "ERFÜLLT, wenn die Antwort entweder § 9 Abs. 1 POG Rheinland-Pfalz als maßgebliche Ermächtigungsgrundlage für die Löschungsanordnung gegen X benennt oder bei ausdrücklich begründeter Redaktionsversehens-Gegenansicht § 59 Abs. 3 RStV als Spezialbefugnis konsistent zugrunde legt. NICHT ERFÜLLT, wenn sie eine frei erfundene Eingriffsbefugnis oder nur zivilrechtliche Anspruchsgrundlagen als behördliche Ermächtigung verwendet.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-polizeigesetz.md",
+        "documents/auszug-rundfunkstaatsvertrag.md"
+      ],
+      "derived_from_atoms": [
+        "A-043"
+      ],
+      "review_notes": [
+        "Akzeptiert nur die benannten Alternativen."
+      ],
+      "candidate_ids_merged": [
+        "K-DOC-038",
+        "K-FACT-030",
+        "K-ADV-038"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "legal_basis",
+        "station_path": [
+          "Begründetheit",
+          "Ermächtigungsgrundlage"
+        ]
+      }
+    },
+    {
+      "id": "C-038",
+      "criticality": "must_pass",
+      "title": "Sachliche Zuständigkeit der ADD",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die sachliche Zuständigkeit der ADD im Fall aus § 3 Abs. 1 des rheinland-pfälzischen Landesgesetzes zu dem Staatsvertrag über den Rundfunk im vereinten Deutschland oder aus der entsprechenden Sachverhaltsvorgabe herleitet. NICHT ERFÜLLT, wenn sie die ADD trotz Fallvorgabe, etwa wegen einer tatsächlich später geänderten Zuständigkeit, als sachlich unzuständig behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-044"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-039",
+        "K-FACT-033",
+        "K-ADV-039"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "legal_basis",
+        "station_path": [
+          "Begründetheit",
+          "Formelle Rechtmäßigkeit",
+          "Zuständigkeit"
+        ]
+      }
+    },
+    {
+      "id": "C-040",
+      "criticality": "must_pass",
+      "title": "Privatrechtsklausel des § 1 Abs. 3 POG",
+      "match_criteria": "ERFÜLLT, wenn die Antwort § 1 Abs. 3 POG als Maßstab dafür nennt, dass Ordnungsbehörden private Rechte grundsätzlich nur subsidiär schützen, wenn gerichtlicher Schutz nicht rechtzeitig zu erlangen ist und ohne behördliche Hilfe die Rechtsverwirklichung vereitelt oder wesentlich erschwert würde. NICHT ERFÜLLT, wenn sie den Einwand der ADD, J müsse zivilgerichtlich gegen X vorgehen, rechtlich nicht einordnet.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-polizeigesetz.md",
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-046"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-041",
+        "K-FACT-035",
+        "K-ADV-041"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Formelle Rechtmäßigkeit",
+          "Privatrechtsklausel"
+        ]
+      }
+    },
+    {
+      "id": "C-041",
+      "criticality": "must_pass",
+      "title": "Grundsätzlich möglicher Zivilrechtsschutz",
+      "match_criteria": "ERFÜLLT, wenn die Antwort erkennt, dass J gegen X wegen der Blogäußerungen grundsätzlich zivilgerichtlichen Rechtsschutz mit Aussicht auf Erfolg suchen könnte. NICHT ERFÜLLT, wenn sie J ohne Begründung jede zivilrechtliche Schutzmöglichkeit abspricht.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-047"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-042",
+        "K-ADV-042"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Formelle Rechtmäßigkeit",
+          "Privatrechtsklausel"
+        ]
+      }
+    },
+    {
+      "id": "C-042",
+      "criticality": "must_pass",
+      "title": "Strafrechtsverstoß als Ausnahme vom Privatrechtsvorrang",
+      "match_criteria": "ERFÜLLT, wenn die Antwort ausführt, dass der Vorrang zivilgerichtlichen Rechtsschutzes nach § 1 Abs. 3 POG hier nicht durchgreift, sofern X durch die Äußerungen zugleich Strafgesetze wie § 185 StGB oder § 187 StGB verletzt. NICHT ERFÜLLT, wenn sie behördliches Einschreiten allein wegen möglicher Zivilklage ausschließt, ohne die strafrechtliche Dimension zu berücksichtigen.",
       "deliverables": [
         "fallloesung-sut.md"
       ],
@@ -310,29 +1348,235 @@
         "documents/auszug-polizeigesetz.md"
       ],
       "derived_from_atoms": [
-        "A-052",
-        "A-053",
-        "A-054",
-        "A-055",
-        "A-056",
-        "A-069"
+        "A-048"
       ],
-      "review_notes": [
-        "Gegendarstellung oder Zugangsbeschränkung dürfen nur bei gleicher Wirksamkeit als milderes Mittel genügen."
-      ],
+      "review_notes": [],
       "candidate_ids_merged": [
-        "K-043",
-        "K-044",
-        "K-045",
-        "K-046",
-        "K-047"
-      ]
+        "K-DOC-043",
+        "K-FACT-036",
+        "K-ADV-043"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Formelle Rechtmäßigkeit",
+          "Privatrechtsklausel"
+        ]
+      }
     },
     {
-      "id": "C-012",
+      "id": "C-043",
       "criticality": "must_pass",
-      "title": "Grundrechtsabwägung bei der Angemessenheit",
-      "match_criteria": "ERFÜLLT, wenn die Meinungsfreiheit des X und die Informationsfreiheit der Leser berücksichtigt, aber wegen Schmähkritik, unwahrer Tatsachenbehauptung, Menschenwürdebezug, Js Persönlichkeitsrecht und ihrer Minderjährigkeit als nachrangig bewertet werden; Js öffentliches Engagement darf nicht als Freibrief für persönliche Diffamierungen behandelt werden. NICHT ERFÜLLT, wenn Art. 5 GG oder Leserinteressen pauschal absoluten Vorrang erhalten.",
+      "title": "Objektiver Straftatbestand genügt ordnungsrechtlich",
+      "match_criteria": "ERFÜLLT, wenn die Antwort für die ordnungsrechtliche Ausnahme von § 1 Abs. 3 POG die Verwirklichung des objektiven Tatbestands eines Strafgesetzes genügen lässt und die Einordnung der §§ 185, 187 StGB als Antragsdelikte nicht als Sperre ansieht. NICHT ERFÜLLT, wenn sie behördliches Einschreiten allein mangels Strafantrags ausschließt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-polizeigesetz.md"
+      ],
+      "derived_from_atoms": [
+        "A-049"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-044",
+        "K-FACT-037",
+        "K-ADV-043"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Formelle Rechtmäßigkeit",
+          "Privatrechtsklausel"
+        ]
+      }
+    },
+    {
+      "id": "C-044",
+      "criticality": "must_pass",
+      "title": "Begriff der öffentlichen Sicherheit",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die öffentliche Sicherheit im Rahmen von § 9 Abs. 1 POG als Schutz der geschriebenen Rechtsordnung und der Individualrechtsgüter versteht. NICHT ERFÜLLT, wenn sie Ehrverletzungen und Strafrechtsverstöße von vornherein aus dem Schutzgut der öffentlichen Sicherheit ausschließt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-polizeigesetz.md"
+      ],
+      "derived_from_atoms": [
+        "A-052"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-047",
+        "K-FACT-039",
+        "K-ADV-045"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Öffentliche Sicherheit"
+        ]
+      }
+    },
+    {
+      "id": "C-045",
+      "criticality": "must_pass",
+      "title": "Strafgesetze als Teil der öffentlichen Sicherheit",
+      "match_criteria": "ERFÜLLT, wenn die Antwort einen Verstoß gegen § 185 StGB oder § 187 StGB als Beeinträchtigung der öffentlichen Sicherheit wegen Verletzung der geschriebenen Rechtsordnung einordnet. NICHT ERFÜLLT, wenn sie strafbare Ehrverletzungen als polizeirechtlich irrelevante Privatangelegenheit behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md",
+        "documents/auszug-polizeigesetz.md"
+      ],
+      "derived_from_atoms": [
+        "A-053"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-048",
+        "K-ADV-046"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Öffentliche Sicherheit"
+        ]
+      }
+    },
+    {
+      "id": "C-046",
+      "criticality": "must_pass",
+      "title": "Ehrschutzstraftaten als Verstoß gegen § 54 Abs. 1 Satz 3 RStV",
+      "match_criteria": "ERFÜLLT, wenn die Antwort erkennt, dass Beleidigung oder Verleumdung durch X zugleich die Pflicht aus § 54 Abs. 1 Satz 3 RStV zur Einhaltung gesetzlicher Bestimmungen zum Schutz der persönlichen Ehre verletzen kann. NICHT ERFÜLLT, wenn sie § 54 Abs. 1 Satz 3 RStV trotz strafbarer Ehrverletzungen für nicht berührt hält.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-rundfunkstaatsvertrag.md",
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-054"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-049",
+        "K-FACT-040",
+        "K-ADV-046"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Öffentliche Sicherheit"
+        ]
+      }
+    },
+    {
+      "id": "C-047",
+      "criticality": "must_pass",
+      "title": "Beleidigungsbegriff",
+      "match_criteria": "ERFÜLLT, wenn die Antwort Beleidigung nach § 185 StGB als Kundgabe von Missachtung oder Nichtachtung gegenüber der betroffenen Person oder Dritten definiert. NICHT ERFÜLLT, wenn sie § 185 StGB nur auf unwahre Tatsachenbehauptungen beschränkt oder keine ehrbezogene Definition verwendet.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [],
+      "derived_from_atoms": [
+        "A-055"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-050",
+        "K-ADV-047"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Öffentliche Sicherheit"
+        ]
+      }
+    },
+    {
+      "id": "C-048",
+      "criticality": "must_pass",
+      "title": "Beschimpfungen als Missachtungskundgaben",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Bezeichnungen Js als „dumme Sau“, „Dreck“, „Abschaum“ und „nicht lebenswert“ als Kundgaben der Missachtung im Sinne von § 185 StGB einordnet. NICHT ERFÜLLT, wenn sie diese Begriffe als bloß sachliche oder zulässige Kritik an Js politischem Engagement behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-056"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-051",
+        "K-FACT-041",
+        "K-ADV-048"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Öffentliche Sicherheit"
+        ]
+      }
+    },
+    {
+      "id": "C-049",
+      "criticality": "must_pass",
+      "title": "Werturteile im Schutzbereich der Meinungsfreiheit",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die beleidigenden Werturteile des X zunächst als grundsätzlich von Art. 5 Abs. 1 Satz 1 GG erfasste Meinungen behandelt. NICHT ERFÜLLT, wenn sie Art. 5 GG bei den Werturteilen vollständig ausblendet oder Werturteile generell aus der Meinungsfreiheit ausschließt.",
       "deliverables": [
         "fallloesung-sut.md"
       ],
@@ -341,26 +1585,279 @@
       ],
       "derived_from_atoms": [
         "A-057",
-        "A-058",
-        "A-059",
+        "A-085"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-052",
+        "K-DOC-078",
+        "K-FACT-042",
+        "K-FACT-061",
+        "K-ADV-049"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Öffentliche Sicherheit"
+        ]
+      }
+    },
+    {
+      "id": "C-050",
+      "criticality": "must_pass",
+      "title": "Definition der Schmähkritik",
+      "match_criteria": "ERFÜLLT, wenn die Antwort Schmähkritik eng als Äußerung beschreibt, bei der nicht mehr die Sachauseinandersetzung, sondern die Diffamierung der Person im Vordergrund steht. NICHT ERFÜLLT, wenn sie jede scharfe oder polemische Kritik automatisch als Schmähkritik behandelt oder den Sachbezug nicht prüft.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [],
+      "derived_from_atoms": [
+        "A-059"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-054",
+        "K-FACT-043",
+        "K-ADV-050"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Öffentliche Sicherheit"
+        ]
+      }
+    },
+    {
+      "id": "C-051",
+      "criticality": "must_pass",
+      "title": "Konkrete Schmähkritik durch X",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Beschimpfungen des X als Schmähkritik einordnet, weil sie keinen Bezug zu Js politischem Engagement oder zur Sachdebatte über „Fridays for Future“ haben und keinen schützenswerten Beitrag zur Meinungsbildung leisten. NICHT ERFÜLLT, wenn sie die Beschimpfungen allein wegen Js öffentlicher Rolle als hinzunehmende Sachkritik behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
         "A-060",
+        "A-087"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-055",
+        "K-DOC-080",
+        "K-FACT-044",
+        "K-FACT-063",
+        "K-ADV-051",
+        "K-ADV-073"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Öffentliche Sicherheit"
+        ]
+      }
+    },
+    {
+      "id": "C-052",
+      "criticality": "must_pass",
+      "title": "Menschenwürdebezug von „nicht lebenswert“",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Bezeichnung Js als „nicht lebenswert“ als Berührung oder Verletzung ihrer Menschenwürde aus Art. 1 Abs. 1 GG wertet. NICHT ERFÜLLT, wenn sie diese Aussage nur als gewöhnliche Unhöflichkeit, einfache Polemik oder bloß hinzunehmende scharfe Kritik einordnet.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
         "A-061"
       ],
-      "review_notes": [
-        "Eine knappe, aber konkrete Abwägung genügt."
-      ],
+      "review_notes": [],
       "candidate_ids_merged": [
-        "K-048",
-        "K-049",
-        "K-050",
-        "K-051"
-      ]
+        "K-DOC-056",
+        "K-FACT-045",
+        "K-ADV-052"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Öffentliche Sicherheit"
+        ]
+      }
     },
     {
-      "id": "C-013",
+      "id": "C-053",
       "criticality": "must_pass",
-      "title": "Ermessensreduzierung auf Null",
-      "match_criteria": "ERFÜLLT, wenn das Entschließungs- und Auswahlermessen geprüft und eine Ermessensreduzierung auf Null anhand staatlicher Schutzpflichten, Schwere der Menschenwürde- und Persönlichkeitsrechtsverletzung, möglichem Zivilrechtsweg als Gegenargument, geringem behördlichen und adressatenbezogenen Aufwand sowie fehlender gleich wirksamer milderer Mittel begründet oder vertretbar verneint wird. NICHT ERFÜLLT, wenn ohne Abwägung stets oder nie eine Pflicht zum Einschreiten angenommen wird.",
+      "title": "Meinungsfreiheit rechtfertigt die Beleidigungen nicht",
+      "match_criteria": "ERFÜLLT, wenn die Antwort zum Ergebnis kommt, dass Art. 5 Abs. 1 Satz 1 GG der Einordnung der Beschimpfungen als Beleidigung nach § 185 StGB nicht entgegensteht, insbesondere weil Schmähkritik beziehungsweise Menschenwürdeverletzungen nicht durchgreifend geschützt sind. NICHT ERFÜLLT, wenn sie die Beschimpfungen allein wegen Meinungsfreiheit des X für rechtmäßig oder straflos hält.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-058",
+        "A-062",
+        "A-089"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-053",
+        "K-DOC-057",
+        "K-DOC-082",
+        "K-FACT-046",
+        "K-FACT-065",
+        "K-ADV-053",
+        "K-ADV-075"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "conclusion",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Öffentliche Sicherheit"
+        ]
+      }
+    },
+    {
+      "id": "C-054",
+      "criticality": "must_pass",
+      "title": "Verleumdungsbegriff",
+      "match_criteria": "ERFÜLLT, wenn die Antwort § 187 StGB als wider besseres Wissen erfolgende Verbreitung einer unwahren ehrmindernden Tatsache definiert. NICHT ERFÜLLT, wenn sie § 187 StGB auf bloße Werturteile anwendet oder die Kenntnis der Unwahrheit nicht verlangt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [],
+      "derived_from_atoms": [
+        "A-063"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-058",
+        "K-FACT-047",
+        "K-ADV-054"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Öffentliche Sicherheit"
+        ]
+      }
+    },
+    {
+      "id": "C-055",
+      "criticality": "must_pass",
+      "title": "Schulverweisbehauptung als ehrmindernd",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Behauptung, J sei wegen freitäglichen Schuleschwänzens von der Schule verwiesen worden, als geeignet ansieht, J in der öffentlichen Meinung herabzuwürdigen. NICHT ERFÜLLT, wenn sie einem angeblichen Schulverweis jede ehrmindernde Wirkung abspricht.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-064"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-059",
+        "K-FACT-048",
+        "K-ADV-055"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Öffentliche Sicherheit"
+        ]
+      }
+    },
+    {
+      "id": "C-056",
+      "criticality": "must_pass",
+      "title": "Unwahrheit und Wissen des X",
+      "match_criteria": "ERFÜLLT, wenn die Antwort feststellt, dass J tatsächlich nicht von der Schule verwiesen wurde und X die Unwahrheit der Schulverweisbehauptung kannte. NICHT ERFÜLLT, wenn sie die Behauptung als wahr, ungeklärt oder gutgläubig verbreitet behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-065"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-060",
+        "K-FACT-049",
+        "K-ADV-056"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Öffentliche Sicherheit"
+        ]
+      }
+    },
+    {
+      "id": "C-057",
+      "criticality": "must_pass",
+      "title": "Ehre der J als Individualrechtsgut",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Ehre oder das allgemeine Persönlichkeitsrecht der J als durch Xs Blogäußerungen betroffenes Individualrechtsgut im Rahmen der öffentlichen Sicherheit berücksichtigt. NICHT ERFÜLLT, wenn sie nur abstrakte Allgemeininteressen prüft und die individuelle Ehrverletzung der J ausblendet.",
       "deliverables": [
         "fallloesung-sut.md"
       ],
@@ -369,34 +1866,198 @@
         "documents/auszug-polizeigesetz.md"
       ],
       "derived_from_atoms": [
-        "A-051",
-        "A-064",
-        "A-065",
-        "A-066",
-        "A-067",
-        "A-068",
-        "A-070",
-        "A-071",
-        "A-072",
-        "A-077"
+        "A-067"
       ],
-      "review_notes": [
-        "Die Musterlösung bejaht den Vornahmeanspruch; ein bloßer Bescheidungsanspruch ist nur bei tragfähiger Gegenansicht vertretbar."
-      ],
+      "review_notes": [],
       "candidate_ids_merged": [
-        "K-042",
-        "K-053",
-        "K-054",
-        "K-055",
-        "K-056",
-        "K-057"
-      ]
+        "K-DOC-062",
+        "K-ADV-057"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Öffentliche Sicherheit"
+        ]
+      }
     },
     {
-      "id": "C-014",
+      "id": "C-058",
       "criticality": "must_pass",
-      "title": "Anspruch und Gesamtergebnis",
-      "match_criteria": "ERFÜLLT, wenn die Antwort konsistent zu dem Ergebnis kommt, dass J nach der Hauptlösung einen Anspruch auf Erlass der Löschungsanordnung hat und die Klage Aussicht auf Erfolg hat, oder bei vertretbarer Gegenansicht zumindest einen Bescheidungsanspruch und entsprechende teilweise Erfolgsaussichten klar ausweist. NICHT ERFÜLLT, wenn jeder Anspruch und die Erfolgsaussichten ohne tragfähige Begründung verneint werden.",
+      "title": "Gefahrenbegriff",
+      "match_criteria": "ERFÜLLT, wenn die Antwort Gefahr im Sinne des § 9 Abs. 1 POG als hinreichende Wahrscheinlichkeit eines Schadenseintritts aus ex-ante-Sicht beschreibt. NICHT ERFÜLLT, wenn sie für § 9 Abs. 1 POG einen bereits eingetretenen Schaden von vornherein für unbeachtlich hält.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-polizeigesetz.md"
+      ],
+      "derived_from_atoms": [
+        "A-069"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-063"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Gefahr"
+        ]
+      }
+    },
+    {
+      "id": "C-059",
+      "criticality": "must_pass",
+      "title": "Störung als Gefahr",
+      "match_criteria": "ERFÜLLT, wenn die Antwort einen bereits eingetretenen und fortwirkenden Schaden als Störung und damit als Gefahr im polizeirechtlichen Sinne behandelt. NICHT ERFÜLLT, wenn sie ordnungsbehördliches Einschreiten ablehnt, weil die rechtswidrigen Äußerungen bereits veröffentlicht wurden.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-polizeigesetz.md",
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-070"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-064",
+        "K-ADV-058"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Gefahr"
+        ]
+      }
+    },
+    {
+      "id": "C-060",
+      "criticality": "must_pass",
+      "title": "Fortdauernde Störung durch Xs Blogbeitrag",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die bereits veröffentlichten und weiterhin abrufbaren Beleidigungen, die Verleumdung oder die Ehrverletzung im Blogbeitrag als fortdauernde polizeirechtliche Störung einordnet. NICHT ERFÜLLT, wenn sie eine Gefahr verneint, obwohl die rechtswidrigen Inhalte online bleiben.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-071"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-065",
+        "K-FACT-051",
+        "K-ADV-059"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Gefahr"
+        ]
+      }
+    },
+    {
+      "id": "C-061",
+      "criticality": "must_pass",
+      "title": "Adressat nur Verantwortlicher oder Nichtstörer im Notstand",
+      "match_criteria": "ERFÜLLT, wenn die Antwort erkennt, dass § 9 Abs. 1 POG grundsätzlich Maßnahmen gegen polizeirechtlich Verantwortliche erlaubt und Nichtstörer nur bei polizeilichem Notstand in Betracht kommen. NICHT ERFÜLLT, wenn sie die Adressatenauswahl als beliebig behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-polizeigesetz.md"
+      ],
+      "derived_from_atoms": [
+        "A-072"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-066",
+        "K-ADV-060"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Störer"
+        ]
+      }
+    },
+    {
+      "id": "C-062",
+      "criticality": "must_pass",
+      "title": "Handlungsstörer nach § 4 POG",
+      "match_criteria": "ERFÜLLT, wenn die Antwort Handlungs- beziehungsweise Verhaltensstörer nach § 4 POG als denjenigen beschreibt, der die Gefahr unmittelbar verursacht hat. NICHT ERFÜLLT, wenn sie die Verantwortlichkeit allein an Eigentum oder Besitz des Servers knüpft.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-polizeigesetz.md"
+      ],
+      "derived_from_atoms": [
+        "A-073"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-067",
+        "K-ADV-061"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Störer"
+        ]
+      }
+    },
+    {
+      "id": "C-063",
+      "criticality": "must_pass",
+      "title": "X als Handlungsstörer",
+      "match_criteria": "ERFÜLLT, wenn die Antwort X als Handlungsstörer einordnet, weil er die beanstandeten rechtswidrigen Inhalte selbst verfasst und in seinem Blog online gestellt hat. NICHT ERFÜLLT, wenn sie statt X vorrangig Leser, Schule oder Provider als Verantwortliche behandelt.",
       "deliverables": [
         "fallloesung-sut.md"
       ],
@@ -405,22 +2066,923 @@
         "documents/auszug-polizeigesetz.md"
       ],
       "derived_from_atoms": [
-        "A-073",
-        "A-075",
+        "A-074"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-068",
+        "K-FACT-052",
+        "K-ADV-062"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Störer"
+        ]
+      }
+    },
+    {
+      "id": "C-064",
+      "criticality": "must_pass",
+      "title": "§ 7 Abs. 1 TMG bei eigenen Informationen",
+      "match_criteria": "ERFÜLLT, wenn die Antwort § 7 Abs. 1 TMG dahin berücksichtigt, dass X als Diensteanbieter für eigene Bloginformationen nach den allgemeinen Gesetzen verantwortlich bleibt. NICHT ERFÜLLT, wenn sie X wegen Telemedienhaftungsprivilegien von jeder Verantwortlichkeit für eigene Inhalte freistellt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-telemediengesetz.md",
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-075"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-069",
+        "K-FACT-053",
+        "K-ADV-063"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Störer"
+        ]
+      }
+    },
+    {
+      "id": "C-065",
+      "criticality": "must_pass",
+      "title": "Ermessen nach § 9 Abs. 1 POG",
+      "match_criteria": "ERFÜLLT, wenn die Antwort erkennt, dass § 9 Abs. 1 POG der ADD Ermessen einräumt und deshalb Entschließungs- oder Auswahlermessen zu prüfen ist. NICHT ERFÜLLT, wenn sie § 9 Abs. 1 POG als stets gebundene Pflichtnorm ohne Ermessen behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-polizeigesetz.md"
+      ],
+      "derived_from_atoms": [
+        "A-076"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-070",
+        "K-FACT-054",
+        "K-ADV-064"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Ermessen"
+        ]
+      }
+    },
+    {
+      "id": "C-066",
+      "criticality": "must_pass",
+      "title": "Entschließungsermessen zugunsten eines Einschreitens",
+      "match_criteria": "ERFÜLLT, wenn die Antwort ein Einschreiten der ADD gegen X wegen des rechtswidrigen Blogbeitrags als ermessensfehlerfrei möglich ansieht und keine fallbezogenen Gründe gegen ein Tätigwerden erkennt. NICHT ERFÜLLT, wenn sie ein Einschreiten trotz festgestellter Störung ohne tragfähigen Ermessensgrund als unzulässig behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md",
+        "documents/auszug-polizeigesetz.md"
+      ],
+      "derived_from_atoms": [
         "A-077"
       ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-071",
+        "K-FACT-055",
+        "K-ADV-065"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "conclusion",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Entschließungsermessen"
+        ]
+      }
+    },
+    {
+      "id": "C-067",
+      "criticality": "must_pass",
+      "title": "Verhältnismäßigkeit im Auswahlermessen",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die konkrete Löschungsanordnung am Verhältnismäßigkeitsgrundsatz des § 2 POG misst. NICHT ERFÜLLT, wenn sie die Auswahl der Löschung ohne Prüfung von Zweck, Geeignetheit, Erforderlichkeit oder Angemessenheit billigt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/auszug-polizeigesetz.md"
+      ],
+      "derived_from_atoms": [
+        "A-078"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-072",
+        "K-FACT-056",
+        "K-ADV-066"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Verhältnismäßigkeit"
+        ]
+      }
+    },
+    {
+      "id": "C-068",
+      "criticality": "must_pass",
+      "title": "Legitimer Zweck der Löschung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort als legitimen Zweck der Löschungsanordnung die Beendigung der Beleidigung, der Verleumdung oder der Verletzung von Js Ehre nennt. NICHT ERFÜLLT, wenn sie keinen rechtlich legitimen Zweck nennt oder als Zweck nur die Unterdrückung unliebsamer Klimadebattenkritik verwendet.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-079"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-073",
+        "K-FACT-057",
+        "K-ADV-067"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Verhältnismäßigkeit"
+        ]
+      }
+    },
+    {
+      "id": "C-069",
+      "criticality": "must_pass",
+      "title": "Geeignetheit der Löschung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Löschungsanordnung als geeignet bewertet, weil die beanstandeten Äußerungen nach Löschung nicht mehr über Xs Blog zur Kenntnis genommen werden können. NICHT ERFÜLLT, wenn sie die Geeignetheit verneint, obwohl die Löschung die fortdauernde Abrufbarkeit der konkreten Äußerungen beendet.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-080"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-074",
+        "K-FACT-058",
+        "K-ADV-068"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Verhältnismäßigkeit"
+        ]
+      }
+    },
+    {
+      "id": "C-070",
+      "criticality": "must_pass",
+      "title": "Gegendarstellung oder Zugangsbeschränkung nicht gleich wirksam",
+      "match_criteria": "ERFÜLLT, wenn die Antwort eine Gegendarstellung oder bloße Zugangsbeschränkung als nicht gleich wirksames milderes Mittel gegenüber der Löschung der rechtswidrigen Äußerungen einordnet. NICHT ERFÜLLT, wenn sie diese Alternativen ohne Begründung als ebenso effektiv wie die Entfernung der strafbaren Inhalte behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-081"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-075",
+        "K-FACT-059",
+        "K-ADV-069"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Verhältnismäßigkeit"
+        ]
+      }
+    },
+    {
+      "id": "C-071",
+      "criticality": "must_pass",
+      "title": "Gesamtsperrung nicht milder als punktuelle Löschung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort erkennt, dass eine Zugangsbeschränkung oder Sperrung des gesamten Blogbeitrags gegenüber der punktuellen Löschung der rechtswidrigen Formulierungen kein milderes Mittel wäre. NICHT ERFÜLLT, wenn sie eine Maßnahme gegen den gesamten Beitrag als milder bezeichnet, obwohl sie auch rechtmäßige Inhalte erfassen würde.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-082"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-076",
+        "K-FACT-060",
+        "K-ADV-070"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Verhältnismäßigkeit"
+        ]
+      }
+    },
+    {
+      "id": "C-072",
+      "criticality": "must_pass",
+      "title": "Grundrechtliche Angemessenheitsabwägung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort bei der Angemessenheit der Löschung die Interessen Js am Schutz von Ehre, Persönlichkeitsrecht oder Menschenwürde mit den Interessen an der Aufrechterhaltung des Blogangebots abwägt. NICHT ERFÜLLT, wenn sie die Angemessenheit ohne grundrechtliche Abwägung entscheidet.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-084"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-077",
+        "K-FACT-061",
+        "K-ADV-071"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Angemessenheit"
+        ]
+      }
+    },
+    {
+      "id": "C-073",
+      "criticality": "must_pass",
+      "title": "Bewusst unwahre Tatsache nicht durch Art. 5 GG geschützt",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die bewusst unwahre Behauptung, J sei von der Schule verwiesen worden, nicht als durch Art. 5 Abs. 1 Satz 1 GG geschützte Meinungsäußerung behandelt. NICHT ERFÜLLT, wenn sie die wissentlich falsche Schulverweisbehauptung gleichrangig als geschützte Meinung gewichtet.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-086"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-079",
+        "K-FACT-062",
+        "K-ADV-072"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Angemessenheit"
+        ]
+      }
+    },
+    {
+      "id": "C-074",
+      "criticality": "must_pass",
+      "title": "Öffentliches Auftreten rechtfertigt keine Entwürdigung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort klarstellt, dass J trotz Organisation und Reden bei „Fridays for Future“-Demonstrationen menschenwürdeverletzende Schmähungen nicht hinnehmen muss. NICHT ERFÜLLT, wenn sie aus Js öffentlichem Engagement ableitet, sie müsse Bezeichnungen wie „Abschaum“, „Dreck“ oder „nicht lebenswert“ dulden.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-088"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-081",
+        "K-FACT-064",
+        "K-ADV-074"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Angemessenheit"
+        ]
+      }
+    },
+    {
+      "id": "C-075",
+      "criticality": "must_pass",
+      "title": "Informationsfreiheit der Blogleser",
+      "match_criteria": "ERFÜLLT, wenn die Antwort erkennt, dass die Löschung allgemein zugänglicher Bloginhalte grundsätzlich die Informationsfreiheit der Leserinnen und Leser aus Art. 5 Abs. 1 Satz 1 GG berührt. NICHT ERFÜLLT, wenn sie Leserinteressen trotz allgemein zugänglichem Blog vollständig ausblendet oder eine Grundrechtsbeeinträchtigung der Leser kategorisch verneint.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-090",
+        "A-091"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-083",
+        "K-DOC-084",
+        "K-FACT-066",
+        "K-ADV-076"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Angemessenheit"
+        ]
+      }
+    },
+    {
+      "id": "C-076",
+      "criticality": "must_pass",
+      "title": "Beschränkbarkeit der Informationsfreiheit",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Informationsfreiheit der Blogleser zum Schutz entgegenstehender Grundrechte der J, insbesondere ihres allgemeinen Persönlichkeitsrechts oder ihrer Menschenwürde, für beschränkbar hält. NICHT ERFÜLLT, wenn sie die Informationsfreiheit als schrankenlos oder als zwingendes Hindernis jeder Löschung strafbarer Persönlichkeitsverletzungen behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [],
+      "derived_from_atoms": [
+        "A-092"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-085",
+        "K-FACT-067",
+        "K-ADV-077"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Angemessenheit"
+        ]
+      }
+    },
+    {
+      "id": "C-077",
+      "criticality": "must_pass",
+      "title": "Besonderes Gewicht von Js Persönlichkeitsrecht",
+      "match_criteria": "ERFÜLLT, wenn die Antwort dem allgemeinen Persönlichkeitsrecht der 16-jährigen J besonderes Gewicht beimisst, weil die Äußerungen ihren sozialen Geltungsanspruch oder ihre Persönlichkeitsentwicklung beeinträchtigen können. NICHT ERFÜLLT, wenn sie Js Jugend und die rufschädigende Wirkung des Blogbeitrags bei der Gewichtung ignoriert.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-093"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-086",
+        "K-FACT-068",
+        "K-ADV-078"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Angemessenheit"
+        ]
+      }
+    },
+    {
+      "id": "C-078",
+      "criticality": "must_pass",
+      "title": "Geringes Informationsinteresse an unwahrer Schulverweisbehauptung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort das Informationsinteresse an der bewusst unwahren Behauptung eines Schulverweises als gering bewertet. NICHT ERFÜLLT, wenn sie der Öffentlichkeit ein hohes Informationsinteresse gerade an der als unwahr bekannten Schulverweisbehauptung zuspricht.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-094"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-087",
+        "K-FACT-069",
+        "K-ADV-079"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "station_path": [
+          "Begründetheit",
+          "Materielle Rechtmäßigkeit",
+          "Angemessenheit"
+        ]
+      }
+    },
+    {
+      "id": "C-079",
+      "criticality": "must_pass",
+      "title": "Grundrechtliche Schutzpflicht als Quelle der Ermessensreduzierung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort eine mögliche Ermessensreduzierung auf Null aus Js Grundrechten, insbesondere Art. 1 Abs. 1 GG und dem allgemeinen Persönlichkeitsrecht, sowie der staatlichen Schutzpflicht herleitet oder als Prüfungsmaßstab behandelt. NICHT ERFÜLLT, wenn sie grundrechtliche Schutzpflichten bei einem Anspruch auf polizeiliches Einschreiten nicht berücksichtigt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [],
+      "derived_from_atoms": [
+        "A-099"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-089",
+        "K-FACT-071",
+        "K-ADV-081"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Ermessensreduzierung auf Null"
+        ]
+      }
+    },
+    {
+      "id": "C-080",
+      "criticality": "must_pass",
+      "title": "Kriterien der Ermessensreduzierung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Ermessensreduzierung anhand fallbezogener Kriterien wie Rang des bedrohten Rechtsguts, Schwere des Schadens, Risiken des Einschreitens oder Aufwand der Maßnahme beurteilt. NICHT ERFÜLLT, wenn sie eine Ermessensreduzierung auf Null ohne fallbezogene Kriterien schlicht behauptet.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [],
+      "derived_from_atoms": [
+        "A-100"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-090",
+        "K-FACT-071",
+        "K-ADV-082"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "station_path": [
+          "Begründetheit",
+          "Ermessensreduzierung auf Null"
+        ]
+      }
+    },
+    {
+      "id": "C-081",
+      "criticality": "must_pass",
+      "title": "Zivilrechtsweg als Gegenargument zur Ermessensreduzierung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort den möglichen zivilrechtlichen Rechtsschutz der J gegen X als Argument gegen eine Ermessensreduzierung auf Null berücksichtigt. NICHT ERFÜLLT, wenn sie eine zwingende Einschreitenspflicht annimmt, ohne die bestehende zivilrechtliche Schutzmöglichkeit zu würdigen.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-101"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-091",
+        "K-FACT-072",
+        "K-ADV-083"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "station_path": [
+          "Begründetheit",
+          "Ermessensreduzierung auf Null"
+        ]
+      }
+    },
+    {
+      "id": "C-082",
+      "criticality": "must_pass",
+      "title": "Menschenwürde als Argument für Ermessensreduzierung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Betroffenheit von Js Menschenwürde durch die Aussage „nicht lebenswert“ als starkes Argument für eine Ermessensreduzierung auf Null würdigt, oder ausdrücklich die strengere Gegenansicht wählt, dass eine Ermessensreduzierung nur bei schweren Gefahren für Leib oder Leben in Betracht komme, und erklärt, warum der Menschenwürdebezug hierfür nicht genügt. NICHT ERFÜLLT, wenn sie die Menschenwürdebetroffenheit bei der Ermessensreduzierung vollständig übergeht.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-102"
+      ],
       "review_notes": [
-        "Das Ergebnis muss zu Zulässigkeit, Eingriffsbefugnis, Rechtswidrigkeit der Äußerungen und Ermessensprüfung passen."
+        "Die strengere Gegenansicht muss benannt und begründet werden."
       ],
       "candidate_ids_merged": [
-        "K-058",
-        "K-060"
-      ]
+        "K-DOC-092",
+        "K-FACT-073",
+        "K-ADV-084"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "station_path": [
+          "Begründetheit",
+          "Ermessensreduzierung auf Null"
+        ]
+      }
+    },
+    {
+      "id": "C-083",
+      "criticality": "must_pass",
+      "title": "Schwere Persönlichkeitsrechtsverletzung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Bezeichnungen „Abschaum“, „Dreck“ und „nicht lebenswert“ als schwere Persönlichkeitsrechtsverletzung einordnet und bei der Ermessensreduzierung berücksichtigt. NICHT ERFÜLLT, wenn sie die Äußerungen für die Ermessensreduzierung nur als geringfügige Ehrkränkung behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-103"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-093",
+        "K-FACT-074",
+        "K-ADV-085"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "station_path": [
+          "Begründetheit",
+          "Ermessensreduzierung auf Null"
+        ]
+      }
+    },
+    {
+      "id": "C-084",
+      "criticality": "must_pass",
+      "title": "Geringer behördlicher Aufwand",
+      "match_criteria": "ERFÜLLT, wenn die Antwort den geringen Aufwand der ADD für eine Verfügung gegen den bekannten Urheber X als Argument für eine Ermessensreduzierung auf Null berücksichtigt. NICHT ERFÜLLT, wenn sie ohne Sachverhaltsgrund hohen behördlichen Ermittlungs- oder Vollzugsaufwand annimmt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-104"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-094",
+        "K-FACT-075",
+        "K-ADV-086"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Ermessensreduzierung auf Null"
+        ]
+      }
+    },
+    {
+      "id": "C-085",
+      "criticality": "must_pass",
+      "title": "Beschränkung auf rechtswidrige Äußerungen",
+      "match_criteria": "ERFÜLLT, wenn die Antwort berücksichtigt, dass eine Löschungsanordnung auf die von J gerügten rechtswidrigen Äußerungen beschränkt werden kann und rechtmäßige Kritik an „Fridays for Future“ nicht unterdrückt. NICHT ERFÜLLT, wenn sie die begehrte punktuelle Löschung mit einem Verbot des gesamten Blogs oder jeder Klimaprotestkritik gleichsetzt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-105"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-095",
+        "K-FACT-076",
+        "K-ADV-087"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "station_path": [
+          "Begründetheit",
+          "Ermessensreduzierung auf Null"
+        ]
+      }
+    },
+    {
+      "id": "C-086",
+      "criticality": "must_pass",
+      "title": "Geringer Löschungsaufwand für X",
+      "match_criteria": "ERFÜLLT, wenn die Antwort den technischen oder praktischen Aufwand für X, die beanstandeten Passagen aus seinem eigenen Blog zu entfernen, als gering oder zumutbar bewertet. NICHT ERFÜLLT, wenn sie die Löschung ohne Tatsachengrundlage als praktisch unmöglich oder unzumutbar für X behandelt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-106"
+      ],
+      "review_notes": [],
+      "candidate_ids_merged": [
+        "K-DOC-096",
+        "K-FACT-077",
+        "K-ADV-088"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "application",
+        "station_path": [
+          "Begründetheit",
+          "Ermessensreduzierung auf Null"
+        ]
+      }
+    },
+    {
+      "id": "C-087",
+      "criticality": "must_pass",
+      "title": "Verdichtung des Entschließungsermessens",
+      "match_criteria": "ERFÜLLT, wenn die Antwort entweder das Entschließungsermessen der ADD wegen der schweren Menschenwürde- und Persönlichkeitsrechtsverletzung auf ein Einschreiten gegen X reduziert sieht, oder ausdrücklich die Gegenansicht begründet, dass eine Ermessensreduzierung wegen vorrangigen Privatrechtswegs oder wegen Beschränkung auf schwere Leib- oder Lebensgefahren ausscheidet. NICHT ERFÜLLT, wenn sie die Frage der Ermessensreduzierung nicht prüft oder ohne Begründung zwischen bloßem Ermessen und zwingender Einschreitenspflicht wechselt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md",
+        "documents/auszug-polizeigesetz.md"
+      ],
+      "derived_from_atoms": [
+        "A-107"
+      ],
+      "review_notes": [
+        "Akzeptierte Gegenansichten sind Privatrechtsweg-Vorrang oder Beschränkung auf schwere Leib-/Lebensgefahren."
+      ],
+      "candidate_ids_merged": [
+        "K-DOC-097",
+        "K-FACT-078",
+        "K-ADV-089"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "conclusion",
+        "station_path": [
+          "Begründetheit",
+          "Ermessensreduzierung auf Null",
+          "Entschließungsermessen"
+        ]
+      }
+    },
+    {
+      "id": "C-088",
+      "criticality": "must_pass",
+      "title": "Verdichtung des Auswahlermessens",
+      "match_criteria": "ERFÜLLT, wenn die Antwort entweder das Auswahlermessen der ADD auf die begehrte Löschung der konkret beanstandeten Äußerungen reduziert sieht, weil keine gleich wirksame andere Maßnahme ersichtlich ist, oder bei vertretbarer Verneinung der Ermessensreduzierung die Alternativen konsequent im Rahmen eines Bescheidungs- oder Ablehnungsergebnisses behandelt. NICHT ERFÜLLT, wenn sie J eine konkrete Löschungsanordnung zuspricht, obwohl sie gleich wirksame mildere Maßnahmen offenlässt.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md",
+        "documents/auszug-polizeigesetz.md"
+      ],
+      "derived_from_atoms": [
+        "A-108"
+      ],
+      "review_notes": [
+        "Konkrete Löschung verlangt Verdichtung auch beim Mittel."
+      ],
+      "candidate_ids_merged": [
+        "K-DOC-098",
+        "K-FACT-079",
+        "K-ADV-090"
+      ],
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 1
+      },
+      "analysis_tags": {
+        "function": "conclusion",
+        "station_path": [
+          "Begründetheit",
+          "Ermessensreduzierung auf Null",
+          "Auswahlermessen"
+        ]
+      }
+    },
+    {
+      "id": "C-039",
+      "criticality": "must_pass",
+      "title": "Örtliche Zuständigkeit nach § 59 Abs. 6 RStV",
+      "match_criteria": "ERFÜLLT, wenn die Antwort bei der formellen Rechtmäßigkeit oder Zuständigkeit die örtliche Zuständigkeit der zuständigen rheinland-pfälzischen Aufsichtsbehörde/ADD für das Einschreiten gegen den Blogbeitrag aus § 59 Abs. 6 RStV herleitet. Eine bloße Formulierung wie „Die örtliche Zuständigkeit folgt aus § 59 VI RStV“ genügt. NICHT ERFÜLLT, wenn die Antwort die örtliche Zuständigkeit nicht behandelt, sie nur eine sachliche Zuständigkeit nennt, die örtliche Zuständigkeit ohne Bezug zu § 59 Abs. 6 RStV begründet oder wegen der überregionalen Abrufbarkeit des Blogs eine andere Landesbehörde als örtlich zuständig ansieht.",
+      "deliverables": [
+        "fallloesung-sut.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md",
+        "documents/auszug-rundfunkstaatsvertrag.md"
+      ],
+      "derived_from_atoms": [
+        "A-045"
+      ],
+      "review_notes": [],
+      "refinement_note": "Das ursprüngliche Kriterium verlangte zusätzlich die ausdrückliche Begründung über den Wohnsitz des X in M/Rheinland-Pfalz. Die Goldlösung nennt nur § 59 Abs. 6 RStV als Grundlage der örtlichen Zuständigkeit. Die Wohnsitzanforderung wurde daher gestrichen; erhalten bleibt die konkrete Prüfung der örtlichen Zuständigkeit anhand von § 59 Abs. 6 RStV.",
+      "calibration": {
+        "status": "pass",
+        "agreement": "3/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "legal_basis",
+        "station_path": [
+          "Begründetheit",
+          "Formelle Rechtmäßigkeit",
+          "Zuständigkeit"
+        ]
+      }
     }
   ],
   "provenance": {
     "source": "evals/rubric.generated.json",
     "provider": "openai",
-    "model": "gpt-5.5"
+    "model": "gpt-5.5",
+    "candidate_roles": [
+      "doctrine",
+      "fact_grounding",
+      "adversary"
+    ],
+    "calibration": {
+      "enabled": true,
+      "judge_model": "gpt-5.5",
+      "judge_reasoning_effort": "medium",
+      "votes": 3,
+      "max_rounds": 2
+    }
   }
 }

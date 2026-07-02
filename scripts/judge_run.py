@@ -16,9 +16,21 @@ REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Judge a LAB-EU OpenCode run.")
+    parser = argparse.ArgumentParser(description="Judge a LAB-EU harness run.")
     parser.add_argument("run_dir", type=pathlib.Path, help="Run directory containing manifest.json and tasks/.")
     parser.add_argument("--judge-model", default="gpt-5.5")
+    parser.add_argument(
+        "--votes",
+        type=int,
+        default=3,
+        help="Judge votes per criterion (majority decides). Defaults to 3 for headline runs.",
+    )
+    parser.add_argument("--reasoning-effort", default="medium", help="Judge reasoning effort; 'none' omits it.")
+    parser.add_argument(
+        "--adaptive",
+        action="store_true",
+        help="Adaptive voting: 1 vote per criterion, escalate to --votes only on a non-pass first vote.",
+    )
     parser.add_argument("--parallel", type=int, default=1)
     parser.add_argument("--python", default=sys.executable)
     parser.add_argument("--dry-run", action="store_true")
@@ -53,7 +65,13 @@ def judge_one(args: argparse.Namespace, metadata_path: pathlib.Path) -> tuple[pa
         str(submission_dir),
         "--judge-model",
         args.judge_model,
+        "--votes",
+        str(args.votes),
+        "--reasoning-effort",
+        args.reasoning_effort,
     ]
+    if args.adaptive:
+        command.append("--adaptive")
 
     if args.dry_run:
         print(" ".join(command))

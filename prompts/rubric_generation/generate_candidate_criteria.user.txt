@@ -6,14 +6,20 @@ Rules:
 - For German, use "ERFÜLLT, wenn ... NICHT ERFÜLLT, wenn ...".
 - For English, use "PASS if ... FAIL if ...".
 - For French, use "RÉUSSI si ... ÉCHOUÉ si ...".
-- Keep each title, match_criteria, and review note concise.
-- Prefer one legal proposition per criterion.
+- One criterion checks exactly one legal proposition. If describing the check needs "und"/"sowie"/"and" between independently checkable requirements, split it into several criteria. A judge cannot return a partial verdict on a bundle.
+- Each criterion must be self-contained: name the concrete facts, dates, parties, provisions, or conclusions it depends on inside the match_criteria. The judge cannot look them up in the solution.
+- Each criterion must be decidable from the agent answer alone, with the named source documents at most as context.
+- Where an atom records defensible_alternatives, encode them explicitly: the PASS side accepts the main position or one of the named alternative positions, each with the reasoning it requires. Never write vague acceptance such as "oder vertretbar begründet" without naming which alternatives are acceptable and what they must contain.
+- Do not turn atoms with expectation "bonus" into must_pass criteria. Either skip them or include them with criticality "diagnostic" so the pruner can drop them.
+- Do not require a specific document section, ordering, or heading unless the task specifically tests document form. If an atom is marked placement_flexible, the criterion must accept the point wherever it appears in the answer.
+- Do not create aggregate criteria that merely restate the combination of other criteria (for example "the admissibility analysis is overall convincing" or interim-result checks). They double-count errors already caught by the specific criteria.
+- The FAIL side should name the material error modes for this case (wrong action type, missed provision, wrong conclusion), not merely negate the PASS side.
+- Tolerate legally equivalent wording, citation formats, and structure.
 - Include expected facts, legal bases, procedural consequences, and common failure modes where relevant.
-- Tolerate legally equivalent wording and citations.
-- Avoid exact wording dependency unless the task specifically tests a document form.
-- Set criticality to "must_pass" unless the criterion is useful only for diagnostics.
+- Set criticality to "must_pass" unless the criterion is useful only for diagnostics; then use "diagnostic".
 - Use deliverable filenames from task.json when available.
 - Use source filenames from the task bundle when useful.
+- Keep each title, match_criteria, and review note concise.
 
 Return only valid JSON:
 {

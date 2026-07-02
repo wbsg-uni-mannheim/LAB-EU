@@ -8,6 +8,9 @@ Title: {task_title}
 Instructions:
 {task_instructions}
 
+## Source documents (context only - the answer is not required to repeat them)
+{criterion_sources}
+
 ## Agent Answer
 {agent_output}
 
@@ -16,12 +19,19 @@ Instructions:
 
 {match_criteria}
 
-## Instructions
-Return "pass" only if the answer satisfies the criterion in substance. Equivalent legal wording is acceptable. Return "fail" if the required point is missing, materially wrong, or only implied too vaguely to verify.
+## How to decide
+- The criterion text is the only standard. Do not add requirements it does not state, and do not excuse a missing requirement because the rest of the answer is strong.
+- Equivalent legal wording, citation style, and document structure are acceptable unless the criterion itself requires a specific form or location.
+- Search the entire answer; the required point may appear in a different section than expected.
+- If the criterion names acceptable alternative positions, an answer taking one of them passes only if it also contains what the criterion requires for that alternative.
+- First collect evidence: quote the shortest verbatim passages of the answer that bear on the criterion. Then reason from that evidence, then decide.
+- Be conservative. Return "pass" only if the quoted evidence clearly satisfies the criterion in substance. If the required point is missing, materially wrong, contradicted elsewhere in the answer, or only implied too vaguely to verify, return "fail". When in doubt, return "fail".
+- If the required deliverable content is missing or empty, return "fail".
 
-Respond with JSON only:
+Respond with JSON only, with the fields in exactly this order:
 
 {{
-  "verdict": "pass" | "fail",
-  "reasoning": "Brief explanation"
+  "evidence": ["shortest verbatim quotes from the answer that the verdict relies on"],
+  "reasoning": "Brief explanation in the language of the criterion",
+  "verdict": "pass" | "fail"
 }}
