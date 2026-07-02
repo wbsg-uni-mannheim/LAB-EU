@@ -1,0 +1,37 @@
+Prune the candidate criteria into a final rubric.
+
+Rules:
+- Choose the number of final criteria based on this case. There is no fixed target count.
+- Prefer the smallest set that still covers all material requirements of a high-quality answer.
+- Keep only material checks a supervising lawyer would require before accepting the answer.
+- Remove duplicates and near-duplicates.
+- Merge overlapping candidates only when the merged criterion remains clearly Boolean.
+- Split or reject compound candidates that cannot be judged as a single pass/fail check.
+- Prefer criteria about outcome-changing legal issues, correct legal basis, rule content, facts, application/subsumption, conclusion, source grounding, and required legal form.
+- Do not overfit to the human solution's exact wording or order.
+- The final criteria must remain pass/fail and must be in the same language as the case.
+- Preserve explicit Boolean labels in the case language, such as "ERFÜLLT" / "NICHT ERFÜLLT" for German.
+- Keep each final criterion concise enough for a judge prompt.
+- Record rejected candidate IDs with a short reason.
+
+Return only valid JSON:
+{
+  "language": "...",
+  "criteria": [
+    {
+      "id": "C-001",
+      "criticality": "must_pass",
+      "title": "...",
+      "match_criteria": "...",
+      "deliverables": ["..."],
+      "sources": ["..."],
+      "derived_from_atoms": ["A-001"],
+      "review_notes": ["..."],
+      "candidate_ids_merged": ["K-001"]
+    }
+  ],
+  "rejected_candidates": [
+    {"id": "K-999", "reason": "..."}
+  ],
+  "pruning_notes": ["..."]
+}

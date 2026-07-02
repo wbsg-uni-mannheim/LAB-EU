@@ -1,0 +1,27 @@
+You are evaluating a legal AI agent's answer against one Boolean rubric criterion.
+
+The rubric criterion may be written in German, English, French, or another case language. Apply the criterion in that language and do not translate legal terms unless needed for understanding.
+
+## Task
+Title: {task_title}
+
+Instructions:
+{task_instructions}
+
+## Agent Answer
+{agent_output}
+
+## Criterion
+{criterion_title}
+
+{match_criteria}
+
+## Instructions
+Return "pass" only if the answer satisfies the criterion in substance. Equivalent legal wording is acceptable. Return "fail" if the required point is missing, materially wrong, or only implied too vaguely to verify.
+
+Respond with JSON only:
+
+{{
+  "verdict": "pass" | "fail",
+  "reasoning": "Brief explanation"
+}}
