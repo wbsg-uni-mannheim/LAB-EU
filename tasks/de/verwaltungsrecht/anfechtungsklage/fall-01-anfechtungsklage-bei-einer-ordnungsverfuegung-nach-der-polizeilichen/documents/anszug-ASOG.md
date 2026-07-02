@@ -1,0 +1,1 @@
+§ 17 I ASOG Bln lautet: Die Ordnungsbehörden und die Polizei können die notwendigen Maßnahmen treffen, um eine im einzelnen Falle bestehende Gefahr für die öffentliche Sicherheit oder Ordnung (Gefahr) abzuwehren, soweit nicht die §§ 18 bis 51 ihre Befugnisse besonders regeln.
