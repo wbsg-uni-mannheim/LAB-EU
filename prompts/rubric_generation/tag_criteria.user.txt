@@ -1,0 +1,28 @@
+Tag every criterion on two axes.
+
+Axis 1 - function: exactly one of these fixed values, describing the kind of legal work the criterion checks. The values follow the Gutachtenstil / syllogisme juridique steps plus structure and form:
+
+- "structure": Prüfungsaufbau, ordering, required analytical structure
+- "legal_basis": identifying the correct provision, Anspruchsgrundlage, or Ermächtigungsgrundlage
+- "rule_statement": stating the correct definition, test, or legal standard
+- "application": Subsumtion of the concrete case facts under a rule
+- "argumentation": weighing, counterarguments, contested points, Problembewusstsein
+- "conclusion": results, legal consequences, interim and final outcomes
+- "form_citation": document form, style, or citation requirements
+
+Axis 2 - station_path: where the criterion belongs in this case's own examination structure, as a path of one to three labels in the case language, using the conventional station names of the relevant procedure. Examples for a German public-law case: ["Zulässigkeit", "Klagebefugnis"] or ["Begründetheit", "Materielle Rechtmäßigkeit", "Verhältnismäßigkeit"]. Derive the stations from the atomization and the criteria themselves; do not invent stations foreign to the case.
+
+Rules:
+- Return exactly one tag entry per criterion id. Do not return entries for ids that do not exist.
+- If several functions could apply, choose the dominant one.
+- Keep top-level station labels consistent across all criteria so results can be grouped: use exactly one spelling per station.
+- Tags are non-scoring analysis metadata. Never rewrite, merge, or judge the criteria.
+
+Return only valid JSON:
+{
+  "language": "...",
+  "tags": [
+    {"id": "C-001", "function": "application", "station_path": ["Zulässigkeit", "Klagebefugnis"]}
+  ],
+  "tagging_notes": ["..."]
+}

@@ -42,14 +42,19 @@ Important `task.json` fields:
 See [docs/rubric-generation.md](docs/rubric-generation.md) for the proposed workflow for deriving Boolean rubrics from human solutions.
 Active prompt templates live under [prompts/](prompts/README.md), separated from code for legal review.
 
-To generate a draft rubric for a task:
+To generate a calibrated draft rubric for a task (three generator roles, then a
+judge/refine calibration loop against the gold solution):
 
 ```bash
 env/bin/python scripts/generate_rubric.py <task-dir> --model gpt-5.5 --write-final
 ```
 
-To evaluate an answer against `evals/rubric.json`:
+To evaluate an answer against `evals/rubric.json` (use `--votes 3` for headline runs):
 
 ```bash
-env/bin/python -m evaluation.run <task-dir> <answer-file> --judge-model gpt-5.5
+env/bin/python -m evaluation.run <task-dir> <answer-file> --judge-model gpt-5.5 --votes 3
 ```
+
+See [scripts/README.md](scripts/README.md) for the OpenCode agent harness and the
+single-LLM-call baseline, and [docs/leakage-and-contamination.md](docs/leakage-and-contamination.md)
+for the planned contamination controls.

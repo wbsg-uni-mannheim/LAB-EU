@@ -34,6 +34,8 @@ Die ADD hält die Klage bereits für unzulässig. J habe das Widerspruchsverfahr
 
 ## Solution
 
+@Hussain: Please complete. (completed manually, other chapters will be scraped starting today!)
+
 # Lösungsgliederung
 
 ## A. Zulässigkeit
@@ -349,150 +351,890 @@ Die Klage ist zulässig und begründet und hat somit Aussicht auf Erfolg.
 
 ## Rubrics For Review
 
-Generated at: `2026-07-01T09:51:38.688653+00:00`  
+**Generated at:** 2026-07-02T10:32:20.533545+00:00
 
-Review status: `generated_needs_human_review`  
+**Review status:** generated_calibrated_needs_human_review
 
-Language: `de`  
+**Language:** de
 
-Number of criteria: `14`
+**Number of criteria:** 88
 
-### C-001 - Prüfungsaufbau der Erfolgsaussichten
-
-**Match criteria**
-
-ERFÜLLT, wenn die Antwort die Erfolgsaussichten der Klage anhand von Zulässigkeit und Begründetheit im verwaltungsrechtlichen Gutachten- oder Anspruchsaufbau prüft. NICHT ERFÜLLT, wenn sie nur ergebnisorientiert oder ausschließlich materiell-rechtlich argumentiert.
-
-**Review notes**
-
-- Die genaue Reihenfolge ist nicht entscheidend.
-
-### C-002 - Statthafte Verpflichtungsklage im Verwaltungsrechtsweg
+### C-001 - § 40 Abs. 1 Satz 1 VwGO als Ausgangspunkt
 
 **Match criteria**
 
-ERFÜLLT, wenn der Verwaltungsrechtsweg nach § 40 Abs. 1 Satz 1 VwGO bejaht und die Klage als Verpflichtungsklage nach § 42 Abs. 1 Alt. 2 VwGO auf Erlass einer Löschungsanordnung als Verwaltungsakt eingeordnet wird. NICHT ERFÜLLT, wenn eine unpassende Klageart oder ein anderer Rechtsweg tragend zugrunde gelegt wird.
+ERFÜLLT, wenn die Antwort den Verwaltungsrechtsweg für Js Klage mangels aufdrängender Sonderzuweisung nach § 40 Abs. 1 Satz 1 VwGO prüft. NICHT ERFÜLLT, wenn sie den Rechtsweg ohne § 40 Abs. 1 Satz 1 VwGO bestimmt oder wegen des Ehrschutzbezugs allein den Zivilrechtsweg annimmt.
 
 **Review notes**
 
-- Versagungsgegenklage und Verwaltungsaktqualität müssen in der Sache erkannt werden.
+- (none)
 
-### C-003 - Klagebefugnis und subjektiver Schutz der J
+### C-002 - Öffentlich-rechtliche Streitigkeit
 
 **Match criteria**
 
-ERFÜLLT, wenn J nach § 42 Abs. 2 VwGO als klagebefugt behandelt wird, weil nach der Schutznormtheorie ein subjektiver Anspruch auf ermessensfehlerfreie Entscheidung oder Einschreiten aus individualschützenden ordnungsrechtlichen Normen möglich ist und J persönlich in Ehre oder Persönlichkeitsrecht betroffen ist. NICHT ERFÜLLT, wenn jeder subjektive Schutz trotz persönlicher Betroffenheit pauschal verneint wird.
+ERFÜLLT, wenn die Antwort die Streitigkeit um ein Einschreiten der ADD gegen X als öffentlich-rechtlich einordnet, weil § 59 Abs. 3 RStV oder § 9 Abs. 1 POG Hoheitsträger als solche berechtigen oder verpflichten. NICHT ERFÜLLT, wenn sie die Streitigkeit wegen der Persönlichkeitsrechtsverletzung als rein privatrechtlich behandelt.
 
 **Review notes**
 
-- Eine tragfähige Herleitung über § 9 POG genügt.
+- (none)
 
-### C-004 - Vorverfahren und Wiedereinsetzung
+### C-003 - Keine verfassungsrechtliche Streitigkeit und keine abdrängende Sonderzuweisung
 
 **Match criteria**
 
-ERFÜLLT, wenn das erforderliche Widerspruchsverfahren geprüft wird, der Widerspruch vom 07.03.2019 nach Fristende am 06.03.2019 als verspätet erkannt wird, § 60 VwGO über § 70 Abs. 2 VwGO angewandt wird und Wiedereinsetzung wegen unverschuldeten Unfalls einschließlich fehlenden Elternverschuldens sowie rechtzeitiger Nachholung ohne ausdrücklichen Antrag berücksichtigt wird. NICHT ERFÜLLT, wenn die Klage wegen der Fristversäumung endgültig scheitern soll oder der Widerspruch ohne Wiedereinsetzung als fristgerecht behandelt wird.
+ERFÜLLT, wenn die Antwort den Verwaltungsrechtsweg nicht an einer verfassungsrechtlichen Streitigkeit oder einer abdrängenden Sonderzuweisung scheitern lässt, insbesondere weil keine doppelte Verfassungsunmittelbarkeit vorliegt. NICHT ERFÜLLT, wenn sie ohne tragfähige Begründung eine Verfassungsstreitigkeit oder eine abdrängende Sonderzuweisung annimmt.
 
 **Review notes**
 
-- Die fehlende positive Wiedereinsetzungsentscheidung der Widerspruchsbehörde darf nicht als zwingendes Hindernis behandelt werden.
+- (none)
 
-### C-005 - Weitere prozessuale Anforderungen
+### C-004 - Klagebegehren Löschungsanordnung
 
 **Match criteria**
 
-ERFÜLLT, wenn das Land Rheinland-Pfalz als richtiger Klagegegner, die wirksame Vertretung der minderjährigen J durch ihre Eltern, die frist- und formgerechte Klageerhebung sowie die notwendige Beiladung des X wegen der ihn belastenden begehrten Verfügung zutreffend behandelt werden. NICHT ERFÜLLT, wenn die Klage aus einem dieser Punkte ohne tragfähige Grundlage als unzulässig angesehen oder X fälschlich als Beklagter behandelt wird.
+ERFÜLLT, wenn die Antwort Js Begehren als Erlass einer Löschungsanordnung der ADD gegen X wegen der beanstandeten Blogäußerungen bestimmt. NICHT ERFÜLLT, wenn sie nur eine Anfechtung des Blogbeitrags, eine bloße Feststellung oder eine zivilrechtliche Unterlassungsklage gegen X zugrunde legt.
 
 **Review notes**
 
-- Eine knappe Behandlung genügt.
+- (none)
 
-### C-006 - Begründetheitsmaßstab und Anspruchsvoraussetzung
+### C-005 - Löschungsanordnung als Verwaltungsakt
 
 **Match criteria**
 
-ERFÜLLT, wenn die Antwort § 113 Abs. 5 VwGO oder einen gleichwertigen Anspruchsmaßstab verwendet und erkennt, dass J die konkrete Löschungsanordnung nur verlangen kann, wenn diese rechtmäßig wäre und das behördliche Ermessen entsprechend reduziert ist. NICHT ERFÜLLT, wenn aus jeder Gefahr automatisch ein Anspruch auf die gewünschte Maßnahme abgeleitet oder der Anspruch der J gar nicht geprüft wird.
+ERFÜLLT, wenn die Antwort die begehrte Löschungsanordnung gegenüber X als Verwaltungsakt im Sinne von § 35 Satz 1 VwVfG einordnet, etwa als hoheitliche Einzelfallregelung mit Außenwirkung. NICHT ERFÜLLT, wenn sie die Verwaltungsaktqualität verneint oder die Anordnung nur als schlichtes Verwaltungshandeln behandelt.
 
 **Review notes**
 
-- Ein Anspruchsaufbau ist einem Bescheidaufbau gleichwertig.
+- (none)
 
-### C-007 - Ermächtigungsgrundlage, Telemedienbezug und Zuständigkeit
+### C-006 - Statthafte Verpflichtungsklage
 
 **Match criteria**
 
-ERFÜLLT, wenn der Blog als Telemedium behandelt, Jugendmedienschutzrecht ausgeklammert, das Verhältnis von § 59 Abs. 3 RStV zu § 9 POG problematisiert und eine tragfähige Ermächtigungsgrundlage sowie Zuständigkeit der ADD fallbezogen begründet werden. NICHT ERFÜLLT, wenn mangels Spezialermächtigung jede Befugnis verneint, § 59 RStV als vollständige Sperre behandelt oder die ADD wegen nicht fallbezogener Zuständigkeitsüberlegungen abgelehnt wird.
+ERFÜLLT, wenn die Antwort als statthafte Klageart die Verpflichtungsklage nach § 42 Abs. 1 Alt. 2 VwGO in Form der Versagungsgegenklage nennt. NICHT ERFÜLLT, wenn sie Anfechtungs-, Leistungs- oder Feststellungsklage als statthaft ansieht.
 
 **Review notes**
 
-- Vertretbar ist entweder der Rückgriff auf § 9 POG oder eine sauber begründete Anwendung von § 59 Abs. 3 RStV.
+- (none)
 
-### C-008 - Zivilrechtsweg sperrt ordnungsbehördliches Einschreiten nicht
+### C-007 - Klagebefugnis als Möglichkeit eigener Rechtsverletzung
 
 **Match criteria**
 
-ERFÜLLT, wenn die Möglichkeit zivilgerichtlichen Rechtsschutzes das ordnungsbehördliche Einschreiten hier nicht ausschließt, weil wegen möglicher Strafrechtsverstöße öffentliche Interessen und die öffentliche Sicherheit betroffen sind. NICHT ERFÜLLT, wenn die Sache als rein private Ehrstreitigkeit behandelt und die Klage allein auf den Zivilrechtsweg verwiesen wird.
+ERFÜLLT, wenn die Antwort bei § 42 Abs. 2 VwGO prüft, ob J durch die Ablehnung der Löschungsanordnung möglicherweise in eigenen subjektiven Rechten verletzt ist. NICHT ERFÜLLT, wenn sie eine Popularklage genügen lässt oder die Klagebefugnis nur auf ein allgemeines Interesse an rechtmäßiger Verwaltung stützt.
 
 **Review notes**
 
-- Die Prüfung kann bei Zuständigkeit, Gefahr oder Ermessen erfolgen.
+- (none)
 
-### C-009 - Rechtswidrigkeit der Blogäußerungen
+### C-008 - Schutznormtheorie
 
 **Match criteria**
 
-ERFÜLLT, wenn die Antwort die öffentliche Sicherheit als Schutz der Rechtsordnung und Individualrechtsgüter erfasst, die Schimpfworte einschließlich „nicht lebenswert“ als Beleidigung, Schmähkritik bzw. menschenwürderelevanten Angriff ohne durchgreifenden Schutz aus Art. 5 GG einordnet und die Schulverweisbehauptung als wissentlich unwahre ehrverletzende Tatsachenbehauptung im Sinne von § 187 StGB behandelt. NICHT ERFÜLLT, wenn die Äußerungen insgesamt als zulässige Meinung oder rechtlich unbeachtliche Kritik gewertet werden.
+ERFÜLLT, wenn die Antwort die subjektiv-rechtliche Wirkung von § 9 Abs. 1 POG oder § 59 Abs. 3 RStV nach der Schutznormtheorie beurteilt. NICHT ERFÜLLT, wenn sie aus jeder Eingriffsbefugnis automatisch einen Individualanspruch ableitet oder die Drittschutzfrage überspringt.
 
 **Review notes**
 
-- Der fehlende Sachbezug zu Js politischem Engagement muss in der Schmähkritikprüfung verwertet werden.
+- (none)
 
-### C-010 - Gefahr, Störung und Verantwortlichkeit des X
+### C-009 - Drittschutz des § 9 Abs. 1 POG
 
 **Match criteria**
 
-ERFÜLLT, wenn wegen der bereits online abrufbaren strafbaren und ehrverletzenden Inhalte eine polizeirechtliche Gefahr bzw. Störung bejaht und X als Handlungsstörer sowie Verantwortlicher für eigene Bloginhalte behandelt wird. NICHT ERFÜLLT, wenn eine Gefahr mangels zukünftigen Schadens oder Xs Verantwortlichkeit wegen Telemedienhaftungsprivilegien verneint wird.
+ERFÜLLT, wenn die Antwort erkennt, dass § 9 Abs. 1 POG individualschützend wirken kann, weil die öffentliche Sicherheit auch Individualrechtsgüter wie Ehre oder Persönlichkeitsrecht schützt. NICHT ERFÜLLT, wenn sie § 9 Abs. 1 POG pauschal als ausschließlich objektiv-rechtlich behandelt.
 
 **Review notes**
 
-- § 7 Abs. 1 TMG oder der Gedanke eigener Inhalte genügt.
+- (none)
 
-### C-011 - Verhältnismäßigkeit der Löschungsanordnung
+### C-010 - Drittschutz des medienrechtlichen Ehrschutzes
 
 **Match criteria**
 
-ERFÜLLT, wenn die Löschungsanordnung als Maßnahme des Auswahlermessens am Verhältnismäßigkeitsgrundsatz gemessen, mit dem Schutz vor Beleidigung, Verleumdung und Persönlichkeitsrechtsverletzung legitimiert, als geeignet und erforderlich behandelt und auf die konkret rechtswidrigen Passagen begrenzt wird. NICHT ERFÜLLT, wenn die Löschung ohne Verhältnismäßigkeitsprüfung bejaht oder pauschal der gesamte Blog als zu löschen angesehen wird.
+ERFÜLLT, wenn die Antwort § 59 Abs. 3 RStV jedenfalls als möglicherweise individualschützend behandelt, soweit gesetzliche Bestimmungen zum Schutz der persönlichen Ehre durchgesetzt werden sollen. NICHT ERFÜLLT, wenn sie den Ehrschutzbezug ohne Begründung als ausschließlich allgemeinwohlbezogen einordnet.
 
 **Review notes**
 
-- Gegendarstellung oder Zugangsbeschränkung dürfen nur bei gleicher Wirksamkeit als milderes Mittel genügen.
+- (none)
 
-### C-012 - Grundrechtsabwägung bei der Angemessenheit
+### C-011 - J als geschützte Betroffene
 
 **Match criteria**
 
-ERFÜLLT, wenn die Meinungsfreiheit des X und die Informationsfreiheit der Leser berücksichtigt, aber wegen Schmähkritik, unwahrer Tatsachenbehauptung, Menschenwürdebezug, Js Persönlichkeitsrecht und ihrer Minderjährigkeit als nachrangig bewertet werden; Js öffentliches Engagement darf nicht als Freibrief für persönliche Diffamierungen behandelt werden. NICHT ERFÜLLT, wenn Art. 5 GG oder Leserinteressen pauschal absoluten Vorrang erhalten.
+ERFÜLLT, wenn die Antwort J als zum geschützten Personenkreis gehörend ansieht, weil X die Blogäußerungen namentlich gegen J gerichtet hat. NICHT ERFÜLLT, wenn sie J trotz Namensnennung nur als mittelbar oder gar nicht betroffen behandelt.
 
 **Review notes**
 
-- Eine knappe, aber konkrete Abwägung genügt.
+- (none)
 
-### C-013 - Ermessensreduzierung auf Null
+### C-012 - Konkrete Löschung nur bei Ermessensreduzierung
 
 **Match criteria**
 
-ERFÜLLT, wenn das Entschließungs- und Auswahlermessen geprüft und eine Ermessensreduzierung auf Null anhand staatlicher Schutzpflichten, Schwere der Menschenwürde- und Persönlichkeitsrechtsverletzung, möglichem Zivilrechtsweg als Gegenargument, geringem behördlichen und adressatenbezogenen Aufwand sowie fehlender gleich wirksamer milderer Mittel begründet oder vertretbar verneint wird. NICHT ERFÜLLT, wenn ohne Abwägung stets oder nie eine Pflicht zum Einschreiten angenommen wird.
+ERFÜLLT, wenn die Antwort erkennt, dass J die konkrete Löschungsanordnung wegen des behördlichen Ermessens aus § 9 Abs. 1 POG oder § 59 Abs. 3 RStV nur bei Ermessensreduzierung auf Null verlangen kann; bei fortbestehendem Ermessen kommt allenfalls ein Bescheidungsanspruch in Betracht. NICHT ERFÜLLT, wenn sie trotz fortbestehenden Ermessens unmittelbar einen gebundenen Anspruch auf genau die Löschung annimmt.
 
 **Review notes**
 
-- Die Musterlösung bejaht den Vornahmeanspruch; ein bloßer Bescheidungsanspruch ist nur bei tragfähiger Gegenansicht vertretbar.
+- (none)
 
-### C-014 - Anspruch und Gesamtergebnis
+### C-013 - Erforderlichkeit des Vorverfahrens
 
 **Match criteria**
 
-ERFÜLLT, wenn die Antwort konsistent zu dem Ergebnis kommt, dass J nach der Hauptlösung einen Anspruch auf Erlass der Löschungsanordnung hat und die Klage Aussicht auf Erfolg hat, oder bei vertretbarer Gegenansicht zumindest einen Bescheidungsanspruch und entsprechende teilweise Erfolgsaussichten klar ausweist. NICHT ERFÜLLT, wenn jeder Anspruch und die Erfolgsaussichten ohne tragfähige Begründung verneint werden.
+ERFÜLLT, wenn die Antwort wegen der Ablehnung des beantragten Verwaltungsakts ein Vorverfahren nach § 68 Abs. 1 und 2 VwGO verlangt. NICHT ERFÜLLT, wenn sie das Widerspruchsverfahren ohne einschlägige Ausnahme für entbehrlich hält.
 
 **Review notes**
 
-- Das Ergebnis muss zu Zulässigkeit, Eingriffsbefugnis, Rechtswidrigkeit der Äußerungen und Ermessensprüfung passen.
+- (none)
+
+### C-014 - Ende der Widerspruchsfrist
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort aus der Bekanntgabe des Ablehnungsbescheids am 06.02.2019 das Ende der einmonatigen Widerspruchsfrist auf den 06.03.2019 berechnet. NICHT ERFÜLLT, wenn sie ein anderes Fristende zugrunde legt, nach dem der Widerspruch vom 07.03.2019 fristgerecht wäre.
+
+**Review notes**
+
+- (none)
+
+### C-015 - Verspäteter Widerspruch
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort feststellt, dass der am 07.03.2019 eingelegte Widerspruch die Monatsfrist des § 70 Abs. 1 VwGO um einen Tag verfehlt hat. NICHT ERFÜLLT, wenn sie den Widerspruch ohne Wiedereinsetzung als fristgerecht behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-016 - Wiedereinsetzung im Widerspruchsverfahren
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort § 60 VwGO über § 70 Abs. 2 VwGO auf die versäumte Widerspruchsfrist anwendet. NICHT ERFÜLLT, wenn sie Wiedereinsetzung für Widerspruchsfristen generell ausschließt.
+
+**Review notes**
+
+- (none)
+
+### C-017 - Unverschuldeter Unfall der J
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort den unverschuldeten Verkehrsunfall der J auf dem Weg zum Briefkasten als unverschuldetes Hindernis im Sinne von § 60 Abs. 1 VwGO bewertet. NICHT ERFÜLLT, wenn sie J trotz dieses Unfalls eigenes Verschulden an der Fristversäumung zuschreibt.
+
+**Review notes**
+
+- (none)
+
+### C-018 - Kein zurechenbares Elternverschulden
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort berücksichtigt, dass auch Js Eltern als gesetzliche Vertreter unverschuldet an der Widerspruchseinlegung gehindert waren. NICHT ERFÜLLT, wenn sie die Wiedereinsetzung wegen angeblichen Vertreterverschuldens ablehnt, ohne die unverschuldete Verhinderung der Eltern zu würdigen.
+
+**Review notes**
+
+- (none)
+
+### C-019 - Entbehrlicher Wiedereinsetzungsantrag
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort erklärt, dass ein ausdrücklicher Wiedereinsetzungsantrag nach § 60 Abs. 2 Satz 4 VwGO entbehrlich ist, wenn die versäumte Rechtshandlung innerhalb der Antragsfrist nachgeholt wird. NICHT ERFÜLLT, wenn sie Wiedereinsetzung allein wegen fehlenden ausdrücklichen Antrags verweigert.
+
+**Review notes**
+
+- (none)
+
+### C-020 - Rechtzeitige Nachholung am 07.03.2019
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort den am 07.03.2019 nach Wegfall des Hindernisses eingelegten Widerspruch als rechtzeitige Nachholung innerhalb der Zweiwochenfrist des § 60 Abs. 2 VwGO behandelt. NICHT ERFÜLLT, wenn sie die Nachholung als verspätet ansieht, obwohl J laut Sachverhalt erst am 07.03.2019 wieder handeln konnte.
+
+**Review notes**
+
+- (none)
+
+### C-021 - Gerichtliche Berücksichtigung der Wiedereinsetzung
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort entweder annimmt, dass das Verwaltungsgericht die Voraussetzungen des § 60 VwGO trotz fehlender positiver behördlicher Wiedereinsetzungsentscheidung im Rahmen der Zulässigkeit berücksichtigen darf, oder ausdrücklich die Gegenansicht wählt, dass nur die Widerspruchsbehörde über die Wiedereinsetzung bezüglich der Widerspruchsfrist entscheiden könne, und daraus eine prozessual folgerichtige Konsequenz zieht. NICHT ERFÜLLT, wenn sie die Zurückweisung des Widerspruchs als unzulässig ungeprüft übernimmt oder die Kompetenzfrage widersprüchlich behandelt.
+
+**Review notes**
+
+- Die Gegenansicht muss ausdrücklich benannt und konsequent durchgeführt werden.
+
+### C-022 - Richtiger Klagegegner
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort das Land Rheinland-Pfalz als richtigen Klagegegner beziehungsweise Rechtsträger der ADD nach § 78 Abs. 1 Nr. 1 VwGO nennt. NICHT ERFÜLLT, wenn sie X oder die ADD als alleinigen Rechtsträger der Verpflichtungsklage behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-023 - Beteiligungsfähigkeit der J
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die 16-jährige J als natürliche Person als beteiligungsfähig im Verwaltungsprozess behandelt. NICHT ERFÜLLT, wenn sie J die Beteiligungsfähigkeit allein wegen ihrer Minderjährigkeit abspricht.
+
+**Review notes**
+
+- (none)
+
+### C-024 - Prozessvertretung der minderjährigen J
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort erkennt, dass J als Minderjährige jedenfalls durch ihre Eltern als gesetzliche Vertreter nach § 1629 Abs. 1 BGB wirksam prozessual handeln kann. NICHT ERFÜLLT, wenn sie die Klage wegen Minderjährigkeit der J trotz elterlicher Vertretung als unzulässig ansieht.
+
+**Review notes**
+
+- (none)
+
+### C-025 - Klagefrist nach Widerspruchsbescheid
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die zwei Tage nach Erhalt des Widerspruchsbescheids erhobene Klage als fristgerecht nach § 74 Abs. 1 und 2 VwGO behandelt. NICHT ERFÜLLT, wenn sie die verwaltungsgerichtliche Klage ohne tragfähige Berechnung als verspätet ansieht.
+
+**Review notes**
+
+- (none)
+
+### C-026 - Notwendige Beiladung des X
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort X nach § 65 Abs. 2 VwGO als notwendig beizuladenden Dritten behandelt, weil J den Erlass eines an X gerichteten belastenden Verwaltungsakts begehrt. NICHT ERFÜLLT, wenn sie die unmittelbare rechtliche Betroffenheit des X durch eine Löschungsanordnung übersieht.
+
+**Review notes**
+
+- (none)
+
+### C-027 - Begründetheitsmaßstab der Verpflichtungsklage
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort § 113 Abs. 5 Satz 1 VwGO zugrunde legt und fragt, ob J einen spruchreifen Anspruch auf Erlass der Löschungsanordnung gegen X hat. NICHT ERFÜLLT, wenn sie nur die Rechtmäßigkeit des Ablehnungsbescheids nach Anfechtungsklagelogik prüft.
+
+**Review notes**
+
+- (none)
+
+### C-028 - Rechtmäßigkeit der begehrten Löschungsverfügung
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort erkennt, dass J nur den Erlass einer Löschungsanordnung verlangen kann, die gegenüber X rechtmäßig ergehen dürfte. NICHT ERFÜLLT, wenn sie einen Anspruch auf Erlass eines rechtswidrigen Verwaltungsakts für möglich hält.
+
+**Review notes**
+
+- (none)
+
+### C-029 - Blog des X als Telemedium
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort den Blog des X entsprechend dem Bearbeitungshinweis als Telemedium im Sinne der §§ 54 ff. RStV behandelt. NICHT ERFÜLLT, wenn sie die Anwendbarkeit der Telemedienvorschriften mit der Begründung ablehnt, der Blog sei kein Telemedium.
+
+**Review notes**
+
+- (none)
+
+### C-030 - § 59 Abs. 3 RStV als mögliche Aufsichtsbefugnis
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort § 59 Abs. 3 Satz 1 RStV zumindest als mögliche medienaufsichtsrechtliche Ermächtigungsgrundlage für erforderliche Maßnahmen gegenüber dem Anbieter eines Telemediums prüft. NICHT ERFÜLLT, wenn sie § 59 Abs. 3 RStV trotz Telemedienbezugs überhaupt nicht in Betracht zieht.
+
+**Review notes**
+
+- (none)
+
+### C-031 - Ehrschutzpflicht aus § 54 Abs. 1 Satz 3 RStV
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort § 54 Abs. 1 Satz 3 RStV als Pflicht von Telemedien zur Einhaltung allgemeiner Gesetze und gesetzlicher Bestimmungen zum Schutz der persönlichen Ehre nennt. NICHT ERFÜLLT, wenn sie den medienrechtlichen Ehrschutzbezug der Blogäußerungen verkennt oder einer falschen Norm zuschreibt.
+
+**Review notes**
+
+- (none)
+
+### C-032 - Ausschluss des § 54 RStV in § 59 Abs. 3 RStV
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort entweder aus dem Wortlaut des § 59 Abs. 3 RStV herleitet, dass Verstöße gegen § 54 RStV nicht erfasst sind und § 59 Abs. 3 RStV deshalb für die hier allein gerügten Ehrschutz- und Strafgesetzverstöße nicht unmittelbar trägt, oder ausdrücklich die Gegenansicht wählt, dass der Ausschluss des gesamten § 54 RStV als Redaktionsversehen teleologisch zu korrigieren sei, und § 59 Abs. 3 RStV dann konsistent anwendet. NICHT ERFÜLLT, wenn sie § 59 Abs. 3 RStV ohne Auseinandersetzung mit dem Ausschluss des § 54 RStV unmittelbar anwendet.
+
+**Review notes**
+
+- Zulässige Alternative ist nur die ausdrücklich begründete Redaktionsversehenslösung.
+
+### C-033 - Keine Sperrwirkung nach § 59 Abs. 3 Satz 7 RStV
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort § 59 Abs. 3 Satz 7 RStV dahin versteht, dass Befugnisse der Aufsichtsbehörden zur Durchsetzung allgemeiner Gesetze und Ehrschutzgesetze unberührt bleiben. NICHT ERFÜLLT, wenn sie aus § 59 RStV eine vollständige Sperre ordnungsrechtlicher Befugnisse gegen ehrverletzende Telemedieninhalte ableitet.
+
+**Review notes**
+
+- (none)
+
+### C-034 - Rückgriff auf die ordnungsbehördliche Generalklausel
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort bei fehlender spezialgesetzlicher Sperrwirkung für ehrverletzende Telemedieninhalte den Rückgriff auf § 9 Abs. 1 POG Rheinland-Pfalz zulässt. NICHT ERFÜLLT, wenn sie wegen fehlender unmittelbarer Anwendbarkeit von § 59 Abs. 3 RStV jede Ermächtigungsgrundlage verneint, obwohl § 59 Abs. 3 Satz 7 RStV andere Befugnisse unberührt lässt.
+
+**Review notes**
+
+- (none)
+
+### C-035 - § 9 Abs. 2 POG bei medienaufsichtlicher Aufgabe
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort § 9 Abs. 2 POG heranzieht, weil der ADD durch § 59 Abs. 2 RStV eine Überwachungsaufgabe übertragen ist und der RStV für die hier betroffene Ehrschutzdurchsetzung keine abschließende Befugnis regelt. NICHT ERFÜLLT, wenn sie die Anwendung des POG allein deshalb ablehnt, weil die Aufgabe aus dem RStV stammt.
+
+**Review notes**
+
+- (none)
+
+### C-036 - ADD als Landesordnungsbehörde
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die ADD als Landesordnungsbehörde im Sinne von § 89 Abs. 3 POG behandelt, der § 9 Abs. 1 POG grundsätzlich zur Verfügung steht. NICHT ERFÜLLT, wenn sie § 9 Abs. 1 POG allein deshalb ablehnt, weil die ADD keine Polizeibehörde im engeren Sinne sei.
+
+**Review notes**
+
+- (none)
+
+### C-037 - Einschlägige Ermächtigungsgrundlage
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort entweder § 9 Abs. 1 POG Rheinland-Pfalz als maßgebliche Ermächtigungsgrundlage für die Löschungsanordnung gegen X benennt oder bei ausdrücklich begründeter Redaktionsversehens-Gegenansicht § 59 Abs. 3 RStV als Spezialbefugnis konsistent zugrunde legt. NICHT ERFÜLLT, wenn sie eine frei erfundene Eingriffsbefugnis oder nur zivilrechtliche Anspruchsgrundlagen als behördliche Ermächtigung verwendet.
+
+**Review notes**
+
+- Akzeptiert nur die benannten Alternativen.
+
+### C-038 - Sachliche Zuständigkeit der ADD
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die sachliche Zuständigkeit der ADD im Fall aus § 3 Abs. 1 des rheinland-pfälzischen Landesgesetzes zu dem Staatsvertrag über den Rundfunk im vereinten Deutschland oder aus der entsprechenden Sachverhaltsvorgabe herleitet. NICHT ERFÜLLT, wenn sie die ADD trotz Fallvorgabe, etwa wegen einer tatsächlich später geänderten Zuständigkeit, als sachlich unzuständig behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-040 - Privatrechtsklausel des § 1 Abs. 3 POG
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort § 1 Abs. 3 POG als Maßstab dafür nennt, dass Ordnungsbehörden private Rechte grundsätzlich nur subsidiär schützen, wenn gerichtlicher Schutz nicht rechtzeitig zu erlangen ist und ohne behördliche Hilfe die Rechtsverwirklichung vereitelt oder wesentlich erschwert würde. NICHT ERFÜLLT, wenn sie den Einwand der ADD, J müsse zivilgerichtlich gegen X vorgehen, rechtlich nicht einordnet.
+
+**Review notes**
+
+- (none)
+
+### C-041 - Grundsätzlich möglicher Zivilrechtsschutz
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort erkennt, dass J gegen X wegen der Blogäußerungen grundsätzlich zivilgerichtlichen Rechtsschutz mit Aussicht auf Erfolg suchen könnte. NICHT ERFÜLLT, wenn sie J ohne Begründung jede zivilrechtliche Schutzmöglichkeit abspricht.
+
+**Review notes**
+
+- (none)
+
+### C-042 - Strafrechtsverstoß als Ausnahme vom Privatrechtsvorrang
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort ausführt, dass der Vorrang zivilgerichtlichen Rechtsschutzes nach § 1 Abs. 3 POG hier nicht durchgreift, sofern X durch die Äußerungen zugleich Strafgesetze wie § 185 StGB oder § 187 StGB verletzt. NICHT ERFÜLLT, wenn sie behördliches Einschreiten allein wegen möglicher Zivilklage ausschließt, ohne die strafrechtliche Dimension zu berücksichtigen.
+
+**Review notes**
+
+- (none)
+
+### C-043 - Objektiver Straftatbestand genügt ordnungsrechtlich
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort für die ordnungsrechtliche Ausnahme von § 1 Abs. 3 POG die Verwirklichung des objektiven Tatbestands eines Strafgesetzes genügen lässt und die Einordnung der §§ 185, 187 StGB als Antragsdelikte nicht als Sperre ansieht. NICHT ERFÜLLT, wenn sie behördliches Einschreiten allein mangels Strafantrags ausschließt.
+
+**Review notes**
+
+- (none)
+
+### C-044 - Begriff der öffentlichen Sicherheit
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die öffentliche Sicherheit im Rahmen von § 9 Abs. 1 POG als Schutz der geschriebenen Rechtsordnung und der Individualrechtsgüter versteht. NICHT ERFÜLLT, wenn sie Ehrverletzungen und Strafrechtsverstöße von vornherein aus dem Schutzgut der öffentlichen Sicherheit ausschließt.
+
+**Review notes**
+
+- (none)
+
+### C-045 - Strafgesetze als Teil der öffentlichen Sicherheit
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort einen Verstoß gegen § 185 StGB oder § 187 StGB als Beeinträchtigung der öffentlichen Sicherheit wegen Verletzung der geschriebenen Rechtsordnung einordnet. NICHT ERFÜLLT, wenn sie strafbare Ehrverletzungen als polizeirechtlich irrelevante Privatangelegenheit behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-046 - Ehrschutzstraftaten als Verstoß gegen § 54 Abs. 1 Satz 3 RStV
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort erkennt, dass Beleidigung oder Verleumdung durch X zugleich die Pflicht aus § 54 Abs. 1 Satz 3 RStV zur Einhaltung gesetzlicher Bestimmungen zum Schutz der persönlichen Ehre verletzen kann. NICHT ERFÜLLT, wenn sie § 54 Abs. 1 Satz 3 RStV trotz strafbarer Ehrverletzungen für nicht berührt hält.
+
+**Review notes**
+
+- (none)
+
+### C-047 - Beleidigungsbegriff
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort Beleidigung nach § 185 StGB als Kundgabe von Missachtung oder Nichtachtung gegenüber der betroffenen Person oder Dritten definiert. NICHT ERFÜLLT, wenn sie § 185 StGB nur auf unwahre Tatsachenbehauptungen beschränkt oder keine ehrbezogene Definition verwendet.
+
+**Review notes**
+
+- (none)
+
+### C-048 - Beschimpfungen als Missachtungskundgaben
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die Bezeichnungen Js als „dumme Sau“, „Dreck“, „Abschaum“ und „nicht lebenswert“ als Kundgaben der Missachtung im Sinne von § 185 StGB einordnet. NICHT ERFÜLLT, wenn sie diese Begriffe als bloß sachliche oder zulässige Kritik an Js politischem Engagement behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-049 - Werturteile im Schutzbereich der Meinungsfreiheit
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die beleidigenden Werturteile des X zunächst als grundsätzlich von Art. 5 Abs. 1 Satz 1 GG erfasste Meinungen behandelt. NICHT ERFÜLLT, wenn sie Art. 5 GG bei den Werturteilen vollständig ausblendet oder Werturteile generell aus der Meinungsfreiheit ausschließt.
+
+**Review notes**
+
+- (none)
+
+### C-050 - Definition der Schmähkritik
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort Schmähkritik eng als Äußerung beschreibt, bei der nicht mehr die Sachauseinandersetzung, sondern die Diffamierung der Person im Vordergrund steht. NICHT ERFÜLLT, wenn sie jede scharfe oder polemische Kritik automatisch als Schmähkritik behandelt oder den Sachbezug nicht prüft.
+
+**Review notes**
+
+- (none)
+
+### C-051 - Konkrete Schmähkritik durch X
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die Beschimpfungen des X als Schmähkritik einordnet, weil sie keinen Bezug zu Js politischem Engagement oder zur Sachdebatte über „Fridays for Future“ haben und keinen schützenswerten Beitrag zur Meinungsbildung leisten. NICHT ERFÜLLT, wenn sie die Beschimpfungen allein wegen Js öffentlicher Rolle als hinzunehmende Sachkritik behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-052 - Menschenwürdebezug von „nicht lebenswert“
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die Bezeichnung Js als „nicht lebenswert“ als Berührung oder Verletzung ihrer Menschenwürde aus Art. 1 Abs. 1 GG wertet. NICHT ERFÜLLT, wenn sie diese Aussage nur als gewöhnliche Unhöflichkeit, einfache Polemik oder bloß hinzunehmende scharfe Kritik einordnet.
+
+**Review notes**
+
+- (none)
+
+### C-053 - Meinungsfreiheit rechtfertigt die Beleidigungen nicht
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort zum Ergebnis kommt, dass Art. 5 Abs. 1 Satz 1 GG der Einordnung der Beschimpfungen als Beleidigung nach § 185 StGB nicht entgegensteht, insbesondere weil Schmähkritik beziehungsweise Menschenwürdeverletzungen nicht durchgreifend geschützt sind. NICHT ERFÜLLT, wenn sie die Beschimpfungen allein wegen Meinungsfreiheit des X für rechtmäßig oder straflos hält.
+
+**Review notes**
+
+- (none)
+
+### C-054 - Verleumdungsbegriff
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort § 187 StGB als wider besseres Wissen erfolgende Verbreitung einer unwahren ehrmindernden Tatsache definiert. NICHT ERFÜLLT, wenn sie § 187 StGB auf bloße Werturteile anwendet oder die Kenntnis der Unwahrheit nicht verlangt.
+
+**Review notes**
+
+- (none)
+
+### C-055 - Schulverweisbehauptung als ehrmindernd
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die Behauptung, J sei wegen freitäglichen Schuleschwänzens von der Schule verwiesen worden, als geeignet ansieht, J in der öffentlichen Meinung herabzuwürdigen. NICHT ERFÜLLT, wenn sie einem angeblichen Schulverweis jede ehrmindernde Wirkung abspricht.
+
+**Review notes**
+
+- (none)
+
+### C-056 - Unwahrheit und Wissen des X
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort feststellt, dass J tatsächlich nicht von der Schule verwiesen wurde und X die Unwahrheit der Schulverweisbehauptung kannte. NICHT ERFÜLLT, wenn sie die Behauptung als wahr, ungeklärt oder gutgläubig verbreitet behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-057 - Ehre der J als Individualrechtsgut
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die Ehre oder das allgemeine Persönlichkeitsrecht der J als durch Xs Blogäußerungen betroffenes Individualrechtsgut im Rahmen der öffentlichen Sicherheit berücksichtigt. NICHT ERFÜLLT, wenn sie nur abstrakte Allgemeininteressen prüft und die individuelle Ehrverletzung der J ausblendet.
+
+**Review notes**
+
+- (none)
+
+### C-058 - Gefahrenbegriff
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort Gefahr im Sinne des § 9 Abs. 1 POG als hinreichende Wahrscheinlichkeit eines Schadenseintritts aus ex-ante-Sicht beschreibt. NICHT ERFÜLLT, wenn sie für § 9 Abs. 1 POG einen bereits eingetretenen Schaden von vornherein für unbeachtlich hält.
+
+**Review notes**
+
+- (none)
+
+### C-059 - Störung als Gefahr
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort einen bereits eingetretenen und fortwirkenden Schaden als Störung und damit als Gefahr im polizeirechtlichen Sinne behandelt. NICHT ERFÜLLT, wenn sie ordnungsbehördliches Einschreiten ablehnt, weil die rechtswidrigen Äußerungen bereits veröffentlicht wurden.
+
+**Review notes**
+
+- (none)
+
+### C-060 - Fortdauernde Störung durch Xs Blogbeitrag
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die bereits veröffentlichten und weiterhin abrufbaren Beleidigungen, die Verleumdung oder die Ehrverletzung im Blogbeitrag als fortdauernde polizeirechtliche Störung einordnet. NICHT ERFÜLLT, wenn sie eine Gefahr verneint, obwohl die rechtswidrigen Inhalte online bleiben.
+
+**Review notes**
+
+- (none)
+
+### C-061 - Adressat nur Verantwortlicher oder Nichtstörer im Notstand
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort erkennt, dass § 9 Abs. 1 POG grundsätzlich Maßnahmen gegen polizeirechtlich Verantwortliche erlaubt und Nichtstörer nur bei polizeilichem Notstand in Betracht kommen. NICHT ERFÜLLT, wenn sie die Adressatenauswahl als beliebig behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-062 - Handlungsstörer nach § 4 POG
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort Handlungs- beziehungsweise Verhaltensstörer nach § 4 POG als denjenigen beschreibt, der die Gefahr unmittelbar verursacht hat. NICHT ERFÜLLT, wenn sie die Verantwortlichkeit allein an Eigentum oder Besitz des Servers knüpft.
+
+**Review notes**
+
+- (none)
+
+### C-063 - X als Handlungsstörer
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort X als Handlungsstörer einordnet, weil er die beanstandeten rechtswidrigen Inhalte selbst verfasst und in seinem Blog online gestellt hat. NICHT ERFÜLLT, wenn sie statt X vorrangig Leser, Schule oder Provider als Verantwortliche behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-064 - § 7 Abs. 1 TMG bei eigenen Informationen
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort § 7 Abs. 1 TMG dahin berücksichtigt, dass X als Diensteanbieter für eigene Bloginformationen nach den allgemeinen Gesetzen verantwortlich bleibt. NICHT ERFÜLLT, wenn sie X wegen Telemedienhaftungsprivilegien von jeder Verantwortlichkeit für eigene Inhalte freistellt.
+
+**Review notes**
+
+- (none)
+
+### C-065 - Ermessen nach § 9 Abs. 1 POG
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort erkennt, dass § 9 Abs. 1 POG der ADD Ermessen einräumt und deshalb Entschließungs- oder Auswahlermessen zu prüfen ist. NICHT ERFÜLLT, wenn sie § 9 Abs. 1 POG als stets gebundene Pflichtnorm ohne Ermessen behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-066 - Entschließungsermessen zugunsten eines Einschreitens
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort ein Einschreiten der ADD gegen X wegen des rechtswidrigen Blogbeitrags als ermessensfehlerfrei möglich ansieht und keine fallbezogenen Gründe gegen ein Tätigwerden erkennt. NICHT ERFÜLLT, wenn sie ein Einschreiten trotz festgestellter Störung ohne tragfähigen Ermessensgrund als unzulässig behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-067 - Verhältnismäßigkeit im Auswahlermessen
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die konkrete Löschungsanordnung am Verhältnismäßigkeitsgrundsatz des § 2 POG misst. NICHT ERFÜLLT, wenn sie die Auswahl der Löschung ohne Prüfung von Zweck, Geeignetheit, Erforderlichkeit oder Angemessenheit billigt.
+
+**Review notes**
+
+- (none)
+
+### C-068 - Legitimer Zweck der Löschung
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort als legitimen Zweck der Löschungsanordnung die Beendigung der Beleidigung, der Verleumdung oder der Verletzung von Js Ehre nennt. NICHT ERFÜLLT, wenn sie keinen rechtlich legitimen Zweck nennt oder als Zweck nur die Unterdrückung unliebsamer Klimadebattenkritik verwendet.
+
+**Review notes**
+
+- (none)
+
+### C-069 - Geeignetheit der Löschung
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die Löschungsanordnung als geeignet bewertet, weil die beanstandeten Äußerungen nach Löschung nicht mehr über Xs Blog zur Kenntnis genommen werden können. NICHT ERFÜLLT, wenn sie die Geeignetheit verneint, obwohl die Löschung die fortdauernde Abrufbarkeit der konkreten Äußerungen beendet.
+
+**Review notes**
+
+- (none)
+
+### C-070 - Gegendarstellung oder Zugangsbeschränkung nicht gleich wirksam
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort eine Gegendarstellung oder bloße Zugangsbeschränkung als nicht gleich wirksames milderes Mittel gegenüber der Löschung der rechtswidrigen Äußerungen einordnet. NICHT ERFÜLLT, wenn sie diese Alternativen ohne Begründung als ebenso effektiv wie die Entfernung der strafbaren Inhalte behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-071 - Gesamtsperrung nicht milder als punktuelle Löschung
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort erkennt, dass eine Zugangsbeschränkung oder Sperrung des gesamten Blogbeitrags gegenüber der punktuellen Löschung der rechtswidrigen Formulierungen kein milderes Mittel wäre. NICHT ERFÜLLT, wenn sie eine Maßnahme gegen den gesamten Beitrag als milder bezeichnet, obwohl sie auch rechtmäßige Inhalte erfassen würde.
+
+**Review notes**
+
+- (none)
+
+### C-072 - Grundrechtliche Angemessenheitsabwägung
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort bei der Angemessenheit der Löschung die Interessen Js am Schutz von Ehre, Persönlichkeitsrecht oder Menschenwürde mit den Interessen an der Aufrechterhaltung des Blogangebots abwägt. NICHT ERFÜLLT, wenn sie die Angemessenheit ohne grundrechtliche Abwägung entscheidet.
+
+**Review notes**
+
+- (none)
+
+### C-073 - Bewusst unwahre Tatsache nicht durch Art. 5 GG geschützt
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die bewusst unwahre Behauptung, J sei von der Schule verwiesen worden, nicht als durch Art. 5 Abs. 1 Satz 1 GG geschützte Meinungsäußerung behandelt. NICHT ERFÜLLT, wenn sie die wissentlich falsche Schulverweisbehauptung gleichrangig als geschützte Meinung gewichtet.
+
+**Review notes**
+
+- (none)
+
+### C-074 - Öffentliches Auftreten rechtfertigt keine Entwürdigung
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort klarstellt, dass J trotz Organisation und Reden bei „Fridays for Future“-Demonstrationen menschenwürdeverletzende Schmähungen nicht hinnehmen muss. NICHT ERFÜLLT, wenn sie aus Js öffentlichem Engagement ableitet, sie müsse Bezeichnungen wie „Abschaum“, „Dreck“ oder „nicht lebenswert“ dulden.
+
+**Review notes**
+
+- (none)
+
+### C-075 - Informationsfreiheit der Blogleser
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort erkennt, dass die Löschung allgemein zugänglicher Bloginhalte grundsätzlich die Informationsfreiheit der Leserinnen und Leser aus Art. 5 Abs. 1 Satz 1 GG berührt. NICHT ERFÜLLT, wenn sie Leserinteressen trotz allgemein zugänglichem Blog vollständig ausblendet oder eine Grundrechtsbeeinträchtigung der Leser kategorisch verneint.
+
+**Review notes**
+
+- (none)
+
+### C-076 - Beschränkbarkeit der Informationsfreiheit
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die Informationsfreiheit der Blogleser zum Schutz entgegenstehender Grundrechte der J, insbesondere ihres allgemeinen Persönlichkeitsrechts oder ihrer Menschenwürde, für beschränkbar hält. NICHT ERFÜLLT, wenn sie die Informationsfreiheit als schrankenlos oder als zwingendes Hindernis jeder Löschung strafbarer Persönlichkeitsverletzungen behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-077 - Besonderes Gewicht von Js Persönlichkeitsrecht
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort dem allgemeinen Persönlichkeitsrecht der 16-jährigen J besonderes Gewicht beimisst, weil die Äußerungen ihren sozialen Geltungsanspruch oder ihre Persönlichkeitsentwicklung beeinträchtigen können. NICHT ERFÜLLT, wenn sie Js Jugend und die rufschädigende Wirkung des Blogbeitrags bei der Gewichtung ignoriert.
+
+**Review notes**
+
+- (none)
+
+### C-078 - Geringes Informationsinteresse an unwahrer Schulverweisbehauptung
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort das Informationsinteresse an der bewusst unwahren Behauptung eines Schulverweises als gering bewertet. NICHT ERFÜLLT, wenn sie der Öffentlichkeit ein hohes Informationsinteresse gerade an der als unwahr bekannten Schulverweisbehauptung zuspricht.
+
+**Review notes**
+
+- (none)
+
+### C-079 - Grundrechtliche Schutzpflicht als Quelle der Ermessensreduzierung
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort eine mögliche Ermessensreduzierung auf Null aus Js Grundrechten, insbesondere Art. 1 Abs. 1 GG und dem allgemeinen Persönlichkeitsrecht, sowie der staatlichen Schutzpflicht herleitet oder als Prüfungsmaßstab behandelt. NICHT ERFÜLLT, wenn sie grundrechtliche Schutzpflichten bei einem Anspruch auf polizeiliches Einschreiten nicht berücksichtigt.
+
+**Review notes**
+
+- (none)
+
+### C-080 - Kriterien der Ermessensreduzierung
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die Ermessensreduzierung anhand fallbezogener Kriterien wie Rang des bedrohten Rechtsguts, Schwere des Schadens, Risiken des Einschreitens oder Aufwand der Maßnahme beurteilt. NICHT ERFÜLLT, wenn sie eine Ermessensreduzierung auf Null ohne fallbezogene Kriterien schlicht behauptet.
+
+**Review notes**
+
+- (none)
+
+### C-081 - Zivilrechtsweg als Gegenargument zur Ermessensreduzierung
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort den möglichen zivilrechtlichen Rechtsschutz der J gegen X als Argument gegen eine Ermessensreduzierung auf Null berücksichtigt. NICHT ERFÜLLT, wenn sie eine zwingende Einschreitenspflicht annimmt, ohne die bestehende zivilrechtliche Schutzmöglichkeit zu würdigen.
+
+**Review notes**
+
+- (none)
+
+### C-082 - Menschenwürde als Argument für Ermessensreduzierung
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die Betroffenheit von Js Menschenwürde durch die Aussage „nicht lebenswert“ als starkes Argument für eine Ermessensreduzierung auf Null würdigt, oder ausdrücklich die strengere Gegenansicht wählt, dass eine Ermessensreduzierung nur bei schweren Gefahren für Leib oder Leben in Betracht komme, und erklärt, warum der Menschenwürdebezug hierfür nicht genügt. NICHT ERFÜLLT, wenn sie die Menschenwürdebetroffenheit bei der Ermessensreduzierung vollständig übergeht.
+
+**Review notes**
+
+- Die strengere Gegenansicht muss benannt und begründet werden.
+
+### C-083 - Schwere Persönlichkeitsrechtsverletzung
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort die Bezeichnungen „Abschaum“, „Dreck“ und „nicht lebenswert“ als schwere Persönlichkeitsrechtsverletzung einordnet und bei der Ermessensreduzierung berücksichtigt. NICHT ERFÜLLT, wenn sie die Äußerungen für die Ermessensreduzierung nur als geringfügige Ehrkränkung behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-084 - Geringer behördlicher Aufwand
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort den geringen Aufwand der ADD für eine Verfügung gegen den bekannten Urheber X als Argument für eine Ermessensreduzierung auf Null berücksichtigt. NICHT ERFÜLLT, wenn sie ohne Sachverhaltsgrund hohen behördlichen Ermittlungs- oder Vollzugsaufwand annimmt.
+
+**Review notes**
+
+- (none)
+
+### C-085 - Beschränkung auf rechtswidrige Äußerungen
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort berücksichtigt, dass eine Löschungsanordnung auf die von J gerügten rechtswidrigen Äußerungen beschränkt werden kann und rechtmäßige Kritik an „Fridays for Future“ nicht unterdrückt. NICHT ERFÜLLT, wenn sie die begehrte punktuelle Löschung mit einem Verbot des gesamten Blogs oder jeder Klimaprotestkritik gleichsetzt.
+
+**Review notes**
+
+- (none)
+
+### C-086 - Geringer Löschungsaufwand für X
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort den technischen oder praktischen Aufwand für X, die beanstandeten Passagen aus seinem eigenen Blog zu entfernen, als gering oder zumutbar bewertet. NICHT ERFÜLLT, wenn sie die Löschung ohne Tatsachengrundlage als praktisch unmöglich oder unzumutbar für X behandelt.
+
+**Review notes**
+
+- (none)
+
+### C-087 - Verdichtung des Entschließungsermessens
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort entweder das Entschließungsermessen der ADD wegen der schweren Menschenwürde- und Persönlichkeitsrechtsverletzung auf ein Einschreiten gegen X reduziert sieht, oder ausdrücklich die Gegenansicht begründet, dass eine Ermessensreduzierung wegen vorrangigen Privatrechtswegs oder wegen Beschränkung auf schwere Leib- oder Lebensgefahren ausscheidet. NICHT ERFÜLLT, wenn sie die Frage der Ermessensreduzierung nicht prüft oder ohne Begründung zwischen bloßem Ermessen und zwingender Einschreitenspflicht wechselt.
+
+**Review notes**
+
+- Akzeptierte Gegenansichten sind Privatrechtsweg-Vorrang oder Beschränkung auf schwere Leib-/Lebensgefahren.
+
+### C-088 - Verdichtung des Auswahlermessens
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort entweder das Auswahlermessen der ADD auf die begehrte Löschung der konkret beanstandeten Äußerungen reduziert sieht, weil keine gleich wirksame andere Maßnahme ersichtlich ist, oder bei vertretbarer Verneinung der Ermessensreduzierung die Alternativen konsequent im Rahmen eines Bescheidungs- oder Ablehnungsergebnisses behandelt. NICHT ERFÜLLT, wenn sie J eine konkrete Löschungsanordnung zuspricht, obwohl sie gleich wirksame mildere Maßnahmen offenlässt.
+
+**Review notes**
+
+- Konkrete Löschung verlangt Verdichtung auch beim Mittel.
+
+### C-039 - Örtliche Zuständigkeit nach § 59 Abs. 6 RStV
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort bei der formellen Rechtmäßigkeit oder Zuständigkeit die örtliche Zuständigkeit der zuständigen rheinland-pfälzischen Aufsichtsbehörde/ADD für das Einschreiten gegen den Blogbeitrag aus § 59 Abs. 6 RStV herleitet. Eine bloße Formulierung wie „Die örtliche Zuständigkeit folgt aus § 59 VI RStV“ genügt. NICHT ERFÜLLT, wenn die Antwort die örtliche Zuständigkeit nicht behandelt, sie nur eine sachliche Zuständigkeit nennt, die örtliche Zuständigkeit ohne Bezug zu § 59 Abs. 6 RStV begründet oder wegen der überregionalen Abrufbarkeit des Blogs eine andere Landesbehörde als örtlich zuständig ansieht.
+
+**Review notes**
+
+- (none)

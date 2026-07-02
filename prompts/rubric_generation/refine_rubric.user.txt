@@ -1,0 +1,33 @@
+Repair the criteria listed in calibration_failures. Each entry contains the criterion and the judge votes (verdict, reasoning, evidence quotes) from testing the criterion against the gold solution included in the bundle.
+
+Rules:
+- Diagnose first. From the judge feedback, decide why the gold solution did not clearly pass: the requirement is absent from the solution, the criterion bundles several requirements, the criterion lacks facts or context the judge needs, the wording is ambiguous, or the wording is over-specific to one formulation.
+- Rewrite each repairable criterion so that the gold solution clearly passes AND a materially wrong or incomplete answer still fails. Keep each criterion atomic, self-contained, and Boolean, with explicit labels in the case language (for German "ERFÜLLT, wenn ... NICHT ERFÜLLT, wenn ...").
+- If a criterion bundles several independently checkable requirements, split it. Return the parts as separate criteria with ids "<old-id>-S1", "<old-id>-S2", and so on.
+- Never weaken a criterion into a vacuous check that any answer merely mentioning the topic would pass. If the only way to make the gold solution pass is vacuous, drop the criterion instead.
+- If the criterion tests a point the gold solution does not actually contain, drop it.
+- If the criterion rejects a position the gold solution marks as defensible, rewrite the PASS side so it names the acceptable positions and what each requires.
+- Only touch criteria listed in calibration_failures. Do not duplicate the kept criteria listed under kept_criteria_for_context.
+- Keep id (except when splitting), criticality, deliverables, sources, and derived_from_atoms. Add a short refinement_note stating what was changed and why.
+
+Return only valid JSON:
+{
+  "language": "...",
+  "refined_criteria": [
+    {
+      "id": "C-001",
+      "criticality": "must_pass",
+      "title": "...",
+      "match_criteria": "...",
+      "deliverables": ["..."],
+      "sources": ["..."],
+      "derived_from_atoms": ["A-001"],
+      "review_notes": ["..."],
+      "refinement_note": "..."
+    }
+  ],
+  "dropped_criteria": [
+    {"id": "C-999", "reason": "..."}
+  ],
+  "refinement_notes": ["..."]
+}

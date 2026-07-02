@@ -1,18 +1,29 @@
 Prune the candidate criteria into a final rubric.
 
-Rules:
-- Choose the number of final criteria based on this case. There is no fixed target count.
-- Prefer the smallest set that still covers all material requirements of a high-quality answer.
-- Keep only material checks a supervising lawyer would require before accepting the answer.
-- Remove duplicates and near-duplicates.
-- Merge overlapping candidates only when the merged criterion remains clearly Boolean.
-- Split or reject compound candidates that cannot be judged as a single pass/fail check.
-- Prefer criteria about outcome-changing legal issues, correct legal basis, rule content, facts, application/subsumption, conclusion, source grounding, and required legal form.
-- Do not overfit to the human solution's exact wording or order.
-- The final criteria must remain pass/fail and must be in the same language as the case.
-- Preserve explicit Boolean labels in the case language, such as "ERFÜLLT" / "NICHT ERFÜLLT" for German.
-- Keep each final criterion concise enough for a judge prompt.
-- Record rejected candidate IDs with a short reason.
+The candidates come from three generator roles (doctrine, fact grounding, adversary). Overlap across roles is a signal that a proposition is material, but a strong single-role candidate may be kept on its own merit.
+
+What to remove:
+- Exact duplicates and paraphrases of the same legal proposition. Keep the clearer formulation and record the other IDs in candidate_ids_merged.
+- Aggregate criteria that only restate combinations of other criteria (interim results, overall-quality checks). They double-count errors already caught by the specific criteria.
+- Candidates with criticality "diagnostic" and candidates built on knowledge the solution marks as not expected. Record them in rejected_candidates.
+- Vague candidates that cannot be decided pass/fail from the answer text; rewrite them into observable checks if the point is material, otherwise reject them.
+
+What to preserve:
+- Never merge candidates that check different legal propositions. Merging is allowed only for true duplicates. A criterion whose PASS side chains several independently checkable requirements with "und"/"sowie"/"and" is a bundling error: split it or keep the candidates separate.
+- Choose the number of final criteria from the case; there is no fixed target. The right size is the number of distinct material propositions. If your final count is far below the number of distinct material candidates, you are over-pruning, not deduplicating.
+- Keep only material checks a supervising lawyer would require before accepting the answer. Under all-pass scoring, every kept criterion must be one a competent answer cannot be allowed to miss.
+- Keep explicitly named defensible alternatives from the candidates. If a criterion accepts an alternative position, the alternative and what it requires must be named inside the match_criteria, never as an unspecified "vertretbar".
+
+Audit every final criterion before returning it:
+- It is decidable from the agent answer alone, with named source documents at most as context.
+- It is self-contained: all facts, dates, parties, and provisions the judge needs are stated in the match_criteria.
+- It resolves to exactly pass or fail without inferring the agent's intent.
+- It does not test mere style, thoroughness, or ordering unless the task specifically tests document form.
+- It tolerates legally equivalent wording, citations, and structure.
+- It keeps explicit Boolean labels in the case language, such as "ERFÜLLT" / "NICHT ERFÜLLT" for German.
+- It is concise enough for a single judge prompt.
+
+Record every rejected candidate ID with a short reason (at most ten words). Group candidates rejected for the same reason into one entry with an "ids" list instead of repeating the reason.
 
 Return only valid JSON:
 {
@@ -31,7 +42,7 @@ Return only valid JSON:
     }
   ],
   "rejected_candidates": [
-    {"id": "K-999", "reason": "..."}
+    {"ids": ["K-998", "K-999"], "reason": "..."}
   ],
   "pruning_notes": ["..."]
 }

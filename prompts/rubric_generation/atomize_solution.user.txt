@@ -2,13 +2,17 @@ Read the task bundle below. Extract answer-key atoms for a later Boolean LLM-jud
 
 Rules:
 - Infer the output language from the case and solution.
-- The atom statements, materiality explanations, and equivalents must be in that same language.
-- Each atom must be independently checkable in an agent answer.
+- The atom statements, materiality explanations, equivalents, and alternatives must be in that same language.
+- Each atom must be exactly one legal proposition that is independently checkable in an agent answer. Do not bundle several requirements into one atom.
 - Cover the material structure of the solution without forcing it into predefined categories.
 - Include issues, rules, facts, application/subsumption, conclusions, source grounding, form requirements, counterarguments, and important exclusions only where the task and solution make them material.
+- Name the legal basis verbatim in legal_basis where the atom rests on specific provisions (for example "§ 42 Abs. 2 VwGO"). Leave the list empty if none applies.
+- Set expectation to "core" if every acceptable answer must contain the point. Set it to "bonus" if the solution itself marks the point as not expected or as optional depth, for example in a Lösungshinweis, a footnote-only discussion, or wording like "Kenntnis kann nicht erwartet werden".
+- Legal solutions often flag defensible alternative positions ("a.A. vertretbar", "andere Ansicht", Lösungshinweise, Aufbauhinweise). Record each such alternative in defensible_alternatives on the affected atom: state the alternative position and what a good answer must still contain when taking it. Do not treat these alternatives as errors.
+- If the solution notes that a point may be examined at a different place in the document structure (for example an Aufbauhinweis allowing a point in either admissibility or merits), record that in placement_flexible so later criteria do not require one specific location.
 - Produce as many atoms as are needed to support a faithful rubric for this case. Do not atomize every sentence of the solution.
 - Keep source_refs and solution_refs short; use filenames or section names, not long quotations.
-- If the human solution is incomplete or internally uncertain, record that in solution_gaps_or_warnings.
+- If the human solution is incomplete, truncated, or internally uncertain, record that in solution_gaps_or_warnings.
 
 Return only valid JSON:
 {
@@ -20,9 +24,13 @@ Return only valid JSON:
       "id": "A-001",
       "statement": "...",
       "why_material": "...",
+      "expectation": "core",
+      "legal_basis": ["..."],
       "source_refs": ["..."],
       "solution_refs": ["..."],
-      "acceptable_equivalents": ["..."]
+      "acceptable_equivalents": ["..."],
+      "defensible_alternatives": ["..."],
+      "placement_flexible": false
     }
   ],
   "solution_gaps_or_warnings": ["..."]
