@@ -1,0 +1,34 @@
+Create an intentionally over-complete candidate pool from the answer atoms. Generate enough candidates to cover all material legal requirements, but do not create padding criteria for immaterial details.
+
+Rules:
+- Every title and match_criteria must be in the same language as the case and solution.
+- Every match_criteria must use explicit Boolean labels in the case language.
+- For German, use "ERFÜLLT, wenn ... NICHT ERFÜLLT, wenn ...".
+- For English, use "PASS if ... FAIL if ...".
+- For French, use "RÉUSSI si ... ÉCHOUÉ si ...".
+- Keep each title, match_criteria, and review note concise.
+- Prefer one legal proposition per criterion.
+- Include expected facts, legal bases, procedural consequences, and common failure modes where relevant.
+- Tolerate legally equivalent wording and citations.
+- Avoid exact wording dependency unless the task specifically tests a document form.
+- Set criticality to "must_pass" unless the criterion is useful only for diagnostics.
+- Use deliverable filenames from task.json when available.
+- Use source filenames from the task bundle when useful.
+
+Return only valid JSON:
+{
+  "language": "...",
+  "criteria": [
+    {
+      "id": "K-001",
+      "criticality": "must_pass",
+      "title": "...",
+      "match_criteria": "...",
+      "deliverables": ["..."],
+      "sources": ["..."],
+      "derived_from_atoms": ["A-001"],
+      "review_notes": ["..."]
+    }
+  ],
+  "generation_notes": ["..."]
+}

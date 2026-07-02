@@ -1,0 +1,29 @@
+Read the task bundle below. Extract answer-key atoms for a later Boolean LLM-judge rubric.
+
+Rules:
+- Infer the output language from the case and solution.
+- The atom statements, materiality explanations, and equivalents must be in that same language.
+- Each atom must be independently checkable in an agent answer.
+- Cover the material structure of the solution without forcing it into predefined categories.
+- Include issues, rules, facts, application/subsumption, conclusions, source grounding, form requirements, counterarguments, and important exclusions only where the task and solution make them material.
+- Produce as many atoms as are needed to support a faithful rubric for this case. Do not atomize every sentence of the solution.
+- Keep source_refs and solution_refs short; use filenames or section names, not long quotations.
+- If the human solution is incomplete or internally uncertain, record that in solution_gaps_or_warnings.
+
+Return only valid JSON:
+{
+  "language": "...",
+  "jurisdiction": "...",
+  "reasoning_style": "...",
+  "atoms": [
+    {
+      "id": "A-001",
+      "statement": "...",
+      "why_material": "...",
+      "source_refs": ["..."],
+      "solution_refs": ["..."],
+      "acceptable_equivalents": ["..."]
+    }
+  ],
+  "solution_gaps_or_warnings": ["..."]
+}
