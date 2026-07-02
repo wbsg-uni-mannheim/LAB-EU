@@ -2,23 +2,6 @@ You are evaluating a legal AI agent's answer against one Boolean rubric criterio
 
 The rubric criterion may be written in German, English, French, or another case language. Apply the criterion in that language and do not translate legal terms unless needed for understanding.
 
-## Task
-Title: {task_title}
-
-Instructions:
-{task_instructions}
-
-## Source documents (context only - the answer is not required to repeat them)
-{criterion_sources}
-
-## Agent Answer
-{agent_output}
-
-## Criterion
-{criterion_title}
-
-{match_criteria}
-
 ## How to decide
 - The criterion text is the only standard. Do not add requirements it does not state, and do not excuse a missing requirement because the rest of the answer is strong.
 - Equivalent legal wording, citation style, and document structure are acceptable unless the criterion itself requires a specific form or location.
@@ -27,6 +10,23 @@ Instructions:
 - First collect evidence: quote the shortest verbatim passages of the answer that bear on the criterion. Then reason from that evidence, then decide.
 - Be conservative. Return "pass" only if the quoted evidence clearly satisfies the criterion in substance. If the required point is missing, materially wrong, contradicted elsewhere in the answer, or only implied too vaguely to verify, return "fail". When in doubt, return "fail".
 - If the required deliverable content is missing or empty, return "fail".
+
+## Task
+Title: {task_title}
+
+Instructions:
+{task_instructions}
+
+## Agent Answer
+{agent_output}
+
+## Source documents (context only - the answer is not required to repeat them)
+{criterion_sources}
+
+## Criterion
+{criterion_title}
+
+{match_criteria}
 
 Respond with JSON only, with the fields in exactly this order:
 

@@ -216,11 +216,15 @@ def call_judge(client: OpenAI, model: str, prompt: str, reasoning_effort: str | 
 
 def usage_summary(response_data: dict[str, Any]) -> dict[str, Any]:
     usage = response_data.get("usage") or {}
-    return {
+    summary = {
         key: usage[key]
         for key in ["input_tokens", "output_tokens", "total_tokens"]
         if key in usage
     }
+    details = usage.get("input_tokens_details") or {}
+    if isinstance(details, dict) and "cached_tokens" in details:
+        summary["cached_input_tokens"] = details["cached_tokens"]
+    return summary
 
 
 def score_one(
@@ -261,7 +265,7 @@ def aggregate_votes(criterion: dict[str, Any], vote_results: list[dict[str, Any]
     usage_total: dict[str, int] = {}
     for vote in vote_results:
         counts[vote.get("verdict", "error")] = counts.get(vote.get("verdict", "error"), 0) + 1
-        for key in ["input_tokens", "output_tokens", "total_tokens"]:
+        for key in ["input_tokens", "output_tokens", "total_tokens", "cached_input_tokens"]:
             value = (vote.get("usage") or {}).get(key)
             if isinstance(value, int):
                 usage_total[key] = usage_total.get(key, 0) + value
@@ -367,6 +371,11 @@ def evaluate(
     n_criteria = len(results)
     all_pass = n_criteria > 0 and n_passed == n_criteria
     agreements = [result["judge_agreement"] for result in results if result["vote_counts"]["pass"] + result["vote_counts"]["fail"] > 0]
+    judge_usage_total: dict[str, int] = {}
+    for result in results:
+        for key, value in (result.get("usage") or {}).items():
+            if isinstance(value, int):
+                judge_usage_total[key] = judge_usage_total.get(key, 0) + value
     return {
         "schema_version": "0.1",
         "evaluator": "rubric",
@@ -391,6 +400,7 @@ def evaluate(
         "n_unanimous": sum(1 for result in results if result["judge_agreement"] == 1.0),
         "breakdown_by_station": make_breakdown(lambda tags: (tags.get("station_path") or [None])[0]) if has_tags else None,
         "breakdown_by_function": make_breakdown(lambda tags: tags.get("function")) if has_tags else None,
+        "judge_usage_total": judge_usage_total,
         "criteria_results": results,
     }
 

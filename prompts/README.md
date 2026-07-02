@@ -9,7 +9,7 @@ Bitte Platzhalter in geschweiften Klammern wie `{task_title}` oder `{agent_outpu
 - `rubric_generation/`: Prompts für die Erzeugung von Rubrics aus menschlichen Lösungen.
   - `atomize_solution.*`: Zerlegung der Lösung in prüfbare Antwort-Atome.
   - `generate_candidate_criteria.*`: Erzeugung des Kandidaten-Pools. Wird dreimal ausgeführt, je einmal pro Generator-Rolle.
-  - `roles/`: Die drei Generator-Rollen (doctrine, fact_grounding, adversary), die an den Candidate-System-Prompt angehängt werden.
+  - `roles/`: Die drei Generator-Rollen (doctrine, fact_grounding, adversary). Sie werden ans Ende der User-Message angehängt, damit die drei Rollen-Aufrufe denselben langen Prompt-Präfix teilen (OpenAI Prompt Caching).
   - `prune_rubric.*`: Deduplizierung des Kandidaten-Pools zu einem atomaren Rubric.
   - `refine_rubric.*`: Reparatur von Kriterien, die die Musterlösung in der Kalibrierung nicht bestanden hat.
   - `tag_criteria.*`: Nicht bewertende Analyse-Tags pro Kriterium (Funktion nach Gutachtenstil-Schritten und Prüfungsstation), für Auswertungen nach juristischen Kategorien.
