@@ -6,7 +6,7 @@
 env/bin/pip install -r requirements.txt
 
 env/bin/python scripts/generate_rubric.py \
-  tasks/de/verwaltungsrecht/verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik \
+  tasks/de/verwaltungsrecht/verpflichtungsklage/fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik \
   --model gpt-5.5 \
   --write-final
 ```
@@ -75,7 +75,7 @@ Use `--dry-run` to check local file discovery without calling the API.
 
 ```bash
 env/bin/python -m evaluation.run \
-  tasks/de/verwaltungsrecht/verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik \
+  tasks/de/verwaltungsrecht/verpflichtungsklage/fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik \
   path/to/fallloesung-sut.md \
   --judge-model gpt-5.5
 ```

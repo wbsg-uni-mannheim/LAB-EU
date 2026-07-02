@@ -21,7 +21,7 @@ tasks/
 Flat and nested task IDs are both valid:
 
 ```text
-de/verwaltungsrecht/verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik
+de/verwaltungsrecht/verpflichtungsklage/fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik
 fr/droit-prive/examen-du-contrat-d-achat-d-un-vehicule-automobile
 ```
 
