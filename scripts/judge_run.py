@@ -22,8 +22,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--votes",
         type=int,
-        default=3,
-        help="Judge votes per criterion (majority decides). Defaults to 3 for headline runs.",
+        default=1,
+        help=(
+            "Judge votes per criterion (majority decides). Defaults to 1; measured judge "
+            "agreement is ~95% unanimous, so single votes flip ~1-2% of verdicts. "
+            "Use 3 for final headline runs."
+        ),
     )
     parser.add_argument("--reasoning-effort", default="medium", help="Judge reasoning effort; 'none' omits it.")
     parser.add_argument(

@@ -110,6 +110,16 @@ or edit the wording without touching the Python scripts.
 
 Use `--dry-run` to check local file discovery without calling the API.
 
+## Generate a lawyer-facing rubric review file
+
+```bash
+env/bin/python scripts/generate_rubric_review.py \
+  tasks/de/verwaltungsrecht/verpflichtungsklage/fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik
+```
+
+This writes `evals/rubric-review.md` with the task, case, solution, and each
+rubric criterion's title, match criteria, and review notes.
+
 ## Evaluate an answer with a rubric
 
 ```bash
@@ -193,8 +203,11 @@ env/bin/python scripts/judge_run.py \
   --judge-model gpt-5.5
 ```
 
-`judge_run.py` defaults to `--votes 3` (majority per criterion) because it is
-the headline-run wrapper; pass `--votes 1` for cheap smoke checks.
+`judge_run.py` defaults to `--votes 1`: measured judge agreement on real
+submissions is ~95% unanimous, so a single vote flips only ~1-2% of verdicts
+at a third of the cost. Pass `--votes 3` for final headline runs where that
+last bit of stability matters. Rubric calibration during generation is
+unaffected - it keeps its own 3-vote setting.
 
 ## Run the single-LLM-call baseline
 
@@ -215,12 +228,20 @@ env/bin/python scripts/run_baseline_taskset.py \
   --taskset tasksets/opencode-smoke.jsonl \
   --run-name baseline-deepseek-v4-pro \
   --model deepseek/deepseek-v4-pro \
-  --api-base https://openrouter.ai/api/v1 \
-  --api-key-env OPENROUTER_API_KEY
+  --api-base https://openrouter.ai/api/v1
 ```
+
+The API key is read from the repo-root `.env`, selected by endpoint:
+`OPENROUTER_API_KEY` for OpenRouter, `DEEPSEEK_API_KEY` for the DeepSeek API,
+`OPENAI_API_KEY` otherwise.
 
 The model sees the task instructions plus all documents inlined into one
 prompt (evals/ is never included) and its entire response is saved as the
 deliverable under `submission/`. Baseline tasks must have exactly one
 deliverable. `--reasoning-effort` is optional and only for endpoints that
 accept the chat-completions `reasoning_effort` parameter.
+
+One invocation processes the whole taskset (`--parallel N` for concurrent
+tasks). Add `--judge` to score all submissions immediately after the run in
+the same command (`--judge-model`, `--judge-votes`; judging needs
+`OPENAI_API_KEY`).
