@@ -1,0 +1,3029 @@
+{
+  "schema_version": "0.1",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/verwaltungsrecht/verpflichtungsklage/fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik",
+    "title": "Verpflichtungsklage auf polizeiliches Einschreiten wegen Schmähkritik"
+  },
+  "submission": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/baseline-deepseek-v4-pro/20260703T103329Z/tasks/de__verwaltungsrecht__verpflichtungsklage__fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik/submission",
+  "rubric": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/verwaltungsrecht/verpflichtungsklage/fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik/evals/rubric.json",
+  "judge_model": "gpt-5.5",
+  "judge_reasoning_effort": "medium",
+  "votes_per_criterion": 1,
+  "adaptive_voting": false,
+  "scored_at": "2026-07-03T15:17:40.184728+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 88,
+  "n_passed": 63,
+  "n_errors": 0,
+  "criterion_pass_rate": 0.7159090909090909,
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 88,
+  "breakdown_by_station": {
+    "Zulässigkeit": {
+      "n_criteria": 25,
+      "n_passed": 22,
+      "n_failed": 3,
+      "n_errors": 0,
+      "pass_rate": 0.88
+    },
+    "Notwendige Beiladung": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "Begründetheit": {
+      "n_criteria": 62,
+      "n_passed": 41,
+      "n_failed": 21,
+      "n_errors": 0,
+      "pass_rate": 0.661
+    }
+  },
+  "breakdown_by_function": {
+    "legal_basis": {
+      "n_criteria": 10,
+      "n_passed": 9,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.9
+    },
+    "application": {
+      "n_criteria": 36,
+      "n_passed": 27,
+      "n_failed": 9,
+      "n_errors": 0,
+      "pass_rate": 0.75
+    },
+    "conclusion": {
+      "n_criteria": 7,
+      "n_passed": 6,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.857
+    },
+    "rule_statement": {
+      "n_criteria": 23,
+      "n_passed": 14,
+      "n_failed": 9,
+      "n_errors": 0,
+      "pass_rate": 0.609
+    },
+    "argumentation": {
+      "n_criteria": 12,
+      "n_passed": 7,
+      "n_failed": 5,
+      "n_errors": 0,
+      "pass_rate": 0.583
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 397088,
+    "output_tokens": 37483,
+    "total_tokens": 434571,
+    "cached_input_tokens": 309248
+  },
+  "criteria_results": [
+    {
+      "id": "C-001",
+      "title": "§ 40 Abs. 1 Satz 1 VwGO als Ausgangspunkt",
+      "verdict": "pass",
+      "reasoning": "Die Antwort prüft den Verwaltungsrechtsweg ausdrücklich anhand von § 40 Abs. 1 Satz 1 VwGO und nimmt nicht wegen des Ehrschutzbezugs den Zivilrechtsweg an. Zwar nennt sie ausdrücklich nur das Fehlen einer abdrängenden Sonderzuweisung, verwendet § 40 Abs. 1 Satz 1 VwGO aber als Ausgangspunkt der Rechtswegprüfung.",
+      "evidence": [
+        "Der Verwaltungsrechtsweg ist gemäß § 40 I 1 VwGO eröffnet.",
+        "Eine abdrängende Sonderzuweisung besteht nicht."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft den Verwaltungsrechtsweg ausdrücklich anhand von § 40 Abs. 1 Satz 1 VwGO und nimmt nicht wegen des Ehrschutzbezugs den Zivilrechtsweg an. Zwar nennt sie ausdrücklich nur das Fehlen einer abdrängenden Sonderzuweisung, verwendet § 40 Abs. 1 Satz 1 VwGO aber als Ausgangspunkt der Rechtswegprüfung.",
+          "evidence": [
+            "Der Verwaltungsrechtsweg ist gemäß § 40 I 1 VwGO eröffnet.",
+            "Eine abdrängende Sonderzuweisung besteht nicht."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 3689,
+        "output_tokens": 661,
+        "total_tokens": 4350,
+        "cached_input_tokens": 0
+      }
+    },
+    {
+      "id": "C-002",
+      "title": "Öffentlich-rechtliche Streitigkeit",
+      "verdict": "pass",
+      "reasoning": "Die Antwort ordnet die Streitigkeit ausdrücklich als öffentlich-rechtlich ein und begründet dies mit behördlichen Eingriffsbefugnissen bzw. Verpflichtungen aus dem POG und dem RStV, insbesondere § 59 Abs. 3 RStV und § 9 Abs. 1 POG. Sie behandelt die Sache nicht als rein privatrechtliche Persönlichkeitsrechtsstreitigkeit.",
+      "evidence": [
+        "den Erlass eines Verwaltungsaktes auf Grundlage des Polizei- und Ordnungsbehördengesetzes Rheinland-Pfalz (POG) sowie rundfunkrechtlicher Aufsichtsbefugnisse",
+        "Die Streitigkeit ist öffentlich-rechtlich",
+        "§ 59 III 1 RStV verpflichtet die Aufsichtsbehörde",
+        "Rückgriff auf die ordnungsbehördliche Generalklausel, § 9 I POG"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet die Streitigkeit ausdrücklich als öffentlich-rechtlich ein und begründet dies mit behördlichen Eingriffsbefugnissen bzw. Verpflichtungen aus dem POG und dem RStV, insbesondere § 59 Abs. 3 RStV und § 9 Abs. 1 POG. Sie behandelt die Sache nicht als rein privatrechtliche Persönlichkeitsrechtsstreitigkeit.",
+          "evidence": [
+            "den Erlass eines Verwaltungsaktes auf Grundlage des Polizei- und Ordnungsbehördengesetzes Rheinland-Pfalz (POG) sowie rundfunkrechtlicher Aufsichtsbefugnisse",
+            "Die Streitigkeit ist öffentlich-rechtlich",
+            "§ 59 III 1 RStV verpflichtet die Aufsichtsbehörde",
+            "Rückgriff auf die ordnungsbehördliche Generalklausel, § 9 I POG"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4711,
+        "output_tokens": 248,
+        "total_tokens": 4959,
+        "cached_input_tokens": 0
+      }
+    },
+    {
+      "id": "C-003",
+      "title": "Keine verfassungsrechtliche Streitigkeit und keine abdrängende Sonderzuweisung",
+      "verdict": "pass",
+      "reasoning": "Die Antwort lässt den Verwaltungsrechtsweg weder an einer verfassungsrechtlichen Streitigkeit noch an einer abdrängenden Sonderzuweisung scheitern, sondern verneint beides ausdrücklich und eröffnet § 40 I 1 VwGO. Auch wenn die doppelte Verfassungsunmittelbarkeit nicht ausdrücklich genannt wird, ist dies nach dem Kriterium nicht zwingend erforderlich.",
+      "evidence": [
+        "Die Streitigkeit ist öffentlich-rechtlich und nicht verfassungsrechtlicher Art, da sie die Reichweite behördlicher Eingriffsbefugnisse betrifft.",
+        "Eine abdrängende Sonderzuweisung besteht nicht.",
+        "Der Verwaltungsrechtsweg ist gemäß § 40 I 1 VwGO eröffnet."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort lässt den Verwaltungsrechtsweg weder an einer verfassungsrechtlichen Streitigkeit noch an einer abdrängenden Sonderzuweisung scheitern, sondern verneint beides ausdrücklich und eröffnet § 40 I 1 VwGO. Auch wenn die doppelte Verfassungsunmittelbarkeit nicht ausdrücklich genannt wird, ist dies nach dem Kriterium nicht zwingend erforderlich.",
+          "evidence": [
+            "Die Streitigkeit ist öffentlich-rechtlich und nicht verfassungsrechtlicher Art, da sie die Reichweite behördlicher Eingriffsbefugnisse betrifft.",
+            "Eine abdrängende Sonderzuweisung besteht nicht.",
+            "Der Verwaltungsrechtsweg ist gemäß § 40 I 1 VwGO eröffnet."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4631,
+        "output_tokens": 207,
+        "total_tokens": 4838,
+        "cached_input_tokens": 0
+      }
+    },
+    {
+      "id": "C-004",
+      "title": "Klagebegehren Löschungsanordnung",
+      "verdict": "pass",
+      "reasoning": "Die Antwort bestimmt Js Klagebegehren ausdrücklich als Erlass einer Löschungsanordnung durch die ADD gegen X. Sie legt damit nicht lediglich eine Anfechtung des Blogbeitrags, eine Feststellung oder eine zivilrechtliche Unterlassungsklage zugrunde.",
+      "evidence": [
+        "J begehrt von der Aufsichts- und Dienstleistungsdirektion (ADD) den Erlass einer Löschungsanordnung gegenüber X.",
+        "J begehrt den Erlass einer behördlichen Löschungsanordnung",
+        "J begehrt den Erlass einer Löschungsanordnung."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bestimmt Js Klagebegehren ausdrücklich als Erlass einer Löschungsanordnung durch die ADD gegen X. Sie legt damit nicht lediglich eine Anfechtung des Blogbeitrags, eine Feststellung oder eine zivilrechtliche Unterlassungsklage zugrunde.",
+          "evidence": [
+            "J begehrt von der Aufsichts- und Dienstleistungsdirektion (ADD) den Erlass einer Löschungsanordnung gegenüber X.",
+            "J begehrt den Erlass einer behördlichen Löschungsanordnung",
+            "J begehrt den Erlass einer Löschungsanordnung."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4618,
+        "output_tokens": 203,
+        "total_tokens": 4821,
+        "cached_input_tokens": 0
+      }
+    },
+    {
+      "id": "C-005",
+      "title": "Löschungsanordnung als Verwaltungsakt",
+      "verdict": "pass",
+      "reasoning": "Die Antwort ordnet die begehrte Löschungsanordnung gegenüber X ausdrücklich als Erlass eines Verwaltungsaktes ein. Eine ausdrückliche Nennung von § 35 Satz 1 VwVfG oder der Merkmale hoheitliche Einzelfallregelung mit Außenwirkung verlangt das Kriterium nicht zwingend.",
+      "evidence": [
+        "J begehrt von der Aufsichts- und Dienstleistungsdirektion (ADD) den Erlass einer Löschungsanordnung gegenüber X.",
+        "J begehrt den Erlass einer behördlichen Löschungsanordnung, also den Erlass eines von der ADD abgelehnten Verwaltungsaktes."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet die begehrte Löschungsanordnung gegenüber X ausdrücklich als Erlass eines Verwaltungsaktes ein. Eine ausdrückliche Nennung von § 35 Satz 1 VwVfG oder der Merkmale hoheitliche Einzelfallregelung mit Außenwirkung verlangt das Kriterium nicht zwingend.",
+          "evidence": [
+            "J begehrt von der Aufsichts- und Dienstleistungsdirektion (ADD) den Erlass einer Löschungsanordnung gegenüber X.",
+            "J begehrt den Erlass einer behördlichen Löschungsanordnung, also den Erlass eines von der ADD abgelehnten Verwaltungsaktes."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4620,
+        "output_tokens": 301,
+        "total_tokens": 4921,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-006",
+      "title": "Statthafte Verpflichtungsklage",
+      "verdict": "pass",
+      "reasoning": "Die Antwort nennt ausdrücklich die Verpflichtungsklage nach § 42 Abs. 1 Alt. 2 VwGO in Form der Versagungsgegenklage als statthafte Klageart. Damit ist das Kriterium erfüllt.",
+      "evidence": [
+        "Statthafte Klageart ist die Verpflichtungsklage in Gestalt der Versagungsgegenklage, § 42 I Alt. 2, § 113 V VwGO."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort nennt ausdrücklich die Verpflichtungsklage nach § 42 Abs. 1 Alt. 2 VwGO in Form der Versagungsgegenklage als statthafte Klageart. Damit ist das Kriterium erfüllt.",
+          "evidence": [
+            "Statthafte Klageart ist die Verpflichtungsklage in Gestalt der Versagungsgegenklage, § 42 I Alt. 2, § 113 V VwGO."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4612,
+        "output_tokens": 157,
+        "total_tokens": 4769,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-007",
+      "title": "Klagebefugnis als Möglichkeit eigener Rechtsverletzung",
+      "verdict": "pass",
+      "reasoning": "Die Antwort prüft ausdrücklich bei § 42 Abs. 2 VwGO, ob J durch die Ablehnung der Löschungsanordnung möglicherweise in eigenen subjektiven Rechten verletzt ist, und stützt dies auf ihr allgemeines Persönlichkeitsrecht und ihre Ehre. Sie lässt keine bloße Popularklage oder nur ein allgemeines Interesse an rechtmäßiger Verwaltung genügen.",
+      "evidence": [
+        "J müsste gemäß § 42 II VwGO geltend machen können, durch die Ablehnung der begehrten Löschungsanordnung in eigenen subjektiven Rechten verletzt zu sein.",
+        "Der geltend gemachte Anspruch auf Einschreiten könnte sich aus § 9 I POG i.V.m. Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre ergeben.",
+        "Die Klagebefugnis ist daher zu bejahen."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft ausdrücklich bei § 42 Abs. 2 VwGO, ob J durch die Ablehnung der Löschungsanordnung möglicherweise in eigenen subjektiven Rechten verletzt ist, und stützt dies auf ihr allgemeines Persönlichkeitsrecht und ihre Ehre. Sie lässt keine bloße Popularklage oder nur ein allgemeines Interesse an rechtmäßiger Verwaltung genügen.",
+          "evidence": [
+            "J müsste gemäß § 42 II VwGO geltend machen können, durch die Ablehnung der begehrten Löschungsanordnung in eigenen subjektiven Rechten verletzt zu sein.",
+            "Der geltend gemachte Anspruch auf Einschreiten könnte sich aus § 9 I POG i.V.m. Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre ergeben.",
+            "Die Klagebefugnis ist daher zu bejahen."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 3681,
+        "output_tokens": 261,
+        "total_tokens": 3942,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-008",
+      "title": "Schutznormtheorie",
+      "verdict": "fail",
+      "reasoning": "Die Antwort erwähnt zwar einen möglichen Anspruch aus § 9 Abs. 1 POG i.V.m. Grundrechten, prüft aber nicht nach der Schutznormtheorie, ob § 9 Abs. 1 POG oder § 59 Abs. 3 RStV subjektiv-rechtliche Wirkung zugunsten der J entfaltet. Die Drittschutzfrage wird damit im Wesentlichen übersprungen bzw. der Individualanspruch wird nur angenommen.",
+      "evidence": [
+        "Der geltend gemachte Anspruch auf Einschreiten könnte sich aus § 9 I POG i.V.m. Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre ergeben.",
+        "Es ist nicht von vornherein ausgeschlossen, dass die Behörde zumindest zu einer ermessensfehlerfreien Entscheidung verpflichtet ist.",
+        "§ 9 I 1 POG räumt der Behörde Ermessen ein"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erwähnt zwar einen möglichen Anspruch aus § 9 Abs. 1 POG i.V.m. Grundrechten, prüft aber nicht nach der Schutznormtheorie, ob § 9 Abs. 1 POG oder § 59 Abs. 3 RStV subjektiv-rechtliche Wirkung zugunsten der J entfaltet. Die Drittschutzfrage wird damit im Wesentlichen übersprungen bzw. der Individualanspruch wird nur angenommen.",
+          "evidence": [
+            "Der geltend gemachte Anspruch auf Einschreiten könnte sich aus § 9 I POG i.V.m. Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre ergeben.",
+            "Es ist nicht von vornherein ausgeschlossen, dass die Behörde zumindest zu einer ermessensfehlerfreien Entscheidung verpflichtet ist.",
+            "§ 9 I 1 POG räumt der Behörde Ermessen ein"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4703,
+        "output_tokens": 575,
+        "total_tokens": 5278,
+        "cached_input_tokens": 0
+      }
+    },
+    {
+      "id": "C-009",
+      "title": "Drittschutz des § 9 Abs. 1 POG",
+      "verdict": "pass",
+      "reasoning": "Die Antwort behandelt § 9 Abs. 1 POG nicht als ausschließlich objektiv-rechtlich, sondern leitet daraus i.V.m. dem allgemeinen Persönlichkeitsrecht/Ehre eine mögliche subjektive Rechtsposition bzw. einen Anspruch auf ermessensfehlerfreie Entscheidung ab. Damit erkennt sie hinreichend, dass die Norm individualschützend wirken kann, wenn Individualrechtsgüter wie Ehre oder Persönlichkeitsrecht betroffen sind.",
+      "evidence": [
+        "Der geltend gemachte Anspruch auf Einschreiten könnte sich aus § 9 I POG i.V.m. Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre ergeben.",
+        "Es ist nicht von vornherein ausgeschlossen, dass die Behörde zumindest zu einer ermessensfehlerfreien Entscheidung verpflichtet ist.",
+        "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt § 9 Abs. 1 POG nicht als ausschließlich objektiv-rechtlich, sondern leitet daraus i.V.m. dem allgemeinen Persönlichkeitsrecht/Ehre eine mögliche subjektive Rechtsposition bzw. einen Anspruch auf ermessensfehlerfreie Entscheidung ab. Damit erkennt sie hinreichend, dass die Norm individualschützend wirken kann, wenn Individualrechtsgüter wie Ehre oder Persönlichkeitsrecht betroffen sind.",
+          "evidence": [
+            "Der geltend gemachte Anspruch auf Einschreiten könnte sich aus § 9 I POG i.V.m. Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre ergeben.",
+            "Es ist nicht von vornherein ausgeschlossen, dass die Behörde zumindest zu einer ermessensfehlerfreien Entscheidung verpflichtet ist.",
+            "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4145,
+        "output_tokens": 564,
+        "total_tokens": 4709,
+        "cached_input_tokens": 0
+      }
+    },
+    {
+      "id": "C-010",
+      "title": "Drittschutz des medienrechtlichen Ehrschutzes",
+      "verdict": "fail",
+      "reasoning": "Die Antwort prüft einen möglichen subjektiven Anspruch nur über § 9 POG i.V.m. Grundrechten und verneint die unmittelbare Heranziehung von § 59 Abs. 3 RStV für Verstöße gegen § 54 RStV. Sie behandelt § 59 Abs. 3 RStV nicht jedenfalls als möglicherweise individualschützend, soweit Ehrschutzbestimmungen durchgesetzt werden sollen. Damit fehlt der vom Kriterium verlangte Punkt.",
+      "evidence": [
+        "Der geltend gemachte Anspruch auf Einschreiten könnte sich aus § 9 I POG i.V.m. Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre ergeben.",
+        "Allerdings sind von dieser Pflicht ausdrücklich Verstöße gegen § 54 RStV ausgenommen",
+        "Die Aufsichtsbehörde kann sich insoweit nicht auf § 59 III RStV stützen",
+        "Das von der ADD insoweit geltend gemachte Fehlen einer Ermächtigungsgrundlage ist insoweit im Ergebnis zutreffend, als § 59 III RStV unmittelbar keine Handhabe bietet."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft einen möglichen subjektiven Anspruch nur über § 9 POG i.V.m. Grundrechten und verneint die unmittelbare Heranziehung von § 59 Abs. 3 RStV für Verstöße gegen § 54 RStV. Sie behandelt § 59 Abs. 3 RStV nicht jedenfalls als möglicherweise individualschützend, soweit Ehrschutzbestimmungen durchgesetzt werden sollen. Damit fehlt der vom Kriterium verlangte Punkt.",
+          "evidence": [
+            "Der geltend gemachte Anspruch auf Einschreiten könnte sich aus § 9 I POG i.V.m. Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre ergeben.",
+            "Allerdings sind von dieser Pflicht ausdrücklich Verstöße gegen § 54 RStV ausgenommen",
+            "Die Aufsichtsbehörde kann sich insoweit nicht auf § 59 III RStV stützen",
+            "Das von der ADD insoweit geltend gemachte Fehlen einer Ermächtigungsgrundlage ist insoweit im Ergebnis zutreffend, als § 59 III RStV unmittelbar keine Handhabe bietet."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4222,
+        "output_tokens": 773,
+        "total_tokens": 4995,
+        "cached_input_tokens": 0
+      }
+    },
+    {
+      "id": "C-011",
+      "title": "J als geschützte Betroffene",
+      "verdict": "pass",
+      "reasoning": "Die Antwort behandelt J als unmittelbar in eigenen Rechten, insbesondere Ehre und allgemeinem Persönlichkeitsrecht, betroffen. Sie ordnet die Äußerungen und die unwahre Tatsachenbehauptung konkret J zu und sieht sie daher als geschützte Betroffene an, nicht nur als mittelbar betroffen.",
+      "evidence": [
+        "in eigenen subjektiven Rechten verletzt",
+        "wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre",
+        "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt J als unmittelbar in eigenen Rechten, insbesondere Ehre und allgemeinem Persönlichkeitsrecht, betroffen. Sie ordnet die Äußerungen und die unwahre Tatsachenbehauptung konkret J zu und sieht sie daher als geschützte Betroffene an, nicht nur als mittelbar betroffen.",
+          "evidence": [
+            "in eigenen subjektiven Rechten verletzt",
+            "wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre",
+            "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4600,
+        "output_tokens": 659,
+        "total_tokens": 5259,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-012",
+      "title": "Konkrete Löschung nur bei Ermessensreduzierung",
+      "verdict": "pass",
+      "reasoning": "Die Antwort erkennt ausdrücklich das behördliche Ermessen aus § 9 Abs. 1 POG und stellt klar, dass J die konkrete Löschungsanordnung nur bei Ermessensreduzierung auf Null verlangen könnte. Da sie eine solche Reduzierung verneint, nimmt sie lediglich einen Bescheidungsanspruch an und keinen unmittelbaren gebundenen Anspruch auf Löschung.",
+      "evidence": [
+        "§ 9 I 1 POG räumt der Behörde Ermessen ein",
+        "Keine Ermessensreduzierung auf Null hinsichtlich des konkreten Verwaltungsaktes",
+        "Zwar sind die Äußerungen evident rechtswidrig; das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert, dass allein der Erlass einer behördlichen Löschungsanordnung in Betracht käme.",
+        "Die ADD ist verpflichtet, J unter Beachtung der Rechtsauffassung des Gerichts neu zu bescheiden.",
+        "Ein durchsetzbarer Anspruch auf unmittelbaren Erlass der Löschungsanordnung besteht mangels Spruchreife nicht"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erkennt ausdrücklich das behördliche Ermessen aus § 9 Abs. 1 POG und stellt klar, dass J die konkrete Löschungsanordnung nur bei Ermessensreduzierung auf Null verlangen könnte. Da sie eine solche Reduzierung verneint, nimmt sie lediglich einen Bescheidungsanspruch an und keinen unmittelbaren gebundenen Anspruch auf Löschung.",
+          "evidence": [
+            "§ 9 I 1 POG räumt der Behörde Ermessen ein",
+            "Keine Ermessensreduzierung auf Null hinsichtlich des konkreten Verwaltungsaktes",
+            "Zwar sind die Äußerungen evident rechtswidrig; das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert, dass allein der Erlass einer behördlichen Löschungsanordnung in Betracht käme.",
+            "Die ADD ist verpflichtet, J unter Beachtung der Rechtsauffassung des Gerichts neu zu bescheiden.",
+            "Ein durchsetzbarer Anspruch auf unmittelbaren Erlass der Löschungsanordnung besteht mangels Spruchreife nicht"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4739,
+        "output_tokens": 318,
+        "total_tokens": 5057,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-013",
+      "title": "Erforderlichkeit des Vorverfahrens",
+      "verdict": "pass",
+      "reasoning": "Die Antwort verlangt wegen der Ablehnung des beantragten Verwaltungsakts ausdrücklich ein Vorverfahren nach § 68 I 1 VwGO und prüft dessen ordnungsgemäße Durchführung. Sie hält das Widerspruchsverfahren nicht ohne Ausnahme für entbehrlich.",
+      "evidence": [
+        "Gemäß § 68 I 1 VwGO ist vor Erhebung der Verpflichtungsklage grundsätzlich ein Vorverfahren durchzuführen.",
+        "J hat nach Ablehnung ihres Antrags vom 06.02.2019 Widerspruch eingelegt.",
+        "Für die Zulässigkeit der Klage ist maßgeblich, ob das Widerspruchsverfahren ordnungsgemäß durchgeführt wurde."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verlangt wegen der Ablehnung des beantragten Verwaltungsakts ausdrücklich ein Vorverfahren nach § 68 I 1 VwGO und prüft dessen ordnungsgemäße Durchführung. Sie hält das Widerspruchsverfahren nicht ohne Ausnahme für entbehrlich.",
+          "evidence": [
+            "Gemäß § 68 I 1 VwGO ist vor Erhebung der Verpflichtungsklage grundsätzlich ein Vorverfahren durchzuführen.",
+            "J hat nach Ablehnung ihres Antrags vom 06.02.2019 Widerspruch eingelegt.",
+            "Für die Zulässigkeit der Klage ist maßgeblich, ob das Widerspruchsverfahren ordnungsgemäß durchgeführt wurde."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4603,
+        "output_tokens": 203,
+        "total_tokens": 4806,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-014",
+      "title": "Ende der Widerspruchsfrist",
+      "verdict": "pass",
+      "reasoning": "Die Antwort berechnet aus der Bekanntgabe des Ablehnungsbescheids am 06.02.2019 ausdrücklich das Ende der einmonatigen Widerspruchsfrist auf den 06.03.2019 und behandelt den Widerspruch vom 07.03.2019 nicht als fristgerecht.",
+      "evidence": [
+        "Der Ablehnungsbescheid wurde J am 06.02.2019 bekanntgegeben.",
+        "Die einmonatige Widerspruchsfrist gemäß § 70 I 1 VwGO i.V.m. § 31 I VwVfG lief demnach am 06.03.2019 ab.",
+        "J legte erst am 07.03.2019 Widerspruch ein – und damit einen Tag nach Fristablauf."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort berechnet aus der Bekanntgabe des Ablehnungsbescheids am 06.02.2019 ausdrücklich das Ende der einmonatigen Widerspruchsfrist auf den 06.03.2019 und behandelt den Widerspruch vom 07.03.2019 nicht als fristgerecht.",
+          "evidence": [
+            "Der Ablehnungsbescheid wurde J am 06.02.2019 bekanntgegeben.",
+            "Die einmonatige Widerspruchsfrist gemäß § 70 I 1 VwGO i.V.m. § 31 I VwVfG lief demnach am 06.03.2019 ab.",
+            "J legte erst am 07.03.2019 Widerspruch ein – und damit einen Tag nach Fristablauf."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4624,
+        "output_tokens": 225,
+        "total_tokens": 4849,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-015",
+      "title": "Verspäteter Widerspruch",
+      "verdict": "pass",
+      "reasoning": "Die Antwort stellt ausdrücklich fest, dass die Monatsfrist des § 70 Abs. 1 VwGO am 06.03.2019 ablief und der Widerspruch am 07.03.2019 um einen Tag verspätet eingelegt wurde. Sie behandelt ihn nicht ohne Wiedereinsetzung als fristgerecht.",
+      "evidence": [
+        "Die einmonatige Widerspruchsfrist gemäß § 70 I 1 VwGO i.V.m. § 31 I VwVfG lief demnach am 06.03.2019 ab.",
+        "J legte erst am 07.03.2019 Widerspruch ein – und damit einen Tag nach Fristablauf."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort stellt ausdrücklich fest, dass die Monatsfrist des § 70 Abs. 1 VwGO am 06.03.2019 ablief und der Widerspruch am 07.03.2019 um einen Tag verspätet eingelegt wurde. Sie behandelt ihn nicht ohne Wiedereinsetzung als fristgerecht.",
+          "evidence": [
+            "Die einmonatige Widerspruchsfrist gemäß § 70 I 1 VwGO i.V.m. § 31 I VwVfG lief demnach am 06.03.2019 ab.",
+            "J legte erst am 07.03.2019 Widerspruch ein – und damit einen Tag nach Fristablauf."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4607,
+        "output_tokens": 215,
+        "total_tokens": 4822,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-016",
+      "title": "Wiedereinsetzung im Widerspruchsverfahren",
+      "verdict": "fail",
+      "reasoning": "Die Antwort bejaht zwar Wiedereinsetzung in die versäumte Widerspruchsfrist, stützt dies aber auf § 32 VwVfG. Sie wendet nicht § 60 VwGO über § 70 Abs. 2 VwGO an. Das vom Kriterium ausdrücklich verlangte Normgefüge fehlt daher.",
+      "evidence": [
+        "Die Voraussetzungen einer Wiedereinsetzung nach § 32 I VwVfG sind erfüllt",
+        "Die ADD hätte daher von Amts wegen Wiedereinsetzung gewähren müssen."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort bejaht zwar Wiedereinsetzung in die versäumte Widerspruchsfrist, stützt dies aber auf § 32 VwVfG. Sie wendet nicht § 60 VwGO über § 70 Abs. 2 VwGO an. Das vom Kriterium ausdrücklich verlangte Normgefüge fehlt daher.",
+          "evidence": [
+            "Die Voraussetzungen einer Wiedereinsetzung nach § 32 I VwVfG sind erfüllt",
+            "Die ADD hätte daher von Amts wegen Wiedereinsetzung gewähren müssen."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 3660,
+        "output_tokens": 259,
+        "total_tokens": 3919,
+        "cached_input_tokens": 0
+      }
+    },
+    {
+      "id": "C-017",
+      "title": "Unverschuldeter Unfall der J",
+      "verdict": "pass",
+      "reasoning": "Die Antwort bewertet den Verkehrsunfall und seine Folgen ausdrücklich als unverschuldetes Hindernis für die fristgerechte Widerspruchseinlegung. Zwar zitiert sie § 32 VwVfG statt § 60 Abs. 1 VwGO, schreibt J aber gerade kein eigenes Verschulden zu und erfüllt damit den geforderten Kernpunkt.",
+      "evidence": [
+        "J war jedoch unverschuldet gehindert, die Frist einzuhalten.",
+        "Sie erlitt am 07.02.2019 einen Verkehrsunfall, dessen Folgen sie bis zum 07.03.2019 an der fristgerechten Einlegung hinderten.",
+        "Das Hindernis (krankheitsbedingte Unfähigkeit) war unverschuldet"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bewertet den Verkehrsunfall und seine Folgen ausdrücklich als unverschuldetes Hindernis für die fristgerechte Widerspruchseinlegung. Zwar zitiert sie § 32 VwVfG statt § 60 Abs. 1 VwGO, schreibt J aber gerade kein eigenes Verschulden zu und erfüllt damit den geforderten Kernpunkt.",
+          "evidence": [
+            "J war jedoch unverschuldet gehindert, die Frist einzuhalten.",
+            "Sie erlitt am 07.02.2019 einen Verkehrsunfall, dessen Folgen sie bis zum 07.03.2019 an der fristgerechten Einlegung hinderten.",
+            "Das Hindernis (krankheitsbedingte Unfähigkeit) war unverschuldet"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4614,
+        "output_tokens": 706,
+        "total_tokens": 5320,
+        "cached_input_tokens": 0
+      }
+    },
+    {
+      "id": "C-018",
+      "title": "Kein zurechenbares Elternverschulden",
+      "verdict": "pass",
+      "reasoning": "Die Antwort berücksichtigt ausdrücklich, dass nicht nur J selbst, sondern auch ihre Eltern als gesetzliche Vertreter unverschuldet an der Widerspruchseinlegung gehindert waren. Ein zurechenbares Elternverschulden wird gerade nicht angenommen.",
+      "evidence": [
+        "Auch ihre Eltern waren unverschuldet an der Einlegung gehindert.",
+        "J war jedoch unverschuldet gehindert, die Frist einzuhalten."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort berücksichtigt ausdrücklich, dass nicht nur J selbst, sondern auch ihre Eltern als gesetzliche Vertreter unverschuldet an der Widerspruchseinlegung gehindert waren. Ein zurechenbares Elternverschulden wird gerade nicht angenommen.",
+          "evidence": [
+            "Auch ihre Eltern waren unverschuldet an der Einlegung gehindert.",
+            "J war jedoch unverschuldet gehindert, die Frist einzuhalten."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4611,
+        "output_tokens": 181,
+        "total_tokens": 4792,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-019",
+      "title": "Entbehrlicher Wiedereinsetzungsantrag",
+      "verdict": "pass",
+      "reasoning": "Die Antwort erklärt in der Sache, dass kein ausdrücklicher Wiedereinsetzungsantrag erforderlich ist, wenn die versäumte Rechtshandlung innerhalb der maßgeblichen Frist nachgeholt wird. Zwar nennt sie fälschlich § 32 VwVfG statt § 60 Abs. 2 Satz 4 VwGO, verweigert die Wiedereinsetzung aber nicht wegen eines fehlenden ausdrücklichen Antrags und trifft den geforderten Rechtsgedanken klar.",
+      "evidence": [
+        "Die Voraussetzungen einer Wiedereinsetzung nach § 32 I VwVfG sind erfüllt",
+        "die versäumte Handlung wurde innerhalb von zwei Wochen nach Wegfall des Hindernisses (§ 32 II VwVfG) – sogar am selben Tage – nachgeholt.",
+        "Ein ausdrücklicher Wiedereinsetzungsantrag ist nicht zwingend; die Nachholung der Handlung enthält zugleich den konkludenten Antrag"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erklärt in der Sache, dass kein ausdrücklicher Wiedereinsetzungsantrag erforderlich ist, wenn die versäumte Rechtshandlung innerhalb der maßgeblichen Frist nachgeholt wird. Zwar nennt sie fälschlich § 32 VwVfG statt § 60 Abs. 2 Satz 4 VwGO, verweigert die Wiedereinsetzung aber nicht wegen eines fehlenden ausdrücklichen Antrags und trifft den geforderten Rechtsgedanken klar.",
+          "evidence": [
+            "Die Voraussetzungen einer Wiedereinsetzung nach § 32 I VwVfG sind erfüllt",
+            "die versäumte Handlung wurde innerhalb von zwei Wochen nach Wegfall des Hindernisses (§ 32 II VwVfG) – sogar am selben Tage – nachgeholt.",
+            "Ein ausdrücklicher Wiedereinsetzungsantrag ist nicht zwingend; die Nachholung der Handlung enthält zugleich den konkludenten Antrag"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 3683,
+        "output_tokens": 741,
+        "total_tokens": 4424,
+        "cached_input_tokens": 0
+      }
+    },
+    {
+      "id": "C-020",
+      "title": "Rechtzeitige Nachholung am 07.03.2019",
+      "verdict": "pass",
+      "reasoning": "Die Antwort behandelt den am 07.03.2019 nach Wegfall des Hindernisses eingelegten Widerspruch ausdrücklich als rechtzeitige Nachholung innerhalb einer Zweiwochenfrist. Zwar wird § 32 VwVfG statt § 60 Abs. 2 VwGO zitiert, der geforderte inhaltliche Punkt der rechtzeitigen Nachholung am 07.03.2019 ist aber klar enthalten.",
+      "evidence": [
+        "Am 07.03.2019, dem Tag der Genesung, legte sie Widerspruch ein.",
+        "die versäumte Handlung wurde innerhalb von zwei Wochen nach Wegfall des Hindernisses (§ 32 II VwVfG) – sogar am selben Tage – nachgeholt"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt den am 07.03.2019 nach Wegfall des Hindernisses eingelegten Widerspruch ausdrücklich als rechtzeitige Nachholung innerhalb einer Zweiwochenfrist. Zwar wird § 32 VwVfG statt § 60 Abs. 2 VwGO zitiert, der geforderte inhaltliche Punkt der rechtzeitigen Nachholung am 07.03.2019 ist aber klar enthalten.",
+          "evidence": [
+            "Am 07.03.2019, dem Tag der Genesung, legte sie Widerspruch ein.",
+            "die versäumte Handlung wurde innerhalb von zwei Wochen nach Wegfall des Hindernisses (§ 32 II VwVfG) – sogar am selben Tage – nachgeholt"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4636,
+        "output_tokens": 510,
+        "total_tokens": 5146,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-021",
+      "title": "Gerichtliche Berücksichtigung der Wiedereinsetzung",
+      "verdict": "pass",
+      "reasoning": "Die Antwort prüft die Wiedereinsetzungsvoraussetzungen im Rahmen der Zulässigkeit selbst und nimmt an, dass die rechtswidrige fehlende positive Wiedereinsetzungsentscheidung der Behörde der ordnungsgemäßen Durchführung des Vorverfahrens nicht entgegensteht. Auch wenn sie fälschlich § 32 VwVfG statt § 60 VwGO nennt, behandelt sie die Kompetenzfrage nicht widersprüchlich und übernimmt die Zurückweisung des Widerspruchs nicht ungeprüft.",
+      "evidence": [
+        "Die Voraussetzungen einer Wiedereinsetzung nach § 32 I VwVfG sind erfüllt",
+        "Die ADD hätte daher von Amts wegen Wiedereinsetzung gewähren müssen.",
+        "Die formale Zurückweisung des Widerspruchs als unzulässig ist rechtswidrig und steht der ordnungsgemäßen Durchführung des Vorverfahrens nicht entgegen.",
+        "Das Widerspruchsverfahren ist mithin wirksam durchgeführt worden."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Wiedereinsetzungsvoraussetzungen im Rahmen der Zulässigkeit selbst und nimmt an, dass die rechtswidrige fehlende positive Wiedereinsetzungsentscheidung der Behörde der ordnungsgemäßen Durchführung des Vorverfahrens nicht entgegensteht. Auch wenn sie fälschlich § 32 VwVfG statt § 60 VwGO nennt, behandelt sie die Kompetenzfrage nicht widersprüchlich und übernimmt die Zurückweisung des Widerspruchs nicht ungeprüft.",
+          "evidence": [
+            "Die Voraussetzungen einer Wiedereinsetzung nach § 32 I VwVfG sind erfüllt",
+            "Die ADD hätte daher von Amts wegen Wiedereinsetzung gewähren müssen.",
+            "Die formale Zurückweisung des Widerspruchs als unzulässig ist rechtswidrig und steht der ordnungsgemäßen Durchführung des Vorverfahrens nicht entgegen.",
+            "Das Widerspruchsverfahren ist mithin wirksam durchgeführt worden."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 3728,
+        "output_tokens": 571,
+        "total_tokens": 4299,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-022",
+      "title": "Richtiger Klagegegner",
+      "verdict": "pass",
+      "reasoning": "Die Antwort nennt ausdrücklich das Land Rheinland-Pfalz als Rechtsträger der ADD und damit als richtigen Klagegegner. Dass § 78 I VwGO nicht als Abs. 1 Nr. 1 ausgeschrieben wird, ist unschädlich.",
+      "evidence": [
+        "Klagegegner ist der Rechtsträger der ADD, das Land Rheinland-Pfalz (§ 78 I VwGO analog)."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort nennt ausdrücklich das Land Rheinland-Pfalz als Rechtsträger der ADD und damit als richtigen Klagegegner. Dass § 78 I VwGO nicht als Abs. 1 Nr. 1 ausgeschrieben wird, ist unschädlich.",
+          "evidence": [
+            "Klagegegner ist der Rechtsträger der ADD, das Land Rheinland-Pfalz (§ 78 I VwGO analog)."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4604,
+        "output_tokens": 228,
+        "total_tokens": 4832,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-023",
+      "title": "Beteiligungsfähigkeit der J",
+      "verdict": "pass",
+      "reasoning": "Die Antwort spricht J die Beteiligungsfähigkeit nicht wegen ihrer Minderjährigkeit ab, sondern behandelt sie trotz Minderjährigkeit als Klägerin im Verwaltungsprozess und verweist lediglich auf die Vertretung durch ihre Eltern. Damit wird sie der Sache nach als beteiligungsfähig behandelt.",
+      "evidence": [
+        "J ist minderjährig, wird aber vertreten durch ihre Eltern (§ 62 I Nr. 2 VwGO, § 1629 BGB).",
+        "Die Klage ist zulässig."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort spricht J die Beteiligungsfähigkeit nicht wegen ihrer Minderjährigkeit ab, sondern behandelt sie trotz Minderjährigkeit als Klägerin im Verwaltungsprozess und verweist lediglich auf die Vertretung durch ihre Eltern. Damit wird sie der Sache nach als beteiligungsfähig behandelt.",
+          "evidence": [
+            "J ist minderjährig, wird aber vertreten durch ihre Eltern (§ 62 I Nr. 2 VwGO, § 1629 BGB).",
+            "Die Klage ist zulässig."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4584,
+        "output_tokens": 488,
+        "total_tokens": 5072,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-024",
+      "title": "Prozessvertretung der minderjährigen J",
+      "verdict": "pass",
+      "reasoning": "Die Antwort erkennt ausdrücklich, dass die minderjährige J durch ihre Eltern vertreten wird und verweist auf § 1629 BGB. Sie sieht die Klage nicht wegen Minderjährigkeit trotz elterlicher Vertretung als unzulässig an.",
+      "evidence": [
+        "J ist minderjährig, wird aber vertreten durch ihre Eltern (§ 62 I Nr. 2 VwGO, § 1629 BGB)."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erkennt ausdrücklich, dass die minderjährige J durch ihre Eltern vertreten wird und verweist auf § 1629 BGB. Sie sieht die Klage nicht wegen Minderjährigkeit trotz elterlicher Vertretung als unzulässig an.",
+          "evidence": [
+            "J ist minderjährig, wird aber vertreten durch ihre Eltern (§ 62 I Nr. 2 VwGO, § 1629 BGB)."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4611,
+        "output_tokens": 205,
+        "total_tokens": 4816,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-025",
+      "title": "Klagefrist nach Widerspruchsbescheid",
+      "verdict": "pass",
+      "reasoning": "Die Antwort behandelt die zwei Tage nach Zustellung/Erhalt des Widerspruchsbescheids erhobene Verpflichtungsklage als innerhalb der Monatsfrist und damit fristgerecht. Auch wenn § 74 Abs. 2 VwGO nicht ausdrücklich zitiert wird, wird die maßgebliche Klagefrist inhaltlich auf die Verpflichtungsklage angewandt.",
+      "evidence": [
+        "Gemäß § 74 I 1 VwGO ist die Verpflichtungsklage binnen eines Monats nach Zustellung des Widerspruchsbescheids zu erheben.",
+        "Der Widerspruchsbescheid wurde J zugestellt; zwei Tage später reichte sie Klage ein. Die Frist ist gewahrt."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die zwei Tage nach Zustellung/Erhalt des Widerspruchsbescheids erhobene Verpflichtungsklage als innerhalb der Monatsfrist und damit fristgerecht. Auch wenn § 74 Abs. 2 VwGO nicht ausdrücklich zitiert wird, wird die maßgebliche Klagefrist inhaltlich auf die Verpflichtungsklage angewandt.",
+          "evidence": [
+            "Gemäß § 74 I 1 VwGO ist die Verpflichtungsklage binnen eines Monats nach Zustellung des Widerspruchsbescheids zu erheben.",
+            "Der Widerspruchsbescheid wurde J zugestellt; zwei Tage später reichte sie Klage ein. Die Frist ist gewahrt."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4615,
+        "output_tokens": 497,
+        "total_tokens": 5112,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-026",
+      "title": "Notwendige Beiladung des X",
+      "verdict": "fail",
+      "reasoning": "Die Antwort erkennt zwar, dass J eine Löschungsanordnung gegenüber X begehrt, behandelt X aber nirgends als nach § 65 Abs. 2 VwGO notwendig beizuladenden Dritten. Die unmittelbare rechtliche Betroffenheit des X durch den begehrten belastenden Verwaltungsakt wird im Rahmen der Zulässigkeit nicht geprüft.",
+      "evidence": [
+        "J begehrt von der Aufsichts- und Dienstleistungsdirektion (ADD) den Erlass einer Löschungsanordnung gegenüber X.",
+        "VI. Weitere Zulässigkeitsvoraussetzungen"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erkennt zwar, dass J eine Löschungsanordnung gegenüber X begehrt, behandelt X aber nirgends als nach § 65 Abs. 2 VwGO notwendig beizuladenden Dritten. Die unmittelbare rechtliche Betroffenheit des X durch den begehrten belastenden Verwaltungsakt wird im Rahmen der Zulässigkeit nicht geprüft.",
+          "evidence": [
+            "J begehrt von der Aufsichts- und Dienstleistungsdirektion (ADD) den Erlass einer Löschungsanordnung gegenüber X.",
+            "VI. Weitere Zulässigkeitsvoraussetzungen"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4615,
+        "output_tokens": 332,
+        "total_tokens": 4947,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-027",
+      "title": "Begründetheitsmaßstab der Verpflichtungsklage",
+      "verdict": "pass",
+      "reasoning": "Die Antwort legt den Begründetheitsmaßstab der Verpflichtungsklage zugrunde, indem sie auf § 113 Abs. 5 VwGO abstellt und ausdrücklich prüft, ob J einen Anspruch auf Erlass der begehrten Löschungsanordnung hat. Sie thematisiert zudem die Spruchreife für eine unmittelbare Verpflichtung. Damit wird nicht lediglich nach Anfechtungsklagelogik die Rechtmäßigkeit des Ablehnungsbescheids geprüft.",
+      "evidence": [
+        "J einen Anspruch auf Erlass des begehrten Verwaltungsaktes oder – bei Ermessensentscheidung – auf Neubescheidung hat (§ 113 V VwGO).",
+        "J begehrt den Erlass einer Löschungsanordnung.",
+        "Die Sache ist mangels erschöpfender behördlicher Ermessensbetätigung nicht im Sinne einer unmittelbaren Verpflichtung zum Erlass der konkreten Maßnahme spruchreif (§ 113 V 2 VwGO)."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort legt den Begründetheitsmaßstab der Verpflichtungsklage zugrunde, indem sie auf § 113 Abs. 5 VwGO abstellt und ausdrücklich prüft, ob J einen Anspruch auf Erlass der begehrten Löschungsanordnung hat. Sie thematisiert zudem die Spruchreife für eine unmittelbare Verpflichtung. Damit wird nicht lediglich nach Anfechtungsklagelogik die Rechtmäßigkeit des Ablehnungsbescheids geprüft.",
+          "evidence": [
+            "J einen Anspruch auf Erlass des begehrten Verwaltungsaktes oder – bei Ermessensentscheidung – auf Neubescheidung hat (§ 113 V VwGO).",
+            "J begehrt den Erlass einer Löschungsanordnung.",
+            "Die Sache ist mangels erschöpfender behördlicher Ermessensbetätigung nicht im Sinne einer unmittelbaren Verpflichtung zum Erlass der konkreten Maßnahme spruchreif (§ 113 V 2 VwGO)."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 3678,
+        "output_tokens": 730,
+        "total_tokens": 4408,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-028",
+      "title": "Rechtmäßigkeit der begehrten Löschungsverfügung",
+      "verdict": "pass",
+      "reasoning": "Die Antwort prüft den Erlass der begehrten Löschungsanordnung als Anspruch auf einen Verwaltungsakt anhand einer Ermächtigungsgrundlage und verneint einen unmittelbaren Erlassanspruch. Damit hält sie keinen Anspruch auf Erlass eines rechtswidrigen Verwaltungsakts für möglich, sondern knüpft den Anspruch an die rechtlichen Voraussetzungen der Verfügung.",
+      "evidence": [
+        "Die Klage ist begründet, soweit die Ablehnung der Löschungsanordnung rechtswidrig ist und J einen Anspruch auf Erlass des begehrten Verwaltungsaktes",
+        "Anspruchsgrundlage für die begehrte Löschungsanordnung",
+        "§ 9 I 1 POG räumt der Behörde Ermessen ein",
+        "Ein durchsetzbarer Anspruch auf unmittelbaren Erlass der Löschungsanordnung besteht mangels Spruchreife nicht"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft den Erlass der begehrten Löschungsanordnung als Anspruch auf einen Verwaltungsakt anhand einer Ermächtigungsgrundlage und verneint einen unmittelbaren Erlassanspruch. Damit hält sie keinen Anspruch auf Erlass eines rechtswidrigen Verwaltungsakts für möglich, sondern knüpft den Anspruch an die rechtlichen Voraussetzungen der Verfügung.",
+          "evidence": [
+            "Die Klage ist begründet, soweit die Ablehnung der Löschungsanordnung rechtswidrig ist und J einen Anspruch auf Erlass des begehrten Verwaltungsaktes",
+            "Anspruchsgrundlage für die begehrte Löschungsanordnung",
+            "§ 9 I 1 POG räumt der Behörde Ermessen ein",
+            "Ein durchsetzbarer Anspruch auf unmittelbaren Erlass der Löschungsanordnung besteht mangels Spruchreife nicht"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4601,
+        "output_tokens": 725,
+        "total_tokens": 5326,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-029",
+      "title": "Blog des X als Telemedium",
+      "verdict": "pass",
+      "reasoning": "Die Antwort behandelt den Blog des X ausdrücklich entsprechend dem Bearbeitungshinweis als Telemedium im Sinne der §§ 54 ff. RStV und lehnt die Anwendbarkeit der Telemedienvorschriften nicht wegen fehlender Telemedieneigenschaft ab.",
+      "evidence": [
+        "Der Blog des X ist ein Telemedium i.S.d. §§ 54 ff. RStV."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt den Blog des X ausdrücklich entsprechend dem Bearbeitungshinweis als Telemedium im Sinne der §§ 54 ff. RStV und lehnt die Anwendbarkeit der Telemedienvorschriften nicht wegen fehlender Telemedieneigenschaft ab.",
+          "evidence": [
+            "Der Blog des X ist ein Telemedium i.S.d. §§ 54 ff. RStV."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4604,
+        "output_tokens": 159,
+        "total_tokens": 4763,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-030",
+      "title": "§ 59 Abs. 3 RStV als mögliche Aufsichtsbefugnis",
+      "verdict": "pass",
+      "reasoning": "Die Antwort prüft § 59 Abs. 3 Satz 1 RStV ausdrücklich als spezialgesetzliche medienaufsichtsrechtliche Ermächtigungsgrundlage für erforderliche Maßnahmen im Zusammenhang mit dem Telemedium des X. Dass sie die Anwendbarkeit im Ergebnis wegen der Ausnahme für § 54 RStV verneint, schadet dem Kriterium nicht.",
+      "evidence": [
+        "#### 1. § 59 III RStV als spezialgesetzliche Ermächtigung",
+        "§ 59 III 1 RStV verpflichtet die Aufsichtsbehörde, bei Verstößen gegen die Bestimmungen des Telemedienrechts (mit bestimmten Ausnahmen) die erforderlichen Maßnahmen zu treffen.",
+        "Der Blog des X ist ein Telemedium i.S.d. §§ 54 ff. RStV."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft § 59 Abs. 3 Satz 1 RStV ausdrücklich als spezialgesetzliche medienaufsichtsrechtliche Ermächtigungsgrundlage für erforderliche Maßnahmen im Zusammenhang mit dem Telemedium des X. Dass sie die Anwendbarkeit im Ergebnis wegen der Ausnahme für § 54 RStV verneint, schadet dem Kriterium nicht.",
+          "evidence": [
+            "#### 1. § 59 III RStV als spezialgesetzliche Ermächtigung",
+            "§ 59 III 1 RStV verpflichtet die Aufsichtsbehörde, bei Verstößen gegen die Bestimmungen des Telemedienrechts (mit bestimmten Ausnahmen) die erforderlichen Maßnahmen zu treffen.",
+            "Der Blog des X ist ein Telemedium i.S.d. §§ 54 ff. RStV."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4239,
+        "output_tokens": 224,
+        "total_tokens": 4463,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-031",
+      "title": "Ehrschutzpflicht aus § 54 Abs. 1 Satz 3 RStV",
+      "verdict": "pass",
+      "reasoning": "Die Antwort nennt § 54 Abs. 1 Satz 3 RStV ausdrücklich als Pflicht zur Einhaltung der allgemeinen Gesetze und der gesetzlichen Bestimmungen zum Schutz der persönlichen Ehre und bezieht dies auf den Blog als Telemedium. Damit ist der medienrechtliche Ehrschutzbezug zutreffend erkannt.",
+      "evidence": [
+        "Der Blog des X ist ein Telemedium i.S.d. §§ 54 ff. RStV.",
+        "§ 54 I 3 RStV bestimmt, dass die allgemeinen Gesetze und die gesetzlichen Bestimmungen zum Schutz der persönlichen Ehre eingehalten werden müssen."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort nennt § 54 Abs. 1 Satz 3 RStV ausdrücklich als Pflicht zur Einhaltung der allgemeinen Gesetze und der gesetzlichen Bestimmungen zum Schutz der persönlichen Ehre und bezieht dies auf den Blog als Telemedium. Damit ist der medienrechtliche Ehrschutzbezug zutreffend erkannt.",
+          "evidence": [
+            "Der Blog des X ist ein Telemedium i.S.d. §§ 54 ff. RStV.",
+            "§ 54 I 3 RStV bestimmt, dass die allgemeinen Gesetze und die gesetzlichen Bestimmungen zum Schutz der persönlichen Ehre eingehalten werden müssen."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4240,
+        "output_tokens": 227,
+        "total_tokens": 4467,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-032",
+      "title": "Ausschluss des § 54 RStV in § 59 Abs. 3 RStV",
+      "verdict": "pass",
+      "reasoning": "Die Antwort leitet aus dem Wortlaut des § 59 Abs. 3 RStV ausdrücklich her, dass Verstöße gegen § 54 RStV ausgenommen sind. Sie ordnet die gerügten Ehrschutz- und Strafgesetzverstöße § 54 I 3 RStV zu und verneint deshalb die unmittelbare Tragfähigkeit von § 59 Abs. 3 RStV. Damit ist das Kriterium erfüllt.",
+      "evidence": [
+        "Allerdings sind von dieser Pflicht ausdrücklich Verstöße gegen § 54 RStV ausgenommen (§ 59 III 1 a.E.: „mit Ausnahme der § 54, […]“).",
+        "Die Äußerungen des X stellen einen Verstoß gegen strafgesetzliche Ehrschutzbestimmungen (§§ 185, 187 StGB) und damit gegen § 54 I 3 RStV dar.",
+        "Die Aufsichtsbehörde kann sich insoweit nicht auf § 59 III RStV stützen, da diese Vorschrift gerade auf solche Verstöße nicht anwendbar ist."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort leitet aus dem Wortlaut des § 59 Abs. 3 RStV ausdrücklich her, dass Verstöße gegen § 54 RStV ausgenommen sind. Sie ordnet die gerügten Ehrschutz- und Strafgesetzverstöße § 54 I 3 RStV zu und verneint deshalb die unmittelbare Tragfähigkeit von § 59 Abs. 3 RStV. Damit ist das Kriterium erfüllt.",
+          "evidence": [
+            "Allerdings sind von dieser Pflicht ausdrücklich Verstöße gegen § 54 RStV ausgenommen (§ 59 III 1 a.E.: „mit Ausnahme der § 54, […]“).",
+            "Die Äußerungen des X stellen einen Verstoß gegen strafgesetzliche Ehrschutzbestimmungen (§§ 185, 187 StGB) und damit gegen § 54 I 3 RStV dar.",
+            "Die Aufsichtsbehörde kann sich insoweit nicht auf § 59 III RStV stützen, da diese Vorschrift gerade auf solche Verstöße nicht anwendbar ist."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 5275,
+        "output_tokens": 278,
+        "total_tokens": 5553,
+        "cached_input_tokens": 3840
+      }
+    },
+    {
+      "id": "C-033",
+      "title": "Keine Sperrwirkung nach § 59 Abs. 3 Satz 7 RStV",
+      "verdict": "pass",
+      "reasoning": "Die Antwort versteht § 59 Abs. 3 Satz 7 RStV ausdrücklich dahin, dass Befugnisse zur Durchsetzung allgemeiner Gesetze und Ehrschutzbestimmungen unberührt bleiben, und leitet gerade keine vollständige Sperrwirkung gegenüber ordnungsrechtlichen Befugnissen ab.",
+      "evidence": [
+        "Gleiches folgt aus § 59 III 7 RStV, wonach die Befugnisse der Aufsichtsbehörden zur Durchsetzung der allgemeinen Gesetze und der Ehrschutzbestimmungen unberührt bleiben.",
+        "Soweit spezialgesetzliche Vorschriften (wie § 59 III RStV) keine Befugnisse vorsehen, greift die allgemeine Befugnisnorm des § 9 I POG"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort versteht § 59 Abs. 3 Satz 7 RStV ausdrücklich dahin, dass Befugnisse zur Durchsetzung allgemeiner Gesetze und Ehrschutzbestimmungen unberührt bleiben, und leitet gerade keine vollständige Sperrwirkung gegenüber ordnungsrechtlichen Befugnissen ab.",
+          "evidence": [
+            "Gleiches folgt aus § 59 III 7 RStV, wonach die Befugnisse der Aufsichtsbehörden zur Durchsetzung der allgemeinen Gesetze und der Ehrschutzbestimmungen unberührt bleiben.",
+            "Soweit spezialgesetzliche Vorschriften (wie § 59 III RStV) keine Befugnisse vorsehen, greift die allgemeine Befugnisnorm des § 9 I POG"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4249,
+        "output_tokens": 227,
+        "total_tokens": 4476,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-034",
+      "title": "Rückgriff auf die ordnungsbehördliche Generalklausel",
+      "verdict": "pass",
+      "reasoning": "Die Antwort verneint nicht jede Ermächtigungsgrundlage wegen § 59 Abs. 3 RStV, sondern lässt ausdrücklich bei fehlender spezialgesetzlicher Befugnis den Rückgriff auf die ordnungsbehördliche Generalklausel des § 9 Abs. 1 POG Rheinland-Pfalz zu und stützt dies zusätzlich auf § 59 Abs. 3 Satz 7 RStV.",
+      "evidence": [
+        "Soweit spezialgesetzliche Vorschriften (wie § 59 III RStV) keine Befugnisse vorsehen, greift die allgemeine Befugnisnorm des § 9 I POG (§ 9 II 2 POG).",
+        "Gleiches folgt aus § 59 III 7 RStV, wonach die Befugnisse der Aufsichtsbehörden zur Durchsetzung der allgemeinen Gesetze und der Ehrschutzbestimmungen unberührt bleiben."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint nicht jede Ermächtigungsgrundlage wegen § 59 Abs. 3 RStV, sondern lässt ausdrücklich bei fehlender spezialgesetzlicher Befugnis den Rückgriff auf die ordnungsbehördliche Generalklausel des § 9 Abs. 1 POG Rheinland-Pfalz zu und stützt dies zusätzlich auf § 59 Abs. 3 Satz 7 RStV.",
+          "evidence": [
+            "Soweit spezialgesetzliche Vorschriften (wie § 59 III RStV) keine Befugnisse vorsehen, greift die allgemeine Befugnisnorm des § 9 I POG (§ 9 II 2 POG).",
+            "Gleiches folgt aus § 59 III 7 RStV, wonach die Befugnisse der Aufsichtsbehörden zur Durchsetzung der allgemeinen Gesetze und der Ehrschutzbestimmungen unberührt bleiben."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4736,
+        "output_tokens": 249,
+        "total_tokens": 4985,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-035",
+      "title": "§ 9 Abs. 2 POG bei medienaufsichtlicher Aufgabe",
+      "verdict": "pass",
+      "reasoning": "Die Antwort zieht § 9 Abs. 2 Satz 2 POG heran und begründet dies damit, dass der RStV für die Ehrschutzdurchsetzung keine spezielle bzw. abschließende Befugnis enthält; zusätzlich verweist sie auf § 59 Abs. 3 Satz 7 RStV. Zwar nennt sie § 59 Abs. 2 RStV nicht ausdrücklich als Überwachungsaufgabe, sie stellt aber die medienaufsichtliche Zuständigkeit der ADD für Telemedien dar und lehnt die POG-Anwendung nicht wegen der Herkunft der Aufgabe aus dem RStV ab. In der Sache ist das Kriterium erfüllt.",
+      "evidence": [
+        "Soweit spezialgesetzliche Vorschriften (wie § 59 III RStV) keine Befugnisse vorsehen, greift die allgemeine Befugnisnorm des § 9 I POG (§ 9 II 2 POG).",
+        "Gleiches folgt aus § 59 III 7 RStV, wonach die Befugnisse der Aufsichtsbehörden zur Durchsetzung der allgemeinen Gesetze und der Ehrschutzbestimmungen unberührt bleiben.",
+        "Die Aufsichtsbehörde kann sich insoweit nicht auf § 59 III RStV stützen, da diese Vorschrift gerade auf solche Verstöße nicht anwendbar ist."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort zieht § 9 Abs. 2 Satz 2 POG heran und begründet dies damit, dass der RStV für die Ehrschutzdurchsetzung keine spezielle bzw. abschließende Befugnis enthält; zusätzlich verweist sie auf § 59 Abs. 3 Satz 7 RStV. Zwar nennt sie § 59 Abs. 2 RStV nicht ausdrücklich als Überwachungsaufgabe, sie stellt aber die medienaufsichtliche Zuständigkeit der ADD für Telemedien dar und lehnt die POG-Anwendung nicht wegen der Herkunft der Aufgabe aus dem RStV ab. In der Sache ist das Kriterium erfüllt.",
+          "evidence": [
+            "Soweit spezialgesetzliche Vorschriften (wie § 59 III RStV) keine Befugnisse vorsehen, greift die allgemeine Befugnisnorm des § 9 I POG (§ 9 II 2 POG).",
+            "Gleiches folgt aus § 59 III 7 RStV, wonach die Befugnisse der Aufsichtsbehörden zur Durchsetzung der allgemeinen Gesetze und der Ehrschutzbestimmungen unberührt bleiben.",
+            "Die Aufsichtsbehörde kann sich insoweit nicht auf § 59 III RStV stützen, da diese Vorschrift gerade auf solche Verstöße nicht anwendbar ist."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4727,
+        "output_tokens": 824,
+        "total_tokens": 5551,
+        "cached_input_tokens": 3840
+      }
+    },
+    {
+      "id": "C-036",
+      "title": "ADD als Landesordnungsbehörde",
+      "verdict": "pass",
+      "reasoning": "Die Antwort behandelt die ADD ausdrücklich als Landesordnungsbehörde nach § 89 Abs. 3 POG und bejaht, dass ihr § 9 Abs. 1 POG grundsätzlich als allgemeine Befugnisnorm zur Verfügung steht. Sie lehnt § 9 Abs. 1 POG nicht wegen fehlender Polizeibehördeneigenschaft ab.",
+      "evidence": [
+        "Die ADD ist nach § 89 III POG Landesordnungsbehörde.",
+        "Soweit spezialgesetzliche Vorschriften (wie § 59 III RStV) keine Befugnisse vorsehen, greift die allgemeine Befugnisnorm des § 9 I POG"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die ADD ausdrücklich als Landesordnungsbehörde nach § 89 Abs. 3 POG und bejaht, dass ihr § 9 Abs. 1 POG grundsätzlich als allgemeine Befugnisnorm zur Verfügung steht. Sie lehnt § 9 Abs. 1 POG nicht wegen fehlender Polizeibehördeneigenschaft ab.",
+          "evidence": [
+            "Die ADD ist nach § 89 III POG Landesordnungsbehörde.",
+            "Soweit spezialgesetzliche Vorschriften (wie § 59 III RStV) keine Befugnisse vorsehen, greift die allgemeine Befugnisnorm des § 9 I POG"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 5093,
+        "output_tokens": 249,
+        "total_tokens": 5342,
+        "cached_input_tokens": 0
+      }
+    },
+    {
+      "id": "C-037",
+      "title": "Einschlägige Ermächtigungsgrundlage",
+      "verdict": "pass",
+      "reasoning": "Die Antwort benennt § 9 Abs. 1 POG Rheinland-Pfalz ausdrücklich als einschlägige allgemeine Befugnisnorm für die begehrte Löschungsanordnung gegen X und grenzt § 59 Abs. 3 RStV als unmittelbar nicht anwendbar ab. Damit ist die geforderte Ermächtigungsgrundlage genannt.",
+      "evidence": [
+        "Rückgriff auf die ordnungsbehördliche Generalklausel, § 9 I POG",
+        "Soweit spezialgesetzliche Vorschriften (wie § 59 III RStV) keine Befugnisse vorsehen, greift die allgemeine Befugnisnorm des § 9 I POG",
+        "Die Aufsichtsbehörde kann sich insoweit nicht auf § 59 III RStV stützen"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort benennt § 9 Abs. 1 POG Rheinland-Pfalz ausdrücklich als einschlägige allgemeine Befugnisnorm für die begehrte Löschungsanordnung gegen X und grenzt § 59 Abs. 3 RStV als unmittelbar nicht anwendbar ab. Damit ist die geforderte Ermächtigungsgrundlage genannt.",
+          "evidence": [
+            "Rückgriff auf die ordnungsbehördliche Generalklausel, § 9 I POG",
+            "Soweit spezialgesetzliche Vorschriften (wie § 59 III RStV) keine Befugnisse vorsehen, greift die allgemeine Befugnisnorm des § 9 I POG",
+            "Die Aufsichtsbehörde kann sich insoweit nicht auf § 59 III RStV stützen"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4744,
+        "output_tokens": 250,
+        "total_tokens": 4994,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-038",
+      "title": "Sachliche Zuständigkeit der ADD",
+      "verdict": "pass",
+      "reasoning": "Die Antwort behandelt die ADD nicht als sachlich unzuständig, sondern leitet ihre Zuständigkeit ausdrücklich aus dem RStV in Verbindung mit dem rheinland-pfälzischen Ausführungsgesetz her. Auch wenn § 3 Abs. 1 des Landesgesetzes nicht exakt zitiert wird, ist dies in der Sache die geforderte Herleitung aus der landesrechtlichen Zuständigkeitsregelung.",
+      "evidence": [
+        "Die ADD ist zuständige Behörde",
+        "Die ADD ist nach § 59 VI RStV i.V.m. dem rheinland-pfälzischen Ausführungsgesetz zuständige Aufsichtsbehörde"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die ADD nicht als sachlich unzuständig, sondern leitet ihre Zuständigkeit ausdrücklich aus dem RStV in Verbindung mit dem rheinland-pfälzischen Ausführungsgesetz her. Auch wenn § 3 Abs. 1 des Landesgesetzes nicht exakt zitiert wird, ist dies in der Sache die geforderte Herleitung aus der landesrechtlichen Zuständigkeitsregelung.",
+          "evidence": [
+            "Die ADD ist zuständige Behörde",
+            "Die ADD ist nach § 59 VI RStV i.V.m. dem rheinland-pfälzischen Ausführungsgesetz zuständige Aufsichtsbehörde"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4637,
+        "output_tokens": 572,
+        "total_tokens": 5209,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-040",
+      "title": "Privatrechtsklausel des § 1 Abs. 3 POG",
+      "verdict": "pass",
+      "reasoning": "Die Antwort nennt § 1 Abs. 3 POG ausdrücklich als Maßstab der Privatrechtsklausel, beschreibt den subsidiären Schutz privater Rechte durch Ordnungsbehörden und gibt beide gesetzlichen Voraussetzungen wieder: kein rechtzeitiger gerichtlicher Schutz und Vereitelung bzw. wesentliche Erschwerung der Rechtsverwirklichung ohne behördliche Hilfe. Zudem ordnet sie den Einwand der ADD zum zivilgerichtlichen Vorgehen rechtlich ein.",
+      "evidence": [
+        "Das POG kennt in § 1 III den Grundsatz der Subsidiarität des Schutzes privater Rechte",
+        "Der Schutz privater Rechte obliegt den Ordnungsbehörden nur dann, wenn gerichtlicher Schutz nicht rechtzeitig zu erlangen ist und ohne behördliche Hilfe die Rechtsverwirklichung vereitelt oder wesentlich erschwert würde.",
+        "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort nennt § 1 Abs. 3 POG ausdrücklich als Maßstab der Privatrechtsklausel, beschreibt den subsidiären Schutz privater Rechte durch Ordnungsbehörden und gibt beide gesetzlichen Voraussetzungen wieder: kein rechtzeitiger gerichtlicher Schutz und Vereitelung bzw. wesentliche Erschwerung der Rechtsverwirklichung ohne behördliche Hilfe. Zudem ordnet sie den Einwand der ADD zum zivilgerichtlichen Vorgehen rechtlich ein.",
+          "evidence": [
+            "Das POG kennt in § 1 III den Grundsatz der Subsidiarität des Schutzes privater Rechte",
+            "Der Schutz privater Rechte obliegt den Ordnungsbehörden nur dann, wenn gerichtlicher Schutz nicht rechtzeitig zu erlangen ist und ohne behördliche Hilfe die Rechtsverwirklichung vereitelt oder wesentlich erschwert würde.",
+            "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 5121,
+        "output_tokens": 303,
+        "total_tokens": 5424,
+        "cached_input_tokens": 3840
+      }
+    },
+    {
+      "id": "C-041",
+      "title": "Grundsätzlich möglicher Zivilrechtsschutz",
+      "verdict": "pass",
+      "reasoning": "Die Antwort erkennt ausdrücklich, dass J gegen X wegen der Blogäußerungen grundsätzlich zivilgerichtlichen Rechtsschutz suchen kann, sogar im Wege einstweiliger Verfügung auf Löschung bzw. Unterlassung, und hält diesen für effektiv und zeitnah erreichbar.",
+      "evidence": [
+        "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+        "Aufgrund der öffentlichen Kenntnis des Anbieters ist effektiver zivilrechtlicher Rechtsschutz möglich und zeitnah zu erlangen."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erkennt ausdrücklich, dass J gegen X wegen der Blogäußerungen grundsätzlich zivilgerichtlichen Rechtsschutz suchen kann, sogar im Wege einstweiliger Verfügung auf Löschung bzw. Unterlassung, und hält diesen für effektiv und zeitnah erreichbar.",
+          "evidence": [
+            "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+            "Aufgrund der öffentlichen Kenntnis des Anbieters ist effektiver zivilrechtlicher Rechtsschutz möglich und zeitnah zu erlangen."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4598,
+        "output_tokens": 207,
+        "total_tokens": 4805,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-042",
+      "title": "Strafrechtsverstoß als Ausnahme vom Privatrechtsvorrang",
+      "verdict": "fail",
+      "reasoning": "Die Antwort erkennt zwar Strafrechtsverstöße (§§ 185, 187 StGB) als Gefahr für die öffentliche Sicherheit an. Sie führt aber nicht aus, dass der Vorrang zivilgerichtlichen Rechtsschutzes nach § 1 Abs. 3 POG wegen dieser Strafrechtsverstöße nicht durchgreift. Vielmehr stützt sie die Ablehnung einer Ermessensreduzierung gerade auf die Möglichkeit zivilgerichtlichen Rechtsschutzes und den Subsidiaritätsgedanken. Damit fehlt die vom Kriterium geforderte Ausnahme vom Privatrechtsvorrang bei gleichzeitiger Verletzung von Strafgesetzen.",
+      "evidence": [
+        "Die öffentliche Sicherheit umfasst die Unverletzlichkeit der objektiven Rechtsordnung, darunter auch die Strafgesetze.",
+        "Bei den beanstandeten Äußerungen des X handelt es sich um strafbare Handlungen",
+        "Das POG kennt in § 1 III den Grundsatz der Subsidiarität des Schutzes privater Rechte",
+        "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+        "Daher läge die Annahme einer Ermessensreduzierung auf Null fern"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erkennt zwar Strafrechtsverstöße (§§ 185, 187 StGB) als Gefahr für die öffentliche Sicherheit an. Sie führt aber nicht aus, dass der Vorrang zivilgerichtlichen Rechtsschutzes nach § 1 Abs. 3 POG wegen dieser Strafrechtsverstöße nicht durchgreift. Vielmehr stützt sie die Ablehnung einer Ermessensreduzierung gerade auf die Möglichkeit zivilgerichtlichen Rechtsschutzes und den Subsidiaritätsgedanken. Damit fehlt die vom Kriterium geforderte Ausnahme vom Privatrechtsvorrang bei gleichzeitiger Verletzung von Strafgesetzen.",
+          "evidence": [
+            "Die öffentliche Sicherheit umfasst die Unverletzlichkeit der objektiven Rechtsordnung, darunter auch die Strafgesetze.",
+            "Bei den beanstandeten Äußerungen des X handelt es sich um strafbare Handlungen",
+            "Das POG kennt in § 1 III den Grundsatz der Subsidiarität des Schutzes privater Rechte",
+            "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+            "Daher läge die Annahme einer Ermessensreduzierung auf Null fern"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 5117,
+        "output_tokens": 542,
+        "total_tokens": 5659,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-043",
+      "title": "Objektiver Straftatbestand genügt ordnungsrechtlich",
+      "verdict": "pass",
+      "reasoning": "Die Antwort stützt die ordnungsrechtliche Gefahr auf die Verwirklichung von Straftatbeständen der §§ 185, 187 StGB als Verstoß gegen die strafgesetzliche Ordnung und damit gegen die öffentliche Sicherheit. Sie macht das Einschreiten nicht von einem Strafantrag abhängig und behandelt die Einordnung als Antragsdelikte nicht als Sperre.",
+      "evidence": [
+        "Die öffentliche Sicherheit umfasst die Unverletzlichkeit der objektiven Rechtsordnung, darunter auch die Strafgesetze.",
+        "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar und sind gemäß § 185 StGB (Beleidigung) strafbar.",
+        "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden, erfüllt den Tatbestand der üblen Nachrede (§ 186 StGB) oder sogar der Verleumdung (§ 187 StGB)",
+        "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre, sondern stellen zugleich einen Verstoß gegen die strafgesetzliche Ordnung und damit eine Gefahr für die öffentliche Sicherheit dar."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort stützt die ordnungsrechtliche Gefahr auf die Verwirklichung von Straftatbeständen der §§ 185, 187 StGB als Verstoß gegen die strafgesetzliche Ordnung und damit gegen die öffentliche Sicherheit. Sie macht das Einschreiten nicht von einem Strafantrag abhängig und behandelt die Einordnung als Antragsdelikte nicht als Sperre.",
+          "evidence": [
+            "Die öffentliche Sicherheit umfasst die Unverletzlichkeit der objektiven Rechtsordnung, darunter auch die Strafgesetze.",
+            "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar und sind gemäß § 185 StGB (Beleidigung) strafbar.",
+            "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden, erfüllt den Tatbestand der üblen Nachrede (§ 186 StGB) oder sogar der Verleumdung (§ 187 StGB)",
+            "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre, sondern stellen zugleich einen Verstoß gegen die strafgesetzliche Ordnung und damit eine Gefahr für die öffentliche Sicherheit dar."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4159,
+        "output_tokens": 1312,
+        "total_tokens": 5471,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-044",
+      "title": "Begriff der öffentlichen Sicherheit",
+      "verdict": "pass",
+      "reasoning": "Die Antwort versteht die öffentliche Sicherheit im Rahmen von § 9 Abs. 1 POG jedenfalls als Schutz der objektiven/geschriebenen Rechtsordnung einschließlich der Strafgesetze und bezieht auch das individuelle Rechtsgut der Ehre ein. Sie schließt Ehrverletzungen und Strafrechtsverstöße nicht aus, sondern ordnet sie als Gefahr für die öffentliche Sicherheit ein.",
+      "evidence": [
+        "Die öffentliche Sicherheit umfasst die Unverletzlichkeit der objektiven Rechtsordnung, darunter auch die Strafgesetze.",
+        "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre, sondern stellen zugleich einen Verstoß gegen die strafgesetzliche Ordnung und damit eine Gefahr für die öffentliche Sicherheit dar."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort versteht die öffentliche Sicherheit im Rahmen von § 9 Abs. 1 POG jedenfalls als Schutz der objektiven/geschriebenen Rechtsordnung einschließlich der Strafgesetze und bezieht auch das individuelle Rechtsgut der Ehre ein. Sie schließt Ehrverletzungen und Strafrechtsverstöße nicht aus, sondern ordnet sie als Gefahr für die öffentliche Sicherheit ein.",
+          "evidence": [
+            "Die öffentliche Sicherheit umfasst die Unverletzlichkeit der objektiven Rechtsordnung, darunter auch die Strafgesetze.",
+            "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre, sondern stellen zugleich einen Verstoß gegen die strafgesetzliche Ordnung und damit eine Gefahr für die öffentliche Sicherheit dar."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4130,
+        "output_tokens": 580,
+        "total_tokens": 4710,
+        "cached_input_tokens": 0
+      }
+    },
+    {
+      "id": "C-045",
+      "title": "Strafgesetze als Teil der öffentlichen Sicherheit",
+      "verdict": "pass",
+      "reasoning": "Die Antwort ordnet Verstöße gegen § 185 StGB und § 187 StGB ausdrücklich als Verstöße gegen die strafgesetzliche bzw. objektive Rechtsordnung ein und leitet daraus eine Gefahr für die öffentliche Sicherheit ab. Damit ist das Kriterium erfüllt.",
+      "evidence": [
+        "Die öffentliche Sicherheit umfasst die Unverletzlichkeit der objektiven Rechtsordnung, darunter auch die Strafgesetze.",
+        "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar und sind gemäß § 185 StGB (Beleidigung) strafbar.",
+        "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden, erfüllt den Tatbestand der üblen Nachrede (§ 186 StGB) oder sogar der Verleumdung (§ 187 StGB)",
+        "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre, sondern stellen zugleich einen Verstoß gegen die strafgesetzliche Ordnung und damit eine Gefahr für die öffentliche Sicherheit dar."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet Verstöße gegen § 185 StGB und § 187 StGB ausdrücklich als Verstöße gegen die strafgesetzliche bzw. objektive Rechtsordnung ein und leitet daraus eine Gefahr für die öffentliche Sicherheit ab. Damit ist das Kriterium erfüllt.",
+          "evidence": [
+            "Die öffentliche Sicherheit umfasst die Unverletzlichkeit der objektiven Rechtsordnung, darunter auch die Strafgesetze.",
+            "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar und sind gemäß § 185 StGB (Beleidigung) strafbar.",
+            "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden, erfüllt den Tatbestand der üblen Nachrede (§ 186 StGB) oder sogar der Verleumdung (§ 187 StGB)",
+            "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre, sondern stellen zugleich einen Verstoß gegen die strafgesetzliche Ordnung und damit eine Gefahr für die öffentliche Sicherheit dar."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 5084,
+        "output_tokens": 304,
+        "total_tokens": 5388,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-046",
+      "title": "Ehrschutzstraftaten als Verstoß gegen § 54 Abs. 1 Satz 3 RStV",
+      "verdict": "pass",
+      "reasoning": "Die Antwort erkennt ausdrücklich, dass die Beleidigung bzw. Verleumdung als strafbare Ehrverletzungen zugleich die Pflicht aus § 54 Abs. 1 Satz 3 RStV zur Einhaltung gesetzlicher Bestimmungen zum Schutz der persönlichen Ehre verletzen.",
+      "evidence": [
+        "§ 54 I 3 RStV bestimmt, dass die allgemeinen Gesetze und die gesetzlichen Bestimmungen zum Schutz der persönlichen Ehre eingehalten werden müssen.",
+        "Die Äußerungen des X stellen einen Verstoß gegen strafgesetzliche Ehrschutzbestimmungen (§§ 185, 187 StGB) und damit gegen § 54 I 3 RStV dar."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erkennt ausdrücklich, dass die Beleidigung bzw. Verleumdung als strafbare Ehrverletzungen zugleich die Pflicht aus § 54 Abs. 1 Satz 3 RStV zur Einhaltung gesetzlicher Bestimmungen zum Schutz der persönlichen Ehre verletzen.",
+          "evidence": [
+            "§ 54 I 3 RStV bestimmt, dass die allgemeinen Gesetze und die gesetzlichen Bestimmungen zum Schutz der persönlichen Ehre eingehalten werden müssen.",
+            "Die Äußerungen des X stellen einen Verstoß gegen strafgesetzliche Ehrschutzbestimmungen (§§ 185, 187 StGB) und damit gegen § 54 I 3 RStV dar."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 5201,
+        "output_tokens": 224,
+        "total_tokens": 5425,
+        "cached_input_tokens": 4864
+      }
+    },
+    {
+      "id": "C-047",
+      "title": "Beleidigungsbegriff",
+      "verdict": "fail",
+      "reasoning": "Die Antwort ordnet bestimmte Äußerungen zwar als ehrverletzende Formalbeleidigung nach § 185 StGB ein, definiert Beleidigung aber nicht als Kundgabe von Missachtung oder Nichtachtung gegenüber der betroffenen Person oder Dritten. Die geforderte Definition fehlt daher.",
+      "evidence": [
+        "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar und sind gemäß § 185 StGB (Beleidigung) strafbar.",
+        "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden, erfüllt den Tatbestand der üblen Nachrede (§ 186 StGB) oder sogar der Verleumdung (§ 187 StGB)"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort ordnet bestimmte Äußerungen zwar als ehrverletzende Formalbeleidigung nach § 185 StGB ein, definiert Beleidigung aber nicht als Kundgabe von Missachtung oder Nichtachtung gegenüber der betroffenen Person oder Dritten. Die geforderte Definition fehlt daher.",
+          "evidence": [
+            "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar und sind gemäß § 185 StGB (Beleidigung) strafbar.",
+            "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden, erfüllt den Tatbestand der üblen Nachrede (§ 186 StGB) oder sogar der Verleumdung (§ 187 StGB)"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 3663,
+        "output_tokens": 354,
+        "total_tokens": 4017,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-048",
+      "title": "Beschimpfungen als Missachtungskundgaben",
+      "verdict": "pass",
+      "reasoning": "Die Antwort ordnet alle genannten Beschimpfungen ausdrücklich als ehrverletzende Beleidigung nach § 185 StGB ein. Das entspricht in der Sache einer Kundgabe der Missachtung und behandelt sie gerade nicht als zulässige sachliche Kritik.",
+      "evidence": [
+        "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar und sind gemäß § 185 StGB (Beleidigung) strafbar."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet alle genannten Beschimpfungen ausdrücklich als ehrverletzende Beleidigung nach § 185 StGB ein. Das entspricht in der Sache einer Kundgabe der Missachtung und behandelt sie gerade nicht als zulässige sachliche Kritik.",
+          "evidence": [
+            "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar und sind gemäß § 185 StGB (Beleidigung) strafbar."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4618,
+        "output_tokens": 239,
+        "total_tokens": 4857,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-049",
+      "title": "Werturteile im Schutzbereich der Meinungsfreiheit",
+      "verdict": "fail",
+      "reasoning": "Die Antwort behandelt die beleidigenden Werturteile nicht zunächst als grundsätzlich von Art. 5 Abs. 1 Satz 1 GG erfasste Meinungen. Vielmehr ordnet sie sie unmittelbar als Schmähkritik/Formalbeleidigung ein und sagt sogar, sie verließen den Schutzbereich des Art. 5 GG „von vornherein“. Damit ist das Kriterium nicht erfüllt.",
+      "evidence": [
+        "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar",
+        "Die Äußerungen stellen eine reine Schmähkritik und wissentlich falsche Tatsachenbehauptungen dar, die den Schutzbereich des Art. 5 I GG von vornherein verlassen."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt die beleidigenden Werturteile nicht zunächst als grundsätzlich von Art. 5 Abs. 1 Satz 1 GG erfasste Meinungen. Vielmehr ordnet sie sie unmittelbar als Schmähkritik/Formalbeleidigung ein und sagt sogar, sie verließen den Schutzbereich des Art. 5 GG „von vornherein“. Damit ist das Kriterium nicht erfüllt.",
+          "evidence": [
+            "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar",
+            "Die Äußerungen stellen eine reine Schmähkritik und wissentlich falsche Tatsachenbehauptungen dar, die den Schutzbereich des Art. 5 I GG von vornherein verlassen."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4616,
+        "output_tokens": 455,
+        "total_tokens": 5071,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-050",
+      "title": "Definition der Schmähkritik",
+      "verdict": "pass",
+      "reasoning": "Die Antwort enthält zwar keine ausführliche abstrakte Definition, beschreibt die beanstandeten Äußerungen aber als ehrverletzend/ehrabschneidend und „nicht mehr sachspezifisch“. Damit wird der erforderliche enge Kern der Schmähkritik – fehlende Sachauseinandersetzung und persönliche Diffamierung – hinreichend erfasst. Sie behandelt nicht jede scharfe Kritik automatisch als Schmähkritik.",
+      "evidence": [
+        "ehrverletzende Formalbeleidigung („Schmähkritik“)",
+        "reine Schmähkritik",
+        "ehrabschneidende, nicht mehr sachspezifische Schmähungen"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort enthält zwar keine ausführliche abstrakte Definition, beschreibt die beanstandeten Äußerungen aber als ehrverletzend/ehrabschneidend und „nicht mehr sachspezifisch“. Damit wird der erforderliche enge Kern der Schmähkritik – fehlende Sachauseinandersetzung und persönliche Diffamierung – hinreichend erfasst. Sie behandelt nicht jede scharfe Kritik automatisch als Schmähkritik.",
+          "evidence": [
+            "ehrverletzende Formalbeleidigung („Schmähkritik“)",
+            "reine Schmähkritik",
+            "ehrabschneidende, nicht mehr sachspezifische Schmähungen"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 3670,
+        "output_tokens": 680,
+        "total_tokens": 4350,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-051",
+      "title": "Konkrete Schmähkritik durch X",
+      "verdict": "pass",
+      "reasoning": "Die Antwort ordnet die konkreten Beschimpfungen des X ausdrücklich als Schmähkritik ein. Sie begründet dies damit, dass es sich um nicht mehr sachspezifische Schmähungen handelt, und stellt klar, dass sie nicht vom Schutzbereich der Meinungsfreiheit erfasst sind. Damit ist der geforderte Gedanke enthalten, dass kein Bezug zur Sachdebatte und kein schützenswerter Beitrag zur Meinungsbildung vorliegt.",
+      "evidence": [
+        "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar",
+        "Die Äußerungen stellen eine reine Schmähkritik",
+        "ehrabschneidende, nicht mehr sachspezifische Schmähungen",
+        "die den Schutzbereich des Art. 5 I GG von vornherein verlassen"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet die konkreten Beschimpfungen des X ausdrücklich als Schmähkritik ein. Sie begründet dies damit, dass es sich um nicht mehr sachspezifische Schmähungen handelt, und stellt klar, dass sie nicht vom Schutzbereich der Meinungsfreiheit erfasst sind. Damit ist der geforderte Gedanke enthalten, dass kein Bezug zur Sachdebatte und kein schützenswerter Beitrag zur Meinungsbildung vorliegt.",
+          "evidence": [
+            "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar",
+            "Die Äußerungen stellen eine reine Schmähkritik",
+            "ehrabschneidende, nicht mehr sachspezifische Schmähungen",
+            "die den Schutzbereich des Art. 5 I GG von vornherein verlassen"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4629,
+        "output_tokens": 740,
+        "total_tokens": 5369,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-052",
+      "title": "Menschenwürdebezug von „nicht lebenswert“",
+      "verdict": "fail",
+      "reasoning": "Die Antwort ordnet „nicht lebenswert“ zwar als ehrverletzende Formalbeleidigung/Schmähkritik ein und erwähnt Art. 1 I GG nur allgemein im Zusammenhang mit dem allgemeinen Persönlichkeitsrecht. Sie wertet aber gerade die Bezeichnung als „nicht lebenswert“ nicht als Berührung oder Verletzung der Menschenwürde aus Art. 1 Abs. 1 GG.",
+      "evidence": [
+        "Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre",
+        "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort ordnet „nicht lebenswert“ zwar als ehrverletzende Formalbeleidigung/Schmähkritik ein und erwähnt Art. 1 I GG nur allgemein im Zusammenhang mit dem allgemeinen Persönlichkeitsrecht. Sie wertet aber gerade die Bezeichnung als „nicht lebenswert“ nicht als Berührung oder Verletzung der Menschenwürde aus Art. 1 Abs. 1 GG.",
+          "evidence": [
+            "Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre",
+            "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4618,
+        "output_tokens": 418,
+        "total_tokens": 5036,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-053",
+      "title": "Meinungsfreiheit rechtfertigt die Beleidigungen nicht",
+      "verdict": "pass",
+      "reasoning": "Die Antwort kommt ausdrücklich zu dem Ergebnis, dass die Beschimpfungen als Beleidigung nach § 185 StGB strafbar sind und nicht durch Art. 5 Abs. 1 GG gerechtfertigt werden, da sie als Schmähkritik/Formalbeleidigung eingeordnet werden.",
+      "evidence": [
+        "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar und sind gemäß § 185 StGB (Beleidigung) strafbar.",
+        "Die Äußerungen stellen eine reine Schmähkritik und wissentlich falsche Tatsachenbehauptungen dar, die den Schutzbereich des Art. 5 I GG von vornherein verlassen."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort kommt ausdrücklich zu dem Ergebnis, dass die Beschimpfungen als Beleidigung nach § 185 StGB strafbar sind und nicht durch Art. 5 Abs. 1 GG gerechtfertigt werden, da sie als Schmähkritik/Formalbeleidigung eingeordnet werden.",
+          "evidence": [
+            "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar und sind gemäß § 185 StGB (Beleidigung) strafbar.",
+            "Die Äußerungen stellen eine reine Schmähkritik und wissentlich falsche Tatsachenbehauptungen dar, die den Schutzbereich des Art. 5 I GG von vornherein verlassen."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4635,
+        "output_tokens": 229,
+        "total_tokens": 4864,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-054",
+      "title": "Verleumdungsbegriff",
+      "verdict": "pass",
+      "reasoning": "Die Antwort ordnet § 187 StGB einer unwahren Tatsachenbehauptung zu und verlangt, dass X die Unwahrheit wissentlich verbreitete, also wider besseres Wissen handelte. Der ehrmindernde Bezug ergibt sich aus der Einordnung als Ehrschutzdelikt und der Verletzung der Ehre. § 187 StGB wird nicht auf bloße Werturteile angewandt.",
+      "evidence": [
+        "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden, erfüllt den Tatbestand der üblen Nachrede (§ 186 StGB) oder sogar der Verleumdung (§ 187 StGB), da X wissentlich die Unwahrheit verbreitete.",
+        "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet § 187 StGB einer unwahren Tatsachenbehauptung zu und verlangt, dass X die Unwahrheit wissentlich verbreitete, also wider besseres Wissen handelte. Der ehrmindernde Bezug ergibt sich aus der Einordnung als Ehrschutzdelikt und der Verletzung der Ehre. § 187 StGB wird nicht auf bloße Werturteile angewandt.",
+          "evidence": [
+            "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden, erfüllt den Tatbestand der üblen Nachrede (§ 186 StGB) oder sogar der Verleumdung (§ 187 StGB), da X wissentlich die Unwahrheit verbreitete.",
+            "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 3663,
+        "output_tokens": 624,
+        "total_tokens": 4287,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-055",
+      "title": "Schulverweisbehauptung als ehrmindernd",
+      "verdict": "pass",
+      "reasoning": "Die Antwort qualifiziert die Schulverweisbehauptung als üble Nachrede bzw. Verleumdung. Damit erkennt sie in der Sache an, dass diese Tatsachenbehauptung ehrmindernd bzw. zur Herabwürdigung in der öffentlichen Meinung geeignet ist. Sie spricht einem angeblichen Schulverweis gerade nicht jede ehrmindernde Wirkung ab.",
+      "evidence": [
+        "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden, erfüllt den Tatbestand der üblen Nachrede (§ 186 StGB) oder sogar der Verleumdung (§ 187 StGB)",
+        "ehrabschneidende"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort qualifiziert die Schulverweisbehauptung als üble Nachrede bzw. Verleumdung. Damit erkennt sie in der Sache an, dass diese Tatsachenbehauptung ehrmindernd bzw. zur Herabwürdigung in der öffentlichen Meinung geeignet ist. Sie spricht einem angeblichen Schulverweis gerade nicht jede ehrmindernde Wirkung ab.",
+          "evidence": [
+            "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden, erfüllt den Tatbestand der üblen Nachrede (§ 186 StGB) oder sogar der Verleumdung (§ 187 StGB)",
+            "ehrabschneidende"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4614,
+        "output_tokens": 330,
+        "total_tokens": 4944,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-056",
+      "title": "Unwahrheit und Wissen des X",
+      "verdict": "pass",
+      "reasoning": "Die Antwort stellt ausdrücklich fest, dass die Schulverweisbehauptung unwahr war, und dass X die Unwahrheit wissentlich verbreitete. Damit sind beide geforderten Punkte erfüllt.",
+      "evidence": [
+        "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden",
+        "da X wissentlich die Unwahrheit verbreitete"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort stellt ausdrücklich fest, dass die Schulverweisbehauptung unwahr war, und dass X die Unwahrheit wissentlich verbreitete. Damit sind beide geforderten Punkte erfüllt.",
+          "evidence": [
+            "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden",
+            "da X wissentlich die Unwahrheit verbreitete"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4603,
+        "output_tokens": 192,
+        "total_tokens": 4795,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-057",
+      "title": "Ehre der J als Individualrechtsgut",
+      "verdict": "pass",
+      "reasoning": "Die Antwort berücksichtigt ausdrücklich die Ehre bzw. das allgemeine Persönlichkeitsrecht der J als betroffenes Individualrechtsgut und ordnet dies im Zusammenhang mit der öffentlichen Sicherheit ein. Sie blendet die individuelle Ehrverletzung also nicht aus.",
+      "evidence": [
+        "Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre",
+        "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre, sondern stellen zugleich einen Verstoß gegen die strafgesetzliche Ordnung und damit eine Gefahr für die öffentliche Sicherheit dar.",
+        "Eingriffe in das allgemeine Persönlichkeitsrecht und die Ehre stellen primär private Rechtsgüter dar."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort berücksichtigt ausdrücklich die Ehre bzw. das allgemeine Persönlichkeitsrecht der J als betroffenes Individualrechtsgut und ordnet dies im Zusammenhang mit der öffentlichen Sicherheit ein. Sie blendet die individuelle Ehrverletzung also nicht aus.",
+          "evidence": [
+            "Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre",
+            "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre, sondern stellen zugleich einen Verstoß gegen die strafgesetzliche Ordnung und damit eine Gefahr für die öffentliche Sicherheit dar.",
+            "Eingriffe in das allgemeine Persönlichkeitsrecht und die Ehre stellen primär private Rechtsgüter dar."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 5084,
+        "output_tokens": 214,
+        "total_tokens": 5298,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-058",
+      "title": "Gefahrenbegriff",
+      "verdict": "fail",
+      "reasoning": "Die Antwort bejaht zwar eine konkrete Gefahr für die öffentliche Sicherheit, beschreibt den Gefahrenbegriff des § 9 Abs. 1 POG aber nicht als hinreichende Wahrscheinlichkeit eines Schadenseintritts aus ex-ante-Sicht. Die geforderte Definition fehlt daher.",
+      "evidence": [
+        "Gefahren für die öffentliche Sicherheit abzuwehren",
+        "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre, sondern stellen zugleich einen Verstoß gegen die strafgesetzliche Ordnung und damit eine Gefahr für die öffentliche Sicherheit dar.",
+        "Die Gefahr ist konkret, solange der Blogbeitrag weiterhin öffentlich zugänglich ist."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort bejaht zwar eine konkrete Gefahr für die öffentliche Sicherheit, beschreibt den Gefahrenbegriff des § 9 Abs. 1 POG aber nicht als hinreichende Wahrscheinlichkeit eines Schadenseintritts aus ex-ante-Sicht. Die geforderte Definition fehlt daher.",
+          "evidence": [
+            "Gefahren für die öffentliche Sicherheit abzuwehren",
+            "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre, sondern stellen zugleich einen Verstoß gegen die strafgesetzliche Ordnung und damit eine Gefahr für die öffentliche Sicherheit dar.",
+            "Die Gefahr ist konkret, solange der Blogbeitrag weiterhin öffentlich zugänglich ist."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4136,
+        "output_tokens": 311,
+        "total_tokens": 4447,
+        "cached_input_tokens": 3840
+      }
+    },
+    {
+      "id": "C-059",
+      "title": "Störung als Gefahr",
+      "verdict": "pass",
+      "reasoning": "Die Antwort behandelt die bereits veröffentlichten rechtswidrigen Äußerungen wegen ihrer fortdauernden öffentlichen Zugänglichkeit als fortwirkende Störung und damit als konkrete Gefahr im polizeirechtlichen Sinne. Sie lehnt ordnungsbehördliches Einschreiten nicht deshalb ab, weil die Äußerungen schon veröffentlicht wurden.",
+      "evidence": [
+        "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre, sondern stellen zugleich einen Verstoß gegen die strafgesetzliche Ordnung und damit eine Gefahr für die öffentliche Sicherheit dar.",
+        "Die Gefahr ist konkret, solange der Blogbeitrag weiterhin öffentlich zugänglich ist."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die bereits veröffentlichten rechtswidrigen Äußerungen wegen ihrer fortdauernden öffentlichen Zugänglichkeit als fortwirkende Störung und damit als konkrete Gefahr im polizeirechtlichen Sinne. Sie lehnt ordnungsbehördliches Einschreiten nicht deshalb ab, weil die Äußerungen schon veröffentlicht wurden.",
+          "evidence": [
+            "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre, sondern stellen zugleich einen Verstoß gegen die strafgesetzliche Ordnung und damit eine Gefahr für die öffentliche Sicherheit dar.",
+            "Die Gefahr ist konkret, solange der Blogbeitrag weiterhin öffentlich zugänglich ist."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 5076,
+        "output_tokens": 208,
+        "total_tokens": 5284,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-060",
+      "title": "Fortdauernde Störung durch Xs Blogbeitrag",
+      "verdict": "pass",
+      "reasoning": "Die Antwort ordnet die weiterhin online abrufbaren ehrverletzenden bzw. strafbaren Inhalte ausdrücklich als konkrete Gefahr für die öffentliche Sicherheit ein. Damit erfasst sie die fortdauernde polizeirechtliche Störung durch den Blogbeitrag in der Sache.",
+      "evidence": [
+        "Die Gefahr ist konkret, solange der Blogbeitrag weiterhin öffentlich zugänglich ist.",
+        "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre, sondern stellen zugleich einen Verstoß gegen die strafgesetzliche Ordnung und damit eine Gefahr für die öffentliche Sicherheit dar."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet die weiterhin online abrufbaren ehrverletzenden bzw. strafbaren Inhalte ausdrücklich als konkrete Gefahr für die öffentliche Sicherheit ein. Damit erfasst sie die fortdauernde polizeirechtliche Störung durch den Blogbeitrag in der Sache.",
+          "evidence": [
+            "Die Gefahr ist konkret, solange der Blogbeitrag weiterhin öffentlich zugänglich ist.",
+            "Diese Straftaten verletzen nicht nur das individuelle Rechtsgut der Ehre, sondern stellen zugleich einen Verstoß gegen die strafgesetzliche Ordnung und damit eine Gefahr für die öffentliche Sicherheit dar."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4614,
+        "output_tokens": 227,
+        "total_tokens": 4841,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-061",
+      "title": "Adressat nur Verantwortlicher oder Nichtstörer im Notstand",
+      "verdict": "fail",
+      "reasoning": "Die Antwort benennt X zwar als Adressaten der begehrten Löschungsanordnung und beschreibt dessen Verhalten als gefahrbegründend. Sie prüft aber nicht ausdrücklich, dass Maßnahmen nach § 9 Abs. 1 POG grundsätzlich gegen polizeirechtlich Verantwortliche zu richten sind, und erwähnt auch nicht, dass Nichtstörer nur bei polizeilichem Notstand in Anspruch genommen werden dürfen. Damit ist das geforderte Kriterium nicht klar erfüllt.",
+      "evidence": [
+        "den Erlass einer Löschungsanordnung gegenüber X",
+        "Bei den beanstandeten Äußerungen des X handelt es sich um strafbare Handlungen"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort benennt X zwar als Adressaten der begehrten Löschungsanordnung und beschreibt dessen Verhalten als gefahrbegründend. Sie prüft aber nicht ausdrücklich, dass Maßnahmen nach § 9 Abs. 1 POG grundsätzlich gegen polizeirechtlich Verantwortliche zu richten sind, und erwähnt auch nicht, dass Nichtstörer nur bei polizeilichem Notstand in Anspruch genommen werden dürfen. Damit ist das geforderte Kriterium nicht klar erfüllt.",
+          "evidence": [
+            "den Erlass einer Löschungsanordnung gegenüber X",
+            "Bei den beanstandeten Äußerungen des X handelt es sich um strafbare Handlungen"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4135,
+        "output_tokens": 377,
+        "total_tokens": 4512,
+        "cached_input_tokens": 3840
+      }
+    },
+    {
+      "id": "C-062",
+      "title": "Handlungsstörer nach § 4 POG",
+      "verdict": "fail",
+      "reasoning": "Die Antwort nennt zwar X als Adressaten der begehrten Löschungsanordnung und Urheber der Äußerungen, beschreibt aber nicht die Verantwortlichkeit als Handlungs- bzw. Verhaltensstörer nach § 4 POG und formuliert auch nicht ausdrücklich, dass dieser die Gefahr unmittelbar verursacht hat. Eine bloße implizite Zuordnung genügt nach dem Kriterium nicht sicher.",
+      "evidence": [
+        "den Erlass einer Löschungsanordnung gegenüber X",
+        "Bei den beanstandeten Äußerungen des X handelt es sich um strafbare Handlungen"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort nennt zwar X als Adressaten der begehrten Löschungsanordnung und Urheber der Äußerungen, beschreibt aber nicht die Verantwortlichkeit als Handlungs- bzw. Verhaltensstörer nach § 4 POG und formuliert auch nicht ausdrücklich, dass dieser die Gefahr unmittelbar verursacht hat. Eine bloße implizite Zuordnung genügt nach dem Kriterium nicht sicher.",
+          "evidence": [
+            "den Erlass einer Löschungsanordnung gegenüber X",
+            "Bei den beanstandeten Äußerungen des X handelt es sich um strafbare Handlungen"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4124,
+        "output_tokens": 372,
+        "total_tokens": 4496,
+        "cached_input_tokens": 3840
+      }
+    },
+    {
+      "id": "C-063",
+      "title": "X als Handlungsstörer",
+      "verdict": "pass",
+      "reasoning": "Die Antwort behandelt X als Adressaten der Löschungsanordnung und ordnet die rechtswidrigen Inhalte ausdrücklich seinen eigenen Äußerungen bzw. seiner Verbreitung zu. Auch wenn der Begriff „Handlungsstörer“ nicht ausdrücklich fällt, wird X der Sache nach als Verantwortlicher wegen seines eigenen Handelns eingeordnet; andere Verantwortliche wie Leser, Schule oder Provider werden nicht vorrangig behandelt.",
+      "evidence": [
+        "den Erlass einer Löschungsanordnung gegenüber X",
+        "Bei den beanstandeten Äußerungen des X",
+        "da X wissentlich die Unwahrheit verbreitete",
+        "solange der Blogbeitrag weiterhin öffentlich zugänglich ist"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt X als Adressaten der Löschungsanordnung und ordnet die rechtswidrigen Inhalte ausdrücklich seinen eigenen Äußerungen bzw. seiner Verbreitung zu. Auch wenn der Begriff „Handlungsstörer“ nicht ausdrücklich fällt, wird X der Sache nach als Verantwortlicher wegen seines eigenen Handelns eingeordnet; andere Verantwortliche wie Leser, Schule oder Provider werden nicht vorrangig behandelt.",
+          "evidence": [
+            "den Erlass einer Löschungsanordnung gegenüber X",
+            "Bei den beanstandeten Äußerungen des X",
+            "da X wissentlich die Unwahrheit verbreitete",
+            "solange der Blogbeitrag weiterhin öffentlich zugänglich ist"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 5074,
+        "output_tokens": 690,
+        "total_tokens": 5764,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-064",
+      "title": "§ 7 Abs. 1 TMG bei eigenen Informationen",
+      "verdict": "fail",
+      "reasoning": "Die Antwort erwähnt zwar das Telemedium und die Verantwortlichkeit des X nach Ehrschutz-/Strafgesetzen, berücksichtigt aber § 7 Abs. 1 TMG nicht und stellt auch nicht ausdrücklich darauf ab, dass X als Diensteanbieter für eigene Bloginformationen nach den allgemeinen Gesetzen verantwortlich bleibt. Das Kriterium verlangt gerade diese Berücksichtigung.",
+      "evidence": [
+        "Der Blog des X ist ein Telemedium i.S.d. §§ 54 ff. RStV.",
+        "Die Äußerungen des X stellen einen Verstoß gegen strafgesetzliche Ehrschutzbestimmungen (§§ 185, 187 StGB) und damit gegen § 54 I 3 RStV dar."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erwähnt zwar das Telemedium und die Verantwortlichkeit des X nach Ehrschutz-/Strafgesetzen, berücksichtigt aber § 7 Abs. 1 TMG nicht und stellt auch nicht ausdrücklich darauf ab, dass X als Diensteanbieter für eigene Bloginformationen nach den allgemeinen Gesetzen verantwortlich bleibt. Das Kriterium verlangt gerade diese Berücksichtigung.",
+          "evidence": [
+            "Der Blog des X ist ein Telemedium i.S.d. §§ 54 ff. RStV.",
+            "Die Äußerungen des X stellen einen Verstoß gegen strafgesetzliche Ehrschutzbestimmungen (§§ 185, 187 StGB) und damit gegen § 54 I 3 RStV dar."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4666,
+        "output_tokens": 411,
+        "total_tokens": 5077,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-065",
+      "title": "Ermessen nach § 9 Abs. 1 POG",
+      "verdict": "pass",
+      "reasoning": "Die Antwort erkennt ausdrücklich, dass § 9 Abs. 1 POG Ermessen einräumt, und prüft anschließend Ermessensfehler sowie die Frage einer Ermessensreduzierung. Damit wird Entschließungs- bzw. Auswahlermessen nicht als gebundene Pflicht behandelt.",
+      "evidence": [
+        "§ 9 I 1 POG räumt der Behörde Ermessen ein („können die notwendigen Maßnahmen treffen“).",
+        "Ihr Bescheid ist ermessensfehlerhaft, wenn sie das ihr zustehende Ermessen nicht oder fehlerhaft betätigt hat.",
+        "Zwar sind die Äußerungen evident rechtswidrig; das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erkennt ausdrücklich, dass § 9 Abs. 1 POG Ermessen einräumt, und prüft anschließend Ermessensfehler sowie die Frage einer Ermessensreduzierung. Damit wird Entschließungs- bzw. Auswahlermessen nicht als gebundene Pflicht behandelt.",
+          "evidence": [
+            "§ 9 I 1 POG räumt der Behörde Ermessen ein („können die notwendigen Maßnahmen treffen“).",
+            "Ihr Bescheid ist ermessensfehlerhaft, wenn sie das ihr zustehende Ermessen nicht oder fehlerhaft betätigt hat.",
+            "Zwar sind die Äußerungen evident rechtswidrig; das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4140,
+        "output_tokens": 224,
+        "total_tokens": 4364,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-066",
+      "title": "Entschließungsermessen zugunsten eines Einschreitens",
+      "verdict": "fail",
+      "reasoning": "Die Antwort hält ein Einschreiten zwar grundsätzlich auf Grundlage von § 9 I POG für möglich. Sie erkennt aber fallbezogene Gründe gegen ein Tätigwerden an, insbesondere den Vorrang bzw. die Möglichkeit zivilgerichtlichen Rechtsschutzes, und hält es für möglich, dass die ADD deshalb von einer eigenen Anordnung absieht. Damit erfüllt sie nicht die Vorgabe, keine fallbezogenen Gründe gegen ein Tätigwerden zu erkennen.",
+      "evidence": [
+        "Soweit spezialgesetzliche Vorschriften (wie § 59 III RStV) keine Befugnisse vorsehen, greift die allgemeine Befugnisnorm des § 9 I POG",
+        "§ 9 I 1 POG räumt der Behörde Ermessen ein",
+        "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+        "solange der Behörde die Möglichkeit bleibt, den Individualrechtsschutz als prioritär zu bewerten und dementsprechend von einer eigenen Anordnung abzusehen"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort hält ein Einschreiten zwar grundsätzlich auf Grundlage von § 9 I POG für möglich. Sie erkennt aber fallbezogene Gründe gegen ein Tätigwerden an, insbesondere den Vorrang bzw. die Möglichkeit zivilgerichtlichen Rechtsschutzes, und hält es für möglich, dass die ADD deshalb von einer eigenen Anordnung absieht. Damit erfüllt sie nicht die Vorgabe, keine fallbezogenen Gründe gegen ein Tätigwerden zu erkennen.",
+          "evidence": [
+            "Soweit spezialgesetzliche Vorschriften (wie § 59 III RStV) keine Befugnisse vorsehen, greift die allgemeine Befugnisnorm des § 9 I POG",
+            "§ 9 I 1 POG räumt der Behörde Ermessen ein",
+            "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+            "solange der Behörde die Möglichkeit bleibt, den Individualrechtsschutz als prioritär zu bewerten und dementsprechend von einer eigenen Anordnung abzusehen"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 5099,
+        "output_tokens": 791,
+        "total_tokens": 5890,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-067",
+      "title": "Verhältnismäßigkeit im Auswahlermessen",
+      "verdict": "fail",
+      "reasoning": "Die Antwort behandelt zwar das behördliche Ermessen und Subsidiarität, misst die konkrete Löschungsanordnung aber nicht am Verhältnismäßigkeitsgrundsatz des § 2 POG. Eine Prüfung von Zweck, Geeignetheit, Erforderlichkeit oder Angemessenheit der Löschungsanordnung erfolgt nicht klar.",
+      "evidence": [
+        "J begehrt den Erlass einer Löschungsanordnung.",
+        "Zwar sind die Äußerungen evident rechtswidrig; das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert, dass allein der Erlass einer behördlichen Löschungsanordnung in Betracht käme.",
+        "Dabei wird sie das ihr zustehende Ermessen fehlerfrei auszuüben haben, insbesondere die Schwere der Ehrverletzung, die Eignung zivilgerichtlichen Rechtsschutzes und die zeitliche Dringlichkeit in ihre Abwägung einzustellen."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt zwar das behördliche Ermessen und Subsidiarität, misst die konkrete Löschungsanordnung aber nicht am Verhältnismäßigkeitsgrundsatz des § 2 POG. Eine Prüfung von Zweck, Geeignetheit, Erforderlichkeit oder Angemessenheit der Löschungsanordnung erfolgt nicht klar.",
+          "evidence": [
+            "J begehrt den Erlass einer Löschungsanordnung.",
+            "Zwar sind die Äußerungen evident rechtswidrig; das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert, dass allein der Erlass einer behördlichen Löschungsanordnung in Betracht käme.",
+            "Dabei wird sie das ihr zustehende Ermessen fehlerfrei auszuüben haben, insbesondere die Schwere der Ehrverletzung, die Eignung zivilgerichtlichen Rechtsschutzes und die zeitliche Dringlichkeit in ihre Abwägung einzustellen."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4129,
+        "output_tokens": 575,
+        "total_tokens": 4704,
+        "cached_input_tokens": 3840
+      }
+    },
+    {
+      "id": "C-068",
+      "title": "Legitimer Zweck der Löschung",
+      "verdict": "pass",
+      "reasoning": "Die Antwort benennt als Grundlage und Zweck des Einschreitens die Verletzung von Js Ehre bzw. ihres Persönlichkeitsrechts sowie Beleidigung und Verleumdung. Durch den Hinweis, dass die Gefahr fortbesteht, solange der Blogbeitrag zugänglich ist, wird die Löschung erkennbar auf die Beendigung dieser Ehrverletzungen gerichtet. Es geht nicht nur um die Unterdrückung unliebsamer Klimadebattenkritik.",
+      "evidence": [
+        "wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre",
+        "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung",
+        "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden, erfüllt den Tatbestand der üblen Nachrede (§ 186 StGB) oder sogar der Verleumdung (§ 187 StGB)",
+        "Die Gefahr ist konkret, solange der Blogbeitrag weiterhin öffentlich zugänglich ist."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort benennt als Grundlage und Zweck des Einschreitens die Verletzung von Js Ehre bzw. ihres Persönlichkeitsrechts sowie Beleidigung und Verleumdung. Durch den Hinweis, dass die Gefahr fortbesteht, solange der Blogbeitrag zugänglich ist, wird die Löschung erkennbar auf die Beendigung dieser Ehrverletzungen gerichtet. Es geht nicht nur um die Unterdrückung unliebsamer Klimadebattenkritik.",
+          "evidence": [
+            "wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre",
+            "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung",
+            "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden, erfüllt den Tatbestand der üblen Nachrede (§ 186 StGB) oder sogar der Verleumdung (§ 187 StGB)",
+            "Die Gefahr ist konkret, solange der Blogbeitrag weiterhin öffentlich zugänglich ist."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4615,
+        "output_tokens": 492,
+        "total_tokens": 5107,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-069",
+      "title": "Geeignetheit der Löschung",
+      "verdict": "fail",
+      "reasoning": "Die Antwort erwähnt zwar eine Löschungsanordnung bzw. Löschung, bewertet aber nicht deren Geeignetheit damit, dass die beanstandeten Äußerungen nach Löschung nicht mehr über Xs Blog zur Kenntnis genommen werden können. Die geforderte Geeignetheitsprüfung fehlt daher.",
+      "evidence": [
+        "J begehrt den Erlass einer Löschungsanordnung.",
+        "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+        "insbesondere die Schwere der Ehrverletzung, die Eignung zivilgerichtlichen Rechtsschutzes und die zeitliche Dringlichkeit"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erwähnt zwar eine Löschungsanordnung bzw. Löschung, bewertet aber nicht deren Geeignetheit damit, dass die beanstandeten Äußerungen nach Löschung nicht mehr über Xs Blog zur Kenntnis genommen werden können. Die geforderte Geeignetheitsprüfung fehlt daher.",
+          "evidence": [
+            "J begehrt den Erlass einer Löschungsanordnung.",
+            "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+            "insbesondere die Schwere der Ehrverletzung, die Eignung zivilgerichtlichen Rechtsschutzes und die zeitliche Dringlichkeit"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4615,
+        "output_tokens": 408,
+        "total_tokens": 5023,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-070",
+      "title": "Gegendarstellung oder Zugangsbeschränkung nicht gleich wirksam",
+      "verdict": "fail",
+      "reasoning": "Die Antwort behandelt zwar allgemein die Frage, ob eine Löschungsanordnung verlangt werden kann, ordnet aber weder eine Gegendarstellung noch eine bloße Zugangsbeschränkung ausdrücklich als nicht gleich wirksames milderes Mittel gegenüber der Löschung rechtswidriger Äußerungen ein. Der geforderte Punkt fehlt daher.",
+      "evidence": [
+        "ob und in welcher Form sie einschreitet",
+        "Ein durchsetzbarer Anspruch auf unmittelbaren Erlass der Löschungsanordnung besteht"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt zwar allgemein die Frage, ob eine Löschungsanordnung verlangt werden kann, ordnet aber weder eine Gegendarstellung noch eine bloße Zugangsbeschränkung ausdrücklich als nicht gleich wirksames milderes Mittel gegenüber der Löschung rechtswidriger Äußerungen ein. Der geforderte Punkt fehlt daher.",
+          "evidence": [
+            "ob und in welcher Form sie einschreitet",
+            "Ein durchsetzbarer Anspruch auf unmittelbaren Erlass der Löschungsanordnung besteht"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4617,
+        "output_tokens": 390,
+        "total_tokens": 5007,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-071",
+      "title": "Gesamtsperrung nicht milder als punktuelle Löschung",
+      "verdict": "fail",
+      "reasoning": "Die Antwort behandelt zwar eine Löschungsanordnung bzw. die Löschung rechtswidriger Äußerungen, erkennt aber nirgends ausdrücklich, dass eine Zugangsbeschränkung oder Sperrung des gesamten Blogbeitrags gegenüber der punktuellen Löschung der rechtswidrigen Formulierungen kein milderes Mittel wäre. Der vom Kriterium verlangte Verhältnismäßigkeitsvergleich fehlt.",
+      "evidence": [
+        "J begehrt den Erlass einer Löschungsanordnung.",
+        "Löschung bzw. Unterlassung der Äußerungen"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt zwar eine Löschungsanordnung bzw. die Löschung rechtswidriger Äußerungen, erkennt aber nirgends ausdrücklich, dass eine Zugangsbeschränkung oder Sperrung des gesamten Blogbeitrags gegenüber der punktuellen Löschung der rechtswidrigen Formulierungen kein milderes Mittel wäre. Der vom Kriterium verlangte Verhältnismäßigkeitsvergleich fehlt.",
+          "evidence": [
+            "J begehrt den Erlass einer Löschungsanordnung.",
+            "Löschung bzw. Unterlassung der Äußerungen"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4624,
+        "output_tokens": 375,
+        "total_tokens": 4999,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-072",
+      "title": "Grundrechtliche Angemessenheitsabwägung",
+      "verdict": "fail",
+      "reasoning": "Die Antwort erwähnt zwar Js Ehrverletzung und Art. 5 GG, nimmt aber bei der Angemessenheit einer Löschung keine grundrechtliche Abwägung zwischen Js Schutzinteressen und den Interessen an der Aufrechterhaltung des Blogangebots vor. Stattdessen verneint sie den Schutz durch Art. 5 GG bzw. verweist nur allgemein auf spätere Ermessenserwägungen.",
+      "evidence": [
+        "Die Äußerungen stellen eine reine Schmähkritik und wissentlich falsche Tatsachenbehauptungen dar, die den Schutzbereich des Art. 5 I GG von vornherein verlassen.",
+        "Dabei wird sie das ihr zustehende Ermessen fehlerfrei auszuüben haben, insbesondere die Schwere der Ehrverletzung, die Eignung zivilgerichtlichen Rechtsschutzes und die zeitliche Dringlichkeit in ihre Abwägung einzustellen."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erwähnt zwar Js Ehrverletzung und Art. 5 GG, nimmt aber bei der Angemessenheit einer Löschung keine grundrechtliche Abwägung zwischen Js Schutzinteressen und den Interessen an der Aufrechterhaltung des Blogangebots vor. Stattdessen verneint sie den Schutz durch Art. 5 GG bzw. verweist nur allgemein auf spätere Ermessenserwägungen.",
+          "evidence": [
+            "Die Äußerungen stellen eine reine Schmähkritik und wissentlich falsche Tatsachenbehauptungen dar, die den Schutzbereich des Art. 5 I GG von vornherein verlassen.",
+            "Dabei wird sie das ihr zustehende Ermessen fehlerfrei auszuüben haben, insbesondere die Schwere der Ehrverletzung, die Eignung zivilgerichtlichen Rechtsschutzes und die zeitliche Dringlichkeit in ihre Abwägung einzustellen."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4614,
+        "output_tokens": 679,
+        "total_tokens": 5293,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-073",
+      "title": "Bewusst unwahre Tatsache nicht durch Art. 5 GG geschützt",
+      "verdict": "pass",
+      "reasoning": "Die Antwort behandelt die Schulverweisbehauptung ausdrücklich als bewusst unwahre Tatsachenbehauptung und ordnet sie gerade nicht als durch Art. 5 Abs. 1 GG geschützte Meinungsäußerung ein, sondern als nicht vom Schutzbereich erfasst.",
+      "evidence": [
+        "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden",
+        "da X wissentlich die Unwahrheit verbreitete",
+        "wissentlich falsche Tatsachenbehauptungen dar, die den Schutzbereich des Art. 5 I GG von vornherein verlassen"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die Schulverweisbehauptung ausdrücklich als bewusst unwahre Tatsachenbehauptung und ordnet sie gerade nicht als durch Art. 5 Abs. 1 GG geschützte Meinungsäußerung ein, sondern als nicht vom Schutzbereich erfasst.",
+          "evidence": [
+            "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden",
+            "da X wissentlich die Unwahrheit verbreitete",
+            "wissentlich falsche Tatsachenbehauptungen dar, die den Schutzbereich des Art. 5 I GG von vornherein verlassen"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4624,
+        "output_tokens": 241,
+        "total_tokens": 4865,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-074",
+      "title": "Öffentliches Auftreten rechtfertigt keine Entwürdigung",
+      "verdict": "pass",
+      "reasoning": "Die Antwort stellt klar, dass Js öffentliches Auftreten bei den Demonstrationen keine Pflicht begründet, menschenwürdeverletzende bzw. ehrabschneidende Schmähungen wie „nicht lebenswert“, „Dreck“ oder „Abschaum“ hinzunehmen.",
+      "evidence": [
+        "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar",
+        "Die Erwägung, J müsse sich gefallen lassen, weil sie sich in die Öffentlichkeit begeben habe, ist in Bezug auf ehrabschneidende, nicht mehr sachspezifische Schmähungen unhaltbar"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort stellt klar, dass Js öffentliches Auftreten bei den Demonstrationen keine Pflicht begründet, menschenwürdeverletzende bzw. ehrabschneidende Schmähungen wie „nicht lebenswert“, „Dreck“ oder „Abschaum“ hinzunehmen.",
+          "evidence": [
+            "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar",
+            "Die Erwägung, J müsse sich gefallen lassen, weil sie sich in die Öffentlichkeit begeben habe, ist in Bezug auf ehrabschneidende, nicht mehr sachspezifische Schmähungen unhaltbar"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4624,
+        "output_tokens": 259,
+        "total_tokens": 4883,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-075",
+      "title": "Informationsfreiheit der Blogleser",
+      "verdict": "fail",
+      "reasoning": "Die Antwort erkennt zwar den allgemein zugänglichen Blog und prüft Art. 5 GG im Hinblick auf X, erwähnt aber nicht, dass eine Löschung der Bloginhalte die Informationsfreiheit der Leserinnen und Leser aus Art. 5 Abs. 1 Satz 1 GG berührt. Leserinteressen werden in der Abwägung vollständig ausgeblendet.",
+      "evidence": [
+        "Der Blog des X ist ein Telemedium i.S.d. §§ 54 ff. RStV.",
+        "Die Äußerungen stellen eine reine Schmähkritik und wissentlich falsche Tatsachenbehauptungen dar, die den Schutzbereich des Art. 5 I GG von vornherein verlassen.",
+        "insbesondere die Schwere der Ehrverletzung, die Eignung zivilgerichtlichen Rechtsschutzes und die zeitliche Dringlichkeit"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erkennt zwar den allgemein zugänglichen Blog und prüft Art. 5 GG im Hinblick auf X, erwähnt aber nicht, dass eine Löschung der Bloginhalte die Informationsfreiheit der Leserinnen und Leser aus Art. 5 Abs. 1 Satz 1 GG berührt. Leserinteressen werden in der Abwägung vollständig ausgeblendet.",
+          "evidence": [
+            "Der Blog des X ist ein Telemedium i.S.d. §§ 54 ff. RStV.",
+            "Die Äußerungen stellen eine reine Schmähkritik und wissentlich falsche Tatsachenbehauptungen dar, die den Schutzbereich des Art. 5 I GG von vornherein verlassen.",
+            "insbesondere die Schwere der Ehrverletzung, die Eignung zivilgerichtlichen Rechtsschutzes und die zeitliche Dringlichkeit"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4620,
+        "output_tokens": 640,
+        "total_tokens": 5260,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-076",
+      "title": "Beschränkbarkeit der Informationsfreiheit",
+      "verdict": "fail",
+      "reasoning": "Die Antwort behandelt das allgemeine Persönlichkeitsrecht der J und die Meinungsfreiheit des X, erwähnt aber nicht die Informationsfreiheit der Blogleser und stellt auch nicht klar, dass diese zum Schutz entgegenstehender Grundrechte der J beschränkbar ist. Die geforderte Aussage ist daher nicht eindeutig enthalten.",
+      "evidence": [
+        "Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts",
+        "Die Äußerungen stellen eine reine Schmähkritik und wissentlich falsche Tatsachenbehauptungen dar, die den Schutzbereich des Art. 5 I GG von vornherein verlassen."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt das allgemeine Persönlichkeitsrecht der J und die Meinungsfreiheit des X, erwähnt aber nicht die Informationsfreiheit der Blogleser und stellt auch nicht klar, dass diese zum Schutz entgegenstehender Grundrechte der J beschränkbar ist. Die geforderte Aussage ist daher nicht eindeutig enthalten.",
+          "evidence": [
+            "Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts",
+            "Die Äußerungen stellen eine reine Schmähkritik und wissentlich falsche Tatsachenbehauptungen dar, die den Schutzbereich des Art. 5 I GG von vornherein verlassen."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 3675,
+        "output_tokens": 348,
+        "total_tokens": 4023,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-077",
+      "title": "Besonderes Gewicht von Js Persönlichkeitsrecht",
+      "verdict": "fail",
+      "reasoning": "Die Antwort erwähnt zwar Js Minderjährigkeit sowie eine Ehrverletzung bzw. das allgemeine Persönlichkeitsrecht. Sie misst dem Persönlichkeitsrecht der 16-jährigen J aber kein besonderes Gewicht gerade wegen ihrer Jugend bei und führt nicht aus, dass der Blogbeitrag ihren sozialen Geltungsanspruch oder ihre Persönlichkeitsentwicklung beeinträchtigen kann. Die geforderte Gewichtung wird daher nicht klar erfüllt.",
+      "evidence": [
+        "J ist minderjährig",
+        "Eingriffe in das allgemeine Persönlichkeitsrecht und die Ehre stellen primär private Rechtsgüter dar.",
+        "insbesondere die Schwere der Ehrverletzung"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erwähnt zwar Js Minderjährigkeit sowie eine Ehrverletzung bzw. das allgemeine Persönlichkeitsrecht. Sie misst dem Persönlichkeitsrecht der 16-jährigen J aber kein besonderes Gewicht gerade wegen ihrer Jugend bei und führt nicht aus, dass der Blogbeitrag ihren sozialen Geltungsanspruch oder ihre Persönlichkeitsentwicklung beeinträchtigen kann. Die geforderte Gewichtung wird daher nicht klar erfüllt.",
+          "evidence": [
+            "J ist minderjährig",
+            "Eingriffe in das allgemeine Persönlichkeitsrecht und die Ehre stellen primär private Rechtsgüter dar.",
+            "insbesondere die Schwere der Ehrverletzung"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4619,
+        "output_tokens": 463,
+        "total_tokens": 5082,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-078",
+      "title": "Geringes Informationsinteresse an unwahrer Schulverweisbehauptung",
+      "verdict": "pass",
+      "reasoning": "Die Antwort bezeichnet die Schulverweisbehauptung als bewusst unwahr und ordnet wissentlich falsche Tatsachenbehauptungen als nicht vom Schutzbereich des Art. 5 I GG erfasst ein. Damit wird ein schutzwürdiges Informationsinteresse hieran der Sache nach verneint bzw. jedenfalls als gering bewertet; ein hohes Informationsinteresse wird nicht zugesprochen.",
+      "evidence": [
+        "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden",
+        "da X wissentlich die Unwahrheit verbreitete",
+        "wissentlich falsche Tatsachenbehauptungen dar, die den Schutzbereich des Art. 5 I GG von vornherein verlassen"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bezeichnet die Schulverweisbehauptung als bewusst unwahr und ordnet wissentlich falsche Tatsachenbehauptungen als nicht vom Schutzbereich des Art. 5 I GG erfasst ein. Damit wird ein schutzwürdiges Informationsinteresse hieran der Sache nach verneint bzw. jedenfalls als gering bewertet; ein hohes Informationsinteresse wird nicht zugesprochen.",
+          "evidence": [
+            "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden",
+            "da X wissentlich die Unwahrheit verbreitete",
+            "wissentlich falsche Tatsachenbehauptungen dar, die den Schutzbereich des Art. 5 I GG von vornherein verlassen"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4606,
+        "output_tokens": 649,
+        "total_tokens": 5255,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-079",
+      "title": "Grundrechtliche Schutzpflicht als Quelle der Ermessensreduzierung",
+      "verdict": "fail",
+      "reasoning": "Die Antwort erwähnt zwar Art. 2 Abs. 1, Art. 1 Abs. 1 GG und das allgemeine Persönlichkeitsrecht, behandelt diese aber nur allgemein als mögliche Anspruchsgrundlage bzw. verletzte Rechtsgüter. Eine grundrechtliche Schutzpflicht des Staates als Quelle oder Prüfungsmaßstab einer möglichen Ermessensreduzierung auf Null wird nicht hergeleitet oder geprüft. Stattdessen wird die Ermessensreduzierung ohne Einbeziehung der Schutzpflicht verneint.",
+      "evidence": [
+        "Der geltend gemachte Anspruch auf Einschreiten könnte sich aus § 9 I POG i.V.m. Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre ergeben.",
+        "Keine Ermessensreduzierung auf Null hinsichtlich des konkreten Verwaltungsaktes",
+        "Eingriffe in das allgemeine Persönlichkeitsrecht und die Ehre stellen primär private Rechtsgüter dar."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erwähnt zwar Art. 2 Abs. 1, Art. 1 Abs. 1 GG und das allgemeine Persönlichkeitsrecht, behandelt diese aber nur allgemein als mögliche Anspruchsgrundlage bzw. verletzte Rechtsgüter. Eine grundrechtliche Schutzpflicht des Staates als Quelle oder Prüfungsmaßstab einer möglichen Ermessensreduzierung auf Null wird nicht hergeleitet oder geprüft. Stattdessen wird die Ermessensreduzierung ohne Einbeziehung der Schutzpflicht verneint.",
+          "evidence": [
+            "Der geltend gemachte Anspruch auf Einschreiten könnte sich aus § 9 I POG i.V.m. Art. 2 I, 1 I GG wegen der Verletzung ihres allgemeinen Persönlichkeitsrechts und ihrer Ehre ergeben.",
+            "Keine Ermessensreduzierung auf Null hinsichtlich des konkreten Verwaltungsaktes",
+            "Eingriffe in das allgemeine Persönlichkeitsrecht und die Ehre stellen primär private Rechtsgüter dar."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 3688,
+        "output_tokens": 517,
+        "total_tokens": 4205,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-080",
+      "title": "Kriterien der Ermessensreduzierung",
+      "verdict": "pass",
+      "reasoning": "Die Antwort behauptet die fehlende Ermessensreduzierung nicht bloß, sondern begründet sie fallbezogen mit der Evidenz/Rechtswidrigkeit der Äußerungen, der Subsidiarität behördlichen Schutzes privater Rechte, der Möglichkeit kurzfristigen zivilgerichtlichen Rechtsschutzes sowie ausdrücklich mit Kriterien wie Schwere der Ehrverletzung und zeitlicher Dringlichkeit. Damit werden fallbezogene Kriterien für die Ermessensreduzierung herangezogen.",
+      "evidence": [
+        "Zwar sind die Äußerungen evident rechtswidrig; das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert",
+        "Das POG kennt in § 1 III den Grundsatz der Subsidiarität des Schutzes privater Rechte",
+        "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+        "insbesondere die Schwere der Ehrverletzung, die Eignung zivilgerichtlichen Rechtsschutzes und die zeitliche Dringlichkeit in ihre Abwägung einzustellen"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behauptet die fehlende Ermessensreduzierung nicht bloß, sondern begründet sie fallbezogen mit der Evidenz/Rechtswidrigkeit der Äußerungen, der Subsidiarität behördlichen Schutzes privater Rechte, der Möglichkeit kurzfristigen zivilgerichtlichen Rechtsschutzes sowie ausdrücklich mit Kriterien wie Schwere der Ehrverletzung und zeitlicher Dringlichkeit. Damit werden fallbezogene Kriterien für die Ermessensreduzierung herangezogen.",
+          "evidence": [
+            "Zwar sind die Äußerungen evident rechtswidrig; das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert",
+            "Das POG kennt in § 1 III den Grundsatz der Subsidiarität des Schutzes privater Rechte",
+            "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+            "insbesondere die Schwere der Ehrverletzung, die Eignung zivilgerichtlichen Rechtsschutzes und die zeitliche Dringlichkeit in ihre Abwägung einzustellen"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 3673,
+        "output_tokens": 501,
+        "total_tokens": 4174,
+        "cached_input_tokens": 3328
+      }
+    },
+    {
+      "id": "C-081",
+      "title": "Zivilrechtsweg als Gegenargument zur Ermessensreduzierung",
+      "verdict": "pass",
+      "reasoning": "Die Antwort berücksichtigt ausdrücklich den möglichen zivilrechtlichen Rechtsschutz der J gegen X und verwendet ihn als Argument gegen eine Ermessensreduzierung auf Null. Sie nimmt gerade keine zwingende Einschreitenspflicht ohne Würdigung dieser Schutzmöglichkeit an.",
+      "evidence": [
+        "Keine Ermessensreduzierung auf Null hinsichtlich des konkreten Verwaltungsaktes",
+        "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+        "Daher läge die Annahme einer Ermessensreduzierung auf Null fern"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort berücksichtigt ausdrücklich den möglichen zivilrechtlichen Rechtsschutz der J gegen X und verwendet ihn als Argument gegen eine Ermessensreduzierung auf Null. Sie nimmt gerade keine zwingende Einschreitenspflicht ohne Würdigung dieser Schutzmöglichkeit an.",
+          "evidence": [
+            "Keine Ermessensreduzierung auf Null hinsichtlich des konkreten Verwaltungsaktes",
+            "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+            "Daher läge die Annahme einer Ermessensreduzierung auf Null fern"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4613,
+        "output_tokens": 241,
+        "total_tokens": 4854,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-082",
+      "title": "Menschenwürde als Argument für Ermessensreduzierung",
+      "verdict": "fail",
+      "reasoning": "Die Antwort erwähnt zwar die Aussage „nicht lebenswert“ und prüft eine Ermessensreduzierung auf Null, würdigt dabei aber nicht die Betroffenheit von Js Menschenwürde als starkes Argument für eine Ermessensreduzierung. Sie wählt auch nicht ausdrücklich die strengere Gegenansicht, dass eine Ermessensreduzierung nur bei schweren Gefahren für Leib oder Leben in Betracht komme, und erklärt dementsprechend auch nicht, warum der Menschenwürdebezug hierfür nicht genügt. Die Menschenwürdebetroffenheit wird bei der Ermessensreduzierung vollständig übergangen.",
+      "evidence": [
+        "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar",
+        "Keine Ermessensreduzierung auf Null hinsichtlich des konkreten Verwaltungsaktes",
+        "Eingriffe in das allgemeine Persönlichkeitsrecht und die Ehre stellen primär private Rechtsgüter dar.",
+        "Zwar sind die Äußerungen evident rechtswidrig; das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erwähnt zwar die Aussage „nicht lebenswert“ und prüft eine Ermessensreduzierung auf Null, würdigt dabei aber nicht die Betroffenheit von Js Menschenwürde als starkes Argument für eine Ermessensreduzierung. Sie wählt auch nicht ausdrücklich die strengere Gegenansicht, dass eine Ermessensreduzierung nur bei schweren Gefahren für Leib oder Leben in Betracht komme, und erklärt dementsprechend auch nicht, warum der Menschenwürdebezug hierfür nicht genügt. Die Menschenwürdebetroffenheit wird bei der Ermessensreduzierung vollständig übergangen.",
+          "evidence": [
+            "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar",
+            "Keine Ermessensreduzierung auf Null hinsichtlich des konkreten Verwaltungsaktes",
+            "Eingriffe in das allgemeine Persönlichkeitsrecht und die Ehre stellen primär private Rechtsgüter dar.",
+            "Zwar sind die Äußerungen evident rechtswidrig; das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4660,
+        "output_tokens": 525,
+        "total_tokens": 5185,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-083",
+      "title": "Schwere Persönlichkeitsrechtsverletzung",
+      "verdict": "pass",
+      "reasoning": "Die Antwort ordnet die genannten Bezeichnungen einschließlich „nicht lebenswert“, „Dreck“ und „Abschaum“ nicht als bloß geringfügig, sondern als ehrverletzende Formalbeleidigung/Schmähkritik und evident rechtswidrig ein. Bei der Ermessensreduzierung wird die Rechtswidrigkeit der Äußerungen ausdrücklich angesprochen und die „Schwere der Ehrverletzung“ als zu berücksichtigender Ermessensgesichtspunkt genannt. Das erfüllt die Anforderung in der Sache.",
+      "evidence": [
+        "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar",
+        "Zwar sind die Äußerungen evident rechtswidrig; das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert",
+        "insbesondere die Schwere der Ehrverletzung"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet die genannten Bezeichnungen einschließlich „nicht lebenswert“, „Dreck“ und „Abschaum“ nicht als bloß geringfügig, sondern als ehrverletzende Formalbeleidigung/Schmähkritik und evident rechtswidrig ein. Bei der Ermessensreduzierung wird die Rechtswidrigkeit der Äußerungen ausdrücklich angesprochen und die „Schwere der Ehrverletzung“ als zu berücksichtigender Ermessensgesichtspunkt genannt. Das erfüllt die Anforderung in der Sache.",
+          "evidence": [
+            "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“ stellen eine ehrverletzende Formalbeleidigung („Schmähkritik“) dar",
+            "Zwar sind die Äußerungen evident rechtswidrig; das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert",
+            "insbesondere die Schwere der Ehrverletzung"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4617,
+        "output_tokens": 725,
+        "total_tokens": 5342,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-084",
+      "title": "Geringer behördlicher Aufwand",
+      "verdict": "fail",
+      "reasoning": "Die Antwort berücksichtigt den geringen Aufwand der ADD für eine Verfügung gegen den bekannten Urheber X nicht als Argument für eine Ermessensreduzierung auf Null. Die Bekanntheit des Anbieters wird nur zur Zumutbarkeit zivilrechtlichen Rechtsschutzes herangezogen. Ein hoher behördlicher Aufwand wird zwar nicht angenommen, das geforderte Argument fehlt aber.",
+      "evidence": [
+        "Keine Ermessensreduzierung auf Null hinsichtlich des konkreten Verwaltungsaktes",
+        "Aufgrund der öffentlichen Kenntnis des Anbieters ist effektiver zivilrechtlicher Rechtsschutz möglich",
+        "Daher läge die Annahme einer Ermessensreduzierung auf Null fern"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort berücksichtigt den geringen Aufwand der ADD für eine Verfügung gegen den bekannten Urheber X nicht als Argument für eine Ermessensreduzierung auf Null. Die Bekanntheit des Anbieters wird nur zur Zumutbarkeit zivilrechtlichen Rechtsschutzes herangezogen. Ein hoher behördlicher Aufwand wird zwar nicht angenommen, das geforderte Argument fehlt aber.",
+          "evidence": [
+            "Keine Ermessensreduzierung auf Null hinsichtlich des konkreten Verwaltungsaktes",
+            "Aufgrund der öffentlichen Kenntnis des Anbieters ist effektiver zivilrechtlicher Rechtsschutz möglich",
+            "Daher läge die Annahme einer Ermessensreduzierung auf Null fern"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4603,
+        "output_tokens": 339,
+        "total_tokens": 4942,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-085",
+      "title": "Beschränkung auf rechtswidrige Äußerungen",
+      "verdict": "pass",
+      "reasoning": "Die Antwort behandelt die Löschung bezogen auf die konkret beanstandeten rechtswidrigen Äußerungen, nämlich die Schmähungen und die unwahre Tatsachenbehauptung. Sie setzt dies nicht mit einem Verbot des gesamten Blogs oder jeder Kritik an „Fridays for Future“ gleich, sondern grenzt die unzulässigen, nicht sachbezogenen Ehrverletzungen ab.",
+      "evidence": [
+        "Bei den beanstandeten Äußerungen des X handelt es sich um strafbare Handlungen:",
+        "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“",
+        "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden",
+        "J kann vor den Zivilgerichten ... kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+        "in Bezug auf ehrabschneidende, nicht mehr sachspezifische Schmähungen"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die Löschung bezogen auf die konkret beanstandeten rechtswidrigen Äußerungen, nämlich die Schmähungen und die unwahre Tatsachenbehauptung. Sie setzt dies nicht mit einem Verbot des gesamten Blogs oder jeder Kritik an „Fridays for Future“ gleich, sondern grenzt die unzulässigen, nicht sachbezogenen Ehrverletzungen ab.",
+          "evidence": [
+            "Bei den beanstandeten Äußerungen des X handelt es sich um strafbare Handlungen:",
+            "Die Bezeichnungen als „dumme Sau“, „nicht lebenswert“, „Dreck“ und „Abschaum“",
+            "Die unwahre Tatsachenbehauptung, J sei von der Schule verwiesen worden",
+            "J kann vor den Zivilgerichten ... kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+            "in Bezug auf ehrabschneidende, nicht mehr sachspezifische Schmähungen"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4626,
+        "output_tokens": 747,
+        "total_tokens": 5373,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-086",
+      "title": "Geringer Löschungsaufwand für X",
+      "verdict": "fail",
+      "reasoning": "Die Antwort erwähnt zwar eine begehrte bzw. zivilgerichtlich erreichbare Löschung, bewertet aber nicht den technischen oder praktischen Aufwand für X, die Passagen aus seinem eigenen Blog zu entfernen, als gering oder zumutbar. Der geforderte Punkt fehlt daher.",
+      "evidence": [
+        "J begehrt den Erlass einer Löschungsanordnung.",
+        "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erwähnt zwar eine begehrte bzw. zivilgerichtlich erreichbare Löschung, bewertet aber nicht den technischen oder praktischen Aufwand für X, die Passagen aus seinem eigenen Blog zu entfernen, als gering oder zumutbar. Der geforderte Punkt fehlt daher.",
+          "evidence": [
+            "J begehrt den Erlass einer Löschungsanordnung.",
+            "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 4608,
+        "output_tokens": 332,
+        "total_tokens": 4940,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-087",
+      "title": "Verdichtung des Entschließungsermessens",
+      "verdict": "pass",
+      "reasoning": "Die Antwort prüft ausdrücklich eine Ermessensreduzierung und verneint sie begründet mit dem vorrangigen bzw. effektiven zivilrechtlichen Rechtsschutz. Das entspricht der im Kriterium genannten zulässigen Gegenansicht.",
+      "evidence": [
+        "Keine Ermessensreduzierung auf Null hinsichtlich des konkreten Verwaltungsaktes",
+        "das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert",
+        "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+        "unterstreicht jedoch den gesetzgeberischen Vorrang des privatrechtlichen Rechtsschutzes für Individualrechtsverletzungen."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft ausdrücklich eine Ermessensreduzierung und verneint sie begründet mit dem vorrangigen bzw. effektiven zivilrechtlichen Rechtsschutz. Das entspricht der im Kriterium genannten zulässigen Gegenansicht.",
+          "evidence": [
+            "Keine Ermessensreduzierung auf Null hinsichtlich des konkreten Verwaltungsaktes",
+            "das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert",
+            "J kann vor den Zivilgerichten im Wege der einstweiligen Verfügung (§§ 935, 940 ZPO i.V.m. § 823 I, § 1004 BGB) kurzfristig die Löschung bzw. Unterlassung der Äußerungen erreichen.",
+            "unterstreicht jedoch den gesetzgeberischen Vorrang des privatrechtlichen Rechtsschutzes für Individualrechtsverletzungen."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 5141,
+        "output_tokens": 449,
+        "total_tokens": 5590,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-088",
+      "title": "Verdichtung des Auswahlermessens",
+      "verdict": "pass",
+      "reasoning": "Die Antwort verneint eine Verdichtung des Auswahlermessens auf die konkrete Löschungsanordnung und behandelt dies konsequent als Bescheidungsfall statt J unmittelbar eine Löschungsanordnung zuzusprechen. Damit fällt sie unter die im Kriterium zugelassene Alternative einer vertretbaren Verneinung der Ermessensreduzierung mit Bescheidungsergebnis.",
+      "evidence": [
+        "Keine Ermessensreduzierung auf Null hinsichtlich des konkreten Verwaltungsaktes",
+        "das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert, dass allein der Erlass einer behördlichen Löschungsanordnung in Betracht käme.",
+        "Die ADD ist verpflichtet, J unter Beachtung der Rechtsauffassung des Gerichts neu zu bescheiden.",
+        "Ein durchsetzbarer Anspruch auf unmittelbaren Erlass der Löschungsanordnung besteht mangels Spruchreife nicht"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint eine Verdichtung des Auswahlermessens auf die konkrete Löschungsanordnung und behandelt dies konsequent als Bescheidungsfall statt J unmittelbar eine Löschungsanordnung zuzusprechen. Damit fällt sie unter die im Kriterium zugelassene Alternative einer vertretbaren Verneinung der Ermessensreduzierung mit Bescheidungsergebnis.",
+          "evidence": [
+            "Keine Ermessensreduzierung auf Null hinsichtlich des konkreten Verwaltungsaktes",
+            "das Ermessen der Behörde, ob und in welcher Form sie einschreitet, ist jedoch nicht dahingehend auf Null reduziert, dass allein der Erlass einer behördlichen Löschungsanordnung in Betracht käme.",
+            "Die ADD ist verpflichtet, J unter Beachtung der Rechtsauffassung des Gerichts neu zu bescheiden.",
+            "Ein durchsetzbarer Anspruch auf unmittelbaren Erlass der Löschungsanordnung besteht mangels Spruchreife nicht"
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 5127,
+        "output_tokens": 493,
+        "total_tokens": 5620,
+        "cached_input_tokens": 4352
+      }
+    },
+    {
+      "id": "C-039",
+      "title": "Örtliche Zuständigkeit nach § 59 Abs. 6 RStV",
+      "verdict": "pass",
+      "reasoning": "Die Antwort behandelt die Zuständigkeit der ADD und leitet sie ausdrücklich aus § 59 Abs. 6 RStV her. Auch wenn das Wort „örtlich“ nicht verwendet wird, wird die zuständige rheinland-pfälzische Aufsichtsbehörde/ADD unter Bezug auf § 59 VI RStV benannt.",
+      "evidence": [
+        "Die ADD ist nach § 59 VI RStV i.V.m. dem rheinland-pfälzischen Ausführungsgesetz zuständige Aufsichtsbehörde für Telemedien."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die Zuständigkeit der ADD und leitet sie ausdrücklich aus § 59 Abs. 6 RStV her. Auch wenn das Wort „örtlich“ nicht verwendet wird, wird die zuständige rheinland-pfälzische Aufsichtsbehörde/ADD unter Bezug auf § 59 VI RStV benannt.",
+          "evidence": [
+            "Die ADD ist nach § 59 VI RStV i.V.m. dem rheinland-pfälzischen Ausführungsgesetz zuständige Aufsichtsbehörde für Telemedien."
+          ]
+        }
+      ],
+      "usage": {
+        "input_tokens": 5274,
+        "output_tokens": 535,
+        "total_tokens": 5809,
+        "cached_input_tokens": 4352
+      }
+    }
+  ]
+}

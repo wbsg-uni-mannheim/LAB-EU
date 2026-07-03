@@ -130,7 +130,7 @@ J hat das Vorverfahren ordnungsgemäß durchgeführt.
 
 Richtiger Klagegegner ist nach § 78 I Nr. 1 VwGO das Land Rheinland-Pfalz als Rechtsträger der ADD
 
-> **Lösungshinweis:** Der Prüfungspunkt kann auch in der Begründetheit als sog. Passivlegitimation geprüft werden.[^8]
+> Lösungshinweis: Der Prüfungspunkt kann auch in der Begründetheit als sog. Passivlegitimation geprüft werden.[^8]
 
 ### VI. Beteiligungs- und Prozessfähigkeit
 
@@ -152,7 +152,7 @@ X könnte nach § 65 II VwGO notwendig beizuladen sein. Eine Beiladung ist notwe
 
 Die Klage ist begründet, soweit die Ablehnung der Löschungsanordnung rechtswidrig war und J in ihren Rechten verletzt hat und die Sache spruchreif ist (§ 113 V 1 VwGO). Dies ist der Fall, wenn J einen Anspruch auf Erlass der Löschungsanordnung gegen X hat. Dieser Anspruch setzt wiederum voraus, dass eine solche Anordnung rechtmäßig wäre und das Ermessen auf Null reduziert ist.
 
-> **Aufbauhinweis:** Es wäre ebenso vertretbar, einen Anspruchsaufbau zu wählen. Dann würde zunächst die Anspruchsgrundlage bestimmt und danach die Anspruchsvoraussetzungen (also die Tatbestandsmerkmale der Anspruchsgrundlage) geprüft. Zum Schluss wird dargestellt, ob der Verwaltung noch ein Gestaltungsspielraum verbleibt oder die Sache (bei gebundenen Entscheidungen oder einer Ermessensreduzierung auf Null) spruchreif ist.[^11]
+> Aufbauhinweis: Es wäre ebenso vertretbar, einen Anspruchsaufbau zu wählen. Dann würde zunächst die Anspruchsgrundlage bestimmt und danach die Anspruchsvoraussetzungen (also die Tatbestandsmerkmale der Anspruchsgrundlage) geprüft. Zum Schluss wird dargestellt, ob der Verwaltung noch ein Gestaltungsspielraum verbleibt oder die Sache (bei gebundenen Entscheidungen oder einer Ermessensreduzierung auf Null) spruchreif ist.[^11]
 
 ### I. Rechtmäßigkeit einer Löschungsanordnung
 
@@ -170,7 +170,7 @@ Die sachliche Zuständigkeit der ADD zur Durchsetzung der Bestimmungen für Tele
 
 Allerdings könnte sich hier etwas Anderes aus § 1 III POG ergeben. Danach obliegt den allgemeinen Ordnungsbehörden und der Polizei der Schutz privater Rechte nur dann, wenn gerichtlicher Schutz nicht rechtzeitig zu erlangen ist und wenn ohne ordnungsbehördliche oder polizeiliche Hilfe die Verwirklichung des Rechts vereitelt oder wesentlich erschwert werden würde.[^16] Ansonsten sind die Ordnungsbehörden nicht zuständig. Hintergrund ist, dass Private eine Verletzung ihrer Rechte vorrangig auf dem Rechtsweg durch Inanspruchnahme des Störers abstellen sollen, anstatt dafür ordnungsbehördliche Ressourcen in Anspruch zu nehmen. Den Ordnungsbehörden obliegt primär der Schutz öffentlicher Interessen.[^17] Ein entsprechender Gedanke findet sich in § 59 V RStV. Nach dieser Vorschrift sollen, wenn ein Angebot in Rechte Dritter eingreift und für den Dritten der Rechtsweg eröffnet ist, Anordnungen der Aufsichtsbehörde i.S.v. § 59 III RStV nur erfolgen, wenn dies aus Gründen des Gemeinwohls geboten ist. Hier wäre J ein gerichtliches Vorgehen gegen X möglich gewesen und dieses hätte Aussicht auf Erfolg gehabt. Allerdings gilt die Vorrangigkeit gerichtlichen Rechtsschutzes nicht, wenn, wie hier, neben der Verletzung privater Rechte zugleich ein Verstoß gegen Strafgesetze vorliegt. In einem solchen Fall sind auch öffentliche Interessen berührt, die ein Einschreiten der Ordnungsbehörden auch bei der Möglichkeit, gerichtlichen Rechtsschutz einzuholen, rechtfertigen. Es ist ausreichend, dass der objektive Tatbestand des Strafgesetzes verwirklicht wird. Ob es sich wie bei §§ 185 und 187 StGB um Antragsdelikte handelt spielt keine Rolle.[^18] Auch bei § 59 V RStV ist ein Einschreiten aus Gründen des Gemeinwohls geboten, wenn das Angebot des Telemediums gegen Strafgesetze verstößt.[^19] Damit steht § 1 III POG der Zuständigkeit der ADD nicht entgegen.
 
-> **Lösungshinweis:** Die Frage, ob einem Einschreiten der Ordnungsbehörde die Möglichkeit zivilgerichtlichen Rechtsschutzes entgegensteht, kann auch erst in der materiellen Rechtmäßigkeit geprüft werden, nämlich bei der Frage, ob beim Tätigwerden zum Schutz privater Rechte eine Gefahr für die öffentliche Sicherheit besteht.[^20]
+> Lösungshinweis: Die Frage, ob einem Einschreiten der Ordnungsbehörde die Möglichkeit zivilgerichtlichen Rechtsschutzes entgegensteht, kann auch erst in der materiellen Rechtmäßigkeit geprüft werden, nämlich bei der Frage, ob beim Tätigwerden zum Schutz privater Rechte eine Gefahr für die öffentliche Sicherheit besteht.[^20]
 
 #### 3. Materielle Rechtmäßigkeit
 
@@ -208,15 +208,15 @@ Damit wäre eine Löschungsverfügung gegen X eine pflichtgemäße Ausübung des
 
 Auswahlermessen betrifft die Frage, welche von mehreren möglichen Maßnahmen die Ordnungsbehörde ergreifen soll. Hier spielt der auch in § 2 POG normierte Verhältnismäßigkeitsgrundsatz eine wichtige Rolle. Ein Verstoß gegen diesen begründet einen Ermessensfehler in der Variante der Ermessensüberschreitung.[^32]
 
-**(1) Legitimer Zweck**
+(1) Legitimer Zweck
 
 Legitimer Zweck einer Löschungsverfügung ist die Abstellung des Verstoßes gegen §§ 185, 187 StGB sowie der Verletzung von Js Ehre.
 
-**(2) Geeignetheit**
+(2) Geeignetheit
 
 Eine Löschungsanordnung ist geeignet, den Verstoß gegen §§ 185 und 187 StGB sowie die Verletzung der Ehre der J zu beenden, indem die Äußerungen nach erfolgter Löschung nicht mehr zur Kenntnis genommen werden können.
 
-**(3) Erforderlichkeit**
+(3) Erforderlichkeit
 
 Die Löschungsanordnung müsste auch erforderlich sein. Dies ist der Fall, wenn kein milderes, gleich geeignetes Mittel zur Verfügung steht. Als alternatives Mittel käme in Betracht, X lediglich zur Einschränkung des Zugangs zu seinem Blogbeitrag oder der Veröffentlichung einer Gegendarstellung zu verpflichten. Dies wäre jedoch nicht gleich effektiv. Die rechtswidrigen Äußerungen könnten dann immer noch zur Kenntnis genommen werden und das Ansehen der J beeinträchtigen. Eine Anordnung zur Zugangseinschränkung, die sich nicht auf die konkret rechtswidrigen Formulierungen, sondern den Blogbeitrag als Ganzes bezieht, wäre schon kein milderes Mittel. Von ihr wären auch rechtmäßige Inhalte betroffen.
 
@@ -351,7 +351,7 @@ Die Klage ist zulässig und begründet und hat somit Aussicht auf Erfolg.
 
 ## Rubrics For Review
 
-**Generated at:** 2026-07-02T10:32:20.533545+00:00
+**Generated at:** 2026-07-02T11:09:28.420955+00:00
 
 **Review status:** generated_calibrated_needs_human_review
 

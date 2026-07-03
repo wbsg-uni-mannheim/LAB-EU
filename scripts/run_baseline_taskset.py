@@ -18,6 +18,7 @@ import hashlib
 import json
 import os
 import pathlib
+import subprocess
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -58,11 +59,6 @@ def parse_args() -> argparse.Namespace:
         help="OpenAI-compatible endpoint. Use https://openrouter.ai/api/v1 for OpenRouter models.",
     )
     parser.add_argument(
-        "--api-key-env",
-        default="OPENAI_API_KEY",
-        help="Environment variable holding the API key for --api-base.",
-    )
-    parser.add_argument(
         "--reasoning-effort",
         default="none",
         help=(
@@ -78,8 +74,25 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--timeout-seconds", type=int, default=3600)
     parser.add_argument("--parallel", type=int, default=1)
+    parser.add_argument(
+        "--judge",
+        action="store_true",
+        help="After the run, judge all submissions via scripts/judge_run.py (needs OPENAI_API_KEY).",
+    )
+    parser.add_argument("--judge-model", default="gpt-5.5")
+    parser.add_argument("--judge-votes", type=int, default=1)
     parser.add_argument("--dry-run", action="store_true", help="Validate inputs and print run plan without model calls.")
     return parser.parse_args()
+
+
+def api_key_env_for(api_base: str) -> str:
+    """Pick the .env variable for the endpoint, so no key argument is needed."""
+    host = api_base.lower()
+    if "openrouter" in host:
+        return "OPENROUTER_API_KEY"
+    if "deepseek" in host:
+        return "DEEPSEEK_API_KEY"
+    return "OPENAI_API_KEY"
 
 
 def render_documents(task_dir: pathlib.Path) -> tuple[str, bool]:
@@ -275,10 +288,13 @@ def main() -> int:
     if not PROMPT_TEMPLATE.exists():
         raise SystemExit(f"Missing prompt template: {PROMPT_TEMPLATE}")
 
+    key_env = api_key_env_for(args.api_base)
+
     if args.dry_run:
         print(f"Validated {len(rows)} task(s).")
         print(f"Model: {args.model}")
         print(f"API base: {args.api_base}")
+        print(f"API key from .env: {key_env} ({'set' if os.environ.get(key_env) else 'MISSING'})")
         print(f"Reasoning effort: {args.reasoning_effort}")
         for row in rows:
             documents, truncated = render_documents(row["task_dir"])
@@ -289,9 +305,12 @@ def main() -> int:
             )
         return 0
 
-    api_key = os.environ.get(args.api_key_env)
+    api_key = os.environ.get(key_env)
     if not api_key:
-        raise SystemExit(f"{args.api_key_env} is not set. Put it in the environment or .env.")
+        raise SystemExit(
+            f"{key_env} is not set (selected automatically for --api-base {args.api_base}). "
+            "Put it in the repo-root .env."
+        )
     client = OpenAI(base_url=args.api_base, api_key=api_key, timeout=args.timeout_seconds)
 
     run_id = make_run_id()
@@ -321,6 +340,23 @@ def main() -> int:
                 print(f"{row['task_id']}: exit={metadata['exit_code']} missing={len(metadata['missing_deliverables'])}")
 
     print(f"Wrote run: {run_dir}")
+
+    if args.judge:
+        print(f"Judging run with {args.judge_model} ({args.judge_votes} votes per criterion)...")
+        judge = subprocess.run(
+            [
+                sys.executable,
+                str(SCRIPTS_DIR / "judge_run.py"),
+                str(run_dir),
+                "--judge-model", args.judge_model,
+                "--votes", str(args.judge_votes),
+            ],
+            cwd=REPO_ROOT,
+        )
+        if judge.returncode != 0:
+            print("Judging reported failures; see judge.stderr.log in the task directories.", file=sys.stderr)
+            return 1
+
     return 1 if failures else 0
 
 
