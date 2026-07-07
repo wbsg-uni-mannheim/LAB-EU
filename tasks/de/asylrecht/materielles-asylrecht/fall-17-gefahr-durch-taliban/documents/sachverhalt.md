@@ -1,0 +1,7 @@
+## Sachverhalt
+
+Ellaha ist afghanische Staatsangehörige und der Volksgruppe der Hazara zugehörig. Sie ist im Jahr 2020 über den Landweg nach Deutschland eingereist. Bei ihrer Anhörung vor dem Bundesamt für Migration und Flüchtlinge (BAMF) gab sie an, zuletzt in der Provinz Kabul, dort im Distrikt Cahar Asyab gelebt zu haben. Ihre Geschwister leben schon seit längerer Zeit in Deutschland. Mit diesen skype sie regelmäßig und orientiere sich an ihrem Lebensstil. Die letzten Jahre habe sie als Lehrerin in einer Mädchenschule gearbeitet. Die Mädchenschule, so habe sie gehört, soll geschlossen werden. Seit geraumer Zeit wurde sie auf ihrem Weg in die Schule von Unbekannten bedroht. Sie sei mehrfach aufgefordert worden, Afghanistan zu verlassen. Die Bedrohungen haben zugenommen, nachdem sie eine angebotene Heirat abgelehnt habe. Mit zunehmendem Machtgewinn der Taliban habe sie sich nicht mehr sicher gefühlt. Mittlerweile seien die Taliban überall. Sie weigere sich zudem einen Hi­dschab zu tragen, ganz abgesehen von einer Nikab oder ähnliches. Es verging kein Tag, an dem sie als "Westliche" beschimpft oder angespuckt wurde. Besonders als Frau sei es auch in Kabul gefährlich, weil man dort täglich mit der Bedrohung leben, entführt, überfallen oder vergewaltigt zu werden. Eine Frau habe in Afghanistan keinen Wert für die Menschen, insbesondere für die Taliban.
+
+*Bearbeitungsvermerk:*
+
+Gehen Sie von der Zulässigkeit des Asylantrags aus.

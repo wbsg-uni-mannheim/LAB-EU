@@ -1,0 +1,7 @@
+## Sachverhalt
+
+G hat eine qualifizierte Berufsausbildung nach § 60c I 1 Nr. 2 AufenthG aufgenommen, ihr wurde eine Beschäftigungserlaubnis erteilt. Bevor G ihre Ausbildung abschließen konnte, wurde ihr betriebsbedingt gekündigt. G erhielt nun eine einfache Duldung nach § 60a AufenthG. Diese enthielt den Hinweis, dass die Erwerbstätigkeit nur mit Zustimmung der Ausländerbehörde erlaubt sei.
+
+Ein naher Verwandter möchte G nun gegen einen Wochenlohn von 300 Euro in seinem kleinen Familienbetrieb beschäftigen. G fühlt sich dem Verwandten sehr verbunden und möchte diesen unterstützen, freut sich aber auch über die Bezahlung.
+
+G zieht nun eine Rechtsanwältin hinzu, da ihr unklar ist, ob sie diese Tätigkeit ausüben darf. Die Anwältin behauptet, dass die Tätigkeit der G aufgrund der Einbindung in den familiären Betrieb überhaupt nicht der Erlaubnis bedürfe, da sie nicht den §§ 4a IV, 2 II AufenthG unterfalle, denn G wolle nur aus Verbundenheit zu ihrem Verwandten und nicht aufgrund der Bezahlung im Betrieb mithelfen. Selbst wenn eine Erlaubnis erforderlich wäre, wirke die mit der Ausbildungsduldung erteilte Beschäftigungserlaubnis fort, schließlich war die Beschäftigungserlaubnis zeitlich nicht befristet und die Behörde habe sie nicht wirksam widerrufen. Es gebe schon keine Rechtsgrundlage für ein Erlöschen der Beschäftigungserlaubnis. Somit dürfe G die Tätigkeit jedenfalls deswegen ausüben.

@@ -1,0 +1,7 @@
+## Sachverhalt
+
+Der gambische Mandant A berichtet in der Beratungsstunde im November 2022 in fließendem Deutsch, dass er im Juni 2016 mit seiner Ehepartnerin B und den beiden gemeinsamen Kindern Deutschland erreichte. Das Asylverfahren des A wurde im Januar des Jahres 2021 rechtskräftig abgeschlossen, ihm wurde kein Schutzstatus zuerkannt. Anschließend wurde A umgehend eine Duldung nach § 60a II 3 AufenthG ausgestellt, da er nebenbei seine reiseunfähige Ehepartnerin pflegt. Drei Monate nach Abschluss des Asylverfahrens wurde ihm die Erlaubnis erteilt, eine sozialversicherungspflichtige Beschäftigung als Logistikmanager in einem großen Warenlager auszuüben. Die wöchentliche Arbeitszeit beträgt seitdem 30 Stunden. Sozialleistungen erhält A persönlich nicht, seine Familienangehörigen hingegen schon.
+
+A möchte nun seinen Aufenthalt aufwerten. Ihn stört schon länger, dass die Duldungsverlängerung im Ermessen der Behörde steht. Er hofft über die Arbeitsstelle einen Titel erhalten zu können, der ihm relativ bald die Möglichkeit eröffnet, der prekären Duldungssituation zu entkommen.
+
+Auf Nachfrage erklärt er, dass sowohl seine Identität als auch die seiner Ehepartnerin seit Ende des Jahres 2016 als geklärt gelten. Mangels anerkannter Geburtsurkunde oder anderer Ausweisdokumente gelten die Identitäten der beiden Kinder nicht als geklärt. Beide Kinder sind noch minderjährig und besuchen die Schule.
