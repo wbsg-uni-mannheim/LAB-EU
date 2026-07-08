@@ -31,6 +31,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("submission", type=pathlib.Path, help="Answer file, or output directory with deliverable files.")
     parser.add_argument("--judge-model", default=os.environ.get("OPENAI_JUDGE_MODEL", DEFAULT_JUDGE_MODEL))
     parser.add_argument(
+        "--judge-api-base",
+        default=os.environ.get("OPENAI_API_BASE", DEFAULT_API_BASE),
+        help=(
+            "Judge endpoint. Default is the OpenAI Responses API. "
+            "Use https://openrouter.ai/api/v1 to judge with an OpenRouter model (chat-completions API)."
+        ),
+    )
+    parser.add_argument(
         "--reasoning-effort",
         default=os.environ.get("OPENAI_JUDGE_REASONING_EFFORT", DEFAULT_REASONING_EFFORT),
         help=(
@@ -73,11 +81,24 @@ def load_env_files(task_dir: pathlib.Path) -> None:
             load_dotenv(candidate, override=False)
 
 
-def make_client() -> OpenAI:
-    api_base = os.environ.get("OPENAI_API_BASE", DEFAULT_API_BASE)
+def api_key_env_for(api_base: str) -> str:
+    host = api_base.lower()
+    if "openrouter" in host:
+        return "OPENROUTER_API_KEY"
+    if "deepseek" in host:
+        return "DEEPSEEK_API_KEY"
+    return "OPENAI_API_KEY"
+
+
+def make_client(api_base: str) -> tuple[OpenAI, bool]:
+    """Return (client, use_chat_api). use_chat_api=True for non-OpenAI endpoints."""
     if api_base == DEFAULT_API_BASE:
-        return OpenAI()
-    return OpenAI(base_url=api_base)
+        return OpenAI(), False
+    key_env = api_key_env_for(api_base)
+    key = os.environ.get(key_env)
+    if not key:
+        raise SystemExit(f"{key_env} is not set (needed for --judge-api-base {api_base}). Put it in .env.")
+    return OpenAI(base_url=api_base, api_key=key), True
 
 
 def load_json(path: pathlib.Path) -> dict[str, Any]:
@@ -176,9 +197,7 @@ def parse_json_response(text: str) -> dict[str, Any]:
     raise ValueError(f"No JSON object found in judge response: {text[:500]}")
 
 
-def call_judge(client: OpenAI, model: str, prompt: str, reasoning_effort: str | None) -> dict[str, Any]:
-    # No max_output_tokens: token usage is recorded per criterion in scores.json,
-    # so caps can be reintroduced later if costs demand it.
+def _judge_call_responses(client: OpenAI, model: str, prompt: str, reasoning_effort: str | None):
     request: dict[str, Any] = {
         "model": model,
         "input": prompt,
@@ -186,16 +205,40 @@ def call_judge(client: OpenAI, model: str, prompt: str, reasoning_effort: str | 
     }
     if reasoning_effort:
         request["reasoning"] = {"effort": reasoning_effort}
+    response = client.responses.create(**request)
+    return response.output_text or "", usage_summary(response.model_dump(mode="json"))
 
+
+def _judge_call_chat(client: OpenAI, model: str, prompt: str):
+    # OpenAI-compatible chat endpoints (e.g. OpenRouter). Ask for a JSON object;
+    # some models reject response_format, so retry once without it.
+    messages = [{"role": "user", "content": prompt}]
+    try:
+        response = client.chat.completions.create(
+            model=model, messages=messages, response_format={"type": "json_object"}
+        )
+    except OpenAIError:
+        response = client.chat.completions.create(model=model, messages=messages)
+    text = (response.choices[0].message.content or "") if response.choices else ""
+    return text, usage_summary(response.model_dump(mode="json"))
+
+
+def call_judge(
+    client: OpenAI, model: str, prompt: str, reasoning_effort: str | None, use_chat: bool = False
+) -> dict[str, Any]:
+    # No max_output_tokens: token usage is recorded per criterion in scores.json.
     last_error: Exception | None = None
     for _attempt in range(2):
         try:
-            response = client.responses.create(**request)
+            if use_chat:
+                text, usage = _judge_call_chat(client, model, prompt)
+            else:
+                text, usage = _judge_call_responses(client, model, prompt, reasoning_effort)
         except OpenAIError as exc:
-            last_error = RuntimeError(f"OpenAI judge request failed: {exc}")
+            last_error = RuntimeError(f"Judge request failed: {exc}")
             continue
         try:
-            result = parse_json_response(response.output_text or "")
+            result = parse_json_response(text or "")
         except (ValueError, json.JSONDecodeError) as exc:
             last_error = exc
             continue
@@ -209,7 +252,7 @@ def call_judge(client: OpenAI, model: str, prompt: str, reasoning_effort: str | 
             "verdict": verdict,
             "reasoning": str(result.get("reasoning", "")),
             "evidence": [str(item) for item in evidence],
-            "usage": usage_summary(response.model_dump(mode="json")),
+            "usage": usage,
         }
     raise last_error if last_error else RuntimeError("Judge call failed without error detail.")
 
@@ -235,11 +278,12 @@ def score_one(
     submission: pathlib.Path,
     criterion: dict[str, Any],
     reasoning_effort: str | None,
+    use_chat: bool = False,
 ) -> dict[str, Any]:
     try:
         agent_output = load_agent_output(submission, criterion)
         result = call_judge(
-            client, model, judge_prompt(task, task_dir, agent_output, criterion), reasoning_effort
+            client, model, judge_prompt(task, task_dir, agent_output, criterion), reasoning_effort, use_chat
         )
     except Exception as exc:  # noqa: BLE001 - one broken judge call must not kill the run
         return {
@@ -309,16 +353,17 @@ def evaluate(
     reasoning_effort: str | None,
     votes: int,
     adaptive: bool = False,
+    api_base: str = DEFAULT_API_BASE,
 ) -> dict[str, Any]:
     task = load_json(task_dir / "task.json")
     rubric_path, criteria = load_rubric(task_dir)
-    client = make_client()
+    client, use_chat = make_client(api_base)
     votes = max(1, votes)
 
     def run_job(job: tuple[int, int]) -> tuple[int, dict[str, Any]]:
         index, _vote = job
         return index, score_one(
-            client, judge_model, task, task_dir, submission, criteria[index], reasoning_effort
+            client, judge_model, task, task_dir, submission, criteria[index], reasoning_effort, use_chat
         )
 
     votes_by_criterion: list[list[dict[str, Any]]] = [[] for _ in criteria]
@@ -386,6 +431,7 @@ def evaluate(
         "submission": str(submission),
         "rubric": str(rubric_path),
         "judge_model": judge_model,
+        "judge_api_base": api_base,
         "judge_reasoning_effort": reasoning_effort,
         "votes_per_criterion": votes,
         "adaptive_voting": adaptive,
@@ -425,10 +471,12 @@ def main() -> int:
     task = load_json(task_dir / "task.json")
     _rubric_path, criteria = load_rubric(task_dir)
     reasoning_effort = None if args.reasoning_effort.lower() == "none" else args.reasoning_effort
+    api_base = args.judge_api_base
     if args.dry_run:
         print(f"Task: {task.get('title', task_dir.name)}")
         print(f"Submission: {submission}")
         print(f"Judge model: {args.judge_model}")
+        print(f"Judge endpoint: {api_base} (key: {api_key_env_for(api_base)})")
         print(f"Judge reasoning effort: {reasoning_effort}")
         print(f"Votes per criterion: {max(1, args.votes)}")
         print(f"Criteria: {len(criteria)}")
@@ -436,8 +484,9 @@ def main() -> int:
         print("No API calls made.")
         return 0
 
-    if not os.environ.get("OPENAI_API_KEY"):
-        raise SystemExit("OPENAI_API_KEY is not set. Put it in the environment or .env.")
+    key_env = api_key_env_for(api_base)
+    if not os.environ.get(key_env):
+        raise SystemExit(f"{key_env} is not set (needed for judge endpoint {api_base}). Put it in .env.")
 
     scores = evaluate(
         task_dir=task_dir,
@@ -447,6 +496,7 @@ def main() -> int:
         reasoning_effort=reasoning_effort,
         votes=args.votes,
         adaptive=args.adaptive,
+        api_base=api_base,
     )
     scores_path = write_scores(submission, scores, args.output)
     print(f"{scores['n_passed']}/{scores['n_criteria']} criteria passed")

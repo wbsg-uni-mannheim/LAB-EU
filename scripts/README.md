@@ -155,6 +155,22 @@ check early, so prefer full voting where false passes matter most (e.g.
 calibration). `--output <path>` writes the scores JSON somewhere other than
 `scores.json` next to the submission - useful for judge-model comparisons.
 
+## Export a Markdown review of a judged submission
+
+For legal reviewers who want to read the system's answer and the scoring side by
+side:
+
+```bash
+env/bin/python scripts/export_review_md.py \
+  runs/<run>/<id>/tasks/<task>/submission
+```
+
+Writes `review.md` next to the submission: header with pass rate and
+per-station breakdown, the full solution, then every rubric criterion grouped by
+Prüfungsstation with its TRUE/FALSE verdict, the criterion text, the judge's
+reasoning, and its evidence quotes. Pass several submission dirs at once, or
+`--output FILE` for a single one.
+
 ## Run OpenCode as a solver harness
 
 Validate the smoke taskset without model calls:
