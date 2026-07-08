@@ -1,0 +1,9 @@
+## Sachverhalt
+
+Die 21-jährige Chen Lu wohnt in einer Aufnahmeeinrichtung in Hessen. Im Mai 2019 ist sie aus China nach Deutschland geflohen und hat in Deutschland einen Asylantrag gestellt, über den bislang noch nicht entschieden wurde. In China hat sie die weiterführende Schule abgeschlossen. Schon länger spielt sie mit dem Gedanken, eine Ausbildung zur Kfz-Mechatronikerin zu machen, ist sich aber noch nicht sicher, ob das der richtige Job für sie ist. Daher stellt sie im Mai 2020 einen Antrag auf Teilnahme an einer berufsvorbereitenden Bildungsmaßnahme (BvB). Die Agentur für Arbeit lehnt den Antrag jedoch ab, da Chen Lu noch in einer Aufnahmeeinrichtung wohnt und daher gar nicht arbeiten dürfe.
+
+Gerne möchte Chen Lu auch ihre bisherigen Deutschkenntnisse, die sich auf einem Niveau von B1 des Gemeinsamen Europäischen Referenzrahmens bewegen, noch verbessern und überlegt, ob sie wohl Zugang zu einem speziellen berufsbezogenen Deutschsprachkurs hat und bei welcher Behörde sie den Antrag hierauf stellen muss.
+
+## Abwandlung
+
+Chen Lu wohnt mittlerweile in einer kleinen Wohnung in Frankfurt am Main. Sie hat sich dafür entschieden, eine Ausbildung zur Kfz-Mechatronikerin zu machen und hat in einer Werkstatt in Bad Homburg einen Ausbildungsvertrag angeboten bekommen. Bevor sie einen Antrag auf Erteilung einer Beschäftigungserlaubnis bei der Ausländerbehörde stellen kann, geht ihr Post von eben dieser zu: Gegenüber Chen Lu werde eine räumliche Beschränkung angeordnet, weil einer Sachbearbeiterin in der Ausländerbehörde zu Ohren gekommen sei, dass Chen Lu Kokain konsumiere. Auf Nachfrage erfährt Chen Lu, dass eine Freundin der Sachbearbeiterin berichtet habe, sie hätte Chen Lu kürzlich auf einer Party mit einem Tütchen mit weißem Pulver gesehen, bei dem es sich wohl um Kokain handeln müsse.
