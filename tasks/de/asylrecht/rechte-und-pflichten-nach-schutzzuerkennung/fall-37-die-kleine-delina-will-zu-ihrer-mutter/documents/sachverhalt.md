@@ -1,0 +1,13 @@
+## Sachverhalt
+
+Trhas ist eritreische Staatsangehörige. Ihr wurde vor ein paar Tagen, nach langwierigem behördlichen und gerichtlichen Asylverfahren, die Flüchtlingseigenschaft zuerkannt. Das Gericht ging davon aus, dass ihr vom eritreischen Regime eine oppositionelle Haltung zugeschrieben wurde. Sie war 2019 nach Deutschland geflohen. Ihre Tochter Delina (8) musste Trhas in Eritrea bei Genet, ihrer eigenen Mutter, zurücklassen.
+
+Nachdem die Großmutter des Kindes 2020 verstorben ist, organisierte Trhas für Delina die Flucht in den Sudan, wo sie in einem Flüchtlingslager des UNHCR untergebracht wurde. Dort wurde ihr Flüchtlingsschutz zugesprochen und von sudanesischen Behörden ein Flüchtlingsausweis erteilt. Ansonsten besitzt Delina nur eine Taufurkunde aus Eritrea.
+
+Trhas hat für Delina bei der deutschen Botschaft in Khartum den Familiennachzug nach Deutschland beantragt. Hierfür verlangt die Botschaft Identitätsnachweise für Delina. Die Taufurkunde sei kein amtliches Dokument und daher kein Identitätsnachweis. Mit ihrem sudanesischen Flüchtlingsausweis kann Delina laut Botschaft ihre Identität auch nicht nachweisen, da das Dokument auf eigenen Angaben beruht.
+
+Laut deutscher Botschaft müsste Delina bei der eritreischen Botschaft in Khartum einen Pass beantragen oder in Eritrea eine amtliche Geburtsurkunde beschaffen, die vom eritreischen Außenministerium überbeglaubigt wurde. Die eritreische Botschaft in Khartum wiederum teilt mit, dass minderjährigen Personen keine Dokumente ausgestellt werden könnten, wenn sie nicht von Eltern oder einer Vormundsperson vertreten sind. Um die Vertretung von Delina vor der eritreischen Botschaft im Sudan zu autorisieren, müsste Trhas diese bei der eritreischen Botschaft in Deutschland beantragen. Hierfür müsste sie die „Diaspora-Steuer“ in Höhe von 2 Prozent ihres seit ihrer Flucht bezogenen Einkommens zahlen und eine sogenannte Reueerklärung abgeben, in der sie eingesteht, durch ihre Flucht eine Straftat begangen zu haben und die dafür noch zu verhängende Strafe zu akzeptieren. Auch für die Beschaffung einer Geburtsurkunde müsste Trhas eine Person in Eritrea finden, die sich im selben Wege autorisieren lassen würde, eine Geburtsurkunde vor Ort zu beantragen und überbeglaubigen zu lassen.
+
+## Abwandlung
+
+Trhas ist nach traditioneller eritreischer Eheschließung mit Amanuel verheiratet. Dieser ist seit 2017 verschwunden, nachdem er vom eritreischen Wehrdienst desertiert ist. Die deutsche Botschaft im Sudan lehnt den Antrag auf Kindernachzug ab, da kein Nachweis des Einverständnisses von Amanuel zum Kindernachzug vorgelegt wurde.

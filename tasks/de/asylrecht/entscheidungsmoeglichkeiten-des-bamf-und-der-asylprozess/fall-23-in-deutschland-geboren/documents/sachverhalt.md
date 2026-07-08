@@ -1,0 +1,9 @@
+## Sachverhalt
+
+A ist 2020 als Kind staatenloser palästinensischer Eltern aus dem Libanon in der Bundesrepublik Deutschland geboren worden. Seine Eltern haben den Libanon bereits 2016 verlassen und in Deutschland Asylanträge gestellt. Diese hat das Bundesamt für Migration und Flüchtlinge (BAMF) im November 2016 vollumfänglich abgelehnt, die hiergegen erhobene Klage wurde im Januar 2018 abgewiesen, da den Eltern des A weder eine flüchtlingsrechtlich relevante Verfolgung noch ein ernsthafter Schaden drohe. Die humanitäre Lage sei im Libanon - auch für Palästinenser*innen - nicht so schlecht, dass ihnen eine Existenzsicherung unmöglich wäre. Im Oktober 2020 stellten die Eltern des A für diesen einen Asylantrag. Sie machten dabei dieselben Gründe wie für sich selbst geltend. Palästinenser*innen hätten im Libanon keinerlei Zukunftsperspektiven, würden diskriminiert und hätten keinerlei Zugang zu Bildung, auch die Sicherung des Existenzminimums sei kaum möglich.
+
+Das BAMF lehnte im November 2020 den Asylantrag des A vollumfänglich als offensichtlich unbegründet nach § 30 I AsylG ab, stellte fest, dass Abschiebungsverbote nach § 60 V und VII 1 AufenthG nicht vorliegen und forderte ihn zur Ausreise aus der Bundesrepublik Deutschland binnen einer Woche nach Bekanntgabe der Entscheidung auf und drohte für den Fall der nicht fristgerechten Ausreise die Abschiebung in den Libanon an. Zur Begründung verwies das BAMF darauf, dass bereits die Asylanträge seiner Eltern abgelehnt worden seien, und dies daher ebenso für den A gelten müsse, da für diesen keine anderen Asylgründe geltend gemacht worden seien und sich die Lage im Libanon seither nicht verändert habe.
+
+Bearbeitungsvermerk:
+
+Gehen Sie davon aus, dass die Asylanträge der Eltern des A zu Recht abgelehnt worden sind und die humanitäre Lage im Libanon eine Existenzsicherung zulässt.

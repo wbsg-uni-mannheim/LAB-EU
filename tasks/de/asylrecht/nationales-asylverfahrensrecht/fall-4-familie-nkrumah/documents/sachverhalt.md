@@ -1,0 +1,11 @@
+## Sachverhalt
+
+Die Familie Nkrumah aus Ghana, bestehend aus Mutter M, Vater V und ihrer gemeinsamen Tochter T, ist 2022 nach Deutschland gekommen und hat am 14.5.2022 einen Asylantrag gestellt. Seitdem wohnen sie in einer Aufnahmeeinrichtung in Spandau. V hat eine Schwester, die schon länger in Berlin lebt. Als im Februar 2023 bei ihr im Haus eine Wohnung frei wird, überlegen die Nkrumahs, dort einzuziehen, doch ihr Antrag beim Landesamt für Einwanderung (LEA) auf Entlassung aus der Aufnahmeeinrichtung vom 20.2.2023 wird abgelehnt. Die Sachbearbeiterin meint, sie müssten bis zum Ende des Asylverfahrens in der Aufnahmeeinrichtung wohnen bleiben.
+
+Zeitgleich wird M von einer Bekannten, die kürzlich ein kleines Café eröffnet hat, gefragt, ob sie sich nicht vorstellen könnte, sie im Café zu unterstützen. M spräche so gut Deutsch (C1-Niveau des Gemeinsamen Europäischen Referenzrahmens) und wäre ihr eine große Hilfe mit den Kund*innen. M, die in Ghana bereits während des Studiums in einem Restaurant gejobbt hat, hat große Lust, mit ihrer Freundin zusammenzuarbeiten und stellt sogleich einen Antrag auf Erteilung einer Beschäftigungserlaubnis beim LEA. Doch auch dieser Antrag wird abgelehnt. Der Sachbearbeiter ist der Auffassung, M dürfe nicht arbeiten, weil sie noch in der Aufnahmeeinrichtung wohne. M ist enttäuscht und überlegt, gegen die Entscheidung vorzugehen. Alternativ spielt sie mit dem Gedanken, sich für das Wintersemester an der Freien Universität einzuschreiben und ihr in Ghana begonnenes VWL-Studium fortzusetzen.
+
+V, der seine Deutschkenntnisse verbessern möchte, erfährt von einem Freund, dass in der Volkshochschule in Reinickendorf bald wieder ein Integrationskurs speziell für Eltern zur Erreichung des Niveaus B1 beginnt und noch viele Plätze frei sind. V, der sich tagsüber um die zweijährige T kümmert, ist Feuer und Flamme für den Kurs, der zugleich eine Kinderbetreuung anbietet. Er fragt sich, wo er jetzt den Antrag auf Zulassung zum Kurs stellen soll und ob er wohl Chancen hat, zugelassen zu werden.
+
+## Abwandlung
+
+Der Asylantrag des V wurde abgelehnt, bevor er einen Integrationskurs besucht hat. Ihm wurde allerdings eine Duldung gemäß § 60a II 1 AufenthG erteilt. Kann er zum Integrationskurs zugelassen werden?
