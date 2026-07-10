@@ -1,5 +1,3 @@
-@Hussain: Please complete. (completed manually, other chapters will be scraped starting today!)
-
 # Lösungsgliederung
 
 ## A. Zulässigkeit

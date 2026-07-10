@@ -1,3 +1,215 @@
 # Musterlösung
 
-Erster Tatkomplex: Die Manipulation des Stuhls I. §§ 223 Abs. 1, 224 Abs. 1 Nr. 2 Var. 2, Nrn. 3, 5 StGB gegenüber P durch Manipulation des Stuhls Hinweis: Die Prüfung einer Körperverletzung in mittelbarer Täterschaft (§ 25 Abs. 1 Var. 2 StGB), wenn man auf die Handlung des Opfers P (Hinsetzen auf den manipulierten Stuhl) abstellt, ist hier nicht zwingend, da auch auf die Tathandlung des O (Präparieren des Stuhls) selbst als potenzielle Tathandlung abgestellt werden kann. O könnte sich gegenüber P gem. §§ 223 Abs. 1, 224 Abs. 1 Nr. 2 Var. 2, Nrn. 3, 5 StGB strafbar gemacht haben, indem er vier Schrauben von dem Stuhl entfernte, sodass die vier Stuhlbeine nur noch lose mit dem Sitzbrett verbunden waren. 1. Tatbestandsmäßigkeit a) Objektiver Tatbestand aa) Vorliegen des Grunddelikts, § 223 Abs. 1 StGB O müsste P, eine andere Person, körperlich misshandelt und/oder an der Gesundheit geschädigt haben. (1) Körperliche Misshandlung Eine körperliche Misshandlung ist jede üble, unangemessene Behandlung, die das körperliche Wohlbefinden oder die körperliche Unversehrtheit nicht nur unerheblich beeinträchtigt. Allein der Schrecken der P kann nicht unter eine solche Misshandlung subsumiert werden. Hierfür spricht der Wortlaut der Norm, der ausdrücklich eine Körperverletzung und eine körperliche Misshandlung fordert. Rein psychische Beeinträchtigungen stellen demnach keine körperliche Misshandlung dar. Die auf die Präparation des danach instabilen Stuhls folgenden schmerzhaften, langanhaltenden Hämatomen am Rücken (Beeinträchtigung des körperlichen Wohlbefindens und der körperlichen Unversehrtheit) sind jedoch eine solche Misshandlung. (2) Gesundheitsschädigung Eine Gesundheitsschädigung ist das Hervorrufen oder Steigern eines vom Normalzustand der körperlichen Funktionen des Opfers nachteilig abweichenden pathologischen Zustandes. Hierunter ist der Schrecken Ps nicht zu fassen (siehe oben). Die schmerzhaften und langanhaltenden Hämatome sind ein pathologischer Zustand. Sie weichen vom Normalzustand unversehrter Haut ab. (3) Kausalität Fraglich ist, ob Os Handlung auch kausal für diesen Erfolg war. Nach der conditio-sine-qua-non-Formel ist jede Handlung kausal, die nicht hinweggedacht werden kann, ohne dass der Erfolg in seiner konkreten Gestalt entfiele. Hätte O am Stuhl nicht die Schrauben entfernt, wäre durch dessen Zusammenbruch bei P nicht die Hämatome aufgetreten. Os Handlung war kausal. (4) Objektive Zurechnung Weiterhin müsste ihm der Erfolg auch objektiv zurechenbar sein. Objektiv zurechenbar ist der Erfolg, wenn der Täter eine rechtlich missbilligte Gefahr geschaffen hat, die sich im konkreten tatbestandlichen Erfolg verwirklicht hat. O hat durch die Präparierung des Stuhls eine rechtlich missbilligte Gefahr für den Körper von Personen, die sich darauf sitzen wollen, geschaffen. Fraglich ist, ob diese sich auch im konkreten tatbestandsmäßigen Erfolg verwirklichte. Es könnte sich hier um eine eigenverantwortliche Selbstschädigung des Opfers handeln, die die objektive Zurechnung mangels Gefahrverwirklichung entfallen ließe, da P sich aus freien Stücken auf dem Stuhl niederließ und damit die unmittelbare Ursache für ihre eigene Verletzung setzte. Allerdings hatte sie keinerlei Kenntnis von der Gefahrenlage, sodass die von ihr vollzogene Selbstschädigung nach allen vertretenen Ansätzen jedenfalls nicht freiverantwortlich war. Auch liegt kein atypischer Kausalverlauf vor. Der Erfolg (Hämatome bei P) liegt nicht völlig außerhalb dessen, was nach dem gewöhnlichen Verlauf der Dinge und nach der allgemeinen Lebenserfahrung zu erwarten ist. (5) Zwischenergebnis Diese Gefahr hat sich auch im tatbestandsmäßigen Erfolg der Verletzungen Ps verwirklicht. Der Erfolg ist O objektiv zurechenbar. bb) Qualifikation, § 224 Abs. 1 StGB Möglicherweise hat O zudem § 224 Abs. 1 StGB verwirklicht. (1) § 224 Abs. 1 Nr. 2 Var. 2 StGB Der Stuhl ohne Schrauben könnte ein anderes gefährliches Werkzeug i.S.d. § 224 Abs. 1 Nr. 2 Var. 2 StGB sein. Ein gefährliches Werkzeug ist jeder Gegenstand, der nach Art seiner objektiven Beschaffenheit und konkreten Verwendung dazu geeignet ist, erhebliche Verletzungen hervorzurufen. Durch fehlende Schrauben lose Stuhlbeine samt Sitzfläche sind nach Art ihrer Beschaffenheit und der konkreten Verwendung als instabiles Sitzobjekt dazu geeignet, erhebliche Verletzungen (langanhaltende und schmerzhafte Hämatome genügen) hervorzurufen. Der Stuhl ist damit ein anderes gefährliches Werkzeug i.S.d. § 224 Abs. 1 Nr. 2 Var. 2 StGB. Die Körperverletzung müsste auch „mittels“ dieses Werkzeugs begangen worden sein. Die Hämatome entstanden gerade durch den Zusammenstoß mit den Stuhlelementen (nicht etwa allein durch den Aufprall auf den Boden), sodass die Körperverletzung auch „durch“ das Werkzeug begangen wurde. Die Frage, welche Art der Einwirkung für die Bejahung des Merkmals „mittels“ benötigt wird, kann demnach dahinstehen. (2) § 224 Abs. 1 Nr. 3 StGB O könnte P hinterlistig überfallen haben. Dies könnte der Fall sein, da die Manipulierung bei gewöhnlicher Benutzung des Stuhls nicht zu sehen war. Ein Überfall ist jeder plötzliche, unvorhergesehene Angriff, auf den das Opfer unvorbereitet ist und nicht rechtzeitig zu reagieren vermag. Zwar geschah die Handlung des Entfernens der Schrauben nicht plötzlich, jedoch hat P den Angriff nicht vorhergesehen und konnte sich aufgrund des Täuschungscharakters nicht darauf vorbereiten. Hinterlistig ist jedes planmäßige, die wahren Absichten verdeckendes Vorgehen. O präparierte extra die bei normaler Benutzung des Stuhls nicht erkennbare Unterseite und suggerierte damit planmäßig einen intakten Stuhl. Die Körperverletzung wurde auch mittels dieses Überfalls begangen. § 224 Abs. 1 Nr. 3 StGB ist zu bejahen. (3) § 224 Abs. 1 Nr. 5 StGB Es könnte eine das Leben gefährdende Behandlung i.S.d. § 224 Abs. 1 Nr. 5 StGB vorliegen. Der potenzielle Aufprall auf ein Fensterbrett mit dem Kopf war hier konkret lebensgefährlich. Ihr Kopf verfehlte dieses nur um eine Haaresbreite, sodass hier auch ohne Kollision von einer konkreten Lebensgefahr (im Gegensatz zu einer nur abstrakten, theoretischen Gefährdung) ausgegangen werden kann. Der Streit, ob eine solche konkrete Lebensgefahr eingetreten sein muss oder ob eine abstrakte Gefährdung genügt, kann daher dahinstehen. Der Körperverletzungserfolg muss allerdings auch „mittels“ dieser gefährlichen Art der Behandlung eingetreten sein. Hier erwächst das Gefährdungspotential nur mittelbar aus den äußeren Umständen (Stuhl in der Nähe des Fensterbretts), aber nicht aus der Körperverletzungshandlung (Manipulieren des Stuhls) selbst. Eine das Leben gefährdende Behandlung i.S.d. § 224 Abs. 1 Nr. 5 StGB liegt daher nicht vor. Hinweis: Eine a.A. ist gut vertretbar. Dann müsste man aber konsequenterweise den Vorsatz bzgl. der das Leben gefährdenden Behandlung ausschließen. (4) Zwischenergebnis § 224 Abs. 1 Nr. 2 Var. 2, Nr. 3 StGB sind zu bejahen. Der objektive Tatbestand liegt vor. b) Subjektiver Tatbestand O müsste vorsätzlich gehandelt haben. Vorsatz ist das Wissen und Wollen der Tatbestandsverwirklichung (vgl. § 15 StGB). aa) Distanzfall Fraglich ist zunächst, wie es sich auswirkt, dass O eigentlich N „eins auswischen“ wollte und O während der Geschehnisse nicht vor Ort war (Distanzfall). (1) Gleichwertigkeitstheorie Nach der Gleichwertigkeitstheorie liegt in so einem Fall ein unbeachtlicher error in persona vor, der bei Gleichwertigkeit der Objekte (hier N und P als Menschen) den Vorsatz nicht entfallen lässt. (2) Konkretisierungslösungen (a) Aberratio-ictus-Lösung Nach der aberratio-ictus-Lösung ersetzt Os Vorstellung die visuelle Wahrnehmung. Demnach ist die Tat in dem Zeitpunkt fehlgegangen, in dem sich die falsche Person, nämlich P, auf den manipulierten Stuhl setzte. „Geistig anvisiert“ wurde nämlich nur N, jedoch wurde P getroffen. Bezüglich P würde also nur eine Fahrlässigkeitsstrafbarkeit, bzgl. N nur eine Versuchsstrafbarkeit in Betracht kommen (vgl. § 16 Abs. 1 StGB). (b) Error-inpersona-Lösung Eine andere Ansicht stellt entscheidend auf die optische Wahrnehmung ab. Distanzfälle sind hiernach als error in persona zu bewerten. Anvisiert wird damit, wer sich zuerst auf den Stuhl setzt. Der Vorsatz bzgl. P wäre zu bejahen. Bzgl. N dürfte dann keine Strafbarkeit mehr geprüft werden, da dies zu einer unzulässigen Verdoppelung des Vorsatzes führen würde. (c) Individualisierungslösung Nach der Individualisierungslösung muss ein am Tatort nicht anwesender Täter, der sich nicht ausreichend um eine Individualisierung des von ihm anvisierten Opfers kümmert, das Risiko tragen, dass andere Personen getroffen werden. Bei einem solchen Vorfall handle es sich lediglich um eine unerhebliche Abweichung vom Kausalverlaufs. O trifft hier keine ausreichenden Vorkehrungen, dass nur N getroffen werden kann. Der Vorsatz bzgl. P wäre zu bejahen. Der Vorsatz bzgl. N wäre wieder „verbraucht“. (3) Streitentscheid Da die Ansichten zu unterschiedlichen Ergebnissen kommen, ist ein Streitentscheid vorzunehmen. Der Weg über die Lösung entsprechend eines error in personas, sei es über die Gleichwertigkeits- oder Konkretisierungslösung, ist aufgrund der ausschließlichen Bezugnahme auf den Aspekt der unmittelbaren sinnlichen Wahrnehmung abzulehnen, da in einem solchen Distanzfall nach diesen Theorien keine relevante Vorsatzkonkretisierung möglich ist. Die Grundkonstellation eines error in persona ist gänzlich anders gelagert, einen Distanzfall charakterisiert gerade, dass durch das „Ausder-Hand-geben“ des Geschehensablaufs keine Wahrnehmung zum Tatzeitpunkt mehr erfolgen kann. Die aberratio-ictus-Lösung erscheint ebenfalls nicht sachgerecht, da sie pauschal zu einer milderen (und potenziell sogar straflosen) Bewertung des Geschehens führt. Für die Individualisierungslösung spricht dagegen, dass sie den Umständen eines Distanzfalles Rechnung trägt und je nach den konkreten Umständen sachgerechte Entscheidungen ermöglicht. Demnach handelte O bzgl. P vorsätzlich i.S.d. § 15 StGB. Hinweis: Alle Ansichten sind mit guter Begründung vertretbar. bb) Vorsatz Bezüglich des Grunddelikts des § 223 Abs. 1 StGB nahm O Hämatome billigend in Kauf (dolus eventualis). Bezüglich der Körperverletzung mittels des anderen gefährlichen Werkzeugs Stuhl (§ 224 Abs. 1 Nr. 2 Var. 2 StGB) und des hinterlistigen Überfalls i.S.d. § 224 Abs. 1 Nr. 3 StGB agierte O mit Absicht (dolus directus 1. Grades). Der subjektive Tatbestand ist erfüllt. 2. Rechtwidrigkeit Es sind keine Rechtsfertigungsgründe ersichtlich. O handelte rechtswidrig. 3. Schuld Zudem liegen keine Entschuldigungs- oder Schuldausschließungsgründe vor. O handelte schuldhaft. 4. Ergebnis O hat sich gegenüber P gem. §§ 223 Abs. 1, 224 Abs. 1 Nr. 2 Var. 2, Nr. 3 StGB strafbar gemacht, indem er den Stuhl manipulierte. II. § 303 Abs. 1 StGB wegen der Manipulation des Stuhls Eine Sachbeschädigung scheidet bereits mangels einer „fremden“ Sache aus. Der Stuhl stand in Os Alleineigentum. Hinweis: Auf eine Prüfung des § 303 StGB kann auch verzichtet werden. Tatkomplex 2: Die Straßenbahn I. § 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB durch das Werfen der Schrauben auf die Gleise Eine Strafbarkeit direkt über § 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB ist zu verneinen. Diese Norm ist durch die Vorschrift des § 315e StGB nicht anwendbar, soweit das fahrende Schienenfahrzeug am Straßenverkehr teilnimmt (und die Verkehrsgefahr vom fahrenden Schienenfahrzeug ausgeht). Die Gleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese zum Teil, sodass eine Teilnahme am Straßenverkehr durch die Straßenbahn zu bejahen ist. II. §§ 315e, 315b Abs. 1, Abs. 3, 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB durch das Werfen der Schrauben auf die Gleise O könnte sich gegenüber den Straßenbahnbetreibenden gem. §§ 315e, 315b Abs. 1, Abs. 3, 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB durch das Werfen der Schrauben auf die Gleise strafbar gemacht haben. 1. Tatbestandsmäßigkeit a) Objektiver Tatbestand Gem. § 315e StGB finden die Vorschriften zum Schutz des Straßenverkehrs Anwendung (siehe oben). Hierzu gehört § 315b StGB. aa) Handlungsteil O müsste eine der Handlungen des § 315b StGB verwirklicht haben. O zerstörte oder beschädigte die Anlage bzw. die Straßenbahn (vgl. Nr. 1) nicht. Auch Nr. 2 ist mangels tatsächlich entstandenen Hindernisses nicht einschlägig. Die Straßenbahn selbst ist nicht entgleist und stellt somit kein Hindernis dar. Jedoch könnte ein ähnlicher, ebenso gefährlicher Eingriff (Nr. 3) vorliegen. Hierunter lassen sich verkehrsfremde Außeneingriffe, wie auch das Werfen von Gegenständen wie Schrauben, subsumieren. Dieses Verhalten ist ebenso gefährlich wie das Zerstören oder Beschädigen einer Anlage oder das Schaffen eines Hindernisses. § 315b Abs. 1 Nr. 3 StGB ist zu bejahen. bb) Dadurch Beeinträchtigung der Sicherheit des öffentlichen Straßenverkehrs Durch den Wurf der Schrauben steigerte sich die normale Betriebsgefahr konkret und der Verkehr wurde in seinem ungestörten Ablauf abstrakt gefährdet. cc) Gefährdungsteil Auf Grund der Tathandlung muss des Weiteren eine konkrete Gefahr für den Leib oder Leben einer anderen Person (Var. 1) oder für fremde Sachen von bedeutendem Wert (Var. 2) eintreten. Dies muss über die innenwohnende latente Gefahr hinaus zu einer Situation führen, in welcher die Person oder Sache „im Sinne eines Beinaheunfalls“ so stark beeinträchtigt ist, dass es nur noch vom Zufall abhängt, ob es zu einer Rechtsgutverletzung kommt oder nicht. Weder in der Straßenbahn noch in der näheren Umgebung befanden sich Personen. Gefährdet worden sein könnte jedoch die Straßenbahn selbst. Zwar handelt es sich rein physisch bei den Schrauben nur um eine kleine Einwirkung, diese hat jedoch ein nicht nur unwesentliches Gefährdungspotential (siehe auch Schild). Nur durch Zufall kam es zu keiner Entgleisung, was einem Beinaheunfall entspricht. Bei der Straßenbahn handelt es sich auch um eine fremde Sache von bedeutendem Wert (Grenze 750 €). Der Gefährdungsteil liegt vor. Die Tathandlung führte auch unmittelbar zu der konkreten Gefahr, welche sich auch als Steigerung der abstrakten Gefahr für die Sicherheit des Straßenverkehrs darstellte. b) Subjektiver Tatbestand O agierte bezüglich der Handlung mit dolus directus 1. Grades. Zwar ging es O primär um einen bequemen Weg zur Vernichtung der Schrauben und nicht um einen Eingriff inklusive Gefährdung, jedoch nahm er eine mögliche Gefährdung billigend in Kauf (dolus eventualis). Es liegt sowohl Vorsatz bzgl. des Handlungsals auch des Gefährdungsteils vor. Möglicherweise hat O darüber hinaus auch die Qualifikation des § 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB verwirklicht, indem er gleichzeitig die vorherige Tat der Körperverletzung verdecken wollte (Verdeckungsabsicht). Auf den Erfolg dieses „Verdeckens“ kommt es nicht an. O kam es gerade darauf an, die Schrauben und damit „Beweise“ der Körperverletzung durch die Präparation des Stuhls „verschwinden“ zu lassen, was einem dolus directus 1. Grades entspricht. § 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB ist folglich zu bejahen. 2. Rechtswidrigkeit und Schuld Zudem handelte er rechtswidrig und schuldhaft. 3. Ergebnis O hat sich gegenüber dem Straßenbahnbetreibenden gem. §§ 315e, 315b Abs. 1 Nr. 3, Abs. 3, 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB durch das Werfen der Schrauben auf die Gleise strafbar gemacht. Tatkomplex 3: Der Unfall auf dem Parkplatz I. § 142 Abs. 1 Nr.1 StGB durch das Fahren vom Parkplatz O könnte sich gegenüber A durch das Fahren vom Parkplatz nach dem Touchieren gem. § 142 Abs. 1 Nr. 1 StGB strafbar gemacht haben. 1. Tatbestandsmäßigkeit a) Objektiver Tatbestand aa) Unfall im Straßenverkehr Ein Unfall im Straßenverkehr ist jedes plötzliche, mit den typischen Gefahren des Straßenverkehrs ursächlich zusammenhängende Ereignis, das einen Personen- oder Sachschaden zur Folge hat, der nicht ganz unerheblich ist. Das Touchieren des Fahrzeugs des A war zumindest für A ein solches unvorhersehbares Ereignis; auch entspricht es den typischen Risiken der Verkehrsteilnahme. Der entstandene Kratzer am Auto As stellt einen Schaden dar, für den typischerweise (zivilrechtliche) Ersatzansprüche geltend gemacht werden und war folglich nicht belanglos. Zwar erfolgte der Unfall auf dem Parkplatz der Tankstelle, diese ist aber zur Benutzung durch die Kunden der Tankstelle, einem nicht näher bestimmten und zahlenmäßig nicht eng begrenzten Personenkreis, zugelassen und wird auch tatsächlich von diesem genutzt. Folglich zählt der Parkplatz zum öffentlichen Straßenverkehr. bb) Unfallbeteiligter, § 142 Abs. 5 StGB O war zum Zeitpunkt des Unfalls am Unfallort anwesend und führte das touchierende Fahrzeug (Unfallverursacher). Damit war er Unfallbeteiligter. cc) § 142 Abs. 1 Nr. 1 StGB Indem O vom Parkplatz der Tankstelle zu sich nach Hause fuhr, entfernte er sich vom Unfallort. O könnte die Primärpflicht nach Abs. 1 Nr. 1 verletzt haben, sofern feststellungsbereite Personen am Unfallort anwesend waren. A als Fahrzeughalter und Eigentümer des beschädigten Kraftfahrzeugs war zur Beweissicherung geeignet und fähig und hätte die zur Sicherung des zivilrechtlichen Ersatzanspruchs erforderlichen Feststellungen treffen können. Zwar befand sich A nicht unmittelbar bei seinem Fahrzeug, jedoch bereits in Sichtweite und auf dem direkten Rückweg zu seinem Auto. Folglich erfüllte O § 142 Abs. 1 Nr. 1 StGB. b) Subjektiver Tatbestand O bemerkte den Unfall nicht und wusste somit auch nicht, dass ihn als Unfallbeteiligten die Pflichten des Abs. 1 Nr. 1 treffen. Folglich kannte er einen Umstand, der zum gesetzlichen Tatbestand gehört, bei Begehung der Tat nicht und unterlag einem vorsatzausschließenden Tatbestandsirrtum nach § 16 Abs. 1 S. 1 StGB. Dass O am nächsten Tag Kenntnis von dem Unfall erlangte, stellt höchstens einen dolus subsequens dar; die nachträgliche Kenntniserlangung ist aufgrund des Koinzidenzprinzips, das sich aus §§ 16 Abs. 1 S. 1, 8 S. 1 StGB ergibt, aber unbeachtlich. 2. Ergebnis Mangels Vorsatzes hat sich O nicht gem. § 142 Abs. 1 Nr. 1 StGB durch das Fahren vom Parkplatz strafbar gemacht. II. § 142 Abs. 2 Nr. 2 StGB durch das Untätigbleiben nach Kenntnis vom Unfall am nächsten Tag Jedoch könnte sich eine Strafbarkeit des O durch das Untätigbleiben trotz Kenntnis vom Unfall am nächsten Tag nach § 142 Abs. 2 StGB ergeben. 1. Tatbestandsmäßigkeit a) Objektiver Tatbestand Denkbar ist eine Strafbarkeit nach § 142 Abs. 2 Nr. 2 StGB, da O die erforderlichen Feststellungen nach Bemerken des Unfalls im Straßenverkehr (siehe oben) nicht unverzüglich nachgeholt hat. Fraglich ist, ob das unvorsätzliche Entfernen des O als ein Fall des berechtigten oder entschuldigten Entfernens (Nr. 2) eingeordnet werden kann. aa) Frühere Rechtsprechung Eine Ansicht (frühere Rechtsprechung) argumentiert, dass der Begriff des entschuldigten Entfernens weit auszulegen ist. Infolgedessen könnte auch vorsatzloses Entfernen unter Nr. 2 subsumiert werden und O hätte möglicherweise seine Nachholpflicht verletzt. Für diese Ansicht lässt sich anführen, dass es wertungsmäßig keinen Unterschied macht, ob der Täter den Unfallort berechtigt bzw. entschuldigt oder vorsatzlos verlässt. Vielmehr erscheint es unbillig, den sich vorsatzlos Entfernenden im Verhältnis zu demjenigen Unfallbeteiligten, der den Unfallort gerade berechtigt oder entschuldigt verlässt, zu privilegieren. bb) Neue Rechtsprechung Eine andere Ansicht (neuere Rechtsprechung) lehnt diese weite Auslegung ab. Die Wortlautgrenze der Begriffe „berechtigt oder entschuldigt“ lässt eine derart weite Extension nicht zu und diese verstößt daher gegen das Analogieverbot aus Art. 103 Abs. 2 GG. Des Weiteren reiche sonst die Verpflichtung des § 142 Abs. 2 StGB weiter als die Primärpflichten des § 142 Abs. 1 StGB. Er müsste selbstbelastende Handlungen im Nachhinein vornehmen, ohne dass er die Reichweite überblicken könnte. Zudem verlässt der sich entschuldigt oder berechtigt Entfernende den Unfallort in der Kenntnis, ein Unfallbeteiligter zu sein. Der sich unvorsätzlich Entfernende ist sich dem nicht bewusst, hat also eine andere Situation in objektiver und subjektiver Hinsicht. Insgesamt ist die Ansicht, die eine weite Auslegung ablehnt, vorzugswürdig. Folglich verletzte O keine Nachholpflicht. b) Zwischenergebnis O hat den objektiven Tatbestand des § 142 Abs. 2 Nr. 2 StGB nicht erfüllt. 2. Ergebnis Eine Strafbarkeit des O nach § 142 Abs. 2 Nr. 2 StGB scheidet aus. III. Gesamtergebnis Tatkomplex 3 O hat sich im Rahmen der Geschehnisse rund um das KFZ nicht strafbar gemacht. Endergebnis und Konkurrenzen O hat sich gem. §§ 223 Abs. 1, 224 Abs. 1 Nrn. 2 Var. 2, 3 StGB durch das Manipulieren des Stuhls gegenüber P strafbar gemacht. § 223 Abs. 1 StGB tritt im Wege der Gesetzeskonkurrenz hinter § 224 Abs. 1 StGB zurück (Spezialität). Durch das Werfen der Schrauben hat O sich gem. §§ 315e, 315b Abs. 1 Nr. 3, Abs. 3, 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB gegenüber den Straßenbahnbetreibenden strafbar gemacht. Diese Taten stehen in Tatmehrheit gem. § 53 Abs. 1 StGB.
+## Erster Tatkomplex: Die Manipulation des Stuhls
+
+### I. §§ 223 Abs. 1, 224 Abs. 1 Nr. 2 Var. 2, Nrn. 3, 5 StGB gegenüber P durch Manipulation des Stuhls
+
+Hinweis: Die Prüfung einer Körperverletzung in mittelbarer Täterschaft (§ 25 Abs. 1 Var. 2 StGB), wenn man auf die Handlung des Opfers P (Hinsetzen auf den manipulierten Stuhl) abstellt, ist hier nicht zwingend, da auch auf die Tathandlung des O (Präparieren des Stuhls) selbst als potenzielle Tathandlung abgestellt werden kann. O könnte sich gegenüber P gem. §§ 223 Abs. 1, 224 Abs. 1 Nr. 2 Var. 2, Nrn. 3, 5 StGB strafbar gemacht haben, indem er vier Schrauben von dem Stuhl entfernte, sodass die vier Stuhlbeine nur noch lose mit dem Sitzbrett verbunden waren.
+
+#### 1. Tatbestandsmäßigkeit
+
+##### a) Objektiver Tatbestand
+
+###### aa) Vorliegen des Grunddelikts, § 223 Abs. 1 StGB
+
+O müsste P, eine andere Person, körperlich misshandelt und/oder an der Gesundheit geschädigt haben.
+
+###### (1) Körperliche Misshandlung
+
+Eine körperliche Misshandlung ist jede üble, unangemessene Behandlung, die das körperliche Wohlbefinden oder die körperliche Unversehrtheit nicht nur unerheblich beeinträchtigt. Allein der Schrecken der P kann nicht unter eine solche Misshandlung subsumiert werden. Hierfür spricht der Wortlaut der Norm, der ausdrücklich eine Körperverletzung und eine körperliche Misshandlung fordert. Rein psychische Beeinträchtigungen stellen demnach keine körperliche Misshandlung dar. Die auf die Präparation des danach instabilen Stuhls folgenden schmerzhaften, langanhaltenden Hämatomen am Rücken (Beeinträchtigung des körperlichen Wohlbefindens und der körperlichen Unversehrtheit) sind jedoch eine solche Misshandlung.
+
+###### (2) Gesundheitsschädigung
+
+Eine Gesundheitsschädigung ist das Hervorrufen oder Steigern eines vom Normalzustand der körperlichen Funktionen des Opfers nachteilig abweichenden pathologischen Zustandes. Hierunter ist der Schrecken Ps nicht zu fassen (siehe oben). Die schmerzhaften und langanhaltenden Hämatome sind ein pathologischer Zustand. Sie weichen vom Normalzustand unversehrter Haut ab.
+
+###### (3) Kausalität
+
+Fraglich ist, ob Os Handlung auch kausal für diesen Erfolg war. Nach der conditio-sine-qua-non-Formel ist jede Handlung kausal, die nicht hinweggedacht werden kann, ohne dass der Erfolg in seiner konkreten Gestalt entfiele. Hätte O am Stuhl nicht die Schrauben entfernt, wäre durch dessen Zusammenbruch bei P nicht die Hämatome aufgetreten. Os Handlung war kausal.
+
+###### (4) Objektive Zurechnung
+
+Weiterhin müsste ihm der Erfolg auch objektiv zurechenbar sein. Objektiv zurechenbar ist der Erfolg, wenn der Täter eine rechtlich missbilligte Gefahr geschaffen hat, die sich im konkreten tatbestandlichen Erfolg verwirklicht hat. O hat durch die Präparierung des Stuhls eine rechtlich missbilligte Gefahr für den Körper von Personen, die sich darauf sitzen wollen, geschaffen. Fraglich ist, ob diese sich auch im konkreten tatbestandsmäßigen Erfolg verwirklichte. Es könnte sich hier um eine eigenverantwortliche Selbstschädigung des Opfers handeln, die die objektive Zurechnung mangels Gefahrverwirklichung entfallen ließe, da P sich aus freien Stücken auf dem Stuhl niederließ und damit die unmittelbare Ursache für ihre eigene Verletzung setzte. Allerdings hatte sie keinerlei Kenntnis von der Gefahrenlage, sodass die von ihr vollzogene Selbstschädigung nach allen vertretenen Ansätzen jedenfalls nicht freiverantwortlich war. Auch liegt kein atypischer Kausalverlauf vor. Der Erfolg (Hämatome bei P) liegt nicht völlig außerhalb dessen, was nach dem gewöhnlichen Verlauf der Dinge und nach der allgemeinen Lebenserfahrung zu erwarten ist.
+
+###### (5) Zwischenergebnis
+
+Diese Gefahr hat sich auch im tatbestandsmäßigen Erfolg der Verletzungen Ps verwirklicht. Der Erfolg ist O objektiv zurechenbar.
+
+###### bb) Qualifikation, § 224 Abs. 1 StGB
+
+Möglicherweise hat O zudem § 224 Abs. 1 StGB verwirklicht.
+
+###### (1) § 224 Abs. 1 Nr. 2 Var. 2 StGB
+
+Der Stuhl ohne Schrauben könnte ein anderes gefährliches Werkzeug i.S.d. § 224 Abs. 1 Nr. 2 Var. 2 StGB sein. Ein gefährliches Werkzeug ist jeder Gegenstand, der nach Art seiner objektiven Beschaffenheit und konkreten Verwendung dazu geeignet ist, erhebliche Verletzungen hervorzurufen. Durch fehlende Schrauben lose Stuhlbeine samt Sitzfläche sind nach Art ihrer Beschaffenheit und der konkreten Verwendung als instabiles Sitzobjekt dazu geeignet, erhebliche Verletzungen (langanhaltende und schmerzhafte Hämatome genügen) hervorzurufen. Der Stuhl ist damit ein anderes gefährliches Werkzeug i.S.d. § 224 Abs. 1 Nr. 2 Var. 2 StGB. Die Körperverletzung müsste auch „mittels“ dieses Werkzeugs begangen worden sein. Die Hämatome entstanden gerade durch den Zusammenstoß mit den Stuhlelementen (nicht etwa allein durch den Aufprall auf den Boden), sodass die Körperverletzung auch „durch“ das Werkzeug begangen wurde. Die Frage, welche Art der Einwirkung für die Bejahung des Merkmals „mittels“ benötigt wird, kann demnach dahinstehen.
+
+###### (2) § 224 Abs. 1 Nr. 3 StGB
+
+O könnte P hinterlistig überfallen haben. Dies könnte der Fall sein, da die Manipulierung bei gewöhnlicher Benutzung des Stuhls nicht zu sehen war. Ein Überfall ist jeder plötzliche, unvorhergesehene Angriff, auf den das Opfer unvorbereitet ist und nicht rechtzeitig zu reagieren vermag. Zwar geschah die Handlung des Entfernens der Schrauben nicht plötzlich, jedoch hat P den Angriff nicht vorhergesehen und konnte sich aufgrund des Täuschungscharakters nicht darauf vorbereiten. Hinterlistig ist jedes planmäßige, die wahren Absichten verdeckendes Vorgehen. O präparierte extra die bei normaler Benutzung des Stuhls nicht erkennbare Unterseite und suggerierte damit planmäßig einen intakten Stuhl. Die Körperverletzung wurde auch mittels dieses Überfalls begangen. § 224 Abs. 1 Nr. 3 StGB ist zu bejahen.
+
+###### (3) § 224 Abs. 1 Nr. 5 StGB
+
+Es könnte eine das Leben gefährdende Behandlung i.S.d. § 224 Abs. 1 Nr. 5 StGB vorliegen. Der potenzielle Aufprall auf ein Fensterbrett mit dem Kopf war hier konkret lebensgefährlich. Ihr Kopf verfehlte dieses nur um eine Haaresbreite, sodass hier auch ohne Kollision von einer konkreten Lebensgefahr (im Gegensatz zu einer nur abstrakten, theoretischen Gefährdung) ausgegangen werden kann. Der Streit, ob eine solche konkrete Lebensgefahr eingetreten sein muss oder ob eine abstrakte Gefährdung genügt, kann daher dahinstehen. Der Körperverletzungserfolg muss allerdings auch „mittels“ dieser gefährlichen Art der Behandlung eingetreten sein. Hier erwächst das Gefährdungspotential nur mittelbar aus den äußeren Umständen (Stuhl in der Nähe des Fensterbretts), aber nicht aus der Körperverletzungshandlung (Manipulieren des Stuhls) selbst. Eine das Leben gefährdende Behandlung i.S.d. § 224 Abs. 1 Nr. 5 StGB liegt daher nicht vor.
+
+Hinweis: Eine a.A. ist gut vertretbar. Dann müsste man aber konsequenterweise den Vorsatz bzgl. der das Leben gefährdenden Behandlung ausschließen.
+
+###### (4) Zwischenergebnis
+
+§ 224 Abs. 1 Nr. 2 Var. 2, Nr. 3 StGB sind zu bejahen. Der objektive Tatbestand liegt vor.
+
+##### b) Subjektiver Tatbestand
+
+O müsste vorsätzlich gehandelt haben. Vorsatz ist das Wissen und Wollen der Tatbestandsverwirklichung (vgl. § 15 StGB).
+
+###### aa) Distanzfall
+
+Fraglich ist zunächst, wie es sich auswirkt, dass O eigentlich N „eins auswischen“ wollte und O während der Geschehnisse nicht vor Ort war (Distanzfall).
+
+###### (1) Gleichwertigkeitstheorie
+
+Nach der Gleichwertigkeitstheorie liegt in so einem Fall ein unbeachtlicher error in persona vor, der bei Gleichwertigkeit der Objekte (hier N und P als Menschen) den Vorsatz nicht entfallen lässt.
+
+###### (2) Konkretisierungslösungen
+
+###### (a) Aberratio-ictus-Lösung
+
+Nach der aberratio-ictus-Lösung ersetzt Os Vorstellung die visuelle Wahrnehmung. Demnach ist die Tat in dem Zeitpunkt fehlgegangen, in dem sich die falsche Person, nämlich P, auf den manipulierten Stuhl setzte. „Geistig anvisiert“ wurde nämlich nur N, jedoch wurde P getroffen. Bezüglich P würde also nur eine Fahrlässigkeitsstrafbarkeit, bzgl. N nur eine Versuchsstrafbarkeit in Betracht kommen (vgl. § 16 Abs. 1 StGB).
+
+###### (b) Error-inpersona-Lösung
+
+Eine andere Ansicht stellt entscheidend auf die optische Wahrnehmung ab. Distanzfälle sind hiernach als error in persona zu bewerten. Anvisiert wird damit, wer sich zuerst auf den Stuhl setzt. Der Vorsatz bzgl. P wäre zu bejahen. Bzgl. N dürfte dann keine Strafbarkeit mehr geprüft werden, da dies zu einer unzulässigen Verdoppelung des Vorsatzes führen würde.
+
+###### (c) Individualisierungslösung
+
+Nach der Individualisierungslösung muss ein am Tatort nicht anwesender Täter, der sich nicht ausreichend um eine Individualisierung des von ihm anvisierten Opfers kümmert, das Risiko tragen, dass andere Personen getroffen werden. Bei einem solchen Vorfall handle es sich lediglich um eine unerhebliche Abweichung vom Kausalverlaufs. O trifft hier keine ausreichenden Vorkehrungen, dass nur N getroffen werden kann. Der Vorsatz bzgl. P wäre zu bejahen. Der Vorsatz bzgl. N wäre wieder „verbraucht“.
+
+###### (3) Streitentscheid
+
+Da die Ansichten zu unterschiedlichen Ergebnissen kommen, ist ein Streitentscheid vorzunehmen. Der Weg über die Lösung entsprechend eines error in personas, sei es über die Gleichwertigkeits- oder Konkretisierungslösung, ist aufgrund der ausschließlichen Bezugnahme auf den Aspekt der unmittelbaren sinnlichen Wahrnehmung abzulehnen, da in einem solchen Distanzfall nach diesen Theorien keine relevante Vorsatzkonkretisierung möglich ist. Die Grundkonstellation eines error in persona ist gänzlich anders gelagert, einen Distanzfall charakterisiert gerade, dass durch das „Ausder-Hand-geben“ des Geschehensablaufs keine Wahrnehmung zum Tatzeitpunkt mehr erfolgen kann. Die aberratio-ictus-Lösung erscheint ebenfalls nicht sachgerecht, da sie pauschal zu einer milderen (und potenziell sogar straflosen) Bewertung des Geschehens führt. Für die Individualisierungslösung spricht dagegen, dass sie den Umständen eines Distanzfalles Rechnung trägt und je nach den konkreten Umständen sachgerechte Entscheidungen ermöglicht. Demnach handelte O bzgl. P vorsätzlich i.S.d. § 15 StGB.
+
+Hinweis: Alle Ansichten sind mit guter Begründung vertretbar.
+
+###### bb) Vorsatz
+
+Bezüglich des Grunddelikts des § 223 Abs. 1 StGB nahm O Hämatome billigend in Kauf (dolus eventualis). Bezüglich der Körperverletzung mittels des anderen gefährlichen Werkzeugs Stuhl (§ 224 Abs. 1 Nr. 2 Var. 2 StGB) und des hinterlistigen Überfalls i.S.d. § 224 Abs. 1 Nr. 3 StGB agierte O mit Absicht (dolus directus 1. Grades). Der subjektive Tatbestand ist erfüllt.
+
+#### 2. Rechtwidrigkeit
+
+Es sind keine Rechtsfertigungsgründe ersichtlich. O handelte rechtswidrig.
+
+#### 3. Schuld
+
+Zudem liegen keine Entschuldigungs- oder Schuldausschließungsgründe vor. O handelte schuldhaft.
+
+#### 4. Ergebnis
+
+O hat sich gegenüber P gem. §§ 223 Abs. 1, 224 Abs. 1 Nr. 2 Var. 2, Nr. 3 StGB strafbar gemacht, indem er den Stuhl manipulierte.
+
+### II. § 303 Abs. 1 StGB wegen der Manipulation des Stuhls
+
+Eine Sachbeschädigung scheidet bereits mangels einer „fremden“ Sache aus. Der Stuhl stand in Os Alleineigentum.
+
+Hinweis: Auf eine Prüfung des § 303 StGB kann auch verzichtet werden.
+
+## Tatkomplex 2: Die Straßenbahn
+
+### I. § 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB durch das Werfen der Schrauben auf die Gleise
+
+Eine Strafbarkeit direkt über § 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB ist zu verneinen. Diese Norm ist durch die Vorschrift des § 315e StGB nicht anwendbar, soweit das fahrende Schienenfahrzeug am Straßenverkehr teilnimmt (und die Verkehrsgefahr vom fahrenden Schienenfahrzeug ausgeht). Die Gleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese zum Teil, sodass eine Teilnahme am Straßenverkehr durch die Straßenbahn zu bejahen ist.
+
+### II. §§ 315e, 315b Abs. 1, Abs. 3, 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB durch das Werfen der Schrauben auf die Gleise
+
+O könnte sich gegenüber den Straßenbahnbetreibenden gem. §§ 315e, 315b Abs. 1, Abs. 3, 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB durch das Werfen der Schrauben auf die Gleise strafbar gemacht haben.
+
+#### 1. Tatbestandsmäßigkeit
+
+##### a) Objektiver Tatbestand
+
+Gem. § 315e StGB finden die Vorschriften zum Schutz des Straßenverkehrs Anwendung (siehe oben). Hierzu gehört § 315b StGB.
+
+###### aa) Handlungsteil
+
+O müsste eine der Handlungen des § 315b StGB verwirklicht haben. O zerstörte oder beschädigte die Anlage bzw. die Straßenbahn (vgl. Nr. 1) nicht. Auch Nr. 2 ist mangels tatsächlich entstandenen Hindernisses nicht einschlägig. Die Straßenbahn selbst ist nicht entgleist und stellt somit kein Hindernis dar. Jedoch könnte ein ähnlicher, ebenso gefährlicher Eingriff (Nr. 3) vorliegen. Hierunter lassen sich verkehrsfremde Außeneingriffe, wie auch das Werfen von Gegenständen wie Schrauben, subsumieren. Dieses Verhalten ist ebenso gefährlich wie das Zerstören oder Beschädigen einer Anlage oder das Schaffen eines Hindernisses. § 315b Abs. 1 Nr. 3 StGB ist zu bejahen.
+
+###### bb) Dadurch Beeinträchtigung der Sicherheit des öffentlichen Straßenverkehrs
+
+Durch den Wurf der Schrauben steigerte sich die normale Betriebsgefahr konkret und der Verkehr wurde in seinem ungestörten Ablauf abstrakt gefährdet.
+
+###### cc) Gefährdungsteil
+
+Auf Grund der Tathandlung muss des Weiteren eine konkrete Gefahr für den Leib oder Leben einer anderen Person (Var. 1) oder für fremde Sachen von bedeutendem Wert (Var. 2) eintreten. Dies muss über die innenwohnende latente Gefahr hinaus zu einer Situation führen, in welcher die Person oder Sache „im Sinne eines Beinaheunfalls“ so stark beeinträchtigt ist, dass es nur noch vom Zufall abhängt, ob es zu einer Rechtsgutverletzung kommt oder nicht. Weder in der Straßenbahn noch in der näheren Umgebung befanden sich Personen. Gefährdet worden sein könnte jedoch die Straßenbahn selbst. Zwar handelt es sich rein physisch bei den Schrauben nur um eine kleine Einwirkung, diese hat jedoch ein nicht nur unwesentliches Gefährdungspotential (siehe auch Schild). Nur durch Zufall kam es zu keiner Entgleisung, was einem Beinaheunfall entspricht. Bei der Straßenbahn handelt es sich auch um eine fremde Sache von bedeutendem Wert (Grenze 750 €). Der Gefährdungsteil liegt vor. Die Tathandlung führte auch unmittelbar zu der konkreten Gefahr, welche sich auch als Steigerung der abstrakten Gefahr für die Sicherheit des Straßenverkehrs darstellte.
+
+##### b) Subjektiver Tatbestand
+
+O agierte bezüglich der Handlung mit dolus directus 1. Grades. Zwar ging es O primär um einen bequemen Weg zur Vernichtung der Schrauben und nicht um einen Eingriff inklusive Gefährdung, jedoch nahm er eine mögliche Gefährdung billigend in Kauf (dolus eventualis). Es liegt sowohl Vorsatz bzgl. des Handlungsals auch des Gefährdungsteils vor. Möglicherweise hat O darüber hinaus auch die Qualifikation des § 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB verwirklicht, indem er gleichzeitig die vorherige Tat der Körperverletzung verdecken wollte (Verdeckungsabsicht). Auf den Erfolg dieses „Verdeckens“ kommt es nicht an. O kam es gerade darauf an, die Schrauben und damit „Beweise“ der Körperverletzung durch die Präparation des Stuhls „verschwinden“ zu lassen, was einem dolus directus 1. Grades entspricht. § 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB ist folglich zu bejahen.
+
+#### 2. Rechtswidrigkeit und Schuld
+
+Zudem handelte er rechtswidrig und schuldhaft.
+
+#### 3. Ergebnis
+
+O hat sich gegenüber dem Straßenbahnbetreibenden gem. §§ 315e, 315b Abs. 1 Nr. 3, Abs. 3, 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB durch das Werfen der Schrauben auf die Gleise strafbar gemacht.
+
+## Tatkomplex 3: Der Unfall auf dem Parkplatz
+
+### I. § 142 Abs. 1 Nr.1 StGB durch das Fahren vom Parkplatz
+
+O könnte sich gegenüber A durch das Fahren vom Parkplatz nach dem Touchieren gem. § 142 Abs. 1 Nr. 1 StGB strafbar gemacht haben.
+
+#### 1. Tatbestandsmäßigkeit
+
+##### a) Objektiver Tatbestand
+
+###### aa) Unfall im Straßenverkehr
+
+Ein Unfall im Straßenverkehr ist jedes plötzliche, mit den typischen Gefahren des Straßenverkehrs ursächlich zusammenhängende Ereignis, das einen Personen- oder Sachschaden zur Folge hat, der nicht ganz unerheblich ist. Das Touchieren des Fahrzeugs des A war zumindest für A ein solches unvorhersehbares Ereignis; auch entspricht es den typischen Risiken der Verkehrsteilnahme. Der entstandene Kratzer am Auto As stellt einen Schaden dar, für den typischerweise (zivilrechtliche) Ersatzansprüche geltend gemacht werden und war folglich nicht belanglos. Zwar erfolgte der Unfall auf dem Parkplatz der Tankstelle, diese ist aber zur Benutzung durch die Kunden der Tankstelle, einem nicht näher bestimmten und zahlenmäßig nicht eng begrenzten Personenkreis, zugelassen und wird auch tatsächlich von diesem genutzt. Folglich zählt der Parkplatz zum öffentlichen Straßenverkehr.
+
+###### bb) Unfallbeteiligter, § 142 Abs. 5 StGB
+
+O war zum Zeitpunkt des Unfalls am Unfallort anwesend und führte das touchierende Fahrzeug (Unfallverursacher). Damit war er Unfallbeteiligter.
+
+###### cc) § 142 Abs. 1 Nr. 1 StGB
+
+Indem O vom Parkplatz der Tankstelle zu sich nach Hause fuhr, entfernte er sich vom Unfallort. O könnte die Primärpflicht nach Abs. 1 Nr. 1 verletzt haben, sofern feststellungsbereite Personen am Unfallort anwesend waren. A als Fahrzeughalter und Eigentümer des beschädigten Kraftfahrzeugs war zur Beweissicherung geeignet und fähig und hätte die zur Sicherung des zivilrechtlichen Ersatzanspruchs erforderlichen Feststellungen treffen können. Zwar befand sich A nicht unmittelbar bei seinem Fahrzeug, jedoch bereits in Sichtweite und auf dem direkten Rückweg zu seinem Auto. Folglich erfüllte O § 142 Abs. 1 Nr. 1 StGB.
+
+##### b) Subjektiver Tatbestand
+
+O bemerkte den Unfall nicht und wusste somit auch nicht, dass ihn als Unfallbeteiligten die Pflichten des Abs. 1 Nr. 1 treffen. Folglich kannte er einen Umstand, der zum gesetzlichen Tatbestand gehört, bei Begehung der Tat nicht und unterlag einem vorsatzausschließenden Tatbestandsirrtum nach § 16 Abs. 1 S. 1 StGB. Dass O am nächsten Tag Kenntnis von dem Unfall erlangte, stellt höchstens einen dolus subsequens dar; die nachträgliche Kenntniserlangung ist aufgrund des Koinzidenzprinzips, das sich aus §§ 16 Abs. 1 S. 1, 8 S. 1 StGB ergibt, aber unbeachtlich.
+
+#### 2. Ergebnis
+
+Mangels Vorsatzes hat sich O nicht gem. § 142 Abs. 1 Nr. 1 StGB durch das Fahren vom Parkplatz strafbar gemacht.
+
+### II. § 142 Abs. 2 Nr. 2 StGB durch das Untätigbleiben nach Kenntnis vom Unfall am nächsten Tag
+
+Jedoch könnte sich eine Strafbarkeit des O durch das Untätigbleiben trotz Kenntnis vom Unfall am nächsten Tag nach § 142 Abs. 2 StGB ergeben.
+
+#### 1. Tatbestandsmäßigkeit
+
+##### a) Objektiver Tatbestand
+
+Denkbar ist eine Strafbarkeit nach § 142 Abs. 2 Nr. 2 StGB, da O die erforderlichen Feststellungen nach Bemerken des Unfalls im Straßenverkehr (siehe oben) nicht unverzüglich nachgeholt hat. Fraglich ist, ob das unvorsätzliche Entfernen des O als ein Fall des berechtigten oder entschuldigten Entfernens (Nr. 2) eingeordnet werden kann.
+
+###### aa) Frühere Rechtsprechung
+
+Eine Ansicht (frühere Rechtsprechung) argumentiert, dass der Begriff des entschuldigten Entfernens weit auszulegen ist. Infolgedessen könnte auch vorsatzloses Entfernen unter Nr. 2 subsumiert werden und O hätte möglicherweise seine Nachholpflicht verletzt. Für diese Ansicht lässt sich anführen, dass es wertungsmäßig keinen Unterschied macht, ob der Täter den Unfallort berechtigt bzw. entschuldigt oder vorsatzlos verlässt. Vielmehr erscheint es unbillig, den sich vorsatzlos Entfernenden im Verhältnis zu demjenigen Unfallbeteiligten, der den Unfallort gerade berechtigt oder entschuldigt verlässt, zu privilegieren.
+
+###### bb) Neue Rechtsprechung
+
+Eine andere Ansicht (neuere Rechtsprechung) lehnt diese weite Auslegung ab. Die Wortlautgrenze der Begriffe „berechtigt oder entschuldigt“ lässt eine derart weite Extension nicht zu und diese verstößt daher gegen das Analogieverbot aus Art. 103 Abs. 2 GG. Des Weiteren reiche sonst die Verpflichtung des § 142 Abs. 2 StGB weiter als die Primärpflichten des § 142 Abs. 1 StGB. Er müsste selbstbelastende Handlungen im Nachhinein vornehmen, ohne dass er die Reichweite überblicken könnte. Zudem verlässt der sich entschuldigt oder berechtigt Entfernende den Unfallort in der Kenntnis, ein Unfallbeteiligter zu sein. Der sich unvorsätzlich Entfernende ist sich dem nicht bewusst, hat also eine andere Situation in objektiver und subjektiver Hinsicht. Insgesamt ist die Ansicht, die eine weite Auslegung ablehnt, vorzugswürdig. Folglich verletzte O keine Nachholpflicht.
+
+##### b) Zwischenergebnis
+
+O hat den objektiven Tatbestand des § 142 Abs. 2 Nr. 2 StGB nicht erfüllt.
+
+#### 2. Ergebnis
+
+Eine Strafbarkeit des O nach § 142 Abs. 2 Nr. 2 StGB scheidet aus.
+
+### III. Gesamtergebnis Tatkomplex 3
+
+O hat sich im Rahmen der Geschehnisse rund um das KFZ nicht strafbar gemacht.
+
+## Endergebnis und Konkurrenzen
+
+O hat sich gem. §§ 223 Abs. 1, 224 Abs. 1 Nrn. 2 Var. 2, 3 StGB durch das Manipulieren des Stuhls gegenüber P strafbar gemacht. § 223 Abs. 1 StGB tritt im Wege der Gesetzeskonkurrenz hinter § 224 Abs. 1 StGB zurück (Spezialität). Durch das Werfen der Schrauben hat O sich gem. §§ 315e, 315b Abs. 1 Nr. 3, Abs. 3, 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB gegenüber den Straßenbahnbetreibenden strafbar gemacht. Diese Taten stehen in Tatmehrheit gem. § 53 Abs. 1 StGB.
