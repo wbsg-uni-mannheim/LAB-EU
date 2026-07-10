@@ -1,0 +1,5 @@
+## Auszug Bonpflicht-Verordnung
+
+**Art. 2 Bonpflicht-Verordnung**
+
+Wer aufzeichnungspflichtige Geschäftsvorfälle im Sinne des Art. 1 Nr. 3 dieser Verordnung erfasst, hat dem an diesem Geschäftsvorfall Beteiligten in unmittelbarem zeitlichem Zusammenhang mit dem Geschäftsvorfall einen Beleg über den Geschäftsvorfall auszustellen und dem an diesem Geschäftsvorfall Beteiligten zur Verfügung zu stellen (Belegausgabepflicht). Bei Verkauf von Waren an eine Vielzahl von nicht bekannten Personen können die mitgliedstaatlichen Behörden aus Zumutbarkeitsgründen nach pflichtgemäßem Ermessen von einer Belegausgabepflicht nach Satz 1 befreien. Die Voraussetzungen dieser Befreiung sind durch die Mitgliedstaaten gesetzlich zu regeln und dürfen den Zwecken dieser Verordnung nicht zuwiderlaufen. Zuwiderhandlungen können mit einem Bußgeld von bis zu 5.000 € belegt werden.
