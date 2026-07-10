@@ -1,3 +1,247 @@
 # Musterlösung
 
-Lösungsvorschlag zu Frage 1 I. Anspruch P gegen E auf Verwendungsersatz aus Vertrag Ein Anspruch auf Verwendungsersatz von P gegen E muss ausscheiden, denn zwischen beiden wurde kein Vertrag geschlossen. Dieser bestand alleine zwischen P und G. II. Anspruch P gegen E auf Aufwendungsersatz gem. §§ 683 S. 1, 670 BGB P könnte gegen E einen Anspruch auf Aufwendungsersatz aus einer echten berechtigten Geschäftsführung ohne Auftrag nach §§ 683 S. 1, 670 BGB haben. Dazu müsste P ein Geschäft des E mit Fremdgeschäftsführungswillen geführt haben. Außerdem müsste die Geschäftsführung dem Willen und Interesse von E entsprochen haben und P dürfte nicht aufgrund einer Verpflichtung gehandelt haben. 1. Führung eines fremden Geschäftes Das Anlegen eines Golfplatzes müsste ein fremdes Geschäft sein. Ein Geschäft ist jedes rechtliche oder tatsächliche Handeln. Es ist fremd, wenn es aus objektiver Perspektive dem Rechtskreis eines anderen zuzuordnen ist. Das Anlegen eines Golfplatzes und der Bau eines Mehrzweckgebäudes ist ein tatsächliches Handeln. Aus objektiver Perspektive gehören solche grundlegenden Umgestaltungen in die Sphäre des Eigentümers. 2. Fremdgeschäftsführungswille Darüber hinaus müsste P mit Fremdgeschäftsführungswillen gehandelt haben. Er müsste also um die Fremdheit des Geschäftes gewusst haben und es für einen anderen tätigen gewollt haben. Hier wollte P den Golfplatz anlegen, um das gepachtete Grundstück für sich selber wirtschaftlich nutzbar zu machen. Insoweit handelte er nur für sich und ohne Fremdgeschäftsführungswillen. 1. Anspruch entstanden Für einen entstandenen Anspruch müsste eine Vindikationslage vorliegen, die Umgestaltung müsste eine nützliche Verwendung sein und P müsste gutgläubig sein. a) Vindikationslage im Zeitpunkt der Verwendung Für eine Vindikationslage müsste der Anspruchsgegner E Eigentümer sein, der Anspruchssteller P Besitzer ohne Recht zum Besitz sein. aa) Anspruchsgegner ist Eigentümer E ist Eigentümer und hat sein Eigentum nie verloren. Die Verpachtung an G und die Unterverpachtung von G an P betrafen nur das Besitzrecht. bb) Anspruchssteller ist Besitzer Im Zeitpunkt der Umgestaltung des Grundstückes war P unmittelbarer Besitzer. cc) Anspruchssteller hat kein Recht zum Besitz Problematisch ist, ob P im Zeitpunkt des Umbaus gegenüber dem Eigentümer ein Recht zum Besitz im Sinne des § 986 Abs. 1 BGB hatte. (1) Eigenes Recht zum Besitz, § 986 Abs. 1 S. 1 Alt. 1 BGB P könnte ein eigenes Recht zum Besitz gegenüber dem Eigentümer im Sinne des § 986 Abs. 1 S. 1 Alt. 1 BGB gehabt haben. Allerdings verband P und E weder ein dingliches noch ein vertragliches Recht, so dass dies ausscheiden muss. (2) Abgeleitetes Recht zum Besitz, § 986 Abs. 1 S. 1 Alt. 2, S. 2 BGB In Betracht kommt jedoch ein abgeleitetes Recht im Sinne des § 986 Abs. 1 S. 1 Alt. 2, S. 2 BGB. Dazu müsste G als mittelbarer Besitzer dem Eigentümer gegenüber zum Besitz berechtigt und zur Weitergabe des Besitzes an einen Dritten ermächtigt gewesen sein. Hier hatten E und der kraft Eintragung (§ 21 BGB) rechtsfähige Verein G, vertreten durch den Vorstand (§ 26 Abs. 1 S. 2 Hs. 1 BGB), einen Pachtvertrag geschlossen. Dieser Pachtvertrag stellt im Sinne des § 868 BGB ein Besitzmittlungsverhältnis dar und G war berechtigter unmittelbarer Besitzer. G war die Besitzüberlassung an P im Rahmen der Unterverpachtung gestattet, so dass P ein abgeleitetes Recht zustand. Somit stand ihm ein Recht zum Besitz im Zeitpunkt der Umgestaltung zu. (3) Korrektur über das Institut des „Nicht-mehr-Berechtigten“ Besitzers spruches eine Vindikationslage bestände. Insoweit ist dann § 994 BGB analog anzuwenden. Danach wäre zugunsten von P eine Vindikationslage gegeben. Eine andere Meinung weist darauf hin, dass diese Lösung den Besitzer unbillig bevorteilen würde. Er habe sich vorrangig innerhalb seines geschlossenen Pachtvertrages an seinen Verpächter – hier G – zu halten. Dieser Vorrang vertraglicher Abreden und des dort eingegangenen Insolvenzrisikos dürfe nicht künstlich im EBV durchbrochen werden. Darüber hinaus käme es in allen anderen Situationen immer auf die Vindikationslage im Zeitpunkt des haftungsauslösenden Ereignisses an. Danach würde keine Vindikationslage im Zeitpunkt der Verwendung bestehen und damit ein Anspruch aus § 994 BGB ausscheiden. Da die Meinungen zu unterschiedlichen Ergebnissen kommen, ist eine Entscheidung des Streites erforderlich. Für die erste Meinung spricht, dass der ursprünglich berechtigte Besitzer nach dem Wegfall seines Rechtes zum Besitz schlechter steht als wenn er von Anfang an kein Recht zum Besitz besessen hätte. Diese Situation scheint ihn zu benachteiligen, so dass eine Korrektur über die analoge Anwendung von §§ 994 ff. BGB geboten ist. Hinweis: Eine andere Meinung, die das temporale Element aller Ansprüche aus dem EBV betont, ist gut vertretbar. Bearbeiter, die das Institut des „Nicht-mehr-Berechtigten“ ablehnen, müssen die folgende Wertungskorrektur nicht eröffnen. (4) Ausschluss aus Wertungsgesichtspunkten Im Rahmen dieses Sachverhaltes ist jedoch problematisch, ob der Befund nicht zu korrigieren ist. In die Abwägung ist einzustellen, dass P und G im Pachtvertrag einen Verwendungsersatz vereinbart haben. Dies könnte eine vorrangige vertragliche Regelung darstellen. Grundsätzlich ist anerkannt, dass Ansprüche aus dem Eigentümer-Besitzer-Verhältnis und aus einem Vertrag nebeneinander stehen können. Im vorliegenden Fall wäre der vertragliche Anspruch jedoch gegen den mittelbaren Besitzer G zu richten. Der Eigentümer wäre nur Schuldner eines Anspruches aus § 994 BGB, so dass dieser belastet wäre, weil der Gläubiger seinen vertraglichen Anspruch nicht geltend gemacht hat. Diese Situation benachteiligt den Eigentümer unbillig, so dass eine Vindikationslage mit Blick auf eine vorrangige vertragliche Anspruchsgrundlage nicht vorliegt. b) Zwischenergebnis Es liegt keine Vindikationslage vor. 2. Ergebnis Mithin hat P keinen Anspruch gegen E auf Verwendungsersatz gem. § 994 BGB. IV. Anspruch P gegen E auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S. 1 Alt. 1 BGB P könnte gegen E einen Anspruch auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S. 1 Alt. 1 BGB haben. 1. Anspruch entstanden a) Anwendbarkeit Der Anwendbarkeit von § 951 Abs. 1 S. 1 BGB steht keine Sperrwirkung der Regeln des Eigentümer-Besitzer-Verhältnisses entgegen, denn es liegt keine Vindikationslage vor. b) Voraussetzungen von § 951 Abs. 1 S. 1 BGB Es müssten zunächst die Voraussetzungen von § 951 Abs. 1 S. 1 BGB vorliegen. P müsste aufgrund von §§ 946-950 BGB sein Eigentum verloren haben. In Betracht kommt eine Verbindung mit einem Grundstück nach § 946 BGB, indem P Rasen säte und das Mehrzweckgebäude errichtete. Nach § 946 BGB erwirbt der Eigentümer eines Grundstückes Eigentum an allen mit diesem verbundenen Gegenständen. aa) Rasen Nach § 94 Abs. 1 S. 2 Alt. 1 BGB werden Samen mit dem Aussäen Teil des Grundstückes und gehen so in das Eigentum des Grundstückseigentümers über. bb) Mehrzweckgebäude Nach §§ 93, 94 Abs. 1 S. 1 BGB gehören zu einem Grundstück alle mit ihm verbundenen Gebäude. c) Voraussetzungen des Bereicherungsrechts Darüber hinaus müssten die Voraussetzungen des Bereicherungsrechtes vorliegen. Zunächst ist fraglich, ob es sich um einen Rechtsgrund oder einen Rechtsfolgenverweis handelt. Die h.M. in Literatur und Rechtsprechung geht dabei von einem Rechtsgrundverweis aus. aa) Etwas erlangt E müsste etwas erlangt haben. Dies kann jeder vermögenswerte Vorteil sein. Hier kommen zwei Bereicherungsgegenstände in Betracht. (1) Eigentum am Golfplatz Der E ist nunmehr Eigentümer eines Golfplatzes samt einem Mehrzweckgebäude. Beides stellt einen vermögenswerten Vorteil dar. (2) Mehrwert bei erneuter Verpachtung Darüber hinaus könnte die Möglichkeit, das Grundstück als Golfplatz zu einem höheren Preis zu verpachten als ein brachliegendes Grundstück, einen vermögenswerten Vorteil darstellen. Grundsätzlich ist der Mehrwert eines höheren Pacht- oder Mietzinses anerkannt. Diese Fallkonstruktion wendet der BGH jedoch nur an, wenn der Vermieter durch eine vorzeitige Beendigung des Vertrages in den Genuss der Wertsteigerung kommt. Im vorliegenden Fall war jedoch kein befristeter Pachtvertrag geschlossen worden. Darüber hinaus kommt der Mehrwert im Moment nicht dem Eigentümer zu, sondern dem Pächter G. Solange der Pachtvertrag zwischen G und E fortbesteht, kann nur G einen höheren Unterpachtzins generieren, so dass eine Bereicherung des E abzulehnen ist. bb) Durch Leistung des Anspruchsstellers Vor der Frage, ob eine Leistung von E vorliegt, ist zu klären, ob der Verweis auf das Bereicherungsrecht sowohl einen Verweis auf die Leistungskondiktion und die Kondiktion in sonstiger Weise erfasst, oder ob nur die Kondiktion in sonstiger Weise umfasst ist. In der überwiegenden Literatur wird vertreten, dass mit dem Wortlaut „erleidet“ nur ein gesetzlicher Erwerb und keine rechtsgeschäftliche Leistung gemeint ist. Derjenige, der einen Rechtsverlust erleidet, muss auch identisch mit dem Anspruchssteller sein. Wenn jemand jedoch Materialien verbaut, die im Eigentum eines Dritten stehen, fallen diese Positionen auseinander. Danach wäre nur die Kondiktion in sonstiger Weise vom Verweis erfasst. Namentlich die Rechtsprechung geht davon aus, dass der Verweis sowohl die Leistungskondiktion als auch die Kondiktion in sonstiger Weise erfasst. Insgesamt ist es möglich, dass ein Dritter einen Rechtsverlust erleidet, weil jemand anderes leistet. Danach wäre es möglich, eine Leistungskondiktion zu prüfen. In Zweipersonenverhältnissen hat dieser Streit keine Bedeutung. Hier wird auch mit Blick auf die Leistungskondiktion der Rechtsverlust beim Leistenden eintreten. Soweit man mit der Literatur im Dreipersonenverhältnis nur einen Verweis auf die Nichtleistungskondiktion anerkennen möchte, ist neben der Prüfung von § 951 BGB die Prüfung einer eigenständigen Leistungskondiktion ohne Verweis aus § 951 Abs. 1 S. 1 BGB möglich. Hinweis: Wenn eine Entscheidung des Streites erforderlich ist, sprechen die besseren Argumente für die Rechtsprechung, denn der Wortlaut des § 951 BGB enthält eben gerade keine Beschränkung. Eine andere Ansicht ist jedoch gut vertretbar. P müsste nun an E geleistet haben, also bewusst und zweckgerichtet das Vermögen von E gemehrt haben. Vorliegend verfolgte P mit dem Anlegen des Golfplatzes jedoch nur eigene Ziele, ohne zweckgerichtet das Vermögen von E vermehren zu wollen. Mithin muss eine Leistung ausscheiden. 2. Ergebnis Mithin hat P keinen Anspruch gegen E auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S. 1 Alt. 1 BGB. V. Anspruch P gegen E auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S. 1 Alt. 2 BGB P könnte gegen E einen Anspruch auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S. 1 Alt. 2 BGB haben. 1. Anspruch entstanden a) Anwendbarkeit Der Anspruch auf Wertersatz gem. § 951 Abs. 1 S. 1 BGB ist nicht gesperrt, denn es liegt keine Vindikationslage vor. b) Voraussetzungen von § 951 Abs. 1 S. 1 BGB Wie oben bereits gezeigt, liegen die Voraussetzungen des § 951 Abs. 1 S. 1 BGB vor. c) Voraussetzungen des Bereicherungsrechtes Es müssten die weiteren Voraussetzungen einer Kondiktion in sonstiger Weise vorliegen. aa) Etwas erlangt E hat das Eigentum an dem Golfplatz und dem Mehrzweckgebäude erlangt. bb) In sonstiger Weise Diese Bereicherung müsste E in sonstiger Weise erfahren haben. Mit Blick auf die Subsidiarität der Nichtleistungskondiktion dürfte niemand an E geleistet haben. Vorliegend hat niemand bewusst und zweckgerichtet das Vermögen von E gemehrt, so dass grundsätzlich der Weg für die Kondiktion in sonstiger Weise geebnet ist. Im Rahmen des Bereicherungslungen - die grundsätzlich Vorrang genießen - unbillig, dem Eigentümer eine Bereicherung in sonstiger Weise aufzuerlegen. 2. Ergebnis Mithin hat P keinen Anspruch gegen E auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S. 1 Alt. 2 BGB. Lösungsvorschlag zu Frage 2 Hätte P gegen E einen Anspruch auf Ersatz der 201.800 €, wenn zwischen G und P § 8 und § 9 im Pachtvertrag nicht vereinbart worden wären? I. Anspruch P gegen E auf Verwendungsersatz aus Vertrag Ein vertraglicher Anspruch auf Verwendungsersatz von P gegen E muss ausscheiden, denn zwischen beiden wurde kein Vertrag geschlossen. Dieser bestand alleine zwischen P und G. II. Anspruch P gegen E auf Aufwendungsersatz gem. §§ 683 S. 1, 670 BGB Ein Anspruch aus einer Geschäftsführung ohne Auftrag scheitert wiederum am fehlenden Fremdgeschäftsführungswillen des P. Hinweis: Mit Blick auf die unten diskutierte Sperrwirkung der Regeln des Eigentümer-Besitzer-Verhältnisses wären auch Ansprüche aus der Geschäftsführung ohne Auftrag gesperrt. Vor diesem Hintergrund ist es vertretbar den Anspruch erst nach den dinglichen Ansprüchen zu prüfen. Da er jedoch ohnehin ausscheidet ist dies nicht zwingend. III. Anspruch P gegen E auf Verwendungsersatz gem. § 994 BGB 1. Anspruch entstanden a) Vindikationslage im Zeitpunkt der Verwendung Für eine Vindikationslage müsste der Anspruchsgegner E Eigentümer sein, der Anspruchssteller P Besitzer ohne Recht zum Besitz sein. aa) Anspruchssteller ist Eigentümer E ist Eigentümer und hat sein Eigentum nie verloren. bb) Anspruchssteller ist Besitzer Im Zeitpunkt der Umgestaltung des Grundstückes war P un- (1) Eigenes Recht zum Besitz, § 986 Abs. 1 S. 1 Alt. 1 BGB P hat weder ein dingliches noch ein vertragliches Verhältnis zu E. (2) Abgeleitetes Recht zum Besitz, § 986 Abs. 1 S. 1 Alt. 2, S. 2 BGB Wie oben festgestellt, hat P im Zeitpunkt der Verwendung ein abgeleitetes Recht zum Besitz aus dem Pachtvertrag zwischen G und E. (3) Korrektur über das Institut des „Nicht-mehr-Berechtigten“ Besitzers Wie oben bereits diskutiert, könnte dieses Ergebnis korrigiert werden über das Institut des „Nicht-mehr-Berechtigten“. Die oben vorgestellten divergierenden Meinungen sind zugunsten einer Korrektur über das Institut des „Nicht-mehr-Berechtigten“ zu entscheiden. Alternativlösung 1: Für Bearbeiter, die das Institut des „Nicht-mehr-Berechtigten“ ablehnen, endet die Prüfung von § 996 BGB hier. b) Notwendige Verwendungen Die Investitionen in die Umgestaltung des brachliegenden Grundstückes in einen Golfplatz müssten nützliche Verwendungen sein. aa) Verwendung Dazu müssten Verwendungen vorliegen. Die Auslegung dieses Begriffes ist umstritten. Nach dem engen Verwendungsbegriff des BGH sind dies nur freiwillige Vermögensopfer, die der Sache zugutekommen ohne sie umzugestalten. Dies wird begründet mit dem Sprachgebrauch des § 950 BGB, wo eine gänzlich neue Gestaltung eine Veränderung und keine Verwendung mehr sei. Die Errichtung eines Hauses sei eine Veränderung. Danach würde der Hausbau keine Verwendung mehr darstellen. Eine andere Meinung begreift den Verwendungsbegriff weiter und will auch Umgestaltungen darunter subsumieren. Für sie ergibt sich eine Beschränkung weder aus dem Wortlaut des Gesetzes noch aus den Materialien des Bürgerlichen Gesetzbuches. Danach stellt die Errichtung des Hauses eine Verwendung dar. Die Meinung der Rechtsprechung erscheint vorzugswürdig, denn sie bewahrt den Eigentümer vor grundlegenden Umgestal Hinweis: Eine andere Ansicht ist vertretbar. bb) Zwischenergebnis Bei dem Hausbau handelt es sich nicht um eine Verwendung. 2. Ergebnis Mithin hat P keinen Anspruch gegen E auf Verwendungsersatz gem. § 994 BGB. Alternativlösung 2: Für Bearbeiter, die mit der Literatur den weiten Verwendungsbegriff verfolgen, müssen weiter prüfen, ob die Verwendungen notwendig waren, kommen aber dann mangels Notwendigkeit zum selbigen Ergebnis. Ferner wäre wie folgt ein Verwendungsersatzanspruch nach § 996 BGB zu prüfen: Im Zeitpunkt der Umgestaltung bestand eine Vindikationslage (s.o.). Bei den vorgenommen Maßnahmen handelt es sich auch um Verwendungen (s.o.). Weiter müssten das Aussäen des Rasens und der Bau des Mehrzweckhauses nützlich sein. Verwendungen sind nützlich, wenn sie den Wert oder die Brauchbarkeit der Sache verbessern, ohne eine reine Luxusverwendung zu sein. Eine Rasenfläche steigert den Wert eines Grundstückes im Vergleich zu einer brachliegenden Fläche. Gleichzeitig ist es noch keine Luxusverwendung. Die Errichtung eines Hauses steigert sowohl den Wert als auch die Brauchbarkeit eines Grundstückes. P dürfte ferner weder rechtshängig verklagt worden sein noch dürfte er bösgläubig hinsichtlich seines Rechtes zum Besitz gewesen sein. Hier war P keine Klage des Eigentümers auf Herausgabe zugestellt worden (§§ 253 Abs. 1, 261 Abs. 1 ZPO) und er war nicht bösgläubig (§ 932 Abs. 2 BGB). Mithin hat P auch keinen Anspruch gegen E auf Verwendungsersatz gem. § 996 BGB. IV. Anspruch P gegen E auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S. 1 Alt. 2 BGB P könnte gegen E einen Anspruch auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S 1 Alt. 2 BGB haben. 1. Anspruch entstanden a) Anwendbarkeit Der Anspruch auf Wertersatz gem. § 951 Abs. 1 S. 1 BGB müsste anwendbar sein. Näher zu betrachten ist das Verhältnis des Verwendungsersatzes aus dem Eigentümer-Besitzer-Verhältnis und § 951 Abs. 1 S. 1 BGB. Nach der oben verfolgten Lösung liegt eine VindikationsDie Rechtsprechung betrachtet die §§ 994 ff. BGB als geschlossenes System. Soweit nach dem oben gefundenen Ergebnis eine Vindikationslage vorliegt, bleibt dem Besitzer nur das (im Fall des Hausbaus) wertlose Wegnahmerecht. Danach würde ein Ersatz über das Bereicherungsrecht ausscheiden. Eine andere Meinung folgt dem oben vorgestellten engen Verwendungsbegriff, möchte jedoch aus Wertungsgesichtspunkten den Wertersatz über §§ 946, 951 Abs. 1, 812 ff. BGB eröffnen. Danach wäre ein Regress nach §§ 946, 951 Abs. 1, 812 ff. BGB möglich. Eine andere Meinung, die an den weiten Verwendungsbegriff anknüpft, folgt einer Exklusivität der Ansprüche aus §§ 994 ff. BGB. Danach wäre das Bereicherungsrecht auch gesperrt. Soweit oben dem Begriff des engen Verwendungsersatzes gefolgt wurde, muss die Sperrwirkung der Ansprüche aus dem EBV konsequent verfolgt werden und ebenso die Anwendung des Bereicherungsrechtes - und auch § 951 BGB - ist gesperrt. Hinweis: Eine andere Ansicht ist vertretbar. b) Zwischenergebnis Die Anwendung des § 951 Abs. 1 S. 1 BGB ist durch das Eigentümer-Besitzer-Verhältnis gesperrt. 2. Ergebnis Mithin hat P keinen Anspruch gegen E auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S 1 Alt. 2 BGB. Alternativlösung 1: Bearbeiter, die oben der ersten Alternativlösung gefolgt sind, haben keine Vindikationslage angenommen und so kommt keine Sperrwirkung in Betracht. Sie prüfen weiter, wie unter der Alternativlösung 3. Alternativlösung 2: Bearbeiter, die dem weiten Verwendungsbegriff gefolgt sind, können hier an der Sperrwirkung der Ansprüche aus dem Eigentümer-Besitzer-Verhältnis festhalten. Für sie besteht ein Anspruch aus § 996 BGB und so muss nicht aus Gesichtspunkten der Billigkeit die Anwendung von §§ 951 Abs. 1 S. 1, 812 BGB eröffnet werden. Alternativlösung 3: Bearbeiter, die eine Durchbrechung der Sperrwirkung für die Annahme des engen Verwendungsbegriffes vorgeschlagen haben, prüfen weiter: E müsste etwas erlangt haben. Hier hat er das Eigentum an einem Golfplatz und am Mehrzweckgebäude erlangt. Diese Sachen dürfte im Rahmen der Subsidiarität der Nichtleistungskondiktion niemand an P geleistet haben. Vorliegend hat niemand bewusst und zweckgerichtet das Vermögen von P gemehrt, die Vermögensverschiebung erfolgte daher in sonstiger Weise und nicht durch Leistung. Letztlich erfolgte dies auch ohne Rechtsgrund, so dass P einen Anspruch gegen E auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S 1 Alt. 2 BGB hat. V. Anspruch P gegen E auf Wertersatz gem. § 812 Abs. 1 S. 1 Alt. 2 BGB P könnte gegen E einen Anspruch auf Wertersatz gem. § 812 Abs. 1 S. 1 Alt. 2 BGB haben. Wie aber oben bereits festgestellt, ist das Bereicherungsrecht neben den Ansprüchen aus dem EBV gesperrt. Mithin hat P keinen Anspruch gegen E auf Wertersatz gem. § 812 Abs. 1 S 1 Alt. 2 BGB. Sie prüfen weiter, wie unter der Alternativlösung 3. Für sie besteht ein Anspruch aus § 996 BGB und so muss nicht aus Gesichtspunkten der Billigkeit die Anwendung von § 812 BGB eröffnet werden. Alternativlösung 3: Bearbeiter, die eine Durchbrechung der Sperrwirkung für die Annahme des engen Verwendungsbegriffes vorgeschlagen haben, prüfen weiter: E hat das Eigentum an einem Golfplatz und am Mehrzweckgebäude erlangt (s.o.). Es dürfte im Rahmen der Subsidiarität der Nichtleistungskondiktion niemand an P geleistet haben. Letztlich erfolgte dies auch ohne Rechtsgrund, so dass P einen Anspruch gegen E auf Herausgabe des Erlangten gem. § 818 Abs. 1 BGB und, soweit dies nicht möglich ist, auf Wertersatz gem. § 818 Abs. 2 BGB hat. I. Örtliche Zuständigkeit Die örtliche Zuständigkeit könnte sich aus dem ausschließlichen Gerichtsstand nach § 29a Abs. 1 ZPO ergeben. Es müsste sich um Ansprüche aus einem Miet- oder Pachtverhältnis handeln. Zwischen P und E bestand jedoch kein Pachtvertrag, so dass § 29a ZPO ausscheiden muss. Es greift also der allgemeine Gerichtsstand des Wohnortes des Eigentümers nach §§ 12, 13 ZPO. II. Sachliche Zuständigkeit Die sachliche Zuständigkeit richtet sich nach § 1 ZPO nach dem Gerichtsverfassungsgesetz. Eine ausschließliche Zuständigkeit des Amtsgerichts kommt nach § 23 Nr. 2a GVG nicht in Betracht, denn es handelt sich nicht um eine Klage aus einem Wohnraummietverhältnis. Danach richtet sich die Zuständigkeit nach dem Streitwert. Soweit hier zwei Forderungen aus 1.800 € und 200.000 € zusammen verfolgt werden, sind die beiden Beträge nach § 5 Hs. 1 ZPO zu addieren. Der Wert von 201.800 € liegt über der Grenze von 5.000 €, so dass das Landgericht nach §§ 23 Nr. 1, 71 Abs. 1 GVG zuständig ist.
+## Lösungsvorschlag zu Frage 1
+
+#### I. Anspruch P gegen E auf Verwendungsersatz aus Vertrag
+
+Ein Anspruch auf Verwendungsersatz von P gegen E muss ausscheiden, denn zwischen beiden wurde kein Vertrag geschlossen. Dieser bestand alleine zwischen P und G.
+
+#### II. Anspruch P gegen E auf Aufwendungsersatz gem. §§ 683 S. 1, 670 BGB
+
+P könnte gegen E einen Anspruch auf Aufwendungsersatz aus einer echten berechtigten Geschäftsführung ohne Auftrag nach §§ 683 S. 1, 670 BGB haben. Dazu müsste P ein Geschäft des E mit Fremdgeschäftsführungswillen geführt haben. Außerdem müsste die Geschäftsführung dem Willen und Interesse von E entsprochen haben und P dürfte nicht aufgrund einer Verpflichtung gehandelt haben.
+
+##### 1. Führung eines fremden Geschäftes
+
+Das Anlegen eines Golfplatzes müsste ein fremdes Geschäft sein. Ein Geschäft ist jedes rechtliche oder tatsächliche Handeln. Es ist fremd, wenn es aus objektiver Perspektive dem Rechtskreis eines anderen zuzuordnen ist. Das Anlegen eines Golfplatzes und der Bau eines Mehrzweckgebäudes ist ein tatsächliches Handeln. Aus objektiver Perspektive gehören solche grundlegenden Umgestaltungen in die Sphäre des Eigentümers.
+
+##### 2. Fremdgeschäftsführungswille
+
+Darüber hinaus müsste P mit Fremdgeschäftsführungswillen gehandelt haben. Er müsste also um die Fremdheit des Geschäftes gewusst haben und es für einen anderen tätigen gewollt haben. Hier wollte P den Golfplatz anlegen, um das gepachtete Grundstück für sich selber wirtschaftlich nutzbar zu machen. Insoweit handelte er nur für sich und ohne Fremdgeschäftsführungswillen.
+
+##### 1. Anspruch entstanden
+
+Für einen entstandenen Anspruch müsste eine Vindikationslage vorliegen, die Umgestaltung müsste eine nützliche Verwendung sein und P müsste gutgläubig sein.
+
+###### a) Vindikationslage im Zeitpunkt der Verwendung
+
+Für eine Vindikationslage müsste der Anspruchsgegner E Eigentümer sein, der Anspruchssteller P Besitzer ohne Recht zum Besitz sein.
+
+###### aa) Anspruchsgegner ist Eigentümer
+
+E ist Eigentümer und hat sein Eigentum nie verloren. Die Verpachtung an G und die Unterverpachtung von G an P betrafen nur das Besitzrecht.
+
+###### bb) Anspruchssteller ist Besitzer
+
+Im Zeitpunkt der Umgestaltung des Grundstückes war P unmittelbarer Besitzer.
+
+###### cc) Anspruchssteller hat kein Recht zum Besitz
+
+Problematisch ist, ob P im Zeitpunkt des Umbaus gegenüber dem Eigentümer ein Recht zum Besitz im Sinne des § 986 Abs. 1 BGB hatte.
+
+###### (1) Eigenes Recht zum Besitz, § 986 Abs. 1 S. 1 Alt. 1 BGB
+
+P könnte ein eigenes Recht zum Besitz gegenüber dem Eigentümer im Sinne des § 986 Abs. 1 S. 1 Alt. 1 BGB gehabt haben. Allerdings verband P und E weder ein dingliches noch ein vertragliches Recht, so dass dies ausscheiden muss.
+
+###### (2) Abgeleitetes Recht zum Besitz, § 986 Abs. 1 S. 1 Alt. 2, S. 2 BGB
+
+In Betracht kommt jedoch ein abgeleitetes Recht im Sinne des § 986 Abs. 1 S. 1 Alt. 2, S. 2 BGB. Dazu müsste G als mittelbarer Besitzer dem Eigentümer gegenüber zum Besitz berechtigt und zur Weitergabe des Besitzes an einen Dritten ermächtigt gewesen sein. Hier hatten E und der kraft Eintragung (§ 21 BGB) rechtsfähige Verein G, vertreten durch den Vorstand (§ 26 Abs. 1 S. 2 Hs. 1 BGB), einen Pachtvertrag geschlossen. Dieser Pachtvertrag stellt im Sinne des § 868 BGB ein Besitzmittlungsverhältnis dar und G war berechtigter unmittelbarer Besitzer. G war die Besitzüberlassung an P im Rahmen der Unterverpachtung gestattet, so dass P ein abgeleitetes Recht zustand. Somit stand ihm ein Recht zum Besitz im Zeitpunkt der Umgestaltung zu.
+
+###### (3) Korrektur über das Institut des „Nicht-mehr-Berechtigten“ Besitzers
+
+spruches eine Vindikationslage bestände. Insoweit ist dann § 994 BGB analog anzuwenden. Danach wäre zugunsten von P eine Vindikationslage gegeben. Eine andere Meinung weist darauf hin, dass diese Lösung den Besitzer unbillig bevorteilen würde. Er habe sich vorrangig innerhalb seines geschlossenen Pachtvertrages an seinen Verpächter – hier G – zu halten. Dieser Vorrang vertraglicher Abreden und des dort eingegangenen Insolvenzrisikos dürfe nicht künstlich im EBV durchbrochen werden. Darüber hinaus käme es in allen anderen Situationen immer auf die Vindikationslage im Zeitpunkt des haftungsauslösenden Ereignisses an. Danach würde keine Vindikationslage im Zeitpunkt der Verwendung bestehen und damit ein Anspruch aus § 994 BGB ausscheiden. Da die Meinungen zu unterschiedlichen Ergebnissen kommen, ist eine Entscheidung des Streites erforderlich. Für die erste Meinung spricht, dass der ursprünglich berechtigte Besitzer nach dem Wegfall seines Rechtes zum Besitz schlechter steht als wenn er von Anfang an kein Recht zum Besitz besessen hätte. Diese Situation scheint ihn zu benachteiligen, so dass eine Korrektur über die analoge Anwendung von §§ 994 ff. BGB geboten ist.
+
+Hinweis: Eine andere Meinung, die das temporale Element aller Ansprüche aus dem EBV betont, ist gut vertretbar. Bearbeiter, die das Institut des „Nicht-mehr-Berechtigten“ ablehnen, müssen die folgende Wertungskorrektur nicht eröffnen.
+
+###### (4) Ausschluss aus Wertungsgesichtspunkten
+
+Im Rahmen dieses Sachverhaltes ist jedoch problematisch, ob der Befund nicht zu korrigieren ist. In die Abwägung ist einzustellen, dass P und G im Pachtvertrag einen Verwendungsersatz vereinbart haben. Dies könnte eine vorrangige vertragliche Regelung darstellen. Grundsätzlich ist anerkannt, dass Ansprüche aus dem Eigentümer-Besitzer-Verhältnis und aus einem Vertrag nebeneinander stehen können. Im vorliegenden Fall wäre der vertragliche Anspruch jedoch gegen den mittelbaren Besitzer G zu richten. Der Eigentümer wäre nur Schuldner eines Anspruches aus § 994 BGB, so dass dieser belastet wäre, weil der Gläubiger seinen vertraglichen Anspruch nicht geltend gemacht hat. Diese Situation benachteiligt den Eigentümer unbillig, so dass eine Vindikationslage mit Blick auf eine vorrangige vertragliche Anspruchsgrundlage nicht vorliegt.
+
+###### b) Zwischenergebnis
+
+Es liegt keine Vindikationslage vor.
+
+##### 2. Ergebnis
+
+Mithin hat P keinen Anspruch gegen E auf Verwendungsersatz gem. § 994 BGB.
+
+#### IV. Anspruch P gegen E auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S. 1 Alt. 1 BGB
+
+P könnte gegen E einen Anspruch auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S. 1 Alt. 1 BGB haben.
+
+##### 1. Anspruch entstanden
+
+###### a) Anwendbarkeit
+
+Der Anwendbarkeit von § 951 Abs. 1 S. 1 BGB steht keine Sperrwirkung der Regeln des Eigentümer-Besitzer-Verhältnisses entgegen, denn es liegt keine Vindikationslage vor.
+
+###### b) Voraussetzungen von § 951 Abs. 1 S. 1 BGB
+
+Es müssten zunächst die Voraussetzungen von § 951 Abs. 1 S. 1 BGB vorliegen. P müsste aufgrund von §§ 946-950 BGB sein Eigentum verloren haben. In Betracht kommt eine Verbindung mit einem Grundstück nach § 946 BGB, indem P Rasen säte und das Mehrzweckgebäude errichtete. Nach § 946 BGB erwirbt der Eigentümer eines Grundstückes Eigentum an allen mit diesem verbundenen Gegenständen.
+
+###### aa) Rasen
+
+Nach § 94 Abs. 1 S. 2 Alt. 1 BGB werden Samen mit dem Aussäen Teil des Grundstückes und gehen so in das Eigentum des Grundstückseigentümers über.
+
+###### bb) Mehrzweckgebäude
+
+Nach §§ 93, 94 Abs. 1 S. 1 BGB gehören zu einem Grundstück alle mit ihm verbundenen Gebäude.
+
+###### c) Voraussetzungen des Bereicherungsrechts
+
+Darüber hinaus müssten die Voraussetzungen des Bereicherungsrechtes vorliegen. Zunächst ist fraglich, ob es sich um einen Rechtsgrund oder einen Rechtsfolgenverweis handelt. Die h.M. in Literatur und Rechtsprechung geht dabei von einem Rechtsgrundverweis aus.
+
+###### aa) Etwas erlangt
+
+E müsste etwas erlangt haben. Dies kann jeder vermögenswerte Vorteil sein. Hier kommen zwei Bereicherungsgegenstände in Betracht.
+
+###### (1) Eigentum am Golfplatz
+
+Der E ist nunmehr Eigentümer eines Golfplatzes samt einem Mehrzweckgebäude. Beides stellt einen vermögenswerten Vorteil dar.
+
+###### (2) Mehrwert bei erneuter Verpachtung
+
+Darüber hinaus könnte die Möglichkeit, das Grundstück als Golfplatz zu einem höheren Preis zu verpachten als ein brachliegendes Grundstück, einen vermögenswerten Vorteil darstellen. Grundsätzlich ist der Mehrwert eines höheren Pacht- oder Mietzinses anerkannt. Diese Fallkonstruktion wendet der BGH jedoch nur an, wenn der Vermieter durch eine vorzeitige Beendigung des Vertrages in den Genuss der Wertsteigerung kommt. Im vorliegenden Fall war jedoch kein befristeter Pachtvertrag geschlossen worden. Darüber hinaus kommt der Mehrwert im Moment nicht dem Eigentümer zu, sondern dem Pächter G. Solange der Pachtvertrag zwischen G und E fortbesteht, kann nur G einen höheren Unterpachtzins generieren, so dass eine Bereicherung des E abzulehnen ist.
+
+###### bb) Durch Leistung des Anspruchsstellers
+
+Vor der Frage, ob eine Leistung von E vorliegt, ist zu klären, ob der Verweis auf das Bereicherungsrecht sowohl einen Verweis auf die Leistungskondiktion und die Kondiktion in sonstiger Weise erfasst, oder ob nur die Kondiktion in sonstiger Weise umfasst ist. In der überwiegenden Literatur wird vertreten, dass mit dem Wortlaut „erleidet“ nur ein gesetzlicher Erwerb und keine rechtsgeschäftliche Leistung gemeint ist. Derjenige, der einen Rechtsverlust erleidet, muss auch identisch mit dem Anspruchssteller sein. Wenn jemand jedoch Materialien verbaut, die im Eigentum eines Dritten stehen, fallen diese Positionen auseinander. Danach wäre nur die Kondiktion in sonstiger Weise vom Verweis erfasst. Namentlich die Rechtsprechung geht davon aus, dass der Verweis sowohl die Leistungskondiktion als auch die Kondiktion in sonstiger Weise erfasst. Insgesamt ist es möglich, dass ein Dritter einen Rechtsverlust erleidet, weil jemand anderes leistet. Danach wäre es möglich, eine Leistungskondiktion zu prüfen. In Zweipersonenverhältnissen hat dieser Streit keine Bedeutung. Hier wird auch mit Blick auf die Leistungskondiktion der Rechtsverlust beim Leistenden eintreten. Soweit man mit der Literatur im Dreipersonenverhältnis nur einen Verweis auf die Nichtleistungskondiktion anerkennen möchte, ist neben der Prüfung von § 951 BGB die Prüfung einer eigenständigen Leistungskondiktion ohne Verweis aus § 951 Abs. 1 S. 1 BGB möglich.
+
+Hinweis: Wenn eine Entscheidung des Streites erforderlich ist, sprechen die besseren Argumente für die Rechtsprechung, denn der Wortlaut des § 951 BGB enthält eben gerade keine Beschränkung. Eine andere Ansicht ist jedoch gut vertretbar. P müsste nun an E geleistet haben, also bewusst und zweckgerichtet das Vermögen von E gemehrt haben. Vorliegend verfolgte P mit dem Anlegen des Golfplatzes jedoch nur eigene Ziele, ohne zweckgerichtet das Vermögen von E vermehren zu wollen. Mithin muss eine Leistung ausscheiden.
+
+##### 2. Ergebnis
+
+Mithin hat P keinen Anspruch gegen E auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S. 1 Alt. 1 BGB.
+
+#### V. Anspruch P gegen E auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S. 1 Alt. 2 BGB
+
+P könnte gegen E einen Anspruch auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S. 1 Alt. 2 BGB haben.
+
+##### 1. Anspruch entstanden
+
+###### a) Anwendbarkeit
+
+Der Anspruch auf Wertersatz gem. § 951 Abs. 1 S. 1 BGB ist nicht gesperrt, denn es liegt keine Vindikationslage vor.
+
+###### b) Voraussetzungen von § 951 Abs. 1 S. 1 BGB
+
+Wie oben bereits gezeigt, liegen die Voraussetzungen des § 951 Abs. 1 S. 1 BGB vor.
+
+###### c) Voraussetzungen des Bereicherungsrechtes
+
+Es müssten die weiteren Voraussetzungen einer Kondiktion in sonstiger Weise vorliegen.
+
+###### aa) Etwas erlangt
+
+E hat das Eigentum an dem Golfplatz und dem Mehrzweckgebäude erlangt.
+
+###### bb) In sonstiger Weise
+
+Diese Bereicherung müsste E in sonstiger Weise erfahren haben. Mit Blick auf die Subsidiarität der Nichtleistungskondiktion dürfte niemand an E geleistet haben. Vorliegend hat niemand bewusst und zweckgerichtet das Vermögen von E gemehrt, so dass grundsätzlich der Weg für die Kondiktion in sonstiger Weise geebnet ist. Im Rahmen des Bereicherungslungen - die grundsätzlich Vorrang genießen - unbillig, dem Eigentümer eine Bereicherung in sonstiger Weise aufzuerlegen.
+
+##### 2. Ergebnis
+
+Mithin hat P keinen Anspruch gegen E auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S. 1 Alt. 2 BGB.
+
+## Lösungsvorschlag zu Frage 2
+
+Hätte P gegen E einen Anspruch auf Ersatz der 201.800 €, wenn zwischen G und P § 8 und § 9 im Pachtvertrag nicht vereinbart worden wären?
+
+#### I. Anspruch P gegen E auf Verwendungsersatz aus Vertrag
+
+Ein vertraglicher Anspruch auf Verwendungsersatz von P gegen E muss ausscheiden, denn zwischen beiden wurde kein Vertrag geschlossen. Dieser bestand alleine zwischen P und G.
+
+#### II. Anspruch P gegen E auf Aufwendungsersatz gem. §§ 683 S. 1, 670 BGB
+
+Ein Anspruch aus einer Geschäftsführung ohne Auftrag scheitert wiederum am fehlenden Fremdgeschäftsführungswillen des P.
+
+Hinweis: Mit Blick auf die unten diskutierte Sperrwirkung der Regeln des Eigentümer-Besitzer-Verhältnisses wären auch Ansprüche aus der Geschäftsführung ohne Auftrag gesperrt. Vor diesem Hintergrund ist es vertretbar den Anspruch erst nach den dinglichen Ansprüchen zu prüfen. Da er jedoch ohnehin ausscheidet ist dies nicht zwingend.
+
+#### III. Anspruch P gegen E auf Verwendungsersatz gem. § 994 BGB
+
+##### 1. Anspruch entstanden
+
+###### a) Vindikationslage im Zeitpunkt der Verwendung
+
+Für eine Vindikationslage müsste der Anspruchsgegner E Eigentümer sein, der Anspruchssteller P Besitzer ohne Recht zum Besitz sein.
+
+###### aa) Anspruchssteller ist Eigentümer
+
+E ist Eigentümer und hat sein Eigentum nie verloren.
+
+###### bb) Anspruchssteller ist Besitzer
+
+Im Zeitpunkt der Umgestaltung des Grundstückes war P un-
+
+###### (1) Eigenes Recht zum Besitz, § 986 Abs. 1 S. 1 Alt. 1 BGB
+
+P hat weder ein dingliches noch ein vertragliches Verhältnis zu E.
+
+###### (2) Abgeleitetes Recht zum Besitz, § 986 Abs. 1 S. 1 Alt. 2, S. 2 BGB
+
+Wie oben festgestellt, hat P im Zeitpunkt der Verwendung ein abgeleitetes Recht zum Besitz aus dem Pachtvertrag zwischen G und E.
+
+###### (3) Korrektur über das Institut des „Nicht-mehr-Berechtigten“ Besitzers
+
+Wie oben bereits diskutiert, könnte dieses Ergebnis korrigiert werden über das Institut des „Nicht-mehr-Berechtigten“. Die oben vorgestellten divergierenden Meinungen sind zugunsten einer Korrektur über das Institut des „Nicht-mehr-Berechtigten“ zu entscheiden.
+
+Alternativlösung 1: Für Bearbeiter, die das Institut des „Nicht-mehr-Berechtigten“ ablehnen, endet die Prüfung von § 996 BGB hier.
+
+###### b) Notwendige Verwendungen
+
+Die Investitionen in die Umgestaltung des brachliegenden Grundstückes in einen Golfplatz müssten nützliche Verwendungen sein.
+
+###### aa) Verwendung
+
+Dazu müssten Verwendungen vorliegen. Die Auslegung dieses Begriffes ist umstritten. Nach dem engen Verwendungsbegriff des BGH sind dies nur freiwillige Vermögensopfer, die der Sache zugutekommen ohne sie umzugestalten. Dies wird begründet mit dem Sprachgebrauch des § 950 BGB, wo eine gänzlich neue Gestaltung eine Veränderung und keine Verwendung mehr sei. Die Errichtung eines Hauses sei eine Veränderung. Danach würde der Hausbau keine Verwendung mehr darstellen. Eine andere Meinung begreift den Verwendungsbegriff weiter und will auch Umgestaltungen darunter subsumieren. Für sie ergibt sich eine Beschränkung weder aus dem Wortlaut des Gesetzes noch aus den Materialien des Bürgerlichen Gesetzbuches. Danach stellt die Errichtung des Hauses eine Verwendung dar. Die Meinung der Rechtsprechung erscheint vorzugswürdig, denn sie bewahrt den Eigentümer vor grundlegenden Umgestal
+
+Hinweis: Eine andere Ansicht ist vertretbar.
+
+###### bb) Zwischenergebnis
+
+Bei dem Hausbau handelt es sich nicht um eine Verwendung.
+
+##### 2. Ergebnis
+
+Mithin hat P keinen Anspruch gegen E auf Verwendungsersatz gem. § 994 BGB.
+
+Alternativlösung 2: Für Bearbeiter, die mit der Literatur den weiten Verwendungsbegriff verfolgen, müssen weiter prüfen, ob die Verwendungen notwendig waren, kommen aber dann mangels Notwendigkeit zum selbigen Ergebnis. Ferner wäre wie folgt ein Verwendungsersatzanspruch nach § 996 BGB zu prüfen: Im Zeitpunkt der Umgestaltung bestand eine Vindikationslage (s.o.). Bei den vorgenommen Maßnahmen handelt es sich auch um Verwendungen (s.o.). Weiter müssten das Aussäen des Rasens und der Bau des Mehrzweckhauses nützlich sein. Verwendungen sind nützlich, wenn sie den Wert oder die Brauchbarkeit der Sache verbessern, ohne eine reine Luxusverwendung zu sein. Eine Rasenfläche steigert den Wert eines Grundstückes im Vergleich zu einer brachliegenden Fläche. Gleichzeitig ist es noch keine Luxusverwendung. Die Errichtung eines Hauses steigert sowohl den Wert als auch die Brauchbarkeit eines Grundstückes. P dürfte ferner weder rechtshängig verklagt worden sein noch dürfte er bösgläubig hinsichtlich seines Rechtes zum Besitz gewesen sein. Hier war P keine Klage des Eigentümers auf Herausgabe zugestellt worden (§§ 253 Abs. 1, 261 Abs. 1 ZPO) und er war nicht bösgläubig (§ 932 Abs. 2 BGB). Mithin hat P auch keinen Anspruch gegen E auf Verwendungsersatz gem. § 996 BGB.
+
+#### IV. Anspruch P gegen E auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S. 1 Alt. 2 BGB
+
+P könnte gegen E einen Anspruch auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S 1 Alt. 2 BGB haben.
+
+##### 1. Anspruch entstanden
+
+###### a) Anwendbarkeit
+
+Der Anspruch auf Wertersatz gem. § 951 Abs. 1 S. 1 BGB müsste anwendbar sein. Näher zu betrachten ist das Verhältnis des Verwendungsersatzes aus dem Eigentümer-Besitzer-Verhältnis und § 951 Abs. 1 S. 1 BGB. Nach der oben verfolgten Lösung liegt eine VindikationsDie Rechtsprechung betrachtet die §§ 994 ff. BGB als geschlossenes System. Soweit nach dem oben gefundenen Ergebnis eine Vindikationslage vorliegt, bleibt dem Besitzer nur das (im Fall des Hausbaus) wertlose Wegnahmerecht. Danach würde ein Ersatz über das Bereicherungsrecht ausscheiden. Eine andere Meinung folgt dem oben vorgestellten engen Verwendungsbegriff, möchte jedoch aus Wertungsgesichtspunkten den Wertersatz über §§ 946, 951 Abs. 1, 812 ff. BGB eröffnen. Danach wäre ein Regress nach §§ 946, 951 Abs. 1, 812 ff. BGB möglich. Eine andere Meinung, die an den weiten Verwendungsbegriff anknüpft, folgt einer Exklusivität der Ansprüche aus §§ 994 ff. BGB. Danach wäre das Bereicherungsrecht auch gesperrt. Soweit oben dem Begriff des engen Verwendungsersatzes gefolgt wurde, muss die Sperrwirkung der Ansprüche aus dem EBV konsequent verfolgt werden und ebenso die Anwendung des Bereicherungsrechtes - und auch § 951 BGB - ist gesperrt.
+
+Hinweis: Eine andere Ansicht ist vertretbar.
+
+###### b) Zwischenergebnis
+
+Die Anwendung des § 951 Abs. 1 S. 1 BGB ist durch das Eigentümer-Besitzer-Verhältnis gesperrt.
+
+##### 2. Ergebnis
+
+Mithin hat P keinen Anspruch gegen E auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S 1 Alt. 2 BGB.
+
+Alternativlösung 1: Bearbeiter, die oben der ersten Alternativlösung gefolgt sind, haben keine Vindikationslage angenommen und so kommt keine Sperrwirkung in Betracht. Sie prüfen weiter, wie unter der Alternativlösung 3.
+
+Alternativlösung 2: Bearbeiter, die dem weiten Verwendungsbegriff gefolgt sind, können hier an der Sperrwirkung der Ansprüche aus dem Eigentümer-Besitzer-Verhältnis festhalten. Für sie besteht ein Anspruch aus § 996 BGB und so muss nicht aus Gesichtspunkten der Billigkeit die Anwendung von §§ 951 Abs. 1 S. 1, 812 BGB eröffnet werden.
+
+Alternativlösung 3: Bearbeiter, die eine Durchbrechung der Sperrwirkung für die Annahme des engen Verwendungsbegriffes vorgeschlagen haben, prüfen weiter: E müsste etwas erlangt haben. Hier hat er das Eigentum an einem Golfplatz und am Mehrzweckgebäude erlangt. Diese Sachen dürfte im Rahmen der Subsidiarität der Nichtleistungskondiktion niemand an P geleistet haben. Vorliegend hat niemand bewusst und zweckgerichtet das Vermögen von P gemehrt, die Vermögensverschiebung erfolgte daher in sonstiger Weise und nicht durch Leistung. Letztlich erfolgte dies auch ohne Rechtsgrund, so dass P einen Anspruch gegen E auf Wertersatz gem. §§ 951 Abs. 1 S. 1, 812 Abs. 1 S 1 Alt. 2 BGB hat.
+
+#### V. Anspruch P gegen E auf Wertersatz gem. § 812 Abs. 1 S. 1 Alt. 2 BGB
+
+P könnte gegen E einen Anspruch auf Wertersatz gem. § 812 Abs. 1 S. 1 Alt. 2 BGB haben. Wie aber oben bereits festgestellt, ist das Bereicherungsrecht neben den Ansprüchen aus dem EBV gesperrt. Mithin hat P keinen Anspruch gegen E auf Wertersatz gem. § 812 Abs. 1 S 1 Alt. 2 BGB. Sie prüfen weiter, wie unter der Alternativlösung 3. Für sie besteht ein Anspruch aus § 996 BGB und so muss nicht aus Gesichtspunkten der Billigkeit die Anwendung von § 812 BGB eröffnet werden.
+
+Alternativlösung 3: Bearbeiter, die eine Durchbrechung der Sperrwirkung für die Annahme des engen Verwendungsbegriffes vorgeschlagen haben, prüfen weiter: E hat das Eigentum an einem Golfplatz und am Mehrzweckgebäude erlangt (s.o.). Es dürfte im Rahmen der Subsidiarität der Nichtleistungskondiktion niemand an P geleistet haben. Letztlich erfolgte dies auch ohne Rechtsgrund, so dass P einen Anspruch gegen E auf Herausgabe des Erlangten gem. § 818 Abs. 1 BGB und, soweit dies nicht möglich ist, auf Wertersatz gem. § 818 Abs. 2 BGB hat.
+
+#### I. Örtliche Zuständigkeit
+
+Die örtliche Zuständigkeit könnte sich aus dem ausschließlichen Gerichtsstand nach § 29a Abs. 1 ZPO ergeben. Es müsste sich um Ansprüche aus einem Miet- oder Pachtverhältnis handeln. Zwischen P und E bestand jedoch kein Pachtvertrag, so dass § 29a ZPO ausscheiden muss. Es greift also der allgemeine Gerichtsstand des Wohnortes des Eigentümers nach §§ 12, 13 ZPO.
+
+#### II. Sachliche Zuständigkeit
+
+Die sachliche Zuständigkeit richtet sich nach § 1 ZPO nach dem Gerichtsverfassungsgesetz. Eine ausschließliche Zuständigkeit des Amtsgerichts kommt nach § 23 Nr. 2a GVG nicht in Betracht, denn es handelt sich nicht um eine Klage aus einem Wohnraummietverhältnis. Danach richtet sich die Zuständigkeit nach dem Streitwert. Soweit hier zwei Forderungen aus 1.800 € und 200.000 € zusammen verfolgt werden, sind die beiden Beträge nach § 5 Hs. 1 ZPO zu addieren. Der Wert von 201.800 € liegt über der Grenze von 5.000 €, so dass das Landgericht nach §§ 23 Nr. 1, 71 Abs. 1 GVG zuständig ist.
