@@ -1,0 +1,295 @@
+# Falllösung: Schwerpunktbereichsklausur — Kunst oder Leben
+
+---
+
+## Teil 1: Ansprüche der N gegen P-Scope
+
+N verlangt von P-Scope die Unterlassung einer weiteren Ausstrahlung des Livestreams des K. Die Begründetheit dieses Unterlassungsanspruchs ist anhand einer geeigneten Anspruchsgrundlage zu prüfen. Normen des BDSG und des StGB sind laut Bearbeitervermerk nicht zu prüfen.
+
+### A. Anspruchsgrundlage
+
+Als Anspruchsgrundlage kommt ein quasinegatorischer Unterlassungsanspruch aus §§ 1004 I 2 BGB analog i.V.m. § 823 I BGB in Betracht. Nach der ständigen Rechtsprechung des BGH ist der quasinegatorische Unterlassungsanspruch auf alle deliktsrechtlich geschützten Rechtsgüter anwendbar, soweit eine rechtswidrige Beeinträchtigung droht (BGHZ 138, 349, 351 f.). Dies gilt insbesondere auch für das allgemeine Persönlichkeitsrecht als sonstiges Recht i.S.d. § 823 I BGB. Voraussetzung ist eine rechtswidrige Beeinträchtigung eines geschützten Rechtsguts durch P-Scope, eine Wiederholungsgefahr sowie das Vorliegen der sonstigen Voraussetzungen des quasinegatorischen Unterlassungsanspruchs.
+
+### B. Verletzung eines geschützten Rechtsguts der N
+
+Zunächst ist zu untersuchen, ob durch den Livestream des K ein geschütztes Rechtsgut der N verletzt wird.
+
+#### I. Das allgemeine Persönlichkeitsrecht der N
+
+Das allgemeine Persönlichkeitsrecht (APR) ist als sonstiges Recht i.S.d. § 823 I BGB anerkannt. Es wird aus Art. 2 I i.V.m. Art. 1 I GG abgeleitet und gewährleistet dem Einzelnen einen autonomen Bereich privater Lebensgestaltung, in dem er seine Individualität entwickeln und wahren kann. Als Rahmenrecht bedarf es der Konkretisierung durch Rechtsgüterabwägung im Einzelfall.
+
+##### 1. Verletzung des Rechts am eigenen Bild (§§ 22, 23 KUG)
+
+Das APR wird durch das Kunsturhebergesetz (KUG) in spezifischer Weise ausgeformt. Nach § 22 S. 1 KUG dürfen Bildnisse grundsätzlich nur mit Einwilligung des Abgebildeten verbreitet oder öffentlich zur Schau gestellt werden.
+
+**a) Vorliegen von Bildnissen**
+
+K filmt seine Umgebung mittels einer in sein Brillengestell integrierten Kamera und überträgt diese Aufnahmen per Livestream. N ist dabei sowohl im öffentlichen Straßenraum als auch — durch Nutzung der Zoomfunktion — in ihrer Wohnung erfasst worden. In beiden Fällen handelt es sich um Bildnisse der N i.S.d. § 22 KUG. Ein Bildnis ist jede erkennbare Wiedergabe einer Person (BGHZ 20, 345, 349). Die individuelle Erkennbarkeit der N ist gegeben, da sie von einem Bekannten auf den Aufnahmen identifiziert wurde und angesichts der Zoomaufnahmen in ihre Wohnung auch eine Identifizierbarkeit für das weitere Publikum nicht ausgeschlossen ist.
+
+**b) Fehlen der Einwilligung**
+
+N hat in die Aufnahmen nicht eingewilligt. Eine ausdrückliche Einwilligung liegt nicht vor. Auch eine konkludente Einwilligung ist nicht erkennbar. Zwar bewegt sich N im öffentlichen Straßenraum; hieraus kann jedoch nicht auf einen Einwilligungswillen in eine umfassende bildliche Erfassung und weltweite Übertragung geschlossen werden. Erst recht gilt dies für die Aufnahmen im Inneren ihrer Wohnung durch den Einsatz der Zoomfunktion.
+
+**c) Anwendbarkeit einer Ausnahme nach § 23 I KUG**
+
+Fraglich ist, ob eine Ausnahme vom Einwilligungserfordernis des § 22 KUG eingreift.
+
+**(aa) § 23 I Nr. 1 KUG — Bildnis aus dem Bereich der Zeitgeschichte**
+
+Nach § 23 I Nr. 1 KUG dürfen Bildnisse aus dem Bereich der Zeitgeschichte ohne Einwilligung verbreitet werden. Nach der Rechtsprechung des BVerfG (BVerfGE 101, 361 — Caroline von Monaco) sind Bildnisse aus dem Bereich der Zeitgeschichte solche, an denen ein berechtigtes Informationsinteresse der Öffentlichkeit besteht. Dieses Informationsinteresse ist anhand des konkreten Informationswerts zu bestimmen.
+
+Vorliegend handelt es sich bei N um eine Privatperson, die zufällig in den Aufnahmebereich des K gerät. Sie steht in keiner besonderen Beziehung zur Zeitgeschichte. Der Umstand, dass sie im Rahmen eines Kunstprojekts gefilmt wird, verleiht ihrer Person keinen zeitgeschichtlichen Rang. Das allgemeine Interesse an dem Kunstprojekt des K macht N nicht zu einer relativen Person der Zeitgeschichte. Für die Aufnahmen im öffentlichen Raum ist bereits fraglich, ob der bloße Umstand, Teil eines Kunstprojekts zu sein, ein legitimes Informationsinteresse begründen kann. Jedenfalls für die durch Zoom in die Wohnung erfassten Aufnahmen besteht kein schutzwürdiges Informationsinteresse der Öffentlichkeit, da der Schutz der Privatsphäre hier Vorrang genießt. § 23 I Nr. 1 KUG greift daher nicht ein.
+
+**(bb) § 23 I Nr. 4 KUG — Aufnahmen als Kunstwerk**
+
+Nach § 23 I Nr. 4 KUG dürfen Bildnisse, die nicht auf Bestellung angefertigt sind, verbreitet und zur Schau gestellt werden, sofern die Verbreitung oder Schaustellung einem höheren Interesse der Kunst dient. K verfolgt mit den Aufnahmen augenscheinlich einen künstlerischen Anspruch. Das Projekt thematisiert das Verhältnis von Kunst und Leben und soll eine „Verdopplung der Perspektive“ herstellen. Die Kunstfreiheit des K aus Art. 5 III S. 1 GG ist insoweit berührt.
+
+Allerdings ist nach § 23 II KUG die Befugnis zur Verbreitung ausgeschlossen, wenn durch sie ein berechtigtes Interesse des Abgebildeten oder — falls dieser verstorben ist — seiner Angehörigen verletzt wird. Es bedarf daher einer umfassenden Abwägung der widerstreitenden Interessen im Rahmen einer Gesamtbetrachtung (BVerfGE 142, 74, 104 — Künstlerische Karikaturen).
+
+Der künstlerische Gehalt des Projekts des K ist grundsätzlich anzuerkennen, ohne dass eine weitergehende ästhetische Bewertung erforderlich wäre (vgl. BVerfGE 142, 74, 101). Das Grundrecht der Kunstfreiheit schützt nicht nur den eigentlichen Schaffensprozess, sondern auch die Darbietung und Verbreitung des Kunstwerks (Werkbereich und Wirkbereich, BVerfGE 30, 173, 189 — Mephisto). K kann sich insoweit auf Art. 5 III S. 1 GG berufen.
+
+Dieser Kunstfreiheit steht das Interesse der N am Schutz ihrer Privatsphäre gegenüber. Hierbei ist zu differenzieren:
+
+Die Aufnahmen der N im öffentlichen Straßenraum betreffen die Sozialsphäre, in der der Einzelne sich in der Öffentlichkeit bewegt und grundsätzlich mit Wahrnehmung durch Dritte rechnen muss. Die Persönlichkeitsrelevanz solcher Aufnahmen ist zwar nicht bedeutungslos (vgl. BVerfGE 152, 216 — Recht auf Vergessen I), jedoch gegenüber weitergehenden Eingriffen geringer zu gewichten.
+
+Demgegenüber greifen die mittels Zoomfunktion angefertigten Aufnahmen in die Wohnung der N in schwerwiegender Weise in die Privatsphäre der N ein. Der Schutz der räumlichen Privatsphäre wird durch Art. 13 I GG in besonderer Weise gewährleistet. Die Wohnung ist als Rückzugsort elementarer Bestandteil des Privatlebens (BVerfGE 42, 212, 219). Auch wenn Art. 13 GG sich unmittelbar nur gegen den Staat richtet, strahlt sein Schutzgehalt im Rahmen der mittelbaren Drittwirkung auf das Privatrecht aus und verstärkt den Schutz der Privatsphäre im Rahmen des APR (BVerfGE 115, 205, 229).
+
+Bei der gemäß § 23 II KUG vorzunehmenden Abwägung überwiegt das Interesse der N am Schutz ihrer Privatsphäre das Kunstfreiheitsinteresse des K, soweit die Wohnung der N betroffen ist. Der zoomende Blick in die beleuchteten Wohnungen ist nicht mehr von der Kunstfreiheit gedeckt, da er den absolut geschützten Kernbereich privater Lebensgestaltung verletzt. Der künstlerische Mehrwert einer voyeuristischen Geste rechtfertigt nicht den Eingriff in den unantastbaren Bereich privater Lebensgestaltung. In diesem Bereich tritt die Kunstfreiheit des K hinter dem APR der N zurück. Auch der Schutz des Art. 13 GG strahlt mit besonderem Gewicht in die Abwägung ein.
+
+Für die Aufnahmen im öffentlichen Straßenraum ist die Abwägung differenzierter. Grundsätzlich könnte hier die Kunstfreiheit des K überwiegen, da der Einzelne im öffentlichen Raum mit einer bildlichen Erfassung rechnen muss. Allerdings ist zu berücksichtigen, dass die Übertragung der Aufnahmen im Livestream eine erhebliche Intensivierung der Beeinträchtigung darstellt. Die kontinuierliche, einer Vielzahl von Personen zugängliche Echtzeitübertragung geht über eine bloße gelegentliche Erfassung im öffentlichen Raum hinaus. Gleichwohl ist die künstlerische Konzeption des K zu achten. Bei der gebotenen Abwägung dürfte die Kunstfreiheit des K hinsichtlich der Aufnahmen im öffentlichen Raum grundsätzlich überwiegen, sofern besondere Belästigungen oder Gefährdungen der N vermieden werden.
+
+**d) Zwischenergebnis**
+
+Die Aufnahmen in die Wohnung der N mittels der Zoomfunktion verletzen das Recht der N am eigenen Bild und sind nicht durch § 23 I KUG gerechtfertigt. Eine Rechtsverletzung liegt insoweit vor.
+
+##### 2. Verletzung der Privatsphäre
+
+Über das Recht am eigenen Bild hinaus verletzen die Wohnungsaufnahmen das APR der N in Form des Schutzes der Privatsphäre. Die Privatsphäre umfasst die „Thematisierung der Person in ihrem häuslichen Bereich“ (BGHZ 131, 332, 338). Dieses wird durch den Einblick in die Wohnung der N verletzt. Der durch Art. 13 GG verfassungsrechtlich abgesicherte Schutz der Wohnung (vgl. BVerfGE 103, 142, 150 f.) strahlt im Rahmen der mittelbaren Drittwirkung auf die zivilrechtliche Bewertung aus.
+
+##### 3. Verletzung des Rechts auf informationelle Selbstbestimmung
+
+Das aus Art. 2 I i.V.m. Art. 1 I GG abgeleitete Recht auf informationelle Selbstbestimmung (BVerfGE 65, 1, 43 — Volkszählung) schützt die Befugnis des Einzelnen, grundsätzlich selbst über die Preisgabe und Verwendung seiner persönlichen Daten zu bestimmen. Indem K die N ohne deren Wissen und Wollen filmt und die Aufnahmen einem unbestimmten Publikum zugänglich macht, verletzt er dieses Recht der N. Die N hat keine Möglichkeit, der Erfassung und Verbreitung ihrer Bilddaten zu widersprechen.
+
+#### II. Zwischenergebnis
+
+K verletzt durch die zoomenden Aufnahmen in die Wohnung der N deren APR in Form des Rechts am eigenen Bild, der Privatsphäre und des Rechts auf informationelle Selbstbestimmung.
+
+### C. Haftung des P-Scope für die Rechtsverletzung
+
+Fraglich ist, ob P-Scope für diese Rechtsverletzungen des K haftet.
+
+#### I. Täterschaftliche Haftung des P-Scope aus § 823 I BGB
+
+Eine täterschaftliche Haftung des P-Scope setzt voraus, dass P-Scope selbst die Rechtsverletzung begangen hat. P-Scope überträgt die Livestreams der Nutzer und stellt dafür die technische Infrastruktur zur Verfügung. Die Inhalte selbst werden jedoch allein von den Nutzern — hier K — erstellt und initiiert. P-Scope prüft die Inhalte nicht vorab und macht sie sich auch nicht ausdrücklich zu eigen. P-Scope handelt nicht als Täter der Persönlichkeitsrechtsverletzung, sondern stellt lediglich die Plattform zur Verfügung. Eine täterschaftliche Haftung scheidet daher aus.
+
+#### II. Haftung als mittelbarer Störer (Störerhaftung)
+
+In Betracht kommt jedoch eine Haftung des P-Scope als mittelbarer Störer nach den Grundsätzen der Störerhaftung.
+
+##### 1. Rechtsgrundlage und Voraussetzungen
+
+Die Störerhaftung ist in der Rechtsprechung gewohnheitsrechtlich anerkannt und gilt auch für Persönlichkeitsrechtsverletzungen (BGHZ 158, 236, 251 — Internet-Versteigerung). Nach der ständigen Rechtsprechung des BGH haftet als Störer jeder, der — ohne Täter oder Teilnehmer zu sein — in irgendeiner Weise willentlich und adäquat kausal zur Verletzung eines geschützten Rechtsguts beiträgt, sofern er eine ihm zumutbare Prüfpflicht verletzt hat (BGHZ 191, 219, 225 Rn. 19 — Stiftparfüm; BGHZ 194, 339, 344 Rn. 28 — Alone in the Dark). Die Störerhaftung darf nicht überdehnt werden, da sie ansonsten die von der Rechtsordnung gebilligten Handlungsmöglichkeiten insbesondere von Plattformbetreibern unverhältnismäßig einschränken würde.
+
+##### 2. Beitrag des P-Scope zur Rechtsverletzung
+
+P-Scope stellt die technische Infrastruktur bereit, die es K ermöglicht, seine Livestreams zu übertragen und einem Publikum zugänglich zu machen. Ohne diese Dienstleistung wäre die Übertragung nicht möglich. P-Scope trägt damit willentlich und adäquat kausal zur Rechtsverletzung bei. Der Umstand, dass P-Scope selbst keine Inhalte erstellt, steht der Eigenschaft als Störer nicht entgegen. Auch wer eine Plattform bereitstellt, die von Dritten zu Rechtsverletzungen genutzt wird, kann Störer sein (BGHZ 158, 236, 246 ff. — Internet-Versteigerung).
+
+##### 3. Verletzung von Prüfpflichten
+
+Die Störerhaftung setzt die Verletzung zumutbarer Prüfpflichten voraus. Der Umfang der Prüfpflichten bestimmt sich nach den Umständen des Einzelfalls und nach der Funktion und Aufgabenstellung des als Störer in Anspruch Genommenen sowie nach der Eigenverantwortung des unmittelbar handelnden Dritten (BGHZ 191, 19, 24 Rn. 22 — Blog-Eintrag; BGHZ 194, 339, 344 Rn. 28 — Alone in the Dark).
+
+**a) Grundsatz: Keine allgemeine prophylaktische Prüfpflicht**
+
+Einem Plattformbetreiber wie P-Scope obliegt grundsätzlich keine allgemeine prophylaktische Prüfpflicht, alle von Nutzern eingestellten Inhalte vorab auf mögliche Rechtsverletzungen zu überprüfen. Eine solche Vorabkontrolle wäre technisch und wirtschaftlich unzumutbar und würde die Funktionsfähigkeit des Dienstes gefährden (BGHZ 158, 236, 251 f.; EuGH, Urt. v. 03.10.2019, C-18/18 — Glawischnig-Piesczek/Facebook).
+
+**b) Pflichten nach Kenntniserlangung von Rechtsverletzungen**
+
+Die Prüfpflicht des Störers entsteht grundsätzlich erst ab Kenntnis einer konkreten Rechtsverletzung (BGHZ 191, 219, 224 Rn. 17). P-Scope wurde durch das Schreiben der N über die Rechtsverletzungen des K informiert. Ab diesem Zeitpunkt bestand für P-Scope grundsätzlich eine Pflicht, gegen die Rechtsverletzung vorzugehen.
+
+**c) Evidenz der Rechtsverletzung**
+
+Allerdings verlangt die Rechtsprechung für eine Haftung des Plattformbetreibers als Störer, dass die Rechtsverletzung für den Plattformbetreiber offenkundig oder unschwer erkennbar ist (BGHZ 191, 19, 24 Rn. 22). Eine umfassende rechtliche Prüfung kann vom Plattformbetreiber nicht verlangt werden. Er muss nur auf evidente und ohne weiteres feststellbare Rechtsverletzungen reagieren (BGH, NJW 2012, 148, 149 Rn. 19).
+
+Fraglich ist, ob die Rechtsverletzung durch K für P-Scope evident oder unschwer erkennbar war. N wies P-Scope darauf hin, dass K in ihre Wohnung filmt und damit ihre Persönlichkeitsrechte verletzt. Die Aufnahmen in den privaten Wohnbereich durch Nutzung einer Zoomfunktion stellen einen offensichtlichen und schwerwiegenden Eingriff in die Privatsphäre dar. Die Verletzung des rechts, die Wohnung vor unbefugten Einblicken zu schützen, ist derart grundlegend, dass sie als evident betrachtet werden kann. Die Zoomfunktion ermöglicht Aufnahmen über erhebliche Distanzen, was dem gewöhnlichen Einsatz einer Brille fremd ist und daher eine qualifizierte Beeinträchtigung darstellt.
+
+Gleichwohl ist zu berücksichtigen, dass die Beurteilung der Rechtswidrigkeit nicht rein tatsächlicher Natur ist, sondern eine komplexe Abwägung zwischen Kunstfreiheit und APR erfordert. P-Scope weist zu Recht darauf hin, dass ein kleines Start-Up-Unternehmen diese Abwägung nicht selbst vornehmen könne. Die Frage, ob die Aufnahmen in die Wohnung durch die Kunstfreiheit des K gedeckt waren, war im Zeitpunkt der Inanspruchnahme des P-Scope durch die N nicht offenkundig.
+
+In der Gesamtschau ist jedoch festzuhalten: Der Einblick in eine Privatwohnung durch Heranzoomen ist ein derart eindeutiger und schwerwiegender Eingriff in den durch Art. 13 GG verfassungsrechtlich abgesicherten Kernbereich privater Lebensgestaltung, dass die Rechtsverletzung auch für einen nicht juristisch geschulten Plattformbetreiber unschwer erkennbar war. Die N hat konkret und nachvollziehbar geschildert, dass K in ihre Wohnung gefilmt hat. Diese Mitteilung enthielt hinreichende Anhaltspunkte für eine evidente Rechtsverletzung. Dass P-Scope im Einzelnen die Abwägung zwischen Kunstfreiheit und APR nicht nachvollziehen konnte, entlastet das Unternehmen nicht, da der Kern der beanstandeten Handlung — das Hineinzoomen in eine Privatwohnung — offensichtlich und ohne vertiefte rechtliche Prüfung als rechtlich problematisch erkennbar war.
+
+Angesichts des in Rede stehenden hohen Rangs des verletzten Rechtsguts (Kernbereich der Privatsphäre) war P-Scope gehalten, zumindest eine Prüfung der Beanstandung vorzunehmen und geeignete Maßnahmen zu ergreifen.
+
+**d) Umfang der geschuldeten Maßnahmen**
+
+P-Scope haftet als Störer grundsätzlich auf Unterlassung. Das Unternehmen hätte nach Kenntniserlangung den Livestream des K zumindest insoweit sperren müssen, als die Rechtsverletzungen fortgesetzt werden. Da P-Scope das Ansinnen der N ablehnte und keine Maßnahmen ergriff, hat es seine Prüfpflichten verletzt.
+
+##### 4. Vorrang der Inanspruchnahme des unmittelbaren Störers
+
+P-Scope wendet ein, N müsse sich zunächst an K wenden. Grundsätzlich ist der unmittelbare Störer vorrangig in Anspruch zu nehmen. Jedoch besteht keine strikte Subsidiarität der Störerhaftung (BGHZ 185, 330, 337 Rn. 21 — Sommer unseres Lebens). Die N hat ein berechtigtes Interesse daran, sich nicht an K wenden zu müssen, da sie befürchtet, andernfalls weiter in das Kunstprojekt hineingezogen zu werden. Zudem ist der Anspruch gegen den unmittelbaren Störer K für N mit Schwierigkeiten verbunden, da sie den Konflikt mit ihrem Nachbarn scheut und auch subjektiv nachvollziehbare Gründe hat, keinen persönlichen Kontakt aufzunehmen. Ein genereller Vorrang der unmittelbaren Störerhaftung besteht nach der Rechtsprechung nicht (BGHZ 185, 330, 337). Das Interesse der N, von P-Scope die Unterlassung zu verlangen, ist daher schutzwürdig.
+
+#### III. Zwischenergebnis
+
+P-Scope haftet nach den Grundsätzen der Störerhaftung für die von K begangenen Persönlichkeitsrechtsverletzungen, da P-Scope auf die konkrete Beanstandung der N nicht in zumutbarer Weise reagiert und dadurch seine Prüfpflichten verletzt hat.
+
+### D. Wiederholungsgefahr
+
+Ein Unterlassungsanspruch setzt Wiederholungsgefahr voraus. Diese wird durch die bereits erfolgte Rechtsverletzung indiziert (BGHZ 14, 163, 170). K hat wiederholt in die Wohnung der N gezoomt und wird dies nach eigenem Bekunden als künstlerische Praxis fortsetzen. Eine Wiederholungsgefahr ist daher gegeben.
+
+### E. Rechtsfolge
+
+N hat gegen P-Scope einen Anspruch auf Unterlassung der weiteren Übertragung des Livestreams des K aus §§ 1004 I 2 BGB analog i.V.m. § 823 I BGB i.V.m. dem APR der N. Der Anspruch richtet sich auf die Unterlassung der weiteren Ausstrahlung mit Blick auf die konkreten Verletzungshandlungen in die Privatsphäre der N.
+
+### F. Ergebnis zu Teil 1
+
+N steht gegen P-Scope ein Anspruch auf Unterlassung der weiteren Ausstrahlung des Livestreams des K insoweit zu, als durch die Übertragung in ihre Wohnung hineingefilmt wird und dadurch ihr APR verletzt wird.
+
+---
+
+## Teil 2: Ansprüche des K gegen Z
+
+K verlangt von Z zweierlei: die Unterlassung der erneuten Verbreitung des Fotos, das ihn auf der Toilette sitzend zeigt, sowie die Unterlassung der Behauptung, er sei ein „durchgeknallter Künstler“.
+
+### A. Unterlassungsanspruch hinsichtlich der Bildberichterstattung
+
+#### I. Anspruchsgrundlage
+
+Als Anspruchsgrundlage kommt ein quasinegatorischer Unterlassungsanspruch aus §§ 1004 I 2 BGB analog i.V.m. § 823 I BGB in Betracht, gestützt auf eine Verletzung des APR des K in dessen Ausprägung als Recht am eigenen Bild. §§ 22 ff. KUG konkretisieren das APR im Bereich des Bildnisschutzes und sind daher im Rahmen des § 823 I BGB heranzuziehen.
+
+#### II. Voraussetzungen
+
+##### 1. Bildnis des K
+
+Bei dem veröffentlichten Foto handelt es sich um ein Bildnis des K i.S.d. § 22 KUG. Das Bild zeigt K auf der Toilette im Bad sitzend. Die individuelle Erkennbarkeit des K ist angesichts seiner Bekanntheit ohne Weiteres gegeben.
+
+##### 2. Fehlen der Einwilligung nach § 22 S. 1 KUG
+
+K hat in die Veröffentlichung des Fotos nicht ausdrücklich eingewilligt. Zu prüfen ist, ob eine konkludente Einwilligung des K vorliegt. Z beruft sich darauf, K habe durch die öffentliche Zugänglichmachung seiner Livestreams zumindest konkludent in die Weiterverbreitung und Veröffentlichung von Bildern durch Dritte eingewilligt.
+
+Eine konkludente Einwilligung setzt voraus, dass das Verhalten des K aus Sicht eines objektiven Erklärungsempfängers als rechtsgeschäftliche Willenserklärung ausgelegt werden kann, die auf die Preisgabe des Rechts am eigenen Bild gerichtet ist. Die Übertragung eines Livestreams kann in der Regel nicht als Einwilligung in jede beliebige Weiterverwendung der Aufnahmen durch Dritte verstanden werden.
+
+Zu differenzieren ist zwischen dem Zugänglichmachen des Livestreams als Teil eines Kunstprojekts und der Verwendung einzelner Standbilder in einem anderen Kontext. Die Anwendung P-Scope ermöglicht kein Speichern der Aufnahmen und keine Replay-Funktion. K hat sich bewusst für ein flüchtiges Medium entschieden, das den ephemeren Charakter des Livestreams betont. Dieses Medium steht in einem konzeptionellen Zusammenhang mit seiner Kunstauffassung von der Unmittelbarkeit des Lebens. Aus dem Einsatz dieses flüchtigen Mediums kann nicht auf eine Einwilligung in die dauerhafte Fixierung und Verbreitung von Einzelbildern durch Dritte geschlossen werden.
+
+Zudem ist zu beachten, dass das Bild K in einer besonders privaten Situation — auf der Toilette sitzend — zeigt. Die Intention des Kunstprojekts des K, Grenzen zwischen Kunst und Leben zu verwischen, bedeutet nicht, dass er jeglichen Schutz seiner Privatsphäre aufgegeben hätte. Das bewusste Spiel mit der Grenze zwischen Privatem und Öffentlichem im Rahmen eines Kunstwerks setzt vielmehr voraus, dass diese Grenze als solche anerkannt wird und nicht als generelle Einwilligung in jede Verwendung verstanden werden kann. Eine konkludente Einwilligung in die Veröffentlichung des Fotos in der Boulevardpresse liegt daher nicht vor.
+
+##### 3. Kein Eingreifen einer Ausnahme nach § 23 I KUG
+
+**a) § 23 I Nr. 1 KUG — Bildnis aus dem Bereich der Zeitgeschichte**
+
+Bildnisse aus dem Bereich der Zeitgeschichte dürfen nach § 23 I Nr. 1 KUG ohne Einwilligung verbreitet werden. K ist als Künstler aufgrund der medialen Resonanz auf sein Projekt zu einer — zumindest relativen — Person der Zeitgeschichte geworden. Über ihn wird in den sozialen Medien und in der Presse berichtet. Es besteht ein legitimes Informationsinteresse der Öffentlichkeit an seinem Kunstprojekt.
+
+Das konkrete Bild zeigt K jedoch im rein privaten Bereich — auf der Toilette sitzend. Nach der Rechtsprechung des BVerfG (BVerfGE 101, 361, 385 — Caroline von Monaco; BVerfGE 120, 180, 209 f. — Caroline von Hannover II) genießen auch Personen der Zeitgeschichte Schutz vor bildlicher Berichterstattung, soweit sie sich in örtlicher Abgeschiedenheit aufhalten. Bilder aus dem häuslichen Bereich und aus dem Kernbereich privater Lebensgestaltung unterfallen auch bei prominenten Personen grundsätzlich nicht dem Anwendungsbereich des § 23 I Nr. 1 KUG.
+
+Das Bad und insbesondere die Toilette gehören zum Kernbereich privater Lebensgestaltung. Die Tatsache, dass K diesen Bereich selbst filmt und im Livestream überträgt, ändert nichts daran, dass es sich um einen grundsätzlich privat geprägten Aufenthaltsort handelt. K hat den intimen Charakter der Situation nicht aufgehoben, sondern gerade mit diesem Spannungsverhältnis zwischen Privatem und Öffentlichem gearbeitet. Für die Anwendung des § 23 I Nr. 1 KUG auf ein Bild aus dem Kernbereich privater Lebensgestaltung ist ein besonders gewichtiges Informationsinteresse erforderlich, das hier — auch unter Berücksichtigung des Kunstprojekts des K — nicht anzunehmen ist. Der Informationswert des konkreten Bildes (K auf der Toilette) für die öffentliche Meinungsbildung ist gering. Es illustriert einen ohnehin kritischen Artikel und dient eher der effektheischenden Darstellung als einer sachlichen Information.
+
+**b) § 23 I Nr. 4 KUG — Höheres Interesse der Kunst**
+
+Z hat das Bild zur Illustration eines Artikels veröffentlicht und handelt damit im Rahmen der Presseberichterstattung, nicht primär aus künstlerischen Motiven. § 23 I Nr. 4 KUG ist auf die Presse nicht anwendbar.
+
+**c) Zwischenergebnis**
+
+Die Ausnahmen des § 23 I KUG greifen nicht ein.
+
+##### 4. Berechtigtes Interesse nach § 23 II KUG
+
+Selbst wenn man § 23 I Nr. 1 KUG für anwendbar hielte, stünde einem Verbreiten des Bildes das berechtigte Interesse des K i.S.d. § 23 II KUG entgegen. Das Bild zeigt K in einer höchst intimen, den Kernbereich seiner Privatsphäre betreffenden Situation. Es verletzt ihn in seiner Menschenwürde (Art. 1 I GG) und in seinem APR (Art. 2 I i.V.m. Art. 1 I GG).
+
+##### 5. Verfassungsrechtliche Abwägung
+
+Nach der Rechtsprechung des BVerfG stellt § 23 KUG in seiner Auslegung und Anwendung eine einfachgesetzliche Konkretisierung der verfassungsrechtlich gebotenen Abwägung zwischen APR und Pressefreiheit dar (BVerfGE 101, 361, 388 ff.). In der Sache bedarf es einer umfassenden Abwägung der betroffenen Grundrechte.
+
+**a) Grundrechtsposition des K**
+
+K kann sich auf den Schutz seines APR aus Art. 2 I i.V.m. Art. 1 I GG berufen. Die negative Berichterstattung mit einem ihn auf der Toilette zeigenden Bild greift in schwerwiegender Weise in seine Privatsphäre ein. Der Eingriff betrifft den Kernbereich privater Lebensgestaltung, in dem der Einzelne grundsätzlich vor staatlichen Eingriffen und im Rahmen der Drittwirkung auch vor Eingriffen Privater geschützt ist. Die Menschenwürde des K (Art. 1 I GG) wird durch die bloßstellende Veröffentlichung eines derart intimen Bildes berührt. Die Verwendung des Bildes dient erkennbar nicht einer sachlichen Auseinandersetzung mit dem Werk des K, sondern einer entblößenden und herabwürdigenden Darstellung seiner Person.
+
+Zudem kann K sich auf die Kunstfreiheit aus Art. 5 III S. 1 GG berufen. Die konkrete Form der Darbietung — der Livestream als flüchtiges, nicht speicherbares Medium — ist Teil seiner künstlerischen Konzeption. Die Veröffentlichung eines Einzelbildes aus diesem Livestream in einem anderen medialen und inhaltlichen Kontext verfälscht diese künstlerische Konzeption und verletzt den K in seinem Recht auf künstlerische Integrität und Selbstbestimmung über das Werk.
+
+**b) Grundrechtsposition der Z**
+
+Z kann sich auf die Pressefreiheit aus Art. 5 I S. 2 GG i.V.m. Art. 5 I S. 1 GG berufen. Die Pressefreiheit umfasst die Freiheit der Gründung von Presseorganen, die Freiheit ihrer inhaltlichen Gestaltung und die Freiheit der Berichterstattung (BVerfGE 20, 162, 174 f. — Spiegel). Auch die Bebilderung von Artikeln mit Fotos fällt in den Schutzbereich der Pressefreiheit.
+
+**c) Abwägung**
+
+Bei der Abwägung ist zu berücksichtigen, dass das Foto den Kernbereich privater Lebensgestaltung betrifft und den K in menschenunwürdiger Weise bloßstellt. Dem steht kein gleichrangiges Informationsinteresse der Öffentlichkeit gegenüber. Die Veröffentlichung des Bildes dient nicht der sachlichen Information über das Kunstprojekt, sondern der polemischen und herabwürdigenden Darstellung des K. Die Überschrift „Ist das jetzt auch Kunst?“ und der negative Duktus des Artikels zeigen, dass das Bild nicht zur sachlichen Berichterstattung, sondern zur Verspottung des K verwendet wird.
+
+Demgegenüber hat K seine Privatsphäre nicht generell aufgegeben. Die Entscheidung für das flüchtige Medium Livestream unterstreicht vielmehr, dass K den ephemeren Charakter seiner Kunst und die Kontrolle über das Kunstwerk bewahren will. Die dauerhafte Fixierung eines Einzelbildes und dessen Veröffentlichung in einem anderen Kontext geht über das hinaus, womit K rechnen musste.
+
+In der Gesamtabwägung überwiegt das APR des K die Pressefreiheit der Z. Die Veröffentlichung des Fotos ist rechtswidrig.
+
+#### III. Wiederholungsgefahr
+
+Die Wiederholungsgefahr wird durch die bereits erfolgte Rechtsverletzung indiziert. Z vertritt die Auffassung, zur Veröffentlichung berechtigt gewesen zu sein, und hat eine erneute Verbreitung nicht ausgeschlossen. Eine Wiederholungsgefahr liegt vor.
+
+#### IV. Zwischenergebnis
+
+K hat gegen Z einen Anspruch auf Unterlassung der erneuten Veröffentlichung des Fotos aus §§ 1004 I 2 BGB analog i.V.m. § 823 I BGB i.V.m. §§ 22, 23 KUG.
+
+---
+
+### B. Unterlassungsanspruch hinsichtlich der Wortberichterstattung
+
+K verlangt von Z die Unterlassung der Behauptung, er sei ein „durchgeknallter Künstler“.
+
+#### I. Anspruchsgrundlage
+
+Als Anspruchsgrundlage kommt ein quasinegatorischer Unterlassungsanspruch aus §§ 1004 I 2 BGB analog i.V.m. § 823 I BGB in Betracht, gestützt auf eine Verletzung des APR in Form des Ehrenschutzes. Auch § 823 II BGB i.V.m. § 185 StGB (Beleidigung) könnte in Betracht kommen, ist jedoch laut Bearbeitervermerk nicht zu prüfen.
+
+#### II. Rechtsgutsverletzung — Eingriff in das APR
+
+##### 1. Form der Äußerung: Meinungsäußerung oder Tatsachenbehauptung
+
+Für die rechtliche Beurteilung ist zunächst zu differenzieren, ob es sich bei der Aussage „durchgeknallter Künstler“ um eine Tatsachenbehauptung oder eine Meinungsäußerung handelt.
+
+Tatsachenbehauptungen sind dem Beweis zugänglich und können wahr oder unwahr sein. Meinungsäußerungen sind durch das Element der Stellungnahme und des Dafürhaltens geprägt (BVerfGE 138, 102, 112 Rn. 27; BVerfGE 85, 1, 14). Nach der Rechtsprechung des BVerfG ist bei der Abgrenzung maßgeblich auf den Gesamtkontext der Äußerung abzustellen (BVerfGE 114, 339, 348; BVerfGE 90, 241, 247 f.).
+
+Der Begriff „durchgeknallt“ ist umgangssprachlich und bringt eine wertende Einschätzung des Sprechers zum Ausdruck, die sich nicht als objektivierbare Tatsachenfeststellung darstellt. Es handelt sich um eine Wertung, die in bildhafter und zugespitzter Form eine negative Bewertung zum Ausdruck bringt. Insofern liegt eine Meinungsäußerung vor. Allerdings enthält die Aussage auch einen tatsächlichen Kern, da sie auf das Verhalten des K Bezug nimmt und diesem bestimmte Eigenschaften (Verwirrtheit, mangelnde Unterscheidungsfähigkeit) zuschreibt. In der Gesamtschau überwiegt das Element der Bewertung, sodass von einer Meinungsäußerung auszugehen ist.
+
+##### 2. Verfassungsrechtlicher Schutz der Äußerung
+
+Meinungsäußerungen unterfallen dem Schutz des Art. 5 I S. 1 GG, für die Presse zusätzlich dem Art. 5 I S. 2 GG. Der Schutzbereich der Meinungsfreiheit umfasst auch polemische, scharfe und überzogene Äußerungen (BVerfGE 93, 266, 289 — Soldaten sind Mörder; BVerfGE 124, 300, 320 — Äußerungsrechtlicher Unterlassungsanspruch).
+
+##### 3. Schmähkritik als Grenze der Meinungsfreiheit
+
+Die Meinungsfreiheit findet ihre Grenze jedoch dort, wo die Äußerung als Schmähkritik zu qualifizieren ist. Schmähkritik liegt vor, wenn die Äußerung nicht mehr der Auseinandersetzung in der Sache dient, sondern allein die Diffamierung und Herabsetzung der Person bezweckt (BVerfGE 82, 272, 283 f.; BVerfGE 93, 266, 294). In diesem Fall tritt die Meinungsfreiheit ohne weitere Abwägung hinter dem Ehrenschutz zurück (BVerfGE 93, 266, 294).
+
+Zur Abgrenzung der Schmähkritik von einer zulässigen, auch polemisch überspitzten Meinungsäußerung ist zu prüfen, ob die Äußerung einen konkreten Sachbezug aufweist. Die Bezeichnung des K als „durchgeknallt“ erfolgt im Kontext einer Auseinandersetzung mit dem Kunstprojekt des K. Der Artikel setzt sich kritisch mit dem Kunstverständnis des K auseinander und zieht das Resümee, K wisse aufgrund seines Kunstprojekts nicht mehr zwischen Privatem und Öffentlichem, Kunst und Leben zu unterscheiden. Insofern besteht ein — wenn auch überspitzter — Sachbezug der Äußerung zu dem diskutierten Kunstprojekt.
+
+Allerdings erschöpft sich der Text nicht in einer sachlichen Kritik. Die Formulierungen „dermaßen durcheinander und verwirrt“, „er ist ein durchgeknallter Künstler“ und das Gesamtfazit des Artikels zielen auf die Pathologisierung und Diskreditierung der Person des K. Das Urteil, K sei psychisch gestört („durchgeknallt“) geht über eine Auseinandersetzung mit seinem Kunstwerk hinaus und trifft den Kernbereich seiner Persönlichkeit.
+
+Für das Vorliegen einer Schmähkritik spricht auch der Duktus des Gesamtartikels, der als „persönliche Beleidigung“ empfunden wird und der das Bild des K auf der Toilette als Beleg für dessen angebliche Verwirrtheit einsetzt. Die Aussage, K sei „durchgeknallt“, postuliert eine psychopathologische Diagnose, die in keiner Weise durch das künstlerische Projekt gedeckt ist und die Person des K in ihrem Kern abwertet. Die Äußerung dient nicht der Kritik am Kunstwerk, sondern der Herabsetzung des Künstlers als Person (BVerfGE 93, 266, 294).
+
+Andererseits ist die Rechtsprechung des BVerfG zur Schmähkritik zurückhaltend (vgl. BVerfG, NJW 2020, 2629 Rn. 28 — „durchgeknallte Staatsanwältin“). Die Annahme einer Schmähkritik setzt voraus, dass die Diffamierung der Person gegenüber der Auseinandersetzung in der Sache vollständig in den Hintergrund tritt (BVerfGE 93, 266, 293 f.). Bei der im Kontext der Kunstkritik üblichen pointierten und teilweise polemischen Sprache kann nicht ohne Weiteres von einer Schmähkritik ausgegangen werden.
+
+Vorliegend ist zu berücksichtigen, dass der Artikel zwar eine Auseinandersetzung mit Ks Kunstprojekt zum Gegenstand hat, jedoch in der konkreten Wortwahl und im Gesamtzusammenhang die Ebene der sachlichen Kunstkritik verlässt und primär die Person des K herabwürdigt. Die Begriffe „durchgeknallt“, „durcheinander und verwirrt“ und die bildliche Darstellung des K auf der Toilette zielen in ihrer Gesamtheit darauf ab, K lächerlich zu machen und seine persönliche Integrität zu verletzen. Die Äußerung weist keinen hinreichenden Sachbezug mehr zu dem Kunstprojekt auf, sondern beschränkt sich auf eine persönliche Diffamierung. Bei einer Gesamtwürdigung des Artikels ist die Äußerung daher als Schmähkritik zu werten.
+
+##### 4. Abwägung
+
+Selbst wenn man die Äußerung nicht als Schmähkritik qualifizieren wollte, ergäbe die verfassungsrechtlich gebotene Abwägung zwischen dem APR des K und der Meinungs- und Pressefreiheit der Z ein Überwiegen des APR.
+
+Aufseiten des K ist der Schutz seines APR, insbesondere der Ehrenschutz, betroffen. Die Aussage, er sei ein „durchgeknallter Künstler“, greift in schwerwiegender Weise in sein Persönlichkeitsrecht ein, da sie ihn als psychisch gestört darstellt und damit in seiner sozialen Geltung und seinem Achtungsanspruch herabsetzt (Art. 2 I i.V.m. Art. 1 I GG). Der Eingriff betrifft den Kernbereich des APR.
+
+Aufseiten der Z steht die Meinungs- und Pressefreiheit aus Art. 5 I GG. Die Z ist berechtigt, über das Kunstprojekt des K kritisch zu berichten und dabei auch zugespitzte und polemische Formulierungen zu verwenden. Allerdings findet die Meinungsfreiheit ihre Grenze dort, wo sie in unverhältnismäßiger Weise in das APR eingreift.
+
+Die Aussage, K sei „durchgeknallt“, steht in keinem angemessenen Verhältnis zu dem mit der Berichterstattung verfolgten Zweck. Eine sachliche Kritik an Ks Kunstprojekt wäre ohne die personenbezogene Diffamierung möglich gewesen. Die Äußerung bringt keinen Beitrag zum geistigen Meinungskampf in einer die Öffentlichkeit wesentlich berührenden Frage, sondern führt zu einer nicht gerechtfertigten Herabsetzung des K.
+
+In der Gesamtabwägung überwiegt das APR des K die Meinungs- und Pressefreiheit der Z. Die Äußerung ist rechtswidrig.
+
+#### III. Wiederholungsgefahr
+
+Die Wiederholungsgefahr wird durch die bereits erfolgte Rechtsverletzung indiziert und ist mangels Unterlassungsbereitschaft der Z gegeben.
+
+#### IV. Zwischenergebnis
+
+K hat gegen Z einen Anspruch auf Unterlassung der Behauptung, er sei ein „durchgeknallter Künstler“, aus §§ 1004 I 2 BGB analog i.V.m. § 823 I BGB wegen Verletzung des APR in Form des Ehrenschutzes.
+
+---
+
+### C. Ergebnis zu Teil 2
+
+K steht gegen Z ein Anspruch auf Unterlassung der erneuten Verbreitung des Fotos sowie ein Anspruch auf Unterlassung der Behauptung, er sei ein „durchgeknallter Künstler“, zu.
+
+---
+
+## Gesamtergebnis
+
+1. N hat gegen P-Scope einen Anspruch auf Unterlassung der weiteren Ausstrahlung des Livestreams des K insoweit, als durch die Übertragung in die Privatsphäre der N, namentlich durch Einblicke in ihre Wohnung mittels Zoomfunktion, ihr APR verletzt wird.
+
+2. K hat gegen Z einen Anspruch auf Unterlassung der erneuten Verbreitung des ihn auf der Toilette zeigenden Fotos sowie einen Anspruch auf Unterlassung der Behauptung, er sei ein „durchgeknallter Künstler“.
