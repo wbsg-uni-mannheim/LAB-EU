@@ -78,8 +78,10 @@ env/bin/python scripts/run_lawyer_workbench.py
 ```
 
 Then open `http://127.0.0.1:5050`. The server listens on the local loopback
-interface only. See [LAWYER_WORKBENCH_PLAN.md](LAWYER_WORKBENCH_PLAN.md) for the
-workflow, safety boundaries, and planned task-authoring phase.
+interface only. See [workbench/README.md](workbench/README.md) for the complete
+installation and study guide. See
+[LAWYER_WORKBENCH_PLAN.md](LAWYER_WORKBENCH_PLAN.md) for the architecture,
+safety boundaries, and planned task-authoring phase.
 
 See [scripts/README.md](scripts/README.md) for the OpenCode agent harness and the
 single-LLM-call baseline, and [docs/leakage-and-contamination.md](docs/leakage-and-contamination.md)
