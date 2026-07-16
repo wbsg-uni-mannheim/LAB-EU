@@ -1,0 +1,30 @@
+You are solving one LAB-EU legal benchmark task in a single response.
+
+Current date: 2026-07-11
+
+You may use only the material below. Do not use external legal sources or search.
+
+Task id:
+de/zjs/oeffentliches-recht/staatsrecht/ubungsfall-der-atomkonsens
+
+Task title:
+Übungsfall: Der Atomkonsens
+
+Work type:
+draft
+
+Task instructions:
+Bearbeiten Sie den Fall gutachterlich. Erstellen Sie eine vollständige Falllösung auf Grundlage des Sachverhalts in documents/sachverhalt.md.
+
+Documents:
+
+### documents/sachverhalt.md
+
+# Sachverhalt
+
+Sachverhalt Im Kernkraftwerk K im Bundesland L kommt es Anfang des Jahres zu einem Störfall, bei dem an zwei Stellen Druckleitungen des Kühlsystems platzen. Das Kraftwerk wird sofort abgeschaltet. Hinzugezogene Fachleute halten es für ausreichend, die beiden defekten Rohrteile zu ersetzen. Nachdem die Reparatur ausgeführt worden ist, hat die zuständige Ministerin des Landes L zunächst Bedenken, die Wiederaufnahme des Betriebes zuzulassen. Sie fordert eine Stellungnahme ihres Ministerialdirigenten D an, des Leiters der Abteilung Reaktorsicherheit. Als dieser die Wiederinbetriebnahme des Kraftwerks befürwortet, bereitet die Landesministerin eine entsprechende Entscheidung vor. Der Bundesminister für Umwelt, Naturschutz und Reaktorsicherheit hält diese Maßnahme vor dem Hintergrund eigener Untersuchungen seines Ministeriums für voreilig, zumal die Bundesregierung soeben den „Einstieg in den Ausstieg“ beschlossen hat. Er fordert die Landesministerin auf, die Gestattung der Wiederaufnahme des Kraftwerkbetriebes nicht zu erteilen, was diese unter Hinweis auf die Grundrechte des Kraftwerksbetreibers jedoch ablehnt. Ein Gespräch zwischen beiden Ministern, bei dem der Bundesminister sein Weisungsrecht betont, führt zu keinem Einvernehmen darüber, ob Grundrechte und das Atomgesetz einer Stilllegung entgegenstehen. Im Mai weist der Bundesminister die Landesministerin daher an, - die Gestattung der Wiederaufnahme des Kraftwerkbetriebes des Kraftwerks K erst nach bundesaufsichtlicher Zustimmung zu erteilen sowie - den Ministerialdirigenten D abzulösen und ihm einen Dienstposten außerhalb der Abteilung Reaktorsicherheit zuzuweisen. Zeitgleich treibt die Bundesregierung ihre Bemühungen um einen Atomausstieg voran. Im Juni paraphieren Vertreter von vier Energieversorgungsunternehmen (zu denen auch der Betreiber des Kernkraftwerks K gehört) und der Bundesregierung eine Vereinbarung zur schrittweisen Stilllegung der deutschen Atomkraftwerke. Der Text der Vereinbarung wird den Umweltministerien der Länder durch das BMU „zur Kenntnis“ übersandt. Der Bund beteiligt das Land L jedoch weder an den vorausgehenden Gesprächen noch am Abschluss der Vereinbarung. In der Vereinbarung wird als Anlage 2 unter der Überschrift „Sicherheitsstandards/Staatliche Aufsicht“ betreffend das Kernkraftwerk K Folgendes ausgeführt: „Das BMU wird gegenüber der zuständigen Genehmigungsbehörde des Landes Maßnahmen zur Beschleunigung der Genehmigungsverfahren festlegen; dazu gehören eine Strukturierung der Verfahren und eine Definition der Bewertungsmaßstäbe. Unter der Voraussetzung einer (näher bestimmten) Erklärung des Betreibers wird binnen drei Monaten über ein Nachrüstungsprogramm entschieden, das sowohl den sicheren Betrieb gewährleistet als auch in angemessenem Verhältnis zur Restnutzung steht. Die nachträglichen Auflagen werden in diesem Fall angepasst.“ Die Landesregierung ist von diesem Vorgehen empört. Bereits die Weisung hält sie für rechtswidrig. Die Nichterteilung der Genehmigung verstoße gegen das Atomgesetz und die Grundrechte des Betreibers. Darin liege auch ein Verstoß gegen die Rechte des Landes L aus Art. 85 Abs. 3 GG. Schließlich verletze auch die einschlägige Passage im Atomkonsens das Land L in seinen Rechten. Art. 85 Abs. 3 GG sei keine Regelung, die dem Bund die Ausübung staatlicher Befugnisse und die Erfüllung staatlicher Aufgaben im Außenverhältnis Dritten gegenüber erlaube. Auch insofern liege ein Verstoß gegen das Grundgesetz vor. Das Land L wendet sich daher im August mit einem Antrag an das Bundesverfassungsgericht gegen die Weisung sowie die das Kernkraftwerk K betreffenden Passagen des Atomkonsenses. Bearbeitervermerk: Hat der Antrag Erfolg?
+
+
+Write the complete deliverable now, as Markdown. Your entire response will be saved verbatim as the file "fallloesung.md" and evaluated as the final legal work product. Do not include any preamble, meta commentary about your approach, or closing remarks - only the document itself.
+
+Write in the same language as the task instructions and documents, unless the instructions require a different language. The deliverable must be a complete, self-contained legal document. Cite the provisions you rely on precisely.
