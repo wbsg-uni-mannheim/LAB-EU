@@ -131,16 +131,24 @@ Categories are still valuable for reporting, so tagging happens in a separate pa
 Germany has no single official assessment taxonomy for legal exams - grading under the 1981 Noten- und Punkteverordnung is holistic. The two structures every German lawyer knows are used instead:
 
 - `function`: the kind of legal work checked, following the Gutachtenstil steps plus structure and form: `structure`, `legal_basis`, `rule_statement`, `application`, `argumentation`, `conclusion`, `form_citation`. This maps onto the French syllogisme juridique (majeure = rule_statement, mineure = application, conclusion), so the axis is jurisdiction-portable.
-- `station_path`: where the criterion sits in the case's own Prüfungsaufbau, in the case language, e.g. `["Zulässigkeit", "Klagebefugnis"]` or `["Begründetheit", "Materielle Rechtmäßigkeit", "Verhältnismäßigkeit"]`. Stations are derived per case, not from a global list.
+- `outline_id` / `station_path`: where the criterion sits in the case's own Prüfungsaufbau. A dedicated `extract_outline` step first freezes the solution's own Gliederung as a tree in `rubric.json` (ids follow the solution's markers: "A", "A.I", "A.I.1", ...; "Ü" is reserved for cross-cutting criteria). The tagger then picks a node id instead of inventing labels; `station_path` (the full label path) is derived from the tree, so labels stay consistent and arbitrarily deep. Solutions without explicit structure get a reconstructed shallow outline marked `derived`.
 
-`evaluation.run` aggregates verdicts into `breakdown_by_station` and `breakdown_by_function` in `scores.json` whenever the rubric carries tags.
+The same pass also rates each criterion's importance for this case as `criticality` 1-3 (top-level criterion field, not inside `analysis_tags`):
+
+- `3` ergebnistragend: the few points the case is decided by - correct Klageart/Grundlage, the decisive contested points, the final result. Hard budget: ~10-15% of criteria (typically 5-12). Test: missing this single point would make an examiner fail the whole solution.
+- `2` wichtig: the default for every real legal step; expected in a solid solution; missing it costs substance but the Gutachten stands.
+- `1` eher unwichtig: details, form/citation, bonus knowledge.
+
+Criticality is assigned after calibration on the frozen criteria, so it cannot bias generation. It is currently non-scoring (all-pass stays the headline metric) but is reported everywhere: `breakdown_by_criticality` in `scores.json`, per-criterion stars in `review.md`, and a legend plus per-criterion tier in `rubric-review.md`. Before tagging, the pipeline-internal `criticality` string (`must_pass`/`diagnostic`) is only a keep/drop signal for the pruner; the tag pass overwrites it with the 1-3 tier.
+
+`evaluation.run` aggregates verdicts into `breakdown_by_station`, `breakdown_by_function`, and `breakdown_by_criticality` in `scores.json` whenever the rubric carries tags.
 
 ## Suggested Criterion JSON
 
 ```json
 {
   "id": "C-001",
-  "criticality": "must_pass",
+  "criticality": 3,
   "title": "Identifies the correct action type",
   "match_criteria": "PASS if the answer identifies the claim as a Verpflichtungsklage under Section 42 I Alt. 2 VwGO because J seeks issuance of a deletion order by the authority. FAIL if the answer treats the case primarily as an Anfechtungsklage, Feststellungsklage, or omits the action type.",
   "deliverables": ["fallloesung-sut.md"],
@@ -156,7 +164,7 @@ For EU law, the same shape should work:
 ```json
 {
   "id": "C-007",
-  "criticality": "must_pass",
+  "criticality": 2,
   "title": "Applies proportionality in separate steps",
   "match_criteria": "PASS if the answer analyzes suitability, necessity, and proportionality stricto sensu as distinct steps and applies each step to the facts. FAIL if it only states that the measure is proportionate without separate analysis.",
   "deliverables": ["legal-memo.md"],

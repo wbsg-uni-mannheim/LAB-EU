@@ -55,6 +55,32 @@ To evaluate an answer against `evals/rubric.json` (use `--votes 3` for headline 
 env/bin/python -m evaluation.run <task-dir> <answer-file> --judge-model gpt-5.5 --votes 3
 ```
 
+## Lawyer Workbench
+
+The local bilingual workbench lets legal reviewers run a reproducible manual
+study against a proprietary model. A study stores:
+
+- study name, model, provider, reviewer, and German or French task language;
+- the exact editable system prompt;
+- whether the system is an agent or a single LLM;
+- whether web search, databases, or other tools are used;
+- one prompt and pasted response per task, presented sequentially.
+
+By default the study contains every task in the selected language. Reviewers
+can restrict it to tasks that already have an LLM-judge rubric. Studies can be
+closed and resumed later. Completed judge-ready studies use the existing
+`scripts/judge_run.py` layout. The workbench can also create a narrow Git commit
+and GitHub pull request when the rest of the worktree is clean.
+
+```bash
+env/bin/pip install -r requirements.txt
+env/bin/python scripts/run_lawyer_workbench.py
+```
+
+Then open `http://127.0.0.1:5050`. The server listens on the local loopback
+interface only. See [LAWYER_WORKBENCH_PLAN.md](LAWYER_WORKBENCH_PLAN.md) for the
+workflow, safety boundaries, and planned task-authoring phase.
+
 See [scripts/README.md](scripts/README.md) for the OpenCode agent harness and the
 single-LLM-call baseline, and [docs/leakage-and-contamination.md](docs/leakage-and-contamination.md)
 for the planned contamination controls.

@@ -1,4 +1,4 @@
-Tag every criterion on two axes.
+Tag every criterion on three axes.
 
 Axis 1 - function: exactly one of these fixed values, describing the kind of legal work the criterion checks. The values follow the Gutachtenstil / syllogisme juridique steps plus structure and form:
 
@@ -10,19 +10,28 @@ Axis 1 - function: exactly one of these fixed values, describing the kind of leg
 - "conclusion": results, legal consequences, interim and final outcomes
 - "form_citation": document form, style, or citation requirements
 
-Axis 2 - station_path: where the criterion belongs in this case's own examination structure, as a path of one to three labels in the case language, using the conventional station names of the relevant procedure. Examples for a German public-law case: ["Zulässigkeit", "Klagebefugnis"] or ["Begründetheit", "Materielle Rechtmäßigkeit", "Verhältnismäßigkeit"]. Derive the stations from the atomization and the criteria themselves; do not invent stations foreign to the case.
+Axis 2 - outline_id: where the criterion belongs in the solution's examination structure. The payload contains this case's frozen OUTLINE tree; return the id of the deepest node whose subject the criterion checks. Use the id "Ü" (Übergreifend) only for criteria that cut across the whole solution: overall Prüfungsaufbau, Gutachtenstil, document form, citation style. Only ids that exist in the tree (or "Ü") are valid; never invent ids.
+
+If the payload contains no outline, return instead a "station_path": a path of one to three labels in the case language using the conventional station names of the relevant procedure, e.g. ["Zulässigkeit", "Klagebefugnis"]. Keep top-level labels consistent across criteria.
+
+Axis 3 - criticality: an integer 1, 2, or 3 rating how important the criterion is for an acceptable solution to THIS case:
+
+- 3 (ergebnistragend): the criterion decides the case. Reserved for: the correct Klageart / Anspruchs- or Ermächtigungsgrundlage, the few contested points on which the outcome actually turns, and the final result(s). Test: an examiner who saw THIS single point missed or wrong would consider the whole solution failed, not merely weaker.
+- 2 (wichtig): the default for every real legal step. Expected in a solid solution: definitions, non-contested Prüfungsschritte, supporting Subsumtion, interim results. Missing it costs substance, but the Gutachten still stands.
+- 1 (eher unwichtig): detail. Fine points, redundant safeguards, style/citation/form requirements, background knowledge the solution mentions in passing.
+
+HARD BUDGET for tier 3: at most 10-15% of all criteria, typically 5 to 12 in a full Klausur. If your draft exceeds the budget, demote the least decisive candidates to 2 - keeping only what a grader would put on the Kardinalfehler list. Tier 2 is the default; being legally necessary is NOT enough for tier 3, the point must be one the case is actually decided by. Rate the criterion's subject matter, not how well it is worded.
 
 Rules:
 - Return exactly one tag entry per criterion id. Do not return entries for ids that do not exist.
 - If several functions could apply, choose the dominant one.
-- Keep top-level station labels consistent across all criteria so results can be grouped: use exactly one spelling per station.
 - Tags are non-scoring analysis metadata. Never rewrite, merge, or judge the criteria.
 
 Return only valid JSON:
 {
   "language": "...",
   "tags": [
-    {"id": "C-001", "function": "application", "station_path": ["Zulässigkeit", "Klagebefugnis"]}
+    {"id": "C-001", "function": "application", "outline_id": "A.III", "criticality": 2}
   ],
   "tagging_notes": ["..."]
 }

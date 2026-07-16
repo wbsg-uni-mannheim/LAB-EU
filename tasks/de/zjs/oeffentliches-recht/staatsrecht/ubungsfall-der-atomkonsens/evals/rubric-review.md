@@ -78,7 +78,7 @@ Gem. Art. 85 Abs. 3 GG können Weisungen nur von der zuständigen obersten Bunde
 
 ###### b) Verfahren
 
-Besondere geschriebene Verfahrensvorschriften enthält das Grundgesetz für die Erteilung einer Weisung nach Art. 85 Abs. 3 GG nicht. Es könnten sich aber bestimmte Verfahrenspflichten aus dem in Art. 20 Abs. 1 GG verankerten Bundesstaatsprinzip und dem in ihm verankerten Prinzip der Bundestreue ergeben. Der Grundsatz des bundesfreundlichen Verhaltens wird aus dem Bundesstaatsprinzip abgeleitet und verpflichtet sowohl den Bund als auch die Länder, bei der Wahrnehmung ihrer Kompetenzen die gebotene und ihnen zumutbare Rücksicht auf das Gesamtinteresse des Bundesstaates und auf die Belange der Länder zu nehmen. Dieser Grundsatz kann nicht zur Erweiterung von Kompetenzen herangezogen werden, er setzt jedoch der Ausübung grundgesetzlich gewährter Kompetenzen bestimmte Schranken. Allerdings liegt ein Verstoß gegen den Grundsatz des bundesfreundlichen Verhaltens nicht grundsätzlich schon dann vor, wenn eine dem Bund übertragene Kompetenz in Anspruch genommen wird. Die Inanspruchnahme kann jedoch im konkreten Fall gegen bestimmte verfahrensbezogene Pflichten verstoßen. Aus dem im Prinzip der Bundestreue verankerten Rücksichtnahmegebot folgt als prozedurale Pflicht im Rahmen des Weisungsrechts zunächst die Pflicht des Weisungsgebers, dem Weisungsempfänger vor Erlass der Weisung diese anzukündigen und ihm die Möglichkeit der Stellungnahme zu geben. Abgesehen von Fällen besonderer Eilbedürftigkeit muss dem Land regelmäßig Gelegenheit gegeben werden, seine Auffassung vor Weisungserlass darzulegen; diese Stellungnahme muss vom Bundesminister erwogen werden. Dies ist im vorliegenden Fall im Rahmen mehrerer Gespräche und schriftlicher Stellungnahmen geschehen. Die aus dem Prinzip der Bundestreue folgenden Verfahrensvorschriften wurden also eingehalten. rung kann zu diesem Zwecke Bericht und Vorlage der Akten verlangen und Beauftragte zu allen Behörden entsenden (Art. 85 Abs. 4 S. 2 GG).
+Besondere geschriebene Verfahrensvorschriften enthält das Grundgesetz für die Erteilung einer Weisung nach Art. 85 Abs. 3 GG nicht. Es könnten sich aber bestimmte Verfahrenspflichten aus dem in Art. 20 Abs. 1 GG verankerten Bundesstaatsprinzip und dem in ihm verankerten Prinzip der Bundestreue ergeben. Der Grundsatz des bundesfreundlichen Verhaltens wird aus dem Bundesstaatsprinzip abgeleitet und verpflichtet sowohl den Bund als auch die Länder, bei der Wahrnehmung ihrer Kompetenzen die gebotene und ihnen zumutbare Rücksicht auf das Gesamtinteresse des Bundesstaates und auf die Belange der Länder zu nehmen. Dieser Grundsatz kann nicht zur Erweiterung von Kompetenzen herangezogen werden, er setzt jedoch der Ausübung grundgesetzlich gewährter Kompetenzen bestimmte Schranken. Allerdings liegt ein Verstoß gegen den Grundsatz des bundesfreundlichen Verhaltens nicht grundsätzlich schon dann vor, wenn eine dem Bund übertragene Kompetenz in Anspruch genommen wird. Die Inanspruchnahme kann jedoch im konkreten Fall gegen bestimmte verfahrensbezogene Pflichten verstoßen. Aus dem im Prinzip der Bundestreue verankerten Rücksichtnahmegebot folgt als prozedurale Pflicht im Rahmen des Weisungsrechts zunächst die Pflicht des Weisungsgebers, dem Weisungsempfänger vor Erlass der Weisung diese anzukündigen und ihm die Möglichkeit der Stellungnahme zu geben. Abgesehen von Fällen besonderer Eilbedürftigkeit muss dem Land regelmäßig Gelegenheit gegeben werden, seine Auffassung vor Weisungserlass darzulegen; diese Stellungnahme muss vom Bundesminister erwogen werden. Dies ist im vorliegenden Fall im Rahmen mehrerer Gespräche und schriftlicher Stellungnahmen geschehen. Die aus dem Prinzip der Bundestreue folgenden Verfahrensvorschriften wurden also eingehalten.
 
 ###### c) Form
 
@@ -94,7 +94,7 @@ Fraglich ist zunächst, welche sachliche Reichweite das Weisungsrecht des Bundes
 
 ###### b) Materielle Grenzen des Weisungsrechts
 
-Fraglich ist jedoch schließlich, ob die Rechtmäßigkeit des Inhalts der Weisungsbefugnis weitere, ungeschriebene Grenzen setzt. Da durch eine entsprechende Weisung die Sachkompetenz vom Land auf den Bund übergeht, kann sich das Land grundsätzlich nicht auf die Rechtswidrigkeit des Weisungsinhalts berufen, muss es also grundsätzlich hinnehmen, zu einem rechtswidrigem Verhalten angewiesen zu werden. Denn die dem Land verbleibende Wahrnehmungskompetenz wird von einer rechtswidrigen Weisung nicht betroffen. Zwar muss das Land insoweit im Rahmen des nach außen wirkenden Weisungsvollzugs für den Inhalt einstehen, als es bei gerichtlicher Überprüfung passivlegitimiert ist. Dies ist allerdings nur eine Folge des Auseinanderfallens von Wahrnehmungs- und Sachkompetenz, und auch im Rahmen anderer Auftragsverwaltungen (etwa im kommunalen Bereich) anzutreffen. Die parlamentarische Verantwortlichkeit liegt aber beim zuständigen Bundesminister, und auch die Ausgabenverantwortung liegt beim Bund, Art. 104a Abs. 2 und Abs. 5 S. 1 GG. Im vorliegenden Fall berührt ein etwaiger Verstoß der Weisung gegen das Atomrecht oder die Grundrechte des Betreibers die materielle Verfassungsmäßigkeit der Weisung daher grundsätzlich nicht. Eine Ausnahme von diesem Grundsatz und damit eine Grenze der alleinigen Sachverantwortlichkeit des Bundes im Rahmen der Bundesauftragsverwaltung „ergibt sich allerdings in dem äußersten Fall, dass eine zuständige oberste Bundesbehörde unter grober Missachtung der ihr obliegenden Obhutspflicht zu einem Tun oder Unterlassen anweist, welches im Hinblick auf die damit einhergehende allgemeine Gefährdung oder Verletzung bedeutender Rechtsgüter schlechterdings nicht verantwortet werden kann. Diese Grenze folgt daraus, dass bei der Ausführung der Bundesgesetze Bund und Länder – unbeschadet bestehender Kompetenzverteilungen – eine gemeinsame Verantwortung für den Bestand des Staates und seiner Verfassungsordnung sowie für die Abwehr kollektiver Existenzgefährdungen tragen.“ Für eine solche Unverantwortlichkeit der Entscheidung des Bundesumweltministers gibt es hier keinerlei Anhaltspunkte, so dass auch die materiellen Grenzen des Weisungsrechts gewahrt wurden. kommen des Sachurteils insoweit keine Verantwortung mehr. Der Umfang, innerhalb dessen die Sachkompetenz auf den Bund übertragen werden kann, ist dabei umfassend zu verstehen. So kann Gegenstand einer Weisung nicht nur eine konkrete, gegenüber einem Dritten zu erlassende Entscheidung sein, sondern etwa auch die Art und Weise der Sachverhaltsermittlung und Sachverhaltsbewertung. Gleiches gilt auch für die Gesetzesauslegung als normative Seite der Gesetzesanwendung. Denn auch bei der Gewinnung der rechtlichen Maßstäbe steht dem Bund ein umfassendes Aufsichts- und damit korrespondierend ein Weisungsrecht zu. Auch die Festlegung auf eine bestimmte Gesetzesauslegung ist mithin von der Weisungskompetenz umfasst.
+Fraglich ist jedoch schließlich, ob die Rechtmäßigkeit des Inhalts der Weisungsbefugnis weitere, ungeschriebene Grenzen setzt. Da durch eine entsprechende Weisung die Sachkompetenz vom Land auf den Bund übergeht, kann sich das Land grundsätzlich nicht auf die Rechtswidrigkeit des Weisungsinhalts berufen, muss es also grundsätzlich hinnehmen, zu einem rechtswidrigem Verhalten angewiesen zu werden. Denn die dem Land verbleibende Wahrnehmungskompetenz wird von einer rechtswidrigen Weisung nicht betroffen. Zwar muss das Land insoweit im Rahmen des nach außen wirkenden Weisungsvollzugs für den Inhalt einstehen, als es bei gerichtlicher Überprüfung passivlegitimiert ist. Dies ist allerdings nur eine Folge des Auseinanderfallens von Wahrnehmungs- und Sachkompetenz, und auch im Rahmen anderer Auftragsverwaltungen (etwa im kommunalen Bereich) anzutreffen. Die parlamentarische Verantwortlichkeit liegt aber beim zuständigen Bundesminister, und auch die Ausgabenverantwortung liegt beim Bund, Art. 104a Abs. 2 und Abs. 5 S. 1 GG. Im vorliegenden Fall berührt ein etwaiger Verstoß der Weisung gegen das Atomrecht oder die Grundrechte des Betreibers die materielle Verfassungsmäßigkeit der Weisung daher grundsätzlich nicht. Eine Ausnahme von diesem Grundsatz und damit eine Grenze der alleinigen Sachverantwortlichkeit des Bundes im Rahmen der Bundesauftragsverwaltung „ergibt sich allerdings in dem äußersten Fall, dass eine zuständige oberste Bundesbehörde unter grober Missachtung der ihr obliegenden Obhutspflicht zu einem Tun oder Unterlassen anweist, welches im Hinblick auf die damit einhergehende allgemeine Gefährdung oder Verletzung bedeutender Rechtsgüter schlechterdings nicht verantwortet werden kann. Diese Grenze folgt daraus, dass bei der Ausführung der Bundesgesetze Bund und Länder – unbeschadet bestehender Kompetenzverteilungen – eine gemeinsame Verantwortung für den Bestand des Staates und seiner Verfassungsordnung sowie für die Abwehr kollektiver Existenzgefährdungen tragen.“ Für eine solche Unverantwortlichkeit der Entscheidung des Bundesumweltministers gibt es hier keinerlei Anhaltspunkte, so dass auch die materiellen Grenzen des Weisungsrechts gewahrt wurden.
 
 ##### 4. Zwischenergebnis
 
@@ -184,19 +184,13 @@ Der Antrag ist daher zulässig, aber unbegründet. Er wird keinen Erfolg haben.
 
 ## Rubrics For Review
 
-**Generated at:** 2026-07-09T21:13:38.008111+00:00
-
-**Review status:** generated_calibrated_needs_human_review
-
-**Language:** Deutsch
-
 **Number of criteria:** 103
 
 **Wichtigkeit (Kritikalität):**
 
-- ★★★ zentral - muss enthalten sein: 47 Kriterien
-- ★★ wichtig - in einer soliden Lösung erwartet: 44 Kriterien
-- ★ eher unwichtig - Detail, Form, Bonuswissen: 12 Kriterien
+- ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt): 12 Kriterien
+- ★★ wichtig - in einer soliden Lösung erwartet: 86 Kriterien
+- ★ eher unwichtig - Detail, Form, Bonuswissen: 5 Kriterien
 
 ### Erster Teil Weisung des BMU
 
@@ -206,7 +200,7 @@ Der Antrag ist daher zulässig, aber unbegründet. Er wird keinen Erfolg haben.
 
 ###### C-002 - BVerfG-Zuständigkeit für den Weisungsantrag
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -272,7 +266,7 @@ ERFÜLLT, wenn die Antwort für die Antragsbefugnis nach §§ 69, 64 Abs. 1 BVer
 
 ###### C-007 - Art. 85 GG als Landesrecht
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -358,7 +352,7 @@ ERFÜLLT, wenn die Antwort mangels gegenteiliger Sachverhaltsangaben davon ausge
 
 ###### C-014 - Sechsmonatsfrist im Bund-Länder-Streit
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -370,7 +364,7 @@ ERFÜLLT, wenn die Antwort die Frist im Bund-Länder-Streit nach §§ 69 i.V.m. 
 
 ###### C-015 - Frist des Weisungsantrags gewahrt
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -384,7 +378,7 @@ ERFÜLLT, wenn die Antwort die Sechsmonatsfrist für den Antrag gegen die Mai-We
 
 ##### C-016 - Getrennte Prüfung der beiden Teilweisungen
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -424,7 +418,7 @@ ERFÜLLT, wenn die Antwort das Genehmigungsverfahren für die Wiederinbetriebnah
 
 ###### C-019 - Atomrecht als Bundesauftragsverwaltung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -436,7 +430,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass das Atomrecht nach Art. 87c GG i.V.m
 
 ###### C-020 - Art. 85 Abs. 3 GG trägt die Wiedergestattungsweisung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -478,7 +472,7 @@ ERFÜLLT, wenn die Antwort die Landesministerin des Landes L als richtige oberst
 
 ###### C-023 - Keine geschriebenen Spezialverfahrensregeln für Weisungen
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -564,7 +558,7 @@ ERFÜLLT, wenn die Antwort für Weisungen nach Art. 85 Abs. 3 GG ein Bestimmthei
 
 ###### C-030 - Wiedergestattungsweisung hinreichend bestimmt
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -592,7 +586,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass dem Bund in der Bundesauftragsverwal
 
 ###### C-032 - Rechtsaufsicht des Bundes in der Auftragsverwaltung
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -604,7 +598,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass dem Bund in der Bundesauftragsverwal
 
 ###### C-033 - Weisungsrecht umfasst die Sachentscheidung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -628,7 +622,7 @@ ERFÜLLT, wenn die Antwort das Weisungsrecht des Bundes aus Art. 85 Abs. 3 GG au
 
 ###### C-035 - Begriff der Wahrnehmungskompetenz
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -640,7 +634,7 @@ ERFÜLLT, wenn die Antwort die Wahrnehmungskompetenz im Rahmen von Art. 85 GG al
 
 ###### C-036 - Wahrnehmungskompetenz bleibt exklusiv beim Land
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -652,7 +646,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass die Wahrnehmungskompetenz in der Bun
 
 ###### C-037 - Kein eigener Außenbescheid des Bundes gegenüber dem Betreiber
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -664,7 +658,7 @@ ERFÜLLT, wenn die Antwort klarstellt, dass der Bund gegenüber dem Betreiber de
 
 ###### C-038 - Begriff der Sachkompetenz
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -688,7 +682,7 @@ ERFÜLLT, wenn die Antwort ausführt, dass die Sachkompetenz in der Bundesauftra
 
 ###### C-040 - Bund kann Sachkompetenz an sich ziehen
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -700,7 +694,7 @@ ERFÜLLT, wenn die Antwort den Bund in der Bundesauftragsverwaltung grundsätzli
 
 ###### C-041 - BMU handelte bei Wiedergestattungsweisung nicht nach außen
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -712,7 +706,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass der Bundesumweltminister mit der Wei
 
 ###### C-042 - Wiedergestattungsweisung betrifft Sachkompetenz
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -762,7 +756,7 @@ ERFÜLLT, wenn die Antwort anerkennt, dass der Bund in der Auftragsverwaltung du
 
 ###### C-046 - Land kann Inhaltsrechtswidrigkeit grundsätzlich nicht rügen
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -774,7 +768,7 @@ ERFÜLLT, wenn die Antwort im Bund-Länder-Streit aus Art. 85 GG ableitet, dass 
 
 ###### C-047 - Atomrechtswidrigkeit der Weisung grundsätzlich unbeachtlich
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -786,7 +780,7 @@ ERFÜLLT, wenn die Antwort erklärt, dass ein etwaiger Verstoß der Wiedergestat
 
 ###### C-048 - Betreibergrundrechte grundsätzlich keine Landesrechtsverletzung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -826,7 +820,7 @@ ERFÜLLT, wenn die Antwort für die Weisung zur Wiederaufnahme des Betriebs von 
 
 ###### C-051 - Art. 85 Abs. 3 GG nur für Sachkompetenz
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -838,7 +832,7 @@ ERFÜLLT, wenn die Antwort Art. 85 Abs. 3 GG auf Weisungen zur Sachkompetenz, al
 
 ###### C-052 - Ablösung des D als Personalmaßnahme
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -850,7 +844,7 @@ ERFÜLLT, wenn die Antwort die Weisung, Ministerialdirigent D als Leiter der Abt
 
 ###### C-053 - Personal- und Organisationsfragen als Landeskompetenz
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -874,7 +868,7 @@ ERFÜLLT, wenn die Antwort begründet, dass die Bundesauftragsverwaltung trotz B
 
 ###### C-055 - Art. 85 Abs. 3 GG trägt die D-Ablösung nicht
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -900,7 +894,7 @@ ERFÜLLT, wenn die Antwort Art. 85 Abs. 2 Satz 3 GG zutreffend als Vorschrift ü
 
 ###### C-057 - Art. 85 Abs. 2 Satz 3 GG begründet kein Weisungsrecht
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -924,7 +918,7 @@ ERFÜLLT, wenn die Antwort Ministerialdirigent D als Beamten einer obersten Land
 
 ###### C-059 - Art. 85 Abs. 2 GG betrifft die Bundesregierung
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -936,7 +930,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass Art. 85 Abs. 2 GG Kompetenzen der Bunde
 
 ###### C-060 - Art. 85 Abs. 2 Satz 3 GG trägt die D-Ablösung nicht
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -974,7 +968,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass eine Organisationsregelung nach Art.
 
 ###### C-063 - Art. 85 Abs. 1 GG trägt die D-Ablösung nicht
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -988,7 +982,7 @@ ERFÜLLT, wenn die Antwort die Weisung zur Ablösung des D nicht auf Art. 85 Abs
 
 ###### C-064 - Personalweisung zu D verfassungswidrig
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1000,7 +994,7 @@ ERFÜLLT, wenn die Antwort die Weisung des Bundesumweltministers, Ministerialdir
 
 ###### C-065 - Landesrechtsverletzung durch Personalweisung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1018,7 +1012,7 @@ ERFÜLLT, wenn die Antwort annimmt, dass die verfassungswidrige Weisung zur Abl�
 
 ###### C-066 - BVerfG-Zuständigkeit für den Atomkonsensantrag
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1070,7 +1064,7 @@ ERFÜLLT, wenn die Antwort als Antragsgegenstand im Bund-Länder-Streit nach §�
 
 ###### C-070 - Informelles Staatshandeln kann rechtserheblich sein
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1082,7 +1076,7 @@ ERFÜLLT, wenn die Antwort anerkennt, dass informelles Staatshandeln rechtserheb
 
 ###### C-071 - Atomkonsens als tauglicher Antragsgegenstand
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1096,7 +1090,7 @@ ERFÜLLT, wenn die Antwort die das Kernkraftwerk K betreffenden Passagen des im 
 
 ###### C-072 - Mögliche Verletzung durch den Atomkonsens
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1122,7 +1116,7 @@ ERFÜLLT, wenn die Antwort mangels entgegenstehender Angaben im Sachverhalt davo
 
 ###### C-074 - Frist des Atomkonsensantrags gewahrt
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1138,7 +1132,7 @@ ERFÜLLT, wenn die Antwort die Sechsmonatsfrist für den Antrag gegen den im Jun
 
 ###### C-075 - Atomkonsens als informelles Verwaltungshandeln
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1162,7 +1156,7 @@ ERFÜLLT, wenn die Antwort bei der Kompetenzprüfung des Atomkonsenses von Art. 
 
 ###### C-077 - Atomkonsens ist keine direkte Weisung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1174,23 +1168,11 @@ ERFÜLLT, wenn die Antwort Art. 85 Abs. 3 GG nicht als unmittelbare Ermächtigun
 
 ###### C-078 - Vorbereitungsbefugnis aus Art. 85 GG
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
 ERFÜLLT, wenn die Antwort Art. 85 GG dahin versteht, dass der Bund über förmliche Weisungen hinaus vorbereitende Aktivitäten zur effektiven Ausübung seines Direktions- und Weisungsrechts entfalten darf. NICHT ERFÜLLT, wenn sie dem Bund jede vorbereitende Tätigkeit außerhalb einer förmlichen Weisung abspricht.
-
-**Review notes**
-
-- (none)
-
-###### C-079 - Wahrnehmungskompetenz als Grenze vorbereitender Bundesaktivitäten
-
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
-
-**Match criteria**
-
-ERFÜLLT, wenn die Antwort vorbereitende oder informelle Aktivitäten des Bundes nach Art. 85 GG nur zulässt, soweit sie die unentziehbare Wahrnehmungskompetenz des Landes L nicht verletzen. NICHT ERFÜLLT, wenn sie die Vorbereitungsbefugnis des Bundes als schrankenlos behandelt.
 
 **Review notes**
 
@@ -1212,7 +1194,7 @@ ERFÜLLT, wenn die Antwort unmittelbare Kontakte des Bundes zu betroffenen Dritt
 
 ###### C-081 - Informelle Dritt-Absprachen als Sachkompetenz möglich
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1224,7 +1206,7 @@ ERFÜLLT, wenn die Antwort informelle Absprachen des Bundes mit betroffenen Drit
 
 ###### C-082 - Überleitung der Sachkompetenz erforderlich
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1248,7 +1230,7 @@ ERFÜLLT, wenn die Antwort ausführt, dass bei einer klassischen Weisung nach Ar
 
 ###### C-084 - Mai-Weisung als Inanspruchnahme der Sachkompetenz
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1298,6 +1280,18 @@ ERFÜLLT, wenn die Antwort für die Überleitung der Sachkompetenz vor dem Atomk
 
 ##### Zweiter Teil.B.III.1 Verletzung der Wahrnehmungskompetenz
 
+###### C-079 - Wahrnehmungskompetenz als Grenze vorbereitender Bundesaktivitäten
+
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort vorbereitende oder informelle Aktivitäten des Bundes nach Art. 85 GG nur zulässt, soweit sie die unentziehbare Wahrnehmungskompetenz des Landes L nicht verletzen. NICHT ERFÜLLT, wenn sie die Vorbereitungsbefugnis des Bundes als schrankenlos behandelt.
+
+**Review notes**
+
+- (none)
+
 ###### C-089 - Außenkontakt verletzt Wahrnehmungskompetenz nicht automatisch
 
 **Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
@@ -1312,7 +1306,7 @@ ERFÜLLT, wenn die Antwort klarstellt, dass nicht jedes Tätigwerden des Bundes 
 
 ###### C-090 - Rechtsverbindliches Bundeshandeln verletzt Wahrnehmungskompetenz
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1336,7 +1330,7 @@ ERFÜLLT, wenn die Antwort auch Erklärungen des Bundes, die einer rechtsverbind
 
 ###### C-092 - Einordnung der K-Passage im Atomkonsens
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1348,7 +1342,7 @@ ERFÜLLT, wenn die Antwort die K-Passage des Atomkonsenses, wonach das BMU gegen
 
 ###### C-093 - Wahrnehmungskompetenz beim Atomkonsens vertretbar bewertet
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1362,7 +1356,7 @@ ERFÜLLT, wenn die Antwort entweder eine Verletzung der Wahrnehmungskompetenz de
 
 ###### C-088 - Bundestreue als Grenze des Atomkonsenses
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1386,7 +1380,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass die Bundestreue nicht schon dadurch 
 
 ###### C-095 - Maßstab des Bundestreueverstoßes
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1422,7 +1416,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass das Anhörungserfordernis vor Erlass ei
 
 ###### C-098 - Informationspflicht bei möglicher Wahrnehmungsbeeinträchtigung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1434,7 +1428,7 @@ ERFÜLLT, wenn die Antwort beim informellen Staatshandeln eine Informationspflic
 
 ###### C-099 - Anhörungsanforderungen hängen von Bindungswirkung ab
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1458,7 +1452,7 @@ ERFÜLLT, wenn die Antwort bei Annahme bloßer Sachkompetenzausübung ohne verl�
 
 ###### C-101 - Beteiligungspflicht an Atomkonsensverhandlungen vertretbar bewertet
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1470,7 +1464,7 @@ ERFÜLLT, wenn die Antwort entweder bei bloßer unverbindlicher Sachkompetenzaus
 
 ###### C-102 - Ausreichende Information durch die Mai-Weisung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1482,7 +1476,7 @@ ERFÜLLT, wenn die Antwort nach der Hauptlinie annimmt, dass das Land L durch di
 
 ###### C-103 - Bundestreue beim Atomkonsens vertretbar bewertet
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1496,7 +1490,7 @@ ERFÜLLT, wenn die Antwort entweder einen Verstoß gegen die Bundestreue vernein
 
 #### C-001 - Zwei getrennte Streitgegenstände
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 

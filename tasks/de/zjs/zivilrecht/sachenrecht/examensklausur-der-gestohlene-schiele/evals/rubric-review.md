@@ -18,7 +18,7 @@ Bearbeiten Sie den Fall gutachterlich. Erstellen Sie eine vollständige Falllös
 
 # Sachverhalt
 
-Sachverhalt Die vermögende und ortsbekannte Frieda (F) war früh verwitwet. Nach dem Auszug ihrer Kinder Lisa (L) und Mark (M) baute sie sich eine Sammlung von Aquarellen und Gouachen namhafter Künstler auf. Prunkstück ihrer Sammlung war das Ölgemälde „Stehender Akt mit lila Handtuch“ des Expressionisten Egon Schiele mit einem Marktwert von 15 Mio. €. Wie das Werk in ihre Sammlung gelangt war, ist unbekannt. Sicher ist jedoch, dass es sich spätestens in den frühen 1990ern in ihrem Besitz befand. Damals hatte Frieda nämlich gutachtlich ausschließen lassen, dass es sich um NS-Raubkunst handeln könnte. Frieda verstarb am 3.6.1999 bei einem Verkehrsunfall. Wohl von der lokalen Presseberichterstattung auf den Plan gerufen, brachen Kriminelle in der Nacht zum 5.6.1999 in ihr Anwesen ein. Als Lisa mit ihrem Sohn Gustav (G) und Mark das Anwesen ihrer Mutter am 6.6.1999 betraten, fanden sie die Einrichtung demoliert vor. Von dem Ölgemälde fehlte jede Spur. Die Kriminalpolizei vermochte den Einbruch nie aufzuklären. Erst 15 Jahre später tauchte das Gemälde wieder auf, als Roland (R) versuchte, es in der Schweiz in eine Auktion zu geben. Das Auktionshaus schaltete die Staatsanwaltschaft (S) ein, die gegen Roland wegen des Verdachts der Hehlerei ermittelte. Am 1.10.2015 wurden die Räumlichkeiten des Roland durchsucht und dabei auch das Gemälde – ordnungsgemäß – zu Beweiszwecken beschlagnahmt. Seitdem befindet es sich in der Asservatenkammer der Staatsanwaltschaft. Deren Ermittlungen ergaben, dass Roland es am 30.9.2005 im Antiquariat der schwerpunktmäßig mit Gemälde handelnden Wilma e.K. (W) für 2.000 € gekauft hatte. Roland muss der deutlich höhere Wert des Gemäldes bewusst gewesen sein. Er hat es nämlich umgehend in seinem Safe deponiert und eine teure Versicherung dafür abgeschlossen. Gegenüber dem Schweizer Auktionshaus hat er 2015 angegeben, aus dem Verkauf einen Erlös von mindestens 100.000 € erzielen zu Dr. Guido Pfeifer) der Goethe-Universität Frankfurt am Main. Der Fall wurde im Wintersemester 2020/21 im Klausurenkurs des universitären Repetitoriums gestellt. wollen. Am 2.2.2016 wurde das Ermittlungsverfahren mangels hinreichenden Tatverdachts eingestellt. Der im Ermittlungsverfahren als Zeuge vernommene Mark streitet seitdem mit Roland, an wen die Staatsanwaltschaft das Gemälde auszuhändigen habe. Er stützt sein Begehren auf den Umstand, dass Frieda weder Testament noch Erbvertrag errichtet hat. Lisa habe ihm alle ihre Ansprüche wegen des Gemäldes abgetreten. Sie wollte nämlich, dass Mark sich allein um diese Angelegenheit kümmert. Roland könne nicht Eigentümer des Gemäldes geworden sein. Schon den ihm obliegenden Nachweis seiner Gutgläubigkeit könne er nicht erbringen, weil es sich um ein Kunstwerk handelt, bei dessen Kauf er hätte Erkundigungen einholen müssen. Dessen ungeachtet sei sein Wuchergeschäft mit Wilma ohnehin null und nichtig. Roland meint hingegen, dass schon die von Mark behauptete Abtretung unmöglich gewesen sei. Im Übrigen könne Mark nicht einmal belegen, dass das Gemälde jemals im Eigentum seiner Familie stand. Bis zur Beschlagnahme hatte er, Roland, es jedenfalls selbst im Besitz. Welche Ansprüche Mark nun rund 15 Jahre, nachdem er es erworben hat, darauf überhaupt noch haben will, sei ihm schleierhaft. Frage 1 Kann Mark von der Staatsanwaltschaft Herausgabe des Gemäldes an sich selbst aus § 985 BGB verlangen? Abwandlung Die Staatsanwaltschaft hat das Gemälde infolge der Streitigkeiten zwischen Roland und Mark beim zuständigen Amtsgericht hinterlegt und dabei auf ihr Rücknahmerecht verzichtet. Dabei hat sie sowohl Mark als auch Roland als mögliche Empfangsberechtigte benannt. Frage 2 Welche (zivilrechtlichen) Ansprüche stehen dem Eigentümer (vgl. Frage 1) zu? Zusatzfrage Nehmen Sie Stellung zur These, § 40 Abs. 2 KGSG schließe den gutgläubigen Erwerb abhandengekommener Kulturgüter auch im Rahmen einer öffentlichen Versteigerung i.S.d. § 935 Abs. 2 BGB aus. Bearbeitervermerk 1. Der Beurteilung aller in der Vergangenheit liegenden Ereignisse ist die aktuelle Rechtslage zugrunde zu legen. Vorschriften des Denkmal- und Kulturgüterschutzrechts sind nur im Rahmen der Zusatzfrage zu erörtern. 2. Die Prüfung von Vorschriften der StPO ist erlassen. Von der Rechtsfähigkeit der Staatsanwaltschaft ist auszugehen; nach Abschluss des Ermittlungsverfahrens steht ihr kein Besitzrecht zu. Die Rückgabe zu Beweiszwecken beschlagnahmter Gegenstände erfolgt kraft öffentlichen Rechts grundsätzlich an den letzten Gewahrsamsinhaber. Die einschlägigen Vorschriften hindern die Geltendmachung von § 985 BGB nicht. Hinweis: Der Aufgabenstellung war ein Abdruck der §§ 21 Abs. 1, 22 Abs. 2 HessHintG, des § 40 KGSG (Sartorius Nr. 510) sowie von BT-Drs. 18/7456, S. 96 beigefügt.
+Sachverhalt Die vermögende und ortsbekannte Frieda (F) war früh verwitwet. Nach dem Auszug ihrer Kinder Lisa (L) und Mark (M) baute sie sich eine Sammlung von Aquarellen und Gouachen namhafter Künstler auf. Prunkstück ihrer Sammlung war das Ölgemälde „Stehender Akt mit lila Handtuch“ des Expressionisten Egon Schiele mit einem Marktwert von 15 Mio. €. Wie das Werk in ihre Sammlung gelangt war, ist unbekannt. Sicher ist jedoch, dass es sich spätestens in den frühen 1990ern in ihrem Besitz befand. Damals hatte Frieda nämlich gutachtlich ausschließen lassen, dass es sich um NS-Raubkunst handeln könnte. Frieda verstarb am 3.6.1999 bei einem Verkehrsunfall. Wohl von der lokalen Presseberichterstattung auf den Plan gerufen, brachen Kriminelle in der Nacht zum 5.6.1999 in ihr Anwesen ein. Als Lisa mit ihrem Sohn Gustav (G) und Mark das Anwesen ihrer Mutter am 6.6.1999 betraten, fanden sie die Einrichtung demoliert vor. Von dem Ölgemälde fehlte jede Spur. Die Kriminalpolizei vermochte den Einbruch nie aufzuklären. Erst 15 Jahre später tauchte das Gemälde wieder auf, als Roland (R) versuchte, es in der Schweiz in eine Auktion zu geben. Das Auktionshaus schaltete die Staatsanwaltschaft (S) ein, die gegen Roland wegen des Verdachts der Hehlerei ermittelte. Am 1.10.2015 wurden die Räumlichkeiten des Roland durchsucht und dabei auch das Gemälde – ordnungsgemäß – zu Beweiszwecken beschlagnahmt. Seitdem befindet es sich in der Asservatenkammer der Staatsanwaltschaft. Deren Ermittlungen ergaben, dass Roland es am 30.9.2005 im Antiquariat der schwerpunktmäßig mit Gemälde handelnden Wilma e.K. (W) für 2.000 € gekauft hatte. Roland muss der deutlich höhere Wert des Gemäldes bewusst gewesen sein. Er hat es nämlich umgehend in seinem Safe deponiert und eine teure Versicherung dafür abgeschlossen. Gegenüber dem Schweizer Auktionshaus hat er 2015 angegeben, aus dem Verkauf einen Erlös von mindestens 100.000 € erzielen zu wollen. Am 2.2.2016 wurde das Ermittlungsverfahren mangels hinreichenden Tatverdachts eingestellt. Der im Ermittlungsverfahren als Zeuge vernommene Mark streitet seitdem mit Roland, an wen die Staatsanwaltschaft das Gemälde auszuhändigen habe. Er stützt sein Begehren auf den Umstand, dass Frieda weder Testament noch Erbvertrag errichtet hat. Lisa habe ihm alle ihre Ansprüche wegen des Gemäldes abgetreten. Sie wollte nämlich, dass Mark sich allein um diese Angelegenheit kümmert. Roland könne nicht Eigentümer des Gemäldes geworden sein. Schon den ihm obliegenden Nachweis seiner Gutgläubigkeit könne er nicht erbringen, weil es sich um ein Kunstwerk handelt, bei dessen Kauf er hätte Erkundigungen einholen müssen. Dessen ungeachtet sei sein Wuchergeschäft mit Wilma ohnehin null und nichtig. Roland meint hingegen, dass schon die von Mark behauptete Abtretung unmöglich gewesen sei. Im Übrigen könne Mark nicht einmal belegen, dass das Gemälde jemals im Eigentum seiner Familie stand. Bis zur Beschlagnahme hatte er, Roland, es jedenfalls selbst im Besitz. Welche Ansprüche Mark nun rund 15 Jahre, nachdem er es erworben hat, darauf überhaupt noch haben will, sei ihm schleierhaft. Frage 1 Kann Mark von der Staatsanwaltschaft Herausgabe des Gemäldes an sich selbst aus § 985 BGB verlangen? Abwandlung Die Staatsanwaltschaft hat das Gemälde infolge der Streitigkeiten zwischen Roland und Mark beim zuständigen Amtsgericht hinterlegt und dabei auf ihr Rücknahmerecht verzichtet. Dabei hat sie sowohl Mark als auch Roland als mögliche Empfangsberechtigte benannt. Frage 2 Welche (zivilrechtlichen) Ansprüche stehen dem Eigentümer (vgl. Frage 1) zu? Zusatzfrage Nehmen Sie Stellung zur These, § 40 Abs. 2 KGSG schließe den gutgläubigen Erwerb abhandengekommener Kulturgüter auch im Rahmen einer öffentlichen Versteigerung i.S.d. § 935 Abs. 2 BGB aus. Bearbeitervermerk 1. Der Beurteilung aller in der Vergangenheit liegenden Ereignisse ist die aktuelle Rechtslage zugrunde zu legen. Vorschriften des Denkmal- und Kulturgüterschutzrechts sind nur im Rahmen der Zusatzfrage zu erörtern. 2. Die Prüfung von Vorschriften der StPO ist erlassen. Von der Rechtsfähigkeit der Staatsanwaltschaft ist auszugehen; nach Abschluss des Ermittlungsverfahrens steht ihr kein Besitzrecht zu. Die Rückgabe zu Beweiszwecken beschlagnahmter Gegenstände erfolgt kraft öffentlichen Rechts grundsätzlich an den letzten Gewahrsamsinhaber. Die einschlägigen Vorschriften hindern die Geltendmachung von § 985 BGB nicht. Hinweis: Der Aufgabenstellung war ein Abdruck der §§ 21 Abs. 1, 22 Abs. 2 HessHintG, des § 40 KGSG (Sartorius Nr. 510) sowie von BT-Drs. 18/7456, S. 96 beigefügt.
 
 ## Solution
 
@@ -168,25 +168,19 @@ Hinweis: Diese im Schrifttum umstrittene Frage ist höchstrichterlich nicht ents
 
 ## Rubrics For Review
 
-**Generated at:** 2026-07-09T20:00:56.896402+00:00
-
-**Review status:** generated_calibrated_needs_human_review
-
-**Language:** Deutsch
-
 **Number of criteria:** 71
 
 **Wichtigkeit (Kritikalität):**
 
-- ★★★ zentral - muss enthalten sein: 26 Kriterien
-- ★★ wichtig - in einer soliden Lösung erwartet: 39 Kriterien
-- ★ eher unwichtig - Detail, Form, Bonuswissen: 6 Kriterien
+- ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt): 7 Kriterien
+- ★★ wichtig - in einer soliden Lösung erwartet: 64 Kriterien
+- ★ eher unwichtig - Detail, Form, Bonuswissen: 0 Kriterien
 
 ### F1 Anspruch auf Herausgabe des Ölgemäldes aus § 985 BGB
 
 #### C-001 - Besitz der Staatsanwaltschaft bei Frage 1
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -198,7 +192,7 @@ ERFÜLLT, wenn die Antwort die Staatsanwaltschaft wegen der Beschlagnahme des Sc
 
 #### C-002 - Kein Besitzrecht der Staatsanwaltschaft nach Verfahrensende
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -210,9 +204,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass der Staatsanwaltschaft nach Einstell
 
 #### F1.I Eigentumsverhältnisse am Ölgemälde
 
-##### F1.I.1 Eigentumsvermutung zugunsten M
-
-###### C-003 - Ursprüngliche Eigentumsverhältnisse ungeklärt
+##### C-003 - Ursprüngliche Eigentumsverhältnisse ungeklärt
 
 **Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
@@ -223,6 +215,8 @@ ERFÜLLT, wenn die Antwort erkennt, dass die ursprünglichen Eigentumsverhältni
 **Review notes**
 
 - (none)
+
+##### F1.I.1 Eigentumsvermutung zugunsten M
 
 ##### F1.I.1.a Vermutungsgrundlage
 
@@ -276,7 +270,7 @@ ERFÜLLT, wenn die Antwort Gustav als Sohn der noch lebenden Lisa nach § 1924 A
 
 ###### C-008 - Vorverstorbener Ehegatte ist nicht Erbe
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -300,7 +294,7 @@ ERFÜLLT, wenn die Antwort Lisa und Mark als einzige gesetzliche Erben Friedas n
 
 ###### C-010 - Besitzübergang auf die Erben nach § 857 BGB
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -312,7 +306,7 @@ ERFÜLLT, wenn die Antwort den Besitz am Gemälde mit Friedas Tod am 3.6.1999 na
 
 ###### C-011 - Mark als früherer Mitbesitzer
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -338,7 +332,7 @@ ERFÜLLT, wenn die Antwort § 1006 Abs. 2 BGB auch zugunsten Marks als Rechtsnac
 
 ###### C-013 - Fortdauerwirkung des § 1006 Abs. 2 BGB
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -364,7 +358,7 @@ ERFÜLLT, wenn die Antwort Rolands Besitzstellung nach Beschlagnahme vertretbar 
 
 ###### C-016 - Keine durchgreifende Eigentumsvermutung Rolands wegen Abhandenkommens
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -378,7 +372,7 @@ ERFÜLLT, wenn die Antwort Roland eine Eigentumsvermutung aus § 1006 Abs. 1 BGB
 
 ###### C-014 - Vermutetes Miteigentum Marks
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -492,7 +486,7 @@ ERFÜLLT, wenn die Antwort annimmt, dass Wilma Roland das Gemälde am 30.9.2005 
 
 ###### C-025 - Fortbestehendes Einigsein bei Übergabe
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -518,7 +512,7 @@ ERFÜLLT, wenn die Antwort Wilma beim Verkauf des gestohlenen Gemäldes an Rolan
 
 ###### C-027 - § 935 Abs. 1 BGB sperrt gutgläubigen Erwerb
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -570,7 +564,7 @@ ERFÜLLT, wenn die Antwort klarstellt, dass Roland sich für Eigenbesitz im Sinn
 
 ###### C-031 - Safe als Indiz für Eigenbesitzwillen
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -582,7 +576,7 @@ ERFÜLLT, wenn die Antwort Rolands sofortige Deponierung des Gemäldes im Safe a
 
 ###### C-032 - Versicherung als Indiz für Eigenbesitzwillen
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -632,7 +626,7 @@ ERFÜLLT, wenn die Antwort aus Rolands Besitzerwerb am 30.9.2005 folgert, dass d
 
 ###### C-036 - Bösgläubigkeit als Ersitzungsausschluss
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -720,7 +714,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass besondere verdächtige Umstände auch o
 
 ###### C-043 - Antiquariat für sich genommen unverdächtig
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -732,7 +726,7 @@ ERFÜLLT, wenn die Antwort den Kauf bei Wilma e.K., einem schwerpunktmäßig mit
 
 ###### C-044 - Schleuderpreis als Verdachtsmoment
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -744,7 +738,7 @@ ERFÜLLT, wenn die Antwort den Kaufpreis von 2.000 Euro für ein Gemälde mit Ma
 
 ###### C-045 - Rolands Kenntnis der Wertdiskrepanz
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -756,7 +750,7 @@ ERFÜLLT, wenn die Antwort aus Rolands Safeverwahrung, teurer Versicherung oder 
 
 ###### C-046 - Grob fahrlässige Nichtaufklärung durch Roland
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -794,7 +788,7 @@ ERFÜLLT, wenn die Antwort den Herausgabeanspruch aus § 985 BGB wegen der Eigen
 
 ##### C-049 - Grundregel des § 2039 BGB
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -822,7 +816,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass der dingliche Herausgabeanspruch aus
 
 ###### C-051 - Lisas Erklärung vermittelt Marks Alleinbefugnis
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -840,13 +834,25 @@ ERFÜLLT, wenn die Antwort Lisas Erklärung, Mark solle sich allein um das Gemä
 
 **Match criteria**
 
-ERFÜLLT, wenn die Antwort den Herausgabeanspruch aus § 985 BGB nicht als verjährt ansieht, weil die dreißigjährige Verjährungsfrist nach § 197 Abs. 1 Nr. 2 BGB in Verbindung mit § 200 BGB noch nicht abgelaufen ist. NICHT ERFÜLLT, wenn sie eine regelmäßige dreijährige Verjährung anwendet oder den Anspruch wegen der seit 1999 oder 2005 verstrichenen Zeit ablehnt.
+ERFÜLLT, wenn die Antwort den Herausgabeanspruch aus § 985 BGB nicht als verjährt ansieht, weil die dreißigjährige Verjährungsfrist nach § 197 Abs. 1 Nr. 1 BGB in Verbindung mit § 200 BGB noch nicht abgelaufen ist. NICHT ERFÜLLT, wenn sie eine regelmäßige dreijährige Verjährung anwendet oder den Anspruch wegen der seit 1999 oder 2005 verstrichenen Zeit ablehnt.
+
+**Review notes**
+
+- Normzitat manuell korrigiert: § 197 Abs. 1 Nr. 1 BGB (Generator hatte Nr. 2).
+
+### F2 Ansprüche des M nach Hinterlegung
+
+#### C-060 - Erforderliche Freigabeerklärung im Hinterlegungsverfahren
+
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort erkennt, dass Mark für die Herausgabe des beim Amtsgericht hinterlegten Gemäldes eine Bewilligung beziehungsweise Freigabeerklärung Rolands als benanntem möglichem Empfangsberechtigten nach § 22 Abs. 2 Nr. 1 HessHintG zur Herausgabeanordnung nach § 21 Abs. 1 Nr. 1 HessHintG benötigt. NICHT ERFÜLLT, wenn sie nur unmittelbare Herausgabe der Sache von Roland oder der Hinterlegungsstelle verlangt und die Freigabeerklärung nicht behandelt.
 
 **Review notes**
 
 - (none)
-
-### F2 Ansprüche des M nach Hinterlegung
 
 #### F2.A Anspruch gegen S aus § 985 BGB
 
@@ -878,7 +884,7 @@ ERFÜLLT, wenn die Antwort den Anspruch aus § 985 BGB im Zeitpunkt der Hinterle
 
 ###### C-055 - Kein Annahmeverzug Marks als Hinterlegungsgrund
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -890,7 +896,7 @@ ERFÜLLT, wenn die Antwort einen Annahmeverzug Marks oder ein in Marks Person li
 
 ###### C-056 - Gläubigerungewissheit wegen Mark und Roland
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -902,7 +908,7 @@ ERFÜLLT, wenn die Antwort die konkurrierenden Herausgabeverlangen von Mark und 
 
 ###### C-057 - Berechtigter für Staatsanwaltschaft nicht offenkundig
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -916,7 +922,7 @@ ERFÜLLT, wenn die Antwort berücksichtigt, dass der wahre zivilrechtlich Berech
 
 ###### C-058 - Rücknahmeverzicht der Staatsanwaltschaft
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -930,7 +936,7 @@ ERFÜLLT, wenn die Antwort den in der Abwandlung erklärten Verzicht der Staatsa
 
 ###### C-059 - Schuldbefreiende Wirkung der Hinterlegung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -941,18 +947,6 @@ ERFÜLLT, wenn die Antwort der rechtmäßigen Hinterlegung des Gemäldes mit aus
 - (none)
 
 #### F2.B Anspruch gegen R aus § 816 Abs. 2 BGB
-
-##### C-060 - Erforderliche Freigabeerklärung im Hinterlegungsverfahren
-
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
-
-**Match criteria**
-
-ERFÜLLT, wenn die Antwort erkennt, dass Mark für die Herausgabe des beim Amtsgericht hinterlegten Gemäldes eine Bewilligung beziehungsweise Freigabeerklärung Rolands als benanntem möglichem Empfangsberechtigten nach § 22 Abs. 2 Nr. 1 HessHintG zur Herausgabeanordnung nach § 21 Abs. 1 Nr. 1 HessHintG benötigt. NICHT ERFÜLLT, wenn sie nur unmittelbare Herausgabe der Sache von Roland oder der Hinterlegungsstelle verlangt und die Freigabeerklärung nicht behandelt.
-
-**Review notes**
-
-- (none)
 
 ##### C-061 - § 816 Abs. 2 BGB verlangt Leistung an Nichtberechtigten
 
@@ -994,7 +988,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass Roland durch seine Benennung als mö
 
 ##### C-064 - Blockierstellung Rolands im Hinterlegungsverfahren
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1006,7 +1000,7 @@ ERFÜLLT, wenn die Antwort Rolands Beteiligtenstellung als Blockierstellung besc
 
 ##### C-065 - Blockierstellung als erlangtes Etwas
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1018,7 +1012,7 @@ ERFÜLLT, wenn die Antwort Rolands Blockierstellung im Hinterlegungsverfahren al
 
 ##### C-066 - Blockierstellung auf Kosten Marks
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1030,7 +1024,7 @@ ERFÜLLT, wenn die Antwort die Blockierstellung Rolands als auf Kosten Marks erl
 
 ##### C-067 - Kein Rechtsgrund für Rolands Blockierstellung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1042,7 +1036,7 @@ ERFÜLLT, wenn die Antwort einen rechtlichen Grund für Rolands Blockierstellung
 
 ##### C-068 - Freigabeanspruch aus Eingriffskondiktion
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1056,7 +1050,7 @@ ERFÜLLT, wenn die Antwort Mark gegen Roland einen Anspruch auf Erteilung der Fr
 
 #### C-070-S1 - Zusatzfrage als ungeklärtes Verhältnis von § 40 Abs. 2 KGSG und § 935 Abs. 2 BGB
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1068,7 +1062,7 @@ ERFÜLLT, wenn die Antwort die Zusatzfrage als Problem des gutgläubigen Erwerbs
 
 #### C-070-S2 - Methodische Argumente zur Zusatzfrage
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 

@@ -71,7 +71,11 @@ def main() -> int:
     print(f"{'TOTAL':<48} {tot_a:>3}/{n} ({tot_a/n:>4.0%}) {tot_b:>7}/{n} ({tot_b/n:>4.0%})  {tot_b-tot_a:+4d}")
 
     # Category breakdowns aggregated across shared tasks
-    for axis, key in [("station", "breakdown_by_station"), ("function", "breakdown_by_function")]:
+    for axis, key in [
+        ("station", "breakdown_by_station"),
+        ("function", "breakdown_by_function"),
+        ("criticality", "breakdown_by_criticality"),
+    ]:
         agg: dict[str, list[int]] = defaultdict(lambda: [0, 0, 0, 0])  # a_pass, a_tot, b_pass, b_tot
         for task in shared:
             for src, off in [(a[task], 0), (b[task], 2)]:

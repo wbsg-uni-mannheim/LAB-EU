@@ -18,7 +18,7 @@ Bearbeiten Sie den Fall gutachterlich. Erstellen Sie eine vollständige Falllös
 
 # Sachverhalt
 
-Sachverhalt V ist mit seinem zweijährigen Sohn S auf dem Kinderspielplatz im Göttinger Cheltenham-Park. Da er sich in einem angeregten Gespräch mit F, einer befreundeten Mutter, befindet, bemerkt er nicht, dass S das Portemonnaie seines Vaters aus dessen Beutel geangelt und damit begonnen hat, sämtliche Karten und Ausweise zunächst aus- und sodann wieder in das Portemonnaie einzuräumen. Dabei vergisst S leider eine auf den Namen seines Vaters ausgestellte EC-Karte der Sparkasse Göttingen, die unter der Bank, auf der V und F sitzen, verbleibt, als die Gruppe kurz darauf den Spielplatz verlässt. Erst knapp drei Stunden später bemerkt V den Verlust der Karte und veranlasst daraufhin umgehend eine Kontosperrung. In der Zwischenzeit hat A die Karte gefunden und eingesteckt, um sie in der nächsten Sparkassenfiliale abzugeben. Als er in der Innenstadt ankommt, überlegt er es sich anders und beschließt, die Karte vor der Rückgabe noch im Rahmen eines kurzen Abstechers in den nahegelegenen Supermarkt der R-GmbH dazu zu nutzen, sich einen kleinen „Finderlohn“ zu gönnen. Angesichts der Möglichkeit, mit der Karte „kontaktlos“ zu bezahlen, sei das doch eine Sache von Sekunden. A begibt sich also in den Supermarkt und sucht dort einige Lebensmittel und Getränke im Wert von insgesamt 32,76 € zusammen. Dem an der Kasse tätigen K sagt A, dass er die Waren „mit Karte“ zahlen möchte. Sodann hält er die im Park gefundene Karte des V an das von K aktivierte Kartenlesegerät. Wie von ihm erhofft, kann er dadurch den Zahlungsvorgang abschließen, ohne eine Persönliche Identifikationsnummer (PIN) eingeben zu müssen. Vielmehr zeigt das Kartenlesegerät nach einigen Sekunden schlicht „Zahlung erfolgt“ an. Dabei funktioniert dieser Zahlungsvorgang vereinfacht wie folgt: Die EC-Karte ist mit einem NFC- /Near Field Communication-Chip ausgestattet. Als A die Karte in unmittelbare Nähe des aktivierten Kartenlesegeräts hält, überträgt dieser Chip Kartennummer und Gültigkeitsdatum der Karte an das Kartenlesegerät. Dort wird mit diesen Daten sowie mit den Kontodaten der R-GmbH als Zahlungsempfängerin eine Anfrage zur Autorisierung einer Zahlung in Höhe des Rechnungsbetrages an das Zahlungssystem der Sparkasse Göttingen gesendet. Das Zahlungssystem prüft sodann, ob die eingesetzte EC-Karte gesperrt ist und ob der Verfügungsrahmen des Kontos noch nicht ausgeschöpft an der Philipps-Universität Marburg. Ricarda Bardowicks ist Dr. Uwe Murmann) an der Georg-August-Universität Göttingen. ist. Weiterhin wird geprüft, ob die Voraussetzungen für den Verzicht auf die Eingabe der PIN vorliegen. Das ist der Fall, wenn der Zahlungsbetrag 50 € nicht überschreitet. Zudem dürfen seit der letzten PIN-Eingabe nicht mehr als fünf Zahlungsvorgänge ohne eine solche Authentifizierung vorgenommen worden sein und deren Gesamtvolumen darf 150,- € nicht überstiegen haben. In zivilrechtlicher Hinsicht erwirbt die R-GmbH durch die Autorisierung des Zahlungsvorgangs unabhängig von der Berechtigung des tatsächlichen Kartennutzers eine einredefreie Forderung in der Höhe des Rechnungsbetrages gegen die kartenausstellende Sparkasse. Anders wäre es nur dann, wenn K als die für die R-GmbH handelnde natürliche Person positive Kenntnis hätte, dass der Zahlungsvorgang durch eine dazu nichtberechtigte Person vorgenommen wurde. Zugleich werden durch die Autorisierung, die im Zahlungssystem der Sparkasse gespeicherten Datensätze aktualisiert, d.h. der Datensatz zum Zahlungsvorgang im Supermarkt der R-GmbH wird gespeichert, der verfügbare Betrag bis zum Erreichen des Verfügungsrahmens wird angepasst, und es werden die Daten aktualisiert, die erforderlich sind, um zu überprüfen, ob beim nächsten Zahlungsvorgang die Voraussetzungen eines Verzichts auf die PIN-Eingabe erneut vorliegen. Im Verhältnis zwischen der Sparkasse und V als dem berechtigten Karteninhaber wird auf dem Konto des V zwar zunächst eine Belastung in Höhe des Rechnungsbetrages vermerkt. Als V einige Tage später die Buchung entdeckt und gegenüber der Sparkasse geltend macht, der Zahlungsvorgang sei nicht von ihm vorgenommen worden, schreibt die Bank V aber entsprechend den gesetzlichen Regelungen zur Risikotragung eines Kartenmissbrauchs durch Dritte (vgl. §§ 675u, 675v BGB) den Betrag wieder gut, so dass letztlich sie den Schaden i.H.v. 32,76 € trägt. A verlässt nach dem Zahlungsvorgang mit den Waren den Supermarkt. Sodann wirft er die EC-Karte wie geplant in den Briefkasten des nächstgelegenen SB-Centers der Sparkasse. Wie die elektronische Zahlung mit einer EC-Karte ohne PIN-Eingabe im Einzelnen funktioniert und welche zivilrechtlichen Regeln insofern gelten, weiß A nicht. Ihm ist aber bewusst, dass dabei Daten übertragen und gespeichert werden und niemand einfach fremde EC-Karte nutzen darf. Aufgabe Wie hat sich A nach dem StGB strafbar gemacht? Eventuell erforderliche Strafanträge sind gestellt. Übergreifende Hinweise Es handelt sich um einen Fall von überdurchschnittlicher Schwierigkeit. Es sind zwar nicht viele Tatbestände zu prüfen. Auch weist die Gliederung des Gutachtens keine Probleme auf. Die zu prüfenden Tatbestände sind aber ohne Ausnahme unübersichtlich, schwierig und bei Studierenden erfahrungsgemäß unbeliebt. Es bedarf zudem sowohl einer sorgfältigen Erfassung des technischen Ablaufs des sog. „kontaktlosen“ Zahlungsvorgangs wie auch der zivilrechtlichen Hintergründe. Zwar teilt der Sachverhalt die für die strafrechtliche Bewertung relevanten Details explizit mit. Erwartungsgemäß taten sich aber viele Studierenden sehr schwer damit, diese Informationen an der Stelle zu berücksichtigen, an der sie rechtlich bedeutsam sind. Im Falle der Fälschung beweiserheblicher Daten gem. § 269 StGB und der Datenveränderung gem. § 303a StGB dürfte es sich für viele Studierende überdies um gänzlich unbekannte Normen handeln. In vielen Bearbeitungen wurden diese Tatbestände schlicht übersehen. Auch für eine weit überdurchschnittliche Bewertung wurde nicht erwartet, dass die Argumentation zu den einzelnen Fragen auch nur annähernd die Ausführlichkeit der Lösungshinweise erreichte. In der Rechtsprechung liegt zu der Fallkonstellation der missbräuchlichen Vornahme eines kontaktlosen Zahlungsvorgangs ohne PIN-Eingabe mit fremder EC-Karte eine Entscheidung des OLG Hamm (OLG Hamm, Beschl. v. 7.4.2020 – 4 RVs 12/20 = NStZ 2020, 673 ff.) vor, die vielfach besprochen worden ist und Eingang in die gängigen Lehrbücher sowie die Ausbildungszeitschriften gefunden hat. Allerdings bleiben die Ausführungen vielfach ungenau. Zudem lässt sich hinsichtlich sämtlicher Tatbestände Kritik an der Begründung, zum Teil auch an dem Ergebnis der Entscheidung anbringen. Selbst wenn die Entscheidung des OLG Hamm einzelnen Studierenden bekannt ist, bleibt daher erheblicher Bedarf und Spielraum für eigene Überlegungen. Bei einer dreistündigen Bearbeitungszeit sollte jedenfalls hinreichend Zeit bleiben, zumindest zum Betrug, zum Computerbetrug und zur Urkundenunterdrückung in Form der Datenunterdrückung sorgfältig Stellung zu nehmen und ausführlicher zu argumentieren. Die Prüfung der Strafbarkeit gem. § 269 Abs. 1 StGB sowie gem. § 303a Abs. 1 StGB ist eher als Bonus zu betrachten.
+Sachverhalt V ist mit seinem zweijährigen Sohn S auf dem Kinderspielplatz im Göttinger Cheltenham-Park. Da er sich in einem angeregten Gespräch mit F, einer befreundeten Mutter, befindet, bemerkt er nicht, dass S das Portemonnaie seines Vaters aus dessen Beutel geangelt und damit begonnen hat, sämtliche Karten und Ausweise zunächst aus- und sodann wieder in das Portemonnaie einzuräumen. Dabei vergisst S leider eine auf den Namen seines Vaters ausgestellte EC-Karte der Sparkasse Göttingen, die unter der Bank, auf der V und F sitzen, verbleibt, als die Gruppe kurz darauf den Spielplatz verlässt. Erst knapp drei Stunden später bemerkt V den Verlust der Karte und veranlasst daraufhin umgehend eine Kontosperrung. In der Zwischenzeit hat A die Karte gefunden und eingesteckt, um sie in der nächsten Sparkassenfiliale abzugeben. Als er in der Innenstadt ankommt, überlegt er es sich anders und beschließt, die Karte vor der Rückgabe noch im Rahmen eines kurzen Abstechers in den nahegelegenen Supermarkt der R-GmbH dazu zu nutzen, sich einen kleinen „Finderlohn“ zu gönnen. Angesichts der Möglichkeit, mit der Karte „kontaktlos“ zu bezahlen, sei das doch eine Sache von Sekunden. A begibt sich also in den Supermarkt und sucht dort einige Lebensmittel und Getränke im Wert von insgesamt 32,76 € zusammen. Dem an der Kasse tätigen K sagt A, dass er die Waren „mit Karte“ zahlen möchte. Sodann hält er die im Park gefundene Karte des V an das von K aktivierte Kartenlesegerät. Wie von ihm erhofft, kann er dadurch den Zahlungsvorgang abschließen, ohne eine Persönliche Identifikationsnummer (PIN) eingeben zu müssen. Vielmehr zeigt das Kartenlesegerät nach einigen Sekunden schlicht „Zahlung erfolgt“ an. Dabei funktioniert dieser Zahlungsvorgang vereinfacht wie folgt: Die EC-Karte ist mit einem NFC- /Near Field Communication-Chip ausgestattet. Als A die Karte in unmittelbare Nähe des aktivierten Kartenlesegeräts hält, überträgt dieser Chip Kartennummer und Gültigkeitsdatum der Karte an das Kartenlesegerät. Dort wird mit diesen Daten sowie mit den Kontodaten der R-GmbH als Zahlungsempfängerin eine Anfrage zur Autorisierung einer Zahlung in Höhe des Rechnungsbetrages an das Zahlungssystem der Sparkasse Göttingen gesendet. Das Zahlungssystem prüft sodann, ob die eingesetzte EC-Karte gesperrt ist und ob der Verfügungsrahmen des Kontos noch nicht ausgeschöpft ist. Weiterhin wird geprüft, ob die Voraussetzungen für den Verzicht auf die Eingabe der PIN vorliegen. Das ist der Fall, wenn der Zahlungsbetrag 50 € nicht überschreitet. Zudem dürfen seit der letzten PIN-Eingabe nicht mehr als fünf Zahlungsvorgänge ohne eine solche Authentifizierung vorgenommen worden sein und deren Gesamtvolumen darf 150,- € nicht überstiegen haben. In zivilrechtlicher Hinsicht erwirbt die R-GmbH durch die Autorisierung des Zahlungsvorgangs unabhängig von der Berechtigung des tatsächlichen Kartennutzers eine einredefreie Forderung in der Höhe des Rechnungsbetrages gegen die kartenausstellende Sparkasse. Anders wäre es nur dann, wenn K als die für die R-GmbH handelnde natürliche Person positive Kenntnis hätte, dass der Zahlungsvorgang durch eine dazu nichtberechtigte Person vorgenommen wurde. Zugleich werden durch die Autorisierung, die im Zahlungssystem der Sparkasse gespeicherten Datensätze aktualisiert, d.h. der Datensatz zum Zahlungsvorgang im Supermarkt der R-GmbH wird gespeichert, der verfügbare Betrag bis zum Erreichen des Verfügungsrahmens wird angepasst, und es werden die Daten aktualisiert, die erforderlich sind, um zu überprüfen, ob beim nächsten Zahlungsvorgang die Voraussetzungen eines Verzichts auf die PIN-Eingabe erneut vorliegen. Im Verhältnis zwischen der Sparkasse und V als dem berechtigten Karteninhaber wird auf dem Konto des V zwar zunächst eine Belastung in Höhe des Rechnungsbetrages vermerkt. Als V einige Tage später die Buchung entdeckt und gegenüber der Sparkasse geltend macht, der Zahlungsvorgang sei nicht von ihm vorgenommen worden, schreibt die Bank V aber entsprechend den gesetzlichen Regelungen zur Risikotragung eines Kartenmissbrauchs durch Dritte (vgl. §§ 675u, 675v BGB) den Betrag wieder gut, so dass letztlich sie den Schaden i.H.v. 32,76 € trägt. A verlässt nach dem Zahlungsvorgang mit den Waren den Supermarkt. Sodann wirft er die EC-Karte wie geplant in den Briefkasten des nächstgelegenen SB-Centers der Sparkasse. Wie die elektronische Zahlung mit einer EC-Karte ohne PIN-Eingabe im Einzelnen funktioniert und welche zivilrechtlichen Regeln insofern gelten, weiß A nicht. Ihm ist aber bewusst, dass dabei Daten übertragen und gespeichert werden und niemand einfach fremde EC-Karte nutzen darf. Aufgabe Wie hat sich A nach dem StGB strafbar gemacht? Eventuell erforderliche Strafanträge sind gestellt.
 
 ## Solution
 
@@ -240,19 +240,13 @@ Hinweis: Wird zusätzlich eine Strafbarkeit gem. § 269 Abs. 1 StGB und gem. § 
 
 ## Rubrics For Review
 
-**Generated at:** 2026-07-09T20:05:20.957004+00:00
-
-**Review status:** generated_calibrated_needs_human_review
-
-**Language:** Deutsch
-
 **Number of criteria:** 65
 
 **Wichtigkeit (Kritikalität):**
 
-- ★★★ zentral - muss enthalten sein: 22 Kriterien
-- ★★ wichtig - in einer soliden Lösung erwartet: 40 Kriterien
-- ★ eher unwichtig - Detail, Form, Bonuswissen: 3 Kriterien
+- ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt): 7 Kriterien
+- ★★ wichtig - in einer soliden Lösung erwartet: 53 Kriterien
+- ★ eher unwichtig - Detail, Form, Bonuswissen: 5 Kriterien
 
 ### A Erster Handlungsabschnitt: Das Einstecken der EC-Karte
 
@@ -286,7 +280,7 @@ ERFÜLLT, wenn die Antwort Wegnahme im Sinne des § 242 Abs. 1 StGB als Bruch fr
 
 ###### C-003 - Kein Gewahrsam des V an der verlorenen Karte
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -310,7 +304,7 @@ ERFÜLLT, wenn die Antwort verneint, dass vor A ein Dritter Gewahrsam an der unt
 
 ###### C-005 - Keine Wegnahme der EC-Karte
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -336,7 +330,7 @@ ERFÜLLT, wenn die Antwort für § 246 Abs. 1 StGB eine objektiv manifestierte Z
 
 ##### C-007 - Kein anfänglicher Zueignungswille an der EC-Karte
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -366,11 +360,47 @@ ERFÜLLT, wenn die Antwort eine Strafbarkeit des A nach § 246 Abs. 1 StGB durch
 
 ##### B.I.1.a Objektiver Tatbestand
 
+###### C-013 - Vermögensverfügung bei bejahtem Irrtum
+
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort bei bejahtem Irrtum des K die Vermögensverfügung in der Übereignung oder Besitzübertragung der Waren durch K als Vertreter der R-GmbH sieht; ebenfalls ERFÜLLT, wenn sie den Betrug bereits vertretbar am Irrtum scheitern lässt. NICHT ERFÜLLT, wenn sie bei bejahtem Irrtum die Verfügung allein in der Autorisierung durch das Zahlungssystem, die Sparkasse oder V verortet.
+
+**Review notes**
+
+- (none)
+
+###### C-014 - Kein Betrugsschaden der R-GmbH
+
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort bei der Betrugsschadensprüfung berücksichtigt, dass die R-GmbH durch die Autorisierung des Zahlungsvorgangs über 32,76 € eine einredefreie Forderung gegen die Sparkasse erwirbt und deshalb durch die Warenhingabe keinen endgültigen Schaden erleidet; ebenfalls ERFÜLLT, wenn sie den Betrug bereits vertretbar am Irrtum scheitern lässt. NICHT ERFÜLLT, wenn sie einen Schaden der R-GmbH allein aus dem Verlust der Waren bejaht und den Forderungserwerb ignoriert.
+
+**Review notes**
+
+- (none)
+
+###### C-015 - Keine unmittelbare Betrugsverfügung zulasten V oder Sparkasse
+
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort bei einem möglichen Schaden der Sparkasse oder des V im Rahmen von § 263 StGB erkennt, dass dieser nicht unmittelbar aus der Warenverfügung des K folgt, sondern allenfalls aus dem computergestützten Zahlungsvorgang; ebenfalls ERFÜLLT, wenn sie den Betrug bereits vertretbar vorher ablehnt. NICHT ERFÜLLT, wenn sie einen Betrug zulasten V oder der Sparkasse über K bejaht, ohne den fehlenden Unmittelbarkeitszusammenhang zu prüfen.
+
+**Review notes**
+
+- (none)
+
 ##### B.I.1.a.aa Täuschung
 
 ###### C-010 - Erklärungswert des kontaktlosen Karteneinsatzes
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -408,7 +438,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass für einen Irrtum des K mangels konkret
 
 ###### C-012 - Irrtum des K über die Kartenberechtigung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -418,49 +448,11 @@ ERFÜLLT, wenn die Antwort entweder einen Irrtum des K verneint, weil K wegen de
 
 - Alternativer Irrtum nur mit Folgeprüfung akzeptiert.
 
-##### B.I.1.b Zwischenergebnis
-
-###### C-013 - Vermögensverfügung bei bejahtem Irrtum
-
-**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
-
-**Match criteria**
-
-ERFÜLLT, wenn die Antwort bei bejahtem Irrtum des K die Vermögensverfügung in der Übereignung oder Besitzübertragung der Waren durch K als Vertreter der R-GmbH sieht; ebenfalls ERFÜLLT, wenn sie den Betrug bereits vertretbar am Irrtum scheitern lässt. NICHT ERFÜLLT, wenn sie bei bejahtem Irrtum die Verfügung allein in der Autorisierung durch das Zahlungssystem, die Sparkasse oder V verortet.
-
-**Review notes**
-
-- (none)
-
-###### C-014 - Kein Betrugsschaden der R-GmbH
-
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
-
-**Match criteria**
-
-ERFÜLLT, wenn die Antwort bei der Betrugsschadensprüfung berücksichtigt, dass die R-GmbH durch die Autorisierung des Zahlungsvorgangs über 32,76 € eine einredefreie Forderung gegen die Sparkasse erwirbt und deshalb durch die Warenhingabe keinen endgültigen Schaden erleidet; ebenfalls ERFÜLLT, wenn sie den Betrug bereits vertretbar am Irrtum scheitern lässt. NICHT ERFÜLLT, wenn sie einen Schaden der R-GmbH allein aus dem Verlust der Waren bejaht und den Forderungserwerb ignoriert.
-
-**Review notes**
-
-- (none)
-
-###### C-015 - Keine unmittelbare Betrugsverfügung zulasten V oder Sparkasse
-
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
-
-**Match criteria**
-
-ERFÜLLT, wenn die Antwort bei einem möglichen Schaden der Sparkasse oder des V im Rahmen von § 263 StGB erkennt, dass dieser nicht unmittelbar aus der Warenverfügung des K folgt, sondern allenfalls aus dem computergestützten Zahlungsvorgang; ebenfalls ERFÜLLT, wenn sie den Betrug bereits vertretbar vorher ablehnt. NICHT ERFÜLLT, wenn sie einen Betrug zulasten V oder der Sparkasse über K bejaht, ohne den fehlenden Unmittelbarkeitszusammenhang zu prüfen.
-
-**Review notes**
-
-- (none)
-
 ##### B.I.2 Ergebnis
 
 ###### C-016 - Kein vollendeter Betrug nach § 263 StGB
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -506,7 +498,7 @@ ERFÜLLT, wenn die Antwort die Datenverwendung damit verknüpft, dass Daten der 
 
 ###### C-019 - Streit um unbefugte Datenverwendung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -558,7 +550,7 @@ ERFÜLLT, wenn die Antwort die computerspezifische Auslegung dahin beschreibt, d
 
 ###### C-023 - Computerspezifische Auslegung im Fall
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -572,7 +564,7 @@ ERFÜLLT, wenn die Antwort nach computerspezifischer Auslegung die Unbefugtheit 
 
 ###### C-024 - Betrugsspezifische Auslegung von „unbefugt“
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -596,7 +588,7 @@ ERFÜLLT, wenn die Antwort die vertretbare OLG-Hamm-nahe Linie erfasst, wonach b
 
 ###### C-026 - Maßstab der hypothetischen Kartenvorlage
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -648,7 +640,7 @@ ERFÜLLT, wenn die Antwort bei Ablehnung oder Relativierung der computerspezifis
 
 ###### C-028 - Fallbezogene Entscheidung zur Unbefugtheit
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -688,7 +680,7 @@ ERFÜLLT, wenn die Antwort, soweit sie § 263a StGB weiterprüft, die Beeinfluss
 
 ###### C-033 - Einredefreie Forderung der R-GmbH
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -700,7 +692,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass die R-GmbH durch die Autorisierung des 
 
 ###### C-034 - Vermögensschaden der Sparkasse
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -712,7 +704,7 @@ ERFÜLLT, wenn die Antwort, soweit sie den § 263a-Tatbestand bis zur Schadenspr
 
 ###### C-035 - Kein Ersatzanspruch der Sparkasse gegen V
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -724,7 +716,7 @@ ERFÜLLT, wenn die Antwort bei der Schadensverteilung berücksichtigt, dass die 
 
 ###### C-036 - Gefährdungsschaden des V
 
-**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
 
 **Match criteria**
 
@@ -790,7 +782,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass A hinsichtlich der Rechtswidrigkeit 
 
 ###### C-041 - Problem der Stoffgleichheit
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -802,7 +794,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass die Stoffgleichheit beim Computerbetrug
 
 ###### C-042 - Fallbezogene Entscheidung der Stoffgleichheit
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -842,7 +834,7 @@ ERFÜLLT, wenn die Antwort bei bejahtem Tatbestand des § 263a Abs. 1 Var. 3 StG
 
 ###### C-045 - Vertretbares Ergebnis zum Computerbetrug
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -884,7 +876,7 @@ ERFÜLLT, wenn die Antwort als durch den Zahlungsvorgang veränderten Datensatz 
 
 ###### C-049 - PIN-Verzichtsdaten als veränderte Datensätze
 
-**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
 
 **Match criteria**
 
@@ -962,7 +954,7 @@ ERFÜLLT, wenn die Antwort bei § 274 Abs. 1 Nr. 2 StGB Vorsatz des A hinsichtli
 
 ###### C-055 - Nachteilszufügungsabsicht als Merkmal des § 274 StGB
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -998,7 +990,7 @@ ERFÜLLT, wenn die Antwort die Gleichsetzung der Nachteilszufügungsabsicht mit 
 
 ###### C-058 - Beweisnachteil statt bloßem Vermögensabfluss
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1048,7 +1040,7 @@ ERFÜLLT, wenn die Antwort bei Ablehnung eines § 274-Nachteils berücksichtigt,
 
 ###### C-062 - Vertretbares Ergebnis zu § 274 Abs. 1 Nr. 2 StGB
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1098,7 +1090,7 @@ ERFÜLLT, wenn die Antwort eine Unterschlagung der im Supermarkt erlangten Leben
 
 - (none)
 
-### Gesamtergebnis Gesamtergebnis
+### Gesamtergebnis
 
 #### C-046 - Strafantrag bei geringwertigem Computerbetrug
 

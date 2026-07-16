@@ -4,7 +4,7 @@
 
 ### I. Verwaltungsrechtsweg
 
-### II. Statthafte Klageart 65
+### II. Statthafte Klageart
 
 ### III. Klagebefugnis
 

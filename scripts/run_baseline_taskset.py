@@ -13,8 +13,6 @@ scripts/judge_run.py judges baseline runs unchanged.
 from __future__ import annotations
 
 import argparse
-import datetime as dt
-import hashlib
 import json
 import os
 import pathlib
@@ -38,12 +36,16 @@ from run_opencode_taskset import (  # noqa: E402
     relative_to_repo,
     safe_task_id,
 )
+from baseline_prompt import (  # noqa: E402
+    PROMPT_TEMPLATE,
+    render_documents,
+    render_prompt as render_baseline_prompt,
+    sha256_text,
+    strip_outer_fence,
+)
 
-PROMPT_TEMPLATE = REPO_ROOT / "prompts" / "harness" / "solve_task_baseline.txt"
 DEFAULT_MODEL = "gpt-5.5"
 DEFAULT_API_BASE = "https://api.openai.com/v1"
-MAX_DOC_CHARS = 120_000
-MAX_TOTAL_DOC_CHARS = 300_000
 API_ATTEMPTS = 2
 
 
@@ -95,51 +97,14 @@ def api_key_env_for(api_base: str) -> str:
     return "OPENAI_API_KEY"
 
 
-def render_documents(task_dir: pathlib.Path) -> tuple[str, bool]:
-    docs_dir = task_dir / "documents"
-    sections: list[str] = []
-    truncated = False
-    used = 0
-    for path in sorted(p for p in docs_dir.rglob("*") if p.is_file()):
-        rel = path.relative_to(task_dir)
-        text = path.read_text(encoding="utf-8", errors="replace")
-        if len(text) > MAX_DOC_CHARS:
-            text = text[:MAX_DOC_CHARS] + "\n\n[TRUNCATED]\n"
-            truncated = True
-        remaining = MAX_TOTAL_DOC_CHARS - used
-        if remaining <= 0:
-            sections.append(f"### {rel}\n\n[OMITTED: document budget reached]")
-            truncated = True
-            continue
-        if len(text) > remaining:
-            text = text[:remaining] + "\n\n[TRUNCATED_BY_TOTAL_BUDGET]\n"
-            truncated = True
-        used += len(text)
-        sections.append(f"### {rel}\n\n{text}")
-    return ("\n\n".join(sections) if sections else "(none)"), truncated
-
-
 def render_prompt(row: dict[str, Any], documents: str) -> str:
-    task = row["task"]
-    template = PROMPT_TEMPLATE.read_text(encoding="utf-8")
-    return template.format(
-        today=dt.date.today().isoformat(),
+    prompt, _truncated = render_baseline_prompt(
         task_id=row["task_id"],
-        title=task.get("title", row["task_id"]),
-        work_type=task.get("work_type", ""),
-        instructions=task.get("instructions", ""),
-        documents=documents,
+        task=row["task"],
+        task_dir=row["task_dir"],
         deliverable=row["deliverables"][0],
     )
-
-
-def strip_outer_fence(text: str) -> tuple[str, bool]:
-    stripped = text.strip()
-    if stripped.startswith("```") and stripped.endswith("```"):
-        lines = stripped.splitlines()
-        if len(lines) >= 2 and lines[-1].strip() == "```":
-            return "\n".join(lines[1:-1]).strip() + "\n", True
-    return text, False
+    return prompt
 
 
 def usage_summary(response: Any) -> dict[str, Any]:
@@ -181,10 +146,6 @@ def call_model(client: OpenAI, args: argparse.Namespace, prompt: str) -> tuple[s
             continue
         return text, usage_summary(response), attempt
     raise RuntimeError(f"Model call failed after {API_ATTEMPTS} attempts: {last_error}")
-
-
-def sha256_text(text: str) -> str:
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
 def run_one_task(args: argparse.Namespace, client: OpenAI, row: dict[str, Any], run_dir: pathlib.Path) -> dict[str, Any]:

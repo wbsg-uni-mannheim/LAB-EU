@@ -82,7 +82,7 @@ Forderte man ein inneres Abstandnehmen vom Unrecht der Tat als moralische Qualit
 
 Für diese Position könnte sprechen, dass nur der innerlich von der Tat sich abkehrende Täter belohnenswert erscheint und prognostisch ungefährlich ist.
 
-Zentraler Zweck des § 24 StGB ist indes nicht die Belohnung des Täters für einen Gesinnungswandel unter Berücksichtigung künftigen Täterverhaltens, sondern der Rechtsgüterschutz in der akuten Situation:17 § 24 StGB will den Täter bewegen, sich – freiwillig – gegen die Tatvollendung zu entscheiden, unabhängig von der moralischen Qualität des Motivs. B und C traten demnach freiwillig zurück.
+Zentraler Zweck des § 24 StGB ist indes nicht die Belohnung des Täters für einen Gesinnungswandel unter Berücksichtigung künftigen Täterverhaltens, sondern der Rechtsgüterschutz in der akuten Situation: § 24 StGB will den Täter bewegen, sich – freiwillig – gegen die Tatvollendung zu entscheiden, unabhängig von der moralischen Qualität des Motivs. B und C traten demnach freiwillig zurück.
 
 Hinweis: Das gegenteilige Ergebnis ist mit höherem Begründungsaufwand vertretbar.
 

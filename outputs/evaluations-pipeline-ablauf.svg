@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2240" height="380" viewBox="0 80 2240 380" role="img" aria-labelledby="title desc">
+  <title id="title">Allgemeiner Ablauf der Evaluations-Pipeline</title>
+  <desc id="desc">Fünfstufiger Ablauf: Fall und Musterlösung, Rubrik-Generierung, KI löst den Fall, Judge-Bewertung, Ergebnisse.</desc>
+  <defs>
+    <style>
+      .card-light { fill: #eaf1f7; }
+      .card-dark { fill: #003a5d; }
+      .title-light { fill: #003a5d; font: 700 34px "Aptos", "Calibri", "Arial", sans-serif; }
+      .body-light { fill: #607080; font: 600 28px "Aptos", "Calibri", "Arial", sans-serif; }
+      .title-dark { fill: #ffffff; font: 700 34px "Aptos", "Calibri", "Arial", sans-serif; }
+      .body-dark { fill: #ffffff; font: 600 27px "Aptos", "Calibri", "Arial", sans-serif; }
+      .arrow { fill: #b7c9d8; }
+    </style>
+  </defs>
+
+  <g transform="translate(70 125)">
+    <rect class="card-light" x="0" y="0" width="320" height="270" rx="48" />
+    <text class="title-light" x="160" y="58" text-anchor="middle">
+      <tspan x="160">Fall +</tspan>
+      <tspan x="160" dy="42">Musterlösung</tspan>
+    </text>
+    <text class="body-light" x="160" y="144" text-anchor="middle">
+      <tspan x="160">Sachverhalt,</tspan>
+      <tspan x="160" dy="38">Dokumente, Lösung</tspan>
+      <tspan x="160" dy="38">im Gutachtenstil</tspan>
+    </text>
+  </g>
+
+  <polygon class="arrow" points="420,260 454,260 454,238 492,280 454,322 454,300 420,300" />
+
+  <g transform="translate(515 125)">
+    <rect class="card-dark" x="0" y="0" width="320" height="270" rx="48" />
+    <text class="title-dark" x="160" y="58" text-anchor="middle">
+      <tspan x="160">Rubrik-</tspan>
+      <tspan x="160" dy="42">Generierung</tspan>
+    </text>
+    <text class="body-dark" x="160" y="144" text-anchor="middle">
+      <tspan x="160">LLM erzeugt ~80</tspan>
+      <tspan x="160" dy="38">PASS/FAIL-Kriterien</tspan>
+      <tspan x="160" dy="38">je Fall</tspan>
+    </text>
+  </g>
+
+  <polygon class="arrow" points="865,260 899,260 899,238 937,280 899,322 899,300 865,300" />
+
+  <g transform="translate(960 125)">
+    <rect class="card-light" x="0" y="0" width="320" height="270" rx="48" />
+    <text class="title-light" x="160" y="70" text-anchor="middle">
+      <tspan x="160">KI löst den Fall</tspan>
+    </text>
+    <text class="body-light" x="160" y="144" text-anchor="middle">
+      <tspan x="160">System sieht nur</tspan>
+      <tspan x="160" dy="38">Aufgabe und</tspan>
+      <tspan x="160" dy="38">Dokumente</tspan>
+    </text>
+  </g>
+
+  <polygon class="arrow" points="1310,260 1344,260 1344,238 1382,280 1344,322 1344,300 1310,300" />
+
+  <g transform="translate(1405 125)">
+    <rect class="card-dark" x="0" y="0" width="320" height="270" rx="48" />
+    <text class="title-dark" x="160" y="70" text-anchor="middle">
+      <tspan x="160">Judge-Bewertung</tspan>
+    </text>
+    <text class="body-dark" x="160" y="144" text-anchor="middle">
+      <tspan x="160">LLM prüft jedes</tspan>
+      <tspan x="160" dy="38">Kriterium einzeln:</tspan>
+      <tspan x="160" dy="38">erfüllt / nicht erfüllt</tspan>
+    </text>
+  </g>
+
+  <polygon class="arrow" points="1755,260 1789,260 1789,238 1827,280 1789,322 1789,300 1755,300" />
+
+  <g transform="translate(1850 125)">
+    <rect class="card-light" x="0" y="0" width="320" height="270" rx="48" />
+    <text class="title-light" x="160" y="70" text-anchor="middle">
+      <tspan x="160">Ergebnisse</tspan>
+    </text>
+    <text class="body-light" x="160" y="144" text-anchor="middle">
+      <tspan x="160">Pass-Rate gesamt</tspan>
+      <tspan x="160" dy="38">und nach</tspan>
+      <tspan x="160" dy="38">juristischer Kategorie</tspan>
+    </text>
+  </g>
+</svg>

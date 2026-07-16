@@ -22,7 +22,7 @@ Zu ihrem Entsetzen muss J eines Tages feststellen, dass X auf seinem Blog auch �
 
 Darauf schreibt J dem X, dessen Anschrift und sonstige Kontaktdaten sie dem Blog entnommen hat, eine E-Mail. Darin fordert sie ihn auf, den Beitrag oder zumindest die oben dargestellten Formulierungen sowie die Behauptung, sie sei von der Schule verwiesen worden, zu löschen und deren Verbreitung auch in Zukunft zu unterlassen.
 
-Nachdem X sich weigert, hält J jeden weiteren Versuch, ihn zu den gewünschten Löschungen zu bewegen, für aussichtslos. Sie wendet sich daher an die Aufsichts- und Dienstleistungsdirektion (ADD) als der nach § 3 I des rheinland-pfälzischen Landesgesetzes zu dem Staatsvertrag über den Rundfunk im vereinten Deutschland zuständigen Aufsichtsbehörde[1] und beantragt den Erlass einer Löschungsanordnung gegen X bezüglich der von ihr in dem Antrag aufgeführten genannten Äußerungen.
+Nachdem X sich weigert, hält J jeden weiteren Versuch, ihn zu den gewünschten Löschungen zu bewegen, für aussichtslos. Sie wendet sich daher an die Aufsichts- und Dienstleistungsdirektion (ADD) als der nach § 3 I des rheinland-pfälzischen Landesgesetzes zu dem Staatsvertrag über den Rundfunk im vereinten Deutschland zuständigen Aufsichtsbehörde und beantragt den Erlass einer Löschungsanordnung gegen X bezüglich der von ihr in dem Antrag aufgeführten genannten Äußerungen.
 
 Die ADD lehnt dies mit J am 06.02.2019 bekanntgegebenem Verwaltungsakt ab. Sie ist der Ansicht, J müsse vor den Zivilgerichten gegen X vorgehen. Außerdem könne sie bereits mangels einschlägiger Ermächtigungsgrundlage keine Löschungsanordnung treffen. § 59 III RStV ermächtige sie gerade nicht, bei Verstößen gegen die allgemeinen Gesetze bzw. gesetzliche Bestimmungen zum Schutz der persönlichen Ehre Maßnahmen zu ergreifen. Weitere Ermächtigungsgrundlagen kämen nicht in Betracht. Des Weiteren seien die von X getätigten Äußerungen von dessen Meinungsfreiheit sowie der Informationsfreiheit der Besucher*innen des Blogs geschützt. Durch das Organisieren der Demonstrationen und das öffentliche Auftreten auf diesen habe sich J in die Öffentlichkeit begeben und müsse daher auch scharfe Kritik hinnehmen.
 
@@ -40,7 +40,7 @@ Die ADD hält die Klage bereits für unzulässig. J habe das Widerspruchsverfahr
 
 ### I. Verwaltungsrechtsweg
 
-### II. Statthafte Klageart 65
+### II. Statthafte Klageart
 
 ### III. Klagebefugnis
 
@@ -349,19 +349,13 @@ Die Klage ist zulässig und begründet und hat somit Aussicht auf Erfolg.
 
 ## Rubrics For Review
 
-**Generated at:** 2026-07-02T11:09:28.420955+00:00
-
-**Review status:** generated_calibrated_needs_human_review
-
-**Language:** de
-
 **Number of criteria:** 88
 
 **Wichtigkeit (Kritikalität):**
 
-- ★★★ zentral - muss enthalten sein: 38 Kriterien
-- ★★ wichtig - in einer soliden Lösung erwartet: 42 Kriterien
-- ★ eher unwichtig - Detail, Form, Bonuswissen: 8 Kriterien
+- ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt): 11 Kriterien
+- ★★ wichtig - in einer soliden Lösung erwartet: 71 Kriterien
+- ★ eher unwichtig - Detail, Form, Bonuswissen: 6 Kriterien
 
 ### A Zulässigkeit
 
@@ -407,7 +401,7 @@ ERFÜLLT, wenn die Antwort den Verwaltungsrechtsweg nicht an einer verfassungsre
 
 ##### C-004 - Klagebegehren Löschungsanordnung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -419,7 +413,7 @@ ERFÜLLT, wenn die Antwort Js Begehren als Erlass einer Löschungsanordnung der 
 
 ##### C-005 - Löschungsanordnung als Verwaltungsakt
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -431,7 +425,7 @@ ERFÜLLT, wenn die Antwort die begehrte Löschungsanordnung gegenüber X als Ver
 
 ##### C-006 - Statthafte Verpflichtungsklage
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -457,7 +451,7 @@ ERFÜLLT, wenn die Antwort bei § 42 Abs. 2 VwGO prüft, ob J durch die Ablehnun
 
 ##### C-008 - Schutznormtheorie
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -469,7 +463,7 @@ ERFÜLLT, wenn die Antwort die subjektiv-rechtliche Wirkung von § 9 Abs. 1 POG 
 
 ##### C-009 - Drittschutz des § 9 Abs. 1 POG
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -505,7 +499,7 @@ ERFÜLLT, wenn die Antwort J als zum geschützten Personenkreis gehörend ansieh
 
 ##### C-012 - Konkrete Löschung nur bei Ermessensreduzierung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -531,7 +525,7 @@ ERFÜLLT, wenn die Antwort wegen der Ablehnung des beantragten Verwaltungsakts e
 
 ##### C-014 - Ende der Widerspruchsfrist
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -543,7 +537,7 @@ ERFÜLLT, wenn die Antwort aus der Bekanntgabe des Ablehnungsbescheids am 06.02.
 
 ##### C-015 - Verspäteter Widerspruch
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -555,7 +549,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass der am 07.03.2019 eingelegte Widersp
 
 ##### C-016 - Wiedereinsetzung im Widerspruchsverfahren
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -567,7 +561,7 @@ ERFÜLLT, wenn die Antwort § 60 VwGO über § 70 Abs. 2 VwGO auf die versäumte
 
 ##### C-017 - Unverschuldeter Unfall der J
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -591,7 +585,7 @@ ERFÜLLT, wenn die Antwort berücksichtigt, dass auch Js Eltern als gesetzliche 
 
 ##### C-019 - Entbehrlicher Wiedereinsetzungsantrag
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -603,7 +597,7 @@ ERFÜLLT, wenn die Antwort erklärt, dass ein ausdrücklicher Wiedereinsetzungsa
 
 ##### C-020 - Rechtzeitige Nachholung am 07.03.2019
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -615,7 +609,7 @@ ERFÜLLT, wenn die Antwort den am 07.03.2019 nach Wegfall des Hindernisses einge
 
 ##### C-021 - Gerichtliche Berücksichtigung der Wiedereinsetzung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -643,7 +637,7 @@ ERFÜLLT, wenn die Antwort das Land Rheinland-Pfalz als richtigen Klagegegner be
 
 ##### C-023 - Beteiligungsfähigkeit der J
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -697,7 +691,7 @@ ERFÜLLT, wenn die Antwort X nach § 65 Abs. 2 VwGO als notwendig beizuladenden 
 
 #### C-027 - Begründetheitsmaßstab der Verpflichtungsklage
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -711,7 +705,7 @@ ERFÜLLT, wenn die Antwort § 113 Abs. 5 Satz 1 VwGO zugrunde legt und fragt, ob
 
 ##### C-028 - Rechtmäßigkeit der begehrten Löschungsverfügung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -737,7 +731,7 @@ ERFÜLLT, wenn die Antwort den Blog des X entsprechend dem Bearbeitungshinweis a
 
 ###### C-030 - § 59 Abs. 3 RStV als mögliche Aufsichtsbefugnis
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -761,7 +755,7 @@ ERFÜLLT, wenn die Antwort § 54 Abs. 1 Satz 3 RStV als Pflicht von Telemedien z
 
 ###### C-032 - Ausschluss des § 54 RStV in § 59 Abs. 3 RStV
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -773,7 +767,7 @@ ERFÜLLT, wenn die Antwort entweder aus dem Wortlaut des § 59 Abs. 3 RStV herle
 
 ###### C-033 - Keine Sperrwirkung nach § 59 Abs. 3 Satz 7 RStV
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -785,7 +779,7 @@ ERFÜLLT, wenn die Antwort § 59 Abs. 3 Satz 7 RStV dahin versteht, dass Befugni
 
 ###### C-034 - Rückgriff auf die ordnungsbehördliche Generalklausel
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -821,7 +815,7 @@ ERFÜLLT, wenn die Antwort die ADD als Landesordnungsbehörde im Sinne von § 89
 
 ###### C-037 - Einschlägige Ermächtigungsgrundlage
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -847,7 +841,7 @@ ERFÜLLT, wenn die Antwort die sachliche Zuständigkeit der ADD im Fall aus § 3
 
 ###### C-040 - Privatrechtsklausel des § 1 Abs. 3 POG
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -871,7 +865,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass J gegen X wegen der Blogäußerungen gr
 
 ###### C-042 - Strafrechtsverstoß als Ausnahme vom Privatrechtsvorrang
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -923,7 +917,7 @@ ERFÜLLT, wenn die Antwort die öffentliche Sicherheit im Rahmen von § 9 Abs. 1
 
 ###### C-045 - Strafgesetze als Teil der öffentlichen Sicherheit
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -959,7 +953,7 @@ ERFÜLLT, wenn die Antwort Beleidigung nach § 185 StGB als Kundgabe von Missach
 
 ###### C-048 - Beschimpfungen als Missachtungskundgaben
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -987,27 +981,27 @@ ERFÜLLT, wenn die Antwort die beleidigenden Werturteile des X zunächst als gru
 
 **Match criteria**
 
-ERFÜLLT, wenn die Antwort Schmähkritik eng als Äußerung beschreibt, bei der nicht mehr die Sachauseinandersetzung, sondern die Diffamierung der Person im Vordergrund steht. NICHT ERFÜLLT, wenn sie jede scharfe oder polemische Kritik automatisch als Schmähkritik behandelt oder den Sachbezug nicht prüft.
+ERFÜLLT, wenn die Antwort Schmähkritik eng als Äußerung beschreibt, bei der nicht mehr die Sachauseinandersetzung, sondern die Diffamierung der Person im Vordergrund steht, ODER wenn sie auf die Schmähkritik-Einordnung verzichtet und stattdessen eine vollständige Einzelfallabwägung zwischen Meinungsfreiheit und allgemeinem Persönlichkeitsrecht/Menschenwürde durchführt. NICHT ERFÜLLT, wenn sie jede scharfe oder polemische Kritik automatisch als Schmähkritik behandelt oder weder die enge Schmähkritik-Prüfung noch eine Abwägung vornimmt.
 
 **Review notes**
 
-- (none)
+- Manuell nachgeschärft nach externem Review (Rass-Masson, 2026-07): volle Einzelfallabwägung mit gleichem Ergebnis als gleichwertige Alternative zum Schmähkritik-Weg der Musterlösung zugelassen.
 
 ###### C-051 - Konkrete Schmähkritik durch X
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
-ERFÜLLT, wenn die Antwort die Beschimpfungen des X als Schmähkritik einordnet, weil sie keinen Bezug zu Js politischem Engagement oder zur Sachdebatte über „Fridays for Future“ haben und keinen schützenswerten Beitrag zur Meinungsbildung leisten. NICHT ERFÜLLT, wenn sie die Beschimpfungen allein wegen Js öffentlicher Rolle als hinzunehmende Sachkritik behandelt.
+ERFÜLLT, wenn die Antwort die Beschimpfungen des X als Schmähkritik einordnet, weil sie keinen Bezug zu Js politischem Engagement oder zur Sachdebatte über „Fridays for Future“ haben und keinen schützenswerten Beitrag zur Meinungsbildung leisten, ODER wenn sie ohne Schmähkritik-Einordnung in einer vollständigen Einzelfallabwägung zum selben Ergebnis kommt (das Persönlichkeitsrecht/die Menschenwürde der J überwiegt, die Beschimpfungen sind nicht gerechtfertigt). NICHT ERFÜLLT, wenn sie die Beschimpfungen allein wegen Js öffentlicher Rolle als hinzunehmende Sachkritik behandelt.
 
 **Review notes**
 
-- (none)
+- Manuell nachgeschärft nach externem Review (Rass-Masson, 2026-07): volle Einzelfallabwägung mit gleichem Ergebnis als gleichwertige Alternative zum Schmähkritik-Weg der Musterlösung zugelassen.
 
 ###### C-052 - Menschenwürdebezug von „nicht lebenswert“
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1019,15 +1013,15 @@ ERFÜLLT, wenn die Antwort die Bezeichnung Js als „nicht lebenswert“ als Ber
 
 ###### C-053 - Meinungsfreiheit rechtfertigt die Beleidigungen nicht
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
-ERFÜLLT, wenn die Antwort zum Ergebnis kommt, dass Art. 5 Abs. 1 Satz 1 GG der Einordnung der Beschimpfungen als Beleidigung nach § 185 StGB nicht entgegensteht, insbesondere weil Schmähkritik beziehungsweise Menschenwürdeverletzungen nicht durchgreifend geschützt sind. NICHT ERFÜLLT, wenn sie die Beschimpfungen allein wegen Meinungsfreiheit des X für rechtmäßig oder straflos hält.
+ERFÜLLT, wenn die Antwort zum Ergebnis kommt, dass Art. 5 Abs. 1 Satz 1 GG der Einordnung der Beschimpfungen als Beleidigung nach § 185 StGB nicht entgegensteht - sei es, weil Schmähkritik beziehungsweise Menschenwürdeverletzungen nicht durchgreifend geschützt sind, sei es aufgrund einer Einzelfallabwägung zugunsten des Persönlichkeitsrechts der J. NICHT ERFÜLLT, wenn sie die Beschimpfungen allein wegen Meinungsfreiheit des X für rechtmäßig oder straflos hält.
 
 **Review notes**
 
-- (none)
+- Manuell nachgeschärft nach externem Review (Rass-Masson, 2026-07): volle Einzelfallabwägung mit gleichem Ergebnis als gleichwertige Alternative zum Schmähkritik-Weg der Musterlösung zugelassen.
 
 ###### C-054 - Verleumdungsbegriff
 
@@ -1055,7 +1049,7 @@ ERFÜLLT, wenn die Antwort die Behauptung, J sei wegen freitäglichen Schuleschw
 
 ###### C-056 - Unwahrheit und Wissen des X
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1105,7 +1099,7 @@ ERFÜLLT, wenn die Antwort einen bereits eingetretenen und fortwirkenden Schaden
 
 ###### C-060 - Fortdauernde Störung durch Xs Blogbeitrag
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1143,7 +1137,7 @@ ERFÜLLT, wenn die Antwort Handlungs- beziehungsweise Verhaltensstörer nach § 
 
 ###### C-063 - X als Handlungsstörer
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1169,7 +1163,7 @@ ERFÜLLT, wenn die Antwort § 7 Abs. 1 TMG dahin berücksichtigt, dass X als Die
 
 ###### C-065 - Ermessen nach § 9 Abs. 1 POG
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1211,7 +1205,7 @@ ERFÜLLT, wenn die Antwort die konkrete Löschungsanordnung am Verhältnismäßi
 
 ###### C-068 - Legitimer Zweck der Löschung
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1265,7 +1259,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass eine Zugangsbeschränkung oder Sperrung
 
 ###### C-072 - Grundrechtliche Angemessenheitsabwägung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1289,7 +1283,7 @@ ERFÜLLT, wenn die Antwort die bewusst unwahre Behauptung, J sei von der Schule 
 
 ###### C-074 - Öffentliches Auftreten rechtfertigt keine Entwürdigung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1351,7 +1345,7 @@ ERFÜLLT, wenn die Antwort das Informationsinteresse an der bewusst unwahren Beh
 
 ##### C-079 - Grundrechtliche Schutzpflicht als Quelle der Ermessensreduzierung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1387,7 +1381,7 @@ ERFÜLLT, wenn die Antwort den möglichen zivilrechtlichen Rechtsschutz der J ge
 
 ##### C-082 - Menschenwürde als Argument für Ermessensreduzierung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1399,7 +1393,7 @@ ERFÜLLT, wenn die Antwort die Betroffenheit von Js Menschenwürde durch die Aus
 
 ##### C-083 - Schwere Persönlichkeitsrechtsverletzung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1447,7 +1441,7 @@ ERFÜLLT, wenn die Antwort den technischen oder praktischen Aufwand für X, die 
 
 ##### C-087 - Verdichtung des Entschließungsermessens
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1459,7 +1453,7 @@ ERFÜLLT, wenn die Antwort entweder das Entschließungsermessen der ADD wegen de
 
 ##### C-088 - Verdichtung des Auswahlermessens
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 

@@ -1,0 +1,27 @@
+Extract the outline (Gliederung) of the model solution as a tree.
+
+Rules:
+
+- Mirror the solution's own structure. If it has explicit headings or inline outline markers (e.g. "Lösung zu Frage 1", "A. Zulässigkeit", "I. ...", "1. ...", "a) ...", "aa) ..."), reproduce exactly those levels and labels, in document order. Do not add, merge, rename, or reorder sections.
+- Node ids are the solution's own marker path joined with dots, e.g. "A", "A.I", "A.I.1", "A.I.1.a". If the solution is split into questions, prefix with the question, e.g. "F1", "F1.A", "F2.I". Ids must be unique.
+- The label is the marker's title as written in the solution (without the marker itself), e.g. id "A" with label "Zulässigkeit der Klage". If a marker has no title (runs straight into a sentence), derive a short label from the section's subject and set "derived_label": true on that node.
+- Only include structural sections. Do not create nodes for individual sentences, Hinweis passages, or footnotes.
+- Depth: include every level the solution itself uses (typically up to 4-5). Do not go deeper than the solution's own markers.
+- If the solution has NO explicit structure at all (essay-style), reconstruct the logical outline of the argument as a shallow tree (one to two levels) and set the top-level field "derived" to true. Otherwise "derived" is false.
+- Never invent stations that are not treated in the solution.
+
+Return only valid JSON:
+{
+  "language": "...",
+  "derived": false,
+  "outline": [
+    {
+      "id": "A",
+      "label": "Zulässigkeit der Klage",
+      "children": [
+        {"id": "A.I", "label": "Sachliche Zuständigkeit", "children": []}
+      ]
+    }
+  ],
+  "outline_notes": ["..."]
+}

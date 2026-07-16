@@ -390,13 +390,48 @@ def evaluate(
         for criterion, vote_results in zip(criteria, votes_by_criterion)
     ]
 
+    return assemble_scores(
+        task_dir=task_dir,
+        submission=submission,
+        rubric_path=rubric_path,
+        task=task,
+        criteria=criteria,
+        results=results,
+        judge_model=judge_model,
+        api_base=api_base,
+        reasoning_effort=reasoning_effort,
+        votes=votes,
+        adaptive=adaptive,
+    )
+
+
+def assemble_scores(
+    *,
+    task_dir: pathlib.Path,
+    submission: pathlib.Path,
+    rubric_path: pathlib.Path,
+    task: dict[str, Any],
+    criteria: list[dict[str, Any]],
+    results: list[dict[str, Any]],
+    judge_model: str,
+    api_base: str,
+    reasoning_effort: str | None,
+    votes: int,
+    adaptive: bool,
+) -> dict[str, Any]:
+    """Build the scores.json payload from per-criterion aggregated results.
+
+    Shared by the synchronous evaluate() path and the Batch-API judging path so
+    both produce byte-identical score files.
+    """
     criteria_by_id = {criterion["id"]: criterion for criterion in criteria}
 
     def make_breakdown(key_of: Any) -> dict[str, dict[str, Any]]:
         groups: dict[str, dict[str, Any]] = {}
         for result in results:
-            tags = (criteria_by_id.get(result["id"], {}).get("analysis_tags")) or {}
-            key = key_of(tags) or "untagged"
+            criterion = criteria_by_id.get(result["id"], {})
+            tags = criterion.get("analysis_tags") or {}
+            key = key_of(criterion, tags) or "untagged"
             group = groups.setdefault(key, {"n_criteria": 0, "n_passed": 0, "n_failed": 0, "n_errors": 0})
             group["n_criteria"] += 1
             if result["verdict"] == "pass":
@@ -410,6 +445,8 @@ def evaluate(
         return groups
 
     has_tags = any(criterion.get("analysis_tags") for criterion in criteria)
+    has_criticality = any(criterion.get("criticality") in (1, 2, 3) for criterion in criteria)
+    criticality_labels = {3: "3 (ergebnistragend)", 2: "2 (wichtig)", 1: "1 (eher unwichtig)"}
 
     n_passed = sum(1 for result in results if result["verdict"] == "pass")
     n_errors = sum(1 for result in results if result["verdict"] == "error")
@@ -444,8 +481,10 @@ def evaluate(
         "criterion_pass_rate": n_passed / n_criteria if n_criteria else 0.0,
         "mean_judge_agreement": round(sum(agreements) / len(agreements), 3) if agreements else 0.0,
         "n_unanimous": sum(1 for result in results if result["judge_agreement"] == 1.0),
-        "breakdown_by_station": make_breakdown(lambda tags: (tags.get("station_path") or [None])[0]) if has_tags else None,
-        "breakdown_by_function": make_breakdown(lambda tags: tags.get("function")) if has_tags else None,
+        "breakdown_by_station": make_breakdown(lambda _c, tags: (tags.get("station_path") or [None])[0]) if has_tags else None,
+        "breakdown_by_outline": make_breakdown(lambda _c, tags: " › ".join(tags.get("station_path", [])[:2]) or None) if has_tags else None,
+        "breakdown_by_function": make_breakdown(lambda _c, tags: tags.get("function")) if has_tags else None,
+        "breakdown_by_criticality": make_breakdown(lambda c, _tags: criticality_labels.get(c.get("criticality"))) if has_criticality else None,
         "judge_usage_total": judge_usage_total,
         "criteria_results": results,
     }
@@ -500,7 +539,11 @@ def main() -> int:
     )
     scores_path = write_scores(submission, scores, args.output)
     print(f"{scores['n_passed']}/{scores['n_criteria']} criteria passed")
-    for breakdown_key, label in [("breakdown_by_station", "By station"), ("breakdown_by_function", "By function")]:
+    for breakdown_key, label in [
+        ("breakdown_by_station", "By station"),
+        ("breakdown_by_function", "By function"),
+        ("breakdown_by_criticality", "By criticality"),
+    ]:
         breakdown = scores.get(breakdown_key)
         if breakdown:
             print(f"{label}:")

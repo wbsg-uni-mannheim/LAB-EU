@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2240" height="1260" viewBox="0 0 2240 1260" role="img" aria-labelledby="title desc">
+  <title id="title">Evaluations-Pipeline mit Rubrik-Erstellung und LLM-as-a-Judge</title>
+  <desc id="desc">Zwei Ebenen zeigen die einmalige Rubrik-Erstellung und die wiederholte Bewertung von Modellantworten.</desc>
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .navy { fill: #003a5d; }
+      .teal { fill: #3e8f92; }
+      .light { fill: #eaf1f7; }
+      .mid { fill: #b9ccda; }
+      .line { stroke: #9fb5c6; stroke-width: 6; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .line-dark { stroke: #003a5d; stroke-width: 7; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .dash { stroke: #9fb5c6; stroke-width: 5; fill: none; stroke-dasharray: 16 14; }
+      .h1 { fill: #003a5d; font: 800 58px "Aptos Display", "Aptos", "Calibri", "Arial", sans-serif; }
+      .lane { fill: #003a5d; font: 800 31px "Aptos", "Calibri", "Arial", sans-serif; letter-spacing: .5px; }
+      .label-dark { fill: #003a5d; font: 800 31px "Aptos", "Calibri", "Arial", sans-serif; }
+      .label-white { fill: #ffffff; font: 800 31px "Aptos", "Calibri", "Arial", sans-serif; }
+      .body-dark { fill: #5d6f7e; font: 600 24px "Aptos", "Calibri", "Arial", sans-serif; }
+      .body-white { fill: #ffffff; font: 600 23px "Aptos", "Calibri", "Arial", sans-serif; }
+      .small { fill: #5d6f7e; font: 700 22px "Aptos", "Calibri", "Arial", sans-serif; }
+      .tiny { fill: #ffffff; font: 800 24px "Aptos", "Calibri", "Arial", sans-serif; }
+      .num { fill: #ffffff; font: 800 30px "Aptos", "Calibri", "Arial", sans-serif; }
+    </style>
+    <marker id="arrow" viewBox="0 0 18 18" refX="16" refY="9" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 18 9 L 0 18 z" fill="#9fb5c6" />
+    </marker>
+    <marker id="arrow-dark" viewBox="0 0 18 18" refX="16" refY="9" markerWidth="10" markerHeight="10" orient="auto-start-reverse">
+      <path d="M 0 0 L 18 9 L 0 18 z" fill="#003a5d" />
+    </marker>
+    <filter id="shadow" x="-10%" y="-15%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="11" flood-color="#0d2f45" flood-opacity=".13"/>
+    </filter>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="2240" height="1260"/>
+
+  <text class="h1" x="110" y="115">Evaluations-Pipeline: von Musterlösung zu belastbarer Bewertung</text>
+
+  <rect x="110" y="180" width="2020" height="390" rx="36" fill="#f6f9fb"/>
+  <rect x="110" y="675" width="2020" height="390" rx="36" fill="#f6f9fb"/>
+
+  <text class="lane" x="155" y="245">1. Rubrik-Erstellung · einmalig pro Fall</text>
+  <text class="lane" x="155" y="740">2. Evaluation · für jede Modellantwort wiederholbar</text>
+
+  <line class="dash" x1="1120" y1="600" x2="1120" y2="650"/>
+  <text class="small" x="1120" y="632" text-anchor="middle">Rubrik wird eingefroren</text>
+
+  <!-- Authoring lane -->
+  <g filter="url(#shadow)">
+    <rect class="light" x="155" y="300" width="330" height="190" rx="30"/>
+    <circle class="navy" cx="205" cy="350" r="30"/>
+    <text class="num" x="205" y="360" text-anchor="middle">1</text>
+    <text class="label-dark" x="320" y="355" text-anchor="middle">Fallpaket</text>
+    <text class="body-dark" x="320" y="405" text-anchor="middle">
+      <tspan x="320">Sachverhalt, Normen,</tspan>
+      <tspan x="320" dy="34">Musterlösung</tspan>
+    </text>
+  </g>
+
+  <path class="line" d="M 510 395 H 630" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect class="navy" x="640" y="300" width="420" height="190" rx="30"/>
+    <circle fill="#ffffff" cx="690" cy="350" r="27"/>
+    <text fill="#003a5d" font-family="Aptos, Calibri, Arial, sans-serif" font-size="27" font-weight="800" x="690" y="359" text-anchor="middle">2</text>
+    <text class="label-white" x="860" y="352" text-anchor="middle">Rubrik-Engine</text>
+    <text class="body-white" x="860" y="402" text-anchor="middle">
+      <tspan x="860">Atome extrahieren,</tspan>
+      <tspan x="860" dy="32">Kriterien erzeugen,</tspan>
+      <tspan x="860" dy="32">Goldlösung kalibrieren</tspan>
+    </text>
+  </g>
+
+  <path class="line" d="M 1085 395 H 1180" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect class="light" x="1215" y="300" width="360" height="190" rx="30"/>
+    <circle class="teal" cx="1265" cy="350" r="27"/>
+    <text class="num" x="1265" y="359" text-anchor="middle">3</text>
+    <text class="label-dark" x="1405" y="352" text-anchor="middle">Juristisches Review</text>
+    <text class="body-dark" x="1405" y="402" text-anchor="middle">
+      <tspan x="1405">Kriterien prüfen,</tspan>
+      <tspan x="1405" dy="32">schärfen oder streichen</tspan>
+    </text>
+  </g>
+
+  <path class="line" d="M 1600 395 H 1690" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect class="navy" x="1725" y="300" width="355" height="190" rx="30"/>
+    <text class="label-white" x="1902" y="358" text-anchor="middle">Finale Rubrik</text>
+    <text class="body-white" x="1902" y="408" text-anchor="middle">
+      <tspan x="1902">Boolean Kriterien:</tspan>
+      <tspan x="1902" dy="34">erfüllt / nicht erfüllt</tspan>
+    </text>
+  </g>
+
+  <!-- Evaluation lane -->
+  <g filter="url(#shadow)">
+    <rect class="light" x="155" y="795" width="330" height="190" rx="30"/>
+    <text class="label-dark" x="320" y="855" text-anchor="middle">Benchmark-Input</text>
+    <text class="body-dark" x="320" y="905" text-anchor="middle">
+      <tspan x="320">Aufgabe + Dokumente</tspan>
+      <tspan x="320" dy="34">ohne Lösung und Rubrik</tspan>
+    </text>
+  </g>
+
+  <path class="line" d="M 510 890 H 630" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect class="light" x="665" y="795" width="330" height="190" rx="30"/>
+    <text class="label-dark" x="830" y="855" text-anchor="middle">Agentenantwort</text>
+    <text class="body-dark" x="830" y="905" text-anchor="middle">
+      <tspan x="830">KI erstellt die</tspan>
+      <tspan x="830" dy="34">Falllösung</tspan>
+    </text>
+  </g>
+
+  <path class="line-dark" d="M 1902 505 V 625 H 1195 V 772" marker-end="url(#arrow-dark)"/>
+  <text class="small" x="1575" y="622" text-anchor="middle">eingefrorene Rubrik als Bewertungsmaßstab</text>
+
+  <path class="line" d="M 1020 890 H 1165" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect class="navy" x="1200" y="795" width="400" height="190" rx="30"/>
+    <text class="label-white" x="1400" y="850" text-anchor="middle">LLM-as-a-Judge</text>
+    <text class="body-white" x="1400" y="900" text-anchor="middle">
+      <tspan x="1400">prüft jedes Kriterium</tspan>
+      <tspan x="1400" dy="34">separat gegen die Antwort</tspan>
+    </text>
+  </g>
+
+  <path class="line" d="M 1625 890 H 1745" marker-end="url(#arrow)"/>
+
+  <g filter="url(#shadow)">
+    <rect class="light" x="1780" y="795" width="330" height="190" rx="30"/>
+    <text class="label-dark" x="1945" y="850" text-anchor="middle">Score &amp; Diagnose</text>
+    <text class="body-dark" x="1945" y="900" text-anchor="middle">
+      <tspan x="1945">Pass-Rate gesamt,</tspan>
+      <tspan x="1945" dy="34">nach Station und Funktion</tspan>
+    </text>
+  </g>
+
+  <g transform="translate(155 1125)">
+    <rect x="0" y="0" width="1930" height="70" rx="24" fill="#eaf1f7"/>
+    <circle class="navy" cx="36" cy="35" r="14"/>
+    <text class="body-dark" x="68" y="45">Kernidee: Die Musterlösung wird nur zur Rubrik-Erstellung genutzt. Die spätere KI sieht nur Aufgabe und Dokumente; bewertet wird über juristisch geprüfte Boolean-Kriterien.</text>
+  </g>
+</svg>

@@ -17,9 +17,13 @@ from __future__ import annotations
 import argparse
 import json
 import pathlib
+import sys
 from typing import Any
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO_ROOT / "scripts"))
+
+from outline_util import UE_ID, index_outline  # noqa: E402
 
 
 def parse_args() -> argparse.Namespace:
@@ -44,12 +48,14 @@ def resolve_scores_path(target: pathlib.Path) -> pathlib.Path:
     return path
 
 
-def load_rubric_index(task_dir: pathlib.Path) -> dict[str, dict[str, Any]]:
+def load_rubric(task_dir: pathlib.Path) -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]:
+    """Return (criteria-by-id, outline nodes or [])."""
     rubric_path = task_dir / "evals" / "rubric.json"
     if not rubric_path.exists():
-        return {}
+        return {}, []
     rubric = json.loads(rubric_path.read_text(encoding="utf-8"))
-    return {c["id"]: c for c in rubric.get("criteria", []) if "id" in c}
+    index = {c["id"]: c for c in rubric.get("criteria", []) if "id" in c}
+    return index, rubric.get("outline") or []
 
 
 def read_deliverables(submission_dir: pathlib.Path) -> str:
@@ -88,11 +94,115 @@ def station_of(criterion: dict[str, Any]) -> str:
     return path[0] if path else "Ohne Kategorie"
 
 
+def criticality_stars(criterion: dict[str, Any]) -> str:
+    value = criterion.get("criticality")
+    return "★" * value if value in (1, 2, 3) else ""
+
+
+def render_criterion(
+    lines: list[str],
+    r: dict[str, Any],
+    crit: dict[str, Any],
+    votes: int,
+    *,
+    heading: str | None,
+) -> None:
+    crit_meta = crit.get("analysis_tags") or {}
+    extra = []
+    stars = criticality_stars(crit)
+    if stars:
+        extra.append(stars)
+    elif crit.get("criticality") and crit["criticality"] != "must_pass":
+        extra.append(str(crit["criticality"]))
+    if crit_meta.get("function"):
+        extra.append(crit_meta["function"])
+    tag = f" _({', '.join(extra)})_" if extra else ""
+    title_line = f"{verdict_mark(r['verdict'])} — {r['id']}: {r.get('title', '')}"
+    if heading:
+        lines.append(f"{heading} {title_line}{tag}")
+    else:
+        lines.append(f"**{title_line}**{tag}")
+    lines.append("")
+    if crit.get("match_criteria"):
+        lines.append(f"**Kriterium:** {crit['match_criteria']}")
+        lines.append("")
+    if votes > 1 and r.get("vote_counts"):
+        vc = r["vote_counts"]
+        lines.append(f"**Votes:** {vc.get('pass', 0)} pass / {vc.get('fail', 0)} fail")
+        lines.append("")
+    if r.get("reasoning"):
+        lines.append(f"**Begründung des Judge:** {r['reasoning']}")
+        lines.append("")
+    if r.get("evidence"):
+        quotes = "; ".join(f"„{e}“" for e in r["evidence"] if e)
+        if quotes:
+            lines.append(f"**Belege:** {quotes}")
+            lines.append("")
+
+
+def render_outline_grouped(
+    lines: list[str],
+    outline: list[dict[str, Any]],
+    results: list[dict[str, Any]],
+    rubric: dict[str, dict[str, Any]],
+    votes: int,
+) -> None:
+    known = set(index_outline(outline))
+    by_node: dict[str, list[dict[str, Any]]] = {}
+    unmapped: list[dict[str, Any]] = []
+    for r in results:
+        oid = (rubric.get(r["id"], {}).get("analysis_tags") or {}).get("outline_id")
+        if oid in known:
+            by_node.setdefault(oid, []).append(r)
+        else:
+            unmapped.append(r)
+
+    def subtree_stats(node: dict[str, Any]) -> tuple[int, int]:
+        group = by_node.get(node["id"], [])
+        n = len(group)
+        passed = sum(1 for r in group if r["verdict"] == "pass")
+        for child in node.get("children") or []:
+            cn, cp = subtree_stats(child)
+            n += cn
+            passed += cp
+        return n, passed
+
+    def render_nodes(nodes: list[dict[str, Any]], depth: int) -> None:
+        for node in nodes:
+            n, passed = subtree_stats(node)
+            if n == 0:
+                continue
+            label = (
+                node["label"]
+                if node["id"] == UE_ID or node["id"] == node["label"]
+                else f"{node['id']} {node['label']}"
+            )
+            header = f"{label} — {passed}/{n}"
+            if depth == 1:
+                lines.append(f"### {header}")
+            elif depth == 2:
+                lines.append(f"#### {header}")
+            else:
+                lines.append(f"**{header}**")
+            lines.append("")
+            for r in by_node.get(node["id"], []):
+                render_criterion(lines, r, rubric.get(r["id"], {}), votes, heading=None)
+            render_nodes(node.get("children") or [], depth + 1)
+
+    render_nodes(outline, 1)
+    if unmapped:
+        n_pass = sum(1 for r in unmapped if r["verdict"] == "pass")
+        lines.append(f"### Ohne Kategorie — {n_pass}/{len(unmapped)}")
+        lines.append("")
+        for r in unmapped:
+            render_criterion(lines, r, rubric.get(r["id"], {}), votes, heading=None)
+
+
 def build_markdown(scores_path: pathlib.Path) -> str:
     scores = json.loads(scores_path.read_text(encoding="utf-8"))
     submission_dir = scores_path.parent
     task_dir = pathlib.Path(scores["task"]["path"])
-    rubric = load_rubric_index(task_dir)
+    rubric, outline = load_rubric(task_dir)
     meta = run_meta(submission_dir)
 
     lines: list[str] = []
@@ -114,6 +224,22 @@ def build_markdown(scores_path: pathlib.Path) -> str:
             for name, g in sorted(scores["breakdown_by_station"].items(), key=lambda x: -x[1]["n_criteria"])
         ]
         lines.append(f"- **Nach Station:** {' · '.join(parts)}")
+    # Wichtigkeits-Breakdown aus dem Rubric berechnen, damit auch alte
+    # scores.json ohne breakdown_by_criticality ihn bekommen.
+    tiers: dict[int, dict[str, int]] = {}
+    for r in scores["criteria_results"]:
+        value = rubric.get(r["id"], {}).get("criticality")
+        if value in (1, 2, 3):
+            tier = tiers.setdefault(value, {"n": 0, "passed": 0})
+            tier["n"] += 1
+            tier["passed"] += 1 if r["verdict"] == "pass" else 0
+    if tiers:
+        parts = [
+            f"{'★' * value} {tiers[value]['passed']}/{tiers[value]['n']} ({tiers[value]['passed'] / tiers[value]['n']:.0%})"
+            for value in (3, 2, 1)
+            if value in tiers
+        ]
+        lines.append(f"- **Nach Wichtigkeit:** {' · '.join(parts)}")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -126,8 +252,16 @@ def build_markdown(scores_path: pathlib.Path) -> str:
     lines.append("## Bewertung nach Rubrik")
     lines.append("")
 
-    # Group results by top-level station, preserving criterion order within station.
     results = scores["criteria_results"]
+    has_outline_tags = outline and any(
+        (rubric.get(r["id"], {}).get("analysis_tags") or {}).get("outline_id") for r in results
+    )
+    if has_outline_tags:
+        # Nested grouping along the Musterlösung's own Gliederung.
+        render_outline_grouped(lines, outline, results, rubric, votes)
+        return "\n".join(lines).rstrip() + "\n"
+
+    # Fallback: group by top-level station, preserving criterion order within station.
     stations: dict[str, list[dict[str, Any]]] = {}
     order: list[str] = []
     for r in results:
@@ -143,31 +277,7 @@ def build_markdown(scores_path: pathlib.Path) -> str:
         lines.append(f"### {st} — {n_pass}/{len(group)}")
         lines.append("")
         for r in group:
-            crit = rubric.get(r["id"], {})
-            crit_meta = crit.get("analysis_tags") or {}
-            extra = []
-            if crit.get("criticality") and crit["criticality"] != "must_pass":
-                extra.append(crit["criticality"])
-            if crit_meta.get("function"):
-                extra.append(crit_meta["function"])
-            tag = f" _({', '.join(extra)})_" if extra else ""
-            lines.append(f"#### {verdict_mark(r['verdict'])} — {r['id']}: {r.get('title', '')}{tag}")
-            lines.append("")
-            if crit.get("match_criteria"):
-                lines.append(f"**Kriterium:** {crit['match_criteria']}")
-                lines.append("")
-            if votes > 1 and r.get("vote_counts"):
-                vc = r["vote_counts"]
-                lines.append(f"**Votes:** {vc.get('pass', 0)} pass / {vc.get('fail', 0)} fail")
-                lines.append("")
-            if r.get("reasoning"):
-                lines.append(f"**Begründung des Judge:** {r['reasoning']}")
-                lines.append("")
-            if r.get("evidence"):
-                quotes = "; ".join(f"„{e}“" for e in r["evidence"] if e)
-                if quotes:
-                    lines.append(f"**Belege:** {quotes}")
-                    lines.append("")
+            render_criterion(lines, r, rubric.get(r["id"], {}), votes, heading="####")
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 

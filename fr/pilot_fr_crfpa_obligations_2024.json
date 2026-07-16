@@ -1,0 +1,33 @@
+{
+  "task_id": "FR-CRFPA-2024-DO1",
+  "title": "Cas pratique — droit des obligations (CRFPA 2024, sujet principal)",
+  "source": "Conseil National des Barreaux (CNB), Examen d'accès au CRFPA, session 2024, épreuve de droit des obligations (24CRFPA-DO1). Sujet public. Barème officiel intégré au sujet (20 points).",
+  "language": "fr",
+  "deliverable": "consultation.md",
+  "jurisdiction_profile": {
+    "jurisdiction": "FR",
+    "reasoning_style": "syllogisme_juridique",
+    "exercise_type": "cas_pratique_consultation",
+    "citation_format": "Code civil (articles), jurisprudence (Cass.)",
+    "primary_law_version": "Code civil post-réforme 2016 (ord. 2016-131) et post-loi 2018-287",
+    "source_corpus": ["Legifrance", "Judilibre"],
+    "output_language": "fr",
+    "judge_config": {"models": ["multi"], "calibration": "grille_CNB + experts_AIPILoT"}
+  },
+  "tags": [
+    "ensemble-contractuel", "contrats-interdependants", "location-financiere",
+    "caducite-art-1186", "obligation-de-moyens", "resolution-unilaterale-art-1224",
+    "responsabilite-du-fait-des-choses-art-1242", "chose-inerte-anormalite",
+    "faute-de-la-victime", "mineur-Derguini-Lemaire", "contrat-international-choix-loi"
+  ],
+  "instructions_for_agent": "Vous êtes avocat. Rédigez une consultation juridique résolvant, en droit français, les questions posées, en appliquant la méthode du syllogisme (règle applicable, application aux faits, conclusion). Barème indicatif : AlphaDot/CUK 8 pts ; SOFISPE 7 pts ; Jeanne/TITI 5 pts.",
+  "case": "I. La société AlphaDot (française, logiciels de cybersécurité) contracte fin 2022 avec CyberUkraina (CUK, Kiev). AlphaDot propose (a) la fourniture de matériels (serveurs et matériels de surveillance) pour 1 200 000 €, et (b) un contrat de « Services » (logiciels de sécurité, maintenance, formation) sous forme d'abonnement de 2 ans renouvelable par tacite reconduction, 350 000 €/an. Le contrat prévoit l'application de la loi française. CUK n'ayant pas la trésorerie, AlphaDot l'oriente vers une société financière (SOFISPE). Le 10 juin 2023 : (1) contrat AlphaDot–CUK pour la partie « Services » ; (2) contrat par lequel SOFISPE achète à AlphaDot l'ensemble des matériels ; (3) contrat par lequel SOFISPE loue ces matériels à CUK, 250 000 €/an pour 6 ans. Fin 2023, CUK subit une cyberattaque d'ampleur non stoppée par les systèmes ; une partie des données est détruite. CUK met fin immédiatement au contrat « Services » et réclame le remboursement des sommes payées et des dommages-intérêts. CUK met aussi fin au contrat avec SOFISPE et cesse de payer les loyers. AlphaDot consulte sur sa situation vis-à-vis de CUK (8 points). SOFISPE consulte sur sa situation vis-à-vis de CUK et d'AlphaDot (7 points).\n\nII. Alphonse élève seul sa fille Jeanne, 13 ans, passionnée d'escalade et de toits. En juillet 2024, courant sur le toit d'un garage appartenant à la société TITI, elle se blesse gravement : des tuiles se descellent sous son poids et l'entraînent dans leur chute. L'expertise révèle un garage en mauvais état, mal entretenu ; mais des panneaux parfaitement visibles à l'entrée interdisent l'accès. Alphonse se demande si Jeanne peut obtenir réparation (5 points).",
+  "reference_solution_file": "Pilot_FR_Benchmark_Proposal.md",
+  "rubric_file": "Pilot_FR_Benchmark_Proposal.md",
+  "rubric_meta": {
+    "weighting": "barème officiel CNB (20 pts) → poids par critère : essentiel / standard / approfondi",
+    "hierarchy": "critères rattachés au plan (I.A, I.B, II) et aux étapes du syllogisme",
+    "alternative_paths": "critères marqués [thèse défendable] : plusieurs solutions cohérentes acceptées",
+    "note": "Rubrique reconstruite sur le barème officiel public ; à valider/remplacer par la grille de notation officielle de la Commission nationale (transmise aux IEJ)."
+  }
+}

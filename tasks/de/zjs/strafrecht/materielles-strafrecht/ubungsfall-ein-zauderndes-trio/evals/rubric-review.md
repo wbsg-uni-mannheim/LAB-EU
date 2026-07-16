@@ -106,7 +106,7 @@ Forderte man ein inneres Abstandnehmen vom Unrecht der Tat als moralische Qualit
 
 Für diese Position könnte sprechen, dass nur der innerlich von der Tat sich abkehrende Täter belohnenswert erscheint und prognostisch ungefährlich ist.
 
-Zentraler Zweck des § 24 StGB ist indes nicht die Belohnung des Täters für einen Gesinnungswandel unter Berücksichtigung künftigen Täterverhaltens, sondern der Rechtsgüterschutz in der akuten Situation:17 § 24 StGB will den Täter bewegen, sich – freiwillig – gegen die Tatvollendung zu entscheiden, unabhängig von der moralischen Qualität des Motivs. B und C traten demnach freiwillig zurück.
+Zentraler Zweck des § 24 StGB ist indes nicht die Belohnung des Täters für einen Gesinnungswandel unter Berücksichtigung künftigen Täterverhaltens, sondern der Rechtsgüterschutz in der akuten Situation: § 24 StGB will den Täter bewegen, sich – freiwillig – gegen die Tatvollendung zu entscheiden, unabhängig von der moralischen Qualität des Motivs. B und C traten demnach freiwillig zurück.
 
 Hinweis: Das gegenteilige Ergebnis ist mit höherem Begründungsaufwand vertretbar.
 
@@ -156,19 +156,13 @@ A, B und C bleiben straflos.
 
 ## Rubrics For Review
 
-**Generated at:** 2026-07-09T20:03:18.025856+00:00
-
-**Review status:** generated_calibrated_needs_human_review
-
-**Language:** de
-
 **Number of criteria:** 67
 
 **Wichtigkeit (Kritikalität):**
 
-- ★★★ zentral - muss enthalten sein: 28 Kriterien
-- ★★ wichtig - in einer soliden Lösung erwartet: 36 Kriterien
-- ★ eher unwichtig - Detail, Form, Bonuswissen: 3 Kriterien
+- ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt): 7 Kriterien
+- ★★ wichtig - in einer soliden Lösung erwartet: 60 Kriterien
+- ★ eher unwichtig - Detail, Form, Bonuswissen: 0 Kriterien
 
 ### I Strafbarkeit von A, B und C nach §§ 212 Abs. 1, 25 Abs. 2, 22, 23 Abs. 1 StGB
 
@@ -176,7 +170,7 @@ A, B und C bleiben straflos.
 
 ##### C-002 - Keine vollendete Tötung des O
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -188,7 +182,7 @@ ERFÜLLT, wenn die Antwort feststellt oder eindeutig zugrunde legt, dass Ortwin 
 
 ##### C-003 - Versuch des Totschlags ist strafbar
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -214,7 +208,7 @@ ERFÜLLT, wenn die Antwort den Tatentschluss beim versuchten Totschlag als Vorsa
 
 ##### C-005 - Tötungsvorsatz gegenüber O
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -238,7 +232,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass das gemeinsame Erwürgen nach der Vorst
 
 ##### C-007 - Vorgestellte objektive Zurechnung
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -262,7 +256,7 @@ ERFÜLLT, wenn die Antwort erklärt, dass nicht feststehen musste, welche einzel
 
 ##### C-009 - Gemeinsamer Tatplan vom 8.5.
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -298,7 +292,7 @@ ERFÜLLT, wenn die Antwort die geplante Anwesenheit von A, B und C am Tatort und
 
 ##### C-012 - Animus auctoris nach subjektiver Theorie
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -310,7 +304,7 @@ ERFÜLLT, wenn die Antwort die abgeschwächt subjektive Theorie dahin beschreibt
 
 ##### C-013 - Täterwille aller drei im ursprünglichen Plan
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -321,18 +315,6 @@ ERFÜLLT, wenn die Antwort aus dem gemeinsamen Interesse am Tod des O oder aus d
 - Subsumtion subjektive Theorie.
 
 #### I.3 Unmittelbares Ansetzen
-
-##### C-015 - Differenzierung zwischen A und B/C beim unmittelbaren Ansetzen
-
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
-
-**Match criteria**
-
-ERFÜLLT, wenn die Antwort beim unmittelbaren Ansetzen nach § 22 StGB zwischen A einerseits und B/C andererseits unterscheidet, weil nur B und C aus dem Gebüsch auf O und K zusprangen, während A sich vorher distanzierte und im Gebüsch blieb. NICHT ERFÜLLT, wenn sie A, B und C beim Hervorspringen unterschiedslos behandelt oder A als mitspringenden Angreifer darstellt.
-
-**Review notes**
-
-- Parteibezogene Differenzierung.
 
 ##### C-016 - Subjektive Schwelle des unmittelbaren Ansetzens
 
@@ -410,7 +392,7 @@ ERFÜLLT, wenn die Antwort bei der Hinterhaltssituation entweder nach der Haupta
 
 ###### C-022 - Vertretbare Bewertung des Lauerstadiums
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -422,11 +404,23 @@ ERFÜLLT, wenn die Antwort entweder das bloße Auf-der-Lauer-Liegen von A, B und
 
 ##### I.3.b Durch Zuspringen des B und C auf K und O
 
+###### C-015 - Differenzierung zwischen A und B/C beim unmittelbaren Ansetzen
+
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort beim unmittelbaren Ansetzen nach § 22 StGB zwischen A einerseits und B/C andererseits unterscheidet, weil nur B und C aus dem Gebüsch auf O und K zusprangen, während A sich vorher distanzierte und im Gebüsch blieb. NICHT ERFÜLLT, wenn sie A, B und C beim Hervorspringen unterschiedslos behandelt oder A als mitspringenden Angreifer darstellt.
+
+**Review notes**
+
+- Parteibezogene Differenzierung.
+
 ##### I.3.b.aa Bezüglich B und C
 
 ###### C-014 - Fortbestehender Tötungsentschluss von B und C
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -438,7 +432,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass B und C nach dem Auftauchen des K am En
 
 ###### C-023 - Hervorspringen von B und C als Übergang zur Attacke
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -450,7 +444,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass das Hervorspringen von B und C aus dem 
 
 ###### C-024 - Zwischenschritte nach dem Hervorspringen von B und C
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -474,7 +468,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass B und C beim Herausspringen aus dem 
 
 ###### C-026 - Vertretbare Bewertung des Versuchsbeginns von B und C
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -488,7 +482,7 @@ ERFÜLLT, wenn die Antwort entweder das Hervorspringen und Zuspringen von B und 
 
 ###### C-027 - A sprang nicht selbst aus dem Gebüsch
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -500,7 +494,7 @@ ERFÜLLT, wenn die Antwort bezogen auf den späteren Angriffsbeginn erkennt, das
 
 ###### C-028 - Gesamtlösung zur Zurechnung des Versuchsbeginns
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -512,7 +506,7 @@ ERFÜLLT, wenn die Antwort bei A zumindest sinngemäß prüft, ob das unmittelba
 
 ###### C-029 - Kein gemeinsamer Tatplan mit A beim Ansetzen von B und C
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -524,7 +518,7 @@ ERFÜLLT, wenn die Antwort berücksichtigt, dass zum Zeitpunkt des Hervorspringe
 
 ###### C-030 - Fortwirkender Beitrag nach Lossagung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -548,7 +542,7 @@ ERFÜLLT, wenn die Antwort As fortwirkende Beiträge nach seiner Distanzierung a
 
 ###### C-032 - Zurechnung des Ansetzens von B/C an A
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -602,7 +596,7 @@ ERFÜLLT, wenn die Antwort bei einer Rücktrittsprüfung von B und C nach § 24 
 
 ###### C-036 - Kein Fehlschlag bei B und C
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -628,7 +622,7 @@ ERFÜLLT, wenn die Antwort bei mehreren Beteiligten den gesetzlichen Ausgangspun
 
 ###### C-038 - Aufgeben genügt beim unbeendeten Beteiligtenversuch
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -640,7 +634,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass beim unbeendeten Versuch im Rahmen von 
 
 ###### C-039 - Unbeendeter Versuch aus Sicht von B und C
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -652,7 +646,7 @@ ERFÜLLT, wenn die Antwort bei bejahtem Versuch berücksichtigt, dass B und C be
 
 ###### C-040 - Weglaufen von B und C als Rücktrittsverhalten
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -750,7 +744,7 @@ ERFÜLLT, wenn die Antwort berücksichtigt, dass B und C wussten, gemeinsam deut
 
 ###### C-048 - Vertretbare Freiwilligkeitsbewertung bei B und C
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -766,7 +760,7 @@ ERFÜLLT, wenn die Antwort entweder die Freiwilligkeit von B und C bejaht, weil 
 
 ##### C-049 - § 30 Abs. 2 Var. 3 StGB als Verbrechensverabredung
 
-**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -790,7 +784,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass Totschlag nach § 212 Abs. 1 StGB ei
 
 ##### C-051 - Konkrete Verabredung des A mit B und C
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -866,7 +860,7 @@ ERFÜLLT, wenn die Antwort bei § 31 Abs. 1 Nr. 3 StGB verlangt, dass A die vera
 
 ###### C-057 - As Zureden war nicht kausal
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -878,7 +872,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass As eindringliches Zureden B und C ta
 
 ###### C-058 - As Nicht-Hervorspringen war nicht kausal
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -892,7 +886,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass As eigenes Nicht-Hervorspringen B und C
 
 ###### C-059 - § 31 Abs. 2 Alt. 1 StGB bei Unterbleiben ohne Zutun
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -916,7 +910,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass O nicht erwürgt wurde, ohne dass A 
 
 ###### C-061 - Maßstab des ernsthaften Bemühens
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -940,7 +934,7 @@ ERFÜLLT, wenn die Antwort berücksichtigt, dass A zunächst glauben durfte, sei
 
 ###### C-063 - A hatte nach dem Hervorspringen keine weitere reale Verhinderungsmöglichkeit
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -952,7 +946,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass B und C so flink aus dem Gebüsch spran
 
 ###### C-064 - Vertretbare Bewertung des ernsthaften Bemühens des A
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -976,7 +970,7 @@ ERFÜLLT, wenn die Antwort herausarbeitet, dass A nicht aus Furcht vor wesentlic
 
 ###### C-066 - Vertretbare Freiwilligkeitsbewertung bei A
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
