@@ -20,6 +20,7 @@ from workbench.core import (
     get_task,
     list_studies,
     save_study_answer,
+    _unrelated_status_paths,
 )
 
 
@@ -27,6 +28,19 @@ FRENCH_TASK_ID = "fr/droit-des-obligations/cas-pratique/cas-pratique-crfpa-2024-
 
 
 class WorkbenchCoreTests(unittest.TestCase):
+    def test_git_readiness_ignores_other_untracked_runs_only(self):
+        target = "runs/studies/current/"
+        entries = [
+            ("??", "runs/studies/current/manifest.json"),
+            ("??", "runs/baseline-old/manifest.json"),
+            (" M", "README.md"),
+            ("A ", "runs/staged-run/manifest.json"),
+        ]
+        self.assertEqual(
+            _unrelated_status_paths(entries, target),
+            ["README.md", "runs/staged-run/manifest.json"],
+        )
+
     def test_discovers_german_and_french_tasks(self):
         records = discover_tasks()
         languages = {record.language for record in records}
