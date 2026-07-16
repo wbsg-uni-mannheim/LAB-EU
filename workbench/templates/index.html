@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LAB-EU Study Workbench</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='workbench.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">LAB-EU</p>
+      <h1 data-i18n="title">Study Workbench</h1>
+    </div>
+    <div class="language-switch" aria-label="Interface language">
+      <button type="button" class="language active" data-language="de">DE</button>
+      <button type="button" class="language" data-language="fr">FR</button>
+    </div>
+  </header>
+
+  <main>
+    <p class="lead" data-i18n="intro">Eine Modellstudie konfigurieren und alle Fälle nacheinander bearbeiten.</p>
+
+    <section class="guide" aria-labelledby="guide-heading">
+      <div class="guide-intro">
+        <p class="eyebrow" data-i18n="guideEyebrow">So funktioniert die Studie</p>
+        <h2 id="guide-heading" data-i18n="guideHeading">Vier Schritte – ohne Programmierkenntnisse</h2>
+        <p data-i18n="guideIntro">Sie führen dasselbe KI-System nacheinander durch mehrere juristische Fälle. Die Anwendung speichert die Einstellungen und jede Antwort, damit die Ergebnisse später einheitlich ausgewertet werden können.</p>
+      </div>
+      <ol class="guide-steps">
+        <li>
+          <strong data-i18n="guideStep1Title">1. Studie einmalig einrichten</strong>
+          <span data-i18n="guideStep1Text">Tragen Sie einen verständlichen Studiennamen, das getestete Modell und die Sprache der Fälle ein. Geben Sie außerdem an, ob Sie ein einzelnes Sprachmodell oder einen Agenten testen und welche Hilfsmittel verwendet werden.</span>
+        </li>
+        <li>
+          <strong data-i18n="guideStep2Title">2. System-Prompt festlegen</strong>
+          <span data-i18n="guideStep2Text">Der System-Prompt enthält die allgemeinen Anweisungen, die bei jedem Fall gleich bleiben. Prüfen und bearbeiten Sie ihn vor dem Start sorgfältig. Er wird exakt gespeichert und dokumentiert.</span>
+        </li>
+        <li>
+          <strong data-i18n="guideStep3Title">3. Fälle nacheinander bearbeiten</strong>
+          <span data-i18n="guideStep3Text">Kopieren Sie zuerst den gespeicherten System-Prompt und danach den angezeigten Fall-Prompt in Ihr KI-System. Fügen Sie die vollständige Antwort unverändert zurück in die Anwendung ein. Nach dem Speichern erscheint automatisch der nächste Fall.</span>
+        </li>
+        <li>
+          <strong data-i18n="guideStep4Title">4. Studie abschließen</strong>
+          <span data-i18n="guideStep4Text">Sie können jederzeit unterbrechen und später fortfahren. Nach dem letzten Fall ist die Studie vollständig gespeichert und kann – soweit Rubriken vorhanden sind – mit den LAB-EU Judges ausgewertet und über GitHub eingereicht werden.</span>
+        </li>
+      </ol>
+      <div class="guide-note">
+        <strong data-i18n="important">Wichtig:</strong>
+        <span data-i18n="guideNote">Verwenden Sie während einer Studie immer dasselbe Modell, denselben System-Prompt und dieselben zugelassenen Hilfsmittel. Verändern Sie die KI-Antwort nicht und fügen Sie keine vertraulichen Mandantendaten ein.</span>
+      </div>
+    </section>
+
+    <section class="card" id="setup-section">
+      <div class="step">1</div>
+      <div class="content">
+        <h2 data-i18n="setupHeading">Studie konfigurieren</h2>
+        <div class="grid-three">
+          <label><span data-i18n="studyName">Studienname</span><input id="study-name" required></label>
+          <label><span data-i18n="model">Modell</span><input id="model" required placeholder="Name / Version"></label>
+          <label><span data-i18n="studyLanguage">Sprache der Fälle</span>
+            <select id="study-language"><option value="de">Deutsch</option><option value="fr">Français</option></select>
+          </label>
+          <label><span data-i18n="reviewer">Durchführende Person</span><input id="reviewer" autocomplete="name"></label>
+          <label><span data-i18n="provider">Anbieter</span><input id="provider" placeholder="z. B. internes System"></label>
+        </div>
+
+        <fieldset>
+          <legend data-i18n="executionType">Ausführungstyp</legend>
+          <div class="option">
+            <label class="check"><input type="radio" name="execution-type" id="single-llm" checked><span data-i18n="singleLlm">Single LLM</span></label>
+            <p data-i18n="singleLlmHelp">Das Modell erhält den Prompt und erzeugt unmittelbar eine Antwort, ohne selbstständig mehrere Arbeitsschritte oder Werkzeuge auszuführen.</p>
+          </div>
+          <div class="option">
+            <label class="check"><input type="radio" name="execution-type" id="agent"><span data-i18n="agent">Agent</span></label>
+            <p data-i18n="agentHelp">Das System kann selbstständig Zwischenschritte planen, Werkzeuge aufrufen oder mehrere Modellaufrufe miteinander verbinden.</p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend data-i18n="resources">Verwendete Ressourcen</legend>
+          <div class="resource-grid">
+            <div class="option">
+              <label class="check"><input type="checkbox" id="web-search"><span data-i18n="webSearch">Websuche</span></label>
+              <p data-i18n="webSearchHelp">Das System kann öffentlich zugängliche Internetseiten oder Suchmaschinen zur Bearbeitung des Falls nutzen.</p>
+            </div>
+            <div class="option">
+              <label class="check"><input type="checkbox" id="databases"><span data-i18n="databases">Datenbanken</span></label>
+              <p data-i18n="databasesHelp">Das System kann juristische Fachdatenbanken, interne Wissensbestände oder andere strukturierte Datenquellen abfragen.</p>
+            </div>
+            <div class="option">
+              <label class="check"><input type="checkbox" id="other-tools"><span data-i18n="otherTools">Weitere Tools</span></label>
+              <p data-i18n="otherToolsHelp">Das System verwendet zusätzliche Funktionen, etwa Dokumentenanalyse, Rechenwerkzeuge, Codeausführung oder Dateizugriff.</p>
+            </div>
+          </div>
+          <div class="unknown-option">
+            <label class="check"><input type="checkbox" id="system-unknown"><span data-i18n="systemUnknown">Bei diesem System nicht bekannt</span></label>
+            <p data-i18n="systemUnknownHelp">Wählen Sie dies, wenn Sie nicht zuverlässig feststellen können, ob das System als Agent arbeitet oder auf Websuche, Datenbanken oder andere Werkzeuge zugreift.</p>
+          </div>
+        </fieldset>
+
+        <label class="prompt-label">
+          <span data-i18n="systemPrompt">System-Prompt</span>
+          <textarea id="system-prompt" rows="10"></textarea>
+        </label>
+        <p class="hint prompt-warning" data-i18n="systemPromptHelp">Dies ist der LAB-EU-Standardprompt. Er untersagt externe Quellen. Wenn die Studie Websuche oder Datenbanken erlaubt, passen Sie diese Einschränkung vor dem Start ausdrücklich an.</p>
+        <label class="check">
+          <input type="checkbox" id="judge-ready-only">
+          <span data-i18n="judgeOnly">Nur Fälle mit vorhandener Judge-Rubrik verwenden</span>
+        </label>
+        <p id="scope-count" class="hint"></p>
+        <button type="button" id="start-study" class="primary" data-i18n="startStudy">Studie starten</button>
+
+        <div class="resume">
+          <label><span data-i18n="resumeStudy">Vorhandene Studie fortsetzen</span>
+            <select id="study-select"><option value="">–</option></select>
+          </label>
+          <button type="button" id="resume-study" class="secondary" data-i18n="resume">Fortsetzen</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card disabled" id="study-section">
+      <div class="step">2</div>
+      <div class="content">
+        <div class="heading-row">
+          <div>
+            <h2 id="active-study-name"></h2>
+            <p id="study-meta" class="hint"></p>
+          </div>
+          <span id="progress" class="progress"></span>
+        </div>
+        <div class="progress-track"><span id="progress-bar"></span></div>
+        <div class="heading-row prompt-heading"><h3 data-i18n="storedSystemPrompt">Gespeicherter System-Prompt</h3></div>
+        <textarea id="stored-system-prompt" class="code" readonly rows="7"></textarea>
+        <p id="system-prompt-hash" class="hash"></p>
+      </div>
+    </section>
+
+    <section class="card disabled" id="case-section">
+      <div class="step">3</div>
+      <div class="content">
+        <div class="heading-row">
+          <div>
+            <p class="eyebrow" data-i18n="currentCase">Aktueller Fall</p>
+            <h2 id="case-title"></h2>
+          </div>
+          <button type="button" id="copy-combined-prompt" class="primary copy-primary" data-i18n="copyCombined">Gesamten Prompt kopieren</button>
+        </div>
+        <div id="case-meta" class="meta"></div>
+        <div id="documents" class="documents"></div>
+        <p class="hint" data-i18n="combinedPromptHelp">Der folgende Text enthält bereits den System-Prompt und den aktuellen Fall. Kopieren Sie ihn einmal vollständig in Ihr KI-System.</p>
+        <label class="prompt-label"><span data-i18n="combinedPrompt">Vollständiger Prompt</span><textarea id="combined-prompt" class="code" readonly rows="18"></textarea></label>
+        <p id="combined-prompt-hash" class="hash"></p>
+        <label><span data-i18n="answer">Modellantwort (Markdown)</span><textarea id="answer" rows="18"></textarea></label>
+        <div class="answer-footer">
+          <span id="answer-count">0</span>
+          <button type="button" id="clear-draft" class="text-button" data-i18n="clearDraft">Entwurf löschen</button>
+        </div>
+        <label class="check">
+          <input type="checkbox" id="confidentiality">
+          <span data-i18n="confidentiality">Ich bestätige, dass die Antwort keine vertraulichen Mandantendaten enthält.</span>
+        </label>
+        <div class="case-actions">
+          <button type="button" id="save-next" class="primary" data-i18n="saveNext">Antwort speichern und nächsten Fall öffnen</button>
+          <button type="button" id="end-early" class="secondary early-button" data-i18n="endEarly" disabled>Studie vorzeitig abgeben</button>
+        </div>
+        <p class="hint" data-i18n="endEarlyHelp">Nach mindestens einer gespeicherten Antwort können Sie vorzeitig abgeben. Der aktuelle und alle folgenden Fälle werden als nicht bearbeitet dokumentiert.</p>
+      </div>
+    </section>
+
+    <section class="card disabled" id="complete-section">
+      <div class="step">4</div>
+      <div class="content">
+        <h2 data-i18n="completeHeading">Studie abgeschlossen</h2>
+        <p id="study-result" class="result"></p>
+        <label><span data-i18n="baseBranch">Zielbranch</span><input id="base-branch" value="main"></label>
+        <label class="check"><input type="checkbox" id="create-pr" checked><span data-i18n="createPr">Branch pushen und Pull Request erstellen</span></label>
+        <label class="check"><input type="checkbox" id="git-confirm"><span data-i18n="gitConfirm">Ich bestätige Branch, Commit und gegebenenfalls Pull Request.</span></label>
+        <button type="button" id="submit-git" class="primary danger" data-i18n="submit">Studie committen und einreichen</button>
+        <p class="hint" data-i18n="dirtyHint">Bei anderen Änderungen im Repository wird die Einreichung automatisch blockiert.</p>
+      </div>
+    </section>
+
+    <div id="notice" class="notice hidden" role="status"></div>
+  </main>
+
+  <script>
+    window.WORKBENCH_TOKEN = {{ workbench_token|tojson }};
+    window.DEFAULT_STUDY_SYSTEM_PROMPT = {{ default_system_prompt|tojson }};
+  </script>
+  <script src="{{ url_for('static', filename='workbench.js') }}"></script>
+</body>
+</html>

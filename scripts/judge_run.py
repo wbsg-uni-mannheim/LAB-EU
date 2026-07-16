@@ -38,7 +38,31 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--parallel", type=int, default=1)
     parser.add_argument("--python", default=sys.executable)
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        help=(
+            "Skip tasks that already have a complete scores.json (no error verdicts). "
+            "Makes the run resumable: re-run after an interruption and only the "
+            "unjudged or partially-judged tasks are re-scored."
+        ),
+    )
     return parser.parse_args()
+
+
+def already_judged(metadata_path: pathlib.Path) -> bool:
+    """True if this task has a complete scores.json with no error verdicts."""
+    scores_path = metadata_path.parent / "scores.json"
+    if not scores_path.exists():
+        return False
+    try:
+        scores = json.loads(scores_path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return False
+    results = scores.get("criteria_results")
+    if not results:
+        return False
+    return not any(r.get("verdict") == "error" for r in results)
 
 
 def load_json(path: pathlib.Path) -> dict:
@@ -103,6 +127,16 @@ def main() -> int:
     paths = task_metadata_paths(run_dir)
     if not paths:
         raise SystemExit(f"No task metadata found under {run_dir / 'tasks'}")
+
+    if args.skip_existing:
+        kept = [p for p in paths if not already_judged(p)]
+        skipped = len(paths) - len(kept)
+        if skipped:
+            print(f"Skipping {skipped} already-judged task(s); {len(kept)} to judge.")
+        paths = kept
+        if not paths:
+            print("All tasks already judged. Nothing to do.")
+            return 0
 
     failures = 0
     max_workers = max(1, args.parallel)

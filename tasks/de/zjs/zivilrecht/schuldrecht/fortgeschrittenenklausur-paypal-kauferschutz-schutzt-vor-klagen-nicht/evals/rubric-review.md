@@ -18,7 +18,7 @@ Bearbeiten Sie den Fall gutachterlich. Erstellen Sie eine vollständige Falllös
 
 # Sachverhalt
 
-Sachverhalt Jungunternehmerin J betreibt in bester Hamburger Lage das florierende Handycafé „Fairtopia“, in dem Kaffeeliebhaber auf ihre Kosten kommen und zugleich neue und gebrauchte Mobiltelefone sowie modisches Zubehör erwerben können. Einen Teil ihrer Waren bezieht J dabei über das Onlineportal eBay, auf dem sie regelmäßig Mobiltelefone privater oder gewerblicher Anbieter erwirbt, um diese dann gewinnbringend an ihre Kundschaft zu verkaufen, bei der es „auf den ein oder anderen Euro nicht ankommt“. Kurz vor Weihnachten durchstöbert J mal wieder das Onlineportal und stößt dabei auf das Angebot der gewerblichen Anbieterin A, die eines ihrer originalverpackten Mobiltelefone der Marke „X“ (Wert: 550 €) für einen Preis von 500 € bewirbt. A hat ihren Geschäfts-und Wohnsitz in Dortmund. Da J vergleichbare Modelle in ihrem Laden schon für über 600 € verkaufen konnte, fackelt sie nicht lange und betätigt die „Sofort-Kaufen-Funktion“ auf der Angebotsseite, zu der es in den eBay-AGB heißt: § 6 Angebotsformate und Vertragsschluss [...] 3. Der Verkäufer kann Angebote im Auktionsformat zusätzlich mit einer Sofort-Kaufen-Funktion versehen. Diese kann von einem Käufer ausgeübt werden, solange noch kein Gebot auf den Artikel abgegeben oder ein Mindestpreis noch nicht erreicht wurde. […] 4. Bei Festpreisartikeln nimmt der Käufer das Angebot an, indem er den Button „Sofort-Kaufen“ anklickt und anschließend bestätigt. […] Beim Bezahlvorgang wählt J die von A akzeptierte Zahlung über den Zahlungsdienst PayPal, dessen Nutzungsbedingungen und Käuferschutzrichtlinie sie mit dem Setzen eines elektronischen Häkchens akzeptiert. In der Käuferschutzrichtlinie heißt es unter anderem: Assistent von Prof. Dr. Dr. h.c. Holger Fleischer, LL.M. (University of Michigan) am Max-Planck-Institut für ausländisches und internationales Privatrecht in Hamburg. 1. Allgemeines Der PayPal-Käuferschutz schützt den Käufer, falls ein gekaufter Artikel nicht versandt wurde […] oder der gelieferte Artikel erheblich von der Artikelbeschreibung des Verkäufers abweicht […], siehe hierzu Ziffer 4. […] 2. Auszahlung […] Die Erstattung erfolgt unabhängig davon, ob PayPal den Erstattungsbetrag von dem Zahlungsempfänger zurückfordern kann. 4. Abgesicherte Fälle Der Käufer kann PayPal-Käuferschutz in den folgenden Fällen genießen: 4.1. Item Not Received Der Artikel wurde bei einem vereinbarten Versand durch den Verkäufer nicht versendet oder nachfolgend in dieser Ziffer 4.1. beschriebene sonstige Verpflichtungen des Verkäufers wurden nicht eingehalten. Der PayPal-Käuferschutz wegen nicht versandter Artikel gilt nicht für Artikel, die während des Versands verloren gehen. Falls der Verkäufer einen gültigen Versandbeleg fristgerecht (wie im Detail in der PayPal-Verkäuferschutzrichtlinie beschrieben) oder ein entsprechendes, zwischen Verkäufer und PayPal vereinbartes Äquivalent vorlegt, lehnt PayPal den Antrag auf PayPal-Käuferschutz ab. […] 7. Schlussbestimmungen [...] 7.5. Gesetzliche Rechte und Rechte unter Ihrem Kaufvertrag Die PayPal-Käuferschutzrichtlinie berührt die gesetzlichen und vertraglichen Rechte zwischen Käufer und Verkäufer nicht und ist separat von diesen zu betrachten. PayPal tritt nicht als Vertreter von Käufer, Verkäufer oder Zahlungsempfänger auf, sondern entscheidet lediglich über den Antrag auf PayPal-Käuferschutz. J und A vereinbaren zudem, dass das Mobiltelefon nach Zahlungsgutschrift in einem nicht versicherten Postpäckchen an die Anschrift des „Fairtopia“ übersandt werden soll. Nach erfolgter Zahlungsautorisierung der J über ihr PayPal-Konto werden die 500 € noch am selben Tag dem PayPal-Konto der A gutgeschrieben. Am darauffolgenden Tag geht A zusammen mit ihrer Freundin F zur nächstgelegenen Postfiliale in Dortmund, wo sie das Mobiltelefon vereinbarungsgemäß in Richtung Hamburg auf den Weg bringt. Den Versandbeleg lässt sie aus Unachtsamkeit auf dem Filialtresen liegen. Aufgrund eines Systemfehlers bei der Post wird das Päckchen auf den falschen Transportwagen geladen und ist seitdem wie vom Erdboden verschwunden. Entsprechende Nachforschungen der Post schlagen fehl. Als nach mehreren Tagen das Mobiltelefon immer noch nicht eingetroffen ist, erkundigt sich J bei A nach dem Befindlichkeitsort der Ware. A erklärt mehrfach, dass sie das Telefon ordnungsgemäß auf den Weg gebracht habe und verweist J darauf, sich an die Post zu wenden. J schenkt den Beteuerungen der A jedoch keinen Glauben und meint, auf eine „Betrügerin“ reingefallen zu sein. Deswegen stellt sie bei PayPal einen Antrag auf Käuferschutz. Da A auf Nachfrage eines PayPal-Mitarbeiters keinen Versandbeleg vorzeigen kann, wird dem Antrag stattgegeben und die 500 € vom PayPal-Konto der A auf das PayPal-Konto der J zurückerstattet. A ist mit dieser Zurückerstattung natürlich ganz und gar unzufrieden. Sie könne nichts für die Fehler der Post und sei sich auch sonst keiner Schuld bewusst. Ihre Freundin könne sogar bezeugen, dass A das Mobiltelefon ordnungsgemäß auf den Weg gebracht hat. Die „laienhafte“ Prüfung des Käuferschutzantrags durch PayPal ändere doch nichts daran, dass sie und J einen Vertrag geschlossen haben, aus dem sie einen Anspruch auf Zahlung der 500 € habe. Mit Inanspruchnahme des Käuferschutzes habe dieser „mit Sicherheit noch Bestand“ oder sei „zumindest wieder aufgelebt“. Fallfrage Kann A von J die Zahlung von 500 € verlangen? Abwandlung 1 Wie wäre der Fall zu beurteilen, wenn J das Mobiltelefon ausschließlich zum privaten Gebrauch gekauft hätte? Abwandlung 2 A ist schon des Öfteren Leidtragende eines fehlgegangenen Versands bei der Post geworden. In weiser Voraussicht schließt sie daher vor Versendung des Mobiltelefons eine Versicherung mit einem Drittanbieter ab, die ihr im Verlustfall einen Pauschalbertrag von 600 € erstattet. Das Mobiltelefon geht nach ordnungsgemäßer Abgabe bei der Post tatsächlich auf dem Weg nach Hamburg verloren. Die Versicherung hat A schon signalisiert, dass sie einen Betrag von 600 € auszahlen werde. Kann J von A die Abtretung des Anspruchs gegen die Versicherung i.H.v. 600 € verlangen?
+Sachverhalt Jungunternehmerin J betreibt in bester Hamburger Lage das florierende Handycafé „Fairtopia“, in dem Kaffeeliebhaber auf ihre Kosten kommen und zugleich neue und gebrauchte Mobiltelefone sowie modisches Zubehör erwerben können. Einen Teil ihrer Waren bezieht J dabei über das Onlineportal eBay, auf dem sie regelmäßig Mobiltelefone privater oder gewerblicher Anbieter erwirbt, um diese dann gewinnbringend an ihre Kundschaft zu verkaufen, bei der es „auf den ein oder anderen Euro nicht ankommt“. Kurz vor Weihnachten durchstöbert J mal wieder das Onlineportal und stößt dabei auf das Angebot der gewerblichen Anbieterin A, die eines ihrer originalverpackten Mobiltelefone der Marke „X“ (Wert: 550 €) für einen Preis von 500 € bewirbt. A hat ihren Geschäfts-und Wohnsitz in Dortmund. Da J vergleichbare Modelle in ihrem Laden schon für über 600 € verkaufen konnte, fackelt sie nicht lange und betätigt die „Sofort-Kaufen-Funktion“ auf der Angebotsseite, zu der es in den eBay-AGB heißt: § 6 Angebotsformate und Vertragsschluss [...] 3. Der Verkäufer kann Angebote im Auktionsformat zusätzlich mit einer Sofort-Kaufen-Funktion versehen. Diese kann von einem Käufer ausgeübt werden, solange noch kein Gebot auf den Artikel abgegeben oder ein Mindestpreis noch nicht erreicht wurde. […] 4. Bei Festpreisartikeln nimmt der Käufer das Angebot an, indem er den Button „Sofort-Kaufen“ anklickt und anschließend bestätigt. […] Beim Bezahlvorgang wählt J die von A akzeptierte Zahlung über den Zahlungsdienst PayPal, dessen Nutzungsbedingungen und Käuferschutzrichtlinie sie mit dem Setzen eines elektronischen Häkchens akzeptiert. In der Käuferschutzrichtlinie heißt es unter anderem: 1. Allgemeines Der PayPal-Käuferschutz schützt den Käufer, falls ein gekaufter Artikel nicht versandt wurde […] oder der gelieferte Artikel erheblich von der Artikelbeschreibung des Verkäufers abweicht […], siehe hierzu Ziffer 4. […] 2. Auszahlung […] Die Erstattung erfolgt unabhängig davon, ob PayPal den Erstattungsbetrag von dem Zahlungsempfänger zurückfordern kann. 4. Abgesicherte Fälle Der Käufer kann PayPal-Käuferschutz in den folgenden Fällen genießen: 4.1. Item Not Received Der Artikel wurde bei einem vereinbarten Versand durch den Verkäufer nicht versendet oder nachfolgend in dieser Ziffer 4.1. beschriebene sonstige Verpflichtungen des Verkäufers wurden nicht eingehalten. Der PayPal-Käuferschutz wegen nicht versandter Artikel gilt nicht für Artikel, die während des Versands verloren gehen. Falls der Verkäufer einen gültigen Versandbeleg fristgerecht (wie im Detail in der PayPal-Verkäuferschutzrichtlinie beschrieben) oder ein entsprechendes, zwischen Verkäufer und PayPal vereinbartes Äquivalent vorlegt, lehnt PayPal den Antrag auf PayPal-Käuferschutz ab. […] 7. Schlussbestimmungen [...] 7.5. Gesetzliche Rechte und Rechte unter Ihrem Kaufvertrag Die PayPal-Käuferschutzrichtlinie berührt die gesetzlichen und vertraglichen Rechte zwischen Käufer und Verkäufer nicht und ist separat von diesen zu betrachten. PayPal tritt nicht als Vertreter von Käufer, Verkäufer oder Zahlungsempfänger auf, sondern entscheidet lediglich über den Antrag auf PayPal-Käuferschutz. J und A vereinbaren zudem, dass das Mobiltelefon nach Zahlungsgutschrift in einem nicht versicherten Postpäckchen an die Anschrift des „Fairtopia“ übersandt werden soll. Nach erfolgter Zahlungsautorisierung der J über ihr PayPal-Konto werden die 500 € noch am selben Tag dem PayPal-Konto der A gutgeschrieben. Am darauffolgenden Tag geht A zusammen mit ihrer Freundin F zur nächstgelegenen Postfiliale in Dortmund, wo sie das Mobiltelefon vereinbarungsgemäß in Richtung Hamburg auf den Weg bringt. Den Versandbeleg lässt sie aus Unachtsamkeit auf dem Filialtresen liegen. Aufgrund eines Systemfehlers bei der Post wird das Päckchen auf den falschen Transportwagen geladen und ist seitdem wie vom Erdboden verschwunden. Entsprechende Nachforschungen der Post schlagen fehl. Als nach mehreren Tagen das Mobiltelefon immer noch nicht eingetroffen ist, erkundigt sich J bei A nach dem Befindlichkeitsort der Ware. A erklärt mehrfach, dass sie das Telefon ordnungsgemäß auf den Weg gebracht habe und verweist J darauf, sich an die Post zu wenden. J schenkt den Beteuerungen der A jedoch keinen Glauben und meint, auf eine „Betrügerin“ reingefallen zu sein. Deswegen stellt sie bei PayPal einen Antrag auf Käuferschutz. Da A auf Nachfrage eines PayPal-Mitarbeiters keinen Versandbeleg vorzeigen kann, wird dem Antrag stattgegeben und die 500 € vom PayPal-Konto der A auf das PayPal-Konto der J zurückerstattet. A ist mit dieser Zurückerstattung natürlich ganz und gar unzufrieden. Sie könne nichts für die Fehler der Post und sei sich auch sonst keiner Schuld bewusst. Ihre Freundin könne sogar bezeugen, dass A das Mobiltelefon ordnungsgemäß auf den Weg gebracht hat. Die „laienhafte“ Prüfung des Käuferschutzantrags durch PayPal ändere doch nichts daran, dass sie und J einen Vertrag geschlossen haben, aus dem sie einen Anspruch auf Zahlung der 500 € habe. Mit Inanspruchnahme des Käuferschutzes habe dieser „mit Sicherheit noch Bestand“ oder sei „zumindest wieder aufgelebt“. Fallfrage Kann A von J die Zahlung von 500 € verlangen? Abwandlung 1 Wie wäre der Fall zu beurteilen, wenn J das Mobiltelefon ausschließlich zum privaten Gebrauch gekauft hätte? Abwandlung 2 A ist schon des Öfteren Leidtragende eines fehlgegangenen Versands bei der Post geworden. In weiser Voraussicht schließt sie daher vor Versendung des Mobiltelefons eine Versicherung mit einem Drittanbieter ab, die ihr im Verlustfall einen Pauschalbertrag von 600 € erstattet. Das Mobiltelefon geht nach ordnungsgemäßer Abgabe bei der Post tatsächlich auf dem Weg nach Hamburg verloren. Die Versicherung hat A schon signalisiert, dass sie einen Betrag von 600 € auszahlen werde. Kann J von A die Abtretung des Anspruchs gegen die Versicherung i.H.v. 600 € verlangen?
 
 ## Solution
 
@@ -32,7 +32,7 @@ Der Anspruch auf Kaufpreiszahlung setzt voraus, dass A und J einen wirksamen Kau
 ## II. Anspruch erloschen
 
 ### 1. Erlöschen kraft Erfüllung, § 362 Abs. 1 BGB
-Mit Gutschrift der 500 € auf dem PayPal-Konto der A könnte ihr Zahlungsanspruch kraft Erfüllung gem. § 362 Abs. 1 BGB erloschen sein. Erfüllung tritt mit Bewirkung der geschuldeten Leistung ein. Entscheidend ist dabei der Eintritt des Leistungserfolges und nicht allein die Vornahme der Leistungshandlung. Die Parteien haben hier eine Geldschuld der J vereinbart, die über das elektronische Zahlungssystem PayPal bewirkt werden sollte. Die Vereinbarung über die Zahlungsmodalität stellt dabei eine ohne weiteres zulässige Nebenabrede der Parteien dar. Bei diesem Zahlungssystem autorisiert der Zahlungsschuldner die Abbuchung eines Betrages direkt von seinem PayPal-Konto oder einem hinterlegten Zahlungsmittel, das über den Mittler PayPal dem PayPal-Konto des Zahlungsgläubigers gutgeschrieben wird. Dem Zahlungsempfänger steht es offen, diesen Betrag direkt als Zahlungsmittel einzusetzen oder auf sein gewöhnliches Bankkonto weiter zu überweisen. Aufgrund dieser Konstruktion kommt als möglicher letzt BGH NJW 2017, 1660 (1661). tion“ in der Fallbearbeitung veranschaulicht jüngst Eufinger, JuS 2018, 137 ff. werden auch von guten Klausurbearbeitungen nicht erwartet. Wichtig ist an dieser und vergleichbaren Stellen, dass die Klausurbearbeiter und -bearbeiterinnen genau wie in den eBay-Fällen nicht über Prüfungspunkte „hinweghuschen“, sondern Bewusstsein für die Besonderheiten des elektronischen Zahlungsverkehrs zeigen und diese bei der Subsumtion unter die gesetzlichen Tatbestandsmerkmale beachten. Ein Zeitpunkt des Leistungserfolges sowohl die Gutschrift des Zahlungsbetrags auf dem PayPal-Konto des Zahlungsgläubigers als auch die Gutschrift des Betrags auf dessen Bankkonto in Betracht. Dagegen kommt der bloßen Autorisierung der Zahlung durch den Schuldner mangels Verfügbarkeit auf Gläubigerseite noch keine Erfüllungswirkung zu. Gegen die Annahme einer Erfüllungswirkung erst nach erfolgter Weiterüberweisung auf das Bankkonto spricht, dass der Zahlungsgläubiger schon mit der Gutschrift auf seinem PayPal-Konto frei über das Geld verfügen kann und somit seinem Leistungsinteresse an der Erfüllung der Geldschuld in jedweder Hinsicht entsprochen wurde. Wie der Gläubiger mit dem elektronischen Buchwert weiterverfährt, steht außerhalb des Einflussbereichs des Schuldners. Der Zahlungsgläubiger könnte so einseitig und unbegründet den Eintritt der Erfüllungswirkung hinauszögern. Für deren Eintritt ist mithin der Zeitpunkt der Gutschrift der Zahlung auf dem PayPal-Konto des Zahlungsgläubigers entscheidend. Die Parteien haben hier ausdrücklich die Zahlung mit PayPal vereinbart, sodass von einer unmittelbaren Erfüllungswirkung gem. § 362 Abs. 1 BGB bei erfolgter Gutschrift auszugehen ist. Mit Gutschrift der 500 € auf dem PayPalKonto der A ist ihr Anspruch aus § 433 Abs. 2 BGB daher grundsätzlich erloschen. Problematisch erscheint hier jedoch, dass J wegen des Nichterhalts des Mobiltelefons den PayPal-Käuferschutz erfolgreich in Anspruch genommen hat, was die Rückerstattung der 500 € vom PayPal-Konto der A auf das PayPal-Konto der J zur Folge hatte. Fraglich ist nun, wie die erfolgreiche Inanspruchnahme des PayPal-Käuferschutzes rechtlich einzuordnen ist. In Betracht kommt, die erfolgreiche Inanspruchnahme des PayPal-Käuferschutzes als auflösende Bedingung zu qualifizieren, mit deren Eintritt die Erfüllungswirkung gem. §§ 158 Abs. 2, 159 BGB analog rückwirkend entfallen ist. Dafür gewisses Grundverständnis für die Funktionsweise von PayPal wird aber vorausgesetzt. 2018, § 362 Rn. 12. RR 2017, 504 ff.; Looschelders, in: Beck’scher Online Großkommentar zum BGB, Stand: 1.11.2017, § 362 Rn. 177. schuld mittels PayPal eine Leistung an Erfüllungsstatt (§ 364 Abs. 1 BGB) oder eine Leistung an erfüllungshalber (§ 364 Abs. 2 BGB) darstellt. Zum Meinungsstand BGH NJW 2018, 537 (538 Rn. 18), der dann diese Frage als entscheidungsunerheblich offenlässt. Rechtsgeschäfte anwendbar. Folgt man der Theorie der realen Leistungserbringung (so BGH NJW 1991, 1294; Grüneberg [Fn. 7], § 362 Rn. 1 m.w.N.) ist die Erfüllung jedoch kein Rechtsgeschäft, sondern eine tatsächliche Handlung, sodass es hier der analogen Normanwendung bedarf. müsste die Vereinbarung einer solchen Bedingung im Wege der (ergänzenden) Vertragsauslegung unter Berücksichtigung der gegenseitigen Parteiinteressen dem Vertrag zwischen A und J entnommen werden können. Den Parteien steht die Nutzung des Zahlungsdienstes nur zur Verfügung, wenn sie zuvor die PayPal-AGB akzeptiert haben, sodass diese, ähnlich wie die eBay-AGB, bei der Beurteilung des Vertragsschlusses, im Rahmen der Auslegung der abgegebenen Erklärungen gem. §§ 133, 157 BGB heranzuziehen sind. Der Einordnung der Inanspruchnahme von PayPal-Käuferschutz als eine vereinbarte auflösende Bedingung steht entgegen, dass eine vorläufige Erfüllungswirkung, die noch unter dem Vorbehalt der Rückforderung stünde, dem Gesetz fremd ist. Vielmehr tritt die Erfüllungswirkung als objektiv-rechtliche Folge des Bewirkens der geschuldeten Leistung ein. Anders als im zumindest vergleichbaren SEPA-Lastschriftverfahren wird zudem nicht einer Vertragspartei gewährt, die Zahlung innerhalb einer Frist ohne die Angabe von Gründen rückgängig zu machen, sondern diese Befugnis dem Dritten PayPal eingeräumt. Daher ist nicht davon ausgehen, dass den Parteierklärungen die Begründung einer solchen auflösenden Bedingung entnommen werden kann. Die Erfüllungswirkung ist mithin nicht gem. §§ 158 Abs. 2, 159 BGB analog rückwirkend entfallen. Möglich erscheint darüber hinaus aber, dass der Zahlungsanspruch der A gem. § 433 Abs. 2 BGB mit der erfolgreichen Inanspruchnahme des PayPal-Käuferschutzes stillschweigend erneut begründet wurde. Die Wiederbegründung eines erloschenen vertraglichen Anspruches ist als Ausfluss der Vertragsfreiheit gem. § 311 Abs. 1 BGB ohne weiteres möglich. Voraussetzung dafür ist wiederrum eine entsprechende Vereinbarung zwischen A und J bei interessengerechter Auslegung unter Heranziehung der PayPal-AGB. Für die Vereinbarung einer stillschweigenden Wiederbegründung der Kaufpreisschuld spricht, dass die PayPalKäuferschutzrichtlinie nach dem ausdrücklichen Wortlaut der Ziffer 7.5 die vertraglichen und gesetzlichen Rechte zwischen genden BGH Entscheidung. Vgl. LG Essen BeckRS 2016, 128513 Rn. 5. dieser Fundstelle zitierten Urteile nur auf die eBay-AGB Bezug nehmen. ausschlaggebend für die abweichende rechtliche Bewertung der Rückerstattung im Rahmen des SEPA Lastschriftverfahrens in der Rspr., vgl. turnachweisen. Bei formgebunden Verträgen bedarf auch die Neubegründung der gesetzlich vorgeschriebenen Form, BGHZ 20, 338 = BGH NJW 1956, 1233 (1234). Parteien Habel, K&R 2018, 105 (106). Käufer und Verkäufer nicht berühren soll. Ohne die Möglichkeit des Wiederauflebens der Kaufpreisschuld ist eine Berührung, gar eine Beeinträchtigung der Rechte aber zu bejahen. Denn die Entscheidung von PayPal würde zumindest bei Stattgabe des Käuferschutzes abschließend über das Schicksal der Kaufpreisschuld entscheiden. Die Prüfung des Schicksals der Kaufpreisschuld, die im Streitfall durch ein staatliches Gericht vorzunehmen ist, würde dem vereinfachten Prüfungsmaß von PayPal unterliegen, wie er aus Ziffer 4.1 der PayPal-Käuferschutzrichtlinie deutlich wird. Demnach ist zum Versendungsnachweis grundsätzlich ein entsprechender Beleg einzureichen, den A aufgrund ihrer Unachtsamkeit auf dem Tresen der Postfiliale liegen ließ und damit den erforderlichen Beweis nicht erbringen kann. Im ordentlichen Gerichtsweg könnte die A auf die Vernehmungen der F als Beweismittel zurückgreifen. Diese Möglichkeit ist im Prüfungsverfahren von PayPal nicht vorgesehen, sodass diese „faktische Privatisierung des Privatrechts“ mit einer den Parteiinteressen nicht gerecht werdenden Rechteverkürzung einhergeht. Zudem würde sich die „Endgültigkeit“ der Entscheidung von PayPal nur einseitig entfalten. Wird dem Antrag auf Käuferschutz nicht stattgegeben, stünde es beiden Parteien offen, den Gerichtsweg zu beschreiten, während bei Stattgabe des Antrags ohne Wiederbegründung der Kaufpreisschuld der Verkäufer nun endgültig wegen Erlöschens seines ursprünglichen Anspruchs auf den Kaufpreis verzichten müsste. Diese Begünstigung des antragstellenden Käufers wird ebenfalls den Parteiinteressen nicht gerecht. Schutzlos ist der Käufer trotz Wiederauflebens aufgrund möglicher Ansprüche gegen das Transportunternehmen nicht. Im Ergebnis erscheint es daher sowohl interessenals auch unter Berücksichtigung der PayPal-AGB sachgerecht, dem Vertrag zwischen A und J die stillschweigende Vereinbarung zu entnehmen, dass der Zahlungsanspruch des Verkäufers bei erfolgreicher Inanspruchnahme des PayPal-Käuferschutzes wieder begründet wird. Der Zahlungsanspruch der A aus § 433 Abs. 2 BGB ist nach alldem zwar zunächst kraft Erfüllung erloschen, wurde jedoch nach der erfolgreichen Inanspruchnahme des PayPalKäuferschutzes wieder begründet und hat somit weiterhin Bestand. Digitalisierung auf das Privatrecht Fries, NJW 2016, 2860. Natürlich kann von den Klausurbearbeitern eine Auseinandersetzung mit diesem Argument unter dem Terminus der „faktischen Privatisierung des Privatrechts“ nicht erwartet werden. Schon der Hinweis auf die Problematik der unterschiedlichen Prüfungsmaßstäbe und die Verwertung der Sachverhaltsangabe, dass bei Versandaufgabe die Freundin der A anwesend war und möglicherweise als Beweismittel fungieren kann, muss sehr positiv honoriert werden. trag gem. §§ 425, 421 HGB. Bei nicht gewerblichen Transportpersonen wäre zudem an die Drittschadensliquidation zu denken. Zu Letzterem ausführlich Weiss, JuS 2015, 8 ff.
+Mit Gutschrift der 500 € auf dem PayPal-Konto der A könnte ihr Zahlungsanspruch kraft Erfüllung gem. § 362 Abs. 1 BGB erloschen sein. Erfüllung tritt mit Bewirkung der geschuldeten Leistung ein. Entscheidend ist dabei der Eintritt des Leistungserfolges und nicht allein die Vornahme der Leistungshandlung. Die Parteien haben hier eine Geldschuld der J vereinbart, die über das elektronische Zahlungssystem PayPal bewirkt werden sollte. Die Vereinbarung über die Zahlungsmodalität stellt dabei eine ohne weiteres zulässige Nebenabrede der Parteien dar. Bei diesem Zahlungssystem autorisiert der Zahlungsschuldner die Abbuchung eines Betrages direkt von seinem PayPal-Konto oder einem hinterlegten Zahlungsmittel, das über den Mittler PayPal dem PayPal-Konto des Zahlungsgläubigers gutgeschrieben wird. Dem Zahlungsempfänger steht es offen, diesen Betrag direkt als Zahlungsmittel einzusetzen oder auf sein gewöhnliches Bankkonto weiter zu überweisen. Aufgrund dieser Konstruktion kommt als möglicher Zeitpunkt des Leistungserfolges sowohl die Gutschrift des Zahlungsbetrags auf dem PayPal-Konto des Zahlungsgläubigers als auch die Gutschrift des Betrags auf dessen Bankkonto in Betracht. Dagegen kommt der bloßen Autorisierung der Zahlung durch den Schuldner mangels Verfügbarkeit auf Gläubigerseite noch keine Erfüllungswirkung zu. Gegen die Annahme einer Erfüllungswirkung erst nach erfolgter Weiterüberweisung auf das Bankkonto spricht, dass der Zahlungsgläubiger schon mit der Gutschrift auf seinem PayPal-Konto frei über das Geld verfügen kann und somit seinem Leistungsinteresse an der Erfüllung der Geldschuld in jedweder Hinsicht entsprochen wurde. Wie der Gläubiger mit dem elektronischen Buchwert weiterverfährt, steht außerhalb des Einflussbereichs des Schuldners. Der Zahlungsgläubiger könnte so einseitig und unbegründet den Eintritt der Erfüllungswirkung hinauszögern. Für deren Eintritt ist mithin der Zeitpunkt der Gutschrift der Zahlung auf dem PayPal-Konto des Zahlungsgläubigers entscheidend. Die Parteien haben hier ausdrücklich die Zahlung mit PayPal vereinbart, sodass von einer unmittelbaren Erfüllungswirkung gem. § 362 Abs. 1 BGB bei erfolgter Gutschrift auszugehen ist. Mit Gutschrift der 500 € auf dem PayPalKonto der A ist ihr Anspruch aus § 433 Abs. 2 BGB daher grundsätzlich erloschen. Problematisch erscheint hier jedoch, dass J wegen des Nichterhalts des Mobiltelefons den PayPal-Käuferschutz erfolgreich in Anspruch genommen hat, was die Rückerstattung der 500 € vom PayPal-Konto der A auf das PayPal-Konto der J zur Folge hatte. Fraglich ist nun, wie die erfolgreiche Inanspruchnahme des PayPal-Käuferschutzes rechtlich einzuordnen ist. In Betracht kommt, die erfolgreiche Inanspruchnahme des PayPal-Käuferschutzes als auflösende Bedingung zu qualifizieren, mit deren Eintritt die Erfüllungswirkung gem. §§ 158 Abs. 2, 159 BGB analog rückwirkend entfallen ist. Dafür müsste die Vereinbarung einer solchen Bedingung im Wege der (ergänzenden) Vertragsauslegung unter Berücksichtigung der gegenseitigen Parteiinteressen dem Vertrag zwischen A und J entnommen werden können. Den Parteien steht die Nutzung des Zahlungsdienstes nur zur Verfügung, wenn sie zuvor die PayPal-AGB akzeptiert haben, sodass diese, ähnlich wie die eBay-AGB, bei der Beurteilung des Vertragsschlusses, im Rahmen der Auslegung der abgegebenen Erklärungen gem. §§ 133, 157 BGB heranzuziehen sind. Der Einordnung der Inanspruchnahme von PayPal-Käuferschutz als eine vereinbarte auflösende Bedingung steht entgegen, dass eine vorläufige Erfüllungswirkung, die noch unter dem Vorbehalt der Rückforderung stünde, dem Gesetz fremd ist. Vielmehr tritt die Erfüllungswirkung als objektiv-rechtliche Folge des Bewirkens der geschuldeten Leistung ein. Anders als im zumindest vergleichbaren SEPA-Lastschriftverfahren wird zudem nicht einer Vertragspartei gewährt, die Zahlung innerhalb einer Frist ohne die Angabe von Gründen rückgängig zu machen, sondern diese Befugnis dem Dritten PayPal eingeräumt. Daher ist nicht davon ausgehen, dass den Parteierklärungen die Begründung einer solchen auflösenden Bedingung entnommen werden kann. Die Erfüllungswirkung ist mithin nicht gem. §§ 158 Abs. 2, 159 BGB analog rückwirkend entfallen. Möglich erscheint darüber hinaus aber, dass der Zahlungsanspruch der A gem. § 433 Abs. 2 BGB mit der erfolgreichen Inanspruchnahme des PayPal-Käuferschutzes stillschweigend erneut begründet wurde. Die Wiederbegründung eines erloschenen vertraglichen Anspruches ist als Ausfluss der Vertragsfreiheit gem. § 311 Abs. 1 BGB ohne weiteres möglich. Voraussetzung dafür ist wiederrum eine entsprechende Vereinbarung zwischen A und J bei interessengerechter Auslegung unter Heranziehung der PayPal-AGB. Für die Vereinbarung einer stillschweigenden Wiederbegründung der Kaufpreisschuld spricht, dass die PayPalKäuferschutzrichtlinie nach dem ausdrücklichen Wortlaut der Ziffer 7.5 die vertraglichen und gesetzlichen Rechte zwischen Käufer und Verkäufer nicht berühren soll. Ohne die Möglichkeit des Wiederauflebens der Kaufpreisschuld ist eine Berührung, gar eine Beeinträchtigung der Rechte aber zu bejahen. Denn die Entscheidung von PayPal würde zumindest bei Stattgabe des Käuferschutzes abschließend über das Schicksal der Kaufpreisschuld entscheiden. Die Prüfung des Schicksals der Kaufpreisschuld, die im Streitfall durch ein staatliches Gericht vorzunehmen ist, würde dem vereinfachten Prüfungsmaß von PayPal unterliegen, wie er aus Ziffer 4.1 der PayPal-Käuferschutzrichtlinie deutlich wird. Demnach ist zum Versendungsnachweis grundsätzlich ein entsprechender Beleg einzureichen, den A aufgrund ihrer Unachtsamkeit auf dem Tresen der Postfiliale liegen ließ und damit den erforderlichen Beweis nicht erbringen kann. Im ordentlichen Gerichtsweg könnte die A auf die Vernehmungen der F als Beweismittel zurückgreifen. Diese Möglichkeit ist im Prüfungsverfahren von PayPal nicht vorgesehen, sodass diese „faktische Privatisierung des Privatrechts“ mit einer den Parteiinteressen nicht gerecht werdenden Rechteverkürzung einhergeht. Zudem würde sich die „Endgültigkeit“ der Entscheidung von PayPal nur einseitig entfalten. Wird dem Antrag auf Käuferschutz nicht stattgegeben, stünde es beiden Parteien offen, den Gerichtsweg zu beschreiten, während bei Stattgabe des Antrags ohne Wiederbegründung der Kaufpreisschuld der Verkäufer nun endgültig wegen Erlöschens seines ursprünglichen Anspruchs auf den Kaufpreis verzichten müsste. Diese Begünstigung des antragstellenden Käufers wird ebenfalls den Parteiinteressen nicht gerecht. Schutzlos ist der Käufer trotz Wiederauflebens aufgrund möglicher Ansprüche gegen das Transportunternehmen nicht. Im Ergebnis erscheint es daher sowohl interessenals auch unter Berücksichtigung der PayPal-AGB sachgerecht, dem Vertrag zwischen A und J die stillschweigende Vereinbarung zu entnehmen, dass der Zahlungsanspruch des Verkäufers bei erfolgreicher Inanspruchnahme des PayPal-Käuferschutzes wieder begründet wird. Der Zahlungsanspruch der A aus § 433 Abs. 2 BGB ist nach alldem zwar zunächst kraft Erfüllung erloschen, wurde jedoch nach der erfolgreichen Inanspruchnahme des PayPalKäuferschutzes wieder begründet und hat somit weiterhin Bestand.
 
 ### 2. Erlöschen gem. § 326 Abs. 1 S. 1 Hs. 1 BGB
 Der Zahlungsanspruch der A könnte als Gegenleistungsanspruch zu dem Anspruch der J auf Übergabe und Übereignung der Kaufsache aus § 433 Abs. 1 S. 1 BGB gem. § 326 Abs. 1 S. 1 Hs. 1 BGB erloschen sein. Der Kaufvertrag ist ein gegenseitig verpflichtender Vertrag und der Anwendungsbereich von § 326 BGB daher eröffnet. Des Weiteren müsste die Leistungsplicht nach § 275 BGB ausgeschlossen sein. In Betracht kommt hier eine objektive Unmöglichkeit der Leistung gem. § 275 Abs. 1 BGB. Diese liegt vor, wenn die Leistungserbringung – hier die Übergabe und Übereignung der geschuldeten Kaufsache gem. § 433 Abs. 1 S. 1 BGB – für jedermann unmöglich ist. Maßgeblich für die Beurteilung der Unmöglichkeit ist zunächst, ob der Bezugspunkt der Übergabe- und Übereignungspflicht das konkret verkaufte Mobiltelefon (Stückschuld) oder ein Mobiltelefon der Marke „X“ von mittlerer Art und Güte ist (Gattungsschuld, § 243 Abs. 1 BGB). Grundsätzlich ist bei einer gewerblichen Anbieterin wie der A sowie einer neuwertigen und dazu originalverpackten Kaufsache davon auszugehen, dass der Parteiwille auf die Begründung einer Gattungsschuld gerichtet war. Eine abschließende Bewertung kann jedoch dahinstehen, wenn eine mögliche Gattungsschuld durch Konkretisierung gem. § 243 Abs. 2 BGB zur Stückschuld geworden ist. Dies ist dann der Fall, wenn der Schuldner seinerseits das zur Leistungserbringung Erforderliche getan hat. Hier haben A und J vereinbart, dass das Mobiltelefon von dem Geschäftssitz der A in Dortmund an die Anschrift des „Fairtopia“ in Hamburg unter Einbeziehung eines Drittunternehmens versendet werden soll. Erfüllungs- und Erfolgsort fallen danach auseinander, sodass von einer Schickschuld auszugehen ist. Bei einer Schickschuld hat der Schuldner das zur Leistungserbringung seinerseits Erforderliche getan, wenn er die ausgesonderte Kaufsache dem Transportunternehmen ordnungsgemäß übergeben hat. Dies hat A mit der Übergabe an die Post getan, sodass sich die Schuld auf das konkrete Mobiltelefon beschränkte. Das konkrete Mobiltelefon ist hier „wie vom Erdboden verschwunden“ und auch nach den Bemühungen der Post nicht mehr auffindbar. Die Erbringung der Leistungspflicht aus § 433 Abs. 1 S. 1 BGB ist damit für jedermann unmöglich, sodass ein Ausschluss der Leistungspflicht nach § 275 Abs. 1 BGB eingetreten ist. Die tatbestandlichen Voraussetzungen des § 326 Abs. 1 S. 1 Hs. 1 BGB liegen somit vor. Demnach wäre der Anspruch auf die Gegenleistung grundsätzlich erloschen. Jedoch könnte hier aufgrund einer Anspruchserhaltungsnorm oder einer systematischen Ausnahme der Anspruch auf die Gegenleistung trotzdem erhalten bleiben. In Betracht hier kommt die Einschlägigkeit einer systematischen Ausnahme zu § 326 Abs. 1 S. 1 Hs. 1 BGB. Solche Ausnahmen zum Grundsatz aus § 326 Abs. 1 S. 1 Hs. 1 BGB normieren unter anderem die §§ 446, 447 BGB. Beide Vorschriften regeln einen Übergang der sog. Gegenleistungs- oder Preisgefahr auf den Gläubiger der Zahlungsverpflichtung. Bei einem Kaufvertrag geht die Preisgefahr grundsätzlich mit Übergabe der Sache an den Käufer gem. § 446 Abs. 1 BGB über. Eine Übergabe hat mangels Besitzbegründung der J nicht stattgefunden. Jedoch geht abweichend von dieser Grundregel bei der Vereinbarung eines Versendungskaufs die Preisgefahr gem. § 447 Abs. 1 BGB schon mit der Übergabe an die Transperson bzw. das Transportunternehmen über. Mit anderen Worten muss zwischen den Vertragsparteien eine Schickschuld vereinbart worden sein. Eine solche wurde, wie oben geprüft, zwischen den Parteien vereinbart, sodass ein Versendungskauf anzunehmen ist. Folglich trug J zum Zeitpunkt des Eintritts der Unmöglichkeit gem. § 275 Abs. 1 BGB schon die Preisgefahr, sodass hier als systematische Ausnahme zu § 326 Abs. 1 S. 1 Hs. 1 BGB der Anspruch auf die Gegenleistung der A erhalten bleibt.
@@ -57,13 +57,13 @@ A und J haben einen Kaufvertrag geschlossen. Ein Zahlungsanspruch der A gem. § 
 Mit Gutschrift der 500 € auf dem PayPal-Konto der A ist der Anspruch aus § 433 Abs. 2 BGB grundsätzlich kraft Erfüllung gem. § 362 Abs. 1 BGB erloschen. Der Kaufvertrag ist jedoch dahingehend auszulegen, dass mit der erfolgreichen Inanspruchnahme des PayPal-Käuferschutzes durch A die Kaufpreisschuld neu begründet wurde (siehe im Ausgangsfall II. 1.).
 
 #### 2. Erlöschen gem. § 326 Abs. 1 S. 1 Hs. 1 BGB
-Die von A gem. § 433 Abs. 1 S. 1 BGB geschuldete Übergabe und Übereignung der Kaufsache ist mit Verlust des Mobiltelefons gem. § 275 Abs. 1 BGB objektiv unmöglich geworden. Der Anspruch auf die Gegenleistung wäre daher gem. § 326 Abs. 1 S. 1 Hs. 1 BGB grundsätzlich erloschen. 2015, § 447 Rn. 7 f. Jedoch kommt hier wiederum in Betracht, dass der Gegenleistungsanspruch wegen des Übergangs der Preisgefahr vor Untergang der Sachleistungspflicht ausnahmsweise aufrecht erhalten bleibt. Wie im Ausgangsfall haben die Parteien einen Versendungskauf vereinbart, sodass die Preisgefahr gem. § 447 Abs. 1 BGB eigentlich schon mit der ordnungsgemäßen Übergabe der Kaufsache an das Transportunternehmen überging. Etwas anderes könnte sich aber aus dem Umstand ergeben, dass J hier das Mobiltelefon nicht zum Weiterverkauf im „Fairtopia“, sondern ausschließlich für private Zwecke kaufte und damit als Verbraucherin im Sinne des § 13 BGB zu qualifizieren sein könnte, für die sich eine abweichende rechtliche Beurteilung ergibt. Wie schon aus dem Wortlaut des § 13 BGB ersichtlich wird („überwiegend weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden kann“), steht die Ausübung einer gewerblichen Tätigkeit dem Vorliegen der Verbrauchereigenschaft nicht grundsätzlich entgegen. Vielmehr kommt es im Einzelfall darauf an, dass das konkrete Rechtsgeschäft für zumindest überwiegend private Zwecke abgeschlossen wurde. Die Zweckbestimmung des Mobiltelefons ist hier ausschließlich privater Natur, sodass der Kaufvertrag über das Mobiltelefon zwischen J als Verbraucherin und A als Unternehmerin (§ 14 BGB) geschlossen wurde. Ein Verbrauchsgüterkauf im Sinne des § 474 Abs. 1 BGB liegt vor. Gem. § 475 Abs. 2 BGB ist § 447 BGB auf Verbrauchsgüterkäufe nur anzuwenden, wenn der Käufer das Transportunternehmen mit der Versendung beauftragt hat. Vorliegend hat jedoch A die Post als Versandunternehmen benannt, sodass die Auswahl des Transportunternehmens nicht durch J getroffen wurde. § 447 BGB ist daher nicht anzuwenden mit der Folge, dass auf die Regelung des § 446 BGB zurückzugreifen ist. Ein Übergang der Preisgefahr hat mangels erfolgter Übergabe danach nicht stattgefunden. Folglich liegt – anders als im Ausgangsfall – keine systematische Ausnahme zu § 326 Abs. 1 S. 1 Hs. 1 BGB vor. Der Anspruch der A aus § 433 Abs. 2 BGB ist damit erloschen.
+Die von A gem. § 433 Abs. 1 S. 1 BGB geschuldete Übergabe und Übereignung der Kaufsache ist mit Verlust des Mobiltelefons gem. § 275 Abs. 1 BGB objektiv unmöglich geworden. Der Anspruch auf die Gegenleistung wäre daher gem. § 326 Abs. 1 S. 1 Hs. 1 BGB grundsätzlich erloschen. Jedoch kommt hier wiederum in Betracht, dass der Gegenleistungsanspruch wegen des Übergangs der Preisgefahr vor Untergang der Sachleistungspflicht ausnahmsweise aufrecht erhalten bleibt. Wie im Ausgangsfall haben die Parteien einen Versendungskauf vereinbart, sodass die Preisgefahr gem. § 447 Abs. 1 BGB eigentlich schon mit der ordnungsgemäßen Übergabe der Kaufsache an das Transportunternehmen überging. Etwas anderes könnte sich aber aus dem Umstand ergeben, dass J hier das Mobiltelefon nicht zum Weiterverkauf im „Fairtopia“, sondern ausschließlich für private Zwecke kaufte und damit als Verbraucherin im Sinne des § 13 BGB zu qualifizieren sein könnte, für die sich eine abweichende rechtliche Beurteilung ergibt. Wie schon aus dem Wortlaut des § 13 BGB ersichtlich wird („überwiegend weder ihrer gewerblichen noch ihrer selbständigen beruflichen Tätigkeit zugerechnet werden kann“), steht die Ausübung einer gewerblichen Tätigkeit dem Vorliegen der Verbrauchereigenschaft nicht grundsätzlich entgegen. Vielmehr kommt es im Einzelfall darauf an, dass das konkrete Rechtsgeschäft für zumindest überwiegend private Zwecke abgeschlossen wurde. Die Zweckbestimmung des Mobiltelefons ist hier ausschließlich privater Natur, sodass der Kaufvertrag über das Mobiltelefon zwischen J als Verbraucherin und A als Unternehmerin (§ 14 BGB) geschlossen wurde. Ein Verbrauchsgüterkauf im Sinne des § 474 Abs. 1 BGB liegt vor. Gem. § 475 Abs. 2 BGB ist § 447 BGB auf Verbrauchsgüterkäufe nur anzuwenden, wenn der Käufer das Transportunternehmen mit der Versendung beauftragt hat. Vorliegend hat jedoch A die Post als Versandunternehmen benannt, sodass die Auswahl des Transportunternehmens nicht durch J getroffen wurde. § 447 BGB ist daher nicht anzuwenden mit der Folge, dass auf die Regelung des § 446 BGB zurückzugreifen ist. Ein Übergang der Preisgefahr hat mangels erfolgter Übergabe danach nicht stattgefunden. Folglich liegt – anders als im Ausgangsfall – keine systematische Ausnahme zu § 326 Abs. 1 S. 1 Hs. 1 BGB vor. Der Anspruch der A aus § 433 Abs. 2 BGB ist damit erloschen.
 
 ### III. Ergebnis
 A hat gegen J keinen Anspruch aus § 433 Abs. 2 BGB. Sie kann daher nicht die Zahlung der 500 € verlangen.
 
 ## Lösungsvorschlag zur Abwandlung 2
-J könnte gegen A einen Anspruch auf Abtretung des Anspruchs gegen die Versicherung i.H.v. 600 € gem. § 285 Abs. 1 BGB haben. deutet der BGH in seiner Entscheidung an, musste aber aufgrund der fehlenden Verbrauchereigenschaft der Parteien im konkreten Fall keine näheren Ausführungen machen. Vgl. BGH NJW 2018, 537 (541 Rn. 43). Anspruchs aus § 285 BGB gewähren Lehmann/Zschache, JuS 2006, 502 ff.
+J könnte gegen A einen Anspruch auf Abtretung des Anspruchs gegen die Versicherung i.H.v. 600 € gem. § 285 Abs. 1 BGB haben.
 
 ### I. Schuldverhältnis
 Ein Schuldverhältnis liegt in Form eines Kaufvertrags zwischen A und J vor (siehe oben).
@@ -78,34 +78,26 @@ Der Schuldner muss ein Surrogat (sog. stellvertretendes commodum) für den gesch
 A hat den Versicherungsanspruch für den Verlust seines Eigentums erlangt. J sollte durch den Vollzug des Kaufvertrags Eigentum an dem Mobiltelefon erlangen, sodass die erforderliche Identität zwischen geschuldetem und ersetztem Gegenstand besteht.
 
 ### V. Rechtsfolge
-J kann damit von A die Abtretung des Anspruchs gegen die Versicherung verlangen. Problematisch erscheint jedoch, dass hier ein Anspruch i.H.v. 600 € gegen die Versicherung besteht, während sich der objektive Wert des verkauften Mobiltelefons nur auf 550 € bemisst. Fraglich ist daher, ob der Umfang des Anspruchs hier auf den objektiven Wert der Kaufsache zu begrenzen ist. Der insoweit eindeutige Wortlaut des § 285 Abs. 1 BGB („Abtretung des Ersatzanspruchs“) spricht gegen eine solche Einschränkung. Dem könnte entgegenhalten werden, dass die Anspruchsgläubigerin J hier durch den sekundärrechtlichen Anspruch aus § 285 BGB bessergestellt werden würde, als wenn auf primärrechtlicher Ebene der Kaufvertrag ordnungsgemäß erfüllt worden wäre. Eine solche Besserstellung entspricht nicht der Ausgleichsfunktion des Leistungsstörungsrecht der §§ 280 ff. i.V.m. §§ 249 ff. BGB. Dies lässt sich mit dem systematischen Argument entkräften, dass die Anspruchsrichtung des § 285 BGB im Vergleich § 285 Rn. 7. che Bereicherungsverbot zum Ausdruck, vgl. dazu die Fundstellen bei Spancken/Schneidenbach, JuS 2012, 298 (299 Fn. 17). zu den Ansprüchen gem. §§ 280–283 BGB eine andere ist. Während letztere schadensrechtliche Erstattungsansprüche darstellen, stellt § 285 BGB einen Herausgabeanspruch dar, der auf die Herausgabe des tatsächlich Erlangten beim Schuldner infolge einer Leistungsstörung gerichtet ist. Mit diesem Anspruch verlangt der Gläubiger nicht Herstellung des Zustandes, der bestehen würde, wenn der zum Ersatz verpflichtende Umstand nicht eingetreten wäre, sodass der erfahrene Nachteil des Gläubigers hier nicht die Anspruchshöhe begrenzen kann. Aufgrund des klaren Wortlauts und dieses systematischen Arguments ist daher eine Beschränkung des Anspruchsumfangs abzulehnen.
+J kann damit von A die Abtretung des Anspruchs gegen die Versicherung verlangen. Problematisch erscheint jedoch, dass hier ein Anspruch i.H.v. 600 € gegen die Versicherung besteht, während sich der objektive Wert des verkauften Mobiltelefons nur auf 550 € bemisst. Fraglich ist daher, ob der Umfang des Anspruchs hier auf den objektiven Wert der Kaufsache zu begrenzen ist. Der insoweit eindeutige Wortlaut des § 285 Abs. 1 BGB („Abtretung des Ersatzanspruchs“) spricht gegen eine solche Einschränkung. Dem könnte entgegenhalten werden, dass die Anspruchsgläubigerin J hier durch den sekundärrechtlichen Anspruch aus § 285 BGB bessergestellt werden würde, als wenn auf primärrechtlicher Ebene der Kaufvertrag ordnungsgemäß erfüllt worden wäre. Eine solche Besserstellung entspricht nicht der Ausgleichsfunktion des Leistungsstörungsrecht der §§ 280 ff. i.V.m. §§ 249 ff. BGB. Dies lässt sich mit dem systematischen Argument entkräften, dass die Anspruchsrichtung des § 285 BGB im Vergleich zu den Ansprüchen gem. §§ 280–283 BGB eine andere ist. Während letztere schadensrechtliche Erstattungsansprüche darstellen, stellt § 285 BGB einen Herausgabeanspruch dar, der auf die Herausgabe des tatsächlich Erlangten beim Schuldner infolge einer Leistungsstörung gerichtet ist. Mit diesem Anspruch verlangt der Gläubiger nicht Herstellung des Zustandes, der bestehen würde, wenn der zum Ersatz verpflichtende Umstand nicht eingetreten wäre, sodass der erfahrene Nachteil des Gläubigers hier nicht die Anspruchshöhe begrenzen kann. Aufgrund des klaren Wortlauts und dieses systematischen Arguments ist daher eine Beschränkung des Anspruchsumfangs abzulehnen.
 
 ### VI. Ergebnis
-J kann von A gem. § 285 Abs. 1 BGB die Abtretung des Anspruchs gegen die Versicherung i.H.v. 600 € verlangen. stattungsansprüchen zugrunde, deren Höhe sich aus den §§ 249 ff. BGB und dem dort verankerten Grundsatz der Naturalrestitution (§ 249 Abs. 1 BGB) ergibt. Emmerich, in: Münchener Kommentar zum BGB, 7. Aufl. 2016, § 285 Rn. 30 m.w.N.; a.A. Höhn, Die Beeinträchtigung von Rechten durch Verfügungen, 1986, S. 44, 106 ff.; Löwisch, NJW 2003, 2049 (2051 f.), der eine Begrenzung des Anspruchsinhalts wegen der Wertungen aus §§ 326 Abs. 2 S. 2, 615 S. 2, 649 S. 2 BGB insbesondere bei Dienstleistungsverträgen für geboten hält; Caspers, in: Staudinger, Kommentar zum BGB, 2014, § 285 Rn. 41, mit Hinweis auf Stoll, Festschrift für Peter Schlechtriem zum 70. Geburtstag, 2003, S. 677 (694 f.), der die Funktion des Anspruchs auf Ersatzherausgabe im Nachteilsausgleich des Gläubigers sieht und daher eine Anspruchsbegrenzung befürwortet.
+J kann von A gem. § 285 Abs. 1 BGB die Abtretung des Anspruchs gegen die Versicherung i.H.v. 600 € verlangen.
 
 ## Rubrics For Review
-
-**Generated at:** 2026-07-09T19:57:47.976874+00:00
-
-**Review status:** generated_calibrated_needs_human_review
-
-**Language:** Deutsch
 
 **Number of criteria:** 48
 
 **Wichtigkeit (Kritikalität):**
 
-- ★★★ zentral - muss enthalten sein: 27 Kriterien
-- ★★ wichtig - in einer soliden Lösung erwartet: 16 Kriterien
-- ★ eher unwichtig - Detail, Form, Bonuswissen: 5 Kriterien
+- ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt): 7 Kriterien
+- ★★ wichtig - in einer soliden Lösung erwartet: 41 Kriterien
+- ★ eher unwichtig - Detail, Form, Bonuswissen: 0 Kriterien
 
-### Ausgangsfall Ausgangsfall
+### F1 Ausgangsfall
 
-#### Ausgangsfall.I Anspruch entstanden
+#### C-001 - Anspruchsgrundlage im Ausgangsfall
 
-##### C-001 - Anspruchsgrundlage im Ausgangsfall
-
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -114,6 +106,8 @@ ERFÜLLT, wenn die Antwort den Anspruch der Verkäuferin A gegen die Käuferin J
 **Review notes**
 
 - Äquivalente Zitierweisen wie § 433 II BGB genügen.
+
+#### F1.I Anspruch entstanden
 
 ##### C-002 - Auslegung der eBay-Erklärungen
 
@@ -153,7 +147,7 @@ ERFÜLLT, wenn die Antwort die Betätigung und Bestätigung der Sofort-Kaufen-Fu
 
 ##### C-005 - Wirksamkeit des Kaufvertrags
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -163,9 +157,9 @@ ERFÜLLT, wenn die Antwort den zwischen A und J geschlossenen eBay-Kaufvertrag �
 
 - Ein kurzer Hinweis genügt.
 
-#### Ausgangsfall.II Anspruch erloschen
+#### F1.II Anspruch erloschen
 
-##### Ausgangsfall.II.1 Erlöschen kraft Erfüllung, § 362 Abs. 1 BGB
+##### F1.II.1 Erlöschen kraft Erfüllung, § 362 Abs. 1 BGB
 
 ###### C-006 - PayPal als Zahlungsmodalität
 
@@ -193,7 +187,7 @@ ERFÜLLT, wenn die Antwort die bloße Autorisierung der PayPal-Zahlung durch J n
 
 ###### C-008 - Erfüllung durch PayPal-Gutschrift bei A
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -229,7 +223,7 @@ ERFÜLLT, wenn die Antwort verneint, dass die erfolgreiche Rückerstattung über
 
 ###### C-011 - Möglichkeit stillschweigender Neubegründung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -241,7 +235,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass ein bereits durch Erfüllung erloschene
 
 ###### C-012 - Ziffer 7.5 PayPal-Käuferschutzrichtlinie
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -277,7 +271,7 @@ ERFÜLLT, wenn die Antwort als Interessenargument erkennt, dass eine stattgebend
 
 ###### C-015 - Wiederbegründung nach erfolgreichem PayPal-Käuferschutz
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -287,7 +281,7 @@ ERFÜLLT, wenn die Antwort im Ausgangsfall annimmt, dass der Kaufpreisanspruch d
 
 - Auch Wiederaufleben der Kaufpreisschuld genügt.
 
-##### Ausgangsfall.II.2 Erlöschen gem. § 326 Abs. 1 S. 1 Hs. 1 BGB
+##### F1.II.2 Erlöschen gem. § 326 Abs. 1 S. 1 Hs. 1 BGB
 
 ###### C-016 - Schuldart des verkauften Mobiltelefons
 
@@ -303,7 +297,7 @@ ERFÜLLT, wenn die Antwort entweder bei A als gewerblicher Anbieterin eines orig
 
 ###### C-017 - Versandvereinbarung als Schickschuld
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -327,7 +321,7 @@ ERFÜLLT, wenn die Antwort bei einer möglichen Gattungsschuld nach § 243 Abs. 
 
 ###### C-019 - Ordnungsgemäße Aufgabe bei der Post
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -339,7 +333,7 @@ ERFÜLLT, wenn die Antwort zugrunde legt, dass A das Mobiltelefon am Tag nach de
 
 ###### C-020 - Beschränkung auf das konkrete Mobiltelefon
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -351,7 +345,7 @@ ERFÜLLT, wenn die Antwort annimmt, dass eine etwaige Gattungsschuld durch die o
 
 ###### C-021 - Unmöglichkeit durch Verlust des Päckchens
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -363,7 +357,7 @@ ERFÜLLT, wenn die Antwort den Verlust und die dauerhafte Unauffindbarkeit des k
 
 ###### C-022 - Grundsatz des Gegenleistungswegfalls
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -375,7 +369,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass der Kaufpreisanspruch der A als Gegenle
 
 ###### C-023 - Kein Gefahrübergang nach § 446 BGB im Ausgangsfall
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -387,7 +381,7 @@ ERFÜLLT, wenn die Antwort im Ausgangsfall einen Gefahrübergang nach § 446 BGB
 
 ###### C-024 - Gefahrübergang beim Versendungskauf
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -399,7 +393,7 @@ ERFÜLLT, wenn die Antwort die Regel des § 447 Abs. 1 BGB heranzieht, wonach be
 
 ###### C-025 - Anwendung von § 447 BGB im Ausgangsfall
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -411,7 +405,7 @@ ERFÜLLT, wenn die Antwort § 447 Abs. 1 BGB im Ausgangsfall anwendet, weil A un
 
 ###### C-026 - Preisgefahr bei J im Ausgangsfall
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -421,11 +415,11 @@ ERFÜLLT, wenn die Antwort folgert, dass J im Ausgangsfall beim späteren Verlus
 
 - Diese Anwendung erhält den Kaufpreisanspruch im Ausgangsfall.
 
-#### Ausgangsfall.III Anspruch durchsetzbar
+#### F1.III Anspruch durchsetzbar
 
 ##### C-027 - Keine Einrede aus § 320 BGB
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -435,11 +429,11 @@ ERFÜLLT, wenn die Antwort eine Einrede der J aus § 320 BGB im Ausgangsfall abl
 
 - Durchsetzbarkeit darf knapp geprüft werden.
 
-#### Ausgangsfall.IV Ergebnis
+#### F1.IV Ergebnis
 
 ##### C-028 - Ergebnis im Ausgangsfall
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -449,15 +443,15 @@ ERFÜLLT, wenn die Antwort im Ausgangsfall zum Ergebnis kommt, dass A von J Zahl
 
 - Endergebnis der Fallfrage im Ausgangsfall.
 
-### Abwandlung1 Lösungsvorschlag zu Abwandlung 1
+### F2 Lösungsvorschlag zu Abwandlung 1
 
-#### Abwandlung1.II Anspruch erloschen
+#### F2.II Anspruch erloschen
 
-##### Abwandlung1.II.2 Erlöschen gem. § 326 Abs. 1 S. 1 Hs. 1 BGB
+##### F2.II.2 Erlöschen gem. § 326 Abs. 1 S. 1 Hs. 1 BGB
 
 ###### C-029 - J als Verbraucherin in Abwandlung 1
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -481,7 +475,7 @@ ERFÜLLT, wenn die Antwort A in Abwandlung 1 als Unternehmerin nach § 14 BGB be
 
 ###### C-031 - Verbrauchsgüterkauf in Abwandlung 1
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -493,7 +487,7 @@ ERFÜLLT, wenn die Antwort den Kauf des Mobiltelefons in Abwandlung 1 als Verbra
 
 ###### C-032 - Sperre des § 447 BGB nach § 475 Abs. 2 BGB
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -505,7 +499,7 @@ ERFÜLLT, wenn die Antwort darstellt, dass § 447 BGB bei einem Verbrauchsgüter
 
 ###### C-033 - Keine Anwendung von § 447 BGB in Abwandlung 1
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -517,7 +511,7 @@ ERFÜLLT, wenn die Antwort § 447 BGB in Abwandlung 1 nicht anwendet, weil A die
 
 ###### C-034 - Kein Gefahrübergang nach § 446 BGB in Abwandlung 1
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -529,7 +523,7 @@ ERFÜLLT, wenn die Antwort in Abwandlung 1 einen Gefahrübergang nach § 446 BGB
 
 ###### C-035 - Erlöschen des Kaufpreisanspruchs in Abwandlung 1
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -539,11 +533,11 @@ ERFÜLLT, wenn die Antwort in Abwandlung 1 annimmt, dass der Kaufpreisanspruch d
 
 - PayPal ist nicht der tragende Erlöschensgrund.
 
-#### Abwandlung1.III Ergebnis
+#### F2.III Ergebnis
 
 ##### C-036 - Ergebnis in Abwandlung 1
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -553,11 +547,11 @@ ERFÜLLT, wenn die Antwort in Abwandlung 1 zum Ergebnis kommt, dass A von J kein
 
 - Endergebnis der ersten Abwandlung.
 
-### Abwandlung2 Lösungsvorschlag zur Abwandlung 2
+### F3 Lösungsvorschlag zur Abwandlung 2
 
 #### C-037 - Anspruchsgrundlage in Abwandlung 2
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -567,11 +561,11 @@ ERFÜLLT, wenn die Antwort den Anspruch der J gegen A auf Abtretung des Anspruch
 
 - Abwandlung 2 betrifft das stellvertretende commodum.
 
-#### Abwandlung2.I Schuldverhältnis
+#### F3.I Schuldverhältnis
 
 ##### C-038 - Schuldverhältnis für § 285 BGB
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -581,11 +575,11 @@ ERFÜLLT, wenn die Antwort für § 285 Abs. 1 BGB in Abwandlung 2 ein Schuldverh
 
 - Verweis auf den zuvor geprüften Kaufvertrag genügt.
 
-#### Abwandlung2.II Ausschluss der Leistungspflicht, § 275 BGB
+#### F3.II Ausschluss der Leistungspflicht, § 275 BGB
 
 ##### C-039 - Leistungsausschluss in Abwandlung 2
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -595,11 +589,11 @@ ERFÜLLT, wenn die Antwort in Abwandlung 2 annimmt, dass A wegen des Verlusts de
 
 - Die Unmöglichkeitsprüfung kann auf den Ausgangsfall verweisen.
 
-#### Abwandlung2.III Erlangung eines Ersatzes oder Ersatzanspruchs für den geschuldeten Gegenstand
+#### F3.III Erlangung eines Ersatzes oder Ersatzanspruchs für den geschuldeten Gegenstand
 
 ##### C-040 - Ersatz oder Ersatzanspruch als Tatbestandsmerkmal
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -623,7 +617,7 @@ ERFÜLLT, wenn die Antwort bei § 285 Abs. 1 BGB einen zumindest mitursächliche
 
 ##### C-042 - Versicherungsanspruch der A als Surrogat
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -633,7 +627,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass A in Abwandlung 2 aufgrund der vor V
 
 - § 285 BGB erfasst auch den Anspruch, nicht nur bereits ausgezahltes Geld.
 
-#### Abwandlung2.IV Identität zwischen geschuldetem und ersetztem Gegenstand
+#### F3.IV Identität zwischen geschuldetem und ersetztem Gegenstand
 
 ##### C-043 - Identität des ersetzten Gegenstands
 
@@ -647,11 +641,11 @@ ERFÜLLT, wenn die Antwort die erforderliche Identität bejaht, weil J Eigentum 
 
 - Keine Eigentumsübertragung an J vor Verlust erforderlich.
 
-#### Abwandlung2.V Rechtsfolge
+#### F3.V Rechtsfolge
 
 ##### C-044 - Rechtsfolge Abtretung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -663,7 +657,7 @@ ERFÜLLT, wenn die Antwort als Rechtsfolge des § 285 Abs. 1 BGB die Abtretung d
 
 ##### C-045 - Problem der höheren Versicherungssumme
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -697,11 +691,11 @@ ERFÜLLT, wenn die Antwort entweder eine Begrenzung des § 285 Abs. 1 BGB mit de
 
 - Bei älterer Zitierweise ist § 649 S. 2 BGB statt § 648 S. 2 BGB akzeptabel.
 
-#### Abwandlung2.VI Ergebnis
+#### F3.VI Ergebnis
 
 ##### C-048 - Ergebnis in Abwandlung 2
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 

@@ -18,7 +18,7 @@ Bearbeiten Sie den Fall gutachterlich. Erstellen Sie eine vollständige Falllös
 
 # Sachverhalt
 
-Schwerpunktbereichsklausur: Kunst oder Leben Von Prof. Dr. Jörn Reinhardt, Bremen, Wiss. Mitarbeiter Ioannis Katsivelas, Wiss. Mitarbeiterin Anna Schimke, Hamburg Sachverhalt K ist Künstler. In seinen Arbeiten thematisiert er das Verhältnis von Kunst und Leben. K experimentiert dazu mit den verschiedensten Formaten und Medien, die er aber zunehmend als unauthentisch empfindet. Sein neues Projekt radikalisiert seinen bisherigen Ansatz. Um die Unmittelbarkeit zwischen seinen Arbeiten, seinem Leben und den Rezipienten seiner Kunst herzustellen, hat K Atelier und Privatwohnung, bewusst auch Bade- und Schlafzimmer, mit Kameras bestückt. Darüber hinaus hat K in sein Brillengestell eine Kamera integriert. Auf diese Weise will er den Betrachtern seiner Kunst nicht nur einen Blick auf ihn selbst ermöglichen, sondern sie auch quasi durch seine Brille auf die Welt blicken lassen. K hält gerade diese Verdopplung der Perspektive für einen besonders subtilen Effekt. Die Brillenkamera verfügt über eine Zoomfunktion, mit der K über erhebliche Distanzen zu filmen vermag. Er hat es sich zur Angewohnheit gemacht, von seiner Küche aus einen Blick auf die Fensterfront des gegenüberliegenden Wohnhauses zu werfen und bei anbrechender Dunkelheit in die beleuchteten Wohnungen zu zoomen. Er macht das nicht systematisch, sondern eher zufällig. Die Aufnahmen der Kameras werden kontinuierlich per Livestream übertragen. K bedient sich dabei der von einem Hamburger Start-Up Unternehmen entwickelten Anwendung „P-Scope“. Die Anwendung funktioniert auf folgende Weise: Sobald eine mit P-Scope verbundene Kamera startet, wird das aufgenommene Video auf einen Server des Anbieters übertragen. Über die Webseite von P-Scope oder mit der Anwendung selbst können sich dann Dritte in den Live-Stream einklinken. Beendet der Nutzer die Videoaufnahme, endet auch der Live-Stream. Die Nutzer können ihre Beiträge mit einem Titel und weiteren Schlagwörtern sowie kurzen Texten versehen. Bei Eingabe des Titels oder der Schlagwörter in die von P-Scope angebotene Suchfunktion können Livestream und das dazugehörige Profil des Nutzers von Dritten aufgefunden werden. Dem Nutzer ist es nicht möglich, die gestreamten Aufnahmen mittels P-Scope zu speichern. Auch über eine „Replay“-Funktion oder ähnliches verfügt die Anwendung nicht. Um den Dienst nutzen zu können, ist es erforderlich, ein kostenloses Nutzerkonto anzulegen. Dazu müssen ein frei gewählter Kontoname, ein Passwort, eine E-Mail-Adresse und ein Geburtsdatum angegeben werden. Eine Rechtsbelehrung oder Hinweise auf zu berücksichtigende Rechte Dritter enthält die Webseite nicht. Die Radikalität des Ansatzes verschafft K, der sich darüber sehr freut, in kurzer Zeit eine gewisse Resonanz in den sozialen Medien und der Presse. Dies gilt insbesondere für die Aufnahmen, die er mittels der in seinem Brillengestell integrierten Kamera macht. In einem Interview mit der Kunstzeitschrift Monopoly rechtfertigt K dieses Vorgehen als das künstlerische Zitat einer voyeuristischen Geste. Nicht erfreut ist Nachbarin N, die im Haus gegenüber wohnt und des Öfteren in das Blickfeld des K gerät. N hat von Ks Projekt erfahren und bewegt sich, aus Angst, K zu begegnen, nun nicht mehr so unbefangen wie früher im öffentlichen Straßenraum. Vollends entsetzt ist sie, als sie von einem Bekannten erfährt, dass K auch schon das ein und andere Mal in ihre Wohnung gezoomt hat. N fühlt sich beobachtet und in ihrer Privatsphäre verletzt. Sie ist der Meinung, K dürfe sie nicht ohne Weiteres auf der Straße aufnehmen und erst recht dürfe er nicht in ihre Wohnung hinein filmen. Einen künstlerischen Gehalt der Aufnahmen kann sie auch nicht erkennen, vielmehr sei alles erschreckend realistisch. Da sie in keinem Fall an K herantreten will, um nicht noch weiter in sein Kunstprojekt hineingezogen zu werden, wendet sie sich mit Schreiben an P-Scope als Anbieter. Sie verlangt von P-Scope, eine weitere Ausstrahlung von Ks Livestream zu unterlassen. K habe ihre Persönlichkeitsrechte wiederholt verletzt und werde dies angesichts des Nachbarschaftsverhältnisses im Falle einer weiteren Ausstrahlung des Livestream auch künftig tun. Als Anbieter habe P-Scope eine Verpflichtung, evidente Rechtsverletzungen zu unterbinden. Indem ein Anbieter alles ungeprüft übertrage, mache er sich die Rechtsverletzungen seiner Nutzer zu eigen. Mit Antwortschreiben reagiert P-Scope ablehnend. Das Unternehmen stelle nur ein Forum zur Verfügung. Verantwortlich für die Inhalte seien allein die Nutzer. Von einem kleinen Start-Up könne auch nicht erwartet werden, das Nutzerverhalten umfassend zu kontrollieren. Ob das Verhalten des K tatsächlich rechtswidrig sei, könne es gar nicht beurteilen. Da der N die Person des K bekannt sei, habe sie sich in jedem Fall zuerst an ihn zu wenden. Auch K stehen derweil rechtliche Streitigkeiten ins Haus. Die Berühmtheit des K führt dazu, dass über ihn zunehmend in den Medien berichtet wird. Die Boulevardpresse hat sich der Geschichte angenommen. Eines Morgens sieht K sich in einer großen Tageszeitung abgebildet, die im Verlag Z erscheint. Das Bild dient zur Illustration eines Artikels, in dem – wie K findet – nur negativ und verständnislos über ihn berichtet wird. Bei dem Bild handelt sich um ein Foto, das Reporter der Z von dem Livestream gemacht haben und das K im Bad auf seiner Toilette sitzend zeigt. Das Bild trägt die Überschrift: „Ist das jetzt auch Kunst?“. Verärgert ist K aber nicht nur über die Veröffentlichung des Bildes, sondern auch über das Fazit des Artikels, das er als persönliche Beleidigung empfindet. Darin heißt es: „Privates, Öffentliches, Kunst, Leben – für K ist das alles eins. Er ist dermaßen durcheinander und verwirrt, dass er nicht mehr weiß, was was ist. Traurig, aber wahr: Er ist ein durchgeknallter Künstler“. K sieht sich durch den Bericht in seinen Persönlichkeitsrechten schwer verletzt. K will sowohl gegen die Bildals auch gegen die Wortberichterstattung vorgehen. Er beauftragt einen Anwalt, der dafür sorgen soll, dass Z eine erneute Verbreitung des Fotos unterlässt. Außerdem soll er durchsetzen, dass die Z es unterlässt, zu behaupten oder zu verbreiten, er sei ein „durchgeknallter Künstler“. K ist der Ansicht, dass das Bild nicht ohne seine Zustimmung hätte veröffentlicht werden dürfen. Auch wenn seine Kunst die Grenze zwischen privat und öffentlich hinterfrage und dabei auch das Private zur Schau stelle, bediene er sich doch nicht umsonst eines flüchtigen Mediums. Auch in der Öffentlichkeit, zumal in der von ihm in spezifisch künstlerischer Weise hergestellten Öffentlichkeit, bestünden berechtigte Privatheitserwartungen. Die Aussage, er sei „durchgeknallt“, müsse er sich unter keinem Gesichtspunkt gefallen lassen. Die Z verschiebe hier die öffentliche Auseinandersetzung über seine Kunst hin zu rein spekulativen Behauptungen über den Kern seiner Persönlichkeit als Privatperson. Z weist das Ansinnen des K zurück. Es sei schon nicht nachvollziehbar, dass K sich auf die Privatsphäre berufe, nachdem er sich in dieser Weise exponiert habe. Auch habe K das Medium Internet scheinbar nicht verstanden: Wer Aufnahmen hochlade, ohne von Zugangssperren Gebrauch zu machen, müsse damit rechnen, dass Bilder davon verbreitet würden, und willige zumindest konkludent in eine solche Verwendung ein. Im Übrigen bestehe, zumal in Verbindung mit dem Artikel, ein berechtigtes Informationsinteresse der allgemeinen Öffentlichkeit. Auch die Formulierung „durchgeknallter Künstler“ sei nicht zu beanstanden. Angesichts seines Kunstprojektes müsse sich K eine etwas pointierte und polemische Kritik gefallen lassen. Bearbeitervermerk Prüfen Sie in einem umfassenden Gutachten, ob 1. N gegen P-Scope sowie 2. K gegen Z die geltend gemachten Ansprüche in materieller Hinsicht zustehen. Normen des BDSG und des StGB sind dabei nicht zu prüfen!
+K ist Künstler. In seinen Arbeiten thematisiert er das Verhältnis von Kunst und Leben. K experimentiert dazu mit den verschiedensten Formaten und Medien, die er aber zunehmend als unauthentisch empfindet. Sein neues Projekt radikalisiert seinen bisherigen Ansatz. Um die Unmittelbarkeit zwischen seinen Arbeiten, seinem Leben und den Rezipienten seiner Kunst herzustellen, hat K Atelier und Privatwohnung, bewusst auch Bade- und Schlafzimmer, mit Kameras bestückt. Darüber hinaus hat K in sein Brillengestell eine Kamera integriert. Auf diese Weise will er den Betrachtern seiner Kunst nicht nur einen Blick auf ihn selbst ermöglichen, sondern sie auch quasi durch seine Brille auf die Welt blicken lassen. K hält gerade diese Verdopplung der Perspektive für einen besonders subtilen Effekt. Die Brillenkamera verfügt über eine Zoomfunktion, mit der K über erhebliche Distanzen zu filmen vermag. Er hat es sich zur Angewohnheit gemacht, von seiner Küche aus einen Blick auf die Fensterfront des gegenüberliegenden Wohnhauses zu werfen und bei anbrechender Dunkelheit in die beleuchteten Wohnungen zu zoomen. Er macht das nicht systematisch, sondern eher zufällig. Die Aufnahmen der Kameras werden kontinuierlich per Livestream übertragen. K bedient sich dabei der von einem Hamburger Start-Up Unternehmen entwickelten Anwendung „P-Scope“. Die Anwendung funktioniert auf folgende Weise: Sobald eine mit P-Scope verbundene Kamera startet, wird das aufgenommene Video auf einen Server des Anbieters übertragen. Über die Webseite von P-Scope oder mit der Anwendung selbst können sich dann Dritte in den Live-Stream einklinken. Beendet der Nutzer die Videoaufnahme, endet auch der Live-Stream. Die Nutzer können ihre Beiträge mit einem Titel und weiteren Schlagwörtern sowie kurzen Texten versehen. Bei Eingabe des Titels oder der Schlagwörter in die von P-Scope angebotene Suchfunktion können Livestream und das dazugehörige Profil des Nutzers von Dritten aufgefunden werden. Dem Nutzer ist es nicht möglich, die gestreamten Aufnahmen mittels P-Scope zu speichern. Auch über eine „Replay“-Funktion oder ähnliches verfügt die Anwendung nicht. Um den Dienst nutzen zu können, ist es erforderlich, ein kostenloses Nutzerkonto anzulegen. Dazu müssen ein frei gewählter Kontoname, ein Passwort, eine E-Mail-Adresse und ein Geburtsdatum angegeben werden. Eine Rechtsbelehrung oder Hinweise auf zu berücksichtigende Rechte Dritter enthält die Webseite nicht. Die Radikalität des Ansatzes verschafft K, der sich darüber sehr freut, in kurzer Zeit eine gewisse Resonanz in den sozialen Medien und der Presse. Dies gilt insbesondere für die Aufnahmen, die er mittels der in seinem Brillengestell integrierten Kamera macht. In einem Interview mit der Kunstzeitschrift Monopoly rechtfertigt K dieses Vorgehen als das künstlerische Zitat einer voyeuristischen Geste. Nicht erfreut ist Nachbarin N, die im Haus gegenüber wohnt und des Öfteren in das Blickfeld des K gerät. N hat von Ks Projekt erfahren und bewegt sich, aus Angst, K zu begegnen, nun nicht mehr so unbefangen wie früher im öffentlichen Straßenraum. Vollends entsetzt ist sie, als sie von einem Bekannten erfährt, dass K auch schon das ein und andere Mal in ihre Wohnung gezoomt hat. N fühlt sich beobachtet und in ihrer Privatsphäre verletzt. Sie ist der Meinung, K dürfe sie nicht ohne Weiteres auf der Straße aufnehmen und erst recht dürfe er nicht in ihre Wohnung hinein filmen. Einen künstlerischen Gehalt der Aufnahmen kann sie auch nicht erkennen, vielmehr sei alles erschreckend realistisch. Da sie in keinem Fall an K herantreten will, um nicht noch weiter in sein Kunstprojekt hineingezogen zu werden, wendet sie sich mit Schreiben an P-Scope als Anbieter. Sie verlangt von P-Scope, eine weitere Ausstrahlung von Ks Livestream zu unterlassen. K habe ihre Persönlichkeitsrechte wiederholt verletzt und werde dies angesichts des Nachbarschaftsverhältnisses im Falle einer weiteren Ausstrahlung des Livestream auch künftig tun. Als Anbieter habe P-Scope eine Verpflichtung, evidente Rechtsverletzungen zu unterbinden. Indem ein Anbieter alles ungeprüft übertrage, mache er sich die Rechtsverletzungen seiner Nutzer zu eigen. Mit Antwortschreiben reagiert P-Scope ablehnend. Das Unternehmen stelle nur ein Forum zur Verfügung. Verantwortlich für die Inhalte seien allein die Nutzer. Von einem kleinen Start-Up könne auch nicht erwartet werden, das Nutzerverhalten umfassend zu kontrollieren. Ob das Verhalten des K tatsächlich rechtswidrig sei, könne es gar nicht beurteilen. Da der N die Person des K bekannt sei, habe sie sich in jedem Fall zuerst an ihn zu wenden. Auch K stehen derweil rechtliche Streitigkeiten ins Haus. Die Berühmtheit des K führt dazu, dass über ihn zunehmend in den Medien berichtet wird. Die Boulevardpresse hat sich der Geschichte angenommen. Eines Morgens sieht K sich in einer großen Tageszeitung abgebildet, die im Verlag Z erscheint. Das Bild dient zur Illustration eines Artikels, in dem – wie K findet – nur negativ und verständnislos über ihn berichtet wird. Bei dem Bild handelt sich um ein Foto, das Reporter der Z von dem Livestream gemacht haben und das K im Bad auf seiner Toilette sitzend zeigt. Das Bild trägt die Überschrift: „Ist das jetzt auch Kunst?“. Verärgert ist K aber nicht nur über die Veröffentlichung des Bildes, sondern auch über das Fazit des Artikels, das er als persönliche Beleidigung empfindet. Darin heißt es: „Privates, Öffentliches, Kunst, Leben – für K ist das alles eins. Er ist dermaßen durcheinander und verwirrt, dass er nicht mehr weiß, was was ist. Traurig, aber wahr: Er ist ein durchgeknallter Künstler“. K sieht sich durch den Bericht in seinen Persönlichkeitsrechten schwer verletzt. K will sowohl gegen die Bildals auch gegen die Wortberichterstattung vorgehen. Er beauftragt einen Anwalt, der dafür sorgen soll, dass Z eine erneute Verbreitung des Fotos unterlässt. Außerdem soll er durchsetzen, dass die Z es unterlässt, zu behaupten oder zu verbreiten, er sei ein „durchgeknallter Künstler“. K ist der Ansicht, dass das Bild nicht ohne seine Zustimmung hätte veröffentlicht werden dürfen. Auch wenn seine Kunst die Grenze zwischen privat und öffentlich hinterfrage und dabei auch das Private zur Schau stelle, bediene er sich doch nicht umsonst eines flüchtigen Mediums. Auch in der Öffentlichkeit, zumal in der von ihm in spezifisch künstlerischer Weise hergestellten Öffentlichkeit, bestünden berechtigte Privatheitserwartungen. Die Aussage, er sei „durchgeknallt“, müsse er sich unter keinem Gesichtspunkt gefallen lassen. Die Z verschiebe hier die öffentliche Auseinandersetzung über seine Kunst hin zu rein spekulativen Behauptungen über den Kern seiner Persönlichkeit als Privatperson. Z weist das Ansinnen des K zurück. Es sei schon nicht nachvollziehbar, dass K sich auf die Privatsphäre berufe, nachdem er sich in dieser Weise exponiert habe. Auch habe K das Medium Internet scheinbar nicht verstanden: Wer Aufnahmen hochlade, ohne von Zugangssperren Gebrauch zu machen, müsse damit rechnen, dass Bilder davon verbreitet würden, und willige zumindest konkludent in eine solche Verwendung ein. Im Übrigen bestehe, zumal in Verbindung mit dem Artikel, ein berechtigtes Informationsinteresse der allgemeinen Öffentlichkeit. Auch die Formulierung „durchgeknallter Künstler“ sei nicht zu beanstanden. Angesichts seines Kunstprojektes müsse sich K eine etwas pointierte und polemische Kritik gefallen lassen. Bearbeitervermerk Prüfen Sie in einem umfassenden Gutachten, ob 1. N gegen P-Scope sowie 2. K gegen Z die geltend gemachten Ansprüche in materieller Hinsicht zustehen. Normen des BDSG und des StGB sind dabei nicht zu prüfen!
 
 ## Solution
 
@@ -44,7 +44,7 @@ Die Beeinträchtigung müsste auch rechtswidrig sein. Wegen der Eigenart des Per
 
 ###### a) Grund- und menschenrechtliche Wertungen
 
-Die unbefugte Aufnahme und Übertragung der Bilder von N ist verfassungsrechtlich durch das allgemeine Persönlichkeitsrecht gem. Art. 2 Abs. 1 i.V.m. Art. 1 Abs. 1 GG geschützt. Auch die EMRK umfasst in Art. 8 EMRK eine entsprechende Gewährleistung. Den Interessen der N steht das ÜBUNGSFÄLLE Jörn Reinhardt/Ioannis Katsivelas/Anna Schimke Interesse des K gegenüber, sein Projekt weiterhin durchführen zu können.
+Die unbefugte Aufnahme und Übertragung der Bilder von N ist verfassungsrechtlich durch das allgemeine Persönlichkeitsrecht gem. Art. 2 Abs. 1 i.V.m. Art. 1 Abs. 1 GG geschützt. Auch die EMRK umfasst in Art. 8 EMRK eine entsprechende Gewährleistung. Den Interessen der N steht das Interesse des K gegenüber, sein Projekt weiterhin durchführen zu können.
 
 ###### aa) Kunstfreiheit, Art. 5 Abs. 3 S. 1 Alt. 1 GG
 
@@ -52,7 +52,7 @@ Möglicherweise ist das Projekt des K verfassungsrechtlich als Kunst im Sinne vo
 
 ###### bb) Kunstfreiheit, Art. 10 EMRK
 
-In Art. 10 EMRK wird die Kunstfreiheit als besondere Form der Äußerungsfreiheit verstanden, unter die das Projekt als Teil einer Kommunikation über das Verhältnis von Kunst und Leben fällt. Überblick bei v. Arnauld, in: Isensee/Kirchhof (Hrsg.), Handbuch des Staatsrechts, Bd. 7, § 167 Rn. 13 ff. Vgl. Kempen, in: Epping/Hillgruber (Hrsg.), Beck’scher Online-Kommentar zum GG, 34. Ed., Stand: 15.8.2017, Art. 5 Rn. 162.
+In Art. 10 EMRK wird die Kunstfreiheit als besondere Form der Äußerungsfreiheit verstanden, unter die das Projekt als Teil einer Kommunikation über das Verhältnis von Kunst und Leben fällt.
 
 ###### b) Abwägung: Kunstfreiheit vs. allgemeines Persönlichkeitsrecht
 
@@ -80,7 +80,7 @@ Indes könnte N hinsichtlich der Aufnahmen in ihrer Wohnung ein Anspruch auf Unt
 
 ##### 1. Beeinträchtigung des Persönlichkeitsrechts
 
-Durch das Streamen der Aufnahmen in die Wohnung der N könnte diese in ihrer Privatsphäre verletzt sein, die sowohl vom zivilals auch vom verfassungs- und menschenrechtlichen Persönlichkeitsschutz (Art. 2 Abs. 1 i.V.m. Art. 1 Abs. 1 GG, Art. 8 EMRK) umfasst ist. Nach der „Luftbild-Rechtsprechung“ des BGH ist eine Handlung dann als Beeinträchtigung der Privatsphäre zu qualifizieren, wenn diese gegen den Willen des Betroffenen und unter Überwindung bestehender Hindernisse oder mit geeigneten Hilfsmitteln ausgespäht werden soll. Ks Aufnahmen gehen über das Specht, in: Dreier/Schulze (Hrsg.), Kommentar zum UrhG, 5. Aufl. 2015, § 22 KUG Rn. 10. BGH, Urt. v. 9.12.2003 – VI ZR 373/02, Rn. 19. hinaus, was von einer allgemein zugänglichen Stelle aus aufgenommen werden kann (Außenansicht von Häusern und Grundstücken etc.). Die Wohnung ist ein Raum, der in qualifizierter Weise gegen Einsichtnahme geschützt ist. Auch wenn die Aufnahmen nicht gespeichert werden, ist N durch die Aufnahmen daher schwerwiegend in ihrem allgemeinen Persönlichkeitsrecht beeinträchtigt.
+Durch das Streamen der Aufnahmen in die Wohnung der N könnte diese in ihrer Privatsphäre verletzt sein, die sowohl vom zivilals auch vom verfassungs- und menschenrechtlichen Persönlichkeitsschutz (Art. 2 Abs. 1 i.V.m. Art. 1 Abs. 1 GG, Art. 8 EMRK) umfasst ist. Nach der „Luftbild-Rechtsprechung“ des BGH ist eine Handlung dann als Beeinträchtigung der Privatsphäre zu qualifizieren, wenn diese gegen den Willen des Betroffenen und unter Überwindung bestehender Hindernisse oder mit geeigneten Hilfsmitteln ausgespäht werden soll. Ks Aufnahmen gehen über das hinaus, was von einer allgemein zugänglichen Stelle aus aufgenommen werden kann (Außenansicht von Häusern und Grundstücken etc.). Die Wohnung ist ein Raum, der in qualifizierter Weise gegen Einsichtnahme geschützt ist. Auch wenn die Aufnahmen nicht gespeichert werden, ist N durch die Aufnahmen daher schwerwiegend in ihrem allgemeinen Persönlichkeitsrecht beeinträchtigt.
 
 ##### 2. Rechtswidrigkeit
 
@@ -100,7 +100,7 @@ In Betracht kommt zunächst eine Haftung von P-Scope als unmittelbar Handelnden,
 
 ###### b) Haftung als Störer
 
-Negatorische Ansprüche bestehen indes nicht nur gegenüber den unmittelbar Handelnden. Sie bestehen auch gegenüber denjenigen, die die Persönlichkeitsrechtsverletzung zwar ÜBUNGSFÄLLE Jörn Reinhardt/Ioannis Katsivelas/Anna Schimke nicht durch eigenes Handeln (mit-)verursacht, aber willentlich und zurechenbar zur Verletzung eines absoluten Rechts beigetragen haben. Sie können bei einer Verletzung absoluter Rechte grundsätzlich als Störer in Anspruch genommen werden. Da sich P-Scope als Anbieter von Telemediendiensten (§§ 2 Nr. 1, 1 Abs. 1 TMG) grundsätzlich auf die Haftungsprivilegierung nach §§ 7 ff. TMG berufen kann, sind zunächst die Reichweite der Haftungsprivilegierung und anschließend der Umfang einer möglichen Störerhaftung zu erörtern. Hier bestehen viele Unklarheiten. Sie betreffen schon die Frage, inwieweit die Haftungsprivilegierungen auf Unterlassungsansprüche anwendbar sind. Darüber hinaus hängen die Reichweite der Haftungsprivilegierung nach dem TMG und die Konfliktlösung im Einzelfall von der Art des angebotenen Dienstes ab.
+Negatorische Ansprüche bestehen indes nicht nur gegenüber den unmittelbar Handelnden. Sie bestehen auch gegenüber denjenigen, die die Persönlichkeitsrechtsverletzung zwar nicht durch eigenes Handeln (mit-)verursacht, aber willentlich und zurechenbar zur Verletzung eines absoluten Rechts beigetragen haben. Sie können bei einer Verletzung absoluter Rechte grundsätzlich als Störer in Anspruch genommen werden. Da sich P-Scope als Anbieter von Telemediendiensten (§§ 2 Nr. 1, 1 Abs. 1 TMG) grundsätzlich auf die Haftungsprivilegierung nach §§ 7 ff. TMG berufen kann, sind zunächst die Reichweite der Haftungsprivilegierung und anschließend der Umfang einer möglichen Störerhaftung zu erörtern. Hier bestehen viele Unklarheiten. Sie betreffen schon die Frage, inwieweit die Haftungsprivilegierungen auf Unterlassungsansprüche anwendbar sind. Darüber hinaus hängen die Reichweite der Haftungsprivilegierung nach dem TMG und die Konfliktlösung im Einzelfall von der Art des angebotenen Dienstes ab.
 
 ###### aa) Keine lediglich subsidiäre Verantwortlichkeit von P-Scope
 
@@ -112,7 +112,7 @@ Nach der Rechtsprechung des BGH findet das Haftungsprivileg des TMG auf Unterlas
 
 ###### cc) Umfang der Störerhaftung
 
-Die Inanspruchnahme als Störer setzt die Verletzung von Prüfpflichten voraus. Zur Bestimmung, welcher Überprüfungsaufwand von einem Diensteanbieter im Einzelfall zu verlangen ist, bedarf es einer umfassenden Interessenabwägung, bei der die betroffenen Grundrechte der Beteiligten zu berücksichtigen sind. Hier stehen sich das Persönlichkeitsrecht der N aus Art. 2 Abs. 1 i.V.m. Art. 1 Abs. 1 GG und die Informations- und Kommunikationsgrundrechte von P-Scope (Art. 5 Abs. 1 S. 2 GG) sowie die Freiheit der Berufsausübung gem. Art. 12 GG gegenüber. Maßgebliche Bedeutung kommt dabei dem Gewicht der angezeigten Rechtsverletzung sowie den Erkenntnismöglichkeiten des Anbieters zu. Zu berücksichtigen sind aber auch Funktion und Aufgabenstellung des vom Anbieter betriebenen Dienstes sowie die Eigenverantwortung des für die Persönlichkeitsbeeinträchtigung unmittelbar verantwortlichen Nutzers. Ein zentraler Bewertungsfaktor dürfte sein, inwieweit die konkrete Ausgestaltung des Dienstes die Häufigkeit und das Risiko von Rechtsverletzungen steigert. Für eine Prüfpflicht spricht hier, dass das Aktivieren des Livestreams auch anonym möglich ist und auf die Persönlichkeitsrechte Dritter und auf Konstellationen, in denen ein Einverständnis erforderlich ist, nicht eigens hingewiesen wird. Unter diesen Voraussetzungen scheint der Verletzte nur schwer darauf verwiesen werden zu können, dass der Diensteanbieter keine Kenntnis vom konkreten Inhalt hat und zukünftige Rechtsverletzungen nur durch eine kostenintensive Prüfung der Inhalte vermeidbar sind. Eine Unterscheidung zwischen pro- und reaktiver Prüfung scheint nur schwer möglich, weil es sich um die Übermittlung von Echtzeitaufnahmen handelt. Allerdings zeigt gerade der Fall des K, dass Rechtsverletzungen aufgrund der Komplexität der Abwägungen alles andere als evident sind und auch rein reaktive Prüfpflichten für den Anbieter einen erheblichen Aufwand darstellen. P-Scope ist eine Anwendung, die von der Rechtsordnung prinzipiell gebilligt wird. Vertretbar erscheint daher auch eine Lösung, die eine Verantwortlichkeit des Diensteanbieters mit dem Argument verneint, es handele sich hier um eine übermäßige Verlagerung von Verpflichtungen von den unmittelbar verantwortlichen Nutzern auf die Anbieter. Die Prüf pflichten würden zudem intensiv in die Berufsausübung von P-Scope eingreifen.
+Die Inanspruchnahme als Störer setzt die Verletzung von Prüfpflichten voraus. Zur Bestimmung, welcher Überprüfungsaufwand von einem Diensteanbieter im Einzelfall zu verlangen ist, bedarf es einer umfassenden Interessenabwägung, bei der die betroffenen Grundrechte der Beteiligten zu berücksichtigen sind. Hier stehen sich das Persönlichkeitsrecht der N aus Art. 2 Abs. 1 i.V.m. Art. 1 Abs. 1 GG und die Informations- und Kommunikationsgrundrechte von P-Scope (Art. 5 Abs. 1 S. 2 GG) sowie die Freiheit der Berufsausübung gem. Art. 12 GG gegenüber. Maßgebliche Bedeutung kommt dabei dem Gewicht der angezeigten Rechtsverletzung sowie den Erkenntnismöglichkeiten des Anbieters zu. Zu berücksichtigen sind aber auch Funktion und Aufgabenstellung des vom Anbieter betriebenen Dienstes sowie die Eigenverantwortung des für die Persönlichkeitsbeeinträchtigung unmittelbar verantwortlichen Nutzers. Ein zentraler Bewertungsfaktor dürfte sein, inwieweit die konkrete Ausgestaltung des Dienstes die Häufigkeit und das Risiko von Rechtsverletzungen steigert. Für eine Prüfpflicht spricht hier, dass das Aktivieren des Livestreams auch anonym möglich ist und auf die Persönlichkeitsrechte Dritter und auf Konstellationen, in denen ein Einverständnis erforderlich ist, nicht eigens hingewiesen wird. Unter diesen Voraussetzungen scheint der Verletzte nur schwer darauf verwiesen werden zu können, dass der Diensteanbieter keine Kenntnis vom konkreten Inhalt hat und zukünftige Rechtsverletzungen nur durch eine kostenintensive Prüfung der Inhalte vermeidbar sind. Eine Unterscheidung zwischen pro- und reaktiver Prüfung scheint nur schwer möglich, weil es sich um die Übermittlung von Echtzeitaufnahmen handelt. Allerdings zeigt gerade der Fall des K, dass Rechtsverletzungen aufgrund der Komplexität der Abwägungen alles andere als evident sind und auch rein reaktive Prüfpflichten für den Anbieter einen erheblichen Aufwand darstellen. P-Scope ist eine Anwendung, die von der Rechtsordnung prinzipiell gebilligt wird. Vertretbar erscheint daher auch eine Lösung, die eine Verantwortlichkeit des Diensteanbieters mit dem Argument verneint, es handele sich hier um eine übermäßige Verlagerung von Verpflichtungen von den unmittelbar verantwortlichen Nutzern auf die Anbieter. Die Prüfpflichten würden zudem intensiv in die Berufsausübung von P-Scope eingreifen.
 
 #### II. Ergebnis zu B.
 
@@ -140,7 +140,7 @@ An einer ausdrücklichen Zustimmung des K fehlt es. Indes könnte eine konkluden
 
 ###### b) Entbehrlichkeit der Einwilligung nach § 23 KUG
 
-Nach § 23 Abs. 1 Nr. 1 KUG dürfen Bildnisse aus dem Bereich der Zeitgeschichte auch ohne Einwilligung verbreitet werden. Die Beurteilung, ob ein Bildnis dem Bereich der Zeitgeschichte zuzuordnen ist, verlangt eine Berücksichtigung der verfassungsrechtlichen Rechte des Abgebildeten (Art. 2 Abs. 1 i.V.m. Art. 1 Abs. 1 GG, Art. 8 EMRK) auf der einen und der Pressefreiheit (Art. 5 Abs. 1 S. 2 GG, Art. 10 EMRK) auf der anderen Seite. Schon an dieser Stelle ist mithin eine Abwägung der widerstreitenden Rechte erforderlich. Der Begriff des Zeitgeschehens in § 23 Abs. 1 Nr. 1 KUG ist dabei zugunsten der Pressefreiheit in einem weiten Sinn zu verstehen. Er umfasst nicht nur Vorgänge von historischpolitischer Bedeutung, sondern alle Fragen von allgemeinem gesellschaftlichem Interesse. Es gehört zum Kern der Presse- und Meinungsbildungsfreiheit, dass die Presse selbst nach publizistischen Kriterien entscheidet, worüber sie berichten will. Dabei kommt es entscheidend auf den Informationswert des Bildnisses mit Blick auf die öffentliche Meinungsbildung an, der – wenn er sich nicht schon aus dem Bildnis selbst ergibt – unter Heranziehung der Wortberichterstattung zu ermitteln ist. Das Bild, das den K auf der Toilette zeigt, hat aus sich heraus keinen erkennbaren Bezug zur öffentlichen Meinungsbildung. Unter Berücksichtigung der begleitenden Wortberichterstattung erschließt sich jedoch, dass es sich um ein Bild aus dem Projekt des K handelt, mit dem der Bericht sich kritisch auseinandersetzt. Darin liegt ein hinreichender Bezug zur öffentlichen Meinungsbildung und damit ein Informationswert, durch den das Bildnis grundsätzlich dem Bereich der Zeitgeschichte zuzuordnen ist. Allerdings sind im Rahmen der vorzunehmenden Abwägung auch die persönlichkeitsrechtlichen Belange des K zu berücksichtigen. Für die Gewichtung seiner Belange sind unter anderem die Umstände zu berücksichtigen, unter denen die Aufnahmen entstanden sind sowie die Situation, in der der Betroffene erfasst wurde. Dabei kommt es auch darauf an, inwieweit der K in einer Situation abgebildet wurde, bezüglich derer er berechtigter ÜBUNGSFÄLLE Jörn Reinhardt/Ioannis Katsivelas/Anna Schimke Weise davon ausgehen durfte, dass sie als privat einzustufen ist. Der Umfang der berechtigten Privatheitserwartungen hängt auch vom Verhalten des Betroffenen ab. Der Schutz der Privatsphäre vor öffentlicher Kenntnisnahme kann dort entfallen oder zumindest im Rahmen der Abwägung zurücktreten, wo sich der Betroffene selbst damit einverstanden gezeigt hat, dass bestimmte, gewöhnlich als privat geltende Angelegenheiten öffentlich gemacht werden. Die Erwartung, dass die Umwelt die Angelegenheit oder die Verhaltensweisen im Bereich mit Rückzugsfunktion nur begrenzt oder nicht zur Kenntnis nimmt, muss situationsübergreifend und konsistent zum Ausdruck gebracht werden. Wer private Bereiche öffentlich macht, kann sich anschließend nicht mehr unbeschränkt auf einen öffentlichkeitsabgewandten Privatsphärenschutz berufen. Allerdings sind auch dabei Abstufungen zu berücksichtigen, etwa wenn der Betroffene zwar noch mit einer Kenntnisnahme von Beobachtern, aber auf Grund der weiteren Umstände nicht mit der Verbreitung von Aufzeichnungen durch Massenmedien rechnen muss. Hier hat K – jedenfalls in dem Bereich, der über den LiveStream wiedergegeben wird – die eigene Privatsphäre weitgehend selbst aufgegeben. Auch wenn der Livestream nicht für eine Veröffentlichung in den Massenmedien vorgesehen war, ist eine solche angesichts der Anlage seines Kunstprojekts doch naheliegend. Eine berechtigte Erwartung, dass nicht darüber berichtet wird und Bilder zur Illustration der Berichterstattung verwendet werden, besteht jedenfalls nicht. Bei der Abbildung handelt es sich um ein Bildnis aus dem Bereich des Zeitgeschehens im Sinne von § 23 Abs. 1 Nr. 1 KUG.
+Nach § 23 Abs. 1 Nr. 1 KUG dürfen Bildnisse aus dem Bereich der Zeitgeschichte auch ohne Einwilligung verbreitet werden. Die Beurteilung, ob ein Bildnis dem Bereich der Zeitgeschichte zuzuordnen ist, verlangt eine Berücksichtigung der verfassungsrechtlichen Rechte des Abgebildeten (Art. 2 Abs. 1 i.V.m. Art. 1 Abs. 1 GG, Art. 8 EMRK) auf der einen und der Pressefreiheit (Art. 5 Abs. 1 S. 2 GG, Art. 10 EMRK) auf der anderen Seite. Schon an dieser Stelle ist mithin eine Abwägung der widerstreitenden Rechte erforderlich. Der Begriff des Zeitgeschehens in § 23 Abs. 1 Nr. 1 KUG ist dabei zugunsten der Pressefreiheit in einem weiten Sinn zu verstehen. Er umfasst nicht nur Vorgänge von historischpolitischer Bedeutung, sondern alle Fragen von allgemeinem gesellschaftlichem Interesse. Es gehört zum Kern der Presse- und Meinungsbildungsfreiheit, dass die Presse selbst nach publizistischen Kriterien entscheidet, worüber sie berichten will. Dabei kommt es entscheidend auf den Informationswert des Bildnisses mit Blick auf die öffentliche Meinungsbildung an, der – wenn er sich nicht schon aus dem Bildnis selbst ergibt – unter Heranziehung der Wortberichterstattung zu ermitteln ist. Das Bild, das den K auf der Toilette zeigt, hat aus sich heraus keinen erkennbaren Bezug zur öffentlichen Meinungsbildung. Unter Berücksichtigung der begleitenden Wortberichterstattung erschließt sich jedoch, dass es sich um ein Bild aus dem Projekt des K handelt, mit dem der Bericht sich kritisch auseinandersetzt. Darin liegt ein hinreichender Bezug zur öffentlichen Meinungsbildung und damit ein Informationswert, durch den das Bildnis grundsätzlich dem Bereich der Zeitgeschichte zuzuordnen ist. Allerdings sind im Rahmen der vorzunehmenden Abwägung auch die persönlichkeitsrechtlichen Belange des K zu berücksichtigen. Für die Gewichtung seiner Belange sind unter anderem die Umstände zu berücksichtigen, unter denen die Aufnahmen entstanden sind sowie die Situation, in der der Betroffene erfasst wurde. Dabei kommt es auch darauf an, inwieweit der K in einer Situation abgebildet wurde, bezüglich derer er berechtigter Weise davon ausgehen durfte, dass sie als privat einzustufen ist. Der Umfang der berechtigten Privatheitserwartungen hängt auch vom Verhalten des Betroffenen ab. Der Schutz der Privatsphäre vor öffentlicher Kenntnisnahme kann dort entfallen oder zumindest im Rahmen der Abwägung zurücktreten, wo sich der Betroffene selbst damit einverstanden gezeigt hat, dass bestimmte, gewöhnlich als privat geltende Angelegenheiten öffentlich gemacht werden. Die Erwartung, dass die Umwelt die Angelegenheit oder die Verhaltensweisen im Bereich mit Rückzugsfunktion nur begrenzt oder nicht zur Kenntnis nimmt, muss situationsübergreifend und konsistent zum Ausdruck gebracht werden. Wer private Bereiche öffentlich macht, kann sich anschließend nicht mehr unbeschränkt auf einen öffentlichkeitsabgewandten Privatsphärenschutz berufen. Allerdings sind auch dabei Abstufungen zu berücksichtigen, etwa wenn der Betroffene zwar noch mit einer Kenntnisnahme von Beobachtern, aber auf Grund der weiteren Umstände nicht mit der Verbreitung von Aufzeichnungen durch Massenmedien rechnen muss. Hier hat K – jedenfalls in dem Bereich, der über den LiveStream wiedergegeben wird – die eigene Privatsphäre weitgehend selbst aufgegeben. Auch wenn der Livestream nicht für eine Veröffentlichung in den Massenmedien vorgesehen war, ist eine solche angesichts der Anlage seines Kunstprojekts doch naheliegend. Eine berechtigte Erwartung, dass nicht darüber berichtet wird und Bilder zur Illustration der Berichterstattung verwendet werden, besteht jedenfalls nicht. Bei der Abbildung handelt es sich um ein Bildnis aus dem Bereich des Zeitgeschehens im Sinne von § 23 Abs. 1 Nr. 1 KUG.
 
 ###### c) Berechtigte entgegenstehende Interessen des K
 
@@ -170,7 +170,7 @@ Die Aussagen des Artikels könnten von der Meinungsfreiheit gem. Art. 5 Abs. 1 G
 
 ###### aa) Schmähkritik?
 
-Sofern es sich bei einer Äußerung um Schmähkritik handelt, tritt die Meinungsfreiheit gegenüber dem allgemeinen Persönlichkeitsrecht zurück. An das Vorliegen von Schmähkritik sind wegen dieser für die Meinungsfreiheit einschneidenden Folge strenge Anforderungen zu stellen. Auch überzogene oder abfällige Kritik lässt eine Äußerung noch nicht zur Schmähkritik werden. Eine solche liegt erst dann vor, wenn kein Bezug mehr zur Auseinandersetzung in der Sache gegeben ist, sondern die Diffamierung der Person im Zent rum der Äußerungen steht. K wird als verwirrt und durchgeknallt gekennzeichnet, wobei gerade die Kennzeichnung als „durchgeknallt“ unmittelbar auf die Person des K und weniger auf eine Auseinandersetzung in der Sache bezogen ist. Diese Äußerung erfolgt zudem auch nicht spontan im Rahmen einer emotionalen Auseinandersetzung, sondern ist bewusst in einem geschriebenen Text getätigt worden. Allerdings ist nicht auf die Formulierung als solche abzustellen, sondern auf die konkrete Verwendungsweise und den Kontext. Der Bezeichnung „durchgeknallt“ kann in verschiedenen Kontexten eine ganz unterschiedliche Bedeutung beigemessen werden. Dabei kommt es auf eine verobjektivierende Perspektive und nicht allein darauf an, welchen Gehalt der Äußernde seinen Äußerungen zusprechen wollte. Die Äußerungen stehen im Kontext einer Auseinandersetzung mit dem Projekt des K und beziehen sich gerade darauf, dass K mit seinem Projekt Grenzen zwischen Privat, Öffentlich und Kunst aufhebt. Der Artikel bewertet diese Aufhebung negativ und macht das insbesondere an der Person des K fest, der allerdings auch im Projekt selbst im Zentrum steht. Insofern weisen die Äußerungen im Artikel einen hinreichenden Bezug zur Auseinandersetzung in der Sache auf. Es handelt sich bei den Äußerungen nicht um Schmähkritik.
+Sofern es sich bei einer Äußerung um Schmähkritik handelt, tritt die Meinungsfreiheit gegenüber dem allgemeinen Persönlichkeitsrecht zurück. An das Vorliegen von Schmähkritik sind wegen dieser für die Meinungsfreiheit einschneidenden Folge strenge Anforderungen zu stellen. Auch überzogene oder abfällige Kritik lässt eine Äußerung noch nicht zur Schmähkritik werden. Eine solche liegt erst dann vor, wenn kein Bezug mehr zur Auseinandersetzung in der Sache gegeben ist, sondern die Diffamierung der Person im Zentrum der Äußerungen steht. K wird als verwirrt und durchgeknallt gekennzeichnet, wobei gerade die Kennzeichnung als „durchgeknallt“ unmittelbar auf die Person des K und weniger auf eine Auseinandersetzung in der Sache bezogen ist. Diese Äußerung erfolgt zudem auch nicht spontan im Rahmen einer emotionalen Auseinandersetzung, sondern ist bewusst in einem geschriebenen Text getätigt worden. Allerdings ist nicht auf die Formulierung als solche abzustellen, sondern auf die konkrete Verwendungsweise und den Kontext. Der Bezeichnung „durchgeknallt“ kann in verschiedenen Kontexten eine ganz unterschiedliche Bedeutung beigemessen werden. Dabei kommt es auf eine verobjektivierende Perspektive und nicht allein darauf an, welchen Gehalt der Äußernde seinen Äußerungen zusprechen wollte. Die Äußerungen stehen im Kontext einer Auseinandersetzung mit dem Projekt des K und beziehen sich gerade darauf, dass K mit seinem Projekt Grenzen zwischen Privat, Öffentlich und Kunst aufhebt. Der Artikel bewertet diese Aufhebung negativ und macht das insbesondere an der Person des K fest, der allerdings auch im Projekt selbst im Zentrum steht. Insofern weisen die Äußerungen im Artikel einen hinreichenden Bezug zur Auseinandersetzung in der Sache auf. Es handelt sich bei den Äußerungen nicht um Schmähkritik.
 
 ###### bb) Einzelfallabwägung
 
@@ -188,21 +188,15 @@ Ein Unterlassungsanspruch des K gegen Z aus § 1004 Abs. 1 S. 2 BGB analog, § 8
 
 ## Rubrics For Review
 
-**Generated at:** 2026-07-09T20:07:14.046667+00:00
-
-**Review status:** generated_calibrated_needs_human_review
-
-**Language:** Deutsch
-
 **Number of criteria:** 88
 
 **Wichtigkeit (Kritikalität):**
 
-- ★★★ zentral - muss enthalten sein: 29 Kriterien
-- ★★ wichtig - in einer soliden Lösung erwartet: 54 Kriterien
+- ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt): 11 Kriterien
+- ★★ wichtig - in einer soliden Lösung erwartet: 72 Kriterien
 - ★ eher unwichtig - Detail, Form, Bonuswissen: 5 Kriterien
 
-### T1 Nachbarin N gegen P-Scope
+### T1 Lösungsvorschlag Teil 1: Nachbarin N gegen P-Scope
 
 #### T1.A Unterlassungsanspruch gegen das Streamen der Aufnahmen im öffentlichen Raum
 
@@ -210,7 +204,7 @@ Ein Unterlassungsanspruch des K gegen Z aus § 1004 Abs. 1 S. 2 BGB analog, § 8
 
 ###### C-002 - N gegen P-Scope: APR-Anspruch wegen Straßenaufnahmen
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -219,8 +213,6 @@ ERFÜLLT, wenn die Antwort für N gegen P-Scope wegen der N im öffentlichen Str
 **Review notes**
 
 - Zentrale Anspruchsgrundlage für die Straßenaufnahmen.
-
-##### T1.A.I.1 Beeinträchtigung des allgemeinen Persönlichkeitsrechts
 
 ###### C-003 - § 1004 BGB analog bei absoluten Rechten
 
@@ -233,6 +225,8 @@ ERFÜLLT, wenn die Antwort erklärt, dass § 1004 BGB bei Verletzungen absoluter
 **Review notes**
 
 - Dogmatische Grundlage des Unterlassungsanspruchs.
+
+##### T1.A.I.1 Beeinträchtigung des allgemeinen Persönlichkeitsrechts
 
 ###### C-004 - APR als sonstiges Recht
 
@@ -274,7 +268,7 @@ ERFÜLLT, wenn die Antwort die Aufnahme der N im öffentlichen Straßenraum durc
 
 ###### C-007 - APR-Rechtswidrigkeit durch Abwägung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -302,7 +296,7 @@ ERFÜLLT, wenn die Antwort die Persönlichkeits- und Privatheitsbelange der N in
 
 ###### C-010 - Ks Livestream-Projekt als Kunst
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -366,7 +360,7 @@ ERFÜLLT, wenn die Antwort Ks Livestream-Projekt als Arbeit mit realer Lebenswir
 
 ###### C-014 - Hohe Schwelle gegenüber Kunstfreiheit
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -424,9 +418,11 @@ ERFÜLLT, wenn die Antwort zugrunde legt, dass P-Scope den Nutzern keine Speiche
 
 - Eingriffsintensität der Straßenaufnahmen.
 
+##### T1.A.I.2.c Zwischenergebnis
+
 ###### C-019 - Abwägungsergebnis zu Straßenaufnahmen
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -480,7 +476,7 @@ ERFÜLLT, wenn die Antwort bei einem KUG-gestützten Anspruch der N wegen der St
 
 ###### C-023 - N gegen P-Scope: APR-Anspruch wegen Wohnungsaufnahmen
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -530,7 +526,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass Ks Zoom-Aufnahmen in die beleuchtete Wo
 
 ###### C-027 - Schwerwiegende APR-Beeinträchtigung durch Wohnungsaufnahmen
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -556,7 +552,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass die fehlende Speicher- oder Replay-Funk
 
 ###### C-029 - Kunstfreiheit rechtfertigt Wohnungsaufnahmen nicht
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -636,7 +632,7 @@ ERFÜLLT, wenn die Antwort eine unmittelbare Haftung von P-Scope ablehnt, weil d
 
 ###### C-035 - Störerhaftung als mögliche Passivlegitimation
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -650,7 +646,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass P-Scope trotz fehlender unmittelbarer T
 
 ###### C-037 - Keine Subsidiarität wegen bekannter Identität des K
 
-**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
 
 **Match criteria**
 
@@ -676,7 +672,7 @@ ERFÜLLT, wenn die Antwort P-Scope als Anbieter eines Telemediendienstes im Sinn
 
 ###### C-038 - TMG-Privilegien sperren Unterlassung nicht absolut
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -702,7 +698,7 @@ ERFÜLLT, wenn die Antwort bei einer möglichen Einordnung von P-Scope als Host-
 
 ###### C-040 - Störerhaftung setzt Prüfpflichtverletzung voraus
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -714,7 +710,7 @@ ERFÜLLT, wenn die Antwort eine Störerhaftung von P-Scope nur bei Verletzung zu
 
 ###### C-041 - Prüfpflichten durch grundrechtsorientierte Abwägung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -762,7 +758,7 @@ ERFÜLLT, wenn die Antwort die konkrete Ausgestaltung von P-Scope als möglichen
 
 ###### C-045 - Anonymitätsnähe spricht für Prüfpflichten
 
-**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
 
 **Match criteria**
 
@@ -824,7 +820,7 @@ ERFÜLLT, wenn die Antwort zugunsten von P-Scope berücksichtigt, dass weitreich
 
 ###### C-050 - Ergebnis Wohnungsaufnahmen abhängig von Störerhaftung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -834,7 +830,7 @@ ERFÜLLT, wenn die Antwort zum Unterlassungsanspruch der N gegen P-Scope wegen d
 
 - Beide Ergebnisse bei tragfähiger Störerhaftungsabwägung zulässig.
 
-### T2 Künstler K gegen Z
+### T2 Teil 2: Künstler K gegen Z
 
 #### T2.A Bildberichterstattung
 
@@ -842,7 +838,7 @@ ERFÜLLT, wenn die Antwort zum Unterlassungsanspruch der N gegen P-Scope wegen d
 
 ###### C-051 - K gegen Z: Bildberichterstattung nach KUG
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -856,7 +852,7 @@ ERFÜLLT, wenn die Antwort für K gegen Z wegen erneuter Verbreitung des Toilett
 
 ###### C-052 - Recht am eigenen Bild als APR-Ausprägung
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -880,7 +876,7 @@ ERFÜLLT, wenn die Antwort zugrunde legt, dass das von Z veröffentlichte Foto K
 
 ###### C-054 - Zeitungsveröffentlichung als Verbreiten
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -894,7 +890,7 @@ ERFÜLLT, wenn die Antwort die Veröffentlichung des Toilettenfotos in der groß
 
 ###### C-055 - Abgestuftes Schutzkonzept der §§ 22, 23 KUG
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -946,7 +942,7 @@ ERFÜLLT, wenn die Antwort aus Ks öffentlichem P-Scope-Livestream seiner privat
 
 ###### C-059 - Zeitgeschichte durch Grundrechtsabwägung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -994,7 +990,7 @@ ERFÜLLT, wenn die Antwort den Informationswert des Toilettenfotos im Zusammenha
 
 ###### C-063 - Toilettenfoto allein ohne Debattenbezug
 
-**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
 
 **Match criteria**
 
@@ -1006,7 +1002,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass das Foto des K auf der Toilette für si
 
 ###### C-064 - Artikelkontext begründet Informationswert
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1018,7 +1014,7 @@ ERFÜLLT, wenn die Antwort annimmt, dass das Toilettenfoto im Zusammenhang mit d
 
 ###### C-065 - Privatheitserwartung abhängig vom Selbstverhalten des K
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1030,7 +1026,7 @@ ERFÜLLT, wenn die Antwort die berechtigte Privatheitserwartung des K auch danac
 
 ###### C-066 - K hat gestreamte Privatsphäre weitgehend aufgegeben
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1068,7 +1064,7 @@ ERFÜLLT, wenn die Antwort berücksichtigt, dass angesichts der Anlage und Reson
 
 ###### C-069 - § 23 Abs. 2 KUG als Schranke
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1106,7 +1102,7 @@ ERFÜLLT, wenn die Antwort berücksichtigt, dass Reporter der Z das Toilettenfot
 
 ###### C-072 - Kein Bild-Unterlassungsanspruch des K
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1122,7 +1118,7 @@ ERFÜLLT, wenn die Antwort annimmt, dass der Bildberichterstattung keine überwi
 
 ###### C-073 - K gegen Z: Wortberichterstattung als APR-Anspruch
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1150,7 +1146,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass die Bezeichnung „durchgeknallter Kün
 
 ###### C-075 - Wortberichterstattung erfordert Einzelfallabwägung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1176,7 +1172,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass Meinungsäußerungen einschließlich po
 
 ###### C-077 - „Durchgeknallter Künstler“ als Werturteil
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1214,7 +1210,7 @@ ERFÜLLT, wenn die Antwort die persönliche Ehre des K als durch Art. 2 Abs. 1 i
 
 ###### C-080 - Schmähkritik als enge Ausnahme
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1250,7 +1246,7 @@ ERFÜLLT, wenn die Antwort die Äußerung „durchgeknallter Künstler“ nach k
 
 ###### C-083 - Sachbezug zum Kunstprojekt
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1262,7 +1258,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass die angegriffenen Äußerungen im Konte
 
 ###### C-084 - Keine Schmähkritik
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1300,7 +1296,7 @@ ERFÜLLT, wenn die Antwort zugunsten des K berücksichtigt, dass die Darstellung
 
 ###### C-087 - Selbstexponierung und Rollenbezug schwächen Ehrverletzung ab
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1314,7 +1310,7 @@ ERFÜLLT, wenn die Antwort zulasten des K berücksichtigt, dass er im Zentrum se
 
 ###### C-088 - Ergebnis Wort-Unterlassungsanspruch
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1328,7 +1324,7 @@ ERFÜLLT, wenn die Antwort den Unterlassungsanspruch des K gegen Z wegen „durc
 
 #### C-001 - Bearbeitervermerk: BDSG und StGB
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 

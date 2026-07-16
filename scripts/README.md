@@ -25,11 +25,21 @@ The script runs this pipeline:
    `--max-calibration-rounds` (default 2), still-failing criteria are dropped
    and majority-pass-but-flaky criteria are kept with a review flag.
 
-5. tag: a final non-scoring pass adds `analysis_tags` to every criterion -
-   `function` (Gutachtenstil-step vocabulary: structure, legal_basis,
-   rule_statement, application, argumentation, conclusion, form_citation) and
-   `station_path` (the case's own Prüfungsaufbau station, e.g.
-   ["Zulässigkeit", "Klagebefugnis"]). Disable with `--skip-tagging`.
+5. outline: one call extracts the solution's own Gliederung as a tree
+   (ids like "A", "A.I", "A.I.1" following the solution's markers, plus the
+   reserved node "Ü"/Übergreifend for cross-cutting criteria). The tree is
+   frozen into `rubric.json` as `outline`.
+
+6. tag: a final non-scoring pass classifies every criterion - `function`
+   (Gutachtenstil-step vocabulary: structure, legal_basis, rule_statement,
+   application, argumentation, conclusion, form_citation), `outline_id` (the
+   deepest outline node the criterion belongs to; `station_path` is derived
+   from the tree so all downstream breakdowns keep working), and `criticality`
+   1-3 (3 = ergebnistragend, the few points the case is decided by, hard
+   budget ~10-15% of criteria; 2 = expected in a solid solution, the default;
+   1 = detail/form/bonus). Criticality is currently
+   non-scoring; it feeds the reporting breakdowns and the review documents.
+   Disable outline + tagging with `--skip-tagging`.
 
 Only calibrated criteria reach the final rubric, each carrying a
 `calibration` field (`status`, `agreement`, `round`). The full audit trail -
@@ -37,6 +47,17 @@ all candidate pools, prune decisions, per-round votes, refinements, and drops -
 is written to `evals/rubric.generated.json`. With `--write-final`, the
 calibrated rubric is also written to `evals/rubric.json` with
 `review_status: generated_calibrated_needs_human_review`.
+
+To add or refresh outline/tags/criticality on an ALREADY frozen rubric, never
+re-run the full pipeline - prompt changes since the original generation can
+silently invalidate the step cache and trigger a full, expensive regeneration
+that REPLACES the frozen criteria. Use the retag mode instead, which loads
+`evals/rubric.json`, runs only `extract_outline` + `tag_criteria` (two small
+calls), and writes the updated tags back with the criteria untouched:
+
+```bash
+env/bin/python scripts/generate_rubric.py <task-dir> --model gpt-5.5 --retag-only
+```
 
 Useful flags: `--reasoning-effort` (generator, default `high`),
 `--judge-model` / `--judge-reasoning-effort` (calibration judge, default:
@@ -146,7 +167,12 @@ problems and should be reviewed.
 If the rubric carries `analysis_tags`, the score file and console output also
 report `breakdown_by_station` (Zulässigkeit, Begründetheit, ...) and
 `breakdown_by_function` (legal_basis, application, argumentation, ...) - pass
-rates in categories lawyers recognize, instead of one flat score.
+rates in categories lawyers recognize, instead of one flat score. Rubrics with
+`criticality` tiers (1-3) additionally get `breakdown_by_criticality`, so you
+can see at a glance whether failures hit central points (3) or details (1),
+and rubrics with an `outline` get `breakdown_by_outline` (level-2 Gliederung).
+`export_review_md.py` and `generate_rubric_review.py` render criteria nested
+along the Musterlösung's Gliederung when the rubric carries an outline.
 
 `--adaptive` casts one vote first and escalates to the full `--votes` count
 only when that vote is not a pass. On an answer passing ~70% of criteria this

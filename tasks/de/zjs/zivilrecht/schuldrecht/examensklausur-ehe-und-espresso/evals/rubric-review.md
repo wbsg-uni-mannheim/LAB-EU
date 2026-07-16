@@ -54,7 +54,7 @@ M und die nach § 13 Abs. 1 GmbHG rechtsfähige E-GmbH, vertreten durch ihren Ha
 
 ###### (b) Wirkung des Verbraucherwiderrufs
 
-Allerdings könnte F, indem sie vom Geschäftsführer G „ihr“ Geld zurückverlangte, nicht nur von ihrer Zahlungspflicht durch Widerruf gem. § 355 Abs. 1 BGB i.V.m. § 1357 Abs. 1 S. 2 BGB in voller Höhe frei geworden sein, sondern auch die Willenserklärung des M widerrufen haben, soweit daraus eine dingliche Mitberechtigung der F entstanden ist. Fraglich ist, ob der Verbraucherwiderruf auch auf die etwaige Mitberechtigung aus der dinglichen Einigung Anwendung findet. Dagegen sprechen neben der Einordnung seiner Rechtsfolge als Rückgewährschuldverhältnis die allgemeinen Erwägungen zu dinglichen Surrogationsvorschriften (§§ 2019, 2041, 1370 a.F. BGB). Anknüpfungspunkt dinglicher Surrogation ist nicht das obligatorische Rechtsgeschäft als solches, sondern die (wirksame) Übereignung an beispielsweise den Ehegatten, der einen Haushaltsgegenstand ersetzt(e). Ob die – wenn auch nur schuldrechtliche – Abstandnahme von dem familiär angemessenen Bedarfsgeschäft als Dreh- und Angelpunkt der Mitberechtigung, das eben nicht nur Surrogatgeschäfte erfasst, ausnahmsweise eine abweichende Beurteilung rechtfertigt, kann offenbleiben, wenn die Voraussetzungen für einen wirksamen Verbraucherwiderruf seitens F nicht vorliegen. Der zwischen M und der E-GmbH geschlossene Vertrag ist ein außerhalb von Geschäftsräumen geschlossener Vertrag i.S.d. § 312b Abs. 1 S. 1 BGB und erfüllt die Voraussetzungen des § 312 Abs. 1 BGB, sodass jedenfalls M ein Widerrufsrecht nach § 312g Abs. 1 Var. 1 BGB zusteht. Über § 1357 Abs. 1 S. 2 BGB könnte auch F ein Widerrufsrecht zugewiesen sein. Gegen eine solche Mitberechtigung wird angeführt, dass § 1357 Abs. 1 S. 2 BGB lediglich die einseitige Akzessorietät des Schuldverhältnisses anordne. Der nicht handelnde Ehegatte werde nicht Vertragspartei und sei daher für die Entwicklung des Schuldverhältnisses nicht zuständig. Dieses Verständnis findet im Hinblick auf die Entwicklung der Schuld allerdings keine Stütze im Gesetz. § 1357 Abs. 1 S. 2 BGB ordnet an, dass beide Ehegatten aus dem Rechtsgeschäft berechtigt und verpflichtet werden. Warum der nicht handelnde Ehegatte im Hinblick auf die Entwicklung der Schuld „weniger“ berechtigt sein soll als der handelnde Ehegatte, bedarf einer Rechtfertigung, die über die Art der Begründung der Schuld hinausgehen muss. Der durch § 1357 Abs. 1 S. 2 BGB angeordnete Gläubigerschutz beschränkt sich darauf, dem Gläubiger zwei Gesamtschuldner zu den mit dem handelnden Ehegatten vereinbarten Konditionen zur Hand zu geben, um zufällige Vermögensverschiebungen nicht zu seinen Lasten gehen zu lassen. Weiß der Gläubiger um das Widerrufsrecht des handelnden Ehegatten, ist nicht ersichtlich, warum er auf das Nichtbestehen eines Widerrufsrechts beim zweiten Schuldner vertrauen können sollte. Auch der handelnde Ehegatte ist im Hinblick auf seine selbstständige Vermögensverwaltung (vgl. §§ 1363 Abs. 2 S. 1, 1364 BGB) gegenüber dem mitverpflichteten Ehegatten nicht schützenswert. Soll ein Ehegatte für einen anderen Rechte und Pflichten begründen, muss er damit rechnen, dass es auch dem mitverpflichteten Ehegatten erlaubt ist, sich mit Wirkung für ihn im Rahmen der gesetzlichen Möglichkeiten von dieser Verpflichtung wieder zu lösen. Die Entwicklung der Schuld basiert daher auf einem Verhältnis gegenseitiger Akzessorietät, sodass die Mitberechtigung gem. § 1357 Abs. 1 S. 2 BGB die Zuweisung sekundärer Gestaltungsrechte, also auch eines Verbraucherwiderrufs, erfasst. F steht damit über § 1357 Abs. 1 S. 2 BGB ein Widerrufsrecht nach § 312g Abs. 1 Var. 1 BGB zu. Das Verhältnis gegenseitiger Akzessorietät wirkt sich auch auf die Frage aus, ob F den Widerruf unabhängig bzw. gegen den Willen des M gegenüber der E-GmbH (vgl. § 164 Abs. 3 BGB) erklären konnte. Zunächst handelte es sich bei der Widerrufserklärung selbst nicht um ein Geschäft i.S.d. § 1357 Abs. 1 BGB, denn durch die telefonische Rücksprache zwischen G und M ergab sich aus den Umständen, dass die Erklärung der F nicht für M wirken sollte (vgl. § 1357 Abs. 1 S. 2 a.E. BGB). Vielmehr steht F aufgrund der gesamtschuldnerischen Haftung nach §§ 1357 Abs. 1 S. 2, 421 BGB grundsätzlich eine Einzelbefugnis zu. Eine analoge Anwendung des § 351 BGB, die zu einer gemeinsamen Ausübung des Verbraucherwiderrufsrechts verpflichten würde, scheitert durch die Abschaffung der Verweisung in § 357 Abs. 1 a.F. BGB auf das Rücktrittsrecht bereits am Vorliegen einer planwidrigen Regelungslücke. Somit könnte nur die akzessorische Haftung des Ehegatten die Annahme eines unteilbaren Verbraucherwiderrufsrechts rechtfertigen. Dem Verhältnis gegenseitiger Akzessorietät würde es aber nicht entsprechen, wenn die Ausübung der Mitberechtigung von der Zustimmung im Sinne einer gleichlautenden Erklärung des anderen Ehegatten abhängig wäre. F war daher befugt, den Widerruf unabhängig vom Willen ihres gesamtschuldnerisch haftenden Ehegatten zu erklären. Schließlich wirkt sich das Verhältnis gegenseitiger Akzessorietät erneut auf die Frage aus, ob F den für M ausgelösten Fristbeginn gem. § 356 Abs. 2 Nr. 1 lit. a, Abs. 3 S. 1 BGB gegen sich gelten lassen muss. Anders als M hat F die Ware erst am Tag der Widerrufserklärung physisch erhalten und wurde zu keinem Zeitpunkt über ihr Widerrufsrecht belehrt. Ließe man M außer Betracht, wäre der Widerruf der F nach drei Wochen fristgerecht erfolgt. Zweck des nach § 356 Abs. 2 Nr. 1 lit. a BGB aufgeschobenen Fristbeginn ist es, dem Verbraucher eine informierte Entscheidung über das Festhalten an dem von ihm abgeschlossenen Vertrag zu ermöglichen. Der Verbraucher muss nicht nur die Ware auf ihre Eignung und Qualität hin überprüfen können, sondern auch die Kenntnis von der Möglichkeit zum Widerruf haben, sodass das Widerrufsrecht seine Schutzwirkung entfalten kann. Beide Zwecke laufen leer, wenn der nicht handelnde Ehegatte in seiner Abwesenheit über § 1357 Abs. 1 S. 2 BGB mitverpflichtet werden kann. Eine Zurechnung des Fristbeginns dürfte daher nicht dem geforderten Verbraucherschutzniveau entsprechen. Andererseits darf der Geschäftspartner des handelnden Ehegatten darauf vertrauen, dass er zwei Schuldner hat, die Vertragsbedingungen aber nur einmal aushandeln muss. Damit wäre es nicht zu vereinbaren, wenn er den zweiten Ehegatten über sein Widerrufsrecht belehren müsste, von dessen Existenz der Geschäftspartner noch nicht einmal wissen muss. Ferner entspricht es dem Verhältnis gegenseitiger Akzessorietät, dass die Berechtigung des mithaftenden Ehegatten ebenso, wie sie nicht geringer sein darf als die des handelnden Ehegatten, auch nicht darüber hinaus gehen darf. Begann die Widerrufsfrist für den handelnden Ehegatten zu laufen, muss der mithaftende Ehegatte sich den Fristbeginn daher zurechnen Rn. 30; Roth, in: MüKo-BGB, Bd. 9, 9. Aufl. 2022, § 1357 Rn. 34. lassen. Die Widerrufserklärung der F erfolgte somit außerhalb der Widerrufsfrist.
+Allerdings könnte F, indem sie vom Geschäftsführer G „ihr“ Geld zurückverlangte, nicht nur von ihrer Zahlungspflicht durch Widerruf gem. § 355 Abs. 1 BGB i.V.m. § 1357 Abs. 1 S. 2 BGB in voller Höhe frei geworden sein, sondern auch die Willenserklärung des M widerrufen haben, soweit daraus eine dingliche Mitberechtigung der F entstanden ist. Fraglich ist, ob der Verbraucherwiderruf auch auf die etwaige Mitberechtigung aus der dinglichen Einigung Anwendung findet. Dagegen sprechen neben der Einordnung seiner Rechtsfolge als Rückgewährschuldverhältnis die allgemeinen Erwägungen zu dinglichen Surrogationsvorschriften (§§ 2019, 2041, 1370 a.F. BGB). Anknüpfungspunkt dinglicher Surrogation ist nicht das obligatorische Rechtsgeschäft als solches, sondern die (wirksame) Übereignung an beispielsweise den Ehegatten, der einen Haushaltsgegenstand ersetzt(e). Ob die – wenn auch nur schuldrechtliche – Abstandnahme von dem familiär angemessenen Bedarfsgeschäft als Dreh- und Angelpunkt der Mitberechtigung, das eben nicht nur Surrogatgeschäfte erfasst, ausnahmsweise eine abweichende Beurteilung rechtfertigt, kann offenbleiben, wenn die Voraussetzungen für einen wirksamen Verbraucherwiderruf seitens F nicht vorliegen. Der zwischen M und der E-GmbH geschlossene Vertrag ist ein außerhalb von Geschäftsräumen geschlossener Vertrag i.S.d. § 312b Abs. 1 S. 1 BGB und erfüllt die Voraussetzungen des § 312 Abs. 1 BGB, sodass jedenfalls M ein Widerrufsrecht nach § 312g Abs. 1 Var. 1 BGB zusteht. Über § 1357 Abs. 1 S. 2 BGB könnte auch F ein Widerrufsrecht zugewiesen sein. Gegen eine solche Mitberechtigung wird angeführt, dass § 1357 Abs. 1 S. 2 BGB lediglich die einseitige Akzessorietät des Schuldverhältnisses anordne. Der nicht handelnde Ehegatte werde nicht Vertragspartei und sei daher für die Entwicklung des Schuldverhältnisses nicht zuständig. Dieses Verständnis findet im Hinblick auf die Entwicklung der Schuld allerdings keine Stütze im Gesetz. § 1357 Abs. 1 S. 2 BGB ordnet an, dass beide Ehegatten aus dem Rechtsgeschäft berechtigt und verpflichtet werden. Warum der nicht handelnde Ehegatte im Hinblick auf die Entwicklung der Schuld „weniger“ berechtigt sein soll als der handelnde Ehegatte, bedarf einer Rechtfertigung, die über die Art der Begründung der Schuld hinausgehen muss. Der durch § 1357 Abs. 1 S. 2 BGB angeordnete Gläubigerschutz beschränkt sich darauf, dem Gläubiger zwei Gesamtschuldner zu den mit dem handelnden Ehegatten vereinbarten Konditionen zur Hand zu geben, um zufällige Vermögensverschiebungen nicht zu seinen Lasten gehen zu lassen. Weiß der Gläubiger um das Widerrufsrecht des handelnden Ehegatten, ist nicht ersichtlich, warum er auf das Nichtbestehen eines Widerrufsrechts beim zweiten Schuldner vertrauen können sollte. Auch der handelnde Ehegatte ist im Hinblick auf seine selbstständige Vermögensverwaltung (vgl. §§ 1363 Abs. 2 S. 1, 1364 BGB) gegenüber dem mitverpflichteten Ehegatten nicht schützenswert. Soll ein Ehegatte für einen anderen Rechte und Pflichten begründen, muss er damit rechnen, dass es auch dem mitverpflichteten Ehegatten erlaubt ist, sich mit Wirkung für ihn im Rahmen der gesetzlichen Möglichkeiten von dieser Verpflichtung wieder zu lösen. Die Entwicklung der Schuld basiert daher auf einem Verhältnis gegenseitiger Akzessorietät, sodass die Mitberechtigung gem. § 1357 Abs. 1 S. 2 BGB die Zuweisung sekundärer Gestaltungsrechte, also auch eines Verbraucherwiderrufs, erfasst. F steht damit über § 1357 Abs. 1 S. 2 BGB ein Widerrufsrecht nach § 312g Abs. 1 Var. 1 BGB zu. Das Verhältnis gegenseitiger Akzessorietät wirkt sich auch auf die Frage aus, ob F den Widerruf unabhängig bzw. gegen den Willen des M gegenüber der E-GmbH (vgl. § 164 Abs. 3 BGB) erklären konnte. Zunächst handelte es sich bei der Widerrufserklärung selbst nicht um ein Geschäft i.S.d. § 1357 Abs. 1 BGB, denn durch die telefonische Rücksprache zwischen G und M ergab sich aus den Umständen, dass die Erklärung der F nicht für M wirken sollte (vgl. § 1357 Abs. 1 S. 2 a.E. BGB). Vielmehr steht F aufgrund der gesamtschuldnerischen Haftung nach §§ 1357 Abs. 1 S. 2, 421 BGB grundsätzlich eine Einzelbefugnis zu. Eine analoge Anwendung des § 351 BGB, die zu einer gemeinsamen Ausübung des Verbraucherwiderrufsrechts verpflichten würde, scheitert durch die Abschaffung der Verweisung in § 357 Abs. 1 a.F. BGB auf das Rücktrittsrecht bereits am Vorliegen einer planwidrigen Regelungslücke. Somit könnte nur die akzessorische Haftung des Ehegatten die Annahme eines unteilbaren Verbraucherwiderrufsrechts rechtfertigen. Dem Verhältnis gegenseitiger Akzessorietät würde es aber nicht entsprechen, wenn die Ausübung der Mitberechtigung von der Zustimmung im Sinne einer gleichlautenden Erklärung des anderen Ehegatten abhängig wäre. F war daher befugt, den Widerruf unabhängig vom Willen ihres gesamtschuldnerisch haftenden Ehegatten zu erklären. Schließlich wirkt sich das Verhältnis gegenseitiger Akzessorietät erneut auf die Frage aus, ob F den für M ausgelösten Fristbeginn gem. § 356 Abs. 2 Nr. 1 lit. a, Abs. 3 S. 1 BGB gegen sich gelten lassen muss. Anders als M hat F die Ware erst am Tag der Widerrufserklärung physisch erhalten und wurde zu keinem Zeitpunkt über ihr Widerrufsrecht belehrt. Ließe man M außer Betracht, wäre der Widerruf der F nach drei Wochen fristgerecht erfolgt. Zweck des nach § 356 Abs. 2 Nr. 1 lit. a BGB aufgeschobenen Fristbeginn ist es, dem Verbraucher eine informierte Entscheidung über das Festhalten an dem von ihm abgeschlossenen Vertrag zu ermöglichen. Der Verbraucher muss nicht nur die Ware auf ihre Eignung und Qualität hin überprüfen können, sondern auch die Kenntnis von der Möglichkeit zum Widerruf haben, sodass das Widerrufsrecht seine Schutzwirkung entfalten kann. Beide Zwecke laufen leer, wenn der nicht handelnde Ehegatte in seiner Abwesenheit über § 1357 Abs. 1 S. 2 BGB mitverpflichtet werden kann. Eine Zurechnung des Fristbeginns dürfte daher nicht dem geforderten Verbraucherschutzniveau entsprechen. Andererseits darf der Geschäftspartner des handelnden Ehegatten darauf vertrauen, dass er zwei Schuldner hat, die Vertragsbedingungen aber nur einmal aushandeln muss. Damit wäre es nicht zu vereinbaren, wenn er den zweiten Ehegatten über sein Widerrufsrecht belehren müsste, von dessen Existenz der Geschäftspartner noch nicht einmal wissen muss. Ferner entspricht es dem Verhältnis gegenseitiger Akzessorietät, dass die Berechtigung des mithaftenden Ehegatten ebenso, wie sie nicht geringer sein darf als die des handelnden Ehegatten, auch nicht darüber hinaus gehen darf. Begann die Widerrufsfrist für den handelnden Ehegatten zu laufen, muss der mithaftende Ehegatte sich den Fristbeginn daher zurechnen lassen. Die Widerrufserklärung der F erfolgte somit außerhalb der Widerrufsfrist.
 
 ###### (c) Anwendbarkeit des § 1357 BGB auf Verfügungen
 
@@ -140,7 +140,7 @@ F könnte ihr Miteigentum aber gem. §§ 929 S. 1, 932 BGB durch Einigung und Ü
 
 ###### aa) Voraussetzungen des § 932 BGB
 
-Die Verfügung eines nichtberechtigten Teilhabers über den Gegenstand im Ganzen wird (auch) dann wirksam, wenn die Voraussetzungen für den gutgläubigen Erwerb erfüllt sind. Fraglich ist, ob B in gutem Glauben war bzw. sich nicht in grob fahrlässiger Unkenntnis über die fehlende Berechtigung befunden hat, § 932 Abs. 1 S. 1, Abs. 2 BGB. Dabei ist nach einem objektiven Maßstab zu bestimmen, ob auch bei nur durchschnittlichem Merk- und Erkenntnisvermögen ohne besonders hohe Aufmerksamkeit und besonders gründlicher Überlegung Umstände mit auffallender Deutlichkeit dafür sprachen, dass der Veräußerer nicht (Allein-)Eigentümer war, sodass eine Klarstellung durch geeignete Nachforschungen geboten war. Die Erwerbssituation der Veräußerung eines Luxus-Haushaltsgegenstands bei Kleinanzeigen begründet für sich genommen keine Nachforschungspflicht. Hinzu tritt jedoch, dass der Kaufpreis (500 €) deutlich unter dem Marktwert des Kaufgegenstandes (2.000 €) liegt, sodass die Umstände des Einzelfalls für eine Nachforschungspflicht der B sprechen. Hätte B sich über die Lebensumstände des M informiert, hätte sie allerdings nicht herausgefunden, dass M nicht Alleineigentümer der Espresso-Maschine ist, zumal dieser einen auf ihn ausgestellten Kaufbeleg vorgelegt hätte. Fraglich ist, ob dieser Einwand rechtmäßigen Alternativverhaltens beachtlich ist. Dagegen soll der in den §§ 932 ff. BGB niedergelegte Interessensausgleich zwischen (Mit-)Eigentümer und Erwerber sprechen. Das Unterlassen gebotener und zumutbarer Nachforschungen begründe schon für sich eine geringere Schutzwürdigkeit des Erwerbers. So entsteht freilich ein „Verhaltensunrecht“ des Erwerbers, das dem Schutzzweck der Nachforschungspflicht nicht unbedingt gerecht wird. Nachforschungen schützen Eigentümer – unbestritten – nicht vor einem Eigentumsverlust, sofern die Ergebnisse vorgenommener Nachforschungen berechtigterweise die (Allein-)Eigentümerstellung des Veräußerers nahelegen. Kenntnisse, die der Erwerber aufgrund unterlassener Nachforschungen nicht erlangt hat, die dem Eigentümer aber nichts genutzt hätten, liegen konsequenterweise gleichermaßen außerhalb des Schutzzwecks der Nachforschungspflicht. Dieses Verständnis legt auch der Wortlaut des 8, 9. Aufl. 2023, § 932 Rn. 47. § 932 Abs. 2 BGB („infolge“) nahe und ist den §§ 932 ff. BGB nicht fremd: Nach § 935 Abs. 1 S. 2 BGB „haftet“ der Eigentümer, sofern er mittelbarer Besitzer ist, nicht, sofern sich in dem Abhandenkommen nicht das freiwillige Risiko der Übertragung des unmittelbaren Besitzers realisiert hat. Folglich ist der Einwand rechtmäßigen Alternativverhaltens i.R.d. § 932 Abs. 2 BGB beachtlich. B war in gutem Glauben.
+Die Verfügung eines nichtberechtigten Teilhabers über den Gegenstand im Ganzen wird (auch) dann wirksam, wenn die Voraussetzungen für den gutgläubigen Erwerb erfüllt sind. Fraglich ist, ob B in gutem Glauben war bzw. sich nicht in grob fahrlässiger Unkenntnis über die fehlende Berechtigung befunden hat, § 932 Abs. 1 S. 1, Abs. 2 BGB. Dabei ist nach einem objektiven Maßstab zu bestimmen, ob auch bei nur durchschnittlichem Merk- und Erkenntnisvermögen ohne besonders hohe Aufmerksamkeit und besonders gründlicher Überlegung Umstände mit auffallender Deutlichkeit dafür sprachen, dass der Veräußerer nicht (Allein-)Eigentümer war, sodass eine Klarstellung durch geeignete Nachforschungen geboten war. Die Erwerbssituation der Veräußerung eines Luxus-Haushaltsgegenstands bei Kleinanzeigen begründet für sich genommen keine Nachforschungspflicht. Hinzu tritt jedoch, dass der Kaufpreis (500 €) deutlich unter dem Marktwert des Kaufgegenstandes (2.000 €) liegt, sodass die Umstände des Einzelfalls für eine Nachforschungspflicht der B sprechen. Hätte B sich über die Lebensumstände des M informiert, hätte sie allerdings nicht herausgefunden, dass M nicht Alleineigentümer der Espresso-Maschine ist, zumal dieser einen auf ihn ausgestellten Kaufbeleg vorgelegt hätte. Fraglich ist, ob dieser Einwand rechtmäßigen Alternativverhaltens beachtlich ist. Dagegen soll der in den §§ 932 ff. BGB niedergelegte Interessensausgleich zwischen (Mit-)Eigentümer und Erwerber sprechen. Das Unterlassen gebotener und zumutbarer Nachforschungen begründe schon für sich eine geringere Schutzwürdigkeit des Erwerbers. So entsteht freilich ein „Verhaltensunrecht“ des Erwerbers, das dem Schutzzweck der Nachforschungspflicht nicht unbedingt gerecht wird. Nachforschungen schützen Eigentümer – unbestritten – nicht vor einem Eigentumsverlust, sofern die Ergebnisse vorgenommener Nachforschungen berechtigterweise die (Allein-)Eigentümerstellung des Veräußerers nahelegen. Kenntnisse, die der Erwerber aufgrund unterlassener Nachforschungen nicht erlangt hat, die dem Eigentümer aber nichts genutzt hätten, liegen konsequenterweise gleichermaßen außerhalb des Schutzzwecks der Nachforschungspflicht. Dieses Verständnis legt auch der Wortlaut des § 932 Abs. 2 BGB („infolge“) nahe und ist den §§ 932 ff. BGB nicht fremd: Nach § 935 Abs. 1 S. 2 BGB „haftet“ der Eigentümer, sofern er mittelbarer Besitzer ist, nicht, sofern sich in dem Abhandenkommen nicht das freiwillige Risiko der Übertragung des unmittelbaren Besitzers realisiert hat. Folglich ist der Einwand rechtmäßigen Alternativverhaltens i.R.d. § 932 Abs. 2 BGB beachtlich. B war in gutem Glauben.
 
 ###### bb) Ausschluss des gutgläubigen Erwerbs nach § 1369 Abs. 1 BGB und § 935 Abs. 1 S. 1 BGB
 
@@ -208,19 +208,13 @@ Die Klage der B ist begründet.
 
 ## Rubrics For Review
 
-**Generated at:** 2026-07-09T19:58:21.684191+00:00
-
-**Review status:** generated_calibrated_needs_human_review
-
-**Language:** de
-
 **Number of criteria:** 92
 
 **Wichtigkeit (Kritikalität):**
 
-- ★★★ zentral - muss enthalten sein: 28 Kriterien
-- ★★ wichtig - in einer soliden Lösung erwartet: 58 Kriterien
-- ★ eher unwichtig - Detail, Form, Bonuswissen: 6 Kriterien
+- ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt): 11 Kriterien
+- ★★ wichtig - in einer soliden Lösung erwartet: 76 Kriterien
+- ★ eher unwichtig - Detail, Form, Bonuswissen: 5 Kriterien
 
 ### F1 Aufgabe 1
 
@@ -246,7 +240,7 @@ ERFÜLLT, wenn die Antwort einen Anspruch der F gegen den 17-jährigen N aus ang
 
 ###### C-002 - Eigentum der F als Voraussetzung des Substanzschadens
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -360,7 +354,7 @@ ERFÜLLT, wenn die Antwort Gründerzeitvilla, wohlhabende Vorstadtlage und Luxus
 
 ###### C-011 - Angemessenheit des 2.500-€-Kaufs nach § 1357 BGB
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -422,7 +416,7 @@ ERFÜLLT, wenn die Antwort entweder annimmt, dass F den Widerruf unabhängig vom
 
 ###### C-016 - Widerrufsfrist der F
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -436,7 +430,7 @@ ERFÜLLT, wenn die Antwort entweder F den für M durch Belehrung und Erhalt der 
 
 ###### C-017 - Keine dingliche Wirkung des § 1357 BGB
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -528,7 +522,7 @@ ERFÜLLT, wenn die Antwort berücksichtigt, dass M die restlichen 2.000 € zum 
 
 ###### C-024 - Alleineigentum des M nach Restzahlung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -552,7 +546,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass der Sachverhalt keine Anhaltspunkte 
 
 ###### C-026 - F bei Zerstörung nicht Eigentümerin
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -636,7 +630,7 @@ ERFÜLLT, wenn die Antwort berücksichtigt, dass die Espresso-Maschine als Haush
 
 ###### C-032 - Rückgabeabsicht schließt Besitzwillen der F nicht aus
 
-**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
 
 **Match criteria**
 
@@ -700,7 +694,7 @@ ERFÜLLT, wenn die Antwort aus dem Sachverhalt ableitet, dass N die Espresso-Mas
 
 ###### C-037 - Mitbesitz trägt keinen Ersatz des Substanzschadens
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -758,7 +752,7 @@ ERFÜLLT, wenn die Antwort bei § 826 BGB gegenüber F höchstens eine entgangen
 
 ###### C-041 - Aufgabe 2: Miteigentum der F ist vorgegeben
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -794,9 +788,21 @@ ERFÜLLT, wenn die Antwort die dingliche Einigung zwischen M und B nach §§ 133
 
 - (none)
 
+###### C-044 - Übergabe und unmittelbarer Besitz der B
+
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+
+**Match criteria**
+
+ERFÜLLT, wenn die Antwort berücksichtigt, dass M die Espresso-Maschine vor Bs Haustür ablieferte und B dadurch unmittelbaren Besitz erhielt; dies genügt als Übergabe i.S.d. § 929 S. 1 BGB und als Besitz der B bei § 985 BGB. NICHT ERFÜLLT, wenn die Übergabe oder der Besitz der B trotz Lieferung verneint wird.
+
+**Review notes**
+
+- (none)
+
 ###### C-045 - Miteigentümer verfügen über die ganze Sache nur gemeinsam
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -820,7 +826,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass F in die Verfügung des M an B weder
 
 ###### C-047 - Kein Erwerb der B nach § 929 S. 1 BGB vom Berechtigten
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -860,7 +866,7 @@ ERFÜLLT, wenn die Antwort grobe Fahrlässigkeit nach § 932 Abs. 2 BGB daran mi
 
 ###### C-050 - Kleinanzeigen und Luxusqualität allein genügen nicht
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -896,7 +902,7 @@ ERFÜLLT, wenn die Antwort aus dem erheblichen Unterpreis von 500 € bei einem 
 
 ###### C-054 - Rechtmäßiges Alternativverhalten bei § 932 Abs. 2 BGB
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -908,7 +914,7 @@ ERFÜLLT, wenn die Antwort entweder rechtmäßiges Alternativverhalten bei § 93
 
 ###### C-053 - Hypothetische Nachforschungen hätten fehlende Alleinberechtigung nicht aufgedeckt
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -934,7 +940,7 @@ ERFÜLLT, wenn die Antwort entweder offenlässt, ob § 1369 Abs. 1 BGB als absol
 
 ###### C-056 - Unfreiwilliger Verlust des unmittelbaren Mitbesitzes der F
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -958,7 +964,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass der unfreiwillige Besitzverlust eines n
 
 ###### C-058 - Gutgläubiger Erwerb scheitert an § 935 BGB
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -972,25 +978,11 @@ ERFÜLLT, wenn die Antwort den gutgläubigen Erwerb der B an der Espresso-Maschi
 
 ###### C-059 - F bleibt Miteigentümerin
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
-
-**Match criteria**
-
-ERFÜLLT, wenn die Antwort folgert, dass B Fs Miteigentum an der Espresso-Maschine nicht gutgläubig weg erworben hat und F Miteigentümerin geblieben ist. NICHT ERFÜLLT, wenn B als Alleineigentümerin behandelt wird, obwohl § 935 Abs. 1 S. 1 BGB wegen Abhandenkommens bei F greift.
-
-**Review notes**
-
-- (none)
-
-##### F2.I.2 Besitz der B
-
-###### C-044 - Übergabe und unmittelbarer Besitz der B
-
 **Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
-ERFÜLLT, wenn die Antwort berücksichtigt, dass M die Espresso-Maschine vor Bs Haustür ablieferte und B dadurch unmittelbaren Besitz erhielt; dies genügt als Übergabe i.S.d. § 929 S. 1 BGB und als Besitz der B bei § 985 BGB. NICHT ERFÜLLT, wenn die Übergabe oder der Besitz der B trotz Lieferung verneint wird.
+ERFÜLLT, wenn die Antwort folgert, dass B Fs Miteigentum an der Espresso-Maschine nicht gutgläubig weg erworben hat und F Miteigentümerin geblieben ist. NICHT ERFÜLLT, wenn B als Alleineigentümerin behandelt wird, obwohl § 935 Abs. 1 S. 1 BGB wegen Abhandenkommens bei F greift.
 
 **Review notes**
 
@@ -1026,7 +1018,7 @@ ERFÜLLT, wenn die Antwort die von F und M regelmäßig im gemeinsamen Haushalt 
 
 ###### C-062 - § 1369 BGB erfasst auch den Miteigentumsfall
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1038,7 +1030,7 @@ ERFÜLLT, wenn die Antwort § 1369 Abs. 1 BGB im Ergebnis auch auf die Verpflich
 
 ###### C-063 - Keine Zustimmung der F nach § 1369 BGB
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1064,7 +1056,7 @@ ERFÜLLT, wenn die Antwort annimmt, dass M die Zustimmung der F zum Verkauf der 
 
 ###### C-065 - B kannte die Haushaltszugehörigkeit
 
-**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
 
 **Match criteria**
 
@@ -1090,7 +1082,7 @@ ERFÜLLT, wenn die Antwort die fehlende Kenntnis der B davon, dass M verheiratet
 
 ###### C-067 - Kaufvertrag M–B ist nichtig
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1102,7 +1094,7 @@ ERFÜLLT, wenn die Antwort den Kaufvertrag zwischen M und B über die Haushalts-
 
 ###### C-068 - Keine Mitverpflichtung der F aus Vertrag M–B
 
-**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
+**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
 
 **Match criteria**
 
@@ -1114,7 +1106,7 @@ ERFÜLLT, wenn die Antwort eine Mitverpflichtung oder Mitberechtigung der F aus 
 
 ###### C-069 - B hat kein Recht zum Besitz gegenüber F
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1128,7 +1120,7 @@ ERFÜLLT, wenn die Antwort B gegenüber F kein Recht zum Besitz an der Espresso-
 
 ###### C-070 - Herausgabeanspruch aus § 985 BGB an F und M
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1206,7 +1198,7 @@ ERFÜLLT, wenn die Antwort bei angenommener Gutgläubigkeit der B einen Anspruch
 
 ##### C-076 - EBV-Sperre gegen deliktische Herausgabe
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1220,7 +1212,7 @@ ERFÜLLT, wenn die Antwort einen deliktischen Herausgabe- oder Wiederherstellung
 
 ##### C-077 - Keine Nichtleistungskondiktion gegen B
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1234,7 +1226,7 @@ ERFÜLLT, wenn die Antwort einen Anspruch der F gegen B aus § 812 Abs. 1 S. 1 V
 
 #### C-078 - Aufgabe 3: § 861 Abs. 1 BGB als Begründetheitsmaßstab
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1248,7 +1240,7 @@ ERFÜLLT, wenn die Antwort die Begründetheit der Klage der B gegen F auf sofort
 
 ##### C-079 - F entzieht B den unmittelbaren Besitz
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1260,7 +1252,7 @@ ERFÜLLT, wenn die Antwort feststellt, dass F B durch das nächtliche Wegnehmen 
 
 ##### C-080 - Wegnahme ohne Willen der B als verbotene Eigenmacht
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1272,7 +1264,7 @@ ERFÜLLT, wenn die Antwort die Besitzentziehung durch F als ohne den Willen der 
 
 ##### C-081 - Fs Titel erlaubt keine Selbstvollstreckung
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1310,7 +1302,7 @@ ERFÜLLT, wenn die Antwort den Inhalt des rechtskräftigen Vorurteils dahin erfa
 
 ##### C-084 - § 864 Abs. 2 BGB nicht unmittelbar anwendbar
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1358,7 +1350,7 @@ ERFÜLLT, wenn die Antwort den Zweck des § 864 Abs. 2 BGB darin sieht, eine sin
 
 ##### C-088 - Analogie würde Selbstvollstreckung fördern
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1382,7 +1374,7 @@ ERFÜLLT, wenn die Antwort den Zweck der Besitzschutzansprüche aus §§ 861, 86
 
 ##### C-090 - § 859 BGB ersetzt §§ 861, 862 BGB nicht
 
-**Wichtigkeit:** ★ eher unwichtig - Detail, Form, Bonuswissen
+**Wichtigkeit:** ★★ wichtig - in einer soliden Lösung erwartet
 
 **Match criteria**
 
@@ -1394,7 +1386,7 @@ ERFÜLLT, wenn die Antwort erkennt, dass die Gewaltrechte aus § 859 BGB den umf
 
 ##### C-091 - Vergleichbare Interessenlage bei § 864 Abs. 2 BGB analog
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 
@@ -1406,7 +1398,7 @@ ERFÜLLT, wenn die Antwort entweder eine vergleichbare Interessenlage für § 86
 
 ##### C-092 - § 861-Anspruch der B erlischt nicht ohne tragfähige Analogie
 
-**Wichtigkeit:** ★★★ zentral - muss enthalten sein
+**Wichtigkeit:** ★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)
 
 **Match criteria**
 

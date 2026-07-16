@@ -6,7 +6,12 @@ from __future__ import annotations
 import argparse
 import json
 import pathlib
+import sys
 from typing import Any
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+
+from outline_util import UE_ID, index_outline, walk  # noqa: E402
 
 
 def parse_args() -> argparse.Namespace:
@@ -129,18 +134,30 @@ def build_markdown(task_dir: pathlib.Path) -> str:
 
     lines.append("## Rubrics For Review")
     lines.append("")
-    lines.append(f"**Generated at:** {rubric.get('generated_at', '')}")
-    lines.append("")
-    lines.append(f"**Review status:** {rubric.get('review_status', '')}")
-    lines.append("")
-    lines.append(f"**Language:** {rubric.get('language', '')}")
-    lines.append("")
     lines.append(f"**Number of criteria:** {len(criteria)}")
     lines.append("")
 
-    for criterion in criteria:
-        lines.append(f"### {criterion.get('id', '')} - {criterion.get('title', '')}")
+    tier_labels = {
+        3: "★★★ ergebnistragend - entscheidet den Fall (Kardinalfehler, wenn verfehlt)",
+        2: "★★ wichtig - in einer soliden Lösung erwartet",
+        1: "★ eher unwichtig - Detail, Form, Bonuswissen",
+    }
+    tier_counts = {
+        tier: sum(1 for c in criteria if c.get("criticality") == tier) for tier in (3, 2, 1)
+    }
+    if any(tier_counts.values()):
+        lines.append("**Wichtigkeit (Kritikalität):**")
         lines.append("")
+        for tier in (3, 2, 1):
+            lines.append(f"- {tier_labels[tier]}: {tier_counts[tier]} Kriterien")
+        lines.append("")
+
+    def render_criterion(criterion: dict[str, Any], heading: str) -> None:
+        lines.append(f"{heading} {criterion.get('id', '')} - {criterion.get('title', '')}")
+        lines.append("")
+        if criterion.get("criticality") in (1, 2, 3):
+            lines.append(f"**Wichtigkeit:** {tier_labels[criterion['criticality']]}")
+            lines.append("")
         lines.append("**Match criteria**")
         lines.append("")
         lines.append(str(criterion.get("match_criteria", "")).strip())
@@ -154,6 +171,45 @@ def build_markdown(task_dir: pathlib.Path) -> str:
         else:
             lines.append("- (none)")
         lines.append("")
+
+    outline = rubric.get("outline") or []
+    outline_ids = set(index_outline(outline)) if outline else set()
+    tagged = {
+        c.get("id"): (c.get("analysis_tags") or {}).get("outline_id")
+        for c in criteria
+    }
+    if outline and any(oid in outline_ids for oid in tagged.values()):
+        # Walk the Musterlösung's Gliederung; list each node's criteria under it.
+        by_node: dict[str, list[dict[str, Any]]] = {}
+        unmapped: list[dict[str, Any]] = []
+        for criterion in criteria:
+            oid = tagged.get(criterion.get("id"))
+            if oid in outline_ids:
+                by_node.setdefault(oid, []).append(criterion)
+            else:
+                unmapped.append(criterion)
+        for node, depth, _path in walk(outline):
+            group = by_node.get(node["id"], [])
+            subtree_ids = [n["id"] for n, _d, _p in walk([node])]
+            if not any(by_node.get(i) for i in subtree_ids):
+                continue
+            label = (
+                node["label"]
+                if node["id"] == UE_ID or node["id"] == node["label"]
+                else f"{node['id']} {node['label']}"
+            )
+            lines.append(f"{'#' * min(2 + depth, 5)} {label}")
+            lines.append("")
+            for criterion in group:
+                render_criterion(criterion, "#" * min(3 + depth, 6))
+        if unmapped:
+            lines.append("### Ohne Gliederungspunkt")
+            lines.append("")
+            for criterion in unmapped:
+                render_criterion(criterion, "####")
+    else:
+        for criterion in criteria:
+            render_criterion(criterion, "###")
 
     return "\n".join(lines).rstrip() + "\n"
 

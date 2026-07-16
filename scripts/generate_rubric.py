@@ -54,6 +54,7 @@ PROMPTS_DIR = REPO_ROOT / "prompts" / "rubric_generation"
 sys.path.insert(0, str(REPO_ROOT))
 
 from evaluation.run import call_judge, judge_prompt as build_judge_prompt  # noqa: E402
+from scripts.outline_util import UE_ID, index_outline, normalize_outline, with_ue_node  # noqa: E402
 
 
 def parse_args() -> argparse.Namespace:
@@ -124,6 +125,15 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=DEFAULT_JUDGE_PARALLEL,
         help=f"Parallel judge calls during calibration. Defaults to {DEFAULT_JUDGE_PARALLEL}.",
+    )
+    parser.add_argument(
+        "--retag-only",
+        action="store_true",
+        help=(
+            "Do NOT generate anything: load the frozen criteria from evals/rubric.json, "
+            "run only extract_outline + tag_criteria, and write the updated tags/outline back. "
+            "Never touches candidates, pruning, or calibration."
+        ),
     )
     parser.add_argument(
         "--skip-tagging",
@@ -408,8 +418,10 @@ def validate_criteria(criteria: list[dict[str, Any]]) -> list[str]:
         match = criterion.get("match_criteria", "")
         if not has_boolean_labels(match):
             errors.append(f"{cid} does not contain explicit Boolean pass/fail labels.")
-        if criterion.get("criticality") != "must_pass":
-            errors.append(f"{cid} has non-scoring criticality {criterion.get('criticality')!r}.")
+        # Untagged pipelines still carry the internal keep/drop marker "must_pass";
+        # after tagging, criticality is the reviewer-facing importance tier 1-3.
+        if criterion.get("criticality") not in (1, 2, 3, "must_pass"):
+            errors.append(f"{cid} has invalid criticality {criterion.get('criticality')!r}.")
     return errors
 
 
@@ -686,6 +698,37 @@ def calibrate_rubric(
     }
 
 
+def extract_solution_outline(
+    *,
+    client: OpenAI,
+    model: str,
+    reasoning_effort: str | None,
+    task: dict[str, Any],
+    solution_output: str,
+    cache_dir: pathlib.Path | None,
+) -> tuple[dict[str, Any], dict[str, Any], list[dict[str, Any]], list[str]]:
+    outline_system, outline_user_base = prompt_pair("extract_outline")
+    payload = {
+        "task_json": {"title": task.get("title"), "work_type": task.get("work_type")},
+        "solution": solution_output,
+    }
+    parsed, response = api_call(
+        client=client,
+        model=model,
+        system=outline_system,
+        user=build_user_payload(outline_user_base, payload),
+        required_keys={"language", "outline"},
+        reasoning_effort=reasoning_effort,
+        label="extract_outline",
+        cache_dir=cache_dir,
+    )
+    nodes, warnings = normalize_outline(parsed.get("outline"))
+    if not nodes:
+        warnings.append("Outline extraction returned no usable nodes.")
+    nodes = with_ue_node(nodes)
+    return parsed, response, nodes, warnings
+
+
 def tag_final_criteria(
     *,
     client: OpenAI,
@@ -694,6 +737,7 @@ def tag_final_criteria(
     task: dict[str, Any],
     atoms: dict[str, Any],
     criteria: list[dict[str, Any]],
+    outline_nodes: list[dict[str, Any]] | None,
     cache_dir: pathlib.Path | None,
 ) -> tuple[dict[str, Any], dict[str, Any], list[str]]:
     tag_system, tag_user_base = prompt_pair("tag_criteria")
@@ -709,6 +753,8 @@ def tag_final_criteria(
             for criterion in criteria
         ],
     }
+    if outline_nodes:
+        payload["outline"] = outline_nodes
     parsed, response = api_call(
         client=client,
         model=model,
@@ -720,6 +766,7 @@ def tag_final_criteria(
         cache_dir=cache_dir,
     )
     warnings: list[str] = []
+    outline_index = index_outline(outline_nodes) if outline_nodes else {}
     tags_by_id = {
         str(entry.get("id")): entry
         for entry in parsed.get("tags", [])
@@ -733,11 +780,32 @@ def tag_final_criteria(
         function = entry.get("function")
         if function not in FUNCTION_TAGS:
             warnings.append(f"{criterion.get('id')}: unknown function tag {function!r}.")
-        station_path = entry.get("station_path") or []
-        criterion["analysis_tags"] = {
-            "function": function,
-            "station_path": [str(step) for step in station_path if str(step)],
-        }
+        if outline_index:
+            outline_id = str(entry.get("outline_id", "")).strip()
+            if outline_id not in outline_index:
+                warnings.append(
+                    f"{criterion.get('id')}: unknown outline_id {outline_id!r}, assigned to {UE_ID!r}."
+                )
+                outline_id = UE_ID
+            criterion["analysis_tags"] = {
+                "function": function,
+                "outline_id": outline_id,
+                "station_path": outline_index[outline_id]["path_labels"],
+            }
+        else:
+            station_path = entry.get("station_path") or []
+            criterion["analysis_tags"] = {
+                "function": function,
+                "station_path": [str(step) for step in station_path if str(step)],
+            }
+        criticality = entry.get("criticality")
+        if criticality in (1, 2, 3):
+            criterion["criticality"] = criticality
+        else:
+            warnings.append(
+                f"{criterion.get('id')}: invalid criticality {criticality!r}, defaulting to 2."
+            )
+            criterion["criticality"] = 2
     return parsed, response, warnings
 
 
@@ -768,6 +836,7 @@ def main() -> int:
     pruner_system, pruner_user_base = prompt_pair("prune_rubric")
     prompt_pair("refine_rubric")
     prompt_pair("tag_criteria")
+    prompt_pair("extract_outline")
     for role_name, _code in CANDIDATE_ROLES:
         read_prompt_template(f"roles/{role_name}.txt")
 
@@ -791,7 +860,7 @@ def main() -> int:
         print(
             "Planned API calls: atomize_solution -> generate_candidates (3 roles) -> prune_candidates"
             + (" -> calibrate/refine loop" if calibrate else "")
-            + ("" if args.skip_tagging else " -> tag_criteria")
+            + ("" if args.skip_tagging else " -> extract_outline -> tag_criteria")
         )
         return 0
 
@@ -802,6 +871,53 @@ def main() -> int:
         print(f"WARNING: {warning}", file=sys.stderr)
 
     client = make_client(os.environ.get("OPENAI_API_BASE", DEFAULT_API_BASE))
+
+    if args.retag_only:
+        if not final_path.exists():
+            raise SystemExit(f"--retag-only needs an existing frozen rubric at {final_path}")
+        rubric = json.loads(final_path.read_text(encoding="utf-8"))
+        criteria = rubric.get("criteria") or []
+        if not criteria:
+            raise SystemExit(f"{final_path} contains no criteria.")
+        atoms_for_tagging: dict[str, Any] = {}
+        if output_path.exists():
+            atoms_for_tagging = json.loads(output_path.read_text(encoding="utf-8")).get("atomization") or {}
+        print("Calling OpenAI: extract_outline", file=sys.stderr)
+        outline_parsed, _outline_resp, outline_nodes, outline_warnings = extract_solution_outline(
+            client=client,
+            model=args.model,
+            reasoning_effort=reasoning_effort,
+            task=task,
+            solution_output=solution_output_text(solution_files),
+            cache_dir=cache_dir,
+        )
+        print("Calling OpenAI: tag_criteria", file=sys.stderr)
+        _tag_parsed, _tag_resp, tag_warnings = tag_final_criteria(
+            client=client,
+            model=args.model,
+            reasoning_effort=reasoning_effort,
+            task=task,
+            atoms=atoms_for_tagging,
+            criteria=criteria,
+            outline_nodes=outline_nodes,
+            cache_dir=cache_dir,
+        )
+        for warning in outline_warnings + tag_warnings:
+            print(f"WARNING: {warning}", file=sys.stderr)
+        distribution = {
+            tier: sum(1 for c in criteria if c.get("criticality") == tier) for tier in (3, 2, 1)
+        }
+        print(
+            "Criticality distribution: "
+            + ", ".join(f"{tier}: {count}" for tier, count in distribution.items()),
+            file=sys.stderr,
+        )
+        rubric["criteria"] = criteria
+        rubric["outline"] = outline_nodes
+        rubric["retagged_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
+        final_path.write_text(json.dumps(rubric, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"Wrote {final_path} (criteria unchanged, tags/outline updated)")
+        return 0
 
     print("Calling OpenAI: atomize_solution", file=sys.stderr)
     atoms, atom_response = api_call(
@@ -907,7 +1023,22 @@ def main() -> int:
     tagging_parsed: dict[str, Any] | None = None
     tagging_response: dict[str, Any] | None = None
     tag_warnings: list[str] = []
+    outline_parsed: dict[str, Any] | None = None
+    outline_response: dict[str, Any] | None = None
+    outline_nodes: list[dict[str, Any]] | None = None
+    outline_warnings: list[str] = []
     if final_criteria and not args.skip_tagging:
+        print("Calling OpenAI: extract_outline", file=sys.stderr)
+        outline_parsed, outline_response, outline_nodes, outline_warnings = extract_solution_outline(
+            client=client,
+            model=args.model,
+            reasoning_effort=reasoning_effort,
+            task=task,
+            solution_output=solution_output_text(solution_files),
+            cache_dir=cache_dir,
+        )
+        for warning in outline_warnings:
+            print(f"WARNING: {warning}", file=sys.stderr)
         print("Calling OpenAI: tag_criteria", file=sys.stderr)
         tagging_parsed, tagging_response, tag_warnings = tag_final_criteria(
             client=client,
@@ -916,10 +1047,20 @@ def main() -> int:
             task=task,
             atoms=atoms,
             criteria=final_criteria,
+            outline_nodes=outline_nodes,
             cache_dir=cache_dir,
         )
         for warning in tag_warnings:
             print(f"WARNING: {warning}", file=sys.stderr)
+        distribution = {
+            tier: sum(1 for c in final_criteria if c.get("criticality") == tier)
+            for tier in (3, 2, 1)
+        }
+        print(
+            "Criticality distribution: "
+            + ", ".join(f"{tier}: {count}" for tier, count in distribution.items()),
+            file=sys.stderr,
+        )
 
     validation_errors = validate_criteria(final_criteria)
     generated = {
@@ -961,10 +1102,25 @@ def main() -> int:
             if calibration_result
             else None
         ),
+        "outline": (
+            {
+                "nodes": outline_nodes,
+                "derived": bool(outline_parsed.get("derived")),
+                "outline_notes": outline_parsed.get("outline_notes", []),
+                "warnings": outline_warnings,
+            }
+            if outline_parsed is not None
+            else None
+        ),
         "analysis_tagging": (
             {
                 "enabled": True,
                 "function_vocabulary": FUNCTION_TAGS,
+                "criticality_scale": {
+                    "3": "ergebnistragend - entscheidet den Fall; Budget ~10-15% der Kriterien",
+                    "2": "wichtig - in einer soliden Lösung erwartet (Default)",
+                    "1": "eher unwichtig - Detail, Form, Bonuswissen",
+                },
                 "tagging_notes": tagging_parsed.get("tagging_notes", []),
                 "warnings": tag_warnings,
             }
@@ -979,6 +1135,7 @@ def main() -> int:
             "prune_criteria": usage_summary(pruned_response),
             "calibration_judge": calibration_result["judge_usage"] if calibration_result else None,
             "refine_rubric": calibration_result["refine_usage"] if calibration_result else None,
+            "extract_outline": usage_summary(outline_response) if outline_response else None,
             "tag_criteria": usage_summary(tagging_response) if tagging_response else None,
         },
     }
@@ -998,6 +1155,7 @@ def main() -> int:
             ),
             "language": pruned.get("language"),
             "task_title": task.get("title"),
+            "outline": outline_nodes,
             "criteria": final_criteria,
             "provenance": {
                 "source": str(output_path.relative_to(task_dir)) if output_path.is_relative_to(task_dir) else str(output_path),

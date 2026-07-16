@@ -50,6 +50,31 @@ OPENCODE_PERMISSION_CONFIG: dict[str, Any] = {
     },
 }
 
+# Output-token ceilings per model. OpenCode sends its per-model output limit as
+# the request max_tokens; for reasoning models the hidden reasoning tokens are
+# billed against it, so a low default can be exhausted before the agent writes
+# its deliverable file (finish reason "length", empty submission). Raise the
+# ceiling to the model's real max output so reasoning + final answer both fit.
+# (context_window, max_output) per model. OpenCode requires BOTH keys when a
+# limit block is set. glm-5.2: 1.05M context, 128k output.
+MODEL_LIMITS: dict[str, tuple[int, int]] = {
+    "z-ai/glm-5.2": (1_050_000, 128_000),
+}
+
+
+def build_opencode_config(model: str) -> dict[str, Any]:
+    """Permission config plus a per-model context/output-limit override when known."""
+    config = json.loads(json.dumps(OPENCODE_PERMISSION_CONFIG))
+    # model is "provider/model-id" (e.g. "openrouter/z-ai/glm-5.2").
+    provider, _, model_id = model.partition("/")
+    limits = MODEL_LIMITS.get(model_id)
+    if provider and model_id and limits:
+        context, output = limits
+        config["provider"] = {
+            provider: {"models": {model_id: {"limit": {"context": context, "output": output}}}}
+        }
+    return config
+
 
 def utc_now() -> dt.datetime:
     return dt.datetime.now(dt.timezone.utc)
@@ -627,10 +652,10 @@ def extract_reasoning_summary(stdout_path: pathlib.Path, output_path: pathlib.Pa
     return summaries
 
 
-def base_env() -> dict[str, str]:
+def base_env(model: str) -> dict[str, str]:
     env = os.environ.copy()
     env["NO_COLOR"] = "1"
-    env["OPENCODE_CONFIG_CONTENT"] = json.dumps(OPENCODE_PERMISSION_CONFIG, separators=(",", ":"))
+    env["OPENCODE_CONFIG_CONTENT"] = json.dumps(build_opencode_config(model), separators=(",", ":"))
     return env
 
 
@@ -661,7 +686,7 @@ def docker_command(args: argparse.Namespace, row: dict[str, Any], input_dir: pat
         "-e",
         f"TASK_ID={row['task_id']}",
         "-e",
-        f"OPENCODE_CONFIG_CONTENT={json.dumps(OPENCODE_PERMISSION_CONFIG, separators=(',', ':'))}",
+        f"OPENCODE_CONFIG_CONTENT={json.dumps(build_opencode_config(args.model), separators=(',', ':'))}",
         "-e",
         "NO_COLOR=1",
         "-v",
@@ -795,7 +820,7 @@ def run_one_task(args: argparse.Namespace, row: dict[str, Any], run_dir: pathlib
         stdout_path=stdout_path,
         stderr_path=stderr_path,
         timeout_seconds=args.timeout_seconds,
-        env=base_env(),
+        env=base_env(args.model),
         cleanup_container=cleanup_container,
     )
 
