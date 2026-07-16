@@ -575,17 +575,29 @@ def _run(command: list[str]) -> subprocess.CompletedProcess[str]:
     return subprocess.run(command, cwd=REPO_ROOT, text=True, capture_output=True, check=False)
 
 
-def _status_paths() -> list[str]:
+def _status_entries() -> list[tuple[str, str]]:
     result = _run(["git", "status", "--porcelain", "--untracked-files=all"])
     if result.returncode != 0:
         raise WorkbenchError(result.stderr.strip() or "Could not read Git status.")
-    paths = []
+    entries: list[tuple[str, str]] = []
     for line in result.stdout.splitlines():
+        status = line[:2]
         path = line[3:]
         if " -> " in path:
             path = path.split(" -> ", 1)[1]
-        paths.append(path.strip('"'))
-    return paths
+        entries.append((status, path.strip('"')))
+    return entries
+
+
+def _unrelated_status_paths(entries: list[tuple[str, str]], target_prefix: str) -> list[str]:
+    unrelated: list[str] = []
+    for status, path in entries:
+        if path == target_prefix[:-1] or path.startswith(target_prefix):
+            continue
+        if status == "??" and path.startswith("runs/"):
+            continue
+        unrelated.append(path)
+    return unrelated
 
 
 def git_readiness(run_dir_relative: str) -> dict[str, Any]:
@@ -593,7 +605,7 @@ def git_readiness(run_dir_relative: str) -> dict[str, Any]:
     if not (run_dir / "manifest.json").is_file():
         raise WorkbenchError("Manual run not found.")
     prefix = run_dir.relative_to(REPO_ROOT).as_posix() + "/"
-    unrelated = [path for path in _status_paths() if path != prefix[:-1] and not path.startswith(prefix)]
+    unrelated = _unrelated_status_paths(_status_entries(), prefix)
     branch_result = _run(["git", "branch", "--show-current"])
     current_branch = branch_result.stdout.strip() if branch_result.returncode == 0 else ""
     files = sorted(path.relative_to(REPO_ROOT).as_posix() for path in run_dir.rglob("*") if path.is_file())
