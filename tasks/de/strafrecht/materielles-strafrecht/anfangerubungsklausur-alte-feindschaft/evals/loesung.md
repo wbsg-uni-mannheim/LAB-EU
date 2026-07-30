@@ -1,0 +1,127 @@
+# Musterlösung
+
+## Lösungsvorschlag Tatkomplex 1: Lagerhalle
+
+Hinweis: Der 1. Tatkomplex orientiert sich an der Entscheidung BGH, Urt. v. 27.10.2015 – 3 StR 199/15 = NStZ 2016, 333.
+
+### A. Strafbarkeit des T
+
+#### I. §§ 212 Abs. 1, 22, 23 Abs. 1 StGB
+
+Eine Strafbarkeit wegen versuchten Totschlags gem. §§ 212 Abs. 1, 22, 23 Abs. 1 StGB scheitert hier bereits am fehlenden Tötungsvorsatz des T.
+
+#### II. § 223 Abs. 1 StGB
+
+T könnte sich durch die Schüsse auf O wegen Körperverletzung gem. § 223 Abs. 1 StGB strafbar gemacht haben.
+
+##### 1. Objektiver Tatbestand
+
+Der objektive Tatbestand setzt eine körperliche Misshandlung oder eine Gesundheitsschädigung voraus. Eine körperliche Misshandlung zeichnet sich durch eine üble, unangemessene Behandlung aus, die das körperliche Wohlbefinden mehr als nur unerheblich beeinträchtigt. Die Gesundheitsschädigung wird wiederum als Hervorrufen oder Steigern eines pathologischen Zustands definiert. Der Schuss auf O stellt ohne Zweifel eine üble und unangemessene Behandlung dar, die die körperliche Unversehrtheit des O aufgrund der Fleischwunde mehr als nur unerheblich beeinträchtigte. Eine körperliche Misshandlung liegt mithin vor. Jene Fleischwunde stellt bei O auch einen vom Normalzustand abweichenden krankhaften Zustand dar, weshalb auch eine Gesundheitsschädigung vorliegt Der Schuss ist hierbei kausal, da er nicht hinweggedacht werden kann, ohne dass der Körperverletzungserfolg entfiele. Dieser Körperverletzungserfolg ist dem T auch objektiv zurechenbar, da der Schuss ein rechtlich missbilligtes Risiko darstellt, das sich letztlich im Erfolg realisiert hat.
+
+##### 2. Subjektiver Tatbestand
+
+T handelte zielgerichtet, um O außer Gefecht zu setzen, mithin mit dolus directus 1. Grades.
+
+##### 3. Rechtswidrigkeit
+
+Fraglich ist jedoch, ob T rechtswidrig handelte. Grundsätzlich indiziert die Tatbestandsmäßigkeit seines Verhaltens auch die Rechtswidrigkeit, weshalb diese nur ausscheidet, wenn ein Rechtfertigungsgrund vorliegt. Hier kommt Notwehr nach § 32 StGB in Betracht. Dafür müsste zunächst eine Notwehrlage gegeben sein. Diese setzt einen gegenwärtigen, rechtswidrigen Angriff voraus. Ein Angriff ist jedes menschliche Verhalten, das ein Rechtsgut bedroht. Daran fehlt es aber bereits, da O tatsächlich über keine Waffe verfügte und auch keinerlei Intention hatte, T überhaupt zu attackieren. Demzufolge scheitert eine Rechtfertigung über § 32 StGB. Weitere Rechtfertigungsgründe sind nicht ersichtlich.
+
+##### 4. Schuld
+
+Zu klären ist ferner, ob T schuldhaft handelte.
+
+###### a) Erlaubnistatbestandsirrtum (ETBI)
+
+Zu erwägen ist zunächst ein sog. ETBI. Dieser zeichnet sich durch eine Fehlvorstellung des Täters über die tatsächlichen Voraussetzungen eines Rechtfertigungsgrundes aus. Bekanntermaßen sind dessen Rechtsfolgen strittig. Darauf kommt es jedoch einzig dann an, wenn bei einer hypothetischen Prüfung des Rechtfertigungsgrund anhand der Vorstellung des Täters überhaupt die Rechtswidrigkeit ausgeschlossen wäre.
+
+Hinweis: Es ist ebenfalls möglich, dass Studierende dies bereits auf Ebene des Vorsatzes, der Rechtswidrigkeit oder als eigenen Prüfungspunkt zwischen Rechtswidrigkeit und Schuld erörtern. Demnach muss untersucht werden, ob nach der Vorstellung des T ein Rechtfertigungsgrund vorlag. Zu erörtern ist die Notwehr nach § 32 StGB. Fraglich ist also, ob eine Notwehrlage nach dem Vorstellungsbild des T gegeben war. T ging davon aus, dass O über eine Pistole verfügen und als nächstes auf ihn schießen würde. Dies würde eine Bedrohung der körperlichen Unversehrtheit des T und mithin einen Angriff darstellen. Ein solcher Angriff wäre auch gegenwärtig, da er unmittelbar bevorstand. Einer etwas genaueren Prüfung bedarf die Rechtswidrigkeit dieses Angriffs. Jene bemisst sich danach, ob der Angriff nicht seinerseits gerechtfertigt war. Würde O tatsächlich auf T schießen, sähe er sich in diesem Moment zumindest keines gegenwärtigen Angriffes auf seine Rechtsgüter ausgesetzt. Es ist jedenfalls nicht ersichtlich, dass T bereits vor dem vermeintlichen Schuss des O Anstalten machte, O seinerseits anzugreifen. Ein Angriff des O wäre insoweit auch rechtswidrig. Nach der Vorstellung des T war deshalb eine Notwehrlage gegeben. Augenmerk verdient weiterhin die hypothetische Notwehrhandlung des T. Diese erfordert eine Reaktion, die geeignet, erforderlich und geboten ist. Geeignetheit liegt vor, wenn das Notwehrmittel grundsätzlich in der Lage ist, den Angriff sofort und endgültig zu beenden. Dies dürfte bei einem Schuss mit einer Pistole auf einen vermeintlichen Angreifer angesichts der unklaren Sachlage am Tatort jedenfalls der Fall sein. Eine Notwehrhandlung ist erforderlich, wenn sie das relativ mildeste Mittel darstellt. Hierbei braucht sich ein Notwehrübender gerade nicht auf Obrigkeitshilfe verweisen zu lassen.
+
+Hinweis: Das folgende Problem kann auch im Rahmen der Gebotenheit erörtert werden. Der BGH vertritt die Auffassung, dass bei dem Gebrauch einer Schusswaffe aufgrund deren besonderer Gefährlichkeit eine Abstufung vor deren Einsatz vorzunehmen ist: Sofern es dem Schießenden möglich ist, soll dieser zunächst eine Warnung aussprechen. Falls diese nicht erfolgreich ist, folgt ein Warnschuss („Schutzwehr“). Nur wenn dieser ebenfalls nicht zur Abwendung des Angriffes führt, darf tatsächlich zielgerichtet auf den Angreifenden geschossen werden („Trutzwehr“). Aufgrund der erheblichen Eingriffsintensität und der potentiellen Gefahren, die ein Schusswaffengebrauch mit sich bringt, überzeugt diese Abstufung des BGH. Dem T war es, wie er auch erkannt hat, durchaus noch möglich, vor einem etwaigen Schuss seinerseits einen Warnschuss abzugeben oder sogar zuvor noch einen Warnruf auszusprechen. Denn er ging nicht davon aus, dass eine Gefahr für sein Leben bestand, auf die er unmittelbar und ohne Rücksicht auf Konsequenzen reagieren müsste, da er einen (tödlichen) Treffer des O für abwegig hielt. Er unterließ es jedoch, eine Warnung auszusprechen oder einen Warnschuss abzugeben. Demzufolge wird das Verhalten des T selbst nach dessen Vorstellungsbild den Anforderungen, die an seine Notwehrhandlung zu stellen sind, nicht gerecht.
+
+Hinweis: Eine Auseinandersetzung mit den Rechtsfolgen eines ETBI wäre an dieser Stelle mithin verfehlt. Sollten Studierende diese dennoch vornehmen, wird dies regelmäßig zu einer fehlerhaften Schwerpunktsetzung führen.
+
+###### b) Erlaubnisirrtum
+
+Das Vorstellungsbild des T könnte gleichwohl einen anderen Irrtum begründen. Schließlich ging T davon aus, es bedürfe keiner vorherigen Ankündigung eines Schusses oder eines Warnschusses, auch wenn dies noch möglich wäre. Insoweit meinte er, direkt zur Trutzwehr übergehen zu dürfen. Dabei handelt es sich aber seinerseits um einen Irrtum, und zwar um einen solchen über eine rechtliche Wertung, nämlich das Erlaubtsein seiner Notwehrhandlung. Man spricht bei einem solchem Irrtum von einem indirekten Verbotsirrtum oder einem Erlaubnisirrtum. Hier ist demzufolge die Konstellation eines sog. Doppelirrtums gegeben, also die Kombination eines ETBI mit einem Erlaubnisirrtum nach § 17 StGB.
+
+Hinweis: Dies Bezeichnung mag streng genommen etwas verfehlt sein, da die Voraussetzungen des vermeintlich ersten Irrtums – des ETBI – gar nicht vorliegen. Schließlich sind auch nach der Vorstellung des T die Voraussetzungen eines hypothetischen Rechtfertigungsgrundes nicht gegeben. Dennoch wird dieses Problem in der Literatur regelmäßig unter dieser Bezeichnung besprochen, sodass eine solche Nomenklatur den Studierenden nicht anzukreiden ist. Die rechtliche Bewertung richtet sich in diesen Fällen nach dem Erlaubnisirrtum gem. § 17 StGB. Infolgedessen kommt es auf die Unvermeidbarkeit des Irrtums an. Der BGH legt hierbei grundsätzlich einen strengen Maßstab an. Die Unvermeidbarkeit eines Irrtums nach § 17 StGB setzt danach voraus, dass der Täter alle seine geistigen Erkenntniskräfte eingesetzt und etwa aufkommende Zweifel durch Nachdenken oder erforderlichenfalls durch Einholung verlässlichen und sachkundigen Rechtsrats beseitigt hat. Dem wurde der T zweifelsohne nicht gerecht. Er ging schlicht davon aus, dass die Rechtslage so sein müsse, wie er sich diese vorstellt. Ein Reflexionsprozess fand nicht statt. Bei T hätte unter gehöriger Gewissensanstrengung jedenfalls Zweifel dahingehend aufkommen müssen, ob ein sofortiger Schuss von der Rechtslage gedeckt sein kann. Sein Irrtum war daher gerade nicht unvermeidbar. Die Annahme eines entschuldigten Handelns über § 17 StGB scheidet deshalb aus. T handelte schuldhaft.
+
+##### 5.Ergebnis
+
+T hat sich durch den Schuss auf O gem. § 223 Abs. 1 StGB strafbar gemacht. Der nach § 230 Abs. 1 StGB erforderliche Strafantrag wurde gestellt.
+
+### B. Ergebnis
+
+T ist im ersten Tatkomplex wegen Körperverletzung gem. § 223 Abs. 1 StGB strafbar.
+
+## Tatkomplex 2: Im Treppenhaus
+
+Hinweis: Diesem Tatkomplex liegt die Entscheidung BGH, Urt. v. 22.4.1999 – 4 StR 76/99 = NStZ 1999, 395 zugrunde. Auch hier ist weniger entscheidend, dass die Studierenden einzelne Auffassungen zum unmittelbaren Ansetzen in Abhängigkeit von äußeren Bedingungen kennen, als dass sie dieses Problem identifizieren und einer begründeten Lösung zuführen.
+
+### A. Strafbarkeit des O
+
+#### I. §§ 223 Abs. 1, 22, 23 Abs. 1 StGB
+
+O könnte sich wegen versuchter Körperverletzung nach §§ 223 Abs. 1, 22, 23 Abs. 1 StGB strafbar gemacht haben, indem er an der Tür des T klingelte.
+
+##### 1. Vorprüfung
+
+Die Tat, deren Versuch gem. §§ 223 Abs. 2, 12 Abs. 2, 23 Abs. 1 Var. 2 StGB strafbar ist, wurde offenkundig nicht vollendet.
+
+##### 2. Tatentschluss
+
+O wies Tatentschluss hinsichtlich einer Körperverletzung mittels eines Faustschlages auf, da er T ein blaues Auge verpassen wollte, was jedenfalls einen pathologischen Zustand, also eine Gesundheitsschädigung, darstellen würde. Ebenso hatte er Tatentschluss in Bezug auf eine körperliche Misshandlung, da ein Faustschlag auch eine üble unangemessene Behandlung darstellt, die das körperliche Wohlbefinden mehr als nur unerheblich beeinträchtigt.
+
+##### 3. Unmittelbares Ansetzen
+
+Das unmittelbare Ansetzen erfordert, dass die Schwelle zum „Jetzt-geht’s-los“ überschritten ist und keine wesentlichen Zwischenakte mehr nötig sind, um das Rechtsgut des Opfers konkret zu gefährden. Dies ist hier problematisch. Denn O macht seine Tat von äußeren Bedingungen abhängig, auf die er letztlich selbst keinen Einfluss hat. Ob dies bereits ein unmittelbares Ansetzen darstellt, ist umstritten.
+
+Hinweis: Da dieses Problem – wie Jäger zutreffend bemerkt – bereits im Rahmen des Tatentschlusses angesprochen werden könnte, ist es gleichwertig, falls Studierenden in ihrer Lösung den Schwerpunkt dort setzen. Der BGH hat hierzu in einem „Haustür-Fall“ entschieden, dass das bloße Klingeln an der Haustür noch keine Versuchstat darstelle, da die weitere Tatbegehung von vorneherein davon abhängig gemacht worden sei, dass das in Aussicht genommene Tatopfer ohne sein Kleinkind erscheine; es habe somit noch eines weiteren Willensimpulses bedurft, damit das Tun des Täters unmittelbar in die Tatbestandshandlung einmünde. So würde es sich auch hier verhalten. Denn O machte die Ausführung der Körperverletzung gerade davon abhängig, dass T allein, ohne seine Tochter an der Tür erscheint. Ein unmittelbares Ansetzen läge demzufolge gerade nicht vor. Dem stellt sich die Literatur teilweise entgegen. Es sei durchaus ein unmittelbares Ansetzen anzunehmen, da der innere Vorbehalt des Täters lediglich als Rücktrittsvorbehalt zu qualifizieren sei, der aber nichts daran ändere, dass keine wesentlichen Zwischenschritte mehr erforderlich seien und die Schwelle zum „Jetzt-geht’s-los“ überschritten sei. Zudem ermögliche die Überbewertung solcher innerer Vorbehalte Schutzbehauptungen des Täters in einem nicht unbeachtlichen Umfang. Daraus ergäbe sich somit, dass auch O bereits unmittelbar zur Tat angesetzt hätte und sein Vorbehalt in Hinblick auf das unmittelbare Ansetzen unbeachtlich wäre. Freilich lässt sich noch überlegen, ob es sich bei diesem Streit nicht eigentlich um eine Sachverhaltsfrage handelt, und zwar in der Weise, ob O tatsächlich noch nicht oder aber zwar endgültig entschlossen war, sich aber noch einen Ausweg offenhalten wollte. Letztlich geht es aber um die Frage, wie der Vorbehalt des Täters strafrechtlich zu bewerten ist. Denn ob dieser auf Ebene des Tatbestands oder aber des Rücktritts zu berücksichtigten ist, ist eine juristische Frage. Es bedarf folglich einer Streitentscheidung. Der Meinung im Schrifttum ist zuzugeben, dass durch die Herangehensweise des BGH zwischen Tatentschluss und unmittelbarem Ansetzen nicht sauber differenziert wird. Denn die Tatbegehung von bestimmten Umständen abhängig zu machen, spricht eigentlich schon gegen einen vorbehaltlosen Tatentschluss. In der Folge kann man sich fragen, welche Bedeutung dem Tatentschluss nach der Auffassung des BGH eigentlich noch zukommt. Für ein unmittelbares Ansetzen spricht auch, dass sich der Täter bereits in unmittelbarer räumlicher Nähe des Opfers befindet und diese gewissermaßen nur nachträglich wieder verlässt, wenn sich die Sachlage anders entwickelt als von ihm erwartet. Unter Umständen führt der Ansatz der Rechtsprechung auch zu einer Begünstigung desjenigen Täters, der die Tat bloß in einer für ihn möglichst günstigen Situation begehen will. Damit wäre er aber im Vorteil gegenüber dem Täter, der sich gar keine oder wenige Gedanken zur konkreten Tatausführung macht (bzw. zumindest keine derartigen Schutzbehauptungen vorbringt). Gleichwohl überzeugt der Rechtsprechungsansatz. Die Abhängigkeit der Tatausführung von einer äußeren Bedingung unterscheidet den Täter in diesen Konstellationen von einem Täter, der vorbehaltlos agiert. Denn der vorbehaltlos agierende Täter hat sich bereits endgültig dazu entschieden, eine Straftat zu begehen (und von dieser auch nicht zurückzutreten). Sein Handeln mündet unmittelbar in die Tatausführung ein. Demgegenüber steht dies für den Täter, der seine Tat von äußeren Bedingungen abhängig macht, noch nicht endgültig fest, auch wenn er selbst keinen Einfluss auf den Eintritt der Bedingung haben mag. Die Gefährdung von Rechtsgütern des Opfers hängt im Falle des vorbehaltlos agierenden Täters somit von keinem wesentlichen Zwischenschritt mehr ab, bei einem unter Bedingungsvorbehalt vorgehenden Täter hingegen durchaus. Um in die tatsächliche Tatausführung einzusteigen, bedarf es für den Täter in solchen Konstellationen zudem eines zusätzlichen Willensimpulseses, also eines „Jetzt-geht’s-los“, wenn die äußere Bedingung eingetreten ist oder der Täter sich über seinen ursprünglichen Vorbehalt hinwegsetzt. Dies sollte freilich gewürdigt werden, was die Gegenauffassung verkennt. Die feinsinnige Unterscheidung zwischen unmittelbarem Ansetzen und Tatentschluss mag zwar dogmatisch zutreffen, ist mit Blick auf die Rechtsfolgen für den Täter aber von geringerer Bedeutung. Die bloße Berücksichtigung auf Ebene des Rücktritts als persönlichem Strafausschließungsgrund wird ihm hingegen nicht gerecht. Sein Verhalten wäre tatbestandsmäßig, rechtswidrig und schuldhaft, sodass gegen einen solchen Täter bspw. Notwehr geübt werden könnte. Da noch keine schädigende Handlung nach außen getreten ist – das Klingeln verhält sich insofern neutral – käme die Bewertung als tatbestandsmäßiges Handeln einem Gesinnungsstrafrecht gleich. Für eine restriktive Handhabung der Versuchsvorschriften bei Verhaltensweisen, die noch eines zusätzlichen Willensimpulses und einer bestimmten objektiven äußeren Entwicklung bedürfen, spricht auch, dass die Strafwürdigkeit von reinen Vorbereitungshandlungen nur in bestimmten eng umgrenzten Situationen wie der Verabredung zur Begehung eines Verbrechens nach § 30 Abs. 2 StGB vorgesehen ist. O hat deshalb nicht unmittelbar zur Tatausführung angesetzt.
+
+Hinweis: Eine a.A. ist selbstverständlich vertretbar. Soweit dann ein unmittelbares Ansetzen bejaht wird, wäre in der Folge weiter zu prüfen. Rechtswidrigkeit und Schuld sind unproblematisch gegeben. O dürfte ferner gem. § 24 Abs. 1 S. 1 Alt. 1 StGB vom Versuch strafbefreiend zurückgetreten sein. Der Versuch war nicht fehlgeschlagen, da der O die Tat seinem Horizont nach mit den ihm zur Verfügung stehenden Mitteln weiterhin hätte ausführen können. Es liegt weiterhin ein unbeendeter Versuch vor, da O noch nicht alles aus seiner Sicht Erforderliche zur Tatbestandsverwirklichung getan hat. Insoweit genügt das schlichte Ablassen von der weiteren Tatausführung. Zweifel könnten einzig in Hinblick auf die Freiwilligkeit bestehen. Gleichwohl ist im Sachverhalt an keiner Stelle angedeutet, dass das Erscheinen des Kindes für O gleichsam zwanghafte Wirkung hatte.
+
+#### II. Ergebnis
+
+O hat sich nicht gem. §§ 223 Abs. 1, 22, 23 Abs. 1 StGB strafbar gemacht.
+
+### B. Ergebnis
+
+O ist im zweiten Tatkomplex straflos.
+
+## Tatkomplex 3: Die Stolperfalle
+
+Hinweis: Der 3. Tatkomplex ist an die Entscheidung BGH, Urt. v. 7.10.1997 – 1 StR 635/96 = NStZ 1998, 294 angelehnt. Es kommt vorrangig darauf an, dass die Studierenden eine argumentativ fundierte Lösung erarbeiten.
+
+### A. Strafbarkeit des T
+
+#### I. § 223 Abs. 1 StGB
+
+T könnte sich durch das Spannen des Drahtes wegen Körperverletzung gem. § 223 Abs. 1 StGB zulasten N strafbar gemacht haben.
+
+##### 1. Objektiver Tatbestand
+
+T hat den N durch das Spannen des Drahtes jedenfalls an der Gesundheit geschädigt, da der Armbruch einen pathologischen Zustand darstellt. Es entspricht auch einer üblen, unangemessenen Behandlung, die das körperliche Wohlbefinden des N mehr als nur unerheblich beeinträchtigt hat. Eine körperliche Misshandlung war somit auch gegeben. Das Spannen war kausal für den Verletzungserfolg und T auch objektiv zurechenbar. Ferner ist hier nicht von einem unvorhersehbaren Kausalverlauf auszugehen.
+
+##### 2. Subjektiver Tatbestand
+
+Problematisch ist der Vorsatz des T in Bezug auf die Körperverletzung des N. Denn der Plan des T war eigentlich darauf gerichtet, O zu verletzen. Die Sachlage hier entspricht nicht der klassischen Konstellation eines error in persona, also einer Verwechselung des Tatopfers, als bloßem Motivirrtum bei Gleichwertigkeit. Der Fall zeichnet sich vielmehr dadurch aus, dass der Täter nicht das Opfer selbst identifiziert und sich über dessen Identität irrt, sondern vielmehr einen Gegenstand einer Person zuordnet und darüber eine mittelbare, fehlerhafte Identifizierung vornimmt. Die rechtliche Bewertung ist strittig. Teilweise wird gefordert, dies ebenso wie einen regulären error in persona zu behandeln, sodass bei Gleichwertigkeit der Tatobjekte von Vorsatz hinsichtlich des tatsächlich getroffenen Opfers auszugehen ist. Dann wäre hier über die Wohnungstür eine Konkretisierung auf N eingetreten, weshalb Vorsatz anzunehmen wäre. Auf der anderen Seite wird mitunter eine Würdigung vergleichbar mit einer aberratio ictus befürwortet, und zwar in der Weise, dass der Vorsatz weiterhin dem ursprünglich geplanten Opfer gilt. T würde demzufolge lediglich im Hinblick auf O, nicht aber N Vorsatz aufweisen. Einen vermittelnden Ansatz vertritt die Individualisierungslösung. Nach dieser soll der Täter, der die Konkretisierung des Opfers nicht unmittelbar selbst vornimmt, sondern diese dem Zufall überlässt, das Individualisierungsrisiko tragen. Das heißt, wer ein Risiko setzt, das zur Verwirklichung des Tatbestandes bei anderen Personen als der ursprünglich geplanten führen kann, der trägt auch das Risiko der Verletzung dieser anderen Person. Er soll somit vorsätzlich in Bezug auf die verwechselte Person handeln. Soweit der Täter es jedoch nicht dem Zufall überlässt, das Opfer zu individualisieren, sei wie bei einer aberratio ictus aber kein Vorsatz in Hinblick auf das tatsächlich getroffene Opfer gegeben. Hier hätte, selbst wenn es sich um die Wohnung des O gehandelt hätte, jederzeit eine andere Person als O aus oder in die Wohnung treten können und Opfer der Stolperfalle werden können. T hat es letztlich dem Zufall überlassen, ob diese tatsächlich O treffen würde und nicht eine andere Person. Dafür spricht auch, dass T nicht einmal auf das Klingelschild neben der Tür geschaut hat. Deshalb wäre nach dieser Auffassung ebenfalls der Vorsatz in Bezug auf N zu bejahen. Folglich gelangt lediglich der aberratio ictus-Ansatz zu einer abweichenden Lösung. Dieser ist jedoch abzulehnen, weil sich letztlich die Vorstellung des Täters, dass sich die Person, die über den Draht stolpert, verletzen würde, auch realisiert hat. Der Täter hat bei dieser Art der distanzierten Verwirklichung einer Straftat letztlich mindestens billigend in Kauf genommen, dass jede potentielle Person, die in seine Falle läuft, geschädigt wird. Ferner kann die mittelbare optische Wahrnehmung nicht wirklich einen Unterschied zur unmittelbaren optischen Wahrnehmung machen. Dies liegt allein schon darin begründet, dass eine Abgrenzung in Grenzfällen zwischen unmittelbarer und mittelbarer Wahrnehmung kaum möglich ist. Um in den Begrifflichkeiten der aberratio ictus zu bleiben, ging zudem nicht der Schlag oder Schuss des Täters fehl. Dieser schlug schließlich genau dort ein, wo er sollte. Vielmehr trat lediglich ein anderes Opfer an die Stelle des ursprünglich geplanten. Darin offenbart sich jedoch auch eine klare Abweichung von der aberratio ictus-Konstellation. Gegenüber der Individualisierungslösung steht der aberratioictus-Ansatz außerdem deutlich zurück, was die Flexibilität und Einzelfallgerechtigkeit betrifft. T wies daher Vorsatz in Bezug auf die Verletzung des N auf.
+
+Hinweis: Eine a.A. ist vertretbar. Dann ist eine versuchte Körperverletzung zulasten des O sowie eine fahrlässige Körperverletzung gegenüber N zu untersuchen.
+
+##### 3. Rechtswidrigkeit und Schuld
+
+T handelte rechtswidrig und schuldhaft.
+
+#### II. Ergebnis
+
+T ist gem. § 223 Abs. 1 StGB zulasten N strafbar. Ein nach § 230 Abs. 1 StGB erforderlicher Strafantrag liegt vor.
+
+Hinweis: Soweit man dieser Lösung folgt, wäre eine zusätzliche Annahme einer Strafbarkeit des T gem. §§ 223 Abs. 1, 22, 23 Abs. 1 StGB zulasten des O eine unzulässige Vorsatzverdoppelung.
+
+### B. Ergebnis
+
+T ist wegen Körperverletzung gem. § 223 Abs. 1 StGB strafbar.
+
+## Gesamtergebnis
+
+T hat sich gem. § 223 Abs. 1 StGB in Tatmehrheit nach § 53 StGB mit einer weiteren Körperverletzung gem. § 223 Abs. 1 StGB strafbar gemacht. O ist straffrei.
