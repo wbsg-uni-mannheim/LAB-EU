@@ -226,3 +226,23 @@ docs/
 
 
 outputs/
+
+# Local legal-review inputs and selection work
+/Professorenkommentare_*.md
+/tasks/de/auswahl-*.md
+/tasksets/de-core-*.jsonl
+/tasksets/de-urhg-core-15.jsonl
+/tests/fixtures/*professor_gold.json
+/scripts/build_jurist_case_packages.py
+
+# Local batch state, raw model responses, and temporary source material
+/runs/rubric-draft-batches/
+/runs/rubric-validations/
+/runs/studies/
+/tmp/
+
+# Experimental rubric variants. Force-add only an explicitly frozen final rubric.
+/tasks/**/evals/rubric.generated.broad-*.json
+/tasks/**/evals/rubric.generated.sol*.json
+/tasks/**/evals/rubric-review.sol*.md
+/tasks/**/evals/rubric.sol*.json

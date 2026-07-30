@@ -1,0 +1,281 @@
+# Musterlösung
+
+## Frage 1: Stehen M die geforderten 14.000 € zu?
+
+#### I. §§ 985, 285 BGB
+
+M könnte gegen S einen Anspruch auf Herausgabe des Veräußerungserlöses i.H.v. 14.000 € aus §§ 985, 285 BGB haben.
+
+##### 1. Anwendbarkeit
+
+Die Anwendbarkeit des schuldrechtlichen § 285 BGB auf den dinglichen Herausgabeanspruch aus § 985 BGB ist umstritten. Während das Reichsgericht diese Frage bejahte, lehnt die nunmehr einhellige Auffassung die Anwendbarkeit zu Recht ab. Hierfür spricht die fehlende Identität des nach § 985 BGB geschuldeten Gegenstandes und eines etwaigen vom Dritten erlangten Ersatzes bzw. Ersatzanspruchs. Denn bei Veräußerung der Sache erlangt der Schuldner des Herausgabeanspruchs den Kaufpreis nicht für den von ihm gegenüber dem Eigentümer geschuldeten Gegenstand – § 985 BGB ist auf bloße Besitzverschaffung gerichtet (reine Auskehrfunktion) –, sondern für die (vermeintliche) Übertragung des Eigentums an den Dritten. Hinzu kommt, dass sich selbst ein gutgläubiger und unverklagter Besitzer in den Fällen des Abhandenkommens im Grundsatz der Gefahr einer doppelten Inanspruch-nahme von Eigentümer (§§ 985, 285 BGB) und Erwerber (Sekundäransprüche aus allgemeinem Schuldrecht) ausgesetzt sähe. Ferner ist der Veräußerungserlös als Eigentumssurrogat systematisch mit dem Eigentumsfortwirkungsanspruch aus § 816 Abs. 1 S. 1 BGB abzuschöpfen, der dem Eigentümer nach § 185 Abs. 2 Var. 1 BGB die Option einer Genehmigung eröffnet. Daher stellen die §§ 989 ff. BGB gegenüber §§ 985, 285 BGB abschließende Sondervorschriften dar.
+
+##### 2. Ergebnis
+
+Ein Anspruch des M gegen S aus §§ 985, 285 BGB scheidet aus.
+
+#### II. §§ 687 Abs. 2 S. 1, 681 S. 2, 667 BGB
+
+Ein Anspruch des M gegen S auf Herausgabe des Veräußerungserlöses i.H.v. 14.000 € könnte sich jedoch aus §§ 687 Abs. 2 S. 1, 681 S. 2, 667 Alt. 2 BGB ergeben.
+
+##### 1. Anwendbarkeit
+
+Der Anspruch dürfte nicht vom Vorrang eines etwaigen Eigentümer-Besitzer-Verhältnisses (nachfolgend: EBV) gesperrt sein. Nach h.M. kann der Eigentümer die Ansprüche infolge angemaßter Eigengeschäftsführung gem. § 687 Abs. 2 S. 1 BGB und die Ansprüche aus den §§ 987 ff. BGB stets gleichzeitig geltend machen. Hierfür spricht, dass die gleichzeitige Anwendung für den Eigentümer insbesondere wegen der weitergehenden Auskunfts- und Rechenschaftsansprüche (§§ 687 Abs. 2 S. 1, 681 S. 2, 666 BGB) und der „Zufallshaftung“ gem. §§ 687 Abs. 2 S. 1, 678 BGB günstig ist. Diese Meistbegünstigung erscheint angemessen, da der Geschäftsanmaßer nicht schutzwürdig ist. Die Gegenauffassung argumentiert, dies würde ein in sich wertungskonsistentes Haftungsregime aus dem Gleichgewicht bringen. Sie spricht sich dafür aus, danach abzugrenzen, ob jemand altruistisch tätig wird (dann §§ 677 ff. BGB) oder ob jemand eigennützig tätig wird (dann §§ 987 ff. BGB). Der angemaßte Eigengeschäfts-führer hafte demnach nur nach den §§ 987 ff. BGB. Letztlich muss danach differenziert werden, worauf sich das Begehren des Geschäftsherrn richtet. Verlangt er die Herausgabe des Veräußerungs-erlöses nach §§ 687 Abs. 2 S. 1, 681 S. 2, 667 Alt. 2 BGB, ergibt sich hieraus kein Konkurrenzproblem mit den §§ 987 ff. BGB. Die §§ 987 ff. BGB regeln nur Ansprüche wegen Nutzung oder Verschlechte-rung der Sache und wegen Verwendungen auf die Sache. Ansprüche wegen Veräußerung der Sache, die sich auf die Herausgabe des Erlöses richten, bestehen daher neben und unabhängig von den §§ 987 ff. BGB. Folglich ist § 687 Abs. 2 S. 1 BGB anwendbar.
+
+##### 2. Fremdes Geschäft
+
+Mit der Veräußerung der Hebebühne hat S eine Geschäftsbesorgung vorgenommen. Das Geschäft müsste aus Sicht des S fremd sein. Objektiv fremd ist ein Geschäft, welches die Rechtsordnung nach Inhalt, Natur oder äußerem Erscheinungsbild einem anderen Rechts- und Interessenkreis als dem des Handelnden zuordnet. Die Veräußerung einer Sache obliegt als Ausfluss des Eigentumsrechts i.S.d. § 903 BGB dem Eigentümer, hier also M. S hat demnach ein objektiv fremdes Geschäft geführt.
+
+##### 3. Behandlung als eigenes Geschäft
+
+S müsste dieses fremde Geschäft als eigenes geführt haben. Dies ist der Fall, wenn der Geschäftsführer ausschließlich mit Eigengeschäftsführungsabsicht handelt. Eigengeschäftsführungsabsicht liegt vor, wenn der Geschäftsanmaßer die Vorteile aus dem Geschäft nur für sich selbst will. Die Absicht muss sich dabei in der Anmaßungshandlung äußerlich manifestieren. S wollte den Veräußerungserlös für sich behalten. Er war nicht bereit, die Hebebühne an M herauszugeben und hatte demnach auch im Rahmen der Veräußerung nicht den Willen, ein Geschäft des M zu führen. Jedenfalls mit der Über-gabe an X hat S seine Eigengeschäftsführungsabsicht auch äußerlich manifestiert.
+
+##### 4. Fehlende Berechtigung und positive Kenntnis der Fremdheit
+
+S war nicht zur Veräußerung berechtigt. Jedenfalls mit dem Herausgabeverlangen des M dürfte jede Berechtigung des S, über die Hebebühne zur verfügen, erloschen sein. S hatte positive Kenntnis von der Fremdheit des Geschäfts. Er wusste um seine fehlende Berechtigung, da er bereits rechtskräftig zur Herausgabe verurteilt wurde.
+
+##### 5. Rechtsfolge
+
+Als Rechtsfolge verweist § 687 Abs. 2 S. 1 BGB auf § 681 BGB, dieser wiederum verweist in S. 2 auf § 667 Alt. 2 BGB. Der Herausgabeanspruch nach dieser Vorschrift erstreckt sich nach dem klaren Wortlaut der Norm („alles“) auch auf den – hier über den objektiven Wert hinausgehenden – Veräußerungsgewinn. M steht damit gegen S ein Anspruch auf Herausgabe des Veräußerungserlöses i.H.v. 14.000 € zu.
+
+#### III. Ansprüche auf Schadensersatz
+
+Etwaige Ansprüche auf Schadensersatz – etwa aus §§ 687 Abs. 2 S. 1, 678 BGB oder § 989 BGB – sind im Lichte des Begehrens des M nicht zielführend, da sich sein Schaden nach der Differenzhypothese lediglich auf den objektiven Wert i.H.v. 10.000 € beläuft und er demnach den höheren Veräußerungs-erlös nicht verlangen kann.
+
+Anmerkung: Ein Schadensersatzanspruch aus §§ 992, 823 Abs. 1 BGB dürfte nicht in Betracht kommen. Denn § 992 BGB ist nicht anwendbar, da S sich den Besitz weder durch (schuldhafte) verbotene Eigenmacht noch durch eine Straftat verschafft hat. Der verbleibende Schadensersatzanspruch aus § 823 Abs. 1 BGB wird sodann von § 993 Abs. 1 Hs. 2 BGB gesperrt.
+
+#### IV. §§ 812 Abs. 1 S. 2 Alt. 2, 818 Abs. 1 und Abs. 4, 820, 285 BGB
+
+Ein Anspruch des M auf Herausgabe des Veräußerungserlöses i.H.v. 14.000 € könnte sich aus § 812 Abs. 1 S. 2 Alt. 2 BGB ergeben.
+
+##### 1. Anwendbarkeit
+
+Wiederum stellt sich die Frage nach der Sperrwirkung eines etwaigen EBVs. Eine solche Sperrwirkung besteht jedoch nicht im Hinblick auf Ansprüche, die auf einen Ausgleich für die Nichtherausgabe der Sache gerichtet sind. Denn auch hier gilt, dass die §§ 987 ff. BGB nur Ansprüche wegen Nutzung oder Verschlechterung der Sache und wegen Verwendungen auf die Sache regeln. Ansprüche wegen Veräußerung der Sache, die sich auf Herausgabe des Erlöses richten, bestehen daher neben und unabhängig von den §§ 987 ff. BGB.
+
+##### 2. Etwas durch Leistung erlangt
+
+S müsste „etwas“ erlangt haben. Darunter ist jeder vermögenswerte Vorteil zu verstehen. Die Besitzerlangung an der Hebebühne führte zu einer Vermögensmehrung des S. M müsste gegenüber S eine Leistung erbracht haben. Darunter ist jede bewusste und zweckgerichtete Vermehrung fremden Vermögens zu verstehen. M wollte S Besitz an der Hebebühne verschaffen, als er ihm diese übergab. Danach liegt eine Leistung des M an S vor.
+
+##### 3. Mit Leistung bezweckter Erfolg
+
+Allerdings hat M nicht geleistet, um eine Kaufpreisschuld zu tilgen, da ein Kaufvertrag noch nicht abgeschlossen war. Vielmehr ist die Zuwendung (Übergabe der Hebebühne) zu einem anderen Zweck als zur Erfüllung einer Verbindlichkeit erfolgt. Wenn eine Leistung nicht den Erfolg bezweckt, eine Verbindlichkeit zu erfüllen, sondern in der Erwartung erfolgt, den Empfänger zu einem bestimmten Verhalten zu veranlassen, zu dem er sich rechtlich nicht verpflichten kann oder will, ist nicht die condictio indebiti gem. § 812 Abs. 1 S. 1 Alt. 1 BGB, sondern vielmehr die condictio ob rem gem. § 812 Abs. 1 S. 2 Alt. 2 BGB einschlägig. Es liegt ein sog. „Veranlassungsfall“ vor, nämlich der Wunsch des M nach dem Abschluss eines Kaufvertrags.
+
+##### 4. Nichteintritt des bezweckten Erfolges
+
+Der nach dem Inhalt des Rechtsgeschäfts bezweckte Erfolg dürfte zudem nicht eingetreten sein. M übergab S die Hebebühne einerseits nicht schon als Gegenstand einer vertraglichen Bindung (siehe oben) und andererseits auch nicht vor dem Hintergrund einer einseitigen Erwartung, sodass der bezweckte Erfolg mehr als ein Motiv des Leistenden und weniger als eine erzwingbare Verbind-lichkeit anzusehen ist. Es handelt sich um eine Willenseinigung derart, dass der Empfänger (S) die Zweckbestimmung des Leistenden (M) kennt und er durch die Annahme zu verstehen gibt, die Zweck-bestimmung zu billigen. Da hier die vereinbarte Zweckbestimmung die alleinige Grundlage der Leis-tung ist und nicht neben einen anderen Rechtsgrund tritt, liegt der Fall im gesicherten Anwendungs-bereich des § 812 Abs. 1 S. 2 Alt. 2 BGB.
+
+##### 5. Ausschlussgründe
+
+Weder war der Vertragsschluss im Hinblick auf die Reifenwuchtmaschine von Anfang an unmöglich noch hat M diesen Vertragsschluss selbst wider Treu und Glauben verhindert.
+
+##### 6. Rechtsfolge
+
+Fraglich ist, ob der von S erzielte Veräußerungserlös (commodum ex negotiatione) unter die Rechts-folge des § 818 Abs. 1 BGB fällt. Die wohl h.M. lehnt die Einbeziehung des Veräußerungserlöses als rechtsgeschäftliches Surrogat in die Herausgabepflicht ab. Hierfür spricht der Wortlaut des Gesetzes bzw. ein systematischer Vergleich. Anders als beispielsweise in § 2111 Abs. 1 S. 1 BGB umfasst § 818 Abs. 1 BGB nicht das „durch Rechtsgeschäft mit Mitteln des Erlangten Erworbene“. Danach ließe sich lediglich ein Wertersatzanspruch des M i.H.v. 10.000 € für den objektiven Wert der Hebebühne begründen.
+
+Anmerkung: Der Bundesgerichtshof (BGH) lehnt allerdings auch einen solchen Wertersatzanspruch ab, da kein selbständiger Vermögenswert neben etwaigen gezogenen Nutzungen im Vermögen des Bereicherungsschuldners verbleibe. Derjenige, der rechtsgrundlos den Besitz an einer Sache erlangt habe und diesen nicht mehr herausgeben kann, schulde mit Blick auf die Abschöpfungsfunktion des Bereicherungsrechts überhaupt keinen Wertersatz – weder als Ersatz des Substanzwertes, weil dieser nicht den Besitz, sondern das Eigentum repräsentiere, noch als Gebrauchswert – weil dieser nach § 818 Abs. 1 BGB nur in Gestalt tatsächlich gezogener Nutzungen abgeschöpft werde.
+
+##### 7. Verschärfte Haftung
+
+Der Anspruch könnte sich hier allerdings auch auf die Herausgabe des Veräußerungserlöses i.H.v. 14.000 € erstrecken, sofern S verschärft haften und diese verschärfte Haftung den Veräußerungserlös umfassen würde. Zunächst müsste S gem. § 818 Abs. 4 BGB (verschärft) nach den allgemeinen Vorschriften haften. Dies setzt voraus, dass die Klage des M auf Herausgabe der Hebebühne im Zeitpunkt der Veräuße-rung rechtshängig war. Eine Klage wird mit ihrer Zustellung beim Beklagten gem. §§ 253 Abs. 1, 261 Abs. 1 ZPO rechtshängig. S hat die Hebebühne hier sogar erst nach Erlass des rechtskräftigen Heraus-gabeurteils an einen Dritten veräußert. Demnach haftete S gem. § 818 Abs. 4 BGB ab diesem Zeit-punkt nach den allgemeinen Vorschriften. Daneben folgt die verschärfte Haftung auch aus § 820 Abs. 1 S. 1 BGB. S musste als Leistungsempfänger mit einer Herausgabepflicht rechnen. Er hatte erkannt, dass M mit seiner Leistung einen Erfolg bezweckte. Beiden war die Ungewissheit des Erfolgseintritts bewusst, da sie sich bei Hingabe der Hebebühne noch nicht auf einen Kaufpreis geeinigt hatten.
+
+###### a) Verweis auf § 292 Abs. 1 BGB
+
+§ 818 Abs. 4 BGB verweist auf die „allgemeinen Vorschriften“. Dies wird primär als Verweis auf §§ 291, 292 BGB verstanden. Vorliegend geht es um die Herausgabe eines Gegenstandes, sodass § 292 Abs. 1 BGB einschlägig ist. S ist es „aus einem anderen Grunde“ unmöglich, die Hebebühne an M herauszugeben. Daher verweist die Norm auf die Vorschriften, die für das Verhältnis zwischen Eigen-tümer und Besitzer ab Rechtshängigkeit gelten, demnach § 989 BGB. Dieser gewährt M gegen S einen Anspruch auf Schadensersatz, wenn S hinsichtlich der Unmöglichkeit der Herausgabe der Hebe-bühne ein Verschulden (§ 276 Abs. 1 BGB) zur Last fällt. S dürfte hinsichtlich der Veräußerung der Hebebühne sogar vorsätzlich gehandelt haben. Indes umfasst der Anspruch nicht die von M begehrten 14.000 €, da ihm lediglich ein Schaden nach Maßgabe der §§ 249 ff. BGB zu ersetzen ist. Dieser beträgt jedoch nur 10.000 €.
+
+###### b) Verweis auf § 285 BGB?
+
+Fraglich ist, ob daneben auch § 285 BGB zu den in § 818 Abs. 4 BGB genannten „allgemeinen Vorschriften“ zählt. Dies wird von der ganz h.M. in der Literatur und vom BGH angenommen. Das erscheint konsequent. Wenn es für Nutzungen zutrifft, dass § 818 Abs. 1 BGB durch §§ 818 Abs. 4, 292, 987 BGB verdrängt wird, liegt es nahe, auch hinsichtlich der Surrogate eine Spezialität des § 285 BGB anzunehmen. Zudem erfasst § 818 Abs. 1 BGB gerade keine rechtsgeschäftlichen Surrogate, sodass der verschärften Haftung ein erweiterter Anwendungsbereich zukäme. Damit müssten die tatbestandlichen Voraussetzungen des § 285 BGB vorliegen. S ist die Heraus-gabe der Hebebühne subjektiv unmöglich geworden (§ 275 Abs. 1 BGB). Zwar hat er als Nichtberech-tigter verfügt, gleichwohl hat X nach §§ 929 S. 1, 932 Abs. 1 S. 1 und Abs. 2 BGB gutgläubig Eigentum an der Hebebühne erworben und ist auch nicht zur Herausgabe bereit. Fraglich ist, ob das Erfordernis der Identität i.S.d. § 285 Abs. 1 BGB gewahrt ist. Denn S schuldet nach § 812 Abs. 1 S. 2 Alt. 2 BGB die Besitzverschaffung und keine Rückübereignung, während er den Kaufpreis als Surrogat für die Eigentumsübertragung der Hebebühne an X erlangt. Ob zwei Gegen-stände „funktionell vergleichbar“ und deshalb identisch i.S.d. § 285 Abs. 1 BGB sind, ist letztlich jedoch eine Wertungsfrage, die sich nur im Einzelfall im Hinblick auf den Zweck der gesetzlichen Regelung entscheiden lässt. Daher spricht maßgeblich für eine weite Auslegung des Identitätserfordernisses, dass nur der bösgläubige und verklagte Bereicherungsschuldner vom Gesetz in §§ 818 Abs. 4, 819 Abs. 1 BGB – anders als bei einer Anwendung von §§ 985, 285 BGB – durchgängig schlechter gestellt wird als der gutgläubige und unverklagte Bereicherungsschuldner. Eine pauschale, nach gutem Glauben und Rechtshängigkeit nicht differenzierende Anwendung von §§ 985, 285 BGB würde hingegen auch den gutgläubigen und unverklagten Vindikationsschuldner schlechter stellen, weil er sich in den Fällen des Abhandenkommens der Sache der Gefahr einer doppelten Inanspruch-nahme von Eigentümer (§§ 985, 285 BGB) und Erwerber (Sekundäransprüche aus dem allgemeinen Schuldrecht) ausgesetzt sähe. Demgegenüber ergibt sich eine Schlechterstellung des bösgläubigen oder verklagten Besitzers auch aus den – mit den Fällen der verschärften Bereicherungshaftung insoweit vergleichbaren – §§ 989, 990 BGB, da der Herausgabeschuldner letztlich einen am Wiedererlangungsinteresse des Eigentümers ausgerichteten Schadensersatz leisten muss, obwohl § 985 BGB – wie § 812 Abs. 1 S. 2 Alt. 2 BGB in unserem Fall – auf Herausgabe des Besitzes gerichtet ist. Als Folge dieser weiten – am Zweck der verschärften Bereicherungshaftung ausgerichteten – Auslegung-, ist das Identitätserfordernis gewahrt.
+
+Anmerkung: Eine andere Ansicht ist gut vertretbar.
+
+###### c) Umfang des Herausgabeanspruchs
+
+Nach h.M. umfasst § 285 BGB auch die Herausgabe des commodum ex negotiatione. Die Gegenauffassung argumentiert, dass der Bereicherungsschuldner „infolge des Umstands, auf Grund dessen er die Leistung nach § 275 Abs. 1 bis 3 nicht zu erbringen braucht“ – hier die Übereignung an X – nicht den Veräußerungserlös, sondern lediglich die Befreiung von der Verbindlichkeit erlangt habe, den Gegenstand zu übereignen. Diese Befreiung sei jedoch nur so viel wert, wie der objektive Wert des veräußerten Gegenstandes. Zwar ist richtig, dass die Unmöglichkeit der Leistung bei exakter Betrachtung erst durch das dingliche Erfüllungsgeschäft bewirkt wird; jedoch ist diese Unmöglich-keit adäquate Folge des vorausgehenden Kaufvertrags. Folglich erlangt der Schuldner, der den Schuldgegenstand veräußert, eben durch denselben Umstand, der mittelbar die Unmöglichkeit der Leistung bewirkt, den Kaufpreis als Ersatz. Deshalb muss er diesen Ersatz dem Gläubiger herausgeben. Folgt man der h.M., kommt § 285 BGB über § 818 Abs. 4 BGB auf den verschärft haftenden Berei-cherungsschuldner zur Anwendung. In der Folge kann der Gläubiger den erzielten Erlös herausverlangen, sofern die Herausgabe des geschuldeten Gegenstandes deshalb unmöglich ist, weil der Bereicherungsschuldner ihn veräußert hat. Die bereicherungsrechtliche Privilegierung des gutgläubigen Bereicherungsschuldners, der nach § 818 Abs. 1 BGB den erzielten Veräußerungsgewinn nicht herauszugeben braucht, steht diesem Ergebnis nicht entgegen, da der bösgläubige oder verklagte Bereicherungsschuldner vom Gesetz durchgängig schlechter gestellt wird als der gutgläubige Berei-cherungsschuldner. Danach kann M von S den gesamten Veräußerungserlös i.H.v. 14.000 € herausverlangen.
+
+##### 8. Ergebnis
+
+M steht gegen S ein Anspruch auf Herausgabe des Veräußerungserlöses i.H.v. 14.000 € aus §§ 812 Abs. 1 S. 2 Alt. 2, 818 Abs. 4, 820, 285 BGB zu.
+
+#### V. § 816 Abs. 1 S. 1 BGB
+
+Weiterhin könnte sich ein Anspruch des M gegen S auf Herausgabe des Veräußerungserlöses i.H.v. 14.000 € aus § 816 Abs. 1 S. 1 BGB ergeben.
+
+##### 1. Anwendbarkeit
+
+Die Norm dürfte wiederum nicht durch den Anwendungsvorrang des EBVs gesperrt sein. Die ganz h.M. geht davon aus, dass § 816 Abs. 1 S. 1 BGB neben den §§ 987 ff. BGB anwendbar ist. Ein Kon-kurrenzproblem ergibt sich daraus abermals nicht, weil §§ 987 ff. BGB den Fall der Erlösherausgabe gar nicht erfassen. §§ 987 ff. BGB regeln nur Ansprüche wegen Nutzung oder Verschlechterung der Sache und wegen Verwendungen auf die Sache. Ansprüche wegen Veräußerung der Sache bestehen daher neben und unabhängig von §§ 987 ff. BGB. Folglich ist § 816 Abs. 1 S. 1 BGB anwendbar.
+
+##### 2. Verfügung als Nichtberechtigter
+
+S müsste mit der Übereignung der Hebebühne an X über diese verfügt haben. Eine Verfügung ist ein Rechtsgeschäft, das unmittelbar auf die Veränderung, Übertragung oder Aufhebung eines bestehenden Rechts gerichtet ist. Die Übertragung des Eigentums stellt eine solche Verfügung dar. S war weder Eigentümer der Hebebühne noch zur Verfügung über diese ermächtigt. Er handelte somit als Nichtberechtigter.
+
+##### 3. Wirksamkeit der Verfügung gegenüber dem Berechtigten
+
+Die Verfügung war auch gegenüber M gem. §§ 929 S. 1, 932 Abs. 1 S. 1 und Abs. 2 BGB wirksam. S hat sich mit X über den Übergang des Eigentums geeinigt und ihm den unmittelbaren Besitz an der Hebebühne übertragen. Die fehlende Berechtigung des S wurde gem. § 932 Abs. 1 S. 1 und Abs. 2 BGB überwunden, da X gutgläubig auf das Eigentum des S an der Hebebühne vertraute. Ein Fall des Abhandenkommens (§ 935 BGB) liegt nicht vor, da M die Hebebühne freiwillig S überlassen hat. Durch den gutgläubigen Erwerb des X kann M die Hebebühne nicht von ihm herausverlangen.
+
+##### 4. Rechtsfolge
+
+Nach wohl h.M. umfasst § 816 Abs. 1 S. 1 BGB auch den anlässlich der Verfügung erzielten Gewinn. Es sei das Recht des Eigentümers, seine Sache gewinnbringend zu verwerten. Daher stehe ihm auch der Gewinn zu, der dem Nichtberechtigten zugeflossen ist. Grobe Unbilligkeiten sollen im Einzelfall mit § 242 BGB ausgeglichen werden. Die Gegenansicht steht auf dem Standpunkt, dass nach dem Gesetzeswortlaut nur das durch die Verfügung Erlangte herauszugeben ist. Der Veräußerer erlange durch seine wirksame Verfügung die Befreiung von der gegen ihn gerichteten Forderung. Da diese Befreiung nicht in natura herausgegeben werden könne, komme es gem. § 818 Abs. 2 BGB zum Wertersatz, der sich nach dem Wert des Gegenstandes bestimme, auf dessen Leistung die Forderung gerichtet war. Zudem solle das Verkaufsgeschick eines gutgläubigen Nichtberechtigten nicht dem Eigentümer in Form des Übererlöses zugutekommen. Für die h.M. spricht, dass die Veräußerung einer Sache und damit auch die Möglichkeit eines potenziellen Übererlöses vom Zuweisungsgehalt des Eigentums erfasst ist. Dem Eigentümer wird durch die Verfügung des Nichtberechtigten die Chance genommen, die Sache durch eigenes Verhandlungsgeschick gewinnbringend zu veräußern. Folglich umfasst die Herausgabepflicht den gesamten Veräußerungserlös.
+
+##### 5. Ergebnis
+
+M kann von S die Herausgabe der 14.000 € aus § 816 Abs. 1 S. 1 BGB verlangen.
+
+#### VI. §§ 812 Abs. 1 S. 1 Alt. 2, 818 Abs. 4, 820, 285 BGB
+
+Ansprüche aus Eingriffskondiktion gem. § 812 Abs. 1 S. 1 Alt. 2 BGB (hinsichtlich des Eigentums) scheitern daran, dass § 816 Abs. 1 S. 1 BGB insoweit die speziellere Norm darstellt.
+
+#### VII. Gesamtergebnis
+
+S muss den Veräußerungserlös i.H.v. 14.000 € nach der hier vertretenen Auffassung an M herausgeben.
+
+## Frage 2: Hat M gegen S einen Anspruch auf Zahlung von 20.000 € oder sogar 30.000 €?
+
+#### I. § 539 Abs. 1 BGB ggf. i.V.m. §§ 677, 683 S. 1, 670 BGB
+
+M könnte gegen S einen Anspruch auf Zahlung von 20.000 € aus § 539 Abs. 1 BGB ggf. i.V.m. §§ 677, 683 S. 1, 670 BGB haben.
+
+##### 1. Aufwendungen
+
+Ein solcher mietvertraglicher Aufwendungsersatzanspruch setzt neben einem hier gegebenen Miet-vertrag (§ 535 BGB) auch Aufwendungen des Mieters auf die Mietsache i.S.d. § 539 Abs. 1 BGB voraus. Solche liegen vor, wenn sie der Erhaltung, Wiederherstellung oder Verbesserung der Mietsache dienen und nicht unter § 536a Abs. 2 Nr. 2 BGB fallen, wie z.B. eine Renovierung oder Modernisierung.
+
+###### a) Keine notwendigen Aufwendungen zur Mängelbeseitigung
+
+Demnach dürfte keine notwendige Aufwendung zur Mängelbeseitigung i.S.d. § 536a Abs. 2 Nr. 2 BGB gegeben sein. Eine notwendige Aufwendung liegt vor, wenn sie der Mietsache unmittelbar zugutekommt und gerade ihrem Erhalt, ihrer ordnungsgemäßen Bewirtschaftung oder ihrer Wiederherstellung dient (enge Auslegung). § 539 Abs. 1 BGB erfasst hingegen alle sonstigen Maßnahmen, die die Mietsache lediglich verbessern oder verändern, d.h. nützliche Aufwendungen und Luxusaufwendungen. Der Bau des Lagers diente ersichtlich nicht der Mängelbeseitigung am Grundstück. Die Errichtung bezweckte, das Grundstück zu verbessern und diente folglich nicht dessen Erhalt oder Wiederherstellung. § 536a Abs. 2 Nr. 2 BGB ist daher nicht anwendbar.
+
+###### b) Sonstige Aufwendungen i.S.d. § 539 Abs. 1 BGB
+
+Bei sonstigen Aufwendungen i.S.d. § 539 Abs. 1 BGB ist zwischen nützlichen Aufwendungen und Luxus-aufwendungen zu unterscheiden. Nützliche Aufwendungen sind solche, die den Verkehrswert der Mietsache steigern, während Luxusaufwendungen letztlich keinen Gewinn für den Vermieter darstellen. Ob diese Werterhöhung nach subjektiven oder objektiven Kriterien zu beurteilen ist, ist umstritten. Die traditionelle Auffassung bestimmt sie nach dem objektiven Maßstab des Verkehrswertes und lässt unberücksichtigt, ob und welchen Nutzen sie für den konkreten Eigentümer hat. Vertreter dieser Ansicht stellen darauf ab, ob die Verwendungen der Sache nützlich sind, weil sie ihren Wert erhöhen, nicht hingegen, ob sie dem Eigentümer nützlich sind. Auf diese Weise kann es dazu kommen, dass dem Eigentümer eine Bereicherung aufgedrängt wird. Deshalb wollen andere Stimmen, insbesondere im neueren Schrifttum, den subjektiven Nutzen für den Eigentümer berücksichtigen, indem sie einen subjektiv geringeren Wert ansetzen, solange der Eigentümer den höheren objektiven Wert nicht realisiert. Angesichts des gesteigerten Verkehrswertes des Grundstücks um 30.000 € liegen nützliche Aufwendungen vor. Auch nach der subjektiven Auffassung kann die Nützlichkeit des Lagers nicht abgesprochen werden, da S das Lager behalten will und ihm damit nichts aufgedrängt wird. Der Streit kann deshalb dahinstehen.
+
+Anmerkung: Der BGH hat sich erstmals mit Urteil vom 14.3.2025 für eine objektive Bestimmung der Werterhöhung ausgesprochen. Dabei stellt er den Wortlaut des § 996 BGB systematisch §§ 994, 997 Abs. 2 BGB gegenüber. Insbesondere beziehe sich § 996 BGB ausschließlich auf den Wert der Sache und enthalte – anders als § 997 Abs. 2 BGB – keine Einschränkung dahingehend, dass es nur auf den Wert ankäme, den die Sache für den Eigentümer („für ihn“) hat. Auch der Verweis in § 994 Abs. 2 BGB auf §§ 677 ff. BGB ermögliche eine Berücksichtigung von Eigentümerinteressen. Zudem habe der historische Gesetzgeber, der keinen umfassenden Schutz vor einer aufgedrängten Bereicherung gewähren wollte, gewusst, dass nach § 996 BGB auch nicht im Eigentümerinteresse liegende Ver-wendungen unter den Ersatzanspruch fielen. Während dieser ohnehin nur auf die eingetretene Werterhöhung begrenzt sei, habe der gutgläubige und unverklagte Besitzer im Vertrauen auf sein Eigentum keinerlei Anlass, sich über die – nach der subjektiven Gegenauffassung kaum rechtssicher vorhersagbare – Nützlichkeit der Verwendungen Gedanken zu machen.
+
+###### c) Übertragung der Wertungen aus den §§ 994 ff. BGB
+
+Fraglich ist, ob M nützliche Aufwendungen auf das Grundstück als Mietsache gemacht hat, indem er dessen Zweck durch Bebauung mit einer Lagerhalle änderte. Nach dem weiten Verwendungsbegriff der Literatur ist jede Aufwendung, die der Sache irgendwie zugutekommt, als Verwendung anzusehen. Demnach stellt der Lagerbau, der das Grundstück in gewisser Weise verbessert, trotz Zweckänderung eine Verwendung dar. Dem könnte jedoch die Auffassung der bis vor Kurzem geltenden Rechtsprechung zum engen Ver-wendungsbegriff entgegenstehen, sofern die Wertungen der §§ 994 ff. BGB auf § 539 Abs. 1 BGB übertragbar sind. Verwendungen sind Vermögensaufwendungen des Besitzers, die nach seinem Willen der Sache unmittelbar zugutekommen sollen, also ihrer Erhaltung, Wiederherstellung oder Verbes-serung dienen. Dagegen liegen Aufwendungen im Sinne freiwilliger Vermögensopfer bereits in jeder geldwerten Leistung, die der Sache zugutekommt, ohne dass eine körperliche Veränderung der Sache – etwa bei Eingehen einer Verbindlichkeit – vorliegen muss. Fraglich ist, wie die Übertragung der Wertungen des Verwendungsbegriffs auf den Aufwendungs-begriff in § 539 Abs. 1 BGB gerechtfertigt werden kann. Teleologisch bezwecken sowohl §§ 994 ff. BGB als auch § 539 Abs. 1 BGB einen Ausgleich für bleibende wirtschaftliche Vorteile beim Vermieter, die er durch werterhöhende Maßnahmen des Mieters erhält. Dies dürfte selbst dann gelten, wenn man die Ratio der §§ 994 ff. BGB darin sieht, dem Besitzer einen Ersatzanspruch für dessen Verlust oder Entreicherung zu gewähren. Damit ist der Sinn und Zweck beider Anspruchsgrundlagen im Kern vergleichbar. Historisch unterschied der Gesetzgeber bis zur Mietrechtsreform 2001 in § 547 Abs. 1 und Abs. 2 BGB a.F. zwischen notwendigen und sonstigen Verwendungen des Mieters auf die Sache. Die Ablösung durch den Begriff der Aufwendungen in § 539 Abs. 1 BGB sollte nach der Gesetzes-begründung mit Blick auf § 538 Abs. 2 BGB a.F., der den Ersatz erforderlicher Aufwendungen regelte, eine einheitliche Terminologie innerhalb des Mietrechts schaffen. § 547 Abs. 1 BGB a.F. und § 538 Abs. 2 BGB a.F. sind wegen bestehender Abgrenzungsschwierigkeiten in § 536a Abs. 2 BGB zusammengefasst worden. § 547 Abs. 2 BGB a.F. wurde in § 539 Abs. 1 BGB novelliert. Es ist aber gerade nicht ersichtlich, dass der bis dahin geltende Norminhalt, der auf Verwendungen ausgerichtet war, aufgegeben werden sollte; die bis dahin geregelte sonstige Verwendung i.S.d. § 547 Abs. 2 BGB a.F. ist nunmehr i.S.d. § 539 Abs. 1 BGB eine Aufwendung auf die Mietsache, die der Vermieter dem Mieter nicht nach § 536a Abs. 2 BGB zu ersetzen hat. Auch der einzige wesentliche materielle Unterschied des § 539 Abs. 1 BGB zu §§ 994 ff. BGB, wonach auch – hier nicht einschlägige – Luxusaufwendungen erfasst sind, war bereits in § 547 BGB a.F. angelegt und sollte daher inhaltlich nach 2001 fortgeführt werden. Für die Auslegung des Aufwendungsbegriffs kann somit auf den weitgehend inhaltsgleichen Begriff der Verwendungen aus §§ 994 ff. BGB zurückgegriffen werden. Vor diesem Hintergrund stellt sich die Frage, ob sachändernde Aufwendungen von § 539 Abs. 1 BGB erfasst sind.
+
+###### d) Enger Verwendungsbegriff der früheren Rechtsprechung
+
+Nach bisheriger Auffassung des BGH fielen bei Grundstücksmietverträgen Leistungen zur Bebauung des Grundstücks oder zur Errichtung größerer Anbauten nicht unter den Verwendungsbegriff, wenn sie den Charakter des Grundstücks und seine Nutzungsart grundlegend veränderten. Es lag also keine Verwendung vor, wenn die Grundstücksbebauung nicht dazu diente, die Bausubstanz zu erhalten, zu verbessern oder zu pflegen (Sanierung), sondern ein vollkommen neues Bauwerk geschaffen wurde (sachändernde Verwendung). So aber liegt der Fall, wenn der Besitzer auf einem bisher unbebauten Grundstück ein Wohnhaus, eine Lagerhalle oder ein Fabrikgebäude errichtet. Dann wird durch den Bau nicht das Grundstück in seinem Bestand verbessert, sondern sein Zustand verändert, indem es fortan für einen Zweck benutzt wird, dem es bisher nicht gedient hat. Der BGH schloss in solchen Fällen eine Verwendung auf das Grundstück mit dem Argument aus, der Sprachgebrauch würde die Errichtung eines Bauwerks nicht als Grundstücksverwendung bezeichnen. Wollte man die Errichtung von Gebäuden einbeziehen, so würde der Anwendungsbereich der §§ 994 ff. BGB in einer Weise erweitert, die ersichtlich nicht mehr dem Zweck der gesetzlichen Rege-lung entspräche und für die auch kein vernünftiges wirtschaftliches Bedürfnis bestünde. Der BGH verneinte außerdem eine Verwendung, wenn der Mieter eines Grundstücks auf diesem ein Gebäude errichtet, welches gem. §§ 93, 94, 946 BGB Eigentum des Grundstückseigentümers wird. Eine Anwendung dieser Auffassung ergibt, dass M keine Verwendungen auf das unbebaute Grundstück des S gemacht hat. Denn die Bebauung mit einer Lagerhalle war keine den Bestand des Grundstücks erhaltende, wiederherstellende oder verbessernde Maßnahme. Vielmehr handelte es sich um eine Zustandsveränderung, die darauf abzielte, dem Anwesen eine ganz andere Zweckbestimmung zu geben als bisher. Ferner wurde das Lager gem. § 94 Abs. 1 BGB wesentlicher Bestand-teil des Grundstücks, sodass S nach § 946 BGB Eigentümer des Lagers wurde. Fehlt es aber an einer Verwendung, dann entfällt auch die Anwendbarkeit des § 539 Abs. 1 BGB.
+
+###### e) Hintergrund der früheren Rechtsprechung
+
+Für den engen Verwendungsbegriff spricht, dass er den Eigentümer faktisch vor einer aufgedrängten Bereicherung schützen soll. Denn bei Zustandsveränderungen an Grundstücken müsste er im Wege des Verwendungsersatzes immense Beträge liquide machen, um den Besitzer bzw. Mieter zu kompensieren. Diese (unerwünschte) Konsequenz kann nur dadurch abgewendet werden, dass man Zustandsveränderungen nicht als Verwendungen ansieht. Eine Umgehung des hierdurch vermittelten Schutzes vor einer aufgedrängten Bereicherung wird zusätzlich dadurch vermieden, dass im Falle einer Vindikationslage §§ 987 ff. BGB als erschöpfende Sonderregelungen eine Sperrwirkung gegenüber §§ 951, 812 ff. BGB entfalten. Der gutgläubige, unverklagte Besitzer wird auf das Wegnahme-recht aus § 997 Abs. 1 BGB bzw. bei dessen fehlender Realisierbarkeit auf einen Ausgleichsanspruch gem. § 242 BGB in Höhe des Wegnahmerechts verwiesen.
+
+###### f) Aufgabe des engen Verwendungsbegriffs und Bewertung
+
+Im „Rangsdorfer Hausdrama“ änderte der BGH nunmehr seine Rechtsprechung zum Verwendungs-begriff. Der V. Zivilsenat und der XII. Zivilsenat gaben ihre bisherige gemeinsame Rechtsauffassung ausdrücklich auf und schlossen sich ungewohnt selbstkritisch dem weiten Verwendungsbegriff der Literatur an, wonach richtigerweise alle Vermögensaufwendungen, die der Sache zugutekommen sollen, auch wenn sie die Sache grundlegend verändern, erfasst sind. In diesem Zusammenhang stellt der V. Zivilsenat klar, dass die Änderung einer gefestigten Rechtsprechung nur ausnahmsweise dann möglich sei, wenn deutlich überwiegende oder sogar schlechthin zwingende Gründe dafürsprächen. Eine solche Einschränkung von Rechtssicherheit und Vertrauensschutz sei hier jedoch gerechtfertigt, da §§ 987 ff. BGB zwingendes Recht beträfen und die bisherige Auslegung für den Besitzer eine unzumutbare – in vielen Fällen gar ruinöse – Härte bedeuten würde.
+
+###### aa) Grammatikalische Auslegung
+
+Zu Recht geht der V. Zivilsenat nunmehr davon aus, dass die Errichtung eines Gebäudes auf einem zuvor unbebauten Grundstück vom möglichen Wortsinn einer Verwendung erfasst ist. Denn dem Wortlaut des § 996 BGB lassen sich keine Anhaltspunkte für eine einschränkende Auslegung entnehmen. Das Argument, dass nach dem allgemeinen Sprachgebrauch in der Bebauung eines zuvor unbebauten Grundstücks wegen der Entstehung einer neuen Sache keine „Verwendung auf eine Sache“ läge, lehnt der V. Zivilsenat nunmehr ausdrücklich ab. Der Ausdruck „Verwendungen vornehmen“ kommt – anders als das Wort „verwenden“ im Sinne von benutzen, gebrauchen oder anwenden – außerhalb der juristischen Fachsprache gerade nicht vor.
+
+###### bb) Systematische Auslegung
+
+Vorschriften außerhalb der §§ 994 ff. BGB, die einen Verwendungsersatz regeln – etwa §§ 347 Abs. 2, 459 f., 601 Abs. 2, 850, 2125, 2381 BGB –, geben keinen Hinweis auf einen Ausschluss sachändernder Verwendungen. Zu Unrecht wurde früher auch auf § 950 BGB verwiesen, der – in ganz anderem Zusammenhang – die völlige Umgestaltung einer beweglichen Sache als Verarbeitung und nicht als Verwendung bezeichnet.
+
+###### cc) Historische Auslegung
+
+Aus den Gesetzgebungsmaterialien zum BGB ergibt sich, dass die Verfasser unter Verwendungen auf die Sache solche Geschäfte verstanden haben, deren wirtschaftlicher Erfolg dem dinglich Berechtig-ten in irgendeiner Weise zugutekommt. Insbesondere wird der Bau auf fremdem Boden in den Materialien mehrfach als Beispiel für eine Verwendung genannt. Bereits das Reichsgericht hat deshalb Verwendungen als Vermögensaufwendungen, die einer bestimmten Sache zugutekommen sollen, definiert.
+
+###### dd) Teleologische Auslegung
+
+§§ 994 ff. BGB bezwecken einen angemessenen Ausgleich zwischen den widerstreitenden Interessen des Besitzers und denen des Eigentümers. Eine einseitige Begünstigung ist gerade nicht gewollt, da §§ 994 ff. BGB teilweise zugunsten des Eigentümers, teilweise zugunsten des Besitzers von den allgemeinen Vorschriften der §§ 677 ff. BGB und §§ 812 ff. BGB abweichen. Der Senat führt sodann zutreffend aus, dass der Eigentümer durch eine Ersatzpflicht, die im Falle des § 996 BGB zu seinem Schutz auf die Verkehrswerterhöhung begrenzt ist, nicht in seinem Vermö-gen, sondern nur in seiner Dispositionsbefugnis beeinträchtigt wird. Diese wird in §§ 994 ff. BGB nicht absolut geschützt, sondern gerade eingeschränkt. Dass der Eigentümer zu einer Änderung der Zweck-bestimmung oder ggf. zum Verkauf der Sache gezwungen werden kann, ist gerade im Gesetz angelegt. Denn ausweislich der §§ 989 f., 1000, 1001 S. 2 und 1003 BGB ist der Verlust der Sache in bestimmten Konstellationen sogar gesetzlich vorgesehen. Der Eigentümer kann sich insbesondere durch Rückgabe der Sache von dem Anspruch befreien (vgl. § 1001 S. 2 BGB). Demgegenüber verbleibt dem gutgläubigen und unverklagten Besitzer nach dem engen Verwen-dungsbegriff nur das regelmäßig wirtschaftlich wertlose Wegnahmerecht aus § 997 BGB, weil §§ 812 ff. BGB gesperrt sind. Ein auf die Höhe des Wegnahmerechts begrenzter und ohnehin seltener Aus-gleichsanspruch aus § 242 BGB ist wirtschaftlich kaum mit einem Verwendungsersatzanspruch vergleichbar. Ein solches Ergebnis steht im Widerspruch dazu, dass der gutgläubige und unverklagte (Eigen-)Besitzer darauf vertraut und vertrauen darf, dass er mit der Sache – wie ein Eigentümer – nach Belieben verfahren kann, § 903 S. 1 BGB. Er kann und soll sich naturgemäß keine Gedanken darüber machen, ob er das Grundstück zu einem anderen Zweck als der wahre Eigentümer nutzt. Sonst hinge das Bestehen des Ersatzanspruchs davon ab, ob der Besitzer das Grundstück zufällig zu demselben Zweck nutzen möchte wie der wahre Eigentümer. Eine solche Härte für den Besitzer widerspricht der Ratio eines angemessenen Interessenausgleichs und verdeutlicht zugleich ein vernünftiges wirtschaftliches Bedürfnis des Besitzers.
+
+###### ee) Folgenorientierte Auslegung
+
+Schließlich führt der enge Verwendungsbegriff zu erheblichen Abgrenzungsschwierigkeiten und damit zu Rechtsunsicherheit. Denn es bleibt unklar, wann noch eine erhaltende oder verbessernde und wann bereits eine grundlegend verändernde Aufwendung vorliegt. Der Senat hinterfragt zu Recht, inwieweit eine Änderung von Art und Maß der baulichen Nutzung für das Vorliegen einer Verwendung überhaupt eine Rolle spielen kann. Es sind auch keine Sachgründe dafür ersichtlich, die umfassende Sanierung eines bestehenden Hauses (Verwendung) anders zu behandeln als den Abriss und Neubau (keine Verwendung). Bei kostenintensiven Sanierungen würde selbst der enge Ver-wendungsbegriff nicht vor einer finanziellen Überforderung des Eigentümers schützen.
+
+Anmerkung: Das Urteil bietet einen umfassenden Überblick über Ansprüche im System des EBV, ist methodisch sehr lehrreich, für die Rechtspraxis von erheblicher Bedeutung und daher zur Lektüre besonders empfehlenswert. Eine derart detaillierte Bearbeitung kann von den Bearbeitern nicht erwartet werden.
+
+###### g) Zwischenergebnis
+
+Damit überzeugt die umfassende Argumentation des V. Zivilsenates zugunsten des weiten Verwen-dungsbegriffs. Folglich liegen Verwendungen und damit auch Aufwendungen i.S.d. § 539 Abs. 1 BGB vor. Ferner liegt der Zweck der §§ 994 ff. BGB darin, einen angemessenen Ausgleich zwischen den Interessen des Besitzers und denen des Eigentümers zu gewährleisten. Dieser Ausgleichsmechanis-mus muss auch bei einer grundlegenden Umgestaltung der Sache gewährleistet sein, da der Eigen-tümer nicht übervorteilt werden darf. Den notwendigen Schutz vor aufgedrängter Bereicherung gewährt dem Eigentümer die Differenzierung zwischen notwendigen und sonstigen Verwendungen sowie die Anwendung der Grundsätze über den Schutz vor einer aufgedrängten Bereicherung. Folglich liegen Verwendungen und damit auch Aufwendungen i.S.d. § 539 Abs. 1 BGB vor.
+
+Anmerkung: Mit entsprechender Argumentation kann auch der bisherigen Rechtsprechung gefolgt werden. In einem Gutachten wäre es allerdings unglücklich, den Streit mit der Begründung offen zu lassen, dass ohnehin kein Fremdgeschäftsführungswille vorliege.
+
+##### 2. Voraussetzungen der Geschäftsführung ohne Auftrag
+
+§ 539 Abs. 1 BGB verweist für die Verpflichtung des Vermieters zum Ersatz sonstiger Aufwendungen auf die Vorschriften über die Geschäftsführung ohne Auftrag (§§ 677 ff. BGB). Da es sich bei § 539 Abs. 1 BGB um eine Rechtsgrundverweisung handelt, kann der Mieter Aufwendungsersatz regelmäßig nur verlangen, wenn er mit Fremdgeschäftsführungswillen handelt und die Vornahme der Aufwendun-gen dem Interesse und dem wirklichen oder mutmaßlichen Willen des Vermieters entspricht (§§ 677, 683 S. 1, 670 BGB). M müsste zunächst den Willen gehabt haben, gerade für den Vermieter tätig zu werden. Ein solcher Fremdgeschäftsführungswille liegt nicht vor, wenn der Mieter die Aufwendun-gen nur für seine Zwecke und in seinem eigenen Interesse gemacht hat oder wenn er sich zu den fraglichen Maßnahmen für verpflichtet hielt. Bei der Errichtung des Lagers auf dem Grundstück des S handelte M allein im eigenen Interesse, da er das Lager für Kfz-Ersatzteile seines eigenen Geschäfts-betriebs nutzen möchte und fest davon ausging, dass sich der Bau durch den perspektivischen Grund-stückskaufvertrag und Eigentumserwerb amortisieren würde. Ob die Errichtung des Lagers dem Willen und Interesse des S entsprach, kann damit dahinstehen, weil der Fremdgeschäftsführungs-wille fehlte.
+
+##### 3. Ergebnis
+
+Ein mietvertraglicher Aufwendungsersatzanspruch besteht nicht.
+
+#### II. §§ 687 Abs. 2 S. 2, 684 S. 1, 818 Abs. 1, 2 BGB
+
+Aufgrund des fehlenden Fremdgeschäftsführungswillens des M scheiden Ansprüche aus „echter“ Geschäftsführung ohne Auftrag – etwa aus §§ 677, 683 S. 1, 670 BGB oder aus §§ 684 S. 1, 818 Abs. 1, 2 BGB – aus. In Betracht kommt jedoch ein Anspruch des M gegen S aus angemaßter Eigengeschäfts-führung gem. §§ 687 Abs. 2 S. 2, 684 S. 1, 818 Abs. 1, 2 BGB.
+
+##### 1. Fehlende Berechtigung
+
+Dies setzt jedoch voraus, dass M bei der Errichtung des Lagers ohne Berechtigung handelte. Ohne Berechtigung führt der Geschäftsführer das Fremdgeschäft, wenn er sich nicht auf eine vom Inhaber der betroffenen Rechtsposition erteilte Befugnis stützen kann, also insbesondere bei einem Handeln ohne oder gegen den Willen des Geschäftsherrn. Ist der Geschäftsherr mit der Anmaßung äußerlich einverstanden, kann dies regelmäßig als Zustimmung ausgelegt werden, welche die Rechtswidrig-keit des Eingriffs und somit die Anwendbarkeit des § 687 Abs. 2 BGB beseitigt. Zwar berechtigte der Mietvertrag den M nicht zur Durchführung umfassender Bauarbeiten. Doch stimmte S aus der Sicht eines Außenstehenden konkludent der Errichtung des Lagers zu, indem er dessen Bau duldete, sodass es nicht ohne oder gegen seinen Willen gebaut wurde. M handelte nicht ohne Berechtigung.
+
+##### 2. Ergebnis
+
+M steht gegen S kein Anspruch aus §§ 687 Abs. 2 S. 2, 684 S. 1, 818 Abs. 1, 2 BGB zu.
+
+#### III. §§ 994 Abs. 1, Abs. 2, 996 BGB
+
+Ein Zahlungsanspruch des M gegen S i.H.v. 20.000 € könnte sich aus §§ 994 Abs. 1, Abs. 2, 996 BGB ergeben.
+
+##### 1. Vindikationslage beim Nicht-mehrberechtigten-Besitzer
+
+Der Anspruch setzt zunächst voraus, dass S Eigentümer und M Besitzer ohne Besitzrecht (§§ 985, 986 BGB) war.
+
+###### a) Herrschende Lehre: Zeitpunkt der Verwendungsvornahme
+
+Ein Verwendungsersatzanspruch setzt nach herrschender Lehre grundsätzlich das Bestehen einer Vindikationslage im Zeitpunkt der Vornahme der Verwendungen voraus. Mieter, die aufgrund eines Mietvertrags ein Besitzrecht i.S.d. § 986 Abs. 1 S. 1 Alt. 1 BGB haben, fallen dagegen nicht in den Anwendungsbereich der §§ 994 ff. BGB. An dieser Rechtslage ändert sich auch nichts durch den nachträglichen Wegfall des Besitzrechts des Mieters durch Kündigung des Mietvertrags, da §§ 994 ff. BGB nur für den von Anfang an unrechtmäßigen Besitzer gelten. Die Literatur verweist auf die Differenzie-rungen in §§ 994 Abs. 2, 996 BGB, wonach es zum Zeitpunkt der Verwendungen eine Vindikationslage geben müsse. Es könne sonst noch keine „Rechtshängigkeit“ der Herausgabeklage aus § 985 BGB i.S.d. §§ 994 Abs. 2, 996 BGB geben. Zum Zeitpunkt des Lagerbaus als potenzielle Verwendung auf das Grundstück war M noch Mieter des Grundstücks und damit berechtigter Besitzer, sodass es nach dieser Auffassung an der erforderlichen Vindikationslage fehlte.
+
+###### b) Rechtsprechung: Zeitpunkt der Anspruchsgeltendmachung
+
+Dagegen lässt es der BGH für Verwendungen grundsätzlich genügen, dass die Vindikationslage erst später entsteht, weil der zum Zeitpunkt der Verwendungen noch berechtigte Besitzer nicht schlechter stehen dürfe als ein schon damals unberechtigter Besitzer. Dies soll jedenfalls dann gelten, wenn das bei Vornahme der Verwendungen geltende Besitzrechtsverhältnis den Verwendungsersatz nicht abschließend regelt. §§ 994 Abs. 2, 996 BGB könne nur entnommen werden, dass besondere Rege-lungen gelten, wenn nach Rechtshängigkeit der Herausgabeklage Verwendungen getätigt werden. Nach der Rechtsprechung reicht es folglich auch aus, wenn M zwischen der Vornahme der Verwendungen und der Geltendmachung von Verwendungsersatzansprüchen zu irgendeinem Zeitpunkt Besitzer ohne Besitzrecht war. Dies ist indes auch nicht der Fall. Zwar war M durch die ordentliche Kündigung des Mietvertrags gegenüber S nicht mehr zum Besitz berechtigt. M hat das Grundstück jedoch noch vor Ablauf der ordentlichen Kündigungsfrist (und damit Wegfall der Besitzberechtigung) zurückgegeben und damit den Besitz verloren. Zusammenfassend stand M zunächst ein Recht zum Besitz i.S.d. § 986 Abs. 1 S. 1 BGB zu, im Zeitpunkt des Wegfalls dieses Besitzrechts war M bereits nicht mehr Besitzer des Grundstücks. Da nach beiden Auffassungen zu keinem Zeitpunkt eine Vindikationslage bestand, kann ein Streitentscheid unterbleiben.
+
+##### 2. Ergebnis
+
+Ein Anspruch des M gegen S auf Zahlung von 20.000 € aus §§ 994 Abs. 1, Abs. 2, 996 BGB besteht nicht.
+
+#### IV. § 951 Abs. 1 S. 1 BGB i.V.m. Bereicherungsrecht
+
+Ein Anspruch des M gegen S auf Zahlung von sogar 30.000 € könnte sich aus § 951 Abs. 1 S. 1 BGB i.V.m. Bereicherungsrecht ergeben.
+
+##### 1. Anwendbarkeit
+
+Ein Anspruch scheitert auch nach der Rechtsprechung nicht an der Sperrwirkung des EBV. Zwar sieht die wohl h.M. die Verwendungsersatzansprüche der §§ 994 ff. BGB als abschließende Regelung an, da andernfalls die undifferenzierte Bereicherungshaftung die abgestuften Verwendungsersatzregeln aushebeln könnte. Die Normen sind jedoch aufgrund der fehlenden Vindikationslage nicht anwendbar und können daher keine Sperrwirkung entfalten.
+
+##### 2. Rechtsverlust nach § 946 BGB
+
+Durch den Bau des Lagers auf dem Grundstück wurde dieses wesentlicher Bestandteil des Grund-stücks (§ 94 Abs. 1 S. 1 BGB), sodass M sein Eigentum an den zum Bau verwendeten Materialien verlor und S gem. § 946 BGB Eigentum an dem Lager erwarb. Die Baustoffe (Ziegel, Mörtel) wurden gem. § 94 Abs. 2 BGB wesentliche Bestandteile des Gebäudes und damit nach § 94 Abs. 1 BGB auch des Grundstücks. Ein Scheinbestandteil nach § 95 Abs. 1 S. 2 BGB lag nicht vor, da M das Lager nicht in Ausübung seines Mietrechts, sondern im Vorgriff auf den Eigentumserwerb und damit mit einer inhärenten Endgültigkeit errichtete.
+
+##### 3. § 951 Abs. 1 S. 1 BGB als Rechtsgrundverweisung
+
+Gem. § 951 Abs. 1 S. 1 BGB kann er daher von S eine Vergütung in Geld nach den Vorschriften über die Herausgabe einer ungerechtfertigten Bereicherung verlangen. Der Ersatzanspruch in § 951 Abs. 1 S. 1 BGB ist nach allgemeiner Ansicht eine Rechtsgrundverweisung auf das Bereicherungsrecht. Sie drückt die Entscheidung des Gesetzgebers aus, den gesetzlichen Eigentumserwerb nach §§ 946 f. BGB sachenrechtlich endgültig zu gestalten und den notwendigen Vermögensausgleich auf die schuldrechtliche Ebene zu verlagern. Fraglich ist daher, ob M gegen S ein bereicherungsrechtlicher Ersatzanspruch zusteht.
+
+###### a) § 951 Abs. 1 S. 1 BGB i.V.m. § 812 Abs. 1 S. 2 Alt. 2 BGB
+
+Ein solcher bereicherungsrechtlicher Ersatzanspruch könnte sich aus einer condictio ob rem gem. § 812 Abs. 1 S. 2 Alt. 2 BGB ergeben. Dies setzt zunächst eine Leistung des M an S voraus, da es sich hierbei um eine Sonderform der Leistungskondiktion handelt. Allerdings war die Errichtung des allein von M genutzten Lagers keine Leistung an S. Denn M handelte in Erwartung seiner eigenen perspektivischen Eigentümerstellung und nicht zur bewussten und zweckgerichteten Mehrung fremden Vermögens. Folglich scheidet eine condictio ob rem schon deshalb aus. Zudem verweist § 951 Abs. 1 S. 1 BGB nach h.M. nicht auf die Zweckverfehlungskondiktion als Sonderfall der Leistungskondiktion. Dem wird entgegengehalten, § 951 Abs. 1 S. 1 BGB verweise mangels Einschränkung im Wortlaut auch auf die Leistungskondiktion, mithin auch auf die condictio ob rem. Die h.M. überzeugt jedoch mit Blick auf das Wegnahmerecht aus § 951 Abs. 2 S. 2 BGB: Da dieses Recht einen Wertersatzanspruch voraussetzt, würde es die gesetzliche Risikoverteilung bei der Rückabwicklung rechtsgrundloser Leistungen untragbar stören, wenn man die Verweisung in § 951 Abs. 1 S. 1 BGB auch auf die Leistungskondiktion erstreckt. Das Wegnahmerecht könnte hier zum einen die gesetzlichen Kondiktionssperren unterlaufen, zum anderen könnte es dazu führen, dass der Berechtigte seine Leistung zurück erhält, obwohl dies nach § 818 Abs. 3 BGB ausgeschlossen wäre. Demnach scheidet ein bereicherungsrechtlicher Anspruch gem. § 951 Abs. 1 S. 1 BGB i.V.m. §§ 812 Abs. 1 S. 2 Alt. 2, 818 Abs. 2 BGB aus.
+
+###### b) § 951 Abs. 1 S. 1 BGB i.V.m. § 812 Abs. 1 S. 1 Alt. 2 BGB
+
+In Betracht kommt jedoch ein Anspruch des M gegen S aus § 951 Abs. 1 S. 1 BGB i.V.m. §§ 812 Abs. 1 S. 1 Alt. 2, 818 Abs. 2 BGB.
+
+###### aa) Tatbestand
+
+S hat Eigentum an den Baumaterialien erlangt. Dies jedoch nicht durch Leistung des M, sondern im Wege des gesetzlichen Erwerbs nach § 946 BGB. Der Anspruch scheitert nicht an dem zum Verwen-dungszeitpunkt noch bestehenden Mietvertrag, weil dieser nicht Rechtsgrund für die Bebauung und damit für die Bereicherung des S war.
+
+###### bb) Rechtsfolge
+
+Der Höhe nach zielt der Bereicherungsanspruch gem. § 818 Abs. 2 BGB auf den Ersatz des Wertes ab. Hierbei ist nach der Rechtsprechung grundsätzlich auf den objektiven Verkehrswert abzustellen, bei Grundstücken auf die dadurch verursachte Erhöhung des Wertes der Sache (Grundstückswert). Dies sind hier 30.000 €.
+
+###### cc) Beschränkung wegen aufgedrängter Bereicherung?
+
+In Fällen des Bauens auf fremdem Boden wird die Kollision zwischen dem Prinzip des Bereicherungs-ausgleichs und privatautonomer Selbstbestimmung besonders deutlich. Denn der Grundstückseigentümer müsste regelmäßig erhebliche Mittel flüssigmachen, um den Sachwertzuwachs ausgleichen zu können. Deshalb wird vielfach nach Wegen gesucht, eine Wertkondiktion auszuschließen oder zu beschränken. Zum Teil wird ein Gegenanspruch des Bereicherungsempfängers auf gegenständliche Beseitigung des erlangten Vorteils (hier Abbruch des Lagers) befürwortet. Nach anderer Ansicht soll der bereicherte Eigentümer der Hauptsache die Wertersatzpflicht für den ihm aufgedrängten Vermögenszuwachs dadurch abwenden können, dass er dem Kondizierenden die Wegnahme des mit der Hauptsache verbundenen Materials gestattet bzw. ihn auf sein ohnehin bestehendes Wegnahmerecht verweist. Überwiegend möchte man dem Problem der aufgedrängten Bereiche-rung durch eine Modifikation des Anspruchsumfangs beikommen. Der Wertersatz soll sich nicht nach dem objektiven Wertzuwachs des Empfängervermögens, sondern nach dem konkreten (subjektiven) Nutzen bemessen, den der Bereicherte selbst nach seinen individuellen Verhältnissen von dem aufgedrängten Vermögenszuwachs habe. Der Streit kann hier dahinstehen, weil bereits keine aufgedrängte Bereicherung vorliegt. S will das Lager behalten und für sich selbst nutzen. Ein Fall der aufgedrängten, für den Leistungsempfänger nutzlosen Leistung, liegt somit nicht vor.
+
+##### 4. Ergebnis
+
+M hat daher gegen S einen Anspruch auf Wertersatz i.H.v. 30.000 € aus § 951 Abs. 1 S. 1 BGB i.V.m. §§ 812 Abs. 1 S. 1 Alt. 2, 818 Abs. 2 BGB.
+
+#### V. Bereicherungsrechtliche Ansprüche
+
+§ 951 BGB schließt nach h.M. daneben bestehende bereicherungsrechtliche Ansprüche aus Leistungs-kondiktion nicht aus. Doch auch hier stehen § 814 BGB und die fehlende Leistung im Rechtssinne dem Anspruch entgegen. Für § 812 Abs. 1 S. 1 Alt. 2 BGB dürfte § 951 BGB aufgrund der weiteren Voraussetzungen aus §§ 946–950 BGB lex specialis sein.
+
+#### VI. Gesamtergebnis
+
+M hat gegen S einen Anspruch auf Zahlung der 30.000 €.

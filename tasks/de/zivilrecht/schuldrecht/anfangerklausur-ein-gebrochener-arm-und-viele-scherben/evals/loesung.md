@@ -1,0 +1,205 @@
+# Musterlösung
+
+## Frage 1: Anspruch der H gegen E auf Schadensersatz/Schmerzensgeld
+
+### I. Anspruch aus § 823 Abs. 1 BGB
+
+#### 1. Rechts-/Rechtsgutsverletzung
+
+Der Arm der H ist gebrochen, ihre körperliche Integrität verletzt. Mithin liegt eine Verletzung des Körpers als absolutes Rechtsgut i.S.d. § 823 Abs. 1 BGB vor.
+
+#### 2. Verletzungshandlung
+
+Zudem müsste eine zurechenbare Verletzungshandlung seitens des E vorliegen. Die Verletzungshandlung i.R.d. § 823 Abs. 1 BGB kann in einem positiven Tun oder Unterlassen liegen. Ein positives Tun des E ist jedenfalls nicht ersichtlich.
+
+##### a) Verletzungshandlung durch Unterlassen
+
+Fraglich ist, ob ein tatbestandsmäßiges Unterlassen des E vorliegt: Nicht jedes Unterlassen genügt für eine Verletzungshandlung i.S.d. § 823 ff. BGB; vielmehr muss den Schädiger eine Pflicht zur Gefahrenabwehr treffen und die Gefahrenabwehr für denselben möglich sein. E müsste also zur Abwehr der Gefahr verpflichtet gewesen sein. Eine gesetzliche oder gar vertragliche Pflicht zum Handeln ist nicht ersichtlich. E könnte aber eine Verkehrspflicht treffen. Derjenige, der eine Gefahrenquelle – gleich welcher Art – schafft, ist grundsätzlich verpflichtet, die notwendigen und zumutbaren Vorkehrungen zu treffen, um eine Schädigung anderer möglichst zu verhindern. E unterhält als Eigentümer des Grundstücks den Schacht und hat die Bestimmungsgewalt über die Gefahrenquelle.
+
+###### aa) Umfang der Verkehrspflicht
+
+Fraglich ist insofern, ob die durch E vorgenommenen Maßnahmen zur Sicherung des Kellerschachts zum Vorgarten hin durch die Pflanzung der Hecke ausreichend waren oder ob ihn besondere, darüber hinaus gehende Pflichten zur Sicherung der Gefahrenquelle trafen. Dabei ist zu beachten, dass keine allgemeine Pflicht zur Abwehr abstrakter Gefahr existiert, schon weil es keine Verkehrssicherungsmaßnahmen, die zur Abwehr jedweder Gefahr geeignet sind, gibt. Vielmehr darf vom Verkehrspflichtigen nur das Treffen derjenigen Maßnahmen verlangt werden, die ein umsichtiger und verständiger, in vernünftigen Grenzen vorsichtiger Mensch für notwendig und ausreichend hält, um andere vor Schäden zu bewahren. Maßgebliche Kriterien zur Bestimmung des Umfangs einer Verkehrspflicht sind die Wahrscheinlichkeit des Gefahreneintritts, die Qualität der gefährdeten Rechtsgüter, die zu erwartende Schadenshöhe sowie die Erkennbarkeit für die gefährdete Person und der wirtschaftliche Vermeidungsaufwand für den (potenziell) Verkehrspflichtigen. Die Wahrscheinlichkeit des Gefahreintritts ist eher gering einzustufen: Das Grundstück befindet sich in sehr ruhiger Lage auf dem Land, auch wird das Grundstück von der Straße durch eine Hecke getrennt. Eine Nutzung durch Dritte steht nicht zu erwarten. Für die Annahme einer Verkehrspflicht spricht indes die hohe Qualität der gefährdeten Rechtsgüter: der körperlichen Unversehrtheit und im schlimmsten Fall sogar des Lebens. Auch die zu erwartende Schadenshöhe ist als erheblich einzuschätzen, da ein Sturz auf Beton droht. Der Vermeidungsaufwand ist zudem eher gering, weil sich eine deutliche Verbesserung der Gefährdungslage insbesondere schon etwa durch eine (bessere) Beleuchtung oder das Anbringen einer günstigen Absicherung wie einer Schnur erreichen lässt. Der Aspekt der Erkennbarkeit ist vorliegend janusköpfiger Natur: Zwar ist der Schacht bei Tageslicht gut erkennbar, in der Dunkelheit wegen der mangelnden Beleuchtung jedoch nicht. Insgesamt spricht nach bisherigerer Analyse einiges für die Annahme einer Verkehrspflicht.
+
+###### bb) Insbesondere: Verkehrspflicht bei unbefugter Nutzung eines Grundstücks
+
+Zu beachten bleibt jedoch, dass den Eigentümer eines Grundstücks gemeinhin keine Pflicht zur Sicherung vor Unbefugten (insbesondere – wie hier – Erwachsenen) trifft; eine etwaige Ausweitung des Schutzbereichs auf Unbefugte kommt vielmehr nur dann in Betracht, wenn innerhalb des Grundstücks erhebliche Gefahren zu erwarten sind oder gerade eine bestimmungswidrige Nutzung nahe liegt. H handelt unbefugt; insbesondere das Verfolgungsrecht des § 867 BGB rechtfertigt nicht das Betreten eines fremden Grundstücks. Des Weiteren handelt es sich um ein Grundstück, das sich im ländlichen Gebiet in sehr ruhiger Lage befindet. Auch aufgrund des niedrigen Personenaufkommens ist erst recht in den Abendstunden ein unbefugtes Betreten Dritter für E nicht vorauszusehen. Umgekehrt besteht auch kein schutzwürdiges Vertrauen der H dahingehend, sich auf sicheres Areal zu begeben, weil sie vielmehr vor dem Hintergrund des unbekannten Terrains sowie der schlechten Lichtverhältnisse eigene Sicherheitsvorkehrungen hätte ergreifen können, etwa durch ein besonders vorsichtiges Vorschreiten.
+
+##### b) Zwischenergebnis: Keine Verkehrspflichtverletzung
+
+E hat keine Verkehrspflicht verletzt. Es liegt kein für § 823 Abs. 1 BGB tatbestandsmäßiges Verhalten vor.
+
+#### 3. Zwischenergebnis
+
+H hat gegen E keinen Anspruch auf Schadensersatz aus § 823 Abs. 1 BGB.
+
+### II. Anspruch aus § 823 Abs. 2 BGB (i.V.m. StGB)
+
+Ein Anspruch der H gegen E aus § 823 Abs. 2 BGB besteht mangels Vorliegens der Verletzung eines Schutzgesetzes, insbesondere einer solchen des StGB, nicht.
+
+### III. Anspruch aus § 826 BGB
+
+Mangels vorsätzlicher Schädigung besteht auch kein Anspruch der H gegen E aus § 826 BGB.
+
+### IV. Ergebnis zu Frage 1
+
+H hat gegen E keinen Anspruch auf Schadensersatz. Damit besteht auch kein Anspruch der H gegen E auf Schmerzensgeld gem. § 253 Abs. 2 BGB, der einen erfüllten haftungsbegründenden Tatbestand voraussetzt.
+
+## Frage 2: Anspruch der G gegen H und/oder E auf Zahlung von 250 €
+
+### I. Anspruch der G gegen H auf Zahlung von 250 €
+
+#### 1. Anspruch entstanden
+
+##### a) Anspruch aus § 833 S. 1 BGB
+
+G könnte gegen H einen Anspruch auf Zahlung von 250 € gem. § 833 S. 1 BGB haben.
+
+###### aa) Verletzung eines genannten Rechts/Rechtsguts
+
+Zunächst müsste ein in § 833 S. 1 BGB genanntes Recht oder Rechtsgut verletzt worden sein. In Betracht kommt eine Verletzung des Eigentums der G (§ 833 S. 1 Var. 3 BGB) an dem Geschirr. G war ursprünglich Eigentümerin des Geschirrs. Sie hat ihr Eigentum auch nicht gem. § 929 S. 1 BGB an E durch die Veräußerung am Flohmarkt verloren; denn die auf den Abschluss einer dinglichen Einigung gerichtete Willenserklärung der G ist wegen ihrer Geschäftsunfähigkeit gem. § 105 Abs. 1 BGB i.V.m. § 104 Nr. 2 BGB nichtig. Das Geschirr der G wurde zerstört. Insofern liegt eine Verletzung des Eigentums der G an dem Geschirr, mithin eines von § 833 S. 1 BGB erfassten Rechts, vor.
+
+###### bb) Verursachung durch „Luxustier“
+
+Bei Lumpi müsste es sich – wie aus § 833 S. 2 BGB zu schließen ist – um ein Luxustier handeln. Ein Luxustier ist ein Tier, das kein Haustier ist, oder ein solches, das zwar ein Haustier ist, aber nicht dem Beruf, der Erwerbstätigkeit oder dem Unterhalt des Tierhalters zu dienen bestimmt ist (dann Nutztier). Lumpi ist zwar ein Haustier; er ist aber auch nicht zugleich Nutztier i.S.d. § 833 S. 2 BGB. Damit handelt es sich bei Lumpi um ein Luxustier i.S.d. § 833 S. 1 BGB.
+
+###### cc) Verwirklichung einer spezifischen Tiergefahr
+
+Zudem müsste sich die Zerstörung des Geschirrs aus der Verwirklichung einer spezifischen Tiergefahr des Lumpi ergeben. Dies ist zu bejahen, wenn sich die Rechtsverletzung gerade aus der Unberechenbarkeit tierischen Verhaltens ergibt. Lumpi, der ansonsten gut gehorcht, hat sich plötzlich losgerissen. Dies stellt ein solches unberechenbares Verhalten dar, das zur Eigentumsverletzung der G geführt hat. Damit ergibt sich die Zerstörung des Geschirrs aus der Verwirklichung einer spezifischen Tiergefahr des Lumpi.
+
+###### dd) Haftung des Halters
+
+H als Anspruchsgegnerin müsste Tierhalterin sein. Tierhalter ist, wer willentlich und im eigenen Interesse die tatsächliche Herrschaft über das Tier ausübt (nicht notwendigerweise der Eigentümer). Das ist (offensichtlich) H.
+
+###### ee) Rechtsfolge; Haftungsausfüllung
+
+Auf ein Verschulden kommt es bei § 833 S. 1 BGB gerade nicht an (echte Gefährdungshaftung). Damit spielt es keine Rolle, dass Lumpi sonst gut gehorcht; ebenso wenig, dass es nicht H selbst (sondern ihre Tante) war, die die Tür geöffnet hatte, wodurch Lumpi entfliehen konnte. Folglich hat H der G gem. § 249 Abs. 2 S. 1 BGB (unter der Prämisse, dass sich das Geschirr zu diesem Preis am Markt wiederbeschaffen lässt) bzw. gem. § 251 Abs. 1 BGB die 250 € zu ersetzen.
+
+##### b) Anspruch aus § 823 Abs. 1 BGB
+
+Ein Anspruch der G gegen H auf Zahlung von 250 € aus § 823 Abs. 1 BGB scheitert jedenfalls mangels Verschuldens der H; Fahrlässigkeit der H ist nicht zu erkennen.
+
+##### c) Zwischenergebnis
+
+Damit ist jedenfalls ein Anspruch der G gegen H aus § 833 S. 1 BGB entstanden.
+
+#### 2. Erlöschen des Anspruches der G gegen H wegen Leistung durch H an E?
+
+Dieser Anspruch könnte jedoch durch Zahlung der 250 € von H an E erloschen sein. Grundsätzlich muss der Schuldner für die Erlöschenswirkung des § 362 Abs. 1 BGB an den richtigen Gläubiger leisten, hier also H an G. Allerdings könnte vorliegend ausnahmsweise durch Leistung an einen nichtberechtigten Dritten Erfüllung eingetreten sein. Dies könnte sich aus § 851 BGB ergeben.
+
+##### a) Zur Leistung von Schadensersatz aus Beschädigung einer beweglichen Sache verpflichtet
+
+Wie soeben dargestellt ist H wegen Beschädigung (Zerstörung) des Geschirrs, einer beweglichen Sache, zur Leistung von Schadensersatz gem. § 833 S. 1 BGB an G verpflichtet.
+
+##### b) Ersatzleistung an einen nichtberechtigten Dritten, in dessen Besitz sich die Sache zum Zeitpunkt der Beschädigung befunden hat
+
+Zum Zeitpunkt der Beschädigung war E auch unmittelbarer Besitzer des Geschirrs i.S.d. § 854 Abs. 1 BGB. H hat 250 € in bar an E geleistet.
+
+##### c) Kein Ausschluss gem. § 851 Hs. 2 BGB
+
+Positive Kenntnis des H bezüglich der Eigentümerstellung der G besteht nicht. Für diesbezügliche grob fahrlässige Unkenntnis des H sind keine Anhaltspunkte ersichtlich.
+
+##### d) Zwischenergebnis
+
+Damit erlosch der Anspruch der G gegen H durch die Leistung von H an E gem. § 851 BGB.
+
+#### 3. Ergebnis
+
+G hat keinen Anspruch gegen H aus § 833 S. 1 BGB auf Zahlung von 250 € (mehr).
+
+### II. Anspruch von G gegen E auf Zahlung von 250 €
+
+G könnte indes gegen E einen Anspruch auf Zahlung von 250 € haben.
+
+#### 1. Anspruch aus condictio indebiti
+
+G könnte gegen E infolge der gescheiterten Transaktion auf dem Flohmarkt einen Anspruch auf Zahlung von 250 € aus § 812 Abs. 1 S. 1 Alt. 1 BGB haben.
+
+##### a) Etwas erlangt
+
+E hat Besitz – nicht aber Eigentum, siehe oben – an dem Geschirr, mithin einen vermögenswerten Vorteil, erlangt.
+
+##### b) Durch Leistung
+
+Dies geschah durch Leistung der G, da sie in Erfüllung ihrer – vermeintlichen – Verbindlichkeit aus dem Kaufvertrag mit E (solvendi causa) diesem das Geschirr übergab.
+
+##### c) Ohne Rechtsgrund
+
+Dies müsste ohne Rechtsgrund erfolgt sein. Zwar wäre ein Kaufvertrag zwischen G und E ein taugliches Kausalgeschäft. Die entsprechende Willenserklärung der G war aber ebenfalls von Anfang an wegen ihrer Geschäftsunfähigkeit nichtig, § 105 Abs. 1 BGB i.V.m. § 104 Nr. 2 BGB. Ein Kauvertrag bestand nicht. Damit erfolgte die Leistung der G ohne Rechtsgrund.
+
+##### d) Rechtsfolge
+
+E müsste gem. § 812 Abs. 1 S. 1 Alt. 1 BGB die tatsächliche Sachherrschaft am Geschirr an G rückübertragen. Das Geschirr ist aber zerstört worden, womit eine Rückgabe in natura nicht möglich ist. Allerdings könnte das von H an E gezahlte Geld ein herauszugebendes Surrogat i.S.d. § 818 Abs. 1 Alt. 2 BGB darstellen. Dabei ist aber zu berücksichtigen, dass der Anspruch auf Schadensersatz ja G zustand, während E bereits keinen Anspruch auf die Zahlung als Ersatz i.S.d. § 818 Abs. 1 BGB für die Zerstörung erlangte. Es würde dann nicht überzeugen, die Zahlung – auf einen tatsächlich nicht bestehenden Ersatzanspruch – als Surrogat anzusehen. Dafür spricht auch eine Vergleichsüberlegung zu sonstigen Surrogaten im Rahmen der Vorschrift: Wenn bei Surrogaten aufgrund erlangten Rechts tatsächliche Rechtsinhaberschaft (d.h. Aktivlegitimation) des Erwerbers erforderlich ist, scheint es nur konsequent, dasselbe auch für Leistungen zu fordern, die infolge der Erfüllung eines Ersatzanspruches getätigt werden. Schließlich entstehen auch keine unbilligen Ergebnisse, wenn man derartige irrtümliche Zahlungen nicht als Surrogat ansieht; denn für solche Konstellationen ist die Nichtleistungskondiktion des § 816 Abs. 2 BGB einschlägig. Da die Übertragung des Besitzes unmöglich ist und E kein Surrogat herauszugeben hat, würde er grundsätzlich Wertersatz schulden, § 818 Abs. 2 Alt. 1 BGB. Fraglich ist, ob dieser Anspruch gem. § 818 Abs. 3 BGB ausgeschlossen ist. Dies wäre der Fall, wenn E durch die Zerstörung des Geschirrs nicht mehr bereichert ist. Entreicherung ist der ersatzlose Wegfall des Erlangten. Dies ist mit der Zerstörung des Geschirrs eingetreten. Insbesondere ist die Zahlung der H aus den obigen Erwägungen auch hier nicht zu berücksichtigen. Eine verschärfte Haftung des E gem. §§ 818 Abs. 4, 819 Abs. 1 BGB mit der Folge, dass E sich nicht mehr auf den Entreicherungseinwand des § 818 Abs. 3 BGB stützen könnte, besteht außerdem nicht. E war weder verklagt noch hatte er Kenntnis vom fehlenden Rechtsgrund. Damit ist der Anspruch der G gegen E auf Zahlung von 250 € in voller Höhe gem. § 818 Abs. 3 BGB erloschen.
+
+##### e) Ergebnis
+
+G hat keinen Anspruch gegen E auf Zahlung von 250 € gem. § 812 Abs. 1 S. 1 Alt. 1 BGB.
+
+#### 2. Anspruch aus § 816 Abs. 2 BGB
+
+G könnte infolge der Zahlung der H einen Anspruch gegen E auf Zahlung von 250 € aus § 816 Abs. 2 BGB haben.
+
+##### a) Leistungsbewirkung an Nichtberechtigten
+
+H hat an E geleistet, obwohl E für einen etwaigen Anspruch aus § 833 S. 1 BGB mangels Eigentumsverletzung nicht aktivlegitimiert war; dies war ja G, deren Eigentum verletzt wurde, siehe oben.
+
+##### b) Wirksamkeit gegenüber dem Berechtigten
+
+Diese Leistung von H an E ist gegenüber G gem. § 851 BGB wirksam, siehe oben.
+
+##### c) Rechtsfolge
+
+Damit hat E als Nichtberechtigter das Geleistete, die 250 €, herauszugeben.
+
+##### d) Ergebnis
+
+G hat gegen E einen Anspruch auf Zahlung von 250 € aus § 816 Abs. 2 BGB.
+
+## Frage 3: Anspruch der G gegen D
+
+### I. Anspruch aus §§ 677, 681 S. 1, 667 BGB
+
+Zwar hat D ein Geschäft der G, mithin ein objektiv fremdes Geschäft, geführt, denn die Veräußerung einer Sache ist Angelegenheit des Eigentümers. D wusste aber nichts von der Fremdheit des Geschäfts, er handelte mit Eigengeschäftsführungswillen. § 687 Abs. 1 BGB bestimmt, dass in Konstellationen des (irrtümlichen; § 687 Abs. 2 S. 1 BGB e contrario) Eigengeschäftsführungswillens die §§ 677 ff. BGB keine Anwendung finden. G hat keinen Anspruch auf Zahlung von 300 € gegen D aus §§ 677, 681 S. 1, 667 BGB.
+
+### II. Anspruch aus § 823 Abs. 1 BGB
+
+Ein Schadensersatzanspruch aus § 823 Abs. 1 BGB wegen der Veräußerung des Geschirrs durch D scheitert bereits an einer Verletzung des Eigentums der G. Zwar war G zu diesem Zeitpunkt noch Eigentümerin, weil sie ihr Eigentum nicht gem. § 959 BGB aufgegeben hat: Die Ablagerung des Geschirrs erfolgte durch den Einbrecher. Damit konnte D auch nicht originär Eigentum im Wege der Aneignung gem. § 958 Abs. 1 BGB erwerben. G konnte ihr Eigentum sodann durch die Verfügung des D aber nicht einmal nach den Grundsätzen des gutgläubigen Erwerbs verlieren, weil das Geschirr gestohlen worden war, § 935 Abs. 1 S. 1 BGB.
+
+### III. Anspruch aus § 816 Abs. 1 S. 1 BGB
+
+G könnte gegen D einen Anspruch auf Zahlung der 300 € aus § 816 Abs. 1 S. 1 BGB haben.
+
+#### 1. Verfügung
+
+Zunächst müsste eine Verfügung seitens des D vorliegen. Eine Verfügung ist jede unmittelbare Aufhebung, Übertragung, Belastung oder inhaltliche Änderung eines Rechts. D wollte E das Eigentum an dem Geschirr übertragen. Damit liegt eine Verfügung durch D vor.
+
+#### 2. Eines Nichtberechtigten
+
+D war weder Eigentümer (siehe oben) noch verfügungsbefugt i.S.d. § 185 Abs. 1 BGB, mithin Nichtberechtigter i.S.d. § 816 Abs. 1 S. 1 BGB.
+
+#### 3. Entgeltlichkeit
+
+Zudem müsste die Verfügung des D entgeltlich gewesen sein. Dies folgt e contrario aus § 816 Abs. 1 S. 2 BGB, der einen Sondertatbestand für unentgeltliche Verfügungen darstellt. Erforderlich ist damit, dass der Erwerber (irgend-)eine Gegenleistung erbringt. Die Veräußerung des Geschirrs erfolgte gegen eine Zahlung von 300 €. Die Verfügung war entgeltlich.
+
+#### 4. Wirksamkeit gegenüber dem Berechtigten
+
+Schließlich müsste die Verfügung auch gegenüber dem Berechtigten, hier G, wirksam sein. Dies ist an sich zu verneinen, weil insbesondere die Vorschriften des gutgläubigen Erwerbs wegen der Erwerbssperre des § 935 Abs. 1 S. 1 Var. 1 BGB nicht eingreifen (siehe oben). Allerdings ist anerkannt, dass der Anspruchsberechtigte sich durch Genehmigung der Verfügung gem. § 185 Abs. 2 Var. 1 BGB i.V.m. § 184 Abs. 1 BGB (nachträglich) eine Direktkondiktion aus § 816 Abs. 1 S. 1 BGB gegen den Nichtberechtigten schaffen kann. Wegen der ex-tunc-Wirkung der Genehmigung (§ 184 Abs. 1 BGB) könnte man zwar annehmen, dass der nichtberechtigte Verfügende zum Berechtigten würde und dann § 816 Abs. 1 BGB insgesamt nicht anwendbar wäre; doch wirkt die Genehmigung in diesem Kontext nur auf das Verfügungsgeschäft und gerade nicht auf die Verfügungsberechtigung ein. Da die Genehmigung als empfangsbedürftige Willenserklärung nach allgemeinen Grundsätzen (auch) Geschäftsfähigkeit voraussetzt, hat die Genehmigung für besagte Verfügung jedoch durch den gesetzlichen Vertreter der G zu erfolgen, § 1814 Abs. 1 BGB i.V.m. §§ 1821 Abs. 1, 1823 BGB (= § 1896 Abs. 1 S. 1 BGB i.V.m. §§ 1901 Abs. 1, 1902 BGB i.d.F. bis 31.12.2022). Wenn diese Genehmigung erfolgt, ist die Verfügung gegenüber G wirksam.
+
+#### 5. Rechtsfolge
+
+Unter diesen Voraussetzungen steht G dem Grunde nach ein Anspruch aus § 816 Abs. 1 S. 1 BGB gegen D zu. Fraglich ist die Höhe des Anspruchs.
+
+##### a) Höhe des Bereicherungsanspruchs: Das durch die Verfügung Erlangte
+
+§ 816 Abs. 1 S. 1 BGB normiert nur, dass der Nichtberechtigte dem Berechtigten zur Herausgabe des „durch die Verfügung“ Erlangten verpflichtet ist. Damit könnte der objektive Wert des Gegenstands (§ 818 Abs. 2 BGB, vorliegend 280 €) oder der konkrete Veräußerungserlös (vorliegend 300 €) gemeint sein. Der Wortlaut der Vorschrift scheint zunächst für den Erlös zu streiten, denn im Gegenseitigkeitsverhältnis erlangt der Verkäufer den Kaufpreis. Dieses Argument ist bei genauerer Betrachtung aber nicht zwingend: Das Trennungsprinzip gebietet eine getrennte Betrachtung von Verpflichtungs- und Verfügungsgeschäft. Durch das Verfügungsgeschäft wird der Verkäufer allein von der Pflicht zur Übereignung der Kaufsache frei. Denn die Verfügung bedeutet deren Erfüllung, § 362 Abs. 1 BGB. Den Erlös hingegen erlangt man durch ein separates Verfügungsgeschäft. Da die Befreiung nicht in natura herausgegeben werden kann, erscheint es dann nur konsequent, über § 818 Abs. 2 BGB lediglich den objektiven Wert als ersatzfähig anzusehen. Bei noch näherer Betrachtung lässt sich die These vom alleinigen Erlangen der Befreiung jedoch ebenfalls anzweifeln. Denn da dem Käufer mit Erfüllung des Lieferanspruchs die Einrede des § 320 Abs. 1 BGB genommen wird, wird kraft Verfügung über die Sache in gewissem Sinne auch der Gegenanspruch erlangt. Die Annahme einer Herausgabepflicht bezüglich des Erlöses erscheint außerdem systemkonform. Sonst nämlich wäre die eigentlich sekundär anzuwendende Wertersatzregel des § 818 Abs. 2 BGB immer die primäre Rechtsfolge. Für die Ersatzfähigkeit des Veräußerungserlöses spricht außerdem eine Vergleichsüberlegung zu § 816 Abs. 1 S. 2 BGB: Die dort (ausnahmsweise) angeordnete Haftung des Leistungsempfängers ergibt sich gerade aus dem Umstand, dass es keine Gegenleistung gibt, die man vom (eigentlich vorrangig in Anspruch zu nehmenden) Verfügenden herausverlangen könnte. § 816 Abs. 1 S. 1 BGB soll damit Zugriff auf jene Gegenleistung gewähren, eben weil sie vorhanden ist. Zuletzt spricht das Telos des § 816 Abs. 1 S. 1 BGB für ein solches Ergebnis: Die Vorschrift dient als Ersatz für die Vindikation gem. § 985 BGB (Rechtsfortwirkungsanspruch), bei dessen Vorliegen auch Übermaßfrüchte im vollen Umfang gem. § 993 Abs. 1 Hs. 1 BGB herauszugeben wären. Dass damit freilich – im Falle der Veräußerung über Wert wie hier – das Verhandlungsgeschick des Verfügenden dem Berechtigten zugutekommt, ist letztlich hinzunehmen; dafür lässt sich auch anführen, dass (wie im Rahmen der GoA schon festgestellt) die Veräußerung einer Sache ebenfalls Sache des Eigentümers ist. Insgesamt überzeugt es daher, den Erlös als herauszugebendes Erlangtes anzusehen. Damit hat G an sich gegen D einen Anspruch auf den Veräußerungserlös i.H.v. 300 €.
+
+##### b) Wegfall der Bereicherung wegen Verwendungsersatzes
+
+Allerdings könnte dieser Anspruch gem. § 818 Abs. 3 BGB reduziert sein. Infrage kommt ein Wegfall der Bereicherung des D wegen der Aufwendungen i.H.v. 25 €, die er für Reinigung und Restauration getätigt hat. Solche Verwendungen sind i.R.d. § 816 Abs. 1 S. 1 BGB abzugsfähig, wenn der Bereicherungsschuldner sie dem Bereicherungsgläubiger entgegenhalten hätte können, hätte letzterer den Bereicherungsgegenstand stattdessen gem. § 985 BGB herausverlangt. D könnte gegen G einen Verwendungsersatzanspruch gem. § 994 Abs. 1 S. 1 BGB haben. Zum Zeitpunkt der Verwendung war G Eigentümerin des Geschirrs (siehe oben) und D dessen unmittelbarer Besitzer i.S.d. § 854 Abs. 1 BGB. Ein Besitzrecht zugunsten des D lag ebenfalls nicht vor. Mithin bestand eine Vindikationslage. Reinigung und fachgerechte Restauration waren zur Erhaltung beziehungsweise Wiederherstellung des Geschirrs objektiv erforderlich; die dafür aufgewandten 25 € sind deshalb notwendige Verwendungen i.S.d. § 994 Abs. 1 S. 1 BGB. Hätte G von D das Geschirr vindiziert, so hätte D ihr eben jenen Anspruch entgegenhalten können. Die Aufwendungen tätigte D gutgläubig, denn er ging irrig davon aus, dass der Eigentümer oder die Eigentümerin das Eigentum an dem Geschirr aufgegeben hatte, er (D) mithin Eigentümer geworden war (§ 958 Abs. 1 BGB i.V.m. § 959 Abs. 1 BGB). Damit sind die Verwendungen des D taugliche Abzugsposten. Abzüglich dieser Kosten i.H.v. 25 € ergibt sich ein Anspruch i.H.v. 275 €.
+
+##### c) Zwischenergebnis
+
+Damit besteht der Anspruch der G aus § 816 Abs. 1 S. 1 BGB i.H.v. 275 €.
+
+### IV. Ergebnis
+
+Wenn G durch ihren gesetzlichen Vertreter die Verfügung genehmigt, hat sie gegen D einen Anspruch auf Zahlung von 275 € aus § 816 Abs. 1 S. 1 BGB.

@@ -48,9 +48,11 @@ def resolve_scores_path(target: pathlib.Path) -> pathlib.Path:
     return path
 
 
-def load_rubric(task_dir: pathlib.Path) -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]:
+def load_rubric(
+    task_dir: pathlib.Path, rubric_override: pathlib.Path | None = None
+) -> tuple[dict[str, dict[str, Any]], list[dict[str, Any]]]:
     """Return (criteria-by-id, outline nodes or [])."""
-    rubric_path = task_dir / "evals" / "rubric.json"
+    rubric_path = rubric_override or (task_dir / "evals" / "rubric.json")
     if not rubric_path.exists():
         return {}, []
     rubric = json.loads(rubric_path.read_text(encoding="utf-8"))
@@ -58,7 +60,11 @@ def load_rubric(task_dir: pathlib.Path) -> tuple[dict[str, dict[str, Any]], list
     return index, rubric.get("outline") or []
 
 
-def read_deliverables(submission_dir: pathlib.Path) -> str:
+def read_deliverables(submission: pathlib.Path) -> str:
+    if submission.is_file():
+        return submission.read_text(encoding="utf-8", errors="replace").strip()
+
+    submission_dir = submission
     parts = []
     for path in sorted(submission_dir.glob("*.md")):
         if path.name == "review.md":
@@ -128,7 +134,32 @@ def render_criterion(
         lines.append("")
     if votes > 1 and r.get("vote_counts"):
         vc = r["vote_counts"]
-        lines.append(f"**Votes:** {vc.get('pass', 0)} pass / {vc.get('fail', 0)} fail")
+        lines.append(
+            f"**Votes:** {vc.get('pass', 0)} pass / {vc.get('fail', 0)} fail / "
+            f"{vc.get('error', 0)} error"
+        )
+        if r.get("resolution"):
+            lines.append(f"**Status:** `{r['resolution']}`")
+        lines.append("")
+    voting_rounds = r.get("voting_rounds") or []
+    vote_groups = (
+        [(f"Runde {round_data.get('round', index)}", round_data.get("votes") or [])
+         for index, round_data in enumerate(voting_rounds, start=1)]
+        if voting_rounds
+        else [("Einzelvotes", r.get("votes") or [])]
+    )
+    for group_label, group_votes in vote_groups:
+        if not group_votes:
+            continue
+        lines.append(f"**{group_label}:**")
+        for vote in group_votes:
+            judge = vote.get("judge") or {}
+            judge_name = judge.get("name") or judge.get("model") or "unknown"
+            model = judge.get("model")
+            label = f"{judge_name} ({model})" if model and model != judge_name else str(judge_name)
+            reasoning = str(vote.get("reasoning") or "").strip()
+            suffix = f" — {reasoning}" if reasoning else ""
+            lines.append(f"- **{label}:** `{vote.get('verdict', 'error')}`{suffix}")
         lines.append("")
     if r.get("reasoning"):
         lines.append(f"**Begründung des Judge:** {r['reasoning']}")
@@ -200,9 +231,11 @@ def render_outline_grouped(
 
 def build_markdown(scores_path: pathlib.Path) -> str:
     scores = json.loads(scores_path.read_text(encoding="utf-8"))
-    submission_dir = scores_path.parent
+    submission = pathlib.Path(scores["submission"])
+    submission_dir = submission if submission.is_dir() else submission.parent
     task_dir = pathlib.Path(scores["task"]["path"])
-    rubric, outline = load_rubric(task_dir)
+    recorded_rubric = pathlib.Path(scores["rubric"]) if scores.get("rubric") else None
+    rubric, outline = load_rubric(task_dir, recorded_rubric)
     meta = run_meta(submission_dir)
 
     lines: list[str] = []
@@ -214,10 +247,28 @@ def build_markdown(scores_path: pathlib.Path) -> str:
     votes = scores.get("votes_per_criterion", 1)
     lines.append(f"- **System:** {model} ({harness}{variant})")
     lines.append(
-        f"- **Ergebnis:** {scores['n_passed']}/{scores['n_criteria']} Kriterien erfüllt "
+        f"- **Inhalt:** {scores['n_passed']}/{scores['n_criteria']} Kriterien erfüllt "
         f"({scores['criterion_pass_rate']:.0%})"
     )
-    lines.append(f"- **Judge:** {scores.get('judge_model', '?')}, {votes} Vote(s) pro Kriterium")
+    weighted = scores.get("criticality_weighted_content_score")
+    if weighted:
+        lines.append(
+            f"- **Inhalt nach Wichtigkeit (diagnostisch):** "
+            f"{weighted['points_earned']}/{weighted['points_available']} "
+            f"({weighted['pass_rate']:.0%})"
+        )
+    style = scores.get("style_score")
+    if style is not None:
+        lines.append(
+            f"- **Gutachtenstil:** {style['n_passed']}/{style['n_eligible']} "
+            f"stilrelevante Kriterien methodisch erfüllt ({style['pass_rate']:.0%})"
+        )
+    committee = scores.get("judge_committee") or []
+    if committee:
+        judges = ", ".join(f"{item['name']} ({item['model']})" for item in committee)
+        lines.append(f"- **Judge-Komitee:** {judges}; Mehrheitsentscheidung aus {votes} Votes")
+    else:
+        lines.append(f"- **Judge:** {scores.get('judge_model', '?')}, {votes} Vote(s) pro Kriterium")
     if scores.get("breakdown_by_station"):
         parts = [
             f"{name} {g['n_passed']}/{g['n_criteria']} ({g['pass_rate']:.0%})"
@@ -245,7 +296,7 @@ def build_markdown(scores_path: pathlib.Path) -> str:
     lines.append("")
     lines.append("## Lösung des Systems")
     lines.append("")
-    lines.append(read_deliverables(submission_dir))
+    lines.append(read_deliverables(submission))
     lines.append("")
     lines.append("---")
     lines.append("")

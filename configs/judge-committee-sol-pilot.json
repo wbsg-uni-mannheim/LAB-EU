@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1",
+  "description": "Independent judges for the Sol-generated professor-case stability pilot.",
+  "judges": [
+    {
+      "name": "luna",
+      "model": "gpt-5.6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "terra",
+      "model": "gpt-5.6-terra",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "gemini-3.6-flash",
+      "model": "google/gemini-3.6-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "none",
+      "parallel": 4
+    }
+  ]
+}

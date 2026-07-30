@@ -5,14 +5,22 @@ The candidates come from three generator roles (doctrine, fact grounding, advers
 What to remove:
 - Exact duplicates and paraphrases of the same legal proposition. Keep the clearer formulation and record the other IDs in candidate_ids_merged.
 - Aggregate criteria that only restate combinations of other criteria (interim results, overall-quality checks). They double-count errors already caught by the specific criteria.
+- Criteria whose failure would merely repeat the same legal error already captured by another criterion for the same person, issue, and examination station. Keep the criterion that most directly tests the error and reject the duplicate to avoid double counting.
 - Candidates with criticality "diagnostic" and candidates built on knowledge the solution marks as not expected. Record them in rejected_candidates.
+- Candidates derived from a gap, unsupported assertion, or internal contradiction in the supplied solution. Do not repair the solution through model knowledge.
 - Vague candidates that cannot be decided pass/fail from the answer text; rewrite them into observable checks if the point is material, otherwise reject them.
+- Standalone definitions or abstract rule statements that merely supply the standard for a retained application or argumentation criterion. Merge the necessary standard into that criterion. Keep a separate rule criterion only when the rule, doctrinal dispute, or choice of legal test is independently material and grading-worthy without the application.
+- Separate criteria for every provision or issue that the task expressly excludes from examination. If compliance with an exclusion is materially grading-worthy, combine all such exclusions into at most one scope-compliance criterion per deliverable. Do not award several content points merely because the answer omits several excluded issues.
 
 What to preserve:
 - Never merge candidates that check different legal propositions. Merging is allowed only for true duplicates. A criterion whose PASS side chains several independently checkable requirements with "und"/"sowie"/"and" is a bundling error: split it or keep the candidates separate.
+- Preserve independently meaningful partial credit for an abstract rule only when the rule is independently material and grading-worthy without its application. Otherwise combine the necessary rule or definition with the material case-specific application. Do not make separate criteria for individual facts, indicators, arguments, citations, or intermediate phrases that only support the same application or conclusion.
 - Choose the number of final criteria from the case; there is no fixed target. The right size is the number of distinct material propositions. If your final count is far below the number of distinct material candidates, you are over-pruning, not deduplicating.
 - Keep only material checks a supervising lawyer would require before accepting the answer. Under all-pass scoring, every kept criterion must be one a competent answer cannot be allowed to miss.
 - Keep explicitly named defensible alternatives from the candidates. If a criterion accepts an alternative position, the alternative and what it requires must be named inside the match_criteria, never as an unspecified "vertretbar".
+- An expressly accepted, result-relevant path marked in the supplied solution as "vertretbar", "a.A. vertretbar", "andere Ansicht vertretbar" or "bei guter Begründung vertretbar" must not be removed merely because the solution develops it more briefly than the reference path. Preserve the alternative in the criterion for the affected proposition and carry its consequences through dependent interim and final results. Do not invent missing amounts or consequences that the solution leaves open.
+- Reject or rewrite an alternative that can pass from its label alone. An accepted alternative carries its own burden: the relevant standard and its application to the same person, object, and issue.
+- Do not add alternatives that are not expressly accepted in the supplied solution atoms. The supplied solution is the reference path, not a prompt to reconstruct every literature position.
 
 Audit every final criterion before returning it:
 - It is decidable from the agent answer alone, with named source documents at most as context.
@@ -20,8 +28,22 @@ Audit every final criterion before returning it:
 - It resolves to exactly pass or fail without inferring the agent's intent.
 - It does not test mere style, thoroughness, or ordering unless the task specifically tests document form.
 - It tolerates legally equivalent wording, citations, and structure.
+- It identifies the relevant person/participant, claim, administrative act, subject matter, offence, or examination issue wherever evidence could otherwise be transferred from another object.
+- It identifies the examination station whenever the same fact or proposition could serve a different legal purpose elsewhere. Alternative placement remains acceptable only when the answer expressly connects it to the same object and issue.
+- If it requires an examination, application, or argument, a bare mention, heading, or result cannot pass it. An application criterion names a concrete source-document fact and requires the legal connection between that fact and the rule; result-determinative conclusions include the controlling legal reason.
+- If the solution materially chooses between competing provisions or legal frameworks, the rubric checks the correct choice and its controlling reason rather than rewarding either citation in isolation.
+- Its factual requirements come from the supplied source documents and cannot be met through invented material facts.
+- It does not require incidental numerical or verbal precision unless that precision is legally material according to the supplied task or solution.
+- Its failure is not already fully represented by another retained criterion for the same object and station.
+- A definition or abstract rule is not standalone unless it is independently material without the corresponding application.
 - It keeps explicit Boolean labels in the case language, such as "ERFÜLLT" / "NICHT ERFÜLLT" for German.
 - It is concise enough for a single judge prompt.
+- If match_criteria would exceed roughly 900 characters, re-audit it for independently gradable propositions before keeping it. Split independent requirements; retain a longer criterion only when the extra length is necessary to state expressly accepted alternative paths for the same proposition.
+
+Audit coverage after selecting the final criteria:
+- Every atom with expectation "core" must either appear in derived_from_atoms of at least one final criterion or be listed once in coverage_audit.uncovered_core_atoms with a concrete reason.
+- Valid reasons include an aggregate result already captured by named criteria, an unsupported or contradictory solution passage, a routine non-material formality, or an explicit task exclusion already represented by the single scope-compliance criterion.
+- Do not use a vague reason such as "not needed". The audit is an accountability record, not a request to turn every core atom into a criterion.
 
 Record every rejected candidate ID with a short reason (at most ten words). Group candidates rejected for the same reason into one entry with an "ids" list instead of repeating the reason.
 
@@ -44,5 +66,11 @@ Return only valid JSON:
   "rejected_candidates": [
     {"ids": ["K-998", "K-999"], "reason": "..."}
   ],
-  "pruning_notes": ["..."]
+  "pruning_notes": ["..."],
+  "coverage_audit": {
+    "uncovered_core_atoms": [
+      {"id": "A-099", "reason": "Aggregiertes Ergebnis; durch C-010 bis C-014 erfasst."}
+    ],
+    "notes": ["..."]
+  }
 }

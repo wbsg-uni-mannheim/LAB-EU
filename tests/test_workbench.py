@@ -101,7 +101,7 @@ class WorkbenchCoreTests(unittest.TestCase):
                     "databases": False,
                     "other_tools": False,
                 },
-                judge_ready_only=True,
+                judge_ready_only=False,
                 studies_root=studies_root,
             )
             self.assertEqual(study["n_tasks"], 1)
@@ -123,7 +123,7 @@ class WorkbenchCoreTests(unittest.TestCase):
             )
             self.assertTrue(completed["complete"])
             self.assertEqual(completed["n_completed"], 1)
-            self.assertIsNotNone(completed["judge_command"])
+            self.assertIsNone(completed["judge_command"])
             manifest = json.loads((pathlib.Path(completed["run_dir"]) / "manifest.json").read_text())
             self.assertEqual(manifest["capabilities"]["web_search"], True)
             self.assertEqual(manifest["system_prompt_sha256"], completed["system_prompt_sha256"])
@@ -176,7 +176,7 @@ class WorkbenchCoreTests(unittest.TestCase):
                     "other_tools": True,
                     "system_unknown": True,
                 },
-                judge_ready_only=True,
+                judge_ready_only=False,
                 studies_root=pathlib.Path(directory),
             )
             self.assertTrue(study["capabilities"]["system_unknown"])
@@ -311,7 +311,7 @@ class WorkbenchAppTests(unittest.TestCase):
                 "system_prompt": "Stored system prompt",
                 "reviewer": "Alice",
                 "provider": "Internal",
-                "judge_ready_only": True,
+                "judge_ready_only": False,
                 "capabilities": {
                     "agent": False,
                     "single_llm": True,

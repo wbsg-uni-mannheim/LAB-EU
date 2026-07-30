@@ -12,6 +12,7 @@ from typing import Any
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 from outline_util import UE_ID, index_outline, walk  # noqa: E402
+from generate_rubric import criticality_distribution_warnings  # noqa: E402
 
 
 def parse_args() -> argparse.Namespace:
@@ -23,6 +24,16 @@ def parse_args() -> argparse.Namespace:
         nargs="+",
         type=pathlib.Path,
         help="Task directory containing task.json, documents/, and evals/rubric.json.",
+    )
+    parser.add_argument(
+        "--rubric-name",
+        default="rubric.json",
+        help="Rubric filename inside evals/. Defaults to rubric.json.",
+    )
+    parser.add_argument(
+        "--output-name",
+        default="rubric-review.md",
+        help="Review filename inside evals/. Defaults to rubric-review.md.",
     )
     return parser.parse_args()
 
@@ -103,9 +114,9 @@ def append_file_section(
         lines.append("")
 
 
-def build_markdown(task_dir: pathlib.Path) -> str:
+def build_markdown(task_dir: pathlib.Path, rubric_name: str = "rubric.json") -> str:
     task = load_json(task_dir / "task.json")
-    rubric = load_json(task_dir / "evals" / "rubric.json")
+    rubric = load_json(task_dir / "evals" / rubric_name)
     solution = solution_path(task_dir)
     criteria = rubric.get("criteria", [])
     if not isinstance(criteria, list) or not criteria:
@@ -151,6 +162,14 @@ def build_markdown(task_dir: pathlib.Path) -> str:
         for tier in (3, 2, 1):
             lines.append(f"- {tier_labels[tier]}: {tier_counts[tier]} Kriterien")
         lines.append("")
+        distribution_warnings = criticality_distribution_warnings(criteria)
+        if distribution_warnings:
+            lines.append("**Freeze-Warnung zur Sterneverteilung:**")
+            lines.append("")
+            for warning in distribution_warnings:
+                lines.append(f"- {warning}")
+            lines.append("- Vor dem Freeze korrigieren oder die Abweichung fachlich begründen.")
+            lines.append("")
 
     def render_criterion(criterion: dict[str, Any], heading: str) -> None:
         lines.append(f"{heading} {criterion.get('id', '')} - {criterion.get('title', '')}")
@@ -214,9 +233,13 @@ def build_markdown(task_dir: pathlib.Path) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
-def write_review(task_dir: pathlib.Path) -> pathlib.Path:
-    output_path = task_dir / "evals" / "rubric-review.md"
-    output_path.write_text(build_markdown(task_dir), encoding="utf-8")
+def write_review(
+    task_dir: pathlib.Path,
+    rubric_name: str = "rubric.json",
+    output_name: str = "rubric-review.md",
+) -> pathlib.Path:
+    output_path = task_dir / "evals" / output_name
+    output_path.write_text(build_markdown(task_dir, rubric_name), encoding="utf-8")
     return output_path
 
 
@@ -224,8 +247,8 @@ def main() -> int:
     args = parse_args()
     for raw_task_dir in args.task_dir:
         task_dir = raw_task_dir.resolve()
-        output_path = write_review(task_dir)
-        rubric = load_json(task_dir / "evals" / "rubric.json")
+        output_path = write_review(task_dir, args.rubric_name, args.output_name)
+        rubric = load_json(task_dir / "evals" / args.rubric_name)
         print(f"Wrote {output_path} ({len(rubric.get('criteria', []))} criteria)")
     return 0
 
