@@ -1,0 +1,270 @@
+{
+  "schema_version": "0.1",
+  "purpose": "Internal, case-neutral engineering calibration for the separate Gutachtenstil judge. Not expert gold and not rubric-generation input.",
+  "cases": [
+    {
+      "id": "ziv-pass-subsumtion",
+      "area": "zivilrecht",
+      "kind": "application",
+      "expected_verdict": "pass",
+      "task_title": "Kaufrechtlicher Übungsfall",
+      "criterion_title": "Sachmangel bei Gefahrübergang",
+      "match_criteria": "Die Lösung ordnet die bei Übergabe fehlende vereinbarte Eigenschaft als Sachmangel ein.",
+      "answer": "Ein Sachmangel liegt vor, wenn die Sache bei Gefahrübergang nicht die vereinbarte Beschaffenheit hat. Der Wagen war bereits bei Übergabe entgegen der Vereinbarung nicht unfallfrei. Damit lag bei Gefahrübergang ein Sachmangel vor.",
+      "content_evidence": ["Der Wagen war bereits bei Übergabe entgegen der Vereinbarung nicht unfallfrei."]
+    },
+    {
+      "id": "ziv-pass-routine",
+      "area": "zivilrecht",
+      "kind": "routine",
+      "expected_verdict": "pass",
+      "task_title": "Vertraglicher Anspruch",
+      "criterion_title": "Wirksamer Kaufvertrag",
+      "match_criteria": "Die Lösung bejaht einen Kaufvertrag durch Angebot und Annahme.",
+      "answer": "A und B einigten sich über Sache und Preis; ein wirksamer Kaufvertrag gemäß § 433 BGB liegt vor.",
+      "content_evidence": ["A und B einigten sich über Sache und Preis"]
+    },
+    {
+      "id": "ziv-pass-alternative-order",
+      "area": "zivilrecht",
+      "kind": "application",
+      "expected_verdict": "pass",
+      "task_title": "Deliktsrechtlicher Fall",
+      "criterion_title": "Eigentumsverletzung",
+      "match_criteria": "Die Beschädigung der Sache wird als Eigentumsverletzung eingeordnet.",
+      "answer": "Die zerbrochene Kamera stand im Eigentum des K. Indem B sie zu Boden stieß und dadurch unbrauchbar machte, beeinträchtigte er die Sachsubstanz. Das Eigentum des K wurde somit verletzt.",
+      "content_evidence": ["Indem B sie zu Boden stieß und dadurch unbrauchbar machte, beeinträchtigte er die Sachsubstanz."]
+    },
+    {
+      "id": "ziv-pass-definition",
+      "area": "zivilrecht",
+      "kind": "rule_statement",
+      "expected_verdict": "pass",
+      "task_title": "Stellvertretungsfall",
+      "criterion_title": "Eigene Willenserklärung",
+      "match_criteria": "Die Lösung nennt den Maßstab für eine eigene Willenserklärung des Vertreters.",
+      "answer": "Eine eigene Willenserklärung liegt vor, wenn der Handelnde einen eigenen Entscheidungsspielraum besitzt und nicht lediglich eine fremde Erklärung übermittelt.",
+      "content_evidence": ["wenn der Handelnde einen eigenen Entscheidungsspielraum besitzt"]
+    },
+    {
+      "id": "ziv-fail-bare-result",
+      "area": "zivilrecht",
+      "kind": "application",
+      "expected_verdict": "fail",
+      "task_title": "Mietrechtlicher Fall",
+      "criterion_title": "Erheblicher Mietmangel",
+      "match_criteria": "Die Lösung subsumiert den Heizungsausfall unter einen erheblichen Mietmangel.",
+      "answer": "Der Heizungsausfall ist ein erheblicher Mietmangel. Daher ist die Miete gemindert.",
+      "content_evidence": ["Der Heizungsausfall ist ein erheblicher Mietmangel."]
+    },
+    {
+      "id": "ziv-fail-facts-only",
+      "area": "zivilrecht",
+      "kind": "application",
+      "expected_verdict": "fail",
+      "task_title": "Anfechtungsfall",
+      "criterion_title": "Arglistige Täuschung",
+      "match_criteria": "Die Lösung verbindet die bewusst falsche Angabe mit dem Täuschungstatbestand.",
+      "answer": "V wusste von dem Wasserschaden. Er sagte K trotzdem, das Haus sei trocken. K unterschrieb danach den Vertrag.",
+      "content_evidence": ["Er sagte K trotzdem, das Haus sei trocken."]
+    },
+    {
+      "id": "ziv-fail-heading-list",
+      "area": "zivilrecht",
+      "kind": "argumentation",
+      "expected_verdict": "fail",
+      "task_title": "AGB-Fall",
+      "criterion_title": "Unangemessene Benachteiligung",
+      "match_criteria": "Die Lösung begründet die unangemessene Benachteiligung anhand der Interessen beider Parteien.",
+      "answer": "Unangemessene Benachteiligung: Haftungsrisiko, Kundeninteresse, Unternehmerinteresse, § 307 BGB. Ergebnis: unwirksam.",
+      "content_evidence": ["Ergebnis: unwirksam."]
+    },
+    {
+      "id": "ziv-fail-disconnected-rule",
+      "area": "zivilrecht",
+      "kind": "application",
+      "expected_verdict": "fail",
+      "task_title": "Bereicherungsrechtlicher Fall",
+      "criterion_title": "Leistung ohne Rechtsgrund",
+      "match_criteria": "Die Zahlung wird nachvollziehbar als Leistung ohne Rechtsgrund eingeordnet.",
+      "answer": "Leistung ist die bewusste und zweckgerichtete Mehrung fremden Vermögens. Ein Rechtsgrund fehlt. C überwies 500 Euro. Anspruch gegeben.",
+      "content_evidence": ["C überwies 500 Euro.", "Ein Rechtsgrund fehlt."]
+    },
+    {
+      "id": "straf-pass-subsumtion",
+      "area": "strafrecht",
+      "kind": "application",
+      "expected_verdict": "pass",
+      "task_title": "Strafrechtlicher Übungsfall",
+      "criterion_title": "Bedingter Tötungsvorsatz",
+      "match_criteria": "Die Lösung begründet Wissens- und Willenselement des bedingten Tötungsvorsatzes.",
+      "answer": "T erkannte, dass der Schlag mit der Eisenstange gegen den Kopf tödlich sein konnte. Gleichwohl schlug er aus Wut zu und fand sich mit diesem Ausgang ab. Er handelte daher mit bedingtem Tötungsvorsatz.",
+      "content_evidence": ["fand sich mit diesem Ausgang ab"]
+    },
+    {
+      "id": "straf-pass-concise-basis",
+      "area": "strafrecht",
+      "kind": "legal_basis",
+      "expected_verdict": "pass",
+      "task_title": "Versuchsfall",
+      "criterion_title": "Versuchsstrafbarkeit",
+      "match_criteria": "Die Lösung nennt §§ 22, 23 Abs. 1 StGB und die Verbrechensqualität.",
+      "answer": "Der Versuch ist nach §§ 22, 23 Abs. 1 StGB strafbar, weil § 212 Abs. 1 StGB ein Verbrechen ist.",
+      "content_evidence": ["nach §§ 22, 23 Abs. 1 StGB strafbar"]
+    },
+    {
+      "id": "straf-pass-dispute",
+      "area": "strafrecht",
+      "kind": "argumentation",
+      "expected_verdict": "pass",
+      "task_title": "Täterschaft und Teilnahme",
+      "criterion_title": "Tatherrschaft des Beteiligten",
+      "match_criteria": "Die Lösung wägt den Einfluss auf Planung und Ausführung ab.",
+      "answer": "Zwar war A an der Planung beteiligt. Im Ausführungsstadium konnte er den Ablauf jedoch weder steuern noch stoppen, während B allein über das Ob und Wie entschied. Der bloße Planungsbeitrag vermittelt deshalb keine funktionale Tatherrschaft; A ist nur Teilnehmer.",
+      "content_evidence": ["konnte er den Ablauf jedoch weder steuern noch stoppen"]
+    },
+    {
+      "id": "straf-pass-cross-reference",
+      "area": "strafrecht",
+      "kind": "application",
+      "expected_verdict": "pass",
+      "task_title": "Mehrpersonenfall",
+      "criterion_title": "Vorsatz des C",
+      "match_criteria": "Die Lösung prüft den Vorsatz des C und darf auf die unmittelbar zuvor erläuterten Umstände verweisen.",
+      "answer": "C kannte wie zuvor bei B festgestellt den im gemeinsamen Gespräch vereinbarten Einsatz des Messers. Anders als B billigte auch C die mögliche tödliche Verletzung ausdrücklich. C handelte daher vorsätzlich.",
+      "content_evidence": ["Anders als B billigte auch C die mögliche tödliche Verletzung ausdrücklich."]
+    },
+    {
+      "id": "straf-fail-result-chain",
+      "area": "strafrecht",
+      "kind": "application",
+      "expected_verdict": "fail",
+      "task_title": "Versuchsfall",
+      "criterion_title": "Unmittelbares Ansetzen",
+      "match_criteria": "Die Lösung subsumiert Tätervorstellung, Zwischenakte und Rechtsgutsgefährdung.",
+      "answer": "S hat unmittelbar angesetzt. Der Versuch hat damit begonnen. § 22 StGB ist erfüllt.",
+      "content_evidence": ["S hat unmittelbar angesetzt."]
+    },
+    {
+      "id": "straf-fail-wrong-station",
+      "area": "strafrecht",
+      "kind": "application",
+      "expected_verdict": "fail",
+      "task_title": "Rücktrittsfall",
+      "criterion_title": "Freiwilligkeit des Rücktritts",
+      "match_criteria": "Die Freiwilligkeit wird innerhalb der Rücktrittsprüfung begründet.",
+      "answer": "Im Tatentschluss wollte R das Opfer töten. Später lief er freiwillig weg. Ergebnis: strafbefreiender Rücktritt.",
+      "content_evidence": ["Später lief er freiwillig weg."]
+    },
+    {
+      "id": "straf-fail-long-but-unconnected",
+      "area": "strafrecht",
+      "kind": "argumentation",
+      "expected_verdict": "fail",
+      "task_title": "Notwehrfall",
+      "criterion_title": "Gebotenheit der Verteidigung",
+      "match_criteria": "Die Lösung begründet anhand sozialethischer Einschränkungen, ob die Verteidigung geboten war.",
+      "answer": "Notwehr ist ein traditionsreiches Recht. Das Recht braucht dem Unrecht nicht zu weichen. Es gibt Fallgruppen zur Gebotenheit und viele Auffassungen in der Literatur. Hier war die Verteidigung geboten.",
+      "content_evidence": ["Hier war die Verteidigung geboten."]
+    },
+    {
+      "id": "straf-fail-person-transfer",
+      "area": "strafrecht",
+      "kind": "application",
+      "expected_verdict": "fail",
+      "task_title": "Mittäterfall",
+      "criterion_title": "Täterwille des A",
+      "match_criteria": "Die Lösung begründet den Täterwillen gerade des A.",
+      "answer": "B wollte die Tat als eigene und hatte ein erhebliches Tatinteresse. A war ebenfalls am Tatort. Deshalb handelten beide als Täter.",
+      "content_evidence": ["B wollte die Tat als eigene"]
+    },
+    {
+      "id": "oeff-pass-subsumtion",
+      "area": "oeffentliches-recht",
+      "kind": "application",
+      "expected_verdict": "pass",
+      "task_title": "Verwaltungsrechtlicher Fall",
+      "criterion_title": "Regelungswirkung",
+      "match_criteria": "Die verbindliche Festlegung der Behörde wird als Regelung eingeordnet.",
+      "answer": "Eine Regelung setzt eine verbindliche Rechtsfolge. Das Schreiben verpflichtet G ausdrücklich, die Anlage bis zum Monatsende zu entfernen, und verändert damit seine Rechtsposition. Es enthält eine Regelung.",
+      "content_evidence": ["verpflichtet G ausdrücklich, die Anlage bis zum Monatsende zu entfernen"]
+    },
+    {
+      "id": "oeff-pass-routine-admissibility",
+      "area": "oeffentliches-recht",
+      "kind": "routine",
+      "expected_verdict": "pass",
+      "task_title": "Anfechtungsklage",
+      "criterion_title": "Eröffnung des Verwaltungsrechtswegs",
+      "match_criteria": "Die öffentlich-rechtliche Streitigkeit wird knapp nachvollziehbar bejaht.",
+      "answer": "Die Beteiligten streiten über eine auf Polizeirecht gestützte Verfügung; die Streitigkeit ist öffentlich-rechtlich und nichtverfassungsrechtlich. Der Verwaltungsrechtsweg ist nach § 40 Abs. 1 Satz 1 VwGO eröffnet.",
+      "content_evidence": ["auf Polizeirecht gestützte Verfügung"]
+    },
+    {
+      "id": "oeff-pass-proportionality",
+      "area": "oeffentliches-recht",
+      "kind": "argumentation",
+      "expected_verdict": "pass",
+      "task_title": "Grundrechtsfall",
+      "criterion_title": "Angemessenheit",
+      "match_criteria": "Die Lösung wägt Eingriffsgewicht und verfolgten Gemeinwohlbelang ab.",
+      "answer": "Das vollständige Verbot nimmt V jede Möglichkeit der Berufsausübung und wiegt daher schwer. Dem steht lediglich eine abstrakte, durch mildere Kontrollen beherrschbare Gefahr gegenüber. Das Verbot ist deshalb außer Verhältnis zum angestrebten Schutz und unangemessen.",
+      "content_evidence": ["durch mildere Kontrollen beherrschbare Gefahr"]
+    },
+    {
+      "id": "oeff-pass-pure-conclusion",
+      "area": "oeffentliches-recht",
+      "kind": "conclusion",
+      "expected_verdict": "pass",
+      "task_title": "Normenkontrolle",
+      "criterion_title": "Gesamtergebnis",
+      "match_criteria": "Die Lösung nennt als Gesamtergebnis die Begründetheit des Antrags.",
+      "answer": "Der Normenkontrollantrag ist begründet.",
+      "content_evidence": ["Der Normenkontrollantrag ist begründet."]
+    },
+    {
+      "id": "oeff-fail-bare-proportionality",
+      "area": "oeffentliches-recht",
+      "kind": "argumentation",
+      "expected_verdict": "fail",
+      "task_title": "Grundrechtsfall",
+      "criterion_title": "Angemessenheit",
+      "match_criteria": "Die Lösung wägt die kollidierenden Belange fallbezogen ab.",
+      "answer": "Die Maßnahme ist geeignet, erforderlich und angemessen. Sie ist daher verhältnismäßig.",
+      "content_evidence": ["Die Maßnahme ist geeignet, erforderlich und angemessen."]
+    },
+    {
+      "id": "oeff-fail-norm-dump",
+      "area": "oeffentliches-recht",
+      "kind": "application",
+      "expected_verdict": "fail",
+      "task_title": "Baurechtlicher Fall",
+      "criterion_title": "Gebot der Rücksichtnahme",
+      "match_criteria": "Die Lösung wendet das Rücksichtnahmegebot auf Abstand, Nutzung und Belastung an.",
+      "answer": "§ 34 BauGB. Rücksichtnahmegebot. Nachbarrechte. Abstandsflächen. Das Vorhaben ist rücksichtslos.",
+      "content_evidence": ["Das Vorhaben ist rücksichtslos."]
+    },
+    {
+      "id": "oeff-fail-unexplained-facts",
+      "area": "oeffentliches-recht",
+      "kind": "application",
+      "expected_verdict": "fail",
+      "task_title": "Polizeirechtlicher Fall",
+      "criterion_title": "Konkrete Gefahr",
+      "match_criteria": "Die Lösung verbindet die Tatsachen mit der hinreichenden Schadenswahrscheinlichkeit.",
+      "answer": "Die Menschen standen dicht beieinander. Einige riefen laut. Zwei Flaschen lagen auf dem Boden. Eine konkrete Gefahr lag vor.",
+      "content_evidence": ["Eine konkrete Gefahr lag vor."]
+    },
+    {
+      "id": "oeff-fail-wrong-object",
+      "area": "oeffentliches-recht",
+      "kind": "application",
+      "expected_verdict": "fail",
+      "task_title": "Kommunalrechtlicher Fall",
+      "criterion_title": "Klagebefugnis der Gemeinde",
+      "match_criteria": "Die mögliche Verletzung gerade gemeindlicher Rechte wird erläutert.",
+      "answer": "Der Bürger könnte in seiner allgemeinen Handlungsfreiheit verletzt sein. Daher ist auch die Gemeinde klagebefugt.",
+      "content_evidence": ["Der Bürger könnte in seiner allgemeinen Handlungsfreiheit verletzt sein."]
+    }
+  ]
+}

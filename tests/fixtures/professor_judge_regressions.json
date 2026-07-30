@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.1",
+  "cases": [
+    {
+      "id": "trio-bare-result-is-not-examination",
+      "task_dir": "tasks/de/strafrecht/materielles-strafrecht/ubungsfall-ein-zauderndes-trio",
+      "criterion_id": "C-004",
+      "criterion": {
+        "id": "C-004",
+        "title": "Tatentschluss beim Versuch",
+        "match_criteria": "ERFÜLLT, wenn die Antwort den Tatentschluss beim versuchten Totschlag als Vorsatz, also Wissen und Wollen hinsichtlich aller Merkmale des objektiven Tatbestands des § 212 Abs. 1 StGB, bestimmt. NICHT ERFÜLLT, wenn sie nur ein Ergebnis behauptet, ohne den erforderlichen subjektiven Maßstab inhaltlich zu bestimmen.",
+        "deliverables": ["fallloesung.md"],
+        "sources": []
+      },
+      "answer": "B wollte O töten. Er handelte mit Tötungsvorsatz. Mithin hatte B Tatentschluss.",
+      "expected_verdict": "fail",
+      "reason": "Ein Ergebnissatz ersetzt die verlangte Bestimmung des Tatentschlusses nicht."
+    },
+    {
+      "id": "trio-section-omitted",
+      "task_dir": "tasks/de/strafrecht/materielles-strafrecht/ubungsfall-ein-zauderndes-trio",
+      "criterion_id": "C-052",
+      "criterion": {
+        "id": "C-052",
+        "title": "Vorsatz des A bei § 30 Abs. 2 Var. 3 StGB",
+        "match_criteria": "ERFÜLLT, wenn die Antwort innerhalb der Prüfung des A nach § 30 Abs. 2 Var. 3 StGB dessen Vorsatz hinsichtlich der konkreten Verbrechensverabredung prüft. NICHT ERFÜLLT, wenn sie nur Vorsatz in einer anderen Deliktsstation nennt oder § 30 Abs. 2 Var. 3 StGB nicht prüft.",
+        "deliverables": ["fallloesung.md"],
+        "sources": []
+      },
+      "answer": "Im Rahmen des versuchten Totschlags ist festzustellen, dass A O gemeinsam mit B und C töten wollte. Eine Strafbarkeit nach § 30 Abs. 2 StGB wird nicht geprüft.",
+      "expected_verdict": "fail",
+      "reason": "Vorsatz an einer anderen Deliktsstation belegt keine Prüfung des § 30 Abs. 2 Var. 3 StGB."
+    },
+    {
+      "id": "trio-wrong-person",
+      "task_dir": "tasks/de/strafrecht/materielles-strafrecht/ubungsfall-ein-zauderndes-trio",
+      "criterion_id": "C-052",
+      "criterion": {
+        "id": "C-052",
+        "title": "Vorsatz des A bei § 30 Abs. 2 Var. 3 StGB",
+        "match_criteria": "ERFÜLLT, wenn die Antwort innerhalb der Prüfung des A nach § 30 Abs. 2 Var. 3 StGB dessen Vorsatz hinsichtlich der konkreten Verbrechensverabredung prüft. NICHT ERFÜLLT, wenn sie nur B und C prüft oder Ausführungen zu anderen Personen auf A überträgt.",
+        "deliverables": ["fallloesung.md"],
+        "sources": []
+      },
+      "answer": "B und C verabredeten die Tötung des O und wollten sich daran als Täter beteiligen. A hatte den Tötungsplan zuvor mitentwickelt; seine Strafbarkeit nach § 30 Abs. 2 StGB bleibt offen.",
+      "expected_verdict": "fail",
+      "reason": "Die Prüfung von B und C darf nicht auf A übertragen werden."
+    },
+    {
+      "id": "trio-invented-fact",
+      "task_dir": "tasks/de/strafrecht/materielles-strafrecht/ubungsfall-ein-zauderndes-trio",
+      "criterion_id": "C-043",
+      "criterion": {
+        "id": "C-043",
+        "title": "Freiwilligkeit des Rücktritts von B und C",
+        "match_criteria": "ERFÜLLT, wenn die Antwort die Freiwilligkeit anhand von Umständen beurteilt, die im Sachverhalt angelegt sind. NICHT ERFÜLLT, wenn die tragende Beurteilung auf erfundenen Motiven oder Umständen beruht.",
+        "deliverables": ["fallloesung.md"],
+        "sources": ["documents/sachverhalt.md"]
+      },
+      "answer": "B und C liefen ausschließlich aus Reue und aus Furcht vor der bereits herannahenden Polizei davon.",
+      "expected_verdict": "fail",
+      "reason": "Die behaupteten Beweggründe stehen nicht im Sachverhalt."
+    },
+    {
+      "id": "trio-valid-alternative-structure",
+      "task_dir": "tasks/de/strafrecht/materielles-strafrecht/ubungsfall-ein-zauderndes-trio",
+      "criterion_id": "C-002",
+      "criterion": {
+        "id": "C-002",
+        "title": "Keine vollendete Tötung des O",
+        "match_criteria": "ERFÜLLT, wenn die Antwort in einer eindeutig für A, B und C geltenden Vorprüfung oder in den jeweiligen Einzelprüfungen feststellt, dass O nicht gestorben ist und deshalb keine vollendete Tötung vorliegt. NICHT ERFÜLLT, wenn sie den fehlenden Tod nicht erfasst oder eine vollendete Tötung annimmt.",
+        "deliverables": ["fallloesung.md"],
+        "sources": []
+      },
+      "answer": "Vor die Einzelprüfungen von A, B und C stelle ich eine gemeinsame Vorprüfung: O hat den Angriff überlebt; der tatbestandliche Tod ist nicht eingetreten. Eine vollendete Tötung scheidet daher für alle drei aus.",
+      "expected_verdict": "pass",
+      "reason": "Der Punkt ist trotz abweichender, aber eindeutiger Struktur richtig geprüft."
+    }
+  ]
+}
