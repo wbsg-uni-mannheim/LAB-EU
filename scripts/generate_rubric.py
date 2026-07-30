@@ -524,6 +524,41 @@ def validate_pruning_coverage(
     return errors
 
 
+def normalize_pruning_coverage_audit(pruned: dict[str, Any]) -> list[str]:
+    """Remove audit entries already covered by an emitted criterion."""
+    covered_ids = {
+        str(atom_id)
+        for criterion in (pruned.get("criteria") or [])
+        if isinstance(criterion, dict)
+        for atom_id in (criterion.get("derived_from_atoms") or [])
+    }
+    audit = pruned.get("coverage_audit")
+    if not isinstance(audit, dict):
+        return []
+    uncovered = audit.get("uncovered_core_atoms")
+    if not isinstance(uncovered, list):
+        return []
+
+    removed = sorted(
+        {
+            str(item.get("id"))
+            for item in uncovered
+            if isinstance(item, dict) and str(item.get("id")) in covered_ids
+        }
+    )
+    if not removed:
+        return []
+    audit["uncovered_core_atoms"] = [
+        item
+        for item in uncovered
+        if not (isinstance(item, dict) and str(item.get("id")) in covered_ids)
+    ]
+    return [
+        "Coverage audit normalized: removed already-covered core atoms from the "
+        f"uncovered list: {', '.join(removed)}"
+    ]
+
+
 def criticality_distribution_warnings(criteria: list[dict[str, Any]]) -> list[str]:
     """Return reviewer-facing warnings for the agreed 3/2/1-star target.
 
@@ -1170,6 +1205,9 @@ def main() -> int:
         label="prune_criteria",
         cache_dir=cache_dir,
     )
+    coverage_normalization_warnings = normalize_pruning_coverage_audit(pruned)
+    for warning in coverage_normalization_warnings:
+        print(f"WARNING: {warning}", file=sys.stderr)
 
     calibration_result: dict[str, Any] | None = None
     if calibrate:
@@ -1247,6 +1285,7 @@ def main() -> int:
         f"Criticality distribution: {warning}"
         for warning in criticality_distribution_warnings(final_criteria)
     ]
+    validation_warnings.extend(coverage_normalization_warnings)
     validation_warnings.extend(
         f"Long criterion for manual bundling review: {criterion.get('id')} "
         f"({len(str(criterion.get('match_criteria', '')))} characters)"
