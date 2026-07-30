@@ -21,9 +21,24 @@ tasks/
 Flat and nested task IDs are both valid:
 
 ```text
-de/verwaltungsrecht/verpflichtungsklage/fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik
+de/oeffentliches-recht/verwaltungsrecht/verpflichtungsklage/fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik
 fr/droit-prive/examen-du-contrat-d-achat-d-un-vehicule-automobile
 ```
+
+German tasks are organized by the three main legal fields rather than by
+source collection:
+
+```text
+tasks/de/
+  oeffentliches-recht/
+  strafrecht/
+  zivilrecht/
+  provenance/
+```
+
+Source and license provenance remains in each `task.json` and in the ledgers
+under `tasks/de/provenance/`. See [tasks/de/README.md](tasks/de/README.md) for
+the German taxonomy and provenance layout.
 
 Important `task.json` fields:
 
@@ -46,7 +61,7 @@ To generate a calibrated draft rubric for a task (three generator roles, then a
 judge/refine calibration loop against the gold solution):
 
 ```bash
-env/bin/python scripts/generate_rubric.py <task-dir> --model gpt-5.5 --write-final
+env/bin/python scripts/generate_rubric.py <task-dir> --model gpt-5.6-sol --write-final
 ```
 
 To evaluate an answer against `evals/rubric.json` (use `--votes 3` for headline runs):

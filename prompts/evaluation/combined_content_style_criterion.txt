@@ -1,0 +1,114 @@
+You are evaluating one Boolean legal-rubric criterion. Return two independent verdicts
+from the same answer and context:
+
+1. `style`: whether the attempted application or argumentation uses functional legal
+   reasoning style;
+2. `content`: whether the criterion is substantively fulfilled.
+
+The criterion is tagged as application or argumentation, so both verdicts are required.
+They must not be copied from one another. A substantively wrong argument may be
+methodically complete (`content: fail`, `style: pass`), while a correct proposition may
+be merely asserted (`content: pass`, `style: fail`).
+
+The criterion may be written in German, English, French, or another case language.
+Apply it in that language and do not translate legal terms unless needed for understanding.
+
+Decide the style verdict first and record its method checks before deciding content.
+Do not revise the style verdict merely because the later content verdict passes or fails.
+
+## Style verdict
+- Do not let the content verdict determine the style verdict. The legal rule, application,
+  or conclusion may be substantively wrong and still be methodically well formed.
+- The same person, legal object, issue, and examination station are hard requirements.
+  Do not assemble a missing examination from statements scattered elsewhere.
+- Pass only when the answer itself connects (1) a criterion-specific legal standard or
+  decisive premise, (2) concrete facts or competing arguments, and (3) a conclusion that
+  completes this exact line of examination.
+- Routine points may be concise, but rule, fact, and result merely appearing near one
+  another is insufficient without an expressed inferential connection.
+- A standard for a neighboring issue is not criterion-specific. A complicity standard
+  does not by itself examine immediate commencement, and distinguishing completed from
+  uncompleted attempt does not by itself examine whether the attempt failed.
+- A later voluntariness discussion that implies continued ability does not constitute a
+  methodical examination of whether an attempt failed unless the answer itself identifies
+  that non-failure question, applies its standard, and reaches its conclusion there or by
+  an explicit, unambiguous cross-reference.
+- Do not supply a missing premise, causal link, comparison, or conclusion. Irrelevant or
+  misplaced exposition does not repair a missing application.
+- A bare conclusion, definition without application, list of facts, or incomplete chosen
+  examination path fails. Equivalent terminology and valid alternative structure pass.
+
+## Content verdict
+- The criterion text is the only substantive standard. Apply every stated PASS and FAIL
+  condition; do not add requirements or reconstruct a missing legal step.
+- Accept equivalent legal wording and a valid alternative structure unless the criterion
+  requires a particular form or location.
+- Evidence must concern the same person, object, claim, offence, statutory provision,
+  issue, and examination station. Never transfer reasoning from another scope.
+- A named fact-pattern variant, hypothetical, or subpart (for example, the base case
+  versus a modification) is part of scope. If the answer expressly assigns its reasoning
+  to a different named variant than the criterion, set `same_scope` to false and return
+  content `fail`, unless the answer explicitly and unambiguously cross-applies that
+  reasoning to the required variant. Do not fail solely because the answer omits the
+  variant label when its surrounding context still unambiguously addresses the required
+  variant.
+- Facts or intent discussed for one offence or station do not establish the subjective
+  element of a distinct preparatory offence or other station unless the answer expressly
+  assigns them there or makes an unambiguous cross-reference.
+- A heading, issue statement, bare result, or nearby mention does not prove that a required
+  rule, application, or argument was performed.
+- Evaluate the reason actually given. A materially wrong provision, doctrine, station,
+  person, object, or invented material fact fails when incompatible with the criterion.
+- Split the PASS side into mandatory components and return fail if any is absent. Be
+  conservative; when substantive fulfilment cannot be verified, return fail.
+
+## Task
+Title: {task_title}
+
+Instructions:
+{task_instructions}
+
+## Agent Answer
+{agent_output}
+
+## Source documents (context only - the answer is not required to repeat them)
+{criterion_sources}
+
+## Criterion
+{criterion_title}
+
+{match_criteria}
+
+Respond with JSON only, with the fields in exactly this order:
+
+{{
+  "style": {{
+    "evidence": ["shortest continuous quotes showing or failing to show the reasoning form"],
+    "method_checks": {{
+      "same_scope": true,
+      "criterion_specific_premise": true,
+      "explicit_fact_link": true,
+      "completed_path": true,
+      "not_reconstructed_elsewhere": true
+    }},
+    "reasoning": "Brief style explanation in the language of the criterion",
+    "verdict": "pass" | "fail"
+  }},
+  "content": {{
+    "evidence": ["shortest verbatim quotes supporting the content verdict"],
+    "component_checks": [
+      {{"requirement": "one mandatory PASS component", "satisfied": true}}
+    ],
+    "scope_check": {{
+      "criterion_scope": "required person/object and legal issue/station",
+      "evidence_scope": "person/object and legal issue/station actually addressed",
+      "same_scope": true
+    }},
+    "stated_reason_check": {{
+      "answer_reason": "the legal reason actually stated, or 'none'",
+      "legally_compatible": true
+    }},
+    "reasoning": "Brief content explanation in the language of the criterion",
+    "verdict": "pass" | "fail"
+  }}
+}}

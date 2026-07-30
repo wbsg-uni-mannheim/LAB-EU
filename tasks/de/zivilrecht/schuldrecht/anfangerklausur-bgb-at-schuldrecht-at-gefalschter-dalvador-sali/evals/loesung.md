@@ -1,0 +1,249 @@
+# Musterlösung
+
+## Ansprüche von V gegen K
+
+### I. Anspruch aus § 433 Abs. 2 BGB
+
+V könnte gegen K einen Anspruch auf die Zahlung des noch ausstehenden Kaufpreises i.H.v. 8.000 € aus § 433 Abs. 2 BGB haben.
+
+#### 1. Anspruch entstanden
+
+##### a) Kaufvertrag zwischen K und V
+
+Dafür müssten K und V einen Kaufvertrag i.S.d. § 433 BGB geschlossen haben. Hierfür müssten sie sich aufeinander beziehende Willenserklärungen mit sich deckenden Inhalten abgegeben haben (Antrag und Annahme, vgl. §§ 145, 147 BGB) und sich über die essentialia negotii, also die Vertragsart, die Vertragspartner, den Vertragsgegenstand und die entsprechende Gegenleistung, geeinigt haben.
+
+###### aa) Antrag durch Ausstellung durch V
+
+Möglicherweise hat V bereits einen Antrag i.S.d. § 145 BGB durch das Ausstellen der Kunstwerke und der Repliken im Laden abgegeben. Ein Antrag ist eine empfangsbedürftige Willenserklärung, durch die einem anderen ein Vertragsschluss so angetragen wird, dass dieser nur noch zustimmen muss. Der Antrag muss i.d.R. die essentialia negotii enthalten und einen Rechtsbindungswillen erkennen lassen. Hier könnte es beim Ausstellen der Kunstwerke am Rechtsbindungswillen der V fehlen, so dass lediglich eine Aufforderung zur Abgabe eines Angebots (sog. invitatio ad offerendum) vorliegen könnte. Das Vorliegen eines entsprechenden Rechtsbindungswillens ist anhand der Umstände der Erklärung zu bestimmen. Wäre bereits das Ausstellen der Kunstwerke ein Angebot, wäre V bei einer entsprechenden Annahme durch (irgend-)eine andere Person vertraglich gebunden. Das würde zu der unvorteilhaften Situation führen, dass V im Falle zahlreicher Annahmen, eine Vielzahl vertraglicher Verbindlichkeiten hätte, die V ggf. mangels Warenverfügbarkeit nicht erfüllen kann. Gerade beim Ausstellen an die Allgemeinheit wird der Handelnde ein solches Risiko nicht eingehen wollen, sondern die Verfügbarkeit der Ware sowie die Bonität des Käufers überprüfen wollen. Somit ist nach außen erkennbar, dass V nicht mit Rechtsbindungswillen handelte. Folglich stellt das Ausstellen des Kunstwerkes keinen Antrag nach § 145 BGB, sondern eine invitatio ad offerendum dar.
+
+###### bb) Antrag durch K
+
+Als K an der Kasse zu V sagte, dass er das Werk mit nach Hause nehmen wolle, brachte er erkennbar rechtverbindlich zum Ausdruck, das Gemälde zum Preis von 10.000 € von V kaufen zu wollen. Ein Antrag i.S.d. § 145 BGB liegt damit vor.
+
+###### cc) Annahme durch V
+
+V müsste dieses Angebot auch angenommen haben. Eine Annahme meint das vorbehaltlose Einverständnis mit dem Antrag. V ist an sich mit dem Angebot des K einverstanden, allerdings verlangt sie eine Barzahlung des Gemäldes. V ist somit mit dem Angebot des K nicht vollständig einverstanden. Darin liegt eine abändernde Annahme i.S.d. § 150 Abs. 2 BGB, die eine Ablehnung des Antrags verbunden mit einem neuen Antrag darstellt.
+
+###### dd) Annahme durch K
+
+K könnte dieses abändernde Angebot der V angenommen haben. Er erklärte sich mit der Zahlungsart einverstanden. Allerdings konnte K die Summe nicht vollständig in bar begleichen. K und V einigten sich auf ein Ratenzahlungsgeschäft, wobei K 2.000 € direkt und die restlichen 8.000 € binnen einer Woche in bar bezahlen sollte. Ein solches Ratenzahlungsgeschäft ist in Abweichung von § 266 BGB, nach dem der Käufer im Grundsatz nicht zu Teilleistungen berechtigt ist, privatautonom vereinbar. Damit ist ein Vertrag zustande gekommen.
+
+Hinweis: Es handelt sich zwar um eine Finanzierungshilfe zwischen einem Unternehmer (V) i.S.d. § 14 BGB und einem Verbraucher (K) i.S.d. § 13 BGB nach § 506 BGB, allerdings sind die Vorschriften nach § 506 Abs. 4 S. 1 BGB i.V.m. § 491 Abs. 2 S. 2 Nr. 3 BGB nicht anzuwenden.
+
+##### b) Zwischenergebnis
+
+K und V haben einen Kaufvertrag über das Kunstwerk des DS zu einem Preis von 10.000 €, die in Form einer Ratenzahlung zu leisten sind, geschlossen. Der Anspruch ist damit entstanden.
+
+#### 2. Anspruch untergegangen
+
+Der Anspruch dürfte nicht untergegangen sein. K könnte seine Willenserklärung wirksam angefochten haben, mit der Folge, dass seine Willenserklärung nach § 142 Abs. 1 BGB ex tunc nichtig war und damit auch der Vertrag zwischen K und V von Anfang an nichtig war.
+
+Hinweis: Es kommen verschiedene Prüfungsstandorte für die Anfechtung in Betracht; möglich ist auch, die Thematik der Anfechtung unter einem gesonderten Prüfungspunkt „Wirksamkeit der Einigung“ bei der Entstehung des Anspruchs zu prüfen; vertretbar ist es auch, die Anfechtung direkt bei der Annahmeerklärung des K zu prüfen.
+
+##### a) Anfechtung nach § 119 Abs. 2 BGB
+
+In Betracht kommt die Anfechtung wegen eines Eigenschaftsirrtums gem. § 119 Abs. 2 BGB. Möglicherweise wird § 119 Abs. 2 BGB als Anfechtungsgrund durch das (insoweit vorrangige) Mängelgewährleistungsrecht aus §§ 433 ff. BGB gesperrt. Dafür müsste zunächst der Anwendungsbereich des Mängelgewährleistungsrecht eröffnet sein. Das setzt einen wirksamen Kaufvertrag sowie einen Mangel bei Gefahrübergang voraus. Ein Kaufvertrag zwischen den Parteien besteht. V macht durch die Bezeichnung des Werkes als Original auf dem Preisschild deutlich, dass sie für die Beschaffenheit des Werkes als Original des Künstlers DS einstehen möchte. Dabei handelt es sich auch um eine dem K wichtige Eigenschaft, die dieser an der Kasse nochmals bekräftigt. Ein Mangel gem. § 434 Abs. 2 S. 1 Nr. 1 BGB ist wegen der Unechtheit des Kunstwerkes gegeben. Auch ein Gefahrübergang gem. § 446 S. 1 BGB hat – spätestens indem K das Gemälde aus dem Laden mitnahm – stattgefunden. Der Anwendungsbereich des Mängelgewährleistungsrecht ist mithin eröffnet. Spätestens ab dem Gefahrübergang wird das Anfechtungsrecht wegen eines Eigenschaftsirrtums durch das Sachmängelgewährleistungsrecht gesperrt. Ansonsten würden dem Verkäufer (vorschnell) das Recht zur zweiten Andienung (Nacherfüllung) sowie die speziellen Ausschlusstatbestände (z.B. § 442 BGB) für die Rechte des Käufers genommen werden. Zudem würde die spezielle (kürzere) Verjährung der Mängelansprüche aus § 438 Abs. 1 BGB unterlaufen werden. Somit ist das Anfechtungsrecht wegen eines Anfechtungsgrundes aus § 119 Abs. 2 BGB gesperrt und kann nicht zur Anwendung gelangen.
+
+Hinweis: Sollte der Vorrang des Mangelgewährleistungsrecht übersehen werden und nicht auf das Konkurrenzverhältnis zwischen Mängelgewährleistungs- und Anfechtungsrecht eingegangen werden, müssen Bearbeiter erkennen, dass eine abgegebene Anfechtungserklärung nicht fristgerecht i.S.d. für die Anfechtung wegen Eigenschaftsirrtums einschlägigen § 121 Abs. 1 S. 1 BGB erfolgt ist. Nach § 121 Abs. 1 S. 1 BGB hat die Anfechtung ab der Kenntnis von dem Anfechtungsgrund ohne schuldhaftes Zögern (unverzüglich) zu erfolgen. Was für ein Zeitraum unter unverzüglich zu fassen ist, hängt von den Umständen des Einzelfalles ab. Solange keine weiteren Umstände hinzutreten, ist eine Anfechtungserklärung, die nicht innerhalb von zwei Wochen abgegeben wird, nicht mehr unverzüglich abgebeben. Hier bemerkte K noch am Tag des Vertragsschlusses, dass es sich bei dem ihm übergebenen Gegenstand um eine Replik handelt. Die Anfechtung erklärt K allerdings erst über zwei Wochen nach der Entdeckung. Damit erfolgte die Erklärung nicht unverzüglich und war somit verfristet (a.A. schwer vertretbar).
+
+##### b) Zwischenergebnis
+
+K kann seine Willenserklärung nicht nach § 119 Abs. 2 BGB anfechten.
+
+##### c) Anfechtung nach § 123 Abs. 1 Alt. 1 BGB
+
+K könnte aber nach § 123 Abs. 1 Alt. 1 BGB wegen arglistiger Täuschung von V anfechten.
+
+###### aa) Sperrung des Anfechtungsrechts
+
+Auch an dieser Stelle stellt sich die Frage, ob das Anfechtungsrecht durch das Mängelgewährleistungsrecht gesperrt ist. Im Gegensatz zur Anfechtung wegen eines Eigenschaftsirrtums sperrt das Mängelgewährleistungsrecht nicht das Recht zur Anfechtung wegen einer arglistigen Täuschung. Den arglistig Täuschenden soll die „volle Härte des BGB“ treffen, was sich auch in gesetzlichen Wertungen manifestiert: Die Privilegierungen des Mängelgewährleistungsrechts, die zu einer Sperrung des Eigenschaftsirrtums führen, gelten für den arglistig Täuschenden nicht in gleicher Weise, wie durch § 438 Abs. 3 S. 1 BGB, § 442 Abs. 1 S. 2 Alt. 1 BGB sowie § 440 BGB im Rahmen der Unzumutbarkeit, deutlich wird. Somit wird die Anfechtung wegen einer arglistigen Täuschung nicht durch das Mängelgewährleistungsrecht gesperrt.
+
+###### bb) Anfechtungsgrund: Arglistige Täuschung, § 123 Abs. 1 Alt. 1 BGB
+
+K müsste auch widerrechtlich und arglistig durch V zur Abgabe seiner Willenserklärung getäuscht worden sein. Eine Täuschung meint das Hervorrufen, Aufrechterhalten oder Stärken einer Fehlvorstellung durch menschliches Verhalten. Menschliches Verhalten erfasst sowohl Tun als auch Unterlassen. Hier gibt es zwei Anknüpfungspunkte für eine Täuschungshandlung von V: Zum einen das Vertauschen der Schilder als aktives Tun, bevor K überhaupt das Geschäft von V betreten hat, und zum anderen die fehlende Aufklärung in Form von Unterlassen, als K sich mit V auf den Kauf einigt. Das Vertauschen der Schilder hat V allerdings versehentlich vorgenommen und damit (nur) die im Verkehr erforderliche Sorgfalt außer Acht gelassen. Somit handelte V also fahrlässig i.S.d. § 276 Abs. 2 BGB. Für eine arglistige, also vorsätzliche Täuschung reicht diese Fahrlässigkeit nicht aus. Deshalb kann sich die arglistige Täuschung nur auf die unterlassene Aufklärung beim Vertragsschluss beziehen. Bei einer Täuschung durch Unterlassen bedarf es einer Pflicht zur Aufklärung über bzw. zur Preisgabe von gewissen Informationen. Wann und in welchem Umfang eine solche Pflicht besteht, ist nach der Verkehrsauffassung unter Berücksichtigung von Treu und Glauben (§ 242 BGB) und den Umständen des Einzelfalls zu entscheiden; eine allgemeine Offenbarungspflicht besteht aber nicht. V verfügt als Antiquitäten- und Kunsthändlerin im Gegensatz zu K, der lediglich laienhafte Kenntnisse hat, in ihrem eigenen Geschäft über ein erhebliches überlegenes Wissen in Bezug auf die Kunstwerke. Die Echtheit und die Urheberschaft des Werkes waren für K – was für V auch erkennbar war – entscheidend und es bestand somit ein erhebliches Aufklärungsinteresse auf Seiten des K. Aus diesem Informationsgefälle bzw. der vorliegenden sog. Informationsasymmetrie zwischen V und K ergibt sich hier die Aufklärungspflicht der V. Ein Rechtfertigungsgrund auf Seiten der V ist nicht einschlägig, weshalb die arglistige Täuschung widerrechtlich war. Sie war auch ursächlich dafür, dass K darin bestärkt wurde, einen echten DS in der Hand zu halten, was in Wirklichkeit nicht der Fall war. Dieser Irrtum war kausal dafür, dass K eine Willenserklärung gerichtet auf den Erwerb des Gegenstandes abgegeben hat. V müsste auch arglistig gehandelt haben. Arglist meint dabei, dass der Täuschende vorsätzlich getäuscht haben muss. V wusste um die Unechtheit des Gegenstandes, den K bezahlen wollte, und wollte ein für sich günstiges Geschäft abschließen. Somit hatte V auch Vorsatz hinsichtlich des Irrtums auf Seiten von K, der zur Abgabe der Willenserklärung von K führte. Damit handelte V arglistig i.S.d. § 123 Abs. 1 Alt. 1 BGB.
+
+###### cc) Fristgerechte Anfechtungserklärung
+
+Hinweis: Sollte im § 119 Abs. 2 BGB die Erklärung bereits angesprochen worden sein, bedarf es an dieser Stelle keiner erneuten Vertiefung. Zudem müsste K die Anfechtung gegenüber dem Anfechtungsgegner erklärt haben, § 143 Abs. 1 BGB. Nach § 143 Abs. 2 BGB ist dies bei einem Vertrag der andere Teil und damit V. K erklärte gegenüber V, dass er nichts mehr mit dem Geschäft zu tun haben möchte, benennt aber nicht explizit, dass er anfechten möchte. Entscheidend ist jedoch, dass die Willensäußerung eindeutig erkennen lässt, dass ein Rechtsgeschäft wegen eines Fehlers, insbesondere wegen eines Willensmangels, beseitigt werden soll. Demnach ist bei Zugrundelegung einer laienfreundlichen Auslegung nach §§ 133, 157 BGB die Erklärung von K dahingehend auszulegen, dass sie eine Anfechtung miterfasst. Zudem ist umstritten, ob die Anfechtungserklärung begründungsbedürftig ist und etwa den Anfechtungsgrund oder zumindest die diesen begründenden Tatsachen enthalten muss. K konfrontiert V hier mit der Replik und benennt damit den Anfechtungsgrund. Somit liegt nach allen Ansichten eine Anfechtungserklärung vor. Zudem hat K die Anfechtung 17 Tage nach Abgabe der Willenserklärung erklärt und damit die Anfechtung innerhalb der Jahresfrist nach § 124 Abs. 1 BGB vorgenommen.
+
+###### dd) Ausschlussgründe
+
+Die Anfechtung ist nicht nach § 124 Abs. 3 BGB ausgeschlossen. Möglicherweise könnte K das anfechtbare Rechtsgeschäft nach § 144 Abs. 1 BGB bestätigt haben, indem er den ersten Anruf der V nach einer Woche ignoriert hat. Bei einer Bestätigung des anfechtbaren Rechtsgeschäfts handelt es sich um einen ausdrücklichen oder konkludenten Verzicht auf das Anfechtungsrecht. Sie muss nicht gegenüber dem anderen Teil erfolgen. Ob eine Bestätigung i.S.d. § 144 Abs. 1 BGB vorliegt, ist hierbei durch Auslegung zu ermitteln. K ignorierte den ersten Anruf von V. Darin liegt allerdings kein eindeutiges Verhalten, durch das K deutlich machen würde, am Geschäft zwischen ihm und V festhalten zu wollen. Somit liegt keine Bestätigung i.S.d. § 144 Abs. 1 BGB vor. Auch kommt durch das Ignorieren keine Verwirkung i.S.d. § 242 BGB in Betracht. Somit ist die Anfechtung nicht ausgeschlossen.
+
+##### d) Zwischenergebnis
+
+K hat damit seine auf den Vertragsschluss gerichtete Willenserklärung angefochten mit der Folge, dass sie nach § 142 Abs. 1 BGB ex tunc nichtig ist. Somit ist auch der Kaufvertrag zwischen K und V ex tunc nichtig. Der Anspruch auf die Zahlung der 8.000 € ist untergegangen.
+
+#### 3. Ergebnis
+
+V hat gegen K keinen Anspruch auf Zahlung der restlichen 8.000 € aus § 433 Abs. 2 BGB.
+
+### II. Anspruch aus § 985 BGB
+
+V könnte gegen K einen Anspruch auf Herausgabe der Replik von DS aus § 985 BGB haben.
+
+#### 1. Eigentum des Anspruchstellers
+
+V müsste Eigentümer der Replik sein. Eigentümer ist, wer das Eigentum erworben und nicht wieder verloren hat. Ursprünglich war V Eigentümer; anderweitige Anhaltspunkte lassen sich dem Sachverhalt nicht entnehmen. Allerdings könnte V ihr Eigentum an K nach § 929 S. 1 BGB übertragen haben.
+
+##### a) Eigentumsübergang nach § 929 S. 1 BGB
+
+Für einen Eigentumsübergang nach § 929 S. 1 BGB bedarf es einer Einigung, einer Übergabe, dem Einigsein im Zeitpunkt der Übergabe sowie der Berechtigung des Veräußerers.
+
+###### aa) Einigung
+
+Es bedarf einer dinglichen Einigung zwischen K und V, die durch zwei übereinstimmende Willenserklärungen gerichtet auf den Eigentumsübergang zustande kommt. V und K verständigten sich an der Kasse darauf, dass K das Kunstwerk trotz bloßer Anzahlung des Kaufpreises schon mitnehmen könne. Damit gaben V und K konkludent übereinstimmende Willenserklärungen ab, die darauf gerichtet waren, K das Eigentum am Kunstwerk zu verschaffen. Diese dingliche Einigung könnte allerdings unter der aufschiebenden Bedingung der vollständigen Kaufpreiszahlung stehen (sog. Eigentumsvorbehalt, § 449 Abs. 1 BGB). Da K den Kaufpreis bisher nicht vollständig gezahlt hat, wäre eine solche Bedingung nicht eingetreten. Die Einigung wäre daher (schwebend) unwirksam gem. § 158 Abs. 1 BGB. Ob ein Eigentumsvorbehalt vereinbart wurde, ist durch Auslegung der Einigung gem. §§ 133, 157 BGB anhand der Umstände unter Berücksichtigung der Parteiinteressen zu ermitteln. Bei Vereinbarung eines Eigentumsvorbehalts hätte K noch nicht die Rechtsposition eines Eigentümers i.S.d. § 903 BGB, sondern ein sog. Anwartschaftsrecht erlangt. Damit sollen die Kaufpreiszahlungsansprüche der V gesichert werden. Der Sicherungsgedanke ergibt sich daraus, dass V bei einer frühzeitigen Übereignung allein auf das schwächere Bereicherungsrecht (das unter anderem den Entreicherungseinwand kennt) zurückgreifen könnte und demnach eine schwächere Sicherung des Gegenstandswertes bestehen würde. Damit streiten vor allem die Interessen der V für die Einigung auf einen Eigentumsvorbehalt. Somit steht die dingliche Einigung unter der aufschiebenden Bedingung der vollständigen Kaufpreiszahlung. K hat den Kaufpreis noch nicht vollständig bezahlt, weshalb damit auch die dingliche Einigung nicht wirksam geworden ist (a.A. mit guter Begründung vertretbar).
+
+###### bb) Zwischenergebnis
+
+Somit haben sich K und V nicht auf den Eigentumsübergang i.S.d. § 929 S. 1 BGB geeinigt.
+
+##### b) Zwischenergebnis
+
+Damit ist V weiterhin Eigentümerin der Replik.
+
+#### 2. Besitz des Anspruchsgegners
+
+K hat die tatsächliche Sachherrschaft inne, ist deshalb unmittelbarer Besitzer der Replik i.S.d. § 854 Abs. 1 BGB und mithin tauglicher Anspruchsgegner i.R.d. § 985 BGB.
+
+#### 3. Kein Recht zum Besitz
+
+K dürfte weiterhin kein Recht zum Besitz nach § 986 BGB haben. Das hier einzig denkbare Recht zum Besitz könnte sich aus dem zwischen K und V geschlossenen Kaufvertrag ergeben. Dieser ist allerdings von Anfang an aufgrund der durch K vorgenommenen Anfechtung nichtig und kann damit kein Recht zum Besitz i.S.d. § 986 BGB darstellen. Somit hat K kein Recht zum Besitz i.S.d. § 986 BGB.
+
+#### 4. Ergebnis
+
+V hat gegen K einen Anspruch auf Herausgabe der Replik aus § 985 BGB.
+
+### III. Anspruch aus § 812 Abs. 1 S. 1 Alt. 1 BGB
+
+V könnte gegen K einen Anspruch auf Herausgabe der Replik des DS aus § 812 Abs. 1 S. 1 Alt. 1 BGB haben.
+
+#### 1. Etwas Erlangt
+
+K müsste etwas erlangt haben. Dabei ist jede Besserung der Vermögenssituation erfasst. In Betracht kommt alles, was geleistet werden kann. K erlangte unmittelbaren Besitz an der Replik des Kunstwerks und hat damit eine Mehrung des eigenen Vermögens erlangt.
+
+#### 2. Durch Leistung
+
+K müsste den unmittelbaren Besitz auch durch eine Leistung von V erlangt haben. Leistung meint die bewusste und zweckgerichtete Mehrung fremden Vermögens. Sowohl aus verobjektivierter Empfängerperspektive des K als auch subjektiv mehrte V durch das Übertragen des unmittelbaren Besitzes das Vermögen von K bewusst und zweckgerichtet, um von seiner Verbindlichkeit aus dem Kaufvertrag nach § 433 Abs. 1 S. 1 BGB frei zu werden (solvendi causa) und handelte damit durch Leistung.
+
+#### 3. Ohne Rechtsgrund
+
+V müsste ohne Rechtsgrund geleistet haben. Der einzig in Betracht kommende Rechtsgrund ist der zwischen K und V abgeschlossene Kaufvertrag. Dieser ist allerdings nach erfolgter Anfechtung von Anfang an nichtig, § 142 Abs. 1 BGB. Damit leistete V ohne Rechtsgrund.
+
+Hinweis: Im Rahmen der Anfechtung ist umstritten, welche Leistungskondiktion im Bereicherungsrecht einschlägig ist. Zum einen wird die Anfechtung unter § 812 Abs. 1 S. 1 Alt. 1 BGB (sog. condictio indebiti), zum anderen unter § 812 Abs. 1 S. 2 Alt. 1 BGB (sog. conditio ob causam finitam) gefasst. Zwar spricht für die condictio ob causam finitam, dass faktisch ein Rechtsgrund (vor Ausübung des Anfechtungsrechts) existiert hat. Allerdings ist es überzeugender auf die condictio indebiti abzustellen, um einen dogmatischen Gleichlauf mit Blick auf die ex-tunc-Wirkung der Anfechtung herzustellen.
+
+#### 4. Kein Ausschluss und Rechtsfolge
+
+Die Geltendmachung des bereicherungsrechtlichen Anspruchs aus § 812 Abs. 1 S. 1 Alt. 1 BGB ist auch nicht trotz der Kenntnis der Anfechtbarkeit auf Seiten der V i.S.d. § 142 Abs. 2 BGB nach § 814 BGB ausgeschlossen, da auch für den in diesem Fall arglistig Täuschenden unklar ist, ob eine Anfechtung überhaupt erfolgt. Als Rechtsfolge ist K dazu verpflichtet, V die Replik herauszugeben und ihm den unmittelbaren Besitz zu verschaffen. Ausschlussgründe, wie die Entreicherung aus § 818 Abs. 3 BGB, sind nicht ersichtlich.
+
+#### 5. Ergebnis
+
+V hat somit einen Anspruch auf Herausgabe der Replik aus § 812 Abs. 1 S. 1 Alt. 1 BGB.
+
+## Ansprüche K gegen V
+
+### I. Anspruch aus §§ 280 Abs. 1, 311 Abs. 2, 241 Abs. 2 BGB
+
+K könnte gegen V – alternativ zur Vornahme der Anfechtung – einen Anspruch aus §§ 280 Abs. 1, 311 Abs. 2, 241 Abs. 2 BGB haben, der auf eine Vertragsaufhebung gerichtet ist.
+
+#### 1. Sperrung der culpa in contrahendo (cic)
+
+##### a) Durch das Anfechtungsrecht
+
+Fraglich ist, ob die Geltendmachung von cic-Ansprüchen durch die Anfechtung von K ausgeschlossen ist. Anknüpfungspunkt für diesen Streitstand sind die divergierenden Maßstäbe in den beiden Rechten sowie die unterschiedliche Verjährung bzw. im Falle des Anfechtungsrechts die Verfristung. Während die Haftung aus cic ausweislich § 276 Abs. 1, Abs. 2 BGB auch durch eine fahrlässige Pflichtverletzung ausgelöst wird, muss es sich beim Anfechtungsgrund aus § 123 Abs. 1 Alt. 1 BGB um eine arglistige, also vorsätzliche Täuschung handeln. Darüber hinaus verjährt der cic-Anspruch nach § 195 BGB innerhalb der regelmäßigen, also der Dreijahresfrist. Hingegen verfristet das Anfechtungsrecht wegen arglistiger Täuschung nach Kenntniserlangen innerhalb eines Jahres (§ 124 Abs. 1, Abs. 2 BGB) und ist nach 10 Jahren ausgeschlossen (§ 124 Abs. 3 BGB). Eine m.M. möchte verhindern, dass diese Wertungen durch die weiter gefassten Voraussetzungen des cic-Anspruches unterlaufen werden, indem sie die Anwendbarkeit der cic neben dem Anfechtungsrecht verneinen will. Nach h.M. allerdings verfolgen die beiden Rechtsinstitute unterschiedliche Schutzzwecke und schließen sich deshalb nicht aus. Die Ansprüche aus cic schützen das Vermögen, wohingegen das Anfechtungsrecht die Willensentschließungsfreiheit unabhängig von dem Eintritt eines Schadens schützt. Bessere Argumente sprechen also für die Anwendbarkeit des cic-Anspruchs neben dem Anfechtungsrecht (a.A. vertretbar).
+
+##### b) Durch das Mangelgewährleistungsrecht
+
+Fraglich ist, ob der cic-Anspruch durch das Mängelgewährleistungsrecht gesperrt wird. Auch hier wäre das Mangelgewährleistungsrecht anwendbar. Das Verhältnis der cic gegenüber dem Mangelgewährleistungsrecht ist umstritten. Teilweise wird vertreten, dass die Mangelgewährleistungsrechte die cic ausschließen. Begründet wird dies im Wesentlichen durch die Spezialität der kaufrechtlichen Vorschriften. Ausnahme von diesem Grundsatz ist allerdings die arglistige Täuschung, da der arglistig Täuschende nicht schutzwürdig ist, was durch die gesetzlichen Wertungen aus den §§ 438 Abs. 3 S. 1 BGB, 442 Abs. 1 S. 2 Alt. 1 BGB sowie die Unzumutbarkeit in § 440 BGB deutlich wird. Da die Pflichtverletzung in der arglistigen Täuschung besteht, ist nach dieser Ansicht der Anwendungsbereich der cic eröffnet. Ebenfalls ist der Anwendungsbereich eröffnet nach einer weiteren Ansicht, die die cic wegen vorvertraglicher Pflichtverletzungen unter anderem aufgrund der unterschiedlichen Zwecksetzungen der Haftungssysteme neben den kaufrechtlichen Vorschriften für anwendbar hält. Teilweise wird auch vertreten, dass das cic-Recht durch das Mangelgewährleistungsrecht grundsätzlich ausgeschlossen sei, da ansonsten die speziellen Wertungen des Kaufrechts unterlaufen würden (Recht zur zweiten Andienung, kürzere Verjährung). Einzig nach dieser Ansicht wird das cic-Recht in diesem Fall ausgeschlossen. Gegen diese Ansicht spricht allerdings die zu pauschale Betrachtung. Insbesondere ist nicht ersichtlich, warum den arglistig Täuschenden das „Privileg“ des Mangelgewährleistungsrecht zugutekommen soll. Die gesetzlichen Wertungen sprechen dafür, zumindest eine Zulässigkeit des cic-Rechts bei einer arglistigen Täuschung als Pflichtverletzung zuzulassen (a.A. vertretbar).
+
+#### 2. Vorvertragliches Schuldverhältnis
+
+K und V müssten ein vorvertragliches Schuldverhältnis eingegangen sein. Nach § 311 Abs. 2 BGB liegt ein solches vor bei der Aufnahme von Vertragsverhandlungen (§ 311 Abs. 2 Nr. 1 BGB), bei der Anbahnung eines Vertrages (§ 311 Abs. 2 Nr. 2 BGB) oder ähnlichen geschäftlichen Kontakten (§ 311 Abs. 2 Nr. 3 BGB). K und V verhandelten an der Kasse unter anderem über die genauen Zahlungsmodalitäten, was schließlich in dem (vermeintlich) geschlossenen Vertrag gemündet hat. Insofern handelte es sich um Vertragsverhandlungen i.S.d. § 311 Abs. 2 Nr. 1 BGB. Ein vorvertragliches Schuldverhältnis liegt somit vor.
+
+#### 3. Pflichtverletzung
+
+Als Pflichtverletzung kommt die arglistige Täuschung im Wege der Vertragsanbahnung bzw. den Vertragsverhandlungen in Betracht. Zu den (Neben-)Pflichten aus § 241 Abs. 2 BGB bei Vertragsverhandlungen gehören auch Aufklärungspflichten. V hat durch die Täuschung über die Echtheit des Kunstwerkes von DS eine Aufklärungspflicht verletzt (siehe oben). Damit handelt es sich bei der arglistigen Täuschung um eine vorvertragliche Pflichtverletzung.
+
+#### 4. Vertretenmüssen
+
+V müsste diese Pflichtverletzung auch zu vertreten haben. Nach § 276 Abs. 1 BGB hat der Schuldner Vorsatz und Fahrlässigkeit zu vertreten. V beging eine arglistige, d.h. vorsätzliche Täuschung (siehe oben) und damit auch die in Bezug genommene Pflichtverletzung vorsätzlich.
+
+#### 5. Haftungsausfüllender Tatbestand
+
+Zunächst müsste bei K ein Schaden entstanden sein. Ein Schaden ist jede unfreiwillige Einbuße an Rechten oder Rechtsgütern, was anhand der sog. Differenzhypothese zu ermitteln ist. Es ist somit ein Vergleich zwischen der Situation jetzt und der hypothetischen Situation jetzt, in der die Pflichtverletzung entfällt, vorzunehmen. Jetzt ist K durch einen Vertrag an V gebunden mit dem Vertragsgegenstand der Replik, obwohl K ein Original kaufen wollte. Ohne die Pflichtverletzung (siehe oben) hätte er zwar auch einen Vertrag geschlossen, hätte aber als Gegenwert ein Original bekommen. Damit ist ihm ein Schaden in Form der Bindung an den Vertrag entstanden. Die Pflichtverletzung war auch kausal für den Schaden, adäquat und ist vom Schutzzweck der Norm erfasst. Wiederherzustellen ist der ursprünglich bestehende Zustand im Wege der Naturalrestitution (§ 249 Abs. 1 BGB). Somit ist der auf die Vertragsaufhebung gerichtete Schadensersatzanspruch entstanden.
+
+#### 6. Ergebnis
+
+K hat somit – als Alternative zu Anfechtung – einen Anspruch gegen V auf Vertragsaufhebung aus §§ 280 Abs. 1, 311 Abs. 2, 241 Abs. 2 BGB.
+
+### II. Anspruch aus § 985 BGB
+
+K könnte zudem ein Anspruch gegen V auf Herausgabe der bereits gezahlten Geldscheine im Wert von 2.000 € aus § 985 BGB zustehen.
+
+#### 1. Eigentum des Anspruchsstellers
+
+K müsste Eigentümer der Geldscheine im Wert von 2.000 € sein. Ursprünglich war er Eigentümer der Geldscheine; anderweitige Anhaltspunkte lassen sich dem Sachverhalt nicht entnehmen. K könnte das Eigentum allerdings an V durch Übergabe und Übereignung nach § 929 S. 1 BGB oder durch Vermischung gem. §§ 948 Abs. 1, 947 BGB verloren haben, indem er mit den Geldscheinen bezahlte, um seine Verpflichtung aus dem Kaufvertrag (anteilig) zu erfüllen.
+
+##### a) Eigentumsübergang nach § 929 S. 1 BGB
+
+###### aa) Einigung
+
+Es bedarf einer dinglichen Einigung zwischen K und V. Zwar einigen sich K und V nicht ausdrücklich darauf, dass das Eigentum an den Geldscheinen auf V übergehen soll. Allerdings macht K durch die Übergabe der Geldscheine deutlich, dass er den Kaufvertrag (anteilig) erfüllen möchte und gibt konkludent auch eine dingliche Willenserklärung ab, die V durch die Empfangnahme des Geldes konkludent annimmt. Fraglich ist aber, ob sich die von K geltend gemachte Anfechtung auch auf die dingliche Einigung auswirkt. Grundsätzlich handelt es sich auch bei einer dinglichen Einigung um übereinstimmende Willenserklärungen, weshalb diese im Grundsatz ebenfalls nach § 142 Abs. 1 BGB anfechtbar sind. Vorliegend erklärt K allerdings die Anfechtung wegen arglistiger Täuschung zum Abschluss des Kaufvertrages, also der Vornahme des Verpflichtungsgeschäfts. Dieses ist getrennt von dem dinglichen Rechtsgeschäft zu beurteilen (sog. Trennungsprinzip). Die beiden Rechtsgeschäfte sind als Folge der rechtlichen Trennung auch abstrakt, d.h. unabhängig voneinander in ihrer rechtlichen (Un-)Wirksamkeit zu beurteilen (sog. Abstraktionsprinzip). Die Anfechtung greift damit zunächst nur das Verpflichtungsgeschäft an, nicht aber das Verfügungsgeschäft. Ausnahmsweise kann sich jedoch ein Mangel bei der Willensbildung hinsichtlich des Verpflichtungsgeschäfts auch auf das dingliche Rechtsgeschäft auswirken, z.B. bei der sog. Fehleridentität. Bei einer arglistigen Täuschung ist umstritten, ob sich die Anfechtung des Verpflichtungsauch daneben (durch Auslegung der Anfechtungserklärung) auf das Verfügungsgeschäft bezieht. Die h.M. geht davon aus, dass das Verfügungsgeschäft ebenso wie das Verpflichtungsgeschäft regelmäßig auch auf der arglistigen Täuschung beruht, da der Irrtum des Verpflichtungsgeschäfts ursächlich für die Vornahme des Verfügungsgeschäfts ist. Demnach würde die Anfechtung des Verpflichtungsgeschäfts hier auch auf das Verfügungsgeschäft durchschlagen und es würde an einer Einigung zwischen K und V fehlen. Eine a.A. möchte eine solche (pauschale) Wirkung der Anfechtung des Verpflichtungsgeschäfts zumindest dann nicht genügen lassen, wenn sich die Täuschung lediglich auf die Höhe der Gegenleistung bezieht und nur dann Fehleridentität bejahen, wenn die Täuschung auch den Entschluss zur Übereignung selbst beeinflusst, also ohne die Täuschung überhaupt nichts übertragen worden wäre. Hätte K gewusst, dass es sich um eine Replik und nicht um das Original handelt, hätte er das Verfügungsgeschäft über die Geldscheine nicht abgeschlossen. Auch nach dieser Ansicht bewirkt die von K vorgenommene Anfechtung somit die Unwirksamkeit der Einigung hinsichtlich des Verfügungsgeschäfts.
+
+Hinweis: Die Frage der Fehleridentität wird auch mit Blick auf eine Anfechtung wegen Eigenschaftsirrtums i.S.d. § 119 Abs. 2 BGB diskutiert. Dies ist hier nicht zu erörtern, da K nicht wegen Eigenschaftsirrtums die Anfechtung erklären kann (siehe hierzu: Ansprüche von V gegen K – I. 2. a)).
+
+###### bb) Zwischenergebnis
+
+Damit schlägt die Anfechtung wegen arglistiger Täuschung nach beiden Ansichten auch auf die dingliche Einigung zwischen K und V durch. Eines Streitentscheides bedarf es nicht.
+
+##### b) Zwischenergebnis
+
+Somit gab es zwischen V und K keine Einigung gerichtet auf die Übertragung des Eigentums an den Geldscheinen i.S.d. § 929 S. 1 BGB. K hat damit sein Eigentum an den Geldscheinen nicht nach § 929 S. 1 BGB verloren.
+
+##### c) Eigentumsübergang nach §§ 948 Abs. 1, 947 BGB
+
+Allerdings könnte K das Eigentum durch eine Vermischung nach §§ 948 Abs. 1, 947 BGB verloren haben. Im Zusammenhang mit Bar-Geschäften liegt eine Vermischung i.S.d. § 948 Abs. 1 BGB insbesondere dann vor, wenn Geldscheine und/oder Münzen mit weiteren ihrer Art beispielsweise in einer einheitlichen Kasse zusammengelagert werden. V bewahrte die 2.000 € in einem separaten Tresor auf, um bei Zahlung der restlichen 8.000 € das Geschäft auch für ihre Buchführung schnell abschließen zu können. Damit sind die 2.000 €, die K bereits angezahlt hatte, diesem noch zuzuordnen. V ist nicht durch Vermischung nach §§ 948 Abs. 1, 947 BGB Eigentümer geworden.
+
+##### d) Zwischenergebnis
+
+K hat damit sein Eigentum weder nach § 929 S. 1 BGB noch nach §§ 948 Abs. 1, 947 BGB an V verloren und ist somit weiterhin Eigentümer der Geldscheine.
+
+#### 2. Besitz des Anspruchsgegners
+
+V hat die unmittelbare durch einen natürlichen Willen getragene Sachherrschaft über die Geldscheine im Wert von 2.000 € und ist somit unmittelbarer Besitzer, vgl. § 854 BGB. Damit ist V auch tauglicher Anspruchsgegner für den Anspruch aus § 985 BGB.
+
+#### 3. Kein Recht zum Besitz
+
+V dürfte weiterhin kein Recht zum Besitz nach § 986 BGB haben. Das hier einzig denkbare Recht zum Besitz könnte sich aus dem zwischen K und V geschlossenen Kaufvertrag ergeben. Dieser ist allerdings von Anfang an aufgrund der durch K vorgenommenen Anfechtung nichtig und kann damit kein Recht zum Besitz i.S.d. § 986 BGB darstellen.
+
+#### 4. Ergebnis
+
+V ist gegenüber K zur Herausgabe der Geldscheine im Wert von 2.000 € nach § 985 BGB verpflichtet.
+
+### III. Anspruch aus § 812 Abs. 1 S. 1 Alt. 1 BGB
+
+K könnte zudem ein Anspruch gegen V auf Herausgabe der bereits gezahlten Geldscheine im Wert von 2.000 € aus § 812 Abs. 1 S. 1 Alt. 1 BGB zustehen.
+
+#### 1. Etwas Erlangt
+
+V müsste etwas erlangt haben. V hat an den Geldscheinen unmittelbaren Besitz i.S.d. § 854 BGB erhalten und somit etwas i.S.d. § 812 Abs. 1 S. 1 Alt. 1 BGB erlangt.
+
+#### 2. Durch Leistung
+
+V müsste das erlangte Etwas durch Leistung des K erhalten haben. K gab V die Geldscheine im Wert von 2.000 €, um sowohl aus der verobjektivierten Empfängersicht der V als auch subjektiv einen Teil der Verbindlichkeit aus dem zwischen ihnen geschlossenen (Kauf-)Vertrag zu erfüllen (solvendi causa). Damit vergrößerte K bewusst und zweckgerichtet das für ihn fremde Vermögen von V.
+
+#### 3. Ohne Rechtsgrund
+
+K müsste ohne Rechtsgrund geleistet haben. Der einzig in Betracht kommende Rechtsgrund ist hier der zwischen K und V abgeschlossene Kaufvertrag. Dieser ist allerdings nach erfolgter Anfechtung von Anfang an nichtig, § 142 Abs. 1 BGB. Damit leistete K ohne Rechtsgrund.
+
+#### 4. Rechtsfolge
+
+V schuldet nach §§ 812 Abs. 1 S. 1 Alt. 1, 818 Abs. 1 BGB die Herausgabe der Geldscheine im Wert von 2.000 €. V muss K damit den unmittelbaren Besitz an den Geldscheinen wieder verschaffen. Etwaige Ausschlussgründe greifen auch hier nicht.
+
+#### 5. Ergebnis
+
+K hat einen Anspruch auf Herausgabe der Geldscheine im Wert von 2.000 € aus § 812 Abs. 1 S. 1 Alt. 1 BGB gegen V.
+
+## Gesamtergebnis
+
+V hat keinen Anspruch aus § 433 Abs. 2 BGB auf die Zahlung der restlichen 8.000 €. Sie hat aber einen Anspruch auf Herausgabe der Replik aus § 985 BGB sowie aus § 812 Abs. 1 S. 1 Alt. 1 BGB. K hat gegen V neben der Möglichkeit der Anfechtung einen Anspruch auf Vertragsaufhebung aus §§ 280 Abs. 1, 311 Abs. 2, 241 Abs. 2 BGB. Zudem hat K einen Anspruch auf Herausgabe der Geldscheine im Wert von 2.000 € aus § 985 BGB und aus § 812 Abs. 1 S. 1 Alt. 1 BGB.

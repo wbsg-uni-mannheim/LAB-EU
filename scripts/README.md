@@ -6,8 +6,9 @@
 env/bin/pip install -r requirements.txt
 
 env/bin/python scripts/generate_rubric.py \
-  tasks/de/verwaltungsrecht/verpflichtungsklage/fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik \
-  --model gpt-5.5 \
+  tasks/de/oeffentliches-recht/verwaltungsrecht/verpflichtungsklage/fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik \
+  --model gpt-5.6-sol \
+  --calibration-committee configs/judge-committee-rubric-calibration.json \
   --write-final
 ```
 
@@ -18,8 +19,11 @@ The script runs this pipeline:
    generator roles (doctrine, fact grounding, adversary), in parallel;
 3. prune the merged pool to a Boolean rubric with a model-selected number of
    atomic criteria;
-4. calibrate: judge the gold solution against every criterion with
-   `--calibration-votes` votes (default 3). Criteria the gold solution passes
+4. calibrate: judge the gold solution against every criterion. The recommended
+   `--calibration-committee` configuration casts one vote each with Luna, Terra,
+   and Gemini instead of asking the generator model to judge its own rubric
+   repeatedly. Without a committee, `--calibration-votes` repeated votes from
+   `--judge-model` remain available. Criteria the gold solution passes
    unanimously are kept. The rest are sent to a refine step that rewrites,
    splits, or drops them, and the refined criteria are re-judged. After
    `--max-calibration-rounds` (default 2), still-failing criteria are dropped
@@ -35,9 +39,10 @@ The script runs this pipeline:
    application, argumentation, conclusion, form_citation), `outline_id` (the
    deepest outline node the criterion belongs to; `station_path` is derived
    from the tree so all downstream breakdowns keep working), and `criticality`
-   1-3 (3 = ergebnistragend, the few points the case is decided by, hard
-   budget ~10-15% of criteria; 2 = expected in a solid solution, the default;
-   1 = detail/form/bonus). Criticality is currently
+   1-3 (3 = realistic divergence points that decide the case, target ~10-15%
+   of criteria; 2 = expected in a solid solution, at most 60%; 1 = the
+   remaining detail/form/bonus criteria). A logically necessary step is not
+   automatically tier 3. Criticality is currently
    non-scoring; it feeds the reporting breakdowns and the review documents.
    Disable outline + tagging with `--skip-tagging`.
 
@@ -47,6 +52,9 @@ all candidate pools, prune decisions, per-round votes, refinements, and drops -
 is written to `evals/rubric.generated.json`. With `--write-final`, the
 calibrated rubric is also written to `evals/rubric.json` with
 `review_status: generated_calibrated_needs_human_review`.
+The generator and the lawyer-facing review file emit a freeze warning when the
+3/2/1-star target is missed. This remains a reviewable warning rather than a
+hard error so small rubrics and documented legal exceptions stay possible.
 
 To add or refresh outline/tags/criticality on an ALREADY frozen rubric, never
 re-run the full pipeline - prompt changes since the original generation can
@@ -56,12 +64,13 @@ that REPLACES the frozen criteria. Use the retag mode instead, which loads
 calls), and writes the updated tags back with the criteria untouched:
 
 ```bash
-env/bin/python scripts/generate_rubric.py <task-dir> --model gpt-5.5 --retag-only
+env/bin/python scripts/generate_rubric.py <task-dir> --model gpt-5.6-sol --retag-only
 ```
 
 Useful flags: `--reasoning-effort` (generator, default `high`),
 `--judge-model` / `--judge-reasoning-effort` (calibration judge, default:
-generator model at `medium`), `--calibration-votes`, `--max-calibration-rounds`,
+generator model at `medium`), `--calibration-committee` (one vote per configured
+model, recommended), `--calibration-votes`, `--max-calibration-rounds`,
 `--skip-calibration`, `--parallel` (judge calls, default 4).
 
 Solution and document files are truncated only above generous size limits; if a
@@ -79,6 +88,36 @@ are no output-token caps.
 
 ## Batch-generate rubrics for many tasks (cheaper)
 
+### Batch the Sol draft stages
+
+For a larger taskset, atomization, the three candidate roles, and pruning can
+also run through the Batch API. These steps depend on one another, so the
+orchestrator submits three sequential batches and harvests each result into the
+normal `evals/.rubric-cache/` before preparing the next phase:
+
+```bash
+env/bin/python scripts/generate_rubric_drafts_batch.py \
+  --taskset tasksets/de-core-10-batch-pilot.jsonl \
+  --artifact-suffix broad-v1 \
+  --prepare-only
+
+env/bin/python scripts/generate_rubric_drafts_batch.py \
+  --resume runs/rubric-draft-batches/<run-id>
+```
+
+`--prepare-only` writes the next JSONL file without uploading it. After the
+pruning batch, the normal generator is invoked with calibration and tagging
+disabled; the orchestrator first verifies that all five expected calls per task
+are cached and refuses a synchronous fallback if any entry is missing. It then
+writes `evals/rubric.generated.<suffix>.json` as the draft audit artifact.
+
+Each run directory contains `state.json`, the submitted inputs and returned
+outputs, plus `cost-summary.json` and `cost-summary.md`. The cost report covers
+only atomization, three candidate roles, and pruning; committee calibration,
+negative calibration, outline extraction, and tagging remain separate.
+
+### Batch the calibration votes
+
 For more than a handful of tasks, use the batch orchestrator. It runs the
 cheap draft steps synchronously, then routes the expensive part - all round-1
 calibration judge votes across all tasks - through the OpenAI Batch API at 50%
@@ -86,9 +125,9 @@ of the synchronous price:
 
 ```bash
 env/bin/python scripts/generate_rubrics_batch.py \
-  tasks/de/verwaltungsrecht/anfechtungsklage/fall-02-anfechtungsklage-bei-nebenbestimmungen \
-  tasks/de/verwaltungsrecht/anfechtungsklage/fall-03-drittanfechtungsklage-gegen-eine-baugenehmigung \
-  --model gpt-5.5
+  tasks/de/oeffentliches-recht/verwaltungsrecht/anfechtungsklage/fall-02-anfechtungsklage-bei-nebenbestimmungen \
+  tasks/de/oeffentliches-recht/verwaltungsrecht/anfechtungsklage/fall-03-drittanfechtungsklage-gegen-eine-baugenehmigung \
+  --model gpt-5.6-sol
 ```
 
 Phases: draft (sync, parallel) -> build vote requests (votes already in a
@@ -135,7 +174,7 @@ Use `--dry-run` to check local file discovery without calling the API.
 
 ```bash
 env/bin/python scripts/generate_rubric_review.py \
-  tasks/de/verwaltungsrecht/verpflichtungsklage/fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik
+  tasks/de/oeffentliches-recht/verwaltungsrecht/verpflichtungsklage/fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik
 ```
 
 This writes `evals/rubric-review.md` with the task, case, solution, and each
@@ -145,7 +184,7 @@ rubric criterion's title, match criteria, and review notes.
 
 ```bash
 env/bin/python -m evaluation.run \
-  tasks/de/verwaltungsrecht/verpflichtungsklage/fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik \
+  tasks/de/oeffentliches-recht/verwaltungsrecht/verpflichtungsklage/fall-05-verpflichtungsklage-auf-polizeiliches-einschreiten-wegen-schmaehkritik \
   path/to/fallloesung-sut.md \
   --judge-model gpt-5.5
 ```
@@ -174,12 +213,129 @@ and rubrics with an `outline` get `breakdown_by_outline` (level-2 Gliederung).
 `export_review_md.py` and `generate_rubric_review.py` render criteria nested
 along the Musterlösung's Gliederung when the rubric carries an outline.
 
+### Three-model committee and separate Gutachtenstil score
+
+For the professor-feedback pilot, use the checked-in mixed-provider committee:
+
+```bash
+env/bin/python -m evaluation.run <task-dir> <submission> \
+  --judge-committee configs/judge-committee-professor-pilot.json \
+  --style-evaluation \
+  --vote-cache-dir <output-dir>/votes \
+  --output <output-dir>/scores.json
+```
+
+The three committee members cast one independent content vote per criterion. Only a
+strict majority passes. For criteria tagged `application` or `argumentation`, the same
+request returns a second, independent Boolean style verdict; the full answer and task
+context are therefore not transmitted twice. Models run sequentially with model-specific
+parallelism, while votes within one model run concurrently. Successful votes are cached
+by the exact model, prompt, criterion, and phase, so interrupted runs resume without
+repeating them. Use `--separate-style-calls` only for calibration against the former
+two-request design.
+
+`scores.json` reports three distinct diagnostics:
+
+- `content_score`: unweighted fulfilled criteria;
+- `criticality_weighted_content_score`: 3/2/1-star weighted content, diagnostic only;
+- `style_score`: Boolean Gutachtenstil pass rate among all criteria tagged as
+  `application` or `argumentation`, regardless of whether their content verdict is pass
+  or fail. Definitions, legal bases, structure, form, and pure conclusions remain content
+  criteria but are excluded from the style denominator. A substantively wrong argument
+  may therefore receive style `1` when its legal reasoning form is sound. Style nevertheless
+  fails when the reasoning belongs to another person or examination station, has to be
+  assembled from scattered statements, leaves its chosen examination path incomplete, or
+  states a result without expressly connecting the decisive facts to the legal premise.
+  `style_evaluation_mode` records whether a score used the recommended `combined` calls
+  or the legacy `separate` calls. Shared-request token usage is counted exactly once under
+  content; `judge_usage_total` remains the complete billable total.
+
+Errored votes are einmal gezielt nachgeholt. Bleibt ein Fehler bestehen, wird das
+Kriterium konservativ als `fail` mit `resolution: "unresolved"` ausgewiesen. Ein
+vollständiges 2:1 löst standardmäßig einen unabhängigen zweiten Komiteelauf nur für
+dieses Kriterium aus: Bleibt die Mehrheitsrichtung gleich, lautet der Status
+`stable_with_dissent`; kippt sie, ist das Kriterium `unresolved`. Mit
+`--no-committee-conflict-recheck` beziehungsweise `--committee-error-retries 0` lässt
+sich dieses Verhalten für Diagnosen abschalten. `content_score.n_unresolved` und
+`style_score.n_unresolved` verhindern, dass technische oder instabile Entscheidungen
+als reguläre Passes erscheinen.
+
+Professor review labels under `tests/fixtures/` are external evaluation data. Never pass
+those files to `generate_rubric.py`. Generate rubrics only from the task, source
+documents, and supplied model solution; measure expert agreement afterwards with
+`scripts/compare_expert_labels.py`.
+
 `--adaptive` casts one vote first and escalates to the full `--votes` count
 only when that vote is not a pass. On an answer passing ~70% of criteria this
 cuts judge calls roughly in half. Trade-off: a single false pass ends the
 check early, so prefer full voting where false passes matter most (e.g.
 calibration). `--output <path>` writes the scores JSON somewhere other than
 `scores.json` next to the submission - useful for judge-model comparisons.
+
+### Sol comparison and stability pilot
+
+Generate a comparison rubric without replacing the frozen `rubric.json`:
+
+```bash
+env/bin/python scripts/generate_rubric.py <task-dir> \
+  --model gpt-5.6-sol \
+  --calibration-committee configs/judge-committee-rubric-calibration.json \
+  --artifact-suffix sol \
+  --write-final
+```
+
+This writes `evals/rubric.generated.sol.json` and `evals/rubric.sol.json`.
+
+Before freezing a generated rubric, run the positive/negative discrimination gate:
+
+```bash
+env/bin/python scripts/run_negative_rubric_calibration.py <task-dir> \
+  --rubric <task-dir>/evals/rubric.sol.json \
+  --solution <task-dir>/evals/loesung.md \
+  --committee configs/judge-committee-rubric-calibration.json \
+  --output <output-dir>/negative-calibration.json \
+  --cache-dir <output-dir>/negative-calibration-votes
+```
+
+Sol generates three case-internal negative variants per criterion: a bare result, a
+wrong person/station/object, and a material legal or factual error. Sol does not vote.
+Each type remains visible in the artifact, but a type is marked not applicable and is
+excluded from judging when it cannot violate a literal rubric requirement without
+inventing a new one (for example a bare-result test for a conclusion-only criterion).
+Every positive reference control must pass with a stable committee majority; every negative variant of a
+two- or three-star criterion must be stably rejected. One-star failures remain visible
+warnings. The script never rewrites a rubric automatically and never receives external
+professor labels.
+
+Create two genuinely independent committee replicates by using separate vote-cache
+directories with `configs/judge-committee-sol-pilot.json`. Analyze them with:
+
+```bash
+env/bin/python scripts/analyze_judge_stability.py \
+  --scores baseline:r1=<baseline-r1.json> \
+  --scores baseline:r2=<baseline-r2.json> \
+  --scores agent:r1=<agent-r1.json> \
+  --scores agent:r2=<agent-r2.json> \
+  --output-json <stability.json> \
+  --output-md <stability.md>
+```
+
+Use repeated `evaluation.run --criterion-id <ID>` flags for the targeted third run.
+The case-neutral internal style calibration is run separately:
+
+```bash
+env/bin/python scripts/run_style_calibration.py \
+  --fixtures tests/fixtures/gutachtenstil_calibration_v2.json \
+  --judge-committee configs/judge-committee-sol-pilot.json \
+  --replicates 2 \
+  --cache-dir <style-votes> \
+  --output-json <style-calibration.json> \
+  --output-md <style-calibration.md>
+```
+
+The v2 style fixture contains 18 balanced minimal pairs across civil, criminal, and
+public law. It is deliberately marked `draft_requires_jurist_review`: it is engineering
+calibration, not juristic expert gold, until the labels have been reviewed externally.
 
 ## Export a Markdown review of a judged submission
 

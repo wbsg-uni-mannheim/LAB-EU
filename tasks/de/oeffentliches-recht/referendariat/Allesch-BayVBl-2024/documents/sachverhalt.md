@@ -1,0 +1,29 @@
+## Sachverhalt
+
+Die erste Bürgermeisterin Sonja Sonnabend der kreisangehörigen Stadt Heidkirchen, Regierungsbezirk Niederbayern, erscheint am 9. Dezember 2019 in der Kanzlei von Rechtsanwalt Markus Toppas. Heidkirchen hat 8995 Einwohner und liegt im Landkreis Rottal-Inn. Die erste Bürgermeisterin Sonnabend erläutert Rechtsanwalt Toppas folgenden Sachverhalt:
+
+> **ZITAT**
+>
+> „Herr Rechtsanwalt, ich benötige Ihre Hilfe. Am 2. Dezember 2019 wurde der Stadt Heidkirchen die Klage des Gernot Gerauer zugestellt. Er wendet sich dagegen, dass er bei der Stadtratssitzung vom 7. November 2019 entfernt wurde und dass ihn die Polizei am 8. November 2019 aus dem Rathaus verwiesen hat.
+>
+> Hierzu müssen Sie Folgendes wissen: Bereits am 20. September 2019 hatte der Stadtrat aufgrund des Kommunalabgabengesetzes und der Beitragssatzung für die Verbesserung der Wasserversorgungseinrichtung der Stadt Heidkirchen die Erhebung eines Vorauszahlungsbeitrags für die Verbesserung der öffentlichen Wasserversorgungsanlage der Stadt beschlossen. Im Oktober 2019 ergingen die entsprechenden Beitragsbescheide. Diese Maßnahme ist in der Bevölkerung von Heidkirchen wegen der hohen Kosten äußerst umstritten.
+>
+> Am 7. November 2019 fand eine Stadtratssitzung statt, die sich aber überhaupt nicht mit der Beitragserhebung befasste. Thema der Sitzung war die Renovierung des Caritas-Kindergartens. In den Reihen der Zuschauer befand sich auch Gernot Gerauer, der ebenfalls einen Vorauszahlungsbescheid erhalten hatte. Herr Gerauer ist ein entschiedener Kritiker der neuen Wasserversorgungseinrichtung und hat in der Vergangenheit bereits öfter Stadtratssitzungen gestört. Herr Gerauer hat sich auch in der Sitzung vom 7. November 2019 lautstark über die hohen Kosten für die Verbesserung der Wasserversorgungsanlage und die entsprechenden Beitragsbescheide aufgeregt. Da mir Herrn Gerauers Verhalten bereits aus früheren Sitzungen bekannt war und er auf meine Ermahnung nicht reagierte, unterbrach ich die Sitzung kurz und verständigte sofort die Polizei. Nachdem zwei Polizeibeamte der Polizeiinspektion Heidkirchen eingetroffen waren, wurde Herrn Gerauer ein von mir während der Unterbrechung der Sitzung erstellter schriftlicher Bescheid überreicht, in dem ihm mitgeteilt wurde, dass er des Saales verwiesen werde. Da Herr Gerauer weiterhin nicht gehen wollte, die Stadt selbst aber über keine Dienstkräfte verfügt, um den Bescheid zu vollziehen, entfernten ihn die beiden Polizeibeamten auf meine Bitte aus dem Sitzungssaal. Dabei packte einer der Polizeibeamten Herrn Gerauer, der sich heftig wehrte, am Oberarm, um ihn so aus dem Sitzungssaal in den Vorraum ziehen zu können. Anschließend entfernte sich Herr Gerauer. Alle weiteren Einzelheiten entnehmen Sie bitte dem Sitzungsprotokoll.
+>
+> Am nächsten Tag erschien Herr Gerauer erneut im Rathaus. Er begab sich in den dritten Stock, in dem die Büros der einzelnen Stadtratsmitglieder und von Verwaltungsbeamten liegen. Herr Gerauer führte ein Megafon mit sich und fing an, im dritten Stock laut zu schreien und die Stadtratsmitglieder zu kritisieren. Ich selbst war zu diesem Zeitpunkt in meinem Büro, das im ersten Stock liegt, konnte aber die Schreie durch das Megafon deutlich hören. Aufgrund des Lärms war an ein konzentriertes Arbeiten nicht mehr zu denken. Ich blieb daher in meinem Büro und rief wiederum die Polizei und bat darum, Herrn Gerauer aus dem Rathaus zu entfernen. Wenige Minuten später erschienen zwei Polizeibeamte der Polizeiinspektion Heidkirchen und teilten Herrn Gerauer mit, dass er die Schreie unterlassen solle. Nachdem sich Herr Gerauer weigerte, forderten die Polizeibeamten ihn nach ordnungsgemäßer Anhörung auf, das Rathaus zu verlassen. Herr Gerauer fügte sich dieses Mal der polizeilichen Anordnung und verließ das Rathaus. Er ist nun aber der Auffassung, die Stadt hätte der Polizei keine Weisung erteilen dürfen. Ich bin aber der Meinung, dass er nicht gegen die Stadt vorgehen kann, immerhin hat am 8. November 2019 nur die Polizei mit ihm gesprochen, seitens der Stadt wurde er nicht aufgefordert, das Rathaus zu verlassen. Ihm wurde auch zu keinem Zeitpunkt ein Hausverbot erteilt.
+>
+> Soweit dies erfolgsversprechend ist, bitte ich Sie, auf die Klage des Gernot Gerauer zu erwidern und mir Ihr Vorgehen in einem Mandantenschreiben gesondert zu erläutern. Insbesondere frage ich mich, ob die Klage des Herrn Gerauer überhaupt zulässig ist, da sich die angegriffenen Maßnahmen ohnehin allesamt erledigt haben."
+
+Die erste Bürgermeisterin Sonnabend führt weiter aus:
+
+> **ZITAT**
+>
+> „Unabhängig davon hat sich in der Sitzung vom 7. November 2019 auch ein weiterer Vorfall ereignet. Stadtratsmitglied Otto Ossram von der Bürgergemeinschaft (BG) äußerte sich sehr kritisch mir gegenüber und vergriff sich, wie ich meine, auch im Ton. Ich schlug daraufhin dem Stadtrat vor, Herrn Ossram aus der Sitzung auszuschließen. Diesem Antrag stimmte der Stadtrat mit breiter Mehrheit zu. Mittlerweile sind mir allerdings doch Zweifel gekommen, ob dieses Vorgehen rechtmäßig war.
+>
+> Herr Rechtsanwalt, bitte erläutern Sie mir in Ihrem Mandantenschreiben auch, ob der Ausschluss von Stadtratsmitglied Ossram rechtmäßig war."
+
+Die erste Bürgermeisterin Sonnabend übergibt Rechtsanwalt Toppas einen Auszug aus der Sitzungsniederschrift des Stadtrats der Stadt Heidkirchen vom 7. November 2019 (siehe [Anlage 1](anlage-1-sitzungsniederschrift-auszug.md)), eine Kopie des an Gernot Gerauer übergebenen Bescheids vom 7. November 2019 (siehe [Anlage 2](anlage-2-bescheid.md)) und die Klageschrift des Gernot Gerauer vom 26. November 2019 (siehe [Anlage 3](anlage-3-klageschrift.md)) und unterzeichnet eine ordnungsgemäße Prozessvollmacht.
+
+## Fußnoten
+
+[^*]: Verfasser ist Dr. Erwin Allesch, Vizepräsident des Bayerischen Verwaltungsgerichtshofs a.D., München.

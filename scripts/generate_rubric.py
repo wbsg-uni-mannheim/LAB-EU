@@ -25,7 +25,7 @@ from typing import Any
 from dotenv import load_dotenv
 from openai import OpenAI, OpenAIError
 
-DEFAULT_MODEL = "gpt-5.5"
+DEFAULT_MODEL = "gpt-5.6-sol"
 DEFAULT_API_BASE = "https://api.openai.com/v1"
 DEFAULT_REASONING_EFFORT = "high"
 DEFAULT_JUDGE_REASONING_EFFORT = "medium"
@@ -53,7 +53,13 @@ PROMPTS_DIR = REPO_ROOT / "prompts" / "rubric_generation"
 
 sys.path.insert(0, str(REPO_ROOT))
 
-from evaluation.run import call_judge, judge_prompt as build_judge_prompt  # noqa: E402
+from evaluation.run import (  # noqa: E402
+    JudgeSpec,
+    call_judge,
+    judge_prompt as build_judge_prompt,
+    load_judge_committee,
+    make_client as make_judge_client,
+)
 from scripts.outline_util import UE_ID, index_outline, normalize_outline, with_ue_node  # noqa: E402
 
 
@@ -83,6 +89,14 @@ def parse_args() -> argparse.Namespace:
         help="Also write the calibrated rubric to evals/rubric.json.",
     )
     parser.add_argument(
+        "--artifact-suffix",
+        default="",
+        help=(
+            "Optional safe filename suffix for comparison runs, e.g. 'sol' writes "
+            "evals/rubric.generated.sol.json and, with --write-final, evals/rubric.sol.json."
+        ),
+    )
+    parser.add_argument(
         "--reasoning-effort",
         default=os.environ.get("OPENAI_RUBRIC_REASONING_EFFORT", DEFAULT_REASONING_EFFORT),
         help=(
@@ -105,6 +119,15 @@ def parse_args() -> argparse.Namespace:
         type=int,
         default=DEFAULT_CALIBRATION_VOTES,
         help=f"Judge votes per criterion during calibration. Defaults to {DEFAULT_CALIBRATION_VOTES}.",
+    )
+    parser.add_argument(
+        "--calibration-committee",
+        type=pathlib.Path,
+        default=None,
+        help=(
+            "JSON judge committee. Each configured model casts one calibration vote per criterion; "
+            "this replaces repeated votes from --judge-model."
+        ),
     )
     parser.add_argument(
         "--max-calibration-rounds",
@@ -298,6 +321,33 @@ def make_client(api_base: str) -> OpenAI:
     return OpenAI(base_url=api_base)
 
 
+def build_api_request(
+    *,
+    model: str,
+    system: str,
+    user: str,
+    reasoning_effort: str | None = None,
+) -> tuple[str, dict[str, Any]]:
+    """Build the canonical Responses request and its local step-cache key."""
+    key = cache_key(
+        {
+            "model": model,
+            "system": system,
+            "user": user,
+            "reasoning_effort": reasoning_effort,
+        }
+    )
+    request: dict[str, Any] = {
+        "model": model,
+        "instructions": system,
+        "input": user,
+        "text": {"format": {"type": "json_object"}},
+    }
+    if reasoning_effort:
+        request["reasoning"] = {"effort": reasoning_effort}
+    return key, request
+
+
 def api_call(
     *,
     client: OpenAI,
@@ -310,7 +360,12 @@ def api_call(
     cache_dir: pathlib.Path | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     step = re.sub(r"[^A-Za-z0-9_.-]+", "_", label) or "call"
-    key = cache_key({"model": model, "system": system, "user": user, "reasoning_effort": reasoning_effort})
+    key, request = build_api_request(
+        model=model,
+        system=system,
+        user=user,
+        reasoning_effort=reasoning_effort,
+    )
     cached = cache_read(cache_dir, step, key)
     if cached is not None:
         print(f"tokens[{label}]: cache hit, no API call", file=sys.stderr)
@@ -319,14 +374,6 @@ def api_call(
     # No max_output_tokens: the model may use its full output budget. Token
     # usage is logged per call and recorded in the generated audit file, so
     # caps can be reintroduced later if costs demand it.
-    request: dict[str, Any] = {
-        "model": model,
-        "instructions": system,
-        "input": user,
-        "text": {"format": {"type": "json_object"}},
-    }
-    if reasoning_effort:
-        request["reasoning"] = {"effort": reasoning_effort}
     try:
         response = client.responses.create(**request)
     except OpenAIError as exc:
@@ -425,6 +472,87 @@ def validate_criteria(criteria: list[dict[str, Any]]) -> list[str]:
     return errors
 
 
+def validate_pruning_coverage(
+    pruned: dict[str, Any], atoms: dict[str, Any]
+) -> list[str]:
+    """Verify that every core atom is either covered or explicitly dispositioned."""
+    criteria = pruned.get("criteria") or []
+    core_ids = {
+        str(atom.get("id"))
+        for atom in (atoms.get("atoms") or [])
+        if isinstance(atom, dict) and atom.get("expectation") == "core" and atom.get("id")
+    }
+    covered_ids = {
+        str(atom_id)
+        for criterion in criteria
+        if isinstance(criterion, dict)
+        for atom_id in (criterion.get("derived_from_atoms") or [])
+    }
+    audit = pruned.get("coverage_audit")
+    errors: list[str] = []
+    if not isinstance(audit, dict):
+        return ["Pruning output is missing coverage_audit."]
+    raw_uncovered = audit.get("uncovered_core_atoms")
+    if not isinstance(raw_uncovered, list):
+        return ["coverage_audit.uncovered_core_atoms must be a list."]
+
+    audited_ids: list[str] = []
+    for index, item in enumerate(raw_uncovered, start=1):
+        if not isinstance(item, dict):
+            errors.append(f"Coverage audit entry {index} must be an object.")
+            continue
+        atom_id = str(item.get("id", "")).strip()
+        reason = str(item.get("reason", "")).strip()
+        if not atom_id or not reason:
+            errors.append(f"Coverage audit entry {index} needs id and reason.")
+            continue
+        audited_ids.append(atom_id)
+
+    duplicates = sorted({atom_id for atom_id in audited_ids if audited_ids.count(atom_id) > 1})
+    if duplicates:
+        errors.append(f"Coverage audit repeats core atoms: {', '.join(duplicates)}")
+    audited = set(audited_ids)
+    unknown = sorted(audited - core_ids)
+    if unknown:
+        errors.append(f"Coverage audit references non-core or unknown atoms: {', '.join(unknown)}")
+    both = sorted(audited & covered_ids)
+    if both:
+        errors.append(f"Core atoms are both covered and audited as uncovered: {', '.join(both)}")
+    missing = sorted(core_ids - covered_ids - audited)
+    if missing:
+        errors.append(f"Core atoms lack a pruning disposition: {', '.join(missing)}")
+    return errors
+
+
+def criticality_distribution_warnings(criteria: list[dict[str, Any]]) -> list[str]:
+    """Return reviewer-facing warnings for the agreed 3/2/1-star target.
+
+    The distribution is deliberately a warning rather than a validation error:
+    small rubrics and documented legal exceptions still need to be possible.
+    """
+    tagged = [criterion for criterion in criteria if criterion.get("criticality") in (1, 2, 3)]
+    if not tagged:
+        return []
+
+    total = len(tagged)
+    counts = {
+        tier: sum(1 for criterion in tagged if criterion.get("criticality") == tier)
+        for tier in (3, 2, 1)
+    }
+    tier_three_share = counts[3] / total
+    tier_two_share = counts[2] / total
+    warnings: list[str] = []
+    if not 0.10 <= tier_three_share <= 0.15:
+        warnings.append(
+            f"Tier 3 is {counts[3]}/{total} ({tier_three_share:.1%}); target is about 10-15%."
+        )
+    if tier_two_share > 0.60:
+        warnings.append(
+            f"Tier 2 is {counts[2]}/{total} ({tier_two_share:.1%}); target maximum is 60%."
+        )
+    return warnings
+
+
 def has_boolean_labels(match_criteria: str) -> bool:
     label_pairs = [
         (r"\bPASS\b", r"\bFAIL\b"),
@@ -494,11 +622,14 @@ def summarize_votes(vote_results: list[dict[str, Any]]) -> dict[str, int]:
 
 def trimmed_vote(vote: dict[str, Any]) -> dict[str, Any]:
     evidence = [str(item)[:500] for item in (vote.get("evidence") or [])[:3]]
-    return {
+    trimmed = {
         "verdict": vote.get("verdict"),
         "reasoning": str(vote.get("reasoning", ""))[:1000],
         "evidence": evidence,
     }
+    if isinstance(vote.get("judge"), dict):
+        trimmed["judge"] = vote["judge"]
+    return trimmed
 
 
 def add_usage(total: dict[str, int], usage: dict[str, Any]) -> None:
@@ -509,34 +640,34 @@ def add_usage(total: dict[str, int], usage: dict[str, Any]) -> None:
 
 def judge_criteria_votes(
     *,
-    client: OpenAI,
-    judge_model: str,
-    judge_effort: str | None,
+    judges: list[tuple[JudgeSpec, OpenAI, bool]],
     task: dict[str, Any],
     task_dir: pathlib.Path,
     solution_output: str,
     criteria: list[dict[str, Any]],
-    votes: int,
     parallel: int,
     judge_usage: dict[str, int],
+    judge_usage_by_member: dict[str, dict[str, int]],
     cache_dir: pathlib.Path | None,
 ) -> list[list[dict[str, Any]]]:
-    jobs = [(index, vote) for index in range(len(criteria)) for vote in range(votes)]
+    jobs = [(index, judge_index) for index in range(len(criteria)) for judge_index in range(len(judges))]
 
     def run_job(job: tuple[int, int]) -> tuple[int, dict[str, Any]]:
-        index, vote = job
+        index, judge_index = job
+        spec, client, use_chat = judges[judge_index]
         criterion = criteria[index]
         prompt = build_judge_prompt(task, task_dir, solution_output, criterion)
         key = cache_key(
-            {"judge_model": judge_model, "judge_effort": judge_effort, "prompt": prompt, "vote": vote}
+            {"judge": spec.as_dict(), "prompt": prompt}
         )
         cached = cache_read(cache_dir, "judge", key)
         if cached is not None:
             return index, cached
         try:
-            result = call_judge(client, judge_model, prompt, judge_effort)
+            result = call_judge(client, spec.model, prompt, spec.reasoning_effort, use_chat)
         except Exception as exc:  # noqa: BLE001 - one broken judge call must not kill calibration
             result = {"verdict": "error", "reasoning": f"Judge call failed: {exc}", "evidence": [], "usage": {}}
+        result["judge"] = spec.as_dict()
         if result.get("verdict") != "error":
             cache_write(cache_dir, "judge", key, result)
         return index, result
@@ -545,6 +676,8 @@ def judge_criteria_votes(
     with ThreadPoolExecutor(max_workers=max(1, parallel)) as pool:
         for index, result in pool.map(run_job, jobs):
             add_usage(judge_usage, result.get("usage") or {})
+            judge_name = str((result.get("judge") or {}).get("name", "unknown"))
+            add_usage(judge_usage_by_member.setdefault(judge_name, {}), result.get("usage") or {})
             votes_by_criterion[index].append(result)
     return votes_by_criterion
 
@@ -558,13 +691,11 @@ def calibrate_rubric(
     client: OpenAI,
     generator_model: str,
     generator_effort: str | None,
-    judge_model: str,
-    judge_effort: str | None,
+    judges: list[tuple[JudgeSpec, OpenAI, bool]],
     task: dict[str, Any],
     task_dir: pathlib.Path,
     solution_output: str,
     criteria: list[dict[str, Any]],
-    votes: int,
     max_rounds: int,
     parallel: int,
     cache_dir: pathlib.Path | None,
@@ -575,7 +706,9 @@ def calibrate_rubric(
     rounds_log: list[dict[str, Any]] = []
     refine_usages: list[dict[str, Any]] = []
     judge_usage: dict[str, int] = {}
+    judge_usage_by_member: dict[str, dict[str, int]] = {}
     to_test = list(criteria)
+    votes = len(judges)
 
     for round_number in range(1, max_rounds + 1):
         if not to_test:
@@ -586,16 +719,14 @@ def calibrate_rubric(
             file=sys.stderr,
         )
         votes_by_criterion = judge_criteria_votes(
-            client=client,
-            judge_model=judge_model,
-            judge_effort=judge_effort,
+            judges=judges,
             task=task,
             task_dir=task_dir,
             solution_output=solution_output,
             criteria=to_test,
-            votes=votes,
             parallel=parallel,
             judge_usage=judge_usage,
+            judge_usage_by_member=judge_usage_by_member,
             cache_dir=cache_dir,
         )
 
@@ -694,6 +825,7 @@ def calibrate_rubric(
         "dropped": dropped,
         "rounds": rounds_log,
         "judge_usage": judge_usage,
+        "judge_usage_by_member": judge_usage_by_member,
         "refine_usage": refine_usages,
     }
 
@@ -821,13 +953,25 @@ def main() -> int:
     )
     bundle = json.loads(task_bundle_json(task_dir, task, files))
 
-    output_path = task_dir / "evals" / "rubric.generated.json"
-    final_path = task_dir / "evals" / "rubric.json"
+    artifact_suffix = args.artifact_suffix.strip()
+    if artifact_suffix and not re.fullmatch(r"[A-Za-z0-9_-]+", artifact_suffix):
+        raise SystemExit("--artifact-suffix may contain only letters, digits, '_' and '-'.")
+    if args.retag_only and artifact_suffix:
+        raise SystemExit("--artifact-suffix is not supported with --retag-only.")
+    suffix = f".{artifact_suffix}" if artifact_suffix else ""
+    output_path = task_dir / "evals" / f"rubric.generated{suffix}.json"
+    final_path = task_dir / "evals" / f"rubric{suffix}.json"
 
     reasoning_effort = None if args.reasoning_effort.lower() == "none" else args.reasoning_effort
     judge_model = args.judge_model or args.model
     judge_effort = None if args.judge_reasoning_effort.lower() == "none" else args.judge_reasoning_effort
     calibrate = not args.skip_calibration
+    calibration_committee = (
+        load_judge_committee(args.calibration_committee) if args.calibration_committee else None
+    )
+    calibration_vote_count = (
+        len(calibration_committee) if calibration_committee else max(1, args.calibration_votes)
+    )
     cache_dir = None if args.no_cache else task_dir / "evals" / ".rubric-cache"
 
     # Fail fast on missing prompt templates, including in dry runs.
@@ -847,8 +991,16 @@ def main() -> int:
         print(f"Candidate roles: {[name for name, _ in CANDIDATE_ROLES]}")
         print(f"Calibration: {'on' if calibrate else 'off'}")
         if calibrate:
-            print(f"Calibration judge: {judge_model} (effort {judge_effort})")
-            print(f"Calibration votes: {args.calibration_votes}, max rounds: {args.max_calibration_rounds}")
+            if calibration_committee:
+                print("Calibration committee:")
+                for spec in calibration_committee:
+                    print(
+                        f"- {spec.name}: {spec.model} via {spec.api_base} "
+                        f"(effort {spec.reasoning_effort})"
+                    )
+            else:
+                print(f"Calibration judge: {judge_model} (effort {judge_effort})")
+            print(f"Calibration votes: {calibration_vote_count}, max rounds: {args.max_calibration_rounds}")
         print(f"Analysis tagging: {'off' if args.skip_tagging else 'on'}")
         print(f"Solution files: {[str(p) for p in solution_files]}")
         print(f"Input files: {len(files)}")
@@ -871,6 +1023,25 @@ def main() -> int:
         print(f"WARNING: {warning}", file=sys.stderr)
 
     client = make_client(os.environ.get("OPENAI_API_BASE", DEFAULT_API_BASE))
+    if calibration_committee:
+        calibration_judges = [
+            (spec, *make_judge_client(spec.api_base, timeout_seconds=300.0))
+            for spec in calibration_committee
+        ]
+    else:
+        calibration_judges = [
+            (
+                JudgeSpec(
+                    name=f"{judge_model}#{vote + 1}",
+                    model=judge_model,
+                    api_base=os.environ.get("OPENAI_API_BASE", DEFAULT_API_BASE),
+                    reasoning_effort=judge_effort,
+                ),
+                client,
+                False,
+            )
+            for vote in range(calibration_vote_count)
+        ]
 
     if args.retag_only:
         if not final_path.exists():
@@ -912,6 +1083,8 @@ def main() -> int:
             + ", ".join(f"{tier}: {count}" for tier, count in distribution.items()),
             file=sys.stderr,
         )
+        for warning in criticality_distribution_warnings(criteria):
+            print(f"WARNING: Criticality distribution: {warning}", file=sys.stderr)
         rubric["criteria"] = criteria
         rubric["outline"] = outline_nodes
         rubric["retagged_at"] = dt.datetime.now(dt.timezone.utc).isoformat()
@@ -986,7 +1159,13 @@ def main() -> int:
         model=args.model,
         system=pruner_system,
         user=build_user_payload(pruner_user_base, prune_payload),
-        required_keys={"language", "criteria", "rejected_candidates", "pruning_notes"},
+        required_keys={
+            "language",
+            "criteria",
+            "rejected_candidates",
+            "pruning_notes",
+            "coverage_audit",
+        },
         reasoning_effort=reasoning_effort,
         label="prune_criteria",
         cache_dir=cache_dir,
@@ -999,13 +1178,11 @@ def main() -> int:
             client=client,
             generator_model=args.model,
             generator_effort=reasoning_effort,
-            judge_model=judge_model,
-            judge_effort=judge_effort,
+            judges=calibration_judges,
             task=task,
             task_dir=task_dir,
             solution_output=solution_output,
             criteria=pruned.get("criteria", []),
-            votes=max(1, args.calibration_votes),
             max_rounds=max(1, args.max_calibration_rounds),
             parallel=args.parallel,
             cache_dir=cache_dir,
@@ -1061,8 +1238,21 @@ def main() -> int:
             + ", ".join(f"{tier}: {count}" for tier, count in distribution.items()),
             file=sys.stderr,
         )
+        for warning in criticality_distribution_warnings(final_criteria):
+            print(f"WARNING: Criticality distribution: {warning}", file=sys.stderr)
 
     validation_errors = validate_criteria(final_criteria)
+    validation_errors.extend(validate_pruning_coverage(pruned, atoms))
+    validation_warnings = [
+        f"Criticality distribution: {warning}"
+        for warning in criticality_distribution_warnings(final_criteria)
+    ]
+    validation_warnings.extend(
+        f"Long criterion for manual bundling review: {criterion.get('id')} "
+        f"({len(str(criterion.get('match_criteria', '')))} characters)"
+        for criterion in final_criteria
+        if len(str(criterion.get("match_criteria", ""))) > 900
+    )
     generated = {
         "schema_version": "0.2",
         "generated_at": dt.datetime.now(dt.timezone.utc).isoformat(),
@@ -1075,9 +1265,15 @@ def main() -> int:
             "candidate_roles": [name for name, _ in CANDIDATE_ROLES],
             "calibration": {
                 "enabled": calibrate,
-                "judge_model": judge_model if calibrate else None,
-                "judge_reasoning_effort": judge_effort if calibrate else None,
-                "votes": args.calibration_votes if calibrate else None,
+                "mode": "committee" if calibrate and calibration_committee else "repeated_model",
+                "judge_model": judge_model if calibrate and not calibration_committee else None,
+                "judge_reasoning_effort": judge_effort if calibrate and not calibration_committee else None,
+                "committee": (
+                    [spec.as_dict() for spec in calibration_committee]
+                    if calibrate and calibration_committee
+                    else None
+                ),
+                "votes": calibration_vote_count if calibrate else None,
                 "max_rounds": args.max_calibration_rounds if calibrate else None,
             },
         },
@@ -1117,9 +1313,9 @@ def main() -> int:
                 "enabled": True,
                 "function_vocabulary": FUNCTION_TAGS,
                 "criticality_scale": {
-                    "3": "ergebnistragend - entscheidet den Fall; Budget ~10-15% der Kriterien",
-                    "2": "wichtig - in einer soliden Lösung erwartet (Default)",
-                    "1": "eher unwichtig - Detail, Form, Bonuswissen",
+                    "3": "realistischer ergebnisentscheidender Divergenzpunkt; Ziel ~10-15%",
+                    "2": "wichtig - in einer soliden Lösung erwartet; höchstens 60%",
+                    "1": "eher unwichtig - Detail, Form, Bonuswissen; verbleibender Anteil",
                 },
                 "tagging_notes": tagging_parsed.get("tagging_notes", []),
                 "warnings": tag_warnings,
@@ -1129,11 +1325,15 @@ def main() -> int:
         ),
         "final_criteria": final_criteria,
         "validation_errors": validation_errors,
+        "validation_warnings": validation_warnings,
         "usage": {
             "atomize_solution": usage_summary(atom_response),
             "generate_candidate_criteria": candidate_usage,
             "prune_criteria": usage_summary(pruned_response),
             "calibration_judge": calibration_result["judge_usage"] if calibration_result else None,
+            "calibration_judge_by_member": (
+                calibration_result["judge_usage_by_member"] if calibration_result else None
+            ),
             "refine_rubric": calibration_result["refine_usage"] if calibration_result else None,
             "extract_outline": usage_summary(outline_response) if outline_response else None,
             "tag_criteria": usage_summary(tagging_response) if tagging_response else None,
@@ -1157,6 +1357,7 @@ def main() -> int:
             "task_title": task.get("title"),
             "outline": outline_nodes,
             "criteria": final_criteria,
+            "validation_warnings": validation_warnings,
             "provenance": {
                 "source": str(output_path.relative_to(task_dir)) if output_path.is_relative_to(task_dir) else str(output_path),
                 "provider": "openai",
