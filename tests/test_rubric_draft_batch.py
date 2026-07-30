@@ -70,6 +70,26 @@ class RubricDraftBatchTests(unittest.TestCase):
             gr.validate_pruning_coverage(pruned, atoms),
         )
 
+    def test_pruning_coverage_normalizes_atoms_already_covered_by_criteria(self):
+        pruned = {
+            "criteria": [{"derived_from_atoms": ["A-001"]}],
+            "coverage_audit": {
+                "uncovered_core_atoms": [
+                    {"id": "A-001", "reason": "Contradictory model audit."},
+                    {"id": "A-002", "reason": "Intentionally omitted."},
+                ]
+            },
+        }
+
+        warnings = gr.normalize_pruning_coverage_audit(pruned)
+
+        self.assertEqual(
+            pruned["coverage_audit"]["uncovered_core_atoms"],
+            [{"id": "A-002", "reason": "Intentionally omitted."}],
+        )
+        self.assertEqual(len(warnings), 1)
+        self.assertIn("A-001", warnings[0])
+
     def test_pruner_prompt_limits_scope_compliance_and_audits_long_criteria(self):
         prompt = (REPO_ROOT / "prompts/rubric_generation/prune_rubric.user.txt").read_text(
             encoding="utf-8"
