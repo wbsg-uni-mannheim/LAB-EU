@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.1",
+  "study_id": "de-core-45-first-exam",
+  "title": "LAB-EU German First State Exam Core Study (45 cases)",
+  "language": "de",
+  "exam_level": "first_state_exam",
+  "taskset": "studies/de-core-45/taskset.jsonl",
+  "n_tasks": 45,
+  "subject_distribution": {
+    "oeffentliches_recht": 15,
+    "strafrecht": 15,
+    "zivilrecht": 15
+  },
+  "rubric_file": "evals/rubric.json",
+  "rubric_commit": "2a31e750f4d43ecbce74860de9666ab70abe0c74",
+  "system_prompt": "prompts/harness/study_system_prompt.txt",
+  "arms": [
+    {
+      "id": "baseline",
+      "harness": "baseline-single-call",
+      "runner": "scripts/run_baseline_taskset.py",
+      "tools": false
+    },
+    {
+      "id": "agent",
+      "harness": "opencode",
+      "runner": "scripts/run_opencode_taskset.py",
+      "sandbox": "docker",
+      "tools": true
+    }
+  ],
+  "evaluation": {
+    "content_scale": "boolean_per_criterion",
+    "style_scale": "boolean_per_eligible_criterion",
+    "aggregate_content_and_style": false,
+    "judge_committee": "configs/judge-committee-professor-pilot.json"
+  }
+}
