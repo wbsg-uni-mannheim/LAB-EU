@@ -44,9 +44,10 @@ from baseline_prompt import (  # noqa: E402
     strip_outer_fence,
 )
 
+import retry_util  # noqa: E402
+
 DEFAULT_MODEL = "gpt-5.5"
 DEFAULT_API_BASE = "https://api.openai.com/v1"
-API_ATTEMPTS = 2
 
 
 def parse_args() -> argparse.Namespace:
@@ -76,6 +77,17 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--timeout-seconds", type=int, default=3600)
     parser.add_argument("--parallel", type=int, default=1)
+    parser.add_argument(
+        "--max-attempts",
+        type=int,
+        default=retry_util.DEFAULT_MAX_ATTEMPTS,
+        help=(
+            "Model-call attempts per task, including the first "
+            f"(default {retry_util.DEFAULT_MAX_ATTEMPTS} = 1 + 10 retries). Retried "
+            "on upstream failures and empty completions; a rejected key or an "
+            "unknown model fails immediately."
+        ),
+    )
     parser.add_argument(
         "--judge",
         action="store_true",
@@ -118,7 +130,14 @@ def usage_summary(response: Any) -> dict[str, Any]:
     }
 
 
-def call_model(client: OpenAI, args: argparse.Namespace, prompt: str) -> tuple[str, dict[str, Any], int]:
+def call_model(client: OpenAI, args: argparse.Namespace, prompt: str,
+               task_id: str = "") -> tuple[str, dict[str, Any], int]:
+    """One baseline call, retried on infrastructure failures only.
+
+    Same policy as the OpenCode harness (scripts/retry_util.py): upstream
+    failures are repeated with backoff, a rejected key or an unknown model
+    fails immediately instead of burning every attempt.
+    """
     request: dict[str, Any] = {
         "model": args.model,
         "messages": [{"role": "user", "content": prompt}],
@@ -128,24 +147,38 @@ def call_model(client: OpenAI, args: argparse.Namespace, prompt: str) -> tuple[s
     if args.max_output_tokens > 0:
         request["max_completion_tokens"] = args.max_output_tokens
 
+    max_attempts = max(1, args.max_attempts)
     last_error: Exception | None = None
-    for attempt in range(1, API_ATTEMPTS + 1):
+    for attempt in range(1, max_attempts + 1):
         try:
             response = client.chat.completions.create(**request)
         except OpenAIError as exc:
-            # Older OpenAI-compatible endpoints only accept max_tokens.
+            # Older OpenAI-compatible endpoints only accept max_tokens. A
+            # request-shape fix, not an outage: repeat it straight away.
             if "max_completion_tokens" in request and "max_completion_tokens" in str(exc):
                 request["max_tokens"] = request.pop("max_completion_tokens")
                 last_error = exc
                 continue
             last_error = exc
-            continue
-        text = (response.choices[0].message.content or "") if response.choices else ""
-        if not text.strip():
+            outcome, reason = retry_util.classify_failure(
+                exit_code=1, timed_out=False, missing_deliverables=True,
+                error_text=str(exc),
+            )
+            if outcome == retry_util.FATAL:
+                raise RuntimeError(f"Model call rejected, not retrying: {reason}: {exc}") from exc
+        else:
+            text = (response.choices[0].message.content or "") if response.choices else ""
+            if text.strip():
+                return text, usage_summary(response), attempt
+            # An empty completion is a truncated or dropped generation, not an
+            # answer — treat it like any other upstream failure.
             last_error = RuntimeError("Model returned an empty response.")
-            continue
-        return text, usage_summary(response), attempt
-    raise RuntimeError(f"Model call failed after {API_ATTEMPTS} attempts: {last_error}")
+
+        if attempt < max_attempts:
+            delay = retry_util.sleep_before_retry(attempt)
+            print(f"{task_id or args.model}: attempt {attempt}/{max_attempts} failed "
+                  f"({last_error}); retried after {delay:.0f}s", file=sys.stderr)
+    raise RuntimeError(f"Model call failed after {max_attempts} attempts: {last_error}")
 
 
 def run_one_task(args: argparse.Namespace, client: OpenAI, row: dict[str, Any], run_dir: pathlib.Path) -> dict[str, Any]:
@@ -174,7 +207,7 @@ def run_one_task(args: argparse.Namespace, client: OpenAI, row: dict[str, Any], 
         prompt = render_prompt(row, documents)
         (task_run_dir / "prompt.md").write_text(prompt, encoding="utf-8")
 
-        response_text, usage, attempts = call_model(client, args, prompt)
+        response_text, usage, attempts = call_model(client, args, prompt, row["task_id"])
         (task_run_dir / "response.md").write_text(response_text, encoding="utf-8")
 
         deliverable_text, fence_stripped = strip_outer_fence(response_text)

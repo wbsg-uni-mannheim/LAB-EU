@@ -19,6 +19,13 @@ import uuid
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any
 
+from dotenv import load_dotenv
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+
+import retry_util  # noqa: E402
+import sandbox_spec  # noqa: E402
+
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 PROMPTS_DIR = REPO_ROOT / "prompts" / "harness"
@@ -26,6 +33,9 @@ DEFAULT_MODEL = "openrouter/deepseek/deepseek-v4-pro"
 DEFAULT_VARIANT = "medium"
 DEFAULT_RUN_NAME = "opencode-openrouter-deepseek-v4-pro-medium"
 DEFAULT_DOCKER_IMAGE = "lab-eu-opencode-harness:latest"
+DEFAULT_OPENCODE_DIR = REPO_ROOT / "vendor" / "opencode"
+# Provider credentials the agent process needs. Never placed on a command line.
+SECRET_ENV_NAMES = ("OPENROUTER_API_KEY",)
 
 OPENCODE_PERMISSION_CONFIG: dict[str, Any] = {
     "$schema": "https://opencode.ai/config.json",
@@ -94,7 +104,51 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--agent", default="", help="Optional OpenCode agent name.")
     parser.add_argument("--timeout-seconds", type=int, default=7200)
     parser.add_argument("--parallel", type=int, default=1)
-    parser.add_argument("--sandbox", choices=["docker", "local"], default="docker")
+    parser.add_argument(
+        "--max-attempts",
+        type=int,
+        default=retry_util.DEFAULT_MAX_ATTEMPTS,
+        help=(
+            "Attempts per task, including the first "
+            f"(default {retry_util.DEFAULT_MAX_ATTEMPTS} = 1 + 10 retries). Only "
+            "infrastructure failures are retried; a solver that finishes without "
+            "its deliverable is never repeated, because best-of-N sampling would "
+            "inflate the score."
+        ),
+    )
+    parser.add_argument(
+        "--retry-base-delay",
+        type=float,
+        default=retry_util.BASE_DELAY_SECONDS,
+        help="First backoff delay in seconds; doubles per failure up to "
+             f"{retry_util.MAX_DELAY_SECONDS:.0f}s.",
+    )
+    parser.add_argument(
+        "--retry-on-timeout",
+        action="store_true",
+        help=(
+            "Also retry tasks that hit --timeout-seconds. Off by default: a "
+            "timeout is usually a stuck agent, and repeating it costs the full "
+            "timeout every time."
+        ),
+    )
+    parser.add_argument(
+        "--sandbox",
+        choices=["docker", "bwrap", "local"],
+        default="docker",
+        help=(
+            "Enforcement profile. 'docker' needs a daemon (local workstations); "
+            "'bwrap' is the unprivileged-namespace jail for cluster nodes; "
+            "'local' runs OpenCode unconfined and must never be used for "
+            "headline runs."
+        ),
+    )
+    parser.add_argument(
+        "--opencode-dir",
+        type=pathlib.Path,
+        default=DEFAULT_OPENCODE_DIR,
+        help="Vendored OpenCode tree bind-mounted into the bwrap jail (scripts/install_opencode.sh).",
+    )
     parser.add_argument("--docker-image", default=DEFAULT_DOCKER_IMAGE)
     parser.add_argument("--docker-network", default="bridge")
     parser.add_argument("--docker-cpus", default="2")
@@ -711,6 +765,52 @@ def docker_command(args: argparse.Namespace, row: dict[str, Any], input_dir: pat
     return command, container_name
 
 
+def bwrap_spec(
+    args: argparse.Namespace,
+    row: dict[str, Any],
+    input_dir: pathlib.Path,
+    work_dir: pathlib.Path,
+    home_dir: pathlib.Path,
+    prompt: str,
+) -> sandbox_spec.BwrapSpec:
+    """The jail for one task. Everything the agent may touch is named here;
+    nothing else exists inside the namespace."""
+    command = [
+        "opencode",
+        "run",
+        "--dir",
+        sandbox_spec.JAIL_WORK,
+        "--model",
+        args.model,
+        "--variant",
+        args.variant,
+        "--format",
+        "json",
+        "--title",
+        f"LAB-EU {row['task_id']}",
+        "--dangerously-skip-permissions",
+    ]
+    if args.agent:
+        command.extend(["--agent", args.agent])
+    command.append(prompt)
+
+    env = sandbox_spec.jail_env(
+        model_config_content=json.dumps(build_opencode_config(args.model), separators=(",", ":")),
+        task_id=row["task_id"],
+    )
+    secret_env = {name: os.environ[name] for name in SECRET_ENV_NAMES if os.environ.get(name)}
+
+    return sandbox_spec.BwrapSpec(
+        workspace=work_dir.resolve(),
+        task_input=input_dir.resolve(),
+        home=home_dir.resolve(),
+        command=command,
+        ro_binds=[(args.opencode_dir.resolve(), sandbox_spec.JAIL_OPENCODE)],
+        env=env,
+        secret_env=secret_env,
+    )
+
+
 def local_command(args: argparse.Namespace, row: dict[str, Any], work_dir: pathlib.Path, prompt: str) -> tuple[list[str], str | None]:
     command = [
         args.opencode_bin,
@@ -734,20 +834,21 @@ def local_command(args: argparse.Namespace, row: dict[str, Any], work_dir: pathl
 
 
 def run_command(
-    command: list[str],
+    spawn: Any,
     stdout_path: pathlib.Path,
     stderr_path: pathlib.Path,
     timeout_seconds: int,
-    env: dict[str, str],
     cleanup_container: str | None,
 ) -> dict[str, Any]:
+    """Run one solver process. ``spawn(stdout, stderr) -> Popen`` so the caller
+    owns how the process is created (plain subprocess vs. bwrap jail)."""
     started = time.monotonic()
     started_at = iso_now()
     timed_out = False
     exit_code: int | None = None
 
     with stdout_path.open("wb") as stdout, stderr_path.open("wb") as stderr:
-        process = subprocess.Popen(command, cwd=REPO_ROOT, env=env, stdout=stdout, stderr=stderr)
+        process = spawn(stdout, stderr)
         try:
             exit_code = process.wait(timeout=timeout_seconds)
         except subprocess.TimeoutExpired:
@@ -791,6 +892,58 @@ def prepare_task_run(run_dir: pathlib.Path, row: dict[str, Any]) -> dict[str, pa
     return {"task_run_dir": task_run_dir, "input_dir": input_dir, "work_dir": work_dir}
 
 
+def solver_error_text(stdout_path: pathlib.Path) -> str:
+    """Everything OpenCode reported as an error, for failure classification.
+
+    OpenCode reports provider failures as `error` events in its JSON stream
+    rather than through the exit code alone, so the stream is the only place
+    that says *why* an attempt died.
+    """
+    messages: list[str] = []
+    for event in parse_jsonl(stdout_path):
+        if event.get("type") != "error":
+            continue
+        error = event.get("error")
+        for candidate in iter_dicts(error):
+            for key in ("message", "responseBody", "name"):
+                value = candidate.get(key)
+                if isinstance(value, str) and value:
+                    messages.append(value)
+    return "\n".join(messages)
+
+
+def reset_task_workspace(input_dir: pathlib.Path, work_dir: pathlib.Path,
+                         task_run_dir: pathlib.Path, home_dir: pathlib.Path | None) -> None:
+    """Put the task back to its pre-attempt state before a retry.
+
+    A retry must be a fresh attempt, not a continuation: partial files from the
+    failed attempt would otherwise be presented to the model as its own prior
+    work, and a stale `submission/` copy would be reported as a deliverable the
+    new attempt never produced.
+    """
+    shutil.rmtree(work_dir, ignore_errors=True)
+    shutil.rmtree(task_run_dir / "submission", ignore_errors=True)
+    copy_tree_contents(input_dir, work_dir)
+    if home_dir is not None:
+        shutil.rmtree(home_dir, ignore_errors=True)
+        home_dir.mkdir(parents=True, exist_ok=True)
+
+
+def archive_failed_attempt(task_run_dir: pathlib.Path, attempt: int,
+                           home_dir: pathlib.Path | None) -> pathlib.Path:
+    """Move a failed attempt's diagnostics aside so the retry starts clean and
+    the failure stays auditable."""
+    destination = task_run_dir / "attempts" / f"{attempt:02d}"
+    destination.mkdir(parents=True, exist_ok=True)
+    for name in ("stdout.jsonl", "stderr.log"):
+        source = task_run_dir / name
+        if source.exists():
+            shutil.move(str(source), str(destination / name))
+    if home_dir is not None and home_dir.exists():
+        shutil.move(str(home_dir), str(destination / "jail_home"))
+    return destination
+
+
 def run_one_task(args: argparse.Namespace, row: dict[str, Any], run_dir: pathlib.Path) -> dict[str, Any]:
     paths = prepare_task_run(run_dir, row)
     task_run_dir = paths["task_run_dir"]
@@ -807,22 +960,85 @@ def run_one_task(args: argparse.Namespace, row: dict[str, Any], run_dir: pathlib
     before_snapshot_path = task_run_dir / "workspace.before.json"
     after_snapshot_path = task_run_dir / "workspace.after.json"
 
-    before_snapshot = snapshot_workspace(work_dir)
-    before_snapshot_path.write_text(json.dumps(before_snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    home_dir = task_run_dir / "jail_home" if args.sandbox == "bwrap" else None
+    max_attempts = max(1, args.max_attempts)
+    attempts: list[dict[str, Any]] = []
 
-    if args.sandbox == "docker":
-        command, cleanup_container = docker_command(args, row, input_dir, work_dir, task_run_dir)
-    else:
-        command, cleanup_container = local_command(args, row, work_dir, prompt)
+    for attempt in range(1, max_attempts + 1):
+        if attempt > 1:
+            reset_task_workspace(input_dir, work_dir, task_run_dir, home_dir)
 
-    command_result = run_command(
-        command=command,
-        stdout_path=stdout_path,
-        stderr_path=stderr_path,
-        timeout_seconds=args.timeout_seconds,
-        env=base_env(args.model),
-        cleanup_container=cleanup_container,
-    )
+        before_snapshot = snapshot_workspace(work_dir)
+        before_snapshot_path.write_text(
+            json.dumps(before_snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+
+        if args.sandbox == "bwrap":
+            home_dir.mkdir(parents=True, exist_ok=True)
+            spec = bwrap_spec(args, row, input_dir, work_dir, home_dir, prompt)
+            # the audit record: the full jail specification, secret values masked
+            command = spec.redacted_argv()
+            cleanup_container = None
+
+            def spawn(stdout, stderr, spec=spec):
+                return sandbox_spec.spawn(spec, stdout=stdout, stderr=stderr)
+        else:
+            if args.sandbox == "docker":
+                command, cleanup_container = docker_command(args, row, input_dir, work_dir, task_run_dir)
+            else:
+                command, cleanup_container = local_command(args, row, work_dir, prompt)
+            env = base_env(args.model)
+
+            def spawn(stdout, stderr, command=command, env=env):
+                return subprocess.Popen(command, cwd=REPO_ROOT, env=env, stdout=stdout, stderr=stderr)
+
+        command_result = run_command(
+            spawn=spawn,
+            stdout_path=stdout_path,
+            stderr_path=stderr_path,
+            timeout_seconds=args.timeout_seconds,
+            cleanup_container=cleanup_container,
+        )
+
+        probe = collect_deliverables(work_dir, task_run_dir, row["deliverables"])
+        outcome, reason = retry_util.classify_failure(
+            exit_code=command_result["exit_code"],
+            timed_out=command_result["timed_out"],
+            missing_deliverables=any(not item.get("found") for item in probe),
+            error_text=solver_error_text(stdout_path),
+        )
+        record = {
+            "attempt": attempt,
+            "outcome": outcome,
+            "reason": reason,
+            "exit_code": command_result["exit_code"],
+            "timed_out": command_result["timed_out"],
+            "duration_seconds": command_result["duration_seconds"],
+            "started_at": command_result["started_at"],
+        }
+
+        retrying = (
+            retry_util.should_retry(outcome, retry_on_timeout=args.retry_on_timeout)
+            and attempt < max_attempts
+        )
+        if retrying:
+            record["artifacts"] = str(archive_failed_attempt(task_run_dir, attempt, home_dir))
+            delay = retry_util.backoff_delay(attempt, base=args.retry_base_delay)
+            record["retry_delay_seconds"] = round(delay, 1)
+            attempts.append(record)
+            print(
+                f"{row['task_id']}: attempt {attempt}/{max_attempts} failed ({reason}); "
+                f"retrying in {delay:.0f}s",
+                file=sys.stderr,
+            )
+            time.sleep(delay)
+            continue
+
+        attempts.append(record)
+        if outcome != retry_util.OK:
+            print(f"{row['task_id']}: giving up after attempt {attempt} ({outcome}: {reason})",
+                  file=sys.stderr)
+        break
 
     after_snapshot = snapshot_workspace(work_dir)
     after_snapshot_path.write_text(json.dumps(after_snapshot, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -848,6 +1064,11 @@ def run_one_task(args: argparse.Namespace, row: dict[str, Any], run_dir: pathlib
         "model": args.model,
         "variant": args.variant,
         "agent": args.agent or None,
+        # The scored attempt is the last one; every earlier attempt failed for
+        # infrastructure reasons and its diagnostics live under attempts/.
+        "attempt_count": len(attempts),
+        "attempts": attempts,
+        "outcome": attempts[-1]["outcome"] if attempts else "ok",
         "expected_deliverables": row["deliverables"],
         "actual_deliverables": deliverable_results,
         "missing_deliverables": [item["path"] for item in deliverable_results if not item.get("found")],
@@ -874,6 +1095,14 @@ def run_one_task(args: argparse.Namespace, row: dict[str, Any], run_dir: pathlib
     return metadata
 
 
+def resolved_opencode_version(args: argparse.Namespace) -> str:
+    if args.sandbox == "local":
+        return opencode_version(args.opencode_bin)
+    if args.sandbox == "bwrap":
+        return sandbox_spec.opencode_version(sandbox_spec.vendored_opencode_bin(args.opencode_dir))
+    return "container"
+
+
 def write_manifest(args: argparse.Namespace, run_dir: pathlib.Path, run_id: str, rows: list[dict[str, Any]]) -> None:
     manifest = {
         "schema_version": "0.1",
@@ -887,16 +1116,58 @@ def write_manifest(args: argparse.Namespace, run_dir: pathlib.Path, run_id: str,
         "model": args.model,
         "variant": args.variant,
         "agent": args.agent or None,
-        "opencode_version": opencode_version(args.opencode_bin) if args.sandbox == "local" else "container",
+        "opencode_version": resolved_opencode_version(args),
         "default_model_verified_locally": DEFAULT_MODEL,
         "permission_config": OPENCODE_PERMISSION_CONFIG,
+        "retry_policy": {
+            "max_attempts": args.max_attempts,
+            "retried_outcomes": ["transient"] + (["timeout"] if args.retry_on_timeout else []),
+            "never_retried": ["solver", "fatal"],
+        },
     }
+    if args.sandbox == "bwrap":
+        manifest["jail"] = {
+            "profile": "bwrap",
+            "namespaces": ["mount", "pid", "ipc", "uts"],
+            "network_namespace_shared": True,
+            "opencode_dir": relative_to_repo(args.opencode_dir),
+            "mounts": {
+                sandbox_spec.JAIL_TASK: "ro (sanitized task input)",
+                sandbox_spec.JAIL_WORK: "rw (agent workspace)",
+                sandbox_spec.JAIL_HOME: "rw (OpenCode state)",
+                sandbox_spec.JAIL_OPENCODE: "ro (vendored CLI)",
+            },
+        }
     (run_dir / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def preflight(args: argparse.Namespace) -> None:
+    """Refuse to start a run whose enforcement profile cannot work here.
+
+    Checked before the first model call: a jail that dies on the first agent
+    action, or a solver that never had its credentials, costs a whole run.
+    """
+    if args.sandbox != "bwrap":
+        return
+    # same source of truth as the baseline runner; the key is read here and
+    # handed to the jail over a pipe, never through a mounted file
+    load_dotenv(REPO_ROOT / ".env", override=False)
+    for reason in (sandbox_spec.bwrap_preflight(),
+                   sandbox_spec.opencode_preflight(args.opencode_dir)):
+        if reason:
+            raise SystemExit(f"bwrap sandbox unavailable: {reason}")
+    if not any(os.environ.get(name) for name in SECRET_ENV_NAMES):
+        print(
+            f"Warning: none of {', '.join(SECRET_ENV_NAMES)} is set; the jail "
+            "has no provider credentials and every task will fail.",
+            file=sys.stderr,
+        )
 
 
 def main() -> int:
     args = parse_args()
     rows = load_taskset(args.taskset)
+    preflight(args)
 
     if args.dry_run:
         print(f"Validated {len(rows)} task(s).")
@@ -920,7 +1191,10 @@ def main() -> int:
             missing = metadata["missing_deliverables"]
             if metadata["exit_code"] != 0 or missing:
                 failures += 1
-            print(f"{row['task_id']}: exit={metadata['exit_code']} missing={len(missing)}")
+            print(
+                    f"{row['task_id']}: exit={metadata['exit_code']} "
+                    f"missing={len(missing)} attempts={metadata['attempt_count']}"
+                )
     else:
         with ThreadPoolExecutor(max_workers=max_workers) as pool:
             future_to_row = {pool.submit(run_one_task, args, row, run_dir): row for row in rows}
@@ -935,7 +1209,10 @@ def main() -> int:
                 missing = metadata["missing_deliverables"]
                 if metadata["exit_code"] != 0 or missing:
                     failures += 1
-                print(f"{row['task_id']}: exit={metadata['exit_code']} missing={len(missing)}")
+                print(
+                    f"{row['task_id']}: exit={metadata['exit_code']} "
+                    f"missing={len(missing)} attempts={metadata['attempt_count']}"
+                )
 
     print(f"Wrote run: {run_dir}")
     return 1 if failures else 0

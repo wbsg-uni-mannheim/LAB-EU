@@ -363,25 +363,100 @@ env/bin/python scripts/run_opencode_taskset.py \
   --dry-run
 ```
 
-Build the Docker sandbox image:
+### Enforcement profiles
+
+`--sandbox` picks how the solver is confined. Both enforced profiles give the
+same invariant — the repository, `evals/`, gold solutions, `.env` and other
+runs do not exist for the agent — and both record which profile ran in
+`manifest.json`.
+
+| Profile | Requirement | Use |
+|---|---|---|
+| `docker` | Docker daemon | Local workstations |
+| `bwrap` | Linux, unprivileged user namespaces | Cluster / compute nodes |
+| `local` | none | Debugging only — unconfined, never for headline runs |
+
+**Docker profile.** Build the image once:
 
 ```bash
 docker build -f docker/opencode-harness.Dockerfile -t lab-eu-opencode-harness:latest .
 ```
+
+**bwrap profile.** Compute nodes generally have no Docker daemon, so the jail
+is built from unprivileged namespaces instead. It needs the OpenCode CLI as a
+bind-mountable tree (pinned to the same version the image builds):
+
+```bash
+scripts/install_opencode.sh
+```
+
+This vendors OpenCode into `vendor/opencode/` (gitignored, ~320 MB, no node or
+network needed afterwards). Then run with `--sandbox bwrap`. Before the first
+model call the runner refuses to start unless bwrap can build a namespace
+*and* the vendored CLI actually executes inside one.
+
+Inside the jail the agent sees `/task` (read-only sanitized input), `/work`
+(its writable workspace), `/home/agent` (OpenCode's own state, kept out of the
+workspace), `/opt/opencode` and the system runtime — nothing else. Because the
+repository lives under `/work/<user>/`, mounting the workspace at `/work`
+also shadows the entire host tree it sits in. The environment is a whitelist
+built by `--clearenv`, and the provider key is handed to bwrap over a pipe, so
+it appears neither in host `ps` output nor in the recorded `metadata.json`
+command. Network namespaces are *not* unshared — the agent loop calls the
+provider from inside the jail — so agent egress stays policy-guarded by the
+OpenCode permission config (`webfetch`/`websearch` denied), not enforced.
+`scripts/sandbox_spec.py` is the whole specification; the probes in
+`tests/test_sandbox_bwrap_escape.py` assert the invariant from inside a real
+jail.
 
 Run OpenCode through OpenRouter DeepSeek V4 Pro with medium reasoning:
 
 ```bash
 env/bin/python scripts/run_opencode_taskset.py \
   --taskset tasksets/opencode-smoke.jsonl \
-  --sandbox docker \
+  --sandbox bwrap \
   --model openrouter/deepseek/deepseek-v4-pro \
   --variant medium
 ```
 
+`OPENROUTER_API_KEY` is read from the repo-root `.env` (or the ambient
+environment).
+
 The runner sanitizes task inputs before solving: OpenCode only sees `task.json`
 and `documents/`, not `evals/`, rubrics, or gold solutions. Results are written
 under `runs/<run-name>/<run-id>/`.
+
+### Retries
+
+Long agent runs die to things that have nothing to do with the task — a
+provider dropping a 502 into the response stream twelve minutes into a
+generation costs the whole task. Both runners therefore retry: 1 attempt plus
+10 retries by default (`--max-attempts`), with equal-jitter exponential
+backoff from 5 s up to 5 min (`--retry-base-delay`).
+
+What is retried is deliberately narrow:
+
+| Outcome | Example | Retried |
+|---|---|---|
+| `transient` | 429/5xx, `provider_unavailable`, dropped stream, non-zero exit | yes |
+| `timeout` | solver exceeded `--timeout-seconds` | only with `--retry-on-timeout` |
+| `fatal` | rejected key, unknown model, no credits | no — fails in seconds |
+| `solver` | ran to completion, wrote no deliverable | **no** |
+
+The last row is the important one. Repeating a solver that finished without
+producing its deliverable is best-of-N sampling: with 10 retries the reported
+score would quietly become the best of ten attempts, which is not what a
+benchmark number is supposed to mean. Infrastructure failures are repeated
+because the task never got a fair attempt; solver failures are recorded as
+failures. The policy is in `scripts/retry_util.py` and is written into every
+run's `manifest.json` under `retry_policy`.
+
+Each retry starts from a clean workspace — a rebuilt `work/`, a discarded
+`submission/`, and for the bwrap profile a fresh OpenCode state — so a partial
+file from a failed attempt is never presented to the next one as its own prior
+work. The failed attempt's diagnostics are kept under
+`tasks/<task>/attempts/NN/`, and `metadata.json` lists every attempt with its
+outcome and reason.
 
 Each task result includes audit artifacts:
 
@@ -392,6 +467,11 @@ Each task result includes audit artifacts:
   reasoning details, without expanding full private reasoning text.
 - `workspace.before.json` and `workspace.after.json`: file snapshots.
 - `fs_changes.json`: created, modified, and deleted files with hashes.
+- `metadata.json`: includes the exact sandbox invocation (`command`), with
+  secret values masked.
+- `jail_home/` (bwrap profile): OpenCode's own state from inside the jail.
+- `attempts/NN/` (only when a task was retried): stdout, stderr and jail
+  state of each failed attempt.
 
 Judge a completed run:
 
@@ -438,6 +518,11 @@ prompt (evals/ is never included) and its entire response is saved as the
 deliverable under `submission/`. Baseline tasks must have exactly one
 deliverable. `--reasoning-effort` is optional and only for endpoints that
 accept the chat-completions `reasoning_effort` parameter.
+
+The baseline uses the same retry policy as the OpenCode harness
+(`--max-attempts`, default 1 + 10 retries): upstream failures and empty
+completions are repeated with backoff, a rejected key or unknown model fails
+immediately.
 
 One invocation processes the whole taskset (`--parallel N` for concurrent
 tasks). Add `--judge` to score all submissions immediately after the run in
