@@ -1,0 +1,54 @@
+You are evaluating only the legal reasoning style of an application or argumentation criterion. Its substantive content has been judged separately and may be correct or incorrect.
+
+The criterion may be written in German, English, French, or another case language. Apply the style expected by the task. For a German case solution, evaluate functional Gutachtenstil, not a rigid phrase template.
+
+## How to decide
+- Do not reconsider, confirm, or correct the substantive verdict. Decide only whether the attempted argument uses an appropriate legal reasoning form.
+- Substantive correctness does not imply good legal reasoning style, and a substantive error does not imply bad legal reasoning style. A legally wrong rule, application, or conclusion may still pass this style check when it is presented through a recognizable legal question, premise, fact-specific application or argument, and conclusion.
+- Evaluate the same person, legal object, issue, and examination station as the content criterion. This is a hard requirement: do not borrow style or reasoning from another person's, claim's, administrative act's, offence's, or examination station's analysis.
+- The answer must actually examine the criterion where it belongs. Do not reconstruct a missing examination from statements scattered elsewhere in the answer, from a later result, or from reasoning that merely implies the missing step.
+- Return "pass" when the answer makes a recognizable attempt to address this criterion and functionally connects (1) a stated legal standard or decisive premise, (2) concrete facts or competing arguments, and (3) the conclusion drawn from that connection. The standard, application, or conclusion need not be substantively correct for the style verdict to pass. The exact order and wording may vary, and a formal four-sentence template is not required.
+- Routine or undisputed applications may be concise, but they still need a recognizable legal connection between the relevant fact and the legal standard. Mere proximity of a rule, facts, and result is not enough if the answer does not state why the facts satisfy or fail the rule.
+- The chosen line of examination must be completed for this criterion. If the answer opens a distinction, test, or alternative route, it must apply the relevant limb and reach the corresponding conclusion. Changing to a neighboring question, conflating separate stages, or stating only the result of a different stage is methodically incomplete and must fail even if useful facts appear in the passage.
+- A standard for a neighboring issue is not a criterion-specific legal premise. For example, a complicity standard does not by itself examine whether a person immediately commenced an offence, and the distinction between a completed and an uncompleted attempt does not by itself examine whether the attempt failed. These are method defects, not merely substantively wrong outcomes.
+- The supporting link must be expressed by the answer itself. Do not supply a missing premise, causal link, comparison, or conclusion on the answer's behalf. A conclusion such as "A did not prevent the offence" is too thin unless the answer explains which relevant conduct failed to prevent it and why.
+- Ignore irrelevant or misplaced exposition when locating evidence. If the only apparent support belongs at another examination station or does not answer this criterion, return "fail". Extra material does not repair a missing criterion-specific application.
+- If the answer does not attempt this criterion at all, return "fail". A bare heading, unexplained result, assertion, definition followed by a result without application, or list of facts without legal evaluation also fails.
+- Do not award style credit for a good definition standing alone. This prompt is used only for application and argumentation criteria; the answer must perform the application or argumentation checked by the criterion.
+- Equivalent terminology and valid alternative structure are acceptable. Judge legal method, not ornamental wording.
+- Quote the shortest continuous passage showing the legal standard or premise, its connection to the concrete facts or arguments, and the resulting conclusion. Except for an explicit and unambiguous cross-reference to the same person and issue, the quoted reasoning must be locally coherent rather than assembled from unrelated passages. When in doubt whether the answer itself expresses the complete connection, return "fail".
+
+Before returning "pass", verify all four conditions:
+1. same person, legal object, issue, and examination station;
+2. criterion-specific legal premise or standard;
+3. explicit connection to the decisive facts or arguments;
+4. a conclusion that completes this exact line of examination.
+If any condition is missing, return "fail". A substantively wrong but methodically complete argument can still satisfy all four conditions.
+
+## Task
+Title: {task_title}
+
+Instructions:
+{task_instructions}
+
+## Agent Answer
+{agent_output}
+
+## Content criterion (substantively judged separately)
+{criterion_title}
+
+{match_criteria}
+
+Separate substantive verdict (do not copy it into the style verdict):
+{content_verdict}
+
+Excerpts used by the substantive judge (use only to locate the attempted argument):
+{content_evidence}
+
+Respond with JSON only, with the fields in exactly this order:
+
+{{
+  "evidence": ["shortest verbatim quotes showing the legal reasoning style"],
+  "reasoning": "Brief explanation in the language of the criterion",
+  "verdict": "pass" | "fail"
+}}
