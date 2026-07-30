@@ -1,0 +1,59 @@
+Generate exactly three plausible but insufficient answer snippets for every supplied rubric
+criterion. Each snippet must be short enough to isolate one failure mode while still sounding
+like a realistic legal answer.
+
+Required mutant types:
+
+1. `bare_result`: mentions the topic or states the expected result but omits a rule,
+   application, or controlling reason required by the criterion.
+2. `wrong_scope`: uses a proposition about the wrong person, claim, offence, provision, or
+   examination station without an explicit valid cross-reference. If the criterion cannot
+   sensibly have a wrong-scope mutation, use the correct object at the wrong legal station.
+3. `material_error`: contains a materially wrong legal rule, wrong competing provision,
+   contradicted result, or invented/contradicted fact that should make the criterion fail.
+
+Rules:
+
+- The snippet must fail the original criterion for the stated reason; do not make it nonsense.
+- Test the literal PASS components of the supplied criterion, not an additional detail found only
+  in the source solution. A different person, victim, object, provision, or station is a valid
+  wrong scope only when the criterion itself expressly requires the original scope.
+- For `wrong_scope`, derive the required original person, object, provision, or station only from
+  the criterion's `title` and `match_criteria`. Do not use a more specific provision or station
+  merely because it appears in the human solution or task bundle. If the proposed
+  `why_should_fail` depends on a legal citation or scope detail absent from both fields, the mutant
+  is invalid and must be rewritten or marked not applicable.
+- For an abstract rule-statement criterion that does not require a case-specific person or object,
+  do not manufacture a wrong victim from the facts. Instead place the proposition expressly at an
+  incompatible legal station and omit it at the station required by the criterion. A different
+  station is incompatible only if the criterion makes the association material or the governing
+  rule differs there. If the same abstract rule is legally transferable and the criterion accepts
+  placement-flexible equivalent reasoning, mark `wrong_scope` not applicable instead of treating
+  the location alone as an error.
+- Before returning each mutant, identify in `why_should_fail` the exact mandatory phrase or
+  component of the supplied criterion that the snippet violates. If you cannot identify one,
+  rewrite the mutant. If that mutant type inherently cannot violate the literal criterion
+  (for example, `bare_result` for a conclusion-only criterion or `wrong_scope` for a wholly
+  abstract proposition without a required scope), return `"applicable": false`, an empty
+  `answer`, and explain why no valid mutation of that type exists. Never fabricate an extra
+  rubric requirement merely to keep all three types applicable.
+- Preserve the case language.
+- Do not copy or refer to professor, reviewer, or external-gold comments.
+- Do not include several independent failure modes in one snippet.
+- Do not omit the whole topic. The test is whether a superficially relevant but deficient
+  answer is rejected.
+- `why_should_fail` must identify the missing or wrong component in one sentence.
+
+Return only:
+
+{
+  "mutants": [
+    {
+      "criterion_id": "C-001",
+      "type": "bare_result",
+      "applicable": true,
+      "answer": "...",
+      "why_should_fail": "..."
+    }
+  ]
+}
