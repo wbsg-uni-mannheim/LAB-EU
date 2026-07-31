@@ -13,7 +13,6 @@
   },
   "rubric_file": "evals/rubric.json",
   "rubric_commit": "2a31e750f4d43ecbce74860de9666ab70abe0c74",
-  "system_prompt": "prompts/harness/study_system_prompt.txt",
   "arms": [
     {
       "id": "baseline",
@@ -25,8 +24,12 @@
       "id": "agent",
       "harness": "opencode",
       "runner": "scripts/run_opencode_taskset.py",
-      "sandbox": "docker",
-      "tools": true
+      "sandbox": [
+        "docker",
+        "bwrap"
+      ],
+      "tools": true,
+      "sandbox_note": "docker on workstations, bwrap on cluster nodes; the run manifest records which profile produced each run."
     }
   ],
   "evaluation": {
@@ -34,5 +37,11 @@
     "style_scale": "boolean_per_eligible_criterion",
     "aggregate_content_and_style": false,
     "judge_committee": "configs/judge-committee-professor-pilot.json"
+  },
+  "prompts": {
+    "baseline": "prompts/harness/solve_task_baseline.txt",
+    "agent": "prompts/harness/solve_task.txt",
+    "workbench": "prompts/harness/study_system_prompt.txt",
+    "note": "The two automated arms use their own task templates; only the manual workbench condition uses study_system_prompt.txt. The three texts carry the same substantive instructions (language, self-contained deliverable, Gutachtenstil, controlling case law, precise citations) but differ in wording, and only the baseline forbids preamble/meta commentary because its entire response is saved as the deliverable."
   }
 }

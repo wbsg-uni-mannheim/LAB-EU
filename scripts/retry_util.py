@@ -26,6 +26,12 @@ DEFAULT_MAX_ATTEMPTS = 11
 BASE_DELAY_SECONDS = 5.0
 MAX_DELAY_SECONDS = 300.0
 
+# How often an UNNAMED failure may repeat identically before we call it
+# deterministic and stop.
+REPEAT_LIMIT = 3
+
+UNNAMED_FAILURE_PREFIX = "solver exited with code"
+
 OK = "ok"
 TRANSIENT = "transient"
 FATAL = "fatal"
@@ -51,8 +57,15 @@ TRANSIENT_PATTERNS = (
     r"stream (closed|interrupted|ended) unexpectedly",
 )
 
-# Configuration problems: repeating them cannot help.
+# Deterministic refusals and configuration problems: repeating them cannot help.
 FATAL_PATTERNS = (
+    # A provider content filter is a property of (model, prompt): it fires again
+    # on every identical attempt. Observed on the de-core-45 agent arm, where
+    # DeepSeek blocked one constitutional-law case 11 times in a row while the
+    # baseline arm solved the same case (run 20260730T214602Z).
+    r"content.?filter",
+    r"content.?policy",
+    r"response was blocked",
     r"\b(400|401|403|404)\b",
     r"invalid.?api.?key",
     r"no auth credentials",
@@ -100,12 +113,31 @@ def classify_failure(
         return TRANSIENT, f"upstream failure ({transient_hit})"
 
     if exit_code not in (0, None):
-        return TRANSIENT, f"solver exited with code {exit_code}"
+        # Nothing in the output named a cause. Retry, but see `stalled()`: an
+        # unnamed failure that repeats identically is deterministic, not an
+        # outage, and must not consume every remaining attempt.
+        return TRANSIENT, f"{UNNAMED_FAILURE_PREFIX} {exit_code}"
     if missing_deliverables:
         # Ran to completion, wrote nothing we asked for. Not a retry: that
         # would turn the benchmark into best-of-N.
         return SOLVER, "solver finished without producing the deliverable"
     return OK, ""
+
+
+def stalled(reasons: list[str], limit: int = REPEAT_LIMIT) -> bool:
+    """True when the last ``limit`` failures were identical AND unnamed.
+
+    A named upstream failure may legitimately repeat — that is what an outage
+    looks like, and cutting those retries short defeats the point. But a
+    non-zero exit the classifier could not explain, reproducing byte-identically,
+    is a deterministic failure: a content filter, a crash, a prompt the model
+    always refuses. Retrying it to exhaustion burns the wall clock and buys
+    nothing.
+    """
+    recent = reasons[-limit:]
+    return (len(recent) == limit
+            and len(set(recent)) == 1
+            and recent[0].startswith(UNNAMED_FAILURE_PREFIX))
 
 
 def should_retry(outcome: str, retry_on_timeout: bool = False) -> bool:

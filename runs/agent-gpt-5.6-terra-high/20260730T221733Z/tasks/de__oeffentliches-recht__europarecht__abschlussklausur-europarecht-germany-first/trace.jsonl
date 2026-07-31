@@ -1,0 +1,12 @@
+{"action": "read", "event_type": "tool_use", "index": 3, "jsonl_line": 3, "lines": {"end": 3, "start": 1}, "paths": ["/work/documents/sachverhalt.md"], "tool": "read"}
+{"action": "list", "event_type": "tool_use", "index": 4, "jsonl_line": 4, "paths": ["/work"], "pattern": "**/*", "tool": "glob"}
+{"action": "search", "event_type": "tool_use", "index": 7, "jsonl_line": 7, "paths": ["/work/documents"], "pattern": ".+", "tool": "grep"}
+{"action": "shell", "command": "fold -w 180 \"documents/sachverhalt.md\"", "event_type": "tool_use", "index": 10, "jsonl_line": 10, "paths": ["documents/sachverhalt.md"], "tool": "bash"}
+{"action": "read", "command": "sed 's/\\(.\\{180\\}\\)/\\1\\\n/g' \"documents/sachverhalt.md\"", "event_type": "tool_use", "index": 13, "jsonl_line": 13, "paths": ["documents/sachverhalt.md"], "tool": "bash"}
+{"action": "write", "event_type": "tool_use", "index": 17, "jsonl_line": 17, "paths": ["/work/fallloesung.md"], "tool": "apply_patch"}
+{"action": "list", "command": "ls -l \"fallloesung.md\"", "event_type": "tool_use", "index": 20, "jsonl_line": 20, "paths": ["fallloesung.md"], "tool": "bash"}
+{"action": "read", "event_type": "tool_use", "index": 21, "jsonl_line": 21, "lines": {"end": 109, "start": 1}, "paths": ["/work/fallloesung.md"], "tool": "read"}
+{"action": "write", "event_type": "tool_use", "index": 25, "jsonl_line": 25, "paths": ["/work/fallloesung.md"], "tool": "apply_patch"}
+{"action": "write", "event_type": "tool_use", "index": 29, "jsonl_line": 29, "paths": ["/work/fallloesung.md"], "tool": "apply_patch"}
+{"action": "list", "command": "ls \"fallloesung.md\"", "event_type": "tool_use", "index": 32, "jsonl_line": 32, "paths": ["fallloesung.md"], "tool": "bash"}
+{"action": "read", "event_type": "tool_use", "index": 33, "jsonl_line": 33, "lines": {"end": 111, "start": 47}, "paths": ["/work/fallloesung.md"], "tool": "read"}

@@ -391,7 +391,14 @@ scripts/install_opencode.sh
 ```
 
 This vendors OpenCode into `vendor/opencode/` (gitignored, ~320 MB, no node or
-network needed afterwards). Then run with `--sandbox bwrap`. Before the first
+network needed afterwards) and prepares `vendor/opencode-home/opencode/` — the
+plugin tree the jail binds read-only. Inside the jail OpenCode cannot resolve
+its plugin dependencies and reinstalls them into `$HOME` on *every* task: 54 MB
+and 3,442 files each, 21 GB across one 45-case study. With the prepared tree
+bound over that path, per-task jail state drops to ~35 files and the install
+step disappears from every run. Preparation needs one throwaway model call, so
+run the script with a provider key in the environment; without the tree the
+harness still works, just wastefully. Then run with `--sandbox bwrap`. Before the first
 model call the runner refuses to start unless bwrap can build a namespace
 *and* the vendored CLI actually executes inside one.
 

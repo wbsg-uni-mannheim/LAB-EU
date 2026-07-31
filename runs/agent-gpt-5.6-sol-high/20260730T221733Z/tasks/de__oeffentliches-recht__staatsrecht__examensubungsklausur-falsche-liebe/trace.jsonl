@@ -1,0 +1,10 @@
+{"action": "read", "event_type": "tool_use", "index": 3, "jsonl_line": 3, "lines": {"end": 3, "start": 1}, "paths": ["/work/documents/sachverhalt.md"], "tool": "read"}
+{"action": "shell", "command": "fold -w 1800 \"documents/sachverhalt.md\"", "event_type": "tool_use", "index": 6, "jsonl_line": 6, "paths": ["documents/sachverhalt.md"], "tool": "bash"}
+{"action": "read", "command": "cat \"documents/sachverhalt.md\"", "event_type": "tool_use", "index": 9, "jsonl_line": 9, "paths": ["documents/sachverhalt.md"], "tool": "bash"}
+{"action": "write", "event_type": "tool_use", "index": 13, "jsonl_line": 13, "paths": ["/work/fallloesung.md"], "tool": "apply_patch"}
+{"action": "read", "event_type": "tool_use", "index": 17, "jsonl_line": 17, "lines": {"end": 147, "start": 1}, "paths": ["/work/fallloesung.md"], "tool": "read"}
+{"action": "write", "event_type": "tool_use", "index": 21, "jsonl_line": 21, "paths": ["/work/fallloesung.md"], "tool": "apply_patch"}
+{"action": "write", "event_type": "tool_use", "index": 24, "jsonl_line": 24, "paths": ["/work/fallloesung.md"], "tool": "apply_patch"}
+{"action": "search", "event_type": "tool_use", "index": 27, "jsonl_line": 27, "paths": ["/work"], "pattern": "Art\\. 10 Abs\\. 1 GG|Art\\. 5 Abs\\. 1 Satz 1 GG|Art\\. 2 Abs\\. 1 i\\.V\\.m\\. Art\\. 1 Abs\\. 1 GG", "tool": "grep"}
+{"action": "list", "event_type": "tool_use", "index": 28, "jsonl_line": 28, "paths": ["/work"], "pattern": "fallloesung.md", "tool": "glob"}
+{"action": "search", "event_type": "tool_use", "index": 29, "jsonl_line": 29, "paths": ["/work"], "pattern": "25\\. Juni 2021|7\\. Juli 2021|§ 93 Abs\\. 2", "tool": "grep"}

@@ -1,0 +1,13 @@
+{"action": "read", "event_type": "tool_use", "index": 3, "jsonl_line": 3, "lines": {"end": 3, "start": 1}, "paths": ["/work/documents/sachverhalt.md"], "tool": "read"}
+{"action": "search", "event_type": "tool_use", "index": 6, "jsonl_line": 6, "paths": ["/work/documents"], "pattern": ".{0,1800}", "tool": "grep"}
+{"action": "search", "event_type": "tool_use", "index": 9, "jsonl_line": 9, "paths": ["/work/documents"], "pattern": "350.*", "tool": "grep"}
+{"action": "search", "event_type": "tool_use", "index": 12, "jsonl_line": 12, "paths": ["/work/documents"], "pattern": "(?<=350 €).+", "tool": "grep"}
+{"action": "list", "command": "ls -ld /tmp/opencode", "event_type": "tool_use", "index": 15, "jsonl_line": 15, "tool": "bash"}
+{"action": "shell", "command": "perl -0pe 's/(.{1800})/$1\\n/gs' documents/sachverhalt.md > /tmp/opencode/sachverhalt-wrapped.md", "event_type": "tool_use", "index": 18, "jsonl_line": 18, "paths": ["documents/sachverhalt.md", "/tmp/opencode/sachverhalt-wrapped.md"], "tool": "bash"}
+{"action": "read", "command": "cat documents/sachverhalt.md", "event_type": "tool_use", "index": 21, "jsonl_line": 21, "paths": ["documents/sachverhalt.md"], "tool": "bash"}
+{"action": "list", "command": "ls -la", "event_type": "tool_use", "index": 25, "jsonl_line": 25, "tool": "bash"}
+{"action": "write", "event_type": "tool_use", "index": 28, "jsonl_line": 28, "paths": ["/work/fallloesung.md"], "tool": "apply_patch"}
+{"action": "read", "event_type": "tool_use", "index": 32, "jsonl_line": 32, "lines": {"end": 139, "start": 1}, "paths": ["/work/fallloesung.md"], "tool": "read"}
+{"action": "write", "event_type": "tool_use", "index": 35, "jsonl_line": 35, "paths": ["/work/fallloesung.md"], "tool": "apply_patch"}
+{"action": "list", "command": "ls -l fallloesung.md && test -s fallloesung.md", "event_type": "tool_use", "index": 38, "jsonl_line": 38, "paths": ["fallloesung.md"], "tool": "bash"}
+{"action": "list", "command": "ls -l fallloesung.md", "event_type": "tool_use", "index": 41, "jsonl_line": 41, "paths": ["fallloesung.md"], "tool": "bash"}

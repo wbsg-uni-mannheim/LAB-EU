@@ -1,0 +1,14 @@
+{"action": "read", "event_type": "tool_use", "index": 3, "jsonl_line": 3, "lines": {"end": 3, "start": 1}, "paths": ["/work/documents/sachverhalt.md"], "tool": "read"}
+{"action": "shell", "command": "fold -w 160 \"documents/sachverhalt.md\"", "event_type": "tool_use", "index": 6, "jsonl_line": 6, "paths": ["documents/sachverhalt.md"], "tool": "bash"}
+{"action": "read", "command": "sed 's/\\. /\\.\\n/g' \"documents/sachverhalt.md\"", "event_type": "tool_use", "index": 9, "jsonl_line": 9, "paths": ["documents/sachverhalt.md"], "tool": "bash"}
+{"action": "write", "event_type": "tool_use", "index": 14, "jsonl_line": 14, "paths": ["/work/fallloesung.md"], "tool": "apply_patch"}
+{"action": "read", "event_type": "tool_use", "index": 17, "jsonl_line": 17, "lines": {"end": 187, "start": 1}, "paths": ["/work/fallloesung.md"], "tool": "read"}
+{"action": "search", "event_type": "tool_use", "index": 18, "jsonl_line": 18, "paths": ["/work"], "pattern": "§ 12 Abs\\. 3|§ 12 Abs\\. 3a|Art\\. [0-9]", "tool": "grep"}
+{"action": "search", "event_type": "tool_use", "index": 19, "jsonl_line": 19, "paths": ["/work"], "pattern": "  +", "tool": "grep"}
+{"action": "write", "event_type": "tool_use", "index": 23, "jsonl_line": 23, "paths": ["/work/fallloesung.md"], "tool": "apply_patch"}
+{"action": "write", "event_type": "tool_use", "index": 26, "jsonl_line": 26, "tool": "apply_patch"}
+{"action": "write", "event_type": "tool_use", "index": 29, "jsonl_line": 29, "paths": ["/work/fallloesung.md"], "tool": "apply_patch"}
+{"action": "search", "event_type": "tool_use", "index": 32, "jsonl_line": 32, "paths": ["/work"], "pattern": "  +|TODO|TBD|§ 2 TPG vorausgesetzte|ab 16 Jahren gesetzlich", "tool": "grep"}
+{"action": "search", "event_type": "tool_use", "index": 33, "jsonl_line": 33, "paths": ["/work"], "pattern": "Ausnahmen|Satz 3|Minderjähr", "tool": "grep"}
+{"action": "read", "event_type": "tool_use", "index": 34, "jsonl_line": 34, "lines": {"end": 187, "start": 1}, "paths": ["/work/fallloesung.md"], "tool": "read"}
+{"action": "list", "event_type": "tool_use", "index": 37, "jsonl_line": 37, "paths": ["/work"], "pattern": "fallloesung.md", "tool": "glob"}

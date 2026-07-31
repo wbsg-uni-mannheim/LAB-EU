@@ -1,0 +1,11 @@
+{"action": "read", "event_type": "tool_use", "index": 3, "jsonl_line": 3, "lines": {"end": 3, "start": 1}, "paths": ["/work/documents/sachverhalt.md"], "tool": "read"}
+{"action": "search", "event_type": "tool_use", "index": 6, "jsonl_line": 6, "paths": ["/work/documents"], "pattern": "(?i).{0,200}(seit 1997|ContStifG|2005|Stiftung).{0,1200}", "tool": "grep"}
+{"action": "search", "event_type": "tool_use", "index": 7, "jsonl_line": 7, "paths": ["/work/documents"], "pattern": "(?i).{0,300}(Fallfrage|Aufgabe|Zu prüfen|Rechtmäßigkeit|Aussicht).{0,1200}", "tool": "grep"}
+{"action": "search", "event_type": "tool_use", "index": 8, "jsonl_line": 8, "paths": ["/work/documents"], "pattern": "(?i).{0,300}(frage|aufgabe|verfass|eigentum|anspruch|klage|prüf|beurteil).{0,1000}", "tool": "grep"}
+{"action": "shell", "command": "dd if=\"documents/sachverhalt.md\" bs=1 skip=1800 count=1800 status=none", "event_type": "tool_use", "index": 11, "jsonl_line": 11, "paths": ["documents/sachverhalt.md"], "tool": "bash"}
+{"action": "list", "event_type": "tool_use", "index": 14, "jsonl_line": 14, "paths": ["/work"], "pattern": "**/*", "tool": "glob"}
+{"action": "read", "event_type": "tool_use", "index": 17, "jsonl_line": 17, "lines": {"end": 23, "start": 1}, "paths": ["/work/task.json"], "tool": "read"}
+{"action": "read", "command": "sed -n '1{s/.\\{1800\\}/&\\\n/g;p;}' \"documents/sachverhalt.md\"", "event_type": "tool_use", "index": 20, "jsonl_line": 20, "paths": ["documents/sachverhalt.md"], "tool": "bash"}
+{"action": "read", "command": "sed -n '3{s/.\\{1800\\}/&\\\n/g;p;}' \"documents/sachverhalt.md\"", "event_type": "tool_use", "index": 23, "jsonl_line": 23, "paths": ["documents/sachverhalt.md"], "tool": "bash"}
+{"action": "write", "event_type": "tool_use", "index": 27, "jsonl_line": 27, "paths": ["/work/fallloesung.md"], "tool": "apply_patch"}
+{"action": "read", "event_type": "tool_use", "index": 30, "jsonl_line": 30, "lines": {"end": 122, "start": 1}, "paths": ["/work/fallloesung.md"], "tool": "read"}

@@ -34,8 +34,27 @@ DEFAULT_VARIANT = "medium"
 DEFAULT_RUN_NAME = "opencode-openrouter-deepseek-v4-pro-medium"
 DEFAULT_DOCKER_IMAGE = "lab-eu-opencode-harness:latest"
 DEFAULT_OPENCODE_DIR = REPO_ROOT / "vendor" / "opencode"
+# Prepared plugin tree bound read-only into the jail; see JAIL_OPENCODE_PLUGINS.
+DEFAULT_OPENCODE_PLUGINS = REPO_ROOT / "vendor" / "opencode-home" / "opencode" / "node_modules"
 # Provider credentials the agent process needs. Never placed on a command line.
-SECRET_ENV_NAMES = ("OPENROUTER_API_KEY",)
+# Only the key the chosen model actually uses is handed into the jail: an
+# OpenRouter run has no business seeing the OpenAI key.
+PROVIDER_SECRET_ENV = {
+    "openrouter": "OPENROUTER_API_KEY",
+    "openai": "OPENAI_API_KEY",
+    "deepseek": "DEEPSEEK_API_KEY",
+}
+SECRET_ENV_NAMES = tuple(sorted(set(PROVIDER_SECRET_ENV.values())))
+
+
+def secret_env_names(model: str) -> tuple[str, ...]:
+    """The credential variable names for ``provider/model-id``.
+
+    Falls back to every known name for an unrecognised provider prefix, so a
+    new provider works before this table knows about it."""
+    provider, _, _ = model.partition("/")
+    name = PROVIDER_SECRET_ENV.get(provider.lower())
+    return (name,) if name else SECRET_ENV_NAMES
 
 OPENCODE_PERMISSION_CONFIG: dict[str, Any] = {
     "$schema": "https://opencode.ai/config.json",
@@ -148,6 +167,16 @@ def parse_args() -> argparse.Namespace:
         type=pathlib.Path,
         default=DEFAULT_OPENCODE_DIR,
         help="Vendored OpenCode tree bind-mounted into the bwrap jail (scripts/install_opencode.sh).",
+    )
+    parser.add_argument(
+        "--opencode-plugins",
+        type=pathlib.Path,
+        default=DEFAULT_OPENCODE_PLUGINS,
+        help=(
+            "Prepared OpenCode plugin tree, bind-mounted read-only into the jail "
+            "so it is not reinstalled per task (54 MB and 3,442 files each). "
+            "Absent -> OpenCode installs its own copy, as before."
+        ),
     )
     parser.add_argument("--docker-image", default=DEFAULT_DOCKER_IMAGE)
     parser.add_argument("--docker-network", default="bridge")
@@ -754,7 +783,9 @@ def docker_command(args: argparse.Namespace, row: dict[str, Any], input_dir: pat
     if args.agent:
         command.extend(["-e", f"OPENCODE_AGENT={args.agent}"])
 
-    for env_name in ["OPENROUTER_API_KEY"]:
+    # -e NAME without a value: docker reads it from the runner env, so the key
+    # never appears in the container's argv either
+    for env_name in secret_env_names(args.model):
         if os.environ.get(env_name):
             command.extend(["-e", env_name])
 
@@ -798,7 +829,8 @@ def bwrap_spec(
         model_config_content=json.dumps(build_opencode_config(args.model), separators=(",", ":")),
         task_id=row["task_id"],
     )
-    secret_env = {name: os.environ[name] for name in SECRET_ENV_NAMES if os.environ.get(name)}
+    secret_env = {name: os.environ[name]
+                  for name in secret_env_names(args.model) if os.environ.get(name)}
 
     return sandbox_spec.BwrapSpec(
         workspace=work_dir.resolve(),
@@ -806,6 +838,8 @@ def bwrap_spec(
         home=home_dir.resolve(),
         command=command,
         ro_binds=[(args.opencode_dir.resolve(), sandbox_spec.JAIL_OPENCODE)],
+        ro_overlays=([(args.opencode_plugins.resolve(), sandbox_spec.JAIL_OPENCODE_PLUGINS)]
+                     if args.opencode_plugins and args.opencode_plugins.is_dir() else []),
         env=env,
         secret_env=secret_env,
     )
@@ -1017,9 +1051,14 @@ def run_one_task(args: argparse.Namespace, row: dict[str, Any], run_dir: pathlib
             "started_at": command_result["started_at"],
         }
 
+        reasons = [a["reason"] for a in attempts] + [reason]
+        is_stalled = retry_util.stalled(reasons)
+        if is_stalled:
+            record["stopped_early"] = "identical unnamed failure repeated"
         retrying = (
             retry_util.should_retry(outcome, retry_on_timeout=args.retry_on_timeout)
             and attempt < max_attempts
+            and not is_stalled
         )
         if retrying:
             record["artifacts"] = str(archive_failed_attempt(task_run_dir, attempt, home_dir))
@@ -1156,11 +1195,12 @@ def preflight(args: argparse.Namespace) -> None:
                    sandbox_spec.opencode_preflight(args.opencode_dir)):
         if reason:
             raise SystemExit(f"bwrap sandbox unavailable: {reason}")
-    if not any(os.environ.get(name) for name in SECRET_ENV_NAMES):
-        print(
-            f"Warning: none of {', '.join(SECRET_ENV_NAMES)} is set; the jail "
-            "has no provider credentials and every task will fail.",
-            file=sys.stderr,
+    needed = secret_env_names(args.model)
+    if not any(os.environ.get(name) for name in needed):
+        raise SystemExit(
+            f"None of {', '.join(needed)} is set, but {args.model} needs it; "
+            "the jail would have no provider credentials and every task would "
+            "fail. Put the key in the repo-root .env."
         )
 
 

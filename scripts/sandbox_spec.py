@@ -58,6 +58,11 @@ JAIL_TASK = "/task"
 JAIL_WORK = "/work"
 JAIL_HOME = "/home/agent"
 JAIL_OPENCODE = "/opt/opencode"
+# OpenCode resolves its plugin dependencies outside the jail, but inside it
+# finds nothing and reinstalls them into $HOME on every single task: 54 MB and
+# 3,442 files per run, 21 GB across the de-core-45 study. A prepared tree bound
+# read-only over that path removes both the disk cost and the install step.
+JAIL_OPENCODE_PLUGINS = f"{JAIL_HOME}/.config/opencode/node_modules"
 JAIL_OPENCODE_BIN = f"{JAIL_OPENCODE}/node_modules/.bin"
 
 REDACTED = "***"
@@ -101,6 +106,10 @@ class BwrapSpec:
     home: Path                                          # rw -> /home/agent
     command: list[str]
     ro_binds: list[tuple[Path, str]] = field(default_factory=list)
+    # (src, dest) read-only binds emitted AFTER the writable binds, so they can
+    # shadow a path inside the writable home. Order matters: a bind listed
+    # before /home/agent would simply be covered by it.
+    ro_overlays: list[tuple[Path, str]] = field(default_factory=list)
     ro_system: tuple = DEFAULT_RO_SYSTEM
     env: dict[str, str] = field(default_factory=dict)
     # never placed on the command line; delivered through --args FD
@@ -130,6 +139,9 @@ class BwrapSpec:
         argv += ["--ro-bind", str(self.task_input), JAIL_TASK]
         argv += ["--bind", str(self.workspace), JAIL_WORK]
         argv += ["--bind", str(self.home), JAIL_HOME]
+        for src, dest in self.ro_overlays:
+            if Path(src).exists():
+                argv += ["--ro-bind", str(src), dest]
         argv += ["--chdir", JAIL_WORK]
         # everything after this point is whitelist-by-construction
         argv += ["--clearenv"]
@@ -301,6 +313,11 @@ def jail_env(model_config_content: str, task_id: str,
         "XDG_STATE_HOME": f"{JAIL_HOME}/.local/state",
         "OPENCODE_CONFIG_CONTENT": model_config_content,
         "TASK_ID": task_id,
+        # npm still runs inside the jail even though the plugin tree is bound
+        # read-only, and its cache was ~29 MB of throwaway tarballs per task on
+        # the run directory. Point it at the tmpfs: it lives as long as the jail
+        # and costs no disk at all.
+        "npm_config_cache": "/tmp/npm-cache",
     }
     if extra:
         env.update(extra)

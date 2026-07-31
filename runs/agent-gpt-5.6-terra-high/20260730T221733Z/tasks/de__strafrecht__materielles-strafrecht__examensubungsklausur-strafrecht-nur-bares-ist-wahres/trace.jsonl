@@ -1,0 +1,10 @@
+{"action": "read", "event_type": "tool_use", "index": 3, "jsonl_line": 3, "lines": {"end": 3, "start": 1}, "paths": ["/work/documents/sachverhalt.md"], "tool": "read"}
+{"action": "shell", "command": "wc -c \"documents/sachverhalt.md\"", "event_type": "tool_use", "index": 6, "jsonl_line": 6, "paths": ["documents/sachverhalt.md"], "tool": "bash"}
+{"action": "read", "command": "sed 's/.\\{1500\\}/&\\n/g' \"documents/sachverhalt.md\"", "event_type": "tool_use", "index": 9, "jsonl_line": 9, "paths": ["documents/sachverhalt.md"], "tool": "bash"}
+{"action": "search", "event_type": "tool_use", "index": 12, "jsonl_line": 12, "paths": ["/work"], "pattern": "Nur Bares|Schreckschuss|Onlinewache|\"zu Recht\"", "tool": "grep"}
+{"action": "list", "event_type": "tool_use", "index": 13, "jsonl_line": 13, "paths": ["/work"], "pattern": "**/*", "tool": "glob"}
+{"action": "write", "event_type": "tool_use", "index": 17, "jsonl_line": 17, "paths": ["/work/fallloesung.md"], "tool": "apply_patch"}
+{"action": "read", "event_type": "tool_use", "index": 20, "jsonl_line": 20, "lines": {"end": 146, "start": 1}, "paths": ["/work/fallloesung.md"], "tool": "read"}
+{"action": "write", "event_type": "tool_use", "index": 23, "jsonl_line": 23, "paths": ["/work/fallloesung.md"], "tool": "apply_patch"}
+{"action": "search", "event_type": "tool_use", "index": 27, "jsonl_line": 27, "paths": ["/work/fallloesung.md"], "pattern": "^###|^####|§ 239a|Onlineübermittlung|Gesamtergebnis", "tool": "grep"}
+{"action": "list", "command": "ls -l \"fallloesung.md\"", "event_type": "tool_use", "index": 28, "jsonl_line": 28, "paths": ["fallloesung.md"], "tool": "bash"}
