@@ -138,7 +138,7 @@ Da der Vermögensminderung keine Kompensation gegenübersteht, ist auch ein Verm
 
 #### 2. Subjektiver Tatbestand
 
-T handelte vorsätzlich und in der Absicht stoffgleicher und rechtswidriger Bereicherung, sodass auch der subjektive Tatbestand des § 263 Abs. 1 StGB erfüllt ist.
+T handelte vorsätzlich. Er wollte das nur zur Probefahrt überlassene Fahrzeug dauerhaft behalten und anschließend wirtschaftlich durch den Weiterverkauf verwerten. Damit handelte er in der Absicht, sich einen Vermögensvorteil zu verschaffen. Dieser erstrebte Vorteil beruhte unmittelbar auf derselben täuschungsbedingten Fahrzeugüberlassung, durch die H Besitz und Gewahrsam verlor, und war daher stoffgleich mit dessen Vermögensschaden. T hatte keinen fälligen und durchsetzbaren Anspruch darauf, das Fahrzeug zu behalten oder wirtschaftlich zu verwerten. Der erstrebte Vorteil war somit rechtswidrig; dies war T auch bewusst. Damit ist der subjektive Tatbestand des § 263 Abs. 1 StGB erfüllt.
 
 #### 3. Rechtswidrigkeit und Schuld
 
