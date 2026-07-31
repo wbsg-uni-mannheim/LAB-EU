@@ -98,6 +98,96 @@ class RubricDraftBatchTests(unittest.TestCase):
         self.assertIn("roughly 900 characters", prompt)
         self.assertIn("coverage_audit.uncovered_core_atoms", prompt)
 
+    def test_refiner_keeps_task_exclusions_authoritative_over_gold(self):
+        system_prompt = (
+            REPO_ROOT / "prompts/rubric_generation/refine_rubric.system.txt"
+        ).read_text(encoding="utf-8")
+        user_prompt = (
+            REPO_ROOT / "prompts/rubric_generation/refine_rubric.user.txt"
+        ).read_text(encoding="utf-8")
+
+        self.assertIn("task instructions", system_prompt)
+        self.assertIn("authoritative over", system_prompt)
+        self.assertIn("never rewrite it to require the excluded examination", user_prompt)
+        self.assertIn("entsprechender Tatentschluss", user_prompt)
+        self.assertIn("A cross-reference can satisfy an application criterion only", user_prompt)
+
+    def test_frozen_rubrics_cover_the_four_targeted_legal_issues(self):
+        rubric_paths = {
+            "greenwashing": (
+                REPO_ROOT
+                / "tasks/de/strafrecht/materielles-strafrecht"
+                / "fortgeschrittenenubungsklausur-mehr-schein-als-sein-greenwashing-und-probefahrt"
+                / "evals/rubric.json"
+            ),
+            "raufhandel": (
+                REPO_ROOT
+                / "tasks/de/strafrecht/materielles-strafrecht"
+                / "fortgeschrittenenubungsklausur-raufhandel-mit-ungewisser-kausalitat"
+                / "evals/rubric.json"
+            ),
+            "mopeg": (
+                REPO_ROOT
+                / "tasks/de/zivilrecht/handels-und-gesellschaftsrecht"
+                / "fortgeschrittenenubungsklausur-mopeg-in-3d"
+                / "evals/rubric.json"
+            ),
+            "roesterei": (
+                REPO_ROOT
+                / "tasks/de/zivilrecht/sachenrecht"
+                / "fortgeschrittenenklausur-im-immobiliarsachenrecht-rosterei-ruin-regress"
+                / "evals/rubric.json"
+            ),
+        }
+        rubrics = {
+            name: json.loads(path.read_text(encoding="utf-8"))
+            for name, path in rubric_paths.items()
+        }
+
+        def criterion_text(name: str) -> str:
+            return "\n".join(
+                f'{criterion["title"]}\n{criterion["match_criteria"]}'
+                for criterion in rubrics[name]["criteria"]
+            )
+
+        greenwashing = criterion_text("greenwashing")
+        self.assertIn("Stoffgleichheit beim Probefahrtbetrug", greenwashing)
+        self.assertIn("Rechtswidrigkeit des von T erstrebten Vorteils", greenwashing)
+
+        raufhandel = criterion_text("raufhandel")
+        self.assertIn("Werkzeugvorsatz des S", raufhandel)
+        self.assertIn("NICHT ERFÜLLT, wenn nur die Norm genannt", raufhandel)
+        self.assertNotIn("entsprechender Tatentschluss genügt", raufhandel)
+
+        mopeg = criterion_text("mopeg")
+        self.assertIn("§ 439 Abs. 4 BGB", mopeg)
+        self.assertIn("schwierigen Beschaffung des Auslaufmodells", mopeg)
+        self.assertIn("350 €", mopeg)
+
+        roesterei = criterion_text("roesterei")
+        self.assertIn("mangels Auflassung und Eintragung", roesterei)
+        self.assertIn("Entstehung einer Eigentümergrundschuld", roesterei)
+        self.assertIn("§§ 1142 Abs. 1, 1143 Abs. 1 BGB", roesterei)
+
+    def test_liebesbeweis_rubric_does_not_score_excluded_section_315d(self):
+        rubric_path = (
+            REPO_ROOT
+            / "tasks/de/strafrecht/materielles-strafrecht"
+            / "original-examensklausur-liebesbeweis-mit-rasanten-folgen-mit-exkurs-zu-paragraph-315d-stgb"
+            / "evals/rubric.json"
+        )
+        rubric = json.loads(rubric_path.read_text(encoding="utf-8"))
+
+        self.assertFalse(
+            any(node.get("id") == "Exkurs" for node in rubric["outline"])
+        )
+        self.assertFalse(
+            any(
+                "315d" in f'{criterion["title"]} {criterion["match_criteria"]}'
+                for criterion in rubric["criteria"]
+            )
+        )
+
     def test_harvest_writes_the_normal_generator_cache_shape(self):
         with tempfile.TemporaryDirectory() as tmp:
             task_dir = pathlib.Path(tmp)
