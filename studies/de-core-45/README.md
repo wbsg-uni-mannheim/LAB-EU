@@ -4,6 +4,9 @@ This study fixes the first broad LAB-EU evaluation set at 45 German-law cases:
 15 public-law, 15 criminal-law, and 15 civil-law tasks. Every task has a
 calibrated canonical rubric at `evals/rubric.json`.
 
+The task and rubric set is frozen as of 2026-07-31. Later corrections require
+an explicit new study revision instead of silently changing this snapshot.
+
 The study compares two conditions using the same underlying model:
 
 1. `baseline`: one model call, no tools;
@@ -17,7 +20,7 @@ and are not version-controlled.
 
 - Taskset: `studies/de-core-45/taskset.jsonl`
 - Cases: 45
-- Rubric commit: `2a31e750f4d43ecbce74860de9666ab70abe0c74`
+- Rubric commit: `848d532f6f53fc5e48420a97603ba17c7ed82349`
 - Shared system prompt: `prompts/harness/study_system_prompt.txt`
 - Final judge committee: `configs/judge-committee-professor-pilot.json`
 - Content and legal style remain separate Boolean outcomes.
