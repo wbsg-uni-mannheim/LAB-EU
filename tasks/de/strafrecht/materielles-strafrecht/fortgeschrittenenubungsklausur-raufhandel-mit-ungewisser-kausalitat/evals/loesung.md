@@ -100,7 +100,7 @@ Hinweis: Es ist unschädlich, die konstruktiv erfüllte Anstiftung von R zu der 
 
 ### I. §§ 223 Abs. 1, 224 Abs. 1 Nrn. 2 und 4, 22, 23 Abs. 1 StGB gegenüber T
 
-Mit Blick auf das Mitwirken an der Attacke scheitert für S der objektive Tatbestand einer gefährlichen Körperverletzung genau wie bei R im objektiven Tatbestand an der Kausalität. Ein entsprechender Tatentschluss ist jedoch gegeben, sodass S wegen versuchter gefährlicher Körperverletzung zu bestrafen ist.
+Mit Blick auf das Mitwirken an der Attacke scheitert für S der objektive Tatbestand einer gefährlichen Körperverletzung genau wie bei R im objektiven Tatbestand an der Kausalität. S nahm jedoch den Vorschlag der R an, T gemeinsam eine „Tracht Prügel“ zu verpassen, trat mit geballten Fäusten an dessen Tisch und wollte ihm durch seine Schläge jedenfalls körperliche Misshandlungen in Form blauer Flecke zufügen. Außerdem setzte auch S die relativ große Blechvase zur Unterstützung seiner wuchtigen Hiebe ein. Nach ihrer konkreten Verwendung war die Vase trotz ihres geringen Gewichts geeignet, erhebliche Verletzungen hervorzurufen; S kannte diese Umstände und wollte sie entsprechend einsetzen. Eine Ablehnung der Werkzeugeigenschaft wegen des geringen Gewichts oder einer als ungefährlich bewerteten konkreten Verwendung bleibt bei entsprechender Begründung vertretbar. Da S und R aufgrund ihres gemeinsamen Tatplans am Tatort bewusst zusammenwirkten, erstreckte sich sein Tatentschluss zudem auf die gemeinschaftliche Begehung nach § 224 Abs. 1 Nr. 4 StGB. S ist daher wegen versuchter gefährlicher Körperverletzung nach §§ 223 Abs. 1, 224 Abs. 1 Nrn. 2 und 4, 22, 23 Abs. 1 StGB zu bestrafen.
 
 ### II. § 231 Abs. 1 StGB
 
