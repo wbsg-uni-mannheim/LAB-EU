@@ -1,6 +1,6 @@
 {
   "schema_version": "0.2",
-  "generated_at": "2026-07-30T21:13:26.400926+00:00",
+  "generated_at": "2026-07-31T10:54:08.895396+00:00",
   "review_status": "generated_calibrated_needs_human_review",
   "language": "Deutsch",
   "task_title": "Fortgeschrittenenübungsklausur: „MoPeG in 3D“",
@@ -188,6 +188,11 @@
                         },
                         {
                           "id": "I.1.b.ff.3.b",
+                          "label": "Kein vollständiges Leistungsverweigerungsrecht aus § 439 Abs. 4 BGB",
+                          "children": []
+                        },
+                        {
+                          "id": "I.1.b.ff.3.c",
                           "label": "Ausnahme gem. § 475d Abs. 2 BGB",
                           "children": []
                         }
@@ -251,8 +256,8 @@
     {
       "id": "C-001",
       "criticality": 2,
-      "title": "Gesellschaftsvertrag zwischen A und B",
-      "match_criteria": "ERFÜLLT, wenn die Antwort die Verständigung von A und B auf den gemeinsamen Vertrieb von IT-Zubehör als Gesellschaftsvertrag nach § 705 Abs. 1 BGB einordnet und die gemeinsame Zweckförderung durch beide benennt. NICHT ERFÜLLT, wenn sie nur eine unverbindliche Zusammenarbeit annimmt oder die Verständigung nicht rechtlich einordnet.",
+      "title": "Wirksamer Gesellschaftsvertrag",
+      "match_criteria": "ERFÜLLT, wenn die Antwort aus der Verständigung von A und B auf den gemeinsamen Vertrieb gebrauchten IT-Zubehörs eine Einigung über einen gemeinsamen Zweck und dessen Förderung und damit einen Gesellschaftsvertrag nach § 705 Abs. 1 BGB herleitet; sie muss die fehlende schriftliche Vereinbarung wegen der Formfreiheit des GbR-Vertrags für unschädlich halten. NICHT ERFÜLLT, wenn sie nur die Bezeichnung „GbR“ übernimmt oder die Gründung mangels Schriftform verneint.",
       "deliverables": [
         "fallloesung.md"
       ],
@@ -260,17 +265,19 @@
         "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-001"
+        "A-002",
+        "A-003",
+        "A-004"
       ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-001",
-        "K-ADV-001"
+      "review_notes": [
+        "Die Formfreiheit ist als notwendiger Standard in die Anwendung integriert.",
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
       ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; beide inhaltlichen Richtervoten bestätigen die klare Erfüllung. Das weitere Votum scheiterte ausschließlich an einem technischen API-Fehler.",
       "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
       },
       "analysis_tags": {
         "function": "application",
@@ -285,44 +292,9 @@
     },
     {
       "id": "C-002",
-      "criticality": 1,
-      "title": "Formfreiheit des Gesellschaftsvertrags",
-      "match_criteria": "ERFÜLLT, wenn die Antwort erklärt, dass der Anfang Januar 2025 nur mündlich geschlossene Gesellschaftsvertrag von A und B wirksam ist, weil hier kein Schriftformerfordernis besteht. NICHT ERFÜLLT, wenn sie den Gesellschaftsvertrag wegen fehlender Schriftform für unwirksam hält oder die Formfrage offenlässt.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-002"
-      ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-002",
-        "K-ADV-002"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.a.aa",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Bestehen einer rechtsfähigen GbR",
-          "Gesellschaftsvertrag"
-        ]
-      }
-    },
-    {
-      "id": "C-003",
       "criticality": 2,
       "title": "Rechtsfähigkeit der IT Equipment GbR",
-      "match_criteria": "ERFÜLLT, wenn die Antwort die IT Equipment GbR nach § 705 Abs. 2 BGB als rechtsfähig behandelt und den erforderlichen Willen zur Teilnahme am Rechtsverkehr nach § 705 Abs. 3 BGB daraus vermutet, dass A und B unter gemeinschaftlichem Namen gewerblich gebrauchtes IT-Zubehör vertreiben. NICHT ERFÜLLT, wenn sie eine Registereintragung verlangt, die Rechtsfähigkeit verneint oder die konkreten Vermutungstatsachen nicht rechtlich verwertet.",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die IT Equipment GbR nach § 705 Abs. 2 und 3 BGB als rechtsfähig einordnet, weil A und B unter dem gemeinschaftlichen Namen „IT Equipment GbR“ gewerblich IT-Zubehör vertreiben und deshalb der Wille zur Teilnahme der Gesellschaft am Rechtsverkehr vermutet wird. NICHT ERFÜLLT, wenn sie der Gesellschaft wegen fehlender Registereintragung oder ausdrücklicher Rechtsfähigkeitsabrede die eigene Rechtsträgerschaft abspricht.",
       "deliverables": [
         "fallloesung.md"
       ],
@@ -330,21 +302,19 @@
         "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-003",
-        "A-004"
+        "A-005",
+        "A-006",
+        "A-007"
       ],
       "review_notes": [
-        "Der abstrakte Maßstab ist in die fallbezogene Anwendung integriert."
+        "Die Prüfung darf vor oder nach der Außenentstehung erfolgen.",
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
       ],
-      "candidate_ids_merged": [
-        "K-DOC-004",
-        "K-FACT-002",
-        "K-ADV-003"
-      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die Goldlösung erfüllt die fallbezogene Begründung nach den beiden erfolgreichen Richtervoten eindeutig. Der dritte Vorgang war ein technischer Fehler.",
       "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
       },
       "analysis_tags": {
         "function": "application",
@@ -358,10 +328,10 @@
       }
     },
     {
-      "id": "C-004",
+      "id": "C-003",
       "criticality": 2,
       "title": "Entstehung der GbR gegenüber Dritten",
-      "match_criteria": "ERFÜLLT, wenn die Antwort das Entstehen der nicht eingetragenen IT Equipment GbR gegenüber Dritten nach § 719 Abs. 1 BGB daraus herleitet, dass A und B einverständlich den Verkaufsbetrieb für gebrauchtes IT-Zubehör aufgenommen haben. NICHT ERFÜLLT, wenn sie mangels Registereintragung keine Außenentstehung annimmt oder die Aufnahme des Geschäftsbetriebs nicht würdigt.",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Außenentstehung der nicht eingetragenen IT Equipment GbR nach § 719 Abs. 1 BGB daraus ableitet, dass A und B einverständlich die Geschäftstätigkeit mit dem Verkauf gebrauchten IT-Zubehörs aufgenommen hatten; eine Registereintragung darf nicht als konstitutiv behandelt werden. NICHT ERFÜLLT, wenn sie die Außenentstehung mangels Eintragung verneint oder die aufgenommene Geschäftstätigkeit nicht rechtlich würdigt.",
       "deliverables": [
         "fallloesung.md"
       ],
@@ -369,18 +339,18 @@
         "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-005"
+        "A-008",
+        "A-009"
       ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-005",
-        "K-FACT-003",
-        "K-ADV-004"
+      "review_notes": [
+        "Die Reihenfolge gegenüber § 705 BGB ist nicht festgelegt.",
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
       ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die erfolgreichen Voten bestätigen sowohl die Würdigung der Geschäftstätigkeit als auch die fehlende konstitutive Wirkung der Eintragung. Das übrige Votum war technisch fehlgeschlagen.",
       "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
       },
       "analysis_tags": {
         "function": "application",
@@ -394,10 +364,10 @@
       }
     },
     {
-      "id": "C-005",
+      "id": "C-004",
       "criticality": 1,
       "title": "Preisschild als invitatio ad offerendum",
-      "match_criteria": "ERFÜLLT, wenn die Antwort das Preisschild „Auslaufmodell, Preis 2.500 €“ am 3D-Drucker mangels Rechtsbindungswillens als invitatio ad offerendum und nicht als bindendes Angebot nach § 145 BGB einordnet. NICHT ERFÜLLT, wenn sie bereits im Preisschild das maßgebliche Vertragsangebot sieht.",
+      "match_criteria": "ERFÜLLT, wenn die Antwort das Schild „Auslaufmodell, Preis 2.500 €“ mangels endgültigen Rechtsbindungswillens als invitatio ad offerendum und nicht als Angebot nach § 145 BGB einordnet. NICHT ERFÜLLT, wenn sie bereits im Preisschild einen bindenden Antrag der GbR oder einen Vertragsschluss zu 2.500 € sieht.",
       "deliverables": [
         "fallloesung.md"
       ],
@@ -405,18 +375,52 @@
         "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-006"
+        "A-010",
+        "A-011"
       ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-006",
-        "K-FACT-004",
-        "K-ADV-005"
+      "review_notes": [
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
       ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die Goldlösung erfüllt das atomare Kriterium nach beiden erfolgreichen Voten klar. Der weitere Eintrag beruht nur auf einem API-Fehler.",
       "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "application",
+        "outline_id": "I.1.b.aa",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Angebot gem. § 145 BGB"
+        ]
+      }
+    },
+    {
+      "id": "C-005",
+      "criticality": 2,
+      "title": "Eigenes Angebot des A über 800 €",
+      "match_criteria": "ERFÜLLT, wenn die Antwort As eigene Erklärung, den konkreten gebrauchten 3D-Drucker XA2024 für 800 € an V zu verkaufen, wegen bestimmter Kaufsache, Beteiligter und bestimmten Preises als verbindliches Angebot nach § 145 BGB einordnet. NICHT ERFÜLLT, wenn sie V als Anbieter behandelt, As Erklärung nur als unverbindliche Verhandlung wertet oder 2.500 € als Angebotspreis zugrunde legt.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-012",
+        "A-013"
+      ],
+      "review_notes": [
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; beide erfolgreichen Richtervoten bestätigen die eindeutige Erfüllung. Der dritte Vorgang enthält keinen sachlichen Einwand, sondern nur einen technischen Fehler.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
       },
       "analysis_tags": {
         "function": "application",
@@ -432,80 +436,8 @@
     {
       "id": "C-006",
       "criticality": 2,
-      "title": "Angebot des A über 800 Euro",
-      "match_criteria": "ERFÜLLT, wenn die Antwort die Erklärung des A, den konkreten 3D-Drucker für 800 € an V verkaufen zu wollen, wegen der bestimmten Vertragsparteien, Kaufsache und Gegenleistung als Angebot nach § 145 BGB einordnet. NICHT ERFÜLLT, wenn sie das Angebot V oder dem Preisschild zuschreibt oder einen anderen Kaufpreis zugrunde legt.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-007"
-      ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-007",
-        "K-FACT-005",
-        "K-ADV-006"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.b.aa",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Angebot gem. § 145 BGB"
-        ]
-      }
-    },
-    {
-      "id": "C-007",
-      "criticality": 1,
-      "title": "Eigene Willenserklärung des A",
-      "match_criteria": "ERFÜLLT, wenn die Antwort A beim Angebot über 800 € als Vertreter mit eigener Willenserklärung einordnet, weil er den Preis selbst festlegte und das Verkaufsangebot eigenständig abgab. NICHT ERFÜLLT, wenn sie A als bloßen Boten behandelt oder das Ergebnis ohne Bezug zu seiner eigenen Preisentscheidung behauptet.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-008"
-      ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-009",
-        "K-ADV-007"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.b.bb.1",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Wirksame Vertretung der GbR durch A (§ 164 Abs. 1 S. 1 BGB)",
-          "Eigene Willenserklärung"
-        ]
-      }
-    },
-    {
-      "id": "C-008",
-      "criticality": 2,
       "title": "Handeln im Namen der GbR",
-      "match_criteria": "ERFÜLLT, wenn die Antwort aus den Verkaufsverhandlungen in den Geschäftsräumen der IT Equipment GbR und dem Unternehmensbezug des Druckerverkaufs folgert, dass A erkennbar für die GbR handelte (§ 164 Abs. 1 S. 2, Abs. 2 BGB). NICHT ERFÜLLT, wenn sie A selbst als Verkäufer behandelt oder das Handeln im fremden Namen ohne Bezug zu diesen Umständen bejaht.",
+      "match_criteria": "ERFÜLLT, wenn die Antwort As Verkaufsangebot nach § 164 Abs. 1 BGB als Handeln im Namen der IT Equipment GbR auslegt, weil die Verhandlungen in deren Geschäftsräumen über einen Gegenstand ihres Warenbestands stattfanden und somit ein unternehmensbezogenes Geschäft vorlag. NICHT ERFÜLLT, wenn sie ohne Würdigung dieser Umstände ein Eigengeschäft des A annimmt oder die Offenkundigkeit allein wegen fehlender ausdrücklicher Namensnennung verneint.",
       "deliverables": [
         "fallloesung.md"
       ],
@@ -513,18 +445,16 @@
         "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-009"
+        "A-014"
       ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-010",
-        "K-FACT-006",
-        "K-ADV-008"
+      "review_notes": [
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
       ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die erfolgreichen Voten bestätigen die konkrete Würdigung als unternehmensbezogenes Geschäft. Das weitere Votum scheiterte technisch.",
       "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
       },
       "analysis_tags": {
         "function": "application",
@@ -539,10 +469,10 @@
       }
     },
     {
-      "id": "C-009",
-      "criticality": 2,
-      "title": "Vertretungsbefugnis des A für den Druckerverkauf",
-      "match_criteria": "ERFÜLLT, wenn die Antwort vom gesetzlichen Ausgangspunkt der Gesamtvertretung nach § 720 Abs. 1 BGB ausgeht, aus der eingeübten wechselseitigen alleinigen Kundenbetreuung aber entweder eine konkludente Einzelvertretungsregelung nach § 720 Abs. 1 Hs. 2 BGB oder eine auf alltägliche Geschäfte beschränkte Ermächtigung nach § 720 Abs. 2 BGB herleitet und den Verkauf des gebrauchten 3D-Druckers als gewöhnliches Geschäft des IT-Zubehörhandels hiervon erfasst sieht. NICHT ERFÜLLT, wenn sie ohne Herleitung unbeschränkte Einzelvertretung annimmt, zwingend Gesamtvertretung verlangt oder den Druckerverkauf grundlos ausnimmt.",
+      "id": "C-007",
+      "criticality": 1,
+      "title": "Gesetzlicher Grundsatz der Gesamtvertretung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort erkennt, dass A und B die GbR ohne abweichende Regelung nach § 720 Abs. 1 Hs. 1 BGB grundsätzlich gemeinschaftlich vertreten müssten und A nicht allein kraft seiner Gesellschafterstellung einzelvertretungsbefugt war. NICHT ERFÜLLT, wenn sie ohne Sonderregel eine gesetzliche Einzelvertretungsmacht jedes GbR-Gesellschafters annimmt.",
       "deliverables": [
         "fallloesung.md"
       ],
@@ -550,20 +480,89 @@
         "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-010",
-        "A-011",
-        "A-012"
+        "A-015"
       ],
       "review_notes": [
-        "Beide von der Lösung anerkannten Herleitungen sind zugelassen."
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
       ],
-      "candidate_ids_merged": [
-        "K-ADV-009"
-      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die Goldlösung benennt den gesetzlichen Ausgangspunkt eindeutig. Der dritte Eintrag ist lediglich ein technischer Fehler.",
       "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "rule_statement",
+        "outline_id": "I.1.b.bb.3",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Wirksame Vertretung der GbR durch A (§ 164 Abs. 1 S. 1 BGB)",
+          "Mit Vertretungsmacht"
+        ]
+      }
+    },
+    {
+      "id": "C-008",
+      "criticality": 2,
+      "title": "Konkludente Einzelvertretungsbefugnis",
+      "match_criteria": "ERFÜLLT, wenn die Antwort aus der praktizierten wechselseitigen alleinigen Kundenbetreuung eine Vertretungsmacht des allein handelnden A herleitet. Anerkannt wird entweder eine konkludente gesellschaftsvertragliche Einräumung von Einzelvertretungsmacht nach § 720 Abs. 1 Hs. 2 BGB oder eine gegenseitige Ermächtigung nach § 720 Abs. 2 BGB, deren Beschränkung auf alltägliche Kundengeschäfte erläutert wird. NICHT ERFÜLLT, wenn sie Einzelvertretungsmacht nur behauptet, aus der Gesellschafterstellung ableitet oder bei § 720 Abs. 2 BGB unbegrenzt annimmt.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-016"
+      ],
+      "review_notes": [
+        "Beide ausdrücklich zugelassenen dogmatischen Wege sind gleichwertig.",
+        "K-DOC-010 wurde wegen zweier selbstständiger Anwendungen aufgeteilt.",
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; beide erfolgreichen Voten bestätigen die fallbezogene Herleitung und die zulässigen Alternativwege. Der weitere Eintrag ist ein API-Fehler.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "outline_id": "I.1.b.bb.3",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Wirksame Vertretung der GbR durch A (§ 164 Abs. 1 S. 1 BGB)",
+          "Mit Vertretungsmacht"
+        ]
+      }
+    },
+    {
+      "id": "C-009",
+      "criticality": 2,
+      "title": "Druckerverkauf als alltägliches Geschäft",
+      "match_criteria": "ERFÜLLT, wenn die Antwort den Verkauf des gebrauchten 3D-Druckers als gewöhnliches Kundengeschäft der auf den Vertrieb gebrauchten IT-Zubehörs gerichteten GbR einordnet und deshalb vom sachlichen Umfang der konkludenten Einzelvertretungsbefugnis des A erfasst sieht. NICHT ERFÜLLT, wenn sie den Verkauf ohne tragfähigen Bezug zum Gesellschaftszweck als außergewöhnliches oder nicht gedecktes Geschäft behandelt.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-017"
+      ],
+      "review_notes": [
+        "K-DOC-010 wurde wegen zweier selbstständiger Anwendungen aufgeteilt.",
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die erfolgreichen Voten bestätigen die eindeutige Verknüpfung mit dem Gesellschaftszweck und dem Umfang der Vertretungsmacht. Das dritte Votum war technisch nicht verfügbar.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
       },
       "analysis_tags": {
         "function": "application",
@@ -579,45 +578,9 @@
     },
     {
       "id": "C-010",
-      "criticality": 2,
-      "title": "Außenumfang der Vertretungsmacht",
-      "match_criteria": "ERFÜLLT, wenn die Antwort den Verkauf des zum Sortiment gehörenden 3D-Druckers nach § 720 Abs. 3 BGB vom Außenumfang der Vertretungsmacht erfasst sieht und erklärt, dass bloße interne Beschränkungen Dritten grundsätzlich nicht entgegengehalten werden können. NICHT ERFÜLLT, wenn sie aus einer Überschreitung interner Preisvorstellungen unmittelbar fehlende Vertretungsmacht folgert.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-013"
-      ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-014",
-        "K-ADV-010"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.b.bb.4",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Wirksame Vertretung der GbR durch A (§ 164 Abs. 1 S. 1 BGB)",
-          "Umfang (Missbrauch der Vertretungsmacht)"
-        ]
-      }
-    },
-    {
-      "id": "C-011",
       "criticality": 1,
       "title": "Keine Kollusion zwischen A und V",
-      "match_criteria": "ERFÜLLT, wenn die Antwort eine Kollusion nach § 242 BGB verneint, weil der Sachverhalt kein bewusstes und gewolltes Zusammenwirken von A und V zur Schädigung der IT Equipment GbR erkennen lässt. NICHT ERFÜLLT, wenn sie allein aus dem Kaufpreis von 800 € oder den Zweifeln des V eine gemeinsame Schädigungsabsicht folgert.",
+      "match_criteria": "ERFÜLLT, wenn die Antwort Kollusion als bewusstes und gewolltes Zusammenwirken von Vertreter und Geschäftsgegner zur Schädigung der Vertretenen prüft und mangels Anhaltspunkten für eine Schädigungsabsprache zwischen A und V ablehnt. NICHT ERFÜLLT, wenn sie allein aus dem Preis von 800 € oder aus Vs Zweifeln eine kollusive Absprache folgert oder die Kollusionsfrage übergeht.",
       "deliverables": [
         "fallloesung.md"
       ],
@@ -625,18 +588,17 @@
         "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-014"
+        "A-019",
+        "A-020"
       ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-015",
-        "K-FACT-009",
-        "K-ADV-011"
+      "review_notes": [
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
       ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die Goldlösung prüft und verneint Kollusion mit dem verlangten Maßstab. Das weitere Votum enthält wegen eines technischen Fehlers keine Sachkritik.",
       "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
       },
       "analysis_tags": {
         "function": "application",
@@ -652,10 +614,10 @@
       }
     },
     {
-      "id": "C-012",
-      "criticality": 2,
-      "title": "Evidenter Missbrauch der Vertretungsmacht",
-      "match_criteria": "ERFÜLLT, wenn die Antwort den Evidenzmaßstab des Vertretungsmachtmissbrauchs auf den Verkauf für 800 € anwendet und entweder einen Missbrauch verneint, weil der Preis noch vom Verhandlungsspielraum des A gedeckt sein konnte, der Drucker kein wesentlicher Gesellschaftsgegenstand war und sich V ein Missbrauch nicht aufdrängen musste, oder wegen der V bekannten erheblichen Unterbewertung einen Missbrauch bejaht, §§ 177 ff. BGB analog anwendet, zunächst schwebende Unwirksamkeit annimmt und die spätere Freude des B als konkludente Genehmigung mit Rückwirkung nach § 184 Abs. 1 BGB würdigt. NICHT ERFÜLLT, wenn sie ohne Evidenzprüfung endgültige Unwirksamkeit annimmt oder beim Alternativweg Genehmigung und Rückwirkung übergeht.",
+      "id": "C-011",
+      "criticality": 3,
+      "title": "Missbrauch der Vertretungsmacht",
+      "match_criteria": "ERFÜLLT, wenn die Antwort den Verkauf für 800 € trotz des grundsätzlich weiten Außenumfangs nach § 720 Abs. 3 BGB auf einem anerkannten Weg löst: Sie verneint einen Missbrauch nach § 242 BGB, weil sich V trotz seiner Zweifel angesichts des gewöhnlichen, nicht existenziellen und schlecht verkäuflichen Auslaufmodells kein objektiv evidenter interner Pflichtverstoß aufdrängen musste. Oder sie bejaht wegen der deutlichen Unterpreisigkeit einen Missbrauch, wendet §§ 177 ff. BGB analog an, nimmt zunächst schwebende Unwirksamkeit an und wertet Bs spätere Freude über den Verkauf als konkludente, nach § 184 Abs. 1 BGB rückwirkende Genehmigung. NICHT ERFÜLLT, wenn der Preis nicht geprüft, jeder interne Verstoß automatisch als beachtlich behandelt oder bei bejahtem Missbrauch die Genehmigungslösung ausgelassen wird.",
       "deliverables": [
         "fallloesung.md"
       ],
@@ -663,19 +625,20 @@
         "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-015"
+        "A-018",
+        "A-021",
+        "A-022",
+        "A-023"
       ],
       "review_notes": [
-        "Hauptauffassung und ausdrücklich zugelassene Alternative sind vollständig aufgenommen."
+        "Die Länge ist zur Abbildung beider ausdrücklich akzeptierten Wege erforderlich.",
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
       ],
-      "candidate_ids_merged": [
-        "K-DOC-016",
-        "K-ADV-012"
-      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die beiden erfolgreichen Voten bestätigen, dass die Goldlösung jedenfalls den zugelassenen Hauptweg vollständig begründet. Das dritte Votum scheiterte ausschließlich technisch.",
       "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
       },
       "analysis_tags": {
         "function": "argumentation",
@@ -691,10 +654,10 @@
       }
     },
     {
-      "id": "C-013",
+      "id": "C-012",
       "criticality": 1,
       "title": "Annahme durch V",
-      "match_criteria": "ERFÜLLT, wenn die Antwort das Einverständnis des V mit dem von A genannten Preis von 800 € als Annahme nach § 147 BGB einordnet. NICHT ERFÜLLT, wenn sie keine Annahme feststellt, einen Dissens annimmt oder den Vertrag zum ausgezeichneten Preis von 2.500 € zustande kommen lässt.",
+      "match_criteria": "ERFÜLLT, wenn die Antwort Vs Einverständnis mit dem von A genannten Preis von 800 € als Annahme des Angebots nach § 147 BGB einordnet. NICHT ERFÜLLT, wenn sie eine Annahme oder Willenseinigung verneint oder einen Vertrag zum ausgezeichneten Preis von 2.500 € annimmt.",
       "deliverables": [
         "fallloesung.md"
       ],
@@ -702,18 +665,16 @@
         "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-016"
+        "A-024"
       ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-008",
-        "K-FACT-011",
-        "K-ADV-013"
+      "review_notes": [
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
       ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die Goldlösung erfüllt das atomare Kriterium eindeutig. Der weitere Kalibrierungseintrag war ein technischer API-Fehler.",
       "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
       },
       "analysis_tags": {
         "function": "application",
@@ -728,10 +689,10 @@
       }
     },
     {
-      "id": "C-014",
+      "id": "C-013",
       "criticality": 2,
       "title": "Verbrauchereigenschaft des V",
-      "match_criteria": "ERFÜLLT, wenn die Antwort V nach § 13 BGB als Verbraucher einordnet, weil er den Drucker privat zur Herstellung einer Indoor-Spielewelt für seine Kinder und nicht für eine gewerbliche oder selbstständige berufliche Tätigkeit erwarb. NICHT ERFÜLLT, wenn sie V als Unternehmer behandelt oder den privaten Erwerbszweck nicht rechtlich verwertet.",
+      "match_criteria": "ERFÜLLT, wenn die Antwort V nach § 13 BGB als Verbraucher einordnet, weil er den Drucker ausschließlich privat zur Herstellung einer Indoor-Spielewelt für seine Kinder und nicht für eine gewerbliche oder selbstständige berufliche Tätigkeit erwarb. NICHT ERFÜLLT, wenn sie V ohne Sachverhaltsgrundlage als Unternehmer behandelt oder den privaten Familienzweck nicht würdigt.",
       "deliverables": [
         "fallloesung.md"
       ],
@@ -739,18 +700,51 @@
         "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-018"
+        "A-026"
       ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-017",
-        "K-FACT-012",
-        "K-ADV-014"
+      "review_notes": [
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
       ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; beide erfolgreichen Voten bestätigen die ausdrückliche Würdigung des privaten Familienzwecks. Der dritte Eintrag ist technisch bedingt.",
       "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "application",
+        "outline_id": "I.1.b.cc.1",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Sachmangel",
+          "Verbrauchervertrag gem. § 310 Abs. 3 BGB"
+        ]
+      }
+    },
+    {
+      "id": "C-014",
+      "criticality": 2,
+      "title": "Unternehmereigenschaft der GbR",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die rechtsfähige IT Equipment GbR nach § 14 Abs. 1 BGB als Unternehmerin einordnet, weil sie den Drucker im Rahmen ihres gewerblichen Vertriebs von IT-Zubehör verkaufte. NICHT ERFÜLLT, wenn sie die Unternehmereigenschaft wegen der kleinen Betriebsgröße, fehlender Beschäftigter oder fehlender Registereintragung verneint.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-027"
+      ],
+      "review_notes": [
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die Goldlösung begründet die Unternehmereigenschaft mit der gewerblichen Tätigkeit. Das weitere Votum scheiterte nur an einem technischen Fehler.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
       },
       "analysis_tags": {
         "function": "application",
@@ -767,8 +761,8 @@
     {
       "id": "C-015",
       "criticality": 2,
-      "title": "Unternehmereigenschaft der GbR",
-      "match_criteria": "ERFÜLLT, wenn die Antwort die rechtsfähige IT Equipment GbR nach § 14 Abs. 1 BGB als Unternehmerin einordnet, weil sie den Drucker im Rahmen ihres gewerblichen Vertriebs gebrauchten IT-Zubehörs verkaufte. NICHT ERFÜLLT, wenn sie die Unternehmereigenschaft wegen der Rechtsform, Betriebsgröße oder fehlenden Registereintragung verneint.",
+      "title": "Mängelregime für eine Ware mit digitalen Elementen",
+      "match_criteria": "ERFÜLLT, wenn die Antwort den körperlichen 3D-Drucker als Ware mit digitalen Elementen nach § 327a Abs. 3 S. 1 BGB einordnet, weil er ohne die spezielle CAD-Software keinerlei Druckfunktion erfüllen kann, und die Mangelhaftigkeit deshalb nach §§ 475b Abs. 1, 434 BGB statt nach § 327e BGB beurteilt. Eine anfängliche Bezeichnung der CAD-Datei als digitaler Inhalt ist nur unschädlich, wenn § 327e BGB anschließend wegen der funktionalen Einheit ausgeschlossen wird. NICHT ERFÜLLT, wenn ausschließlich § 327e BGB angewendet oder die Funktionsabhängigkeit nicht rechtlich verknüpft wird.",
       "deliverables": [
         "fallloesung.md"
       ],
@@ -776,58 +770,20 @@
         "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-019"
-      ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-018",
-        "K-FACT-013",
-        "K-ADV-015"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.b.cc.1",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Sachmangel",
-          "Verbrauchervertrag gem. § 310 Abs. 3 BGB"
-        ]
-      }
-    },
-    {
-      "id": "C-016",
-      "criticality": 3,
-      "title": "Mängelregime für die Ware mit digitalen Elementen",
-      "match_criteria": "ERFÜLLT, wenn die Antwort den 3D-Drucker wegen seiner vollständigen Funktionsabhängigkeit von der CAD-Software als Ware mit digitalen Elementen nach § 327a Abs. 3 S. 1 BGB einordnet und die Mangelhaftigkeit deshalb nach §§ 475b Abs. 1, 434 Abs. 1 BGB statt unmittelbar nach § 327e BGB beurteilt. Ordnet sie die CAD-Datei zunächst als digitales Produkt ein, muss sie § 327e BGB wegen § 327a Abs. 3 S. 1 BGB ausschließen. NICHT ERFÜLLT, wenn sie § 327e BGB als maßgebliches Mängelrecht anwendet oder die funktionsnotwendige Verbindung von Gerät und Software nicht als Grund der Regimewahl auswertet.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-021",
-        "A-022",
-        "A-023"
+        "A-029",
+        "A-030",
+        "A-031",
+        "A-032"
       ],
       "review_notes": [
-        "Die Regimewahl wird als einheitliche, resultatrelevante Rechtsfrage geprüft."
+        "Geprüft wird die resultatrelevante Wahl des Mängelregimes.",
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
       ],
-      "candidate_ids_merged": [
-        "K-FACT-015",
-        "K-ADV-016"
-      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; beide erfolgreichen Voten bestätigen die vollständige funktionale und rechtliche Verknüpfung. Der dritte Eintrag ist lediglich ein API-Fehler.",
       "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
       },
       "analysis_tags": {
         "function": "legal_basis",
@@ -843,203 +799,10 @@
       }
     },
     {
-      "id": "C-018",
+      "id": "C-016",
       "criticality": 1,
-      "title": "Keine vertraglich vorausgesetzte Spezialverwendung",
-      "match_criteria": "ERFÜLLT, wenn die Antwort die Herstellung einer Indoor-Spielewelt nicht als vertraglich vorausgesetzte Verwendung nach § 434 Abs. 2 S. 1 Nr. 2 BGB behandelt, weil V diesen Zweck A bei Vertragsschluss nicht mitteilte. NICHT ERFÜLLT, wenn sie den nur intern verfolgten Privatplan des V ohne Kenntnis und Zustimmung des A zum Vertragsinhalt macht.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-025"
-      ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-023",
-        "K-FACT-017",
-        "K-ADV-018"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.b.cc.3.b.bb",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Sachmangel",
-          "Mangel gem. § 475b BGB",
-          "Subjektive Anforderungen (§ 475b Abs. 3 BGB)",
-          "Eignung zur vorausgesetzten Verwendung (§ 434 Abs. 2 S. 1 Nr. 2 BGB)"
-        ]
-      }
-    },
-    {
-      "id": "C-019",
-      "criticality": 1,
-      "title": "Kein subjektiver Zubehörmangel",
-      "match_criteria": "ERFÜLLT, wenn die Antwort einen subjektiven Mangel nach § 434 Abs. 2 S. 1 Nr. 3 BGB verneint, weil A und V auch bei Einordnung der CAD-Software als Zubehör keine vertragliche Abrede über dieses Zubehör trafen. NICHT ERFÜLLT, wenn sie allein aufgrund der defekten Software ohne Zubehörvereinbarung einen subjektiven Mangel nach Nr. 3 bejaht.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-026"
-      ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-024",
-        "K-FACT-018",
-        "K-ADV-019"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.b.cc.3.b.cc",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Sachmangel",
-          "Mangel gem. § 475b BGB",
-          "Subjektive Anforderungen (§ 475b Abs. 3 BGB)",
-          "Zubehör und Anleitungen (§ 434 Abs. 2 S. 1 Nr. 3 BGB)"
-        ]
-      }
-    },
-    {
-      "id": "C-020",
-      "criticality": 2,
-      "title": "Objektiver Sachmangel des Druckers",
-      "match_criteria": "ERFÜLLT, wenn die Antwort einen objektiven Sachmangel konkret daraus herleitet, dass der Drucker wegen der defekten funktionsnotwendigen CAD-Software weder individuelle 3D-Modelle noch einfache Druckaufträge herstellen kann. Zulässig ist die Begründung über die fehlende Eignung zur gewöhnlichen Verwendung nach §§ 475b Abs. 4 Nr. 1, 434 Abs. 3 S. 1 Nr. 1 BGB oder über die fehlende übliche Beschaffenheit nach § 434 Abs. 3 S. 1 Nr. 2 BGB; eine ergänzende Heranziehung von Nr. 3 bei Einordnung als Zubehör ist unschädlich. NICHT ERFÜLLT, wenn sie den Drucker als mangelfrei behandelt oder nur auf den A unbekannten Spezialzweck des V abstellt.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-027",
-        "A-028"
-      ],
-      "review_notes": [
-        "Die ausdrücklich anerkannten Begründungswege sind gleichwertig."
-      ],
-      "candidate_ids_merged": [
-        "K-DOC-025",
-        "K-FACT-019",
-        "K-ADV-020"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.b.cc.3.c",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Sachmangel",
-          "Mangel gem. § 475b BGB",
-          "Objektive Anforderungen"
-        ]
-      }
-    },
-    {
-      "id": "C-021",
-      "criticality": 2,
-      "title": "Mangel bei Gefahrübergang",
-      "match_criteria": "ERFÜLLT, wenn die Antwort mangels vereinbarter fortlaufender Softwarebereitstellung oder Updatepflicht § 477 Abs. 2 BGB ausschließt, stattdessen § 477 Abs. 1 BGB anwendet und aus dem kurz nach Übergabe hervorgetretenen Softwaredefekt vermutet, dass der Mangel bereits bei Übergabe nach § 446 S. 1 BGB vorlag. NICHT ERFÜLLT, wenn sie ohne Grundlage eine dauerhafte Bereitstellung annimmt, § 477 Abs. 2 BGB anwendet oder V den vollen Nachweis des ursprünglichen Defekts auferlegt.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-029",
-        "A-030"
-      ],
-      "review_notes": [
-        "Die Wahl zwischen den Vermutungsregelungen wird einheitlich geprüft."
-      ],
-      "candidate_ids_merged": [
-        "K-FACT-020",
-        "K-ADV-021"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.b.dd",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Bei Gefahrübergang"
-        ]
-      }
-    },
-    {
-      "id": "C-022",
-      "criticality": 3,
-      "title": "Anspruchsgrundlage gegen die GbR",
-      "match_criteria": "ERFÜLLT, wenn die Antwort das Begehren des V gegen die IT Equipment GbR als kaufrechtlichen Schadensersatz statt der Leistung wegen des mangelhaften Druckers nach §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB prüft und den Kaufvertrag als zugrunde liegendes Schuldverhältnis behandelt. NICHT ERFÜLLT, wenn sie nur § 280 Abs. 1 BGB, ausschließlich § 439 BGB oder das Leistungsstörungsrecht für digitale Produkte zugrunde legt.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-032"
-      ],
-      "review_notes": [
-        "Das aggregierte Bestehen des Anspruchs wird nicht nochmals bewertet."
-      ],
-      "candidate_ids_merged": [
-        "K-DOC-029"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "legal_basis",
-        "outline_id": "I.1.b.ff",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)"
-        ]
-      }
-    },
-    {
-      "id": "C-023",
-      "criticality": 2,
-      "title": "Schlechtleistung als Pflichtverletzung",
-      "match_criteria": "ERFÜLLT, wenn die Antwort bei §§ 280, 281 BGB die Übergabe des wegen der defekten CAD-Software unbrauchbaren Druckers als Verletzung der kaufvertraglichen Pflicht zur mangelfreien Leistung und damit als Schlechtleistung einordnet. NICHT ERFÜLLT, wenn sie keine Pflichtverletzung erkennt, eine Nichtleistung annimmt oder nur abstrakt auf einen Mangel verweist.",
+      "title": "Keine Beschaffenheitsvereinbarung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort bei den subjektiven Anforderungen nach §§ 475b Abs. 3, 434 Abs. 2 S. 1 Nr. 1 BGB eine ausdrückliche oder konkludente Vereinbarung über eine konkrete Beschaffenheit des 3D-Druckers verneint. Sie muss erkennen lassen, dass die bloße Erwartung einer normalen Funktionsfähigkeit ohne entsprechende Parteivereinbarung keine Beschaffenheitsvereinbarung begründet. NICHT ERFÜLLT, wenn sie ohne konkrete Vereinbarung eine Beschaffenheitsvereinbarung, Garantie oder Beschaffenheitszusage unterstellt oder die subjektive Anforderung allein wegen der üblichen Funktionsfähigkeit als erfüllt behandelt.",
       "deliverables": [
         "fallloesung.md"
       ],
@@ -1049,311 +812,13 @@
       "derived_from_atoms": [
         "A-033"
       ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-030",
-        "K-FACT-021",
-        "K-ADV-024"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.b.ff.2",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
-          "Pflichtverletzung"
-        ]
-      }
-    },
-    {
-      "id": "C-024",
-      "criticality": 2,
-      "title": "Schadensersatz statt der Leistung",
-      "match_criteria": "ERFÜLLT, wenn die Antwort das Begehren des V als Schadensersatz statt der Leistung nach § 281 BGB einordnet, weil eine hypothetische Reparatur der Software oder Ersatzlieferung den Nachteil beseitigt hätte und deshalb das Äquivalenzinteresse betroffen ist. NICHT ERFÜLLT, wenn sie ohne diesen Vergleich Schadensersatz neben der Leistung annimmt oder den Schaden dem Integritätsinteresse zuordnet.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-034"
-      ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-031",
-        "K-FACT-022",
-        "K-ADV-025"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.b.ff.3.a",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
-          "Fristsetzung gem. §§ 281 Abs. 1 S. 1, 475d BGB",
-          "Abgrenzung Schadensersatz statt und neben der Leistung"
-        ]
-      }
-    },
-    {
-      "id": "C-025",
-      "criticality": 3,
-      "title": "Entbehrlichkeit der Nacherfüllungsfrist",
-      "match_criteria": "ERFÜLLT, wenn die Antwort erkennt, dass V keine Nacherfüllungsfrist setzte, diese aber nach § 475d Abs. 2 i.V.m. Abs. 1 Nr. 4 BGB entbehrlich war, weil nach der Mängelanzeige sowohl Reparatur als auch Ersatzlieferung endgültig abgelehnt wurden. NICHT ERFÜLLT, wenn sie den Anspruch wegen fehlender Frist verneint, eine Frist erfindet oder die endgültige Verweigerung nicht mit § 475d BGB verbindet.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-035",
-        "A-036"
-      ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-032",
-        "K-ADV-026"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.b.ff.3.b",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
-          "Fristsetzung gem. §§ 281 Abs. 1 S. 1, 475d BGB",
-          "Ausnahme gem. § 475d Abs. 2 BGB"
-        ]
-      }
-    },
-    {
-      "id": "C-026",
-      "criticality": 2,
-      "title": "Zurechnung der Nacherfüllungsverweigerung",
-      "match_criteria": "ERFÜLLT, wenn die Antwort die von A für die IT Equipment GbR erklärte Ablehnung von Reparatur und Ersatzlieferung der Gesellschaft, insbesondere über § 164 Abs. 1 BGB analog, zurechnet und als Verweigerung durch die Verkäuferin behandelt. NICHT ERFÜLLT, wenn sie die Erklärung nur A persönlich zurechnet oder ihre Wirkung für die GbR ohne rechtliche Begründung verneint.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-037"
-      ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-033",
-        "K-ADV-027"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.b.ff.3.b",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
-          "Fristsetzung gem. §§ 281 Abs. 1 S. 1, 475d BGB",
-          "Ausnahme gem. § 475d Abs. 2 BGB"
-        ]
-      }
-    },
-    {
-      "id": "C-028",
-      "criticality": 2,
-      "title": "Inhalt und Bemessung des Schadensersatzes",
-      "match_criteria": "ERFÜLLT, wenn die Antwort entweder die von V verlangte Lieferung eines gleichwertigen funktionsfähigen 3D-Druckers als Naturalrestitution nach § 249 Abs. 1 BGB einordnet oder einen Geldersatz vertritt, dessen Berechnung die Rückgabe des mangelhaften Druckers, den gezahlten Kaufpreis von 800 € und einen etwaigen Restwert widerspruchsfrei berücksichtigt. NICHT ERFÜLLT, wenn sie pauschal den Vergleichswert von 1.500 € als Geldersatz zuspricht, bei der Geldlösung die Rückgewährpositionen übergeht oder die verlangte Gerätelieferung ohne schadensrechtliche Einordnung behandelt.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-040",
-        "A-041",
-        "A-042"
-      ],
       "review_notes": [
-        "Maßgeblich ist der spätere Lösungsteil, nicht die widersprüchliche Einleitung."
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
       ],
-      "candidate_ids_merged": [
-        "K-DOC-036",
-        "K-ADV-030"
-      ],
+      "refinement_note": "Die nicht in der Goldlösung enthaltene Begründung, A und V hätten ausschließlich über den Preis verhandelt, wurde entfernt. Maßgeblich bleibt die ausdrücklich geprüfte und verneinte konkrete Beschaffenheitsvereinbarung; eine bloße Erwähnung des Themas genügt weiterhin nicht.",
       "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "conclusion",
-        "outline_id": "I.1.b.ff.5",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
-          "Schaden"
-        ]
-      }
-    },
-    {
-      "id": "C-029",
-      "criticality": 1,
-      "title": "Kausalität der Nacherfüllungsverweigerung",
-      "match_criteria": "ERFÜLLT, wenn die Antwort die Kausalität damit begründet, dass V bei ordnungsgemäßer Reparatur der CAD-Software oder Ersatzlieferung einen funktionsfähigen Drucker erhalten hätte und der geltend gemachte Nachteil ausgeblieben wäre. NICHT ERFÜLLT, wenn sie den Schaden ohne Verbindung zur verweigerten Nacherfüllung bejaht oder die Kausalität trotz möglicher Wiederherstellung verneint.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-043"
-      ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-038",
-        "K-FACT-025",
-        "K-ADV-032"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.b.ff.5",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
-          "Schaden"
-        ]
-      }
-    },
-    {
-      "id": "C-030",
-      "criticality": 2,
-      "title": "Erheblichkeit der Pflichtverletzung",
-      "match_criteria": "ERFÜLLT, wenn die Antwort die Pflichtverletzung nach § 281 Abs. 1 S. 3 BGB als nicht unerheblich einordnet und dies mit der vollständigen Unbrauchbarkeit des Druckers oder den Reparaturkosten von etwa 350 € im Verhältnis zum Kaufpreis von 800 € begründet. NICHT ERFÜLLT, wenn sie den Defekt als unerheblich behandelt oder die Erheblichkeit ohne Bezug zu Funktionsausfall oder Beseitigungsaufwand behauptet.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-044"
-      ],
-      "review_notes": [],
-      "candidate_ids_merged": [
-        "K-DOC-039",
-        "K-FACT-026",
-        "K-ADV-033"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "application",
-        "outline_id": "I.1.b.ff.6",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Wirksamer Abschluss eines Kaufvertrags mit V",
-          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
-          "Keine Unerheblichkeit"
-        ]
-      }
-    },
-    {
-      "id": "C-031",
-      "criticality": 3,
-      "title": "Persönliche akzessorische Haftung des A",
-      "match_criteria": "ERFÜLLT, wenn die Antwort § 721 S. 1 BGB auf A anwendet, weil A bei Abschluss des Kaufvertrags Gesellschafter der IT Equipment GbR war, und daraus seine persönliche akzessorische Haftung für die Schadensersatzverbindlichkeit der GbR gegenüber V im selben Umfang folgert. NICHT ERFÜLLT, wenn sie nur die GbR haften lässt, eine vorherige erfolglose Inanspruchnahme der GbR verlangt oder A unabhängig vom Bestand der Gesellschaftsverbindlichkeit haften lässt.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-046",
-        "A-047"
-      ],
-      "review_notes": [
-        "Das übergreifende Endergebnis wird nicht nochmals als eigener Punkt bewertet."
-      ],
-      "candidate_ids_merged": [
-        "K-DOC-040"
-      ],
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
-        "round": 1
-      },
-      "analysis_tags": {
-        "function": "conclusion",
-        "outline_id": "I.1.c",
-        "station_path": [
-          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
-          "Anspruch entstanden",
-          "Persönliche Haftung des A"
-        ]
-      }
-    },
-    {
-      "id": "C-017",
-      "criticality": 1,
-      "title": "Keine Beschaffenheitsvereinbarung",
-      "match_criteria": "ERFÜLLT, wenn die Antwort im Rahmen der subjektiven Anforderungen nach §§ 475b Abs. 3, 434 Abs. 2 S. 1 Nr. 1 BGB eine ausdrückliche oder konkludente Beschaffenheitsvereinbarung verneint, weil A und V keine konkrete Beschaffenheit des 3D-Druckers vereinbart haben, und dabei deutlich macht, dass die gewöhnliche Funktionsfähigkeit nicht ohne konkrete Anhaltspunkte als vereinbart gilt. NICHT ERFÜLLT, wenn die Antwort ohne konkrete Anhaltspunkte eine Beschaffenheitsvereinbarung über die gewöhnliche Funktionsfähigkeit annimmt, die Frage offenlässt oder lediglich ein Ergebnis ohne Begründung nennt.",
-      "deliverables": [
-        "fallloesung.md"
-      ],
-      "sources": [
-        "documents/sachverhalt.md"
-      ],
-      "derived_from_atoms": [
-        "A-024"
-      ],
-      "review_notes": [],
-      "refinement_note": "Der nicht ausdrücklich erforderliche Detailgrund, A und V hätten ausschließlich über den Preis verhandelt, wurde entfernt. Maßgeblich bleibt die begründete Verneinung einer konkreten Beschaffenheitsvereinbarung.",
-      "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
+        "status": "flaky",
+        "agreement": "2/3",
         "round": 2
       },
       "analysis_tags": {
@@ -1371,10 +836,10 @@
       }
     },
     {
-      "id": "C-027",
-      "criticality": 2,
-      "title": "Vertretenmüssen der GbR",
-      "match_criteria": "ERFÜLLT, wenn die Antwort das Vertretenmüssen der GbR für den Schadensersatz statt der Leistung jedenfalls damit bejaht, dass die GbR die geschuldete Nacherfüllung ohne erkennbaren Rechtfertigungsgrund verweigerte und dadurch wenigstens fahrlässig handelte, sodass es auf eine Zurechnung eines etwaigen Herstellerverschuldens nach § 278 S. 1 BGB nicht ankommt. Eine daneben stehende Beschreibung der Vermutungswirkung des § 280 Abs. 1 S. 2 BGB ist für dieses Kriterium nicht entscheidend, sofern die grundlose Nacherfüllungsverweigerung die Bejahung des Vertretenmüssens selbständig trägt. NICHT ERFÜLLT, wenn die Antwort das Vertretenmüssen wegen der fehlenden eigenen Herstellung verneint, vom Nachweis oder der Zurechnung eines Herstellerverschuldens abhängig macht oder ohne Auseinandersetzung mit der Nacherfüllungsverweigerung lediglich behauptet.",
+      "id": "C-017",
+      "criticality": 1,
+      "title": "Keine vertraglich vorausgesetzte Sonderverwendung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Herstellung einer Indoor-Spielewelt für Vs Kinder nicht als vertraglich vorausgesetzte Verwendung nach § 434 Abs. 2 S. 1 Nr. 2 BGB behandelt, weil V diesen besonderen Zweck A bei den ausschließlich preisbezogenen Verhandlungen nicht mitteilte. NICHT ERFÜLLT, wenn sie den nur V bekannten privaten Zweck ohne Mitteilung oder Zustimmung des A zum Vertragsinhalt macht.",
       "deliverables": [
         "fallloesung.md"
       ],
@@ -1382,20 +847,362 @@
         "documents/sachverhalt.md"
       ],
       "derived_from_atoms": [
-        "A-038",
-        "A-039"
+        "A-034"
       ],
       "review_notes": [
-        "Die Herstellerfrage ist als Konsequenz des tragenden Verschuldensgrundes integriert."
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
       ],
-      "refinement_note": "Die mit der Musterlösung unvereinbare Negativbedingung zur Formulierung der Vermutungswirkung des § 280 Abs. 1 S. 2 BGB wurde beseitigt. Geprüft wird weiterhin die tragende Verschuldensbegründung durch die wenigstens fahrlässige Nacherfüllungsverweigerung.",
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die Goldlösung stellt ausdrücklich auf As fehlende Kenntnis vom Sonderzweck ab und erfüllt damit den materiellen Kern. Das weitere Votum war technisch fehlgeschlagen.",
       "calibration": {
-        "status": "pass",
-        "agreement": "3/3",
+        "status": "flaky",
+        "agreement": "2/3",
         "round": 2
       },
       "analysis_tags": {
         "function": "application",
+        "outline_id": "I.1.b.cc.3.b.bb",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Sachmangel",
+          "Mangel gem. § 475b BGB",
+          "Subjektive Anforderungen (§ 475b Abs. 3 BGB)",
+          "Eignung zur vorausgesetzten Verwendung (§ 434 Abs. 2 S. 1 Nr. 2 BGB)"
+        ]
+      }
+    },
+    {
+      "id": "C-018",
+      "criticality": 1,
+      "title": "Keine subjektive Zubehörabrede",
+      "match_criteria": "ERFÜLLT, wenn die Antwort § 434 Abs. 2 S. 1 Nr. 3 BGB nicht als subjektive Mangelgrundlage heranzieht, weil A und V auch bei einer Einordnung der CAD-Software als Zubehör keine Vereinbarung über dieses Zubehör trafen. NICHT ERFÜLLT, wenn sie allein aus dem Vorhandensein der Software eine vertragliche Zubehörabrede folgert.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-035"
+      ],
+      "review_notes": [
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; beide erfolgreichen Voten bestätigen die ausdrückliche Verneinung einer Zubehörabrede. Der weitere Eintrag enthält nur einen technischen Fehler.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "application",
+        "outline_id": "I.1.b.cc.3.b.cc",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Sachmangel",
+          "Mangel gem. § 475b BGB",
+          "Subjektive Anforderungen (§ 475b Abs. 3 BGB)",
+          "Zubehör und Anleitungen (§ 434 Abs. 2 S. 1 Nr. 3 BGB)"
+        ]
+      }
+    },
+    {
+      "id": "C-019",
+      "criticality": 2,
+      "title": "Objektiver Sachmangel des Druckers",
+      "match_criteria": "ERFÜLLT, wenn die Antwort nach §§ 475b Abs. 4 Nr. 1, 434 Abs. 3 S. 1 Nr. 1 BGB einen objektiven Mangel bejaht, weil ein 3D-Drucker gewöhnlich individuelle 3D-Modelle herstellen können muss, der verkaufte Drucker wegen der defekten CAD-Software aber vollständig unbrauchbar ist und keine Druckaufträge ausführen kann. NICHT ERFÜLLT, wenn sie Mangelfreiheit annimmt, nur auf Vs nicht mitgeteilten Sonderzweck abstellt oder den Softwaredefekt nicht mit der gewöhnlichen Gerätefunktion verknüpft.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-036",
+        "A-037",
+        "A-038",
+        "A-039"
+      ],
+      "review_notes": [
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die Goldlösung verknüpft Defekt, gewöhnliche Verwendung und vollständige Unbrauchbarkeit eindeutig. Das dritte Votum scheiterte technisch.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "application",
+        "outline_id": "I.1.b.cc.3.c",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Sachmangel",
+          "Mangel gem. § 475b BGB",
+          "Objektive Anforderungen"
+        ]
+      }
+    },
+    {
+      "id": "C-020",
+      "criticality": 2,
+      "title": "Mangel bei Gefahrübergang",
+      "match_criteria": "ERFÜLLT, wenn die Antwort für den kurz nach der Übergabe beim ersten Druckauftrag hervorgetretenen Softwaredefekt § 477 Abs. 1 BGB zugunsten des Verbrauchers V anwendet und deshalb einen bereits bei der Übergabe nach § 446 S. 1 BGB vorhandenen Mangel vermutet. § 477 Abs. 2 BGB darf mangels vereinbarter dauerhafter Softwarebereitstellung oder Updatepflicht nicht angewendet werden. NICHT ERFÜLLT, wenn V den Defektzeitpunkt voll beweisen soll oder eine dauerhafte Bereitstellungspflicht erfunden wird.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-042",
+        "A-043",
+        "A-044"
+      ],
+      "review_notes": [
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; beide erfolgreichen Voten bestätigen die Anwendung von § 477 Abs. 1 BGB und die Ablehnung einer erfundenen Dauerbereitstellung. Das weitere Votum war technisch fehlgeschlagen.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "application",
+        "outline_id": "I.1.b.dd",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Bei Gefahrübergang"
+        ]
+      }
+    },
+    {
+      "id": "C-021",
+      "criticality": 2,
+      "title": "Pflichtverletzung durch Schlechtleistung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort bei der Schadensersatzprüfung die Übergabe des wegen der defekten CAD-Software unbrauchbaren Druckers als Verletzung der kaufvertraglichen Pflicht der IT Equipment GbR zur mangelfreien Leistung und damit als Pflichtverletzung nach §§ 280 Abs. 1, 281 Abs. 1 S. 1 Alt. 2 BGB einordnet. NICHT ERFÜLLT, wenn sie trotz des festgestellten Mangels keine Pflichtverletzung annimmt oder diese einer anderen Person als der Verkäuferin zuordnet.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-047"
+      ],
+      "review_notes": [
+        "Dieses Kriterium betrifft die Schadensersatzstation, nicht die Mängelfeststellung.",
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die erfolgreichen Voten bestätigen die Prüfung an der richtigen Schadensersatzstation und bezüglich der richtigen Verkäuferin. Der dritte Eintrag ist technisch bedingt.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "application",
+        "outline_id": "I.1.b.ff.2",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
+          "Pflichtverletzung"
+        ]
+      }
+    },
+    {
+      "id": "C-022",
+      "criticality": 2,
+      "title": "Schadensersatz statt der Leistung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort Vs Begehren als Schadensersatz statt der Leistung nach §§ 280 Abs. 1 und 3, 281 BGB einordnet, weil eine mangelfreie Ersatzlieferung oder das Aufspielen funktionsfähiger Software die fehlende Gebrauchstauglichkeit beseitigt hätte und damit das Äquivalenzinteresse betroffen ist. NICHT ERFÜLLT, wenn sie ohne Abgrenzung Schadensersatz neben der Leistung annimmt oder die Vermeidbarkeit des Nachteils durch Nacherfüllung nicht berücksichtigt.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-048",
+        "A-049",
+        "A-050"
+      ],
+      "review_notes": [
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; beide erfolgreichen Voten bestätigen die erforderliche Abgrenzung anhand der hypothetischen Nacherfüllung. Das weitere Votum enthält nur einen technischen Fehler.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "application",
+        "outline_id": "I.1.b.ff.3.a",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
+          "Fristsetzung gem. §§ 281 Abs. 1 S. 1, 475d BGB",
+          "Abgrenzung Schadensersatz statt und neben der Leistung"
+        ]
+      }
+    },
+    {
+      "id": "C-023",
+      "criticality": 3,
+      "title": "Entbehrlichkeit der fehlenden Nacherfüllungsfrist",
+      "match_criteria": "ERFÜLLT, wenn die Antwort erkennt, dass V keine konkrete angemessene Nacherfüllungsfrist nach § 281 Abs. 1 S. 1 BGB setzte, diese aber nach § 475d Abs. 2 in Verbindung mit Abs. 1 Nr. 4 BGB entbehrlich war, weil die Verkäuferin IT Equipment GbR sowohl Reparatur als auch Ersatzlieferung vehement und endgültig verweigerte. NICHT ERFÜLLT, wenn sie eine Frist erfindet, den Anspruch allein wegen ihres Fehlens ablehnt oder nur die möglicherweise unverhältnismäßige Ersatzlieferung würdigt.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-051",
+        "A-052",
+        "A-056",
+        "A-057",
+        "A-058"
+      ],
+      "review_notes": [
+        "Der Sachverhalt schreibt die Ablehnung unmittelbar der GbR zu.",
+        "Eine analoge Zurechnung nach § 164 BGB wird nicht verlangt.",
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die Goldlösung stellt die fehlende Frist und deren Entbehrlichkeit wegen endgültiger Nacherfüllungsverweigerung ausdrücklich fest. Der dritte Eintrag beruht nur auf einem API-Fehler.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "application",
+        "outline_id": "I.1.b.ff.3.c",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
+          "Fristsetzung gem. §§ 281 Abs. 1 S. 1, 475d BGB",
+          "Ausnahme gem. § 475d Abs. 2 BGB"
+        ]
+      }
+    },
+    {
+      "id": "C-024",
+      "criticality": 1,
+      "title": "Mögliche Unverhältnismäßigkeit der Ersatzlieferung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort bei § 439 Abs. 4 BGB würdigt, dass die von V verlangte Ersatzlieferung wegen der schwierigen Beschaffung des Auslaufmodells und des gegenüber einer Reparatur höheren Aufwands unverhältnismäßig sein könnte. NICHT ERFÜLLT, wenn sie die Ersatzlieferung ohne Abwägung zwingend für verhältnismäßig hält oder aus der schwierigen Beschaffung eine vollständige Unmöglichkeit sämtlicher Nacherfüllung folgert.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-053"
+      ],
+      "review_notes": [
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; beide erfolgreichen Voten bestätigen die fallbezogene Abwägung bei § 439 Abs. 4 BGB. Das weitere Votum war technisch fehlgeschlagen.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "outline_id": "I.1.b.ff.3.b",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
+          "Fristsetzung gem. §§ 281 Abs. 1 S. 1, 475d BGB",
+          "Kein vollständiges Leistungsverweigerungsrecht aus § 439 Abs. 4 BGB"
+        ]
+      }
+    },
+    {
+      "id": "C-025",
+      "criticality": 2,
+      "title": "Zumutbarkeit der Reparatur",
+      "match_criteria": "ERFÜLLT, wenn die Antwort ein Verweigerungsrecht hinsichtlich der Nachbesserung nach § 439 Abs. 4 BGB verneint, weil der vollständig unbrauchbare Drucker durch das Aufspielen funktionsfähiger Software für etwa 350 € wieder voll einsatzfähig würde und mangelfrei 1.500 € wert ist; die GbR durfte daher nicht beide Nacherfüllungsarten verweigern. NICHT ERFÜLLT, wenn sie aus der möglichen Unverhältnismäßigkeit der Ersatzlieferung auch ein Recht zur Ablehnung der Reparatur folgert.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-054",
+        "A-055"
+      ],
+      "review_notes": [
+        "Das fehlende vollständige Verweigerungsrecht folgt unmittelbar aus der Reparaturprüfung.",
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die Goldlösung erfüllt die Reparaturprüfung und das daraus folgende fehlende Gesamtverweigerungsrecht eindeutig. Der dritte Eintrag ist ein technischer Fehler.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "application",
+        "outline_id": "I.1.b.ff.3.b",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
+          "Fristsetzung gem. §§ 281 Abs. 1 S. 1, 475d BGB",
+          "Kein vollständiges Leistungsverweigerungsrecht aus § 439 Abs. 4 BGB"
+        ]
+      }
+    },
+    {
+      "id": "C-026",
+      "criticality": 2,
+      "title": "Vertretenmüssen der GbR",
+      "match_criteria": "ERFÜLLT, wenn die Antwort das nach § 280 Abs. 1 S. 2 BGB vermutete Vertretenmüssen bejaht: Beim Schadensersatz statt der Leistung kann an die Verletzung der Nacherfüllungspflicht angeknüpft werden, und die grundlose vollständige Verweigerung auch der zumutbaren Reparatur war zumindest fahrlässig. Deshalb darf die ungeklärte Verursachung des ursprünglichen Softwaredefekts und eine Herstellerzurechnung nach § 278 BGB offenbleiben. NICHT ERFÜLLT, wenn die Haftung zwingend von einem nicht belegten Herstellerverschulden abhängig gemacht wird.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-059",
+        "A-060",
+        "A-061",
+        "A-062"
+      ],
+      "review_notes": [
+        "Abstrakter Bezugspunkt und fallbezogene Anwendung bilden eine Haftungsfrage.",
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; beide erfolgreichen Voten bestätigen die eigenständige Anknüpfung an die fahrlässige Nacherfüllungsverweigerung. Der weitere Eintrag enthält keinen Sachwiderspruch, sondern nur einen API-Fehler.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "argumentation",
         "outline_id": "I.1.b.ff.4",
         "station_path": [
           "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
@@ -1405,11 +1212,161 @@
           "Vertretenmüssen gem. § 280 Abs. 1 S. 2 BGB"
         ]
       }
+    },
+    {
+      "id": "C-027",
+      "criticality": 3,
+      "title": "Ersatzfähige Schadensform und Geldberechnung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort den Schadensumfang auf einem ausdrücklich akzeptierten Weg bestimmt: Sie ordnet Vs Verlangen nach Lieferung eines gleichwertigen funktionsfähigen 3D-Druckers als Naturalrestitution nach § 249 Abs. 1 BGB ein. Alternativ darf sie Geldersatz zusprechen, muss dann aber nach §§ 249 ff., 281 Abs. 5 und 346–348 BGB die Rückgabe des mangelhaften Druckers, den gezahlten Kaufpreis von 800 € und einen etwaigen Restwert widerspruchsfrei einbeziehen; 1.500 € sind nicht automatisch der Geldschaden. NICHT ERFÜLLT, wenn die Ersatzform ungeklärt bleibt oder ohne Rückabwicklungsrechnung pauschal 1.500 € zugesprochen werden.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-063",
+        "A-064",
+        "A-065",
+        "A-066"
+      ],
+      "review_notes": [
+        "Die Naturalrestitution folgt der Lösungsvorgabe.",
+        "Die Geldersatzalternative trägt eine eigene Berechnungsanforderung.",
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die Goldlösung erfüllt den zugelassenen Naturalrestitutionsweg und erläutert zusätzlich die Anforderungen an eine Geldberechnung. Der dritte Eintrag war technisch fehlgeschlagen.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "argumentation",
+        "outline_id": "I.1.b.ff.5",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
+          "Schaden"
+        ]
+      }
+    },
+    {
+      "id": "C-028",
+      "criticality": 2,
+      "title": "Kausalität der Nacherfüllungsverweigerung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Kausalität zwischen der schuldhaften Nacherfüllungsverweigerung und Vs geltend gemachtem Schaden damit begründet, dass V bei ordnungsgemäßer Reparatur der CAD-Software oder mangelfreier Ersatzlieferung einen funktionsfähigen Drucker erhalten hätte. NICHT ERFÜLLT, wenn sie die Kausalität ohne Würdigung der möglichen Nacherfüllung verneint oder einen durch Nacherfüllung nicht vermeidbaren Schaden zugrunde legt.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-067"
+      ],
+      "review_notes": [
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; beide erfolgreichen Voten bestätigen die konkrete hypothetische Kausalitätsprüfung. Der weitere Eintrag beruht ausschließlich auf einem technischen Fehler.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "application",
+        "outline_id": "I.1.b.ff.5",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
+          "Schaden"
+        ]
+      }
+    },
+    {
+      "id": "C-029",
+      "criticality": 2,
+      "title": "Erheblichkeit der Pflichtverletzung",
+      "match_criteria": "ERFÜLLT, wenn die Antwort die Pflichtverletzung für § 281 Abs. 1 S. 3 BGB als erheblich einordnet und dies mit der vollständigen Unbrauchbarkeit des Druckers sowie Reparaturkosten von etwa 350 € bei einem Kaufpreis von 800 € begründet. NICHT ERFÜLLT, wenn sie Schadensersatz statt der ganzen Leistung wegen Unerheblichkeit ausschließt, ohne die völlige Funktionsunfähigkeit und den erheblichen Beseitigungsaufwand zu würdigen.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-068",
+        "A-069"
+      ],
+      "review_notes": [
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; die erfolgreichen Voten bestätigen die Würdigung von Funktionsunfähigkeit und Beseitigungsaufwand. Der dritte Eintrag ist technisch bedingt.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "application",
+        "outline_id": "I.1.b.ff.6",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Wirksamer Abschluss eines Kaufvertrags mit V",
+          "Voraussetzungen des Schadensersatzes statt der (ganzen) Leistung (§§ 280 Abs. 1 und 3, 281 BGB)",
+          "Keine Unerheblichkeit"
+        ]
+      }
+    },
+    {
+      "id": "C-030",
+      "criticality": 3,
+      "title": "Persönliche akzessorische Haftung des A",
+      "match_criteria": "ERFÜLLT, wenn die Antwort den kaufrechtlichen Schadensersatzanspruch des V gegen die IT Equipment GbR aus §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 BGB über § 721 S. 1 BGB unmittelbar gegen A richtet: A war beim Vertragsschluss Gesellschafter und haftet für die Gesellschaftsverbindlichkeit persönlich sowie akzessorisch im gleichen sachlichen Umfang. NICHT ERFÜLLT, wenn A als Verkäufer oder nach § 179 BGB haftbar gemacht, eine vorherige Inanspruchnahme der GbR verlangt oder die Haftung ohne bestehende Gesellschaftsverbindlichkeit bejaht wird.",
+      "deliverables": [
+        "fallloesung.md"
+      ],
+      "sources": [
+        "documents/sachverhalt.md"
+      ],
+      "derived_from_atoms": [
+        "A-001",
+        "A-070",
+        "A-071",
+        "A-072",
+        "A-073",
+        "A-076"
+      ],
+      "review_notes": [
+        "Anspruchsgrundlage und persönliche Haftungsanwendung wurden dedupliziert.",
+        "Kalibrierung: Urteil des Judges nicht einstimmig; Kriterium bei der menschlichen Prüfung besonders beachten."
+      ],
+      "refinement_note": "Keine inhaltliche Änderung erforderlich; beide erfolgreichen Voten bestätigen die richtige Gesellschaftsverbindlichkeit und deren persönliche akzessorische Erstreckung auf A. Der weitere Eintrag war ein technischer API-Fehler.",
+      "calibration": {
+        "status": "flaky",
+        "agreement": "2/3",
+        "round": 2
+      },
+      "analysis_tags": {
+        "function": "legal_basis",
+        "outline_id": "I.1.c",
+        "station_path": [
+          "Anspruch auf Schadensersatz gem. §§ 437 Nr. 3, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 Alt. 2 BGB i.V.m. § 721 S. 1 BGB",
+          "Anspruch entstanden",
+          "Persönliche Haftung des A"
+        ]
+      }
     }
   ],
   "validation_warnings": [],
   "provenance": {
-    "source": "evals/rubric.generated.broad-final.json",
+    "source": "evals/rubric.generated.json",
     "provider": "openai",
     "model": "gpt-5.6-sol",
     "candidate_roles": [
@@ -1446,7 +1403,7 @@
         }
       ],
       "votes": 3,
-      "max_rounds": 3
+      "max_rounds": 2
     }
   }
 }
