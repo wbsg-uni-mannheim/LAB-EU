@@ -99,3 +99,22 @@ def test_backoff_is_jittered():
 
 def test_default_is_one_attempt_plus_ten_retries():
     assert retry_util.DEFAULT_MAX_ATTEMPTS == 11
+
+
+def test_content_filter_is_fatal():
+    """Observed on the de-core-45 agent arm: DeepSeek's filter blocked one
+    constitutional-law case on all 11 attempts while the baseline arm solved
+    the same case. A filter is a property of (model, prompt), not an outage."""
+    assert outcome(exit_code=1, missing_deliverables=True,
+                   error_text="ContentFilterError: The response was blocked by "
+                              "the provider's content filter") == FATAL
+
+
+def test_unnamed_failures_stop_repeating_but_named_ones_do_not():
+    unnamed = f"{retry_util.UNNAMED_FAILURE_PREFIX} 1"
+    assert retry_util.stalled([unnamed] * 3) is True
+    assert retry_util.stalled([unnamed] * 2) is False
+    # a real outage repeats too — those retries must survive
+    assert retry_util.stalled(["upstream failure (502)"] * 5) is False
+    # progress resets the counter
+    assert retry_util.stalled([unnamed, "upstream failure (502)", unnamed]) is False

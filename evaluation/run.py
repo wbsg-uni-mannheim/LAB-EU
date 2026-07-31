@@ -158,6 +158,15 @@ def parse_args() -> argparse.Namespace:
             "are reused, making interrupted committee runs resumable."
         ),
     )
+    parser.add_argument(
+        "--service-tier",
+        default=None,
+        help=(
+            "OpenAI service tier for judge calls. 'flex' bills at Batch-API "
+            "rates AND keeps prompt caching (the Batch API itself does not), at "
+            "the price of slower, occasionally resource-limited processing."
+        ),
+    )
     parser.add_argument("--dry-run", action="store_true", help="Validate inputs without calling the judge model.")
     return parser.parse_args()
 
@@ -404,7 +413,22 @@ def parse_json_response(text: str) -> dict[str, Any]:
     raise ValueError(f"No JSON object found in judge response: {text[:500]}")
 
 
-def _judge_call_responses(client: OpenAI, model: str, prompt: str, reasoning_effort: str | None):
+def _judge_call_responses(client: OpenAI, model: str, prompt: str,
+                          reasoning_effort: str | None,
+                          cache_key: str | None = None,
+                          service_tier: str | None = None):
+    """One judge request.
+
+    ``cache_key`` becomes ``prompt_cache_key``: every criterion of one answer
+    shares a ~7k-token prefix (instructions, task, the answer itself), and on
+    GPT-5.6 models that prefix is only matched reliably when the requests carry
+    the same key. Without it the measured cache hit rate was 0% for the median
+    case and 94% for the best one — the difference between paying full input
+    price for 151M tokens and for 16M.
+
+    ``service_tier="flex"`` bills at Batch-API rates AND keeps prompt caching,
+    which the Batch API itself does not (see docs/judging-cost.md).
+    """
     request: dict[str, Any] = {
         "model": model,
         "input": prompt,
@@ -412,6 +436,10 @@ def _judge_call_responses(client: OpenAI, model: str, prompt: str, reasoning_eff
     }
     if reasoning_effort:
         request["reasoning"] = {"effort": reasoning_effort}
+    if cache_key:
+        request["prompt_cache_key"] = cache_key
+    if service_tier:
+        request["service_tier"] = service_tier
     response = client.responses.create(**request)
     return response.output_text or "", usage_summary(response.model_dump(mode="json"))
 
@@ -474,7 +502,8 @@ def normalize_judge_result(result: dict[str, Any], usage: dict[str, Any]) -> dic
 
 
 def call_judge(
-    client: OpenAI, model: str, prompt: str, reasoning_effort: str | None, use_chat: bool = False
+    client: OpenAI, model: str, prompt: str, reasoning_effort: str | None, use_chat: bool = False,
+    cache_key: str | None = None, service_tier: str | None = None,
 ) -> dict[str, Any]:
     # No max_output_tokens: token usage is recorded per criterion in scores.json.
     last_error: Exception | None = None
@@ -483,7 +512,8 @@ def call_judge(
             if use_chat:
                 text, usage = _judge_call_chat(client, model, prompt)
             else:
-                text, usage = _judge_call_responses(client, model, prompt, reasoning_effort)
+                text, usage = _judge_call_responses(
+                    client, model, prompt, reasoning_effort, cache_key, service_tier)
         except OpenAIError as exc:
             last_error = RuntimeError(f"Judge request failed: {exc}")
             continue
@@ -530,6 +560,8 @@ def call_combined_judge(
     prompt: str,
     reasoning_effort: str | None,
     use_chat: bool = False,
+    cache_key: str | None = None,
+    service_tier: str | None = None,
 ) -> dict[str, dict[str, Any]]:
     last_error: Exception | None = None
     for _attempt in range(2):
@@ -538,7 +570,7 @@ def call_combined_judge(
                 text, usage = _judge_call_chat(client, model, prompt)
             else:
                 text, usage = _judge_call_responses(
-                    client, model, prompt, reasoning_effort
+                    client, model, prompt, reasoning_effort, cache_key, service_tier
                 )
         except OpenAIError as exc:
             last_error = RuntimeError(f"Judge request failed: {exc}")
@@ -604,17 +636,27 @@ def add_judge_metadata(vote: dict[str, Any], spec: JudgeSpec) -> dict[str, Any]:
     return {**vote, "judge": spec.as_dict()}
 
 
-def cached_judge_vote(
-    *,
+def vote_cache_path(
     cache_dir: pathlib.Path | None,
     phase: str,
-    client: OpenAI,
     spec: JudgeSpec,
+    criterion_id: str,
     prompt: str,
-    criterion: dict[str, Any],
-    use_chat: bool,
-) -> dict[str, Any]:
-    cache_payload = {
+) -> pathlib.Path | None:
+    """Where one judge vote is cached.
+
+    The key hashes the judge identity, the phase AND the full prompt — and the
+    prompt embeds both the criterion and the answer under review. Two different
+    submissions therefore never share an entry, which is what makes a single
+    cache directory per run safe.
+
+    Exposed because scripts/judge_committee_batch.py fills this cache from the
+    Batch API: if the two sides computed the key differently, the prewarmed
+    votes would simply never be found and every vote would be paid twice.
+    """
+    if cache_dir is None:
+        return None
+    payload = {
         "phase": phase,
         "judge": {
             "name": spec.name,
@@ -622,13 +664,28 @@ def cached_judge_vote(
             "api_base": spec.api_base,
             "reasoning_effort": spec.reasoning_effort,
         },
-        "criterion_id": criterion["id"],
+        "criterion_id": criterion_id,
         "prompt": prompt,
     }
-    cache_key = hashlib.sha256(
-        json.dumps(cache_payload, ensure_ascii=False, sort_keys=True).encode("utf-8")
+    key = hashlib.sha256(
+        json.dumps(payload, ensure_ascii=False, sort_keys=True).encode("utf-8")
     ).hexdigest()
-    cache_path = cache_dir / f"{phase}-{cache_key}.json" if cache_dir else None
+    return cache_dir / f"{phase}-{key}.json"
+
+
+def cached_judge_vote(
+    *,
+    cache_dir: pathlib.Path | None,
+    prompt_cache_key: str | None = None,
+    service_tier: str | None = None,
+    phase: str,
+    client: OpenAI,
+    spec: JudgeSpec,
+    prompt: str,
+    criterion: dict[str, Any],
+    use_chat: bool,
+) -> dict[str, Any]:
+    cache_path = vote_cache_path(cache_dir, phase, spec, criterion["id"], prompt)
     if cache_path and cache_path.exists():
         try:
             cached = json.loads(cache_path.read_text(encoding="utf-8"))
@@ -639,7 +696,8 @@ def cached_judge_vote(
 
     try:
         result = call_judge(
-            client, spec.model, prompt, spec.reasoning_effort, use_chat
+            client, spec.model, prompt, spec.reasoning_effort, use_chat,
+            cache_key=prompt_cache_key, service_tier=service_tier,
         )
         vote = {
             "id": criterion["id"],
@@ -673,6 +731,8 @@ def cached_judge_vote(
 def cached_combined_judge_vote(
     *,
     cache_dir: pathlib.Path | None,
+    prompt_cache_key: str | None = None,
+    service_tier: str | None = None,
     phase: str,
     client: OpenAI,
     spec: JudgeSpec,
@@ -680,21 +740,7 @@ def cached_combined_judge_vote(
     criterion: dict[str, Any],
     use_chat: bool,
 ) -> dict[str, dict[str, Any]]:
-    cache_payload = {
-        "phase": phase,
-        "judge": {
-            "name": spec.name,
-            "model": spec.model,
-            "api_base": spec.api_base,
-            "reasoning_effort": spec.reasoning_effort,
-        },
-        "criterion_id": criterion["id"],
-        "prompt": prompt,
-    }
-    cache_key = hashlib.sha256(
-        json.dumps(cache_payload, ensure_ascii=False, sort_keys=True).encode("utf-8")
-    ).hexdigest()
-    cache_path = cache_dir / f"{phase}-{cache_key}.json" if cache_dir else None
+    cache_path = vote_cache_path(cache_dir, phase, spec, criterion["id"], prompt)
     if cache_path and cache_path.exists():
         try:
             cached = json.loads(cache_path.read_text(encoding="utf-8"))
@@ -706,7 +752,8 @@ def cached_combined_judge_vote(
 
     try:
         result = call_combined_judge(
-            client, spec.model, prompt, spec.reasoning_effort, use_chat
+            client, spec.model, prompt, spec.reasoning_effort, use_chat,
+            cache_key=prompt_cache_key, service_tier=service_tier,
         )
         combined: dict[str, dict[str, Any]] = {}
         for channel in ("content", "style"):
@@ -891,6 +938,7 @@ def evaluate(
     style_evaluation: bool = False,
     combine_content_and_style: bool = True,
     vote_cache_dir: pathlib.Path | None = None,
+    service_tier: str | None = None,
     criterion_ids: list[str] | None = None,
     committee_conflict_recheck: bool = True,
     committee_error_retries: int = 1,
@@ -925,14 +973,22 @@ def evaluate(
             "Use full voting or --separate-style-calls."
         )
 
+    # Every criterion of one answer shares the same ~7k-token prefix, but only
+    # per judge: the cache is scoped to the model. One key per (answer, judge)
+    # is exactly the unit that can hit.
+    prefix_key = hashlib.sha256(str(submission).encode("utf-8")).hexdigest()[:16]
+
     def content_vote(index: int, spec_index: int, phase: str) -> tuple[int, dict[str, Any]]:
         spec = specs[spec_index]
         client, use_chat = clients[spec_index]
         criterion = criteria[index]
         agent_output = load_agent_output(submission, criterion)
+        cache_key = f"lab-eu-{prefix_key}-{spec.name}"
         if combined_style and index in style_eligible_index_set:
             combined = cached_combined_judge_vote(
                 cache_dir=vote_cache_dir,
+                prompt_cache_key=cache_key,
+                service_tier=service_tier,
                 phase=phase.replace("content", "combined", 1),
                 client=client,
                 spec=spec,
@@ -949,6 +1005,8 @@ def evaluate(
             return index, content
         vote = cached_judge_vote(
             cache_dir=vote_cache_dir,
+            prompt_cache_key=cache_key,
+            service_tier=service_tier,
             phase=phase,
             client=client,
             spec=spec,
@@ -967,6 +1025,13 @@ def evaluate(
             jobs_by_spec.setdefault(job[1], []).append(job)
         for spec_index, spec_jobs in jobs_by_spec.items():
             workers = specs[spec_index].parallel or parallel
+            # The shared prefix is only cached once a first response has landed.
+            # Firing all workers at once means every one of them is a cache
+            # miss; one warm-up call first makes the remainder hits.
+            if len(spec_jobs) > 1 and workers > 1:
+                index, vote_result = content_vote(*spec_jobs[0], phase)
+                votes_by_criterion[index].append(vote_result)
+                spec_jobs = spec_jobs[1:]
             with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
                 for index, vote_result in pool.map(
                     lambda job: content_vote(*job, phase), spec_jobs
@@ -1548,6 +1613,7 @@ def main() -> int:
         style_evaluation=args.style_evaluation,
         combine_content_and_style=not args.separate_style_calls,
         vote_cache_dir=vote_cache_dir,
+        service_tier=args.service_tier,
         criterion_ids=args.criterion_id,
         committee_conflict_recheck=args.committee_conflict_recheck,
         committee_error_retries=args.committee_error_retries,

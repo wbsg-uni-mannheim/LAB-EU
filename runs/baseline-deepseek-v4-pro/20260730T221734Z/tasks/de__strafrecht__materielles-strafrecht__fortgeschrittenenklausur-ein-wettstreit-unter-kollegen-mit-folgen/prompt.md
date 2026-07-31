@@ -1,0 +1,30 @@
+You are solving one LAB-EU legal benchmark task in a single response.
+
+Current date: 2026-07-31
+
+You may use only the material below. Do not use external legal sources or search.
+
+Task id:
+de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-ein-wettstreit-unter-kollegen-mit-folgen
+
+Task title:
+Fortgeschrittenenklausur: Ein Wettstreit unter Kollegen mit Folgen
+
+Work type:
+draft
+
+Task instructions:
+Bearbeiten Sie den Fall gutachterlich. Erstellen Sie eine vollständige Falllösung auf Grundlage des Sachverhalts in documents/sachverhalt.md.
+
+Documents:
+
+### documents/sachverhalt.md
+
+# Sachverhalt
+
+Sachverhalt Zwischen den Arbeitskollegen Armani (A) und Bibiana (B) ist ein Wettstreit entbrannt, wer den nahezu identischen Arbeitsweg der beiden, der rund fünf Kilometer durch den innerstädtischen Bereich führt, mit dem Pkw schneller zurücklegen kann. Um dies zu ermitteln, fahren A und B jeweils getrennt voneinander mit ihren Fahrzeugen zur Arbeit und stoppen hierbei die Zeit. A will zwar schneller als B sein, einen Verlust seiner Fahrerlaubnis jedoch auf keinen Fall riskieren. Daher hält er die Verkehrsregeln ein, versucht aber durch geschicktes Verhalten (schnelles Anfahren, häufige Spurwechsel, Starten vor seiner üblichen Arbeitszeit, um den Berufsverkehr zu umgehen) B zu schlagen. B will dagegen A um jeden Preis unterbieten und fährt „mit Vollgas“ durch die Innenstadt. Auch als B sich einem Fußgängerüberweg, auf dem Fußgänger Conrad (C) gerade die Straße überquert, nähert, vermindert sie ihr Tempo nicht. Während B mit 100 km/h (statt erlaubten 50 km/h) den Fußgängerüberweg überfährt, kann C sich nur durch einen Sprung zur Seite retten, sodass er „wie durch ein Wunder“ unverletzt bleibt. Im Eifer des Gefechtes hatte sich B über eine Gefährdung oder gar Verletzung anderer Verkehrsteilnehmer überhaupt keine Gedanken gemacht. Auf diese Weise schafft B es, die Strecke in vier Minuten zurückzulegen, was einer Durchschnittsgeschwindigkeit von 75 km/h entspricht. Einige Monate später – B wurde mittlerweile aufgrund des obigen Vorfalls rechtskräftig die Fahrerlaubnis entzogen – befährt diese mit ihrem Pkw die Autobahn. B bemerkt hinter sich einen Streifenwagen, der sie einer Verkehrskontrolle unterziehen will und ihr deshalb Haltesignal anzeigt. Um zu verhindern, wegen Fahrens ohne Fahrerlaubnis (§ 21 Abs. 1 Nr. 1 StVG) bestraft zu werden, gibt B so viel Gas, wie sie kann, und fährt mit einer Geschwindigkeit von 170 km/h (bei erlaubten 100 km/h) davon. Ihr Ziel ist es, dem Streifenwagen zu entkommen. Dies kann sie nach ihrer Vorstellung nur dadurch erreichen, dass sie mit ihrem Pkw mit der höchstmöglichen Geschwindigkeit fährt. Erst nach einigen Kilometern kann die Polizei B stellen. Aufgabe Wie haben sich A und B nach dem StGB strafbar gemacht?
+
+
+Write the complete deliverable now, as Markdown. Your entire response will be saved verbatim as the file "fallloesung.md" and evaluated as the final legal work product. Do not include any preamble, meta commentary about your approach, or closing remarks - only the document itself.
+
+Write in the same language as the task instructions and documents, unless the instructions require a different language. The deliverable must be a complete, self-contained legal document. Use the legal reasoning style required by the task; for German case solutions, use Gutachtenstil. Where the supplied materials present a question as settled by controlling high-court case law, follow that current case-law path. Cite the provisions you rely on precisely.

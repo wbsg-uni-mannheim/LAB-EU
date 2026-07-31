@@ -1,0 +1,30 @@
+You are solving one LAB-EU legal benchmark task in a single response.
+
+Current date: 2026-07-31
+
+You may use only the material below. Do not use external legal sources or search.
+
+Task id:
+de/zivilrecht/sachenrecht/examensubungsklausur-geteiltes-leid-ist-halbes-leid
+
+Task title:
+Examensübungsklausur: Geteiltes Leid ist halbes Leid?
+
+Work type:
+draft
+
+Task instructions:
+Bearbeiten Sie den Fall gutachterlich. Erstellen Sie eine vollständige Falllösung auf Grundlage des Sachverhalts in documents/sachverhalt.md.
+
+Documents:
+
+### documents/sachverhalt.md
+
+# Sachverhalt
+
+Sachverhalt A hat sich früh selbstständig gemacht und konnte sich dank einer guten Auftragslage lange einen teuren Lebensstil leisten. Auch wenn seine Aufträge seit der Corona-Pandemie bedenklich zurückgegangen sind, kann sich A nicht von seinem gewohnten Lebensstil lösen. Als neues Prestigeobjekt plant er eine Segelyacht zu erwerben. Um den Kaufpreis stemmen zu können, benötigt er allerdings ein Darlehen. Die G-Bank ist bereit, A ein Darlehen i.H.v. 100.000 € bis 200.000 € zu gewähren, abhängig von den Sicherheiten, die A anbieten kann. A bittet daher seinen wohlhabenden Bruder B, eine Bürgschaft zu übernehmen. B unterstützt A gerne. Da die Höhe des Darlehens noch nicht feststeht, bereitet B eine selbstschuldnerische Bürgschaftserklärung vor, die er unterschreibt und bei der er den Umfang der Bürgschaft frei lässt. A soll nach den Gesprächen mit der G-Bank einen Betrag von maximal 200.000 € eintragen und die Erklärung per Post an die G-Bank schicken. Begeistert von diesem schnellen Erfolg versucht A auch noch seinen Freund P für eine Sicherheit zu begeistern. P ist jedoch skeptisch, da er A nie für besonders geschäftstüchtig gehalten hat und deshalb von einem hohen Haftungsrisiko ausgeht. Diesen Einwand entkräftet A, indem er P von seinen Geschäftserfolgen und der guten Auftragslage berichtet. Dass die Aufträge seit ein paar Jahren stark zurückgegangen sind, erwähnt er bewusst nicht. So kann er P überzeugen, zwei Oldtimer im Wert von jeweils 100.000 € an die G-Bank zu verpfänden. Angesichts dieser Sicherheiten erklärt sich die G-Bank zu einer Darlehensgewährung i.H.v. 200.000 € bereit. Der schriftlich geschlossene Darlehensvertrag sieht vor, dass A das Darlehen sowie Zinsen in Raten von monatlich 2.500 € zurückzahlen muss. Informationen über ein Widerrufsrecht erhält er nicht. Zuhause ergänzt A in der Bürgschaftserklärung des B den Umfang von 200.000 € und schickt die Erklärung per Post an die G-Bank. Dort wird sie von einem vertretungsberechtigten Mitarbeiter der G-Bank zu den übrigen Unterlagen geheftet, die das Darlehen des A betreffen. A teilt B mit, die G-Bank gewähre ihm ein Darlehen über 200.000 €, weshalb er den entsprechenden Betrag ergänzt habe. B zeigt sich damit zufrieden. P verpfändet und übergibt die Oldtimer an einen Mitarbeiter der G-Bank. Daraufhin zahlt diese das Darlehen an A aus. A erwirbt die Segelyacht und findet im Segeln seine neue Leidenschaft. Dadurch verschieben sich seine Prioritäten zulasten seiner selbstständigen Tätigkeit. Er hat akute Zahlungsnot und zahlt keine der Raten zurück. Nach acht Monaten befindet sich A mit 20.000 € in Verzug. Die G-Bank setzt A formgerecht eine zweiwöchige Frist zur Zahlung dieses Betrages und droht – ebenfalls formgerecht – an, den gesamten Restbetrag von 200.000 € andernfalls zurückzufordern. A kommt der Aufforderung nicht nach. Die G-Bank kündigt das Darlehen formgerecht und fordert von A Rückzahlung der 200.000 €. Da sie A für zahlungsunfähig hält, wendet sich die G-Bank an B. Aufgabe 1 Hat die G-Bank gegen B einen Anspruch auf Zahlung der 200.000 €? Fortsetzung 1 B gibt nach und zahlt 200.000 € an die G-Bank. B wendet sich nun seinerseits an P und droht P an, dessen Oldtimer öffentlich versteigern zu lassen, um die 200.000 € zurückzuerlangen. P ist entsetzt, hatte er doch auf die Geschäftstüchtigkeit und Zahlungsfähigkeit des A vertraut. Als B ihm erzählt, dass sich die Auftragslage des A bereits vor dem Darlehen stark verschlechtert hatte, ist P erbost. Er hält B entgegen, A habe ihn (P) über den Tisch gezogen. Hätte er von der schlechten Auftragslage oder der Geschäftsuntüchtigkeit des A gewusst, hätte er seine Oldtimer nie an die G-Bank verpfändet. Zudem muss P feststellen, dass die G-Bank die Oldtimer – wie sie es auch mit eigenen Fahrzeugen zu tun pflegt – nicht gänzlich witterungsgeschützt gelagert hat. Durch die Witterung ist an einem Oldtimer ein Rostschaden entstanden, der seinen Wert von 100.000 € auf 70.000 € senkt. P ist der Auffassung, B dürfe die Oldtimer nicht verwerten, bis die G-Bank ihm den Schaden an dem Oldtimer ersetzt habe. Aufgabe 2 Hat B gegen P einen Anspruch auf Duldung der Verwertung beider Oldtimer i.H.v. bis zu 200.000 €? Fortsetzung 2 B will auch A in Regress nehmen. Er erwirkt einen Titel und vollstreckt in die (nicht im Schiffsregister eingetragene) Yacht des A, die im Kieler Yachthafen ankert. Das Eigentum an der Yacht hatte A vorher zur Sicherung einer anderen Darlehensforderung an D übertragen. D will sich nun gegen die Vollstreckung in die Yacht wehren. Aufgabe 3 Hat eine Klage des D mit dem Ziel, die Vollstreckung in die Yacht zu verhindern, Aussicht auf Erfolg?
+
+
+Write the complete deliverable now, as Markdown. Your entire response will be saved verbatim as the file "fallloesung.md" and evaluated as the final legal work product. Do not include any preamble, meta commentary about your approach, or closing remarks - only the document itself.
+
+Write in the same language as the task instructions and documents, unless the instructions require a different language. The deliverable must be a complete, self-contained legal document. Use the legal reasoning style required by the task; for German case solutions, use Gutachtenstil. Where the supplied materials present a question as settled by controlling high-court case law, follow that current case-law path. Cite the provisions you rely on precisely.

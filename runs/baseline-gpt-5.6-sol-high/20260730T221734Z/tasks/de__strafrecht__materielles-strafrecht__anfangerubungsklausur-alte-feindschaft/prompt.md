@@ -1,0 +1,30 @@
+You are solving one LAB-EU legal benchmark task in a single response.
+
+Current date: 2026-07-31
+
+You may use only the material below. Do not use external legal sources or search.
+
+Task id:
+de/strafrecht/materielles-strafrecht/anfangerubungsklausur-alte-feindschaft
+
+Task title:
+Anfängerübungsklausur: Alte Feindschaft
+
+Work type:
+draft
+
+Task instructions:
+Bearbeiten Sie den Fall gutachterlich. Erstellen Sie eine vollständige Falllösung auf Grundlage des Sachverhalts in documents/sachverhalt.md.
+
+Documents:
+
+### documents/sachverhalt.md
+
+# Sachverhalt
+
+Sachverhalt Seit O den T während einer Klausur wegen eines Täuschungsversuchs bei der Klausuraufsicht angeschwärzt hat, sind die beiden verfeindet. T plant deshalb, sich an O zu rächen und diesem einen gehörigen Schreck einzujagen. Zu diesem Zweck lockt T den O in einer stürmischen und regnerischen Nacht unter einem Vorwand in eine abgelegene Lagerhalle. Dabei rechnet T nicht damit, dass von O eine Gefahr ausgeht. Als plötzlich ein Blitz in das Dach der Lagerhalle einschlägt, hält T den lauten Knall für einen Schuss aus einer Pistole. T glaubt, O müsse über eine Pistole verfügen und werde nun auf ihn schießen, weshalb sich nun auch T dazu berechtigt sieht, ohne jede Ankündigung auf O zu schießen. Sein eigenes Leben hält T aber nicht für gefährdet, da er O als lausigen Schützen einschätzt. T gibt daraufhin ohne vorherige Androhung des Schusswaffengebrauchs oder einen Warnschuss einen Schuss in Körperhöhe in Richtung des O ab, wobei er O lediglich außer Gefecht setzen will. Dessen Tod hält er nicht für möglich. O wird mit einem Streifschuss in die linke Schulter getroffen und trägt eine schmerzhafte Fleischwunde davon. Daraufhin gelingt ihm die Flucht. Tatsächlich führte O keine Waffe bei sich und hatte auch nicht vor, T irgendeinen Schaden zuzufügen. Durch diese Vorkommnisse tief verstört kann O in nächster Zeit nicht zur Ruhe kommen. Um nicht mehr in ständiger Angst vor T leben zu müssen und diesem wieder Respekt vor ihm einzubläuen, begibt er sich zu dessen Wohnung. Er will an der Wohnungstür des T klingeln und jenem, falls dieser öffnet, mit einem Fausthieb ein blaues Auge verpassen. Da O aber bekannt ist, dass T mit seiner zweijährigen Tochter zusammenwohnt, und O schon immer ein Herz für Kinder hatte, will er seinen Plan nur verwirklichen, wenn T allein – ohne seine Tochter – an der Tür erscheint. Auf das Klingeln des O hin öffnet T mit seiner Tochter auf dem Arm die Tür. Unverrichteter Dinge wendet sich O zum Gehen und zieht von dannen. Den unangekündigten Besuch will T wiederum nicht auf sich sitzen lassen. Er spannt nachts einen Draht vor der vermeintlichen Wohnungstür des O, damit dieser beim Hinaustreten aus der Wohnung stolpert und ungehindert zu Boden fällt. Daraufhin verlässt T den Tatort. Dem Klingelschild hat er keine Beachtung geschenkt. Etwaige Verletzungen des O hält er für möglich, nimmt diese gleichwohl billigend in Kauf. Was T nicht weiß, ist, dass es sich tatsächlich um die Wohnung des Nachbarn N handelt. Als N am nächsten Morgen auf dem Weg zur Arbeit aus der Tür tritt, bleibt er an dem Stolperdraht hängen, fällt zu Boden und bricht sich hierbei den rechten Arm. Bearbeitungsvermerk Wie haben sich T und O strafbar gemacht? Zu prüfen sind nur Straftatbestände des StGB mit Ausnahme der §§ 211, 224 StGB. Eventuell erforderliche Strafanträge sind gestellt.
+
+
+Write the complete deliverable now, as Markdown. Your entire response will be saved verbatim as the file "fallloesung.md" and evaluated as the final legal work product. Do not include any preamble, meta commentary about your approach, or closing remarks - only the document itself.
+
+Write in the same language as the task instructions and documents, unless the instructions require a different language. The deliverable must be a complete, self-contained legal document. Use the legal reasoning style required by the task; for German case solutions, use Gutachtenstil. Where the supplied materials present a question as settled by controlling high-court case law, follow that current case-law path. Cite the provisions you rely on precisely.

@@ -256,6 +256,23 @@ outputs/
 /runs/rubric-draft-batches/
 /runs/rubric-validations/
 /runs/studies/
+/runs/_slurm/
+
+# Run artefacts: commit the audit trail, not the machinery around it.
+# Measured on the de-core-45 study: runs/ held 533k files and 22 GB, of which
+# 502k files and 21 GB were jail_home alone — OpenCode reinstalls its plugin
+# node_modules (effect, zod, yaml) into $HOME on EVERY task, so 270 task runs
+# left 270 copies of the same tree. None of it says anything about a result.
+/runs/**/jail_home/
+/runs/**/attempts/
+/runs/**/vote-cache/
+/runs/**/work/
+/runs/**/input/
+/runs/**/workspace.tar.gz
+
+# scores.json is written twice, byte-identical: once beside the submission and
+# once at task level. Keep the task-level copy, which sits next to metadata.json.
+/runs/**/submission/scores.json
 /tmp/
 
 # Experimental rubric variants. Force-add only an explicitly frozen final rubric.

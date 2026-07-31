@@ -7,7 +7,10 @@ calibrated canonical rubric at `evals/rubric.json`.
 The study compares two conditions using the same underlying model:
 
 1. `baseline`: one model call, no tools;
-2. `agent`: OpenCode in an isolated per-task Docker workspace.
+2. `agent`: OpenCode in an isolated per-task workspace — Docker on
+   workstations, a bwrap jail on cluster nodes (compute nodes have no Docker
+   daemon). Both enforce the same boundary; `manifest.json` records which
+   profile ran.
 
 The solver receives only `task.json` and `documents/`. Gold solutions and
 rubrics remain outside the solver workspace. Runs are written below `runs/`
@@ -18,7 +21,9 @@ and are not version-controlled.
 - Taskset: `studies/de-core-45/taskset.jsonl`
 - Cases: 45
 - Rubric commit: `2a31e750f4d43ecbce74860de9666ab70abe0c74`
-- Shared system prompt: `prompts/harness/study_system_prompt.txt`
+- Solver prompts: `prompts/harness/solve_task_baseline.txt` (baseline),
+  `prompts/harness/solve_task.txt` (agent),
+  `prompts/harness/study_system_prompt.txt` (manual workbench condition only)
 - Final judge committee: `configs/judge-committee-professor-pilot.json`
 - Content and legal style remain separate Boolean outcomes.
 
@@ -65,9 +70,25 @@ contention and make failures easier to resume.
   --run-name agent-<model-name> \
   --model <opencode-provider/model> \
   --variant <variant> \
-  --sandbox docker \
+  --sandbox bwrap \
   --parallel 1
 ```
+
+## Run an arm as a Slurm job
+
+On the cluster, submit each arm instead of running it on the login node. The
+first argument selects the runner; everything after it is forwarded verbatim:
+
+```bash
+sbatch --job-name=lab-eu-agent-45 --time=24:00:00 scripts/run_study.sbatch agent \
+  --taskset studies/de-core-45/taskset.jsonl \
+  --run-name agent-<model-name> \
+  --model <opencode-provider/model> --variant <variant> --parallel 1
+```
+
+The agent arm defaults to `--sandbox bwrap` there. Neither runner resumes a
+partial run, so allow more wall time than you expect to need. Job logs land in
+`runs/_slurm/`.
 
 Each invocation creates a new immutable run directory. Do not expose `evals/`
 to the solver and do not reuse answers between the baseline and agent arms.

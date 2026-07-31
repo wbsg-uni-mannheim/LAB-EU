@@ -1,0 +1,8 @@
+{"action": "read", "event_type": "tool_use", "index": 2, "jsonl_line": 2, "lines": {"end": 3, "start": 1}, "paths": ["/work/documents/sachverhalt.md"], "tool": "read"}
+{"action": "list", "event_type": "tool_use", "index": 3, "jsonl_line": 3, "paths": ["/work"], "pattern": "**/*", "tool": "glob"}
+{"action": "read", "event_type": "tool_use", "index": 6, "jsonl_line": 6, "lines": {"end": 3, "start": 2}, "paths": ["/work/documents/sachverhalt.md"], "tool": "read"}
+{"action": "read", "event_type": "tool_use", "index": 7, "jsonl_line": 7, "lines": {"end": 23, "start": 1}, "paths": ["/work/task.json"], "tool": "read"}
+{"action": "shell", "command": "wc -l /work/documents/sachverhalt.md && wc -c /work/documents/sachverhalt.md", "event_type": "tool_use", "index": 10, "jsonl_line": 10, "paths": ["/work/documents/sachverhalt.md"], "tool": "bash"}
+{"action": "read", "command": "cat /work/documents/sachverhalt.md", "event_type": "tool_use", "index": 13, "jsonl_line": 13, "paths": ["/work/documents/sachverhalt.md"], "tool": "bash"}
+{"action": "write", "event_type": "tool_use", "index": 16, "jsonl_line": 16, "paths": ["/work/fallloesung.md"], "tool": "write"}
+{"action": "list", "command": "ls -la /work/fallloesung.md", "event_type": "tool_use", "index": 20, "jsonl_line": 20, "paths": ["/work/fallloesung.md"], "tool": "bash"}

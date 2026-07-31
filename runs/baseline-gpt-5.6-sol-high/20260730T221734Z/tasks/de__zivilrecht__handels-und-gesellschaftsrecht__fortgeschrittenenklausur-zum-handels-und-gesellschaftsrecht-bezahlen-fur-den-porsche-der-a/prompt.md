@@ -1,0 +1,30 @@
+You are solving one LAB-EU legal benchmark task in a single response.
+
+Current date: 2026-07-31
+
+You may use only the material below. Do not use external legal sources or search.
+
+Task id:
+de/zivilrecht/handels-und-gesellschaftsrecht/fortgeschrittenenklausur-zum-handels-und-gesellschaftsrecht-bezahlen-fur-den-porsche-der-a
+
+Task title:
+Fortgeschrittenenklausur zum Handels- und Gesellschaftsrecht: „Bezahlen für den Porsche der anderen?“
+
+Work type:
+draft
+
+Task instructions:
+Bearbeiten Sie den Fall gutachterlich. Erstellen Sie eine vollständige Falllösung auf Grundlage des Sachverhalts in documents/sachverhalt.md.
+
+Documents:
+
+### documents/sachverhalt.md
+
+# Sachverhalt
+
+Sachverhalt A, B und C sind die einzigen Gesellschafter der ABC-OHG (ABC). Die ABC handelt mit seltenen und hochwertigen Automobilen. Gesellschafter B beschließt eines Tages, den Autohandel hinter sich zu lassen, um sich den Rest seines Lebens ganz seiner Leidenschaft für die Bienenzucht zu widmen. Er scheidet am 12.10.2024 aus der ABC aus; eine Eintragung seines Ausscheidens im Handelsregister erfolgt nicht. W, ehemaliger Rennfahrer, ist ebenfalls Inhaber eines Autohandels, den er unter der Firma W e.K. betreibt. Seinem Mitarbeiter X hat er gestattet, Geschäfte mit „ppa.“ zu zeichnen, ihn gleichzeitig jedoch angehalten, nicht eigenmächtig Autos für einen Kaufpreis über 100.000 € anzukaufen; Eintragungen in Bezug auf diese Gestattung in das Handelsregister erfolgen nicht. Am 20.2.2025 erwirbt X im Namen des W e.K., aber ohne Rücksprache mit ihm, von Sammler V einen gepflegten Porsche 365 (Marktwert: 150.000 €) für 105.000 €; Übereignung, Übergabe und Bezahlung sollen in vier Wochen erfolgen. W aber weigert sich, den Vertrag mit V anzuerkennen, zumal er seinen Autohandelsbetrieb bereits per Unternehmenskaufvertrag vom 10.2.2025 an die ABC verkauft hat und die ABC nach dem Vertrag nicht für Altverbindlichkeiten des W haftet. Die Übertragung des Unternehmens und die Zahlung des Kaufpreises finden am 1.3.2025 statt. In der Hoffnung, vom weit bekannten Namen des W zu profitieren, führt die ABC den Autohandel des W unter der Firma „ABC-OHG, Nachfolge W e.K.“ fort. Inhaberwechsel und Firmenänderung werden am 10.3.2025 im Handelsregister eingetragen und bekanntgemacht; der Haftungsausschluss für Altverbindlichkeiten findet keine Erwähnung. Mit dem Unternehmenskauf hat sich die ABC finanziell übernommen. A und C stehen zudem auch persönlich finanziell nicht gut da; der Aufenthaltsort von W ist unbekannt. V, der seinen Kaufpreis für den Porsche noch nicht erhalten hat, wendet sich daher an B, den er im Handelsregister noch als Mitgesellschafter von A und C ausgemacht hat. V ist der Meinung, die ABC habe durch die Übertragung des Autohandels die Verbindlichkeiten des W übernommen und B müsse für die Schulden der Gesellschaft haften. B entgegnet, die Haftung der ABC für Altverbindlichkeiten des W sei im Unternehmenskaufvertrag ausdrücklich ausgeschlossen worden. Außerdem sei er längst nicht mehr Gesellschafter der ABC. Fallfrage Kann V von B Zahlung des Kaufpreises für den Porsche i.H.v. 105.000 € verlangen?
+
+
+Write the complete deliverable now, as Markdown. Your entire response will be saved verbatim as the file "fallloesung.md" and evaluated as the final legal work product. Do not include any preamble, meta commentary about your approach, or closing remarks - only the document itself.
+
+Write in the same language as the task instructions and documents, unless the instructions require a different language. The deliverable must be a complete, self-contained legal document. Use the legal reasoning style required by the task; for German case solutions, use Gutachtenstil. Where the supplied materials present a question as settled by controlling high-court case law, follow that current case-law path. Cite the provisions you rely on precisely.
