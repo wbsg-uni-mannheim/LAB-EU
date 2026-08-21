@@ -13,6 +13,9 @@ Die Aufgabenmetadaten bezeichnen den Lizenzstatus derzeit als
 unverändert übernommen. Die Aufnahme in die Forschungs- und Reviewpakete ersetzt
 keine abschließende Klärung der Nutzungsrechte.
 
-Die 15 für die 60er-Vorauswahl vorgesehenen Fälle stehen zusätzlich in
-`tasksets/de-urhg-core-15.jsonl`; die vollständige kombinierte Auswahl steht in
-`tasksets/de-core-60.jsonl`.
+Zwölf der importierten Fälle werden in der korrigierten Zweitexamensauswahl verwendet.
+Diese steht zusammen mit drei ZJS-Referendarexamensklausuren in
+`tasksets/de-second-exam-15.jsonl`; die vollständige kombinierte Auswahl steht in
+`tasksets/de-core-60.jsonl`. `tasksets/de-urhg-core-15.jsonl` bleibt aus Gründen der
+Abwärtskompatibilität als Alias derselben aktiven 15er-Auswahl erhalten, obwohl drei
+Einträge nicht aus `LAB-DE-UrhG-60d` stammen.

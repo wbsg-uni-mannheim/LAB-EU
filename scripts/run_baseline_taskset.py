@@ -37,10 +37,13 @@ from run_opencode_taskset import (  # noqa: E402
     safe_task_id,
 )
 from baseline_prompt import (  # noqa: E402
+    MULTI_PROMPT_TEMPLATE,
     PROMPT_TEMPLATE,
     render_documents,
+    render_multi_prompt as render_baseline_multi_prompt,
     render_prompt as render_baseline_prompt,
     sha256_text,
+    split_multi_response,
     strip_outer_fence,
 )
 
@@ -110,11 +113,21 @@ def api_key_env_for(api_base: str) -> str:
 
 
 def render_prompt(row: dict[str, Any], documents: str) -> str:
-    prompt, _truncated = render_baseline_prompt(
+    # Single-deliverable tasks keep the original template byte-for-byte; the
+    # multi template is only used where the task requires several work products.
+    if len(row["deliverables"]) == 1:
+        prompt, _truncated = render_baseline_prompt(
+            task_id=row["task_id"],
+            task=row["task"],
+            task_dir=row["task_dir"],
+            deliverable=row["deliverables"][0],
+        )
+        return prompt
+    prompt, _truncated = render_baseline_multi_prompt(
         task_id=row["task_id"],
         task=row["task"],
         task_dir=row["task_dir"],
-        deliverable=row["deliverables"][0],
+        deliverables=row["deliverables"],
     )
     return prompt
 
@@ -130,6 +143,31 @@ def usage_summary(response: Any) -> dict[str, Any]:
     }
 
 
+def collect_stream(stream: Any) -> tuple[str, dict[str, Any]]:
+    """Drain a streamed completion into (text, usage).
+
+    Usage arrives in the final chunk when stream_options.include_usage is set;
+    an endpoint that omits it simply yields an empty usage dict.
+    """
+    chunks: list[str] = []
+    usage: dict[str, Any] = {}
+    for event in stream:
+        choices = getattr(event, "choices", None)
+        if choices:
+            delta = getattr(choices[0], "delta", None)
+            piece = getattr(delta, "content", None) if delta else None
+            if piece:
+                chunks.append(piece)
+        event_usage = getattr(event, "usage", None)
+        if event_usage is not None:
+            usage = {
+                "input_tokens": getattr(event_usage, "prompt_tokens", None),
+                "output_tokens": getattr(event_usage, "completion_tokens", None),
+                "total_tokens": getattr(event_usage, "total_tokens", None),
+            }
+    return "".join(chunks), usage
+
+
 def call_model(client: OpenAI, args: argparse.Namespace, prompt: str,
                task_id: str = "") -> tuple[str, dict[str, Any], int]:
     """One baseline call, retried on infrastructure failures only.
@@ -138,9 +176,15 @@ def call_model(client: OpenAI, args: argparse.Namespace, prompt: str,
     failures are repeated with backoff, a rejected key or an unknown model
     fails immediately instead of burning every attempt.
     """
+    # Streamed: a reasoning model can think for minutes before the first token,
+    # and a non-streamed request of that length dies in the silence (verified on
+    # gpt-5.6-sol with a Second-State-Exam prompt: non-streamed timed out after
+    # 30 min, streamed finished in 6 min with the first token after 238 s).
     request: dict[str, Any] = {
         "model": args.model,
         "messages": [{"role": "user", "content": prompt}],
+        "stream": True,
+        "stream_options": {"include_usage": True},
     }
     if args.reasoning_effort.lower() != "none":
         request["reasoning_effort"] = args.reasoning_effort
@@ -151,7 +195,7 @@ def call_model(client: OpenAI, args: argparse.Namespace, prompt: str,
     last_error: Exception | None = None
     for attempt in range(1, max_attempts + 1):
         try:
-            response = client.chat.completions.create(**request)
+            response = collect_stream(client.chat.completions.create(**request))
         except OpenAIError as exc:
             # Older OpenAI-compatible endpoints only accept max_tokens. A
             # request-shape fix, not an outage: repeat it straight away.
@@ -167,9 +211,9 @@ def call_model(client: OpenAI, args: argparse.Namespace, prompt: str,
             if outcome == retry_util.FATAL:
                 raise RuntimeError(f"Model call rejected, not retrying: {reason}: {exc}") from exc
         else:
-            text = (response.choices[0].message.content or "") if response.choices else ""
+            text, stream_usage = response
             if text.strip():
-                return text, usage_summary(response), attempt
+                return text, stream_usage, attempt
             # An empty completion is a truncated or dropped generation, not an
             # answer — treat it like any other upstream failure.
             last_error = RuntimeError("Model returned an empty response.")
@@ -198,11 +242,6 @@ def run_one_task(args: argparse.Namespace, client: OpenAI, row: dict[str, Any], 
     deliverable_results: list[dict[str, Any]] = []
 
     try:
-        if len(row["deliverables"]) != 1:
-            raise RuntimeError(
-                "Baseline harness supports exactly one deliverable per task; "
-                f"got {row['deliverables']!r}."
-            )
         documents, documents_truncated = render_documents(row["task_dir"])
         prompt = render_prompt(row, documents)
         (task_run_dir / "prompt.md").write_text(prompt, encoding="utf-8")
@@ -210,19 +249,27 @@ def run_one_task(args: argparse.Namespace, client: OpenAI, row: dict[str, Any], 
         response_text, usage, attempts = call_model(client, args, prompt, row["task_id"])
         (task_run_dir / "response.md").write_text(response_text, encoding="utf-8")
 
-        deliverable_text, fence_stripped = strip_outer_fence(response_text)
-        deliverable_name = row["deliverables"][0]
-        deliverable_path = submission_dir / deliverable_name
-        deliverable_path.parent.mkdir(parents=True, exist_ok=True)
-        deliverable_path.write_text(deliverable_text, encoding="utf-8")
-        deliverable_results.append(
-            {
-                "path": deliverable_name,
-                "found": True,
-                "bytes": len(deliverable_text.encode("utf-8")),
-                "sha256": sha256_text(deliverable_text),
-            }
-        )
+        if len(row["deliverables"]) == 1:
+            deliverable_text, fence_stripped = strip_outer_fence(response_text)
+            texts = {row["deliverables"][0]: deliverable_text}
+        else:
+            texts = split_multi_response(response_text, row["deliverables"])
+        for name in row["deliverables"]:
+            text = texts.get(name)
+            if text is None:
+                deliverable_results.append({"path": name, "found": False})
+                continue
+            deliverable_path = submission_dir / name
+            deliverable_path.parent.mkdir(parents=True, exist_ok=True)
+            deliverable_path.write_text(text, encoding="utf-8")
+            deliverable_results.append(
+                {
+                    "path": name,
+                    "found": True,
+                    "bytes": len(text.encode("utf-8")),
+                    "sha256": sha256_text(text),
+                }
+            )
     except Exception as exc:  # noqa: BLE001 - record the failure, keep the run going
         error = str(exc)
         deliverable_results = [
@@ -281,6 +328,8 @@ def main() -> int:
     rows = load_taskset(args.taskset)
     if not PROMPT_TEMPLATE.exists():
         raise SystemExit(f"Missing prompt template: {PROMPT_TEMPLATE}")
+    if not MULTI_PROMPT_TEMPLATE.exists():
+        raise SystemExit(f"Missing prompt template: {MULTI_PROMPT_TEMPLATE}")
 
     key_env = api_key_env_for(args.api_base)
 

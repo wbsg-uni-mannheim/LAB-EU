@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1",
+  "description": "Solver-Judging ab 2026-08-13: Luna und DeepSeek sind die Primaerjudges, Gemini entscheidet nur den echten binaeren Dissens (--committee-tiebreaker). Das Ergebnis ist identisch zur Mehrheit aus drei vollen Stimmen - stimmen die beiden Primaerjudges ueberein, koennte die dritte Stimme die Mehrheit ohnehin nicht kippen -, kostet aber nur rund ein Zehntel des Gemini-Anteils (gemessen auf Koehl: 0,136 statt 1,025 USD pro Fall). Drei Modellfamilien (OpenAI/DeepSeek/Google), keine stellt die Mehrheit.",
+  "judges": [
+    {
+      "name": "luna",
+      "model": "gpt-5.6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4-flash",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "none",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.6-flash",
+      "model": "google/gemini-3.6-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "none",
+      "parallel": 4
+    }
+  ]
+}

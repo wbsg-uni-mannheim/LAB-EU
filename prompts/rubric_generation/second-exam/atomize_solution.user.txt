@@ -1,0 +1,52 @@
+Read the task bundle below. Extract answer-key atoms for a later Boolean LLM-judge rubric.
+
+Rules:
+- Infer the output language from the case and solution.
+- The atom statements, materiality explanations, equivalents, and alternatives must be in that same language.
+- Each atom must be exactly one legal proposition that is independently checkable in an agent answer. Do not bundle several requirements into one atom.
+- Cover the material structure of the solution without forcing it into predefined categories.
+- Include issues, rules, facts, application/subsumption, conclusions, source grounding, form requirements, counterarguments, and important exclusions only where the task and solution make them material.
+- Name the legal basis verbatim in legal_basis where the atom rests on specific provisions (for example "§ 42 Abs. 2 VwGO"). Leave the list empty if none applies.
+- Set expectation to "core" if every acceptable answer must contain the point. Set it to "bonus" if the solution itself marks the point as not expected or as optional depth, for example in a Lösungshinweis, a footnote-only discussion, or wording like "Kenntnis kann nicht erwartet werden".
+- Legal solutions often flag defensible alternative positions ("a.A. vertretbar", "andere Ansicht", Lösungshinweise, Aufbauhinweise). Record each such alternative in defensible_alternatives on the affected atom: state the alternative position and what a good answer must still contain when taking it. Do not treat these alternatives as errors. Record only alternatives expressly accepted by the supplied solution; never add a possible literature position from your own knowledge.
+- Do not turn every theory, definition variant, or literature view mentioned by the solution into a cumulative requirement. If the solution uses competing approaches as alternatives, record the chosen reference path and only those alternatives the solution expressly accepts. A criterion must never require an answer to present every available theory unless the solution makes that comparison material.
+- If the solution notes that a point may be examined at a different place in the document structure (for example an Aufbauhinweis allowing a point in either admissibility or merits), record that in placement_flexible so later criteria do not require one specific location.
+- Keep person and examination-station scope explicit. If the same legal issue is examined for several people, claims, administrative acts, offences, or procedural stages, create separate atoms whenever the required reasoning or result differs. Do not let a proposition about one object silently stand for another.
+- Distinguish a legal examination from its result. When the solution supplies a rule, application, or argument, the atom must describe that legal work rather than only the resulting conclusion.
+- Prefer legally significant facts over incidental precision. Do not make exact distances, seconds, dates, amounts, or quotations independently mandatory unless the task or solution makes that precision material to the legal conclusion.
+- Flag apparent gaps, internal contradictions, or passages that state a conclusion without the supporting legal step in solution_gaps_or_warnings. Do not silently convert a gap in the supplied solution into a mandatory criterion.
+- Produce as many atoms as are needed to support a faithful rubric for this case. Do not atomize every sentence of the solution.
+- Keep source_refs and solution_refs short; use filenames or section names, not long quotations.
+- If the human solution is incomplete, truncated, or internally uncertain, record that in solution_gaps_or_warnings.
+
+Multi-document work products (Zweites Staatsexamen):
+- The solution consists of several work products; deliverable_profiles in the payload records the frozen document type of every deliverable file. Record for every atom which deliverable files may legitimately contain the point in deliverable_locations, using the filenames from task.json.
+- If the task or solution allows a point in the main document OR the Hilfsgutachten (the Hilfsgutachten order is usually conditional: "soweit ... nicht erforderlich erscheint"), list every permitted file in deliverable_locations and set placement_flexible to true. Never force a single location the task does not force.
+- The same legal proposition treated in several documents is ONE atom with several deliverable_locations, not several atoms.
+- Create separate atoms only for genuinely independent per-document performances on the same topic: a formally correct Antrag in a Schriftsatz, an addressee-appropriate explanation in a Mandanten- or Behördenschreiben, a correct Tenor in a gerichtliche Entscheidung. Name the document-specific performance in the statement, restricted to that document.
+- Components the task expressly waives ("erlassen", for example Rubrum, Tatbestand, Kostenentscheidung, Rechtsmittelbelehrung, Sachverhaltsdarstellung) must not become atoms.
+- Where the solution shows party- or role-oriented procedural strategy (prozessuale Zweckmäßigkeit: choice of the correct Rechtsbehelf with reasons, Antragsfassung, what is argued in the Schriftsatz versus relegated to the Hilfsgutachten), that is material legal work; atomize it like substantive law.
+- Distinguish substantive correctness from document form and style; an atom is one or the other, never both.
+
+Return only valid JSON:
+{
+  "language": "...",
+  "jurisdiction": "...",
+  "reasoning_style": "...",
+  "atoms": [
+    {
+      "id": "A-001",
+      "statement": "...",
+      "why_material": "...",
+      "expectation": "core",
+      "legal_basis": ["..."],
+      "source_refs": ["..."],
+      "solution_refs": ["..."],
+      "deliverable_locations": ["..."],
+      "acceptable_equivalents": ["..."],
+      "defensible_alternatives": ["..."],
+      "placement_flexible": false
+    }
+  ],
+  "solution_gaps_or_warnings": ["..."]
+}

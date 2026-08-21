@@ -73,6 +73,34 @@ generator model at `medium`), `--calibration-committee` (one vote per configured
 model, recommended), `--calibration-votes`, `--max-calibration-rounds`,
 `--skip-calibration`, `--parallel` (judge calls, default 4).
 
+### Prompt sets (Zweites Staatsexamen)
+
+`--prompt-set second-exam` switches to the prompt-set directory
+`prompts/rubric_generation/second-exam/`. Templates found there override the
+base prompts; missing files fall back to the base set, so a set contains only
+the files that actually differ. The base prompts stay untouched, which keeps
+the step caches of already frozen rubrics valid.
+
+The second-exam set changes the pipeline for multi-document exam tasks:
+
+1. A new first step `classify_deliverables` derives the document type of every
+   deliverable file (`gutachten`, `gerichtliche_entscheidung`,
+   `anwaltlicher_schriftsatz`, `mandanten_oder_behoerdenschreiben`) once from
+   the Aufgabenstellung/Bearbeitervermerk and freezes it into the rubric
+   artifact as `deliverable_profiles`. The run aborts if the map does not cover
+   every deliverable exactly once with a valid type.
+2. Atomize/candidates/prune extract criteria per solution document and then
+   deduplicate across the case: one content criterion per legal proposition,
+   with the criterion's `deliverables` list as an OR-list of permitted files;
+   separate criteria only for genuinely independent per-document performances
+   (Antrag, Tenor, adressatengerechte Erklärung); exactly one completeness
+   criterion per deliverable file.
+3. Calibration is location-restricted: each criterion is judged only against
+   the gold-solution files named in its `deliverables` list (mirroring
+   `evaluation.run.load_agent_output`), so evidence from a non-permitted
+   document cannot pass calibration. The base pipeline without profiles keeps
+   judging against the full concatenated solution.
+
 Solution and document files are truncated only above generous size limits; if a
 solution is truncated anyway, the script warns loudly because the rubric would
 be built from partial ground truth.
@@ -152,8 +180,14 @@ Cost notes:
   come last; on the synchronous path OpenAI prompt caching then bills most of
   each call's input at the cached rate. The same idea applies to the three
   candidate-role calls, which share the full task payload as prefix.
-- Watch `cached=` in the per-call `tokens[...]` log lines and
-  `cached_input_tokens` in usage summaries to verify caching is working.
+- Synchronous GPT-5.6 judge calls use explicit prompt caching. The first
+  Responses content block ends after the task and complete agent answer and
+  carries an explicit breakpoint; source documents and the individual
+  criterion are placed in the following variable block. The existing stable
+  answer/judge cache key is deterministically partitioned into groups of four
+  criteria to stay below per-key burst limits.
+- Watch `cached_input_tokens` and `cache_write_tokens` in usage summaries to
+  distinguish discounted reads from billable cache writes.
 
 To re-check an already-frozen rubric by hand (for example after editing
 criteria), score the gold solution against it:
@@ -250,6 +284,27 @@ two-request design.
   or the legacy `separate` calls. Shared-request token usage is counted exactly once under
   content; `judge_usage_total` remains the complete billable total.
 
+#### Document-type style routing (Zweites Staatsexamen)
+
+Second-exam rubrics freeze a document-type map in `rubric.json` as
+`deliverable_profiles` (written by `generate_rubric.py --prompt-set second-exam`).
+When that map is present, the combined content+style call routes the style
+standard by document type instead of always testing Gutachtenstil: the prompt
+template `prompts/evaluation/combined_content_style_criterion.second_exam.txt`
+receives the per-file standards from `prompts/evaluation/style_profiles/`
+(`gutachten`, `gerichtliche_entscheidung`, `anwaltlicher_schriftsatz`,
+`mandanten_oder_behoerdenschreiben`). A criterion restricted to one file gets
+that file's standard; a criterion with several permitted files of different
+types gets every applicable standard plus the instruction to apply the standard
+of the file that contains the decisive evidence (the `## <filename>` section
+headers in the assembled answer identify it). Nothing is derived at judge time -
+the evaluation only reads the frozen map.
+
+Rubrics without `deliverable_profiles` render byte-identical prompts to the
+previous behaviour, so existing vote caches stay valid. The legacy
+`--separate-style-calls` path renders only the fixed Gutachtenstil template and
+therefore refuses to run when the frozen profiles demand another standard.
+
 Errored votes are einmal gezielt nachgeholt. Bleibt ein Fehler bestehen, wird das
 Kriterium konservativ als `fail` mit `resolution: "unresolved"` ausgewiesen. Ein
 vollständiges 2:1 löst standardmäßig einen unabhängigen zweiten Komiteelauf nur für
@@ -259,6 +314,21 @@ dieses Kriterium aus: Bleibt die Mehrheitsrichtung gleich, lautet der Status
 sich dieses Verhalten für Diagnosen abschalten. `content_score.n_unresolved` und
 `style_score.n_unresolved` verhindern, dass technische oder instabile Entscheidungen
 als reguläre Passes erscheinen.
+
+Für die Hauptauswertung mit einfachem Tiebreaker stehen Luna und Terra zuerst in der
+Committee-Datei; Haiku wird nur bei einem 1:1 der beiden Primärstimmen aufgerufen:
+
+```bash
+env/bin/python scripts/judge_run.py <run-dir> \
+  --judge-committee configs/judge-committee-luna-terra-haiku-tiebreaker.json \
+  --committee-tiebreaker \
+  --style-evaluation
+```
+
+Ein gültiges 2:1 ist in diesem Modus unmittelbar `resolved` und wird nicht erneut auf
+Stabilität geprüft. Stimmen Luna und Terra bereits überein, bleibt Haiku für dieses
+Kriterium unaufgerufen. Technische Fehler bleiben weiterhin `unresolved`; die frühere
+Zwei-Runden-Stabilitätslogik bleibt ohne `--committee-tiebreaker` separat verfügbar.
 
 Professor review labels under `tests/fixtures/` are external evaluation data. Never pass
 those files to `generate_rubric.py`. Generate rubrics only from the task, source
@@ -535,3 +605,32 @@ One invocation processes the whole taskset (`--parallel N` for concurrent
 tasks). Add `--judge` to score all submissions immediately after the run in
 the same command (`--judge-model`, `--judge-votes`; judging needs
 `OPENAI_API_KEY`).
+
+## Run Codex CLI as a solver harness (single- and multi-file tasks)
+
+`run_codex_taskset.py` runs each task in a fresh, ephemeral Codex CLI session
+inside an OS temporary workspace that contains only the anonymized `task.json`
+and `documents/`. Tasks may declare one or several `deliverables`
+(Zweites Staatsexamen: e.g. Schriftsatz + Mandantenschreiben + Hilfsgutachten):
+
+- Single-file tasks keep the original prompt template byte-for-byte, including
+  the final-response fallback when the file write fails.
+- Multi-file tasks use `prompts/harness/solve_task_codex_web_multi.txt`: every
+  listed file is mandatory, the files are the durable result, the final
+  response is only a completion report (no fallback - one message cannot be
+  split into several documents), and the style guidance is per work product
+  (Urteilsstil, Schriftsatzstil, adressatengerechte Beratung, Gutachtenstil)
+  instead of a blanket Gutachtenstil instruction.
+- The submission is a directory with one file per deliverable.
+  `metadata.json` records `expected_deliverables`, `actual_deliverables`
+  (with hashes), `missing_deliverables`, and `unexpected_files` - files Codex
+  created beyond task input and deliverables, so a deliverable saved under a
+  wrong name stays traceable instead of just counting as missing.
+- A clean exit with missing deliverables is a solver failure and is NOT
+  retried (best-of-N guard); infrastructure failures retry as before.
+- `judge_run.py` passes the submission directory to `evaluation.run`, which
+  assembles per-criterion inputs from each criterion's `deliverables` OR-list.
+
+The offline smoke test for complete and deliberately incomplete multi-file
+submissions is `tests/test_multifile_submission_smoke.py`; the full end-to-end
+smoke including judge calls runs against the pilot rubrics once they exist.

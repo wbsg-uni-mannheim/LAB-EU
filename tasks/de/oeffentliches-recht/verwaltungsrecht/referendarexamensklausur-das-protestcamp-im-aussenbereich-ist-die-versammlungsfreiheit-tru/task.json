@@ -6,8 +6,10 @@
     "oeffentliches_recht",
     "ZJS_2015_6_S593"
   ],
-  "instructions": "Bearbeiten Sie den Fall gutachterlich. Erstellen Sie eine vollständige Falllösung auf Grundlage des Sachverhalts in documents/sachverhalt.md.",
-  "deliverables": "fallloesung.md",
+  "instructions": "Bearbeiten Sie den Fall gutachterlich. Erstellen Sie eine vollständige Falllösung auf Grundlage des Sachverhalts in documents/sachverhalt.md. Maßgeblich ist der Rechtsstand des Jahres 2015; alle Vorschriften, insbesondere das Landesrecht Baden-Württembergs (LBO, PolG), sind in der im Jahr 2015 geltenden Fassung anzuwenden. Spätere Gesetzesänderungen bleiben außer Betracht.",
+  "deliverables": [
+    "fallloesung-sut.md"
+  ],
   "source": {
     "dataset": "BenGER",
     "subset": "ZJS",
@@ -17,7 +19,10 @@
     "autoren": "Von Wiss. Mitarbeiter Benjamin Nußberger, Köln, Ref. iur. Jochen Rauber, Mannheim",
     "ip_cleared": true,
     "huggingface": "https://huggingface.co/datasets/SebastianNagl/benger",
-    "citation_file": "/Users/aaronsteiner/Downloads/benger-v1.0/CITATION.cff"
+    "citation_file": "tasks/de/provenance/zjs/CITATION.cff"
   },
-  "license": "Adapted from the BenGER benchmark dataset, ZJS subset, licensed under Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/. Source dataset: https://huggingface.co/datasets/SebastianNagl/benger. Original ZJS provenance: Von Wiss. Mitarbeiter Benjamin Nußberger, Köln, Ref. iur. Jochen Rauber, Mannheim, Referendarexamensklausur: Das Protestcamp im Außenbereich – Ist die Versammlungsfreiheit Trumpf?, ZJS_2015_6_S593. The source record is marked ip_cleared=true. Changes were made to convert the case to the LAB-EU task format."
+  "license": "Adapted from the BenGER benchmark dataset, ZJS subset, licensed under Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/. Source dataset: https://huggingface.co/datasets/SebastianNagl/benger. Original ZJS provenance: Von Wiss. Mitarbeiter Benjamin Nußberger, Köln, Ref. iur. Jochen Rauber, Mannheim, Referendarexamensklausur: Das Protestcamp im Außenbereich – Ist die Versammlungsfreiheit Trumpf?, ZJS_2015_6_S593. The source record is marked ip_cleared=true. Changes were made to convert the case to the LAB-EU task format.",
+  "metadata": {
+    "rechtsstand_hinweis": "Rechtsstand-Fixierung am 2026-08-13 gemäß Rechtsstandsregel des Plans ergänzt: Die Musterlösung (ZJS 2015, 593) ist auf dem Stand 2015 (LBO/PolG BW alte Fassung, Bundes-VersG über Art. 125a Abs. 1 GG); LBO- und PolG-Novellen seit 2015 sind nicht verarbeitet. Deliverable am selben Tag von 'fallloesung.md' (String) auf ['fallloesung-sut.md'] normalisiert, Golddatei evals/loesung.md entsprechend umbenannt."
+  }
 }

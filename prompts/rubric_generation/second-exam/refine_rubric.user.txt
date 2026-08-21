@@ -1,0 +1,44 @@
+Repair the criteria listed in calibration_failures. Each entry contains the criterion and the judge votes (verdict, reasoning, evidence quotes) from testing the criterion against the gold solution included in the bundle.
+
+Rules:
+- Treat express task instructions, Bearbeitervermerke, assumptions, and examination exclusions as binding. If the gold solution discusses an expressly excluded issue, ignore that discussion for scoring. Preserve a correct scope-compliance criterion or drop an unsupported content criterion; never rewrite it to require the excluded examination.
+- Diagnose first. From the judge feedback, decide why the gold solution did not clearly pass: the requirement is absent from the solution, the criterion bundles several requirements, the criterion lacks facts or context the judge needs, the wording is ambiguous, or the wording is over-specific to one formulation.
+- During calibration each criterion was judged only against the gold-solution files named in its "deliverables" list. If the gold solution satisfies the point in a file the criterion does not list AND the task permits that location, add exactly that file to "deliverables". If the task does not permit that location, the criterion tests the wrong location claim; fix or drop the criterion, never the location rule.
+- Never widen or narrow a criterion's "deliverables" list beyond the locations the task itself permits.
+- Rewrite each repairable criterion so that the gold solution clearly passes AND a materially wrong or incomplete answer still fails. Keep each criterion atomic, self-contained, and Boolean, with explicit labels in the case language (for German "ERFÜLLT, wenn ... NICHT ERFÜLLT, wenn ...").
+- If a criterion bundles several independently checkable requirements, split it. Return the parts as separate criteria with ids "<old-id>-S1", "<old-id>-S2", and so on.
+- Never weaken a criterion into a vacuous check that any answer merely mentioning the topic would pass. If the only way to make the gold solution pass is vacuous, drop the criterion instead.
+- Preserve the correct legal object when repairing a criterion: evidence about another person/participant, claim, administrative act, subject matter, offence, or examination issue must not pass it. A different location is acceptable only when the answer's own structure still makes the same object unambiguous.
+- Preserve the examination station when the same proposition may appear elsewhere for a different legal purpose. Do not repair a failed criterion by allowing evidence from a different offence, claim, person, or statutory stage.
+- Preserve the separation of substantive content, document form/method, and file completeness; never convert a criterion from one category into another during repair.
+- If the criterion requires an examination, application, or argument, do not let a bare mention, heading, or conclusion pass. For a result-determinative fork, retain the controlling legal reason. Do not accept reasoning that depends on a material fact absent from or contradicted by the supplied source documents.
+- Do not infer missing reasoning from a section heading or from phrases such as "entsprechender Tatentschluss", "wie oben" or "siehe oben". A cross-reference can satisfy an application criterion only if the answer unambiguously connects the same person, object, examination station, and proposition to reasoning that is actually present elsewhere. If the gold solution itself contains only the heading or bare conclusion, drop the criterion rather than weakening it into a mention check.
+- If the criterion tests a point the gold solution does not actually contain, drop it.
+- If the criterion requires incidental numerical or verbal precision that is not legally material according to the task or solution, rewrite it around the legally relevant relationship; if no material proposition remains, drop it.
+- If the gold solution treats the point briefly at the permitted location, repair the criterion so that an equally brief statement passes; do not preserve enumerations, date calculations, or reasoning elements the gold passage itself does not contain.
+- If the criterion rejects a position the gold solution marks as defensible, rewrite the PASS side so it names the acceptable positions and what each requires.
+- Never introduce an alternative that is not expressly accepted by the supplied solution.
+- Only touch criteria listed in calibration_failures. Do not duplicate the kept criteria listed under kept_criteria_for_context.
+- Keep id (except when splitting), criticality, deliverables, sources, and derived_from_atoms. Add a short refinement_note stating what was changed and why.
+
+Return only valid JSON:
+{
+  "language": "...",
+  "refined_criteria": [
+    {
+      "id": "C-001",
+      "criticality": "must_pass",
+      "title": "...",
+      "match_criteria": "...",
+      "deliverables": ["..."],
+      "sources": ["..."],
+      "derived_from_atoms": ["A-001"],
+      "review_notes": ["..."],
+      "refinement_note": "..."
+    }
+  ],
+  "dropped_criteria": [
+    {"id": "C-999", "reason": "..."}
+  ],
+  "refinement_notes": ["..."]
+}

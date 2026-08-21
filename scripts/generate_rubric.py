@@ -34,6 +34,7 @@ DEFAULT_MAX_CALIBRATION_ROUNDS = 2
 DEFAULT_JUDGE_PARALLEL = 4
 MAX_FILE_CHARS = 120_000
 MAX_TOTAL_CHARS = 300_000
+TEXT_DOCUMENT_SUFFIXES = {".md", ".txt", ".json"}
 CANDIDATE_ROLES = [
     ("doctrine", "DOC"),
     ("fact_grounding", "FACT"),
@@ -48,8 +49,19 @@ FUNCTION_TAGS = [
     "conclusion",
     "form_citation",
 ]
+DELIVERABLE_DOC_TYPES = [
+    "gutachten",
+    "gerichtliche_entscheidung",
+    "anwaltlicher_schriftsatz",
+    "mandanten_oder_behoerdenschreiben",
+]
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 PROMPTS_DIR = REPO_ROOT / "prompts" / "rubric_generation"
+
+# Optional prompt-set override directory (see --prompt-set). Templates resolve
+# against this directory first and fall back to PROMPTS_DIR, so a set only
+# contains the files that actually differ from the base prompts.
+PROMPT_SET_DIR: pathlib.Path | None = None
 
 sys.path.insert(0, str(REPO_ROOT))
 
@@ -94,6 +106,16 @@ def parse_args() -> argparse.Namespace:
         help=(
             "Optional safe filename suffix for comparison runs, e.g. 'sol' writes "
             "evals/rubric.generated.sol.json and, with --write-final, evals/rubric.sol.json."
+        ),
+    )
+    parser.add_argument(
+        "--prompt-set",
+        default="",
+        help=(
+            "Name of a prompt-set subdirectory under prompts/rubric_generation/, "
+            "e.g. 'second-exam'. Templates found there override the base prompts; "
+            "missing files fall back to the base set. The base prompts stay untouched, "
+            "so frozen rubrics and their step caches remain reproducible."
         ),
     )
     parser.add_argument(
@@ -299,6 +321,26 @@ def collect_file_bundle(
     documents_dir = task_dir / "documents"
     if documents_dir.exists():
         for path in sorted(p for p in documents_dir.rglob("*") if p.is_file()):
+            if path.suffix.lower() not in TEXT_DOCUMENT_SUFFIXES:
+                # A binary attachment (e.g. a Lageplan image) must not be inlined
+                # as mojibake that eats the character budget, but the model has
+                # to know the attachment exists.
+                rel = path.relative_to(task_dir)
+                files.append(
+                    {
+                        "path": str(rel),
+                        "role": "document",
+                        "truncated": False,
+                        "content": (
+                            f"[Nicht-Text-Datei, Inhalt nicht eingebunden: {path.name}, "
+                            f"{path.stat().st_size} Bytes]"
+                        ),
+                    }
+                )
+                warnings.append(
+                    f"Skipped non-text document {rel}; recorded as named placeholder only."
+                )
+                continue
             add_file(path, "document")
 
     for path in solution_files:
@@ -316,9 +358,12 @@ def load_task(task_dir: pathlib.Path) -> dict[str, Any]:
 
 
 def make_client(api_base: str) -> OpenAI:
+    # Prune/refine requests on large multi-document cases can legitimately run
+    # past the SDK's default 600s read timeout (observed twice on the Köhl
+    # second-exam pilot); generator calls get a generous ceiling instead.
     if api_base == DEFAULT_API_BASE:
-        return OpenAI()
-    return OpenAI(base_url=api_base)
+        return OpenAI(timeout=3600.0)
+    return OpenAI(base_url=api_base, timeout=3600.0)
 
 
 def build_api_request(
@@ -432,8 +477,20 @@ def task_bundle_json(task_dir: pathlib.Path, task: dict[str, Any], files: list[d
     return json.dumps(bundle, ensure_ascii=False, indent=2)
 
 
+def resolve_prompt_path(name: str) -> pathlib.Path:
+    if PROMPT_SET_DIR is not None:
+        override = PROMPT_SET_DIR / name
+        if override.exists():
+            return override
+    return PROMPTS_DIR / name
+
+
+def has_prompt_template(name: str) -> bool:
+    return resolve_prompt_path(name).exists()
+
+
 def read_prompt_template(name: str) -> str:
-    path = PROMPTS_DIR / name
+    path = resolve_prompt_path(name)
     if not path.exists():
         raise SystemExit(f"Missing prompt template: {path}")
     return path.read_text(encoding="utf-8")
@@ -452,7 +509,10 @@ def build_user_payload(base_instruction: str, payload: dict[str, Any]) -> str:
     )
 
 
-def validate_criteria(criteria: list[dict[str, Any]]) -> list[str]:
+def validate_criteria(
+    criteria: list[dict[str, Any]],
+    allowed_deliverables: list[str] | None = None,
+) -> list[str]:
     errors: list[str] = []
     if not criteria:
         errors.append("Final rubric contains no criteria.")
@@ -469,7 +529,96 @@ def validate_criteria(criteria: list[dict[str, Any]]) -> list[str]:
         # after tagging, criticality is the reviewer-facing importance tier 1-3.
         if criterion.get("criticality") not in (1, 2, 3, "must_pass"):
             errors.append(f"{cid} has invalid criticality {criterion.get('criticality')!r}.")
+        if allowed_deliverables is not None:
+            unknown = [
+                str(name)
+                for name in (criterion.get("deliverables") or [])
+                if str(name) not in allowed_deliverables
+            ]
+            if unknown:
+                errors.append(
+                    f"{cid} names deliverables not declared in task.json: {', '.join(unknown)}"
+                )
     return errors
+
+
+def validate_deliverable_profiles(
+    profiles: list[dict[str, Any]],
+    task_deliverables: list[str],
+    solution_files: list[pathlib.Path],
+) -> list[str]:
+    """The frozen document-type map must cover every deliverable exactly once."""
+    errors: list[str] = []
+    solution_names = {path.name for path in solution_files}
+    profiled: list[str] = []
+    for index, profile in enumerate(profiles, start=1):
+        if not isinstance(profile, dict):
+            errors.append(f"Deliverable profile {index} must be an object.")
+            continue
+        file_name = str(profile.get("file", "")).strip()
+        doc_type = str(profile.get("doc_type", "")).strip()
+        if not file_name:
+            errors.append(f"Deliverable profile {index} is missing the file name.")
+            continue
+        profiled.append(file_name)
+        if file_name not in task_deliverables:
+            errors.append(f"Deliverable profile names unknown file: {file_name}")
+        if doc_type not in DELIVERABLE_DOC_TYPES:
+            errors.append(f"Deliverable profile {file_name} has invalid doc_type {doc_type!r}.")
+        if file_name not in solution_names:
+            errors.append(
+                f"Deliverable profile {file_name} has no matching gold solution file in evals/; "
+                "location-restricted calibration would judge against '(File not found)'."
+            )
+    duplicates = sorted({name for name in profiled if profiled.count(name) > 1})
+    if duplicates:
+        errors.append(f"Deliverable profiles repeat files: {', '.join(duplicates)}")
+    missing = sorted(set(task_deliverables) - set(profiled))
+    if missing:
+        errors.append(f"Deliverable profiles missing for: {', '.join(missing)}")
+    return errors
+
+
+def normalize_task_deliverables(task: dict[str, Any]) -> list[str]:
+    """task.json allows a single string or a list of strings (ZJS imports use the string form)."""
+    raw = task.get("deliverables") or []
+    if isinstance(raw, str):
+        raw = [raw]
+    return [str(name) for name in raw]
+
+
+def classify_task_deliverables(
+    *,
+    client: OpenAI,
+    model: str,
+    reasoning_effort: str | None,
+    task: dict[str, Any],
+    cache_dir: pathlib.Path | None,
+) -> tuple[list[dict[str, Any]], dict[str, Any]]:
+    """Derive the document type per deliverable once and freeze it in the artifact.
+
+    Runs only when the active prompt set provides classify_deliverables templates
+    (base pipeline behaviour is unchanged). The evaluation later reads the frozen
+    profile instead of re-deriving anything at judge time.
+    """
+    classify_system, classify_user_base = prompt_pair("classify_deliverables")
+    payload = {
+        "task_json": task,
+        "deliverables": normalize_task_deliverables(task),
+        "doc_type_vocabulary": DELIVERABLE_DOC_TYPES,
+    }
+    parsed, response = api_call(
+        client=client,
+        model=model,
+        system=classify_system,
+        user=build_user_payload(classify_user_base, payload),
+        required_keys={"language", "deliverable_profiles"},
+        reasoning_effort=reasoning_effort,
+        label="classify_deliverables",
+        cache_dir=cache_dir,
+    )
+    profiles = [p for p in parsed.get("deliverable_profiles", []) if isinstance(p, dict)]
+    return profiles, response
 
 
 def validate_pruning_coverage(
@@ -648,6 +797,38 @@ def solution_output_text(solution_files: list[pathlib.Path]) -> str:
     return "\n\n".join(sections)
 
 
+def solution_texts_by_name(solution_files: list[pathlib.Path]) -> dict[str, str]:
+    texts: dict[str, str] = {}
+    for path in solution_files:
+        text, _truncated = read_text(path, MAX_FILE_CHARS)
+        texts[path.name] = text
+    return texts
+
+
+def criterion_gold_output(
+    criterion: dict[str, Any],
+    texts_by_name: dict[str, str],
+    full_output: str,
+) -> str:
+    """Assemble the gold-solution text a calibration judge may see for one criterion.
+
+    Mirrors evaluation.run.load_agent_output: a criterion restricted to specific
+    deliverables is judged only against those files, so evidence from a
+    non-permitted document cannot pass calibration ("Kontext/Prüfungsort").
+    Criteria without a deliverables list see the full solution.
+    """
+    names = [str(name) for name in (criterion.get("deliverables") or [])]
+    if not names:
+        return full_output
+    sections = []
+    for name in names:
+        if name in texts_by_name:
+            sections.append(f"## {name}\n{texts_by_name[name]}")
+        else:
+            sections.append(f"## {name}\n(File not found)")
+    return "\n\n".join(sections)
+
+
 def summarize_votes(vote_results: list[dict[str, Any]]) -> dict[str, int]:
     counts = {"pass": 0, "fail": 0, "error": 0}
     for vote in vote_results:
@@ -668,7 +849,13 @@ def trimmed_vote(vote: dict[str, Any]) -> dict[str, Any]:
 
 
 def add_usage(total: dict[str, int], usage: dict[str, Any]) -> None:
-    for key in ["input_tokens", "output_tokens", "total_tokens", "cached_input_tokens"]:
+    for key in [
+        "input_tokens",
+        "output_tokens",
+        "total_tokens",
+        "cached_input_tokens",
+        "cache_write_tokens",
+    ]:
         if isinstance(usage.get(key), int):
             total[key] = total.get(key, 0) + usage[key]
 
@@ -678,7 +865,7 @@ def judge_criteria_votes(
     judges: list[tuple[JudgeSpec, OpenAI, bool]],
     task: dict[str, Any],
     task_dir: pathlib.Path,
-    solution_output: str,
+    solution_outputs: list[str],
     criteria: list[dict[str, Any]],
     parallel: int,
     judge_usage: dict[str, int],
@@ -691,7 +878,7 @@ def judge_criteria_votes(
         index, judge_index = job
         spec, client, use_chat = judges[judge_index]
         criterion = criteria[index]
-        prompt = build_judge_prompt(task, task_dir, solution_output, criterion)
+        prompt = build_judge_prompt(task, task_dir, solution_outputs[index], criterion)
         key = cache_key(
             {"judge": spec.as_dict(), "prompt": prompt}
         )
@@ -730,12 +917,15 @@ def calibrate_rubric(
     task: dict[str, Any],
     task_dir: pathlib.Path,
     solution_output: str,
+    solution_files: list[pathlib.Path],
+    restrict_locations: bool,
     criteria: list[dict[str, Any]],
     max_rounds: int,
     parallel: int,
     cache_dir: pathlib.Path | None,
 ) -> dict[str, Any]:
     refine_system, refine_user_base = prompt_pair("refine_rubric")
+    texts_by_name = solution_texts_by_name(solution_files) if restrict_locations else {}
     kept: list[dict[str, Any]] = []
     dropped: list[dict[str, Any]] = []
     rounds_log: list[dict[str, Any]] = []
@@ -753,11 +943,17 @@ def calibrate_rubric(
             f"with {votes} votes each against the gold solution",
             file=sys.stderr,
         )
+        solution_outputs = [
+            criterion_gold_output(criterion, texts_by_name, solution_output)
+            if restrict_locations
+            else solution_output
+            for criterion in to_test
+        ]
         votes_by_criterion = judge_criteria_votes(
             judges=judges,
             task=task,
             task_dir=task_dir,
-            solution_output=solution_output,
+            solution_outputs=solution_outputs,
             criteria=to_test,
             parallel=parallel,
             judge_usage=judge_usage,
@@ -977,9 +1173,19 @@ def tag_final_criteria(
 
 
 def main() -> int:
+    global PROMPT_SET_DIR
     args = parse_args()
     task_dir = args.task_dir.resolve()
     load_env_files(task_dir)
+
+    prompt_set = args.prompt_set.strip()
+    if prompt_set:
+        if not re.fullmatch(r"[A-Za-z0-9_-]+", prompt_set):
+            raise SystemExit("--prompt-set may contain only letters, digits, '_' and '-'.")
+        prompt_set_dir = PROMPTS_DIR / prompt_set
+        if not prompt_set_dir.is_dir():
+            raise SystemExit(f"Prompt set directory not found: {prompt_set_dir}")
+        PROMPT_SET_DIR = prompt_set_dir
 
     task = load_task(task_dir)
     solution_files = discover_solution_files(task_dir, args.solution)
@@ -1019,10 +1225,21 @@ def main() -> int:
     for role_name, _code in CANDIDATE_ROLES:
         read_prompt_template(f"roles/{role_name}.txt")
 
+    # The classify step exists only in prompt sets that ship its templates
+    # (e.g. second-exam); the base pipeline is unchanged without them.
+    task_deliverables = normalize_task_deliverables(task)
+    classify_deliverables_enabled = bool(task_deliverables) and has_prompt_template(
+        "classify_deliverables.system.txt"
+    )
+    if classify_deliverables_enabled:
+        prompt_pair("classify_deliverables")
+
     if args.dry_run:
         print(f"Task: {task.get('title', task_dir.name)}")
         print(f"Model: {args.model}")
         print(f"Reasoning effort: {reasoning_effort}")
+        print(f"Prompt set: {prompt_set or 'base'}")
+        print(f"Deliverable classification: {'on' if classify_deliverables_enabled else 'off'}")
         print(f"Candidate roles: {[name for name, _ in CANDIDATE_ROLES]}")
         print(f"Calibration: {'on' if calibrate else 'off'}")
         if calibrate:
@@ -1045,7 +1262,9 @@ def main() -> int:
         for warning in input_warnings:
             print(f"WARNING: {warning}")
         print(
-            "Planned API calls: atomize_solution -> generate_candidates (3 roles) -> prune_candidates"
+            "Planned API calls: "
+            + ("classify_deliverables -> " if classify_deliverables_enabled else "")
+            + "atomize_solution -> generate_candidates (3 roles) -> prune_candidates"
             + (" -> calibrate/refine loop" if calibrate else "")
             + ("" if args.skip_tagging else " -> extract_outline -> tag_criteria")
         )
@@ -1127,6 +1346,39 @@ def main() -> int:
         print(f"Wrote {final_path} (criteria unchanged, tags/outline updated)")
         return 0
 
+    deliverable_profiles: list[dict[str, Any]] | None = None
+    classify_response: dict[str, Any] | None = None
+    profile_errors: list[str] = []
+    if classify_deliverables_enabled:
+        print("Calling OpenAI: classify_deliverables", file=sys.stderr)
+        deliverable_profiles, classify_response = classify_task_deliverables(
+            client=client,
+            model=args.model,
+            reasoning_effort=reasoning_effort,
+            task=task,
+            cache_dir=cache_dir,
+        )
+        profile_errors = validate_deliverable_profiles(
+            deliverable_profiles, task_deliverables, solution_files
+        )
+        for error in profile_errors:
+            print(f"WARNING: {error}", file=sys.stderr)
+        # The frozen document-type map feeds every later step; the pipeline
+        # must not continue on a broken map.
+        if profile_errors:
+            raise SystemExit(
+                "classify_deliverables produced an invalid document-type map; see warnings above."
+            )
+        print(
+            "Deliverable profiles: "
+            + ", ".join(
+                f"{profile.get('file')}={profile.get('doc_type')}"
+                for profile in deliverable_profiles
+            ),
+            file=sys.stderr,
+        )
+        bundle["deliverable_profiles"] = deliverable_profiles
+
     print("Calling OpenAI: atomize_solution", file=sys.stderr)
     atoms, atom_response = api_call(
         client=client,
@@ -1145,6 +1397,8 @@ def main() -> int:
         "task_files": files,
         "atomization": atoms,
     }
+    if deliverable_profiles is not None:
+        candidate_payload["deliverable_profiles"] = deliverable_profiles
     candidate_user = build_user_payload(candidate_user_base, candidate_payload)
     with ThreadPoolExecutor(max_workers=len(CANDIDATE_ROLES)) as pool:
         role_results = list(
@@ -1189,6 +1443,8 @@ def main() -> int:
         "atomization": atoms,
         "candidate_rubric": candidates,
     }
+    if deliverable_profiles is not None:
+        prune_payload["deliverable_profiles"] = deliverable_profiles
     pruned, pruned_response = api_call(
         client=client,
         model=args.model,
@@ -1210,6 +1466,7 @@ def main() -> int:
         print(f"WARNING: {warning}", file=sys.stderr)
 
     calibration_result: dict[str, Any] | None = None
+    restrict_locations = deliverable_profiles is not None
     if calibrate:
         solution_output = solution_output_text(solution_files)
         calibration_result = calibrate_rubric(
@@ -1220,6 +1477,8 @@ def main() -> int:
             task=task,
             task_dir=task_dir,
             solution_output=solution_output,
+            solution_files=solution_files,
+            restrict_locations=restrict_locations,
             criteria=pruned.get("criteria", []),
             max_rounds=max(1, args.max_calibration_rounds),
             parallel=args.parallel,
@@ -1279,7 +1538,9 @@ def main() -> int:
         for warning in criticality_distribution_warnings(final_criteria):
             print(f"WARNING: Criticality distribution: {warning}", file=sys.stderr)
 
-    validation_errors = validate_criteria(final_criteria)
+    validation_errors = validate_criteria(
+        final_criteria, task_deliverables if restrict_locations else None
+    )
     validation_errors.extend(validate_pruning_coverage(pruned, atoms))
     validation_warnings = [
         f"Criticality distribution: {warning}"
@@ -1300,6 +1561,7 @@ def main() -> int:
             "model": args.model,
             "reasoning_effort": reasoning_effort,
             "api_base": os.environ.get("OPENAI_API_BASE", DEFAULT_API_BASE),
+            "prompt_set": prompt_set or None,
             "rubric_count_policy": "model_selected",
             "candidate_roles": [name for name, _ in CANDIDATE_ROLES],
             "calibration": {
@@ -1314,13 +1576,15 @@ def main() -> int:
                 ),
                 "votes": calibration_vote_count if calibrate else None,
                 "max_rounds": args.max_calibration_rounds if calibrate else None,
+                "location_restricted": restrict_locations if calibrate else None,
             },
         },
+        "deliverable_profiles": deliverable_profiles,
         "task": {
             "path": str(task_dir),
             "title": task.get("title"),
             "work_type": task.get("work_type"),
-            "deliverables": task.get("deliverables"),
+            "deliverables": normalize_task_deliverables(task),
         },
         "input_files": [
             {"path": f["path"], "role": f["role"], "truncated": f["truncated"]} for f in files
@@ -1366,6 +1630,7 @@ def main() -> int:
         "validation_errors": validation_errors,
         "validation_warnings": validation_warnings,
         "usage": {
+            "classify_deliverables": usage_summary(classify_response) if classify_response else None,
             "atomize_solution": usage_summary(atom_response),
             "generate_candidate_criteria": candidate_usage,
             "prune_criteria": usage_summary(pruned_response),
@@ -1395,12 +1660,14 @@ def main() -> int:
             "language": pruned.get("language"),
             "task_title": task.get("title"),
             "outline": outline_nodes,
+            "deliverable_profiles": deliverable_profiles,
             "criteria": final_criteria,
             "validation_warnings": validation_warnings,
             "provenance": {
                 "source": str(output_path.relative_to(task_dir)) if output_path.is_relative_to(task_dir) else str(output_path),
                 "provider": "openai",
                 "model": args.model,
+                "prompt_set": prompt_set or None,
                 "candidate_roles": [name for name, _ in CANDIDATE_ROLES],
                 "calibration": generated["generator"]["calibration"],
             },
