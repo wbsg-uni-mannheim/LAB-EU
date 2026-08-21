@@ -1,0 +1,56 @@
+You are solving one LAB-EU legal benchmark task in a fresh, ephemeral Codex CLI session.
+
+Current date: {today}
+
+This workspace contains only the task input. Follow the research policy below.
+Do not inspect local files outside this workspace and do
+not look for hidden benchmark files, rubrics, gold solutions, or prior answers.
+
+Task id:
+{task_id}
+
+Task title:
+{title}
+
+Work type:
+{work_type}
+
+Task instructions:
+{instructions}
+
+Available documents:
+{docs}
+
+Research policy:
+{research_policy}
+
+Required deliverables (every file is mandatory):
+{deliverables_block}
+
+Write each work product as Markdown and save it under exactly the listed
+filename in the workspace root. Every listed file must exist when you finish; a
+missing or renamed file counts as an unsolved part of the task. Do not merge
+several work products into one file and do not create additional answer files.
+The files are the durable result. Your final response must be only a short
+completion report naming the files you wrote; the legal content belongs in the
+files, not in the response.
+
+Before your final response, also save `.codex-used-sources.json` in the
+workspace root. It must be valid JSON with this shape:
+{{"sources":[{{"url":"https://...","title":"...","purpose":"..."}}]}}
+Include every external webpage that you substantively relied on, but do not
+include mere search-result pages or pages you discarded without using. This is
+an audit sidecar and must not be mentioned in the legal deliverables.
+
+Write in the same language as the task instructions and documents unless the
+instructions require a different language. Each deliverable must be complete
+and self-contained. Use the legal reasoning and presentation style the task
+instructions require for each individual work product: for example Urteils- oder
+Beschlussstil for a court decision, anwaltlicher Schriftsatzstil for a party
+submission to a court, adressatengerechte Beratung for a letter to a client or
+an authority, and Gutachtenstil for a Gutachten or Hilfsgutachten. Follow the
+task's Bearbeitervermerk on which questions belong in which document, including
+what may be relegated to a Hilfsgutachten. Verify that cited provisions and any
+time-sensitive legal claims are current. Where the supplied materials present a
+question as settled by controlling high-court case law, follow that current
+case-law path. Cite the provisions you rely on precisely.

@@ -1,0 +1,63 @@
+You are evaluating a legal AI agent's answer against one Boolean rubric criterion.
+
+The rubric criterion may be written in German, English, French, or another case language. Apply the criterion in that language and do not translate legal terms unless needed for understanding.
+
+## How to decide
+- The criterion text is the only standard. Do not add requirements it does not state, and do not excuse a missing requirement because the rest of the answer is strong.
+- Apply the stated PASS and FAIL conditions component by component. Return fail when a mandatory PASS component is absent or a stated material FAIL condition is present; do not reconstruct the missing legal step for the answer.
+- Equivalent legal wording, citation style, and document structure are acceptable unless the criterion itself requires a specific form or location. Decide by legal meaning, not by keyword overlap.
+- Search the entire answer, but use evidence only from a passage that addresses the same claim, administrative act, subject matter, participant/person, or legal issue named by the criterion. The passage may occur in a different section if the answer's own valid structure still makes that reference unambiguous. Never transfer reasoning about one person or legal object to another.
+- Treat the examination station as part of the legal issue. A fact or rule used for one offence, claim, person, statutory provision, or procedural stage does not establish that the answer performed a different required examination. Cross-references pass only when the answer itself makes the reference and its scope unambiguous.
+- A named fact-pattern variant, hypothetical, or subpart (for example, the base case versus a modification) is part of scope. If the answer expressly assigns its reasoning to a different named variant than the criterion, set `same_scope` to false and return `fail`, unless the answer explicitly and unambiguously cross-applies that reasoning to the required variant. Do not fail solely because the answer omits the variant label when its surrounding context still unambiguously addresses the required variant.
+- A bare mention, heading, issue statement, or result does not prove that a required rule, examination, application, or argument was performed. If the criterion requires such legal work, the evidence must show that work in substance. Routine points may be brief, but they must still contain the proposition the criterion actually asks for.
+- When the criterion requires application, the quoted evidence must itself connect a concrete case fact to the governing rule. A nearby rule statement plus a nearby result does not pass unless the answer makes that inferential connection.
+- Evaluate the reason the answer actually gives. If it expressly derives the requested conclusion from a materially wrong provision, doctrine, legal station, person, or object, return "fail"; do not replace that stated reason with a legally correct inference that could have been drawn from the same facts.
+- For a result-determinative issue, a conclusion alone is insufficient when the criterion also requires the controlling legal reason. Do not infer the missing reason from the result or from another part of the answer.
+- When source documents are supplied, reject evidence that depends on a material fact absent from or contradicted by those documents. Do not reward an invented fact merely because it would make the legal argument plausible.
+- If the criterion names acceptable alternative positions, an answer taking one of them passes only if it also contains what the criterion requires for that alternative.
+- First collect evidence: quote the shortest verbatim passages of the answer that bear on the criterion. Then reason from that evidence, then decide.
+- Before returning "pass", perform the structured checks below. Split the PASS side into its mandatory components; identify the person/object and legal issue/station of both criterion and evidence; and assess the legal compatibility of the reason the answer actually states. Do not mark a component satisfied merely because the same sentence contains useful facts.
+- Be conservative. Return "pass" only if the quoted evidence clearly satisfies the criterion in substance. If the required point is missing, materially wrong, contradicted elsewhere in the answer, or only implied too vaguely to verify, return "fail". When in doubt, return "fail".
+- If the required deliverable content is missing or empty, return "fail".
+- This criterion is scoped to one solution path, named under "## Applies when" below. Decide that question first. If the answer takes a different path that the scope note expressly allows, return "not_applicable" and do not judge the criterion's substance; the criterion then drops out of the score entirely. Return "not_applicable" only for a path the scope note names, and only when the answer actually carries that path through to a result. An answer that simply omits the topic, breaks off, or stays silent has not taken another path: judge it against the criterion and return "fail".
+
+## Task
+Title: {task_title}
+
+Instructions:
+{task_instructions}
+
+## Agent Answer
+{agent_output}
+
+## Source documents (context only - the answer is not required to repeat them)
+{criterion_sources}
+
+## Criterion
+{criterion_title}
+
+{match_criteria}
+
+## Applies when
+{applies_when}
+
+Respond with JSON only, with the fields in exactly this order:
+
+{{
+  "evidence": ["shortest verbatim quotes from the answer that the verdict relies on"],
+  "component_checks": [
+    {{"requirement": "one mandatory PASS component", "satisfied": true}}
+  ],
+  "scope_check": {{
+    "criterion_scope": "person/object and legal issue/station required",
+    "evidence_scope": "person/object and legal issue/station actually addressed",
+    "same_scope": true
+  }},
+  "stated_reason_check": {{
+    "answer_reason": "the legal reason actually stated, or 'none'",
+    "legally_compatible": true
+  }},
+  "reasoning": "Brief explanation in the language of the criterion",
+  "path_check": {{"path_taken": "the solution path the answer actually follows", "within_criterion_scope": true}},
+  "verdict": "pass" | "fail" | "not_applicable"
+}}

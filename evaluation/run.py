@@ -20,10 +20,14 @@ from openai import OpenAI, OpenAIError
 
 DEFAULT_JUDGE_MODEL = "gpt-5.5"
 DEFAULT_REASONING_EFFORT = "medium"
+# Chat-endpoint judges (OpenRouter): thinking models spend this budget on hidden
+# reasoning before the JSON verdict, so the cap needs headroom for both.
+CHAT_JUDGE_MAX_TOKENS = 16000
 DEFAULT_PARALLEL = 4
 DEFAULT_API_BASE = "https://api.openai.com/v1"
 DEFAULT_REQUEST_TIMEOUT_SECONDS = 75.0
 MAX_SOURCE_CHARS = 16_000
+CACHE_CRITERIA_PER_KEY = 4
 STYLE_ELIGIBLE_FUNCTIONS = {"application", "argumentation"}
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 PROMPTS_DIR = REPO_ROOT / "prompts" / "evaluation"
@@ -141,6 +145,15 @@ def parse_args() -> argparse.Namespace:
             "With --judge-committee, rerun only 2:1 criteria with the full committee. "
             "Matching round majorities are kept with a dissent flag; a flip is unresolved. "
             "Enabled by default."
+        ),
+    )
+    parser.add_argument(
+        "--committee-tiebreaker",
+        action="store_true",
+        help=(
+            "With a three-member --judge-committee, use the first two members as "
+            "primary judges and call the third only when their valid binary votes "
+            "disagree. The 2:1 result is final; no stability recheck is performed."
         ),
     )
     parser.add_argument(
@@ -324,11 +337,32 @@ def load_criterion_sources(task_dir: pathlib.Path, criterion: dict[str, Any]) ->
         if not path.exists():
             sections.append(f"### {name}\n(File not found)")
             continue
+        if path.suffix.lower() not in {".md", ".txt", ".json"}:
+            sections.append(
+                f"### {name}\n[Nicht-Text-Datei, Inhalt nicht eingebunden: "
+                f"{path.name}, {path.stat().st_size} Bytes]"
+            )
+            continue
         text = read_text(path)
         if len(text) > MAX_SOURCE_CHARS:
             text = text[:MAX_SOURCE_CHARS] + "\n[TRUNCATED]"
         sections.append(f"### {name}\n{text}")
     return "\n\n".join(sections) if sections else "(No source documents attached to this criterion.)"
+
+
+def criterion_applies_when(criterion: dict[str, Any] | None) -> str:
+    """The scope note that lets a criterion answer "not_applicable", or "".
+
+    Only criteria that opt in via `applies_when` may return that verdict. Every
+    other criterion keeps the strict pass/fail vocabulary and, just as
+    importantly, keeps its prompt byte-identical -- the vote cache is keyed on
+    the full prompt, so a blanket template change would invalidate every cached
+    vote in every run.
+    """
+    if not criterion:
+        return ""
+    value = criterion.get("applies_when")
+    return str(value).strip() if isinstance(value, str) and value.strip() else ""
 
 
 def judge_prompt(
@@ -337,8 +371,10 @@ def judge_prompt(
     agent_output: str,
     criterion: dict[str, Any],
 ) -> str:
-    template = (PROMPTS_DIR / "rubric_criterion.txt").read_text(encoding="utf-8")
-    return template.format(
+    applies_when = criterion_applies_when(criterion)
+    name = "rubric_criterion.applies_when.txt" if applies_when else "rubric_criterion.txt"
+    template = (PROMPTS_DIR / name).read_text(encoding="utf-8")
+    fields = dict(
         task_title=task.get("title", ""),
         task_instructions=task.get("instructions", ""),
         criterion_sources=load_criterion_sources(task_dir, criterion),
@@ -346,6 +382,9 @@ def judge_prompt(
         criterion_title=criterion["title"],
         match_criteria=criterion["match_criteria"],
     )
+    if applies_when:
+        fields["applies_when"] = applies_when
+    return template.format(**fields)
 
 
 def style_judge_prompt(
@@ -368,12 +407,89 @@ def style_judge_prompt(
     )
 
 
+def load_style_profiles(rubric_path: pathlib.Path) -> dict[str, str] | None:
+    """Read the frozen document-type map (file -> doc_type) from the rubric.
+
+    Second-exam rubrics freeze `deliverable_profiles` at generation time; the
+    evaluation only reads this map and never re-derives document types.
+    Returns None for rubrics without profiles (base pipeline).
+    """
+    rubric = load_json(rubric_path)
+    profiles = rubric.get("deliverable_profiles")
+    if not isinstance(profiles, list):
+        return None
+    mapping: dict[str, str] = {}
+    for entry in profiles:
+        if isinstance(entry, dict) and entry.get("file") and entry.get("doc_type"):
+            mapping[str(entry["file"])] = str(entry["doc_type"])
+    return mapping or None
+
+
+def criterion_style_doc_types(
+    criterion: dict[str, Any], style_profiles: dict[str, str] | None
+) -> list[str]:
+    """Document types whose style standard may govern this criterion's evidence."""
+    if not style_profiles:
+        return []
+    names = [str(name) for name in (criterion.get("deliverables") or [])]
+    if not names:
+        names = list(style_profiles)
+    seen: set[str] = set()
+    doc_types: list[str] = []
+    for name in names:
+        doc_type = style_profiles.get(name)
+        if doc_type and doc_type not in seen:
+            seen.add(doc_type)
+            doc_types.append(doc_type)
+    return doc_types
+
+
+def render_style_standards(
+    criterion: dict[str, Any], style_profiles: dict[str, str]
+) -> str:
+    """Render the per-file style standards block for the second-exam template."""
+    names = [str(name) for name in (criterion.get("deliverables") or [])]
+    if not names:
+        names = list(style_profiles)
+    by_type: dict[str, list[str]] = {}
+    for name in names:
+        doc_type = style_profiles.get(name)
+        if doc_type:
+            by_type.setdefault(doc_type, []).append(name)
+    blocks: list[str] = []
+    if len(by_type) > 1:
+        blocks.append(
+            "The permitted files carry different document types. Apply the standard of "
+            "the file that contains the decisive evidence; never mix standards across files."
+        )
+    for doc_type, files in by_type.items():
+        rules_path = PROMPTS_DIR / "style_profiles" / f"{doc_type}.txt"
+        rules = rules_path.read_text(encoding="utf-8").strip()
+        blocks.append(f"### Style standard for {', '.join(files)}\n{rules}")
+    return "\n\n".join(blocks)
+
+
 def combined_content_style_prompt(
     task: dict[str, Any],
     task_dir: pathlib.Path,
     agent_output: str,
     criterion: dict[str, Any],
+    style_profiles: dict[str, str] | None = None,
 ) -> str:
+    doc_types = criterion_style_doc_types(criterion, style_profiles)
+    if doc_types:
+        template = (
+            PROMPTS_DIR / "combined_content_style_criterion.second_exam.txt"
+        ).read_text(encoding="utf-8")
+        return template.format(
+            task_title=task.get("title", ""),
+            task_instructions=task.get("instructions", ""),
+            criterion_sources=load_criterion_sources(task_dir, criterion),
+            agent_output=agent_output,
+            criterion_title=criterion["title"],
+            match_criteria=criterion["match_criteria"],
+            style_standards=render_style_standards(criterion, style_profiles or {}),
+        )
     template = (PROMPTS_DIR / "combined_content_style_criterion.txt").read_text(
         encoding="utf-8"
     )
@@ -385,6 +501,26 @@ def combined_content_style_prompt(
         criterion_title=criterion["title"],
         match_criteria=criterion["match_criteria"],
     )
+
+
+def ensure_style_profiles_supported(
+    style_profiles: dict[str, str] | None,
+    combine_content_and_style: bool,
+) -> None:
+    """Fail fast instead of grading a non-Gutachten document against Gutachtenstil.
+
+    The legacy separate style call renders only the fixed Gutachtenstil template,
+    so it must not run on rubrics whose frozen profiles demand another standard.
+    """
+    if not style_profiles or combine_content_and_style:
+        return
+    non_gutachten = sorted({t for t in style_profiles.values() if t != "gutachten"})
+    if non_gutachten:
+        raise SystemExit(
+            "--separate-style-calls supports only the 'gutachten' style profile; this "
+            f"rubric freezes: {', '.join(non_gutachten)}. Use the combined "
+            "content+style path (drop --separate-style-calls)."
+        )
 
 
 def is_style_eligible_criterion(criterion: dict[str, Any]) -> bool:
@@ -413,6 +549,39 @@ def parse_json_response(text: str) -> dict[str, Any]:
     raise ValueError(f"No JSON object found in judge response: {text[:500]}")
 
 
+def responses_input_with_cache_breakpoint(prompt: str) -> list[dict[str, Any]]:
+    """Split a judge prompt after the complete task and agent-answer prefix."""
+    markers = ("\n## Source documents", "\n## Content criterion")
+    positions = [prompt.index(marker) for marker in markers if marker in prompt]
+    if not positions:
+        raise ValueError("Judge prompt has no variable source/criterion block.")
+    split_at = min(positions)
+    stable_prefix = prompt[:split_at]
+    variable_suffix = prompt[split_at:]
+    return [
+        {
+            "type": "message",
+            "role": "user",
+            "content": [
+                {
+                    "type": "input_text",
+                    "text": stable_prefix,
+                    "prompt_cache_breakpoint": {"mode": "explicit"},
+                },
+                {"type": "input_text", "text": variable_suffix},
+            ],
+        }
+    ]
+
+
+def prompt_cache_key_for_criterion(
+    prefix_key: str, judge_name: str, criterion_index: int
+) -> str:
+    """Keep the answer/judge key stable while bounding bursts per cache key."""
+    partition = criterion_index // CACHE_CRITERIA_PER_KEY
+    return f"lab-eu-{prefix_key}-{judge_name}-p{partition:02d}"
+
+
 def _judge_call_responses(client: OpenAI, model: str, prompt: str,
                           reasoning_effort: str | None,
                           cache_key: str | None = None,
@@ -429,15 +598,24 @@ def _judge_call_responses(client: OpenAI, model: str, prompt: str,
     ``service_tier="flex"`` bills at Batch-API rates AND keeps prompt caching,
     which the Batch API itself does not (see docs/judging-cost.md).
     """
+    explicit_cache = bool(cache_key) and model.lower().startswith("gpt-5.6")
     request: dict[str, Any] = {
         "model": model,
-        "input": prompt,
+        "input": (
+            responses_input_with_cache_breakpoint(prompt)
+            if explicit_cache
+            else prompt
+        ),
         "text": {"format": {"type": "json_object"}},
     }
     if reasoning_effort:
         request["reasoning"] = {"effort": reasoning_effort}
     if cache_key:
         request["prompt_cache_key"] = cache_key
+    if explicit_cache:
+        # openai-python 2.44 predates the typed prompt_cache_options argument;
+        # extra_body preserves the documented Responses API request shape.
+        request["extra_body"] = {"prompt_cache_options": {"mode": "explicit"}}
     if service_tier:
         request["service_tier"] = service_tier
     response = client.responses.create(**request)
@@ -453,19 +631,73 @@ def _judge_call_chat(client: OpenAI, model: str, prompt: str):
             model=model,
             messages=messages,
             response_format={"type": "json_object"},
-            max_tokens=4000,
+            max_tokens=CHAT_JUDGE_MAX_TOKENS,
         )
     except OpenAIError:
-        response = client.chat.completions.create(model=model, messages=messages, max_tokens=4000)
-    text = (response.choices[0].message.content or "") if response.choices else ""
+        response = client.chat.completions.create(
+            model=model, messages=messages, max_tokens=CHAT_JUDGE_MAX_TOKENS
+        )
+    text = ""
+    if response.choices:
+        message = response.choices[0].message
+        text = message.content or ""
+        if not text.strip():
+            # Some OpenRouter providers (e.g. Novita for thinking models) return the
+            # answer in "reasoning" and leave "content" null. Fall back to it so the
+            # vote is scored instead of counted as an unresolved judge error.
+            text = getattr(message, "reasoning", None) or ""
     return text, usage_summary(response.model_dump(mode="json"))
 
 
-def normalize_judge_result(result: dict[str, Any], usage: dict[str, Any]) -> dict[str, Any]:
+ALTERNATIVE_BRANCH_MARKERS = (
+    "erfüllt auch",
+    "ebenfalls erfüllt",
+    "alternativ ",
+    "pass also if",
+    "alternatively",
+)
+
+
+def criterion_has_alternative_branches(criterion: dict[str, Any] | None) -> bool:
+    """True when the PASS side offers alternative routes rather than cumulative requirements.
+
+    The rubric prompts encode expressly accepted alternatives as a second PASS branch
+    ("ERFÜLLT auch, wenn ..."). A judge that decomposes both branches into
+    component_checks then necessarily reports the unused branch as unsatisfied, which
+    the audit enforcement below would otherwise read as a contradiction.
+    """
+    if not criterion:
+        return False
+    text = str(criterion.get("match_criteria", "")).lower()
+    return any(marker in text for marker in ALTERNATIVE_BRANCH_MARKERS)
+
+
+def normalize_judge_result(
+    result: dict[str, Any],
+    usage: dict[str, Any],
+    *,
+    alternative_branches: bool = False,
+    allow_not_applicable: bool = False,
+) -> dict[str, Any]:
     """Normalize a vote and enforce contradictions exposed by its own audit fields."""
     verdict = str(result.get("verdict", "fail")).lower()
-    if verdict not in {"pass", "fail"}:
+    allowed = {"pass", "fail", "not_applicable"} if allow_not_applicable else {"pass", "fail"}
+    if verdict not in allowed:
         verdict = "fail"
+
+    # "not_applicable" says the answer solved the point on another allowed path, so the
+    # criterion's own PASS decomposition is beside the point and must not veto it below.
+    if verdict == "not_applicable":
+        return {
+            "verdict": "not_applicable",
+            "reasoning": str(result.get("reasoning", "")),
+            "evidence": [str(item) for item in (result.get("evidence") or []) if item],
+            "component_checks": [],
+            "scope_check": {},
+            "stated_reason_check": {},
+            "path_check": result.get("path_check") if isinstance(result.get("path_check"), dict) else {},
+            "usage": usage,
+        }
 
     component_checks = result.get("component_checks")
     if not isinstance(component_checks, list):
@@ -479,8 +711,15 @@ def normalize_judge_result(result: dict[str, Any], usage: dict[str, Any]) -> dic
     if not isinstance(stated_reason_check, dict):
         stated_reason_check = {}
 
+    # With alternative PASS branches an unsatisfied component is expected: it is the
+    # branch the answer did not take. Only a decomposition in which nothing at all is
+    # satisfied contradicts a pass. Cumulative criteria keep the strict any-false rule.
+    if alternative_branches and any(item.get("satisfied") is True for item in component_checks):
+        component_failure = False
+    else:
+        component_failure = any(item.get("satisfied") is False for item in component_checks)
     audit_failure = (
-        any(item.get("satisfied") is False for item in component_checks)
+        component_failure
         or scope_check.get("same_scope") is False
         or stated_reason_check.get("legally_compatible") is False
     )
@@ -504,6 +743,7 @@ def normalize_judge_result(result: dict[str, Any], usage: dict[str, Any]) -> dic
 def call_judge(
     client: OpenAI, model: str, prompt: str, reasoning_effort: str | None, use_chat: bool = False,
     cache_key: str | None = None, service_tier: str | None = None,
+    alternative_branches: bool = False, allow_not_applicable: bool = False,
 ) -> dict[str, Any]:
     # No max_output_tokens: token usage is recorded per criterion in scores.json.
     last_error: Exception | None = None
@@ -522,7 +762,16 @@ def call_judge(
         except (ValueError, json.JSONDecodeError) as exc:
             last_error = exc
             continue
-        return normalize_judge_result(result, usage)
+        if "verdict" not in result:
+            # A truncated response can still parse as JSON. Retrying and then
+            # surfacing an error beats normalize_judge_result's "fail" default,
+            # which would turn a technical failure into a substantive verdict.
+            last_error = ValueError(f"Judge response has no verdict field: {text[:500]}")
+            continue
+        return normalize_judge_result(
+            result, usage, alternative_branches=alternative_branches,
+            allow_not_applicable=allow_not_applicable,
+        )
     raise last_error if last_error else RuntimeError("Judge call failed without error detail.")
 
 
@@ -592,9 +841,17 @@ def usage_summary(response_data: dict[str, Any]) -> dict[str, Any]:
         for key in ["input_tokens", "output_tokens", "total_tokens"]
         if key in usage
     }
-    details = usage.get("input_tokens_details") or {}
+    # Chat-completions endpoints (OpenRouter) name the same counters differently;
+    # without this the input/output split is lost and per-judge cost is unknowable.
+    if "input_tokens" not in summary and "prompt_tokens" in usage:
+        summary["input_tokens"] = usage["prompt_tokens"]
+    if "output_tokens" not in summary and "completion_tokens" in usage:
+        summary["output_tokens"] = usage["completion_tokens"]
+    details = usage.get("input_tokens_details") or usage.get("prompt_tokens_details") or {}
     if isinstance(details, dict) and "cached_tokens" in details:
         summary["cached_input_tokens"] = details["cached_tokens"]
+    if isinstance(details, dict) and "cache_write_tokens" in details:
+        summary["cache_write_tokens"] = details["cache_write_tokens"]
     return summary
 
 
@@ -611,7 +868,9 @@ def score_one(
     try:
         agent_output = load_agent_output(submission, criterion)
         result = call_judge(
-            client, model, judge_prompt(task, task_dir, agent_output, criterion), reasoning_effort, use_chat
+            client, model, judge_prompt(task, task_dir, agent_output, criterion), reasoning_effort, use_chat,
+            alternative_branches=criterion_has_alternative_branches(criterion),
+            allow_not_applicable=bool(criterion_applies_when(criterion)),
         )
     except Exception as exc:  # noqa: BLE001 - one broken judge call must not kill the run
         return {
@@ -698,6 +957,8 @@ def cached_judge_vote(
         result = call_judge(
             client, spec.model, prompt, spec.reasoning_effort, use_chat,
             cache_key=prompt_cache_key, service_tier=service_tier,
+            alternative_branches=criterion_has_alternative_branches(criterion),
+            allow_not_applicable=bool(criterion_applies_when(criterion)),
         )
         vote = {
             "id": criterion["id"],
@@ -803,31 +1064,48 @@ def cached_combined_judge_vote(
 
 def aggregate_votes(criterion: dict[str, Any], vote_results: list[dict[str, Any]]) -> dict[str, Any]:
     counts = {"pass": 0, "fail": 0, "error": 0}
+    if criterion_applies_when(criterion):
+        counts["not_applicable"] = 0
     usage_total: dict[str, int] = {}
     for vote in vote_results:
         counts[vote.get("verdict", "error")] = counts.get(vote.get("verdict", "error"), 0) + 1
-        for key in ["input_tokens", "output_tokens", "total_tokens", "cached_input_tokens"]:
+        for key in [
+            "input_tokens",
+            "output_tokens",
+            "total_tokens",
+            "cached_input_tokens",
+            "cache_write_tokens",
+        ]:
             value = (vote.get("usage") or {}).get(key)
             if isinstance(value, int):
                 usage_total[key] = usage_total.get(key, 0) + value
 
     n_votes = len(vote_results)
     unresolved = counts["error"] > 0
+    n_na = counts.get("not_applicable", 0)
     if counts["pass"] * 2 > n_votes:
         verdict = "pass"
+    elif n_na * 2 > n_votes:
+        # A majority found the answer on another allowed path, so there is nothing
+        # here to grade. Scoring drops the criterion instead of counting it either way.
+        verdict = "not_applicable"
     elif counts["error"] == n_votes:
         verdict = "error"
     else:
         verdict = "fail"
 
-    valid = counts["pass"] + counts["fail"]
-    agreement = (max(counts["pass"], counts["fail"]) / valid) if valid else 0.0
+    valid = counts["pass"] + counts["fail"] + n_na
+    agreement = (max(counts["pass"], counts["fail"], n_na) / valid) if valid else 0.0
     primary = next((vote for vote in vote_results if vote.get("verdict") == verdict), vote_results[0])
     return {
         "id": criterion["id"],
         "title": criterion["title"],
         "verdict": verdict,
-        "resolution": "unresolved" if unresolved else "resolved",
+        "resolution": (
+            "unresolved" if unresolved
+            else "not_applicable" if verdict == "not_applicable"
+            else "resolved"
+        ),
         "reasoning": primary.get("reasoning", ""),
         "evidence": primary.get("evidence", []),
         "vote_counts": counts,
@@ -861,6 +1139,78 @@ def needs_committee_recheck(vote_results: list[dict[str, Any]]) -> bool:
         and counts["error"] == 0
         and sorted((counts["pass"], counts["fail"])) == [1, 2]
     )
+
+
+def needs_committee_tiebreaker(vote_results: list[dict[str, Any]]) -> bool:
+    """Return True when two valid primary judges cast opposite binary votes."""
+    verdicts = [vote.get("verdict", "error") for vote in vote_results]
+    return len(verdicts) == 2 and sorted(verdicts) == ["fail", "pass"]
+
+
+def finalize_committee_tiebreaker(
+    criterion: dict[str, Any],
+    primary_votes: list[dict[str, Any]],
+    tiebreaker_votes: list[dict[str, Any]] | None = None,
+) -> dict[str, Any]:
+    """Resolve two primary votes, adding one tiebreaker vote only on disagreement."""
+    primary = aggregate_votes(criterion, primary_votes)
+    rounds = [
+        {
+            "stage": "primary",
+            "verdict": primary["verdict"],
+            "resolution": primary["resolution"],
+            "vote_counts": primary["vote_counts"],
+            "votes": primary["votes"],
+        }
+    ]
+    if len(primary_votes) != 2 or primary["vote_counts"]["error"]:
+        primary["verdict"] = "fail"
+        primary["resolution"] = "unresolved"
+        primary["committee_status"] = "incomplete_primary_pair"
+        primary["voting_rounds"] = rounds
+        return primary
+
+    if not needs_committee_tiebreaker(primary_votes):
+        primary["resolution"] = "resolved"
+        primary["committee_status"] = "primary_consensus"
+        primary["voting_rounds"] = rounds
+        return primary
+
+    third_votes = tiebreaker_votes or []
+    final = aggregate_votes(criterion, primary_votes + third_votes)
+    rounds.append(
+        {
+            "stage": "tiebreaker",
+            "verdict": third_votes[0].get("verdict", "error")
+            if len(third_votes) == 1
+            else "error",
+            "resolution": (
+                "resolved"
+                if len(third_votes) == 1
+                and third_votes[0].get("verdict") in ("pass", "fail")
+                else "unresolved"
+            ),
+            "vote_counts": aggregate_votes(criterion, third_votes)["vote_counts"]
+            if third_votes
+            else {"pass": 0, "fail": 0, "error": 1},
+            "votes": aggregate_votes(criterion, third_votes)["votes"]
+            if third_votes
+            else [],
+        }
+    )
+    final["voting_rounds"] = rounds
+    if (
+        len(third_votes) != 1
+        or third_votes[0].get("verdict") not in ("pass", "fail")
+    ):
+        final["verdict"] = "fail"
+        final["resolution"] = "unresolved"
+        final["committee_status"] = "incomplete_tiebreaker"
+        return final
+
+    final["resolution"] = "resolved"
+    final["committee_status"] = "resolved_by_tiebreaker"
+    return final
 
 
 def finalize_committee_rounds(
@@ -941,19 +1291,28 @@ def evaluate(
     service_tier: str | None = None,
     criterion_ids: list[str] | None = None,
     committee_conflict_recheck: bool = True,
+    committee_tiebreaker: bool = False,
     committee_error_retries: int = 1,
 ) -> dict[str, Any]:
     task = load_json(task_dir / "task.json")
     rubric_path, criteria = load_rubric(task_dir, rubric_override)
     criteria = select_criteria(criteria, criterion_ids)
     votes = max(1, votes)
+    style_profiles = load_style_profiles(rubric_path) if style_evaluation else None
+    ensure_style_profiles_supported(style_profiles, combine_content_and_style)
 
     if judge_committee:
         if votes != 1:
             raise SystemExit("--judge-committee casts one vote per member; do not combine it with --votes.")
         if adaptive:
             raise SystemExit("--adaptive is not supported with --judge-committee.")
+        if committee_tiebreaker and len(judge_committee) != 3:
+            raise SystemExit(
+                "--committee-tiebreaker requires exactly three committee members."
+            )
         specs = judge_committee
+    elif committee_tiebreaker:
+        raise SystemExit("--committee-tiebreaker requires --judge-committee.")
     else:
         specs = single_judge_specs(judge_model, api_base, reasoning_effort, votes)
 
@@ -983,7 +1342,7 @@ def evaluate(
         client, use_chat = clients[spec_index]
         criterion = criteria[index]
         agent_output = load_agent_output(submission, criterion)
-        cache_key = f"lab-eu-{prefix_key}-{spec.name}"
+        cache_key = prompt_cache_key_for_criterion(prefix_key, spec.name, index)
         if combined_style and index in style_eligible_index_set:
             combined = cached_combined_judge_vote(
                 cache_dir=vote_cache_dir,
@@ -993,7 +1352,7 @@ def evaluate(
                 client=client,
                 spec=spec,
                 prompt=combined_content_style_prompt(
-                    task, task_dir, agent_output, criterion
+                    task, task_dir, agent_output, criterion, style_profiles
                 ),
                 criterion=criterion,
                 use_chat=use_chat,
@@ -1028,10 +1387,25 @@ def evaluate(
             # The shared prefix is only cached once a first response has landed.
             # Firing all workers at once means every one of them is a cache
             # miss; one warm-up call first makes the remainder hits.
-            if len(spec_jobs) > 1 and workers > 1:
-                index, vote_result = content_vote(*spec_jobs[0], phase)
-                votes_by_criterion[index].append(vote_result)
-                spec_jobs = spec_jobs[1:]
+            if len(spec_jobs) > 1 and workers > 1 and not clients[spec_index][1]:
+                # Warm every deterministic key partition before its remaining
+                # criteria run concurrently. Four criteria per key keep each
+                # initial burst comfortably below the ~15 requests/minute
+                # per-key guidance while retaining prefix reuse.
+                warmups: list[tuple[int, int]] = []
+                remaining: list[tuple[int, int]] = []
+                seen_partitions: set[int] = set()
+                for job in spec_jobs:
+                    partition = job[0] // CACHE_CRITERIA_PER_KEY
+                    if partition not in seen_partitions:
+                        seen_partitions.add(partition)
+                        warmups.append(job)
+                    else:
+                        remaining.append(job)
+                for warmup in warmups:
+                    index, vote_result = content_vote(*warmup, phase)
+                    votes_by_criterion[index].append(vote_result)
+                spec_jobs = remaining
             with ThreadPoolExecutor(max_workers=max(1, workers)) as pool:
                 for index, vote_result in pool.map(
                     lambda job: content_vote(*job, phase), spec_jobs
@@ -1094,6 +1468,15 @@ def evaluate(
         votes_by_criterion = [
             first + extra for first, extra in zip(first_votes, extra_votes)
         ]
+    elif committee_tiebreaker:
+        votes_by_criterion = run_content_jobs(
+            [
+                (index, spec_index)
+                for index in range(len(criteria))
+                for spec_index in range(2)
+            ],
+            "content-primary",
+        )
     else:
         votes_by_criterion = run_content_jobs(
             [
@@ -1105,13 +1488,42 @@ def evaluate(
         )
 
     if judge_committee:
-        votes_by_criterion = retry_content_errors(votes_by_criterion, "content-r1")
+        first_phase = "content-primary" if committee_tiebreaker else "content-r1"
+        votes_by_criterion = retry_content_errors(votes_by_criterion, first_phase)
         second_votes_by_criterion: list[list[dict[str, Any]]] = [
             [] for _ in criteria
         ]
         content_conflict_indices: set[int] = set()
         style_conflict_indices: set[int] = set()
-        if committee_conflict_recheck:
+        if committee_tiebreaker:
+            content_conflict_indices = {
+                index
+                for index, vote_results in enumerate(votes_by_criterion)
+                if needs_committee_tiebreaker(vote_results)
+            }
+            if combined_style:
+                style_conflict_indices = {
+                    index
+                    for index in style_eligible_indices
+                    if needs_committee_tiebreaker(
+                        [
+                            vote["_combined_style_vote"]
+                            for vote in votes_by_criterion[index]
+                        ]
+                    )
+                }
+            conflict_indices = sorted(
+                content_conflict_indices | style_conflict_indices
+            )
+            if conflict_indices:
+                second_votes_by_criterion = run_content_jobs(
+                    [(index, 2) for index in conflict_indices],
+                    "content-tiebreaker",
+                )
+                second_votes_by_criterion = retry_content_errors(
+                    second_votes_by_criterion, "content-tiebreaker"
+                )
+        elif committee_conflict_recheck:
             content_conflict_indices = {
                 index
                 for index, vote_results in enumerate(votes_by_criterion)
@@ -1147,15 +1559,26 @@ def evaluate(
         for index, (criterion, first_votes, second_votes) in enumerate(
             zip(criteria, votes_by_criterion, second_votes_by_criterion)
         ):
-            results.append(
-                finalize_committee_rounds(
-                    criterion,
-                    first_votes,
-                    second_votes
-                    if index in content_conflict_indices and second_votes
-                    else None,
+            if committee_tiebreaker:
+                results.append(
+                    finalize_committee_tiebreaker(
+                        criterion,
+                        first_votes,
+                        second_votes
+                        if index in content_conflict_indices and second_votes
+                        else None,
+                    )
                 )
-            )
+            else:
+                results.append(
+                    finalize_committee_rounds(
+                        criterion,
+                        first_votes,
+                        second_votes
+                        if index in content_conflict_indices and second_votes
+                        else None,
+                    )
+                )
     else:
         content_conflict_indices = set()
         style_conflict_indices = set()
@@ -1195,17 +1618,30 @@ def evaluate(
                     extracted.append(style_vote_result)
                 second_style_votes[index] = extracted
             if judge_committee:
-                style_results = [
-                    finalize_committee_rounds(
-                        criteria[index],
-                        first_style_votes[index],
-                        second_style_votes[index]
-                        if index in style_conflict_indices
-                        and second_style_votes[index]
-                        else None,
-                    )
-                    for index in eligible_indices
-                ]
+                if committee_tiebreaker:
+                    style_results = [
+                        finalize_committee_tiebreaker(
+                            criteria[index],
+                            first_style_votes[index],
+                            second_style_votes[index]
+                            if index in style_conflict_indices
+                            and second_style_votes[index]
+                            else None,
+                        )
+                        for index in eligible_indices
+                    ]
+                else:
+                    style_results = [
+                        finalize_committee_rounds(
+                            criteria[index],
+                            first_style_votes[index],
+                            second_style_votes[index]
+                            if index in style_conflict_indices
+                            and second_style_votes[index]
+                            else None,
+                        )
+                        for index in eligible_indices
+                    ]
             else:
                 style_results = [
                     aggregate_votes(criteria[index], first_style_votes[index])
@@ -1288,18 +1724,34 @@ def evaluate(
                         ]
                 return current
 
+            style_spec_indices = range(2) if committee_tiebreaker else range(len(specs))
             style_jobs = [
                 (index, spec_index)
                 for index in eligible_indices
-                for spec_index in range(len(specs))
+                for spec_index in style_spec_indices
             ]
-            style_votes = run_style_jobs(style_jobs, "style-r1")
+            style_first_phase = "style-primary" if committee_tiebreaker else "style-r1"
+            style_votes = run_style_jobs(style_jobs, style_first_phase)
             if judge_committee:
-                style_votes = retry_style_errors(style_votes, "style-r1")
+                style_votes = retry_style_errors(style_votes, style_first_phase)
                 second_style_votes = {
                     index: [] for index in eligible_indices
                 }
-                if committee_conflict_recheck:
+                if committee_tiebreaker:
+                    conflict_indices = [
+                        index
+                        for index, vote_results in style_votes.items()
+                        if needs_committee_tiebreaker(vote_results)
+                    ]
+                    if conflict_indices:
+                        second_style_votes = run_style_jobs(
+                            [(index, 2) for index in conflict_indices],
+                            "style-tiebreaker",
+                        )
+                        second_style_votes = retry_style_errors(
+                            second_style_votes, "style-tiebreaker"
+                        )
+                elif committee_conflict_recheck:
                     conflict_indices = [
                         index
                         for index, vote_results in style_votes.items()
@@ -1317,14 +1769,24 @@ def evaluate(
                         second_style_votes = retry_style_errors(
                             second_style_votes, "style-r2"
                         )
-                style_results = [
-                    finalize_committee_rounds(
-                        criteria[index],
-                        style_votes[index],
-                        second_style_votes[index] or None,
-                    )
-                    for index in eligible_indices
-                ]
+                if committee_tiebreaker:
+                    style_results = [
+                        finalize_committee_tiebreaker(
+                            criteria[index],
+                            style_votes[index],
+                            second_style_votes[index] or None,
+                        )
+                        for index in eligible_indices
+                    ]
+                else:
+                    style_results = [
+                        finalize_committee_rounds(
+                            criteria[index],
+                            style_votes[index],
+                            second_style_votes[index] or None,
+                        )
+                        for index in eligible_indices
+                    ]
             else:
                 style_results = [
                     aggregate_votes(criteria[index], style_votes[index])
@@ -1350,7 +1812,12 @@ def evaluate(
         )
         if style_evaluation
         else None,
-        committee_conflict_recheck=committee_conflict_recheck if judge_committee else False,
+        committee_conflict_recheck=(
+            committee_conflict_recheck and not committee_tiebreaker
+            if judge_committee
+            else False
+        ),
+        committee_tiebreaker=committee_tiebreaker if judge_committee else False,
         committee_error_retries=committee_error_retries if judge_committee else 0,
     )
 
@@ -1372,6 +1839,7 @@ def assemble_scores(
     style_results: list[dict[str, Any]] | None = None,
     style_evaluation_mode: str | None = None,
     committee_conflict_recheck: bool = False,
+    committee_tiebreaker: bool = False,
     committee_error_retries: int = 0,
 ) -> dict[str, Any]:
     """Build the scores.json payload from per-criterion aggregated results.
@@ -1386,6 +1854,8 @@ def assemble_scores(
         for result in results:
             criterion = criteria_by_id.get(result["id"], {})
             tags = criterion.get("analysis_tags") or {}
+            if result["verdict"] == "not_applicable":
+                continue
             key = key_of(criterion, tags) or "untagged"
             group = groups.setdefault(key, {"n_criteria": 0, "n_passed": 0, "n_failed": 0, "n_errors": 0})
             group["n_criteria"] += 1
@@ -1407,7 +1877,12 @@ def assemble_scores(
     n_errors = sum(1 for result in results if result["verdict"] == "error")
     n_unresolved = sum(1 for result in results if result.get("resolution") == "unresolved")
     n_criteria = len(results)
-    all_pass = n_criteria > 0 and n_passed == n_criteria and n_unresolved == 0
+    # A criterion the answer legitimately routed around leaves the denominator instead
+    # of counting as a miss. Only criteria carrying `applies_when` can reach this state,
+    # so every rubric without it keeps n_scored == n_criteria and scores unchanged.
+    n_not_applicable = sum(1 for result in results if result["verdict"] == "not_applicable")
+    n_scored = n_criteria - n_not_applicable
+    all_pass = n_scored > 0 and n_passed == n_scored and n_unresolved == 0
     n_criteria_with_error_votes = sum(
         1 for result in results if (result.get("vote_counts") or {}).get("error", 0) > 0
     )
@@ -1431,12 +1906,86 @@ def assemble_scores(
     weighted_total = 0
     weighted_passed = 0
     for result in results:
+        if result["verdict"] == "not_applicable":
+            continue
         criterion = criteria_by_id.get(result["id"], {})
         weight = criterion.get("criticality")
         weight = weight if weight in (1, 2, 3) else 1
         weighted_total += weight
         if result["verdict"] == "pass":
             weighted_passed += weight
+
+    # Cascade analysis: criteria may declare `depends_on: ["C-016"]` when they only
+    # arise once an earlier fork was decided a particular way. Without it the headline
+    # pass rate silently weights a dogmatic fork by however finely the rubric split its
+    # consequences -- one wrong turn in `ehe-und-espresso` costs nine criteria, a
+    # Gebietseinstufung in the second-exam set costs twelve. Reported, never rescored:
+    # the dependents still count, but a reader can see whether a gap came from one fork
+    # or from many independent misses.
+    verdict_by_id = {result["id"]: result["verdict"] for result in results}
+    dependents_of: dict[str, list[str]] = {}
+    unknown_dependencies: list[str] = []
+    for criterion in criteria:
+        for parent in criterion.get("depends_on") or []:
+            parent = str(parent)
+            if parent not in criteria_by_id:
+                unknown_dependencies.append(f"{criterion['id']} -> {parent}")
+                continue
+            dependents_of.setdefault(parent, []).append(criterion["id"])
+
+    def is_root(criterion_id: str) -> bool:
+        return not (criteria_by_id.get(criterion_id, {}).get("depends_on") or [])
+
+    root_results = [
+        result for result in results
+        if is_root(result["id"]) and result["verdict"] != "not_applicable"
+    ]
+    root_passed = sum(1 for result in root_results if result["verdict"] == "pass")
+    def downstream(start: str) -> list[str]:
+        """Every criterion transitively hanging off `start`, in stable order.
+
+        Dependency chains run several levels deep -- in `ehe-und-espresso` the
+        § 1357 fork carries the Anwartschaftsrecht, that carries the Eigentumslage,
+        and that carries seven Mitbesitz criteria. Counting only direct children
+        would report one consequence instead of nine.
+        """
+        seen: list[str] = []
+        queue = list(dependents_of.get(start, []))
+        while queue:
+            node = queue.pop(0)
+            if node in seen or node == start:
+                continue
+            seen.append(node)
+            queue.extend(dependents_of.get(node, []))
+        return seen
+
+    cascades = []
+    # Only topmost forks are reported, so a three-level chain yields one entry
+    # rather than three overlapping ones.
+    for criterion in criteria:
+        cid = criterion["id"]
+        if not is_root(cid) or verdict_by_id.get(cid) != "fail":
+            continue
+        children = downstream(cid)
+        if not children:
+            continue
+        failed = [c for c in children if verdict_by_id.get(c) == "fail"]
+        cascades.append({
+            "root_id": cid,
+            "root_title": criterion.get("title", ""),
+            "n_dependents": len(children),
+            "n_dependents_failed": len(failed),
+            "dependents_failed": failed,
+        })
+    cascade_report = {
+        "declared": bool(dependents_of),
+        "n_root_criteria": len(root_results),
+        "n_root_passed": root_passed,
+        "root_pass_rate": root_passed / len(root_results) if root_results else 0.0,
+        "n_failures_behind_failed_roots": sum(c["n_dependents_failed"] for c in cascades),
+        "cascades": cascades,
+        "unknown_dependencies": unknown_dependencies,
+    }
 
     style_n_eligible = len(style_results or [])
     style_n_passed = sum(1 for result in style_results or [] if result["verdict"] == "pass")
@@ -1491,7 +2040,17 @@ def assemble_scores(
         "judge_committee": serialized_committee,
         "votes_per_criterion": votes,
         "adaptive_voting": adaptive,
+        "committee_voting_mode": (
+            "primary_pair_with_tiebreaker"
+            if committee_tiebreaker
+            else "full_committee"
+            if serialized_committee
+            else None
+        ),
+        "primary_votes_per_criterion": 2 if committee_tiebreaker else None,
+        "tiebreaker_votes_per_conflict": 1 if committee_tiebreaker else None,
         "committee_conflict_recheck": committee_conflict_recheck,
+        "committee_tiebreaker": committee_tiebreaker,
         "committee_error_retries": committee_error_retries,
         "scored_at": dt.datetime.now(dt.timezone.utc).isoformat(),
         "score": 1.0 if all_pass else 0.0,
@@ -1501,14 +2060,17 @@ def assemble_scores(
         "n_errors": n_errors,
         "n_criteria_with_error_votes": n_criteria_with_error_votes,
         "n_unresolved": n_unresolved,
-        "criterion_pass_rate": n_passed / n_criteria if n_criteria else 0.0,
+        "criterion_pass_rate": n_passed / n_scored if n_scored else 0.0,
         "content_score": {
             "n_passed": n_passed,
             "n_criteria": n_criteria,
+            "n_scored": n_scored,
+            "n_not_applicable": n_not_applicable,
             "n_errors": n_errors,
             "n_unresolved": n_unresolved,
-            "pass_rate": n_passed / n_criteria if n_criteria else 0.0,
+            "pass_rate": n_passed / n_scored if n_scored else 0.0,
         },
+        "cascade_report": cascade_report,
         "criticality_weighted_content_score": {
             "points_earned": weighted_passed,
             "points_available": weighted_total,
@@ -1574,7 +2136,16 @@ def main() -> int:
                     f"  {spec.name}: {spec.model} @ {spec.api_base} "
                     f"(effort {spec.reasoning_effort}, key {api_key_env_for(spec.api_base)})"
                 )
-            print(f"Votes per criterion: {len(committee)} (one per committee member)")
+            if args.committee_tiebreaker:
+                print(
+                    "Votes per criterion: 2 primary votes plus 1 tiebreaker "
+                    "only on disagreement"
+                )
+            else:
+                print(
+                    f"Votes per criterion: {len(committee)} "
+                    "(one per committee member)"
+                )
         else:
             print(f"Judge model: {args.judge_model}")
             print(f"Judge endpoint: {api_base} (key: {api_key_env_for(api_base)})")
@@ -1585,6 +2156,13 @@ def main() -> int:
         else:
             style_mode = "disabled"
         print(f"Style evaluation: {style_mode}")
+        if args.style_evaluation:
+            profiles = load_style_profiles(rubric_path)
+            if profiles:
+                rendered = ", ".join(
+                    f"{name}={doc_type}" for name, doc_type in profiles.items()
+                )
+                print(f"Style profiles (frozen in rubric): {rendered}")
         print(f"Vote cache: {vote_cache_dir if vote_cache_dir else 'disabled'}")
         print(f"Criteria: {len(criteria)}")
         print(f"Parallel judge calls: {args.parallel}")
@@ -1616,10 +2194,31 @@ def main() -> int:
         service_tier=args.service_tier,
         criterion_ids=args.criterion_id,
         committee_conflict_recheck=args.committee_conflict_recheck,
+        committee_tiebreaker=args.committee_tiebreaker,
         committee_error_retries=args.committee_error_retries,
     )
     scores_path = write_scores(submission, scores, args.output)
-    print(f"{scores['n_passed']}/{scores['n_criteria']} criteria passed")
+    content = scores["content_score"]
+    if content.get("n_not_applicable"):
+        print(
+            f"{scores['n_passed']}/{content['n_scored']} criteria passed "
+            f"({content['n_not_applicable']} not applicable, of {content['n_criteria']})"
+        )
+    else:
+        print(f"{scores['n_passed']}/{scores['n_criteria']} criteria passed")
+    cascade = scores.get("cascade_report") or {}
+    if cascade.get("declared"):
+        print(
+            f"Independent forks: {cascade['n_root_passed']}/{cascade['n_root_criteria']} "
+            f"({cascade['root_pass_rate']:.0%})"
+        )
+        for entry in cascade.get("cascades", []):
+            print(
+                f"  cascade at {entry['root_id']} ({entry['root_title']}): "
+                f"{entry['n_dependents_failed']}/{entry['n_dependents']} dependent criteria also failed"
+            )
+        if cascade.get("unknown_dependencies"):
+            print(f"  unknown depends_on targets: {', '.join(cascade['unknown_dependencies'])}")
     for breakdown_key, label in [
         ("breakdown_by_station", "By station"),
         ("breakdown_by_function", "By function"),
