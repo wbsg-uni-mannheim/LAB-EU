@@ -22,6 +22,10 @@ What to preserve:
 - Reject or rewrite an alternative that can pass from its label alone. An accepted alternative carries its own burden: the relevant standard and its application to the same person, object, and issue.
 - Do not add alternatives that are not expressly accepted in the supplied solution atoms. The supplied solution is the reference path, not a prompt to reconstruct every literature position.
 
+Mark dependencies and path scope on the final criteria:
+- Set "depends_on" to the IDs of the criteria whose decision a criterion presupposes. A criterion belongs there when it can only arise once an earlier fork was decided the reference way - for example, criteria about the possessor's position that presuppose an earlier criterion denying co-ownership. Name only the direct predecessor, not the whole chain; chains are resolved during scoring. This is reporting only and never changes a verdict, but without it the pass rate silently weights one doctrinal fork by however finely you split its consequences.
+- Set "applies_when" only on a criterion that is scoped to one solution path and becomes meaningless on another expressly acceptable path. Name that path and the acceptable alternatives in one sentence. The judge may then return "not_applicable" and the criterion drops out of the score. Do not use it as a softener for a criterion an answer merely failed to address: an answer that omits the topic must still fail. Leave the field out unless a different, named path genuinely makes the question moot.
+
 Audit every final criterion before returning it:
 - It is decidable from the agent answer alone, with named source documents at most as context.
 - It is self-contained: all facts, dates, parties, and provisions the judge needs are stated in the match_criteria.
@@ -60,7 +64,9 @@ Return only valid JSON:
       "sources": ["..."],
       "derived_from_atoms": ["A-001"],
       "review_notes": ["..."],
-      "candidate_ids_merged": ["K-001"]
+      "candidate_ids_merged": ["K-001"],
+      "depends_on": [],
+      "applies_when": ""
     }
   ],
   "rejected_candidates": [

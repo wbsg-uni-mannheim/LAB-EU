@@ -24,6 +24,7 @@ from dotenv import load_dotenv
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 
 import retry_util  # noqa: E402
+from task_identity import task_format_label  # noqa: E402
 import sandbox_spec  # noqa: E402
 
 
@@ -90,6 +91,14 @@ MODEL_LIMITS: dict[str, tuple[int, int]] = {
     "z-ai/glm-5.2": (1_050_000, 128_000),
 }
 
+# These study models are available from the OpenAI API before they appear in
+# OpenCode's bundled model registry. Registering them explicitly keeps frozen
+# study arms runnable without changing the requested model IDs.
+UNLISTED_PROVIDER_MODELS = {
+    "gpt-5.6-sol",
+    "gpt-5.6-terra",
+}
+
 
 def build_opencode_config(model: str) -> dict[str, Any]:
     """Permission config plus a per-model context/output-limit override when known."""
@@ -97,11 +106,12 @@ def build_opencode_config(model: str) -> dict[str, Any]:
     # model is "provider/model-id" (e.g. "openrouter/z-ai/glm-5.2").
     provider, _, model_id = model.partition("/")
     limits = MODEL_LIMITS.get(model_id)
-    if provider and model_id and limits:
+    model_config: dict[str, Any] = {}
+    if limits:
         context, output = limits
-        config["provider"] = {
-            provider: {"models": {model_id: {"limit": {"context": context, "output": output}}}}
-        }
+        model_config["limit"] = {"context": context, "output": output}
+    if provider and model_id and (limits or model_id in UNLISTED_PROVIDER_MODELS):
+        config["provider"] = {provider: {"models": {model_id: model_config}}}
     return config
 
 
@@ -354,7 +364,7 @@ def render_prompt(row: dict[str, Any], task_input_dir: pathlib.Path) -> str:
     task = row["task"]
     docs = "\n".join(f"- {name}" for name in document_list(task_input_dir)) or "- (none)"
     deliverables = "\n".join(f"- {name}" for name in row["deliverables"])
-    title = task.get("title", row["task_id"])
+    title = task_format_label(task.get("title"))
     work_type = task.get("work_type", "")
     instructions = task.get("instructions", "")
     today = dt.date.today().isoformat()
@@ -1186,11 +1196,11 @@ def preflight(args: argparse.Namespace) -> None:
     Checked before the first model call: a jail that dies on the first agent
     action, or a solver that never had its credentials, costs a whole run.
     """
+    # same source of truth as the baseline runner; the key is read here and
+    # handed to the sandbox through its environment, never on the command line
+    load_dotenv(REPO_ROOT / ".env", override=False)
     if args.sandbox != "bwrap":
         return
-    # same source of truth as the baseline runner; the key is read here and
-    # handed to the jail over a pipe, never through a mounted file
-    load_dotenv(REPO_ROOT / ".env", override=False)
     for reason in (sandbox_spec.bwrap_preflight(),
                    sandbox_spec.opencode_preflight(args.opencode_dir)):
         if reason:
