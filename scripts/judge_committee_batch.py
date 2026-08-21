@@ -48,8 +48,10 @@ from evaluation.run import (  # noqa: E402
     load_json,
     load_judge_committee,
     load_rubric,
+    load_style_profiles,
     make_client,
     normalize_combined_judge_result,
+    criterion_applies_when,
     normalize_judge_result,
     parse_json_response,
     vote_cache_path,
@@ -136,12 +138,14 @@ def collect_jobs(run_dirs: list[pathlib.Path], specs: list[JudgeSpec],
                       file=sys.stderr)
                 continue
             task = load_json(task_dir / "task.json")
-            _rubric_path, criteria = load_rubric(task_dir)
+            rubric_path, criteria = load_rubric(task_dir)
+            style_profiles = load_style_profiles(rubric_path) if style else None
             for criterion in criteria:
                 agent_output = load_agent_output(submission, criterion)
                 combined = style and is_style_eligible_criterion(criterion)
                 phase = ROUND1_COMBINED_PHASE if combined else ROUND1_CONTENT_PHASE
-                prompt = (combined_content_style_prompt(task, task_dir, agent_output, criterion)
+                prompt = (combined_content_style_prompt(
+                              task, task_dir, agent_output, criterion, style_profiles)
                           if combined else
                           judge_prompt(task, task_dir, agent_output, criterion))
                 for spec in specs:
@@ -166,6 +170,10 @@ def collect_jobs(run_dirs: list[pathlib.Path], specs: list[JudgeSpec],
                         "combined": combined,
                         "criterion_id": criterion["id"],
                         "criterion_title": criterion["title"],
+                        # Mirrors evaluation.run: only an `applies_when` criterion may
+                        # vote "not_applicable". Recorded here because cache_entry()
+                        # sees the manifest entry, not the criterion.
+                        "allow_not_applicable": bool(criterion_applies_when(criterion)),
                         "judge": spec.name,
                     }
     if skipped:
@@ -220,7 +228,10 @@ def cache_entry(body: dict[str, Any], entry: dict[str, Any]) -> dict[str, Any] |
                           "cache_hit": False}
                 for channel, vote in normalized.items()
             }
-        vote = normalize_judge_result(parsed, usage)
+        vote = normalize_judge_result(
+            parsed, usage,
+            allow_not_applicable=bool(entry.get("allow_not_applicable")),
+        )
         return {**identity,
                 "verdict": vote["verdict"],
                 "reasoning": vote["reasoning"],
