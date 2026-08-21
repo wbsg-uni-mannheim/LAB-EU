@@ -4,12 +4,17 @@ from __future__ import annotations
 
 import datetime as dt
 import hashlib
+import re
 import pathlib
 from typing import Any
+
+from task_identity import task_format_label
 
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 PROMPT_TEMPLATE = REPO_ROOT / "prompts" / "harness" / "solve_task_baseline.txt"
+MULTI_PROMPT_TEMPLATE = REPO_ROOT / "prompts" / "harness" / "solve_task_baseline_multi.txt"
+FILE_MARKER = re.compile(r"^===\s*FILE:\s*(?P<name>.+?)\s*===\s*$", re.MULTILINE)
 MAX_DOC_CHARS = 120_000
 MAX_TOTAL_DOC_CHARS = 300_000
 
@@ -50,7 +55,7 @@ def render_prompt(
     prompt = template.format(
         today=(today or dt.date.today()).isoformat(),
         task_id=task_id,
-        title=task.get("title", task_id),
+        title=task_format_label(task.get("title")),
         work_type=task.get("work_type", ""),
         instructions=task.get("instructions", ""),
         documents=documents,
@@ -70,3 +75,55 @@ def strip_outer_fence(text: str) -> tuple[str, bool]:
 
 def sha256_text(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+def render_multi_prompt(
+    task_id: str,
+    task: dict[str, Any],
+    task_dir: pathlib.Path,
+    deliverables: list[str],
+    today: dt.date | None = None,
+) -> tuple[str, bool]:
+    """Single-call prompt for tasks with more than one deliverable.
+
+    The Second State Exam tasks require two or three work products; the baseline
+    arm has to produce them in one response, so the model emits them separated by
+    marker lines that split_multi_response turns back into files.
+    """
+    documents, truncated = render_documents(task_dir)
+    template = MULTI_PROMPT_TEMPLATE.read_text(encoding="utf-8")
+    prompt = template.format(
+        today=(today or dt.date.today()).isoformat(),
+        task_id=task_id,
+        title=task_format_label(task.get("title")),
+        work_type=task.get("work_type", ""),
+        instructions=task.get("instructions", ""),
+        documents=documents,
+        deliverables_block="\n".join(f"- {name}" for name in deliverables),
+    )
+    return prompt, truncated
+
+
+def split_multi_response(text: str, deliverables: list[str]) -> dict[str, str]:
+    """Split a marker-separated response into {filename: content}.
+
+    Only the declared deliverables are returned; an unknown or repeated marker is
+    ignored so a stray marker inside prose cannot invent or overwrite a file. A
+    deliverable the model omitted is simply absent, which the runner records as
+    missing rather than silently writing an empty file.
+    """
+    matches = list(FILE_MARKER.finditer(text))
+    if not matches:
+        return {}
+    wanted = {name.strip(): name for name in deliverables}
+    out: dict[str, str] = {}
+    for index, match in enumerate(matches):
+        raw = match.group("name").strip().strip("`\"'")
+        name = wanted.get(raw)
+        if name is None or name in out:
+            continue
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(text)
+        body = text[match.end():end].strip()
+        if body:
+            out[name] = body + "\n"
+    return out
