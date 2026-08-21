@@ -1,0 +1,64 @@
+Create an intentionally over-complete candidate pool from the answer atoms. Generate enough candidates to cover all material legal requirements, but do not create padding criteria for immaterial details.
+
+Rules:
+- Every title and match_criteria must be in the same language as the case and solution.
+- Every match_criteria must use explicit Boolean labels in the case language.
+- For German, use "ERFÜLLT, wenn ... NICHT ERFÜLLT, wenn ...".
+- For English, use "PASS if ... FAIL if ...".
+- For French, use "RÉUSSI si ... ÉCHOUÉ si ...".
+- One criterion checks exactly one legal proposition. If describing the check needs "und"/"sowie"/"and" between independently checkable requirements, split it into several criteria. A judge cannot return a partial verdict on a bundle.
+- Use independent partial credit as the boundary, but do not routinely turn definitions or abstract rule statements into standalone criteria. When a rule or definition serves mainly as the premise for a material case-specific application, include the necessary standard in the application or argumentation criterion. Create a separate rule criterion only when the abstract rule, doctrinal dispute, or choice of legal test is itself independently material and grading-worthy without the application. Do not split individual facts, indicators, arguments, citations, or intermediate phrases that merely support the same application or conclusion.
+- Each criterion must be self-contained: name the concrete facts, dates, parties, provisions, or conclusions it depends on inside the match_criteria. The judge cannot look them up in the solution.
+- Each criterion must be decidable from the agent answer alone, with the named source documents at most as context.
+- Where an atom records defensible_alternatives, encode them explicitly: the PASS side accepts the main position or one of the named alternative positions, each with the reasoning it requires. Never write vague acceptance such as "oder vertretbar begründet" without naming which alternatives are acceptable and what they must contain.
+- An alternative label alone never passes. For every expressly accepted alternative, require its controlling legal standard and its application to the same person, object, and issue, unless the supplied solution itself treats the point as a pure conclusion.
+- Never invent another alternative from model knowledge. If the atoms do not record an expressly accepted alternative, test only the reference path represented by the supplied solution.
+- Do not turn atoms with expectation "bonus" into must_pass criteria. Either skip them or include them with criticality "diagnostic" so the pruner can drop them.
+- Do not require a specific document section, ordering, or heading unless the task specifically tests document form. If an atom is marked placement_flexible, the criterion must accept the point wherever it appears in the answer.
+- Name the relevant legal object precisely whenever confusion is possible: the person/participant, claim, administrative act, subject matter, offence, or examination issue. A passage about a different object must not be able to satisfy the criterion.
+- Name the examination station as well as the legal object when the same proposition could appear elsewhere for a different purpose. Reasoning may be located elsewhere in a valid alternative structure, but it must be expressly and unambiguously connected to the object and legal issue checked by the criterion.
+- If the material proposition requires an examination, application, or argument, write the PASS side so that a bare heading, mention, or conclusion cannot satisfy it. An application criterion must require at least one concrete fact from the supplied documents and the legal connection between that fact and the rule. For a result-determinative fork, name the controlling legal reason that must accompany the conclusion. Routine points may remain concise.
+- If the supplied solution materially chooses between competing provisions or legal frameworks, create a criterion for the correct choice and the controlling reason. Do not reward naming either provision without resolving the choice when it changes the applicable test.
+- A fact-dependent criterion must be anchored in facts from the supplied source documents. Its PASS side must not reward a conclusion that depends on a material fact the documents do not contain.
+- Do not create a criterion for an atom that the supplied solution itself leaves unsupported, internally contradictory, or marked as a gap. Preserve that issue only as a generation warning for human review.
+- Do not make incidental factual precision mandatory. Require exact measurements, timings, dates, amounts, or wording only when the task or solution makes that exact precision legally material; otherwise test the legally relevant relationship or inference.
+- Match the required depth to the supplied solution's own treatment at the permitted location. Where the solution makes a point as a brief statement (a one-sentence finding, a bare norm citation with result, "vorliegend gewahrt"), the criterion's PASS side must accept an equally brief statement. Never require an enumeration of elements, a date calculation, or a reasoning step that the solution's own passage does not contain. Pilot experience: criteria demanding more than the gold passage were the most frequent calibration-repair class.
+- Do not create aggregate criteria that merely restate the combination of other criteria (for example "the admissibility analysis is overall convincing" or interim-result checks). They double-count errors already caught by the specific criteria.
+- The FAIL side should name the material error modes for this case (wrong action type, missed provision, wrong conclusion), not merely negate the PASS side.
+- Tolerate legally equivalent wording, citation formats, and structure.
+- Include expected facts, legal bases, procedural consequences, and common failure modes where relevant.
+- Set criticality to "must_pass" unless the criterion is useful only for diagnostics; then use "diagnostic".
+- Use source filenames from the task bundle when useful.
+- Keep each title, match_criteria, and review note concise.
+
+Multi-document work products (Zweites Staatsexamen):
+- deliverable_profiles in the payload records the frozen document type of every deliverable file. Use it to decide which form and method expectations apply to which file.
+- Set "deliverables" on every criterion to ALL files in which the point may legitimately be satisfied (an OR-list of permitted locations, filenames from task.json). The judge will only see the listed files, so evidence outside them cannot count. For atoms with several deliverable_locations or placement_flexible, list every permitted file; never force a single location the task does not force.
+- Never create two content criteria for the same legal proposition in different files. A second criterion on the same topic is allowed only for a genuinely independent per-document performance (formgerechter Antrag, adressatengerechte Erklärung, korrekter Tenor) and must name that distinct performance in the match_criteria, restricted to its document.
+- Create document-form and method criteria per deliverable according to its doc_type, restricted to that file, and only where the supplied solution actually shows the performance:
+  - gerichtliche_entscheidung: Entscheidungsaufbau, korrekter und vollstreckungsfähiger Tenor, tragende Gründe, Beschränkung auf Entscheidungserhebliches, Umgang mit dem Streitstand.
+  - anwaltlicher_schriftsatz: korrekte und formgerechte Anträge, konsequente Parteiperspektive, prozessuale Zweckmäßigkeit (richtiger Rechtsbehelf mit Begründung, Auswahl und Gewichtung des Vortrags).
+  - mandanten_oder_behoerdenschreiben: klare Handlungsempfehlung, verständliche und adressatengerechte Darstellung von Risiken, Fristen und nächsten Schritten.
+  - gutachten: Gutachtenstil (Obersatz, Voraussetzungen, Subsumtion, Ergebnis) where the task requires it.
+- Create exactly one completeness criterion per unconditionally required deliverable file, restricted to that file: PASS if the file contains a recognizable document of the required type that responds to the task; FAIL if the file is missing, empty, or a different kind of document. Do not additionally sanction the same absence through other criteria in other files. A conditionally ordered Hilfsgutachten ("soweit ... nicht erforderlich erscheint") gets NO existence or completeness criterion: whether its questions were answered somewhere permitted is tested by the content criteria with their OR-location lists. A method criterion for a conditional Hilfsgutachten must PASS unconditionally when the Hilfsgutachten is missing, empty, or minimal - never phrase this as a condition on where else the questions were treated: the judge of a criterion restricted to the Hilfsgutachten cannot see the other files and would conservatively fail a conditional clause.
+- Where the solution requires consistency across parts of a document (Tenor vs. Gründe, Antrag vs. Begründung, Ergebnis vs. Empfehlung), an internal-consistency criterion for the affected document is allowed; it must name the concrete elements that have to agree.
+- Components the task expressly waives ("erlassen") must not be tested by any criterion.
+- Keep substantive-content criteria, document-form/method criteria, and completeness criteria separate; one criterion never mixes these categories.
+
+Return only valid JSON:
+{
+  "language": "...",
+  "criteria": [
+    {
+      "id": "K-001",
+      "criticality": "must_pass",
+      "title": "...",
+      "match_criteria": "...",
+      "deliverables": ["..."],
+      "sources": ["..."],
+      "derived_from_atoms": ["A-001"],
+      "review_notes": ["..."]
+    }
+  ],
+  "generation_notes": ["..."]
+}

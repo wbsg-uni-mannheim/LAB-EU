@@ -1,0 +1,27 @@
+Extract the outline (Gliederung) of the model solution as a tree.
+
+Rules:
+
+- The solution consists of several work products (files, separated by "## <filename>" section headers). Create one top-level node per deliverable file, in file order, with a short unique id prefix derived from the document (for example "KE" for a Klageerwiderung, "MS" for a Mandantenschreiben, "HG" for a Hilfsgutachten, "U" for an Urteil, "SS" for a Schriftsatz, "BS" for a Behördenschreiben) and the document name as label.
+- Below each document node, mirror that document's own structure. If it has explicit headings or inline outline markers (e.g. "A. Zulässigkeit", "I. ...", "1. ...", "a) ...", "aa) ..."), reproduce exactly those levels and labels, in document order, with ids prefixed by the document prefix (e.g. "KE.B.I"). Do not add, merge, rename, or reorder sections.
+- The label is the marker's title as written in the solution (without the marker itself). If a marker has no title (runs straight into a sentence), derive a short label from the section's subject and set "derived_label": true on that node.
+- Only include structural sections. Do not create nodes for individual sentences, Hinweis passages, or footnotes.
+- Depth: include every level the solution itself uses (typically up to 4-5). Do not go deeper than the solution's own markers.
+- If a document has NO explicit structure at all (essay-style, common for Mandantenschreiben), reconstruct the logical outline of that document as a shallow subtree (one to two levels) below its document node and set "derived_label": true on the derived nodes. Set the top-level field "derived" to true only if NO document has explicit structure.
+- Never invent stations that are not treated in the solution.
+
+Return only valid JSON:
+{
+  "language": "...",
+  "derived": false,
+  "outline": [
+    {
+      "id": "KE",
+      "label": "Klageerwiderung",
+      "children": [
+        {"id": "KE.B", "label": "Rechtliche Würdigung", "children": []}
+      ]
+    }
+  ],
+  "outline_notes": ["..."]
+}

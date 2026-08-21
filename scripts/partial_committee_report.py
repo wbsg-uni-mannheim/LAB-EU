@@ -33,6 +33,7 @@ from evaluation.run import (  # noqa: E402
     load_json,
     load_judge_committee,
     load_rubric,
+    load_style_profiles,
     vote_cache_path,
 )
 
@@ -113,12 +114,14 @@ def main() -> int:
                 continue
             tasks += 1
             task = load_json(task_dir / "task.json")
-            _path, criteria = load_rubric(task_dir)
+            rubric_path, criteria = load_rubric(task_dir)
+            style_profiles = load_style_profiles(rubric_path) if style_on else None
             for criterion in criteria:
                 output = load_agent_output(submission, criterion)
                 combined = style_on and is_style_eligible_criterion(criterion)
                 phase = "combined-r1" if combined else "content-r1"
-                prompt = (combined_content_style_prompt(task, task_dir, output, criterion)
+                prompt = (combined_content_style_prompt(
+                              task, task_dir, output, criterion, style_profiles)
                           if combined else judge_prompt(task, task_dir, output, criterion))
                 content, style = read_verdicts(
                     cache_dir, phase, specs, criterion["id"], prompt, combined)

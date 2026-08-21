@@ -1,0 +1,26 @@
+Classify every deliverable file of this task by its work-product type.
+
+Rules:
+- Classify every file listed in "deliverables"; never skip, add, or rename files.
+- Derive the type from the task instructions (Aufgabenstellung, Bearbeitervermerk) and the filename. The task text is authoritative when filename and instructions disagree. Do not use knowledge beyond these sources.
+- Allowed doc_type values (fixed enum, use exactly these strings):
+  - "gutachten": internes Rechtsgutachten oder Hilfsgutachten im Gutachtenstil.
+  - "gerichtliche_entscheidung": Urteil, Beschluss, Gerichtsbescheid oder sonstige gerichtliche Entscheidung.
+  - "anwaltlicher_schriftsatz": Klage, Klageerwiderung, Rechtsmittel- oder Antragsschriftsatz und jeder sonstige an ein Gericht gerichtete Parteischriftsatz, auch wenn ihn eine Behörde oder die Landesanwaltschaft als Verfahrensbeteiligte fertigt.
+  - "mandanten_oder_behoerdenschreiben": beratendes oder erläuterndes Schreiben an Mandanten oder an eine Behörde außerhalb des Prozessrechtsverhältnisses.
+- State the decisive cue from the instructions in "rationale" (one short sentence, case language).
+- If the instructions genuinely do not determine the type for a file, still choose the most plausible type and set "uncertain": true with the reason in the rationale. A human reviewer then resolves the case; never invent a new type.
+
+Return only valid JSON:
+{
+  "language": "...",
+  "deliverable_profiles": [
+    {
+      "file": "urteil-sut.md",
+      "doc_type": "gerichtliche_entscheidung",
+      "rationale": "...",
+      "uncertain": false
+    }
+  ],
+  "classification_notes": ["..."]
+}

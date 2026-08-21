@@ -1,4 +1,4 @@
-## Anlage 4: Auszug aus dem Protokoll über den Beweistermin und die mündliche Verhandlung der 8. Kammer des Bayerischen Verwaltungsgerichts München - M 8 K 19.51, vom 5. Dezember 2019
+## Anlage 5: Auszug aus dem Protokoll über den Beweistermin und die mündliche Verhandlung der 8. Kammer des Bayerischen Verwaltungsgerichts München - M 8 K 19.51, vom 5. Dezember 2019
 
 (…)
 

@@ -89,6 +89,14 @@ def parse_args() -> argparse.Namespace:
         help="Targeted retries per errored committee vote before a criterion stays unresolved.",
     )
     parser.add_argument(
+        "--committee-tiebreaker",
+        action="store_true",
+        help=(
+            "Use committee members 1 and 2 as primary judges and member 3 only "
+            "as a tiebreaker; do not repeat a valid 2:1 result."
+        ),
+    )
+    parser.add_argument(
         "--votes",
         type=int,
         default=1,
@@ -106,6 +114,15 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--parallel", type=int, default=1)
     parser.add_argument("--python", default=sys.executable)
+    parser.add_argument(
+        "--scores-name",
+        default="scores.json",
+        help=(
+            "Per-task score filename. Defaults to scores.json. Use a distinct "
+            "basename for non-voting shadow judges so their results do not "
+            "replace the committee outcome."
+        ),
+    )
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument(
         "--skip-existing",
@@ -141,6 +158,14 @@ def apply_study(args: argparse.Namespace) -> dict[str, Any]:
     if args.style_evaluation is None:
         args.style_evaluation = False
 
+    scores_name = pathlib.Path(args.scores_name)
+    if (
+        scores_name.name != args.scores_name
+        or scores_name.suffix != ".json"
+        or args.scores_name in {"", ".json"}
+    ):
+        raise SystemExit("--scores-name must be a JSON basename such as scores.shadow.json")
+
     if args.judge_committee is not None:
         path = (args.judge_committee if args.judge_committee.is_absolute()
                 else REPO_ROOT / args.judge_committee)
@@ -162,12 +187,15 @@ def apply_study(args: argparse.Namespace) -> dict[str, Any]:
         "votes": 1 if args.judge_committee else args.votes,
         "reasoning_effort": args.reasoning_effort,
         "style_evaluation": args.style_evaluation,
+        "committee_tiebreaker": args.committee_tiebreaker,
         "adaptive": args.adaptive,
+        "scores_name": args.scores_name,
     }
 
 
 def report_incomplete(run_dir: pathlib.Path,
-                      paths: list[pathlib.Path]) -> int:
+                      paths: list[pathlib.Path],
+                      scores_name: str = "scores.json") -> int:
     """Refuse to call a run judged when a committee member was not answering.
 
     A committee that loses one voter still writes scores.json — every affected
@@ -179,7 +207,7 @@ def report_incomplete(run_dir: pathlib.Path,
     unresolved = criteria = errored = 0
     affected: list[str] = []
     for metadata_path in paths:
-        scores_path = metadata_path.parent / "scores.json"
+        scores_path = metadata_path.parent / scores_name
         if not scores_path.exists():
             continue
         try:
@@ -208,9 +236,11 @@ def report_incomplete(run_dir: pathlib.Path,
     return 1
 
 
-def already_judged(metadata_path: pathlib.Path) -> bool:
+def already_judged(
+    metadata_path: pathlib.Path, scores_name: str = "scores.json"
+) -> bool:
     """True if this task has a complete scores.json with no error verdicts."""
-    scores_path = metadata_path.parent / "scores.json"
+    scores_path = metadata_path.parent / scores_name
     if not scores_path.exists():
         return False
     try:
@@ -274,22 +304,29 @@ def judge_one(args: argparse.Namespace, metadata_path: pathlib.Path) -> tuple[pa
         command.extend(["--service-tier", args.service_tier])
     if args.committee_error_retries is not None:
         command.extend(["--committee-error-retries", str(args.committee_error_retries)])
+    if args.committee_tiebreaker:
+        command.append("--committee-tiebreaker")
     if args.vote_cache_dir is not None:
         command.extend(["--vote-cache-dir", str(args.vote_cache_dir)])
     if args.adaptive:
         command.append("--adaptive")
+    command.extend(
+        ["--output", str(submission_dir / args.scores_name)]
+    )
 
     if args.dry_run:
         print(" ".join(command))
         return metadata_path, 0
 
-    stdout_path = metadata_path.parent / "judge.stdout.log"
-    stderr_path = metadata_path.parent / "judge.stderr.log"
+    score_stem = pathlib.Path(args.scores_name).stem
+    log_infix = "" if args.scores_name == "scores.json" else f".{score_stem}"
+    stdout_path = metadata_path.parent / f"judge{log_infix}.stdout.log"
+    stderr_path = metadata_path.parent / f"judge{log_infix}.stderr.log"
     with stdout_path.open("wb") as stdout, stderr_path.open("wb") as stderr:
         result = subprocess.run(command, cwd=REPO_ROOT, stdout=stdout, stderr=stderr, check=False)
 
-    submission_scores = submission_dir / "scores.json"
-    task_scores = metadata_path.parent / "scores.json"
+    submission_scores = submission_dir / args.scores_name
+    task_scores = metadata_path.parent / args.scores_name
     if submission_scores.exists():
         shutil.copy2(submission_scores, task_scores)
 
@@ -323,19 +360,27 @@ def main() -> int:
         if value not in (None, False):
             print(f"  {key}: {value}")
     if not args.dry_run:
-        (run_dir / "judge_config.json").write_text(
+        config_suffix = pathlib.Path(args.scores_name).stem
+        config_name = (
+            "judge_config.json"
+            if args.scores_name == "scores.json"
+            else f"judge_config.{config_suffix}.json"
+        )
+        (run_dir / config_name).write_text(
             json.dumps(config, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
 
     if args.skip_existing:
-        kept = [p for p in paths if not already_judged(p)]
+        kept = [p for p in paths if not already_judged(p, args.scores_name)]
         skipped = len(paths) - len(kept)
         if skipped:
             print(f"Skipping {skipped} already-judged task(s); {len(kept)} to judge.")
         paths = kept
         if not paths:
             print("All tasks already judged. Nothing to do.")
-            return 1 if report_incomplete(run_dir, task_metadata_paths(run_dir)) else 0
+            return 1 if report_incomplete(
+                run_dir, task_metadata_paths(run_dir), args.scores_name
+            ) else 0
 
     failures = 0
     max_workers = max(1, args.parallel)
@@ -358,7 +403,7 @@ def main() -> int:
                 failures += int(code != 0)
                 print(f"{path.parent.name}: judge_exit={code}")
 
-    incomplete = report_incomplete(run_dir, paths)
+    incomplete = report_incomplete(run_dir, paths, args.scores_name)
     return 1 if (failures or incomplete) else 0
 
 

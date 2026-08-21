@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1",
+  "description": "Independent calibration judges for Sol-generated rubrics, v2 (ab Welle 3, 2026-08-13): Terra durch DeepSeek ersetzt, damit keine Modellfamilie die Mehrheit stellt - der Generator ist gpt-5.6-sol, und mit Luna+Terra kamen zuvor zwei von drei Stimmen aus derselben gpt-5.6-Familie.",
+  "judges": [
+    {
+      "name": "luna",
+      "model": "gpt-5.6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4-flash",
+      "model": "deepseek/deepseek-v4-flash-0731",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "none",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.6-flash",
+      "model": "google/gemini-3.6-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "none",
+      "parallel": 4
+    }
+  ]
+}

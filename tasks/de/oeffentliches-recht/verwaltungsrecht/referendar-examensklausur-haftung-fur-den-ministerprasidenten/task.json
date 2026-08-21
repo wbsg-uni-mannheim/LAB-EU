@@ -6,8 +6,10 @@
     "oeffentliches_recht",
     "ZJS_2020_3_S249"
   ],
-  "instructions": "Bearbeiten Sie den Fall gutachterlich. Erstellen Sie eine vollständige Falllösung auf Grundlage des Sachverhalts in documents/sachverhalt.md.",
-  "deliverables": "fallloesung.md",
+  "instructions": "Bearbeiten Sie den Fall gutachterlich. Erstellen Sie eine vollständige Falllösung auf Grundlage des Sachverhalts in documents/sachverhalt.md. Maßgeblich ist der Rechtsstand des Jahres 2020; spätere Gesetzesänderungen und spätere Rechtsprechung bleiben außer Betracht. § 172 VwGO ist in der Fassung mit einem Zwangsgeld-Höchstbetrag von 10.000 Euro anzuwenden.",
+  "deliverables": [
+    "fallloesung-sut.md"
+  ],
   "source": {
     "dataset": "BenGER",
     "subset": "ZJS",
@@ -17,7 +19,11 @@
     "autoren": "Von Diplom-Jurist Arne P. Wegner, B.Sc., CDT, Wiss. Mitarbeiter Til Martin Bußmann-Welsch, Berlin",
     "ip_cleared": true,
     "huggingface": "https://huggingface.co/datasets/SebastianNagl/benger",
-    "citation_file": "/Users/aaronsteiner/Downloads/benger-v1.0/CITATION.cff"
+    "citation_file": "tasks/de/provenance/zjs/CITATION.cff"
   },
-  "license": "Adapted from the BenGER benchmark dataset, ZJS subset, licensed under Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/. Source dataset: https://huggingface.co/datasets/SebastianNagl/benger. Original ZJS provenance: Von Diplom-Jurist Arne P. Wegner, B.Sc., CDT, Wiss. Mitarbeiter Til Martin Bußmann-Welsch, Berlin, (Referendar-)Examensklausur: Haftung für den Ministerpräsidenten?, ZJS_2020_3_S249. The source record is marked ip_cleared=true. Changes were made to convert the case to the LAB-EU task format."
+  "license": "Adapted from the BenGER benchmark dataset, ZJS subset, licensed under Creative Commons Attribution 4.0 International (CC BY 4.0), https://creativecommons.org/licenses/by/4.0/. Source dataset: https://huggingface.co/datasets/SebastianNagl/benger. Original ZJS provenance: Von Diplom-Jurist Arne P. Wegner, B.Sc., CDT, Wiss. Mitarbeiter Til Martin Bußmann-Welsch, Berlin, (Referendar-)Examensklausur: Haftung für den Ministerpräsidenten?, ZJS_2020_3_S249. The source record is marked ip_cleared=true. Changes were made to convert the case to the LAB-EU task format.",
+  "metadata": {
+    "rechtsstand_hinweis": "Rechtsstand-Fixierung am 2026-08-13 gemäß Rechtsstandsregel des Plans ergänzt: Die Musterlösung (ZJS 2020, 249) ist auf dem Stand 2020 (u.a. § 172 VwGO mit 10.000-Euro-Grenze); die zwischenzeitliche EuGH-Entscheidung über die Vorlage des BayVGH ist nicht verarbeitet.",
+    "sachverhalt_hinweis": "Fallfrage B und Bearbeitervermerk (4 Punkte) am 2026-08-13 aus der Originalfundstelle ZJS 2020, 249 (https://www.zjs-online.com/dat/artikel/2020_3_1396.pdf) wortlautgetreu wiederhergestellt; beide waren beim BenGER-Import verloren gegangen. Deliverable am selben Tag von 'fallloesung.md' (String) auf ['fallloesung-sut.md'] normalisiert, Golddatei evals/loesung.md entsprechend umbenannt."
+  }
 }

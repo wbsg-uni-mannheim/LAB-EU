@@ -10,16 +10,23 @@ from unittest import mock
 
 from evaluation.run import (
     JudgeSpec,
+    _judge_call_responses,
     aggregate_votes,
     assemble_scores,
     combined_content_style_prompt,
+    evaluate,
+    finalize_committee_tiebreaker,
     finalize_committee_rounds,
     is_style_eligible_criterion,
     load_judge_committee,
     needs_committee_recheck,
+    needs_committee_tiebreaker,
     normalize_combined_judge_result,
     normalize_judge_result,
+    prompt_cache_key_for_criterion,
+    responses_input_with_cache_breakpoint,
     select_criteria,
+    usage_summary,
 )
 from scripts.generate_rubric import DEFAULT_MODEL, criticality_distribution_warnings
 from scripts.export_review_md import build_markdown
@@ -99,6 +106,78 @@ class ProfessorFeedbackRuleTests(unittest.TestCase):
         self.assertIn("A named fact-pattern variant, hypothetical, or subpart", prompt)
         self.assertIn("Do not fail solely because the answer omits the", prompt)
         self.assertIn("variant label when its surrounding context", prompt)
+
+    def test_responses_prompt_breakpoint_precedes_sources_and_criterion(self):
+        prompt = combined_content_style_prompt(
+            {"title": "Test", "instructions": "Prüfen."},
+            TRIO_TASK,
+            "Die vollständige Antwort.",
+            {
+                "id": "C-001",
+                "title": "Individuelles Kriterium",
+                "match_criteria": "ERFÜLLT, wenn geprüft.",
+            },
+        )
+        response_input = responses_input_with_cache_breakpoint(prompt)
+        stable, variable = response_input[0]["content"]
+
+        self.assertEqual(stable["prompt_cache_breakpoint"], {"mode": "explicit"})
+        self.assertIn("Instructions:\nPrüfen.", stable["text"])
+        self.assertIn("Die vollständige Antwort.", stable["text"])
+        self.assertNotIn("## Source documents", stable["text"])
+        self.assertIn("## Source documents", variable["text"])
+        self.assertIn("Individuelles Kriterium", variable["text"])
+        self.assertEqual(stable["text"] + variable["text"], prompt)
+
+    def test_prompt_cache_keys_are_stably_partitioned_below_burst_limit(self):
+        first = prompt_cache_key_for_criterion("answer", "luna", 0)
+        fourth = prompt_cache_key_for_criterion("answer", "luna", 3)
+        fifth = prompt_cache_key_for_criterion("answer", "luna", 4)
+
+        self.assertEqual(first, fourth)
+        self.assertNotEqual(first, fifth)
+        self.assertEqual(first, "lab-eu-answer-luna-p00")
+
+    def test_usage_summary_records_cache_reads_and_writes(self):
+        summary = usage_summary(
+            {
+                "usage": {
+                    "input_tokens": 2000,
+                    "input_tokens_details": {
+                        "cached_tokens": 1500,
+                        "cache_write_tokens": 400,
+                    },
+                }
+            }
+        )
+
+        self.assertEqual(summary["cached_input_tokens"], 1500)
+        self.assertEqual(summary["cache_write_tokens"], 400)
+
+    def test_gpt56_responses_request_uses_explicit_cache_mode(self):
+        client = mock.Mock()
+        response = mock.Mock()
+        response.output_text = "{}"
+        response.model_dump.return_value = {"usage": {}}
+        client.responses.create.return_value = response
+
+        _judge_call_responses(
+            client,
+            "gpt-5.6-luna",
+            "stable task and answer\n## Source documents\nvariable criterion",
+            "medium",
+            cache_key="lab-eu-answer-luna-p00",
+        )
+
+        request = client.responses.create.call_args.kwargs
+        self.assertEqual(request["prompt_cache_key"], "lab-eu-answer-luna-p00")
+        self.assertEqual(
+            request["extra_body"], {"prompt_cache_options": {"mode": "explicit"}}
+        )
+        self.assertEqual(
+            request["input"][0]["content"][0]["prompt_cache_breakpoint"],
+            {"mode": "explicit"},
+        )
 
     def test_combined_result_preserves_opposite_binary_verdicts(self):
         normalized = normalize_combined_judge_result(
@@ -551,6 +630,99 @@ class ProfessorFeedbackRuleTests(unittest.TestCase):
         self.assertEqual(flipped["verdict"], "fail")
         self.assertEqual(flipped["resolution"], "unresolved")
         self.assertEqual(flipped["committee_status"], "majority_flip")
+
+    def test_committee_tiebreaker_resolves_one_to_one_without_stability_round(self):
+        criterion = {"id": "C-001", "title": "one"}
+        primary_votes = [
+            {"verdict": "pass", "usage": {}, "judge": {"name": "luna"}},
+            {"verdict": "fail", "usage": {}, "judge": {"name": "terra"}},
+        ]
+        tiebreaker = [
+            {"verdict": "pass", "usage": {}, "judge": {"name": "haiku-4.5"}}
+        ]
+
+        self.assertTrue(needs_committee_tiebreaker(primary_votes))
+        result = finalize_committee_tiebreaker(
+            criterion, primary_votes, tiebreaker
+        )
+
+        self.assertEqual(result["verdict"], "pass")
+        self.assertEqual(result["resolution"], "resolved")
+        self.assertEqual(result["committee_status"], "resolved_by_tiebreaker")
+        self.assertEqual(result["vote_counts"], {"pass": 2, "fail": 1, "error": 0})
+        self.assertEqual([stage["stage"] for stage in result["voting_rounds"]], ["primary", "tiebreaker"])
+
+    def test_committee_tiebreaker_calls_third_judge_only_for_primary_conflict(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = pathlib.Path(tmp)
+            task_dir = root / "task"
+            evals = task_dir / "evals"
+            evals.mkdir(parents=True)
+            (task_dir / "task.json").write_text(
+                json.dumps({"title": "test", "instructions": "test"}),
+                encoding="utf-8",
+            )
+            (evals / "rubric.json").write_text(
+                json.dumps(
+                    {
+                        "criteria": [
+                            {"id": "C-001", "title": "consensus", "match_criteria": "x"},
+                            {"id": "C-002", "title": "conflict", "match_criteria": "y"},
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            submission = root / "answer.md"
+            submission.write_text("answer", encoding="utf-8")
+            committee = [
+                JudgeSpec("luna", "luna", "openai", None),
+                JudgeSpec("terra", "terra", "openai", None),
+                JudgeSpec("haiku", "haiku", "openrouter", None),
+            ]
+            calls: list[tuple[str, str]] = []
+
+            def fake_vote(*, spec, criterion, **kwargs):
+                calls.append((criterion["id"], spec.name))
+                verdicts = {
+                    ("C-001", "luna"): "pass",
+                    ("C-001", "terra"): "pass",
+                    ("C-002", "luna"): "pass",
+                    ("C-002", "terra"): "fail",
+                    ("C-002", "haiku"): "fail",
+                }
+                return {
+                    "id": criterion["id"],
+                    "title": criterion["title"],
+                    "verdict": verdicts[(criterion["id"], spec.name)],
+                    "reasoning": "test",
+                    "evidence": [],
+                    "usage": {},
+                }
+
+            with mock.patch("evaluation.run.make_client", return_value=(object(), False)), mock.patch(
+                "evaluation.run.cached_judge_vote", side_effect=fake_vote
+            ):
+                scores = evaluate(
+                    task_dir=task_dir,
+                    submission=submission,
+                    judge_model="unused",
+                    parallel=1,
+                    reasoning_effort=None,
+                    votes=1,
+                    judge_committee=committee,
+                    committee_tiebreaker=True,
+                    committee_error_retries=0,
+                )
+
+        self.assertNotIn(("C-001", "haiku"), calls)
+        self.assertIn(("C-002", "haiku"), calls)
+        self.assertEqual(scores["n_unresolved"], 0)
+        self.assertEqual(
+            scores["committee_voting_mode"], "primary_pair_with_tiebreaker"
+        )
+        self.assertFalse(scores["committee_conflict_recheck"])
+        self.assertTrue(scores["committee_tiebreaker"])
 
     def test_persistent_committee_error_is_conservatively_not_passed(self):
         result = finalize_committee_rounds(

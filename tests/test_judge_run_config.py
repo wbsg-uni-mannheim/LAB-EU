@@ -92,3 +92,34 @@ def test_missing_committee_file_fails_before_any_task(run_dir):
     )
     assert result.returncode != 0
     assert "Missing judge committee file" in result.stderr
+
+
+def test_shadow_scores_use_a_distinct_output_file(run_dir):
+    out = plan(
+        run_dir,
+        "--scores-name",
+        "scores.deepseek-v4-flash-0731.silent.json",
+    )
+    assert (
+        f"--output {run_dir / 'tasks/stub/submission/scores.deepseek-v4-flash-0731.silent.json'}"
+        in out
+    )
+
+
+def test_scores_name_rejects_paths(run_dir):
+    result = subprocess.run(
+        [
+            sys.executable,
+            str(DRIVER),
+            str(run_dir),
+            "--scores-name",
+            "shadow/scores.json",
+            "--dry-run",
+        ],
+        capture_output=True,
+        text=True,
+        cwd=str(REPO_ROOT),
+        timeout=120,
+    )
+    assert result.returncode != 0
+    assert "JSON basename" in result.stderr

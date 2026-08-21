@@ -1,0 +1,475 @@
+{
+  "allesch-m1-hilfsgutachten-fehlt": {
+    "mutation": "Pflichtdatei hilfsgutachten-sut.md fehlt vollständig",
+    "must_fail": [
+      "C-058",
+      "C-062",
+      "C-064"
+    ],
+    "expected_fail_class": "alle nur-Hilfsgutachten-Kriterien",
+    "must_not_fail": [
+      "C-001",
+      "C-002",
+      "C-005",
+      "C-016",
+      "C-022",
+      "C-037",
+      "C-038",
+      "C-068"
+    ],
+    "note": "C-003 (HG-Existenz) am 2026-08-12 entfernt; das Fehlen der Datei zeigt sich jetzt über die nur-HG-Inhaltskriterien und metadata.missing_deliverables des Runners."
+  },
+  "allesch-m2-ossram-in-falscher-datei": {
+    "mutation": "Ossram-Komplex steht im Hilfsgutachten statt im Mandantenschreiben (nicht zugelassener Fundort)",
+    "must_fail": [
+      "C-065",
+      "C-066",
+      "C-067",
+      "C-068",
+      "C-069",
+      "C-070"
+    ],
+    "must_not_fail": [
+      "C-001",
+      "C-002",
+      "C-006",
+      "C-007",
+      "C-015",
+      "C-022"
+    ]
+  },
+  "allesch-m3-ohne-antraege": {
+    "mutation": "Klageerwiderung enthält keinen Sachantrag (Anträge-Block entfernt)",
+    "must_fail": [
+      "C-005"
+    ],
+    "must_not_fail": [
+      "C-001",
+      "C-021",
+      "C-026",
+      "C-027"
+    ]
+  },
+  "allesch-m4-mandantenschreiben-als-gutachten": {
+    "mutation": "Mandantenschreiben durch internes Rechtsgutachten ersetzt (falscher Dokumenttyp, Inhalte fehlen)",
+    "must_fail": [
+      "C-002",
+      "C-006",
+      "C-007",
+      "C-065",
+      "C-068"
+    ],
+    "must_not_fail": [
+      "C-001",
+      "C-005",
+      "C-015",
+      "C-022",
+      "C-026",
+      "C-027"
+    ],
+    "note": "Gold-Substanz dieser Oder-Kriterien stand ausschließlich im Mandantenschreiben (KE nennt nur Ergebnisse); ihr Fail ist mutationsbedingt korrekt. C-015 belegt den intakten Oder-Pfad über die KE. Erwartung am 2026-08-11 nach Erstauswertung präzisiert.",
+    "expected_substance_loss": [
+      "C-016",
+      "C-017",
+      "C-019",
+      "C-020",
+      "C-029",
+      "C-044",
+      "C-045"
+    ]
+  },
+  "kaess-m5-hilfsgutachten-fehlt": {
+    "mutation": "Pflichtdatei hilfsgutachten-sut.md fehlt vollständig",
+    "must_fail": [
+      "C-008",
+      "C-009",
+      "C-007"
+    ],
+    "must_not_fail": [
+      "C-001",
+      "C-044",
+      "C-045",
+      "C-006",
+      "C-004"
+    ],
+    "note": "C-046 (HG-Existenz) am 2026-08-12 entfernt; must_fail sind die HG-gebundenen Inhaltskriterien."
+  },
+  "kaess-m6-ohne-zulassungsantrag": {
+    "mutation": "Schriftsatz enthält keinen Antrag auf Zulassung der Berufung",
+    "must_fail": [
+      "C-001"
+    ],
+    "must_not_fail": [
+      "C-003",
+      "C-044",
+      "C-021"
+    ],
+    "known_single_vote_flips": [
+      "C-039 (v1)",
+      "C-023 (v2)",
+      "C-007 (v3)"
+    ],
+    "note": "Muss-Fail C-001 in allen Läufen erwischt. Je Frischlauf kippte genau ein von der Mutation unberührtes ★1-Kriterium (Einzelstimmen-Varianz); jedes wurde auf Gold-Niveau geöffnet. Kein dritter Rerun – die 3-Stimmen-Abnahme vor dem Freeze ist die systematische Antwort."
+  },
+  "koehl-m7-tenor-widerspruch": {
+    "mutation": "Tenor weist die Klage insgesamt ab, die Gründe erklären die 10.000-Euro-Androhung weiter für unverhältnismäßig",
+    "must_fail": [
+      "C-006"
+    ],
+    "must_not_fail": [
+      "C-001",
+      "C-007",
+      "C-008",
+      "C-009",
+      "C-061"
+    ]
+  },
+  "koehl-m8-begruendung-fehlt": {
+    "mutation": "Bestimmtheit wird nur behauptet; die tragende Anwendungs-Begründung ist entfernt (abstrakter Maßstab bleibt stehen)",
+    "must_fail": [
+      "C-035"
+    ],
+    "must_not_fail": [
+      "C-001",
+      "C-007",
+      "C-031",
+      "C-036"
+    ]
+  },
+  "oertel-m9-tenor-widerspruch": {
+    "mutation": "Beschluss-Tenor gibt dem Eilantrag statt, die Gründe verneinen weiter jede Rechtsverletzung",
+    "must_fail": [
+      "C-005"
+    ],
+    "must_not_fail": [
+      "C-010",
+      "C-004"
+    ]
+  },
+  "oertel-m10-hilfsgutachten-fehlt": {
+    "mutation": "Bedingtes Hilfsgutachten fehlt vollständig (Test der neuen Politik ohne Existenzkriterium)",
+    "must_fail": [],
+    "must_not_fail": [
+      "C-004",
+      "C-005"
+    ],
+    "note": "Oder-Kriterien mit Gold-Substanz nur im HG failen mutationsbedingt korrekt (Sachentscheidungs-voraussetzungen etc.); C-004 nach Freibrief-Unkonditionalisierung must_not_fail.",
+    "expected_substance_loss": [
+      "C-011",
+      "C-017",
+      "C-018",
+      "C-020",
+      "C-022",
+      "C-023",
+      "C-024",
+      "C-025"
+    ]
+  },
+  "schoemig-m11-tenor-widerspruch": {
+    "mutation": "Urteils-Tenor weist die Klage voll ab; Gründe und 3/4-1/4-Kostenquote bleiben unverändert (inkonsistent)",
+    "must_fail": [
+      "C-008",
+      "C-009"
+    ],
+    "must_not_fail": [
+      "C-010",
+      "C-001"
+    ],
+    "note": "C-011 (Kostenquote) sollte wegen Inkonsistenz zur Vollabweisung ebenfalls anschlagen - beobachten."
+  },
+  "schoemig-m12-hilfsgutachten-fehlt": {
+    "mutation": "Bedingtes Hilfsgutachten fehlt vollständig",
+    "must_fail": [],
+    "must_not_fail": [
+      "C-007",
+      "C-001"
+    ],
+    "note": "Analog m10; C-007 nach Freibrief-Unkonditionalisierung must_not_fail.",
+    "expected_substance_loss": [
+      "C-019",
+      "C-020",
+      "C-021",
+      "C-022",
+      "C-023",
+      "C-024"
+    ]
+  },
+  "decker-m13-tenor-widerspruch": {
+    "mutation": "Tenor weist die Klage ab, die Entscheidungsgruende halten die Verpflichtungsklage weiter fuer begruendet",
+    "must_fail": [
+      "C-004"
+    ],
+    "must_not_fail": [
+      "C-005",
+      "C-042",
+      "C-043",
+      "C-009",
+      "C-010"
+    ],
+    "notes": "C-001 (Vollstaendigkeit) darf passen: ein Urteil liegt vor. C-005/C-042 pruefen die Kostenlast, die im Tenor unveraendert bleibt."
+  },
+  "decker-m14-hilfsgutachten-fehlt": {
+    "mutation": "Hilfsgutachten auf die Ueberschrift reduziert",
+    "must_fail": [],
+    "must_not_fail": [
+      "C-008"
+    ],
+    "expected_substance_loss": [
+      "C-044",
+      "C-045",
+      "C-046",
+      "C-047",
+      "C-048",
+      "C-049",
+      "C-050"
+    ],
+    "notes": "Bedingt angeordnetes Hilfsgutachten: keine Existenz-/Vollstaendigkeitskriterien; C-008 (Methode) muss nach der unbedingten Waiver-Regel ERFUELLT bleiben. Die sieben OR-Kriterien C-044 bis C-050 (Zurueckstellung, § 15 Abs. 3 BauGB, Fristablauf) sind zwar fuer Urteil ODER Hilfsgutachten zugelassen, ihre Substanz steht im Gold aber ausschliesslich im Hilfsgutachten - ihr Ausfall ist echter Substanzverlust und erwartet."
+  },
+  "gregor-m15-tenor-widerspruch": {
+    "mutation": "Tenor weist die Klage insgesamt ab, die Gruende heben Ziffer 1 des Vorbescheids weiter auf",
+    "must_fail": [
+      "C-004"
+    ],
+    "must_not_fail": [
+      "C-010",
+      "C-011",
+      "C-012"
+    ],
+    "notes": "Kostenentscheidung ist bei Gregor erlassen, daher keine Kostenkriterien betroffen."
+  },
+  "gregor-m16-hilfsgutachten-fehlt": {
+    "mutation": "Hilfsgutachten auf die Ueberschrift reduziert",
+    "must_fail": [],
+    "must_not_fail": [
+      "C-048"
+    ],
+    "expected_substance_loss": [
+      "C-013",
+      "C-014",
+      "C-022",
+      "C-045",
+      "C-046",
+      "C-047",
+      "C-010",
+      "C-011",
+      "C-012",
+      "C-009",
+      "C-032",
+      "C-033"
+    ],
+    "notes": "Gregor traegt 10 HG-only-Kriterien; ihr Ausfall ist echter Substanzverlust. Zusaetzlich C-009 (Ladungsfrist-Detail), C-032 und C-033 (Gebietserhaltung/-praegung): fuer beide Dateien zugelassen, aber die Entscheidung laesst sie ausdruecklich dahinstehen, die Substanz steht im Hilfsgutachten. C-048 (Methodik) muss nach der Waiver-Regel passen. C-017 fiel im ersten Lauf gegen die unveraenderte Entscheidungsdatei aus; Ursache war ein zu enger Fundort im Kriterium (Klagebefugnis statt beliebiger Stelle), am 2026-08-13 geoeffnet und mit 3/3 gegen Gold und Mutant nachgeprueft."
+  },
+  "hasl-kleiber-m17-ohne-antraege": {
+    "mutation": "Antragsblock des Schriftsatzes entfernt (Einleitung, Verpflichtungs- und Kostenantrag)",
+    "must_fail": [
+      "C-006",
+      "C-007",
+      "C-008"
+    ],
+    "must_not_fail": [
+      "C-002",
+      "C-003",
+      "C-036",
+      "C-047",
+      "C-048"
+    ],
+    "notes": "C-001 (Vollstaendigkeit) darf passen: der Schriftsatz bleibt ein erkennbarer Klageschriftsatz."
+  },
+  "hasl-kleiber-m18-bauherr-in-falscher-datei": {
+    "mutation": "Ausfuehrungen zur Bauherreneigenschaft aus dem Schriftsatz ins Mandantenschreiben verschoben",
+    "must_fail": [
+      "C-016"
+    ],
+    "must_not_fail": [
+      "C-001",
+      "C-002",
+      "C-007",
+      "C-008",
+      "C-036"
+    ],
+    "notes": "Testet die Fundort-Restriktion: C-016 ist auf schriftsatz-sut.md beschraenkt, der Inhalt steht vollstaendig, aber am unzulaessigen Ort."
+  },
+  "kaess-ex2-m19-tenor-widerspruch": {
+    "mutation": "Tenorziffer I kehrt das Feststellungsergebnis um (Beklagte WAR berechtigt), die Gruende halten den Aufruf weiter fuer rechtswidrig",
+    "must_fail": [
+      "C-005"
+    ],
+    "must_not_fail": [
+      "C-006",
+      "C-007",
+      "C-009"
+    ],
+    "notes": "C-001 (Vollstaendigkeit) darf passen: eine Entscheidung liegt vor."
+  },
+  "kaess-ex2-m20-hilfsgutachten-fehlt": {
+    "mutation": "Hilfsgutachten auf die Ueberschrift reduziert",
+    "must_fail": [],
+    "must_not_fail": [
+      "C-009"
+    ],
+    "expected_substance_loss": [],
+    "notes": "Bedingtes Hilfsgutachten: keine Existenzsanktion; C-009 (Methode) muss nach der Waiver-Regel passen. Das Gold-HG behandelt nur Art. 5 GG, den die Loesung ausdruecklich als nicht erwartbar kennzeichnet."
+  },
+  "koehl-2024-m21-ohne-verweisung": {
+    "mutation": "Tenorziffer zur Unzustaendigkeitserklaerung und Verweisung des Hilfsantrags an das VG Regensburg entfernt",
+    "must_fail": [
+      "C-006",
+      "C-007"
+    ],
+    "must_not_fail": [
+      "C-005",
+      "C-001"
+    ],
+    "notes": "Prueft die Zwei-Ziffern-Mechanik des einzigen Falls mit Teilverweisung: Der Hauptantrags-Tenor bleibt unberuehrt."
+  },
+  "koehl-2024-m22-hilfsgutachten-fehlt": {
+    "mutation": "Hilfsgutachten auf die Ueberschrift reduziert",
+    "must_fail": [],
+    "must_not_fail": [
+      "C-004"
+    ],
+    "expected_substance_loss": [
+      "C-041",
+      "C-043"
+    ],
+    "notes": "C-004 (Methode) muss nach der Waiver-Regel passen; C-041 ist HG-exklusiv, C-043 (Art. 3 GG kein Anspruch auf Schlechterstellung Dritter) steht im Gold nur im Hilfsgutachten - beides echter Substanzverlust. C-014 fiel im ersten Lauf gegen die unveraenderte Entscheidungsdatei; Ursache war eine Gold-Knappheit im Kriterium, am 2026-08-13 geoeffnet."
+  },
+  "oertel-537-m23-tenor-widerspruch": {
+    "mutation": "Tenor weist die Klage ab, die Entscheidungsgruende halten die Verpflichtungsklage weiter fuer begruendet",
+    "must_fail": [
+      "C-004",
+      "C-005"
+    ],
+    "must_not_fail": [
+      "C-003"
+    ],
+    "notes": "Testet zugleich, dass der am 2026-08-13 entkonditionalisierte HG-Waiver C-003 unberuehrt bleibt."
+  },
+  "oertel-537-m24-hilfsgutachten-fehlt": {
+    "mutation": "Hilfsgutachten auf die Ueberschrift reduziert",
+    "must_fail": [],
+    "must_not_fail": [
+      "C-003"
+    ],
+    "expected_substance_loss": [
+      "C-008",
+      "C-009",
+      "C-010",
+      "C-011",
+      "C-012",
+      "C-013",
+      "C-014",
+      "C-015"
+    ],
+    "notes": "Direkter Test des am 2026-08-13 entkonditionalisierten Waivers: C-003 muss bei leerem Hilfsgutachten ERFUELLT bleiben. C-008 bis C-015 (Rechtsweg, Zustaendigkeit, Klagefrist, Beteiligte) sind fuer beide Dateien zugelassen, stehen im Gold aber ausschliesslich im Hilfsgutachten (Urteil: 0 Treffer) - echter Substanzverlust."
+  },
+  "possart-m25-tenor-widerspruch": {
+    "mutation": "Tenor lehnt alle drei Antraege ab, die Gruende stellen die aufschiebende Wirkung gegen Ziffer 1) weiter wieder her",
+    "must_fail": [
+      "C-005"
+    ],
+    "must_not_fail": [
+      "C-006",
+      "C-007",
+      "C-004"
+    ],
+    "notes": "KORREKTUR der ersten Deklaration: Possarts Tenorziffer I entspricht ANTRAG II (aufschiebende Wirkung), 'Im Uebrigen abgelehnt' deckt die Antraege I und III. Die Mutation ersetzt beide Ziffern durch eine Gesamtablehnung; daher faellt C-005 (Antrag II) und C-006/C-007 (Ablehnung Antrag I bzw. III) bleiben korrekt erfuellt. Genau die Ziffernverwechslung, vor der das Inventar gewarnt hat."
+  },
+  "possart-m26-hilfsgutachten-fehlt": {
+    "mutation": "Hilfsgutachten auf die Ueberschrift reduziert",
+    "must_fail": [],
+    "must_not_fail": [
+      "C-004"
+    ],
+    "expected_substance_loss": [
+      "C-010",
+      "C-011",
+      "C-012",
+      "C-013",
+      "C-021",
+      "C-022",
+      "C-023",
+      "C-024",
+      "C-028"
+    ],
+    "notes": "C-004 (Methode) muss nach der Waiver-Regel passen. Von den 18 OR-Kriterien stehen neun (Rechtsweg, Zustaendigkeit, Beiladung, Sofortvollzug/Anhoerung, Bestandskraft) im Gold ausschliesslich im Hilfsgutachten - ihr Ausfall ist echter Substanzverlust."
+  },
+  "wolff-m27-tenor-widerspruch": {
+    "mutation": "Tenor verpflichtet zur Genehmigungserteilung, die Entscheidungsgruende weisen die Klage weiter in vollem Umfang ab",
+    "must_fail": [
+      "C-005"
+    ],
+    "must_not_fail": [
+      "C-004",
+      "C-006"
+    ],
+    "notes": "C-001 (Vollstaendigkeit) und C-006 (Kostenlast des Klaegers) bleiben unberuehrt; die Kostenziffer wurde nicht angetastet."
+  },
+  "wolff-m28-hilfsgutachten-fehlt": {
+    "mutation": "Hilfsgutachten auf die Ueberschrift reduziert",
+    "must_fail": [],
+    "must_not_fail": [
+      "C-004"
+    ],
+    "expected_substance_loss": [
+      "C-048",
+      "C-049",
+      "C-050",
+      "C-051",
+      "C-052"
+    ],
+    "notes": "C-004 (Methode) muss nach der Waiver-Regel passen. Die Sachentscheidungsvoraussetzungen C-048 bis C-052 (Rechtsweg, Zustaendigkeit, objektive Klagehaeufung) stehen im Gold nur im Hilfsgutachten - echter Substanzverlust. C-016 bis C-018 (Fristverlaengerung, Fiktion) stehen dagegen im Urteil und duerfen nicht fallen."
+  },
+  "weber-m29-ohne-antrag": {
+    "mutation": "Antrag auf Durchfuehrung der muendlichen Verhandlung aus dem Schriftsatz entfernt; zusaetzlich der bekraeftigende Satz 'Der Antrag auf Durchfuehrung der muendlichen Verhandlung ist zulaessig' neutralisiert",
+    "must_fail": [
+      "C-004"
+    ],
+    "must_not_fail": [
+      "C-002",
+      "C-006",
+      "C-007",
+      "C-013"
+    ],
+    "notes": "Der erste Schnitt war zu schwach (Praezedenz kaess-m6): Nach Entfernen nur des foermlichen Antragssatzes stellte die Begruendung den Antrag weiterhin ausdruecklich fest, sodass C-004 zu Recht passierte. Nach der Schaerfung faellt C-004. Der zunaechst beobachtete Fail vor dem Harness-Fix beruhte auf dem Audit-Flip und nicht auf der Mutation - ein Fehler hatte den anderen verdeckt."
+  },
+  "weber-m30-hilfsgutachten-fehlt": {
+    "mutation": "Hilfsgutachten auf die Ueberschrift reduziert",
+    "must_fail": [],
+    "must_not_fail": [
+      "C-007",
+      "C-004",
+      "C-008"
+    ],
+    "expected_substance_loss": [],
+    "notes": "C-007 (Methode) muss nach der Waiver-Regel passen. Webers Hilfsgutachten traegt nur die unproblematischen Sachentscheidungsvoraussetzungen, zu denen die Rubrik keine eigenen Kriterien fuehrt; C-004 und C-008 sind zwar fuer das HG mitzugelassen, ihre Substanz steht aber im Schriftsatz."
+  },
+  "zoellner-m31-ohne-antrag": {
+    "mutation": "Bestimmter Antrag auf vorlaeufige Zulassung zur Fraktionsarbeit aus dem Eilantrag entfernt",
+    "must_fail": [
+      "C-006"
+    ],
+    "must_not_fail": [
+      "C-002",
+      "C-003",
+      "C-004",
+      "C-009"
+    ],
+    "notes": "Einziger Fall ohne Hilfsgutachten: alle 43 Kriterien sind auf die eine Datei gepinnt, Fundort-OR-Listen existieren nicht."
+  },
+  "zoellner-m32-als-gutachten": {
+    "mutation": "Praxisformat-Huelle entfernt (Absender, Adressat, Rubrum, Vollmachtsanzeige, Antrag, Unterschrift, Anlagenvermerk) und der anwaltliche Schlusssatz in eine gutachterliche Ergebnisfeststellung gewandelt; die rechtliche Argumentation bleibt Wort fuer Wort erhalten",
+    "must_fail": [
+      "C-001",
+      "C-002",
+      "C-006"
+    ],
+    "must_not_fail": [
+      "C-009",
+      "C-017",
+      "C-029",
+      "C-034"
+    ],
+    "notes": "NEUE MECHANIK und wichtigster Nachweis des Batches: Erster Mutant, der ein Praxisdokument in ein Gutachten wandelt, ohne den Inhalt anzutasten (41,5 von 42,9 kB unveraendert). Vier Formkriterien fallen (C-001 Vollstaendigkeit, C-002 Adressierung, C-006 bestimmter Antrag, dazu C-004 Antragsgegnerin und C-008 Parteiperspektive), saemtliche materiellen Kriterien bleiben erfuellt. C-002 passierte im ersten Lauf, weil der Text das Gericht noch in der Zustaendigkeitspruefung erwaehnt; das Kriterium wurde am 2026-08-13 auf die tatsaechliche Adressierung verengt (Muster Koehl C-006), Recheck gegen Gold 3/3."
+  }
+}
