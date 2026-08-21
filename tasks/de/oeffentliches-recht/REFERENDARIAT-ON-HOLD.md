@@ -26,11 +26,11 @@ everything derived from it now sit together in the repository designed for it.
 
 | Commit | Contents |
 |---|---|
-| `a29e2b6` | **237 files — the complete set.** Sachverhalte, Anlagen, Musterlösungen (`evals/*-sut.md`), footnote mappings, `task.json`, plus the 45 frozen and generated rubrics. |
-| `ae47c28` | 192 files: the same case materials without the rubrics. |
-| `332c766` | The commit that removed them from tracking. |
+| `c5aea86` | **237 files — the complete set.** Sachverhalte, Anlagen, Musterlösungen (`evals/*-sut.md`), footnote mappings, `task.json`, plus the 45 frozen and generated rubrics. |
+| `5aceffa` | 192 files: the same case materials without the rubrics. |
+| `38256ef` | The commit that removed them from tracking. |
 
-Verified on 2026-08-21: the 237 files in `a29e2b6` are exactly the 237 files on
+Verified on 2026-08-21: the 237 files in `c5aea86` are exactly the 237 files on
 disk outside `.rubric-cache/`. Nothing exists only locally. The ~2,600 files
 under `.rubric-cache/` are rubric generation intermediates and were never
 tracked by design (`.gitignore`).
@@ -40,14 +40,14 @@ tracked by design (`.gitignore`).
 Restore into the working tree without re-adding them to git:
 
 ```bash
-git archive a29e2b6 tasks/de/oeffentliches-recht/referendariat/ | tar -x
+git archive c5aea86 tasks/de/oeffentliches-recht/referendariat/ | tar -x
 ```
 
 Or restore and stage in one step. The explicit pathspec overrides `.gitignore`,
 so this works even while the ignore rule is in place:
 
 ```bash
-git checkout a29e2b6 -- tasks/de/oeffentliches-recht/referendariat/
+git checkout c5aea86 -- tasks/de/oeffentliches-recht/referendariat/
 ```
 
 To undo that staging while keeping the files:
@@ -73,10 +73,10 @@ git reset HEAD -- tasks/de/oeffentliches-recht/referendariat/
 **The working copy is no longer protected by git.** Because the directory is
 untracked and ignored, `git status` will not warn you about changes to it and
 nothing is pushed anywhere. If the machine is lost, only what is in history
-survives — that is the state of `a29e2b6`, not any later edit. Keep a separate
+survives — that is the state of `c5aea86`, not any later edit. Keep a separate
 backup if you keep working on these cases.
 
-**Pulling deletes them on other checkouts.** Anyone who pulls `332c766` loses
+**Pulling deletes them on other checkouts.** Anyone who pulls `38256ef` loses
 the directory from their working tree, including the cluster at
 `/work/aasteine/LAB-EU`. Copy it aside before pulling, then copy it back.
 
