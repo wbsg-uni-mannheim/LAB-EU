@@ -75,6 +75,29 @@ kommen aus dem bestehenden Cache. Voraussetzung ist, dass derselbe
 ./env/bin/python scripts/judge_run.py runs/codex-web-45/20260806T110110Z --judge-committee configs/judge-committee-gemini-luna-terra-tiebreaker.json --committee-tiebreaker --style-evaluation
 ```
 
-`results.csv` wird nachgetragen, sobald die Re-Judges gelaufen sind. Bis dahin
-sind die Werte dieses Falls in `runs/de-core-45-final.csv` für die fünf
-Kriterien überholt.
+## Ergebnis der Re-Judges (2026-08-21)
+
+Lokal ausgeführt für die beiden Codex-Arme:
+
+| Arm | vorher | nachher |
+|---|---:|---:|
+| Codex Web | 25/50 = 0.500 | **29/50 = 0.580** |
+| Codex ohne Web | 18/50 = 0.360 | **22/50 = 0.440** |
+
+Umgeschlagen sind bei Codex Web C-017, C-046, C-048 und C-050, jeweils von
+`fail` auf `pass`. Der Gutachtenstil-Score stieg von 20/37 auf 22/37.
+
+**C-044 bleibt zu Recht `fail`.** Die Antwort behandelt den gesetzlichen
+Eigentumserwerb nach § 946 BGB unter der Überschrift „Leistung des M" — das
+schließen beide Zweige des Kriteriums aus. Die Korrektur hat also nicht pauschal
+freigegeben, sondern nur den Kondiktionsweg geöffnet.
+
+Der Mittelwert über alle 45 Fälle steigt für Codex Web von 0.7691 auf 0.7709,
+für Codex ohne Web von 0.6986 auf 0.7004.
+
+### Noch offen
+
+Die sechs Studienarme aus `runs/de-core-45-final.csv` sind ebenfalls betroffen,
+lassen sich hier aber nicht neu bewerten: Ihre Abgaben liegen auf dem Cluster
+(`/work/aasteine/LAB-EU/`), lokal fehlen sie. Der Re-Judge dieses einen Falls
+muss dort laufen, danach ist `de-core-45-final.csv` neu zu erzeugen.
