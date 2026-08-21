@@ -37,8 +37,17 @@ via `scripts/task_identity.py`, which only ever emits labels from a fixed
 whitelist, so case names, Fundstellen and exam years cannot pass through. Runs
 before 2026-08-21 replaced every title with the generic placeholder
 `Juristische Fallbearbeitung`, and only the Codex arm was anonymized at all --
-the baseline and agent arms saw the full original title. Both are fixed; see
-`docs/codex-web-fehleranalyse-de-core-45.md`.
+the baseline and agent arms saw the full original title, a directly searchable
+string. Both are fixed, on methodological grounds: the arms have to receive the
+same information, and the rubrics grade against the depth conventions of the
+exam format.
+
+How much the placeholder cost is not established. Hausarbeiten score below
+Klausuren in every arm (-0.087 on average for the six arms that saw the title,
+-0.143 for the two anonymized ones). The direction fits the format-signal
+explanation, but with five Hausarbeiten and two arms against six the difference
+carries no weight. Treat it as a design defect that was fixed, not as a measured
+effect.
 
 ## Reproducibility boundary
 
