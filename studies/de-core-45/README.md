@@ -7,6 +7,11 @@ calibrated canonical rubric at `evals/rubric.json`.
 The task and rubric set is frozen as of 2026-07-31. Later corrections require
 an explicit new study revision instead of silently changing this snapshot.
 
+The six original arms' final criterion-level verdicts and judge explanations
+are published in their task-level `scores.json` files. See
+[score provenance and error-analysis fields](scores.md) for the historical
+August 4 result, the August 21 reconstruction, and CSV reproduction commands.
+
 The study compares two original conditions using the same underlying model:
 
 1. `baseline`: one model call, no tools;
