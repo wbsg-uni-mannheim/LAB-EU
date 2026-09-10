@@ -1,0 +1,355 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/oeffentliches-recht/staatshaftungsrecht/ubungsklausur-im-staatshaftungsrecht-raumungsanspruch-und-mietausfallschaden",
+  "solver_case_id": "case-003",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/oeffentliches-recht/staatshaftungsrecht/ubungsklausur-im-staatshaftungsrecht-raumungsanspruch-und-mietausfallschaden",
+  "source_task_dir_relative": "tasks/de/oeffentliches-recht/staatshaftungsrecht/ubungsklausur-im-staatshaftungsrecht-raumungsanspruch-und-mietausfallschaden",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "\"1 K 1462/16.MZ\" \"Duldung\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"1 K 1462/16.MZ\" \"Mietvertrag\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"1 K 1462/16.MZ\" \"Mietvertrag\" -site:zjs-online.com",
+        "match": "Mietvertrag"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"1 K 1462/16.MZ\" \"Mitverschulden\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"1 K 1462/16.MZ\" \"Räumung\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"1 K 1462/16.MZ\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Anspruch auf Räumung und Reinigung\" Obdachlosen Einweisung Vermieter -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Anspruch auf Räumung und Reinigung\" Obdachlosen Einweisung Vermieter -site:zjs-online.com",
+        "match": "Anspruch auf Räumung und Reinigung"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"BGHZ 130, 332\" \"Mitverschulden\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"BGHZ 130, 332\" \"§ 839 Abs. 3\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"BGHZ 130, 332\" Obdachlosen -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"III ZR 148/05\" \"Reinigung\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"III ZR 148/05\" \"Reinigung\" -site:zjs-online.com",
+        "match": "Reinigung"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"III ZR 160/94\" \"Rechtsmittel\" Einweisung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"III ZR 160/94\" \"§ 40 Abs. 4\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"III ZR 160/94\" BGHZ 130 332 pdf -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"III ZR 226/94\" \"Reinigung\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"III ZR 226/94\" \"Reinigung\" -site:zjs-online.com",
+        "match": "Reinigung"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Mietausfall\" \"Räumung und Reinigung\" Stadt Wohnung Einweisung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Mietausfall\" \"Räumung und Reinigung\" Stadt Wohnung Einweisung -site:zjs-online.com",
+        "match": "Mietausfall"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Mietausfall\" \"Räumung und Reinigung\" Stadt Wohnung Einweisung -site:zjs-online.com",
+        "match": "Räumung und Reinigung"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Wenn im Fall der behördlichen Einweisung\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"anderweitige Unterbringungsmöglichkeit in Aussicht\" Wohnung Ordnungsbehörde -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"anderweitige Unterbringungsmöglichkeit in Aussicht\" Wohnung Ordnungsbehörde -site:zjs-online.com",
+        "match": "anderweitige Unterbringungsmöglichkeit in Aussicht"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"weitere Unterbringung\" \"nicht gesichert\" \"offenen Forderungen\" Wohnung Stadt -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"weitere Unterbringung\" \"nicht gesichert\" \"offenen Forderungen\" Wohnung Stadt -site:zjs-online.com",
+        "match": "weitere Unterbringung"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"weitere Unterbringung\" \"nicht gesichert\" \"offenen Forderungen\" Wohnung Stadt -site:zjs-online.com",
+        "match": "nicht gesichert"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"weitere Unterbringung\" \"nicht gesichert\" \"offenen Forderungen\" Wohnung Stadt -site:zjs-online.com",
+        "match": "offenen Forderungen"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Bundesverwaltungsgericht Obdachloseneinweisung Folgenbeseitigungsanspruch Räumung Eigentümer -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "OVG NRW Einweisung Obdachloser Wohnung Folgenbeseitigungsanspruch Räumung Duldung Vermieter Mietausfall -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Obdachloseneinweisung frühere Wohnung Eigentümer Räumung Folgenbeseitigungsanspruch Mietausfall nach Ablauf Einweisung Rechtsprechung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "VG Mainz 1 K 1462/16.MZ 2.11.2017 Folgenbeseitigungsanspruch Wohnung Zustimmung Vermieter -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"III ZR 160/94\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverwaltungsgericht.de Folgenbeseitigungsanspruch Obdachloseneinweisung Wohnung räumen -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverwg.de 4 C 24.91 Folgenbeseitigungsanspruch Voraussetzungen -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverwg.de 4 C 34.88 Folgenbeseitigungsanspruch Mitverschulden unteilbare Leistung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de BGB § 254 Mitverschulden § 839 Amtspflichtverletzung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de GG Art 14 Art 34 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"III ZR 148/05\" Obdachlosenbehörde Wohnung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"III ZR 160/94\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"III ZR 226/94\" Reinigung Wohnung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de III ZR 160/94 13.07.1995 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:justiz.rlp.de 1 K 1462/16.MZ -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:nrwe.justiz.nrw.de \"Folgenbeseitigungsanspruch\" \"Einweisung\" Wohnung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:nrwe.justiz.nrw.de \"Folgenbeseitigungsanspruch\" \"Einweisung\" Wohnung -site:zjs-online.com",
+        "match": "Einweisung"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:nrwe.justiz.nrw.de Obdachloseneinweisung Folgenbeseitigungsanspruch Freimachung Wohnung BGHZ 130 332 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:nrwe.justiz.nrw.de § 39 OBG Mietausfall Obdachloseneinweisung nach Ablauf Einweisungsfrist -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:recht.nrw.de OBG § 19 § 39 § 40 § 41 aktuelle Fassung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:vgmz.justiz.rlp.de 1 K 1462/16.MZ -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "§ 39 OBG NRW Wohnungsbeschlagnahme Mietausfall Ende Einweisung -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-usrse5fe",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-usrse5fe/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T11:25:20.393517+00:00",
+      "ended_at": "2026-08-06T11:33:43.549819+00:00",
+      "duration_seconds": 503.155
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 21799,
+      "sha256": "4f4d905ed0510c7e2eb8c6d77e9ae8596100f62eae69635be1cbfaf6f1d955b6"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 39,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 9,
+    "cited_urls": 0,
+    "unique_used_source_urls": 9,
+    "unique_used_source_domains": 7,
+    "unique_source_urls": 9,
+    "unique_source_domains": 7,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 50
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__oeffentliches-recht__staatshaftungsrecht__ubungsklausur-im-staatshaftungsrecht-raumungsanspruch-und-mietausfallschaden/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__oeffentliches-recht__staatshaftungsrecht__ubungsklausur-im-staatshaftungsrecht-raumungsanspruch-und-mietausfallschaden/sources.md",
+  "exit_code": 0
+}

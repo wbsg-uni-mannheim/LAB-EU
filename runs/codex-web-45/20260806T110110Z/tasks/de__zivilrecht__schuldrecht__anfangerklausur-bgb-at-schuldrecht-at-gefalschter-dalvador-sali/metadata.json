@@ -1,0 +1,180 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/zivilrecht/schuldrecht/anfangerklausur-bgb-at-schuldrecht-at-gefalschter-dalvador-sali",
+  "solver_case_id": "case-035",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/zivilrecht/schuldrecht/anfangerklausur-bgb-at-schuldrecht-at-gefalschter-dalvador-sali",
+  "source_task_dir_relative": "tasks/de/zivilrecht/schuldrecht/anfangerklausur-bgb-at-schuldrecht-at-gefalschter-dalvador-sali",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Der Käufer kann Rückgängigmachung\" \"culpa in contrahendo\" BGH -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Anfechtung dingliche Einigung arglistige Täuschung Fehleridentität Verfügungsgeschäft BGH -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH Anfechtungserklärung muss Wort Anfechtung nicht enthalten Rückzahlung § 143 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH Bargeld Bereicherungsrecht getrennt aufbewahrt Eigentum Geldscheine § 985 § 812 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Eigenschaftsirrtum dingliches Verfügungsgeschäft § 119 Abs. 2 Übereignung Kunstwerk -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"Eine Anfechtungserklärung im Sinne des § 143\" VIII ZR 59/16 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"konkrete Geldschein nicht mehr individualisierbar\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Anfechtung Verfügungsgeschäft arglistige Täuschung dingliche Einigung Fehleridentität -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Eigenschaftsirrtum Kunstwerk Original Fälschung § 119 Abs. 2 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de arglistiges Verschweigen Aufklärungspflicht Vertragsschluss § 123 BGB offenbarungspflicht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de culpa in contrahendo arglistige Täuschung Rückgängigmachung Vertrag Vermögensschaden wirtschaftlich gleichwertige Leistung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de invitatio ad offerendum Preisschild Laden Auslage Vertragsschluss -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 280 § 311 arglistige Täuschung Vertragsaufhebung Rückzahlung Kaufpreis unerwünschter Vertrag -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de BGB § 123 § 142 § 143 § 812 § 818 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/bgb __433 __929 __985 __812 __818 __122 __124 -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-y7l4mcp4",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-y7l4mcp4/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T17:04:35.111554+00:00",
+      "ended_at": "2026-08-06T17:12:25.010696+00:00",
+      "duration_seconds": 469.898
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 18377,
+      "sha256": "e5c636aca898c2bff47bbc8bd8176ebd0847b6efd26f7bfba3d199251abd3c73"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 16,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 5,
+    "cited_urls": 4,
+    "unique_used_source_urls": 5,
+    "unique_used_source_domains": 2,
+    "unique_source_urls": 5,
+    "unique_source_domains": 2,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 15
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__zivilrecht__schuldrecht__anfangerklausur-bgb-at-schuldrecht-at-gefalschter-dalvador-sali/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__zivilrecht__schuldrecht__anfangerklausur-bgb-at-schuldrecht-at-gefalschter-dalvador-sali/sources.md",
+  "exit_code": 0
+}

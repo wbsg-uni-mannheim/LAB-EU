@@ -1,0 +1,215 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung",
+  "solver_case_id": "case-042",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung",
+  "source_task_dir_relative": "tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "\"BGHZ 29, 157, 159\" § 816 \"Gegenwert\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Das gilt auch dann, wenn der Gegenwert höher ist als der Verkehrswert\" § 816 BGH -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"nr=65368\" Bundesgerichtshof -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH 19. Juli 2013 V ZR § 812 Grundstück Bebauung Eigentumserwerb -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Bundesgerichtshof 19. Juli 2013 begründete Erwartung künftigen Eigentumserwerbs Bauarbeiten § 812 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"Anspruch aus § 285\" Eigentümer Besitzer Veräußerung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"V ZR 142/04\" § 816 Gegenwert Verkehrswert -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"V ZR 28/12\" \"zwei Zwecke\" § 812 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"V ZR 93/12\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"im Sinne von § 816 Abs. 1 Satz 1 BGB Erlangte\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"§ 285\" \"§ 985\" BGB Herausgabe Erlös -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"§ 816 Abs. 1 Satz 1\" \"Erlös\" Verkehrswert -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"§ 816\" \"§ 985\" \"§ 285\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de 19.7.2013 § 812 Eigentumserwerb Grundstück Bauarbeiten -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Bauen auf fremdem Grundstück Erwartung Eigentumserwerb Zweckverfehlung § 812 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Eigentümer \"stellvertretendes commodum\" § 985 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Mieter Grundstück Kaufvertrag erwartet Gebäude errichtet Bereicherung § 812 § 951 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de rechtskräftig zur Herausgabe verurteilt veräußert § 816 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 816 Absatz 1 Satz 1 Veräußerung Erlös Verkehrswert -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 816 Herausgabe des Veräußerungserlöses über Verkehrswert Nichtberechtigter -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 985 § 285 Veräußerung Sache Herausgabe Erlös -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de BGB § 816 § 951 § 539 § 812 -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-gxg2shgt",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-gxg2shgt/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T18:10:36.749968+00:00",
+      "ended_at": "2026-08-06T18:18:29.934752+00:00",
+      "duration_seconds": 473.184
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 15072,
+      "sha256": "e8ef4aa5de9bdaf8e20fd431560b7fedba1d6f8288042da220a9df2bd89628df"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 24,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 14,
+    "cited_urls": 3,
+    "unique_used_source_urls": 14,
+    "unique_used_source_domains": 3,
+    "unique_source_urls": 14,
+    "unique_source_domains": 3,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 22
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung/sources.md",
+  "exit_code": 0
+}

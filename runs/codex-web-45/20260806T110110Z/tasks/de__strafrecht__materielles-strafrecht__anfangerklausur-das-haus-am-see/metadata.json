@@ -1,0 +1,250 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/strafrecht/materielles-strafrecht/anfangerklausur-das-haus-am-see",
+  "solver_case_id": "case-023",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/strafrecht/materielles-strafrecht/anfangerklausur-das-haus-am-see",
+  "source_task_dir_relative": "tasks/de/strafrecht/materielles-strafrecht/anfangerklausur-das-haus-am-see",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "\"1 StR 780/94\" Verdeckungsabsicht Sachverhalt -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"BGHSt 41, 8\" Verdeckungsabsicht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Verdeckung\" \"außerhalb\" Strafverfolgungsbehörden § 211 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Verdeckungsabsicht\" \"Bekanntwerden\" Straftat Mord BGH -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Verdeckungsabsicht\" \"Strafverfolgung\" \"nicht erforderlich\" Mord -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Verdeckungsabsicht\" \"Strafverfolgung\" \"nicht erforderlich\" Mord -site:zjs-online.com",
+        "match": "Strafverfolgung"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH 8.8.2001 2 StR 504/00 Verdeckungsmotiv Ansehen abträglich Sachverhalt -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGHSt 41 8 9 Verdeckungsabsicht außerstrafrechtliche Konsequenzen -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Mord Verdeckungsabsicht soziale Folgen Ruf Bekanntwerden Straftat BGH -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Verdeckungsabsicht Veröffentlichung Presse Straftat Mordmerkmal -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de 1 StR 780/94 Verdeckungsabsicht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Heimtücke Täter Opfer Rücken zugewandt Arglosigkeit Streit Tötung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Verdeckungsabsicht Entdeckung Straftat Öffentlichkeit Presse Mord -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 127 Abs. 1 StPO Festnahme Gewalt Verhältnismäßigkeit Fluchtverdacht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de StGB § 305 Gebäude zerstören § 211 § 127 StPO -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de stgb § 123 § 211 § 212 § 223 § 224 § 239 § 240 § 258 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"Bekanntwerden bei\" Verdeckungsabsicht Mord -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"Gebäude\" \"§ 305\" StGB Bauwerk Definition -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"Vermeidung außerstrafrechtlicher\" Mord -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"außerstrafrechtliche Konsequenzen\" Verdeckungsabsicht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"strafrechtlichen Konsequenzen\" \"Verdeckungsabsicht\" andere Straftat -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"vorläufig festnehmen\" \"am Boden fixieren\" § 127 StPO -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de 1 StR 780/94 BGHSt 41 8 Verdeckungsabsicht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de Verdeckungsabsicht \"Bekanntwerden\" Straftat \"außerhalb\" Strafverfolgung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de Verdeckungsmord \"Entdeckung\" \"Strafverfolgung\" nicht erforderlich -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:juris.bundesgerichtshof.de Verdeckungsmord \"Entdeckung\" \"Strafverfolgung\" nicht erforderlich -site:zjs-online.com",
+        "match": "Strafverfolgung"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de gefährliches Werkzeug Schuh Tritt Stollen § 224 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de niedrige Beweggründe Ruf Ansehen Tötung Offenbarung Straftat -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de § 305 Gebäude Begriff Gartenhütte zerstört -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-ec_m39xj",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-ec_m39xj/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T15:05:09.820544+00:00",
+      "ended_at": "2026-08-06T15:14:35.436435+00:00",
+      "duration_seconds": 565.614
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 18500,
+      "sha256": "78775a17fd2a0f007ad6d87a75035e317a108ffc3a90030365f860c2be43346a"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 27,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 8,
+    "cited_urls": 0,
+    "unique_used_source_urls": 8,
+    "unique_used_source_domains": 3,
+    "unique_source_urls": 8,
+    "unique_source_domains": 3,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 29
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__strafrecht__materielles-strafrecht__anfangerklausur-das-haus-am-see/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__strafrecht__materielles-strafrecht__anfangerklausur-das-haus-am-see/sources.md",
+  "exit_code": 0
+}

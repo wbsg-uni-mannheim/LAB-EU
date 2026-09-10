@@ -85,3 +85,9 @@ python scripts/rebuild_scores_from_vote_cache.py runs/<arm>/<run-id> \
 
 Do not run this command against revised current tasks expecting the historical
 table: prompt changes invalidate cache keys and can leave criteria unresolved.
+
+## Additional Codex experiments
+
+The separate [Codex arms with and without web access](codex-scores.md) publish
+90 further submissions with criterion-level judgments and source-use records.
+Their judging and rubric revision differs from the six historical arms above.

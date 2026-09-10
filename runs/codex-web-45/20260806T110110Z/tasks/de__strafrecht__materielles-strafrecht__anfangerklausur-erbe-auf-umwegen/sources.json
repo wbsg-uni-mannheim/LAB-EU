@@ -1,0 +1,257 @@
+{
+  "schema_version": "0.2",
+  "method_note": "Used means the URL appears in the selected deliverable or in Codex's required .codex-used-sources.json sidecar. Open/Fetch means Codex additionally recorded an explicit page-open action or HTTP fetch command. Search-result URLs are not invented from snippets and are not counted unless one of those records exists.",
+  "counts": {
+    "search_queries": 23,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 5,
+    "cited_urls": 0,
+    "unique_used_source_urls": 5,
+    "unique_used_source_domains": 3,
+    "unique_source_urls": 5,
+    "unique_source_domains": 3,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 30
+  },
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Erbonkel\" \"Flugticket\" \"Versuch\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Erbonkel\" \"Flugticket\" \"Versuch\" -site:zjs-online.com",
+        "match": "Flugticket"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Flugreise\" \"rechtlich missbilligte Gefahr\" \"versuchter\" Mord -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Flugticket\" \"Flugzeug abstürzt\" Strafrecht Versuch -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Flugticket\" \"Flugzeug abstürzt\" Strafrecht Versuch -site:zjs-online.com",
+        "match": "Flugticket"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Flugticket\" \"allgemeines Lebensrisiko\" \"Versuch\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Flugticket\" \"allgemeines Lebensrisiko\" \"Versuch\" -site:zjs-online.com",
+        "match": "Flugticket"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Flugzeugabsturz\" \"objektive Zurechnung\" Strafrecht Flugticket -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Hoffnung\" \"Flugzeug\" \"unmittelbares Ansetzen\" Mordversuch -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Hoffnung\" \"Flugzeug\" \"unmittelbares Ansetzen\" Mordversuch -site:zjs-online.com",
+        "match": "Hoffnung"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Hoffnung\" \"Flugzeug\" \"unmittelbares Ansetzen\" Mordversuch -site:zjs-online.com",
+        "match": "Flugzeug"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"schenkt\" \"Flugticket\" \"Hoffnung\" \"Versuch\" Strafrecht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"schenkt\" \"Flugticket\" \"Hoffnung\" \"Versuch\" Strafrecht -site:zjs-online.com",
+        "match": "Flugticket"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"schenkt\" \"Flugticket\" \"Hoffnung\" \"Versuch\" Strafrecht -site:zjs-online.com",
+        "match": "Hoffnung"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Flugreise Hoffnung Absturz Strafbarkeit Versuch \"erlaubtes Risiko\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Flugticket \"Tatentschluss\" Flugzeugabsturz Strafrecht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Flugticket \"untauglicher Versuch\" Flugzeugabsturz -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Flugticket schenken Flugzeugabsturz \"versuchter Mord\" Strafrecht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Strafrecht Flugticket schenken Hoffnung Flugzeug abstürzt objektive Zurechnung Versuch -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Rettungshandlung Körperverletzung rechtfertigender Notstand § 34 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de alternative Kausalität zwei unabhängig tödliche Dosen Gift Strafrecht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de objektive Zurechnung erlaubtes Risiko eigenverantwortlich Flugreise Unfall Tötung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de StGB § 211 § 212 § 22 § 23 § 34 § 223 § 229 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"Eine unmittelbare Vermehrung des Vermögens des Täters\" \"27. Mai 2014\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"Habgier\" \"27. Mai 2014\" Strafsenat -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"Versucht ist eine Tat\" \"notwendigen Zusammengehörigkeit\" \"5 StR 15/20\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de Habgier Vermögensmehrung Mord Erbschaft -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de Heimtücke Arglosigkeit Wehrlosigkeit Überraschungsangriff Gift Essen Mord -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de Kausalität Reserveursache hypothetische Ersatzursache Tod Strafrecht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de unmittelbares Ansetzen § 22 Tätervorstellung Zwischenakte Zufall Tod -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "search_queries": [
+    "\"Erbonkel\" \"Flugticket\" \"Versuch\" -site:zjs-online.com",
+    "\"Flugreise\" \"rechtlich missbilligte Gefahr\" \"versuchter\" Mord -site:zjs-online.com",
+    "\"Flugticket\" \"Flugzeug abstürzt\" Strafrecht Versuch -site:zjs-online.com",
+    "\"Flugticket\" \"allgemeines Lebensrisiko\" \"Versuch\" -site:zjs-online.com",
+    "\"Flugzeugabsturz\" \"objektive Zurechnung\" Strafrecht Flugticket -site:zjs-online.com",
+    "\"Hoffnung\" \"Flugzeug\" \"unmittelbares Ansetzen\" Mordversuch -site:zjs-online.com",
+    "\"schenkt\" \"Flugticket\" \"Hoffnung\" \"Versuch\" Strafrecht -site:zjs-online.com",
+    "Flugreise Hoffnung Absturz Strafbarkeit Versuch \"erlaubtes Risiko\" -site:zjs-online.com",
+    "Flugticket \"Tatentschluss\" Flugzeugabsturz Strafrecht -site:zjs-online.com",
+    "Flugticket \"untauglicher Versuch\" Flugzeugabsturz -site:zjs-online.com",
+    "Flugticket schenken Flugzeugabsturz \"versuchter Mord\" Strafrecht -site:zjs-online.com",
+    "Strafrecht Flugticket schenken Hoffnung Flugzeug abstürzt objektive Zurechnung Versuch -site:zjs-online.com",
+    "site:bundesgerichtshof.de Rettungshandlung Körperverletzung rechtfertigender Notstand § 34 -site:zjs-online.com",
+    "site:bundesgerichtshof.de alternative Kausalität zwei unabhängig tödliche Dosen Gift Strafrecht -site:zjs-online.com",
+    "site:bundesgerichtshof.de objektive Zurechnung erlaubtes Risiko eigenverantwortlich Flugreise Unfall Tötung -site:zjs-online.com",
+    "site:gesetze-im-internet.de StGB § 211 § 212 § 22 § 23 § 34 § 223 § 229 -site:zjs-online.com",
+    "site:juris.bundesgerichtshof.de \"Eine unmittelbare Vermehrung des Vermögens des Täters\" \"27. Mai 2014\" -site:zjs-online.com",
+    "site:juris.bundesgerichtshof.de \"Habgier\" \"27. Mai 2014\" Strafsenat -site:zjs-online.com",
+    "site:juris.bundesgerichtshof.de \"Versucht ist eine Tat\" \"notwendigen Zusammengehörigkeit\" \"5 StR 15/20\" -site:zjs-online.com",
+    "site:juris.bundesgerichtshof.de Habgier Vermögensmehrung Mord Erbschaft -site:zjs-online.com",
+    "site:juris.bundesgerichtshof.de Heimtücke Arglosigkeit Wehrlosigkeit Überraschungsangriff Gift Essen Mord -site:zjs-online.com",
+    "site:juris.bundesgerichtshof.de Kausalität Reserveursache hypothetische Ersatzursache Tod Strafrecht -site:zjs-online.com",
+    "site:juris.bundesgerichtshof.de unmittelbares Ansetzen § 22 Tätervorstellung Zwischenakte Zufall Tod -site:zjs-online.com"
+  ],
+  "sources": [
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/bgh_notp/document.py?Art=en&Blank=1&Datum=2003&Gericht=bgh&Seite=37&anz=1305&nr=6252&pos=1113",
+      "domain": "juris.bundesgerichtshof.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "BGH, Urteil vom 12. Februar 2003 – 1 StR 403/02",
+      "reported_purpose": "Maßstäbe des Mordmerkmals der Heimtücke, insbesondere Ausnutzung der Arg- und Wehrlosigkeit.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/bgh_notp/document.py?Art=en&Blank=1&Datum=2021-12&Gericht=bgh&Seite=4&anz=228&nr=77354&pos=145",
+      "domain": "juris.bundesgerichtshof.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "BGH, Urteil vom 8. Dezember 2021 – 5 StR 236/21",
+      "reported_purpose": "Höchstrichterliche Maßstäbe zum unmittelbaren Ansetzen gemäß § 22 StGB.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Art=en&Blank=1.pdf&Datum=2020-5&Gericht=bgh&Seite=4&Sort=1026&anz=335&nr=107095&pos=120",
+      "domain": "juris.bundesgerichtshof.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Bundesgerichtshof – Entscheidung zum Mordmerkmal der Habgier",
+      "reported_purpose": "Aktuelle höchstrichterliche Definition der Habgier und Erfordernis einer nach Tätervorstellung entstehenden Aussicht auf Vermögensmehrung.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.al-online.de/images/pdf/15_Strafrecht_AT2_6.Auflage_2017.pdf",
+      "domain": "www.al-online.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Harald Langels, Strafrecht AT 2",
+      "reported_purpose": "Dogmatische Einordnung des Flugticket-Absturz-Beispiels als strafloser irrealer Versuch.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/stgb/BJNR001270871.html?level=1",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Strafgesetzbuch (StGB)",
+      "reported_purpose": "Aktueller Wortlaut der angewandten Vorschriften, insbesondere §§ 12, 15, 22, 23, 25–27, 32, 34, 211, 212, 223, 229 und 323c StGB.",
+      "visit_evidence": []
+    }
+  ],
+  "task_id": "de/strafrecht/materielles-strafrecht/anfangerklausur-erbe-auf-umwegen"
+}

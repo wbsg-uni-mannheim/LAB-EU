@@ -1,0 +1,332 @@
+{
+  "schema_version": "0.2",
+  "method_note": "Used means the URL appears in the selected deliverable or in Codex's required .codex-used-sources.json sidecar. Open/Fetch means Codex additionally recorded an explicit page-open action or HTTP fetch command. Search-result URLs are not invented from snippets and are not counted unless one of those records exists.",
+  "counts": {
+    "search_queries": 13,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 23,
+    "cited_urls": 6,
+    "unique_used_source_urls": 23,
+    "unique_used_source_domains": 2,
+    "unique_source_urls": 23,
+    "unique_source_domains": 2,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 11
+  },
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"massive Verdachtsmomente\" \"objektive Evidenz\" Missbrauch Vertretungsmacht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"voraussichtlich erforderlichen\" \"Mängelbeseitigungskosten\" \"V ZR 33/19\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Duldungsvollmacht wiederholtes Auftreten Geschäftsverkehr Kenntnis Dulden -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Käufer kleiner Schadensersatz Mangelbeseitigungskosten V ZR 33/19 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Schadensersatz statt der Leistung Lieferung Ersatzsache Kaufrecht § 249 § 281 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de evidenter Missbrauch Vertretungsmacht grob fahrlässig Kenntnis Vertragspartner -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 439 Abs. 4 relative Unverhältnismäßigkeit Nachlieferung Nachbesserung Kaufrecht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/bgb BGB § 434 § 475b § 475d § 477 Verbrauchsgüterkauf digitale Elemente -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/bgb BGB § 705 § 720 § 721 Gesellschaft bürgerlichen Rechts -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/bgb § 439 § 280 § 281 § 437 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/bgb § 475b § 475d § 477 -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "search_queries": [
+    "https://www.gesetze-im-internet.de/bgb/__164.html",
+    "https://www.gesetze-im-internet.de/hgb/__1.html",
+    "site:bundesgerichtshof.de \"massive Verdachtsmomente\" \"objektive Evidenz\" Missbrauch Vertretungsmacht -site:zjs-online.com",
+    "site:bundesgerichtshof.de \"voraussichtlich erforderlichen\" \"Mängelbeseitigungskosten\" \"V ZR 33/19\" -site:zjs-online.com",
+    "site:bundesgerichtshof.de Duldungsvollmacht wiederholtes Auftreten Geschäftsverkehr Kenntnis Dulden -site:zjs-online.com",
+    "site:bundesgerichtshof.de Käufer kleiner Schadensersatz Mangelbeseitigungskosten V ZR 33/19 -site:zjs-online.com",
+    "site:bundesgerichtshof.de Schadensersatz statt der Leistung Lieferung Ersatzsache Kaufrecht § 249 § 281 -site:zjs-online.com",
+    "site:bundesgerichtshof.de evidenter Missbrauch Vertretungsmacht grob fahrlässig Kenntnis Vertragspartner -site:zjs-online.com",
+    "site:bundesgerichtshof.de § 439 Abs. 4 relative Unverhältnismäßigkeit Nachlieferung Nachbesserung Kaufrecht -site:zjs-online.com",
+    "site:gesetze-im-internet.de/bgb BGB § 434 § 475b § 475d § 477 Verbrauchsgüterkauf digitale Elemente -site:zjs-online.com",
+    "site:gesetze-im-internet.de/bgb BGB § 705 § 720 § 721 Gesellschaft bürgerlichen Rechts -site:zjs-online.com",
+    "site:gesetze-im-internet.de/bgb § 439 § 280 § 281 § 437 -site:zjs-online.com",
+    "site:gesetze-im-internet.de/bgb § 475b § 475d § 477 -site:zjs-online.com"
+  ],
+  "sources": [
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/bgh_notp/document.py?Art=en&Datum=2021&Gericht=bgh&Seite=41&anz=2980&nr=74287&pos=1246",
+      "domain": "juris.bundesgerichtshof.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BGH, Urteil vom 21. Juli 2021 – VIII ZR 357/20",
+      "reported_purpose": "Relative Unverhältnismäßigkeit der vom Käufer gewählten Art der Nacherfüllung",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/bgh_notp/document.py?Art=en&Datum=2021-3-12&Gericht=bgh&anz=4&pos=3",
+      "domain": "juris.bundesgerichtshof.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BGH, Urteil vom 12. März 2021 – V ZR 33/19",
+      "reported_purpose": "Geldcharakter des Schadensersatzes statt der Leistung und Bemessung nach fiktiven Mängelbeseitigungskosten",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/bgh_notp/document.py?Art=en&Datum=2024&Gericht=bgh&Sort=2049&anz=3203&nr=85967&pos=26",
+      "domain": "juris.bundesgerichtshof.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BGH, Urteil vom 9. Januar 2024 – II ZR 220/22",
+      "reported_purpose": "Aktueller höchstrichterlicher Maßstab für evidenten Missbrauch der Vertretungsmacht",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/BGB.pdf",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "Bürgerliches Gesetzbuch (amtliche Gesamtausgabe)",
+      "reported_purpose": "Aktuelle Gesetzesfassung und systematische Prüfung der kauf-, verbrauchsgüterkauf-, stellvertretungs- und gesellschaftsrechtlichen Anspruchsvoraussetzungen",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__14.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 14 BGB – Unternehmer",
+      "reported_purpose": "Unternehmereigenschaft der rechtsfähigen GbR",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__164.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 164 BGB – Wirkung der Erklärung des Vertreters",
+      "reported_purpose": "Zurechnung der im Namen der GbR abgegebenen Verkaufserklärung",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__167.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 167 BGB – Erteilung der Vollmacht",
+      "reported_purpose": "Formlose und konkludente Bevollmächtigung",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__280.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 280 BGB – Schadensersatz wegen Pflichtverletzung",
+      "reported_purpose": "Pflichtverletzung und vermutetes Vertretenmüssen",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__281.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 281 BGB – Schadensersatz statt der Leistung",
+      "reported_purpose": "Voraussetzungen und Ausschluss des Primärleistungsanspruchs nach Schadensersatzverlangen",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__327a.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 327a BGB – Anwendung auf Paketverträge und Verträge über Sachen mit digitalen Elementen",
+      "reported_purpose": "Einordnung des Druckers als Ware mit digitalen Elementen",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__434.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 434 BGB – Sachmangel",
+      "reported_purpose": "Subjektive und objektive Anforderungen an die Funktionalität des Druckers",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__437.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 437 BGB – Rechte des Käufers bei Mängeln",
+      "reported_purpose": "Kaufrechtliche Mängelrechte und Verweisung auf Schadensersatzrecht",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__442.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 442 BGB – Kenntnis des Käufers",
+      "reported_purpose": "Prüfung eines Ausschlusses wegen Kenntnis oder grob fahrlässiger Unkenntnis",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__474.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 474 BGB – Verbrauchsgüterkauf",
+      "reported_purpose": "Einordnung des privaten Kaufs vom gewerblichen Verkäufer",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__475b.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 475b BGB – Sachmangel einer Ware mit digitalen Elementen",
+      "reported_purpose": "Mangelanforderungen für die defekte CAD-Software",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__475d.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 475d BGB – Sonderbestimmungen für Rücktritt und Schadensersatz",
+      "reported_purpose": "Entbehrlichkeit einer Fristsetzung nach Verweigerung der Nacherfüllung",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__476.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 476 BGB – Abweichende Vereinbarungen",
+      "reported_purpose": "Anforderungen an eine negative Beschaffenheitsvereinbarung beim Verbrauchsgüterkauf",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__705.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 705 BGB – Rechtsnatur der Gesellschaft",
+      "reported_purpose": "Rechtsfähigkeit der unter gemeinschaftlichem Namen auftretenden GbR",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__720.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 720 BGB – Vertretung der Gesellschaft",
+      "reported_purpose": "Gesamtvertretung, Einzelermächtigung und Umfang der Vertretungsmacht",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__721.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 721 BGB – Persönliche Haftung der Gesellschafter",
+      "reported_purpose": "Persönliche gesamtschuldnerische Außenhaftung des A",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__721b.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 721b BGB – Einwendungen und Einreden des Gesellschafters",
+      "reported_purpose": "Akzessorietät und Einwendungen des persönlich in Anspruch genommenen Gesellschafters",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__1.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "§ 1 HGB – Kaufmann und Handelsgewerbe",
+      "reported_purpose": "Abgrenzung des kleingewerblichen Betriebs vom Handelsgewerbe",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/hgb/__105.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "§ 105 HGB – Begriff der offenen Handelsgesellschaft",
+      "reported_purpose": "Abgrenzung der GbR von der OHG",
+      "visit_evidence": []
+    }
+  ],
+  "task_id": "de/zivilrecht/handels-und-gesellschaftsrecht/fortgeschrittenenubungsklausur-mopeg-in-3d"
+}

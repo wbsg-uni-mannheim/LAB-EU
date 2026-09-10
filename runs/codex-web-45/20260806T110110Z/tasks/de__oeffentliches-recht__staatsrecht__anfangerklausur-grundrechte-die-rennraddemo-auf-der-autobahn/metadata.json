@@ -1,0 +1,315 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/oeffentliches-recht/staatsrecht/anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn",
+  "solver_case_id": "case-006",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/oeffentliches-recht/staatsrecht/anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn",
+  "source_task_dir_relative": "tasks/de/oeffentliches-recht/staatsrecht/anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "\"1 BvR 610/62\" Schriftform Unterschrift Verfassungsbeschwerde -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Auch ohne Unterschrift ließ sich zweifelsfrei entnehmen\" Verfassungsbeschwerde -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"BVerfGE 15, 288\" \"Unterschrift\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"BVerfGE 15, 288\" \"Unterschrift\" -site:zjs-online.com",
+        "match": "Unterschrift"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Autobahn Fahrraddemonstration Versammlung Bundesverwaltungsgericht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BVerfG Verfassungsbeschwerde Briefumschlag Unterschrift Urheberschaft Wille Schriftform -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BVerfGE 15 288 Unterschrift Verfassungsbeschwerde Schriftform -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Fahrraddemo Autobahn A3 Passau Versammlungsverbot Urteil -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Verfassungsbeschwerde fehlende Unterschrift Schriftform Name Briefumschlag BVerfG -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Versammlung auf Autobahn Widmungszweck Art 8 GG Rechtsprechung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de/SharedDocs/Entscheidungen \"1 BvR 2719/20\" Autobahn Versammlung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de/SharedDocs/Entscheidungen \"Unterschrift\" \"§ 23 Abs. 1\" BVerfGG -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:bundesverfassungsgericht.de/SharedDocs/Entscheidungen \"Unterschrift\" \"§ 23 Abs. 1\" BVerfGG -site:zjs-online.com",
+        "match": "Unterschrift"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de/SharedDocs/Entscheidungen \"eigenhändige Unterschrift\" \"Verfassungsbeschwerde\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:bundesverfassungsgericht.de/SharedDocs/Entscheidungen \"eigenhändige Unterschrift\" \"Verfassungsbeschwerde\" -site:zjs-online.com",
+        "match": "Verfassungsbeschwerde"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de/SharedDocs/Entscheidungen 1 BvR 699/06 Art 8 Versammlungsort -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de/SharedDocs/Entscheidungen 1 BvR 980/13 Versammlungsort -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de/SharedDocs/Entscheidungen Art. 8 Kooperationspflicht Versammlung Verbot -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de/SharedDocs/Entscheidungen Fraport Art. 8 Ort allgemeines öffentliches Forum -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de/SharedDocs/Entscheidungen Versammlungsfreiheit Verkehrsbehinderung praktische Konkordanz -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de/SharedDocs/Entscheidungen Versammlungsverbot \"mildere Mittel\" Auflagen Art 8 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de/SharedDocs/Entscheidungen Versammlungsverbot ultima ratio Art. 8 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverfg.de \"Bundesautobahn\" \"Art. 8\" Versammlung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:bverfg.de \"Bundesautobahn\" \"Art. 8\" Versammlung -site:zjs-online.com",
+        "match": "Bundesautobahn"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverfg.de \"Schriftform\" \"Unterschrift\" \"Verfassungsbeschwerde\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:bverfg.de \"Schriftform\" \"Unterschrift\" \"Verfassungsbeschwerde\" -site:zjs-online.com",
+        "match": "Unterschrift"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:bverfg.de \"Schriftform\" \"Unterschrift\" \"Verfassungsbeschwerde\" -site:zjs-online.com",
+        "match": "Verfassungsbeschwerde"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverfg.de Verfassungsbeschwerde Schriftform fehlende Unterschrift Briefumschlag Name Adresse -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverfg.de Versammlung Autobahn Fahrrad Demonstration Art. 8 GG -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverwg.de \"Bundesautobahn\" \"Fahrrad\" Versammlung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:bverwg.de \"Bundesautobahn\" \"Fahrrad\" Versammlung -site:zjs-online.com",
+        "match": "Bundesautobahn"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverwg.de \"Verkehrsinteressen\" \"Versammlungsfreiheit\" Autobahn -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:bverwg.de \"Verkehrsinteressen\" \"Versammlungsfreiheit\" Autobahn -site:zjs-online.com",
+        "match": "Versammlungsfreiheit"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverwg.de Autobahn Fahrraddemonstration Versammlung Art. 8 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-bayern.de \"10 CS 21.1590\" Autobahn Versammlung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-bayern.de \"10 CS 23.847\" Fahrraddemonstration Autobahn -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-bayern.de Autobahn Fahrraddemonstration \"Art. 15 Abs. 1 BayVersG\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-bayern.de BayVersG Art. 15 aktuelle Fassung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de GG Art 8 Art 3 Art 20a -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de bverfgg § 23 § 90 § 92 § 93 aktuelle Fassung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de fstrg § 1 Absatz 3 Bundesautobahnen Schnellverkehr Kraftfahrzeugen -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:servat.unibe.ch BVerfGE 15 288 Schriftform -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-zb4lec0y",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-zb4lec0y/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T11:52:47.978024+00:00",
+      "ended_at": "2026-08-06T12:03:56.296911+00:00",
+      "duration_seconds": 668.316
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 25845,
+      "sha256": "31e8057a7ed4617018ec1ac523f43d81edaddb2ccbc4d33736c3cc83d1cd4858"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 34,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 13,
+    "cited_urls": 9,
+    "unique_used_source_urls": 13,
+    "unique_used_source_domains": 3,
+    "unique_source_urls": 13,
+    "unique_source_domains": 3,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 42
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/sources.md",
+  "exit_code": 0
+}

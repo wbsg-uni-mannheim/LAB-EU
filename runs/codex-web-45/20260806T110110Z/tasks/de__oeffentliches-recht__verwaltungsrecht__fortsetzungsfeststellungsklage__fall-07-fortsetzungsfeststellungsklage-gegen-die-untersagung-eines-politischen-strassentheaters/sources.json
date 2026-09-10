@@ -1,0 +1,225 @@
+{
+  "schema_version": "0.2",
+  "method_note": "Used means the URL appears in the selected deliverable or in Codex's required .codex-used-sources.json sidecar. Open/Fetch means Codex additionally recorded an explicit page-open action or HTTP fetch command. Search-result URLs are not invented from snippets and are not counted unless one of those records exists.",
+  "counts": {
+    "search_queries": 21,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 15,
+    "cited_urls": 3,
+    "unique_used_source_urls": 15,
+    "unique_used_source_domains": 4,
+    "unique_source_urls": 15,
+    "unique_source_domains": 4,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 4
+  },
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Kundgebung mit Kunstbeitrag\" \"Anscheinswaffen\" -site:zjs-online.com",
+        "match": "Kundgebung mit Kunstbeitrag"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Kundgebung mit Kunstbeitrag\" \"Anscheinswaffen\" -site:zjs-online.com",
+        "match": "Anscheinswaffen"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Sturmgewehrattrappen\" \"§ 42a\" Versammlung -site:zjs-online.com",
+        "match": "Sturmgewehrattrappen"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Vor dem Haupteingang der C-Bank\" -site:zjs-online.com",
+        "match": "Vor dem Haupteingang der C-Bank"
+      }
+    ]
+  },
+  "search_queries": [
+    "\"Kundgebung mit Kunstbeitrag\" \"Anscheinswaffen\" -site:zjs-online.com",
+    "\"Sturmgewehrattrappen\" \"§ 42a\" Versammlung -site:zjs-online.com",
+    "\"Vor dem Haupteingang der C-Bank\" -site:zjs-online.com",
+    "Hessischer VGH 8 A 1188/10 17.03.2011 Volltext -site:zjs-online.com",
+    "Sturmgewehrattrappen Bank Kundgebung Kunstbeitrag Bundeswehr Wachposten Urteil -site:zjs-online.com",
+    "https://www.gesetze-im-internet.de/versammlg/__18.html",
+    "site:bundesverfassungsgericht.de 1 BvR 1726/01 Versammlung Ausschluss Polizei -site:zjs-online.com",
+    "site:bundesverfassungsgericht.de 1 BvR 461/03 3. März 2004 Fortsetzungsfeststellung -site:zjs-online.com",
+    "site:bundesverfassungsgericht.de 1 BvR 816/82 Anachronistischer Zug Kunst -site:zjs-online.com",
+    "site:bundesverfassungsgericht.de Kunstfreiheit Werkbereich Wirkbereich Mephisto -site:zjs-online.com",
+    "site:bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/1984/07 \"1 BvR 816/82\" -site:zjs-online.com",
+    "site:bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2004/03 \"1 BvR 461/03\" -site:zjs-online.com",
+    "site:bverfg.de Fortsetzungsfeststellungsinteresse Versammlung Wiederholungsgefahr Art 8 -site:zjs-online.com",
+    "site:bverfg.de Versammlung Kunstfreiheit Wechselwirkung Versammlungsgesetz Auflage Gefahr öffentliche Sicherheit -site:zjs-online.com",
+    "site:bverwg.de 6 C 23.06 Fortsetzungsfeststellungsinteresse Versammlung -site:zjs-online.com",
+    "site:gesetze-im-internet.de Versammlungsgesetz § 15 Bundesrecht -site:zjs-online.com",
+    "site:gesetze-im-internet.de WaffG § 42a Anscheinswaffen Anlage 1 -site:zjs-online.com",
+    "site:gesetze-im-internet.de/gg Art 5 Art 8 Art 19 Grundgesetz -site:zjs-online.com",
+    "site:gesetze-im-internet.de/vwgo § 113 § 43 § 42 Verwaltungsgerichtsordnung -site:zjs-online.com",
+    "site:lagis-hessen.de 8 A 1188/10 -site:zjs-online.com",
+    "site:rechtsprechung.hessen.de 8 A 1188/10 -site:zjs-online.com"
+  ],
+  "sources": [
+    {
+      "url": "https://de.wikibooks.org/wiki/Verwaltungsrecht_in_der_Klausur/_Die_F%C3%A4lle_/_Fall_7",
+      "domain": "de.wikibooks.org",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Fortsetzungsfeststellungsklage gegen die Untersagung eines politischen Straßentheaters",
+      "reported_purpose": "Sekundärdarstellung der fallbezogenen Streitstände zu Minusmaßnahmen und der verfassungskonformen Anwendung von § 42a WaffG.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://dejure.org/dienste/vernetzung/rechtsprechung?Aktenzeichen=8+A+1188%2F10&Datum=17.03.2011&Gericht=VGH+Hessen",
+      "domain": "dejure.org",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "Hessischer VGH, Urteil vom 17. März 2011 – 8 A 1188/10",
+      "reported_purpose": "Entscheidung zur zugrunde liegenden Fallkonstellation, insbesondere Wiederholungsgefahr, Polizeifestigkeit sowie Zusammenspiel von Versammlungs- und Kunstfreiheit.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2000/06/rk20000629_1bvr082598.html",
+      "domain": "www.bundesverfassungsgericht.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "BVerfG, Beschluss vom 29. Juni 2000 – 1 BvR 825/98",
+      "reported_purpose": "Primärquelle zu Werk- und Wirkbereich der Kunstfreiheit und zu politischer Kunst.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2004/03/rs20040303_1bvr046103.html",
+      "domain": "www.bundesverfassungsgericht.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BVerfG, Beschluss vom 3. März 2004 – 1 BvR 461/03",
+      "reported_purpose": "Maßstäbe zum Fortsetzungsfeststellungsinteresse bei typischerweise kurzfristig erledigten versammlungsrechtlichen Maßnahmen.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2004/10/rk20041026_1bvr172601.html",
+      "domain": "www.bundesverfassungsgericht.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BVerfG, Beschluss vom 26. Oktober 2004 – 1 BvR 1726/01",
+      "reported_purpose": "Primärquelle zur Polizeifestigkeit der Versammlung sowie zu Auflösung und Teilnehmerausschluss.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gg/art_19.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Artikel 19 Grundgesetz",
+      "reported_purpose": "Aktueller Verfassungstext zur Garantie effektiven Rechtsschutzes.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gg/art_5.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Artikel 5 Grundgesetz",
+      "reported_purpose": "Aktueller Verfassungstext zur Kunstfreiheit.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gg/art_8.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Artikel 8 Grundgesetz",
+      "reported_purpose": "Aktueller Verfassungstext zur Versammlungsfreiheit.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/versammlg/__15.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 15 Versammlungsgesetz",
+      "reported_purpose": "Aktueller Wortlaut der bundesrechtlichen Eingriffsbefugnis für Verbot, Auflagen und Auflösung.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/versammlg/__18.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 18 Versammlungsgesetz",
+      "reported_purpose": "Aktueller Wortlaut der Befugnis zum Ausschluss gröblich störender Teilnehmer.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/vwgo/__113.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 113 Verwaltungsgerichtsordnung",
+      "reported_purpose": "Aktueller Wortlaut der Fortsetzungsfeststellungsklage und ihres Begründetheitsmaßstabs.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/vwgo/__42.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 42 Verwaltungsgerichtsordnung",
+      "reported_purpose": "Aktueller Wortlaut zu Anfechtungsklage und Klagebefugnis.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/vwgo/__43.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 43 Verwaltungsgerichtsordnung",
+      "reported_purpose": "Aktueller Wortlaut der allgemeinen Feststellungsklage und ihrer Subsidiarität.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/waffg_2002/__42a.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 42a Waffengesetz",
+      "reported_purpose": "Aktueller Wortlaut des Verbots des Führens von Anscheinswaffen und der Theaterausnahme.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/waffg_2002/anlage_1.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Anlage 1 zum Waffengesetz",
+      "reported_purpose": "Aktuelle Legaldefinitionen von Anscheinswaffe und Führen.",
+      "visit_evidence": []
+    }
+  ],
+  "task_id": "de/oeffentliches-recht/verwaltungsrecht/fortsetzungsfeststellungsklage/fall-07-fortsetzungsfeststellungsklage-gegen-die-untersagung-eines-politischen-strassentheaters"
+}

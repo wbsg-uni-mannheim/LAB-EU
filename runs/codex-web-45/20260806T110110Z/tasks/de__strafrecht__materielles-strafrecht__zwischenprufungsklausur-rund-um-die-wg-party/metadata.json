@@ -1,0 +1,250 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/strafrecht/materielles-strafrecht/zwischenprufungsklausur-rund-um-die-wg-party",
+  "solver_case_id": "case-029",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/strafrecht/materielles-strafrecht/zwischenprufungsklausur-rund-um-die-wg-party",
+  "source_task_dir_relative": "tasks/de/strafrecht/materielles-strafrecht/zwischenprufungsklausur-rund-um-die-wg-party",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "\"3 StR\" 2010 \"Tasche ihrer Kleidung\" ausschließliche Sachherrschaft BGH -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Ein Verkehrsvorgang, bei dem es zu einem Beinahe-Unfall\" 3. November 2009 BGH -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Wegnahme mit dem Einstecken\" BGH 2010 51573 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Wäre auch nur ein Kraftfahrzeug nicht nach rechts ausgewichen\" BGH Aktenzeichen -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"Sporttasche\" Gewahrsam Diebstahl -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:bundesgerichtshof.de \"Sporttasche\" Gewahrsam Diebstahl -site:zjs-online.com",
+        "match": "Sporttasche"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"mitgeführte Tasche\" \"Gewahrsamsenklave\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Selbstbedienungsladen Tasche Gewahrsamsenklave Diebstahl -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de geringwertigkeitsgrenze 50 Euro Diebstahl -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 315b verkehrsfeindlicher Inneneingriff Fahrzeug Schädigungsvorsatz konkrete Gefahr Sache -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de StGB § 242 § 243 § 246 § 303 § 315b -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de TierSchG § 17 BGB § 90a -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"1 StR 100/11\" geringwertig 50 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"25 Euro\" Geringwertigkeitsgrenze § 248a -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"Geringwertigkeitsgrenze\" Diebstahl 50 € -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"Gesamtwert\" \"§ 243 Abs. 2\" Diebstahl -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"in der Tasche ihrer Kleidung\" \"ausschließliche Sachherrschaft\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"verkehrsfeindlichen Inneneingriffs kein eigenhändiges\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"verschlossenes Behältnis\" § 243 Glasschrank -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de 2023 \"kein eigenhändiges Führen\" § 315b Inneneingriff Beifahrer -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de 4 StR 223/24 § 315b Unglücksfall Sachschaden -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de 6 StR 191/23 Zueignung § 246 Behalten Verbergen -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de Einkaufstasche Gewahrsamsenklave Selbstbedienungsladen Diebstahl -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de geringwertige Sache 50 Euro § 243 Abs. 2 2024 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de § 246 Manifestation Zueignung späterer Entschluss behalten -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de § 248a Wertgrenze 50 Euro geringwertig -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de § 315b \"750 Euro\" bedeutendem Wert -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de § 315b \"Beinahe-Unfall\" \"bedeutendem Wert\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de § 315b Beifahrer Anstiftung Mittäter Lenken Aufforderung -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-e131c3zb",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-e131c3zb/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T16:11:57.137822+00:00",
+      "ended_at": "2026-08-06T16:21:54.720768+00:00",
+      "duration_seconds": 597.581
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 23284,
+      "sha256": "e74cf2a9c8cdaf41d2faf6b64e31193ddd1ebc57e28fe8239218308dcddbd405"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 28,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 9,
+    "cited_urls": 0,
+    "unique_used_source_urls": 9,
+    "unique_used_source_domains": 2,
+    "unique_source_urls": 9,
+    "unique_source_domains": 2,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 29
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__strafrecht__materielles-strafrecht__zwischenprufungsklausur-rund-um-die-wg-party/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__strafrecht__materielles-strafrecht__zwischenprufungsklausur-rund-um-die-wg-party/sources.md",
+  "exit_code": 0
+}

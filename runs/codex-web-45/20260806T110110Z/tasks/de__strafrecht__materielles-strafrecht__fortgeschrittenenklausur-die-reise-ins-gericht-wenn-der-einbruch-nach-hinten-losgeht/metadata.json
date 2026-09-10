@@ -1,0 +1,310 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-die-reise-ins-gericht-wenn-der-einbruch-nach-hinten-losgeht",
+  "solver_case_id": "case-030",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-die-reise-ins-gericht-wenn-der-einbruch-nach-hinten-losgeht",
+  "source_task_dir_relative": "tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-die-reise-ins-gericht-wenn-der-einbruch-nach-hinten-losgeht",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "\"22. Januar 2020\" \"seit dem Tod ihrer jeweils einzigen Bewohner\" 244 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"4 StR 265/22\" \"nach dem Tod des Bewohners\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"5 StR 361/17\" Wohnung Tod Bewohner § 244 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Eidesformel\" \"§ 153\" \"Rücktritt\" Meineid Zeuge berichtigt -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Eidesformel\" \"§ 153\" \"Rücktritt\" Meineid Zeuge berichtigt -site:zjs-online.com",
+        "match": "Eidesformel"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Ich schw\" versuchter Meineid Rücktritt Zeugenaussage -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Ich schw\" versuchter Meineid Rücktritt Zeugenaussage -site:zjs-online.com",
+        "match": "Ich schw"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Vernehmung als beendet\" \"§ 153\" Vereidigung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Wohnungseigenschaft\" \"Tod ihres einzigen Bewohners\" BGH -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"unmittelbaren Anschluß\" Vereidigung § 153 § 154 Berichtigung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"versuchten Meineid\" \"§ 153\" Berichtigung Eidesformel -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH \"als Zeuge\" \"besonderes persönliches Merkmal\" 153 28 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "BGH \"als Zeuge\" \"besonderes persönliches Merkmal\" 153 28 -site:zjs-online.com",
+        "match": "als Zeuge"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH 2024 \"Formulierung als Zeuge\" § 153 besonderes persönliches Merkmal § 28 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH 244 Wohnung Tod Bewohner möbliert Erben Besitz Wohnungseinbruch -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH Aussage beendet Vereidigung Ich schwöre Versuch Meineid Rücktritt § 154 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH Rücktritt Qualifikation Wohnungseinbruchdiebstahl Tür unverschlossen Werkzeug -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH Rücktritt Qualifikationsversuch vollendetes Grunddelikt -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH Wohnungseinbruchdiebstahl Bewohner verstorben Wohnungsqualität Aufgabe Wohnzweck -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH falsche uneidliche Aussage abgeschlossen Vernehmung Berichtigung vor Vereidigung Meineid Versuch -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH § 153 Vollendung Vernehmung beendet Vereidigung anschließend falsche uneidliche Aussage Meineid -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Bankkarte Tür geöffnet nicht verschlossen Wohnungseinbruchdiebstahl Versuch -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Kunststoffkarte Türschlitz Tür nicht abgeschlossen Versuch Wohnungseinbruchdiebstahl Rücktritt -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Plastikkarte unverschlossene Tür § 244 Versuch Wohnungseinbruchdiebstahl -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Rücktritt Versuch Qualifikation Grunddelikt vollendet § 244 Werkzeug aufgegeben -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Wohnungseinbruchdiebstahl Versuch Rücktritt Tür offen Grunddelikt vollendet -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Zeuge berichtigt Aussage während Eidesformel Strafbarkeit § 153 154 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"3 StR 526/19\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"4 StR 265/22\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Wohnung verstorbene Bewohnerin Wohnungseinbruchdiebstahl Tod Wohnungsqualität -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de uneidliche Falschaussage Berichtigung § 158 Zeugenvernehmung beendet Eid Versuch Meineid -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 153 § 28 \"als Zeuge\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:bundesgerichtshof.de § 153 § 28 \"als Zeuge\" -site:zjs-online.com",
+        "match": "als Zeuge"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de stgb § 153 § 154 § 158 falsche Aussage Berichtigung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de stgb § 244 Wohnungseinbruchdiebstahl -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/stpo/__59.html § 59 StPO Vereidigung Zeuge -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py \"4 StR 397/19\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py \"6 StR 28/21\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:rechtsprechung-im-internet.de \"3 StR 526/19\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "versuchte Qualifikation vollendetes Grunddelikt Rücktritt Qualifikationsversuch § 24 StGB -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "§ 153 StGB vollendet Abschluss Vernehmung anschließend Eid falsche Aussage -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-lw0j5_mu",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-lw0j5_mu/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T16:21:54.757920+00:00",
+      "ended_at": "2026-08-06T16:32:41.977611+00:00",
+      "duration_seconds": 647.219
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 19006,
+      "sha256": "728ef9e7aefdac970d5b39f2dd7fe63c56b26cae6dfa2704cd89b16424aa16b6"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 37,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 8,
+    "cited_urls": 0,
+    "unique_used_source_urls": 8,
+    "unique_used_source_domains": 4,
+    "unique_source_urls": 8,
+    "unique_source_domains": 4,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 41
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenklausur-die-reise-ins-gericht-wenn-der-einbruch-nach-hinten-losgeht/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenklausur-die-reise-ins-gericht-wenn-der-einbruch-nach-hinten-losgeht/sources.md",
+  "exit_code": 0
+}

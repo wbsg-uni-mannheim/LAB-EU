@@ -1,0 +1,210 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/zivilrecht/schuldrecht/anfangerklausur-ein-gebrochener-arm-und-viele-scherben",
+  "solver_case_id": "case-033",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/zivilrecht/schuldrecht/anfangerklausur-ein-gebrochener-arm-und-viele-scherben",
+  "source_task_dir_relative": "tasks/de/zivilrecht/schuldrecht/anfangerklausur-ein-gebrochener-arm-und-viele-scherben",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Genehmigung der Veräußerung\" \"Verwendungsersatz\" BGB -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Sache wiedererlangt\" Veräußerung Besitzer § 1001 BGB -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Verwendung\" \"Veräußerungserlös\" § 816 gutgläubiger Besitzer -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Veräußerung\" \"§ 1001 Satz 1\" Besitzer Verwendung Eigentümer -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"§ 1001\" \"§ 816 Abs. 1\" BGB Verwendungen -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"§ 816\" \"§ 996\" Verwendungsersatz Nichtberechtigter Veräußerung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH \"Das gilt auch dann, wenn der Gegenwert höher ist als der Verkehrswert\" § 816 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH Verkehrssicherungspflicht Grundstück nächtliche unbefugte Benutzung Eigentümer rechnen -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH Verkehrssicherungspflicht Grundstück unbefugter Besucher Kinder Eindringlinge offene Grube Urteil -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH § 851 BGB § 816 Abs. 2 Leistung Besitzer Eigentümer -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGHZ 29 157 159 § 816 Gegenwert Verkehrswert Aktenzeichen -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"Ersatzleistung an Nichtberechtigten\" § 851 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"unbefugten Personen\" Verkehrssicherungspflicht VI ZR 235/63 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Verkehrssicherungspflicht unbefugte Grundstück betreten Gefahr Schacht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 1001 Verwendungen Veräußerung Genehmigung § 816 BGB -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 816 Abs. 1 Genehmigung Verfügung nichtberechtigter § 935 BGB Erlös -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de BGB § 823 § 833 § 254 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/bgb __816 __851 __935 __994 __996 __1001 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de Verkehrssicherungspflicht \"unbefugte\" \"Grundstück\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:juris.bundesgerichtshof.de Verkehrssicherungspflicht \"unbefugte\" \"Grundstück\" -site:zjs-online.com",
+        "match": "Grundstück"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "§ 816 Abs. 1 BGB gutgläubiger nichtberechtigter Veräußerer Verwendungsersatz § 994 § 996 Verkaufserlös Aufrechnung -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-d1fa3qhh",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-d1fa3qhh/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T16:45:05.904270+00:00",
+      "ended_at": "2026-08-06T16:53:54.107933+00:00",
+      "duration_seconds": 528.202
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 21749,
+      "sha256": "b67b410e8ce1323031d6ba72047779cf79233e0a2ee321b1f7d74bca1a91f823"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 22,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 14,
+    "cited_urls": 0,
+    "unique_used_source_urls": 14,
+    "unique_used_source_domains": 4,
+    "unique_source_urls": 14,
+    "unique_source_domains": 4,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 21
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__zivilrecht__schuldrecht__anfangerklausur-ein-gebrochener-arm-und-viele-scherben/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__zivilrecht__schuldrecht__anfangerklausur-ein-gebrochener-arm-und-viele-scherben/sources.md",
+  "exit_code": 0
+}

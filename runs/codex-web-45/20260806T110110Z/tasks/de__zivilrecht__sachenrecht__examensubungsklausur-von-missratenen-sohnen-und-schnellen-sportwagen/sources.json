@@ -1,0 +1,146 @@
+{
+  "schema_version": "0.2",
+  "method_note": "Used means the URL appears in the selected deliverable or in Codex's required .codex-used-sources.json sidecar. Open/Fetch means Codex additionally recorded an explicit page-open action or HTTP fetch command. Search-result URLs are not invented from snippets and are not counted unless one of those records exists.",
+  "counts": {
+    "search_queries": 12,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 4,
+    "cited_urls": 3,
+    "unique_used_source_urls": 4,
+    "unique_used_source_domains": 2,
+    "unique_source_urls": 4,
+    "unique_source_domains": 2,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 12
+  },
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH 18.9.2020 V ZR 8/19 Probefahrt Abhandenkommen site:juris.bundesgerichtshof.de -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH Kraftfahrzeug Erwerber Verdachtsmomente Student Verkauf Party Zulassungsbescheinigung grobe Fahrlässigkeit -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH V ZR 8/19 18. September 2020 Probefahrt site:bundesgerichtshof.de -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH V ZR 8/19 Zweitschlüssel Zubehör § 97 site:bundesgerichtshof.de -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "V ZR 148/21 NJW Fundstelle 23.09.2022 grobe Fahrlässigkeit Zulassungsbescheinigung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "V ZR 8/19 NJW Fundstelle Zweitschlüssel 18.9.2020 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de V ZR 8/19 Probefahrt gutgläubiger Erwerb Pressemitteilung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Zweitschlüssel Fahrzeug Eigentum Zubehör § 926 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de gutgläubiger Erwerb Kraftfahrzeug Zulassungsbescheinigung Teil II grobe Fahrlässigkeit gefälscht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de BGB § 932 § 935 § 603 § 604 § 989 § 990 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/bgb/__603.html § 603 BGB -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/bgb/__991.html § 991 BGB -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "search_queries": [
+    "BGH 18.9.2020 V ZR 8/19 Probefahrt Abhandenkommen site:juris.bundesgerichtshof.de -site:zjs-online.com",
+    "BGH Kraftfahrzeug Erwerber Verdachtsmomente Student Verkauf Party Zulassungsbescheinigung grobe Fahrlässigkeit -site:zjs-online.com",
+    "BGH V ZR 8/19 18. September 2020 Probefahrt site:bundesgerichtshof.de -site:zjs-online.com",
+    "BGH V ZR 8/19 Zweitschlüssel Zubehör § 97 site:bundesgerichtshof.de -site:zjs-online.com",
+    "V ZR 148/21 NJW Fundstelle 23.09.2022 grobe Fahrlässigkeit Zulassungsbescheinigung -site:zjs-online.com",
+    "V ZR 8/19 NJW Fundstelle Zweitschlüssel 18.9.2020 -site:zjs-online.com",
+    "site:bundesgerichtshof.de V ZR 8/19 Probefahrt gutgläubiger Erwerb Pressemitteilung -site:zjs-online.com",
+    "site:bundesgerichtshof.de Zweitschlüssel Fahrzeug Eigentum Zubehör § 926 -site:zjs-online.com",
+    "site:bundesgerichtshof.de gutgläubiger Erwerb Kraftfahrzeug Zulassungsbescheinigung Teil II grobe Fahrlässigkeit gefälscht -site:zjs-online.com",
+    "site:gesetze-im-internet.de BGB § 932 § 935 § 603 § 604 § 989 § 990 -site:zjs-online.com",
+    "site:gesetze-im-internet.de/bgb/__603.html § 603 BGB -site:zjs-online.com",
+    "site:gesetze-im-internet.de/bgb/__991.html § 991 BGB -site:zjs-online.com"
+  ],
+  "sources": [
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/bgh_notp/document.py?Art=en&Datum=2020-9&Gericht=bgh&Seite=6&Sort=6&anz=230&nr=66407&pos=198",
+      "domain": "juris.bundesgerichtshof.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BGH, Urteil vom 18. September 2020 – V ZR 8/19",
+      "reported_purpose": "Maßgebliche Rechtsprechung zu unmittelbarem Besitz bei unbegleiteter Probefahrt, fehlendem Abhandenkommen und gutgläubigem Erwerb.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/bgh_notp/document.py?Art=en&Datum=2022-9&Gericht=bgh&Seite=4&Sort=1026&anz=233&nr=82183&pos=120",
+      "domain": "juris.bundesgerichtshof.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BGH, Urteil vom 23. September 2022 – V ZR 148/21",
+      "reported_purpose": "Aktuelle Leitlinien zu gutem Glauben, grober Fahrlässigkeit sowie Vorlage und Prüfung der Zulassungsbescheinigung Teil II beim Kfz-Erwerb.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Art=en&Gericht=bgh&az=V+ZR+8%2F19&nr=110795",
+      "domain": "juris.bundesgerichtshof.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BGH, Urteil vom 18. September 2020 – V ZR 8/19 (Entscheidungsnachweis)",
+      "reported_purpose": "Maßgebliche Rechtsprechung zur rechtlichen Selbstständigkeit des Zweitschlüssels als Zubehör und zum fehlenden Herausgabeanspruch des Fahrzeugeigentümers.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/BGB.pdf",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Bürgerliches Gesetzbuch (BGB) – amtliche Gesamtausgabe",
+      "reported_purpose": "Prüfung des aktuellen Wortlauts der einschlägigen Vorschriften, insbesondere §§ 241, 249, 275, 276, 278, 280, 283, 598, 602–604, 816, 823, 826, 854, 855, 868, 929, 932, 935, 985–993 BGB.",
+      "visit_evidence": []
+    }
+  ],
+  "task_id": "de/zivilrecht/sachenrecht/examensubungsklausur-von-missratenen-sohnen-und-schnellen-sportwagen"
+}

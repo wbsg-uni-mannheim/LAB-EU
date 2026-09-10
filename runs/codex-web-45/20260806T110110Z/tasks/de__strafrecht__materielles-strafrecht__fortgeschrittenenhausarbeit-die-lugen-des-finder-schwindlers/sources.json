@@ -1,0 +1,217 @@
+{
+  "schema_version": "0.2",
+  "method_note": "Used means the URL appears in the selected deliverable or in Codex's required .codex-used-sources.json sidecar. Open/Fetch means Codex additionally recorded an explicit page-open action or HTTP fetch command. Search-result URLs are not invented from snippets and are not counted unless one of those records exists.",
+  "counts": {
+    "search_queries": 18,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 9,
+    "cited_urls": 9,
+    "unique_used_source_urls": 9,
+    "unique_used_source_domains": 4,
+    "unique_source_urls": 9,
+    "unique_source_domains": 4,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 15
+  },
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"Dreiecksbetrug\" \"Vermögensverfügung\" Geschäftsführer -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Betrug \"zum Verkauf\" überlassen \"Vermögensschaden\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Betrug Sache übergeben Verkaufserlös behalten Vermögensgefährdung Kommission -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Betrug konkrete Vermögensgefährdung Sache zum Verkauf überlassen -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Dreiecksbetrug Geschäftsführer juristische Person Vermögensverfügung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Dreiecksbetrug Näheverhältnis Verfügungsbefugnis Vermögensschaden GmbH Geschäftsführer -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Geldwäsche leichtfertig Herkunft Gegenstand Katalogtat § 261 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Untreue GmbH Geschäftsführer Gesellschafterbeschluss Vermögensbetreuungspflicht Auszahlung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 261 Abs. 1 Satz 2 Dritter zuvor erlangt ohne rechtswidrige Tat gutgläubig -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 261 nF \"Dritter zuvor erlangt\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundestag.de \"einen Gegenstand, den ein Dritter zuvor erlangt hat\" Geldwäsche -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de Untreue Bestimmtheitsgebot Vermögensnachteil Geschäftsführer -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:dserver.bundestag.de § 261 Absatz 1 Satz 2 \"Dritter zuvor erlangt\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de StGB § 261 aktuelle Fassung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de StGB § 263 § 266 aktuelle Fassung -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "search_queries": [
+    "'Straflosigkeit von Personen'",
+    "'allgemein übliche Geschäfte des täglichen Lebens'",
+    "https://www.gesetze-im-internet.de/stgb/__22.html",
+    "site:bundesgerichtshof.de \"Dreiecksbetrug\" \"Vermögensverfügung\" Geschäftsführer -site:zjs-online.com",
+    "site:bundesgerichtshof.de Betrug \"zum Verkauf\" überlassen \"Vermögensschaden\" -site:zjs-online.com",
+    "site:bundesgerichtshof.de Betrug Sache übergeben Verkaufserlös behalten Vermögensgefährdung Kommission -site:zjs-online.com",
+    "site:bundesgerichtshof.de Betrug konkrete Vermögensgefährdung Sache zum Verkauf überlassen -site:zjs-online.com",
+    "site:bundesgerichtshof.de Dreiecksbetrug Geschäftsführer juristische Person Vermögensverfügung -site:zjs-online.com",
+    "site:bundesgerichtshof.de Dreiecksbetrug Näheverhältnis Verfügungsbefugnis Vermögensschaden GmbH Geschäftsführer -site:zjs-online.com",
+    "site:bundesgerichtshof.de Geldwäsche leichtfertig Herkunft Gegenstand Katalogtat § 261 -site:zjs-online.com",
+    "site:bundesgerichtshof.de Untreue GmbH Geschäftsführer Gesellschafterbeschluss Vermögensbetreuungspflicht Auszahlung -site:zjs-online.com",
+    "site:bundesgerichtshof.de § 261 Abs. 1 Satz 2 Dritter zuvor erlangt ohne rechtswidrige Tat gutgläubig -site:zjs-online.com",
+    "site:bundesgerichtshof.de § 261 nF \"Dritter zuvor erlangt\" -site:zjs-online.com",
+    "site:bundestag.de \"einen Gegenstand, den ein Dritter zuvor erlangt hat\" Geldwäsche -site:zjs-online.com",
+    "site:bundesverfassungsgericht.de Untreue Bestimmtheitsgebot Vermögensnachteil Geschäftsführer -site:zjs-online.com",
+    "site:dserver.bundestag.de § 261 Absatz 1 Satz 2 \"Dritter zuvor erlangt\" -site:zjs-online.com",
+    "site:gesetze-im-internet.de StGB § 261 aktuelle Fassung -site:zjs-online.com",
+    "site:gesetze-im-internet.de StGB § 263 § 266 aktuelle Fassung -site:zjs-online.com"
+  ],
+  "sources": [
+    {
+      "url": "https://dserver.bundestag.de/btd/19/241/1924180.pdf",
+      "domain": "dserver.bundestag.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BT-Drs. 19/24180 – Entwurf eines Gesetzes zur Verbesserung der strafrechtlichen Bekämpfung der Geldwäsche",
+      "reported_purpose": "Auslegung der Neufassung des § 261 StGB, insbesondere Surrogate, Tathandlungen, strafloser Vorerwerb, Leichtfertigkeit und Selbstgeldwäsche.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/bgh_notp/document.py?Art=en&Blank=1&Datum=2010-8&Gericht=bgh&Sort=3&anz=153&nr=20307&pos=15",
+      "domain": "juris.bundesgerichtshof.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BGH, Urteil vom 27. August 2010 – 2 StR 111/09",
+      "reported_purpose": "Untreue bei GmbH-Vermögen und Erfordernis der Befassung von Minderheitsgesellschaftern.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Art=en&Blank=1.pdf&Datum=2018-9-5&Gericht=bgh&anz=9&nr=88669&pos=1",
+      "domain": "juris.bundesgerichtshof.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BGH, Beschluss vom 5. September 2018 – 2 StR 31/18",
+      "reported_purpose": "Anforderungen an Vermögensschaden und konkrete schadensgleiche Vermögensgefährdung beim Betrug.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Art=en&Blank=1.pdf&Datum=2021-4-29&Gericht=bgh&anz=39&nr=118354&pos=11",
+      "domain": "juris.bundesgerichtshof.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BGH, Urteil vom 29. April 2021 – 4 StR 46/21",
+      "reported_purpose": "Subjektive Anforderungen an den Geldwäschevorsatz.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2010/06/rs20100623_2bvr255908.html",
+      "domain": "www.bundesverfassungsgericht.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BVerfG, Beschluss vom 23. Juni 2010 – 2 BvR 2559/08 u.a.",
+      "reported_purpose": "Eigenständige und wirtschaftlich nachvollziehbare Feststellung des Vermögensnachteils bei § 266 StGB.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gmbhg/__43.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "§ 43 GmbHG – Haftung der Geschäftsführer",
+      "reported_purpose": "Sorgfalts- und Vermögenswahrungspflichten der GmbH-Geschäftsführerin.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/stgb/__22.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "§ 22 StGB – Begriffsbestimmung des Versuchs",
+      "reported_purpose": "Aktueller gesetzlicher Maßstab für das unmittelbare Ansetzen.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/stgb/__246.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "§ 246 StGB – Unterschlagung",
+      "reported_purpose": "Aktueller Wortlaut und Subsidiaritätsklausel der Unterschlagung.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/stgb/__261.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "§ 261 StGB – Geldwäsche",
+      "reported_purpose": "Aktueller Wortlaut des Geldwäschetatbestands einschließlich Leichtfertigkeit, Selbstgeldwäsche und Versuch.",
+      "visit_evidence": []
+    }
+  ],
+  "task_id": "de/strafrecht/materielles-strafrecht/fortgeschrittenenhausarbeit-die-lugen-des-finder-schwindlers"
+}

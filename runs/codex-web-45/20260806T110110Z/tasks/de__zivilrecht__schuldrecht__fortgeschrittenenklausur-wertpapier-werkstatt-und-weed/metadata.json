@@ -1,0 +1,245 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/zivilrecht/schuldrecht/fortgeschrittenenklausur-wertpapier-werkstatt-und-weed",
+  "solver_case_id": "case-041",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-wertpapier-werkstatt-und-weed",
+  "source_task_dir_relative": "tasks/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-wertpapier-werkstatt-und-weed",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Genehmigung einer von einem Vertreter ohne Vertretungsmacht\" \"Möglichkeit bewußt\" BGH -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"durch sein Handeln eine in seinem Namen abgegebene Erklärung zu genehmigen\" BGH -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH 19.04.2007 Aktien Freundschaftsdienst nahezu gesamtes Barvermögen Gewinnbeteiligung Aktenzeichen -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "VII ZR 63/18 BGH Wartungsvertrag Umfang Nacherfüllung Schäden Fahrzeug -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "VII ZR 63/18 Volltext Keilrippenriemen Lichtmaschine Klimakompressor Betriebsferien -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "VII ZR 63/18 juris Rn 20 21 22 Werkleistung Wartung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"II ZR 243/01\" Genehmigung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"Möglichkeit bewußt\" \"Genehmigung\" \"6. Mai 2002\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Anlageverwaltung Auftrag unentgeltlich § 665 Weisung Schadensersatz -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Aufnahme Lebensgefährte Mietwohnung § 553 berechtigtes Interesse Erlaubnis -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Cannabis Anbau Mietwohnung Kündigung Vermieter -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Gefälligkeit Rechtsbindungswille wirtschaftliche Bedeutung Haftungsrisiko Freund Geldanlage -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Lebensgefährte § 553 BGB Erlaubnis Kündigung Abmahnung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Mietvertrag Kündigung Straftat in Wohnung Drogenanbau § 543 Interessenabwägung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Selbstvornahme ohne Fristsetzung § 637 Werkvertrag Reparaturkosten -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de VIII ZR 74/10 unberechtigte Untervermietung Anspruch Erlaubnis Kündigung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de VIII ZR Lebensgefährtin Wohnung Aufnahme Dritter § 553 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Werkvertrag Mangelfolgeschaden Fristsetzung § 280 Abs. 1 Bremsanlage mangelhafte Reparatur -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de unentgeltlicher Auftrag Vermögensverwaltung Geldanlage Freund Rechtsbindungswille § 662 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 177 konkludente Genehmigung Kenntnis Vertreter ohne Vertretungsmacht Vertragsdurchführung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 543 Abs. 3 Abmahnung unerlaubte Gebrauchsüberlassung Lebensgefährte -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 634 Nr. 4 Mangelfolgeschaden Fristsetzung Schadensersatz neben der Leistung Werkvertrag -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de Lebensgefährte Mietwohnung § 553 Erlaubnis -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de BGB § 543 § 553 § 566 aktuelle Fassung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de BGB § 634 § 637 § 280 Werkvertrag Selbstvornahme -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de BGB § 662 § 665 § 675 § 252 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de KCanG § 9 drei Cannabispflanzen § 34 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de bgb __553 __540 __543 __566 -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-sldawcnl",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-sldawcnl/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T18:00:15.436909+00:00",
+      "ended_at": "2026-08-06T18:10:36.720961+00:00",
+      "duration_seconds": 621.282
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 21364,
+      "sha256": "c9f3a372da1659048f46c8963b7fb3f9666416a7e404810ef39480ef86a3c2d1"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 29,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 16,
+    "cited_urls": 5,
+    "unique_used_source_urls": 16,
+    "unique_used_source_domains": 2,
+    "unique_source_urls": 16,
+    "unique_source_domains": 2,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 28
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenklausur-wertpapier-werkstatt-und-weed/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenklausur-wertpapier-werkstatt-und-weed/sources.md",
+  "exit_code": 0
+}

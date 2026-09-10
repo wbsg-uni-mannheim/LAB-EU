@@ -1,0 +1,200 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-ungebetener-gast",
+  "solver_case_id": "case-027",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-ungebetener-gast",
+  "source_task_dir_relative": "tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-ungebetener-gast",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "\"3 StR 526/19\" Wohnung Verstorbene Privatwohnung vollständiger Text -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"4 StR 265/22\" \"Tateinheit\" dauerhaft genutzte Privatwohnung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"4 StR 265/22\" hrr -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Nach allem verübte der Angeklagte A. einen Raub\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Tod ihrer jeweils einzigen Bewohner\" § 244 Abs. 4 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"einseitige Mittäterschaft\" Raub Gewalt Wegnahme -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH Raub Mittäter weiß nichts von Gewalt Wegnahme einseitiger Exzess Täter nutzt Wegnahme des Mittäters -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH § 249 Mittäterexzess Gewalt gemeinsamer Diebstahlsplan Raub -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "ECLI:DE:BGH:2020:220120B3STR526.19.0 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Raub Gewalt nur ein Mittäter anderer weiß nichts Wegnahme Zurechnung § 25 II -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Raub Wohnungseinbruchdiebstahl Tateinheit § 244 § 249 BGH -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"3 StR 546/25\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 244 Abs. 1 Nr. 3 Wohnung Verstorbener Nachlassorganisation -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 244 Abs. 4 verstorbener Bewohner Nachlass Wohnung dauerhaft genutzt Privatwohnung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 250 Abs. 1 Nr. 1 b Fessel Werkzeug Mittel aufgefunden Tatort -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de StGB § 244 § 249 § 240 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:hrr-strafrecht.de \"5 StR 671/19\" dauerhaft genutzte Privatwohnung tatsächlich bewohnt -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:hrr-strafrecht.de § 250 Abs. 1 Nr. 1 b Schal Fesseln Raub Mittel Beisichführen Tatort -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"3 StR 546/25\" Raub Diebstahl Gewalt Tatplan -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-vnx3x3_v",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-vnx3x3_v/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T15:55:17.154305+00:00",
+      "ended_at": "2026-08-06T16:03:32.048476+00:00",
+      "duration_seconds": 494.892
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 17270,
+      "sha256": "d0174b6c56fb67221edc811bc75d6b4a669ee5f0ebeabdb87c034186a3c5777a"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 20,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 10,
+    "cited_urls": 4,
+    "unique_used_source_urls": 10,
+    "unique_used_source_domains": 4,
+    "unique_source_urls": 10,
+    "unique_source_domains": 4,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 19
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenubungsklausur-ungebetener-gast/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenubungsklausur-ungebetener-gast/sources.md",
+  "exit_code": 0
+}

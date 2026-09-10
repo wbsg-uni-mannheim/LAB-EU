@@ -1,0 +1,135 @@
+{
+  "schema_version": "0.2",
+  "method_note": "Used means the URL appears in the selected deliverable or in Codex's required .codex-used-sources.json sidecar. Open/Fetch means Codex additionally recorded an explicit page-open action or HTTP fetch command. Search-result URLs are not invented from snippets and are not counted unless one of those records exists.",
+  "counts": {
+    "search_queries": 11,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 4,
+    "cited_urls": 0,
+    "unique_used_source_urls": 4,
+    "unique_used_source_domains": 3,
+    "unique_source_urls": 4,
+    "unique_source_domains": 3,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 10
+  },
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "VIII ZR 213/16 Rn 30 § 447 PayPal Käufer Schutz Versandbeleg -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "VIII ZR 213/16 vollständiges Urteil PayPal Versendungskauf Bundesgerichtshof -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "VIII ZR 83/16 Mobiltelefon unversichert § 447 Urteil Volltext -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de PayPal Käuferschutz Kaufpreisforderung wiederbegründet VIII ZR 83/16 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de PayPal Käuferschutz VIII ZR 213/16 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 285 Versicherungsleistung stellvertretendes commodum Kaufpreis Versendungskauf -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de BGB § 447 § 475 Versendungskauf Verbrauchsgüterkauf -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/bgb/__285.html § 285 BGB -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de VIII ZR 83/16 Mobiltelefon unversicherten Päckchen PayPal -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "§ 285 BGB Versicherungssumme höher Wert Sache Anspruch volle Versicherungssumme Bundesgerichtshof -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "search_queries": [
+    "'§ 285 Herausgabe des Ersatzes'",
+    "VIII ZR 213/16 Rn 30 § 447 PayPal Käufer Schutz Versandbeleg -site:zjs-online.com",
+    "VIII ZR 213/16 vollständiges Urteil PayPal Versendungskauf Bundesgerichtshof -site:zjs-online.com",
+    "VIII ZR 83/16 Mobiltelefon unversichert § 447 Urteil Volltext -site:zjs-online.com",
+    "site:bundesgerichtshof.de PayPal Käuferschutz Kaufpreisforderung wiederbegründet VIII ZR 83/16 -site:zjs-online.com",
+    "site:bundesgerichtshof.de PayPal Käuferschutz VIII ZR 213/16 -site:zjs-online.com",
+    "site:bundesgerichtshof.de § 285 Versicherungsleistung stellvertretendes commodum Kaufpreis Versendungskauf -site:zjs-online.com",
+    "site:gesetze-im-internet.de BGB § 447 § 475 Versendungskauf Verbrauchsgüterkauf -site:zjs-online.com",
+    "site:gesetze-im-internet.de/bgb/__285.html § 285 BGB -site:zjs-online.com",
+    "site:juris.bundesgerichtshof.de VIII ZR 83/16 Mobiltelefon unversicherten Päckchen PayPal -site:zjs-online.com",
+    "§ 285 BGB Versicherungssumme höher Wert Sache Anspruch volle Versicherungssumme Bundesgerichtshof -site:zjs-online.com"
+  ],
+  "sources": [
+    {
+      "url": "https://juris.bundesgerichtshof.de/cgi-bin/rechtsprechung/document.py?Art=pm&Blank=1&Datum=2017&Gericht=bgh&anz=204&nr=80112&pos=17",
+      "domain": "juris.bundesgerichtshof.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "BGH, Pressemitteilung Nr. 187/2017 zu VIII ZR 83/16 und VIII ZR 213/16",
+      "reported_purpose": "Bestätigung der höchstrichterlichen Grundsätze zur PayPal-Rückbuchung, zur Wiederbegründung der Kaufpreisforderung und zur Gefahrtragung beim Versendungskauf.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://urteile-gesetze.de/rechtsprechung/viii-zr-213-16",
+      "domain": "urteile-gesetze.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "BGH, Urteil vom 22. November 2017 – VIII ZR 213/16",
+      "reported_purpose": "Ergänzende Auswertung der BGH-Leitsätze und Entscheidungsgründe zur Auslegung der PayPal-Nebenabrede nach §§ 133, 157 BGB.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://urteile-gesetze.de/rechtsprechung/viii-zr-83-16",
+      "domain": "urteile-gesetze.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "BGH, Urteil vom 22. November 2017 – VIII ZR 83/16",
+      "reported_purpose": "Auswertung des Entscheidungsvolltexts zur Erfüllungswirkung der PayPal-Gutschrift, stillschweigenden Wiederbegründung, Beweisführung für den Versand, § 447 BGB und § 285 BGB.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/BGB.pdf",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Bürgerliches Gesetzbuch (BGB) – amtliche Fassung",
+      "reported_purpose": "Prüfung des aktuellen Gesetzesstands, insbesondere §§ 13, 14, 243, 275, 285, 311, 320, 326, 362, 398, 433, 447, 474 und 475 BGB.",
+      "visit_evidence": []
+    }
+  ],
+  "task_id": "de/zivilrecht/schuldrecht/fortgeschrittenenklausur-paypal-kauferschutz-schutzt-vor-klagen-nicht"
+}

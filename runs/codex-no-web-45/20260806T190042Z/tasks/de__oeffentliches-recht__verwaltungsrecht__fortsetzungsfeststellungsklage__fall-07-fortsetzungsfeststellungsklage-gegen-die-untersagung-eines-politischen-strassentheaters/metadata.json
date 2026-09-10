@@ -1,0 +1,112 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/oeffentliches-recht/verwaltungsrecht/fortsetzungsfeststellungsklage/fall-07-fortsetzungsfeststellungsklage-gegen-die-untersagung-eines-politischen-strassentheaters",
+  "solver_case_id": "case-015",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/oeffentliches-recht/verwaltungsrecht/fortsetzungsfeststellungsklage/fall-07-fortsetzungsfeststellungsklage-gegen-die-untersagung-eines-politischen-strassentheaters",
+  "source_task_dir_relative": "tasks/de/oeffentliches-recht/verwaltungsrecht/fortsetzungsfeststellungsklage/fall-07-fortsetzungsfeststellungsklage-gegen-die-untersagung-eines-politischen-strassentheaters",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "workspace",
+  "live_web_search": false,
+  "web_search_mode": "disabled",
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "web_access_policy": {
+    "web_search_allowed": false,
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": false,
+    "flags": []
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "codex",
+    "--config",
+    "web_search=\"disabled\"",
+    "--sandbox",
+    "workspace-write",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-qmuvh1ch",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-qmuvh1ch/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T22:27:56.910065+00:00",
+      "ended_at": "2026-08-06T22:32:47.238416+00:00",
+      "duration_seconds": 290.328
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung-sut.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung-sut.md",
+      "found": true,
+      "bytes": 17190,
+      "sha256": "0b56b4f79bc309bc5cf3f3b31b6f491979f886916a896b1f27795342aa8677ab"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 0,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 0,
+    "cited_urls": 0,
+    "unique_used_source_urls": 0,
+    "unique_used_source_domains": 0,
+    "unique_source_urls": 0,
+    "unique_source_domains": 0,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 0,
+    "web_access_violations": 0
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-no-web-45/20260806T190042Z/tasks/de__oeffentliches-recht__verwaltungsrecht__fortsetzungsfeststellungsklage__fall-07-fortsetzungsfeststellungsklage-gegen-die-untersagung-eines-politischen-strassentheaters/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-no-web-45/20260806T190042Z/tasks/de__oeffentliches-recht__verwaltungsrecht__fortsetzungsfeststellungsklage__fall-07-fortsetzungsfeststellungsklage-gegen-die-untersagung-eines-politischen-strassentheaters/sources.md",
+  "exit_code": 0
+}

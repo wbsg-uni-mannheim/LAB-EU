@@ -1,0 +1,165 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/zivilrecht/sachenrecht/examensubungsklausur-von-missratenen-sohnen-und-schnellen-sportwagen",
+  "solver_case_id": "case-036",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/zivilrecht/sachenrecht/examensubungsklausur-von-missratenen-sohnen-und-schnellen-sportwagen",
+  "source_task_dir_relative": "tasks/de/zivilrecht/sachenrecht/examensubungsklausur-von-missratenen-sohnen-und-schnellen-sportwagen",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH 18.9.2020 V ZR 8/19 Probefahrt Abhandenkommen site:juris.bundesgerichtshof.de -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH Kraftfahrzeug Erwerber Verdachtsmomente Student Verkauf Party Zulassungsbescheinigung grobe Fahrlässigkeit -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH V ZR 8/19 18. September 2020 Probefahrt site:bundesgerichtshof.de -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH V ZR 8/19 Zweitschlüssel Zubehör § 97 site:bundesgerichtshof.de -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "V ZR 148/21 NJW Fundstelle 23.09.2022 grobe Fahrlässigkeit Zulassungsbescheinigung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "V ZR 8/19 NJW Fundstelle Zweitschlüssel 18.9.2020 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de V ZR 8/19 Probefahrt gutgläubiger Erwerb Pressemitteilung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Zweitschlüssel Fahrzeug Eigentum Zubehör § 926 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de gutgläubiger Erwerb Kraftfahrzeug Zulassungsbescheinigung Teil II grobe Fahrlässigkeit gefälscht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de BGB § 932 § 935 § 603 § 604 § 989 § 990 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/bgb/__603.html § 603 BGB -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/bgb/__991.html § 991 BGB -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-xwizvtow",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-xwizvtow/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T17:12:25.038508+00:00",
+      "ended_at": "2026-08-06T17:20:59.499180+00:00",
+      "duration_seconds": 514.459
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 19690,
+      "sha256": "accab1ff2e67bea1e7e7d0b3b394591aed7a783cf863af090a88eeba48d3ac75"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 12,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 4,
+    "cited_urls": 3,
+    "unique_used_source_urls": 4,
+    "unique_used_source_domains": 2,
+    "unique_source_urls": 4,
+    "unique_source_domains": 2,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 12
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__zivilrecht__sachenrecht__examensubungsklausur-von-missratenen-sohnen-und-schnellen-sportwagen/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__zivilrecht__sachenrecht__examensubungsklausur-von-missratenen-sohnen-und-schnellen-sportwagen/sources.md",
+  "exit_code": 0
+}

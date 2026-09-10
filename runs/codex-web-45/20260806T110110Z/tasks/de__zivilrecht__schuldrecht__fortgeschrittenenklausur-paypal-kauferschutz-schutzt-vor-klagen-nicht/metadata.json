@@ -1,0 +1,155 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/zivilrecht/schuldrecht/fortgeschrittenenklausur-paypal-kauferschutz-schutzt-vor-klagen-nicht",
+  "solver_case_id": "case-031",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-paypal-kauferschutz-schutzt-vor-klagen-nicht",
+  "source_task_dir_relative": "tasks/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-paypal-kauferschutz-schutzt-vor-klagen-nicht",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "VIII ZR 213/16 Rn 30 § 447 PayPal Käufer Schutz Versandbeleg -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "VIII ZR 213/16 vollständiges Urteil PayPal Versendungskauf Bundesgerichtshof -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "VIII ZR 83/16 Mobiltelefon unversichert § 447 Urteil Volltext -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de PayPal Käuferschutz Kaufpreisforderung wiederbegründet VIII ZR 83/16 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de PayPal Käuferschutz VIII ZR 213/16 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 285 Versicherungsleistung stellvertretendes commodum Kaufpreis Versendungskauf -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de BGB § 447 § 475 Versendungskauf Verbrauchsgüterkauf -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/bgb/__285.html § 285 BGB -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de VIII ZR 83/16 Mobiltelefon unversicherten Päckchen PayPal -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "§ 285 BGB Versicherungssumme höher Wert Sache Anspruch volle Versicherungssumme Bundesgerichtshof -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-khhz_lkk",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-khhz_lkk/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T16:32:42.012383+00:00",
+      "ended_at": "2026-08-06T16:39:20.205857+00:00",
+      "duration_seconds": 398.193
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 13156,
+      "sha256": "a4789573beccdb900fed1e72760d8dff6f33774de10da48cdf51a1bc68aa5331"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 11,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 4,
+    "cited_urls": 0,
+    "unique_used_source_urls": 4,
+    "unique_used_source_domains": 3,
+    "unique_source_urls": 4,
+    "unique_source_domains": 3,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 10
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenklausur-paypal-kauferschutz-schutzt-vor-klagen-nicht/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenklausur-paypal-kauferschutz-schutzt-vor-klagen-nicht/sources.md",
+  "exit_code": 0
+}

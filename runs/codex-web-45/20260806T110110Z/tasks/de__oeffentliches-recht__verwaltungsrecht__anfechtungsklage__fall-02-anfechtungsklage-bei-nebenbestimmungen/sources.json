@@ -1,0 +1,172 @@
+{
+  "schema_version": "0.2",
+  "method_note": "Used means the URL appears in the selected deliverable or in Codex's required .codex-used-sources.json sidecar. Open/Fetch means Codex additionally recorded an explicit page-open action or HTTP fetch command. Search-result URLs are not invented from snippets and are not counted unless one of those records exists.",
+  "counts": {
+    "search_queries": 38,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 7,
+    "cited_urls": 3,
+    "unique_used_source_urls": 7,
+    "unique_used_source_domains": 5,
+    "unique_source_urls": 7,
+    "unique_source_domains": 5,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 6
+  },
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"An der Grenze zum Grundstück\" \"gradlinige Feuerwehrzufahrt\" -site:zjs-online.com",
+        "match": "An der Grenze zum Grundstück"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"An der Grenze zum Grundstück\" \"gradlinige Feuerwehrzufahrt\" -site:zjs-online.com",
+        "match": "gradlinige Feuerwehrzufahrt"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Die Baugenehmigung ist zu erteilen\" \"Saarland\" LBO § 73 -site:zjs-online.com",
+        "match": "Saarland"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:recht.saarland.de \"Landesbauordnung\" \"§ 73\" -site:zjs-online.com",
+        "match": "Landesbauordnung"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:recht.saarland.de \"§ 73\" \"Baugenehmigung\" \"Landesbauordnung\" -site:zjs-online.com",
+        "match": "Baugenehmigung"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:recht.saarland.de \"§ 73\" \"Baugenehmigung\" \"Landesbauordnung\" -site:zjs-online.com",
+        "match": "Landesbauordnung"
+      }
+    ]
+  },
+  "search_queries": [
+    "\"An der Grenze zum Grundstück\" \"gradlinige Feuerwehrzufahrt\" -site:zjs-online.com",
+    "\"Die Baugenehmigung ist zu erteilen\" \"Saarland\" LBO § 73 -site:zjs-online.com",
+    "\"Saarländisches Ausführungsgesetz zur Verwaltungsgerichtsordnung\" § 19 Behörde -site:zjs-online.com",
+    "\"Saarländisches Verwaltungsverfahrensgesetz\" \"27. August 2025\" -site:zjs-online.com",
+    "\"Saarländisches Verwaltungsverfahrensgesetz\" \"§ 1\" VwVfG -site:zjs-online.com",
+    "\"§ 19 Beteiligung von Behörden\" Saarland 2026 -site:zjs-online.com",
+    "\"§ 73 Baugenehmigung, Baubeginn\" Saarland \"ist zu erteilen\" -site:zjs-online.com",
+    "BVerwG 17 Februar 1984 4 C 70.80 Brandschutz Auflage Baugenehmigung Feuerwehrzufahrt -site:zjs-online.com",
+    "BVerwG 4 C 70.80 Brandschutz Nebenbestimmung Baugenehmigung -site:zjs-online.com",
+    "Saarland Amtsblatt 2025 854 Verwaltungsverfahrensgesetz -site:zjs-online.com",
+    "Saarland Landesbauordnung Feuerwehrzufahrt Rückseite Gebäude § 5 § 14 aktuelle Fassung -site:zjs-online.com",
+    "Saarland VwGO Rechtsträgerprinzip § 78 untere Bauaufsichtsbehörde richtige Klagegegnerin -site:zjs-online.com",
+    "Saarländisches Ausführungsgesetz Verwaltungsgerichtsordnung zuletzt geändert 27 August 2025 § 19 -site:zjs-online.com",
+    "Saarländisches Verwaltungsverfahrensgesetz 27. August 2025 aktuelle Fassung § 1 -site:zjs-online.com",
+    "Saarländisches Verwaltungsverfahrensgesetz § 36 Nebenbestimmungen aktuelle Fassung -site:zjs-online.com",
+    "isolierte Anfechtungsklage Auflage Baugenehmigung Bundesverwaltungsgericht § 36 VwVfG -site:zjs-online.com",
+    "site:bverwg.de \"Zweck der Ermächtigung\" \"§ 36 Abs. 1\" Nebenbestimmung -site:zjs-online.com",
+    "site:bverwg.de isolierte Anfechtung Nebenbestimmung offensichtlich nicht trennbar Zulässigkeit -site:zjs-online.com",
+    "site:bverwg.de § 36 Abs. 1 VwVfG Nebenbestimmung Sicherstellung gesetzliche Voraussetzungen Ermessen -site:zjs-online.com",
+    "site:gesetze-im-internet.de VwGO § 40 § 42 § 68 § 74 § 113 -site:zjs-online.com",
+    "site:recht.saarland.de \"AGVwGO\" \"Behörde selbst\" -site:zjs-online.com",
+    "site:recht.saarland.de \"Landesbauordnung\" \"§ 73\" -site:zjs-online.com",
+    "site:recht.saarland.de \"§ 1\" \"Saarländisches Verwaltungsverfahrensgesetz\" \"Verwaltungsverfahrensgesetz\" -site:zjs-online.com",
+    "site:recht.saarland.de \"§ 19\" \"Beteiligung von Behörden\" AGVwGO -site:zjs-online.com",
+    "site:recht.saarland.de \"§ 73\" \"Baugenehmigung\" \"Landesbauordnung\" -site:zjs-online.com",
+    "site:recht.saarland.de Landesbauordnung Saarland § 5 Zugänge Zufahrten Grundstücke Feuerwehr -site:zjs-online.com",
+    "site:recht.saarland.de SVwVfG 2025 854 § 1 Verwaltungsverfahrensgesetz -site:zjs-online.com",
+    "site:recht.saarland.de/bssl/document \"Anfechtungs- und Verpflichtungsklagen sind gegen die Behörde zu richten\" -site:zjs-online.com",
+    "site:recht.saarland.de/bssl/document AGVwGO § 19 2025 Saarland -site:zjs-online.com",
+    "site:recht.saarland.de/bssl/document/jlr \"Anwendung des Verwaltungsverfahrensgesetzes\" SVwVfG -site:zjs-online.com",
+    "site:recht.saarland.de/bssl/document/jlr \"Beteiligung von Behörden\" \"Anfechtungs- und Verpflichtungsklagen\" -site:zjs-online.com",
+    "site:recht.saarland.de/bssl/document/jlr-NNLSL00009 \"Gültig ab: 03.10.2025\" LBO -site:zjs-online.com",
+    "site:recht.saarland.de/bssl/document/jlr-NNLSL00009 \"§ 6\" \"Zu- oder Durchfahrten\" -site:zjs-online.com",
+    "site:recht.saarland.de/bssl/document/jlr-NNLSL00009 \"§ 73\" \"Die Baugenehmigung ist zu erteilen\" -site:zjs-online.com",
+    "site:saarland.de \"Saarländisches Ausführungsgesetz zur Verwaltungsgerichtsordnung\" pdf -site:zjs-online.com",
+    "site:saarland.de Landesbauordnung \"zuletzt geändert durch Artikel 6 des Gesetzes vom 27. August 2025\" -site:zjs-online.com",
+    "site:saarland.de Landesbauordnung 2025 § 73 Baugenehmigung Bauaufsichtsbehörde -site:zjs-online.com",
+    "site:saarland.de/SharedDocs/Downloads LBO \"27. August 2025\" Landesbauordnung -site:zjs-online.com"
+  ],
+  "sources": [
+    {
+      "url": "https://gesetze.co/SL/AGVwGO/19",
+      "domain": "gesetze.co",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 19 AGVwGO Saarland – Beteiligung von Behörden",
+      "reported_purpose": "Saarländisches Behördenprinzip sowie Beteiligtenfähigkeit von Behörden verifiziert.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.bverwg.de/de/091215U6C37.14.0",
+      "domain": "www.bverwg.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BVerwG, Urteil vom 9. Dezember 2015 – 6 C 37.14 –",
+      "reported_purpose": "Reichweite von § 36 Abs. 1 Alt. 2 VwVfG bei gebundenen begünstigenden Verwaltungsakten belegt.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.bverwg.de/de/290322B4C4.20.0",
+      "domain": "www.bverwg.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BVerwG, Beschluss vom 29. März 2022 – 4 C 4.20 – und Beschluss vom 12. Oktober 2022 – 8 AV 1.22 –",
+      "reported_purpose": "Maßstab der isolierten Anfechtung und materiellen Teilbarkeit belastender Nebenbestimmungen, einschließlich Brandschutzbezug, belegt.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/vwgo/BJNR000170960.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Verwaltungsgerichtsordnung (VwGO)",
+      "reported_purpose": "Aktuelle prozessrechtliche Vorschriften zur Anfechtungsklage, zum Vorverfahren, Klagegegner und gerichtlichen Prüfungsmaßstab verifiziert.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/vwvfg/__36.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 36 VwVfG – Nebenbestimmungen zum Verwaltungsakt",
+      "reported_purpose": "Aktuellen Wortlaut der allgemeinen Ermächtigungsgrundlage und der Definition der Auflage verifiziert.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.saarland.de/SharedDocs/Downloads/DE/mibs/tp_bauen_und_wohnen/ba_bt_gesetze/bauordnungen/LBO_2025_neu.pdf?__blob=publicationFile&v=2",
+      "domain": "www.saarland.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "Landesbauordnung (LBO), konsolidierte Fassung, zuletzt geändert am 27. August 2025",
+      "reported_purpose": "Aktuellen Stand und Wortlaut der saarländischen Landesbauordnung, insbesondere § 73, verifiziert.",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.umwelt-online.de/regelwerk/allgemei/laender/srl/vwvfg25.htm",
+      "domain": "www.umwelt-online.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Saarländisches Verwaltungsverfahrensgesetz vom 27. August 2025",
+      "reported_purpose": "Aktuelle dynamische Verweisung des § 1 SVwVfG auf das Verwaltungsverfahrensgesetz verifiziert.",
+      "visit_evidence": []
+    }
+  ],
+  "task_id": "de/oeffentliches-recht/verwaltungsrecht/anfechtungsklage/fall-02-anfechtungsklage-bei-nebenbestimmungen"
+}

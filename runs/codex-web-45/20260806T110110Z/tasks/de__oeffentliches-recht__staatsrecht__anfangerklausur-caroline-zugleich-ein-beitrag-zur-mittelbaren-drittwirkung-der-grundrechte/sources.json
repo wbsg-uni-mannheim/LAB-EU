@@ -1,0 +1,235 @@
+{
+  "schema_version": "0.2",
+  "method_note": "Used means the URL appears in the selected deliverable or in Codex's required .codex-used-sources.json sidecar. Open/Fetch means Codex additionally recorded an explicit page-open action or HTTP fetch command. Search-result URLs are not invented from snippets and are not counted unless one of those records exists.",
+  "counts": {
+    "search_queries": 17,
+    "recorded_open_or_fetch_urls": 2,
+    "used_urls": 10,
+    "cited_urls": 4,
+    "unique_used_source_urls": 10,
+    "unique_used_source_domains": 4,
+    "unique_source_urls": 10,
+    "unique_source_domains": 4,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 16
+  },
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "BVerfG 1 BvR 1602/07 EGMR Caroline Abwägung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BVerfGE 111 307 EGMR Berücksichtigungspflicht 2 BvR 1481/04 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "HUDOC 59320/00 von Hannover v Germany 24 June 2004 judgment -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de 1 BvR 1602/07 Caroline -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de 2 BvR 1481/04 EGMR -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de EU ausländische juristische Person Art. 19 Abs. 3 GG 1 BvR 1916/09 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de Pressefreiheit juristische Person Verlag Art 19 Abs 3 Spanien -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverfg.de 1 BvR 1916/09 ausländische juristische Personen EU Grundrechte -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverfg.de Caroline von Hannover EGMR 1 BvR 1602/07 Pressefreiheit Privatsphäre -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverfg.de EGMR Urteile Berücksichtigungspflicht Fachgerichte Görgülü 2 BvR 1481/04 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:coe.int European Convention Human Rights German Art 8 Art 10 Art 46 PDF -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:echr.coe.int convention german article 8 10 46 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:echr.coe.int von Hannover Germany 2004 Article 8 photos privacy -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de BVerfGG § 90 § 93 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de EMRK Art 8 Art 10 Art 46 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de KunstUrhG § 22 § 23 BGB 823 1004 GG Art 5 -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "search_queries": [
+    "BVerfG 1 BvR 1602/07 EGMR Caroline Abwägung -site:zjs-online.com",
+    "BVerfGE 111 307 EGMR Berücksichtigungspflicht 2 BvR 1481/04 -site:zjs-online.com",
+    "HUDOC 59320/00 von Hannover v Germany 24 June 2004 judgment -site:zjs-online.com",
+    "https://www.gesetze-im-internet.de/gg/art_94.html",
+    "site:bundesverfassungsgericht.de 1 BvR 1602/07 Caroline -site:zjs-online.com",
+    "site:bundesverfassungsgericht.de 2 BvR 1481/04 EGMR -site:zjs-online.com",
+    "site:bundesverfassungsgericht.de EU ausländische juristische Person Art. 19 Abs. 3 GG 1 BvR 1916/09 -site:zjs-online.com",
+    "site:bundesverfassungsgericht.de Pressefreiheit juristische Person Verlag Art 19 Abs 3 Spanien -site:zjs-online.com",
+    "site:bverfg.de 1 BvR 1916/09 ausländische juristische Personen EU Grundrechte -site:zjs-online.com",
+    "site:bverfg.de Caroline von Hannover EGMR 1 BvR 1602/07 Pressefreiheit Privatsphäre -site:zjs-online.com",
+    "site:bverfg.de EGMR Urteile Berücksichtigungspflicht Fachgerichte Görgülü 2 BvR 1481/04 -site:zjs-online.com",
+    "site:coe.int European Convention Human Rights German Art 8 Art 10 Art 46 PDF -site:zjs-online.com",
+    "site:echr.coe.int convention german article 8 10 46 -site:zjs-online.com",
+    "site:echr.coe.int von Hannover Germany 2004 Article 8 photos privacy -site:zjs-online.com",
+    "site:gesetze-im-internet.de BVerfGG § 90 § 93 -site:zjs-online.com",
+    "site:gesetze-im-internet.de EMRK Art 8 Art 10 Art 46 -site:zjs-online.com",
+    "site:gesetze-im-internet.de KunstUrhG § 22 § 23 BGB 823 1004 GG Art 5 -site:zjs-online.com"
+  ],
+  "sources": [
+    {
+      "url": "https://hudoc.echr.coe.int/app/conversion/docx/pdf?filename=CASE%20OF%20VON%20HANNOVER%20v.%20GERMANY.pdf&id=001-61853&library=ECHR",
+      "domain": "hudoc.echr.coe.int",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "EGMR, Urteil vom 24. Juni 2004 – von Hannover gegen Deutschland, Nr. 59320/00",
+      "reported_purpose": "Konventionsrechtliche Maßstäbe des Art. 8 EMRK für heimliche Bildaufnahmen bekannter Personen",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2004/10/rs20041014_2bvr148104.html",
+      "domain": "www.bundesverfassungsgericht.de",
+      "visited": true,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BVerfG, Beschluss vom 14. Oktober 2004 – 2 BvR 1481/04 (Görgülü)",
+      "reported_purpose": "Rang der EMRK, Bindungs- und Berücksichtigungswirkung von EGMR-Urteilen sowie Grenzen schematischer Umsetzung",
+      "visit_evidence": [
+        "command fetch"
+      ]
+    },
+    {
+      "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2008/02/rs20080226_1bvr160207.html",
+      "domain": "www.bundesverfassungsgericht.de",
+      "visited": true,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BVerfG, Beschluss vom 26. Februar 2008 – 1 BvR 1602/07 u.a. (Caroline III)",
+      "reported_purpose": "Verfassungsrechtliche Maßstäbe für Bildberichterstattung, Privatsphäre, Pressefreiheit und Einbeziehung der EMRK",
+      "visit_evidence": [
+        "command fetch"
+      ]
+    },
+    {
+      "url": "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2011/07/rs20110719_1bvr191609.html",
+      "domain": "www.bundesverfassungsgericht.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": true,
+      "reported_title": "BVerfG, Beschluss vom 19. Juli 2011 – 1 BvR 1916/09",
+      "reported_purpose": "Grundrechtsberechtigung juristischer Personen aus EU-Mitgliedstaaten",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.echr.coe.int/d/convention_deu",
+      "domain": "www.echr.coe.int",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Europäische Menschenrechtskonvention – deutsche Fassung",
+      "reported_purpose": "Aktueller Wortlaut insbesondere der Art. 8, 10, 46 und 53 EMRK",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__1004.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 1004 BGB",
+      "reported_purpose": "Einfachrechtliche Grundlage des Unterlassungsanspruchs",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bgb/__823.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "§ 823 BGB",
+      "reported_purpose": "Einfachrechtliche Grundlage des Persönlichkeitsschutzes",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/bverfgg/",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Bundesverfassungsgerichtsgesetz",
+      "reported_purpose": "Aktuelle Zulässigkeits- und Entscheidungsnormen der Verfassungsbeschwerde",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/gg/BJNR000010949.html",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Grundgesetz für die Bundesrepublik Deutschland",
+      "reported_purpose": "Aktueller Wortlaut der einschlägigen Verfassungsnormen",
+      "visit_evidence": []
+    },
+    {
+      "url": "https://www.gesetze-im-internet.de/kunsturhg/KunstUrhG.pdf",
+      "domain": "www.gesetze-im-internet.de",
+      "visited": false,
+      "used": true,
+      "cited_in_deliverable": false,
+      "reported_title": "Gesetz betreffend das Urheberrecht an Werken der bildenden Künste und der Photographie (KunstUrhG)",
+      "reported_purpose": "Aktueller Wortlaut der §§ 22 und 23 KunstUrhG",
+      "visit_evidence": []
+    }
+  ],
+  "task_id": "de/oeffentliches-recht/staatsrecht/anfangerklausur-caroline-zugleich-ein-beitrag-zur-mittelbaren-drittwirkung-der-grundrechte"
+}

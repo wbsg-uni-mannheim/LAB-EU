@@ -1,0 +1,185 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/oeffentliches-recht/staatsrecht/anfangerklausur-caroline-zugleich-ein-beitrag-zur-mittelbaren-drittwirkung-der-grundrechte",
+  "solver_case_id": "case-010",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/oeffentliches-recht/staatsrecht/anfangerklausur-caroline-zugleich-ein-beitrag-zur-mittelbaren-drittwirkung-der-grundrechte",
+  "source_task_dir_relative": "tasks/de/oeffentliches-recht/staatsrecht/anfangerklausur-caroline-zugleich-ein-beitrag-zur-mittelbaren-drittwirkung-der-grundrechte",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "BVerfG 1 BvR 1602/07 EGMR Caroline Abwägung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BVerfGE 111 307 EGMR Berücksichtigungspflicht 2 BvR 1481/04 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "HUDOC 59320/00 von Hannover v Germany 24 June 2004 judgment -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de 1 BvR 1602/07 Caroline -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de 2 BvR 1481/04 EGMR -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de EU ausländische juristische Person Art. 19 Abs. 3 GG 1 BvR 1916/09 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de Pressefreiheit juristische Person Verlag Art 19 Abs 3 Spanien -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverfg.de 1 BvR 1916/09 ausländische juristische Personen EU Grundrechte -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverfg.de Caroline von Hannover EGMR 1 BvR 1602/07 Pressefreiheit Privatsphäre -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bverfg.de EGMR Urteile Berücksichtigungspflicht Fachgerichte Görgülü 2 BvR 1481/04 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:coe.int European Convention Human Rights German Art 8 Art 10 Art 46 PDF -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:echr.coe.int convention german article 8 10 46 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:echr.coe.int von Hannover Germany 2004 Article 8 photos privacy -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de BVerfGG § 90 § 93 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de EMRK Art 8 Art 10 Art 46 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de KunstUrhG § 22 § 23 BGB 823 1004 GG Art 5 -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-eiw79kvw",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-eiw79kvw/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T12:31:39.663758+00:00",
+      "ended_at": "2026-08-06T12:39:22.829094+00:00",
+      "duration_seconds": 463.165
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 21439,
+      "sha256": "47b5975c3298dd57192a42935d8000b09b6d86bf6a1da6924b2652197b2fb453"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 17,
+    "recorded_open_or_fetch_urls": 2,
+    "used_urls": 10,
+    "cited_urls": 4,
+    "unique_used_source_urls": 10,
+    "unique_used_source_domains": 4,
+    "unique_source_urls": 10,
+    "unique_source_domains": 4,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 16
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-caroline-zugleich-ein-beitrag-zur-mittelbaren-drittwirkung-der-grundrechte/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-caroline-zugleich-ein-beitrag-zur-mittelbaren-drittwirkung-der-grundrechte/sources.md",
+  "exit_code": 0
+}

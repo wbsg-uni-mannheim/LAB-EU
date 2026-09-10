@@ -1,0 +1,250 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/zivilrecht/schuldrecht/anfangerklausur-zwei-autokaufe",
+  "solver_case_id": "case-044",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/zivilrecht/schuldrecht/anfangerklausur-zwei-autokaufe",
+  "source_task_dir_relative": "tasks/de/zivilrecht/schuldrecht/anfangerklausur-zwei-autokaufe",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "\"75 h Abs. 2 HGB\" Entziehung Vollmacht Handlungsgehilfe -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"§ 75h Abs. 2\" \"betraut\" \"außerhalb\" Handlungsgehilfe -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH Handlungsvollmacht Erlöschen Widerruf § 54 Abs 3 HGB Kenntnis Dritter -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH VIII ZR 88/05 § 75h HGB Urteil text -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH § 179 Erfüllungsanspruch Gegenleistung Zug um Zug Vertreter ohne Vertretungsmacht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "BGH § 55 HGB Widerruf Handlungsvollmacht Reisender -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Handlungsvollmacht Widerruf § 54 Abs. 3 HGB Erlöschen Dritter gutgläubig § 171 BGB -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Vertreterhaftung § 179 Kaufpreis Zahlung Übereignung an Vertreter Erfüllung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "Wissenszurechnung § 179 Abs. 3 Vertreter des Vertragspartners § 166 BGB Brief nicht geöffnet -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesarbeitsgericht.de Briefkasten Zugang gewöhnliche Leerungszeit Kenntnisnahme -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesarbeitsgericht.de Zugang Postfach Willenserklärung Postfach eingelegt Leerung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"75h HGB\" Handlungsgehilfe -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"Postfach\" \"Machtbereich\" \"Zugang\" Willenserklärung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:bundesgerichtshof.de \"Postfach\" \"Machtbereich\" \"Zugang\" Willenserklärung -site:zjs-online.com",
+        "match": "Postfach"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"gewöhnlichen Umständen\" \"Postfach\" Zugang -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "site:bundesgerichtshof.de \"gewöhnlichen Umständen\" \"Postfach\" Zugang -site:zjs-online.com",
+        "match": "Postfach"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"§ 75 h\" HGB unverzüglich ablehnt Dritten -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Anscheinsvollmacht Vertreter ohne Vertretungsmacht § 179 III kennen musste Wissenszurechnung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Postfach Zugang Willenserklärung gewöhnliche Leerungszeit -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de § 179 Abs. 1 Erfüllung Gegenleistung Vertreter ohne Vertretungsmacht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de BGB § 164 § 171 § 173 § 177 § 179 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de HGB § 54 Handlungsvollmacht Beschränkung Dritter kennen musste -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/hgb/__55.html § 55 HGB -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "§ 179 BGB Erfüllung Kaufvertrag Kaufpreis Zug um Zug Vertreter ohne Vertretungsmacht Verkäufer Fahrzeug -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "§ 54 HGB Widerruf Handlungsvollmacht Außenvollmacht Dritter -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "§ 55 HGB Handlungsgehilfe außerhalb Niederlassung Einkauf Vollmacht -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "§ 75h Abs. 2 HGB Voraussetzungen Abschlussgehilfe nicht bevollmächtigt betraut außerhalb Betrieb -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "§ 75h HGB Genehmigungsfiktion Ablehnung gegenüber Dritten Kenntnis § 166 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "§75h II HGB widerrufene Vollmacht Abschlussvertreter -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-d8ybljjh",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-d8ybljjh/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T18:24:39.271999+00:00",
+      "ended_at": "2026-08-06T18:33:58.784031+00:00",
+      "duration_seconds": 559.514
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 16919,
+      "sha256": "51a2499e833cb1772caff8793d05866923c4f90ea78c31c4822cd324ee511438"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 30,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 16,
+    "cited_urls": 2,
+    "unique_used_source_urls": 16,
+    "unique_used_source_domains": 3,
+    "unique_source_urls": 16,
+    "unique_source_domains": 3,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 29
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__zivilrecht__schuldrecht__anfangerklausur-zwei-autokaufe/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__zivilrecht__schuldrecht__anfangerklausur-zwei-autokaufe/sources.md",
+  "exit_code": 0
+}

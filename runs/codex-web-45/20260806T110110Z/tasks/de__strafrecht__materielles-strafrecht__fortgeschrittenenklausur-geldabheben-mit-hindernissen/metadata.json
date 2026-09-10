@@ -1,0 +1,275 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-geldabheben-mit-hindernissen",
+  "solver_case_id": "case-016",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-geldabheben-mit-hindernissen",
+  "source_task_dir_relative": "tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-geldabheben-mit-hindernissen",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "solver_configuration": {
+    "model": "gpt-5.6-sol",
+    "reasoning_effort": "medium",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "full",
+  "live_web_search": true,
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": true,
+    "flags": [
+      {
+        "kind": "task-identifier",
+        "evidence": "\"12. November 2024\" \"Greift ein anderer zu, bricht er den Gewahrsam\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"3 StR 333/18\" Cash Trapping -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"3 StR 333/18\" Geldautomat Computerbetrug Betrag Eingabe -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"4 StR 338/20\" Ablenkung Geldautomat unbefugte Verwendung Daten -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Allein die Eingabe des auszuzahlenden Geldbetrages\" \"263a\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Auszahlungsbetrag\" \"unbefugte Verwendung von Daten\" Ablenkung Geldautomat BGH -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Auszahlungsbetrag\" \"unbefugte Verwendung von Daten\" Ablenkung Geldautomat BGH -site:zjs-online.com",
+        "match": "Auszahlungsbetrag"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Dann gönne ich mir doch heute mal die Seezunge\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Dann gönne ich mir doch heute mal die Seezunge\" -site:zjs-online.com",
+        "match": "Dann gönne ich mir doch heute mal die Seezunge"
+      },
+      {
+        "kind": "copied-task-fragment",
+        "evidence": "\"Dann gönne ich mir doch heute mal die Seezunge\" -site:zjs-online.com",
+        "match": "dann gönne ich mir doch heute mal die seezunge"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Fortgeschrittenenklausur: Geldabheben mit Hindernissen\" Begünstigung Hehlerei -site:zjs-online.com",
+        "match": "Fortgeschrittenenklausur: Geldabheben mit Hindernissen"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Fortgeschrittenenklausur: Geldabheben mit Hindernissen\" Begünstigung Hehlerei -site:zjs-online.com",
+        "match": "fortgeschrittenenklausur geldabheben mit hindernissen"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Fortgeschrittenenklausur: Geldabheben mit Hindernissen\" Begünstigung Hehlerei -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Greift ein anderer zu, bricht er den Gewahrsam der ausgebenden Bank\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Prospekte oder Ähnliches vorhielten\" \"263a\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"Schenkt W gönnerhaft der B\" 10 € Hehlerei Begünstigung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "quoted-task-fragment",
+        "evidence": "\"Schenkt W gönnerhaft der B\" 10 € Hehlerei Begünstigung -site:zjs-online.com",
+        "match": "Schenkt W gönnerhaft der B"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "\"nr=140047\" BGH Aktenzeichen -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "OLG Köln Cash-Trapping Beschluss Aktenzeichen 2020 NStZ 2021 48 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de \"BGHSt 9, 137\" Hehlerei Geld -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Cash Trapping Geldautomat Blende Diebstahl Versuch -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Geldautomat Geldausgabefach Gewahrsam Bank Kunde Dritter PIN Betrag eingegeben -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesgerichtshof.de Hehlerei Wechselgeld Surrogat Ersatzhehlerei -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:bundesverfassungsgericht.de 3 StR 333/18 Geldautomat -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de StGB 242 263a 257 259 aktuelle Fassung -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/bgb/__935.html § 935 Abs. 2 BGB Geld -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/stgb/__242.html § 242 StGB -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/stgb/__259.html § 259 StGB -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:gesetze-im-internet.de/stgb/__263a.html § 263a StGB -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"3 StR 333/18\" \"Computerbetrug\" -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:juris.bundesgerichtshof.de \"4 StR 338/20\" BGHSt 66 55 Rn. 7 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:justiz.nrw.de OLG Köln Cash Trapping NStZ 2021 48 -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:nrwe.justiz.nrw.de Cash Trapping unmittelbares Ansetzen Metallblende Geldautomat OLG Köln -site:zjs-online.com",
+        "match": "zjs"
+      },
+      {
+        "kind": "task-identifier",
+        "evidence": "site:rechtsprechung-im-internet.de Geldautomat Gewahrsam Geldausgabefach 263a -site:zjs-online.com",
+        "match": "zjs"
+      }
+    ]
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": true,
+  "command": [
+    "/opt/homebrew/bin/codex",
+    "--search",
+    "--sandbox",
+    "danger-full-access",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-xxuq449_",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-5.6-sol",
+    "--config",
+    "model_reasoning_effort=\"medium\"",
+    "exec",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-xxuq449_/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-08-06T13:46:37.648120+00:00",
+      "ended_at": "2026-08-06T13:55:06.549103+00:00",
+      "duration_seconds": 508.899
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 18497,
+      "sha256": "8a9d6935902d32d20044d9517f7e80d250fb6c8569eb30ec2f6f862cea242f48"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 29,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 8,
+    "cited_urls": 0,
+    "unique_used_source_urls": 8,
+    "unique_used_source_domains": 4,
+    "unique_source_urls": 8,
+    "unique_source_domains": 4,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 34
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenklausur-geldabheben-mit-hindernissen/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/codex-web-45/20260806T110110Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenklausur-geldabheben-mit-hindernissen/sources.md",
+  "exit_code": 0
+}
