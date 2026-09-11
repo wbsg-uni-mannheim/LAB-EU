@@ -1,0 +1,2018 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="description"
+            content="LAB-DE studies German legal drafting with LLM agents: how harnesses and web research affect written reasoning, evaluated against case-specific pass/fail criteria."
+        />
+        <meta
+            name="keywords"
+            content="legal AI, benchmark, LLM agents, German law, Staatsexamen, state examination, rubric evaluation, Gutachten, LAB-EU"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>LAB-DE: German Legal Agent Benchmark</title>
+
+        <meta property="og:title" content="LAB-DE: German Legal Agent Benchmark" />
+        <meta
+            property="og:description"
+            content="45 German legal cases, 1,806 case-specific criteria, and ongoing research into agent harnesses, web search and legal reasoning."
+        />
+        <meta property="og:type" content="website" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%96%EF%B8%8F%3C/text%3E%3C/svg%3E"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+
+        <style>
+            body {
+                font-family: "Noto Sans", sans-serif;
+            }
+            html {
+                scroll-behavior: smooth;
+                scroll-padding-top: 70px;
+            }
+            .navbar.is-spaced {
+                position: sticky;
+                top: 0;
+                z-index: 30;
+                background: #fff;
+                box-shadow:
+                    0 1px 0 rgba(0, 0, 0, 0.05),
+                    0 4px 12px rgba(0, 0, 0, 0.04);
+                padding-top: 0.6rem;
+                padding-bottom: 0.6rem;
+            }
+            .navbar-menu.is-active {
+                box-shadow: 0 8px 12px rgba(0, 0, 0, 0.06);
+            }
+            .publication-title,
+            .publication-authors,
+            .title {
+                font-family: "Google Sans", sans-serif;
+            }
+            .publication-authors a {
+                color: hsl(204, 86%, 53%) !important;
+            }
+            .publication-authors a:hover {
+                text-decoration: underline;
+            }
+            .author-block {
+                display: inline-block;
+            }
+            .section .content,
+            .section .content p,
+            .section p,
+            .section li {
+                text-align: justify;
+            }
+            .link-block a {
+                margin: 5px;
+            }
+            .mono {
+                font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+            }
+
+            /* cards for exams, example criteria, pipeline steps */
+            .dcard {
+                border: 1px solid #dbdbdb;
+                border-radius: 6px;
+                overflow: hidden;
+                background: #fff;
+                height: 100%;
+            }
+            .dcard .dh {
+                background: #fafafa;
+                border-bottom: 1px solid #ededed;
+                padding: 0.5rem 0.75rem;
+                font-weight: 600;
+                font-size: 0.92rem;
+                display: flex;
+                align-items: center;
+                gap: 0.45rem;
+            }
+            .dcard .db {
+                padding: 0.75rem;
+                font-size: 0.9rem;
+            }
+            .dcard .db p {
+                margin-bottom: 0.4rem;
+            }
+            .statbox {
+                border: 1px solid #dbdbdb;
+                border-radius: 6px;
+                padding: 1rem 0.5rem;
+                background: #fff;
+                text-align: center;
+                height: 100%;
+            }
+            .statbox .title {
+                margin-bottom: 0.2rem;
+            }
+            .statbox .heading {
+                letter-spacing: 0.04em;
+            }
+            .step-num {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 1.5rem;
+                height: 1.5rem;
+                border-radius: 50%;
+                background: hsl(204, 86%, 53%);
+                color: #fff;
+                font-size: 0.8rem;
+                font-weight: 700;
+                flex-shrink: 0;
+            }
+            .crit-text {
+                font-size: 0.85rem;
+                line-height: 1.45;
+            }
+            .crit-gist {
+                font-style: italic;
+                color: #666;
+                font-size: 0.82rem;
+                border-top: 1px solid #ededed;
+                padding-top: 0.4rem;
+                margin-top: 0.5rem;
+            }
+            .stars {
+                color: #b98d00;
+                font-size: 0.8rem;
+            }
+
+            /* results tables */
+            .table.is-narrow td,
+            .table.is-narrow th {
+                padding: 0.28em 0.55em;
+                font-size: 0.83rem;
+                font-variant-numeric: tabular-nums;
+            }
+            .table thead th {
+                background: #fafafa;
+            }
+            .best {
+                font-weight: 700;
+            }
+            .area-row td {
+                background: #f2f7fc;
+                font-weight: 600;
+            }
+            pre.bibtex {
+                background: #f6f6f6;
+                border: 1px solid #e6e6e6;
+                border-radius: 6px;
+                font-size: 0.78rem;
+                overflow-x: auto;
+            }
+            .footer-note {
+                font-size: 0.85rem;
+                color: #777;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- NAV -->
+        <nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
+            <div class="container is-max-desktop">
+                <div class="navbar-brand">
+                    <a class="navbar-item has-text-weight-bold" href="#top">LAB-DE</a>
+                    <button
+                        type="button"
+                        class="navbar-burger"
+                        style="border: 0; background: transparent; color: inherit"
+                        aria-label="menu"
+                        aria-expanded="false"
+                        data-target="mainNav"
+                        aria-controls="mainNav"
+                        onclick="
+                            const expanded = this.classList.toggle('is-active');
+                            this.setAttribute('aria-expanded', String(expanded));
+                            document.getElementById('mainNav').classList.toggle('is-active');
+                        "
+                    >
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div id="mainNav" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="#data">Tasks</a>
+                        <a class="navbar-item" href="#pipeline">Pipeline</a>
+                        <a class="navbar-item" href="#rubrics">Rubrics</a>
+                        <a class="navbar-item" href="#validation">Validation</a>
+                        <a class="navbar-item" href="#judging">Judging</a>
+                        <a class="navbar-item" href="#results">Results</a>
+                        <a class="navbar-item" href="#failures">Error Analysis</a>
+                        <a class="navbar-item" href="#roadmap">Outlook</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero" id="top">
+            <div class="hero-body">
+                <div class="container is-max-desktop has-text-centered">
+                    <h1 class="title is-2 publication-title">
+                        LAB-DE: German Legal Agent Benchmark
+                    </h1>
+                    <p class="is-size-5" style="margin-bottom: 1rem">
+                        Evaluating German legal reasoning with LLM agents,
+                        case-specific rubrics, and web research
+                    </p>
+                    <!-- TODO(Aaron): Mit Chris besprechen, wer alles als Autor gelistet wird
+                         (nur Steiner/Bizer, oder auch Ralf bzw. weitere Beteiligte?) und in
+                         welcher Reihenfolge. Erst danach die Seite veröffentlichen.
+                         Betrifft auch das BibTeX unten in der Citation-Sektion. -->
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block"
+                            ><a
+                                href="https://www.uni-mannheim.de/dws/people/researchers/phd-students/aaron-steiner/"
+                                >Aaron Steiner</a
+                            >,</span
+                        >
+                        <span class="author-block"
+                            ><a
+                                href="https://www.uni-mannheim.de/dws/people/professors/prof-dr-christian-bizer/"
+                                >Christian Bizer</a
+                            ></span
+                        >
+                    </div>
+                    <div class="is-size-6 publication-authors" style="margin-top: 0.4rem">
+                        <span class="author-block"
+                            ><a
+                                href="https://www.uni-mannheim.de/dws/research/focus-groups/web-based-systems-prof-bizer/"
+                                >Data and Web Science Group, University of
+                                Mannheim</a
+                            ></span
+                        >
+                    </div>
+                    <div class="column has-text-centered" style="margin-top: 1rem">
+                        <div class="publication-links">
+                            <!-- TODO: add a Paper button here once the paper is published -->
+                            <span class="link-block">
+                                <a
+                                    href="https://github.com/wbsg-uni-mannheim/LAB-EU"
+                                    class="external-link button is-normal is-rounded is-dark"
+                                >
+                                    <span class="icon"><i class="fab fa-github"></i></span>
+                                    <span>Code</span>
+                                </a>
+                            </span>
+                            <span class="link-block">
+                                <a
+                                    href="#results"
+                                    class="button is-normal is-rounded is-dark"
+                                >
+                                    <span class="icon"><i class="fas fa-table"></i></span>
+                                    <span>Results</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                    <div
+                        class="notification is-info is-light"
+                        style="margin-top: 1rem; text-align: left"
+                    >
+                        <b>Ongoing research.</b> We are investigating how agent
+                        harnesses and web research affect German legal case
+                        solutions, and how reliably individual reasoning steps
+                        can be evaluated. This page documents our approach,
+                        initial experiments, and open questions. Legal review
+                        and further validation are in progress.
+                        Last updated September 11, 2026.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABSTRACT -->
+        <section class="section" id="abstract">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered">Abstract</h2>
+                <div class="content is-size-6">
+                    <p>
+                        Large language models have developed from chatbots
+                        into agents that plan their work, use tools, and
+                        produce complete documents. Private individuals and
+                        legal professionals increasingly use them to draft
+                        legal texts. LAB-DE investigates how agent workflows and access to
+                        research tools affect the quality of these drafts under
+                        German law. It is a
+                        benchmark for evaluating LLM agents on German legal
+                        case work. Each task asks for a complete written
+                        legal opinion (Gutachten), and each answer is scored
+                        against a rubric of atomic pass/fail criteria, so
+                        results can be traced to individual reasoning steps.
+                        The tasks are university exam cases at the level of
+                        the German First State Examination, written and
+                        published together with their reference solutions by
+                        law faculty, and the prescribed appraisal style
+                        (Gutachtenstil) defines the expected content of a
+                        correct solution in detail.
+                    </p>
+                    <p>
+                        The current release contains <b>45 exam cases at First
+                        State Examination level</b> with published reference
+                        solutions, covering public law, criminal law, and civil
+                        law in equal parts. Each case carries a rubric of atomic
+                        pass/fail criteria derived from the official solution,
+                        <b>1,806 criteria</b> in total. Rubrics are generated by
+                        LLMs, calibrated against the reference solution, tested in targeted experiments
+                        with deliberately defective answers, and developed with
+                        feedback from legal professionals. Submissions are scored per
+                        criterion by a committee of two LLM judges with a third
+                        model as tiebreaker.
+                    </p>
+                    <p>
+                        We compare eight configurations: three models answering in a single
+                        call, the same models using OpenCode, and Codex with and without web
+                        search. We examine where working through a task over several steps
+                        improves a solution, what web research contributes, and which legal
+                        requirements the answers satisfy.
+                    </p>
+                </div>
+                <div class="columns is-mobile is-multiline" style="margin-top: 1.5rem">
+                    <div class="column is-3-tablet is-6-mobile">
+                        <div class="statbox">
+                            <p class="title is-3">45</p>
+                            <p class="heading">Exam cases</p>
+                        </div>
+                    </div>
+                    <div class="column is-3-tablet is-6-mobile">
+                        <div class="statbox">
+                            <p class="title is-3">1,806</p>
+                            <p class="heading">Rubric criteria</p>
+                        </div>
+                    </div>
+                    <div class="column is-3-tablet is-6-mobile">
+                        <div class="statbox">
+                            <p class="title is-3">3</p>
+                            <p class="heading">Areas of law</p>
+                        </div>
+                    </div>
+                    <div class="column is-3-tablet is-6-mobile">
+                        <div class="statbox">
+                            <p class="title is-3">8</p>
+                            <p class="heading">Systems evaluated</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="section" id="introduction" style="background: #fafafa">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered">Introduction</h2>
+                <div class="content is-size-6">
+                    <p>
+                        LLM agents used in legal work produce complete
+                        documents: opinions, briefs, contracts. Evaluating
+                        them requires checking the individual reasoning steps
+                        of a complete document. For US practice, Harvey's
+                        <a
+                            href="https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark"
+                            >Legal Agent Benchmark (LAB)</a
+                        >
+                        follows this approach. It evaluates agents on more
+                        than 1,200 realistic drafting tasks scored against
+                        expert-written rubrics of atomic pass/fail criteria,
+                        building on the earlier
+                        <a
+                            href="https://www.harvey.ai/blog/introducing-biglaw-bench"
+                            >BigLaw Bench</a
+                        >. LAB is now publicly released. US
+                        practice differs from German law in doctrine,
+                        language, and document conventions.
+                    </p>
+                    <p>
+                        For German law, <a
+                        href="https://arxiv.org/html/2605.28183v4">BenGER</a> provides
+                        exam-style case tasks and doctrinal reasoning tasks. Its latest
+                        version evaluates full case solutions using ten rubric dimensions,
+                        including correctness, subsumption and legal method, with human
+                        validation of LLM judges. It also studies human and human–AI
+                        solutions. In their experiments, the models answer without web searches or external tools. LAB-DE draws on the openly licensed ZJS subset
+                        of BenGER and adds experiments with agent harnesses and web access,
+                        together with an evaluation layer at the level of individual legal
+                        requirements.
+                    </p>
+                    <p>
+                        <b>Our focus.</b> Each LAB-DE case has explicit pass/fail
+                        criteria derived from its reference solution. Judges
+                        apply these criteria without seeing that solution and
+                        record a rationale for each verdict. Application and
+                        argumentation criteria also receive a separate legal-method
+                        verdict. This supports detailed error analysis across
+                        solver configurations.
+                    </p>
+                    <p>
+                        This page documents the current benchmark and ongoing research. The
+                        <a href="https://github.com/wbsg-uni-mannheim/LAB-EU">pipeline,
+                        tasks and rubrics</a> and the <a
+                        href="https://github.com/wbsg-uni-mannheim/LAB-EU/blob/main/studies/de-core-45/scores.md">final
+                        individual verdicts for the six original study conditions</a> are
+                        available on GitHub. Additional experiments and legal review are in
+                        progress. LAB-DE is the German-law track of LAB-EU, which is
+                        designed to grow into further European jurisdictions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TASKS -->
+        <section class="section" id="data" style="background: #fafafa">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered">Tasks</h2>
+                <div class="content is-size-6">
+                    <p>
+                        Becoming a fully qualified lawyer in Germany requires
+                        passing two state examinations: the First State
+                        Examination (<span class="mono">Erste Juristische
+                        Pr&uuml;fung</span>) at the end of university legal
+                        studies, and a second one after a two-year practical
+                        traineeship. The current LAB-DE release draws its
+                        tasks from the first level. In these exams, candidates
+                        solve a fictional case in
+                        <span class="mono">Gutachtenstil</span>, a rigid
+                        appraisal style that examines every claim or offence
+                        step by step, and hand in one long written legal
+                        opinion. LAB-DE uses published university exam cases
+                        on this track, each released together with a reference
+                        solution by its academic authors.
+                    </p>
+                    <p>
+                        The release contains <b>45 cases</b>, 15 each in
+                        public law, criminal law, and civil law. 43 cases come
+                        from the Zeitschrift f&uuml;r das Juristische Studium
+                        (ZJS), an open-access legal education journal, via the
+                        <a href="https://arxiv.org/abs/2605.28183">BenGER</a>
+                        corpus, and two from the OpenRewi casebook on
+                        administrative law. The selected source cases carry CC BY
+                        4.0 or CC BY-SA 4.0 licences. Attribution and source
+                        provenance are recorded per task. Availability of
+                        further materials is documented separately. Human candidates
+                        typically get two to five hours per exam. The
+                        take-home assignments are written over several weeks
+                        and expect substantially deeper analysis.
+                    </p>
+                    <p>
+                        Each task consists of an instruction, the case documents (the facts
+                        plus any annexes), and the name of the Markdown file the system must
+                        produce. The reference solution and rubric are stored outside the
+                        solver workspace. Current harnesses remove identifying metadata
+                        while retaining the exam format. OpenCode supports file tools and iterative
+                        drafting, with external research prohibited by the study
+                        instructions. The Codex web condition enables external research.
+                    </p>
+                </div>
+
+                <h3 class="title is-5" style="margin-top: 2rem">Example task</h3>
+                <div class="content is-size-6">
+                    <p>
+                        The civil law case
+                        <a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/anfangerklausur-zwei-autokaufe">&ldquo;Anf&auml;ngerklausur: Zwei Autok&auml;ufe&rdquo;</a>
+                        (24 rubric criteria) illustrates the task format. The
+                        materials are German. The facts are shown here in an
+                        English translation.
+                    </p>
+                </div>
+                <div class="dcard">
+                    <div class="dh">
+                        <span class="icon has-text-grey"><i class="fas fa-file-lines"></i></span>
+                        Instruction
+                        <span class="mono" style="font-weight: 400">&middot; deliverable: fallloesung.md</span>
+                    </div>
+                    <div class="db">
+                        <p>
+                            &ldquo;Solve the case in the form of a legal
+                            opinion. Prepare a complete case solution based on
+                            the facts in
+                            <span class="mono">documents/sachverhalt.md</span>.&rdquo;
+                        </p>
+                        <p style="border-top: 1px solid #ededed; padding-top: 0.6rem">
+                            <b>Facts of the case</b> (translated): Goldt (G) and Frosch (F) are used-car dealers. Apfel (A), employed by G, is chiefly tasked with buying used cars from private sellers and from other used-car dealers. G included a corresponding description of his duties in the employment contract. Half a year later she also sent a circular letter to about 20 used-car dealers in the area, among them F, declaring that A was authorized to buy used cars of every kind on her behalf. [&#8230;]
+                        </p>
+                        <details>
+                            <summary style="cursor: pointer; font-size: 0.9rem; font-weight: 600">Show the full facts</summary>
+                            <div style="margin-top: 0.6rem; font-size: 0.9rem">
+<p>F filed this letter away. When, three years later, repeated disagreements arise between G and A over purchasing policy, G instructs A in June to work exclusively in car sales until further notice. As a precaution she revokes &ldquo;any power of attorney that may have been granted&rdquo; towards A and permits him to sell cars only after prior consultation with her. To be safe, she also writes this to the used-car dealers she does business with. The letter to F is placed in F's post-office box at the post office on the morning of July&nbsp;3. Because F forgets to empty the box, the letter reaches her desk only the following day, and she opens and reads it on July&nbsp;6.</p>
+<p>A wants to win back G's trust by making some particularly advantageous purchases. On July&nbsp;5, on his way home, he discovers a used VW Beetle at F's dealership. He negotiates F's sales employee Baum (B) down to the attractive price of 8,200&nbsp;&euro;. He signs the written contract with his own name, as usual, since he knows that F knows him as G's employee from about a dozen purchases per year. Pleased with this bargain, A immediately seizes another opportunity: at the car dealership Hund GmbH (H), with which G has not done business before, he buys a used Smart for 5,500&nbsp;&euro;. He introduces himself to the managing director as G's buyer. In view of A's expertise and confident manner, the director has no doubts, especially since he knows G by reputation as a reliable businesswoman. When G receives the invoices for the two purchases from F and H, she is annoyed and refuses to approve either transaction, which she immediately communicates to A.</p>
+<p><b>Question:</b> Can F and H demand payment of the purchase prices from G, or at least from A?</p>
+                            </div>
+                        </details>
+                        <p class="crit-gist">
+                            Two rubric criteria for this case are quoted in the
+                            <a href="#rubrics">rubric section</a> below. The
+                            expected solution examines the purchase-price
+                            claims of F and H against G under agency law and
+                            the personal liability of A.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div style="margin-top: 1.5rem"></div>
+                <details id="cases">
+                    <summary class="is-size-6" style="cursor: pointer; font-weight: 600">
+                        Show the full case list (45 cases)
+                    </summary>
+                    <div class="table-container" style="margin-top: 1rem">
+                        <table class="table is-narrow is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th class="has-text-left">Case</th>
+                                    <th class="has-text-right">Criteria</th>
+                                    <th class="has-text-left">Source</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="area-row"><td colspan="3">Öffentliches Recht (public law)</td></tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/europarecht/abschlussklausur-europarecht-germany-first">Abschlussklausur Europarecht: „Germany first“</a></td>
+                                    <td class="has-text-right">36</td>
+                                    <td class="has-text-left">ZJS 2022/2, p. 210</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/verwaltungsrecht/anfechtungsklage/fall-02-anfechtungsklage-bei-nebenbestimmungen">Anfechtungsklage bei Nebenbestimmungen</a></td>
+                                    <td class="has-text-right">27</td>
+                                    <td class="has-text-left">OpenRewi (Eisentraut, Fälle zum Verwaltungsrecht)</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/staatsrecht/anfanger-innenhausarbeit-bundeszwang-und-rededrang">Anfänger:innenhausarbeit: Bundeszwang und Rededrang</a></td>
+                                    <td class="has-text-right">46</td>
+                                    <td class="has-text-left">ZJS 2024/2, p. 390</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/staatsrecht/anfangerhausarbeit-wie-du-mir-so-ich-dir">Anfängerhausarbeit: „Wie du mir, so ich dir“</a></td>
+                                    <td class="has-text-right">50</td>
+                                    <td class="has-text-left">ZJS 2024/4, p. 735</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/verwaltungsrecht/anfangerklausur-im-polizeirecht-kleine-tiere-grosser-arger">Anfängerklausur im Polizeirecht: „Kleine Tiere – großer Ärger“</a></td>
+                                    <td class="has-text-right">29</td>
+                                    <td class="has-text-left">ZJS 2025/2, p. 300</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/staatsrecht/anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn">Anfängerklausur – Grundrechte: Die Rennraddemo auf der Autobahn</a></td>
+                                    <td class="has-text-right">32</td>
+                                    <td class="has-text-left">ZJS 2023/4, p. 819</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/staatsrecht/anfangerklausur-caroline-zugleich-ein-beitrag-zur-mittelbaren-drittwirkung-der-grundrechte">Anfängerklausur: Caroline Zugleich ein Beitrag zur mittelbaren Drittwirkung der Grundrechte in der Fallbearbeitung</a></td>
+                                    <td class="has-text-right">28</td>
+                                    <td class="has-text-left">ZJS 2021/5, p. 624</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/verwaltungsrecht/examensklausur-40-000-t-schredder-schrott">Examensklausur: 40.000 t Schredder-Schrott</a></td>
+                                    <td class="has-text-right">29</td>
+                                    <td class="has-text-left">ZJS 2021/1, p. 52</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/staatsrecht/examensubungsklausur-falsche-liebe">Examensübungsklausur: Falsche Liebe</a></td>
+                                    <td class="has-text-right">37</td>
+                                    <td class="has-text-left">ZJS 2022/1, p. 63</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/staatsrecht/examensubungsklausur-sonderprobleme-des-eigentumsschutzes-offentlich-rechtlicher-anspruche">Examensübungsklausur: Sonderprobleme des Eigentumsschutzes öffentlich-rechtlicher Ansprüche bei staatlicher Verantwortungsübernahme</a></td>
+                                    <td class="has-text-right">43</td>
+                                    <td class="has-text-left">ZJS 2025/2, p. 276</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/europarecht/fortgeschrittenenklausur-europarecht-autofrei-spass-dabei">Fortgeschrittenenklausur Europarecht: Autofrei – Spaß dabei?</a></td>
+                                    <td class="has-text-right">35</td>
+                                    <td class="has-text-left">ZJS 2024/1, p. 123</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/europarecht/fortgeschrittenenklausur-europarecht-wohnungsbestand-in-burgerhand">Fortgeschrittenenklausur Europarecht: Wohnungsbestand in Bürgerhand?</a></td>
+                                    <td class="has-text-right">48</td>
+                                    <td class="has-text-left">ZJS 2022/6, p. 878</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/verwaltungsrecht/fortgeschrittenenklausur-zwei-bescheide-und-ein-fuhrerschein">Fortgeschrittenenklausur: Zwei Bescheide und ein Führerschein</a></td>
+                                    <td class="has-text-right">39</td>
+                                    <td class="has-text-left">ZJS 2023/1, p. 129</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/verwaltungsrecht/fortsetzungsfeststellungsklage/fall-07-fortsetzungsfeststellungsklage-gegen-die-untersagung-eines-politischen-strassentheaters">Fortsetzungsfeststellungsklage gegen die Untersagung eines politischen Straßentheaters</a></td>
+                                    <td class="has-text-right">37</td>
+                                    <td class="has-text-left">OpenRewi (Eisentraut, Fälle zum Verwaltungsrecht)</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/staatshaftungsrecht/ubungsklausur-im-staatshaftungsrecht-raumungsanspruch-und-mietausfallschaden">Übungsklausur im Staatshaftungsrecht: Räumungsanspruch und Mietausfallschaden</a></td>
+                                    <td class="has-text-right">36</td>
+                                    <td class="has-text-left">ZJS 2022/2, p. 216</td>
+                                </tr>
+                                <tr class="area-row"><td colspan="3">Strafrecht (criminal law)</td></tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/anfangerklausur-das-haus-am-see">Anfängerklausur: Das Haus am See</a></td>
+                                    <td class="has-text-right">48</td>
+                                    <td class="has-text-left">ZJS 2024/4, p. 779</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/anfangerklausur-erbe-auf-umwegen">Anfängerklausur: Erbe auf Umwegen</a></td>
+                                    <td class="has-text-right">33</td>
+                                    <td class="has-text-left">ZJS 2024/3, p. 573</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/anfangerubungsklausur-alte-feindschaft">Anfängerübungsklausur: Alte Feindschaft</a></td>
+                                    <td class="has-text-right">25</td>
+                                    <td class="has-text-left">ZJS 2022/5, p. 772</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/examensubungsklausur-strafrecht-nur-bares-ist-wahres">Examensübungsklausur Strafrecht: Nur Bares ist Wahres!</a></td>
+                                    <td class="has-text-right">61</td>
+                                    <td class="has-text-left">ZJS 2022/6, p. 896</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenhausarbeit-die-lugen-des-finder-schwindlers">Fortgeschrittenenhausarbeit: Die Lügen des „Finder-Schwindlers“</a></td>
+                                    <td class="has-text-right">68</td>
+                                    <td class="has-text-left">ZJS 2023/5, p. 1052</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-die-reise-ins-gericht-wenn-der-einbruch-nach-hinten-losgeht">Fortgeschrittenenklausur: Die Reise ins Gericht: Wenn der Einbruch nach hinten losgeht</a></td>
+                                    <td class="has-text-right">49</td>
+                                    <td class="has-text-left">ZJS 2026/1, p. 172</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-ein-wettstreit-unter-kollegen-mit-folgen">Fortgeschrittenenklausur: Ein Wettstreit unter Kollegen mit Folgen</a></td>
+                                    <td class="has-text-right">37</td>
+                                    <td class="has-text-left">ZJS 2023/4, p. 857</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-geldabheben-mit-hindernissen">Fortgeschrittenenklausur: Geldabheben mit Hindernissen</a></td>
+                                    <td class="has-text-right">34</td>
+                                    <td class="has-text-left">ZJS 2022/4, p. 587</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-kontaktloses-bezahlen">Fortgeschrittenenklausur: Kontaktloses Bezahlen</a></td>
+                                    <td class="has-text-right">37</td>
+                                    <td class="has-text-left">ZJS 2023/3, p. 593</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-zu-korperverletzungs-und-strassenverkehrsdelikten-grillen-m">Fortgeschrittenenübungsklausur zu Körperverletzungs- und Straßenverkehrsdelikten: Grillen mit Hindernissen</a></td>
+                                    <td class="has-text-right">38</td>
+                                    <td class="has-text-left">ZJS 2025/2, p. 326</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-mehr-schein-als-sein-greenwashing-und-probefahrt">Fortgeschrittenenübungsklausur: Mehr Schein als Sein – Greenwashing und „Probefahrt“</a></td>
+                                    <td class="has-text-right">54</td>
+                                    <td class="has-text-left">ZJS 2025/1, p. 140</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-raufhandel-mit-ungewisser-kausalitat">Fortgeschrittenenübungsklausur: Raufhandel mit ungewisser Kausalität</a></td>
+                                    <td class="has-text-right">49</td>
+                                    <td class="has-text-left">ZJS 2025/1, p. 123</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-ungebetener-gast">Fortgeschrittenenübungsklausur: Ungebetener Gast</a></td>
+                                    <td class="has-text-right">38</td>
+                                    <td class="has-text-left">ZJS 2025/2, p. 312</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/original-examensklausur-liebesbeweis-mit-rasanten-folgen-mit-exkurs-zu-paragraph-315d-stgb">Original-Examensklausur: Liebesbeweis mit rasanten Folgen – mit Exkurs zu § 315d StGB</a></td>
+                                    <td class="has-text-right">66</td>
+                                    <td class="has-text-left">ZJS 2024/5, p. 1040</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/zwischenprufungsklausur-rund-um-die-wg-party">Zwischenprüfungsklausur: Rund um die WG-Party</a></td>
+                                    <td class="has-text-right">48</td>
+                                    <td class="has-text-left">ZJS 2025/4, p. 736</td>
+                                </tr>
+                                <tr class="area-row"><td colspan="3">Zivilrecht (civil law)</td></tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/anfangerklausur-bgb-at-schuldrecht-at-gefalschter-dalvador-sali">Anfängerklausur BGB AT/Schuldrecht AT: Gefälschter Dalvador Salí</a></td>
+                                    <td class="has-text-right">44</td>
+                                    <td class="has-text-left">ZJS 2023/4, p. 751</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/anfangerklausur-ein-gebrochener-arm-und-viele-scherben">Anfängerklausur: Ein gebrochener Arm und viele Scherben</a></td>
+                                    <td class="has-text-right">44</td>
+                                    <td class="has-text-left">ZJS 2023/2, p. 238</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/anfangerklausur-zwei-autokaufe">Anfängerklausur: Zwei Autokäufe</a></td>
+                                    <td class="has-text-right">24</td>
+                                    <td class="has-text-left">ZJS 2026/1, p. 84</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/examensklausur-ehe-und-espresso">Examensklausur: Ehe und Espresso</a></td>
+                                    <td class="has-text-right">53</td>
+                                    <td class="has-text-left">ZJS 2023/3, p. 524</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/examensubungsklausur-die-falsche-gisela">Examensübungsklausur: Die falsche Gisela</a></td>
+                                    <td class="has-text-right">34</td>
+                                    <td class="has-text-left">ZJS 2024/3, p. 495</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/sachenrecht/examensubungsklausur-geteiltes-leid-ist-halbes-leid">Examensübungsklausur: Geteiltes Leid ist halbes Leid?</a></td>
+                                    <td class="has-text-right">43</td>
+                                    <td class="has-text-left">ZJS 2024/5, p. 990</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/sachenrecht/examensubungsklausur-von-missratenen-sohnen-und-schnellen-sportwagen">Examensübungsklausur: Von missratenen Söhnen und schnellen Sportwagen</a></td>
+                                    <td class="has-text-right">49</td>
+                                    <td class="has-text-left">ZJS 2021/6, p. 764</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-von-casanova-zu-casa-nueva">Fortgeschrittenenhausarbeit: Von Casanova zu casa nueva?</a></td>
+                                    <td class="has-text-right">52</td>
+                                    <td class="has-text-left">ZJS 2025/1, p. 64</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung">Fortgeschrittenenhausarbeit: „Kaufrausch mit Katerstimmung“</a></td>
+                                    <td class="has-text-right">50</td>
+                                    <td class="has-text-left">ZJS 2025/6, p. 1111</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/sachenrecht/fortgeschrittenenklausur-im-immobiliarsachenrecht-rosterei-ruin-regress">Fortgeschrittenenklausur im Immobiliarsachenrecht: Rösterei, Ruin, Regress</a></td>
+                                    <td class="has-text-right">29</td>
+                                    <td class="has-text-left">ZJS 2026/1, p. 93</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/handels-und-gesellschaftsrecht/fortgeschrittenenklausur-zum-handels-und-gesellschaftsrecht-bezahlen-fur-den-porsche-der-a">Fortgeschrittenenklausur zum Handels- und Gesellschaftsrecht: „Bezahlen für den Porsche der anderen?“</a></td>
+                                    <td class="has-text-right">28</td>
+                                    <td class="has-text-left">ZJS 2026/1, p. 71</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-paypal-kauferschutz-schutzt-vor-klagen-nicht">Fortgeschrittenenklausur: PayPal-Käuferschutz schützt vor Klagen nicht</a></td>
+                                    <td class="has-text-right">26</td>
+                                    <td class="has-text-left">ZJS 2018/6, p. 584</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-wertpapier-werkstatt-und-weed">Fortgeschrittenenklausur: Wertpapier, Werkstatt und Weed</a></td>
+                                    <td class="has-text-right">40</td>
+                                    <td class="has-text-left">ZJS 2025/5, p. 865</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/handels-und-gesellschaftsrecht/fortgeschrittenenubungsklausur-mopeg-in-3d">Fortgeschrittenenübungsklausur: „MoPeG in 3D“</a></td>
+                                    <td class="has-text-right">30</td>
+                                    <td class="has-text-left">ZJS 2025/4, p. 685</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/ubungsfall-zu-vertragen-uber-digitale-produkte-motivation-ist-alles">Übungsfall zu Verträgen über digitale Produkte: Motivation ist alles</a></td>
+                                    <td class="has-text-right">23</td>
+                                    <td class="has-text-left">ZJS 2022/3, p. 387</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p class="footer-note">
+                        ZJS references give volume, issue, and first page in
+                        the Zeitschrift f&uuml;r das Juristische Studium.
+                    </p>
+                </details>
+            </div>
+        </section>
+
+        <!-- PIPELINE -->
+        <section class="section" id="pipeline">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered">Benchmark Pipeline</h2>
+                <div class="content is-size-6">
+                    <p>
+                        Each exam case is used in two ways. The reference
+                        solution is turned into a calibrated rubric of atomic
+                        pass/fail criteria, and the facts and instructions
+                        form the task that the evaluated system solves. A
+                        judge committee then scores the submission against the
+                        rubric, one criterion at a time.
+                    </p>
+                </div>
+                <svg viewBox="0 0 940 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Overview of the LAB-DE pipeline" style="max-width: 100%; height: auto">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7a7a7a"/>
+    </marker>
+  </defs>
+  <style>
+    .box { fill: #ffffff; stroke: #dbdbdb; rx: 6; }
+    .hd  { font: 600 13.5px "Google Sans", "Noto Sans", sans-serif; fill: #363636; }
+    .sub { font: 11px "Noto Sans", sans-serif; fill: #6b6b6b; }
+    .lane { font: 700 11px "Noto Sans", sans-serif; fill: #1496ed; letter-spacing: 0.06em; }
+    .flow { stroke: #7a7a7a; stroke-width: 1.4; fill: none; marker-end: url(#arr); }
+    .flowd { stroke: #b0b0b0; stroke-width: 1.4; stroke-dasharray: 5 4; fill: none; marker-end: url(#arr); }
+  </style>
+
+  <text x="20" y="22" class="lane">BUILDING THE RUBRIC</text>
+  <rect class="box" x="20" y="34" width="190" height="76" rx="6"/>
+  <text x="115" y="62" text-anchor="middle" class="hd">Published exam case</text>
+  <text x="115" y="80" text-anchor="middle" class="sub">facts + reference solution</text>
+  <text x="115" y="95" text-anchor="middle" class="sub">(ZJS / OpenRewi, open license)</text>
+
+  <line class="flow" x1="210" y1="72" x2="248" y2="72"/>
+  <rect class="box" x="250" y="34" width="200" height="76" rx="6"/>
+  <text x="350" y="58" text-anchor="middle" class="hd">Rubric generation</text>
+  <text x="350" y="76" text-anchor="middle" class="sub">atomize &#183; generate &#183; prune</text>
+  <text x="350" y="91" text-anchor="middle" class="sub">calibrate &#183; outline &#183; tag</text>
+
+  <line class="flow" x1="450" y1="72" x2="488" y2="72"/>
+  <rect class="box" x="490" y="34" width="210" height="76" rx="6"/>
+  <text x="595" y="55" text-anchor="middle" class="hd">Rubric validation</text>
+  <text x="595" y="72" text-anchor="middle" class="sub">reference solution passes all criteria</text>
+  <text x="595" y="86" text-anchor="middle" class="sub">defective answers are rejected</text>
+  <text x="595" y="100" text-anchor="middle" class="sub">expert spot checks</text>
+
+  <line class="flow" x1="700" y1="72" x2="738" y2="72"/>
+  <rect class="box" x="740" y="34" width="180" height="76" rx="6"/>
+  <text x="830" y="62" text-anchor="middle" class="hd">Frozen rubric</text>
+  <text x="830" y="80" text-anchor="middle" class="sub">23&#8211;68 atomic</text>
+  <text x="830" y="94" text-anchor="middle" class="sub">pass/fail criteria</text>
+
+  <text x="20" y="188" class="lane">EVALUATING A SYSTEM</text>
+  <rect class="box" x="20" y="200" width="190" height="76" rx="6"/>
+  <text x="115" y="228" text-anchor="middle" class="hd">Task</text>
+  <text x="115" y="246" text-anchor="middle" class="sub">facts, annexes, instructions</text>
+  <text x="115" y="260" text-anchor="middle" class="sub">metadata anonymized</text>
+
+  <line class="flowd" x1="115" y1="110" x2="115" y2="198"/>
+
+  <line class="flow" x1="210" y1="238" x2="248" y2="238"/>
+  <rect class="box" x="250" y="200" width="200" height="76" rx="6"/>
+  <text x="350" y="228" text-anchor="middle" class="hd">Solver</text>
+  <text x="350" y="246" text-anchor="middle" class="sub">single call, or agent in a</text>
+  <text x="350" y="260" text-anchor="middle" class="sub">sandboxed workspace</text>
+
+  <line class="flow" x1="450" y1="238" x2="488" y2="238"/>
+  <rect class="box" x="490" y="200" width="210" height="76" rx="6"/>
+  <text x="595" y="228" text-anchor="middle" class="hd">Submission</text>
+  <text x="595" y="246" text-anchor="middle" class="sub">complete case solution</text>
+  <text x="595" y="260" text-anchor="middle" class="sub">in Gutachtenstil</text>
+
+  <line class="flow" x1="700" y1="238" x2="738" y2="238"/>
+  <line class="flow" x1="830" y1="110" x2="830" y2="198"/>
+  <rect class="box" x="740" y="200" width="180" height="76" rx="6"/>
+  <text x="830" y="223" text-anchor="middle" class="hd">Committee judging</text>
+  <text x="830" y="241" text-anchor="middle" class="sub">2 judges + tiebreaker,</text>
+  <text x="830" y="255" text-anchor="middle" class="sub">per criterion, without</text>
+  <text x="830" y="269" text-anchor="middle" class="sub">the reference solution</text>
+
+  <text x="115" y="310" text-anchor="middle" class="sub">same exam case</text>
+  <text x="830" y="310" text-anchor="middle" class="sub">content + style score</text>
+  <line class="flow" x1="830" y1="276" x2="830" y2="296"/>
+</svg>
+                <p class="footer-note" style="margin-top: 0.75rem">
+                    Overview of the LAB-DE pipeline. The judges receive the
+                    submission and the criterion text, never the reference
+                    solution. The following sections describe each stage.
+                </p>
+            </div>
+        </section>
+
+        <!-- RUBRICS -->
+        <section class="section" id="rubrics" style="background: #fafafa">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered">Rubric Generation</h2>
+                <div class="content is-size-6">
+                    <p>
+                        Every case is scored against a rubric of atomic, binary
+                        pass/fail criteria derived from the published reference
+                        solution. The 45 rubrics contain <b>1,806 criteria</b>
+                        (23 to 68 per case). A criterion states what counts as
+                        fulfilled and what does not, and it must stand on its
+                        own: the judge that later applies it never sees the
+                        reference solution. Where the official solution marks
+                        alternative legal paths as defensible, the criterion
+                        names the acceptable alternatives explicitly.
+                    </p>
+                    <p>
+                        Scoring against case-specific criteria is a design decision. It
+                        makes each expected legal requirement explicit before a submission
+                        is judged and allows a reviewer to inspect individual failures.
+                        Acceptable alternative paths can be recorded during rubric
+                        construction. Related approaches include <a
+                        href="https://arxiv.org/abs/2505.08775">HealthBench</a> and Harvey’s
+                        LAB. Our research examines their application to German legal case
+                        work.
+                    </p>
+                    <p>
+                        A submission therefore receives dozens of individual
+                        verdicts per case, and
+                        every failed criterion names the reasoning step it
+                        stands for. Each criterion
+                        consists of a fulfilled condition describing the
+                        required examination step, a not-fulfilled condition
+                        describing the disqualifying errors, and metadata used
+                        in analysis: the function of the step, a diagnostic
+                        criticality between one and three stars, and the
+                        position of the step in the expected line of
+                        analysis.
+                    </p>
+                    <p>
+                        Rubrics are generated by an LLM pipeline
+                        (gpt-5.6-sol) in six steps:
+                    </p>
+                </div>
+                <div class="columns is-multiline">
+                    <div class="column is-one-third">
+                        <div class="dcard">
+                            <div class="dh">
+                                <span class="step-num">1</span> Atomize
+                            </div>
+                            <div class="db">
+                                <p>
+                                    Split the reference solution into legally
+                                    material statements: individual claims,
+                                    definitions, subsumption steps, and results.
+                                </p>
+                                <p class="crit-gist">The reference solution of the example case &ldquo;Zwei Autok&auml;ufe&rdquo; yields 40 atoms, among them: a claim of F against G for the purchase price under &sect; 433 Abs. 2 BGB requires a valid contract between F and G.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="dcard">
+                            <div class="dh">
+                                <span class="step-num">2</span> Generate
+                            </div>
+                            <div class="db">
+                                <p>
+                                    Three generator roles (doctrine, fact
+                                    grounding, adversary) each draft candidate
+                                    criteria, producing an intentionally
+                                    over-complete pool.
+                                </p>
+                                <p class="crit-gist">For the example case, the three roles draft 90 candidate criteria, several of them competing variants for the same atom.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="dcard">
+                            <div class="dh">
+                                <span class="step-num">3</span> Prune
+                            </div>
+                            <div class="db">
+                                <p>
+                                    Merge the pool into a rubric of atomic
+                                    Boolean criteria, removing duplicates and
+                                    compound criteria that would make verdicts
+                                    ambiguous.
+                                </p>
+                                <p class="crit-gist">The 90 candidates for the example case are merged into the 24 criteria of the final rubric.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="dcard">
+                            <div class="dh">
+                                <span class="step-num">4</span> Calibrate
+                            </div>
+                            <div class="db">
+                                <p>
+                                    A three-model committee judges the reference
+                                    solution against every criterion. Criteria
+                                    the gold solution does not pass unanimously
+                                    are rewritten, split, or dropped, for at
+                                    most two rounds.
+                                </p>
+                                <p class="crit-gist">In the example case, five criteria were revised after the first round and one after the second. The reference solution passes all 24.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="dcard">
+                            <div class="dh">
+                                <span class="step-num">5</span> Outline
+                            </div>
+                            <div class="db">
+                                <p>
+                                    Extract the solution's structure as a tree
+                                    and anchor each criterion to its position in
+                                    the expected line of analysis.
+                                </p>
+                                <p class="crit-gist">Criterion C-001 below is anchored to outline node I, the claim of F against G under &sect; 433 Abs. 2 BGB.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="dcard">
+                            <div class="dh">
+                                <span class="step-num">6</span> Tag
+                            </div>
+                            <div class="db">
+                                <p>
+                                    Classify each criterion by function
+                                    (structure, legal basis, rule statement,
+                                    application, argumentation, conclusion,
+                                    form) and by criticality (1&ndash;3 stars,
+                                    diagnostic only).
+                                </p>
+                                <p class="crit-gist">C-001 below carries the function tag legal basis and criticality two of three stars.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h3 class="title is-5" style="margin-top: 1.5rem">
+                    Example criteria
+                </h3>
+                <div class="content is-size-6">
+                    <p>
+                        Two criteria from the civil law case
+                        &ldquo;Anf&auml;ngerklausur: Zwei Autok&auml;ufe&rdquo;
+                        (24 criteria), quoted verbatim from the rubric:
+                    </p>
+                </div>
+                <div class="columns">
+                    <div class="column is-half">
+                        <div class="dcard">
+                            <div class="dh">
+                                <span class="mono">C-001</span> Anspruchsgrundlage
+                                F gegen G
+                                <span class="stars">&#9733;&#9733;</span>
+                            </div>
+                            <div class="db">
+                                <p class="crit-text" lang="de">
+                                    ERF&Uuml;LLT, wenn die Antwort den Anspruch
+                                    der F gegen G auf Zahlung von 8.200 &euro;
+                                    f&uuml;r den VW Beetle anhand von &sect; 433
+                                    Abs. 2 BGB pr&uuml;ft und eine
+                                    Zahlungspflicht davon abh&auml;ngig macht,
+                                    dass zwischen F und G ein wirksamer
+                                    Kaufvertrag besteht. NICHT ERF&Uuml;LLT,
+                                    wenn sie eine sachfremde Anspruchsgrundlage
+                                    w&auml;hlt oder einen Kaufpreisanspruch ohne
+                                    vertragliche Bindung der G annimmt.
+                                </p>
+                                <p class="crit-gist">
+                                    Translation: Fulfilled if the answer
+                                    examines F's claim against G for payment of
+                                    8,200 &euro; for the VW Beetle under
+                                    &sect; 433 Abs. 2 BGB and makes the payment
+                                    obligation depend on a valid purchase
+                                    contract between F and G. Not fulfilled if
+                                    it chooses an inapposite claim basis or
+                                    assumes a purchase-price claim without a
+                                    contractual commitment of G.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half">
+                        <div class="dcard">
+                            <div class="dh">
+                                <span class="mono">C-003</span> Handeln des A im
+                                Namen der G
+                                <span class="stars">&#9733;&#9733;</span>
+                            </div>
+                            <div class="db">
+                                <p class="crit-text" lang="de">
+                                    ERF&Uuml;LLT, wenn die Antwort trotz der
+                                    Unterschrift des A mit eigenem Namen ein
+                                    Handeln im Namen der G nach &sect; 164
+                                    Abs. 1 S. 2 BGB bejaht, weil F ihn aus
+                                    seiner langj&auml;hrigen regelm&auml;&szlig;igen
+                                    Einkaufst&auml;tigkeit als Mitarbeiter und
+                                    Eink&auml;ufer der G kannte. NICHT
+                                    ERF&Uuml;LLT, wenn sie allein wegen des
+                                    fehlenden Vertretungszusatzes ein
+                                    Eigengesch&auml;ft des A annimmt oder die
+                                    Erkennbarkeit des Handelns f&uuml;r G nicht
+                                    anhand der Umst&auml;nde begr&uuml;ndet.
+                                </p>
+                                <p class="crit-gist">
+                                    Translation: Fulfilled if the answer,
+                                    although A signed with his own name, finds
+                                    that A acted in G's name under &sect; 164
+                                    Abs. 1 S. 2 BGB, because F knew him as G's
+                                    employee and buyer from his long-standing,
+                                    regular purchasing activity. Not fulfilled
+                                    if it assumes A acted for himself solely
+                                    because an agency notice was missing, or
+                                    fails to justify from the circumstances
+                                    that acting for G was recognizable.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- VALIDATION -->
+        <section class="section" id="validation">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered">Rubric Validation</h2>
+                <div class="content is-size-6">
+                    <p>
+                        A machine-generated rubric can fail in two directions. A rubric that
+                        is too lax awards criteria the submission does not earn, and a
+                        rubric that is too strict fails correct legal work, for example by
+                        insisting on one doctrinal path where the law allows several. Our
+                        validation workflow therefore includes positive calibration,
+                        targeted negative checks, and legal review.
+                    </p>
+                    <p>
+                        <b>Positive checks.</b> During generation, criteria are calibrated
+                        against the published reference solution and refined if it fails
+                        them. This checks consistency with the source used to create the
+                        rubric.
+                    </p>
+                    <p>
+                        <b>Negative checks.</b> Targeted experiments use deliberately
+                        defective answers: a bare conclusion without reasoning, analysis
+                        attached to the wrong person or part of the case, or a planted legal
+                        error. These checks help identify overly permissive criteria and
+                        judge rules.
+                    </p>
+                    <p>
+                        <b>Feedback from legal professionals.</b> Legal scholars have
+                        reviewed sample materials and judged answers. Their feedback informs
+                        revisions to criteria, evidence attribution, legal presentation and
+                        the treatment of auxiliary opinions.
+                    </p>
+                    <p>
+                        <b>Failure-focused audit.</b> Criteria with persistent failures or
+                        disputed votes are reviewed against the task and reference solution
+                        (see the <a href="#failures">error analysis</a> below).
+                        Model-assisted review identifies candidates for legal assessment and
+                        rubric refinement.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- JUDGING -->
+        <section class="section" id="judging" style="background: #fafafa">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered">Automated Judging</h2>
+                <div class="content is-size-6">
+                    <p>
+                        Each criterion is judged individually. The judge
+                        receives the task instructions, the submission,
+                        excerpts of the case documents the criterion refers to,
+                        and the criterion text. It never sees the reference
+                        solution. The judge must first quote verbatim evidence
+                        from the submission, then reason about it, and only
+                        then return a pass or fail verdict. The prompt
+                        instructs the judge to fail a criterion when in doubt.
+                    </p>
+                    <p>
+                        For criteria tagged as application or argumentation, the same judge
+                        call also returns a separate verdict on legal method and
+                        presentation. It examines the legal premise, application to the
+                        facts, and reasoning leading to the result, using the style required
+                        by the work product. A substantively wrong argument can still be
+                        methodically complete.
+                    </p>
+                    <p>
+                        Our current judge committee uses models from three providers.
+                        <b>gpt-5.6-luna</b> from OpenAI and <b>DeepSeek V4 Flash</b> assess
+                        each criterion first. If they agree, their verdict is accepted. If
+                        they disagree, Google’s <b>Gemini 3.6 Flash</b> casts the deciding
+                        vote.
+                    </p>
+                    <p>
+                        Failed judge calls are retried once. Decisions that
+                        still lack the required votes are marked as unresolved
+                        and count as failures.
+                    </p>
+                    <p>
+                        The content score of a run is the share of criteria
+                        passed, averaged case by case. The style verdicts aggregate into a separate style score over the application and argumentation criteria.
+                    </p>
+                </div>
+                <div class="content is-size-6">
+                    <p>
+                        The complete judge prompt is part of the repository and
+                        can be inspected below. Placeholders in curly braces
+                        are filled per criterion at judging time.
+                    </p>
+                </div>
+                <details style="margin-top: 0.75rem">
+                    <summary class="is-size-6" style="cursor: pointer; font-weight: 600">Show the judge prompt (content and style verdict per criterion)</summary>
+                    <p class="footer-note" style="margin-top: 0.4rem">Illustrative prompt snapshot: prompts/evaluation/combined_content_style_criterion.txt. Current prompt variants are available in the repository. Display punctuation is adapted for readability. Other criteria use a content-only prompt.</p>
+                    <pre class="bibtex" style="margin-top: 0.6rem; white-space: pre-wrap">You are evaluating one Boolean legal-rubric criterion. Return two independent verdicts
+from the same answer and context:
+
+1. `style`: whether the attempted application or argumentation uses functional legal
+   reasoning style.
+2. `content`: whether the criterion is substantively fulfilled.
+
+The criterion is tagged as application or argumentation, so both verdicts are required.
+They must not be copied from one another. A substantively wrong argument may be
+methodically complete (`content: fail`, `style: pass`), while a correct proposition may
+be merely asserted (`content: pass`, `style: fail`).
+
+The criterion may be written in German, English, French, or another case language.
+Apply it in that language and do not translate legal terms unless needed for understanding.
+
+Decide the style verdict first and record its method checks before deciding content.
+Do not revise the style verdict merely because the later content verdict passes or fails.
+
+## Style verdict
+- Do not let the content verdict determine the style verdict. The legal rule, application,
+  or conclusion may be substantively wrong and still be methodically well formed.
+- The same person, legal object, issue, and examination station are hard requirements.
+  Do not assemble a missing examination from statements scattered elsewhere.
+- Pass only when the answer itself connects (1) a criterion-specific legal standard or
+  decisive premise, (2) concrete facts or competing arguments, and (3) a conclusion that
+  completes this exact line of examination.
+- Routine points may be concise, but rule, fact, and result merely appearing near one
+  another is insufficient without an expressed inferential connection.
+- A standard for a neighboring issue is not criterion-specific. A complicity standard
+  does not by itself examine immediate commencement, and distinguishing completed from
+  uncompleted attempt does not by itself examine whether the attempt failed.
+- A later voluntariness discussion that implies continued ability does not constitute a
+  methodical examination of whether an attempt failed unless the answer itself identifies
+  that non-failure question, applies its standard, and reaches its conclusion there or by
+  an explicit, unambiguous cross-reference.
+- Do not supply a missing premise, causal link, comparison, or conclusion. Irrelevant or
+  misplaced exposition does not repair a missing application.
+- A bare conclusion, definition without application, list of facts, or incomplete chosen
+  examination path fails. Equivalent terminology and valid alternative structure pass.
+
+## Content verdict
+- The criterion text is the only substantive standard. Apply every stated PASS and FAIL
+  condition. Do not add requirements or reconstruct a missing legal step.
+- Accept equivalent legal wording and a valid alternative structure unless the criterion
+  requires a particular form or location.
+- Evidence must concern the same person, object, claim, offence, statutory provision,
+  issue, and examination station. Never transfer reasoning from another scope.
+- A named fact-pattern variant, hypothetical, or subpart (for example, the base case
+  versus a modification) is part of scope. If the answer expressly assigns its reasoning
+  to a different named variant than the criterion, set `same_scope` to false and return
+  content `fail`, unless the answer explicitly and unambiguously cross-applies that
+  reasoning to the required variant. Do not fail solely because the answer omits the
+  variant label when its surrounding context still unambiguously addresses the required
+  variant.
+- Facts or intent discussed for one offence or station do not establish the subjective
+  element of a distinct preparatory offence or other station unless the answer expressly
+  assigns them there or makes an unambiguous cross-reference.
+- A heading, issue statement, bare result, or nearby mention does not prove that a required
+  rule, application, or argument was performed.
+- Evaluate the reason actually given. A materially wrong provision, doctrine, station,
+  person, object, or invented material fact fails when incompatible with the criterion.
+- Split the PASS side into mandatory components and return fail if any is absent. Be
+  conservative. When substantive fulfilment cannot be verified, return fail.
+
+## Task
+Title: {task_title}
+
+Instructions:
+{task_instructions}
+
+## Agent Answer
+{agent_output}
+
+## Source documents (context only - the answer is not required to repeat them)
+{criterion_sources}
+
+## Criterion
+{criterion_title}
+
+{match_criteria}
+
+Respond with JSON only, with the fields in exactly this order:
+
+{{
+  &quot;style&quot;: {{
+    &quot;evidence&quot;: [&quot;shortest continuous quotes showing or failing to show the reasoning form&quot;],
+    &quot;method_checks&quot;: {{
+      &quot;same_scope&quot;: true,
+      &quot;criterion_specific_premise&quot;: true,
+      &quot;explicit_fact_link&quot;: true,
+      &quot;completed_path&quot;: true,
+      &quot;not_reconstructed_elsewhere&quot;: true
+    }},
+    &quot;reasoning&quot;: &quot;Brief style explanation in the language of the criterion&quot;,
+    &quot;verdict&quot;: &quot;pass&quot; | &quot;fail&quot;
+  }},
+  &quot;content&quot;: {{
+    &quot;evidence&quot;: [&quot;shortest verbatim quotes supporting the content verdict&quot;],
+    &quot;component_checks&quot;: [
+      {{&quot;requirement&quot;: &quot;one mandatory PASS component&quot;, &quot;satisfied&quot;: true}}
+    ],
+    &quot;scope_check&quot;: {{
+      &quot;criterion_scope&quot;: &quot;required person/object and legal issue/station&quot;,
+      &quot;evidence_scope&quot;: &quot;person/object and legal issue/station actually addressed&quot;,
+      &quot;same_scope&quot;: true
+    }},
+    &quot;stated_reason_check&quot;: {{
+      &quot;answer_reason&quot;: &quot;the legal reason actually stated, or &#x27;none&#x27;&quot;,
+      &quot;legally_compatible&quot;: true
+    }},
+    &quot;reasoning&quot;: &quot;Brief content explanation in the language of the criterion&quot;,
+    &quot;verdict&quot;: &quot;pass&quot; | &quot;fail&quot;
+  }}
+}}
+</pre>
+                </details>
+                <h3 class="title is-5" style="margin-top: 1.5rem">Evaluating your own submissions</h3>
+                <div class="content is-size-6">
+                    <p>
+                        The rubrics can score any answer to a benchmark case,
+                        including answers produced outside our harness. The
+                        repository contains the complete evaluation code. After
+                        cloning it and configuring API access, a single command
+                        judges an answer file against the rubric of a task:
+                    </p>
+                </div>
+                <pre class="bibtex">env/bin/python -m evaluation.run &lt;task-dir&gt; &lt;answer-file&gt; --judge-committee configs/judge-committee-luna-deepseek-gemini-tiebreaker.json --committee-tiebreaker --style-evaluation</pre>
+                <div class="content is-size-6" style="margin-top: 1rem">
+                    <p>
+                        The command reports the verdict, the quoted evidence,
+                        and the reasoning for every criterion, together with
+                        the aggregated content and style scores. The
+                        <a href="https://github.com/wbsg-uni-mannheim/LAB-EU">repository README</a>
+                        documents the configuration options.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESULTS -->
+        <section class="section" id="results">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered">Results</h2>
+                <div class="content is-size-6">
+                    <p>We evaluate eight system configurations in three settings:</p>
+                    <ul>
+                        <li>
+                            <b>Single call:</b> the model receives the
+                            instructions and all case documents in one prompt
+                            and answers in one pass, without tools
+                            (gpt-5.6-sol, gpt-5.6-terra, deepseek-v4-pro).
+                        </li>
+                        <li>
+                            <b>OpenCode agent:</b> the same three models run
+                            inside the OpenCode CLI harness in a sandboxed
+                            workspace with file tools and iterative drafting,
+                            with external research prohibited by the study instructions.
+                        </li>
+                        <li>
+                            <b>Codex CLI:</b> gpt-5.6-sol as a non-interactive
+                            Codex session, once restricted to the workspace and
+                            once with live web search. In the web arm, the
+                            domain hosting the source journal is blocked and
+                            searches resembling the hidden case identity are
+                            logged.
+                        </li>
+                    </ul>
+                </div>
+
+                <details style="margin-top: 0.5rem">
+                    <summary class="is-size-6" style="cursor: pointer; font-weight: 600">Show the solver prompts (single call and agent)</summary>
+                    <p class="footer-note" style="margin-top: 0.4rem">
+                        prompts/harness/solve_task_baseline.txt (single call) and prompts/harness/solve_task.txt (OpenCode agent). Display punctuation is adapted for readability. Placeholders in curly braces are filled per task.
+                    </p>
+                    <p class="footer-note" style="margin-top: 0.6rem"><b>Single call</b></p>
+                    <pre class="bibtex" style="white-space: pre-wrap">You are solving one LAB-EU legal benchmark task in a single response.
+
+Current date: {today}
+
+You may use only the material below. Do not use external legal sources or search.
+
+Task id:
+{task_id}
+
+Task title:
+{title}
+
+Work type:
+{work_type}
+
+Task instructions:
+{instructions}
+
+Documents:
+
+{documents}
+
+Write the complete deliverable now, as Markdown. Your entire response will be saved verbatim as the file &quot;{deliverable}&quot; and evaluated as the final legal work product. Do not include any preamble, meta commentary about your approach, or closing remarks - only the document itself.
+
+Write in the same language as the task instructions and documents, unless the instructions require a different language. The deliverable must be a complete, self-contained legal document. Use the legal reasoning style required by the task. For German case solutions, use Gutachtenstil. Where the supplied materials present a question as settled by controlling high-court case law, follow that current case-law path. Cite the provisions you rely on precisely.
+</pre>
+                    <p class="footer-note"><b>OpenCode agent</b></p>
+                    <pre class="bibtex" style="white-space: pre-wrap">You are solving one LAB-EU legal benchmark task.
+
+Current date: {today}
+
+You may use only files in this workspace. Do not use external legal sources,
+internet search, hidden benchmark files, or files outside this workspace.
+
+Task id:
+{task_id}
+
+Task title:
+{title}
+
+Work type:
+{work_type}
+
+Task instructions:
+{instructions}
+
+Available documents:
+{docs}
+
+Required deliverables:
+{deliverables}
+
+Write the final answer as Markdown. Save exactly the required deliverable filename(s) in the workspace root.
+
+Write the deliverable in the same language as the task instructions and documents, unless the instructions require a different language.
+
+The deliverable must be a complete, self-contained legal document: a reader must be able to follow the full reasoning without access to your notes or intermediate output. Use the legal reasoning style required by the task. For German case solutions, use Gutachtenstil. Where the supplied materials present a question as settled by controlling high-court case law, follow that current case-law path. Cite the provisions you rely on precisely.
+
+Feel free to create any notes as you see fit. However only the required deliverable file(s) will be evaluated.
+</pre>
+                </details>
+
+                <h3 class="title is-5">First State Examination (45 cases)</h3>
+                <div class="table-container">
+                    <table class="table is-narrow is-fullwidth is-striped has-text-right">
+                        <thead>
+                            <tr>
+                                <th class="has-text-left">Setting</th>
+                                <th class="has-text-left">Model</th>
+                                <th>Content overall</th>
+                                <th>Public law</th>
+                                <th>Criminal law</th>
+                                <th>Civil law</th>
+                                <th>Style</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="has-text-left" rowspan="3">Single call</td>
+                                <td class="has-text-left">gpt-5.6-sol</td>
+                                <td>70.7</td>
+                                <td>71.9</td>
+                                <td>73.9</td>
+                                <td>66.3</td>
+                                <td>80.0</td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-left">gpt-5.6-terra</td>
+                                <td>59.7</td>
+                                <td>64.9</td>
+                                <td>59.0</td>
+                                <td>55.2</td>
+                                <td>69.0</td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-left">deepseek-v4-pro</td>
+                                <td>44.7</td>
+                                <td>53.3</td>
+                                <td>42.4</td>
+                                <td>38.4</td>
+                                <td>54.5</td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-left" rowspan="3">OpenCode agent</td>
+                                <td class="has-text-left">gpt-5.6-sol</td>
+                                <td>73.8</td>
+                                <td>75.8</td>
+                                <td>73.9</td>
+                                <td><b>71.6</b></td>
+                                <td>80.3</td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-left">gpt-5.6-terra</td>
+                                <td>56.3</td>
+                                <td>63.7</td>
+                                <td>51.9</td>
+                                <td>53.3</td>
+                                <td>65.4</td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-left">deepseek-v4-pro<sup>a</sup></td>
+                                <td>51.2</td>
+                                <td>55.7</td>
+                                <td>49.7</td>
+                                <td>48.5</td>
+                                <td>61.7</td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-left" rowspan="2">Codex CLI</td>
+                                <td class="has-text-left">gpt-5.6-sol</td>
+                                <td>70.0</td>
+                                <td>72.7</td>
+                                <td>73.1</td>
+                                <td>64.4</td>
+                                <td>79.6</td>
+                            </tr>
+                            <tr>
+                                <td class="has-text-left">gpt-5.6-sol + web search</td>
+                                <td><b>77.1</b></td>
+                                <td><b>79.9</b></td>
+                                <td><b>79.7</b></td>
+                                <td><b>71.6</b></td>
+                                <td><b>83.8</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="footer-note">
+                        Content columns: criteria pass rate in percent, averaged over cases
+                        (15 per area of law). Style: the share of eligible application and
+                        argumentation criteria whose reasoning passes the legal-method
+                        check, averaged over cases. Highest values per column are shown in bold. <sup>a</sup> 44 of 45 cases: one
+                        DeepSeek agent run produced no submission and is excluded. The <a
+                        href="https://github.com/wbsg-uni-mannheim/LAB-EU/blob/main/studies/de-core-45/scores.md">original
+                        final score artifacts</a> reproduce the <a
+                        href="https://github.com/wbsg-uni-mannheim/LAB-EU/blob/9ffbd17d516f37aff8dfcf5078f3f494e96f8a17/runs/de-core-45-final.csv">published
+                        CSV</a>. The <a href="https://github.com/wbsg-uni-mannheim/LAB-EU/blob/main/studies/de-core-45/codex-scores.md">Codex scores and answers</a> are also available on GitHub.
+                    </p>
+
+                <div class="content is-size-6" style="margin-top: 1rem">
+                    <p>
+                        Within the original study, the effect of using an agent varies by model: gpt-5.6-sol rises from 70.7 to 73.8, deepseek-v4-pro from
+                        44.7 to 51.2, while gpt-5.6-terra falls from 59.7 to 56.3. The
+                        additional Codex experiments show a higher mean content score with
+                        web access (77.1 versus 70.0).
+                    </p>
+                    <p>
+                        Across areas of law, public law is the strongest
+                        area for six of the eight systems and civil law the
+                        weakest for seven of eight. The area
+                        gaps within a system are moderate for the strongest
+                        systems and grow for the weaker ones, up to 14.9 points
+                        between public and civil law for single-call
+                        deepseek-v4-pro.
+                    </p>
+                    <p>
+                        In the original single-call and OpenCode conditions, gpt-5.6-sol has
+                        the highest mean content score, followed by gpt-5.6-terra and
+                        deepseek-v4-pro. We use these initial comparisons to identify cases
+                        and reasoning steps for closer examination.
+                    </p>
+                    <p>
+                        The run logs show what the web-search arm does with
+                        its access. Across the 45 cases, the Codex web arm
+                        issued 1,211 search queries and retrieved 421 unique
+                        pages from 38 domains. Two domains account for most
+                        retrievals: gesetze-im-internet.de, the federal
+                        statute portal (222), and the decision database of
+                        the Bundesgerichtshof (99), followed by the
+                        Bundesverfassungsgericht, EUR-Lex, and the
+                        Bundesverwaltungsgericht. The agent uses the web
+                        mainly to read statute texts and current decisions of
+                        the federal courts.
+                        The blocked domain hosting the source journal was
+                        never accessed.
+                    </p>
+                </div>
+
+
+                <details style="margin-top: 1.25rem">
+                    <summary class="is-size-6" style="cursor: pointer; font-weight: 600">Show per-case results (45 cases)</summary>
+                    <p class="footer-note" style="margin-top: 0.4rem">
+                        Content criteria pass rate per case in percent, minimum
+                        to maximum across the six single-call and OpenCode
+                        agent arms. One DeepSeek agent run with no submission
+                        is excluded.
+                    </p>
+                    <div class="table-container" style="margin-top: 0.6rem">
+                        <table class="table is-narrow is-fullwidth">
+                            <thead>
+                                <tr>
+                                    <th class="has-text-left">Case</th>
+                                    <th class="has-text-right">Pass rate range (%)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="area-row"><td colspan="2">Öffentliches Recht (public law)</td></tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/europarecht/abschlussklausur-europarecht-germany-first">Abschlussklausur Europarecht: „Germany first“</a></td>
+                                    <td class="has-text-right">67&ndash;81</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/verwaltungsrecht/anfechtungsklage/fall-02-anfechtungsklage-bei-nebenbestimmungen">Anfechtungsklage bei Nebenbestimmungen</a></td>
+                                    <td class="has-text-right">30&ndash;78</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/staatsrecht/anfanger-innenhausarbeit-bundeszwang-und-rededrang">Anfänger:innenhausarbeit: Bundeszwang und Rededrang</a></td>
+                                    <td class="has-text-right">59&ndash;70</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/staatsrecht/anfangerhausarbeit-wie-du-mir-so-ich-dir">Anfängerhausarbeit: „Wie du mir, so ich dir“</a></td>
+                                    <td class="has-text-right">34&ndash;66</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/verwaltungsrecht/anfangerklausur-im-polizeirecht-kleine-tiere-grosser-arger">Anfängerklausur im Polizeirecht: „Kleine Tiere – großer Ärger“</a></td>
+                                    <td class="has-text-right">55&ndash;83</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/staatsrecht/anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn">Anfängerklausur – Grundrechte: Die Rennraddemo auf der Autobahn</a></td>
+                                    <td class="has-text-right">53&ndash;84</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/staatsrecht/anfangerklausur-caroline-zugleich-ein-beitrag-zur-mittelbaren-drittwirkung-der-grundrechte">Anfängerklausur: Caroline Zugleich ein Beitrag zur mittelbaren Drittwirkung der Grundrechte in der Fallbearbeitung</a></td>
+                                    <td class="has-text-right">61&ndash;86</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/verwaltungsrecht/examensklausur-40-000-t-schredder-schrott">Examensklausur: 40.000 t Schredder-Schrott</a></td>
+                                    <td class="has-text-right">31&ndash;83</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/staatsrecht/examensubungsklausur-falsche-liebe">Examensübungsklausur: Falsche Liebe</a></td>
+                                    <td class="has-text-right">57&ndash;92</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/staatsrecht/examensubungsklausur-sonderprobleme-des-eigentumsschutzes-offentlich-rechtlicher-anspruche">Examensübungsklausur: Sonderprobleme des Eigentumsschutzes öffentlich-rechtlicher Ansprüche bei staatlicher Verantwortungsübernahme</a></td>
+                                    <td class="has-text-right">37&ndash;58</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/europarecht/fortgeschrittenenklausur-europarecht-autofrei-spass-dabei">Fortgeschrittenenklausur Europarecht: Autofrei – Spaß dabei?</a></td>
+                                    <td class="has-text-right">63&ndash;89</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/europarecht/fortgeschrittenenklausur-europarecht-wohnungsbestand-in-burgerhand">Fortgeschrittenenklausur Europarecht: Wohnungsbestand in Bürgerhand?</a></td>
+                                    <td class="has-text-right">60&ndash;81</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/verwaltungsrecht/fortgeschrittenenklausur-zwei-bescheide-und-ein-fuhrerschein">Fortgeschrittenenklausur: Zwei Bescheide und ein Führerschein</a></td>
+                                    <td class="has-text-right">56&ndash;72</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/verwaltungsrecht/fortsetzungsfeststellungsklage/fall-07-fortsetzungsfeststellungsklage-gegen-die-untersagung-eines-politischen-strassentheaters">Fortsetzungsfeststellungsklage gegen die Untersagung eines politischen Straßentheaters</a></td>
+                                    <td class="has-text-right">46&ndash;73</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/oeffentliches-recht/staatshaftungsrecht/ubungsklausur-im-staatshaftungsrecht-raumungsanspruch-und-mietausfallschaden">Übungsklausur im Staatshaftungsrecht: Räumungsanspruch und Mietausfallschaden</a></td>
+                                    <td class="has-text-right">22&ndash;64</td>
+                                </tr>
+                                <tr class="area-row"><td colspan="2">Strafrecht (criminal law)</td></tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/anfangerklausur-das-haus-am-see">Anfängerklausur: Das Haus am See</a></td>
+                                    <td class="has-text-right">62&ndash;77</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/anfangerklausur-erbe-auf-umwegen">Anfängerklausur: Erbe auf Umwegen</a></td>
+                                    <td class="has-text-right">61&ndash;88</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/anfangerubungsklausur-alte-feindschaft">Anfängerübungsklausur: Alte Feindschaft</a></td>
+                                    <td class="has-text-right">40&ndash;100</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/examensubungsklausur-strafrecht-nur-bares-ist-wahres">Examensübungsklausur Strafrecht: Nur Bares ist Wahres!</a></td>
+                                    <td class="has-text-right">34&ndash;70</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenhausarbeit-die-lugen-des-finder-schwindlers">Fortgeschrittenenhausarbeit: Die Lügen des „Finder-Schwindlers“</a></td>
+                                    <td class="has-text-right">35&ndash;60</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-die-reise-ins-gericht-wenn-der-einbruch-nach-hinten-losgeht">Fortgeschrittenenklausur: Die Reise ins Gericht: Wenn der Einbruch nach hinten losgeht</a></td>
+                                    <td class="has-text-right">43&ndash;78</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-ein-wettstreit-unter-kollegen-mit-folgen">Fortgeschrittenenklausur: Ein Wettstreit unter Kollegen mit Folgen</a></td>
+                                    <td class="has-text-right">38&ndash;89</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-geldabheben-mit-hindernissen">Fortgeschrittenenklausur: Geldabheben mit Hindernissen</a></td>
+                                    <td class="has-text-right">24&ndash;56</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-kontaktloses-bezahlen">Fortgeschrittenenklausur: Kontaktloses Bezahlen</a></td>
+                                    <td class="has-text-right">41&ndash;65</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-zu-korperverletzungs-und-strassenverkehrsdelikten-grillen-m">Fortgeschrittenenübungsklausur zu Körperverletzungs- und Straßenverkehrsdelikten: Grillen mit Hindernissen</a></td>
+                                    <td class="has-text-right">39&ndash;82</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-mehr-schein-als-sein-greenwashing-und-probefahrt">Fortgeschrittenenübungsklausur: Mehr Schein als Sein – Greenwashing und „Probefahrt“</a></td>
+                                    <td class="has-text-right">39&ndash;69</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-raufhandel-mit-ungewisser-kausalitat">Fortgeschrittenenübungsklausur: Raufhandel mit ungewisser Kausalität</a></td>
+                                    <td class="has-text-right">0&ndash;86</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-ungebetener-gast">Fortgeschrittenenübungsklausur: Ungebetener Gast</a></td>
+                                    <td class="has-text-right">18&ndash;76</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/original-examensklausur-liebesbeweis-mit-rasanten-folgen-mit-exkurs-zu-paragraph-315d-stgb">Original-Examensklausur: Liebesbeweis mit rasanten Folgen – mit Exkurs zu § 315d StGB</a></td>
+                                    <td class="has-text-right">38&ndash;65</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/strafrecht/materielles-strafrecht/zwischenprufungsklausur-rund-um-die-wg-party">Zwischenprüfungsklausur: Rund um die WG-Party</a></td>
+                                    <td class="has-text-right">21&ndash;81</td>
+                                </tr>
+                                <tr class="area-row"><td colspan="2">Zivilrecht (civil law)</td></tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/anfangerklausur-bgb-at-schuldrecht-at-gefalschter-dalvador-sali">Anfängerklausur BGB AT/Schuldrecht AT: Gefälschter Dalvador Salí</a></td>
+                                    <td class="has-text-right">45&ndash;70</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/anfangerklausur-ein-gebrochener-arm-und-viele-scherben">Anfängerklausur: Ein gebrochener Arm und viele Scherben</a></td>
+                                    <td class="has-text-right">32&ndash;57</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/anfangerklausur-zwei-autokaufe">Anfängerklausur: Zwei Autokäufe</a></td>
+                                    <td class="has-text-right">54&ndash;92</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/examensklausur-ehe-und-espresso">Examensklausur: Ehe und Espresso</a></td>
+                                    <td class="has-text-right">25&ndash;40</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/examensubungsklausur-die-falsche-gisela">Examensübungsklausur: Die falsche Gisela</a></td>
+                                    <td class="has-text-right">29&ndash;76</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/sachenrecht/examensubungsklausur-geteiltes-leid-ist-halbes-leid">Examensübungsklausur: Geteiltes Leid ist halbes Leid?</a></td>
+                                    <td class="has-text-right">37&ndash;72</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/sachenrecht/examensubungsklausur-von-missratenen-sohnen-und-schnellen-sportwagen">Examensübungsklausur: Von missratenen Söhnen und schnellen Sportwagen</a></td>
+                                    <td class="has-text-right">18&ndash;63</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-von-casanova-zu-casa-nueva">Fortgeschrittenenhausarbeit: Von Casanova zu casa nueva?</a></td>
+                                    <td class="has-text-right">40&ndash;77</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung">Fortgeschrittenenhausarbeit: „Kaufrausch mit Katerstimmung“</a></td>
+                                    <td class="has-text-right">22&ndash;56</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/sachenrecht/fortgeschrittenenklausur-im-immobiliarsachenrecht-rosterei-ruin-regress">Fortgeschrittenenklausur im Immobiliarsachenrecht: Rösterei, Ruin, Regress</a></td>
+                                    <td class="has-text-right">62&ndash;76</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/handels-und-gesellschaftsrecht/fortgeschrittenenklausur-zum-handels-und-gesellschaftsrecht-bezahlen-fur-den-porsche-der-a">Fortgeschrittenenklausur zum Handels- und Gesellschaftsrecht: „Bezahlen für den Porsche der anderen?“</a></td>
+                                    <td class="has-text-right">57&ndash;79</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-paypal-kauferschutz-schutzt-vor-klagen-nicht">Fortgeschrittenenklausur: PayPal-Käuferschutz schützt vor Klagen nicht</a></td>
+                                    <td class="has-text-right">46&ndash;88</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-wertpapier-werkstatt-und-weed">Fortgeschrittenenklausur: Wertpapier, Werkstatt und Weed</a></td>
+                                    <td class="has-text-right">28&ndash;70</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/handels-und-gesellschaftsrecht/fortgeschrittenenubungsklausur-mopeg-in-3d">Fortgeschrittenenübungsklausur: „MoPeG in 3D“</a></td>
+                                    <td class="has-text-right">33&ndash;77</td>
+                                </tr>
+                                <tr>
+                                    <td class="has-text-left"><a href="https://github.com/wbsg-uni-mannheim/LAB-EU/tree/main/tasks/de/zivilrecht/schuldrecht/ubungsfall-zu-vertragen-uber-digitale-produkte-motivation-ist-alles">Übungsfall zu Verträgen über digitale Produkte: Motivation ist alles</a></td>
+                                    <td class="has-text-right">26&ndash;87</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </details>
+
+                <!-- NOTE (removed on Aaron's request, 2026-09-01): Limitations subsection
+                <h3 class="title is-5" style="margin-top: 2rem">Limitations</h3>
+                <div class="content is-size-6">
+                    <ul>
+                        <li>
+                            All results are preliminary. Confidence intervals
+                            and paired per-case significance analysis will
+                            follow in the paper.
+                        </li>
+                        <li>
+                            The Codex arms differ from the other arms in
+                            reasoning effort and harness internals, so
+                            differences to the OpenCode arms mix model, effort,
+                            and scaffold effects.
+                        </li>
+                        <li>
+                            The underlying cases and solutions are published
+                            material and may appear in model training data. The
+                            web-search guard only blocks the source journal's
+                            site. A perturbation study to measure memorization
+                            directly is planned.
+                        </li>
+                    </ul>
+                </div>
+                -->
+            </div>
+        </section>
+
+        <!-- ERROR ANALYSIS -->
+        <section class="section" id="failures" style="background: #fafafa">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered">Error Analysis</h2>
+                <div class="content is-size-6">
+                    <p>
+                        This section presents candidate error patterns from an exploratory
+                        model-assisted review. The initial audit selected 218 criteria with
+                        no confirmed pass, including 49 with unresolved splits in the older
+                        vote reconstruction. The now-published final verdicts provide the
+                        basis for a revised analysis. The following examples inform the legal review.
+                    </p>
+                </div>
+                <div class="columns is-multiline">
+                    <div class="column is-half">
+                        <div class="dcard">
+                            <div class="dh">
+                                <span class="icon has-text-grey"
+                                    ><i class="fas fa-list-check"></i
+                                ></span>
+                                Side issues are dropped
+                            </div>
+                            <div class="db">
+                                <p>
+                                    The exploratory review flags omissions:
+                                    answers solve the main claim and skip
+                                    secondary claim bases such as unjust
+                                    enrichment, tort, or possession claims,
+                                    although many cases explicitly instruct
+                                    candidates to address all raised
+                                    questions, if necessary in an auxiliary
+                                    opinion.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half">
+                        <div class="dcard">
+                            <div class="dh">
+                                <span class="icon has-text-grey"
+                                    ><i class="fas fa-code-branch"></i
+                                ></span>
+                                One wrong turn costs many criteria
+                            </div>
+                            <div class="db">
+                                <p>
+                                    An early doctrinal error can affect several
+                                    criteria. The model review flags possible
+                                    examples for legal assessment. In the civil
+                                    law case &ldquo;Ehe und Espresso&rdquo;,
+                                    reviewed answers award the spouses
+                                    co-ownership of a household purchase that
+                                    the prevailing view denies, and five
+                                    criteria hang on that turn. In the
+                                    criminal law case &ldquo;Grillen mit
+                                    Hindernissen&rdquo;, reviewed answers apply
+                                    &sect; 315 StGB directly and skip
+                                    &sect; 315e StGB, which costs five
+                                    criteria at once.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half">
+                        <div class="dcard">
+                            <div class="dh">
+                                <span class="icon has-text-grey"
+                                    ><i class="fas fa-magnifying-glass"></i
+                                ></span>
+                                Facts are misread
+                            </div>
+                            <div class="db">
+                                <p>
+                                    Systems overlook decisive details of the
+                                    facts. In the criminal law case
+                                    &ldquo;Die Reise ins Gericht&rdquo;, reviewed
+                                    answers misread the perpetrator's mental
+                                    image of a witness and produce four
+                                    follow-up errors from that one
+                                    misreading. In the commercial law case
+                                    &ldquo;Bezahlen f&uuml;r den Porsche der
+                                    anderen?&rdquo;, reviewed answers miss that
+                                    the decisive transaction predates the
+                                    register entry, the fact that carries the
+                                    accepted teleological reduction of
+                                    &sect; 15 Abs. 1 HGB.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-half">
+                        <div class="dcard">
+                            <div class="dh">
+                                <span class="icon has-text-grey"
+                                    ><i class="fas fa-scale-balanced"></i
+                                ></span>
+                                The wrong legal standard is applied
+                            </div>
+                            <div class="db">
+                                <p>
+                                    Systems reach a defensible-looking result
+                                    through the wrong test. In the state
+                                    liability case
+                                    &ldquo;R&auml;umungsanspruch und
+                                    Mietausfallschaden&rdquo;, the systems
+                                    deny negligence because the officials
+                                    lacked actual knowledge, missing the
+                                    objective standard of &sect; 276 BGB, and
+                                    three criteria fall with it. In the money
+                                    laundering case
+                                    &ldquo;Finder-Schwindler&rdquo;, the
+                                    systems affirm the predicate offences but
+                                    overlook the additional requirements that
+                                    the current wording of &sect; 261 Abs. 7
+                                    StGB attaches to self-laundering.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content is-size-6" style="margin-top: 1rem">
+                    <p>
+                        These patterns motivate questions about omitted issues, the
+                        treatment of follow-on errors, and the connection between case facts
+                        and legal conclusions. We
+                        are examining these patterns with the final verdicts and input from
+                        legal scholars.
+                    </p>
+                    <p>
+                        The review also identified potential problems in our own evaluation:
+                        overly strict criteria, valid alternative paths not covered by the
+                        rubric, and evidence attributed to the wrong part of an answer.
+                        Candidate corrections and contested decisions are documented for
+                        follow-up. Some rubric edits still await re-scoring.
+                    </p>
+                </div>
+                <!-- NOTE (removed on Aaron's request, 2026-09-01): footnote d on
+                     unanimous-verdict counting; details remain in
+                     docs/pruefung-immer-fail-kriterien-2026-09-01.md -->
+            </div>
+        </section>
+
+        <!-- ROADMAP -->
+        <section class="section" id="roadmap">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered">Outlook</h2>
+                <div class="content is-size-6">
+                    <p>
+                        Our next studies examine how agents affect legal reasoning, what web
+                        research contributes, and how closely our judgments agree with legal
+                        experts. We also plan to compare our case-specific criteria with
+                        BenGER’s broader scoring dimensions. Further work includes comparing
+                        results for the same cases, analysing individual errors, reviewing
+                        criteria with legal scholars, and modifying case facts to
+                        investigate whether models rely on memorized solutions.
+                    </p>
+
+                    <p>
+                        We welcome legal scholars, practitioners and AI researchers
+                        interested in reviewing criteria, alternative solutions,
+                        or agent and web-search experiments. Please contact
+                        <a
+                            href="https://www.uni-mannheim.de/dws/people/researchers/phd-students/aaron-steiner/"
+                            >Aaron Steiner</a
+                        >
+                        or open an issue in the
+                        <a href="https://github.com/wbsg-uni-mannheim/LAB-EU"
+                            >GitHub repository</a
+                        >.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CITATION -->
+        <section class="section" id="citation" style="background: #fafafa">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3 has-text-centered">Citation</h2>
+                <div class="content is-size-6">
+                    <p>
+                        A paper describing LAB-DE is in preparation. Until it is
+                        published, please cite this website:
+                    </p>
+                </div>
+                <pre class="bibtex">
+@misc{labde2026,
+  author       = {Steiner, Aaron and Bizer, Christian},
+  title        = {{LAB-DE}: German Legal Agent Benchmark (version 0.2)},
+  year         = {2026},
+  howpublished = {\url{https://wbsg-uni-mannheim.github.io/LAB-EU/}},
+  note         = {Work in progress}
+}</pre>
+                <!-- TODO: replace with the paper's BibTeX once published; confirm the final Pages URL -->
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer" style="padding: 2rem 1.5rem">
+            <div class="container is-max-desktop has-text-centered footer-note">
+                <p>
+                    Data and Web Science Group, University of Mannheim &middot;
+                    Website based on the
+                    <a href="https://github.com/nerfies/nerfies.github.io"
+                        >Nerfies</a
+                    >-style academic page template.
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
