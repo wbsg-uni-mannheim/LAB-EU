@@ -1,6 +1,6 @@
 # Belege ÖR 11: Anfängerklausur im Polizeirecht: „Kleine Tiere – großer Ärger“
 
-62 Inhalts-FAILs über acht Arme. Klassen nach [error-classes.pdf](../error-classes.pdf). Zwei KI-Annotatoren haben unabhängig zugeordnet, Abweichungen entscheidet Luis. Noch offen: 6.
+62 Inhalts-FAILs über acht Arme. Klassen nach [error-classes.pdf](../error-classes.pdf). Zwei KI-Annotatoren haben unabhängig zugeordnet, Abweichungen entscheidet Luis. Noch offen: 0.
 
 Kriterien in der Reihenfolge der Rubric, darunter je Arm die FAIL-Bewertung in der Reihenfolge SB, SA, TB, TA, DB, DA, CN, CW. Fehlt ein Arm bei einem Kriterium, hat er dort PASS.
 
@@ -25,7 +25,9 @@ Kritikalität 2, Funktion application
 
 > ERFÜLLT, wenn die Antwort den Bescheid der Ortspolizeibehörde Freiburg vom 10.5.2024 als Verwaltungsakt nach § 35 S. 1 VwVfG beziehungsweise LVwVfG BW einordnet, weil E hoheitlich, einzelfallbezogen und mit Außenwirkung zur konkreten Beseitigung des Befalls verpflichtet wird. NICHT ERFÜLLT, wenn sie die Verwaltungsaktqualität verneint oder nur die Bezeichnung „Bescheid“ wiederholt.
 
-### Arm DB: **offen** (Annotatoren uneinig)
+### Arm DB: **OK** (Entscheidung Luis, 2026-10-03)
+
+Z. 21 ordnet die Verfügung, die E zur Beseitigung des Befalls verpflichtet, als Verwaltungsakt nach § 35 S. 1 VwVfG ein. Knappe, aber tragfähige Erklärung.
 
 - **Claude K1 K1b** (mittel): Zeile 21 benennt Gegenstand und Ergebnis, der Bescheid sei ein Verwaltungsakt nach § 35 Satz 1 VwVfG, und erwähnt die Verpflichtung des E zu einem aktiven Tun. Die Begriffsmerkmale hoheitliche Maßnahme, Regelung eines Einzelfalls und Außenwirkung stehen weder als Definition noch der Sache nach im Text. Erstes fehlendes Glied ist daher der Maßstab, die Subsumtion unter diese Merkmale fehlt in der Folge ebenfalls. *Rubric-Anforderung fraglich: Genügt bei einer offensichtlich als Verwaltungsakt einzuordnenden polizeilichen Beseitigungsverfügung die bloße Feststellung mit Normzitat, oder ist die Nennung und Anwendung der Merkmale des § 35 S. 1 VwVfG zwingend?*
 - **Codex OK** (mittel): DB beschreibt in Zeile 17 die auf öffentliches Polizeirecht gestützte Aufforderung der Ortspolizeibehörde an E und in Zeile 21 seine konkrete Verpflichtung zur Beseitigung des Befalls. Zeile 21 ordnet diese belastende Verfügung ausdrücklich als Verwaltungsakt unter Bezug auf § 35 Satz 1 der Verwaltungsverfahrensordnung ein. Damit beschreibt die Antwort inhaltlich eine hoheitliche Verpflichtung eines bestimmten Bürgers zu einer konkreten Handlung mit Wirkung in dessen Rechtssphäre, sodass die knappe Erklärung das Kriterium erfüllt.
@@ -126,7 +128,9 @@ Kritikalität 1, Funktion application
 
 > ERFÜLLT, wenn die Antwort das Verwaltungsgericht Freiburg ausdrücklich als örtlich zuständig bestimmt und dies auf § 52 Nr. 1 VwGO in Verbindung mit dem einschlägigen baden-württembergischen Landesrecht stützt. NICHT ERFÜLLT, wenn sie die örtliche Zuständigkeit des Verwaltungsgerichts Freiburg verneint oder offenlässt, ein anderes Verwaltungsgericht für örtlich zuständig hält oder die Bestimmung nicht auf den einschlägigen örtlichen Gerichtsstand stützt.
 
-### Arm SB: **offen** (Annotatoren uneinig)
+### Arm SB: **K5** (Entscheidung Luis, 2026-10-03)
+
+Alle drei Antworten bestimmen das Verwaltungsgericht Freiburg als örtlich zuständig (CN Z. 33, CW Z. 33, SB Z. 51). Gestützt wird das auf § 52 Nr. 3 VwGO statt auf § 52 Nr. 1 VwGO mit dem Landesrecht. Das Ergebnis stimmt, nur das verlangte Zitat passt nicht (K5).
 
 - **Claude K5** (mittel): In Zeile 51 bestimmt die Antwort das Verwaltungsgericht Freiburg ausdrücklich als örtlich zuständig. Sie stützt dies auf § 52 Nr. 3 VwGO statt auf den vom Kriterium verlangten § 52 Nr. 1 VwGO in Verbindung mit dem baden-württembergischen Landesrecht. Das Ergebnis stimmt und nur der verlangte Normbeleg passt nicht, daher K5. *Rubric-Anforderung fraglich: Ist § 52 Nr. 3 VwGO für die Anfechtung einer grundstücksbezogenen polizeilichen Beseitigungsverfügung vertretbar oder ist § 52 Nr. 1 VwGO als ortsgebundenes Rechtsverhältnis zwingend vorrangig, wenn beide Wege zum Verwaltungsgericht Freiburg führen?*
 - **Codex K2** (mittel): SB bestimmt in Zeile 51 das Verwaltungsgericht Freiburg als örtlich zuständig und stützt dies auf § 52 Nr. 3 VwGO sowie Sitz und Zuständigkeitsbereich der erlassenden Behörde. Damit wird der allgemeine Gerichtsstand auf die konkrete grundstücksbezogene Beseitigungsanordnung angewandt, obwohl das Kriterium den besonderen Gerichtsstand nach § 52 Nr. 1 VwGO mit Landesrechtsbezug verlangt. Die Abweichung liegt in der Zuordnung des Falls zum Gerichtsstand und ist daher K2, denn ein bloßer Austausch der Normnummer würde die auf die Behörde bezogene Begründung nicht berichtigen. *Rubric-Anforderung fraglich: Ist die Beseitigungsanordnung wegen ihres Grundstücksbezugs zwingend § 52 Nr. 1 VwGO zuzuordnen, oder ist die Herleitung der örtlichen Zuständigkeit über § 52 Nr. 3 VwGO hier vertretbar?*
@@ -168,14 +172,18 @@ Beleg: [Antwort DB](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06
 
 Beleg: [Antwort DA](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__oeffentliches-recht__verwaltungsrecht__anfangerklausur-im-polizeirecht-kleine-tiere-grosser-arger/submission/fallloesung.md) · [Z. 41](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__oeffentliches-recht__verwaltungsrecht__anfangerklausur-im-polizeirecht-kleine-tiere-grosser-arger/submission/fallloesung.md#L41)
 
-### Arm CN: **offen** (Annotatoren uneinig)
+### Arm CN: **K5** (Entscheidung Luis, 2026-10-03)
+
+Alle drei Antworten bestimmen das Verwaltungsgericht Freiburg als örtlich zuständig (CN Z. 33, CW Z. 33, SB Z. 51). Gestützt wird das auf § 52 Nr. 3 VwGO statt auf § 52 Nr. 1 VwGO mit dem Landesrecht. Das Ergebnis stimmt, nur das verlangte Zitat passt nicht (K5).
 
 - **Claude K5** (mittel): In Zeile 33 bestimmt die Antwort das Verwaltungsgericht Freiburg als örtlich zuständig, weil der Verwaltungsakt in seinem Bezirk erlassen wurde. Gestützt wird dies auf § 52 Nr. 3 Satz 1 VwGO statt auf den verlangten § 52 Nr. 1 VwGO in Verbindung mit dem baden-württembergischen Landesrecht. Das Ergebnis stimmt und nur der vom Kriterium verlangte Normbeleg passt nicht, daher K5. *Rubric-Anforderung fraglich: Ist § 52 Nr. 3 VwGO für die Anfechtung einer grundstücksbezogenen polizeilichen Beseitigungsverfügung vertretbar oder ist § 52 Nr. 1 VwGO als ortsgebundenes Rechtsverhältnis zwingend vorrangig, wenn beide Wege zum Verwaltungsgericht Freiburg führen?*
 - **Codex K2** (mittel): CN bejaht in Zeile 33 die örtliche Zuständigkeit des Verwaltungsgerichts Freiburg nach § 52 Nr. 3 Satz 1 VwGO, weil der Verwaltungsakt in dessen Bezirk erlassen wurde. Der Erlassort wird damit als Anknüpfungspunkt für diesen Fall verwendet, obwohl das Kriterium den besonderen Gerichtsstand nach § 52 Nr. 1 VwGO mit Landesrechtsbezug verlangt. Die fallbezogene Wahl des allgemeinen Gerichtsstands ist K2, weil der zutreffend beschriebene Anknüpfungspunkt des § 52 Nr. 3 Satz 1 VwGO auf die grundstücksbezogene Anordnung übertragen wird und die Begründung durch einen bloßen Normtausch nicht richtig würde. *Rubric-Anforderung fraglich: Ist die Beseitigungsanordnung wegen ihres Grundstücksbezugs zwingend § 52 Nr. 1 VwGO zuzuordnen, oder ist die Herleitung der örtlichen Zuständigkeit über den Erlassort nach § 52 Nr. 3 Satz 1 VwGO hier vertretbar?*
 
 Beleg: [Antwort CN](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/codex-no-web-45/20260806T190042Z/tasks/de__oeffentliches-recht__verwaltungsrecht__anfangerklausur-im-polizeirecht-kleine-tiere-grosser-arger/submission/fallloesung.md) · [Z. 33](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/codex-no-web-45/20260806T190042Z/tasks/de__oeffentliches-recht__verwaltungsrecht__anfangerklausur-im-polizeirecht-kleine-tiere-grosser-arger/submission/fallloesung.md#L33)
 
-### Arm CW: **offen** (Annotatoren uneinig)
+### Arm CW: **K5** (Entscheidung Luis, 2026-10-03)
+
+Alle drei Antworten bestimmen das Verwaltungsgericht Freiburg als örtlich zuständig (CN Z. 33, CW Z. 33, SB Z. 51). Gestützt wird das auf § 52 Nr. 3 VwGO statt auf § 52 Nr. 1 VwGO mit dem Landesrecht. Das Ergebnis stimmt, nur das verlangte Zitat passt nicht (K5).
 
 - **Claude K5** (mittel): In Zeile 33 bestimmt die Antwort das Verwaltungsgericht Freiburg als örtlich zuständig, weil der Verwaltungsakt im Regierungsbezirk Freiburg erlassen wurde. Als Norm nennt sie § 52 Nr. 3 Satz 1 VwGO statt des verlangten § 52 Nr. 1 VwGO in Verbindung mit dem baden-württembergischen Landesrecht. Das Ergebnis stimmt und nur der vom Kriterium verlangte Normbeleg passt nicht, daher K5. *Rubric-Anforderung fraglich: Ist § 52 Nr. 3 VwGO für die Anfechtung einer grundstücksbezogenen polizeilichen Beseitigungsverfügung vertretbar oder ist § 52 Nr. 1 VwGO als ortsgebundenes Rechtsverhältnis zwingend vorrangig, wenn beide Wege zum Verwaltungsgericht Freiburg führen?*
 - **Codex K2** (mittel): CW bestimmt in Zeile 33 das Verwaltungsgericht Freiburg als örtlich zuständig und begründet dies nach § 52 Nr. 3 Satz 1 VwGO mit dem Erlass des Verwaltungsakts im Regierungsbezirk Freiburg. Dieser allgemeine Gerichtsstand wird auf den vorliegenden Fall angewandt, während das Kriterium für die grundstücksbezogene Anordnung § 52 Nr. 1 VwGO mit dem einschlägigen Landesrecht verlangt. Damit liegt eine fehlerhafte Fallzuordnung und folglich K2 vor, da ein Austausch der Normnummer die weiterhin am Erlassort orientierte Begründung nicht korrigieren würde. *Rubric-Anforderung fraglich: Ist die Beseitigungsanordnung wegen ihres Grundstücksbezugs zwingend § 52 Nr. 1 VwGO zuzuordnen, oder ist die Herleitung der örtlichen Zuständigkeit über den Erlassort nach § 52 Nr. 3 Satz 1 VwGO hier vertretbar?*
@@ -298,7 +306,9 @@ Beleg: [Antwort TB](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06
 
 Beleg: [Antwort TA](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__verwaltungsrecht__anfangerklausur-im-polizeirecht-kleine-tiere-grosser-arger/submission/fallloesung.md) · [Z. 41](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__verwaltungsrecht__anfangerklausur-im-polizeirecht-kleine-tiere-grosser-arger/submission/fallloesung.md#L41)
 
-### Arm DB: **offen** (Annotatoren uneinig)
+### Arm DB: **K5** (Entscheidung Luis, 2026-10-03)
+
+Z. 53 behandelt die Ortspolizeibehörde der Stadt Freiburg als zuständig, stützt das aber auf § 60 ff. PolG BW. Es fehlen die Bezeichnung als örtlich zuständig und § 113 Abs. 1 PolG BW zusammen.
 
 - **Claude K1 K1a** (mittel): Zeile 53 bezeichnet die Ortspolizeibehörde der Stadt Freiburg nur allgemein als zuständige Polizeibehörde nach § 60 ff. PolG BW und nennt dies unproblematisch. Die örtliche Zuständigkeit wird weder benannt noch geprüft, § 113 Abs. 1 PolG BW fehlt. Ein Satz, der nur die übergeordnete Zuständigkeitsfrage beantwortet, benennt den Gegenstand nicht, daher K1a, das unpassende Normzitat wäre nachrangig K5.
 - **Codex K5** (mittel): DB bezeichnet in Zeile 53 bei der formellen Rechtmäßigkeit die Ortspolizeibehörde der Stadt Freiburg ohne Einschränkung als zuständige Polizeibehörde. Dafür wird lediglich § 60 ff. PolG BW angeführt, während das verlangte Zitat des § 113 Abs. 1 PolG BW fehlt. Die Behörde ist örtlich konkret bezeichnet und ihre Zuständigkeit bejaht, sodass der verbleibende Mangel das Normzitat betrifft und K5 ergibt.
@@ -387,7 +397,9 @@ Kritikalität 1, Funktion application
 
 > ERFÜLLT, wenn die Antwort eine Verhaltensverantwortlichkeit des E nach § 6 PolG BW verneint, weil er die Raupen weder ausgesetzt noch angelockt oder sonst durch eigenes Verhalten zum Befall beigetragen hat. NICHT ERFÜLLT, wenn sie E allein wegen seines Eigentums, unterlassener Vorbeugung oder eines erfundenen Verhaltens als Verhaltensstörer behandelt.
 
-### Arm SB: **offen** (Annotatoren uneinig)
+### Arm SB: **K1 K1a** (Entscheidung Luis, 2026-10-03)
+
+SB prüft nur die Zustandsverantwortlichkeit nach § 7 PolG BW (Z. 105 bis 115) und weist den Einwand, E habe die Raupen nicht angelockt, nur dort zurück. Z. 127 nennt Verhaltensverantwortliche nur allgemein. Eine Verhaltensverantwortlichkeit des E nach § 6 PolG BW wird nicht benannt (K1a).
 
 - **Claude K1 K1a** (mittel): Die Zeilen 105 bis 115 prüfen nur die Zustandsverantwortlichkeit nach § 7 Abs. 1 PolG BW, Zeile 115 gibt den Einwand des E wieder, er habe die Raupen nicht angelockt, und weist ihn nur für § 7 zurück. Eine Verhaltensverantwortlichkeit des E nach § 6 PolG BW wird an keiner Stelle benannt, Zeile 127 erwähnt Verhaltensverantwortliche nur allgemein bei der Störerauswahl. Schon der Gegenstand fehlt, daher K1a.
 - **Codex K1 K1b** (mittel): SB erwähnt in Zeile 115 das fehlende Anlocken und in Zeile 127 ausdrücklich den Verhaltensverantwortlichen als möglichen Träger der Beseitigungspflicht. Es fehlt jedoch der Maßstab, dass eine eigene Gefahrverursachung die Verhaltensverantwortlichkeit nach § 6 PolG BW begründet, sowie deren Verneinung für E. Der Gegenstand ist damit benannt, aber zuerst fehlt der zugehörige Maßstab, weshalb K1b vorliegt. *Rubric-Anforderung fraglich: Ist neben der begründeten Heranziehung nach § 7 PolG BW eine ausdrückliche Prüfung und Verneinung des § 6 PolG BW erforderlich, wenn kein eigenes Verursachungsverhalten des E festgestellt wird?*

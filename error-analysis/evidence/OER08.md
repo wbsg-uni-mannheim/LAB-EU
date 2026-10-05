@@ -1,6 +1,6 @@
 # Belege ÖR 08: Anfängerklausur – Grundrechte: Die Rennraddemo auf der Autobahn
 
-62 Inhalts-FAILs über acht Arme. Klassen nach [error-classes.pdf](../error-classes.pdf). Zwei KI-Annotatoren haben unabhängig zugeordnet, Abweichungen entscheidet Luis. Noch offen: 11.
+62 Inhalts-FAILs über acht Arme. Klassen nach [error-classes.pdf](../error-classes.pdf). Zwei KI-Annotatoren haben unabhängig zugeordnet, Abweichungen entscheidet Luis. Noch offen: 0.
 
 Kriterien in der Reihenfolge der Rubric, darunter je Arm die FAIL-Bewertung in der Reihenfolge SB, SA, TB, TA, DB, DA, CN, CW. Fehlt ein Arm bei einem Kriterium, hat er dort PASS.
 
@@ -19,7 +19,9 @@ Kritikalität 1, Funktion application
 
 Beleg: [Antwort TB](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md) · [Z. 11](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L11), [Z. 13](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L13), [Z. 43](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L43), [Z. 49](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L49)
 
-### Arm TA: **offen** (Annotatoren uneinig)
+### Arm TA: **K5** (Entscheidung Luis, 2026-10-03)
+
+Beide Antworten halten fest, dass A ohne Anwalt handeln darf (DA Z. 21, TA Z. 13). Das Ergebnis stimmt, es fehlt die Ableitung aus § 22 Abs. 1 S. 1 BVerfGG. Dass die Ausnahme für die mündliche Verhandlung nicht genannt wird, macht die Regel nicht falsch (kein K3).
 
 - **Claude K5** (mittel): In Z. 13 steht, dass es im Verfassungsbeschwerdeverfahren keines Rechtsanwalts bedarf, das verlangte Ergebnis ist also vorhanden. Es fehlt die vom Kriterium verlangte Ableitung aus § 22 Abs. 1 S. 1 BVerfGG und damit auch der Bezug auf das Verfahren außerhalb einer mündlichen Verhandlung. Die rechtliche Aussage stimmt für die Erhebung, es fehlt nur der verlangte Normbeleg samt Norminhalt, daher K5. *Rubric-Anforderung fraglich: Genügt die Aussage, im Verfassungsbeschwerdeverfahren sei kein Anwalt nötig, ohne Nennung des § 22 Abs. 1 S. 1 BVerfGG und ohne Einschränkung auf das Verfahren außerhalb der mündlichen Verhandlung?*
 - **Codex K3** (mittel): Die Antwort erklärt in Zeile 13, dass A ihre Rechte selbst wahrnehmen kann und es im Verfassungsbeschwerdeverfahren keines Rechtsanwalts bedarf. Diese unbeschränkte Aussage unterscheidet nicht zwischen der selbstständigen Erhebung und der notwendigen Vertretung in einer mündlichen Verhandlung nach § 22 Abs. 1 Satz 1 BVerfGG. Die pauschale Verneinung des Vertretungserfordernisses stellt die Reichweite der Regel falsch dar, sodass K3 vorliegt und das bloße Ergänzen des Normbelegs nicht ausreicht.
@@ -33,7 +35,9 @@ Beleg: [Antwort TA](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06
 
 Beleg: [Antwort DB](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md) · [Z. 14](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L14)
 
-### Arm DA: **offen** (Annotatoren uneinig)
+### Arm DA: **K5** (Entscheidung Luis, 2026-10-03)
+
+Beide Antworten halten fest, dass A ohne Anwalt handeln darf (DA Z. 21, TA Z. 13). Das Ergebnis stimmt, es fehlt die Ableitung aus § 22 Abs. 1 S. 1 BVerfGG. Dass die Ausnahme für die mündliche Verhandlung nicht genannt wird, macht die Regel nicht falsch (kein K3).
 
 - **Claude K5** (mittel): In Z. 21 stellt die Antwort fest, dass A ohne anwaltliche Vertretung handeln darf, weil vor dem BVerfG kein Anwaltszwang besteht. Die Ableitung aus § 22 Abs. 1 S. 1 BVerfGG fehlt, stattdessen wird § 51 ZPO analog für die Verfahrensfähigkeit genannt. Der Inhalt ist für die Erhebung richtig und nur der vom Kriterium verlangte Normbeleg fehlt, daher K5. *Rubric-Anforderung fraglich: Reicht der allgemeine Hinweis auf fehlenden Anwaltszwang vor dem BVerfG ohne § 22 Abs. 1 S. 1 BVerfGG und ohne Bezug auf die mündliche Verhandlung aus?*
 - **Codex K3** (mittel): Die Antwort bejaht in Zeile 21, dass A das Verfahren selbstständig und ohne anwaltliche Vertretung betreiben kann. Sie begründet dies jedoch mit der allgemeinen Aussage, vor dem BVerfG bestehe kein Anwaltszwang, ohne die notwendige Vertretung in der mündlichen Verhandlung abzugrenzen. Damit ist die dargestellte Reichweite des Vertretungserfordernisses nach § 22 Abs. 1 Satz 1 BVerfGG falsch, weshalb K3 und nicht lediglich ein fehlender Normbeleg vorliegt.
@@ -46,7 +50,9 @@ Kritikalität 2, Funktion application
 
 > ERFÜLLT, wenn die Antwort das letztinstanzliche fachgerichtliche Urteil, das As Versammlungsverbot bestätigt hat, als Akt der Judikative und tauglichen Gegenstand der Urteilsverfassungsbeschwerde nach § 90 Abs. 1 BVerfGG behandelt. NICHT ERFÜLLT, wenn sie das Urteil übersieht oder für untauglich hält.
 
-### Arm DB: **offen** (Annotatoren uneinig)
+### Arm DB: **K1 K1a** (Entscheidung Luis, 2026-10-03)
+
+Die Rubric trennt das behördliche Verbot (C-003) und das letztinstanzliche Urteil (C-004) als Beschwerdegegenstand. Z. 17 prüft als Beschwerdegegenstand nur das Verbot; die letztinstanzliche Entscheidung steht nur bei der Frist (Z. 26) und die Instanzen bei der Rechtswegerschöpfung (Z. 23). Dieselbe Frage nur für einen anderen Akt benennt den Gegenstand nicht (K1a).
 
 - **Claude K1 K1a** (hoch): Z. 17 behandelt als Beschwerdegegenstand allein das Versammlungsverbot als Verwaltungsakt der Exekutive. Das letztinstanzliche Urteil wird nirgends als Beschwerdegegenstand genannt, Z. 23 erwähnt die Instanzen nur bei der Rechtswegerschöpfung. Erstes fehlendes Glied ist der Gegenstand, daher K1a.
 - **Codex K1 K1c** (hoch): Z. 17 nennt jeden Akt öffentlicher Gewalt als tauglichen Beschwerdegegenstand, und Z. 26 erwähnt ausdrücklich die letztinstanzliche Entscheidung. Der Maßstab wird in Z. 17 jedoch nur auf das behördliche Verbot angewandt, während die Einordnung des Urteils als angreifbarer Akt der Judikative ausbleibt. Gegenstand und allgemeiner Maßstab sind vorhanden, als erstes Glied fehlt die Anwendung auf das Urteil, weshalb K1c vorliegt.
@@ -240,35 +246,45 @@ Kritikalität 2, Funktion application
 
 Beleg: [Antwort SB](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md) · [Z. 123](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L123), [Z. 125](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L125), [Z. 127](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L127)
 
-### Arm TB: **offen** (Annotatoren uneinig)
+### Arm TB: **K1 K1b** (Entscheidung Luis, 2026-10-03)
+
+Die Antworten ordnen die Kundgebung als Versammlung unter freiem Himmel ein (DA Z. 135, DB Z. 47 und 55). Der Gegenstand ist benannt; es fehlt der Maßstab der seitlichen Offenheit und des Störungspotenzials, nach dem die Überdachung zu beurteilen ist (K1b).
 
 - **Claude K1 K1a** (mittel): Z. 101 behauptet nur, die Versammlung solle unter freiem Himmel stattfinden. Die Kundgebung auf der Süd-Auffahrt unter der Autobahnbrücke und die Frage der Überdachung werden nirgends angesprochen. Der verlangte Gegenstand, Art. 8 Abs. 2 GG mit der Frage der Überdachung, fehlt, daher K1a.
 - **Codex K1 K1b** (hoch): Z. 101 bezeichnet die Veranstaltung als Versammlung unter freiem Himmel und zieht daraus den Gesetzesvorbehalt des Art. 8 Abs. 2 GG. Die maßgebliche Abgrenzung anhand seitlicher Offenheit und des daraus folgenden Störungs- und Kollisionspotenzials wird nicht erklärt. Damit fehlt zuerst der Maßstab nach K1b, auch die Anwendung auf die überdachte Kundgebung bleibt aus.
 
 Beleg: [Antwort TB](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md) · [Z. 101](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L101)
 
-### Arm TA: **offen** (Annotatoren uneinig)
+### Arm TA: **K1 K1b** (Entscheidung Luis, 2026-10-03)
+
+Die Antworten ordnen die Kundgebung als Versammlung unter freiem Himmel ein (DA Z. 135, DB Z. 47 und 55). Der Gegenstand ist benannt; es fehlt der Maßstab der seitlichen Offenheit und des Störungspotenzials, nach dem die Überdachung zu beurteilen ist (K1b).
 
 - **Claude K1 K1a** (mittel): Z. 67 bezeichnet die Veranstaltung nur als Versammlung unter freiem Himmel. Die Überdachung der Kundgebung durch die Brücke wird weder hier noch an anderer Stelle behandelt. Der Gegenstand mit der Frage der Überdachung ist nicht benannt, K1a.
 - **Codex K1 K1b** (hoch): Z. 67 ordnet die Veranstaltung als Versammlung unter freiem Himmel dem Gesetzesvorbehalt zu. Es fehlt die Regel, dass die seitliche Offenheit und das damit verbundene Störungs- und Kollisionspotenzial entscheidend sind. Bei benanntem Gegenstand fehlt damit zuerst der Maßstab nach K1b, bevor auch die konkrete Einordnung der Kundgebung unter der Überführung ausbleibt.
 
 Beleg: [Antwort TA](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md) · [Z. 67](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L67)
 
-### Arm DB: **offen** (Annotatoren uneinig)
+### Arm DB: **K1 K1b** (Entscheidung Luis, 2026-10-03)
+
+Die Antworten ordnen die Kundgebung als Versammlung unter freiem Himmel ein (DA Z. 135, DB Z. 47 und 55). Der Gegenstand ist benannt; es fehlt der Maßstab der seitlichen Offenheit und des Störungspotenzials, nach dem die Überdachung zu beurteilen ist (K1b).
 
 - **Claude K1 K1a** (mittel): Z. 47 und Z. 55 nennen die Veranstaltung ohne Begründung eine Versammlung unter freiem Himmel. Die Kundgebung unter der Brücke, die seitliche Offenheit und das Störungspotenzial kommen in der Antwort nicht vor. Der Gegenstand mit der Frage der Überdachung fehlt, K1a.
 - **Codex K1 K1b** (hoch): Z. 47 nennt eine Versammlung unter freiem Himmel, und Z. 55 gibt die Beschränkungsmöglichkeit nach Art. 8 Abs. 2 GG wieder. Es fehlt jedoch die Definition anhand seitlicher Offenheit und des dadurch entstehenden Störungs- und Kollisionspotenzials. Das erste fehlende Glied ist daher der Maßstab nach K1b, auch die Anwendung auf die überdachte Südauffahrt fehlt.
 
 Beleg: [Antwort DB](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md) · [Z. 47](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L47), [Z. 55](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L55)
 
-### Arm DA: **offen** (Annotatoren uneinig)
+### Arm DA: **K1 K1b** (Entscheidung Luis, 2026-10-03)
+
+Die Antworten ordnen die Kundgebung als Versammlung unter freiem Himmel ein (DA Z. 135, DB Z. 47 und 55). Der Gegenstand ist benannt; es fehlt der Maßstab der seitlichen Offenheit und des Störungspotenzials, nach dem die Überdachung zu beurteilen ist (K1b).
 
 - **Claude K1 K1a** (mittel): Z. 135 folgert allein aus dem Ort Autobahn, die Demonstration finde unter freiem Himmel statt. Die Kundgebung unter der Brücke und ihre Überdachung werden nirgends erörtert. Der Gegenstand mit der Frage der Überdachung fehlt, K1a.
 - **Codex K1 K1b** (hoch): Z. 135 erklärt Art. 8 Abs. 2 GG für einschlägig, weil die Demonstration auf einer Autobahn und damit unter freiem Himmel stattfinde. Der Maßstab der seitlichen Offenheit und des damit verbundenen Störungs- und Kollisionspotenzials wird nicht dargestellt. Damit fehlt zuerst der Maßstab nach K1b und anschließend dessen Anwendung auf die trotz Überführung seitlich offene Kundgebung.
 
 Beleg: [Antwort DA](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md) · [Z. 135](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L135)
 
-### Arm CW: **offen** (Annotatoren uneinig)
+### Arm CW: **K1 K1c** (Entscheidung Luis, 2026-10-03)
+
+Z. 91 nennt als Maßstab die Offenheit zur Umwelt und das Konfliktpotenzial und wendet ihn auf die nicht überdachte Autobahnstrecke an. Die Kundgebung unter der Brücke, deren Überdachung Z. 79 selbst erwähnt, wird nicht eingeordnet. Gegenstand und Maßstab stehen da, es fehlt die Anwendung auf die Süd-Auffahrt (Stufe 1, K1c).
 
 - **Claude K1 K1c** (mittel): Z. 91 nennt als Maßstab die Offenheit zur Umwelt und das daraus folgende Konfliktpotential. Angewandt wird er nur auf eine nicht überdachte Autobahnstrecke, die Kundgebung unter der Brücke, deren Überdachung Z. 79 selbst erwähnt, wird nicht eingeordnet. Gegenstand und Maßstab stehen da, erstes fehlendes Glied ist die Anwendung auf die Süd-Auffahrt, K1c. Die Angabe in Z. 91, die Veranstaltung finde auf einer nicht überdachten Strecke statt, verkürzt an derselben Stelle den Sachverhalt (K4). *Zusatzbefund: K4.*
 - **Codex K4** (mittel): Z. 79 kennt den überdachten Kundgebungsort, und Z. 91 nennt die Offenheit zur Umwelt und das Konfliktpotenzial als Maßstab. Bei der Anwendung behandelt Z. 91 die Veranstaltung dennoch insgesamt als auf einer nicht überdachten Autobahnstrecke stattfindend und lässt damit die vorgegebene Überdachung der Abschlusskundgebung entfallen. Diese veränderte Tatsachengrundlage ergibt K4, zugleich bleibt der Widerspruch zu Z. 79 als K6 unaufgelöst.
@@ -316,7 +332,9 @@ Beleg: [Antwort TA](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06
 
 Beleg: [Antwort DB](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md) · [Z. 66](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L66)
 
-### Arm DA: **offen** (Annotatoren uneinig)
+### Arm DA: **K1 K1d** (Entscheidung Luis, 2026-10-03)
+
+Z. 167 hält gleich wirksame mildere Mittel zunächst für nicht ersichtlich. Z. 169 nimmt das ausdrücklich zurück, äußert Zweifel an der Erforderlichkeit und lässt die Frage dahinstehen, Z. 171 nennt die Erforderlichkeit nicht zweifelsfrei. Eine Entscheidung zur zeitlichen Verkürzung fehlt (Stufe 1, K1d); wegen der ausdrücklichen Korrektur ist es kein K6.
 
 - **Claude K1 K1d** (mittel): Z. 167 nennt Teilzeitbeschränkung und Verkürzung als mildere Mittel und hält gleich wirksame nicht für ersichtlich, Z. 169 nennt die Verkürzung der Sperrzeit und äußert Zweifel an der Erforderlichkeit, weil Anhaltspunkte für die Erfolglosigkeit fehlen. Z. 171 lässt die Frage offen, eine Entscheidung zur Gleichgeeignetheit der Verkürzung fehlt. Gegenstand, Maßstab und eine Anwendung stehen da, erstes fehlendes Glied ist das Ergebnis, K1d. Die unaufgelöste Spannung zwischen Z. 167 und Z. 169 bis 171 wird als K6 mitgeführt.
 - **Codex K6** (mittel): Z. 155 nennt den Vergleich mit gleich geeigneten milderen Mitteln, und Z. 167 verneint solche Mittel ausdrücklich auch für eine Teilzeitbeschränkung unter Verweis auf die ortsspezifischen Gefahren. Z. 169 und 171 erklären dagegen die Erfolglosigkeit einer kürzeren Sperrzeit für unbelegt und lassen deshalb die Erforderlichkeit offen. Diese gegensätzlichen Bewertungen derselben Alternative werden nicht aufgelöst, sodass das Kriterium am Widerspruch nach K6 scheitert.
@@ -364,7 +382,9 @@ Beleg: [Antwort TB](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06
 
 Beleg: [Antwort TA](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md) · [Z. 77](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L77), [Z. 79](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-grundrechte-die-rennraddemo-auf-der-autobahn/submission/fallloesung.md#L79)
 
-### Arm DA: **offen** (Annotatoren uneinig)
+### Arm DA: **K2** (Entscheidung Luis, 2026-10-03)
+
+Z. 157 erkennt die Verlegung als milderes Mittel an. Z. 167 verneint gleich wirksame mildere Mittel, weil die Alternativorte einen anderen Gefahrenort beträfen, obwohl die Verlegung gerade die Gefahren auf der A3 beseitigt. Ob ein Mittel im Fall gleich geeignet ist, ist Bewertung des Falls (K2).
 
 - **Claude K2** (hoch): In Z. 157 und 163 wird die Landstraßenroute als milderes Mittel mit ähnlichem Symbolgehalt anerkannt. In Z. 167 verneint die Antwort mildere, gleich wirksame Mittel und meint, die Alternativorte beträfen einen anderen Gefahrenort. Die Verlegung beseitigt gerade die Gefahren auf der A3, die Fallangabe wird also rechtlich falsch ausgewertet, daher K2.
 - **Codex K3** (mittel): Die Antwort erkennt in Zeile 157 die Landstraßenroute ausdrücklich als milderes Mittel an und behandelt in den Zeilen 163 bis 167 ihre Auswirkungen. Sie schiebt die Alternative in Zeile 167 jedoch mit dem allgemeinen Satz beiseite, das Verbotsermessen sei nicht auf eine Ortsverlagerung reduziert, wenn der gewählte Ort selbst die Gefahrenquelle darstelle. Damit macht sie die Gefährlichkeit des ursprünglichen Ortes zum Grund, eine gleich wirksame Verlegung nicht als vorrangig behandeln zu müssen, und verwendet eine falsche Rechtsregel, sodass K3 vorliegt. Die daraus folgende fehlerhafte Bewertung der angebotenen Landstraßenroute ist nachrangig K2.
@@ -486,7 +506,9 @@ Kritikalität 3, Funktion argumentation
 
 > ERFÜLLT, wenn die Antwort nach praktischer Konkordanz beide Seiten fallbezogen abwägt: zugunsten A das hohe demokratische Gewicht der Versammlungsfreiheit, den thematischen und symbolischen Autobahnbezug der Rennradfahrt und ihren Aussageverlust in der Fußgängerzone; relativierend den fehlenden Bezug zu einem unabänderlich ortsgebundenen Vorhaben, die gezielt beabsichtigte Verkehrsbehinderung und die fehlende Autobahngebundenheit der Redekundgebung; entgegenstehend den durch Art. 2 Abs. 1 GG unterlegten Verkehrsfluss, regionale Rückstaus bis Passau, den Vor- und Nachlauf der Sperrung sowie die zuverlässige Ablenkungs- und Unfallprognose für den Gegenverkehr als Gefahr für Art. 2 Abs. 2 S. 1 GG. Sie darf das Verbot entweder für angemessen halten oder bei ausdrücklicher Bewältigung dieser Belastungen ein Überwiegen des nach C-018 einschlägigen Grundrechts begründen; Verletzungs- und Rechtfertigungsergebnis müssen dazu passen. NICHT ERFÜLLT, wenn nur ein Ergebnis behauptet, eine Seite wesentlich ausgeblendet oder die Unfallprognose beim abweichenden Ergebnis nicht bewältigt wird.
 
-### Arm SB: **offen** (Annotatoren uneinig)
+### Arm SB: **K1 K1c** (Entscheidung Luis, 2026-10-03)
+
+Z. 171 bis 175 wägen nach praktischer Konkordanz das demokratische Gewicht und den Autobahnbezug gegen Rückstau und Unfallgefahren ab und geben den Verkehrsbelangen verfassungsrechtliches Gewicht. Es fehlen verlangte Gewichte: Aussageverlust in der Fußgängerzone, fehlende Ortsgebundenheit, gezielte Verkehrsbehinderung, Vor- und Nachlauf. Ein fehlendes Gewicht in der Abwägung ist Bewertung des Falls (K1c).
 
 - **Claude K1 K1b** (mittel): Z. 171 bis 175 wägen das demokratische Gewicht, den Autobahnbezug, Rückstau und die Unfallgefahr ab. Es fehlen die verfassungsrechtliche Verankerung des Verkehrsflusses in Art. 2 Abs. 1 GG sowie fallbezogen der Aussageverlust in der Fußgängerzone, die fehlende Ortsgebundenheit, die gezielte Verkehrsbehinderung als relativierender Umstand und der Vor- und Nachlauf der Sperrung. Das früheste fehlende Glied ist das fallunabhängige Argument zu Art. 2 Abs. 1 GG, also der Maßstab, K1b. *Rubric-Anforderung fraglich: Verlangt die Angemessenheitsprüfung juristisch jeden der im Kriterium aufgezählten Gesichtspunkte, etwa den Vor- und Nachlauf der Sperrung, oder genügt eine Abwägung der tragenden Belange?*
 - **Codex K1 K1c** (mittel): Z. 171 bis 175 wägen das demokratische Gewicht und den Autobahnbezug der Versammlung gegen Rückstau und Unfallgefahren ab und sprechen auch den entgegenstehenden Verkehrsbelangen ausdrücklich verfassungsrechtliches Gewicht zu. Es fehlen die fallbezogene Berücksichtigung des Vor- und Nachlaufs, die Relativierung durch den fehlenden unabänderlichen Ortsbezug und die Würdigung des Aussageverlusts in der Fußgängerzone. Damit fehlt zuerst ein Teil der Anwendung nach K1c, während das fehlende Normzitat zum verfassungsrechtlich gewichteten Verkehrsfluss nur nachrangig K5 betrifft. *Rubric-Anforderung fraglich: Darf die Rubric eine zusätzliche Belastung durch Vor- und Nachlauf der Sperrung verlangen, obwohl der Sachverhalt hierfür keine Dauer nennt?*

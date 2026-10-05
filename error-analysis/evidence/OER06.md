@@ -1,6 +1,6 @@
 # Belege OER 06: Anfängerhausarbeit: „Wie du mir, so ich dir“
 
-176 Inhalts-FAILs über acht Arme. Klassen nach [error-classes.pdf](../error-classes.pdf). Zwei KI-Annotatoren haben unabhängig zugeordnet, Abweichungen entscheidet Luis. Noch offen: 47.
+176 Inhalts-FAILs über acht Arme. Klassen nach [error-classes.pdf](../error-classes.pdf). Zwei KI-Annotatoren haben unabhängig zugeordnet, Abweichungen entscheidet Luis. Noch offen: 0.
 
 Kriterien in der Reihenfolge der Rubric, darunter je Arm die FAIL-Bewertung in der Reihenfolge SB, SA, TB, TA, DB, DA, CN, CW. Fehlt ein Arm bei einem Kriterium, hat er dort PASS.
 
