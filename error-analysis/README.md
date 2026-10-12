@@ -13,16 +13,17 @@ The error classes (`error-classes.pdf`) and the evidence files are in German, th
 | [`error-classes.pdf`](error-classes.pdf) | The error classes: definitions, boundaries, rules for assignment and counting. |
 | [`error-classes-overview.pdf`](error-classes-overview.pdf) | One page: short definition and guiding question per class, the levels of K1, the administrative values and the two flags. `error-classes.pdf` remains authoritative. |
 | [`results.pdf`](results.pdf) | Result tables in thesis form: scope, agreement of the annotators, class frequencies by area of law and by arm, the four K1 levels, findings merged into errors, misstated rules and altered facts behind K1. Every figure is computed from the data. |
+| [`learnings.md`](learnings.md) | Learnings from the error analysis (in German): eight findings with examples and possible levers for the targeted improvement. |
 | [`assignments.csv`](assignments.csv) | Primary data. One line per content FAIL (arm and criterion), with both annotators' assignments. Columns below. |
 | [`evidence/`](evidence/README.md) | One file per case. For every content FAIL the criterion text, both assignments with reasoning, confidence and flags, the author's decision with its justification where the annotators disagreed, and links to case facts, model solution, rubric and answer file in LAB-EU at a fixed commit, down to the cited lines. |
-| [`legal-review/`](legal-review/README.md) | Placeholder for the material for the legal review. |
+| [`legal-review/`](legal-review/README.md) | Review form for a legal expert: examples per class and boundary cases, with full texts for reference. |
 
 **What the tables count.** Every line of `assignments.csv` is one content FAIL with an assigned class, called a finding. Most tables count findings, not errors: one missing part of an answer can produce several findings, because several criteria capture the same gap. `results.pdf`, Table 6, merges such findings into errors: a finding that an annotator flagged as a consequence of another error finding of the same answer („Folgefehler von“) counts only at its origin. Where only one annotator set the flag (147 content FAILs), the author decided by the rule of the error classes (column `Folgefehler_final`).
 
 ## Status of the data
 
 - 30 cases (15 public law, 15 civil law), eight arms, 3,444 content FAILs, each assigned independently by two AI annotators (Claude and Codex).
-- The annotators disagreed on 693 content FAILs: 217 on the class (K1a to K1d merged) and 476 that agree on K1 and differ only in its level. The author decided all of them (column `Entscheidung_Autor`, justification in `evidence/`). During this step three clarifications were added to the error classes: the other solution path, K4 only if the criterion fails because of the deviating fact, and K7 against OK. The annotators did not have them, and content FAILs on which both agreed were not reopened.
+- The annotators disagreed on 693 content FAILs: 217 on the class (K1a to K1d merged) and 476 that agree on K1 and differ only in its level. The author decided all of them (column `Entscheidung_Autor`, justification in `evidence/`). During this step three clarifications were added to the error classes: the other solution path, K4 only if the criterion fails because of the deviating fact, and K7 against OK.
 - Each content FAIL gets one class, the first that applies in the order of checks. A second error at the same place is only mentioned in the reasoning of Claude or Codex (`Begründung_Claude`, `Begründung_Codex`). For K1 the annotators additionally recorded whether a misstated rule (K3) or an altered fact (K4) stands at the same place (`Zusatzbefund_*`, counted in `results.pdf`, Table 7). For the other classes this was not asked.
 - Observations on PASS ratings and outside the criteria are not part of this folder.
 
@@ -66,8 +67,7 @@ Rules that are applied in the data and should be confirmed with the supervisors,
 
 ### Still to do
 
-1. **Legal review.** Five examples per class for a legal expert, to check the definitions and boundaries and to assess the weight of the errors, and potentially the list of rubric flags. Not built yet.
+1. **Legal review.** A legal expert reviews examples per class and boundary cases, to check the definitions and boundaries and to assess the weight of the errors, and potentially the list of rubric flags. The material is in `legal-review/`.
 2. **Criminal law.** The 15 criminal law cases of the de-core-45 study may be added. Their rubrics and ratings are complete. Whether the error classes fit them unchanged is to be tested.
 3. **PASS ratings.** A criterion can be marked as met although the required content is missing. Depending on the time available, such findings may be examined in more detail and reported separately. They are not part of the error counts so far.
 4. **Style criteria.** The judges also rated the legal style (Gutachtenstil) separately from the content. These ratings are not part of the analysis so far. Whether they are examined is open.
-5. **Final annotation run.** The three clarifications added while resolving disagreements are not yet applied to content FAILs on which both annotators agreed. A final run of both annotators over all 3,444 content FAILs under the final, frozen version of the error classes is planned.
