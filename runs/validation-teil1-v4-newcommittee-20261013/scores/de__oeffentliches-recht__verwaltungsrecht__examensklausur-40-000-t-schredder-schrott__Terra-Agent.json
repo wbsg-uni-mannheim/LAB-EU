@@ -1,0 +1,578 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/verwaltungsrecht/examensklausur-40-000-t-schredder-schrott",
+    "title": "Examensklausur: 40.000 t Schredder-Schrott"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/verwaltungsrecht/examensklausur-40-000-t-schredder-schrott/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T15:12:43.299255+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 1,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 1,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 3,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Begründetheit des Antrags": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Begründetheit des Antrags › Offensichtliche Rechtswidrigkeit der Verfügung vom Mai 2019": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "legal_basis": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 24769,
+    "output_tokens": 7325,
+    "total_tokens": 32094,
+    "cached_input_tokens": 20713,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 24769,
+    "output_tokens": 7325,
+    "total_tokens": 32094,
+    "cached_input_tokens": 20713,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-016",
+      "title": "Ermächtigungsgrundlage der Beseitigungsverfügung",
+      "verdict": "fail",
+      "resolution": "unresolved",
+      "reasoning": "The committee majority changed between two independent rounds; the criterion is conservatively unresolved.",
+      "evidence": [],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort zieht § 3 PolG BW ausdrücklich als Rechtsgrundlage heran. Sie erläutert jedoch nicht, dass mangels einschlägiger polizeirechtlicher Standardmaßnahme die Generalklausel greift, und nennt § 1 Abs. 1 S. 1 PolG BW nicht. Der Ausschluss abfall- und immissionsschutzrechtlicher Vorschriften ersetzt diese fehlende Begründung nicht.",
+          "evidence": [
+            "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt die Polizei, die notwendigen Maßnahmen zu treffen",
+            "Spezielle abfallrechtliche oder immissionsschutzrechtliche Ermächtigungen sind nach dem Bearbeitungsvermerk nicht zu prüfen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Beseitigungsverfügung wird auf die polizeirechtliche Generalklausel gestützt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort begründet die Heranziehung der Generalklausel mit dem Fehlen einer einschlägigen polizeirechtlichen Standardmaßnahme.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die angegebene Ermächtigungsgrundlage umfasst §§ 3, 1 Abs. 1 S. 1 PolG BW.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Die Ermächtigungsgrundlage der Beseitigungsverfügung vom Mai 2019 gegen K.",
+            "evidence_scope": "Die Ermächtigungsgrundlage der Beseitigungsverfügung gegen K im Abschnitt zu Rechtsgrundlage und Gefahr.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "§ 3 PolG BW ermächtige zu notwendigen Maßnahmen zur Abwehr einer Gefahr; abfallrechtliche und immissionsschutzrechtliche Ermächtigungen seien nach dem Bearbeitungsvermerk nicht zu prüfen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort benennt für die Beseitigungsverfügung vom Mai 2019 ausdrücklich die polizeiliche Generalklausel des § 3 PolG BW als Ermächtigungsgrundlage. Damit wird die einschlägige Generalklausel herangezogen; die Nennung nur des § 3 statt zusätzlich § 1 Abs. 1 S. 1 PolG BW ist unschädlich, weil § 3 PolG BW die Generalklausel enthält. Eine Stützung auf Mietvertrag, KrWG, BImSchG oder eine unpassende Standardmaßnahme liegt nicht vor.",
+          "evidence": [
+            "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt die Polizei, die notwendigen Maßnahmen zu treffen, um eine im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren oder eine Störung zu beseitigen.",
+            "Spezielle abfallrechtliche oder immissionsschutzrechtliche Ermächtigungen sind nach dem Bearbeitungsvermerk nicht zu prüfen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Beseitigungsverfügung vom Mai 2019 wird auf eine polizeirechtliche Ermächtigungsgrundlage und nicht auf Mietvertrag, KrWG oder BImSchG gestützt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Als Ermächtigungsgrundlage wird die Generalklausel des § 3 PolG BW herangezogen.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Es wird klargestellt, dass keine vorrangige spezielle Ermächtigung einschlägig ist.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Ermächtigungsgrundlage der Beseitigungsverfügung vom Mai 2019, Person K als Adressat, polizeirechtliche Generalklausel",
+            "evidence_scope": "Rechtsgrundlage der Beseitigungsverfügung vom Mai 2019, polizeiliche Generalklausel des § 3 PolG BW",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt zu den notwendigen Maßnahmen zur Gefahrenabwehr; spezielle abfall- und immissionsschutzrechtliche Ermächtigungen sind nach dem Bearbeitungsvermerk nicht zu prüfen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort zieht die polizeiliche Generalklausel des § 3 PolG BW zutreffend als Ermächtigungsgrundlage für die Beseitigungsverfügung heran und schließt spezielle abfall- oder immissionsschutzrechtliche Vorschriften entsprechend dem Bearbeitervermerk aus.",
+          "evidence": [
+            "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt die Polizei, die notwendigen Maßnahmen zu treffen, um eine im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren oder eine Störung zu beseitigen. Spezielle abfallrechtliche oder immissionsschutzrechtliche Ermächtigungen sind nach dem Bearbeitungsvermerk nicht zu prüfen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Heranziehung der polizeilichen Generalklausel des baden-württembergischen Polizeirechts (§ 3 PolG BW / §§ 3, 1 Abs. 1 S. 1 PolG BW) als Ermächtigungsgrundlage der Beseitigungsverfügung",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Kein Rückgriff auf den Mietvertrag, eine unpassende Standardmaßnahme oder entgegen dem Bearbeitervermerk auf KrWG/BImSchG",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Ermächtigungsgrundlage der Beseitigungsverfügung vom Mai 2019",
+            "evidence_scope": "Ermächtigungsgrundlage der Beseitigungsverfügung vom Mai 2019",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt zur Gefahrenabwehr; spezielle Vorschriften sind nach dem Bearbeitervermerk nicht zu prüfen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 24769,
+        "output_tokens": 7325,
+        "total_tokens": 32094,
+        "cached_input_tokens": 20713,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort zieht § 3 PolG BW ausdrücklich als Rechtsgrundlage heran. Sie stellt aber nicht fest, dass keine einschlägige polizeirechtliche Standardmaßnahme besteht. Der Hinweis, dass abfallrechtliche und immissionsschutzrechtliche Ermächtigungen nicht zu prüfen sind, ersetzt diese Prüfung nicht.",
+              "evidence": [
+                "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt die Polizei, die notwendigen Maßnahmen zu treffen",
+                "Spezielle abfallrechtliche oder immissionsschutzrechtliche Ermächtigungen sind nach dem Bearbeitungsvermerk nicht zu prüfen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Generalklausel des § 3 PolG BW wird als Ermächtigungsgrundlage der Beseitigungsverfügung herangezogen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Das Fehlen einer einschlägigen polizeirechtlichen Standardmaßnahme wird als Grund für den Rückgriff auf die Generalklausel festgestellt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "K; Ermächtigungsgrundlage der Beseitigungsverfügung vom Mai 2019",
+                "evidence_scope": "K; Rechtsgrundlage der Beseitigungsverfügung im Abschnitt „Erfolgsaussichten der Anfechtungsklage“",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "§ 3 PolG BW ermächtige die Polizei zu notwendigen Maßnahmen zur Abwehr einer Gefahr oder Beseitigung einer Störung; abfallrechtliche und immissionsschutzrechtliche Ermächtigungen seien laut Bearbeitungsvermerk nicht zu prüfen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort benennt zwar die polizeiliche Generalklausel des § 3 PolG BW als Rechtsgrundlage der Beseitigungsverfügung. Sie legt aber nicht dar, dass eine einschlägige polizeirechtliche Standardmaßnahme fehlt. Der Hinweis auf nicht zu prüfende abfall- oder immissionsschutzrechtliche Ermächtigungen ersetzt diese nach dem Kriterium erforderliche Prüfung nicht.",
+              "evidence": [
+                "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt die Polizei, die notwendigen Maßnahmen zu treffen, um eine im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren oder eine Störung zu beseitigen.",
+                "Spezielle abfallrechtliche oder immissionsschutzrechtliche Ermächtigungen sind nach dem Bearbeitungsvermerk nicht zu prüfen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Beseitigungsverfügung wird auf die polizeiliche Generalklausel des PolG BW als Ermächtigungsgrundlage gestützt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Es wird dargelegt, dass keine einschlägige polizeirechtliche Standardmaßnahme vorrangig ist, sodass die Generalklausel herangezogen werden kann.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Ermächtigungsgrundlage der Beseitigungsverfügung vom Mai 2019; Prüfung, ob mangels einschlägiger polizeilicher Standardmaßnahme die Generalklausel des PolG BW greift.",
+                "evidence_scope": "Rechtsgrundlage und Gefahr der Beseitigungsverfügung; Heranziehung der Generalklausel des § 3 PolG BW sowie Hinweis, dass abfall- und immissionsschutzrechtliche Ermächtigungen nach Bearbeitungsvermerk nicht zu prüfen sind.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt die Polizei; spezielle abfallrechtliche oder immissionsschutzrechtliche Ermächtigungen seien nach dem Bearbeitungsvermerk nicht zu prüfen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort stützt die Beseitigungsverfügung zutreffend auf die polizeirechtliche Generalklausel des § 3 PolG BW und schließt spezialgesetzliche Grundlagen im Einklang mit dem Bearbeitervermerk aus. Keine der Ausschlussbedingungen greift.",
+              "evidence": [
+                "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt die Polizei, die notwendigen Maßnahmen zu treffen, um eine im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren oder eine Störung zu beseitigen. Spezielle abfallrechtliche oder immissionsschutzrechtliche Ermächtigungen sind nach dem Bearbeitungsvermerk nicht zu prüfen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Heranziehung der polizeirechtlichen Generalklausel (§ 3 PolG BW) als Ermächtigungsgrundlage der Beseitigungsverfügung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Kein Rückgriff auf Mietvertrag, unpassende Standardmaßnahme, KrWG oder BImSchG",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Ermächtigungsgrundlage der Beseitigungsverfügung vom Mai 2019",
+                "evidence_scope": "Ermächtigungsgrundlage der Beseitigungsverfügung vom Mai 2019",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt die Polizei zur Gefahrenabwehr; spezielle abfall- oder immissionsschutzrechtliche Ermächtigungen sind nach dem Bearbeitervermerk nicht zu prüfen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort zieht § 3 PolG BW ausdrücklich als Rechtsgrundlage heran. Sie erläutert jedoch nicht, dass mangels einschlägiger polizeirechtlicher Standardmaßnahme die Generalklausel greift, und nennt § 1 Abs. 1 S. 1 PolG BW nicht. Der Ausschluss abfall- und immissionsschutzrechtlicher Vorschriften ersetzt diese fehlende Begründung nicht.",
+              "evidence": [
+                "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt die Polizei, die notwendigen Maßnahmen zu treffen",
+                "Spezielle abfallrechtliche oder immissionsschutzrechtliche Ermächtigungen sind nach dem Bearbeitungsvermerk nicht zu prüfen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Beseitigungsverfügung wird auf die polizeirechtliche Generalklausel gestützt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort begründet die Heranziehung der Generalklausel mit dem Fehlen einer einschlägigen polizeirechtlichen Standardmaßnahme.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die angegebene Ermächtigungsgrundlage umfasst §§ 3, 1 Abs. 1 S. 1 PolG BW.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Die Ermächtigungsgrundlage der Beseitigungsverfügung vom Mai 2019 gegen K.",
+                "evidence_scope": "Die Ermächtigungsgrundlage der Beseitigungsverfügung gegen K im Abschnitt zu Rechtsgrundlage und Gefahr.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "§ 3 PolG BW ermächtige zu notwendigen Maßnahmen zur Abwehr einer Gefahr; abfallrechtliche und immissionsschutzrechtliche Ermächtigungen seien nach dem Bearbeitungsvermerk nicht zu prüfen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort benennt für die Beseitigungsverfügung vom Mai 2019 ausdrücklich die polizeiliche Generalklausel des § 3 PolG BW als Ermächtigungsgrundlage. Damit wird die einschlägige Generalklausel herangezogen; die Nennung nur des § 3 statt zusätzlich § 1 Abs. 1 S. 1 PolG BW ist unschädlich, weil § 3 PolG BW die Generalklausel enthält. Eine Stützung auf Mietvertrag, KrWG, BImSchG oder eine unpassende Standardmaßnahme liegt nicht vor.",
+              "evidence": [
+                "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt die Polizei, die notwendigen Maßnahmen zu treffen, um eine im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren oder eine Störung zu beseitigen.",
+                "Spezielle abfallrechtliche oder immissionsschutzrechtliche Ermächtigungen sind nach dem Bearbeitungsvermerk nicht zu prüfen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Beseitigungsverfügung vom Mai 2019 wird auf eine polizeirechtliche Ermächtigungsgrundlage und nicht auf Mietvertrag, KrWG oder BImSchG gestützt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Als Ermächtigungsgrundlage wird die Generalklausel des § 3 PolG BW herangezogen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Es wird klargestellt, dass keine vorrangige spezielle Ermächtigung einschlägig ist.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Ermächtigungsgrundlage der Beseitigungsverfügung vom Mai 2019, Person K als Adressat, polizeirechtliche Generalklausel",
+                "evidence_scope": "Rechtsgrundlage der Beseitigungsverfügung vom Mai 2019, polizeiliche Generalklausel des § 3 PolG BW",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt zu den notwendigen Maßnahmen zur Gefahrenabwehr; spezielle abfall- und immissionsschutzrechtliche Ermächtigungen sind nach dem Bearbeitungsvermerk nicht zu prüfen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort zieht die polizeiliche Generalklausel des § 3 PolG BW zutreffend als Ermächtigungsgrundlage für die Beseitigungsverfügung heran und schließt spezielle abfall- oder immissionsschutzrechtliche Vorschriften entsprechend dem Bearbeitervermerk aus.",
+              "evidence": [
+                "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt die Polizei, die notwendigen Maßnahmen zu treffen, um eine im Einzelfall bestehende Gefahr für die öffentliche Sicherheit oder Ordnung abzuwehren oder eine Störung zu beseitigen. Spezielle abfallrechtliche oder immissionsschutzrechtliche Ermächtigungen sind nach dem Bearbeitungsvermerk nicht zu prüfen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Heranziehung der polizeilichen Generalklausel des baden-württembergischen Polizeirechts (§ 3 PolG BW / §§ 3, 1 Abs. 1 S. 1 PolG BW) als Ermächtigungsgrundlage der Beseitigungsverfügung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Kein Rückgriff auf den Mietvertrag, eine unpassende Standardmaßnahme oder entgegen dem Bearbeitervermerk auf KrWG/BImSchG",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Ermächtigungsgrundlage der Beseitigungsverfügung vom Mai 2019",
+                "evidence_scope": "Ermächtigungsgrundlage der Beseitigungsverfügung vom Mai 2019",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die polizeiliche Generalklausel des § 3 PolG BW ermächtigt zur Gefahrenabwehr; spezielle Vorschriften sind nach dem Bearbeitervermerk nicht zu prüfen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "majority_flip"
+    }
+  ],
+  "style_results": []
+}

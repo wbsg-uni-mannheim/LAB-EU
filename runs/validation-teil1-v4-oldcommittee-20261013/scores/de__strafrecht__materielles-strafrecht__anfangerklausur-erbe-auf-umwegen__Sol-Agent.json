@@ -1,0 +1,411 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/anfangerklausur-erbe-auf-umwegen",
+    "title": "Anfängerklausur: Erbe auf Umwegen"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-sol-high/20260730T221733Z/tasks/de__strafrecht__materielles-strafrecht__anfangerklausur-erbe-auf-umwegen/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/anfangerklausur-erbe-auf-umwegen/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna",
+      "model": "gpt-5.6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "terra",
+      "model": "gpt-5.6-terra",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "gemini-3.6-flash",
+      "model": "google/gemini-3.6-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": null,
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T15:11:32.657610+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 1,
+    "points_available": 1,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "terra": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.6-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Gesamtergebnis": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Gesamtergebnis": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "conclusion": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 18453,
+    "output_tokens": 1834,
+    "total_tokens": 20287,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 10246
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 18453,
+    "output_tokens": 1834,
+    "total_tokens": 20287,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 10246
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-032",
+      "title": "Zurücktreten der Körperverletzung bei A",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Lösung ordnet die durch A's Giftgabe verwirklichte Körperverletzung ausdrücklich dem Mord unter und weist sie nicht als selbständige neben dem Mord stehende Bestrafung aus.",
+      "evidence": [
+        "Die durch das Gift zugleich verwirklichte vorsätzliche Körperverletzung gemäß § 223 Abs. 1 StGB sowie eine Körperverletzung mit Todesfolge gemäß § 227 Abs. 1 StGB treten bei jedem Täter hinter dem jeweils vorsätzlich begangenen Mord im Wege der Gesetzeskonkurrenz zurück."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung ordnet die durch A's Giftgabe verwirklichte Körperverletzung ausdrücklich dem Mord unter und weist sie nicht als selbständige neben dem Mord stehende Bestrafung aus.",
+          "evidence": [
+            "Die durch das Gift zugleich verwirklichte vorsätzliche Körperverletzung gemäß § 223 Abs. 1 StGB sowie eine Körperverletzung mit Todesfolge gemäß § 227 Abs. 1 StGB treten bei jedem Täter hinter dem jeweils vorsätzlich begangenen Mord im Wege der Gesetzeskonkurrenz zurück."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die durch A an S verwirklichte Körperverletzung gemäß § 223 Abs. 1 StGB tritt hinter dem Mord an S zurück und wird nicht selbständig neben dem Mord ausgewiesen.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A; durch die Giftgabe an S verwirklichte Körperverletzung gemäß § 223 Abs. 1 StGB; Konkurrenzverhältnis zum Mord an S",
+            "evidence_scope": "A und B; durch das Gift an S verwirklichte vorsätzliche Körperverletzung gemäß § 223 Abs. 1 StGB; Zurücktreten hinter den jeweiligen Mord im Wege der Gesetzeskonkurrenz",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Körperverletzung tritt wegen Gesetzeskonkurrenz hinter dem vorsätzlich begangenen Mord zurück.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna",
+            "model": "gpt-5.6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung ordnet ausdrücklich an, dass die durch A verwirklichte § 223- Körperverletzung hinter seinem Mord an S zurücktritt. Sie weist § 223 nicht selbständig neben dem Mord aus.",
+          "evidence": [
+            "Die durch das Gift zugleich verwirklichte vorsätzliche Körperverletzung gemäß § 223 Abs. 1 StGB sowie eine Körperverletzung mit Todesfolge gemäß § 227 Abs. 1 StGB treten bei jedem Täter hinter dem jeweils vorsätzlich begangenen Mord im Wege der Gesetzeskonkurrenz zurück."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die von A durch die tödliche Vergiftung des S mitverwirklichte Körperverletzung nach § 223 Abs. 1 StGB wird behandelt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Körperverletzung des A tritt hinter dem Mord an S zurück und wird nicht selbständig daneben ausgewiesen.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A; durch die Giftgabe an S mitverwirklichte Körperverletzung gemäß § 223 Abs. 1 StGB; Konkurrenzverhältnis zum Mord an S.",
+            "evidence_scope": "A und B jeweils als Täter; durch das Gift verwirklichte Körperverletzung gemäß § 223 Abs. 1 StGB; Zurücktreten hinter den jeweils vorsätzlich begangenen Mord im Rahmen der Konkurrenzen.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Körperverletzung tritt im Wege der Gesetzeskonkurrenz hinter dem vorsätzlich begangenen Mord zurück.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "terra",
+            "model": "gpt-5.6-terra",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung prüft und bejaht ausdrücklich das Zurücktreten der von A durch die Vergiftung des S mitverwirklichten Körperverletzung (§ 223 Abs. 1 StGB) hinter dem Mord gemäß § 211 StGB im Wege der Gesetzeskonkurrenz und weist § 223 StGB im Gesamtergebnis nicht als selbständige Strafbarkeit aus.",
+          "evidence": [
+            "Die durch das Gift zugleich verwirklichte vorsätzliche Körperverletzung gemäß § 223 Abs. 1 StGB sowie eine Körperverletzung mit Todesfolge gemäß § 227 Abs. 1 StGB treten bei jedem Täter hinter dem jeweils vorsätzlich begangenen Mord im Wege der Gesetzeskonkurrenz zurück."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Körperverletzung gem. § 223 Abs. 1 StGB durch die Giftgabe an S tritt hinter den Mord an S zurück und wird nicht selbständig ausgeurteilt",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A; Tötung des S; Konkurrenzen zwischen Mord (§ 211) und Körperverletzung (§ 223)",
+            "evidence_scope": "A; Tötung des S; Konkurrenzen zwischen Mord (§ 211) und Körperverletzung (§ 223)",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die vorsätzliche Körperverletzung nach § 223 Abs. 1 StGB tritt im Wege der Gesetzeskonkurrenz hinter dem vorsätzlich begangenen Mord zurück.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.6-flash",
+            "model": "google/gemini-3.6-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": null,
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 18453,
+        "output_tokens": 1834,
+        "total_tokens": 20287,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 10246
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung ordnet die durch A's Giftgabe verwirklichte Körperverletzung ausdrücklich dem Mord unter und weist sie nicht als selbständige neben dem Mord stehende Bestrafung aus.",
+              "evidence": [
+                "Die durch das Gift zugleich verwirklichte vorsätzliche Körperverletzung gemäß § 223 Abs. 1 StGB sowie eine Körperverletzung mit Todesfolge gemäß § 227 Abs. 1 StGB treten bei jedem Täter hinter dem jeweils vorsätzlich begangenen Mord im Wege der Gesetzeskonkurrenz zurück."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die durch A an S verwirklichte Körperverletzung gemäß § 223 Abs. 1 StGB tritt hinter dem Mord an S zurück und wird nicht selbständig neben dem Mord ausgewiesen.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; durch die Giftgabe an S verwirklichte Körperverletzung gemäß § 223 Abs. 1 StGB; Konkurrenzverhältnis zum Mord an S",
+                "evidence_scope": "A und B; durch das Gift an S verwirklichte vorsätzliche Körperverletzung gemäß § 223 Abs. 1 StGB; Zurücktreten hinter den jeweiligen Mord im Wege der Gesetzeskonkurrenz",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Körperverletzung tritt wegen Gesetzeskonkurrenz hinter dem vorsätzlich begangenen Mord zurück.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna",
+                "model": "gpt-5.6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung ordnet ausdrücklich an, dass die durch A verwirklichte § 223- Körperverletzung hinter seinem Mord an S zurücktritt. Sie weist § 223 nicht selbständig neben dem Mord aus.",
+              "evidence": [
+                "Die durch das Gift zugleich verwirklichte vorsätzliche Körperverletzung gemäß § 223 Abs. 1 StGB sowie eine Körperverletzung mit Todesfolge gemäß § 227 Abs. 1 StGB treten bei jedem Täter hinter dem jeweils vorsätzlich begangenen Mord im Wege der Gesetzeskonkurrenz zurück."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die von A durch die tödliche Vergiftung des S mitverwirklichte Körperverletzung nach § 223 Abs. 1 StGB wird behandelt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Körperverletzung des A tritt hinter dem Mord an S zurück und wird nicht selbständig daneben ausgewiesen.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; durch die Giftgabe an S mitverwirklichte Körperverletzung gemäß § 223 Abs. 1 StGB; Konkurrenzverhältnis zum Mord an S.",
+                "evidence_scope": "A und B jeweils als Täter; durch das Gift verwirklichte Körperverletzung gemäß § 223 Abs. 1 StGB; Zurücktreten hinter den jeweils vorsätzlich begangenen Mord im Rahmen der Konkurrenzen.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Körperverletzung tritt im Wege der Gesetzeskonkurrenz hinter dem vorsätzlich begangenen Mord zurück.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "terra",
+                "model": "gpt-5.6-terra",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung prüft und bejaht ausdrücklich das Zurücktreten der von A durch die Vergiftung des S mitverwirklichten Körperverletzung (§ 223 Abs. 1 StGB) hinter dem Mord gemäß § 211 StGB im Wege der Gesetzeskonkurrenz und weist § 223 StGB im Gesamtergebnis nicht als selbständige Strafbarkeit aus.",
+              "evidence": [
+                "Die durch das Gift zugleich verwirklichte vorsätzliche Körperverletzung gemäß § 223 Abs. 1 StGB sowie eine Körperverletzung mit Todesfolge gemäß § 227 Abs. 1 StGB treten bei jedem Täter hinter dem jeweils vorsätzlich begangenen Mord im Wege der Gesetzeskonkurrenz zurück."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Körperverletzung gem. § 223 Abs. 1 StGB durch die Giftgabe an S tritt hinter den Mord an S zurück und wird nicht selbständig ausgeurteilt",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; Tötung des S; Konkurrenzen zwischen Mord (§ 211) und Körperverletzung (§ 223)",
+                "evidence_scope": "A; Tötung des S; Konkurrenzen zwischen Mord (§ 211) und Körperverletzung (§ 223)",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die vorsätzliche Körperverletzung nach § 223 Abs. 1 StGB tritt im Wege der Gesetzeskonkurrenz hinter dem vorsätzlich begangenen Mord zurück.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.6-flash",
+                "model": "google/gemini-3.6-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": null,
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": []
+}

@@ -1,0 +1,60 @@
+You are evaluating a legal AI agent's answer against one Boolean rubric criterion.
+
+The rubric criterion may be written in German, English, French, or another case language. Apply the criterion in that language and do not translate legal terms unless needed for understanding.
+
+## How to decide
+- The criterion text is the only standard. Do not add requirements it does not state, and do not excuse a missing requirement because the rest of the answer is strong.
+- Read the answer as an experienced legal examiner grading an exam. Decide by legal meaning, not by whether the criterion's keywords or doctrinal labels appear. A required legal step must still be performed in substance; only its label may be missing.
+- Apply the stated PASS and FAIL conditions component by component. A PASS component is met when the answer states it expressly or when it follows necessarily and unambiguously from what the answer itself says on the same question. Example: an answer that finds an offer was accepted has thereby found that an offer was made. A component is implied only when the answer's own statements on this question contain its substance (the decisive fact, legal step, or conclusion) in other words. It is not implied when the answer never addresses a step the criterion requires, such as a prerequisite, the exclusion of an alternative, or a restrictive interpretation, even if the answer's result is consistent with that step. It is also not met when the answer is compatible with both outcomes.
+- If the answer establishes more than the criterion requires (a stricter standard, or a finding that a fortiori satisfies the required one), the requirement is met. A FAIL condition describing a legal position applies only when the answer adopts that position as its rule, not when it merely reports facts that would also satisfy it.
+- Equivalent legal wording, citation style, and document structure are acceptable unless the criterion itself requires a specific form or location. Decide by legal meaning, not by keyword overlap.
+- Search the entire answer, but use evidence only from a passage that addresses the same claim, administrative act, subject matter, participant/person, or legal issue named by the criterion. The passage may occur in a different section if the answer's own valid structure still makes that reference unambiguous. Never transfer reasoning about one person or legal object to another. This applies in both directions: decide on the passage that addresses the criterion's question; reasoning from another scope neither proves nor disproves the criterion, unless the answer expressly applies it to the same question or contradicts its own conclusion on that question.
+- Treat the examination station as part of the legal issue. A fact or rule used for one offence, claim, person, statutory provision, or procedural stage does not establish that the answer performed a different required examination. Cross-references pass only when the answer itself makes the reference and its scope unambiguous.
+- A named fact-pattern variant, hypothetical, or subpart (for example, the base case versus a modification) is part of scope. If the answer expressly assigns its reasoning to a different named variant than the criterion, set `same_scope` to false and return `fail`, unless the answer explicitly and unambiguously cross-applies that reasoning to the required variant. Do not fail solely because the answer omits the variant label when its surrounding context still unambiguously addresses the required variant.
+- A bare mention, heading, issue statement, or result does not prove that a required rule, examination, application, or argument was performed. If the criterion requires such legal work, the evidence must show that work in substance. Routine points may be brief, but they must still contain the proposition the criterion actually asks for.
+- When the criterion requires application, the quoted evidence must itself connect a concrete case fact to the governing rule. A nearby rule statement plus a nearby result does not pass unless the answer makes that inferential connection.
+- Evaluate the reason the answer actually gives. If it expressly derives the requested conclusion from a materially wrong provision, doctrine, legal station, person, or object, return "fail"; do not replace that stated reason with a legally correct inference that could have been drawn from the same facts.
+- When the criterion requires a reason, the answer must give a reason that carries the conclusion and is compatible with the criterion's reason, in any wording. It may be brief or follow necessarily from the facts the answer relies on. Restating the result, or naming the statutory term for it, is not a reason. For a result-determinative issue, a conclusion alone is insufficient.
+- When source documents are supplied, reject evidence that depends on a material fact absent from or contradicted by those documents. Do not reward an invented fact merely because it would make the legal argument plausible.
+- If the criterion names acceptable alternative positions, an answer taking one of them passes only if it also contains what the criterion requires for that alternative.
+- First collect evidence: quote the shortest verbatim passages of the answer that bear on the criterion. Then reason from that evidence, then decide.
+- Before returning "pass", perform the structured checks below. Split the PASS side into its mandatory components; identify the person/object and legal issue/station of both criterion and evidence; and assess the legal compatibility of the reason the answer actually states. Do not mark a component satisfied merely because the same sentence contains useful facts.
+- Return "pass" when every mandatory component is met expressly or by necessary implication and no FAIL condition applies. Return "fail" when the required point is missing, materially wrong, contradicted on the same question, or only possibly intended. Do not fail merely because the answer uses other words, another structure, or a shorter treatment than the model solution.
+- If the required deliverable content is missing or empty, return "fail".
+
+## Task
+Title: {task_title}
+
+Instructions:
+{task_instructions}
+
+## Agent Answer
+{agent_output}
+
+## Source documents (context only - the answer is not required to repeat them)
+{criterion_sources}
+
+## Criterion
+{criterion_title}
+
+{match_criteria}
+
+Respond with JSON only, with the fields in exactly this order:
+
+{{
+  "evidence": ["shortest verbatim quotes from the passage on the criterion's question"],
+  "component_checks": [
+    {{"requirement": "one mandatory PASS component", "satisfied": true, "basis": "express" | "implied" | "absent"}}
+  ],
+  "scope_check": {{
+    "criterion_scope": "person/object and legal issue/station required",
+    "evidence_scope": "person/object and legal issue/station actually addressed",
+    "same_scope": true
+  }},
+  "stated_reason_check": {{
+    "answer_reason": "the legal reason actually stated, or 'none'",
+    "legally_compatible": true
+  }},
+  "reasoning": "Brief explanation in the language of the criterion",
+  "verdict": "pass" | "fail"
+}}

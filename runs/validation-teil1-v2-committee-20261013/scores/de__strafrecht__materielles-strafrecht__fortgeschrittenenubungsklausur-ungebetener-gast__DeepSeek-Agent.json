@@ -1,0 +1,541 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-ungebetener-gast",
+    "title": "Fortgeschrittenenübungsklausur: Ungebetener Gast"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenubungsklausur-ungebetener-gast/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-ungebetener-gast/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:35:50.452042+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 3,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Strafbarkeit von A und B": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Strafbarkeit von A und B › §§ 242 Abs. 1, 244 Abs. 1 Nr. 1 lit. b, Nr. 3, Abs. 4, 25 Abs. 2 StGB": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "argumentation": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 13987,
+    "output_tokens": 8979,
+    "total_tokens": 22966,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 6567
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 13987,
+    "output_tokens": 8979,
+    "total_tokens": 22966,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 6567
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-028",
+      "title": "Wohnungseigenschaft nach § 244 Abs. 1 Nr. 3 StGB",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort bejaht für B die Wohnungseigenschaft nur allgemein mit dem Hinweis auf Wohnzwecke. Sie bezieht den Wohnungsbegriff nicht auf den Schutz privater Lebensführung, würdigt weder den Tod von Q und R noch Ts Aufenthalt und Übernachtung und prüft für A und B auch keinen Versuch.",
+      "evidence": [
+        "Ein Haus, das zu Wohnzwecken genutzt wird, ist eine Wohnung im Sinne der Vorschrift.",
+        "B schlug die Glasscheibe der verschlossenen Terrassentür ein, um sich Zugang zum Haus zu verschaffen."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort bejaht für B die Wohnungseigenschaft nur allgemein mit dem Hinweis auf Wohnzwecke. Sie bezieht den Wohnungsbegriff nicht auf den Schutz privater Lebensführung, würdigt weder den Tod von Q und R noch Ts Aufenthalt und Übernachtung und prüft für A und B auch keinen Versuch.",
+          "evidence": [
+            "Ein Haus, das zu Wohnzwecken genutzt wird, ist eine Wohnung im Sinne der Vorschrift.",
+            "B schlug die Glasscheibe der verschlossenen Terrassentür ein, um sich Zugang zum Haus zu verschaffen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Der Wohnungsbegriff wird auf den Schutz privater Lebensführung bezogen.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Antwort begründet die Wohnungseigenschaft trotz des Todes von Q und R mit Ts Aufenthalt und Übernachtung und bejaht Vollendung für A und B.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Alternativ verneint die Antwort die Wohnungseigenschaft wegen des Todes von Q und R und Ts ausnahmsweiser Nachlassnutzung und bejaht aufgrund der Tätervorstellung eines urlaubsbedingt leeren Hauses den Versuch für A und B.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Wohnungseigenschaft nach § 244 Abs. 1 Nr. 3 StGB für A und B",
+            "evidence_scope": "Wohnungseigenschaft nach § 244 Abs. 1 Nr. 3 StGB im Wohnungseinbruchdiebstahl des B",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Ein Haus, das zu Wohnzwecken genutzt wird, sei eine Wohnung; die konkrete Anwendung auf die Umstände von Tod und Aufenthalt der T fehlt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort nennt nur ein Ergebnis für B und stützt es auf eine pauschale Wohnungsdefinition. Sie würdigt weder den Tod der Q und R noch Ts Aufenthalt/Übernachtung und begründet keinen der beiden zugelassenen Wege. Eine Prüfung der Wohnungseigenschaft für A fehlt ebenfalls. Damit ist die Criterion nicht erfüllt.",
+          "evidence": [
+            "Ein Haus, das zu Wohnzwecken genutzt wird, ist eine Wohnung im Sinne der Vorschrift.",
+            "B hat sich wegen Wohnungseinbruchdiebstahls gem. §§ 242 Abs. 1, 244 Abs. 1 Nr. 3, 25 Abs. 2 StGB strafbar gemacht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Wohnungsbegriff auf den Schutz privater Lebensführung beziehen",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Tod der Q und R oder Ts Aufenthalt/Übernachtung würdigen",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Zugelassener Weg 1: Wegen Ts Aufenthalt/Übernachtung das Haus als Wohnung behandeln und für A und B Vollendung bejahen",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Zugelassener Weg 2: Wohnungseigenschaft wegen Tod und nur ausnahmsweiser Nachlassnutzung verneinen und für A und B Versuch bejahen",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Wohnungseigenschaft nach § 244 Abs. 1 Nr. 3 StGB für A und B unter Würdigung des Todes der Q und R sowie von Ts Aufenthalt/Übernachtung",
+            "evidence_scope": "nur Bs § 244 Abs. 1 Nr. 3 StGB; generische Wohnungsdefinition; keine Würdigung von Tod oder Aufenthalt; keine Prüfung für A",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Ein Haus, das zu Wohnzwecken genutzt wird, ist eine Wohnung; B habe sich daher nach §§ 242, 244 StGB strafbar gemacht.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 13987,
+        "output_tokens": 8979,
+        "total_tokens": 22966,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 6567
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht für B die Wohnungseigenschaft nur allgemein mit dem Hinweis auf Wohnzwecke. Sie bezieht den Wohnungsbegriff nicht auf den Schutz privater Lebensführung, würdigt weder den Tod von Q und R noch Ts Aufenthalt und Übernachtung und prüft für A und B auch keinen Versuch.",
+              "evidence": [
+                "Ein Haus, das zu Wohnzwecken genutzt wird, ist eine Wohnung im Sinne der Vorschrift.",
+                "B schlug die Glasscheibe der verschlossenen Terrassentür ein, um sich Zugang zum Haus zu verschaffen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Der Wohnungsbegriff wird auf den Schutz privater Lebensführung bezogen.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Antwort begründet die Wohnungseigenschaft trotz des Todes von Q und R mit Ts Aufenthalt und Übernachtung und bejaht Vollendung für A und B.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Alternativ verneint die Antwort die Wohnungseigenschaft wegen des Todes von Q und R und Ts ausnahmsweiser Nachlassnutzung und bejaht aufgrund der Tätervorstellung eines urlaubsbedingt leeren Hauses den Versuch für A und B.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Wohnungseigenschaft nach § 244 Abs. 1 Nr. 3 StGB für A und B",
+                "evidence_scope": "Wohnungseigenschaft nach § 244 Abs. 1 Nr. 3 StGB im Wohnungseinbruchdiebstahl des B",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Ein Haus, das zu Wohnzwecken genutzt wird, sei eine Wohnung; die konkrete Anwendung auf die Umstände von Tod und Aufenthalt der T fehlt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort nennt nur ein Ergebnis für B und stützt es auf eine pauschale Wohnungsdefinition. Sie würdigt weder den Tod der Q und R noch Ts Aufenthalt/Übernachtung und begründet keinen der beiden zugelassenen Wege. Eine Prüfung der Wohnungseigenschaft für A fehlt ebenfalls. Damit ist die Criterion nicht erfüllt.",
+              "evidence": [
+                "Ein Haus, das zu Wohnzwecken genutzt wird, ist eine Wohnung im Sinne der Vorschrift.",
+                "B hat sich wegen Wohnungseinbruchdiebstahls gem. §§ 242 Abs. 1, 244 Abs. 1 Nr. 3, 25 Abs. 2 StGB strafbar gemacht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Wohnungsbegriff auf den Schutz privater Lebensführung beziehen",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Tod der Q und R oder Ts Aufenthalt/Übernachtung würdigen",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Zugelassener Weg 1: Wegen Ts Aufenthalt/Übernachtung das Haus als Wohnung behandeln und für A und B Vollendung bejahen",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Zugelassener Weg 2: Wohnungseigenschaft wegen Tod und nur ausnahmsweiser Nachlassnutzung verneinen und für A und B Versuch bejahen",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Wohnungseigenschaft nach § 244 Abs. 1 Nr. 3 StGB für A und B unter Würdigung des Todes der Q und R sowie von Ts Aufenthalt/Übernachtung",
+                "evidence_scope": "nur Bs § 244 Abs. 1 Nr. 3 StGB; generische Wohnungsdefinition; keine Würdigung von Tod oder Aufenthalt; keine Prüfung für A",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Ein Haus, das zu Wohnzwecken genutzt wird, ist eine Wohnung; B habe sich daher nach §§ 242, 244 StGB strafbar gemacht.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-028",
+      "title": "Wohnungseigenschaft nach § 244 Abs. 1 Nr. 3 StGB",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort nennt zwar einen allgemeinen Wohnungsbegriff und prüft den Wohnungseinbruchdiebstahl des B. Sie verbindet den Begriff aber nicht mit den konkreten Umständen von Tod und Aufenthalt der T und schließt die Prüfung weder für A noch für B entlang einer der einschlägigen Alternativen ab.",
+      "evidence": [
+        "Ein Haus, das zu Wohnzwecken genutzt wird, ist eine Wohnung im Sinne der Vorschrift.",
+        "B schlug die Glasscheibe der verschlossenen Terrassentür ein, um sich Zugang zum Haus zu verschaffen."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort nennt zwar einen allgemeinen Wohnungsbegriff und prüft den Wohnungseinbruchdiebstahl des B. Sie verbindet den Begriff aber nicht mit den konkreten Umständen von Tod und Aufenthalt der T und schließt die Prüfung weder für A noch für B entlang einer der einschlägigen Alternativen ab.",
+          "evidence": [
+            "Ein Haus, das zu Wohnzwecken genutzt wird, ist eine Wohnung im Sinne der Vorschrift.",
+            "B schlug die Glasscheibe der verschlossenen Terrassentür ein, um sich Zugang zum Haus zu verschaffen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft die Wohnungseigenschaft nur mit einer pauschalen Definition ('zu Wohnzwecken genutzt') und setzt sie für B voraus. Sie verknüpft den Wohnungsbegriff nicht mit dem Tod der Q und R, mit Ts Aufenthalt/Übernachtung oder mit dem Schutz privater Lebensführung. Damit fehlt die criteriumspezifische Prämisse und eine abgeschlossene Regel-Fakt-Schluss-Verbindung; die Prüfung für A fehlt ohnehin.",
+          "evidence": [
+            "Ein Haus, das zu Wohnzwecken genutzt wird, ist eine Wohnung im Sinne der Vorschrift.",
+            "B schlug die Glasscheibe der verschlossenen Terrassentür ein, um sich Zugang zum Haus zu verschaffen.",
+            "B hat sich wegen Wohnungseinbruchdiebstahls gem. §§ 242 Abs. 1, 244 Abs. 1 Nr. 3, 25 Abs. 2 StGB strafbar gemacht."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort nennt zwar einen allgemeinen Wohnungsbegriff und prüft den Wohnungseinbruchdiebstahl des B. Sie verbindet den Begriff aber nicht mit den konkreten Umständen von Tod und Aufenthalt der T und schließt die Prüfung weder für A noch für B entlang einer der einschlägigen Alternativen ab.",
+              "evidence": [
+                "Ein Haus, das zu Wohnzwecken genutzt wird, ist eine Wohnung im Sinne der Vorschrift.",
+                "B schlug die Glasscheibe der verschlossenen Terrassentür ein, um sich Zugang zum Haus zu verschaffen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft die Wohnungseigenschaft nur mit einer pauschalen Definition ('zu Wohnzwecken genutzt') und setzt sie für B voraus. Sie verknüpft den Wohnungsbegriff nicht mit dem Tod der Q und R, mit Ts Aufenthalt/Übernachtung oder mit dem Schutz privater Lebensführung. Damit fehlt die criteriumspezifische Prämisse und eine abgeschlossene Regel-Fakt-Schluss-Verbindung; die Prüfung für A fehlt ohnehin.",
+              "evidence": [
+                "Ein Haus, das zu Wohnzwecken genutzt wird, ist eine Wohnung im Sinne der Vorschrift.",
+                "B schlug die Glasscheibe der verschlossenen Terrassentür ein, um sich Zugang zum Haus zu verschaffen.",
+                "B hat sich wegen Wohnungseinbruchdiebstahls gem. §§ 242 Abs. 1, 244 Abs. 1 Nr. 3, 25 Abs. 2 StGB strafbar gemacht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

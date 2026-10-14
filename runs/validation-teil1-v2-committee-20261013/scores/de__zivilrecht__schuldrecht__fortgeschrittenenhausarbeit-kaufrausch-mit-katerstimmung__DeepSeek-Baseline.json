@@ -1,0 +1,533 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung",
+    "title": "Fortgeschrittenenhausarbeit: „Kaufrausch mit Katerstimmung“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:34:53.552775+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 1,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Stehen M die geforderten 14.000 € zu?": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Stehen M die geforderten 14.000 € zu? › §§ 812 Abs. 1 S. 2 Alt. 2, 818 Abs. 1 und Abs. 4, 820, 285 BGB": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 9388,
+    "output_tokens": 8306,
+    "total_tokens": 17694,
+    "cached_input_tokens": 5651,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 9388,
+    "output_tokens": 8306,
+    "total_tokens": 17694,
+    "cached_input_tokens": 5651,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-012",
+      "title": "Besitzverschaffung als Leistung",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort stellt den zweckgerichteten Besitzübergang im Wesentlichen fest, ordnet ihn aber nicht als Leistung ein. Dass S nur Besitz und kein Eigentum erlangte, ersetzt diese Einordnung nicht.",
+      "evidence": [
+        "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags",
+        "S erlangte daher nur Besitz, nicht Eigentum."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort stellt den zweckgerichteten Besitzübergang im Wesentlichen fest, ordnet ihn aber nicht als Leistung ein. Dass S nur Besitz und kein Eigentum erlangte, ersetzt diese Einordnung nicht.",
+          "evidence": [
+            "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags",
+            "S erlangte daher nur Besitz, nicht Eigentum."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Übergabe der Hebebühne durch M an S war freiwillig.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "M verschaffte S bewusst und zweckgerichtet Besitz.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Die Antwort ordnet die Besitzverschaffung als Leistung ein.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "M und S; freiwillige Übergabe der Hebebühne und deren Einordnung als Besitzverschaffung in Form einer Leistung",
+            "evidence_scope": "M und S; Übergabe und Erwerb von Besitz im Rahmen der Prüfung, ob S Eigentum erlangte",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Übergabe sollte den noch nicht zustande gekommenen Kaufvertrag fördern; Eigentum ging mangels Einigung nicht über, S erlangte aber Besitz.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erwähnt die freiwillige, zweckgerichtete Besitzverschaffung an S, zieht daraus aber nur die Folgerung, dass S nicht Eigentümer wurde. Eine Einordnung als Leistung im bereicherungsrechtlichen Sinne fehlt; die bloße Besitzverschaffung wird nicht als Leistung qualifiziert.",
+          "evidence": [
+            "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags, was S auch erkannte.",
+            "S erlangte daher nur Besitz, nicht Eigentum.",
+            "M blieb Eigentümer und damit Berechtigter. S war folglich Nichtberechtigter."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Freiwillige Übergabe der Hebebühne durch M an S",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Bewusste und zweckgerichtete Verschaffung des Besitzes an S",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Einordnung dieses Vorgangs als Leistung",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Frage 1, Verhältnis M-S, Übergabe der Hebebühne, Einordnung der Besitzverschaffung als Leistung",
+            "evidence_scope": "Frage 1, Verhältnis M-S, Übergabe der Hebebühne, Prüfung des S als Nichtberechtigter nach § 816 BGB",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "S habe nur Besitz erlangt, weil keine Einigung über den Eigentumsübergang vorlag und die Übergabe lediglich der Förderung des nicht zustande gekommenen Kaufvertrags diente.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 9388,
+        "output_tokens": 8306,
+        "total_tokens": 17694,
+        "cached_input_tokens": 5651,
+        "cache_write_tokens": 0
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt den zweckgerichteten Besitzübergang im Wesentlichen fest, ordnet ihn aber nicht als Leistung ein. Dass S nur Besitz und kein Eigentum erlangte, ersetzt diese Einordnung nicht.",
+              "evidence": [
+                "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags",
+                "S erlangte daher nur Besitz, nicht Eigentum."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Übergabe der Hebebühne durch M an S war freiwillig.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "M verschaffte S bewusst und zweckgerichtet Besitz.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Die Antwort ordnet die Besitzverschaffung als Leistung ein.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "M und S; freiwillige Übergabe der Hebebühne und deren Einordnung als Besitzverschaffung in Form einer Leistung",
+                "evidence_scope": "M und S; Übergabe und Erwerb von Besitz im Rahmen der Prüfung, ob S Eigentum erlangte",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Übergabe sollte den noch nicht zustande gekommenen Kaufvertrag fördern; Eigentum ging mangels Einigung nicht über, S erlangte aber Besitz.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erwähnt die freiwillige, zweckgerichtete Besitzverschaffung an S, zieht daraus aber nur die Folgerung, dass S nicht Eigentümer wurde. Eine Einordnung als Leistung im bereicherungsrechtlichen Sinne fehlt; die bloße Besitzverschaffung wird nicht als Leistung qualifiziert.",
+              "evidence": [
+                "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags, was S auch erkannte.",
+                "S erlangte daher nur Besitz, nicht Eigentum.",
+                "M blieb Eigentümer und damit Berechtigter. S war folglich Nichtberechtigter."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Freiwillige Übergabe der Hebebühne durch M an S",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Bewusste und zweckgerichtete Verschaffung des Besitzes an S",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Einordnung dieses Vorgangs als Leistung",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Frage 1, Verhältnis M-S, Übergabe der Hebebühne, Einordnung der Besitzverschaffung als Leistung",
+                "evidence_scope": "Frage 1, Verhältnis M-S, Übergabe der Hebebühne, Prüfung des S als Nichtberechtigter nach § 816 BGB",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "S habe nur Besitz erlangt, weil keine Einigung über den Eigentumsübergang vorlag und die Übergabe lediglich der Förderung des nicht zustande gekommenen Kaufvertrags diente.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-012",
+      "title": "Besitzverschaffung als Leistung",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort verbindet die Übergabe mit ihrem Zweck und stellt den Besitzerwerb fest, prüft aber nicht die kriterienspezifische Frage, ob darin eine Leistung in Form der Besitzverschaffung liegt. Die Prüfung betrifft stattdessen den Eigentumsübergang.",
+      "evidence": [
+        "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags",
+        "S erlangte daher nur Besitz, nicht Eigentum."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort verbindet die Übergabe mit ihrem Zweck und stellt den Besitzerwerb fest, prüft aber nicht die kriterienspezifische Frage, ob darin eine Leistung in Form der Besitzverschaffung liegt. Die Prüfung betrifft stattdessen den Eigentumsübergang.",
+          "evidence": [
+            "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags",
+            "S erlangte daher nur Besitz, nicht Eigentum."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort entwickelt keinen spezifischen rechtlichen Maßstab für die Einordnung der Übergabe als 'Leistung' (bewusste, zweckgerichtete Besitzverschaffung). Sie stellt nur fest, dass S Besitz, nicht Eigentum erlangte, und verbindet dies nicht in einem Prüfungsschritt mit dem Leistungsbegriff.",
+          "evidence": [
+            "Eine Übereignung an S hat nicht stattgefunden, weil es an einer Einigung über den Eigentumsübergang fehlte.",
+            "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags, was S auch erkannte.",
+            "S erlangte daher nur Besitz, nicht Eigentum."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort verbindet die Übergabe mit ihrem Zweck und stellt den Besitzerwerb fest, prüft aber nicht die kriterienspezifische Frage, ob darin eine Leistung in Form der Besitzverschaffung liegt. Die Prüfung betrifft stattdessen den Eigentumsübergang.",
+              "evidence": [
+                "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags",
+                "S erlangte daher nur Besitz, nicht Eigentum."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort entwickelt keinen spezifischen rechtlichen Maßstab für die Einordnung der Übergabe als 'Leistung' (bewusste, zweckgerichtete Besitzverschaffung). Sie stellt nur fest, dass S Besitz, nicht Eigentum erlangte, und verbindet dies nicht in einem Prüfungsschritt mit dem Leistungsbegriff.",
+              "evidence": [
+                "Eine Übereignung an S hat nicht stattgefunden, weil es an einer Einigung über den Eigentumsübergang fehlte.",
+                "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags, was S auch erkannte.",
+                "S erlangte daher nur Besitz, nicht Eigentum."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

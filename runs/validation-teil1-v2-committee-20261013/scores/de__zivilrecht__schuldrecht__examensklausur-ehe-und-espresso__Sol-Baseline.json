@@ -1,0 +1,507 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/examensklausur-ehe-und-espresso",
+    "title": "Examensklausur: Ehe und Espresso"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__zivilrecht__schuldrecht__examensklausur-ehe-und-espresso/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/examensklausur-ehe-und-espresso/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:32:25.222646+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 2,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Aufgabe 1": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Aufgabe 1 › Anspruch der F gegen N aus § 823 Abs. 1 BGB": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 18380,
+    "output_tokens": 4383,
+    "total_tokens": 22763,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 8493
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 18380,
+    "output_tokens": 4383,
+    "total_tokens": 22763,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 8493
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-020",
+      "title": "Berechtigter Mitbesitz als sonstiges Recht",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort stützt die Eigentumsverletzung auf F's Miteigentumsanteil, ohne sie als berechtigte unmittelbare Fremdmitbesitzerin für M einzuordnen oder den Mitbesitz als sonstiges Recht zu behandeln. Die geforderten Komponenten sind daher nicht erfüllt.",
+      "evidence": [
+        "Damit verletzte die Zerstörung das Miteigentum der F."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort stützt die Eigentumsverletzung auf F's Miteigentumsanteil, ohne sie als berechtigte unmittelbare Fremdmitbesitzerin für M einzuordnen oder den Mitbesitz als sonstiges Recht zu behandeln. Die geforderten Komponenten sind daher nicht erfüllt.",
+          "evidence": [
+            "Damit verletzte die Zerstörung das Miteigentum der F."
+          ],
+          "component_checks": [
+            {
+              "requirement": "F wird im Zeitpunkt der Zerstörung als berechtigte unmittelbare Fremdmitbesitzerin für den Eigentümer M eingeordnet.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Der berechtigte Mitbesitz der F wird als sonstiges Recht im Sinne von § 823 Abs. 1 BGB behandelt.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "F, Espresso-Maschine und § 823 Abs. 1 BGB: berechtigter unmittelbarer Fremdmitbesitz als sonstiges Recht im Zeitpunkt der Zerstörung",
+            "evidence_scope": "F, Espresso-Maschine und § 823 Abs. 1 BGB: Verletzung von F's Miteigentum durch die Zerstörung",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Zerstörung verletze F's Miteigentum, weil sie dadurch ihren Miteigentumsanteil verlor.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt F nicht als berechtigte unmittelbare Fremdmitbesitzerin für den Eigentümer M, sondern als (Mit-)Eigentümerin der Maschine. Damit setzt sie einen anderen Schutzgegenstand des § 823 Abs. 1 BGB voraus und verneint gerade die vom Kriterium verlangte Einordnung des berechtigten Mitbesitzes als sonstiges Recht. Der Inhalt des Kriteriums ist daher nicht erfüllt.",
+          "evidence": [
+            "F und M wurden Miteigentümer der Maschine gemäß §§ 929 Satz 1, 1008 BGB, im Zweifel zu gleichen Anteilen.",
+            "Damit verletzte die Zerstörung der Maschine das Miteigentum der F.",
+            "F kann grundsätzlich Ersatz des auf ihren Miteigentumsanteil entfallenden Substanzwerts verlangen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort ordnet F im Zeitpunkt der Zerstörung als berechtigte unmittelbare Fremdmitbesitzerin für den Eigentümer M ein.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Antwort behandelt diesen berechtigten Mitbesitz als sonstiges Recht im Sinne von § 823 Abs. 1 BGB.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "F als berechtigte unmittelbare Fremdmitbesitzerin für M und ihr berechtigter Mitbesitz als sonstiges Recht im Rahmen des § 823 Abs. 1 BGB bei Zerstörung der Espresso-Maschine durch N",
+            "evidence_scope": "F als Miteigentümerin der Espresso-Maschine und Verletzung ihres Miteigentums im Rahmen des § 823 Abs. 1 BGB",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "F sei Miteigentümerin geworden; die Zerstörung der Maschine verletzte ihr Miteigentum.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 18380,
+        "output_tokens": 4383,
+        "total_tokens": 22763,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 8493
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stützt die Eigentumsverletzung auf F's Miteigentumsanteil, ohne sie als berechtigte unmittelbare Fremdmitbesitzerin für M einzuordnen oder den Mitbesitz als sonstiges Recht zu behandeln. Die geforderten Komponenten sind daher nicht erfüllt.",
+              "evidence": [
+                "Damit verletzte die Zerstörung das Miteigentum der F."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "F wird im Zeitpunkt der Zerstörung als berechtigte unmittelbare Fremdmitbesitzerin für den Eigentümer M eingeordnet.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Der berechtigte Mitbesitz der F wird als sonstiges Recht im Sinne von § 823 Abs. 1 BGB behandelt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "F, Espresso-Maschine und § 823 Abs. 1 BGB: berechtigter unmittelbarer Fremdmitbesitz als sonstiges Recht im Zeitpunkt der Zerstörung",
+                "evidence_scope": "F, Espresso-Maschine und § 823 Abs. 1 BGB: Verletzung von F's Miteigentum durch die Zerstörung",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Zerstörung verletze F's Miteigentum, weil sie dadurch ihren Miteigentumsanteil verlor.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort behandelt F nicht als berechtigte unmittelbare Fremdmitbesitzerin für den Eigentümer M, sondern als (Mit-)Eigentümerin der Maschine. Damit setzt sie einen anderen Schutzgegenstand des § 823 Abs. 1 BGB voraus und verneint gerade die vom Kriterium verlangte Einordnung des berechtigten Mitbesitzes als sonstiges Recht. Der Inhalt des Kriteriums ist daher nicht erfüllt.",
+              "evidence": [
+                "F und M wurden Miteigentümer der Maschine gemäß §§ 929 Satz 1, 1008 BGB, im Zweifel zu gleichen Anteilen.",
+                "Damit verletzte die Zerstörung der Maschine das Miteigentum der F.",
+                "F kann grundsätzlich Ersatz des auf ihren Miteigentumsanteil entfallenden Substanzwerts verlangen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort ordnet F im Zeitpunkt der Zerstörung als berechtigte unmittelbare Fremdmitbesitzerin für den Eigentümer M ein.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Antwort behandelt diesen berechtigten Mitbesitz als sonstiges Recht im Sinne von § 823 Abs. 1 BGB.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "F als berechtigte unmittelbare Fremdmitbesitzerin für M und ihr berechtigter Mitbesitz als sonstiges Recht im Rahmen des § 823 Abs. 1 BGB bei Zerstörung der Espresso-Maschine durch N",
+                "evidence_scope": "F als Miteigentümerin der Espresso-Maschine und Verletzung ihres Miteigentums im Rahmen des § 823 Abs. 1 BGB",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "F sei Miteigentümerin geworden; die Zerstörung der Maschine verletzte ihr Miteigentum.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-020",
+      "title": "Berechtigter Mitbesitz als sonstiges Recht",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort prüft die Eigentumsverletzung durch den Verlust des Miteigentumsanteils. Sie stellt weder einen Maßstab für berechtigten unmittelbaren Fremdmitbesitz als sonstiges Recht auf noch wendet sie einen solchen Maßstab auf F an und schließt diese Prüfung ab.",
+      "evidence": [
+        "Damit verletzte die Zerstörung das Miteigentum der F."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft die Eigentumsverletzung durch den Verlust des Miteigentumsanteils. Sie stellt weder einen Maßstab für berechtigten unmittelbaren Fremdmitbesitz als sonstiges Recht auf noch wendet sie einen solchen Maßstab auf F an und schließt diese Prüfung ab.",
+          "evidence": [
+            "Damit verletzte die Zerstörung das Miteigentum der F."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": false
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft im Rahmen des § 823 Abs. 1 BGB gegenüber N ausschließlich eine Verletzung des Miteigentums der F. Der criteriumspezifische Maßstab – berechtigter unmittelbarer Fremdmitbesitz für den Eigentümer M als sonstiges Recht – wird nicht als Prüfungsmaßstab benannt, mit den Tatsachen verknüpft oder zu einem Ergebnis geführt. Die Mitbesitzausführungen in Aufgabe 2 und 3 betreffen andere Prüfungsstationen und werden nicht auf die deliktische Prüfung in Aufgabe 1 bezogen.",
+          "evidence": [
+            "F und M wurden Miteigentümer der Maschine gemäß §§ 929 Satz 1, 1008 BGB, im Zweifel zu gleichen Anteilen.",
+            "Damit verletzte die Zerstörung der Maschine das Miteigentum der F.",
+            "F kann grundsätzlich Ersatz des auf ihren Miteigentumsanteil entfallenden Substanzwerts verlangen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft die Eigentumsverletzung durch den Verlust des Miteigentumsanteils. Sie stellt weder einen Maßstab für berechtigten unmittelbaren Fremdmitbesitz als sonstiges Recht auf noch wendet sie einen solchen Maßstab auf F an und schließt diese Prüfung ab.",
+              "evidence": [
+                "Damit verletzte die Zerstörung das Miteigentum der F."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": false
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft im Rahmen des § 823 Abs. 1 BGB gegenüber N ausschließlich eine Verletzung des Miteigentums der F. Der criteriumspezifische Maßstab – berechtigter unmittelbarer Fremdmitbesitz für den Eigentümer M als sonstiges Recht – wird nicht als Prüfungsmaßstab benannt, mit den Tatsachen verknüpft oder zu einem Ergebnis geführt. Die Mitbesitzausführungen in Aufgabe 2 und 3 betreffen andere Prüfungsstationen und werden nicht auf die deliktische Prüfung in Aufgabe 1 bezogen.",
+              "evidence": [
+                "F und M wurden Miteigentümer der Maschine gemäß §§ 929 Satz 1, 1008 BGB, im Zweifel zu gleichen Anteilen.",
+                "Damit verletzte die Zerstörung der Maschine das Miteigentum der F.",
+                "F kann grundsätzlich Ersatz des auf ihren Miteigentumsanteil entfallenden Substanzwerts verlangen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

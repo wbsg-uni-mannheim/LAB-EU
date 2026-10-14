@@ -1,0 +1,2083 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/examensubungsklausur-strafrecht-nur-bares-ist-wahres",
+    "title": "Examensübungsklausur Strafrecht: Nur Bares ist Wahres!"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__strafrecht__materielles-strafrecht__examensubungsklausur-strafrecht-nur-bares-ist-wahres/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/examensubungsklausur-strafrecht-nur-bares-ist-wahres/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T11:43:04.396328+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 4,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 4,
+    "n_scored": 4,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 4,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 6,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 4,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v1",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 3,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 4,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 4,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 4,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 4,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 4,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.917,
+  "n_unanimous": 3,
+  "breakdown_by_station": {
+    "Materielles Strafrecht": {
+      "n_criteria": 4,
+      "n_passed": 0,
+      "n_failed": 4,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Materielles Strafrecht › Strafbarkeit von A und E": {
+      "n_criteria": 4,
+      "n_passed": 0,
+      "n_failed": 4,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 3,
+      "n_passed": 0,
+      "n_failed": 3,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "argumentation": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 2,
+      "n_passed": 0,
+      "n_failed": 2,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "2 (wichtig)": {
+      "n_criteria": 2,
+      "n_passed": 0,
+      "n_failed": 2,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 83838,
+    "output_tokens": 25799,
+    "total_tokens": 109637,
+    "cached_input_tokens": 20085,
+    "cache_write_tokens": 19764
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 83838,
+    "output_tokens": 25799,
+    "total_tokens": 109637,
+    "cached_input_tokens": 20085,
+    "cache_write_tokens": 19764
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-001",
+      "title": "Keine Gewalt durch bloße Angstreaktionen",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort ordnet die Angstreaktionen zwar nicht ausdrücklich als Gewalt ein, erfüllt aber die verlangte Erklärung nicht. Die bloße Erwähnung von Angstschweiß und Furcht genügt nicht.",
+      "evidence": [
+        "O, dem der Angstschweiß in Strömen über die Stirn rinnt und der um sein Leben fürchtet",
+        "durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort ordnet die Angstreaktionen zwar nicht ausdrücklich als Gewalt ein, erfüllt aber die verlangte Erklärung nicht. Die bloße Erwähnung von Angstschweiß und Furcht genügt nicht.",
+          "evidence": [
+            "O, dem der Angstschweiß in Strömen über die Stirn rinnt und der um sein Leben fürchtet",
+            "durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Erklärt, dass die durch den Pistolenvorhalt ausgelösten Schweißausbrüche und Angstgefühle als erwartungsbedingte psychosomatische Reaktionen für sich genommen keinen körperlich wirkenden Zwang und damit keine Gewalt bilden.",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "O; Gewalt bei §§ 253, 255 StGB, insbesondere die durch den Pistolenvorhalt ausgelösten Angstreaktionen",
+            "evidence_scope": "O; versuchte räuberische Erpressung nach §§ 253, 255 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Antwort nennt Gewalt und Drohung mit gegenwärtiger Gefahr, erläutert aber nicht, ob Os Angstreaktionen körperlich wirkenden Zwang darstellen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt die einschlägigen §§ 253, 255 StGB, erwähnt aber die für die criterion-spezifische Frage entscheidenden Tatsachen – Schweißausbrüche und Angstgefühle des O – überhaupt nicht. Sie erklärt insbesondere nicht, dass diese bloßen Angstreaktionen für sich genommen keinen körperlich wirkenden Zwang und damit keine Gewalt darstellen. Damit fehlt die nach dem Kriterium erforderliche Prüfung; der Inhalt ist nicht erfüllt.",
+          "evidence": [
+            "A und E lockten O zum Parkplatz, setzten unmittelbar Faustschläge und Drohungen ein, fesselten ihn und forderten unter Vorhalt der Waffe die Zahlung.",
+            "unter fortgesetzter Gewalt und Drohung ein Versprechen über die Zahlung von 10.000 € abrangen"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort erörtert bei §§ 253, 255 StGB, dass Os durch den Pistolenvorhalt ausgelöste Schweißausbrüche und Angstgefühle bloße Angstreaktionen sind.",
+              "satisfied": false
+            },
+            {
+              "requirement": "Die Antwort qualifiziert diese Angstreaktionen als erwartungsbedingte psychosomatische Reaktionen, die für sich genommen keinen körperlich wirkenden Zwang und damit keine Gewalt bilden.",
+              "satisfied": false
+            },
+            {
+              "requirement": "Die Antwort ordnet die Angstreaktionen nicht als Gewalt ein und trennt sie von den tatsächlich eingesetzten Gewaltmitteln.",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "§§ 253, 255 StGB: Os Schweißausbrüche und Angstgefühle durch den Pistolenvorhalt als bloße Angstreaktionen und deren fehlende Eignung als Gewalt",
+            "evidence_scope": "§§ 253, 255 StGB: Gewalt durch Faustschläge, Fesselung und Waffenvorhalt; keine Erörterung der Schweißausbrüche oder Angstgefühle als Gewalt",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Gewalt wird mit Faustschlägen, Fesselung, Drohungen und Waffenvorhalt begründet; zu Os Angstreaktionen als Gewalt wird nichts ausgeführt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Kriterium wird nicht erfüllt, da die Problematik, ob Schweißausbrüche bzw. Angstreaktionen als Gewalt im Sinne der §§ 253, 255 StGB zu werten sind, im Gutachten nicht angesprochen wird.",
+          "evidence": [],
+          "component_checks": [
+            {
+              "requirement": "Erklärung bei §§ 253, 255 StGB, dass Os durch den Pistolenvorhalt ausgelöste Schweißausbrüche und Angstgefühle als psychosomatische Reaktionen für sich genommen keinen körperlich wirkenden Zwang und damit keine Gewalt bilden",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "§§ 253, 255 StGB: Abgrenzung von Gewalt bei psychosomatischen Angstreaktionen (Schweißausbrüche)",
+            "evidence_scope": "§§ 253, 255 StGB: Prüfung ohne Problematisierung der Angstreaktionen beim Gewaltbegriff",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 20937,
+        "output_tokens": 4747,
+        "total_tokens": 25684,
+        "cached_input_tokens": 768,
+        "cache_write_tokens": 6576
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort ordnet die Angstreaktionen zwar nicht ausdrücklich als Gewalt ein, erfüllt aber die verlangte Erklärung nicht. Die bloße Erwähnung von Angstschweiß und Furcht genügt nicht.",
+              "evidence": [
+                "O, dem der Angstschweiß in Strömen über die Stirn rinnt und der um sein Leben fürchtet",
+                "durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erklärt, dass die durch den Pistolenvorhalt ausgelösten Schweißausbrüche und Angstgefühle als erwartungsbedingte psychosomatische Reaktionen für sich genommen keinen körperlich wirkenden Zwang und damit keine Gewalt bilden.",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "O; Gewalt bei §§ 253, 255 StGB, insbesondere die durch den Pistolenvorhalt ausgelösten Angstreaktionen",
+                "evidence_scope": "O; versuchte räuberische Erpressung nach §§ 253, 255 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Antwort nennt Gewalt und Drohung mit gegenwärtiger Gefahr, erläutert aber nicht, ob Os Angstreaktionen körperlich wirkenden Zwang darstellen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort behandelt die einschlägigen §§ 253, 255 StGB, erwähnt aber die für die criterion-spezifische Frage entscheidenden Tatsachen – Schweißausbrüche und Angstgefühle des O – überhaupt nicht. Sie erklärt insbesondere nicht, dass diese bloßen Angstreaktionen für sich genommen keinen körperlich wirkenden Zwang und damit keine Gewalt darstellen. Damit fehlt die nach dem Kriterium erforderliche Prüfung; der Inhalt ist nicht erfüllt.",
+              "evidence": [
+                "A und E lockten O zum Parkplatz, setzten unmittelbar Faustschläge und Drohungen ein, fesselten ihn und forderten unter Vorhalt der Waffe die Zahlung.",
+                "unter fortgesetzter Gewalt und Drohung ein Versprechen über die Zahlung von 10.000 € abrangen"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort erörtert bei §§ 253, 255 StGB, dass Os durch den Pistolenvorhalt ausgelöste Schweißausbrüche und Angstgefühle bloße Angstreaktionen sind.",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Die Antwort qualifiziert diese Angstreaktionen als erwartungsbedingte psychosomatische Reaktionen, die für sich genommen keinen körperlich wirkenden Zwang und damit keine Gewalt bilden.",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Die Antwort ordnet die Angstreaktionen nicht als Gewalt ein und trennt sie von den tatsächlich eingesetzten Gewaltmitteln.",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "§§ 253, 255 StGB: Os Schweißausbrüche und Angstgefühle durch den Pistolenvorhalt als bloße Angstreaktionen und deren fehlende Eignung als Gewalt",
+                "evidence_scope": "§§ 253, 255 StGB: Gewalt durch Faustschläge, Fesselung und Waffenvorhalt; keine Erörterung der Schweißausbrüche oder Angstgefühle als Gewalt",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Gewalt wird mit Faustschlägen, Fesselung, Drohungen und Waffenvorhalt begründet; zu Os Angstreaktionen als Gewalt wird nichts ausgeführt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium wird nicht erfüllt, da die Problematik, ob Schweißausbrüche bzw. Angstreaktionen als Gewalt im Sinne der §§ 253, 255 StGB zu werten sind, im Gutachten nicht angesprochen wird.",
+              "evidence": [],
+              "component_checks": [
+                {
+                  "requirement": "Erklärung bei §§ 253, 255 StGB, dass Os durch den Pistolenvorhalt ausgelöste Schweißausbrüche und Angstgefühle als psychosomatische Reaktionen für sich genommen keinen körperlich wirkenden Zwang und damit keine Gewalt bilden",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "§§ 253, 255 StGB: Abgrenzung von Gewalt bei psychosomatischen Angstreaktionen (Schweißausbrüche)",
+                "evidence_scope": "§§ 253, 255 StGB: Prüfung ohne Problematisierung der Angstreaktionen beim Gewaltbegriff",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-021",
+      "title": "Fremdbereicherungsabsicht des A",
+      "verdict": "fail",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort übergeht die auf A bezogene Fremdbereicherungsabsicht zugunsten der E. Sie erwähnt die Entschädigungsforderung und deren Rechtswidrigkeit, schreibt A aber nicht zu, es sei ihm persönlich darum gegangen, E um 5.000 Euro zu bereichern. Damit ist die criterion-specific PASS-Bedingung nicht erfüllt.",
+      "evidence": [
+        "Die Bereicherung sollte in der Rückzahlung des Darlehens (5.000 €) sowie einer „Entschädigung“ für E (weitere 5.000 €) bestehen.",
+        "Bezüglich des von E geforderten „Entschädigungsbetrages“ von 5.000 € stand E überdies kein Anspruch zu; dies war beiden bewusst, sie hielten einen gerichtlichen Erfolg für möglich, fühlten sich aber moralisch im Recht.",
+        "Die angestrebte Bereicherung war daher in vollem Umfang rechtswidrig."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort schreibt A gemeinsam mit E einen Bereicherungsvorsatz zu und benennt ausdrücklich die für E vorgesehene Entschädigung über 5.000 Euro. Damit wird A eine auf den Vorteil der E gerichtete Absicht zugeschrieben.",
+          "evidence": [
+            "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung ... sich dadurch zu Unrecht zu bereichern.",
+            "Die Bereicherung sollte in der Rückzahlung des Darlehens (5.000 €) sowie einer „Entschädigung“ für E (weitere 5.000 €) bestehen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "A wird hinsichtlich der für E verlangten 5.000 Euro eine auf die Bereicherung der E gerichtete Absicht zugeschrieben.",
+              "satisfied": true
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A; Fremdbereicherungsabsicht zugunsten der E hinsichtlich der verlangten 5.000 Euro",
+            "evidence_scope": "A und E; Vorsatz zur Bereicherung, einschließlich einer für E vorgesehenen Entschädigung von 5.000 Euro",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die gemeinsame Bereicherung sollte neben der Darlehensrückzahlung eine Entschädigung für E von 5.000 Euro umfassen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort übergeht die auf A bezogene Fremdbereicherungsabsicht zugunsten der E. Sie erwähnt die Entschädigungsforderung und deren Rechtswidrigkeit, schreibt A aber nicht zu, es sei ihm persönlich darum gegangen, E um 5.000 Euro zu bereichern. Damit ist die criterion-specific PASS-Bedingung nicht erfüllt.",
+          "evidence": [
+            "Die Bereicherung sollte in der Rückzahlung des Darlehens (5.000 €) sowie einer „Entschädigung“ für E (weitere 5.000 €) bestehen.",
+            "Bezüglich des von E geforderten „Entschädigungsbetrages“ von 5.000 € stand E überdies kein Anspruch zu; dies war beiden bewusst, sie hielten einen gerichtlichen Erfolg für möglich, fühlten sich aber moralisch im Recht.",
+            "Die angestrebte Bereicherung war daher in vollem Umfang rechtswidrig."
+          ],
+          "component_checks": [
+            {
+              "requirement": "A wird hinsichtlich der für E verlangten 5.000 Euro Fremdbereicherungsabsicht zugunsten der E zugeschrieben.",
+              "satisfied": false
+            },
+            {
+              "requirement": "Die Zuschreibung stützt sich darauf, dass Es finanzielle Entschädigung A persönliches Anliegen war.",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Fremdbereicherungsabsicht des A zugunsten der E hinsichtlich der für E verlangten 5.000 Euro, gestützt darauf, dass Es Entschädigung A persönliches Anliegen war (Tatentschluss der versuchten räuberischen Erpressung).",
+            "evidence_scope": "Allgemeine erstrebte Bereicherung von A und E, Entschädigungsforderung der E und deren fehlende zivilrechtliche Anspruchsgrundlage; keine A-spezifische Fremdbereicherungsabsicht.",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Bereicherung sollte in Darlehensrückzahlung an A und Entschädigung für E bestehen; E stand kein Anspruch zu; beide hielten gerichtlichen Erfolg für möglich, fühlten sich moralisch im Recht; daher sei die erstrebte Bereicherung rechtswidrig.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Kriterium verlangt die Bejahung einer Fremdbereicherungsabsicht des A bezüglich der 5.000 € für E mit der Begründung seines persönlichen Anliegens. Das Gutachten spricht pauschal davon, dass A und E handelten, um 'sich' zu bereichern, und übergeht die erforderliche Differenzierung und Prüfung der Fremdbereicherungsabsicht des A.",
+          "evidence": [
+            "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu einer Vermögensverfügung zu nötigen und sich dadurch zu Unrecht zu bereichern. Die angestrebte Verfügung bestand in der Abgabe des Zahlungsversprechens und letztlich der Geldzahlung. Die Bereicherung sollte in der Rückzahlung des Darlehens (5.000 €) sowie einer „Entschädigung“ für E (weitere 5.000 €) bestehen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Zuschreibung einer Fremdbereicherungsabsicht zugunsten der E an A hinsichtlich der 5.000 Euro",
+              "satisfied": false
+            },
+            {
+              "requirement": "Begründung damit, dass die finanzielle Entschädigung der E ein persönliches Anliegen des A war",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Tatentschluss des A hinsichtlich der Bereicherungsabsicht bezüglich der 5.000 Euro für E (§§ 253, 255 StGB)",
+            "evidence_scope": "Tatentschluss zur Erpressung bei A und E (§§ 253, 255 StGB)",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Täter wollten 'sich dadurch zu Unrecht zu bereichern', wobei die Bereicherung in Darlehensrückzahlung und Entschädigung bestehen sollte.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 20931,
+        "output_tokens": 10317,
+        "total_tokens": 31248,
+        "cached_input_tokens": 17781,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort schreibt A im Rahmen des gemeinsamen Tatentschlusses auch die Absicht zu, E durch die ausdrücklich für sie verlangte Entschädigung zu bereichern. Damit wird A's Fremdbereicherungsabsicht zugunsten der E erfasst.",
+              "evidence": [
+                "A und E handelten mit dem Vorsatz, O ... zu nötigen und sich dadurch zu Unrecht zu bereichern.",
+                "Die Bereicherung sollte in der Rückzahlung des Darlehens (5.000 €) sowie einer „Entschädigung“ für E (weitere 5.000 €) bestehen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "A wird hinsichtlich der 5.000 € für E eine auf E gerichtete Bereicherungsabsicht zugeschrieben.",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Die Antwort ordnet diese Absicht der angestrebten Entschädigung für E zu.",
+                  "satisfied": true
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; Fremdbereicherungsabsicht zugunsten E hinsichtlich der verlangten 5.000 €",
+                "evidence_scope": "A und E; gemeinsame Bereicherungsabsicht einschließlich der als Entschädigung für E verlangten 5.000 €",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die gemeinsame angestrebte Bereicherung umfasste eine ausdrücklich für E bestimmte Entschädigung.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erwähnt zwar eine Entschädigung für E als Teil der erstreben Bereicherung, schreibt A aber keine Fremdbereicherungsabsicht zugunsten der E zu und übergeht insbesondere, dass E's Entschädigung A's persönliches Anliegen war. Damit ist das Kriterium nicht erfüllt.",
+              "evidence": [
+                "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu einer Vermögensverfügung zu nötigen und sich dadurch zu Unrecht zu bereichern.",
+                "Die Bereicherung sollte in der Rückzahlung des Darlehens (5.000 €) sowie einer „Entschädigung“ für E (weitere 5.000 €) bestehen.",
+                "Bezüglich des von E geforderten „Entschädigungsbetrages“ von 5.000 € stand E überdies kein Anspruch zu; dies war beiden bewusst, sie hielten einen gerichtlichen Erfolg für möglich, fühlten sich aber moralisch im Recht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "A wird hinsichtlich der für E verlangten 5.000 Euro Fremdbereicherungsabsicht zugunsten der E zugeschrieben.",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Die Zuschreibung stützt sich darauf, dass die finanzielle Entschädigung der E sein persönliches Anliegen war.",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A, die für E verlangten 5.000 Euro und A's Fremdbereicherungsabsicht im Erpressungstatentschluss",
+                "evidence_scope": "Tatentschluss der Erpressung für A und E; angestrebte Bereicherung einschließlich Entschädigung für E, jedoch ohne A's auf E gerichtete Fremdbereicherungsabsicht",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "A und E handelten mit Bereicherungsvorsatz; die Bereicherung sollte auch eine Entschädigung für E umfassen; E stand hierauf kein Anspruch zu.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium verlangt die Feststellung einer Fremdbereicherungsabsicht des A zugunsten von E bezüglich der 5.000 Euro, weil deren Entschädigung sein persönliches Anliegen war. Das Gutachten übergeht dies und spricht pauschal davon, dass A und E handelten, um 'sich' zu bereichern.",
+              "evidence": [
+                "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu einer Vermögensverfügung zu nötigen und sich dadurch zu Unrecht zu bereichern.",
+                "Die Bereicherung sollte in der Rückzahlung des Darlehens (5.000 €) sowie einer „Entschädigung“ für E (weitere 5.000 €) bestehen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Zuschreibung einer Fremdbereicherungsabsicht an A zugunsten der E hinsichtlich der verlangten 5.000 Euro",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Begründung damit, dass die finanzielle Entschädigung der E sein persönliches Anliegen war",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A, Bereicherungsabsicht bei versuchter Erpressung (§ 253 StGB), Fremdbereicherung zugunsten von E (5.000 Euro)",
+                "evidence_scope": "A und E, Bereicherungsabsicht bei versuchter Erpressung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Gemeinsame Bereicherungsabsicht ('sich dadurch zu Unrecht zu bereichern'), ohne Differenzierung nach Eigen- und Drittbereicherung bezüglich der Forderung für E",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort schreibt A gemeinsam mit E einen Bereicherungsvorsatz zu und benennt ausdrücklich die für E vorgesehene Entschädigung über 5.000 Euro. Damit wird A eine auf den Vorteil der E gerichtete Absicht zugeschrieben.",
+              "evidence": [
+                "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung ... sich dadurch zu Unrecht zu bereichern.",
+                "Die Bereicherung sollte in der Rückzahlung des Darlehens (5.000 €) sowie einer „Entschädigung“ für E (weitere 5.000 €) bestehen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "A wird hinsichtlich der für E verlangten 5.000 Euro eine auf die Bereicherung der E gerichtete Absicht zugeschrieben.",
+                  "satisfied": true
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; Fremdbereicherungsabsicht zugunsten der E hinsichtlich der verlangten 5.000 Euro",
+                "evidence_scope": "A und E; Vorsatz zur Bereicherung, einschließlich einer für E vorgesehenen Entschädigung von 5.000 Euro",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die gemeinsame Bereicherung sollte neben der Darlehensrückzahlung eine Entschädigung für E von 5.000 Euro umfassen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort übergeht die auf A bezogene Fremdbereicherungsabsicht zugunsten der E. Sie erwähnt die Entschädigungsforderung und deren Rechtswidrigkeit, schreibt A aber nicht zu, es sei ihm persönlich darum gegangen, E um 5.000 Euro zu bereichern. Damit ist die criterion-specific PASS-Bedingung nicht erfüllt.",
+              "evidence": [
+                "Die Bereicherung sollte in der Rückzahlung des Darlehens (5.000 €) sowie einer „Entschädigung“ für E (weitere 5.000 €) bestehen.",
+                "Bezüglich des von E geforderten „Entschädigungsbetrages“ von 5.000 € stand E überdies kein Anspruch zu; dies war beiden bewusst, sie hielten einen gerichtlichen Erfolg für möglich, fühlten sich aber moralisch im Recht.",
+                "Die angestrebte Bereicherung war daher in vollem Umfang rechtswidrig."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "A wird hinsichtlich der für E verlangten 5.000 Euro Fremdbereicherungsabsicht zugunsten der E zugeschrieben.",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Die Zuschreibung stützt sich darauf, dass Es finanzielle Entschädigung A persönliches Anliegen war.",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Fremdbereicherungsabsicht des A zugunsten der E hinsichtlich der für E verlangten 5.000 Euro, gestützt darauf, dass Es Entschädigung A persönliches Anliegen war (Tatentschluss der versuchten räuberischen Erpressung).",
+                "evidence_scope": "Allgemeine erstrebte Bereicherung von A und E, Entschädigungsforderung der E und deren fehlende zivilrechtliche Anspruchsgrundlage; keine A-spezifische Fremdbereicherungsabsicht.",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Bereicherung sollte in Darlehensrückzahlung an A und Entschädigung für E bestehen; E stand kein Anspruch zu; beide hielten gerichtlichen Erfolg für möglich, fühlten sich moralisch im Recht; daher sei die erstrebte Bereicherung rechtswidrig.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium verlangt die Bejahung einer Fremdbereicherungsabsicht des A bezüglich der 5.000 € für E mit der Begründung seines persönlichen Anliegens. Das Gutachten spricht pauschal davon, dass A und E handelten, um 'sich' zu bereichern, und übergeht die erforderliche Differenzierung und Prüfung der Fremdbereicherungsabsicht des A.",
+              "evidence": [
+                "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu einer Vermögensverfügung zu nötigen und sich dadurch zu Unrecht zu bereichern. Die angestrebte Verfügung bestand in der Abgabe des Zahlungsversprechens und letztlich der Geldzahlung. Die Bereicherung sollte in der Rückzahlung des Darlehens (5.000 €) sowie einer „Entschädigung“ für E (weitere 5.000 €) bestehen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Zuschreibung einer Fremdbereicherungsabsicht zugunsten der E an A hinsichtlich der 5.000 Euro",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Begründung damit, dass die finanzielle Entschädigung der E ein persönliches Anliegen des A war",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Tatentschluss des A hinsichtlich der Bereicherungsabsicht bezüglich der 5.000 Euro für E (§§ 253, 255 StGB)",
+                "evidence_scope": "Tatentschluss zur Erpressung bei A und E (§§ 253, 255 StGB)",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Täter wollten 'sich dadurch zu Unrecht zu bereichern', wobei die Bereicherung in Darlehensrückzahlung und Entschädigung bestehen sollte.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    },
+    {
+      "id": "C-036",
+      "title": "Zeitlicher Zusammenhang bei der Geiselnahme",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort erwähnt zwar das Ehrenwort, bejaht aber nicht den zeitlichen Zusammenhang des § 239b und begründet ihn auch nicht mit der noch andauernden Fesselungs- und Bemächtigungslage. Eine Prüfung der nach der Freilassung geplanten Geldzahlungen ersetzt diese erforderliche Aussage ebenfalls nicht.",
+      "evidence": [
+        "§ 239a Abs. 1 StGB",
+        "O erklärte sich lediglich zur Zahlung bereit und gab sein „Ehrenwort“"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erwähnt zwar das Ehrenwort, bejaht aber nicht den zeitlichen Zusammenhang des § 239b und begründet ihn auch nicht mit der noch andauernden Fesselungs- und Bemächtigungslage. Eine Prüfung der nach der Freilassung geplanten Geldzahlungen ersetzt diese erforderliche Aussage ebenfalls nicht.",
+          "evidence": [
+            "§ 239a Abs. 1 StGB",
+            "O erklärte sich lediglich zur Zahlung bereit und gab sein „Ehrenwort“"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Der zeitliche Zusammenhang des § 239b wird bejaht, weil A und E das Zahlungsehrenwort während Os fortbestehender Fesselungs- und Bemächtigungslage im Schrebergartenhäuschen erstrebten und erlangten.",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und E; zeitlicher Zusammenhang des § 239b hinsichtlich des Zahlungsehrenworts während der fortbestehenden Fesselungs- und Bemächtigungslage im Schrebergartenhäuschen",
+            "evidence_scope": "A und E; erpresserischer Menschenraub nach § 239a und versuchte räuberische Erpressung, ohne Prüfung des zeitlichen Zusammenhangs des § 239b",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erörtert den zeitlichen Zusammenhang des § 239b StGB nicht. Sie prüft zwar § 239a StGB und erwähnt das Zahlungsehrenwort, bejaht aber nicht die nach der criterion erforderliche zeitliche Verknüpfung des § 239b zwischen fortbestehender Bemächtigungslage und dem Ehrenwort. Damit ist der criterion-spezifische Inhalt nicht erfüllt.",
+          "evidence": [
+            "A und E könnten sich wegen erpresserischen Menschenraubs gem. § 239a Abs. 1 StGB strafbar gemacht haben",
+            "Sie schufen die Bemächtigungslage gezielt, um O mittels dieser Zwangslage zur Abgabe des Versprechens zu bewegen.",
+            "O erklärte sich lediglich zur Zahlung bereit und gab sein „Ehrenwort“; zu einer tatsächlichen Geldübergabe kam es nicht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort behandelt § 239b StGB (Geiselnahme) als einschlägigen Tatbestand.",
+              "satisfied": false
+            },
+            {
+              "requirement": "Die Antwort bejaht den zeitlichen Zusammenhang des § 239b StGB hinsichtlich des Zahlungsehrenworts, weil A und E dieses noch während der fortbestehenden Fesselungs- und Bemächtigungslage im Schrebergartenhäuschen erstrebten und erlangten.",
+              "satisfied": false
+            },
+            {
+              "requirement": "Die Antwort stellt nicht nur auf die nach der Freilassung geplante Geldzahlung ab.",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "§ 239b StGB: zeitlicher Zusammenhang zwischen fortbestehender Fesselungs-/Bemächtigungslage und dem erstrebten/erlangten Zahlungsehrenwort der A und E gegenüber O.",
+            "evidence_scope": "§ 239a StGB (erpresserischer Menschenraub) sowie §§ 253, 255, 250 StGB (versuchte schwere räuberische Erpressung); das Zahlungsversprechen/Ehrenwort wird dort erwähnt, aber nicht für § 239b StGB geprüft.",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "A und E schufen die Bemächtigungslage gezielt, um O zur Abgabe des Versprechens zu bewegen; die beabsichtigte Erpressung gedieh nur zum Versuch, was wegen der kupierten Erfolgsdelikt-Natur des § 239a Abs. 1 StGB nicht schade.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Falllösung prüft § 239b StGB gar nicht; dementsprechend fehlt jede Erörterung des zeitlichen Zusammenhangs im Hinblick auf das abgenötigte Zahlungsversprechen.",
+          "evidence": [],
+          "component_checks": [
+            {
+              "requirement": "Prüfung und Bejahung des zeitlichen Zusammenhangs bei § 239b StGB hinsichtlich des Zahlungsehrenworts während fortbestehender Bemächtigungslage",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und E; zeitlicher Zusammenhang bei der Geiselnahme (§ 239b StGB)",
+            "evidence_scope": "nicht vorhanden (weder § 239b StGB noch das Merkmal werden thematisiert)",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 20944,
+        "output_tokens": 6018,
+        "total_tokens": 26962,
+        "cached_input_tokens": 768,
+        "cache_write_tokens": 6583
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erwähnt zwar das Ehrenwort, bejaht aber nicht den zeitlichen Zusammenhang des § 239b und begründet ihn auch nicht mit der noch andauernden Fesselungs- und Bemächtigungslage. Eine Prüfung der nach der Freilassung geplanten Geldzahlungen ersetzt diese erforderliche Aussage ebenfalls nicht.",
+              "evidence": [
+                "§ 239a Abs. 1 StGB",
+                "O erklärte sich lediglich zur Zahlung bereit und gab sein „Ehrenwort“"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Der zeitliche Zusammenhang des § 239b wird bejaht, weil A und E das Zahlungsehrenwort während Os fortbestehender Fesselungs- und Bemächtigungslage im Schrebergartenhäuschen erstrebten und erlangten.",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und E; zeitlicher Zusammenhang des § 239b hinsichtlich des Zahlungsehrenworts während der fortbestehenden Fesselungs- und Bemächtigungslage im Schrebergartenhäuschen",
+                "evidence_scope": "A und E; erpresserischer Menschenraub nach § 239a und versuchte räuberische Erpressung, ohne Prüfung des zeitlichen Zusammenhangs des § 239b",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erörtert den zeitlichen Zusammenhang des § 239b StGB nicht. Sie prüft zwar § 239a StGB und erwähnt das Zahlungsehrenwort, bejaht aber nicht die nach der criterion erforderliche zeitliche Verknüpfung des § 239b zwischen fortbestehender Bemächtigungslage und dem Ehrenwort. Damit ist der criterion-spezifische Inhalt nicht erfüllt.",
+              "evidence": [
+                "A und E könnten sich wegen erpresserischen Menschenraubs gem. § 239a Abs. 1 StGB strafbar gemacht haben",
+                "Sie schufen die Bemächtigungslage gezielt, um O mittels dieser Zwangslage zur Abgabe des Versprechens zu bewegen.",
+                "O erklärte sich lediglich zur Zahlung bereit und gab sein „Ehrenwort“; zu einer tatsächlichen Geldübergabe kam es nicht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort behandelt § 239b StGB (Geiselnahme) als einschlägigen Tatbestand.",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Die Antwort bejaht den zeitlichen Zusammenhang des § 239b StGB hinsichtlich des Zahlungsehrenworts, weil A und E dieses noch während der fortbestehenden Fesselungs- und Bemächtigungslage im Schrebergartenhäuschen erstrebten und erlangten.",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Die Antwort stellt nicht nur auf die nach der Freilassung geplante Geldzahlung ab.",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "§ 239b StGB: zeitlicher Zusammenhang zwischen fortbestehender Fesselungs-/Bemächtigungslage und dem erstrebten/erlangten Zahlungsehrenwort der A und E gegenüber O.",
+                "evidence_scope": "§ 239a StGB (erpresserischer Menschenraub) sowie §§ 253, 255, 250 StGB (versuchte schwere räuberische Erpressung); das Zahlungsversprechen/Ehrenwort wird dort erwähnt, aber nicht für § 239b StGB geprüft.",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "A und E schufen die Bemächtigungslage gezielt, um O zur Abgabe des Versprechens zu bewegen; die beabsichtigte Erpressung gedieh nur zum Versuch, was wegen der kupierten Erfolgsdelikt-Natur des § 239a Abs. 1 StGB nicht schade.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Falllösung prüft § 239b StGB gar nicht; dementsprechend fehlt jede Erörterung des zeitlichen Zusammenhangs im Hinblick auf das abgenötigte Zahlungsversprechen.",
+              "evidence": [],
+              "component_checks": [
+                {
+                  "requirement": "Prüfung und Bejahung des zeitlichen Zusammenhangs bei § 239b StGB hinsichtlich des Zahlungsehrenworts während fortbestehender Bemächtigungslage",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und E; zeitlicher Zusammenhang bei der Geiselnahme (§ 239b StGB)",
+                "evidence_scope": "nicht vorhanden (weder § 239b StGB noch das Merkmal werden thematisiert)",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-044",
+      "title": "Hinterlistiger Überfall auf dem Parkplatz",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort bejaht ausdrücklich nur Nr. 2 und Nr. 4. Sie nimmt weder eine begründete Bejahung wegen planmäßiger Verdeckung und Parkplatzwahl noch eine begründete Verneinung nach Abgrenzung zum bloßen Überraschungsmoment vor.",
+      "evidence": [
+        "Der Tatbestand der gemeinschaftlichen Begehung ist erfüllt.",
+        "Die Variante des § 224 Abs. 1 Nr. 2 liegt vor."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort bejaht ausdrücklich nur Nr. 2 und Nr. 4. Sie nimmt weder eine begründete Bejahung wegen planmäßiger Verdeckung und Parkplatzwahl noch eine begründete Verneinung nach Abgrenzung zum bloßen Überraschungsmoment vor.",
+          "evidence": [
+            "Der Tatbestand der gemeinschaftlichen Begehung ist erfüllt.",
+            "Die Variante des § 224 Abs. 1 Nr. 2 liegt vor."
+          ],
+          "component_checks": [
+            {
+              "requirement": "§ 224 Abs. 1 Nr. 3 bejahen und die planmäßige Verdeckung der Angriffsabsicht durch einen Vorwand sowie die Auswahl des entlegenen Parkplatzes zur Erschwerung von Abwehr und Hilfe begründen",
+              "satisfied": false
+            },
+            {
+              "requirement": "§ 224 Abs. 1 Nr. 3 verneinen und konkret begründen, weshalb trotz der Umstände nur ein Überraschungsmoment vorlag",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und E; gefährliche Körperverletzung nach § 224 Abs. 1 Nr. 3 StGB; hinterlistiger Überfall auf dem Parkplatz",
+            "evidence_scope": "A und E; gefährliche Körperverletzung nach § 224 Abs. 1 Nr. 2 und Nr. 4 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Zu § 224 Abs. 1 Nr. 3 wird kein Grund genannt.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort nennt § 224 Abs. 1 Nr. 3 StGB nicht und prüft den hinterlistigen Überfall nicht. Die Tatsachen 'unter einem Vorwand' und 'entlegener Parkplatz' werden nur bei anderen Delikten erwähnt, nicht für Nr. 3. Daher ist der Tatbestand weder bejaht noch mit Abgrenzung verneint.",
+          "evidence": [
+            "Gemeinschaftliche Begehung (§ 224 Abs. 1 Nr. 4 StGB)",
+            "Begehung mittels einer Waffe oder eines anderen gefährlichen Werkzeugs (§ 224 Abs. 1 Nr. 2 StGB)",
+            "A und E erfüllen die Qualifikation des § 224 Abs. 1 StGB in zumindest zwei Varianten."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort prüft § 224 Abs. 1 Nr. 3 StGB (hinterlistiger Überfall) überhaupt.",
+              "satisfied": false
+            },
+            {
+              "requirement": "Sie bejaht Nr. 3 wegen planmäßiger Verdeckung der Angriffsabsicht durch Vorwand und Auswahl des entlegenen Parkplatzes, oder verneint Nr. 3 mit konkreter Begründung, warum trotz dieser Umstände nur ein Überraschungsmoment vorliegt.",
+              "satisfied": false
+            },
+            {
+              "requirement": "Eine Abgrenzung zwischen bloßer Überraschung und planmäßiger Verdeckung ist erkennbar.",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "§ 224 Abs. 1 Nr. 3 StGB: hinterlistiger Überfall auf dem Parkplatz; A und E als Täter, O als Opfer",
+            "evidence_scope": "§ 224 Abs. 1 Nr. 2 und Nr. 4 StGB; keine Erörterung von § 224 Abs. 1 Nr. 3 StGB",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Der Tatbestand des § 224 Abs. 1 Nr. 3 StGB (hinterlistiger Überfall) wird im Rahmen der Körperverletzungsprüfung überhaupt nicht thematisiert.",
+          "evidence": [
+            "Damit erfüllen A und E die Qualifikation des § 224 Abs. 1 StGB in zumindest zwei Varianten."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Prüfung von § 224 Abs. 1 Nr. 3 StGB mit Begründung (planmäßige Verdeckung der Angriffsabsicht bzw. Abgrenzung zur bloßen Überrumpelung)",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und E, Gefährliche Körperverletzung (§ 224 Abs. 1 Nr. 3 StGB), Überfall auf dem Parkplatz",
+            "evidence_scope": "A und E, Gefährliche Körperverletzung (§ 224 Abs. 1 Nr. 2, Nr. 4 StGB)",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 21026,
+        "output_tokens": 4717,
+        "total_tokens": 25743,
+        "cached_input_tokens": 768,
+        "cache_write_tokens": 6605
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht ausdrücklich nur Nr. 2 und Nr. 4. Sie nimmt weder eine begründete Bejahung wegen planmäßiger Verdeckung und Parkplatzwahl noch eine begründete Verneinung nach Abgrenzung zum bloßen Überraschungsmoment vor.",
+              "evidence": [
+                "Der Tatbestand der gemeinschaftlichen Begehung ist erfüllt.",
+                "Die Variante des § 224 Abs. 1 Nr. 2 liegt vor."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§ 224 Abs. 1 Nr. 3 bejahen und die planmäßige Verdeckung der Angriffsabsicht durch einen Vorwand sowie die Auswahl des entlegenen Parkplatzes zur Erschwerung von Abwehr und Hilfe begründen",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "§ 224 Abs. 1 Nr. 3 verneinen und konkret begründen, weshalb trotz der Umstände nur ein Überraschungsmoment vorlag",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und E; gefährliche Körperverletzung nach § 224 Abs. 1 Nr. 3 StGB; hinterlistiger Überfall auf dem Parkplatz",
+                "evidence_scope": "A und E; gefährliche Körperverletzung nach § 224 Abs. 1 Nr. 2 und Nr. 4 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Zu § 224 Abs. 1 Nr. 3 wird kein Grund genannt.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort nennt § 224 Abs. 1 Nr. 3 StGB nicht und prüft den hinterlistigen Überfall nicht. Die Tatsachen 'unter einem Vorwand' und 'entlegener Parkplatz' werden nur bei anderen Delikten erwähnt, nicht für Nr. 3. Daher ist der Tatbestand weder bejaht noch mit Abgrenzung verneint.",
+              "evidence": [
+                "Gemeinschaftliche Begehung (§ 224 Abs. 1 Nr. 4 StGB)",
+                "Begehung mittels einer Waffe oder eines anderen gefährlichen Werkzeugs (§ 224 Abs. 1 Nr. 2 StGB)",
+                "A und E erfüllen die Qualifikation des § 224 Abs. 1 StGB in zumindest zwei Varianten."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort prüft § 224 Abs. 1 Nr. 3 StGB (hinterlistiger Überfall) überhaupt.",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Sie bejaht Nr. 3 wegen planmäßiger Verdeckung der Angriffsabsicht durch Vorwand und Auswahl des entlegenen Parkplatzes, oder verneint Nr. 3 mit konkreter Begründung, warum trotz dieser Umstände nur ein Überraschungsmoment vorliegt.",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Eine Abgrenzung zwischen bloßer Überraschung und planmäßiger Verdeckung ist erkennbar.",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "§ 224 Abs. 1 Nr. 3 StGB: hinterlistiger Überfall auf dem Parkplatz; A und E als Täter, O als Opfer",
+                "evidence_scope": "§ 224 Abs. 1 Nr. 2 und Nr. 4 StGB; keine Erörterung von § 224 Abs. 1 Nr. 3 StGB",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Der Tatbestand des § 224 Abs. 1 Nr. 3 StGB (hinterlistiger Überfall) wird im Rahmen der Körperverletzungsprüfung überhaupt nicht thematisiert.",
+              "evidence": [
+                "Damit erfüllen A und E die Qualifikation des § 224 Abs. 1 StGB in zumindest zwei Varianten."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Prüfung von § 224 Abs. 1 Nr. 3 StGB mit Begründung (planmäßige Verdeckung der Angriffsabsicht bzw. Abgrenzung zur bloßen Überrumpelung)",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und E, Gefährliche Körperverletzung (§ 224 Abs. 1 Nr. 3 StGB), Überfall auf dem Parkplatz",
+                "evidence_scope": "A und E, Gefährliche Körperverletzung (§ 224 Abs. 1 Nr. 2, Nr. 4 StGB)",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-001",
+      "title": "Keine Gewalt durch bloße Angstreaktionen",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort prüft zwar die versuchte räuberische Erpressung gegen O, verbindet aber keine kriterienspezifische Aussage zur Gewalt mit Os Angstreaktionen. Eine Anwendung auf Schweißausbrüche oder Angstgefühle und ein Ergebnis dazu fehlen.",
+      "evidence": [
+        "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu einer Vermögensverfügung zu nötigen"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft zwar die versuchte räuberische Erpressung gegen O, verbindet aber keine kriterienspezifische Aussage zur Gewalt mit Os Angstreaktionen. Eine Anwendung auf Schweißausbrüche oder Angstgefühle und ein Ergebnis dazu fehlen.",
+          "evidence": [
+            "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu einer Vermögensverfügung zu nötigen"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erörtert bei §§ 253, 255 StGB zwar Gewalt und Drohung, setzt sich aber an keiner Stelle mit der spezifischen Frage auseinander, ob Os Schweißausbrüche und Angstgefühle als bloße Angstreaktionen Gewalt darstellen. Es fehlt eine criterion-spezifische Prämisse, deren Verknüpfung mit den konkreten Angstreaktions-Fakten und eine abschließende Bewertung; die bloße Nennung physischer Gewalthandlungen ersetzt diese Prüfung nicht.",
+          "evidence": [
+            "A und E lockten O zum Parkplatz, setzten unmittelbar Faustschläge und Drohungen ein, fesselten ihn und forderten unter Vorhalt der Waffe die Zahlung.",
+            "Indem A und E dem O unter fortgesetzter Gewalt und Drohung ein Versprechen über die Zahlung von 10.000 € abrangen, könnte eine (versuchte) räuberische Erpressung vorliegen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Falllösung enthält überhaupt keinen Obersatz, keine Subsumtion und kein Prüfungsergebnis zu der Frage, ob bloße Angstreaktionen oder psychosomatische Reaktionen (wie Angstschweiß) unter den Gewaltbegriff fallen.",
+          "evidence": [
+            "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu einer Vermögensverfügung zu nötigen"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft zwar die versuchte räuberische Erpressung gegen O, verbindet aber keine kriterienspezifische Aussage zur Gewalt mit Os Angstreaktionen. Eine Anwendung auf Schweißausbrüche oder Angstgefühle und ein Ergebnis dazu fehlen.",
+              "evidence": [
+                "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu einer Vermögensverfügung zu nötigen"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erörtert bei §§ 253, 255 StGB zwar Gewalt und Drohung, setzt sich aber an keiner Stelle mit der spezifischen Frage auseinander, ob Os Schweißausbrüche und Angstgefühle als bloße Angstreaktionen Gewalt darstellen. Es fehlt eine criterion-spezifische Prämisse, deren Verknüpfung mit den konkreten Angstreaktions-Fakten und eine abschließende Bewertung; die bloße Nennung physischer Gewalthandlungen ersetzt diese Prüfung nicht.",
+              "evidence": [
+                "A und E lockten O zum Parkplatz, setzten unmittelbar Faustschläge und Drohungen ein, fesselten ihn und forderten unter Vorhalt der Waffe die Zahlung.",
+                "Indem A und E dem O unter fortgesetzter Gewalt und Drohung ein Versprechen über die Zahlung von 10.000 € abrangen, könnte eine (versuchte) räuberische Erpressung vorliegen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Falllösung enthält überhaupt keinen Obersatz, keine Subsumtion und kein Prüfungsergebnis zu der Frage, ob bloße Angstreaktionen oder psychosomatische Reaktionen (wie Angstschweiß) unter den Gewaltbegriff fallen.",
+              "evidence": [
+                "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu einer Vermögensverfügung zu nötigen"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-021",
+      "title": "Fremdbereicherungsabsicht des A",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort nennt die für E bestimmte Entschädigung, prüft aber nicht ausdrücklich die Fremdbereicherungsabsicht des A und schließt diese Prüfung auch nicht mit einem entsprechenden Ergebnis ab. Der Schluss betrifft nur die Rechtswidrigkeit der Bereicherung.",
+      "evidence": [
+        "A und E handelten mit dem Vorsatz, O ... zu nötigen und sich dadurch zu Unrecht zu bereichern.",
+        "Die Bereicherung sollte ... einer „Entschädigung“ für E ... bestehen.",
+        "Die angestrebte Bereicherung war daher in vollem Umfang rechtswidrig."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort nennt die für E bestimmte Entschädigung, prüft aber nicht ausdrücklich die Fremdbereicherungsabsicht des A und schließt diese Prüfung auch nicht mit einem entsprechenden Ergebnis ab. Der Schluss betrifft nur die Rechtswidrigkeit der Bereicherung.",
+          "evidence": [
+            "A und E handelten mit dem Vorsatz, O ... zu nötigen und sich dadurch zu Unrecht zu bereichern.",
+            "Die Bereicherung sollte ... einer „Entschädigung“ für E ... bestehen.",
+            "Die angestrebte Bereicherung war daher in vollem Umfang rechtswidrig."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": true,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft den Tatentschluss der Erpressung, formuliert aber keinen spezifischen Maßstab zur Fremdbereicherungsabsicht des A und verknüpft die für E geforderten 5.000 € nicht mit A's persönlichem Anliegen. Eine methodische Prüfung gerade dieser Absicht fehlt.",
+          "evidence": [
+            "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu einer Vermögensverfügung zu nötigen und sich dadurch zu Unrecht zu bereichern.",
+            "Die Bereicherung sollte in der Rückzahlung des Darlehens (5.000 €) sowie einer „Entschädigung“ für E (weitere 5.000 €) bestehen.",
+            "Bezüglich des von E geforderten „Entschädigungsbetrages“ von 5.000 € stand E überdies kein Anspruch zu; dies war beiden bewusst, sie hielten einen gerichtlichen Erfolg für möglich, fühlten sich aber moralisch im Recht."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Fremdbereicherungsabsicht des A bezüglich der Forderung für E wird im Rahmen der Erpressungsprüfung weder als Rechtsproblem aufgeworfen noch methodisch unter Subsumtion der Tatsachen (persönliches Anliegen des A) geprüft.",
+          "evidence": [
+            "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu einer Vermögensverfügung zu nötigen und sich dadurch zu Unrecht zu bereichern. Die angestrebte Verfügung bestand in der Abgabe des Zahlungsversprechens und letztlich der Geldzahlung. Die Bereicherung sollte in der Rückzahlung des Darlehens (5.000 €) sowie einer „Entschädigung“ für E (weitere 5.000 €) bestehen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort nennt die für E bestimmte Entschädigung, prüft aber nicht ausdrücklich die Fremdbereicherungsabsicht des A und schließt diese Prüfung auch nicht mit einem entsprechenden Ergebnis ab. Der Schluss betrifft nur die Rechtswidrigkeit der Bereicherung.",
+              "evidence": [
+                "A und E handelten mit dem Vorsatz, O ... zu nötigen und sich dadurch zu Unrecht zu bereichern.",
+                "Die Bereicherung sollte ... einer „Entschädigung“ für E ... bestehen.",
+                "Die angestrebte Bereicherung war daher in vollem Umfang rechtswidrig."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft den Tatentschluss der Erpressung, formuliert aber keinen spezifischen Maßstab zur Fremdbereicherungsabsicht des A und verknüpft die für E geforderten 5.000 € nicht mit A's persönlichem Anliegen. Eine methodische Prüfung gerade dieser Absicht fehlt.",
+              "evidence": [
+                "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu einer Vermögensverfügung zu nötigen und sich dadurch zu Unrecht zu bereichern.",
+                "Die Bereicherung sollte in der Rückzahlung des Darlehens (5.000 €) sowie einer „Entschädigung“ für E (weitere 5.000 €) bestehen.",
+                "Bezüglich des von E geforderten „Entschädigungsbetrages“ von 5.000 € stand E überdies kein Anspruch zu; dies war beiden bewusst, sie hielten einen gerichtlichen Erfolg für möglich, fühlten sich aber moralisch im Recht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Fremdbereicherungsabsicht des A bezüglich der Forderung für E wird im Rahmen der Erpressungsprüfung weder als Rechtsproblem aufgeworfen noch methodisch unter Subsumtion der Tatsachen (persönliches Anliegen des A) geprüft.",
+              "evidence": [
+                "A und E handelten mit dem Vorsatz, O durch Gewalt und Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu einer Vermögensverfügung zu nötigen und sich dadurch zu Unrecht zu bereichern. Die angestrebte Verfügung bestand in der Abgabe des Zahlungsversprechens und letztlich der Geldzahlung. Die Bereicherung sollte in der Rückzahlung des Darlehens (5.000 €) sowie einer „Entschädigung“ für E (weitere 5.000 €) bestehen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-036",
+      "title": "Zeitlicher Zusammenhang bei der Geiselnahme",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort prüft die versuchte räuberische Erpressung und § 239a, nicht den zeitlichen Zusammenhang des § 239b. Sie verknüpft das Ehrenwort nicht ausdrücklich mit der fortbestehenden Fesselungs- und Bemächtigungslage im Schrebergartenhäuschen und gelangt deshalb zu keinem Ergebnis in dieser Prüfung.",
+      "evidence": [
+        "versuchte schwere räuberische Erpressung",
+        "O erklärte sich lediglich zur Zahlung bereit und gab sein „Ehrenwort“"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft die versuchte räuberische Erpressung und § 239a, nicht den zeitlichen Zusammenhang des § 239b. Sie verknüpft das Ehrenwort nicht ausdrücklich mit der fortbestehenden Fesselungs- und Bemächtigungslage im Schrebergartenhäuschen und gelangt deshalb zu keinem Ergebnis in dieser Prüfung.",
+          "evidence": [
+            "versuchte schwere räuberische Erpressung",
+            "O erklärte sich lediglich zur Zahlung bereit und gab sein „Ehrenwort“"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft § 239a StGB, nicht § 239b StGB. Eine criterion-spezifische Erörterung des zeitlichen Zusammenhangs zwischen fortbestehender Bemächtigungslage und dem Zahlungsehrenwort nach § 239b fehlt; die Ausführungen zum Zahlungsversprechen werden nur im Rahmen des erpresserischen Menschenraubs und der versuchten räuberischen Erpressung entwickelt.",
+          "evidence": [
+            "A und E könnten sich wegen erpresserischen Menschenraubs gem. § 239a Abs. 1 StGB strafbar gemacht haben",
+            "Sie schufen die Bemächtigungslage gezielt, um O mittels dieser Zwangslage zur Abgabe des Versprechens zu bewegen.",
+            "Dass die beabsichtigte Erpressung letztlich nur bis zum Versuch gedieh (dazu unten), schadet nicht, da § 239a ein sog. kupiertes Erfolgsdelikt ist"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Der Straftatbestand der Geiselnahme (§ 239b StGB) und der dafür erforderliche zeitliche Zusammenhang werden im Gutachten überhaupt nicht geprüft.",
+          "evidence": [],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft die versuchte räuberische Erpressung und § 239a, nicht den zeitlichen Zusammenhang des § 239b. Sie verknüpft das Ehrenwort nicht ausdrücklich mit der fortbestehenden Fesselungs- und Bemächtigungslage im Schrebergartenhäuschen und gelangt deshalb zu keinem Ergebnis in dieser Prüfung.",
+              "evidence": [
+                "versuchte schwere räuberische Erpressung",
+                "O erklärte sich lediglich zur Zahlung bereit und gab sein „Ehrenwort“"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft § 239a StGB, nicht § 239b StGB. Eine criterion-spezifische Erörterung des zeitlichen Zusammenhangs zwischen fortbestehender Bemächtigungslage und dem Zahlungsehrenwort nach § 239b fehlt; die Ausführungen zum Zahlungsversprechen werden nur im Rahmen des erpresserischen Menschenraubs und der versuchten räuberischen Erpressung entwickelt.",
+              "evidence": [
+                "A und E könnten sich wegen erpresserischen Menschenraubs gem. § 239a Abs. 1 StGB strafbar gemacht haben",
+                "Sie schufen die Bemächtigungslage gezielt, um O mittels dieser Zwangslage zur Abgabe des Versprechens zu bewegen.",
+                "Dass die beabsichtigte Erpressung letztlich nur bis zum Versuch gedieh (dazu unten), schadet nicht, da § 239a ein sog. kupiertes Erfolgsdelikt ist"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Der Straftatbestand der Geiselnahme (§ 239b StGB) und der dafür erforderliche zeitliche Zusammenhang werden im Gutachten überhaupt nicht geprüft.",
+              "evidence": [],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-044",
+      "title": "Hinterlistiger Überfall auf dem Parkplatz",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Prüfung betrifft dieselben Personen und die gefährliche Körperverletzung, behandelt aber nur Nr. 4 und Nr. 2. Eine Prüfung des hinterlistigen Überfalls nach Nr. 3 mit Abgrenzung zwischen Überraschung und planmäßiger Verdeckung fehlt; die zuvor erwähnte Anlockung wird nicht mit diesem Merkmal verknüpft.",
+      "evidence": [
+        "1. Gemeinschaftliche Begehung (§ 224 Abs. 1 Nr. 4 StGB)",
+        "2. Begehung mittels einer Waffe oder eines anderen gefährlichen Werkzeugs (§ 224 Abs. 1 Nr. 2 StGB)"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Prüfung betrifft dieselben Personen und die gefährliche Körperverletzung, behandelt aber nur Nr. 4 und Nr. 2. Eine Prüfung des hinterlistigen Überfalls nach Nr. 3 mit Abgrenzung zwischen Überraschung und planmäßiger Verdeckung fehlt; die zuvor erwähnte Anlockung wird nicht mit diesem Merkmal verknüpft.",
+          "evidence": [
+            "1. Gemeinschaftliche Begehung (§ 224 Abs. 1 Nr. 4 StGB)",
+            "2. Begehung mittels einer Waffe oder eines anderen gefährlichen Werkzeugs (§ 224 Abs. 1 Nr. 2 StGB)"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft im Rahmen des § 224 StGB nur die Varianten Nr. 2 und Nr. 4. Eine an § 224 Abs. 1 Nr. 3 anknüpfende Prüfung des hinterlistigen Überfalls fehlt; die Umstände Vorwand und entlegener Parkplatz werden nicht mit dieser Qualifikation verbunden. Damit liegt keine methodische Prüfung des Kriteriums vor.",
+          "evidence": [
+            "Fraglich ist, ob auch die Qualifikation der Begehung mittels eines gefährlichen Werkzeugs vorliegt.",
+            "Die Variante des § 224 Abs. 1 Nr. 2 liegt vor.",
+            "Damit erfüllen A und E die Qualifikation des § 224 Abs. 1 StGB in zumindest zwei Varianten."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Prüfung des hinterlistigen Überfalls (§ 224 Abs. 1 Nr. 3 StGB) fehlt im Gutachten vollständig. Es werden lediglich Nr. 2 und Nr. 4 geprüft.",
+          "evidence": [
+            "B. Gefährliche Körperverletzung (§§ 223, 224 StGB)",
+            "1. Gemeinschaftliche Begehung (§ 224 Abs. 1 Nr. 4 StGB)",
+            "2. Begehung mittels einer Waffe oder eines anderen gefährlichen Werkzeugs (§ 224 Abs. 1 Nr. 2 StGB)",
+            "Damit erfüllen A und E die Qualifikation des § 224 Abs. 1 StGB in zumindest zwei Varianten."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Prüfung betrifft dieselben Personen und die gefährliche Körperverletzung, behandelt aber nur Nr. 4 und Nr. 2. Eine Prüfung des hinterlistigen Überfalls nach Nr. 3 mit Abgrenzung zwischen Überraschung und planmäßiger Verdeckung fehlt; die zuvor erwähnte Anlockung wird nicht mit diesem Merkmal verknüpft.",
+              "evidence": [
+                "1. Gemeinschaftliche Begehung (§ 224 Abs. 1 Nr. 4 StGB)",
+                "2. Begehung mittels einer Waffe oder eines anderen gefährlichen Werkzeugs (§ 224 Abs. 1 Nr. 2 StGB)"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft im Rahmen des § 224 StGB nur die Varianten Nr. 2 und Nr. 4. Eine an § 224 Abs. 1 Nr. 3 anknüpfende Prüfung des hinterlistigen Überfalls fehlt; die Umstände Vorwand und entlegener Parkplatz werden nicht mit dieser Qualifikation verbunden. Damit liegt keine methodische Prüfung des Kriteriums vor.",
+              "evidence": [
+                "Fraglich ist, ob auch die Qualifikation der Begehung mittels eines gefährlichen Werkzeugs vorliegt.",
+                "Die Variante des § 224 Abs. 1 Nr. 2 liegt vor.",
+                "Damit erfüllen A und E die Qualifikation des § 224 Abs. 1 StGB in zumindest zwei Varianten."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Prüfung des hinterlistigen Überfalls (§ 224 Abs. 1 Nr. 3 StGB) fehlt im Gutachten vollständig. Es werden lediglich Nr. 2 und Nr. 4 geprüft.",
+              "evidence": [
+                "B. Gefährliche Körperverletzung (§§ 223, 224 StGB)",
+                "1. Gemeinschaftliche Begehung (§ 224 Abs. 1 Nr. 4 StGB)",
+                "2. Begehung mittels einer Waffe oder eines anderen gefährlichen Werkzeugs (§ 224 Abs. 1 Nr. 2 StGB)",
+                "Damit erfüllen A und E die Qualifikation des § 224 Abs. 1 StGB in zumindest zwei Varianten."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

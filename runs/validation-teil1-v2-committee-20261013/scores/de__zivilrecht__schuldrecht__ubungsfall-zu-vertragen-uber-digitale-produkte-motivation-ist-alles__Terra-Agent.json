@@ -1,0 +1,581 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/ubungsfall-zu-vertragen-uber-digitale-produkte-motivation-ist-alles",
+    "title": "Übungsfall zu Verträgen über digitale Produkte: Motivation ist alles"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__zivilrecht__schuldrecht__ubungsfall-zu-vertragen-uber-digitale-produkte-motivation-ist-alles/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/ubungsfall-zu-vertragen-uber-digitale-produkte-motivation-ist-alles/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:34:41.435838+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 1,
+    "points_available": 1,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Kann V von U Zahlung i.H.v. 1.050 € verlangen?": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Kann V von U Zahlung i.H.v. 1.050 € verlangen? › Anspruch V gegen U auf Rückzahlung des Kaufpreises i.H.v. 1.000 €": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 14054,
+    "output_tokens": 9679,
+    "total_tokens": 23733,
+    "cached_input_tokens": 1280,
+    "cache_write_tokens": 4373
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 9395,
+    "output_tokens": 8014,
+    "total_tokens": 17409,
+    "cached_input_tokens": 1280,
+    "cache_write_tokens": 4373
+  },
+  "style_judge_usage_total": {
+    "input_tokens": 4659,
+    "output_tokens": 1665,
+    "total_tokens": 6324,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "criteria_results": [
+    {
+      "id": "C-013",
+      "title": "Identische Parteien des Paketvertrags",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort ordnet das von U angebotene Paket aus Trainer und App dem Vertrag des Falls mit V zu und behandelt es ausdrücklich als Vertragspaket nach § 327a Abs. 1 BGB. Damit ist die Identität von V und U als Parteien des Pakets jedenfalls unmissverständlich impliziert.",
+      "evidence": [
+        "U bot den Trainer für 1.000 EUR und die App optional für weitere 50 EUR für zwei Jahre an.",
+        "Es handelt sich somit zumindest um ein Vertragspaket im Sinne des § 327a Abs. 1 BGB."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet das von U angebotene Paket aus Trainer und App dem Vertrag des Falls mit V zu und behandelt es ausdrücklich als Vertragspaket nach § 327a Abs. 1 BGB. Damit ist die Identität von V und U als Parteien des Pakets jedenfalls unmissverständlich impliziert.",
+          "evidence": [
+            "U bot den Trainer für 1.000 EUR und die App optional für weitere 50 EUR für zwei Jahre an.",
+            "Es handelt sich somit zumindest um ein Vertragspaket im Sinne des § 327a Abs. 1 BGB."
+          ],
+          "component_checks": [
+            {
+              "requirement": "V und U werden als identische Parteien des Vertragspakets über App und Fitness-Trainer behandelt.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Identität der Parteien des Vertragspakets über App und Fitness-Trainer bei § 327a Abs. 1 BGB",
+            "evidence_scope": "Vertragspaket über den von U angebotenen Fitness-Trainer und die App im Fall V",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "U bot Trainer und App gemeinsam als optionales Sonderangebot an; die Antwort behandelt sie als Vertragspaket.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht ein Vertragspaket nach § 327a Abs. 1 BGB und geht dabei vom einheitlichen Vertragsverhältnis zwischen V und U aus. Damit sieht sie das Erfordernis identischer Parteien des Paketvertrags als erfüllt an.",
+          "evidence": [
+            "U bot den Trainer für 1.000 EUR und die App optional für weitere 50 EUR für zwei Jahre an.",
+            "Es handelt sich somit zumindest um ein Vertragspaket im Sinne von § 327a Abs. 1 BGB."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bei § 327a Abs. 1 BGB wird ein Vertragspaket/einheitlicher Vertrag über App und Fitness-Trainer angenommen.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Dieses Vertragspaket wird V und U als denselben Parteien zugeordnet; es werden nicht verschiedene Vertragsparteien oder unabhängige Verträge angenommen.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "§ 327a Abs. 1 S. 1 BGB: Verbrauchervertrag zwischen denselben Parteien V und U über App und Fitness-Trainer",
+            "evidence_scope": "§ 327a Abs. 1 BGB: Vertragspaket über App und Fitness-Trainer im Verhältnis V–U",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "U bot Trainer und App als wirtschaftlich verbundenes Paket an; die Leistungen sind zwar trennbar, bilden aber ein Vertragspaket nach § 327a Abs. 1 BGB.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 9395,
+        "output_tokens": 8014,
+        "total_tokens": 17409,
+        "cached_input_tokens": 1280,
+        "cache_write_tokens": 4373
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort ordnet das von U angebotene Paket aus Trainer und App dem Vertrag des Falls mit V zu und behandelt es ausdrücklich als Vertragspaket nach § 327a Abs. 1 BGB. Damit ist die Identität von V und U als Parteien des Pakets jedenfalls unmissverständlich impliziert.",
+              "evidence": [
+                "U bot den Trainer für 1.000 EUR und die App optional für weitere 50 EUR für zwei Jahre an.",
+                "Es handelt sich somit zumindest um ein Vertragspaket im Sinne des § 327a Abs. 1 BGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "V und U werden als identische Parteien des Vertragspakets über App und Fitness-Trainer behandelt.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Identität der Parteien des Vertragspakets über App und Fitness-Trainer bei § 327a Abs. 1 BGB",
+                "evidence_scope": "Vertragspaket über den von U angebotenen Fitness-Trainer und die App im Fall V",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "U bot Trainer und App gemeinsam als optionales Sonderangebot an; die Antwort behandelt sie als Vertragspaket.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht ein Vertragspaket nach § 327a Abs. 1 BGB und geht dabei vom einheitlichen Vertragsverhältnis zwischen V und U aus. Damit sieht sie das Erfordernis identischer Parteien des Paketvertrags als erfüllt an.",
+              "evidence": [
+                "U bot den Trainer für 1.000 EUR und die App optional für weitere 50 EUR für zwei Jahre an.",
+                "Es handelt sich somit zumindest um ein Vertragspaket im Sinne von § 327a Abs. 1 BGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bei § 327a Abs. 1 BGB wird ein Vertragspaket/einheitlicher Vertrag über App und Fitness-Trainer angenommen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Dieses Vertragspaket wird V und U als denselben Parteien zugeordnet; es werden nicht verschiedene Vertragsparteien oder unabhängige Verträge angenommen.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "§ 327a Abs. 1 S. 1 BGB: Verbrauchervertrag zwischen denselben Parteien V und U über App und Fitness-Trainer",
+                "evidence_scope": "§ 327a Abs. 1 BGB: Vertragspaket über App und Fitness-Trainer im Verhältnis V–U",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "U bot Trainer und App als wirtschaftlich verbundenes Paket an; die Leistungen sind zwar trennbar, bilden aber ein Vertragspaket nach § 327a Abs. 1 BGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-013",
+      "title": "Identische Parteien des Paketvertrags",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort wendet sich dem Vertragspaket nach § 327a Abs. 1 BGB zu und verknüpft das Angebot von U mit dem Ergebnis, dass ein Vertragspaket vorliegt. Sie benennt und prüft aber nicht das entscheidende Merkmal, dass V und U dieselben Parteien des Paketvertrags sind.",
+      "evidence": [
+        "U bot den Trainer für 1.000 EUR und die App optional für weitere 50 EUR für zwei Jahre an.",
+        "Es handelt sich somit zumindest um ein Vertragspaket im Sinne des § 327a Abs. 1 BGB."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort wendet sich dem Vertragspaket nach § 327a Abs. 1 BGB zu und verknüpft das Angebot von U mit dem Ergebnis, dass ein Vertragspaket vorliegt. Sie benennt und prüft aber nicht das entscheidende Merkmal, dass V und U dieselben Parteien des Paketvertrags sind.",
+          "evidence": [
+            "U bot den Trainer für 1.000 EUR und die App optional für weitere 50 EUR für zwei Jahre an.",
+            "Es handelt sich somit zumindest um ein Vertragspaket im Sinne des § 327a Abs. 1 BGB."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft § 327a Abs. 1 BGB, stellt auf das Angebot des U über Trainer und App sowie deren wirtschaftliche Verbundenheit ab und zieht den Schluss, dass ein Vertragspaket vorliegt. Das Merkmal identischer Parteien wird dabei jedenfalls im selben Prüfungsgang methodisch mit erfasst.",
+          "evidence": [
+            "U bot den Trainer für 1.000 EUR und die App optional für weitere 50 EUR für zwei Jahre an.",
+            "Die Leistungen sind wirtschaftlich miteinander verbunden, aber nach Gegenstand, Dauer und Preis trennbar: Das Gerät konnte ohne App erworben und genutzt werden; die App wird unabhängig hiervon durch Zugangsdaten bereitgestellt.",
+            "Es handelt sich somit zumindest um ein Vertragspaket im Sinne von § 327a Abs. 1 BGB."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort nennt für § 327a Abs. 1 S. 1 BGB nicht die tatbestandliche Voraussetzung identischer Vertragsparteien (Verbrauchervertrag zwischen denselben Parteien), verknüpft diese folglich nicht mit dem Sachverhalt und schließt die Prüfung dieses Merkmals nicht methodisch ab.",
+          "evidence": [
+            "Es handelt sich somit zumindest um ein Vertragspaket im Sinne von § 327a Abs. 1 BGB."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 4659,
+        "output_tokens": 1665,
+        "total_tokens": 6324,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort wendet sich dem Vertragspaket nach § 327a Abs. 1 BGB zu und verknüpft das Angebot von U mit dem Ergebnis, dass ein Vertragspaket vorliegt. Sie benennt und prüft aber nicht das entscheidende Merkmal, dass V und U dieselben Parteien des Paketvertrags sind.",
+              "evidence": [
+                "U bot den Trainer für 1.000 EUR und die App optional für weitere 50 EUR für zwei Jahre an.",
+                "Es handelt sich somit zumindest um ein Vertragspaket im Sinne des § 327a Abs. 1 BGB."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft § 327a Abs. 1 BGB, stellt auf das Angebot des U über Trainer und App sowie deren wirtschaftliche Verbundenheit ab und zieht den Schluss, dass ein Vertragspaket vorliegt. Das Merkmal identischer Parteien wird dabei jedenfalls im selben Prüfungsgang methodisch mit erfasst.",
+              "evidence": [
+                "U bot den Trainer für 1.000 EUR und die App optional für weitere 50 EUR für zwei Jahre an.",
+                "Die Leistungen sind wirtschaftlich miteinander verbunden, aber nach Gegenstand, Dauer und Preis trennbar: Das Gerät konnte ohne App erworben und genutzt werden; die App wird unabhängig hiervon durch Zugangsdaten bereitgestellt.",
+                "Es handelt sich somit zumindest um ein Vertragspaket im Sinne von § 327a Abs. 1 BGB."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "stage": "tiebreaker",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort nennt für § 327a Abs. 1 S. 1 BGB nicht die tatbestandliche Voraussetzung identischer Vertragsparteien (Verbrauchervertrag zwischen denselben Parteien), verknüpft diese folglich nicht mit dem Sachverhalt und schließt die Prüfung dieses Merkmals nicht methodisch ab.",
+              "evidence": [
+                "Es handelt sich somit zumindest um ein Vertragspaket im Sinne von § 327a Abs. 1 BGB."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "resolved_by_tiebreaker"
+    }
+  ]
+}

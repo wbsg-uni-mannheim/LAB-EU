@@ -1,0 +1,542 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-ein-wettstreit-unter-kollegen-mit-folgen",
+    "title": "Fortgeschrittenenklausur: Ein Wettstreit unter Kollegen mit Folgen"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenklausur-ein-wettstreit-unter-kollegen-mit-folgen/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-ein-wettstreit-unter-kollegen-mit-folgen/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:31:56.602877+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Die Flucht vor der Polizei": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Die Flucht vor der Polizei › Strafbarkeit der B": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 11619,
+    "output_tokens": 3829,
+    "total_tokens": 15448,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 5455
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 11619,
+    "output_tokens": 3829,
+    "total_tokens": 15448,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 5455
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-032",
+      "title": "Vorsatz hinsichtlich der objektiven Fluchtfahrt",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Lösung bejaht ausdrücklich den Vorsatz hinsichtlich der nicht angepassten Geschwindigkeit und der groben Verkehrswidrigkeit. Sie stützt dies darauf, dass B die Geschwindigkeitsbegrenzung kannte und die erhebliche Überschreitung bewusst in Kauf nahm; die gesonderte Raserabsicht wird zusätzlich behandelt.",
+      "evidence": [
+        "B führte ein Kraftfahrzeug auf einer öffentlichen Autobahn und bewegte sich mit einer Geschwindigkeit von 170 km/h fort, obwohl nur 100 km/h zulässig waren.",
+        "B handelte zudem vorsätzlich in Bezug auf die objektiven Tatumstände (nicht angepasste Geschwindigkeit, grobe Verkehrswidrigkeit, Rücksichtslosigkeit).",
+        "Sie kannte die Geschwindigkeitsbegrenzung und nahm die erhebliche Überschreitung sowie den darin liegenden schweren Pflichtverstoß bewusst in Kauf."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung bejaht ausdrücklich den Vorsatz hinsichtlich der nicht angepassten Geschwindigkeit und der groben Verkehrswidrigkeit. Sie stützt dies darauf, dass B die Geschwindigkeitsbegrenzung kannte und die erhebliche Überschreitung bewusst in Kauf nahm; die gesonderte Raserabsicht wird zusätzlich behandelt.",
+          "evidence": [
+            "B führte ein Kraftfahrzeug auf einer öffentlichen Autobahn und bewegte sich mit einer Geschwindigkeit von 170 km/h fort, obwohl nur 100 km/h zulässig waren.",
+            "B handelte zudem vorsätzlich in Bezug auf die objektiven Tatumstände (nicht angepasste Geschwindigkeit, grobe Verkehrswidrigkeit, Rücksichtslosigkeit).",
+            "Sie kannte die Geschwindigkeitsbegrenzung und nahm die erhebliche Überschreitung sowie den darin liegenden schweren Pflichtverstoß bewusst in Kauf."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Vorsatz der B hinsichtlich der nicht angepassten Geschwindigkeit bejahen",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Vorsatz der B hinsichtlich der groben Verkehrswidrigkeit bejahen",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Vorsatzbejahung mit Bs Kenntnis der Geschwindigkeitsbegrenzung und der bewussten Überschreitung begründen",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Den Vorsatz nicht als unbewusst behandeln und nicht mit der gesonderten Raserabsicht gleichsetzen",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B; § 315d Abs. 1 Nr. 3 StGB; Vorsatz hinsichtlich der objektiven Fluchtfahrt",
+            "evidence_scope": "B; § 315d Abs. 1 Nr. 3 StGB; Vorsatz hinsichtlich der objektiven Umstände der Autobahn-Fluchtfahrt",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "B kannte die Geschwindigkeitsbegrenzung und nahm die erhebliche Überschreitung sowie den darin liegenden schweren Pflichtverstoß bewusst in Kauf.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung bejaht ausdrücklich den Vorsatz der B hinsichtlich der nicht angepassten und grob verkehrswidrigen Geschwindigkeit. Sie stützt dies auf die bewusste Geschwindigkeitsüberschreitung und die Fluchtfahrt mit 170 km/h bei erlaubten 100 km/h und setzt diesen Vorsatz nicht mit der gesonderten Raserabsicht gleich.",
+          "evidence": [
+            "B handelte zudem vorsätzlich in Bezug auf die objektiven Tatumstände (nicht angepasste Geschwindigkeit, grobe Verkehrswidrigkeit, Rücksichtslosigkeit).",
+            "Sie kannte die Geschwindigkeitsbegrenzung und nahm die erhebliche Überschreitung sowie den darin liegenden schweren Pflichtverstoß bewusst in Kauf."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bejahung des Vorsatzes hinsichtlich der nicht angepassten Geschwindigkeit bei § 315d Abs. 1 Nr. 3 StGB",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Bejahung des Vorsatzes hinsichtlich der groben Verkehrswidrigkeit bei § 315d Abs. 1 Nr. 3 StGB",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Begründung mit bewusster Beschleunigung und Fahrt mit 170 km/h bei erlaubten 100 km/h vor dem Streifenwagen",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B; § 315d Abs. 1 Nr. 3 StGB; Vorsatz bezüglich der objektiven Fluchtfahrt mit nicht angepasster und grob verkehrswidriger Geschwindigkeit",
+            "evidence_scope": "B; § 315d Abs. 1 Nr. 3 StGB; subjektiver Tatbestand, insbesondere Vorsatz bezüglich der objektiven Tatumstände der Fluchtfahrt",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "B kannte die Geschwindigkeitsbegrenzung und nahm die erhebliche Überschreitung sowie den schweren Pflichtverstoß bewusst in Kauf; sie beschleunigte bewusst und floh mit 170 km/h bei erlaubten 100 km/h vor dem Streifenwagen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {
+        "input_tokens": 11619,
+        "output_tokens": 3829,
+        "total_tokens": 15448,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 5455
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung bejaht ausdrücklich den Vorsatz hinsichtlich der nicht angepassten Geschwindigkeit und der groben Verkehrswidrigkeit. Sie stützt dies darauf, dass B die Geschwindigkeitsbegrenzung kannte und die erhebliche Überschreitung bewusst in Kauf nahm; die gesonderte Raserabsicht wird zusätzlich behandelt.",
+              "evidence": [
+                "B führte ein Kraftfahrzeug auf einer öffentlichen Autobahn und bewegte sich mit einer Geschwindigkeit von 170 km/h fort, obwohl nur 100 km/h zulässig waren.",
+                "B handelte zudem vorsätzlich in Bezug auf die objektiven Tatumstände (nicht angepasste Geschwindigkeit, grobe Verkehrswidrigkeit, Rücksichtslosigkeit).",
+                "Sie kannte die Geschwindigkeitsbegrenzung und nahm die erhebliche Überschreitung sowie den darin liegenden schweren Pflichtverstoß bewusst in Kauf."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Vorsatz der B hinsichtlich der nicht angepassten Geschwindigkeit bejahen",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Vorsatz der B hinsichtlich der groben Verkehrswidrigkeit bejahen",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Vorsatzbejahung mit Bs Kenntnis der Geschwindigkeitsbegrenzung und der bewussten Überschreitung begründen",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Den Vorsatz nicht als unbewusst behandeln und nicht mit der gesonderten Raserabsicht gleichsetzen",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B; § 315d Abs. 1 Nr. 3 StGB; Vorsatz hinsichtlich der objektiven Fluchtfahrt",
+                "evidence_scope": "B; § 315d Abs. 1 Nr. 3 StGB; Vorsatz hinsichtlich der objektiven Umstände der Autobahn-Fluchtfahrt",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "B kannte die Geschwindigkeitsbegrenzung und nahm die erhebliche Überschreitung sowie den darin liegenden schweren Pflichtverstoß bewusst in Kauf.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung bejaht ausdrücklich den Vorsatz der B hinsichtlich der nicht angepassten und grob verkehrswidrigen Geschwindigkeit. Sie stützt dies auf die bewusste Geschwindigkeitsüberschreitung und die Fluchtfahrt mit 170 km/h bei erlaubten 100 km/h und setzt diesen Vorsatz nicht mit der gesonderten Raserabsicht gleich.",
+              "evidence": [
+                "B handelte zudem vorsätzlich in Bezug auf die objektiven Tatumstände (nicht angepasste Geschwindigkeit, grobe Verkehrswidrigkeit, Rücksichtslosigkeit).",
+                "Sie kannte die Geschwindigkeitsbegrenzung und nahm die erhebliche Überschreitung sowie den darin liegenden schweren Pflichtverstoß bewusst in Kauf."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung des Vorsatzes hinsichtlich der nicht angepassten Geschwindigkeit bei § 315d Abs. 1 Nr. 3 StGB",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Bejahung des Vorsatzes hinsichtlich der groben Verkehrswidrigkeit bei § 315d Abs. 1 Nr. 3 StGB",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung mit bewusster Beschleunigung und Fahrt mit 170 km/h bei erlaubten 100 km/h vor dem Streifenwagen",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B; § 315d Abs. 1 Nr. 3 StGB; Vorsatz bezüglich der objektiven Fluchtfahrt mit nicht angepasster und grob verkehrswidriger Geschwindigkeit",
+                "evidence_scope": "B; § 315d Abs. 1 Nr. 3 StGB; subjektiver Tatbestand, insbesondere Vorsatz bezüglich der objektiven Tatumstände der Fluchtfahrt",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "B kannte die Geschwindigkeitsbegrenzung und nahm die erhebliche Überschreitung sowie den schweren Pflichtverstoß bewusst in Kauf; sie beschleunigte bewusst und floh mit 170 km/h bei erlaubten 100 km/h vor dem Streifenwagen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-032",
+      "title": "Vorsatz hinsichtlich der objektiven Fluchtfahrt",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Lösung prüft den Vorsatz hinsichtlich der objektiven Tatumstände ausdrücklich und begründet ihn mit Bs Kenntnis der Geschwindigkeitsbegrenzung sowie der bewussten Überschreitung. Damit ist diese Prüfung von der gesondert behandelten Raserabsicht abgegrenzt und abgeschlossen.",
+      "evidence": [
+        "B handelte zudem vorsätzlich in Bezug auf die objektiven Tatumstände (nicht angepasste Geschwindigkeit, grobe Verkehrswidrigkeit, Rücksichtslosigkeit).",
+        "Sie kannte die Geschwindigkeitsbegrenzung und nahm die erhebliche Überschreitung sowie den darin liegenden schweren Pflichtverstoß bewusst in Kauf."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung prüft den Vorsatz hinsichtlich der objektiven Tatumstände ausdrücklich und begründet ihn mit Bs Kenntnis der Geschwindigkeitsbegrenzung sowie der bewussten Überschreitung. Damit ist diese Prüfung von der gesondert behandelten Raserabsicht abgegrenzt und abgeschlossen.",
+          "evidence": [
+            "B handelte zudem vorsätzlich in Bezug auf die objektiven Tatumstände (nicht angepasste Geschwindigkeit, grobe Verkehrswidrigkeit, Rücksichtslosigkeit).",
+            "Sie kannte die Geschwindigkeitsbegrenzung und nahm die erhebliche Überschreitung sowie den darin liegenden schweren Pflichtverstoß bewusst in Kauf."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung prüft den Vorsatz bei § 315d Abs. 1 Nr. 3 StGB gesondert. Sie benennt den subjektiven Maßstab, verknüpft ihn mit den konkreten Tatumständen der Fluchtfahrt und gelangt zum Ergebnis, dass B die nicht angepasste und grob verkehrswidrige Geschwindigkeit bewusst verwirklichte.",
+          "evidence": [
+            "B handelte zudem vorsätzlich in Bezug auf die objektiven Tatumstände (nicht angepasste Geschwindigkeit, grobe Verkehrswidrigkeit, Rücksichtslosigkeit).",
+            "Sie kannte die Geschwindigkeitsbegrenzung und nahm die erhebliche Überschreitung sowie den darin liegenden schweren Pflichtverstoß bewusst in Kauf."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung prüft den Vorsatz hinsichtlich der objektiven Tatumstände ausdrücklich und begründet ihn mit Bs Kenntnis der Geschwindigkeitsbegrenzung sowie der bewussten Überschreitung. Damit ist diese Prüfung von der gesondert behandelten Raserabsicht abgegrenzt und abgeschlossen.",
+              "evidence": [
+                "B handelte zudem vorsätzlich in Bezug auf die objektiven Tatumstände (nicht angepasste Geschwindigkeit, grobe Verkehrswidrigkeit, Rücksichtslosigkeit).",
+                "Sie kannte die Geschwindigkeitsbegrenzung und nahm die erhebliche Überschreitung sowie den darin liegenden schweren Pflichtverstoß bewusst in Kauf."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung prüft den Vorsatz bei § 315d Abs. 1 Nr. 3 StGB gesondert. Sie benennt den subjektiven Maßstab, verknüpft ihn mit den konkreten Tatumständen der Fluchtfahrt und gelangt zum Ergebnis, dass B die nicht angepasste und grob verkehrswidrige Geschwindigkeit bewusst verwirklichte.",
+              "evidence": [
+                "B handelte zudem vorsätzlich in Bezug auf die objektiven Tatumstände (nicht angepasste Geschwindigkeit, grobe Verkehrswidrigkeit, Rücksichtslosigkeit).",
+                "Sie kannte die Geschwindigkeitsbegrenzung und nahm die erhebliche Überschreitung sowie den darin liegenden schweren Pflichtverstoß bewusst in Kauf."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

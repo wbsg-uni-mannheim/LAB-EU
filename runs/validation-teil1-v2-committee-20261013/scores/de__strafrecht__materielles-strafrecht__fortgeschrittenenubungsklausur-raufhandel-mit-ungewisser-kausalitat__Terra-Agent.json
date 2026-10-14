@@ -1,0 +1,519 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-raufhandel-mit-ungewisser-kausalitat",
+    "title": "Fortgeschrittenenübungsklausur: Raufhandel mit ungewisser Kausalität"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenubungsklausur-raufhandel-mit-ungewisser-kausalitat/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-raufhandel-mit-ungewisser-kausalitat/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:35:03.515151+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 2,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Strafbarkeit von T": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Strafbarkeit von T › § 231 Abs. 1 StGB": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 5354,
+    "output_tokens": 2659,
+    "total_tokens": 8013,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 2551
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 5354,
+    "output_tokens": 2659,
+    "total_tokens": 8013,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 2551
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-048",
+      "title": "Schwere Folge in Ts Prüfung nach § 231 StGB",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort enthält keine inhaltliche Ausführung. Sie berücksichtigt daher weder den dauerhaften Gehörverlust des S noch dessen Bedeutung für Ts mögliche Strafbarkeit trotz ungeklärter Täterschaft beim Vasenschlag.",
+      "evidence": [
+        "# Falllösung"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort enthält keine inhaltliche Ausführung. Sie berücksichtigt daher weder den dauerhaften Gehörverlust des S noch dessen Bedeutung für Ts mögliche Strafbarkeit trotz ungeklärter Täterschaft beim Vasenschlag.",
+          "evidence": [
+            "# Falllösung"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Ts mögliche Strafbarkeit nach § 231 Abs. 1 StGB wird geprüft.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Der dauerhafte Gehörverlust des S wird als schwere Folge berücksichtigt.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die schwere Folge wird trotz ungeklärter Person des Vasenschlägers berücksichtigt.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "T; schwere Folge bei § 231 Abs. 1 StGB",
+            "evidence_scope": "Keine inhaltliche Prüfung erkennbar",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort enthält keinerlei Ausführungen zu § 231 StGB. Insbesondere fehlt jede Prüfung, ob bei T der dauerhafte Gehörverlust des S als schwere Folge der Schlägerei berücksichtigt wird, obwohl nicht feststeht, wer den Vasenschlag ausführte. Die erforderlichen PASS-Komponenten sind vollständig nicht erfüllt.",
+          "evidence": [
+            "## fallloesung.md\n# Falllösung"
+          ],
+          "component_checks": [
+            {
+              "requirement": "T wird bei möglicher Strafbarkeit nach § 231 Abs. 1 StGB geprüft",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Der dauerhafte Gehörverlust des S wird als durch die Schlägerei verursachte schwere Folge bzw. objektive Bedingung der Strafbarkeit berücksichtigt",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die schwere Folge wird trotz ungeklärter Urheberschaft des Vasenschlags nicht als von T persönlich verursacht vorausgesetzt, sondern als eingetreten berücksichtigt",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "T, Prüfung nach § 231 Abs. 1 StGB, dauerhafter Gehörverlust des S als objektive Bedingung der Strafbarkeit trotz ungeklärter Urheberschaft",
+            "evidence_scope": "keine rechtliche Prüfung, nur die Überschrift „Falllösung“",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 5354,
+        "output_tokens": 2659,
+        "total_tokens": 8013,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 2551
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort enthält keine inhaltliche Ausführung. Sie berücksichtigt daher weder den dauerhaften Gehörverlust des S noch dessen Bedeutung für Ts mögliche Strafbarkeit trotz ungeklärter Täterschaft beim Vasenschlag.",
+              "evidence": [
+                "# Falllösung"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Ts mögliche Strafbarkeit nach § 231 Abs. 1 StGB wird geprüft.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Der dauerhafte Gehörverlust des S wird als schwere Folge berücksichtigt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die schwere Folge wird trotz ungeklärter Person des Vasenschlägers berücksichtigt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "T; schwere Folge bei § 231 Abs. 1 StGB",
+                "evidence_scope": "Keine inhaltliche Prüfung erkennbar",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort enthält keinerlei Ausführungen zu § 231 StGB. Insbesondere fehlt jede Prüfung, ob bei T der dauerhafte Gehörverlust des S als schwere Folge der Schlägerei berücksichtigt wird, obwohl nicht feststeht, wer den Vasenschlag ausführte. Die erforderlichen PASS-Komponenten sind vollständig nicht erfüllt.",
+              "evidence": [
+                "## fallloesung.md\n# Falllösung"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "T wird bei möglicher Strafbarkeit nach § 231 Abs. 1 StGB geprüft",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Der dauerhafte Gehörverlust des S wird als durch die Schlägerei verursachte schwere Folge bzw. objektive Bedingung der Strafbarkeit berücksichtigt",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die schwere Folge wird trotz ungeklärter Urheberschaft des Vasenschlags nicht als von T persönlich verursacht vorausgesetzt, sondern als eingetreten berücksichtigt",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "T, Prüfung nach § 231 Abs. 1 StGB, dauerhafter Gehörverlust des S als objektive Bedingung der Strafbarkeit trotz ungeklärter Urheberschaft",
+                "evidence_scope": "keine rechtliche Prüfung, nur die Überschrift „Falllösung“",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-048",
+      "title": "Schwere Folge in Ts Prüfung nach § 231 StGB",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort enthält außer der Überschrift keine Prüfung, die T, § 231 StGB und die schwere Folge miteinander verbindet.",
+      "evidence": [
+        "# Falllösung"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort enthält außer der Überschrift keine Prüfung, die T, § 231 StGB und die schwere Folge miteinander verbindet.",
+          "evidence": [
+            "# Falllösung"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort enthält lediglich die Überschrift „# Falllösung“, aber keine Prüfung des T nach § 231 StGB. Es fehlen ein kriterienspezifischer Maßstab, konkrete Sachverhaltsanbindung und eine abschließende rechtliche Verknüpfung zur schweren Folge. Damit liegt keine methodische Erörterung der objektiven Bedingung des § 231 Abs. 1 StGB vor.",
+          "evidence": [
+            "## fallloesung.md\n# Falllösung"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort enthält außer der Überschrift keine Prüfung, die T, § 231 StGB und die schwere Folge miteinander verbindet.",
+              "evidence": [
+                "# Falllösung"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort enthält lediglich die Überschrift „# Falllösung“, aber keine Prüfung des T nach § 231 StGB. Es fehlen ein kriterienspezifischer Maßstab, konkrete Sachverhaltsanbindung und eine abschließende rechtliche Verknüpfung zur schweren Folge. Damit liegt keine methodische Erörterung der objektiven Bedingung des § 231 Abs. 1 StGB vor.",
+              "evidence": [
+                "## fallloesung.md\n# Falllösung"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

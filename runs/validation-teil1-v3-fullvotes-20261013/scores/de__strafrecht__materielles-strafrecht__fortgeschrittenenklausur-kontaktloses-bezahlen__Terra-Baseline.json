@@ -1,0 +1,731 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-kontaktloses-bezahlen",
+    "title": "Fortgeschrittenenklausur: Kontaktloses Bezahlen"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenklausur-kontaktloses-bezahlen/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-kontaktloses-bezahlen/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T11:10:13.131957+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v3",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Erster Handlungsabschnitt: Das Einstecken der EC-Karte": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Erster Handlungsabschnitt: Das Einstecken der EC-Karte › Diebstahl der EC-Karte gem. § 242 Abs. 1 StGB": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 21024,
+    "output_tokens": 8716,
+    "total_tokens": 29740,
+    "cached_input_tokens": 1280,
+    "cache_write_tokens": 6577
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 21024,
+    "output_tokens": 8716,
+    "total_tokens": 29740,
+    "cached_input_tokens": 1280,
+    "cache_write_tokens": 6577
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-003",
+      "title": "Kein fortbestehender Gewahrsam des V",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort verneint den fortbestehenden Gewahrsam des V und stützt dies auf das Verlassen des Spielplatzes sowie die fehlende tatsächliche Herrschaftssphäre. Dass bloßer Rückerlangungswille tatsächliche Sachherrschaft nicht ersetzt, folgt aus dem ausdrücklich zugrunde gelegten Gewahrsamsmaßstab.",
+      "evidence": [
+        "Eine Wegnahme setzt jedoch den Bruch fremden und die Begründung neuen Gewahrsams voraus.",
+        "Nachdem V mit S und F den Spielplatz verlassen hatte, befand sich die Karte unter einer öffentlichen Parkbank außerhalb seiner tatsächlichen Herrschaftssphäre.",
+        "V hatte daher keinen Gewahrsam mehr an ihr."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint den fortbestehenden Gewahrsam des V und stützt dies auf das Verlassen des Spielplatzes sowie die fehlende tatsächliche Herrschaftssphäre. Dass bloßer Rückerlangungswille tatsächliche Sachherrschaft nicht ersetzt, folgt aus dem ausdrücklich zugrunde gelegten Gewahrsamsmaßstab.",
+          "evidence": [
+            "Eine Wegnahme setzt jedoch den Bruch fremden und die Begründung neuen Gewahrsams voraus.",
+            "Nachdem V mit S und F den Spielplatz verlassen hatte, befand sich die Karte unter einer öffentlichen Parkbank außerhalb seiner tatsächlichen Herrschaftssphäre.",
+            "V hatte daher keinen Gewahrsam mehr an ihr."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bei § 242 Abs. 1 StGB wird Wegnahme als Bruch fremden und Begründung neuen Gewahrsams geprüft.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Ein fortbestehender Gewahrsam des V wird verneint.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Verneinung wird damit begründet, dass V den öffentlich zugänglichen Spielplatz verlassen hatte und die Karte außerhalb seiner tatsächlichen Zugriffssphäre lag.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Ein allgemeiner Rückerlangungswille genügt nicht, um trotz fehlender tatsächlicher Sachherrschaft fortbestehenden Gewahrsam anzunehmen.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "V, Gewahrsam an der verlorenen EC-Karte bei der Prüfung der Wegnahme nach § 242 Abs. 1 StGB",
+            "evidence_scope": "V, Gewahrsam an der EC-Karte bei der Prüfung der Wegnahme nach § 242 Abs. 1 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "V hatte den Spielplatz verlassen; die Karte lag unter einer öffentlichen Bank außerhalb seiner tatsächlichen Herrschaftssphäre.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint einen fortbestehenden Gewahrsam des V aus tatsächlicher Sachherrschaft und nicht aus Eigentum oder bloßem Herrschaftswillen. Die tragenden Umstände sind enthalten: Verlust unbemerkt, Verlassen des öffentlichen Spielplatzes, keine tatsächliche Zugriffsmöglichkeit. Ein allgemeiner Rückerlangungswille wird nicht zur Gewahrsamsbegründung herangezogen; die Verneinung ist daher inhaltlich tragfähig.",
+          "evidence": [
+            "Eine Wegnahme setzt jedoch den Bruch fremden und die Begründung neuen Gewahrsams voraus.",
+            "V hatte die Karte unbemerkt auf dem Spielplatz verloren.",
+            "Nachdem V mit S und F den Spielplatz verlassen hatte, befand sich die Karte unter einer öffentlichen Parkbank außerhalb seiner tatsächlichen Herrschaftssphäre.",
+            "V hatte daher keinen Gewahrsam mehr an ihr."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Wegnahme als Bruch fremden und Begründung neuen Gewahrsams bei § 242 Abs. 1 StGB prüfen",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Fortbestehenden Gewahrsam des V verneinen",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Begründung: V hatte den öffentlich zugänglichen Park verlassen",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Begründung: V kannte den Verlustort nicht bzw. bemerkte den Verlust nicht",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Begründung: V besaß keine tatsächliche Zugriffsmöglichkeit",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Gewahrsam wird nicht allein aus Eigentum oder bloßem Herrschaftswillen hergeleitet",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "§ 242 Abs. 1 StGB, fortbestehender Gewahrsam des V an der verlorenen EC-Karte",
+            "evidence_scope": "§ 242 Abs. 1 StGB, Gewahrsam des V an der verlorenen EC-Karte",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "V hatte die Karte unbemerkt verloren, den öffentlichen Spielplatz verlassen, und die Karte lag außerhalb seiner tatsächlichen Herrschaftssphäre, sodass kein Gewahrsam mehr bestand.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Alle Anforderungen des Kriteriums sind erfüllt. Der Gewahrsam des V wird unter Verweis auf das unbemerkte Verlieren und das Verlassen des Spielplatzes verneint.",
+          "evidence": [
+            "Eine Wegnahme setzt jedoch den Bruch fremden und die Begründung neuen Gewahrsams voraus.",
+            "V hatte die Karte unbemerkt auf dem Spielplatz verloren. Nachdem V mit S und F den Spielplatz verlassen hatte, befand sich die Karte unter einer öffentlichen Parkbank außerhalb seiner tatsächlichen Herrschaftssphäre. V hatte daher keinen Gewahrsam mehr an ihr.",
+            "A brach folglich keinen fremden Gewahrsam, sondern begründete erstmals Gewahrsam an einer verlorenen Sache."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Prüfung der Wegnahme als Bruch fremden und Begründung neuen Gewahrsams bei § 242 Abs. 1 StGB",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Verneinung eines fortbestehenden Gewahrsams des V mit Blick auf das Verlassen des Orts und das Fehlen tatsächlicher Sachherrschaft",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Keine Herleitung des Gewahrsams allein aus Eigentum oder Herrschaftswillen",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A / EC-Karte / § 242 Abs. 1 StGB / Wegnahme: fortbestehender Gewahrsam des V",
+            "evidence_scope": "A / EC-Karte / § 242 Abs. 1 StGB / Wegnahme: fortbestehender Gewahrsam des V",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "V hatte die Karte unbemerkt verloren und den Park verlassen, sodass sie sich außerhalb seiner tatsächlichen Herrschaftssphäre befand.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 21024,
+        "output_tokens": 8716,
+        "total_tokens": 29740,
+        "cached_input_tokens": 1280,
+        "cache_write_tokens": 6577
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint den fortbestehenden Gewahrsam des V und stützt dies auf das Verlassen des Spielplatzes sowie die fehlende tatsächliche Herrschaftssphäre. Dass bloßer Rückerlangungswille tatsächliche Sachherrschaft nicht ersetzt, folgt aus dem ausdrücklich zugrunde gelegten Gewahrsamsmaßstab.",
+              "evidence": [
+                "Eine Wegnahme setzt jedoch den Bruch fremden und die Begründung neuen Gewahrsams voraus.",
+                "Nachdem V mit S und F den Spielplatz verlassen hatte, befand sich die Karte unter einer öffentlichen Parkbank außerhalb seiner tatsächlichen Herrschaftssphäre.",
+                "V hatte daher keinen Gewahrsam mehr an ihr."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bei § 242 Abs. 1 StGB wird Wegnahme als Bruch fremden und Begründung neuen Gewahrsams geprüft.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Ein fortbestehender Gewahrsam des V wird verneint.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Verneinung wird damit begründet, dass V den öffentlich zugänglichen Spielplatz verlassen hatte und die Karte außerhalb seiner tatsächlichen Zugriffssphäre lag.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Ein allgemeiner Rückerlangungswille genügt nicht, um trotz fehlender tatsächlicher Sachherrschaft fortbestehenden Gewahrsam anzunehmen.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "V, Gewahrsam an der verlorenen EC-Karte bei der Prüfung der Wegnahme nach § 242 Abs. 1 StGB",
+                "evidence_scope": "V, Gewahrsam an der EC-Karte bei der Prüfung der Wegnahme nach § 242 Abs. 1 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "V hatte den Spielplatz verlassen; die Karte lag unter einer öffentlichen Bank außerhalb seiner tatsächlichen Herrschaftssphäre.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint einen fortbestehenden Gewahrsam des V aus tatsächlicher Sachherrschaft und nicht aus Eigentum oder bloßem Herrschaftswillen. Die tragenden Umstände sind enthalten: Verlust unbemerkt, Verlassen des öffentlichen Spielplatzes, keine tatsächliche Zugriffsmöglichkeit. Ein allgemeiner Rückerlangungswille wird nicht zur Gewahrsamsbegründung herangezogen; die Verneinung ist daher inhaltlich tragfähig.",
+              "evidence": [
+                "Eine Wegnahme setzt jedoch den Bruch fremden und die Begründung neuen Gewahrsams voraus.",
+                "V hatte die Karte unbemerkt auf dem Spielplatz verloren.",
+                "Nachdem V mit S und F den Spielplatz verlassen hatte, befand sich die Karte unter einer öffentlichen Parkbank außerhalb seiner tatsächlichen Herrschaftssphäre.",
+                "V hatte daher keinen Gewahrsam mehr an ihr."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Wegnahme als Bruch fremden und Begründung neuen Gewahrsams bei § 242 Abs. 1 StGB prüfen",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Fortbestehenden Gewahrsam des V verneinen",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung: V hatte den öffentlich zugänglichen Park verlassen",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung: V kannte den Verlustort nicht bzw. bemerkte den Verlust nicht",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Begründung: V besaß keine tatsächliche Zugriffsmöglichkeit",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Gewahrsam wird nicht allein aus Eigentum oder bloßem Herrschaftswillen hergeleitet",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "§ 242 Abs. 1 StGB, fortbestehender Gewahrsam des V an der verlorenen EC-Karte",
+                "evidence_scope": "§ 242 Abs. 1 StGB, Gewahrsam des V an der verlorenen EC-Karte",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "V hatte die Karte unbemerkt verloren, den öffentlichen Spielplatz verlassen, und die Karte lag außerhalb seiner tatsächlichen Herrschaftssphäre, sodass kein Gewahrsam mehr bestand.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Alle Anforderungen des Kriteriums sind erfüllt. Der Gewahrsam des V wird unter Verweis auf das unbemerkte Verlieren und das Verlassen des Spielplatzes verneint.",
+              "evidence": [
+                "Eine Wegnahme setzt jedoch den Bruch fremden und die Begründung neuen Gewahrsams voraus.",
+                "V hatte die Karte unbemerkt auf dem Spielplatz verloren. Nachdem V mit S und F den Spielplatz verlassen hatte, befand sich die Karte unter einer öffentlichen Parkbank außerhalb seiner tatsächlichen Herrschaftssphäre. V hatte daher keinen Gewahrsam mehr an ihr.",
+                "A brach folglich keinen fremden Gewahrsam, sondern begründete erstmals Gewahrsam an einer verlorenen Sache."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Prüfung der Wegnahme als Bruch fremden und Begründung neuen Gewahrsams bei § 242 Abs. 1 StGB",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Verneinung eines fortbestehenden Gewahrsams des V mit Blick auf das Verlassen des Orts und das Fehlen tatsächlicher Sachherrschaft",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Keine Herleitung des Gewahrsams allein aus Eigentum oder Herrschaftswillen",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A / EC-Karte / § 242 Abs. 1 StGB / Wegnahme: fortbestehender Gewahrsam des V",
+                "evidence_scope": "A / EC-Karte / § 242 Abs. 1 StGB / Wegnahme: fortbestehender Gewahrsam des V",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "V hatte die Karte unbemerkt verloren und den Park verlassen, sodass sie sich außerhalb seiner tatsächlichen Herrschaftssphäre befand.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-003",
+      "title": "Kein fortbestehender Gewahrsam des V",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort nennt den Wegnahme-Maßstab, verknüpft ihn mit dem Verlassen des Spielplatzes und der Lage der Karte außerhalb der tatsächlichen Herrschaftssphäre des V und verneint darauf gestützt dessen Gewahrsam.",
+      "evidence": [
+        "Eine Wegnahme setzt jedoch den Bruch fremden und die Begründung neuen Gewahrsams voraus.",
+        "Nachdem V mit S und F den Spielplatz verlassen hatte, befand sich die Karte unter einer öffentlichen Parkbank außerhalb seiner tatsächlichen Herrschaftssphäre.",
+        "V hatte daher keinen Gewahrsam mehr an ihr."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort nennt den Wegnahme-Maßstab, verknüpft ihn mit dem Verlassen des Spielplatzes und der Lage der Karte außerhalb der tatsächlichen Herrschaftssphäre des V und verneint darauf gestützt dessen Gewahrsam.",
+          "evidence": [
+            "Eine Wegnahme setzt jedoch den Bruch fremden und die Begründung neuen Gewahrsams voraus.",
+            "Nachdem V mit S und F den Spielplatz verlassen hatte, befand sich die Karte unter einer öffentlichen Parkbank außerhalb seiner tatsächlichen Herrschaftssphäre.",
+            "V hatte daher keinen Gewahrsam mehr an ihr."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft bei § 242 Abs. 1 StGB die Wegnahme, benennt den Gewahrsamsmaßstab, verknüpft ihn mit den konkreten Tatsachen (verlorene Karte, verlassener öffentlicher Spielplatz, keine tatsächliche Herrschaftssphäre) und zieht daraus den Schluss fehlenden Gewahrsams. Das ist ein vollständiger, kriteriumsspezifischer Begründungsweg.",
+          "evidence": [
+            "Eine Wegnahme setzt jedoch den Bruch fremden und die Begründung neuen Gewahrsams voraus.",
+            "V hatte daher keinen Gewahrsam mehr an ihr.",
+            "A brach folglich keinen fremden Gewahrsam, sondern begründete erstmals Gewahrsam an einer verlorenen Sache."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Falllösung definiert den Gewahrsamsbegriff im Rahmen der Wegnahme bei § 242 Abs. 1 StGB, subsumiert die Tatsachen des Verlassens des Spielplatzes und des unbemerkten Verlusts darunter und schließt methodisch einwandfrei auf das Erlöschen des Gewahrsams.",
+          "evidence": [
+            "Eine Wegnahme setzt jedoch den Bruch fremden und die Begründung neuen Gewahrsams voraus. Gewahrsam ist die von einem natürlichen Herrschaftswillen getragene tatsächliche Sachherrschaft, deren Reichweite sich nach der Verkehrsauffassung bestimmt. V hatte die Karte unbemerkt auf dem Spielplatz verloren. Nachdem V mit S und F den Spielplatz verlassen hatte, befand sich die Karte unter einer öffentlichen Parkbank außerhalb seiner tatsächlichen Herrschaftssphäre. V hatte daher keinen Gewahrsam mehr an ihr."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort nennt den Wegnahme-Maßstab, verknüpft ihn mit dem Verlassen des Spielplatzes und der Lage der Karte außerhalb der tatsächlichen Herrschaftssphäre des V und verneint darauf gestützt dessen Gewahrsam.",
+              "evidence": [
+                "Eine Wegnahme setzt jedoch den Bruch fremden und die Begründung neuen Gewahrsams voraus.",
+                "Nachdem V mit S und F den Spielplatz verlassen hatte, befand sich die Karte unter einer öffentlichen Parkbank außerhalb seiner tatsächlichen Herrschaftssphäre.",
+                "V hatte daher keinen Gewahrsam mehr an ihr."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft bei § 242 Abs. 1 StGB die Wegnahme, benennt den Gewahrsamsmaßstab, verknüpft ihn mit den konkreten Tatsachen (verlorene Karte, verlassener öffentlicher Spielplatz, keine tatsächliche Herrschaftssphäre) und zieht daraus den Schluss fehlenden Gewahrsams. Das ist ein vollständiger, kriteriumsspezifischer Begründungsweg.",
+              "evidence": [
+                "Eine Wegnahme setzt jedoch den Bruch fremden und die Begründung neuen Gewahrsams voraus.",
+                "V hatte daher keinen Gewahrsam mehr an ihr.",
+                "A brach folglich keinen fremden Gewahrsam, sondern begründete erstmals Gewahrsam an einer verlorenen Sache."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Falllösung definiert den Gewahrsamsbegriff im Rahmen der Wegnahme bei § 242 Abs. 1 StGB, subsumiert die Tatsachen des Verlassens des Spielplatzes und des unbemerkten Verlusts darunter und schließt methodisch einwandfrei auf das Erlöschen des Gewahrsams.",
+              "evidence": [
+                "Eine Wegnahme setzt jedoch den Bruch fremden und die Begründung neuen Gewahrsams voraus. Gewahrsam ist die von einem natürlichen Herrschaftswillen getragene tatsächliche Sachherrschaft, deren Reichweite sich nach der Verkehrsauffassung bestimmt. V hatte die Karte unbemerkt auf dem Spielplatz verloren. Nachdem V mit S und F den Spielplatz verlassen hatte, befand sich die Karte unter einer öffentlichen Parkbank außerhalb seiner tatsächlichen Herrschaftssphäre. V hatte daher keinen Gewahrsam mehr an ihr."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

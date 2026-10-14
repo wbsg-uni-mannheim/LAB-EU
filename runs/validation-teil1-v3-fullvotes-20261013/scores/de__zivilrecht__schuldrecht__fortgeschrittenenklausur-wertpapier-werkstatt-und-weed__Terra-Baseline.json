@@ -1,0 +1,469 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-wertpapier-werkstatt-und-weed",
+    "title": "Fortgeschrittenenklausur: Wertpapier, Werkstatt und Weed"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenklausur-wertpapier-werkstatt-und-weed/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-wertpapier-werkstatt-und-weed/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T11:04:19.976841+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v3",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Ansprüche des R gegen S (Reparaturkosten)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Ansprüche des R gegen S (Reparaturkosten) › Anspruch des R gegen S auf Aufwendungsersatz aus §§ 634 Nr. 2, 637 Abs. 1 und 2, 323 Abs. 2 BGB": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "conclusion": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 24797,
+    "output_tokens": 3294,
+    "total_tokens": 28091,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 7701
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 24797,
+    "output_tokens": 3294,
+    "total_tokens": 28091,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 7701
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-027",
+      "title": "Kein Selbstvornahmeersatz nach § 637 BGB",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort verneint den Anspruch aus § 637 Abs. 1 BGB ausdrücklich und begründet dies damit, dass R S keine Frist gesetzt hat und die Betriebsferien ohne weitere dringliche Umstände keine sofortige Selbstvornahme rechtfertigen.",
+      "evidence": [
+        "Auch hierfür müsste R S grundsätzlich eine angemessene Frist zur Nacherfüllung bestimmt haben.",
+        "Allein der Umstand, dass S sich für eine Woche in Betriebsferien befand, rechtfertigt ohne weitere dringliche Umstände keine sofortige Selbstvornahme.",
+        "Ein Anspruch aus § 634 Nr. 2, § 637 Abs. 1 BGB besteht daher ebenfalls nicht."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint den Anspruch aus § 637 Abs. 1 BGB ausdrücklich und begründet dies damit, dass R S keine Frist gesetzt hat und die Betriebsferien ohne weitere dringliche Umstände keine sofortige Selbstvornahme rechtfertigen.",
+          "evidence": [
+            "Auch hierfür müsste R S grundsätzlich eine angemessene Frist zur Nacherfüllung bestimmt haben.",
+            "Allein der Umstand, dass S sich für eine Woche in Betriebsferien befand, rechtfertigt ohne weitere dringliche Umstände keine sofortige Selbstvornahme.",
+            "Ein Anspruch aus § 634 Nr. 2, § 637 Abs. 1 BGB besteht daher ebenfalls nicht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Aufwendungsersatz für den eigenmächtigen Austausch der Kette nach § 637 BGB wird abgelehnt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Eine Frist zur Nacherfüllung gegenüber S wurde nicht gesetzt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Fristsetzung war nicht entbehrlich; Betriebsferien allein rechtfertigen keine sofortige Selbstvornahme.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "R gegen S; Aufwendungsersatz für den eigenmächtigen Kettenaustausch nach § 637 BGB.",
+            "evidence_scope": "R gegen S; Ersatz der 400 € für die neue Kette im Rahmen der Selbstvornahme nach § 637 BGB.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "R setzte S keine Frist zur Nacherfüllung; die Betriebsferien allein sind kein Grund, die Fristsetzung zu entbehren.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft den Aufwendungsersatz für den Kettenaustausch ausdrücklich unter §§ 634 Nr. 2, 637 Abs. 1 BGB und lehnt ihn wegen fehlender, nicht entbehrlicher Fristsetzung zur Nacherfüllung ab. Damit ist die Kriteriumsanforderung erfüllt.",
+          "evidence": [
+            "Auch hierfür müsste R S grundsätzlich eine angemessene Frist zur Nacherfüllung bestimmt haben.",
+            "Eine Fristsetzung ist nach § 637 Abs. 2 BGB nur entbehrlich, wenn S die Nacherfüllung verweigert oder wenn besondere Umstände die sofortige Selbstvornahme rechtfertigen.",
+            "S hatte die Nacherfüllung nicht verweigert. Allein der Umstand, dass S sich für eine Woche in Betriebsferien befand, rechtfertigt ohne weitere dringliche Umstände keine sofortige Selbstvornahme.",
+            "Ein Anspruch aus § 634 Nr. 2, § 637 Abs. 1 BGB besteht daher ebenfalls nicht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort prüft einen Aufwendungsersatzanspruch für den Kettenaustausch nach §§ 634 Nr. 2, 637 BGB.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort lehnt diesen Anspruch wegen fehlender Fristsetzung zur Nacherfüllung ab.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort prüft und verneint die Entbehrlichkeit der Fristsetzung nach § 637 Abs. 2 BGB.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort kommt zum Ergebnis, dass kein Selbstvornahmeersatz nach § 637 BGB besteht.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "R gegen S, Ersatz der 400 € für den eigenmächtigen Kettenaustausch durch W, Selbstvornahme nach §§ 634 Nr. 2, 637 BGB",
+            "evidence_scope": "R gegen S, Ersatz der 400 € für die neue Kette nach eigenmächtiger Fremdreparatur, Selbstvornahme nach §§ 634 Nr. 2, 637 BGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Keine vorherige Fristsetzung zur Nacherfüllung; diese war nicht nach § 637 Abs. 2 BGB entbehrlich, weil S die Nacherfüllung nicht verweigert hatte und die einwöchigen Betriebsferien ohne dringliche Umstände keine sofortige Selbstvornahme rechtfertigten.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft den Aufwendungsersatzanspruch nach § 634 Nr. 2, § 637 BGB für den Austausch der Kette und lehnt ihn ausdrücklich ab, da eine erforderliche Fristsetzung zur Nacherfüllung fehlte und nicht entbehrlich war.",
+          "evidence": [
+            "R könnte die 400 € ferner als Aufwendungsersatz für eine Selbstvornahme gemäß § 634 Nr. 2, § 637 Abs. 1 BGB verlangen.",
+            "Auch hierfür müsste R S grundsätzlich eine angemessene Frist zur Nacherfüllung bestimmt haben. Eine Fristsetzung ist nach § 637 Abs. 2 BGB nur entbehrlich, wenn S die Nacherfüllung verweigert oder wenn besondere Umstände die sofortige Selbstvornahme rechtfertigen.",
+            "R hätte S zumindest Gelegenheit geben müssen, nach Ende der Betriebsferien die Kette selbst fachgerecht zu ersetzen.",
+            "Ein Anspruch aus § 634 Nr. 2, § 637 Abs. 1 BGB besteht daher ebenfalls nicht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Ablehnung eines Aufwendungsersatzanspruchs für den Kettenaustausch nach §§ 634 Nr. 2, 637 Abs. 1 und 2 BGB wegen fehlender und nicht entbehrlicher Fristsetzung",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "R gegen S, Anspruch auf Ersatz der Kosten für die neue Kette (400 €) aus §§ 634 Nr. 2, 637 BGB",
+            "evidence_scope": "R gegen S, Anspruch auf Ersatz der Kosten für die neue Kette (400 €) aus §§ 634 Nr. 2, 637 BGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "R hat S keine Frist zur Nacherfüllung gesetzt und eine solche war auch während der einwöchigen Betriebsferien nicht entbehrlich, da keine dringlichen Umstände eine sofortige Selbstvornahme rechtfertigten.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 24797,
+        "output_tokens": 3294,
+        "total_tokens": 28091,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 7701
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint den Anspruch aus § 637 Abs. 1 BGB ausdrücklich und begründet dies damit, dass R S keine Frist gesetzt hat und die Betriebsferien ohne weitere dringliche Umstände keine sofortige Selbstvornahme rechtfertigen.",
+              "evidence": [
+                "Auch hierfür müsste R S grundsätzlich eine angemessene Frist zur Nacherfüllung bestimmt haben.",
+                "Allein der Umstand, dass S sich für eine Woche in Betriebsferien befand, rechtfertigt ohne weitere dringliche Umstände keine sofortige Selbstvornahme.",
+                "Ein Anspruch aus § 634 Nr. 2, § 637 Abs. 1 BGB besteht daher ebenfalls nicht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Aufwendungsersatz für den eigenmächtigen Austausch der Kette nach § 637 BGB wird abgelehnt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Eine Frist zur Nacherfüllung gegenüber S wurde nicht gesetzt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Fristsetzung war nicht entbehrlich; Betriebsferien allein rechtfertigen keine sofortige Selbstvornahme.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "R gegen S; Aufwendungsersatz für den eigenmächtigen Kettenaustausch nach § 637 BGB.",
+                "evidence_scope": "R gegen S; Ersatz der 400 € für die neue Kette im Rahmen der Selbstvornahme nach § 637 BGB.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "R setzte S keine Frist zur Nacherfüllung; die Betriebsferien allein sind kein Grund, die Fristsetzung zu entbehren.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft den Aufwendungsersatz für den Kettenaustausch ausdrücklich unter §§ 634 Nr. 2, 637 Abs. 1 BGB und lehnt ihn wegen fehlender, nicht entbehrlicher Fristsetzung zur Nacherfüllung ab. Damit ist die Kriteriumsanforderung erfüllt.",
+              "evidence": [
+                "Auch hierfür müsste R S grundsätzlich eine angemessene Frist zur Nacherfüllung bestimmt haben.",
+                "Eine Fristsetzung ist nach § 637 Abs. 2 BGB nur entbehrlich, wenn S die Nacherfüllung verweigert oder wenn besondere Umstände die sofortige Selbstvornahme rechtfertigen.",
+                "S hatte die Nacherfüllung nicht verweigert. Allein der Umstand, dass S sich für eine Woche in Betriebsferien befand, rechtfertigt ohne weitere dringliche Umstände keine sofortige Selbstvornahme.",
+                "Ein Anspruch aus § 634 Nr. 2, § 637 Abs. 1 BGB besteht daher ebenfalls nicht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort prüft einen Aufwendungsersatzanspruch für den Kettenaustausch nach §§ 634 Nr. 2, 637 BGB.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort lehnt diesen Anspruch wegen fehlender Fristsetzung zur Nacherfüllung ab.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort prüft und verneint die Entbehrlichkeit der Fristsetzung nach § 637 Abs. 2 BGB.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort kommt zum Ergebnis, dass kein Selbstvornahmeersatz nach § 637 BGB besteht.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "R gegen S, Ersatz der 400 € für den eigenmächtigen Kettenaustausch durch W, Selbstvornahme nach §§ 634 Nr. 2, 637 BGB",
+                "evidence_scope": "R gegen S, Ersatz der 400 € für die neue Kette nach eigenmächtiger Fremdreparatur, Selbstvornahme nach §§ 634 Nr. 2, 637 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Keine vorherige Fristsetzung zur Nacherfüllung; diese war nicht nach § 637 Abs. 2 BGB entbehrlich, weil S die Nacherfüllung nicht verweigert hatte und die einwöchigen Betriebsferien ohne dringliche Umstände keine sofortige Selbstvornahme rechtfertigten.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft den Aufwendungsersatzanspruch nach § 634 Nr. 2, § 637 BGB für den Austausch der Kette und lehnt ihn ausdrücklich ab, da eine erforderliche Fristsetzung zur Nacherfüllung fehlte und nicht entbehrlich war.",
+              "evidence": [
+                "R könnte die 400 € ferner als Aufwendungsersatz für eine Selbstvornahme gemäß § 634 Nr. 2, § 637 Abs. 1 BGB verlangen.",
+                "Auch hierfür müsste R S grundsätzlich eine angemessene Frist zur Nacherfüllung bestimmt haben. Eine Fristsetzung ist nach § 637 Abs. 2 BGB nur entbehrlich, wenn S die Nacherfüllung verweigert oder wenn besondere Umstände die sofortige Selbstvornahme rechtfertigen.",
+                "R hätte S zumindest Gelegenheit geben müssen, nach Ende der Betriebsferien die Kette selbst fachgerecht zu ersetzen.",
+                "Ein Anspruch aus § 634 Nr. 2, § 637 Abs. 1 BGB besteht daher ebenfalls nicht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Ablehnung eines Aufwendungsersatzanspruchs für den Kettenaustausch nach §§ 634 Nr. 2, 637 Abs. 1 und 2 BGB wegen fehlender und nicht entbehrlicher Fristsetzung",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "R gegen S, Anspruch auf Ersatz der Kosten für die neue Kette (400 €) aus §§ 634 Nr. 2, 637 BGB",
+                "evidence_scope": "R gegen S, Anspruch auf Ersatz der Kosten für die neue Kette (400 €) aus §§ 634 Nr. 2, 637 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "R hat S keine Frist zur Nacherfüllung gesetzt und eine solche war auch während der einwöchigen Betriebsferien nicht entbehrlich, da keine dringlichen Umstände eine sofortige Selbstvornahme rechtfertigten.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": []
+}

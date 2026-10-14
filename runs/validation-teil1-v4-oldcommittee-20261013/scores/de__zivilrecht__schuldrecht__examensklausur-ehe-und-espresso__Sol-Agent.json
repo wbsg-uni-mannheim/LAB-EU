@@ -1,0 +1,721 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/examensklausur-ehe-und-espresso",
+    "title": "Examensklausur: Ehe und Espresso"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-sol-high/20260730T221733Z/tasks/de__zivilrecht__schuldrecht__examensklausur-ehe-und-espresso/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/examensklausur-ehe-und-espresso/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna",
+      "model": "gpt-5.6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "terra",
+      "model": "gpt-5.6-terra",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "gemini-3.6-flash",
+      "model": "google/gemini-3.6-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": null,
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T15:12:21.700313+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 2,
+  "n_passed": 2,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 2,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 2,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 5,
+    "points_available": 5,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "terra": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.6-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Aufgabe 1": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Aufgabe 2": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Aufgabe 1 › Anspruch der F gegen N aus § 823 Abs. 1 BGB": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Aufgabe 2 › Anspruch der F gegen B aus § 985 BGB": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "rule_statement": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "conclusion": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 46038,
+    "output_tokens": 6284,
+    "total_tokens": 52322,
+    "cached_input_tokens": 12166,
+    "cache_write_tokens": 12166
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 46038,
+    "output_tokens": 6284,
+    "total_tokens": 52322,
+    "cached_input_tokens": 12166,
+    "cache_write_tokens": 12166
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-009",
+      "title": "Widerrufsberechtigung der F",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort erkennt ausdrücklich an, dass F aufgrund des § 1357 Abs. 1 S. 2 BGB ebenfalls ein verbraucherschützendes Gestaltungsrecht zum Widerruf haben kann. Dass sie den Widerruf wegen Fristablaufs und zusätzlich wegen der fehlenden Möglichkeit einer einseitigen Rückabwicklung gegenüber M scheitern lässt, spricht ihr das eigene Widerrufsrecht nicht grundsätzlich ab.",
+      "evidence": [
+        "Soweit F infolge § 1357 Abs. 1 Satz 2 BGB ebenfalls ein verbraucherschützendes Gestaltungsrecht zustand, musste sie sich die vertragsbezogene Belehrung und den Warenempfang durch den handelnden Ehegatten zurechnen lassen.",
+        "Unabhängig davon begegnet ein Widerruf allein durch F Bedenken."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erkennt ausdrücklich an, dass F aufgrund des § 1357 Abs. 1 S. 2 BGB ebenfalls ein verbraucherschützendes Gestaltungsrecht zum Widerruf haben kann. Dass sie den Widerruf wegen Fristablaufs und zusätzlich wegen der fehlenden Möglichkeit einer einseitigen Rückabwicklung gegenüber M scheitern lässt, spricht ihr das eigene Widerrufsrecht nicht grundsätzlich ab.",
+          "evidence": [
+            "Soweit F infolge § 1357 Abs. 1 Satz 2 BGB ebenfalls ein verbraucherschützendes Gestaltungsrecht zustand, musste sie sich die vertragsbezogene Belehrung und den Warenempfang durch den handelnden Ehegatten zurechnen lassen.",
+            "Unabhängig davon begegnet ein Widerruf allein durch F Bedenken."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort erstreckt die Mitberechtigung der F nach § 1357 Abs. 1 S. 2 BGB auf ein verbraucherschützendes Gestaltungsrecht zum Widerruf.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort spricht F grundsätzlich ein eigenes Widerrufsrecht zu und verneint es nicht allein deshalb, weil nur M den Vertrag geschlossen hat.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "F, die Espressomaschine und die Widerrufsberechtigung als verbraucherschützendes Gestaltungsrecht im Rahmen des § 1357 BGB.",
+            "evidence_scope": "F, die Espressomaschine und ihr eigenes Widerrufsrecht im Rahmen des nach § 1357 BGB auf sie erstreckten Verbraucherschutzes.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "F ist aufgrund ihrer Mitberechtigung nach § 1357 Abs. 1 S. 2 BGB ebenfalls Inhaberin eines verbraucherschützenden Gestaltungsrechts; die vertragsbezogene Belehrung und der Warenempfang durch M sind ihr zuzurechnen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna",
+            "model": "gpt-5.6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint ein Widerrufsrecht der F nicht deshalb, weil nur M den Vertrag geschlossen hat. Sie ordnet vielmehr § 1357 Abs. 1 S. 2 BGB grundsätzlich auch einem verbraucherschützenden Gestaltungsrecht der F zu und prüft die Rechtzeitigkeit ihrer eigenen Widerrufserklärung. Dass sie den konkreten Widerruf wegen Fristablaufs und zusätzlich wegen der fehlenden einseitigen Rückabwicklungsmöglichkeit des einheitlichen Vertrags scheitern lässt, berührt die grundsätzliche Widerrufsberechtigung nicht.",
+          "evidence": [
+            "Soweit F infolge § 1357 Abs. 1 Satz 2 BGB ebenfalls ein verbraucherschützendes Gestaltungsrecht zustand, musste sie sich die vertragsbezogene Belehrung und den Warenempfang durch den handelnden Ehegatten zurechnen lassen.",
+            "Als F erst drei Wochen nach Übergabe die Maschine zurückbrachte und unmissverständlich die Erstattung der Anzahlung verlangte, war die Widerrufsfrist bereits abgelaufen. Ihre Erklärung war daher verspätet."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort erstreckt die Mitberechtigung der F nach § 1357 Abs. 1 S. 2 BGB auf das sekundäre Gestaltungsrecht des Verbraucherwiderrufs und spricht F grundsätzlich ein eigenes Widerrufsrecht zu.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "F, Kaufvertrag über die Espressomaschine, Widerrufsberechtigung der F als aus § 1357 Abs. 1 S. 2 BGB Mitberechtigte in Aufgabe 1.",
+            "evidence_scope": "F, derselbe Kaufvertrag über die Espressomaschine und die Prüfung ihres Verbraucherwiderrufs in Aufgabe 1.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Antwort behandelt F aufgrund ihrer Mitberechtigung aus § 1357 Abs. 1 S. 2 BGB als Inhaberin eines verbraucherschützenden Gestaltungsrechts und prüft deshalb die ihr zuzurechnende Widerrufsfrist; die konkrete Erklärung scheitert an deren Ablauf.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "terra",
+            "model": "gpt-5.6-terra",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erstreckt die Wirkungen des § 1357 Abs. 1 S. 2 BGB ausdrücklich auf das verbraucherschützende Gestaltungsrecht (Widerrufsrecht) der F. Sie spricht F ein solches Recht nicht etwa bloß wegen des alleinigen Vertragsschlusses durch M ab, sondern scheitert in der Sache an der Verfristung und dem entgegenstehenden Willen des M.",
+          "evidence": [
+            "Soweit F infolge § 1357 Abs. 1 Satz 2 BGB ebenfalls ein verbraucherschützendes Gestaltungsrecht zustand, musste sie sich die vertragsbezogene Belehrung und den Warenempfang durch den handelnden Ehegatten zurechnen lassen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Erstreckung der Mitberechtigung nach § 1357 Abs. 1 S. 2 BGB auf das Verbraucherwiderrufsrecht und grundsätzliche Zuspruchung eines eigenen Widerrufsrechts an F",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Aufgabe 1 / Kaufvertrag: Widerrufsberechtigung der F aus § 1357 Abs. 1 S. 2 BGB",
+            "evidence_scope": "Aufgabe 1 / Kaufvertrag: Widerrufsberechtigung der F aus § 1357 Abs. 1 S. 2 BGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "F stand infolge § 1357 Abs. 1 S. 2 BGB ebenfalls ein verbraucherschützendes Gestaltungsrecht (Widerrufsrecht) zu, sie musste sich jedoch Belehrung und Warenempfang zurechnen lassen und konnte den Vertrag nicht gegen den Willen des M rückabwickeln.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.6-flash",
+            "model": "google/gemini-3.6-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": null,
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 23006,
+        "output_tokens": 3953,
+        "total_tokens": 26959,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 12166
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erkennt ausdrücklich an, dass F aufgrund des § 1357 Abs. 1 S. 2 BGB ebenfalls ein verbraucherschützendes Gestaltungsrecht zum Widerruf haben kann. Dass sie den Widerruf wegen Fristablaufs und zusätzlich wegen der fehlenden Möglichkeit einer einseitigen Rückabwicklung gegenüber M scheitern lässt, spricht ihr das eigene Widerrufsrecht nicht grundsätzlich ab.",
+              "evidence": [
+                "Soweit F infolge § 1357 Abs. 1 Satz 2 BGB ebenfalls ein verbraucherschützendes Gestaltungsrecht zustand, musste sie sich die vertragsbezogene Belehrung und den Warenempfang durch den handelnden Ehegatten zurechnen lassen.",
+                "Unabhängig davon begegnet ein Widerruf allein durch F Bedenken."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort erstreckt die Mitberechtigung der F nach § 1357 Abs. 1 S. 2 BGB auf ein verbraucherschützendes Gestaltungsrecht zum Widerruf.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort spricht F grundsätzlich ein eigenes Widerrufsrecht zu und verneint es nicht allein deshalb, weil nur M den Vertrag geschlossen hat.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "F, die Espressomaschine und die Widerrufsberechtigung als verbraucherschützendes Gestaltungsrecht im Rahmen des § 1357 BGB.",
+                "evidence_scope": "F, die Espressomaschine und ihr eigenes Widerrufsrecht im Rahmen des nach § 1357 BGB auf sie erstreckten Verbraucherschutzes.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "F ist aufgrund ihrer Mitberechtigung nach § 1357 Abs. 1 S. 2 BGB ebenfalls Inhaberin eines verbraucherschützenden Gestaltungsrechts; die vertragsbezogene Belehrung und der Warenempfang durch M sind ihr zuzurechnen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna",
+                "model": "gpt-5.6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint ein Widerrufsrecht der F nicht deshalb, weil nur M den Vertrag geschlossen hat. Sie ordnet vielmehr § 1357 Abs. 1 S. 2 BGB grundsätzlich auch einem verbraucherschützenden Gestaltungsrecht der F zu und prüft die Rechtzeitigkeit ihrer eigenen Widerrufserklärung. Dass sie den konkreten Widerruf wegen Fristablaufs und zusätzlich wegen der fehlenden einseitigen Rückabwicklungsmöglichkeit des einheitlichen Vertrags scheitern lässt, berührt die grundsätzliche Widerrufsberechtigung nicht.",
+              "evidence": [
+                "Soweit F infolge § 1357 Abs. 1 Satz 2 BGB ebenfalls ein verbraucherschützendes Gestaltungsrecht zustand, musste sie sich die vertragsbezogene Belehrung und den Warenempfang durch den handelnden Ehegatten zurechnen lassen.",
+                "Als F erst drei Wochen nach Übergabe die Maschine zurückbrachte und unmissverständlich die Erstattung der Anzahlung verlangte, war die Widerrufsfrist bereits abgelaufen. Ihre Erklärung war daher verspätet."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort erstreckt die Mitberechtigung der F nach § 1357 Abs. 1 S. 2 BGB auf das sekundäre Gestaltungsrecht des Verbraucherwiderrufs und spricht F grundsätzlich ein eigenes Widerrufsrecht zu.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "F, Kaufvertrag über die Espressomaschine, Widerrufsberechtigung der F als aus § 1357 Abs. 1 S. 2 BGB Mitberechtigte in Aufgabe 1.",
+                "evidence_scope": "F, derselbe Kaufvertrag über die Espressomaschine und die Prüfung ihres Verbraucherwiderrufs in Aufgabe 1.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Antwort behandelt F aufgrund ihrer Mitberechtigung aus § 1357 Abs. 1 S. 2 BGB als Inhaberin eines verbraucherschützenden Gestaltungsrechts und prüft deshalb die ihr zuzurechnende Widerrufsfrist; die konkrete Erklärung scheitert an deren Ablauf.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "terra",
+                "model": "gpt-5.6-terra",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erstreckt die Wirkungen des § 1357 Abs. 1 S. 2 BGB ausdrücklich auf das verbraucherschützende Gestaltungsrecht (Widerrufsrecht) der F. Sie spricht F ein solches Recht nicht etwa bloß wegen des alleinigen Vertragsschlusses durch M ab, sondern scheitert in der Sache an der Verfristung und dem entgegenstehenden Willen des M.",
+              "evidence": [
+                "Soweit F infolge § 1357 Abs. 1 Satz 2 BGB ebenfalls ein verbraucherschützendes Gestaltungsrecht zustand, musste sie sich die vertragsbezogene Belehrung und den Warenempfang durch den handelnden Ehegatten zurechnen lassen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erstreckung der Mitberechtigung nach § 1357 Abs. 1 S. 2 BGB auf das Verbraucherwiderrufsrecht und grundsätzliche Zuspruchung eines eigenen Widerrufsrechts an F",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Aufgabe 1 / Kaufvertrag: Widerrufsberechtigung der F aus § 1357 Abs. 1 S. 2 BGB",
+                "evidence_scope": "Aufgabe 1 / Kaufvertrag: Widerrufsberechtigung der F aus § 1357 Abs. 1 S. 2 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "F stand infolge § 1357 Abs. 1 S. 2 BGB ebenfalls ein verbraucherschützendes Gestaltungsrecht (Widerrufsrecht) zu, sie musste sich jedoch Belehrung und Warenempfang zurechnen lassen und konnte den Vertrag nicht gegen den Willen des M rückabwickeln.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.6-flash",
+                "model": "google/gemini-3.6-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": null,
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-042",
+      "title": "Herausgabe an beide Miteigentümer",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort bejaht ausdrücklich den Anspruch der F gegen B aus §§ 985, 1011, 432 Abs. 1 BGB und ordnet die Herausgabe zutreffend an F und M gemeinschaftlich beziehungsweise an die Eigentümergemeinschaft an. Sie spricht die Herausgabe nicht ausschließlich an F zu.",
+      "evidence": [
+        "B besitzt die Maschine. Ein Recht zum Besitz nach § 986 Abs. 1 BGB hat sie nicht.",
+        "Als Miteigentümerin kann F die Ansprüche aus dem Eigentum hinsichtlich der ganzen Sache geltend machen (§ 1011 BGB).",
+        "Die Herausgabe kann sie wegen § 1011 Halbsatz 2 in Verbindung mit § 432 Abs. 1 BGB allerdings grundsätzlich nur an F und M gemeinschaftlich, nicht zur ausschließlichen Nutzung durch sich allein verlangen.",
+        "F hat gegen B aus §§ 985, 1011, 432 Abs. 1 BGB ... einen Anspruch auf Herausgabe der Maschine an die Eigentümergemeinschaft."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht ausdrücklich den Anspruch der F gegen B aus §§ 985, 1011, 432 Abs. 1 BGB und ordnet die Herausgabe zutreffend an F und M gemeinschaftlich beziehungsweise an die Eigentümergemeinschaft an. Sie spricht die Herausgabe nicht ausschließlich an F zu.",
+          "evidence": [
+            "B besitzt die Maschine. Ein Recht zum Besitz nach § 986 Abs. 1 BGB hat sie nicht.",
+            "Als Miteigentümerin kann F die Ansprüche aus dem Eigentum hinsichtlich der ganzen Sache geltend machen (§ 1011 BGB).",
+            "Die Herausgabe kann sie wegen § 1011 Halbsatz 2 in Verbindung mit § 432 Abs. 1 BGB allerdings grundsätzlich nur an F und M gemeinschaftlich, nicht zur ausschließlichen Nutzung durch sich allein verlangen.",
+            "F hat gegen B aus §§ 985, 1011, 432 Abs. 1 BGB ... einen Anspruch auf Herausgabe der Maschine an die Eigentümergemeinschaft."
+          ],
+          "component_checks": [
+            {
+              "requirement": "F wird ein Anspruch gegen B aus § 985 BGB in Verbindung mit §§ 1011, 432 BGB zugesprochen.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Herausgabe der Espressomaschine wird an F und M gemeinschaftlich beziehungsweise an die Eigentümergemeinschaft verlangt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Der Anspruch wird trotz fortbestehenden Miteigentums der F und fehlenden Besitzrechts der B bejaht.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "F gegen B auf Herausgabe der Espressomaschine aus § 985 BGB in Verbindung mit §§ 1011, 432 BGB an beide Miteigentümer; Anspruchsstation in Aufgabe 2.",
+            "evidence_scope": "F gegen B auf Herausgabe der Espressomaschine aus § 985 BGB in Verbindung mit §§ 1011, 432 BGB an F und M beziehungsweise die Eigentümergemeinschaft; Anspruchsstation in Aufgabe 2.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "F kann als Miteigentümerin nach § 1011 BGB die Ansprüche hinsichtlich der ganzen Sache geltend machen; nach § 432 Abs. 1 BGB ist die Herausgabe aber nur an F und M gemeinschaftlich zu verlangen. B hat kein Recht zum Besitz nach § 986 Abs. 1 BGB.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna",
+            "model": "gpt-5.6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft den maßgeblichen Herausgabeanspruch der F gegen B in Aufgabe 2 und spricht ihn ausdrücklich aus § 985 i.V.m. §§ 1011, 432 Abs. 1 BGB zu. Sie begründet zudem ausdrücklich, dass F die Maschine nicht allein, sondern nur gemeinschaftlich mit M herausverlangen kann.",
+          "evidence": [
+            "Als Miteigentümerin kann F die Ansprüche aus dem Eigentum hinsichtlich der ganzen Sache geltend machen (§ 1011 BGB).",
+            "Die Herausgabe kann sie wegen § 1011 Halbsatz 2 in Verbindung mit § 432 Abs. 1 BGB allerdings grundsätzlich nur an F und M gemeinschaftlich, nicht zur ausschließlichen Nutzung durch sich allein verlangen.",
+            "F hat gegen B aus §§ 985, 1011, 432 Abs. 1 BGB ... einen Anspruch auf Herausgabe der Maschine an die Eigentümergemeinschaft."
+          ],
+          "component_checks": [
+            {
+              "requirement": "F wird gegen B ein Herausgabeanspruch aus § 985 BGB zugesprochen.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Der Anspruch wird mit §§ 1011 und 432 BGB verbunden und auf Herausgabe an beide Miteigentümer F und M gerichtet.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Aufgabe 2: Herausgabeanspruch der F gegen B bezüglich der Espressomaschine bei Miteigentum, insbesondere Herausgabe an F und M.",
+            "evidence_scope": "Aufgabe 2, Abschnitt IV und Ergebnis: Anspruch der F gegen B auf Herausgabe der Espressomaschine an F und M als Eigentümergemeinschaft aus §§ 985, 1011, 432 Abs. 1 BGB.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "F kann als Miteigentümerin die Eigentumsansprüche bezüglich der ganzen Sache nach § 1011 BGB geltend machen; wegen § 1011 Halbsatz 2 i.V.m. § 432 Abs. 1 BGB ist Herausgabe jedoch nur an F und M gemeinschaftlich geschuldet.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "terra",
+            "model": "gpt-5.6-terra",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft den Herausgabeanspruch der F gegen B in Aufgabe 2 zutreffend unter Anwendung von § 985 BGB i.V.m. §§ 1011, 432 Abs. 1 BGB und spricht den Anspruch ausdrücklich auf Herausgabe an F und M gemeinschaftlich (die Eigentümergemeinschaft) zu. Damit sind alle Anforderungen des Kriteriums erfüllt.",
+          "evidence": [
+            "Die Herausgabe kann sie wegen § 1011 Halbsatz 2 in Verbindung mit § 432 Abs. 1 BGB allerdings grundsätzlich nur an F und M gemeinschaftlich, nicht zur ausschließlichen Nutzung durch sich allein verlangen.",
+            "F hat gegen B aus §§ 985, 1011, 432 Abs. 1 BGB sowie, soweit sie den Anteil des M geltend macht, aus §§ 1369 Abs. 3, 1368 BGB einen Anspruch auf Herausgabe der Maschine an die Eigentümergemeinschaft."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Der Anspruch der F gegen B auf Herausgabe der Espressomaschine aus § 985 BGB i.V.m. §§ 1011, 432 BGB wird auf Herausgabe an F und M (gemeinschaftlich) zugesprochen.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Aufgabe 2: Anspruch der F gegen B aus § 985 BGB i.V.m. §§ 1011, 432 BGB auf Herausgabe an beide Miteigentümer (F und M)",
+            "evidence_scope": "Aufgabe 2: Anspruch der F gegen B aus § 985 BGB i.V.m. §§ 1011, 432 BGB auf Herausgabe an F und M gemeinschaftlich / die Eigentümergemeinschaft",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "F ist Miteigentümerin und kann gemäß § 1011 2. Hs. i.V.m. § 432 Abs. 1 BGB Leistung (Herausgabe der Espressomaschine) nur an F und M gemeinschaftlich verlangen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.6-flash",
+            "model": "google/gemini-3.6-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": null,
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 23032,
+        "output_tokens": 2331,
+        "total_tokens": 25363,
+        "cached_input_tokens": 12166,
+        "cache_write_tokens": 0
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht ausdrücklich den Anspruch der F gegen B aus §§ 985, 1011, 432 Abs. 1 BGB und ordnet die Herausgabe zutreffend an F und M gemeinschaftlich beziehungsweise an die Eigentümergemeinschaft an. Sie spricht die Herausgabe nicht ausschließlich an F zu.",
+              "evidence": [
+                "B besitzt die Maschine. Ein Recht zum Besitz nach § 986 Abs. 1 BGB hat sie nicht.",
+                "Als Miteigentümerin kann F die Ansprüche aus dem Eigentum hinsichtlich der ganzen Sache geltend machen (§ 1011 BGB).",
+                "Die Herausgabe kann sie wegen § 1011 Halbsatz 2 in Verbindung mit § 432 Abs. 1 BGB allerdings grundsätzlich nur an F und M gemeinschaftlich, nicht zur ausschließlichen Nutzung durch sich allein verlangen.",
+                "F hat gegen B aus §§ 985, 1011, 432 Abs. 1 BGB ... einen Anspruch auf Herausgabe der Maschine an die Eigentümergemeinschaft."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "F wird ein Anspruch gegen B aus § 985 BGB in Verbindung mit §§ 1011, 432 BGB zugesprochen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Herausgabe der Espressomaschine wird an F und M gemeinschaftlich beziehungsweise an die Eigentümergemeinschaft verlangt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Anspruch wird trotz fortbestehenden Miteigentums der F und fehlenden Besitzrechts der B bejaht.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "F gegen B auf Herausgabe der Espressomaschine aus § 985 BGB in Verbindung mit §§ 1011, 432 BGB an beide Miteigentümer; Anspruchsstation in Aufgabe 2.",
+                "evidence_scope": "F gegen B auf Herausgabe der Espressomaschine aus § 985 BGB in Verbindung mit §§ 1011, 432 BGB an F und M beziehungsweise die Eigentümergemeinschaft; Anspruchsstation in Aufgabe 2.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "F kann als Miteigentümerin nach § 1011 BGB die Ansprüche hinsichtlich der ganzen Sache geltend machen; nach § 432 Abs. 1 BGB ist die Herausgabe aber nur an F und M gemeinschaftlich zu verlangen. B hat kein Recht zum Besitz nach § 986 Abs. 1 BGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna",
+                "model": "gpt-5.6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft den maßgeblichen Herausgabeanspruch der F gegen B in Aufgabe 2 und spricht ihn ausdrücklich aus § 985 i.V.m. §§ 1011, 432 Abs. 1 BGB zu. Sie begründet zudem ausdrücklich, dass F die Maschine nicht allein, sondern nur gemeinschaftlich mit M herausverlangen kann.",
+              "evidence": [
+                "Als Miteigentümerin kann F die Ansprüche aus dem Eigentum hinsichtlich der ganzen Sache geltend machen (§ 1011 BGB).",
+                "Die Herausgabe kann sie wegen § 1011 Halbsatz 2 in Verbindung mit § 432 Abs. 1 BGB allerdings grundsätzlich nur an F und M gemeinschaftlich, nicht zur ausschließlichen Nutzung durch sich allein verlangen.",
+                "F hat gegen B aus §§ 985, 1011, 432 Abs. 1 BGB ... einen Anspruch auf Herausgabe der Maschine an die Eigentümergemeinschaft."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "F wird gegen B ein Herausgabeanspruch aus § 985 BGB zugesprochen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Anspruch wird mit §§ 1011 und 432 BGB verbunden und auf Herausgabe an beide Miteigentümer F und M gerichtet.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Aufgabe 2: Herausgabeanspruch der F gegen B bezüglich der Espressomaschine bei Miteigentum, insbesondere Herausgabe an F und M.",
+                "evidence_scope": "Aufgabe 2, Abschnitt IV und Ergebnis: Anspruch der F gegen B auf Herausgabe der Espressomaschine an F und M als Eigentümergemeinschaft aus §§ 985, 1011, 432 Abs. 1 BGB.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "F kann als Miteigentümerin die Eigentumsansprüche bezüglich der ganzen Sache nach § 1011 BGB geltend machen; wegen § 1011 Halbsatz 2 i.V.m. § 432 Abs. 1 BGB ist Herausgabe jedoch nur an F und M gemeinschaftlich geschuldet.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "terra",
+                "model": "gpt-5.6-terra",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft den Herausgabeanspruch der F gegen B in Aufgabe 2 zutreffend unter Anwendung von § 985 BGB i.V.m. §§ 1011, 432 Abs. 1 BGB und spricht den Anspruch ausdrücklich auf Herausgabe an F und M gemeinschaftlich (die Eigentümergemeinschaft) zu. Damit sind alle Anforderungen des Kriteriums erfüllt.",
+              "evidence": [
+                "Die Herausgabe kann sie wegen § 1011 Halbsatz 2 in Verbindung mit § 432 Abs. 1 BGB allerdings grundsätzlich nur an F und M gemeinschaftlich, nicht zur ausschließlichen Nutzung durch sich allein verlangen.",
+                "F hat gegen B aus §§ 985, 1011, 432 Abs. 1 BGB sowie, soweit sie den Anteil des M geltend macht, aus §§ 1369 Abs. 3, 1368 BGB einen Anspruch auf Herausgabe der Maschine an die Eigentümergemeinschaft."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Der Anspruch der F gegen B auf Herausgabe der Espressomaschine aus § 985 BGB i.V.m. §§ 1011, 432 BGB wird auf Herausgabe an F und M (gemeinschaftlich) zugesprochen.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Aufgabe 2: Anspruch der F gegen B aus § 985 BGB i.V.m. §§ 1011, 432 BGB auf Herausgabe an beide Miteigentümer (F und M)",
+                "evidence_scope": "Aufgabe 2: Anspruch der F gegen B aus § 985 BGB i.V.m. §§ 1011, 432 BGB auf Herausgabe an F und M gemeinschaftlich / die Eigentümergemeinschaft",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "F ist Miteigentümerin und kann gemäß § 1011 2. Hs. i.V.m. § 432 Abs. 1 BGB Leistung (Herausgabe der Espressomaschine) nur an F und M gemeinschaftlich verlangen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.6-flash",
+                "model": "google/gemini-3.6-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": null,
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": []
+}

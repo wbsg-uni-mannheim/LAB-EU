@@ -31,6 +31,9 @@ CACHE_CRITERIA_PER_KEY = 4
 STYLE_ELIGIBLE_FUNCTIONS = {"application", "argumentation"}
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 PROMPTS_DIR = REPO_ROOT / "prompts" / "evaluation"
+# "v1" is the original content judge; "v2" loads the <stem>.v2.txt revision calibrated
+# on the jurist validation (Teil 1). Set once in main() from --judge-prompt-version.
+JUDGE_PROMPT_VERSION = "v1"
 
 
 @dataclass(frozen=True)
@@ -179,6 +182,12 @@ def parse_args() -> argparse.Namespace:
             "rates AND keeps prompt caching (the Batch API itself does not), at "
             "the price of slower, occasionally resource-limited processing."
         ),
+    )
+    parser.add_argument(
+        "--judge-prompt-version",
+        choices=("v1", "v2", "v3", "v4"),
+        default="v1",
+        help="Content judge prompt revision. v1 reproduces the published scores.",
     )
     parser.add_argument("--dry-run", action="store_true", help="Validate inputs without calling the judge model.")
     return parser.parse_args()
@@ -365,6 +374,15 @@ def criterion_applies_when(criterion: dict[str, Any] | None) -> str:
     return str(value).strip() if isinstance(value, str) and value.strip() else ""
 
 
+def read_judge_template(name: str) -> str:
+    path = PROMPTS_DIR / name
+    if JUDGE_PROMPT_VERSION != "v1":
+        path = path.with_name(f"{path.stem}.{JUDGE_PROMPT_VERSION}{path.suffix}")
+        if not path.exists():
+            raise SystemExit(f"No {JUDGE_PROMPT_VERSION} judge prompt: {path.name}")
+    return path.read_text(encoding="utf-8")
+
+
 def judge_prompt(
     task: dict[str, Any],
     task_dir: pathlib.Path,
@@ -373,7 +391,7 @@ def judge_prompt(
 ) -> str:
     applies_when = criterion_applies_when(criterion)
     name = "rubric_criterion.applies_when.txt" if applies_when else "rubric_criterion.txt"
-    template = (PROMPTS_DIR / name).read_text(encoding="utf-8")
+    template = read_judge_template(name)
     fields = dict(
         task_title=task.get("title", ""),
         task_instructions=task.get("instructions", ""),
@@ -490,9 +508,7 @@ def combined_content_style_prompt(
             match_criteria=criterion["match_criteria"],
             style_standards=render_style_standards(criterion, style_profiles or {}),
         )
-    template = (PROMPTS_DIR / "combined_content_style_criterion.txt").read_text(
-        encoding="utf-8"
-    )
+    template = read_judge_template("combined_content_style_criterion.txt")
     return template.format(
         task_title=task.get("title", ""),
         task_instructions=task.get("instructions", ""),
@@ -622,20 +638,24 @@ def _judge_call_responses(client: OpenAI, model: str, prompt: str,
     return response.output_text or "", usage_summary(response.model_dump(mode="json"))
 
 
-def _judge_call_chat(client: OpenAI, model: str, prompt: str):
+def _judge_call_chat(client: OpenAI, model: str, prompt: str, reasoning_effort: str | None = None):
     # OpenAI-compatible chat endpoints (e.g. OpenRouter). Ask for a JSON object;
-    # some models reject response_format, so retry once without it.
+    # some models reject response_format, so retry once without it. Without an
+    # explicit effort the provider default applies (DeepSeek V4.1 reasons briefly).
     messages = [{"role": "user", "content": prompt}]
+    extra_body = {"reasoning": {"effort": reasoning_effort}} if reasoning_effort else None
     try:
         response = client.chat.completions.create(
             model=model,
             messages=messages,
             response_format={"type": "json_object"},
             max_tokens=CHAT_JUDGE_MAX_TOKENS,
+            extra_body=extra_body,
         )
     except OpenAIError:
         response = client.chat.completions.create(
-            model=model, messages=messages, max_tokens=CHAT_JUDGE_MAX_TOKENS
+            model=model, messages=messages, max_tokens=CHAT_JUDGE_MAX_TOKENS,
+            extra_body=extra_body,
         )
     text = ""
     if response.choices:
@@ -750,7 +770,7 @@ def call_judge(
     for _attempt in range(2):
         try:
             if use_chat:
-                text, usage = _judge_call_chat(client, model, prompt)
+                text, usage = _judge_call_chat(client, model, prompt, reasoning_effort)
             else:
                 text, usage = _judge_call_responses(
                     client, model, prompt, reasoning_effort, cache_key, service_tier)
@@ -816,7 +836,7 @@ def call_combined_judge(
     for _attempt in range(2):
         try:
             if use_chat:
-                text, usage = _judge_call_chat(client, model, prompt)
+                text, usage = _judge_call_chat(client, model, prompt, reasoning_effort)
             else:
                 text, usage = _judge_call_responses(
                     client, model, prompt, reasoning_effort, cache_key, service_tier
@@ -2080,6 +2100,7 @@ def assemble_scores(
         },
         "style_score": style_score,
         "style_evaluation_mode": style_evaluation_mode,
+        "judge_prompt_version": JUDGE_PROMPT_VERSION,
         "content_votes_by_judge": vote_breakdown(results),
         "style_votes_by_judge": vote_breakdown(style_results or []) if style_results is not None else None,
         "mean_judge_agreement": round(sum(agreements) / len(agreements), 3) if agreements else 0.0,
@@ -2108,7 +2129,9 @@ def write_scores(submission: pathlib.Path, scores: dict[str, Any], output: pathl
 
 
 def main() -> int:
+    global JUDGE_PROMPT_VERSION
     args = parse_args()
+    JUDGE_PROMPT_VERSION = args.judge_prompt_version
     task_dir = args.task_dir.resolve()
     submission = args.submission.resolve()
     load_env_files(task_dir)

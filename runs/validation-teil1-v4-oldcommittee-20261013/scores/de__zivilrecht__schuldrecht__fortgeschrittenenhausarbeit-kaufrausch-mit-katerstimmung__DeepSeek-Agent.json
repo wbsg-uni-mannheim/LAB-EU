@@ -1,0 +1,785 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung",
+    "title": "Fortgeschrittenenhausarbeit: „Kaufrausch mit Katerstimmung“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna",
+      "model": "gpt-5.6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "terra",
+      "model": "gpt-5.6-terra",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "gemini-3.6-flash",
+      "model": "google/gemini-3.6-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": null,
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T15:04:16.668329+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "terra": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.6-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "terra": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.6-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Stehen M die geforderten 14.000 € zu?": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Stehen M die geforderten 14.000 € zu? › § 816 Abs. 1 S. 1 BGB": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 27282,
+    "output_tokens": 3492,
+    "total_tokens": 30774,
+    "cached_input_tokens": 21726,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 27282,
+    "output_tokens": 3492,
+    "total_tokens": 30774,
+    "cached_input_tokens": 21726,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-026",
+      "title": "Verfügung eines Nichtberechtigten",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort erfüllt das Kriterium: Sie qualifiziert die Eigentumsübertragung an X ausdrücklich als Verfügung und begründet die fehlende Berechtigung des S damit, dass M Eigentümer blieb und S lediglich Besitz erlangt hatte.",
+      "evidence": [
+        "Die Übereignung an X stellt eine Verfügung dar, da S hierdurch das Eigentum an der Hebebühne auf X übertragen hat.",
+        "M blieb daher Eigentümer der Hebebühne.",
+        "S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter im Sinne des § 816 Abs. 1 S. 1 BGB."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erfüllt das Kriterium: Sie qualifiziert die Eigentumsübertragung an X ausdrücklich als Verfügung und begründet die fehlende Berechtigung des S damit, dass M Eigentümer blieb und S lediglich Besitz erlangt hatte.",
+          "evidence": [
+            "Die Übereignung an X stellt eine Verfügung dar, da S hierdurch das Eigentum an der Hebebühne auf X übertragen hat.",
+            "M blieb daher Eigentümer der Hebebühne.",
+            "S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter im Sinne des § 816 Abs. 1 S. 1 BGB."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Eigentumsübertragung der Hebebühne von S auf X wird als Verfügung eingeordnet.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "S wird als Nichtberechtigter eingeordnet, weil er nicht Eigentümer und nicht zur Verfügung berechtigt war.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "S, die Hebebühne, und die Verfügung durch Eigentumsübertragung an X als Verfügung eines Nichtberechtigten.",
+            "evidence_scope": "Die Antwort behandelt S, die Hebebühne und die Übereignung an X ausdrücklich an der Prüfung des § 816 Abs. 1 S. 1 BGB.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "S war nicht Eigentümer; M blieb Eigentümer der Hebebühne, sodass S bei der Übereignung an X Nichtberechtigter war.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna",
+            "model": "gpt-5.6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Zwar behandelt die Antwort zutreffend die Übereignung als Verfügung und stellt fest, dass S nicht Eigentümer war. Sie setzt Berechtigung jedoch ausdrücklich mit Eigentümerstellung gleich und prüft beziehungsweise verneint keine Ermächtigung des S. Damit fehlt der erforderliche Grund, dass S weder Eigentümer noch ermächtigt war.",
+          "evidence": [
+            "S hat die Hebebühne an X veräußert und ihm das Eigentum daran gemäß §§ 929 S. 1, 932 BGB übertragen. Die Übereignung an X stellt eine Verfügung dar",
+            "M blieb daher Eigentümer der Hebebühne. S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einordnung der Eigentumsübertragung der Hebebühne von S auf X als Verfügung",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "S war nicht Eigentümer der Hebebühne",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "S war nicht zur Verfügung ermächtigt",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "S, M, Hebebühne und die Übereignung von S an X als Verfügung eines Nichtberechtigten im Rahmen von § 816 Abs. 1 S. 1 BGB",
+            "evidence_scope": "S, M, Hebebühne und die Übereignung von S an X im Rahmen der Prüfung von § 816 Abs. 1 S. 1 BGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Antwort begründet die Nichtberechtigung allein damit, dass M Eigentümer blieb und S nicht Eigentümer war.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "terra",
+            "model": "gpt-5.6-terra",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Das Kriterium ist vollständig und korrekt erfüllt. Die Übereignung (nicht der Kaufvertrag) wird als Verfügung klassifiziert und die Nichtberechtigung zutreffend mit dem fehlenden Eigentum des S begründet.",
+          "evidence": [
+            "Die Übereignung an X stellt eine Verfügung dar, da S hierdurch das Eigentum an der Hebebühne auf X übertragen hat.",
+            "S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter im Sinne des § 816 Abs. 1 S. 1 BGB."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einordnung der Übereignung von S an X als Verfügung eines Nichtberechtigten mangels Eigentums/Ermächtigung des S",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Prüfung der Verfügung eines Nichtberechtigten (§ 816 Abs. 1 S. 1 BGB) bzgl. der Hebebühne",
+            "evidence_scope": "Prüfung der Verfügung eines Nichtberechtigten (§ 816 Abs. 1 S. 1 BGB) bzgl. der Hebebühne",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "S übereignete die Hebebühne an X (Verfügung) und war selbst nicht Eigentümer, sondern hatte nur Besitz (Nichtberechtigung).",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.6-flash",
+            "model": "google/gemini-3.6-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": null,
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 27282,
+        "output_tokens": 3492,
+        "total_tokens": 30774,
+        "cached_input_tokens": 21726,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Verfügung wird zutreffend als Eigentumsübertragung eingeordnet und S wird als Nicht-Eigentümer bezeichnet. Die erforderliche zusätzliche Feststellung, dass S auch nicht zur Verfügung ermächtigt war, fehlt jedoch. Die bloße Aussage, S sei deshalb Nichtberechtigter, ersetzt diese Prüfung nicht.",
+              "evidence": [
+                "Die Übereignung an X stellt eine Verfügung dar, da S hierdurch das Eigentum an der Hebebühne auf X übertragen hat.",
+                "M blieb daher Eigentümer der Hebebühne.",
+                "S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Eigentumsübertragung der Hebebühne von S auf X wird als Verfügung eingeordnet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "S wird als Nichtberechtigter eingeordnet, weil er nicht Eigentümer der Hebebühne war.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort stellt fest oder begründet, dass S auch nicht zur Verfügung über die Hebebühne ermächtigt war.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S, die Hebebühne, Eigentumsübertragung an X und die Prüfung einer Verfügung eines Nichtberechtigten",
+                "evidence_scope": "S, die Hebebühne, Übereignung an X und Verfügung eines Nichtberechtigten",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "S war nicht Eigentümer; die fehlende Ermächtigung zur Verfügung wird jedoch nicht geprüft oder festgestellt.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna",
+                "model": "gpt-5.6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt nicht den Kaufvertrag als Verfügung, sondern ausdrücklich die Übereignung an X. Sie ordnet S wegen seiner bloßen Besitzstellung und des fortbestehenden Eigentums des M als Nichtberechtigten ein und schreibt ihm keine Verfügungsbefugnis zu.",
+              "evidence": [
+                "S hat die Hebebühne an X veräußert und ihm das Eigentum daran gemäß §§ 929 S. 1, 932 BGB übertragen. Die Übereignung an X stellt eine Verfügung dar",
+                "S bei der Übergabe der Hebebühne durch M lediglich Besitz an dieser. M blieb daher Eigentümer der Hebebühne. S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung der Eigentumsübertragung der Hebebühne von S auf X als Verfügung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Nichtberechtigung des S, weil er weder Eigentümer noch zur Verfügung ermächtigt war",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S, Hebebühne, Eigentumsübertragung an X als Verfügung eines Nichtberechtigten",
+                "evidence_scope": "S, Hebebühne und deren Übereignung an X im Prüfungspunkt „Verfügung eines Nichtberechtigten“",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "S erlangte bei Übergabe lediglich Besitz; M blieb Eigentümer. Deshalb sei S bei der Übereignung Nichtberechtigter.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "terra",
+                "model": "gpt-5.6-terra",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort ordnet die Eigentumsübertragung (und nicht den Kaufvertrag) zutreffend als Verfügung ein und begründet die Nichtberechtigung des S korrekt damit, dass er nicht Eigentümer der Hebebühne war.",
+              "evidence": [
+                "Die Übereignung an X stellt eine Verfügung dar, da S hierdurch das Eigentum an der Hebebühne auf X übertragen hat.",
+                "S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter im Sinne des § 816 Abs. 1 S. 1 BGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung der Eigentumsübertragung von S auf X als Verfügung eines Nichtberechtigten wegen fehlenden Eigentums/fehlender Ermächtigung des S",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Prüfung der Verfügung des Nichtberechtigten hinsichtlich der Hebebühne im Rahmen von § 816 Abs. 1 S. 1 BGB",
+                "evidence_scope": "Prüfung der Verfügung des Nichtberechtigten hinsichtlich der Hebebühne im Rahmen von § 816 Abs. 1 S. 1 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Übereignung an X ist die Verfügung; S war Nichtberechtigter, da M Eigentümer blieb und S lediglich Besitz erlangt hatte.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.6-flash",
+                "model": "google/gemini-3.6-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": null,
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erfüllt das Kriterium: Sie qualifiziert die Eigentumsübertragung an X ausdrücklich als Verfügung und begründet die fehlende Berechtigung des S damit, dass M Eigentümer blieb und S lediglich Besitz erlangt hatte.",
+              "evidence": [
+                "Die Übereignung an X stellt eine Verfügung dar, da S hierdurch das Eigentum an der Hebebühne auf X übertragen hat.",
+                "M blieb daher Eigentümer der Hebebühne.",
+                "S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter im Sinne des § 816 Abs. 1 S. 1 BGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Eigentumsübertragung der Hebebühne von S auf X wird als Verfügung eingeordnet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "S wird als Nichtberechtigter eingeordnet, weil er nicht Eigentümer und nicht zur Verfügung berechtigt war.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S, die Hebebühne, und die Verfügung durch Eigentumsübertragung an X als Verfügung eines Nichtberechtigten.",
+                "evidence_scope": "Die Antwort behandelt S, die Hebebühne und die Übereignung an X ausdrücklich an der Prüfung des § 816 Abs. 1 S. 1 BGB.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "S war nicht Eigentümer; M blieb Eigentümer der Hebebühne, sodass S bei der Übereignung an X Nichtberechtigter war.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna",
+                "model": "gpt-5.6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Zwar behandelt die Antwort zutreffend die Übereignung als Verfügung und stellt fest, dass S nicht Eigentümer war. Sie setzt Berechtigung jedoch ausdrücklich mit Eigentümerstellung gleich und prüft beziehungsweise verneint keine Ermächtigung des S. Damit fehlt der erforderliche Grund, dass S weder Eigentümer noch ermächtigt war.",
+              "evidence": [
+                "S hat die Hebebühne an X veräußert und ihm das Eigentum daran gemäß §§ 929 S. 1, 932 BGB übertragen. Die Übereignung an X stellt eine Verfügung dar",
+                "M blieb daher Eigentümer der Hebebühne. S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung der Eigentumsübertragung der Hebebühne von S auf X als Verfügung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "S war nicht Eigentümer der Hebebühne",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "S war nicht zur Verfügung ermächtigt",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S, M, Hebebühne und die Übereignung von S an X als Verfügung eines Nichtberechtigten im Rahmen von § 816 Abs. 1 S. 1 BGB",
+                "evidence_scope": "S, M, Hebebühne und die Übereignung von S an X im Rahmen der Prüfung von § 816 Abs. 1 S. 1 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Antwort begründet die Nichtberechtigung allein damit, dass M Eigentümer blieb und S nicht Eigentümer war.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "terra",
+                "model": "gpt-5.6-terra",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Das Kriterium ist vollständig und korrekt erfüllt. Die Übereignung (nicht der Kaufvertrag) wird als Verfügung klassifiziert und die Nichtberechtigung zutreffend mit dem fehlenden Eigentum des S begründet.",
+              "evidence": [
+                "Die Übereignung an X stellt eine Verfügung dar, da S hierdurch das Eigentum an der Hebebühne auf X übertragen hat.",
+                "S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter im Sinne des § 816 Abs. 1 S. 1 BGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung der Übereignung von S an X als Verfügung eines Nichtberechtigten mangels Eigentums/Ermächtigung des S",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Prüfung der Verfügung eines Nichtberechtigten (§ 816 Abs. 1 S. 1 BGB) bzgl. der Hebebühne",
+                "evidence_scope": "Prüfung der Verfügung eines Nichtberechtigten (§ 816 Abs. 1 S. 1 BGB) bzgl. der Hebebühne",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "S übereignete die Hebebühne an X (Verfügung) und war selbst nicht Eigentümer, sondern hatte nur Besitz (Nichtberechtigung).",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.6-flash",
+                "model": "google/gemini-3.6-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": null,
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-026",
+      "title": "Verfügung eines Nichtberechtigten",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort stellt für genau die Übereignung der Hebebühne an X den Verfügungsbegriff dar, verknüpft ihn mit den Eigentumsverhältnissen und zieht daraus einen ausdrücklichen Schluss zur Nichtberechtigung. Die Prüfung ist methodisch geschlossen, auch wenn die rechtliche Begründung unvollständig ist.",
+      "evidence": [
+        "Unter einer Verfügung versteht man ein Rechtsgeschäft, durch das der Verfügende unmittelbar auf ein bestehendes Recht einwirkt",
+        "S hat die Hebebühne an X veräußert und ihm das Eigentum daran gemäß §§ 929 S. 1, 932 BGB übertragen.",
+        "Die Übereignung an X stellt eine Verfügung dar, da S hierdurch das Eigentum an der Hebebühne auf X übertragen hat.",
+        "M blieb daher Eigentümer der Hebebühne. S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter"
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort stellt für genau die Übereignung der Hebebühne an X den Verfügungsbegriff dar, verknüpft ihn mit den Eigentumsverhältnissen und zieht daraus einen ausdrücklichen Schluss zur Nichtberechtigung. Die Prüfung ist methodisch geschlossen, auch wenn die rechtliche Begründung unvollständig ist.",
+          "evidence": [
+            "Unter einer Verfügung versteht man ein Rechtsgeschäft, durch das der Verfügende unmittelbar auf ein bestehendes Recht einwirkt",
+            "S hat die Hebebühne an X veräußert und ihm das Eigentum daran gemäß §§ 929 S. 1, 932 BGB übertragen.",
+            "Die Übereignung an X stellt eine Verfügung dar, da S hierdurch das Eigentum an der Hebebühne auf X übertragen hat.",
+            "M blieb daher Eigentümer der Hebebühne. S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna",
+            "model": "gpt-5.6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort nennt den Verfügungsbegriff, subsumiert die Übereignung der Hebebühne an X darunter und verbindet die nur erlangte Besitzposition des S sowie das fortbestehende Eigentum des M ausdrücklich mit der Nichtberechtigung des S.",
+          "evidence": [
+            "S hat die Hebebühne an X veräußert und ihm das Eigentum daran gemäß §§ 929 S. 1, 932 BGB übertragen. Die Übereignung an X stellt eine Verfügung dar, da S hierdurch das Eigentum an der Hebebühne auf X übertragen hat.",
+            "Nach dem Bearbeitungsvermerk erlangte S bei der Übergabe der Hebebühne durch M lediglich Besitz an dieser. M blieb daher Eigentümer der Hebebühne. S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter im Sinne des § 816 Abs. 1 S. 1 BGB."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "terra",
+            "model": "gpt-5.6-terra",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung definiert die Verfügung sowie die Nichtberechtigung methodisch sauber, wendet diese Definitionen konkret auf die Übereignung der Hebebühne von S an X an und gelangt zu einem schlüssigen Ergebnis.",
+          "evidence": [
+            "Die Übereignung an X stellt eine Verfügung dar, da S hierdurch das Eigentum an der Hebebühne auf X übertragen hat.",
+            "Nach dem Bearbeitungsvermerk erlangte S bei der Übergabe der Hebebühne durch M lediglich Besitz an dieser. M blieb daher Eigentümer der Hebebühne. S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter im Sinne des § 816 Abs. 1 S. 1 BGB."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.6-flash",
+            "model": "google/gemini-3.6-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": null,
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort stellt für genau die Übereignung der Hebebühne an X den Verfügungsbegriff dar, verknüpft ihn mit den Eigentumsverhältnissen und zieht daraus einen ausdrücklichen Schluss zur Nichtberechtigung. Die Prüfung ist methodisch geschlossen, auch wenn die rechtliche Begründung unvollständig ist.",
+              "evidence": [
+                "Unter einer Verfügung versteht man ein Rechtsgeschäft, durch das der Verfügende unmittelbar auf ein bestehendes Recht einwirkt",
+                "S hat die Hebebühne an X veräußert und ihm das Eigentum daran gemäß §§ 929 S. 1, 932 BGB übertragen.",
+                "Die Übereignung an X stellt eine Verfügung dar, da S hierdurch das Eigentum an der Hebebühne auf X übertragen hat.",
+                "M blieb daher Eigentümer der Hebebühne. S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna",
+                "model": "gpt-5.6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort nennt den Verfügungsbegriff, subsumiert die Übereignung der Hebebühne an X darunter und verbindet die nur erlangte Besitzposition des S sowie das fortbestehende Eigentum des M ausdrücklich mit der Nichtberechtigung des S.",
+              "evidence": [
+                "S hat die Hebebühne an X veräußert und ihm das Eigentum daran gemäß §§ 929 S. 1, 932 BGB übertragen. Die Übereignung an X stellt eine Verfügung dar, da S hierdurch das Eigentum an der Hebebühne auf X übertragen hat.",
+                "Nach dem Bearbeitungsvermerk erlangte S bei der Übergabe der Hebebühne durch M lediglich Besitz an dieser. M blieb daher Eigentümer der Hebebühne. S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter im Sinne des § 816 Abs. 1 S. 1 BGB."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "terra",
+                "model": "gpt-5.6-terra",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung definiert die Verfügung sowie die Nichtberechtigung methodisch sauber, wendet diese Definitionen konkret auf die Übereignung der Hebebühne von S an X an und gelangt zu einem schlüssigen Ergebnis.",
+              "evidence": [
+                "Die Übereignung an X stellt eine Verfügung dar, da S hierdurch das Eigentum an der Hebebühne auf X übertragen hat.",
+                "Nach dem Bearbeitungsvermerk erlangte S bei der Übergabe der Hebebühne durch M lediglich Besitz an dieser. M blieb daher Eigentümer der Hebebühne. S war folglich nicht Eigentümer und damit bei der Übereignung an X Nichtberechtigter im Sinne des § 816 Abs. 1 S. 1 BGB."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.6-flash",
+                "model": "google/gemini-3.6-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": null,
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

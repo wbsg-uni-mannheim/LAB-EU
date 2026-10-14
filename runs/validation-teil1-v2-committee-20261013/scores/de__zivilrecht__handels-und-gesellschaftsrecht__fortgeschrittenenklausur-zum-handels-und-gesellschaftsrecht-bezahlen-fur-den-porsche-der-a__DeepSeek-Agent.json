@@ -1,0 +1,815 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/handels-und-gesellschaftsrecht/fortgeschrittenenklausur-zum-handels-und-gesellschaftsrecht-bezahlen-fur-den-porsche-der-a",
+    "title": "Fortgeschrittenenklausur zum Handels- und Gesellschaftsrecht: „Bezahlen für den Porsche der anderen?“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__zivilrecht__handels-und-gesellschaftsrecht__fortgeschrittenenklausur-zum-handels-und-gesellschaftsrecht-bezahlen-fur-den-porsche-der-a/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/handels-und-gesellschaftsrecht/fortgeschrittenenklausur-zum-handels-und-gesellschaftsrecht-bezahlen-fur-den-porsche-der-a/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:31:59.188643+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 2,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.5,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 1,
+    "root_pass_rate": 0.5,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 5,
+    "pass_rate": 0.4,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 2
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 2
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Gesellschafterstellung des B": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "breakdown_by_outline": {
+    "Gesellschafterstellung des B › Gesellschafterstellung kraft Rechtsscheins des Handelsregisters": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Gesellschafterstellung des B › Zwischenergebnis": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "legal_basis": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "argumentation": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 29301,
+    "output_tokens": 9210,
+    "total_tokens": 38511,
+    "cached_input_tokens": 2176,
+    "cache_write_tokens": 11006
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 23263,
+    "output_tokens": 7911,
+    "total_tokens": 31174,
+    "cached_input_tokens": 2176,
+    "cache_write_tokens": 11006
+  },
+  "style_judge_usage_total": {
+    "input_tokens": 6038,
+    "output_tokens": 1299,
+    "total_tokens": 7337,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 0
+  },
+  "criteria_results": [
+    {
+      "id": "C-020",
+      "title": "Negative Publizität als mögliche Rechtsscheingrundlage",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort stellt Bs Ausscheiden fest und prüft ausdrücklich die Rechtsfolge der unterbliebenen Eintragung nach § 15 Abs. 1 HGB. Sie hält fest, dass V das Ausscheiden nicht bekannt war und B es ihm deshalb nicht entgegenhalten kann. Die Begründung knüpft an die negative Publizität an, nicht an positive Publizität.",
+      "evidence": [
+        "„B ist am 12.10.2024 aus der ABC ausgeschieden.“",
+        "„Das Ausscheiden des B ist eine einzutragende Tatsache. Die Eintragung ist nicht erfolgt.“",
+        "„V war das Ausscheiden des B nicht bekannt“",
+        "„Damit kann B sein Ausscheiden dem V nicht entgegenhalten.“"
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort stellt Bs Ausscheiden fest und prüft ausdrücklich die Rechtsfolge der unterbliebenen Eintragung nach § 15 Abs. 1 HGB. Sie hält fest, dass V das Ausscheiden nicht bekannt war und B es ihm deshalb nicht entgegenhalten kann. Die Begründung knüpft an die negative Publizität an, nicht an positive Publizität.",
+          "evidence": [
+            "„B ist am 12.10.2024 aus der ABC ausgeschieden.“",
+            "„Das Ausscheiden des B ist eine einzutragende Tatsache. Die Eintragung ist nicht erfolgt.“",
+            "„V war das Ausscheiden des B nicht bekannt“",
+            "„Damit kann B sein Ausscheiden dem V nicht entgegenhalten.“"
+          ],
+          "component_checks": [
+            {
+              "requirement": "§ 15 Abs. 1 HGB trotz Bs wirksamen Ausscheidens als mögliche Rechtsscheingrundlage prüfen",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Erkennen, dass die eintragungspflichtige, nicht eingetragene Tatsache einem geschützten Dritten grundsätzlich nicht entgegengehalten werden kann",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "§ 15 Abs. 1 HGB nicht mit positiver Publizität verwechseln",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B; sein wirksames Ausscheiden aus der ABC-OHG und § 15 Abs. 1 HGB als mögliche Rechtsscheingrundlage gegenüber V",
+            "evidence_scope": "B; sein Ausscheiden aus der ABC-OHG und dessen fehlende Eintragung gegenüber V nach § 15 Abs. 1 HGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Bs Ausscheiden war eintragungspflichtig, wurde nicht eingetragen und war V nicht bekannt; V vertraute vielmehr auf den Registerstand.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort stellt ausdrücklich darauf ab, dass Bs Ausscheiden eine eintragungspflichtige Tatsache war, aber nicht im Handelsregister eingetragen und bekanntgemacht wurde. Sie wendet § 15 Abs. 1 HGB im Sinne der negativen Publizität an und kommt zu dem Ergebnis, dass der gutgläubige V sich auf die Registerlage verlassen darf und B sein Ausscheiden nicht entgegenhalten kann. Damit ist das Kriterium erfüllt.",
+          "evidence": [
+            "Das Ausscheiden des B aus der ABC-OHG stellt eine einzutragende Tatsache im Sinne des § 143 Abs. 2 HGB dar",
+            "Das Ausscheiden des B wurde jedoch nicht im Handelsregister eingetragen.",
+            "Gemäß § 15 Abs. 1 HGB kann eine in das Handelsregister einzutragende Tatsache, solange sie nicht eingetragen und bekanntgemacht ist, von demjenigen, in dessen Angelegenheiten sie einzutragen war, einem Dritten nicht entgegengesetzt werden, es sei denn, dass sie diesem bekannt war.",
+            "Damit kann B sein Ausscheiden dem V nicht entgegenhalten."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort prüft § 15 Abs. 1 HGB als mögliche Rechtsscheingrundlage trotz Bs wirksamem Ausscheiden.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort erkennt, dass eine eintragungspflichtige, aber nicht eingetragene und nicht bekanntgemachte Tatsache einem geschützten Dritten grundsätzlich nicht entgegengehalten werden kann.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort verwechselt § 15 Abs. 1 HGB nicht mit positiver Publizität.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Bs Ausscheiden aus der ABC-OHG und § 15 Abs. 1 HGB als negative Publizität gegenüber dem Dritten V",
+            "evidence_scope": "Bs nicht eingetragenes Ausscheiden aus der ABC-OHG und § 15 Abs. 1 HGB gegenüber V",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "B kann sein nicht eingetragenes und nicht bekanntgemachtes Ausscheiden dem gutgläubigen V nach § 15 Abs. 1 HGB nicht entgegenhalten.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {
+        "input_tokens": 11414,
+        "output_tokens": 2151,
+        "total_tokens": 13565,
+        "cached_input_tokens": 1024,
+        "cache_write_tokens": 5400
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort stellt Bs Ausscheiden fest und prüft ausdrücklich die Rechtsfolge der unterbliebenen Eintragung nach § 15 Abs. 1 HGB. Sie hält fest, dass V das Ausscheiden nicht bekannt war und B es ihm deshalb nicht entgegenhalten kann. Die Begründung knüpft an die negative Publizität an, nicht an positive Publizität.",
+              "evidence": [
+                "„B ist am 12.10.2024 aus der ABC ausgeschieden.“",
+                "„Das Ausscheiden des B ist eine einzutragende Tatsache. Die Eintragung ist nicht erfolgt.“",
+                "„V war das Ausscheiden des B nicht bekannt“",
+                "„Damit kann B sein Ausscheiden dem V nicht entgegenhalten.“"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§ 15 Abs. 1 HGB trotz Bs wirksamen Ausscheidens als mögliche Rechtsscheingrundlage prüfen",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erkennen, dass die eintragungspflichtige, nicht eingetragene Tatsache einem geschützten Dritten grundsätzlich nicht entgegengehalten werden kann",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "§ 15 Abs. 1 HGB nicht mit positiver Publizität verwechseln",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B; sein wirksames Ausscheiden aus der ABC-OHG und § 15 Abs. 1 HGB als mögliche Rechtsscheingrundlage gegenüber V",
+                "evidence_scope": "B; sein Ausscheiden aus der ABC-OHG und dessen fehlende Eintragung gegenüber V nach § 15 Abs. 1 HGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Bs Ausscheiden war eintragungspflichtig, wurde nicht eingetragen und war V nicht bekannt; V vertraute vielmehr auf den Registerstand.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort stellt ausdrücklich darauf ab, dass Bs Ausscheiden eine eintragungspflichtige Tatsache war, aber nicht im Handelsregister eingetragen und bekanntgemacht wurde. Sie wendet § 15 Abs. 1 HGB im Sinne der negativen Publizität an und kommt zu dem Ergebnis, dass der gutgläubige V sich auf die Registerlage verlassen darf und B sein Ausscheiden nicht entgegenhalten kann. Damit ist das Kriterium erfüllt.",
+              "evidence": [
+                "Das Ausscheiden des B aus der ABC-OHG stellt eine einzutragende Tatsache im Sinne des § 143 Abs. 2 HGB dar",
+                "Das Ausscheiden des B wurde jedoch nicht im Handelsregister eingetragen.",
+                "Gemäß § 15 Abs. 1 HGB kann eine in das Handelsregister einzutragende Tatsache, solange sie nicht eingetragen und bekanntgemacht ist, von demjenigen, in dessen Angelegenheiten sie einzutragen war, einem Dritten nicht entgegengesetzt werden, es sei denn, dass sie diesem bekannt war.",
+                "Damit kann B sein Ausscheiden dem V nicht entgegenhalten."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort prüft § 15 Abs. 1 HGB als mögliche Rechtsscheingrundlage trotz Bs wirksamem Ausscheiden.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort erkennt, dass eine eintragungspflichtige, aber nicht eingetragene und nicht bekanntgemachte Tatsache einem geschützten Dritten grundsätzlich nicht entgegengehalten werden kann.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort verwechselt § 15 Abs. 1 HGB nicht mit positiver Publizität.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Bs Ausscheiden aus der ABC-OHG und § 15 Abs. 1 HGB als negative Publizität gegenüber dem Dritten V",
+                "evidence_scope": "Bs nicht eingetragenes Ausscheiden aus der ABC-OHG und § 15 Abs. 1 HGB gegenüber V",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "B kann sein nicht eingetragenes und nicht bekanntgemachtes Ausscheiden dem gutgläubigen V nach § 15 Abs. 1 HGB nicht entgegenhalten.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-027",
+      "title": "Erfordernis potentieller Kausalität",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort stellt auf die konkrete tatsächliche Registereinsicht und darauf ab, dass V seine Inanspruchnahme des B daran ausrichtete. Sie formuliert aber nicht, dass bereits die abstrakte Möglichkeit einer registergeleiteten Disposition genügt. Die tatsächliche Kausalität als Sachverhalt ersetzt diese kriterienspezifische Aussage nicht.",
+      "evidence": [
+        "V durfte auf die Registereintragung vertrauen.",
+        "V war das Ausscheiden des B nicht bekannt; er hat B vielmehr gerade deshalb in Anspruch genommen, weil er ihn im Handelsregister noch als Gesellschafter vorgefunden hat."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort stellt auf die konkrete tatsächliche Registereinsicht und darauf ab, dass V seine Inanspruchnahme des B daran ausrichtete. Sie formuliert aber nicht, dass bereits die abstrakte Möglichkeit einer registergeleiteten Disposition genügt. Die tatsächliche Kausalität als Sachverhalt ersetzt diese kriterienspezifische Aussage nicht.",
+          "evidence": [
+            "V durfte auf die Registereintragung vertrauen.",
+            "V war das Ausscheiden des B nicht bekannt; er hat B vielmehr gerade deshalb in Anspruch genommen, weil er ihn im Handelsregister noch als Gesellschafter vorgefunden hat."
+          ],
+          "component_checks": [
+            {
+              "requirement": "§ 15 Abs. 1 HGB wird teleologisch auf Fälle begrenzt, in denen zumindest abstrakt eine registergeleitete konkrete rechtsgeschäftliche Disposition möglich war (potentielle Kausalität).",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B als ausgeschiedener Gesellschafter; § 15 Abs. 1 HGB und die potentielle Kausalität der Registerpublizität",
+            "evidence_scope": "B als ausgeschiedener Gesellschafter; Anwendung von § 15 Abs. 1 HGB auf V's Berufung auf den Registerstand",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Schutz des Vertrauens in das Handelsregister; V war das Ausscheiden unbekannt und er nahm B tatsächlich gerade wegen des Registereintrags in Anspruch.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort stellt darauf ab, dass V das Ausscheiden nicht bekannt war und er sich tatsächlich auf das Register verlassen hat. Sie verlangt damit tatsächliche konkrete Kausalität und prüft nicht, ob zumindest abstrakt die Möglichkeit bestand, dass ein Dritter seine Disposition am Registerinhalt ausrichtet. Die teleologische Begrenzung auf potentielle Kausalität fehlt; die ausdrückliche Fail-Bedingung der tatsächlichen konkreten Kausalität ist erfüllt.",
+          "evidence": [
+            "V hat sich bei der Prüfung, an wen er sich wenden kann, auf das Handelsregister verlassen und B dort noch als Mitgesellschafter von A und C ausgemacht.",
+            "V war das Ausscheiden des B nicht bekannt; er hat B vielmehr gerade deshalb in Anspruch genommen, weil er ihn im Handelsregister noch als Gesellschafter vorgefunden hat."
+          ],
+          "component_checks": [
+            {
+              "requirement": "§ 15 Abs. 1 HGB wird auf Fälle begrenzt, in denen zumindest abstrakt die Möglichkeit bestand, dass der Dritte seine konkrete rechtsgeschäftliche Disposition am Registerinhalt ausrichtete (potentielle Kausalität).",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "§ 15 Abs. 1 HGB, Ausscheiden des B, Dritter V, potentielle Kausalität der Registerlage für die konkrete rechtsgeschäftliche Disposition",
+            "evidence_scope": "§ 15 Abs. 1 HGB, Ausscheiden des B, Dritter V, tatsächliche Kenntnis und tatsächliches Vertrauen auf das Handelsregister",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "V war das Ausscheiden nicht bekannt und er hat sich tatsächlich auf das Handelsregister verlassen, daher kann B sein Ausscheiden dem V nicht entgegenhalten.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {
+        "input_tokens": 11849,
+        "output_tokens": 5760,
+        "total_tokens": 17609,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 5606
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt auf die konkrete tatsächliche Registereinsicht und darauf ab, dass V seine Inanspruchnahme des B daran ausrichtete. Sie formuliert aber nicht, dass bereits die abstrakte Möglichkeit einer registergeleiteten Disposition genügt. Die tatsächliche Kausalität als Sachverhalt ersetzt diese kriterienspezifische Aussage nicht.",
+              "evidence": [
+                "V durfte auf die Registereintragung vertrauen.",
+                "V war das Ausscheiden des B nicht bekannt; er hat B vielmehr gerade deshalb in Anspruch genommen, weil er ihn im Handelsregister noch als Gesellschafter vorgefunden hat."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§ 15 Abs. 1 HGB wird teleologisch auf Fälle begrenzt, in denen zumindest abstrakt eine registergeleitete konkrete rechtsgeschäftliche Disposition möglich war (potentielle Kausalität).",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B als ausgeschiedener Gesellschafter; § 15 Abs. 1 HGB und die potentielle Kausalität der Registerpublizität",
+                "evidence_scope": "B als ausgeschiedener Gesellschafter; Anwendung von § 15 Abs. 1 HGB auf V's Berufung auf den Registerstand",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Schutz des Vertrauens in das Handelsregister; V war das Ausscheiden unbekannt und er nahm B tatsächlich gerade wegen des Registereintrags in Anspruch.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt darauf ab, dass V das Ausscheiden nicht bekannt war und er sich tatsächlich auf das Register verlassen hat. Sie verlangt damit tatsächliche konkrete Kausalität und prüft nicht, ob zumindest abstrakt die Möglichkeit bestand, dass ein Dritter seine Disposition am Registerinhalt ausrichtet. Die teleologische Begrenzung auf potentielle Kausalität fehlt; die ausdrückliche Fail-Bedingung der tatsächlichen konkreten Kausalität ist erfüllt.",
+              "evidence": [
+                "V hat sich bei der Prüfung, an wen er sich wenden kann, auf das Handelsregister verlassen und B dort noch als Mitgesellschafter von A und C ausgemacht.",
+                "V war das Ausscheiden des B nicht bekannt; er hat B vielmehr gerade deshalb in Anspruch genommen, weil er ihn im Handelsregister noch als Gesellschafter vorgefunden hat."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§ 15 Abs. 1 HGB wird auf Fälle begrenzt, in denen zumindest abstrakt die Möglichkeit bestand, dass der Dritte seine konkrete rechtsgeschäftliche Disposition am Registerinhalt ausrichtete (potentielle Kausalität).",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "§ 15 Abs. 1 HGB, Ausscheiden des B, Dritter V, potentielle Kausalität der Registerlage für die konkrete rechtsgeschäftliche Disposition",
+                "evidence_scope": "§ 15 Abs. 1 HGB, Ausscheiden des B, Dritter V, tatsächliche Kenntnis und tatsächliches Vertrauen auf das Handelsregister",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "V war das Ausscheiden nicht bekannt und er hat sich tatsächlich auf das Handelsregister verlassen, daher kann B sein Ausscheiden dem V nicht entgegenhalten.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-027",
+      "title": "Erfordernis potentieller Kausalität",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort verknüpft § 15 Abs. 1 HGB mit der konkreten Registereinsicht des V und zieht daraus den Schluss, dass B sein Ausscheiden nicht entgegenhalten kann. Den kriterienspezifischen Maßstab potentieller Kausalität – eine bloß abstrakte Möglichkeit registergeleiteter Disposition – stellt sie jedoch nicht auf.",
+      "evidence": [
+        "V durfte auf die Registereintragung vertrauen.",
+        "weil er ihn im Handelsregister noch als Gesellschafter vorgefunden hat."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort verknüpft § 15 Abs. 1 HGB mit der konkreten Registereinsicht des V und zieht daraus den Schluss, dass B sein Ausscheiden nicht entgegenhalten kann. Den kriterienspezifischen Maßstab potentieller Kausalität – eine bloß abstrakte Möglichkeit registergeleiteter Disposition – stellt sie jedoch nicht auf.",
+          "evidence": [
+            "V durfte auf die Registereintragung vertrauen.",
+            "weil er ihn im Handelsregister noch als Gesellschafter vorgefunden hat."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verbindet bei § 15 Abs. 1 HGB die Regel (eintragungspflichtige Tatsache, Nichtentgegenhalten bei Unkenntnis), konkrete Umstände (Ausscheiden nicht eingetragen, V kannte es nicht, vertraute auf das Register) und Ergebnis (B kann Ausscheiden nicht entgegenhalten). Das ist ein methodisch vollzogener Anwendungsgang; die mögliche inhaltliche Abweichung vom Erfordernis potentieller Kausalität schadet dem Stil nicht.",
+          "evidence": [
+            "Gemäß § 15 Abs. 1 HGB kann eine in das Handelsregister einzutragende Tatsache, solange sie nicht eingetragen und bekanntgemacht ist, von demjenigen, in dessen Angelegenheiten sie einzutragen war, einem Dritten nicht entgegengesetzt werden, es sei denn, dass sie diesem bekannt war.",
+            "Das Ausscheiden des B ist eine einzutragende Tatsache. Die Eintragung ist nicht erfolgt. V war das Ausscheiden des B nicht bekannt",
+            "Damit kann B sein Ausscheiden dem V nicht entgegenhalten."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort problematisiert das Erfordernis einer potentiellen Kausalität im Rahmen von § 15 Abs. 1 HGB an keiner Stelle. Es fehlt an einem kriteriumsspezifischen Obersatz bzw. Maßstab und einer entsprechenden Subsumtion.",
+          "evidence": [
+            "V war das Ausscheiden des B nicht bekannt; er hat B vielmehr gerade deshalb in Anspruch genommen, weil er ihn im Handelsregister noch als Gesellschafter vorgefunden hat."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 6038,
+        "output_tokens": 1299,
+        "total_tokens": 7337,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort verknüpft § 15 Abs. 1 HGB mit der konkreten Registereinsicht des V und zieht daraus den Schluss, dass B sein Ausscheiden nicht entgegenhalten kann. Den kriterienspezifischen Maßstab potentieller Kausalität – eine bloß abstrakte Möglichkeit registergeleiteter Disposition – stellt sie jedoch nicht auf.",
+              "evidence": [
+                "V durfte auf die Registereintragung vertrauen.",
+                "weil er ihn im Handelsregister noch als Gesellschafter vorgefunden hat."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verbindet bei § 15 Abs. 1 HGB die Regel (eintragungspflichtige Tatsache, Nichtentgegenhalten bei Unkenntnis), konkrete Umstände (Ausscheiden nicht eingetragen, V kannte es nicht, vertraute auf das Register) und Ergebnis (B kann Ausscheiden nicht entgegenhalten). Das ist ein methodisch vollzogener Anwendungsgang; die mögliche inhaltliche Abweichung vom Erfordernis potentieller Kausalität schadet dem Stil nicht.",
+              "evidence": [
+                "Gemäß § 15 Abs. 1 HGB kann eine in das Handelsregister einzutragende Tatsache, solange sie nicht eingetragen und bekanntgemacht ist, von demjenigen, in dessen Angelegenheiten sie einzutragen war, einem Dritten nicht entgegengesetzt werden, es sei denn, dass sie diesem bekannt war.",
+                "Das Ausscheiden des B ist eine einzutragende Tatsache. Die Eintragung ist nicht erfolgt. V war das Ausscheiden des B nicht bekannt",
+                "Damit kann B sein Ausscheiden dem V nicht entgegenhalten."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        },
+        {
+          "stage": "tiebreaker",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort problematisiert das Erfordernis einer potentiellen Kausalität im Rahmen von § 15 Abs. 1 HGB an keiner Stelle. Es fehlt an einem kriteriumsspezifischen Obersatz bzw. Maßstab und einer entsprechenden Subsumtion.",
+              "evidence": [
+                "V war das Ausscheiden des B nicht bekannt; er hat B vielmehr gerade deshalb in Anspruch genommen, weil er ihn im Handelsregister noch als Gesellschafter vorgefunden hat."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "resolved_by_tiebreaker"
+    }
+  ]
+}

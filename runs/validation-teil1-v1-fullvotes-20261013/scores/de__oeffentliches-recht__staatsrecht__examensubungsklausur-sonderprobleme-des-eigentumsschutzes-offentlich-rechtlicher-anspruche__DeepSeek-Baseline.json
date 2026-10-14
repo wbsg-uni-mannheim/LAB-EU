@@ -1,0 +1,1610 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/examensubungsklausur-sonderprobleme-des-eigentumsschutzes-offentlich-rechtlicher-anspruche",
+    "title": "Examensübungsklausur: Sonderprobleme des Eigentumsschutzes öffentlich-rechtlicher Ansprüche bei staatlicher Verantwortungsübernahme"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__staatsrecht__examensubungsklausur-sonderprobleme-des-eigentumsschutzes-offentlich-rechtlicher-anspruche/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/examensubungsklausur-sonderprobleme-des-eigentumsschutzes-offentlich-rechtlicher-anspruche/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T11:36:28.435457+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 3,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.3333333333333333,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 3,
+    "n_scored": 3,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.3333333333333333
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 3,
+    "n_root_passed": 1,
+    "root_pass_rate": 0.3333333333333333,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 5,
+    "pass_rate": 0.4,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 2,
+    "n_errors": 0,
+    "n_unresolved": 1,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v1",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 2,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.889,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Zulässigkeit": {
+      "n_criteria": 3,
+      "n_passed": 1,
+      "n_failed": 2,
+      "n_errors": 0,
+      "pass_rate": 0.333
+    }
+  },
+  "breakdown_by_outline": {
+    "Zulässigkeit › Zuständigkeit des BVerfG": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Zulässigkeit › Vorrangigkeit eines Vorabentscheidungsverfahrens nach Art. 267 AEUV?": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "Zulässigkeit › Vorlagegrund": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "legal_basis": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "application": {
+      "n_criteria": 2,
+      "n_passed": 0,
+      "n_failed": 2,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    },
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 70022,
+    "output_tokens": 18847,
+    "total_tokens": 88869,
+    "cached_input_tokens": 17103,
+    "cache_write_tokens": 14219
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 70022,
+    "output_tokens": 18847,
+    "total_tokens": 88869,
+    "cached_input_tokens": 17103,
+    "cache_write_tokens": 14219
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-001",
+      "title": "Zuständigkeit des Bundesverfassungsgerichts",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort behandelt die konkrete Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG, ordnet die Vorlage Art. 100 Abs. 1 GG zu und erklärt ausdrücklich, dass das BVerfG der richtige Ansprechpartner ist. Sie verneint eine Zuständigkeit des EuGH nicht als Ersatz, sondern begründet, weshalb keine unionsrechtliche Vorlage erforderlich ist. Die nicht vollständige Nennung der zusätzlich angeführten BVerfGG-Normen ändert an der erfüllten Zuständigkeitsaussage nichts.",
+      "evidence": [
+        "Die Vorlage des Bundesverwaltungsgerichts (BVerwG) an das Bundesverfassungsgericht (BVerfG) nach Art. 100 I GG hat Aussicht auf Erfolg",
+        "Die konkrete Normenkontrolle ist zulässig.",
+        "Das BVerfG ist der richtige Ansprechpartner."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die konkrete Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG, ordnet die Vorlage Art. 100 Abs. 1 GG zu und erklärt ausdrücklich, dass das BVerfG der richtige Ansprechpartner ist. Sie verneint eine Zuständigkeit des EuGH nicht als Ersatz, sondern begründet, weshalb keine unionsrechtliche Vorlage erforderlich ist. Die nicht vollständige Nennung der zusätzlich angeführten BVerfGG-Normen ändert an der erfüllten Zuständigkeitsaussage nichts.",
+          "evidence": [
+            "Die Vorlage des Bundesverwaltungsgerichts (BVerwG) an das Bundesverfassungsgericht (BVerfG) nach Art. 100 I GG hat Aussicht auf Erfolg",
+            "Die konkrete Normenkontrolle ist zulässig.",
+            "Das BVerfG ist der richtige Ansprechpartner."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Das Bundesverfassungsgericht wird für die konkrete Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG als zuständig erklärt.",
+              "satisfied": true
+            },
+            {
+              "requirement": "Die Zuständigkeit wird dem Verfahren nach Art. 100 Abs. 1 GG zugeordnet; §§ 13 Nr. 11, 80 Abs. 1 BVerfGG werden nicht ausdrücklich vollständig zitiert.",
+              "satisfied": true
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Zuständigkeit des BVerfG für die konkrete Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG",
+            "evidence_scope": "Zuständigkeit des BVerfG für die Vorlage zur konkreten Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Vorlage erfolgt nach Art. 100 Abs. 1 GG; die Produkthaftungsrichtlinie erfasst den Sachverhalt zeitlich nicht, sodass die entscheidungserhebliche Frage ausschließlich nach nationalem Verfassungsrecht zu beurteilen ist.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht ausdrücklich die Zuständigkeit des BVerfG für die konkrete Normenkontrolle über § 15 Abs. 2 S. 2 ContStifG und lehnt die Zuständigkeit des EuGH ab. Damit ist der Kern des Kriteriums erfüllt.",
+          "evidence": [
+            "Die Vorlage des Bundesverwaltungsgerichts (BVerwG) an das Bundesverfassungsgericht (BVerfG) nach Art. 100 I GG hat Aussicht auf Erfolg, wenn die konkrete Normenkontrolle zulässig und die vorgelegte Vorschrift (§ 15 Abs. 2 S. 2 ContStifG) mit dem Grundgesetz unvereinbar ist.",
+            "Das BVerfG ist der richtige Ansprechpartner.",
+            "Zwischenergebnis: Die konkrete Normenkontrolle ist zulässig."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Das BVerfG wird für die konkrete Normenkontrolle über § 15 Abs. 2 S. 2 ContStifG für zuständig erklärt.",
+              "satisfied": true
+            },
+            {
+              "requirement": "Die Zuständigkeit wird nicht dem EuGH oder einem Fachgericht zugewiesen; der EuGH-Einwand wird verworfen.",
+              "satisfied": true
+            },
+            {
+              "requirement": "Die Prüfung wird im Rahmen von Art. 100 Abs. 1 GG und § 80 BVerfGG verortet.",
+              "satisfied": true
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Zuständigkeit des BVerfG für die konkrete Normenkontrolle über § 15 Abs. 2 S. 2 ContStifG nach Art. 100 Abs. 1 GG, §§ 13 Nr. 11, 80 Abs. 1 BVerfGG",
+            "evidence_scope": "BVerfG als zuständige Stelle für die konkrete Normenkontrolle über § 15 Abs. 2 S. 2 ContStifG; EuGH wird nicht als zuständig behandelt",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das BVerfG ist der richtige Ansprechpartner, weil kein einschlägiges Unionssekundärrecht eingreift und die Frage nationales Verfassungsrecht betrifft; die konkrete Normenkontrolle ist zulässig.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht die Zuständigkeit des BVerfG für das Verfahren der konkreten Normenkontrolle gemäß Art. 100 Abs. 1 GG i.V.m. § 80 BVerfGG und setzt sich dabei ausdrücklich mit dem Einwand der Stiftung zur Zuständigkeit des EuGH auseinander, indem sie diese zutreffend ablehnt.",
+          "evidence": [
+            "Die Vorlage muss die Zulässigkeitsvoraussetzungen des Art. 100 I GG i.V.m. § 80 BVerfGG erfüllen.",
+            "Mangels einschlägigen Sekundärrechts stellt sich die entscheidungserhebliche Frage ausschließlich nach nationalem Verfassungsrecht. Das BVerfG ist der richtige Ansprechpartner.",
+            "Zwischenergebnis: Die konkrete Normenkontrolle ist zulässig."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Zuständigkeit des Bundesverfassungsgerichts für die konkrete Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG nach Art. 100 Abs. 1 GG (i.V.m. BVerfGG) bejaht",
+              "satisfied": true
+            },
+            {
+              "requirement": "Keine Verneinung der Zuständigkeit oder fehlerhafte Zuweisung an den EuGH oder ein Fachgericht",
+              "satisfied": true
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Zuständigkeit des BVerfG für die konkrete Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG",
+            "evidence_scope": "Zuständigkeit des BVerfG für die konkrete Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Art. 100 I GG i.V.m. § 80 BVerfGG; kein Vorrang des Unionsrechts bzw. keine Zuständigkeit des EuGH mangels Anwendbarkeit von Unionssekundärrecht.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 23004,
+        "output_tokens": 5660,
+        "total_tokens": 28664,
+        "cached_input_tokens": 768,
+        "cache_write_tokens": 7059
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt die konkrete Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG, ordnet die Vorlage Art. 100 Abs. 1 GG zu und erklärt ausdrücklich, dass das BVerfG der richtige Ansprechpartner ist. Sie verneint eine Zuständigkeit des EuGH nicht als Ersatz, sondern begründet, weshalb keine unionsrechtliche Vorlage erforderlich ist. Die nicht vollständige Nennung der zusätzlich angeführten BVerfGG-Normen ändert an der erfüllten Zuständigkeitsaussage nichts.",
+              "evidence": [
+                "Die Vorlage des Bundesverwaltungsgerichts (BVerwG) an das Bundesverfassungsgericht (BVerfG) nach Art. 100 I GG hat Aussicht auf Erfolg",
+                "Die konkrete Normenkontrolle ist zulässig.",
+                "Das BVerfG ist der richtige Ansprechpartner."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Das Bundesverfassungsgericht wird für die konkrete Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG als zuständig erklärt.",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Die Zuständigkeit wird dem Verfahren nach Art. 100 Abs. 1 GG zugeordnet; §§ 13 Nr. 11, 80 Abs. 1 BVerfGG werden nicht ausdrücklich vollständig zitiert.",
+                  "satisfied": true
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Zuständigkeit des BVerfG für die konkrete Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG",
+                "evidence_scope": "Zuständigkeit des BVerfG für die Vorlage zur konkreten Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Vorlage erfolgt nach Art. 100 Abs. 1 GG; die Produkthaftungsrichtlinie erfasst den Sachverhalt zeitlich nicht, sodass die entscheidungserhebliche Frage ausschließlich nach nationalem Verfassungsrecht zu beurteilen ist.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht ausdrücklich die Zuständigkeit des BVerfG für die konkrete Normenkontrolle über § 15 Abs. 2 S. 2 ContStifG und lehnt die Zuständigkeit des EuGH ab. Damit ist der Kern des Kriteriums erfüllt.",
+              "evidence": [
+                "Die Vorlage des Bundesverwaltungsgerichts (BVerwG) an das Bundesverfassungsgericht (BVerfG) nach Art. 100 I GG hat Aussicht auf Erfolg, wenn die konkrete Normenkontrolle zulässig und die vorgelegte Vorschrift (§ 15 Abs. 2 S. 2 ContStifG) mit dem Grundgesetz unvereinbar ist.",
+                "Das BVerfG ist der richtige Ansprechpartner.",
+                "Zwischenergebnis: Die konkrete Normenkontrolle ist zulässig."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Das BVerfG wird für die konkrete Normenkontrolle über § 15 Abs. 2 S. 2 ContStifG für zuständig erklärt.",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Die Zuständigkeit wird nicht dem EuGH oder einem Fachgericht zugewiesen; der EuGH-Einwand wird verworfen.",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Die Prüfung wird im Rahmen von Art. 100 Abs. 1 GG und § 80 BVerfGG verortet.",
+                  "satisfied": true
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Zuständigkeit des BVerfG für die konkrete Normenkontrolle über § 15 Abs. 2 S. 2 ContStifG nach Art. 100 Abs. 1 GG, §§ 13 Nr. 11, 80 Abs. 1 BVerfGG",
+                "evidence_scope": "BVerfG als zuständige Stelle für die konkrete Normenkontrolle über § 15 Abs. 2 S. 2 ContStifG; EuGH wird nicht als zuständig behandelt",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das BVerfG ist der richtige Ansprechpartner, weil kein einschlägiges Unionssekundärrecht eingreift und die Frage nationales Verfassungsrecht betrifft; die konkrete Normenkontrolle ist zulässig.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht die Zuständigkeit des BVerfG für das Verfahren der konkreten Normenkontrolle gemäß Art. 100 Abs. 1 GG i.V.m. § 80 BVerfGG und setzt sich dabei ausdrücklich mit dem Einwand der Stiftung zur Zuständigkeit des EuGH auseinander, indem sie diese zutreffend ablehnt.",
+              "evidence": [
+                "Die Vorlage muss die Zulässigkeitsvoraussetzungen des Art. 100 I GG i.V.m. § 80 BVerfGG erfüllen.",
+                "Mangels einschlägigen Sekundärrechts stellt sich die entscheidungserhebliche Frage ausschließlich nach nationalem Verfassungsrecht. Das BVerfG ist der richtige Ansprechpartner.",
+                "Zwischenergebnis: Die konkrete Normenkontrolle ist zulässig."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Zuständigkeit des Bundesverfassungsgerichts für die konkrete Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG nach Art. 100 Abs. 1 GG (i.V.m. BVerfGG) bejaht",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Keine Verneinung der Zuständigkeit oder fehlerhafte Zuweisung an den EuGH oder ein Fachgericht",
+                  "satisfied": true
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Zuständigkeit des BVerfG für die konkrete Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG",
+                "evidence_scope": "Zuständigkeit des BVerfG für die konkrete Normenkontrolle über § 15 Abs. 2 Satz 2 ContStifG",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Art. 100 I GG i.V.m. § 80 BVerfGG; kein Vorrang des Unionsrechts bzw. keine Zuständigkeit des EuGH mangels Anwendbarkeit von Unionssekundärrecht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-011",
+      "title": "Kein Freizügigkeitssachverhalt des X",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort trifft keine Aussage dazu, ob X Freizügigkeit ausgeübt hat. Die fehlende zeitliche Anwendbarkeit der Produkthaftungsrichtlinie beantwortet diese eigenständige Frage nicht.",
+      "evidence": [
+        "Mangels einschlägigen Sekundärrechts stellt sich die entscheidungserhebliche Frage ausschließlich nach nationalem Verfassungsrecht."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort trifft keine Aussage dazu, ob X Freizügigkeit ausgeübt hat. Die fehlende zeitliche Anwendbarkeit der Produkthaftungsrichtlinie beantwortet diese eigenständige Frage nicht.",
+          "evidence": [
+            "Mangels einschlägigen Sekundärrechts stellt sich die entscheidungserhebliche Frage ausschließlich nach nationalem Verfassungsrecht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort stellt fest, dass X im Zusammenhang mit der streitigen Anrechnung kein Freizügigkeitsrecht aus Art. 21 Abs. 1 AEUV ausgeübt hat.",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "X und die Frage, ob er im Zusammenhang mit der streitigen Anrechnung von seinem Freizügigkeitsrecht aus Art. 21 Abs. 1 AEUV Gebrauch gemacht hat",
+            "evidence_scope": "Unionsrechtliche Zuständigkeit und zeitliche Anwendbarkeit der Produkthaftungsrichtlinie; keine Prüfung einer Freizügigkeitsausübung des X",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Produkthaftungsrichtlinie sei zeitlich nicht anwendbar, weshalb die entscheidungserhebliche Frage ausschließlich nach nationalem Verfassungsrecht zu beantworten sei.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort stellt nicht fest, dass der Sachverhalt keinen Gebrauch des irischen Staatsangehörigen X von seinem Freizügigkeitsrecht aus Art. 21 Abs. 1 AEUV im Zusammenhang mit der streitigen Anrechnung erkennen lässt. Art. 21 AEUV bzw. Freizügigkeit wird nicht erwähnt; die Unionsrechtsausführungen betreffen nur die EuGH-Zuständigkeit und die Produkthaftungsrichtlinie. Daher ist das Kriterium nicht erfüllt.",
+          "evidence": [
+            "Die von der Conterganstiftung erhobene Rüge, das BVerfG sei unzuständig, weil wegen der grenzüberschreitenden Dimension der EuGH mit dem Verfahren befasst werden müsse, greift nicht durch.",
+            "Mangels einschlägigen Sekundärrechts stellt sich die entscheidungserhebliche Frage ausschließlich nach nationalem Verfassungsrecht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort benennt das Freizügigkeitsrecht des Art. 21 Abs. 1 AEUV als Prüfungsmaßstab.",
+              "satisfied": false
+            },
+            {
+              "requirement": "Die Antwort stellt einen Bezug zu X als irischem Staatsangehörigen und zur streitigen Anrechnung her.",
+              "satisfied": false
+            },
+            {
+              "requirement": "Die Antwort kommt zu dem Ergebnis, dass ein Freizügigkeitssachverhalt nicht erkennbar ist.",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "X als irischer Staatsangehöriger und die Frage, ob er sein Freizügigkeitsrecht aus Art. 21 Abs. 1 AEUV im Zusammenhang mit der streitigen Anrechnung ausgeübt hat.",
+            "evidence_scope": "Unionsrechtliche Zuständigkeitsrüge/EuGH und Produkthaftungsrichtlinie 85/374/EWG; keine Freizügigkeitsprüfung.",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Keine Begründung zur Freizügigkeit des X; nur Ausführungen zur EuGH-Zuständigkeit und zur fehlenden zeitlichen Anwendbarkeit der Produkthaftungsrichtlinie.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Freizügigkeitsrecht aus Art. 21 Abs. 1 AEUV bzw. das Fehlen eines Freizügigkeitssachverhalts bei X wird im Text überhaupt nicht erwähnt oder geprüft.",
+          "evidence": [],
+          "component_checks": [
+            {
+              "requirement": "Feststellung, dass der Sachverhalt keinen Gebrauch des irischen Staatsangehörigen X von seinem Freizügigkeitsrecht aus Art. 21 Abs. 1 AEUV im Zusammenhang mit der streitigen Anrechnung erkennen lässt",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Freizügigkeitsrecht aus Art. 21 Abs. 1 AEUV des X",
+            "evidence_scope": "none",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 23368,
+        "output_tokens": 5024,
+        "total_tokens": 28392,
+        "cached_input_tokens": 768,
+        "cache_write_tokens": 7160
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort trifft keine Aussage dazu, ob X Freizügigkeit ausgeübt hat. Die fehlende zeitliche Anwendbarkeit der Produkthaftungsrichtlinie beantwortet diese eigenständige Frage nicht.",
+              "evidence": [
+                "Mangels einschlägigen Sekundärrechts stellt sich die entscheidungserhebliche Frage ausschließlich nach nationalem Verfassungsrecht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort stellt fest, dass X im Zusammenhang mit der streitigen Anrechnung kein Freizügigkeitsrecht aus Art. 21 Abs. 1 AEUV ausgeübt hat.",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "X und die Frage, ob er im Zusammenhang mit der streitigen Anrechnung von seinem Freizügigkeitsrecht aus Art. 21 Abs. 1 AEUV Gebrauch gemacht hat",
+                "evidence_scope": "Unionsrechtliche Zuständigkeit und zeitliche Anwendbarkeit der Produkthaftungsrichtlinie; keine Prüfung einer Freizügigkeitsausübung des X",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Produkthaftungsrichtlinie sei zeitlich nicht anwendbar, weshalb die entscheidungserhebliche Frage ausschließlich nach nationalem Verfassungsrecht zu beantworten sei.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt nicht fest, dass der Sachverhalt keinen Gebrauch des irischen Staatsangehörigen X von seinem Freizügigkeitsrecht aus Art. 21 Abs. 1 AEUV im Zusammenhang mit der streitigen Anrechnung erkennen lässt. Art. 21 AEUV bzw. Freizügigkeit wird nicht erwähnt; die Unionsrechtsausführungen betreffen nur die EuGH-Zuständigkeit und die Produkthaftungsrichtlinie. Daher ist das Kriterium nicht erfüllt.",
+              "evidence": [
+                "Die von der Conterganstiftung erhobene Rüge, das BVerfG sei unzuständig, weil wegen der grenzüberschreitenden Dimension der EuGH mit dem Verfahren befasst werden müsse, greift nicht durch.",
+                "Mangels einschlägigen Sekundärrechts stellt sich die entscheidungserhebliche Frage ausschließlich nach nationalem Verfassungsrecht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort benennt das Freizügigkeitsrecht des Art. 21 Abs. 1 AEUV als Prüfungsmaßstab.",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Die Antwort stellt einen Bezug zu X als irischem Staatsangehörigen und zur streitigen Anrechnung her.",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Die Antwort kommt zu dem Ergebnis, dass ein Freizügigkeitssachverhalt nicht erkennbar ist.",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "X als irischer Staatsangehöriger und die Frage, ob er sein Freizügigkeitsrecht aus Art. 21 Abs. 1 AEUV im Zusammenhang mit der streitigen Anrechnung ausgeübt hat.",
+                "evidence_scope": "Unionsrechtliche Zuständigkeitsrüge/EuGH und Produkthaftungsrichtlinie 85/374/EWG; keine Freizügigkeitsprüfung.",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Keine Begründung zur Freizügigkeit des X; nur Ausführungen zur EuGH-Zuständigkeit und zur fehlenden zeitlichen Anwendbarkeit der Produkthaftungsrichtlinie.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Freizügigkeitsrecht aus Art. 21 Abs. 1 AEUV bzw. das Fehlen eines Freizügigkeitssachverhalts bei X wird im Text überhaupt nicht erwähnt oder geprüft.",
+              "evidence": [],
+              "component_checks": [
+                {
+                  "requirement": "Feststellung, dass der Sachverhalt keinen Gebrauch des irischen Staatsangehörigen X von seinem Freizügigkeitsrecht aus Art. 21 Abs. 1 AEUV im Zusammenhang mit der streitigen Anrechnung erkennen lässt",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Freizügigkeitsrecht aus Art. 21 Abs. 1 AEUV des X",
+                "evidence_scope": "none",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Entscheidungserheblichkeit der Anrechnungsvorschrift",
+      "verdict": "fail",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort erläutert, dass die Vorschrift auf X angewandt wird und zu einer Kürzung führt, und stellt unterschiedliche hypothetische Verfahrensausgänge dar. Sie führt jedoch nicht aus, dass X bei Verfassungswidrigkeit mit seiner Revision Erfolg hätte und die volle Conterganrente verlangen könnte; die bloße Aufhebung des Anrechnungsbescheids legt diese Rentenfolge nicht ausdrücklich dar.",
+      "evidence": [
+        "Die Vorschrift führt im Fall des X zu einer Kürzung seiner monatlichen Conterganrente um die gesamte irische Zahlung von 1.109 €.",
+        "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erläutert, dass die Vorschrift auf X angewandt wird und zu einer Kürzung führt, und stellt unterschiedliche hypothetische Verfahrensausgänge dar. Sie führt jedoch nicht aus, dass X bei Verfassungswidrigkeit mit seiner Revision Erfolg hätte und die volle Conterganrente verlangen könnte; die bloße Aufhebung des Anrechnungsbescheids legt diese Rentenfolge nicht ausdrücklich dar.",
+          "evidence": [
+            "Die Vorschrift führt im Fall des X zu einer Kürzung seiner monatlichen Conterganrente um die gesamte irische Zahlung von 1.109 €.",
+            "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Fallbezogene Anwendung der Anrechnungsvorschrift auf X und Darstellung, dass seine irische Zahlung zur Kürzung führt",
+              "satisfied": true
+            },
+            {
+              "requirement": "Bei angenommener Verfassungswidrigkeit hätte X mit seiner Revision Erfolg",
+              "satisfied": false
+            },
+            {
+              "requirement": "X könnte bei Ungültigkeit der Norm die volle Conterganrente verlangen",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "X, § 15 Abs. 2 Satz 2 ContStifG, Entscheidungserheblichkeit der Norm im Revisionsverfahren und Auswirkung auf die Rentenhöhe",
+            "evidence_scope": "X, Anrechnung der irischen Zahlung nach § 15 Abs. 2 Satz 2 ContStifG und hypothetische Aufhebung des Anrechnungsbescheids",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Bei Ungültigkeit der Norm müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X erfolglos.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Entscheidungserheblichkeit anhand des hypothetischen Ergebnisses und zeigt den unterschiedlichen Ausgang fallbezogen auf: Wird die Norm für verfassungswidrig erklärt, entfällt die Anrechnung und der Anrechnungsbescheid ist aufzuheben; die tatbestandliche Anwendung der Vorschrift auf X ergibt sich aus der dargestellten Kürzung der Conterganrente. Die Anforderungen des Kriteriums sind erfüllt.",
+          "evidence": [
+            "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen.",
+            "Die Vorschrift führt im Fall des X zu einer Kürzung seiner monatlichen Conterganrente um die gesamte irische Zahlung von 1.109 €."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Prüfung der Entscheidungserheblichkeit anhand des hypothetischen Ergebnisses",
+              "satisfied": true
+            },
+            {
+              "requirement": "Fallbezug: Anwendung der Anrechnungsvorschrift auf X",
+              "satisfied": true
+            },
+            {
+              "requirement": "Bei angenommener Verfassungswidrigkeit Erfolg (Aufhebung des Anrechnungsbescheids / volle Rente)",
+              "satisfied": true
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Entscheidungserheblichkeit des § 15 Abs. 2 S. 2 ContStifG für X im Revisionsverfahren",
+            "evidence_scope": "§ 15 Abs. 2 S. 2 ContStifG, Anwendungsfall des X, Verfahrensausgang",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Bei Nichtigkeit der Norm müsste der Anrechnungsbescheid aufgehoben werden, bei Gültigkeit bliebe die Klage abzuweisen",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Kriterium verlangt ausdrücklich die fallbezogene Erläuterung, dass X die Tatbestandsvoraussetzungen der Norm erfüllt, sowie die Ausführung, dass er mit der Revision Erfolg hätte und die volle Rente verlangen könnte. Die Ausführungen der Ausarbeitung bleiben demgegenüber abstrakt (lediglich 'Aufhebung des Bescheids' / 'Klage abweisen') und übergehen die Tatbestandsanwendung auf X sowie den konkreten Bezug zu Revision und voller Rentenhöhe.",
+          "evidence": [
+            "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Prüfung der Entscheidungserheblichkeit anhand des hypothetischen Ergebnisses",
+              "satisfied": true
+            },
+            {
+              "requirement": "Fallbezogene Erläuterung, dass X die tatbestandlichen Voraussetzungen der Anrechnungsvorschrift erfüllt",
+              "satisfied": false
+            },
+            {
+              "requirement": "Darlegung, dass X bei Verfassungswidrigkeit mit seiner Revision Erfolg hätte und die volle Conterganrente verlangen könnte",
+              "satisfied": false
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Entscheidungserheblichkeit von § 15 Abs. 2 Satz 2 ContStifG im Rahmen der Zulässigkeit der Richtervorlage",
+            "evidence_scope": "Entscheidungserheblichkeit von § 15 Abs. 2 Satz 2 ContStifG im Rahmen der Zulässigkeit der Richtervorlage",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 23650,
+        "output_tokens": 8163,
+        "total_tokens": 31813,
+        "cached_input_tokens": 15567,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt zwar unterschiedliche hypothetische Verfahrensausgänge dar. Sie erläutert aber nicht fallbezogen, warum X die tatbestandlichen Voraussetzungen der Anrechnung erfüllt, und sagt nicht, dass er bei Ungültigkeit der Norm die volle Conterganrente verlangen könnte. Damit fehlen zwingende Bestandteile des Kriteriums.",
+              "evidence": [
+                "Die Gültigkeit der Anrechnungsvorschrift ist für den Ausgang des Ausgangsverfahrens entscheidungserheblich.",
+                "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Fallbezogen erläutern, dass X die tatbestandlichen Voraussetzungen der Anrechnungsvorschrift erfüllt",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Bei angenommener Verfassungswidrigkeit hätte X mit seiner Revision Erfolg",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "X könnte die volle Conterganrente verlangen",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Der unterschiedliche Ausgang bei Gültigkeit und Ungültigkeit der Norm wird aufgezeigt",
+                  "satisfied": true
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Entscheidungserheblichkeit von § 15 Abs. 2 Satz 2 ContStifG für X’ Revision und Anspruch auf die volle Conterganrente",
+                "evidence_scope": "Entscheidungserheblichkeit im Ausgangsverfahren des X; hypothetische Aufhebung des Anrechnungsbescheids bei Nichtigkeit und Klageabweisung bei Gültigkeit",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Gültigkeit der Anrechnungsvorschrift beeinflusst den Ausgang des Ausgangsverfahrens: Bei Nichtigkeit wäre der Anrechnungsbescheid aufzuheben, bei Gültigkeit die Klage des X abzuweisen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort zeigt den unterschiedlichen hypothetischen Ausgang fallbezogen auf: Bei Ungültigkeit entfällt der Anrechnungsbescheid, woraus die volle Conterganrente folgt; bei Gültigkeit bleibt die Klage erfolglos. Damit ist die Entscheidungserheblichkeit der Anrechnungsvorschrift substantiell dargelegt.",
+              "evidence": [
+                "Die Gültigkeit der Anrechnungsvorschrift ist für den Ausgang des Ausgangsverfahrens entscheidungserheblich.",
+                "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen.",
+                "Die Vorschrift führt im Fall des X zu einer Kürzung seiner monatlichen Conterganrente um die gesamte irische Zahlung von 1.109 €."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Prüfung der Entscheidungserheblichkeit anhand des hypothetischen Ergebnisses",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Fallbezogene Anwendung der Anrechnungsvorschrift auf X",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Bei angenommener Verfassungswidrigkeit Erfolg der Revision bzw. Aufhebung des Anrechnungsbescheids",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Möglichkeit, die volle Conterganrente zu verlangen",
+                  "satisfied": true
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Entscheidungserheblichkeit von § 15 Abs. 2 S. 2 ContStifG im Revisionsverfahren des X",
+                "evidence_scope": "§ 15 Abs. 2 S. 2 ContStifG, Anrechnungsbescheid und Ausgang des Verfahrens des X",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Wenn § 15 Abs. 2 S. 2 ContStifG nichtig ist, ist der Anrechnungsbescheid aufzuheben; bei Gültigkeit bleibt die Klage des X abzuweisen; die Gültigkeit ist für den Ausgang entscheidend.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium verlangt ausdrücklich die fallbezogene Erläuterung, dass X die tatbestandlichen Voraussetzungen der Anrechnungsvorschrift erfüllt, sowie die Darlegung der Folge für Revision und Rentenhöhe (volle Conterganrente). Die Antwort beschränkt sich dagegen auf die bloße formelhafte Nennung von Bescheidaufhebung bzw. Klageabweisung und erfüllt die Negativbedingung ('NICHT ERFÜLLT, wenn die Antwort nur abstrakt von Entscheidungserheblichkeit spricht, die Anwendung der Norm auf X oder die Folge ihrer Ungültigkeit für Revision und Rentenhöhe nicht darlegt').",
+              "evidence": [
+                "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen. Das BVerwG kann ohne Klärung der Verfassungsmäßigkeit keine Sachentscheidung treffen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Prüfung der Entscheidungserheblichkeit anhand des hypothetischen Ergebnisses",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Fallbezogene Erläuterung, dass X die tatbestandlichen Voraussetzungen der Anrechnungsvorschrift erfüllt",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Darlegung, dass X bei angenommener Verfassungswidrigkeit mit seiner Revision Erfolg hätte und die volle Conterganrente verlangen könnte",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Entscheidungserheblichkeit von § 15 Abs. 2 S. 2 ContStifG bei der konkreten Normenkontrolle (Zulässigkeit)",
+                "evidence_scope": "Entscheidungserheblichkeit der vorgelegten Frage (Abschnitt A.IV)",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Wäre die Norm nichtig, müsste der Anrechnungsbescheid aufgehoben werden, bei Gültigkeit bliebe die Klage abzuweisen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erläutert, dass die Vorschrift auf X angewandt wird und zu einer Kürzung führt, und stellt unterschiedliche hypothetische Verfahrensausgänge dar. Sie führt jedoch nicht aus, dass X bei Verfassungswidrigkeit mit seiner Revision Erfolg hätte und die volle Conterganrente verlangen könnte; die bloße Aufhebung des Anrechnungsbescheids legt diese Rentenfolge nicht ausdrücklich dar.",
+              "evidence": [
+                "Die Vorschrift führt im Fall des X zu einer Kürzung seiner monatlichen Conterganrente um die gesamte irische Zahlung von 1.109 €.",
+                "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Fallbezogene Anwendung der Anrechnungsvorschrift auf X und Darstellung, dass seine irische Zahlung zur Kürzung führt",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Bei angenommener Verfassungswidrigkeit hätte X mit seiner Revision Erfolg",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "X könnte bei Ungültigkeit der Norm die volle Conterganrente verlangen",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "X, § 15 Abs. 2 Satz 2 ContStifG, Entscheidungserheblichkeit der Norm im Revisionsverfahren und Auswirkung auf die Rentenhöhe",
+                "evidence_scope": "X, Anrechnung der irischen Zahlung nach § 15 Abs. 2 Satz 2 ContStifG und hypothetische Aufhebung des Anrechnungsbescheids",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Bei Ungültigkeit der Norm müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X erfolglos.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Entscheidungserheblichkeit anhand des hypothetischen Ergebnisses und zeigt den unterschiedlichen Ausgang fallbezogen auf: Wird die Norm für verfassungswidrig erklärt, entfällt die Anrechnung und der Anrechnungsbescheid ist aufzuheben; die tatbestandliche Anwendung der Vorschrift auf X ergibt sich aus der dargestellten Kürzung der Conterganrente. Die Anforderungen des Kriteriums sind erfüllt.",
+              "evidence": [
+                "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen.",
+                "Die Vorschrift führt im Fall des X zu einer Kürzung seiner monatlichen Conterganrente um die gesamte irische Zahlung von 1.109 €."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Prüfung der Entscheidungserheblichkeit anhand des hypothetischen Ergebnisses",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Fallbezug: Anwendung der Anrechnungsvorschrift auf X",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Bei angenommener Verfassungswidrigkeit Erfolg (Aufhebung des Anrechnungsbescheids / volle Rente)",
+                  "satisfied": true
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Entscheidungserheblichkeit des § 15 Abs. 2 S. 2 ContStifG für X im Revisionsverfahren",
+                "evidence_scope": "§ 15 Abs. 2 S. 2 ContStifG, Anwendungsfall des X, Verfahrensausgang",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Bei Nichtigkeit der Norm müsste der Anrechnungsbescheid aufgehoben werden, bei Gültigkeit bliebe die Klage abzuweisen",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium verlangt ausdrücklich die fallbezogene Erläuterung, dass X die Tatbestandsvoraussetzungen der Norm erfüllt, sowie die Ausführung, dass er mit der Revision Erfolg hätte und die volle Rente verlangen könnte. Die Ausführungen der Ausarbeitung bleiben demgegenüber abstrakt (lediglich 'Aufhebung des Bescheids' / 'Klage abweisen') und übergehen die Tatbestandsanwendung auf X sowie den konkreten Bezug zu Revision und voller Rentenhöhe.",
+              "evidence": [
+                "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Prüfung der Entscheidungserheblichkeit anhand des hypothetischen Ergebnisses",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Fallbezogene Erläuterung, dass X die tatbestandlichen Voraussetzungen der Anrechnungsvorschrift erfüllt",
+                  "satisfied": false
+                },
+                {
+                  "requirement": "Darlegung, dass X bei Verfassungswidrigkeit mit seiner Revision Erfolg hätte und die volle Conterganrente verlangen könnte",
+                  "satisfied": false
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Entscheidungserheblichkeit von § 15 Abs. 2 Satz 2 ContStifG im Rahmen der Zulässigkeit der Richtervorlage",
+                "evidence_scope": "Entscheidungserheblichkeit von § 15 Abs. 2 Satz 2 ContStifG im Rahmen der Zulässigkeit der Richtervorlage",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-011",
+      "title": "Kein Freizügigkeitssachverhalt des X",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort prüft die zeitliche Anwendbarkeit der Produkthaftungsrichtlinie und die Zuständigkeit des EuGH, nicht aber den Maßstab des Art. 21 Abs. 1 AEUV, konkrete Tatsachen zu einer Freizügigkeitsausübung des X und ein Ergebnis zu genau dieser Frage.",
+      "evidence": [
+        "Die allein in Betracht kommende Produkthaftungsrichtlinie 85/374/EWG ist nach ihrem Art. 17 nicht auf Produkte anwendbar",
+        "Mangels einschlägigen Sekundärrechts stellt sich die entscheidungserhebliche Frage ausschließlich nach nationalem Verfassungsrecht."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft die zeitliche Anwendbarkeit der Produkthaftungsrichtlinie und die Zuständigkeit des EuGH, nicht aber den Maßstab des Art. 21 Abs. 1 AEUV, konkrete Tatsachen zu einer Freizügigkeitsausübung des X und ein Ergebnis zu genau dieser Frage.",
+          "evidence": [
+            "Die allein in Betracht kommende Produkthaftungsrichtlinie 85/374/EWG ist nach ihrem Art. 17 nicht auf Produkte anwendbar",
+            "Mangels einschlägigen Sekundärrechts stellt sich die entscheidungserhebliche Frage ausschließlich nach nationalem Verfassungsrecht."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft allenfalls die EuGH-Zuständigkeit anhand der Produkthaftungsrichtlinie. Sie verbindet keinen freizügigkeitsrechtlichen Maßstab des Art. 21 Abs. 1 AEUV mit den Tatsachen zu X und der streitigen Anrechnung und gelangt zu keinem Ergebnis dazu, ob ein Freizügigkeitssachverhalt fehlt. Damit fehlt eine criterion-specific methodische Prüfung.",
+          "evidence": [
+            "Die von der Conterganstiftung erhobene Rüge, das BVerfG sei unzuständig, weil wegen der grenzüberschreitenden Dimension der EuGH mit dem Verfahren befasst werden müsse, greift nicht durch.",
+            "Die Richtlinie erfasst den Sachverhalt damit zeitlich nicht."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Fallbearbeitung prüft im Rahmen der Unionsrechtsdimension lediglich die Produkthaftungsrichtlinie, thematisiert das Freizügigkeitsrecht (Art. 21 Abs. 1 AEUV) des X jedoch an keiner Stelle methodisch.",
+          "evidence": [
+            "Die von der Conterganstiftung erhobene Rüge, das BVerfG sei unzuständig, weil wegen der grenzüberschreitenden Dimension der EuGH mit dem Verfahren befasst werden müsse, greift nicht durch. Eine Vorlage an den EuGH nach Art. 267 AEUV wäre nur erforderlich, wenn die Rechtsfrage vom Anwendungsbereich des Unionsrechts erfasst wäre. Die allein in Betracht kommende Produkthaftungsrichtlinie 85/374/EWG ist nach ihrem Art. 17 nicht auf Produkte anwendbar..."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft die zeitliche Anwendbarkeit der Produkthaftungsrichtlinie und die Zuständigkeit des EuGH, nicht aber den Maßstab des Art. 21 Abs. 1 AEUV, konkrete Tatsachen zu einer Freizügigkeitsausübung des X und ein Ergebnis zu genau dieser Frage.",
+              "evidence": [
+                "Die allein in Betracht kommende Produkthaftungsrichtlinie 85/374/EWG ist nach ihrem Art. 17 nicht auf Produkte anwendbar",
+                "Mangels einschlägigen Sekundärrechts stellt sich die entscheidungserhebliche Frage ausschließlich nach nationalem Verfassungsrecht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft allenfalls die EuGH-Zuständigkeit anhand der Produkthaftungsrichtlinie. Sie verbindet keinen freizügigkeitsrechtlichen Maßstab des Art. 21 Abs. 1 AEUV mit den Tatsachen zu X und der streitigen Anrechnung und gelangt zu keinem Ergebnis dazu, ob ein Freizügigkeitssachverhalt fehlt. Damit fehlt eine criterion-specific methodische Prüfung.",
+              "evidence": [
+                "Die von der Conterganstiftung erhobene Rüge, das BVerfG sei unzuständig, weil wegen der grenzüberschreitenden Dimension der EuGH mit dem Verfahren befasst werden müsse, greift nicht durch.",
+                "Die Richtlinie erfasst den Sachverhalt damit zeitlich nicht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Fallbearbeitung prüft im Rahmen der Unionsrechtsdimension lediglich die Produkthaftungsrichtlinie, thematisiert das Freizügigkeitsrecht (Art. 21 Abs. 1 AEUV) des X jedoch an keiner Stelle methodisch.",
+              "evidence": [
+                "Die von der Conterganstiftung erhobene Rüge, das BVerfG sei unzuständig, weil wegen der grenzüberschreitenden Dimension der EuGH mit dem Verfahren befasst werden müsse, greift nicht durch. Eine Vorlage an den EuGH nach Art. 267 AEUV wäre nur erforderlich, wenn die Rechtsfrage vom Anwendungsbereich des Unionsrechts erfasst wäre. Die allein in Betracht kommende Produkthaftungsrichtlinie 85/374/EWG ist nach ihrem Art. 17 nicht auf Produkte anwendbar..."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-005",
+      "title": "Entscheidungserheblichkeit der Anrechnungsvorschrift",
+      "verdict": "fail",
+      "resolution": "unresolved",
+      "reasoning": "The committee majority changed between two independent rounds; the criterion is conservatively unresolved.",
+      "evidence": [],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verbindet die Entscheidungserheblichkeit mit den unterschiedlichen hypothetischen Ergebnissen im Verfahren des X: Aufhebung des Anrechnungsbescheids bei Ungültigkeit, Abweisung seiner Klage bei Gültigkeit. Damit ist die Prüfung methodisch auf diese konkrete Vorlagefrage bezogen und abgeschlossen.",
+          "evidence": [
+            "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort widmet der Entscheidungserheblichkeit einen eigenen Prüfungspunkt (IV.), verbindet den Maßstab (Gültigkeit entscheidet den Verfahrensausgang) mit dem konkreten Fall des X (Anrechnungsbescheid) und leitet daraus den hypothetischen Ausgang ab. Regel, Sachverhalt und Ergebnis sind ausdrücklich verknüpft.",
+          "evidence": [
+            "Die Gültigkeit der Anrechnungsvorschrift ist für den Ausgang des Ausgangsverfahrens entscheidungserheblich.",
+            "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Prüfung beschränkt sich auf eine bloße Behauptung der Rechtsfolgen für den Prozess (Aufhebung des Bescheids bzw. Klageabweisung), ohne die konkreten Tatsachen des Falls (irische Zahlung, Betroffenheit des X) subsumierend an die Tatbestandsmerkmale der Norm anzubinden.",
+          "evidence": [
+            "Die Gültigkeit der Anrechnungsvorschrift ist für den Ausgang des Ausgangsverfahrens entscheidungserheblich. Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen. Das BVerwG kann ohne Klärung der Verfassungsmäßigkeit keine Sachentscheidung treffen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort nennt die hypothetischen Folgen der Gültigkeit und Ungültigkeit, verbindet diese aber in der Prüfung der Entscheidungserheblichkeit nicht mit konkreten Tatsachen dazu, dass X die Anrechnungsvoraussetzungen erfüllt. Die anderswo erwähnte Kürzung ersetzt diese fehlende fallbezogene Prüfung an dieser Prüfungsstation nicht.",
+              "evidence": [
+                "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": false
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Entscheidungserheblichkeit anhand des hypothetischen Ausgangs: Sie stellt auf die Gültigkeit der Anrechnungsvorschrift als decisive premise ab, verknüpft sie mit dem konkreten Fall des X und den alternativen Verfahrensergebnissen und schließt mit der fehlenden Sachentscheidungsmöglichkeit ohne Klärung. Das ist eine vollständige methodische Linie zur Entscheidungserheblichkeit.",
+              "evidence": [
+                "Die Gültigkeit der Anrechnungsvorschrift ist für den Ausgang des Ausgangsverfahrens entscheidungserheblich.",
+                "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen.",
+                "Das BVerwG kann ohne Klärung der Verfassungsmäßigkeit keine Sachentscheidung treffen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Prüfung formuliert zwar den hypothetischen Ausgang, bindet aber keine konkreten Tatsachen ein (weder die Tatbestandsmerkmale der Norm bezüglich der irischen Zahlungen noch die Auswirkung auf die konkrete Rentenhöhe). Die Feststellung bleibt rein abstrakt-formelhaft.",
+              "evidence": [
+                "Die Gültigkeit der Anrechnungsvorschrift ist für den Ausgang des Ausgangsverfahrens entscheidungserheblich. Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verbindet die Entscheidungserheblichkeit mit den unterschiedlichen hypothetischen Ergebnissen im Verfahren des X: Aufhebung des Anrechnungsbescheids bei Ungültigkeit, Abweisung seiner Klage bei Gültigkeit. Damit ist die Prüfung methodisch auf diese konkrete Vorlagefrage bezogen und abgeschlossen.",
+              "evidence": [
+                "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort widmet der Entscheidungserheblichkeit einen eigenen Prüfungspunkt (IV.), verbindet den Maßstab (Gültigkeit entscheidet den Verfahrensausgang) mit dem konkreten Fall des X (Anrechnungsbescheid) und leitet daraus den hypothetischen Ausgang ab. Regel, Sachverhalt und Ergebnis sind ausdrücklich verknüpft.",
+              "evidence": [
+                "Die Gültigkeit der Anrechnungsvorschrift ist für den Ausgang des Ausgangsverfahrens entscheidungserheblich.",
+                "Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Prüfung beschränkt sich auf eine bloße Behauptung der Rechtsfolgen für den Prozess (Aufhebung des Bescheids bzw. Klageabweisung), ohne die konkreten Tatsachen des Falls (irische Zahlung, Betroffenheit des X) subsumierend an die Tatbestandsmerkmale der Norm anzubinden.",
+              "evidence": [
+                "Die Gültigkeit der Anrechnungsvorschrift ist für den Ausgang des Ausgangsverfahrens entscheidungserheblich. Wäre § 15 Abs. 2 S. 2 ContStifG nichtig, müsste der Anrechnungsbescheid aufgehoben werden; bei Gültigkeit bliebe die Klage des X abzuweisen. Das BVerwG kann ohne Klärung der Verfassungsmäßigkeit keine Sachentscheidung treffen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "majority_flip"
+    }
+  ]
+}

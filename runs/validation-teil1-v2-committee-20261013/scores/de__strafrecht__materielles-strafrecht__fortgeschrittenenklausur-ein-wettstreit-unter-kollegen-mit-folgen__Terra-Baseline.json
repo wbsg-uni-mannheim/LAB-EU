@@ -1,0 +1,501 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-ein-wettstreit-unter-kollegen-mit-folgen",
+    "title": "Fortgeschrittenenklausur: Ein Wettstreit unter Kollegen mit Folgen"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenklausur-ein-wettstreit-unter-kollegen-mit-folgen/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-ein-wettstreit-unter-kollegen-mit-folgen/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:33:22.156331+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Der Wettstreit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Der Wettstreit › Strafbarkeit der B": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 13061,
+    "output_tokens": 3433,
+    "total_tokens": 16494,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 6076
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 13061,
+    "output_tokens": 3433,
+    "total_tokens": 16494,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 6076
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-010",
+      "title": "Rennvorsatz der B im ersten Tatkomplex",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Lösung bejaht den Rennvorsatz ausdrücklich und begründet ihn mit Bs Ziel, die Strecke schneller als A zurückzulegen. Ihr fehlender Gefährdungsvorsatz wird nicht mit fehlendem Rennvorsatz verwechselt.",
+      "evidence": [
+        "Sie fuhr mit dem Ziel, A „um jeden Preis“ zu unterbieten, und wollte die vorgegebene Strecke schneller als dieser zurücklegen. Damit handelte sie vorsätzlich hinsichtlich ihrer Teilnahme an dem Rennen."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung bejaht den Rennvorsatz ausdrücklich und begründet ihn mit Bs Ziel, die Strecke schneller als A zurückzulegen. Ihr fehlender Gefährdungsvorsatz wird nicht mit fehlendem Rennvorsatz verwechselt.",
+          "evidence": [
+            "Sie fuhr mit dem Ziel, A „um jeden Preis“ zu unterbieten, und wollte die vorgegebene Strecke schneller als dieser zurücklegen. Damit handelte sie vorsätzlich hinsichtlich ihrer Teilnahme an dem Rennen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "B fuhr schnell, um den Arbeitsweg schneller als A zurückzulegen.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "B hatte Vorsatz hinsichtlich ihrer Rennteilnahme beziehungsweise der objektiven Tatbestandsmerkmale.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B; Rennvorsatz beim Grunddelikt des § 315d Abs. 1 Nr. 2 StGB im ersten Tatkomplex",
+            "evidence_scope": "B; Vorsatz hinsichtlich der Rennteilnahme beim Grunddelikt des § 315d Abs. 1 Nr. 2 StGB im ersten Tatkomplex",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "B wollte A unterbieten und die Strecke schneller als er zurücklegen; daraus folgert die Lösung ihren Vorsatz hinsichtlich der Rennteilnahme.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung stellt im ersten Tatkomplex beim Grunddelikt des § 315d Abs. 1 Nr. 2 StGB ausdrücklich fest, dass B am Rennen teilnahm, A um jeden Preis unterbieten und die Strecke schneller als dieser zurücklegen wollte. Sie bejaht damit den Rennvorsatz. Der fehlende Gefährdungsvorsatz wird nur für § 315d Abs. 2 StGB erörtert und nicht fälschlich als Ausschluss des Rennvorsatzes behandelt.",
+          "evidence": [
+            "B nahm daran als Kraftfahrzeugführerin teil. Sie fuhr mit dem Ziel, A „um jeden Preis“ zu unterbieten, und wollte die vorgegebene Strecke schneller als dieser zurücklegen. Damit handelte sie vorsätzlich hinsichtlich ihrer Teilnahme an dem Rennen.",
+            "Der Grundtatbestand des § 315d Abs. 1 Nr. 2 StGB ist erfüllt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "B fuhr schnell, um den Arbeitsweg schneller als A zurückzulegen",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Vorsatz der B hinsichtlich der Rennteilnahme bzw. der objektiven Tatbestandsmerkmale wird bejaht",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B, Grunddelikt § 315d Abs. 1 Nr. 2 StGB, erster Tatkomplex, Rennvorsatz",
+            "evidence_scope": "B, Grundtatbestand § 315d Abs. 1 Nr. 2 StGB, erster Tatkomplex",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "B nahm als Kraftfahrzeugführerin am nicht erlaubten Rennen teil und wollte die Strecke schneller als A zurücklegen; daher handelte sie vorsätzlich hinsichtlich ihrer Teilnahme am Rennen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 13061,
+        "output_tokens": 3433,
+        "total_tokens": 16494,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 6076
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung bejaht den Rennvorsatz ausdrücklich und begründet ihn mit Bs Ziel, die Strecke schneller als A zurückzulegen. Ihr fehlender Gefährdungsvorsatz wird nicht mit fehlendem Rennvorsatz verwechselt.",
+              "evidence": [
+                "Sie fuhr mit dem Ziel, A „um jeden Preis“ zu unterbieten, und wollte die vorgegebene Strecke schneller als dieser zurücklegen. Damit handelte sie vorsätzlich hinsichtlich ihrer Teilnahme an dem Rennen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "B fuhr schnell, um den Arbeitsweg schneller als A zurückzulegen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "B hatte Vorsatz hinsichtlich ihrer Rennteilnahme beziehungsweise der objektiven Tatbestandsmerkmale.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B; Rennvorsatz beim Grunddelikt des § 315d Abs. 1 Nr. 2 StGB im ersten Tatkomplex",
+                "evidence_scope": "B; Vorsatz hinsichtlich der Rennteilnahme beim Grunddelikt des § 315d Abs. 1 Nr. 2 StGB im ersten Tatkomplex",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "B wollte A unterbieten und die Strecke schneller als er zurücklegen; daraus folgert die Lösung ihren Vorsatz hinsichtlich der Rennteilnahme.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung stellt im ersten Tatkomplex beim Grunddelikt des § 315d Abs. 1 Nr. 2 StGB ausdrücklich fest, dass B am Rennen teilnahm, A um jeden Preis unterbieten und die Strecke schneller als dieser zurücklegen wollte. Sie bejaht damit den Rennvorsatz. Der fehlende Gefährdungsvorsatz wird nur für § 315d Abs. 2 StGB erörtert und nicht fälschlich als Ausschluss des Rennvorsatzes behandelt.",
+              "evidence": [
+                "B nahm daran als Kraftfahrzeugführerin teil. Sie fuhr mit dem Ziel, A „um jeden Preis“ zu unterbieten, und wollte die vorgegebene Strecke schneller als dieser zurücklegen. Damit handelte sie vorsätzlich hinsichtlich ihrer Teilnahme an dem Rennen.",
+                "Der Grundtatbestand des § 315d Abs. 1 Nr. 2 StGB ist erfüllt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "B fuhr schnell, um den Arbeitsweg schneller als A zurückzulegen",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Vorsatz der B hinsichtlich der Rennteilnahme bzw. der objektiven Tatbestandsmerkmale wird bejaht",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B, Grunddelikt § 315d Abs. 1 Nr. 2 StGB, erster Tatkomplex, Rennvorsatz",
+                "evidence_scope": "B, Grundtatbestand § 315d Abs. 1 Nr. 2 StGB, erster Tatkomplex",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "B nahm als Kraftfahrzeugführerin am nicht erlaubten Rennen teil und wollte die Strecke schneller als A zurücklegen; daher handelte sie vorsätzlich hinsichtlich ihrer Teilnahme am Rennen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-010",
+      "title": "Rennvorsatz der B im ersten Tatkomplex",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Lösung verknüpft im ersten Tatkomplex Bs Ziel, den Arbeitsweg schneller als A zurückzulegen, ausdrücklich mit dem Vorsatz hinsichtlich ihrer Rennteilnahme und schließt diese Prüfung damit ab.",
+      "evidence": [
+        "Sie fuhr mit dem Ziel, A „um jeden Preis“ zu unterbieten, und wollte die vorgegebene Strecke schneller als dieser zurücklegen. Damit handelte sie vorsätzlich hinsichtlich ihrer Teilnahme an dem Rennen."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung verknüpft im ersten Tatkomplex Bs Ziel, den Arbeitsweg schneller als A zurückzulegen, ausdrücklich mit dem Vorsatz hinsichtlich ihrer Rennteilnahme und schließt diese Prüfung damit ab.",
+          "evidence": [
+            "Sie fuhr mit dem Ziel, A „um jeden Preis“ zu unterbieten, und wollte die vorgegebene Strecke schneller als dieser zurücklegen. Damit handelte sie vorsätzlich hinsichtlich ihrer Teilnahme an dem Rennen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Passage untersucht den Rennvorsatz der B beim Grunddelikt des § 315d Abs. 1 Nr. 2 StGB im ersten Tatkomplex. Sie verbindet die Teilnahme am nicht erlaubten Rennen, Bs Ziel, A zu unterbieten, und die Feststellung des Teilnahmevorsatzes zu einem abgeschlossenen Argumentationsgang.",
+          "evidence": [
+            "B nahm daran als Kraftfahrzeugführerin teil. Sie fuhr mit dem Ziel, A „um jeden Preis“ zu unterbieten, und wollte die vorgegebene Strecke schneller als dieser zurücklegen. Damit handelte sie vorsätzlich hinsichtlich ihrer Teilnahme an dem Rennen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung verknüpft im ersten Tatkomplex Bs Ziel, den Arbeitsweg schneller als A zurückzulegen, ausdrücklich mit dem Vorsatz hinsichtlich ihrer Rennteilnahme und schließt diese Prüfung damit ab.",
+              "evidence": [
+                "Sie fuhr mit dem Ziel, A „um jeden Preis“ zu unterbieten, und wollte die vorgegebene Strecke schneller als dieser zurücklegen. Damit handelte sie vorsätzlich hinsichtlich ihrer Teilnahme an dem Rennen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Passage untersucht den Rennvorsatz der B beim Grunddelikt des § 315d Abs. 1 Nr. 2 StGB im ersten Tatkomplex. Sie verbindet die Teilnahme am nicht erlaubten Rennen, Bs Ziel, A zu unterbieten, und die Feststellung des Teilnahmevorsatzes zu einem abgeschlossenen Argumentationsgang.",
+              "evidence": [
+                "B nahm daran als Kraftfahrzeugführerin teil. Sie fuhr mit dem Ziel, A „um jeden Preis“ zu unterbieten, und wollte die vorgegebene Strecke schneller als dieser zurücklegen. Damit handelte sie vorsätzlich hinsichtlich ihrer Teilnahme an dem Rennen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

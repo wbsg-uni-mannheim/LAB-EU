@@ -1,0 +1,533 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/examensubungsklausur-strafrecht-nur-bares-ist-wahres",
+    "title": "Examensübungsklausur Strafrecht: Nur Bares ist Wahres!"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__strafrecht__materielles-strafrecht__examensubungsklausur-strafrecht-nur-bares-ist-wahres/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/examensubungsklausur-strafrecht-nur-bares-ist-wahres/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:33:58.056919+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Strafprozessuale Zusatzfrage": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Strafprozessuale Zusatzfrage › Wirksame Antragstellung durch D?": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 20715,
+    "output_tokens": 3486,
+    "total_tokens": 24201,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 9734
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 20715,
+    "output_tokens": 3486,
+    "total_tokens": 24201,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 9734
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-056",
+      "title": "Amtsträgereigenschaft des M",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort ordnet M ausdrücklich nach § 11 Abs. 1 Nr. 2 Buchst. c StGB als Amtsträger ein. Sie beschreibt das Jobcenter als gemeinsame Einrichtung mit öffentlichen Aufgaben und stellt die konkrete dienstliche Tätigkeit des M damit in Verbindung.",
+      "evidence": [
+        "Das Jobcenter ist gemäß § 44b Abs. 1 SGB II eine gemeinsame Einrichtung der gesetzlichen Träger und nimmt die diesen nach dem SGB II übertragenen Aufgaben wahr.",
+        "Die Arbeitsvermittlung im Rahmen der Grundsicherung ist eine Aufgabe öffentlicher Verwaltung.",
+        "M war als Mitarbeiter mit einem Arbeitsvermittlungsgespräch betraut und damit zur Wahrnehmung dieser öffentlichen Verwaltungsaufgaben bestellt. Er war folglich Amtsträger."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet M ausdrücklich nach § 11 Abs. 1 Nr. 2 Buchst. c StGB als Amtsträger ein. Sie beschreibt das Jobcenter als gemeinsame Einrichtung mit öffentlichen Aufgaben und stellt die konkrete dienstliche Tätigkeit des M damit in Verbindung.",
+          "evidence": [
+            "Das Jobcenter ist gemäß § 44b Abs. 1 SGB II eine gemeinsame Einrichtung der gesetzlichen Träger und nimmt die diesen nach dem SGB II übertragenen Aufgaben wahr.",
+            "Die Arbeitsvermittlung im Rahmen der Grundsicherung ist eine Aufgabe öffentlicher Verwaltung.",
+            "M war als Mitarbeiter mit einem Arbeitsvermittlungsgespräch betraut und damit zur Wahrnehmung dieser öffentlichen Verwaltungsaufgaben bestellt. Er war folglich Amtsträger."
+          ],
+          "component_checks": [
+            {
+              "requirement": "M wird als Amtsträger nach § 11 Abs. 1 Nr. 2 Buchst. c StGB eingeordnet.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Das Jobcenter wird als gemeinsame Einrichtung beschrieben, die öffentliche Aufgaben der Arbeitsvermittlung und Grundsicherung wahrnimmt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "M wird als organisatorisch in diese öffentliche Verwaltung eingegliedert und dort mit Verwaltungsaufgaben betraut beschrieben.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "M und seine Amtsträgereigenschaft im Jobcenter nach § 11 Abs. 1 Nr. 2 Buchst. c StGB",
+            "evidence_scope": "M und seine Amtsträgereigenschaft aufgrund seiner Tätigkeit im Jobcenter",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das Jobcenter nimmt öffentliche SGB-II-Aufgaben wahr; M war dort als Mitarbeiter mit einem Arbeitsvermittlungsgespräch betraut und zur Wahrnehmung dieser Aufgaben bestellt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht die Amtsträgereigenschaft des M ausdrücklich und stützt sie auf die von § 11 Abs. 1 Nr. 2 Buchst. c StGB geforderte Bestellung zur Wahrnehmung öffentlicher Verwaltungsaufgaben durch das Jobcenter. Sie verneint die Eigenschaft nicht wegen fehlenden Beamtenstatus oder bloßer gemeinsamer Trägerschaft. Damit sind die PASS-Voraussetzungen erfüllt.",
+          "evidence": [
+            "Das Jobcenter ist gemäß § 44b Abs. 1 SGB II eine gemeinsame Einrichtung der gesetzlichen Träger und nimmt die diesen nach dem SGB II übertragenen Aufgaben wahr. Die Arbeitsvermittlung im Rahmen der Grundsicherung ist eine Aufgabe öffentlicher Verwaltung. Die gemeinsame Einrichtung ist daher jedenfalls eine sonstige Stelle im Sinne des § 11 Abs. 1 Nr. 2 Buchst. c StGB. M war als Mitarbeiter mit einem Arbeitsvermittlungsgespräch betraut und damit zur Wahrnehmung dieser öffentlichen Verwaltungsaufgaben bestellt. Er war folglich Amtsträger."
+          ],
+          "component_checks": [
+            {
+              "requirement": "M wird als Amtsträger nach § 11 Abs. 1 Nr. 2 Buchst. c StGB eingeordnet",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Das Jobcenter wird als gemeinsame Einrichtung eingeordnet, die öffentliche Aufgaben der Arbeitsvermittlung und Grundsicherung wahrnimmt",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "M ist dort organisatorisch eingegliedert in der staatlichen Leistungsverwaltung tätig",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Amtsträgereigenschaft des M im Rahmen des Strafantragsrechts der Dienstvorgesetzten D",
+            "evidence_scope": "Amtsträgereigenschaft des M als Jobcenter-Mitarbeiter nach § 11 Abs. 1 Nr. 2 Buchst. c StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das Jobcenter ist eine gemeinsame Einrichtung und nimmt öffentliche Aufgaben der Arbeitsvermittlung und Grundsicherung wahr; M war als Mitarbeiter mit dem Arbeitsvermittlungsgespräch betraut und damit zur Wahrnehmung öffentlicher Verwaltungsaufgaben bestellt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 20715,
+        "output_tokens": 3486,
+        "total_tokens": 24201,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 9734
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort ordnet M ausdrücklich nach § 11 Abs. 1 Nr. 2 Buchst. c StGB als Amtsträger ein. Sie beschreibt das Jobcenter als gemeinsame Einrichtung mit öffentlichen Aufgaben und stellt die konkrete dienstliche Tätigkeit des M damit in Verbindung.",
+              "evidence": [
+                "Das Jobcenter ist gemäß § 44b Abs. 1 SGB II eine gemeinsame Einrichtung der gesetzlichen Träger und nimmt die diesen nach dem SGB II übertragenen Aufgaben wahr.",
+                "Die Arbeitsvermittlung im Rahmen der Grundsicherung ist eine Aufgabe öffentlicher Verwaltung.",
+                "M war als Mitarbeiter mit einem Arbeitsvermittlungsgespräch betraut und damit zur Wahrnehmung dieser öffentlichen Verwaltungsaufgaben bestellt. Er war folglich Amtsträger."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "M wird als Amtsträger nach § 11 Abs. 1 Nr. 2 Buchst. c StGB eingeordnet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Das Jobcenter wird als gemeinsame Einrichtung beschrieben, die öffentliche Aufgaben der Arbeitsvermittlung und Grundsicherung wahrnimmt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "M wird als organisatorisch in diese öffentliche Verwaltung eingegliedert und dort mit Verwaltungsaufgaben betraut beschrieben.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "M und seine Amtsträgereigenschaft im Jobcenter nach § 11 Abs. 1 Nr. 2 Buchst. c StGB",
+                "evidence_scope": "M und seine Amtsträgereigenschaft aufgrund seiner Tätigkeit im Jobcenter",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das Jobcenter nimmt öffentliche SGB-II-Aufgaben wahr; M war dort als Mitarbeiter mit einem Arbeitsvermittlungsgespräch betraut und zur Wahrnehmung dieser Aufgaben bestellt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht die Amtsträgereigenschaft des M ausdrücklich und stützt sie auf die von § 11 Abs. 1 Nr. 2 Buchst. c StGB geforderte Bestellung zur Wahrnehmung öffentlicher Verwaltungsaufgaben durch das Jobcenter. Sie verneint die Eigenschaft nicht wegen fehlenden Beamtenstatus oder bloßer gemeinsamer Trägerschaft. Damit sind die PASS-Voraussetzungen erfüllt.",
+              "evidence": [
+                "Das Jobcenter ist gemäß § 44b Abs. 1 SGB II eine gemeinsame Einrichtung der gesetzlichen Träger und nimmt die diesen nach dem SGB II übertragenen Aufgaben wahr. Die Arbeitsvermittlung im Rahmen der Grundsicherung ist eine Aufgabe öffentlicher Verwaltung. Die gemeinsame Einrichtung ist daher jedenfalls eine sonstige Stelle im Sinne des § 11 Abs. 1 Nr. 2 Buchst. c StGB. M war als Mitarbeiter mit einem Arbeitsvermittlungsgespräch betraut und damit zur Wahrnehmung dieser öffentlichen Verwaltungsaufgaben bestellt. Er war folglich Amtsträger."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "M wird als Amtsträger nach § 11 Abs. 1 Nr. 2 Buchst. c StGB eingeordnet",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Das Jobcenter wird als gemeinsame Einrichtung eingeordnet, die öffentliche Aufgaben der Arbeitsvermittlung und Grundsicherung wahrnimmt",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "M ist dort organisatorisch eingegliedert in der staatlichen Leistungsverwaltung tätig",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Amtsträgereigenschaft des M im Rahmen des Strafantragsrechts der Dienstvorgesetzten D",
+                "evidence_scope": "Amtsträgereigenschaft des M als Jobcenter-Mitarbeiter nach § 11 Abs. 1 Nr. 2 Buchst. c StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das Jobcenter ist eine gemeinsame Einrichtung und nimmt öffentliche Aufgaben der Arbeitsvermittlung und Grundsicherung wahr; M war als Mitarbeiter mit dem Arbeitsvermittlungsgespräch betraut und damit zur Wahrnehmung öffentlicher Verwaltungsaufgaben bestellt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-056",
+      "title": "Amtsträgereigenschaft des M",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort nennt den einschlägigen Amtsträgermaßstab, verknüpft ihn mit den Aufgaben des Jobcenters und der konkreten Tätigkeit des M und gelangt zum Ergebnis, dass M Amtsträger ist.",
+      "evidence": [
+        "Nach § 11 Abs. 1 Nr. 2 Buchst. c StGB ist Amtsträger, wer sonst dazu bestellt ist, bei einer Behörde oder sonstigen Stelle Aufgaben der öffentlichen Verwaltung wahrzunehmen.",
+        "Das Jobcenter ist gemäß § 44b Abs. 1 SGB II eine gemeinsame Einrichtung der gesetzlichen Träger und nimmt die diesen nach dem SGB II übertragenen Aufgaben wahr.",
+        "M war als Mitarbeiter mit einem Arbeitsvermittlungsgespräch betraut und damit zur Wahrnehmung dieser öffentlichen Verwaltungsaufgaben bestellt. Er war folglich Amtsträger."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort nennt den einschlägigen Amtsträgermaßstab, verknüpft ihn mit den Aufgaben des Jobcenters und der konkreten Tätigkeit des M und gelangt zum Ergebnis, dass M Amtsträger ist.",
+          "evidence": [
+            "Nach § 11 Abs. 1 Nr. 2 Buchst. c StGB ist Amtsträger, wer sonst dazu bestellt ist, bei einer Behörde oder sonstigen Stelle Aufgaben der öffentlichen Verwaltung wahrzunehmen.",
+            "Das Jobcenter ist gemäß § 44b Abs. 1 SGB II eine gemeinsame Einrichtung der gesetzlichen Träger und nimmt die diesen nach dem SGB II übertragenen Aufgaben wahr.",
+            "M war als Mitarbeiter mit einem Arbeitsvermittlungsgespräch betraut und damit zur Wahrnehmung dieser öffentlichen Verwaltungsaufgaben bestellt. Er war folglich Amtsträger."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort nennt den amtsträgerspezifischen Maßstab des § 11 Abs. 1 Nr. 2 Buchst. c StGB, verbindet ihn mit den konkreten Umständen des Jobcenters und der Tätigkeit des M und leitet daraus ausdrücklich dessen Amtsträgereigenschaft her. Damit ist eine vollständige, auf dieselbe Person und dasselbe Rechtsproblem bezogene Prüfung vorhanden.",
+          "evidence": [
+            "Nach § 11 Abs. 1 Nr. 2 Buchst. c StGB ist Amtsträger, wer sonst dazu bestellt ist, bei einer Behörde oder sonstigen Stelle Aufgaben der öffentlichen Verwaltung wahrzunehmen.",
+            "Das Jobcenter ist gemäß § 44b Abs. 1 SGB II eine gemeinsame Einrichtung der gesetzlichen Träger und nimmt die diesen nach dem SGB II übertragenen Aufgaben wahr. Die Arbeitsvermittlung im Rahmen der Grundsicherung ist eine Aufgabe öffentlicher Verwaltung. Die gemeinsame Einrichtung ist daher jedenfalls eine sonstige Stelle im Sinne des § 11 Abs. 1 Nr. 2 Buchst. c StGB. M war als Mitarbeiter mit einem Arbeitsvermittlungsgespräch betraut und damit zur Wahrnehmung dieser öffentlichen Verwaltungsaufgaben bestellt. Er war folglich Amtsträger."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort nennt den einschlägigen Amtsträgermaßstab, verknüpft ihn mit den Aufgaben des Jobcenters und der konkreten Tätigkeit des M und gelangt zum Ergebnis, dass M Amtsträger ist.",
+              "evidence": [
+                "Nach § 11 Abs. 1 Nr. 2 Buchst. c StGB ist Amtsträger, wer sonst dazu bestellt ist, bei einer Behörde oder sonstigen Stelle Aufgaben der öffentlichen Verwaltung wahrzunehmen.",
+                "Das Jobcenter ist gemäß § 44b Abs. 1 SGB II eine gemeinsame Einrichtung der gesetzlichen Träger und nimmt die diesen nach dem SGB II übertragenen Aufgaben wahr.",
+                "M war als Mitarbeiter mit einem Arbeitsvermittlungsgespräch betraut und damit zur Wahrnehmung dieser öffentlichen Verwaltungsaufgaben bestellt. Er war folglich Amtsträger."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort nennt den amtsträgerspezifischen Maßstab des § 11 Abs. 1 Nr. 2 Buchst. c StGB, verbindet ihn mit den konkreten Umständen des Jobcenters und der Tätigkeit des M und leitet daraus ausdrücklich dessen Amtsträgereigenschaft her. Damit ist eine vollständige, auf dieselbe Person und dasselbe Rechtsproblem bezogene Prüfung vorhanden.",
+              "evidence": [
+                "Nach § 11 Abs. 1 Nr. 2 Buchst. c StGB ist Amtsträger, wer sonst dazu bestellt ist, bei einer Behörde oder sonstigen Stelle Aufgaben der öffentlichen Verwaltung wahrzunehmen.",
+                "Das Jobcenter ist gemäß § 44b Abs. 1 SGB II eine gemeinsame Einrichtung der gesetzlichen Träger und nimmt die diesen nach dem SGB II übertragenen Aufgaben wahr. Die Arbeitsvermittlung im Rahmen der Grundsicherung ist eine Aufgabe öffentlicher Verwaltung. Die gemeinsame Einrichtung ist daher jedenfalls eine sonstige Stelle im Sinne des § 11 Abs. 1 Nr. 2 Buchst. c StGB. M war als Mitarbeiter mit einem Arbeitsvermittlungsgespräch betraut und damit zur Wahrnehmung dieser öffentlichen Verwaltungsaufgaben bestellt. Er war folglich Amtsträger."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

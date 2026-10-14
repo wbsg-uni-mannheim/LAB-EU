@@ -1,0 +1,849 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenhausarbeit-die-lugen-des-finder-schwindlers",
+    "title": "Fortgeschrittenenhausarbeit: Die Lügen des „Finder-Schwindlers“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-sol-high/20260730T221733Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenhausarbeit-die-lugen-des-finder-schwindlers/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenhausarbeit-die-lugen-des-finder-schwindlers/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:31:45.847527+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 2,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.5,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 1,
+    "root_pass_rate": 0.5,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 3,
+    "points_available": 4,
+    "pass_rate": 0.75,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 2,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 2
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 2
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 2
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 2
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Tatkomplex: Die „Sonderprämie“": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "Tatkomplex: Die Rache am Finder-Schwindler": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Tatkomplex: Die „Sonderprämie“ › Strafbarkeit der O gem. §§ 261 Abs. 1 S. 1 Nr. 3, Abs. 3, Abs. 7, 22, 23 Abs. 1 StGB durch Rückzahlungsaufforderung gegenüber T": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "Tatkomplex: Die Rache am Finder-Schwindler › Strafbarkeit der O": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "argumentation": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 43786,
+    "output_tokens": 12349,
+    "total_tokens": 56135,
+    "cached_input_tokens": 2304,
+    "cache_write_tokens": 20368
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 43786,
+    "output_tokens": 12349,
+    "total_tokens": 56135,
+    "cached_input_tokens": 2304,
+    "cache_write_tokens": 20368
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-035",
+      "title": "Ts Betrug nicht von Os Tatentschluss umfasst",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort behandelt nur das Ausbleiben eines Gegenstands aus Os geplantem Rückzahlungsbetrug. Sie entscheidet nicht die geforderte Frage, ob Ts früherer Finder-Betrug bei Os damaliger Aufforderung als Vortat ihres Geldwäschevorsatzes erfasst war, und gibt den dafür verlangten Grund nicht an.",
+      "evidence": [
+        "T zahlte nichts; es gab daher keinen aus dem geplanten Rückzahlungsbetrug herrührenden Gegenstand."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt nur das Ausbleiben eines Gegenstands aus Os geplantem Rückzahlungsbetrug. Sie entscheidet nicht die geforderte Frage, ob Ts früherer Finder-Betrug bei Os damaliger Aufforderung als Vortat ihres Geldwäschevorsatzes erfasst war, und gibt den dafür verlangten Grund nicht an.",
+          "evidence": [
+            "T zahlte nichts; es gab daher keinen aus dem geplanten Rückzahlungsbetrug herrührenden Gegenstand."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Ts Finder-Betrug wird nicht als von Os Geldwäschevorsatz bei der Rückzahlungsaufforderung umfasste Vortat herangezogen.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Antwort begründet dies damit, dass O den Finder-Schwindel damals noch nicht durchschaute und T weiterhin für vermögend hielt, ohne spätere Kenntnis rückwirkend zu übertragen.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "O; Geldwäschevorsatz bei der früheren Rückzahlungsaufforderung; Ts vorausgegangener Finder-Betrug als mögliche Vortat",
+            "evidence_scope": "O; geplante Geldwäsche über Schweizer Konto und Briefkastengesellschaften; fehlende Zahlung aus Os geplantem Rückzahlungsbetrug",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "T zahlte nichts, weshalb kein Gegenstand aus Os geplantem Rückzahlungsbetrug herrührte.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Kriterium verlangt, dass Ts Betrug bei Os Rückzahlungsaufforderung gerade wegen ihrer damaligen Unkenntnis vom Finder-Schwindel nicht als von ihrem Geldwäschevorsatz umfasste Vortat gewertet wird. Die Antwort stützt die Verneinung einer weiteren Geldwäsche allein auf das Fehlen eines tauglichen Gegenstands und auf fehlendes unmittelbares Ansetzen. Die erforderliche Begründung zur damaligen Unkenntnis und zum fortbestehenden Glauben an Ts Vermögen fehlt.",
+          "evidence": [
+            "Os Plan, eine Zahlung Ts über ihr Schweizer Konto und Briefkastengesellschaften auf den Cayman Islands zu verschleiern, führte noch nicht zu einer weiteren Strafbarkeit nach § 261 StGB. T zahlte nichts; es gab daher keinen aus dem geplanten Rückzahlungsbetrug herrührenden Gegenstand.",
+            "O hatte die Schwelle zum unmittelbaren Ansetzen im Sinne der §§ 22, 261 Abs. 3 StGB nicht überschritten."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bei Os Rückzahlungsaufforderung wird Ts Betrug nicht als von ihrem Geldwäschevorsatz umfasste Vortat behandelt.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Dies wird darauf gestützt, dass O den Finder-Schwindel damals noch nicht durchschaut hatte und T weiterhin für vermögend hielt.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "O und ihr Geldwäschevorsatz bei der Rückzahlungsaufforderung im Verhältnis zu Ts Betrug als möglicher Vortat",
+            "evidence_scope": "O und ihr Plan späterer Transaktionen sowie fehlender tauglicher Gegenstand und fehlendes unmittelbares Ansetzen der Geldwäsche",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "T zahlte nichts; es gab daher keinen aus dem geplanten Rückzahlungsbetrug herrührenden Gegenstand; die Schwelle zum unmittelbaren Ansetzen nach §§ 22, 261 Abs. 3 StGB sei nicht überschritten.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {
+        "input_tokens": 21791,
+        "output_tokens": 7558,
+        "total_tokens": 29349,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 10137
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort behandelt nur das Ausbleiben eines Gegenstands aus Os geplantem Rückzahlungsbetrug. Sie entscheidet nicht die geforderte Frage, ob Ts früherer Finder-Betrug bei Os damaliger Aufforderung als Vortat ihres Geldwäschevorsatzes erfasst war, und gibt den dafür verlangten Grund nicht an.",
+              "evidence": [
+                "T zahlte nichts; es gab daher keinen aus dem geplanten Rückzahlungsbetrug herrührenden Gegenstand."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Ts Finder-Betrug wird nicht als von Os Geldwäschevorsatz bei der Rückzahlungsaufforderung umfasste Vortat herangezogen.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Antwort begründet dies damit, dass O den Finder-Schwindel damals noch nicht durchschaute und T weiterhin für vermögend hielt, ohne spätere Kenntnis rückwirkend zu übertragen.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "O; Geldwäschevorsatz bei der früheren Rückzahlungsaufforderung; Ts vorausgegangener Finder-Betrug als mögliche Vortat",
+                "evidence_scope": "O; geplante Geldwäsche über Schweizer Konto und Briefkastengesellschaften; fehlende Zahlung aus Os geplantem Rückzahlungsbetrug",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "T zahlte nichts, weshalb kein Gegenstand aus Os geplantem Rückzahlungsbetrug herrührte.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium verlangt, dass Ts Betrug bei Os Rückzahlungsaufforderung gerade wegen ihrer damaligen Unkenntnis vom Finder-Schwindel nicht als von ihrem Geldwäschevorsatz umfasste Vortat gewertet wird. Die Antwort stützt die Verneinung einer weiteren Geldwäsche allein auf das Fehlen eines tauglichen Gegenstands und auf fehlendes unmittelbares Ansetzen. Die erforderliche Begründung zur damaligen Unkenntnis und zum fortbestehenden Glauben an Ts Vermögen fehlt.",
+              "evidence": [
+                "Os Plan, eine Zahlung Ts über ihr Schweizer Konto und Briefkastengesellschaften auf den Cayman Islands zu verschleiern, führte noch nicht zu einer weiteren Strafbarkeit nach § 261 StGB. T zahlte nichts; es gab daher keinen aus dem geplanten Rückzahlungsbetrug herrührenden Gegenstand.",
+                "O hatte die Schwelle zum unmittelbaren Ansetzen im Sinne der §§ 22, 261 Abs. 3 StGB nicht überschritten."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bei Os Rückzahlungsaufforderung wird Ts Betrug nicht als von ihrem Geldwäschevorsatz umfasste Vortat behandelt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Dies wird darauf gestützt, dass O den Finder-Schwindel damals noch nicht durchschaut hatte und T weiterhin für vermögend hielt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "O und ihr Geldwäschevorsatz bei der Rückzahlungsaufforderung im Verhältnis zu Ts Betrug als möglicher Vortat",
+                "evidence_scope": "O und ihr Plan späterer Transaktionen sowie fehlender tauglicher Gegenstand und fehlendes unmittelbares Ansetzen der Geldwäsche",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "T zahlte nichts; es gab daher keinen aus dem geplanten Rückzahlungsbetrug herrührenden Gegenstand; die Schwelle zum unmittelbaren Ansetzen nach §§ 22, 261 Abs. 3 StGB sei nicht überschritten.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-055",
+      "title": "Rechtswidrigkeit der von O erstrebten Bereicherung",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort verneint einen persönlichen Anspruch Os und ordnet die mögliche Schadensersatzforderung der GmbH zu. Sie behandelt Os beabsichtigte private Selbstentschädigung deshalb als rechtswidrig.",
+      "evidence": [
+        "Insbesondere hätte sie eine mögliche Schadensersatzforderung der GmbH gegen T nicht erfüllt, weil O eine eigene Darlehensforderung vorspiegelte und Zahlung an sich persönlich verlangte.",
+        "O wusste, dass sie sich eine „Sonderprämie“ nicht selbst bewilligen durfte und dass T ihr persönlich nichts schuldete.",
+        "Ihr ging es um nachträgliche Selbstentschädigung"
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint einen persönlichen Anspruch Os und ordnet die mögliche Schadensersatzforderung der GmbH zu. Sie behandelt Os beabsichtigte private Selbstentschädigung deshalb als rechtswidrig.",
+          "evidence": [
+            "Insbesondere hätte sie eine mögliche Schadensersatzforderung der GmbH gegen T nicht erfüllt, weil O eine eigene Darlehensforderung vorspiegelte und Zahlung an sich persönlich verlangte.",
+            "O wusste, dass sie sich eine „Sonderprämie“ nicht selbst bewilligen durfte und dass T ihr persönlich nichts schuldete.",
+            "Ihr ging es um nachträgliche Selbstentschädigung"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Os private Bereicherung wird als rechtswidrig behandelt, weil der Anspruch gegen T der GmbH und nicht O persönlich zustand.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "O; Rechtswidrigkeit der im Tatentschluss zum versuchten Betrug erstrebten Bereicherung",
+            "evidence_scope": "O; Tatentschluss zum versuchten Betrug durch die persönliche Forderung der angeblichen Kreditrückzahlung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die GmbH, nicht O persönlich, konnte eine Schadensersatzforderung gegen T haben; O wollte sich dennoch privat entschädigen und wusste, dass T ihr persönlich nichts schuldete.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die Rechtswidrigkeit der von O erstrebten Bereicherung ausdrücklich. Sie führt aus, dass O keine eigene Darlehens- oder Ersatzforderung gegen T hatte, sondern die mögliche Schadensersatzforderung der OCP-GmbH zustand, und leitet daraus die rechtswidrige Bereicherungsabsicht ab. Damit ist die erste PASS-Alternative erfüllt; die Fail-Konstellation eines bloß behaupteten persönlichen Anspruchs ohne Anwendung auf die Anspruchsinhaberschaft liegt nicht vor.",
+          "evidence": [
+            "Insbesondere hätte sie eine mögliche Schadensersatzforderung der GmbH gegen T nicht erfüllt, weil O eine eigene Darlehensforderung vorspiegelte und Zahlung an sich persönlich verlangte.",
+            "O hatte keinen persönlichen Anspruch gegen T. Das frühere Bargeld stammte aus dem Vermögen der GmbH; außerdem war mit T keine Rückzahlung vereinbart worden."
+          ],
+          "component_checks": [
+            {
+              "requirement": "O's intended private enrichment is treated as unlawful because the compensation/restitution claim from T's earlier fraud belonged to the OCP-GmbH and not to O personally.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "O's intended enrichment and its unlawfulness in the context of her claim against T after the earlier fraud; ownership of the compensation claim (OCP-GmbH vs. O personally).",
+            "evidence_scope": "The answer addresses O's attempted fraud regarding the alleged loan repayment and also the E-Bike fraud, expressly stating that she had no personal claim against T and that the money belonged to the GmbH.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "O had no personal claim against T; the money belonged to the OCP-GmbH and no repayment was agreed, so her intended private enrichment was unlawful.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {
+        "input_tokens": 21995,
+        "output_tokens": 4791,
+        "total_tokens": 26786,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 10231
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint einen persönlichen Anspruch Os und ordnet die mögliche Schadensersatzforderung der GmbH zu. Sie behandelt Os beabsichtigte private Selbstentschädigung deshalb als rechtswidrig.",
+              "evidence": [
+                "Insbesondere hätte sie eine mögliche Schadensersatzforderung der GmbH gegen T nicht erfüllt, weil O eine eigene Darlehensforderung vorspiegelte und Zahlung an sich persönlich verlangte.",
+                "O wusste, dass sie sich eine „Sonderprämie“ nicht selbst bewilligen durfte und dass T ihr persönlich nichts schuldete.",
+                "Ihr ging es um nachträgliche Selbstentschädigung"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Os private Bereicherung wird als rechtswidrig behandelt, weil der Anspruch gegen T der GmbH und nicht O persönlich zustand.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "O; Rechtswidrigkeit der im Tatentschluss zum versuchten Betrug erstrebten Bereicherung",
+                "evidence_scope": "O; Tatentschluss zum versuchten Betrug durch die persönliche Forderung der angeblichen Kreditrückzahlung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die GmbH, nicht O persönlich, konnte eine Schadensersatzforderung gegen T haben; O wollte sich dennoch privat entschädigen und wusste, dass T ihr persönlich nichts schuldete.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt die Rechtswidrigkeit der von O erstrebten Bereicherung ausdrücklich. Sie führt aus, dass O keine eigene Darlehens- oder Ersatzforderung gegen T hatte, sondern die mögliche Schadensersatzforderung der OCP-GmbH zustand, und leitet daraus die rechtswidrige Bereicherungsabsicht ab. Damit ist die erste PASS-Alternative erfüllt; die Fail-Konstellation eines bloß behaupteten persönlichen Anspruchs ohne Anwendung auf die Anspruchsinhaberschaft liegt nicht vor.",
+              "evidence": [
+                "Insbesondere hätte sie eine mögliche Schadensersatzforderung der GmbH gegen T nicht erfüllt, weil O eine eigene Darlehensforderung vorspiegelte und Zahlung an sich persönlich verlangte.",
+                "O hatte keinen persönlichen Anspruch gegen T. Das frühere Bargeld stammte aus dem Vermögen der GmbH; außerdem war mit T keine Rückzahlung vereinbart worden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "O's intended private enrichment is treated as unlawful because the compensation/restitution claim from T's earlier fraud belonged to the OCP-GmbH and not to O personally.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "O's intended enrichment and its unlawfulness in the context of her claim against T after the earlier fraud; ownership of the compensation claim (OCP-GmbH vs. O personally).",
+                "evidence_scope": "The answer addresses O's attempted fraud regarding the alleged loan repayment and also the E-Bike fraud, expressly stating that she had no personal claim against T and that the money belonged to the GmbH.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "O had no personal claim against T; the money belonged to the OCP-GmbH and no repayment was agreed, so her intended private enrichment was unlawful.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-035",
+      "title": "Ts Betrug nicht von Os Tatentschluss umfasst",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Im Geldwäscheabschnitt begründet die Antwort das Ergebnis nur mit dem Ausbleiben einer Zahlung. Sie prüft nicht, ob O bei der früheren Rückzahlungsaufforderung Ts Finder-Betrug kannte oder als Vortat ihres Geldwäschevorsatzes erfasste.",
+      "evidence": [
+        "T zahlte nichts; es gab daher keinen aus dem geplanten Rückzahlungsbetrug herrührenden Gegenstand."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Im Geldwäscheabschnitt begründet die Antwort das Ergebnis nur mit dem Ausbleiben einer Zahlung. Sie prüft nicht, ob O bei der früheren Rückzahlungsaufforderung Ts Finder-Betrug kannte oder als Vortat ihres Geldwäschevorsatzes erfasste.",
+          "evidence": [
+            "T zahlte nichts; es gab daher keinen aus dem geplanten Rückzahlungsbetrug herrührenden Gegenstand."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Prüfung im Abschnitt zur geplanten Transaktion behandelt einen anderen Gesichtspunkt der Geldwäsche: fehlender Tauglicher Gegenstand und fehlendes unmittelbares Ansetzen. Die für das Kriterium entscheidende Frage, ob Os Geldwäschevorsatz bei der Rückzahlungsaufforderung Ts Betrug als Vortat umfasste, und der Grund hierfür – damalige Unkenntnis vom Finder-Schwindel – werden nicht methodisch geprüft.",
+          "evidence": [
+            "Os Plan, eine Zahlung Ts über ihr Schweizer Konto und Briefkastengesellschaften auf den Cayman Islands zu verschleiern, führte noch nicht zu einer weiteren Strafbarkeit nach § 261 StGB. T zahlte nichts; es gab daher keinen aus dem geplanten Rückzahlungsbetrug herrührenden Gegenstand.",
+            "O hatte die Schwelle zum unmittelbaren Ansetzen im Sinne der §§ 22, 261 Abs. 3 StGB nicht überschritten."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Im Geldwäscheabschnitt begründet die Antwort das Ergebnis nur mit dem Ausbleiben einer Zahlung. Sie prüft nicht, ob O bei der früheren Rückzahlungsaufforderung Ts Finder-Betrug kannte oder als Vortat ihres Geldwäschevorsatzes erfasste.",
+              "evidence": [
+                "T zahlte nichts; es gab daher keinen aus dem geplanten Rückzahlungsbetrug herrührenden Gegenstand."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Prüfung im Abschnitt zur geplanten Transaktion behandelt einen anderen Gesichtspunkt der Geldwäsche: fehlender Tauglicher Gegenstand und fehlendes unmittelbares Ansetzen. Die für das Kriterium entscheidende Frage, ob Os Geldwäschevorsatz bei der Rückzahlungsaufforderung Ts Betrug als Vortat umfasste, und der Grund hierfür – damalige Unkenntnis vom Finder-Schwindel – werden nicht methodisch geprüft.",
+              "evidence": [
+                "Os Plan, eine Zahlung Ts über ihr Schweizer Konto und Briefkastengesellschaften auf den Cayman Islands zu verschleiern, führte noch nicht zu einer weiteren Strafbarkeit nach § 261 StGB. T zahlte nichts; es gab daher keinen aus dem geplanten Rückzahlungsbetrug herrührenden Gegenstand.",
+                "O hatte die Schwelle zum unmittelbaren Ansetzen im Sinne der §§ 22, 261 Abs. 3 StGB nicht überschritten."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-055",
+      "title": "Rechtswidrigkeit der von O erstrebten Bereicherung",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort prüft die Rechtswidrigkeit der von O erstrebten Bereicherung im Tatentschluss zum versuchten Betrug. Sie verknüpft Os fehlenden persönlichen Anspruch und ihre beabsichtigte Selbstentschädigung ausdrücklich mit dem Ergebnis rechtswidriger Bereicherung.",
+      "evidence": [
+        "O wusste, dass sie sich eine „Sonderprämie“ nicht selbst bewilligen durfte und dass T ihr persönlich nichts schuldete.",
+        "Ihr ging es um nachträgliche Selbstentschädigung, nicht um die Durchsetzung eines von ihr für bestehend gehaltenen fälligen Anspruchs.",
+        "Sie handelte somit in der Absicht stoffgleicher und rechtswidriger Bereicherung."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Rechtswidrigkeit der von O erstrebten Bereicherung im Tatentschluss zum versuchten Betrug. Sie verknüpft Os fehlenden persönlichen Anspruch und ihre beabsichtigte Selbstentschädigung ausdrücklich mit dem Ergebnis rechtswidriger Bereicherung.",
+          "evidence": [
+            "O wusste, dass sie sich eine „Sonderprämie“ nicht selbst bewilligen durfte und dass T ihr persönlich nichts schuldete.",
+            "Ihr ging es um nachträgliche Selbstentschädigung, nicht um die Durchsetzung eines von ihr für bestehend gehaltenen fälligen Anspruchs.",
+            "Sie handelte somit in der Absicht stoffgleicher und rechtswidriger Bereicherung."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Rechtswidrigkeit der erstrebten Bereicherung der O am selben Gegenstand und Prüfungsstand. Sie verbindet den Maßstab (kein persönlicher Anspruch der O, Mittel der GmbH) mit den konkreten Umständen (Geld stammte aus dem GmbH-Vermögen, keine Rückzahlung vereinbart, O kannte dies) und zieht daraus den Schluss der rechtswidrigen Bereicherungsabsicht.",
+          "evidence": [
+            "O hatte keinen persönlichen Anspruch gegen T. Das frühere Bargeld stammte aus dem Vermögen der GmbH; außerdem war mit T keine Rückzahlung vereinbart worden. O wusste dies. Die Absicht, sich im Wege eigenmächtiger „Rache“ bezahlt zu machen, begründet deshalb die Absicht rechtswidriger Bereicherung.",
+            "O wusste, dass sie sich eine „Sonderprämie“ nicht selbst bewilligen durfte und dass T ihr persönlich nichts schuldete. Ihr ging es um nachträgliche Selbstentschädigung, nicht um die Durchsetzung eines von ihr für bestehend gehaltenen fälligen Anspruchs. Sie handelte somit in der Absicht stoffgleicher und rechtswidriger Bereicherung."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Rechtswidrigkeit der von O erstrebten Bereicherung im Tatentschluss zum versuchten Betrug. Sie verknüpft Os fehlenden persönlichen Anspruch und ihre beabsichtigte Selbstentschädigung ausdrücklich mit dem Ergebnis rechtswidriger Bereicherung.",
+              "evidence": [
+                "O wusste, dass sie sich eine „Sonderprämie“ nicht selbst bewilligen durfte und dass T ihr persönlich nichts schuldete.",
+                "Ihr ging es um nachträgliche Selbstentschädigung, nicht um die Durchsetzung eines von ihr für bestehend gehaltenen fälligen Anspruchs.",
+                "Sie handelte somit in der Absicht stoffgleicher und rechtswidriger Bereicherung."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Rechtswidrigkeit der erstrebten Bereicherung der O am selben Gegenstand und Prüfungsstand. Sie verbindet den Maßstab (kein persönlicher Anspruch der O, Mittel der GmbH) mit den konkreten Umständen (Geld stammte aus dem GmbH-Vermögen, keine Rückzahlung vereinbart, O kannte dies) und zieht daraus den Schluss der rechtswidrigen Bereicherungsabsicht.",
+              "evidence": [
+                "O hatte keinen persönlichen Anspruch gegen T. Das frühere Bargeld stammte aus dem Vermögen der GmbH; außerdem war mit T keine Rückzahlung vereinbart worden. O wusste dies. Die Absicht, sich im Wege eigenmächtiger „Rache“ bezahlt zu machen, begründet deshalb die Absicht rechtswidriger Bereicherung.",
+                "O wusste, dass sie sich eine „Sonderprämie“ nicht selbst bewilligen durfte und dass T ihr persönlich nichts schuldete. Ihr ging es um nachträgliche Selbstentschädigung, nicht um die Durchsetzung eines von ihr für bestehend gehaltenen fälligen Anspruchs. Sie handelte somit in der Absicht stoffgleicher und rechtswidriger Bereicherung."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

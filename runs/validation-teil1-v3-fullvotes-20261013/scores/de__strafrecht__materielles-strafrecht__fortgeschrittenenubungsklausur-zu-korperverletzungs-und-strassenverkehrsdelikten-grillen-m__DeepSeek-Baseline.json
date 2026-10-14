@@ -1,0 +1,844 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-zu-korperverletzungs-und-strassenverkehrsdelikten-grillen-m",
+    "title": "Fortgeschrittenenübungsklausur zu Körperverletzungs- und Straßenverkehrsdelikten: Grillen mit Hindernissen"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenubungsklausur-zu-korperverletzungs-und-strassenverkehrsdelikten-grillen-m/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-zu-korperverletzungs-und-strassenverkehrsdelikten-grillen-m/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T11:01:30.287937+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 1,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 1,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 2,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 1,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v3",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Die Manipulation des Stuhls": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Die Manipulation des Stuhls › §§ 223 Abs. 1, 224 Abs. 1 Nr. 2 Var. 2, Nrn. 3, 5 StGB gegenüber P durch Manipulation des Stuhls": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 18783,
+    "output_tokens": 7553,
+    "total_tokens": 26336,
+    "cached_input_tokens": 16469,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 18783,
+    "output_tokens": 7553,
+    "total_tokens": 26336,
+    "cached_input_tokens": 16469,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-014",
+      "title": "Vorsatz zum gefährlichen Werkzeug",
+      "verdict": "fail",
+      "resolution": "unresolved",
+      "reasoning": "The committee majority changed between two independent rounds; the criterion is conservatively unresolved.",
+      "evidence": [],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erstreckt den Vorsatz auf P und bejaht bedingten Vorsatz hinsichtlich der Körperverletzung. Da sie zugleich die erwartete Verletzung durch den manipulierten Stuhl als Grundlage nennt, ist der Qualifikationsvorsatz mit ihrer gewählten Lösung vereinbar.",
+          "evidence": [
+            "Er nahm billigend in Kauf, dass durch die Kollision mit dem Stuhl bei N blaue Flecken entstehen.",
+            "Der Vorsatz erstreckt sich mithin auf P.",
+            "O handelte mit dolus eventualis hinsichtlich der Körperverletzung."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bei Vorsatzerstreckung auf P wird Vorsatz hinsichtlich der Körperverletzung mittels des manipulierten Stuhls bejaht.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "O; § 224 Abs. 1 Nr. 2 Var. 2 StGB gegenüber P; Vorsatz zum gefährlichen Werkzeug",
+            "evidence_scope": "O; gefährliche Körperverletzung gegenüber P; Vorsatz hinsichtlich der Verletzung durch den manipulierten Stuhl",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "O rechnete mit dem Zusammenbruch des Stuhls und nahm Verletzungen durch die Kollision mit ihm billigend in Kauf; die Antwort erstreckt diesen Vorsatz auf P.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erstreckt den Vorsatz auf P und bejaht damit im Einklang mit ihrer begründeten Error-in-persona-Lösung auch den Vorsatz hinsichtlich der Körperverletzung durch den manipulierten Stuhl als gefährliches Werkzeug.",
+          "evidence": [
+            "Der Vorsatz erstreckt sich mithin auf P.",
+            "O handelte mit dolus eventualis hinsichtlich der Körperverletzung.",
+            "Hinsichtlich der Hinterlist handelte O mit Absicht (\"zur Vertuschung\", \"eins auszuwischen\") und damit vorsätzlich.",
+            "O handelte mit Tatbestandsvorsatz."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Erstreckung des Qualifikationsvorsatzes auf P bei gewählter Error-in-persona-/Distanzfalllösung",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Bejahung des Vorsatzes hinsichtlich der Körperverletzung mittels des manipulierten Stuhls als gefährlichem Werkzeug",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Qualifikationsvorsatz des O hinsichtlich § 224 Abs. 1 Nr. 2 Var. 2 StGB gegenüber P",
+            "evidence_scope": "Vorsatz hinsichtlich § 224 Abs. 1 Nr. 2 Var. 2 StGB gegenüber P",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der error in persona sei unbeachtlich, weil O denjenigen verletzen wollte, der auf dem Stuhl Platz nimmt; daher erstrecke sich der Vorsatz auf P, und O handelte mit dolus eventualis hinsichtlich der Körperverletzung sowie mit Tatbestandsvorsatz.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Der Qualifikationsvorsatz bezüglich eines gefährlichen Werkzeugs wird nicht geprüft. Die Bearbeitung erfasst § 224 Abs. 1 Nr. 2 Var. 2 StGB fälschlich als 'hinterlistig gelegtes Hindernis' und prüft subjektiv nur Vorsatz bzgl. der Körperverletzung und der 'Hinterlist'. Gemäß dem Negativkriterium ist der Punkt nicht erfüllt, wenn der Qualifikationsvorsatz nicht geprüft wird.",
+          "evidence": [
+            "O handelte mit dolus eventualis hinsichtlich der Körperverletzung. Hinsichtlich der Hinterlist handelte O mit Absicht (\"zur Vertuschung\", \"eins auszuwischen\") und damit vorsätzlich."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Behandlung des Qualifikationsvorsatzes hinsichtlich § 224 Abs. 1 Nr. 2 Var. 2 StGB (gefährliches Werkzeug) gegenüber P im Einklang mit der gewählten Distanzfalllösung (Bejahung bei Vorsatzerstreckung)",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "O, Vorsatz bzgl. § 224 Abs. 1 Nr. 2 Var. 2 StGB (gefährliches Werkzeug) bzgl. P",
+            "evidence_scope": "O, subjektiver Tatbestand § 224 bzgl. P (geprüft als 'Hinterlist')",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 18783,
+        "output_tokens": 7553,
+        "total_tokens": 26336,
+        "cached_input_tokens": 16469,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erstreckt den Vorsatz auf P und bejaht zugleich, dass O Verletzungen durch die Kollision mit dem manipulierten Stuhl billigend in Kauf nahm. Damit ist der Vorsatz hinsichtlich der Körperverletzung mittels des Stuhls in der Sache bejaht, auch wenn die Antwort dies nicht ausdrücklich als Vorsatz zum gefährlichen Werkzeug bezeichnet.",
+              "evidence": [
+                "Er nahm billigend in Kauf, dass durch die Kollision mit dem Stuhl bei N blaue Flecken entstehen.",
+                "Der Vorsatz erstreckt sich mithin auf P."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bei Vorsatzerstreckung auf P muss Vorsatz hinsichtlich einer Körperverletzung mittels des manipulierten Stuhls bejaht werden.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Die Beurteilung des Qualifikationsvorsatzes muss mit der gewählten Lösung zur Opferabweichung übereinstimmen.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "O, P und der Vorsatz zur Körperverletzung mittels des manipulierten Stuhls im Rahmen des § 224 Abs. 1 Nr. 2 Var. 2 StGB",
+                "evidence_scope": "O, P und der Vorsatz zu Verletzungen durch die Kollision mit dem manipulierten Stuhl im Rahmen der Prüfung des § 224 Abs. 1 Nr. 2 Var. 2 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "O nahm Verletzungen durch die Kollision mit dem Stuhl billigend in Kauf; die Antwort erstreckt diesen Vorsatz aufgrund ihrer error-in-persona-Lösung auf P.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erstreckt den Vorsatz auf P und behandelt damit die Distanzfallproblematik im Ausgangspunkt konsistent als error in persona. Sie bejaht aber nicht den nach dem Kriterium erforderlichen Vorsatz hinsichtlich des manipulierten Stuhls als gefährlichem Werkzeug; geprüft wird stattdessen eine andere Qualifikationsvariante, das hinterlistig gelegte Hindernis. Da der Qualifikationsvorsatz zum gefährlichen Werkzeug nicht geprüft wird, ist das Kriterium nicht erfüllt.",
+              "evidence": [
+                "Die konkrete Identität des Opfers ist für die Verwirklichung des Tatbestands unerheblich, solange das Opfer vom Vorsatz umfasst ist.",
+                "Der Vorsatz erstreckt sich mithin auf P.",
+                "O handelte mit dolus eventualis hinsichtlich der Körperverletzung. Hinsichtlich der Hinterlist handelte O mit Absicht (\"zur Vertuschung\", \"eins auszuwischen\") und damit vorsätzlich."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erstreckt den Qualifikationsvorsatz auf P aufgrund der gewählten error-in-persona-Lösung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Bejaht Vorsatz hinsichtlich der Körperverletzung mittels des manipulierten Stuhls als gefährlichem Werkzeug",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "O gegenüber P: Vorsatz zum gefährlichen Werkzeug i.S.d. § 224 Abs. 1 Nr. 2 Var. 2 StGB durch den manipulierten Stuhl",
+                "evidence_scope": "O gegenüber P: Vorsatz im Rahmen des § 224 Abs. 1 Nr. 2 Var. 2 StGB, aber als 'hinterlistig gelegtes Hindernis', nicht als gefährliches Werkzeug",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der error in persona sei unbeachtlich; der Vorsatz erfasse daher P, und hinsichtlich der Hinterlist handelte O vorsätzlich, hinsichtlich der Körperverletzung mit dolus eventualis.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Der Qualifikationsvorsatz bezüglich des gefährlichen Werkzeugs (§ 224 Abs. 1 Nr. 2 Var. 2 StGB) wurde nicht geprüft. Die Bearbeitung erfindet unter dieser Ziffer ein 'hinterlistig gelegtes Hindernis' und beschränkt den subjektiven Tatbestand auf Körperverletzung und Hinterlist.",
+              "evidence": [
+                "Hinsichtlich der Hinterlist handelte O mit Absicht (\"zur Vertuschung\", \"eins auszuwischen\") und damit vorsätzlich. O handelte mit Tatbestandsvorsatz."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Prüfung des Qualifikationsvorsatzes des O hinsichtlich § 224 Abs. 1 Nr. 2 Var. 2 StGB (gefährliches Werkzeug) bezüglich P im Einklang mit der Distanzfalllösung",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Subjektiver Tatbestand des § 224 Abs. 1 Nr. 2 Var. 2 StGB (Vorsatz hinsichtlich des gefährlichen Werkzeugs / manipulierter Stuhl) gegenüber P",
+                "evidence_scope": "Subjektiver Tatbestand bzgl. Grunddelikt und vermeintlicher 'Hinterlist'",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erstreckt den Vorsatz auf P und bejaht bedingten Vorsatz hinsichtlich der Körperverletzung. Da sie zugleich die erwartete Verletzung durch den manipulierten Stuhl als Grundlage nennt, ist der Qualifikationsvorsatz mit ihrer gewählten Lösung vereinbar.",
+              "evidence": [
+                "Er nahm billigend in Kauf, dass durch die Kollision mit dem Stuhl bei N blaue Flecken entstehen.",
+                "Der Vorsatz erstreckt sich mithin auf P.",
+                "O handelte mit dolus eventualis hinsichtlich der Körperverletzung."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bei Vorsatzerstreckung auf P wird Vorsatz hinsichtlich der Körperverletzung mittels des manipulierten Stuhls bejaht.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "O; § 224 Abs. 1 Nr. 2 Var. 2 StGB gegenüber P; Vorsatz zum gefährlichen Werkzeug",
+                "evidence_scope": "O; gefährliche Körperverletzung gegenüber P; Vorsatz hinsichtlich der Verletzung durch den manipulierten Stuhl",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "O rechnete mit dem Zusammenbruch des Stuhls und nahm Verletzungen durch die Kollision mit ihm billigend in Kauf; die Antwort erstreckt diesen Vorsatz auf P.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erstreckt den Vorsatz auf P und bejaht damit im Einklang mit ihrer begründeten Error-in-persona-Lösung auch den Vorsatz hinsichtlich der Körperverletzung durch den manipulierten Stuhl als gefährliches Werkzeug.",
+              "evidence": [
+                "Der Vorsatz erstreckt sich mithin auf P.",
+                "O handelte mit dolus eventualis hinsichtlich der Körperverletzung.",
+                "Hinsichtlich der Hinterlist handelte O mit Absicht (\"zur Vertuschung\", \"eins auszuwischen\") und damit vorsätzlich.",
+                "O handelte mit Tatbestandsvorsatz."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erstreckung des Qualifikationsvorsatzes auf P bei gewählter Error-in-persona-/Distanzfalllösung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Bejahung des Vorsatzes hinsichtlich der Körperverletzung mittels des manipulierten Stuhls als gefährlichem Werkzeug",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Qualifikationsvorsatz des O hinsichtlich § 224 Abs. 1 Nr. 2 Var. 2 StGB gegenüber P",
+                "evidence_scope": "Vorsatz hinsichtlich § 224 Abs. 1 Nr. 2 Var. 2 StGB gegenüber P",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der error in persona sei unbeachtlich, weil O denjenigen verletzen wollte, der auf dem Stuhl Platz nimmt; daher erstrecke sich der Vorsatz auf P, und O handelte mit dolus eventualis hinsichtlich der Körperverletzung sowie mit Tatbestandsvorsatz.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Der Qualifikationsvorsatz bezüglich eines gefährlichen Werkzeugs wird nicht geprüft. Die Bearbeitung erfasst § 224 Abs. 1 Nr. 2 Var. 2 StGB fälschlich als 'hinterlistig gelegtes Hindernis' und prüft subjektiv nur Vorsatz bzgl. der Körperverletzung und der 'Hinterlist'. Gemäß dem Negativkriterium ist der Punkt nicht erfüllt, wenn der Qualifikationsvorsatz nicht geprüft wird.",
+              "evidence": [
+                "O handelte mit dolus eventualis hinsichtlich der Körperverletzung. Hinsichtlich der Hinterlist handelte O mit Absicht (\"zur Vertuschung\", \"eins auszuwischen\") und damit vorsätzlich."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Behandlung des Qualifikationsvorsatzes hinsichtlich § 224 Abs. 1 Nr. 2 Var. 2 StGB (gefährliches Werkzeug) gegenüber P im Einklang mit der gewählten Distanzfalllösung (Bejahung bei Vorsatzerstreckung)",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "O, Vorsatz bzgl. § 224 Abs. 1 Nr. 2 Var. 2 StGB (gefährliches Werkzeug) bzgl. P",
+                "evidence_scope": "O, subjektiver Tatbestand § 224 bzgl. P (geprüft als 'Hinterlist')",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "majority_flip"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-014",
+      "title": "Vorsatz zum gefährlichen Werkzeug",
+      "verdict": "fail",
+      "resolution": "unresolved",
+      "reasoning": "The committee majority changed between two independent rounds; the criterion is conservatively unresolved.",
+      "evidence": [],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verbindet den Vorsatzmaßstab mit Os Erwartung des Zusammenbruchs und der billigenden Inkaufnahme von Verletzungen durch den Stuhl. Sie erstreckt die Verletzungsabsicht auf P und schließt die Prüfung mit der Bejahung des Tatbestandsvorsatzes ab.",
+          "evidence": [
+            "Vorsatz ist der Wille zur Tatbestandsverwirklichung in Kenntnis aller objektiven Tatbestandsmerkmale.",
+            "Er nahm billigend in Kauf, dass durch die Kollision mit dem Stuhl bei N blaue Flecken entstehen.",
+            "Der Vorsatz erstreckt sich mithin auf P.",
+            "O handelte mit dolus eventualis hinsichtlich der Körperverletzung."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft den Vorsatz gerade im Rahmen der Qualifikation § 224 Abs. 1 Nr. 2 Var. 2 StGB gegenüber P, verknüpft ihn mit den konkreten Tatsachen zum Stuhlzusammenbruch und den bei N/P vorgestellten Verletzungen und gelangt zu einem ausdrücklichen Ergebnis. Damit liegt eine methodisch vollzogene Vorsatzprüfung zum gefährlichen Werkzeug vor.",
+          "evidence": [
+            "O ging davon aus, dass N auf dem Stuhl Platz nehmen und der Stuhl zusammenbrechen würde. Er nahm billigend in Kauf, dass durch die Kollision mit dem Stuhl bei N blaue Flecken entstehen.",
+            "Der Vorsatz erstreckt sich mithin auf P.",
+            "O handelte mit dolus eventualis hinsichtlich der Körperverletzung. Hinsichtlich der Hinterlist handelte O mit Absicht (\"zur Vertuschung\", \"eins auszuwischen\") und damit vorsätzlich."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Falllösung prüft den Vorsatz bezüglich des gefährlichen Werkzeugs (§ 224 Abs. 1 Nr. 2 Var. 2 StGB) überhaupt nicht nach juristischer Methode, da sie den Qualifikationstatbestand fälschlich als 'hinterlistig gelegtes Hindernis' subsumiert und im subjektiven Tatbestand lediglich auf die 'Hinterlist' eingeht. Ein rechtlicher Maßstab und eine Subsumtion zum Werkzeugvorsatz fehlen.",
+          "evidence": [
+            "O handelte mit dolus eventualis hinsichtlich der Körperverletzung. Hinsichtlich der Hinterlist handelte O mit Absicht (\"zur Vertuschung\", \"eins auszuwischen\") und damit vorsätzlich."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verbindet die Vorstellung des O vom Zusammenbrechen des Stuhls und die billigende Inkaufnahme von Verletzungen durch die Kollision mit der Übertragung des Vorsatzes auf P und schließt mit Tatbestandsvorsatz. Die rechtliche Einordnung der Qualifikation mag fehlerhaft sein; die Argumentation zum Vorsatz ist aber methodisch auf den manipulierten Stuhl und P bezogen.",
+              "evidence": [
+                "O ging davon aus, dass N auf dem Stuhl Platz nehmen und der Stuhl zusammenbrechen würde.",
+                "Er nahm billigend in Kauf, dass durch die Kollision mit dem Stuhl bei N blaue Flecken entstehen.",
+                "Der Vorsatz erstreckt sich mithin auf P.",
+                "O handelte mit Tatbestandsvorsatz."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft zwar den Vorsatz im Rahmen des § 224 Abs. 1 Nr. 2 Var. 2 StGB, jedoch bezogen auf ein 'hinterlistig gelegtes Hindernis' und nicht auf das im Kriterium verlangte 'gefährliche Werkzeug'. Damit fehlt gerade die kriterienspezifische Verknüpfung von Maßstab, Tatsachen und Ergebnis zum Vorsatz hinsichtlich des gefährlichen Werkzeugs; die methodische Prüfung betrifft eine andere Qualifikationsvariante.",
+              "evidence": [
+                "Vorsatz ist der Wille zur Tatbestandsverwirklichung in Kenntnis aller objektiven Tatbestandsmerkmale.",
+                "O handelte mit dolus eventualis hinsichtlich der Körperverletzung. Hinsichtlich der Hinterlist handelte O mit Absicht (\"zur Vertuschung\", \"eins auszuwischen\") und damit vorsätzlich.",
+                "Der Vorsatz erstreckt sich mithin auf P."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Klausurlösung prüft keinen Vorsatz bezüglich eines gefährlichen Werkzeugs (§ 224 Abs. 1 Nr. 2 Var. 2 StGB). Stattdessen ordnet sie der Norm die Falschbezeichnung 'hinterlistig gelegtes Hindernis' zu und prüft im subjektiven Tatbestand lediglich den Vorsatz hinsichtlich der Körperverletzung sowie einer 'Hinterlist'. Ein maßstabsgerechter Obersatz samt Subsumtion zum Werkzeugvorsatz fehlt vollständig.",
+              "evidence": [
+                "O handelte mit dolus eventualis hinsichtlich der Körperverletzung. Hinsichtlich der Hinterlist handelte O mit Absicht (\"zur Vertuschung\", \"eins auszuwischen\") und damit vorsätzlich. O handelte mit Tatbestandsvorsatz."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verbindet den Vorsatzmaßstab mit Os Erwartung des Zusammenbruchs und der billigenden Inkaufnahme von Verletzungen durch den Stuhl. Sie erstreckt die Verletzungsabsicht auf P und schließt die Prüfung mit der Bejahung des Tatbestandsvorsatzes ab.",
+              "evidence": [
+                "Vorsatz ist der Wille zur Tatbestandsverwirklichung in Kenntnis aller objektiven Tatbestandsmerkmale.",
+                "Er nahm billigend in Kauf, dass durch die Kollision mit dem Stuhl bei N blaue Flecken entstehen.",
+                "Der Vorsatz erstreckt sich mithin auf P.",
+                "O handelte mit dolus eventualis hinsichtlich der Körperverletzung."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft den Vorsatz gerade im Rahmen der Qualifikation § 224 Abs. 1 Nr. 2 Var. 2 StGB gegenüber P, verknüpft ihn mit den konkreten Tatsachen zum Stuhlzusammenbruch und den bei N/P vorgestellten Verletzungen und gelangt zu einem ausdrücklichen Ergebnis. Damit liegt eine methodisch vollzogene Vorsatzprüfung zum gefährlichen Werkzeug vor.",
+              "evidence": [
+                "O ging davon aus, dass N auf dem Stuhl Platz nehmen und der Stuhl zusammenbrechen würde. Er nahm billigend in Kauf, dass durch die Kollision mit dem Stuhl bei N blaue Flecken entstehen.",
+                "Der Vorsatz erstreckt sich mithin auf P.",
+                "O handelte mit dolus eventualis hinsichtlich der Körperverletzung. Hinsichtlich der Hinterlist handelte O mit Absicht (\"zur Vertuschung\", \"eins auszuwischen\") und damit vorsätzlich."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Falllösung prüft den Vorsatz bezüglich des gefährlichen Werkzeugs (§ 224 Abs. 1 Nr. 2 Var. 2 StGB) überhaupt nicht nach juristischer Methode, da sie den Qualifikationstatbestand fälschlich als 'hinterlistig gelegtes Hindernis' subsumiert und im subjektiven Tatbestand lediglich auf die 'Hinterlist' eingeht. Ein rechtlicher Maßstab und eine Subsumtion zum Werkzeugvorsatz fehlen.",
+              "evidence": [
+                "O handelte mit dolus eventualis hinsichtlich der Körperverletzung. Hinsichtlich der Hinterlist handelte O mit Absicht (\"zur Vertuschung\", \"eins auszuwischen\") und damit vorsätzlich."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "majority_flip"
+    }
+  ]
+}

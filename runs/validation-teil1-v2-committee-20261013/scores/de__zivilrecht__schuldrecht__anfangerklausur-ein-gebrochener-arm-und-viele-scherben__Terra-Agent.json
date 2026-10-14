@@ -1,0 +1,831 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/anfangerklausur-ein-gebrochener-arm-und-viele-scherben",
+    "title": "Anfängerklausur: Ein gebrochener Arm und viele Scherben"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__zivilrecht__schuldrecht__anfangerklausur-ein-gebrochener-arm-und-viele-scherben/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/anfangerklausur-ein-gebrochener-arm-und-viele-scherben/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:31:46.216818+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 2,
+  "n_passed": 2,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 2,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 2,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 4,
+    "points_available": 4,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 2,
+    "n_eligible": 2,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 2
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 2
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 2
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 2
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Anspruch der G gegen D": {
+      "n_criteria": 2,
+      "n_passed": 2,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Anspruch der G gegen D › Anspruch aus § 816 Abs. 1 S. 1 BGB": {
+      "n_criteria": 2,
+      "n_passed": 2,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "argumentation": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 20842,
+    "output_tokens": 7992,
+    "total_tokens": 28834,
+    "cached_input_tokens": 2304,
+    "cache_write_tokens": 9791
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 20842,
+    "output_tokens": 7992,
+    "total_tokens": 28834,
+    "cached_input_tokens": 2304,
+    "cache_write_tokens": 9791
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-037",
+      "title": "Entgeltlichkeit der Verfügung",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort behandelt die Verfügung als entgeltlich: D veräußerte das Geschirr an E und erhielt dafür 300 EUR Kaufpreis. § 816 Abs. 1 Satz 2 BGB wird nicht angewendet.",
+      "evidence": [
+        "Dies sind die 300 EUR Kaufpreis."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die Verfügung als entgeltlich: D veräußerte das Geschirr an E und erhielt dafür 300 EUR Kaufpreis. § 816 Abs. 1 Satz 2 BGB wird nicht angewendet.",
+          "evidence": [
+            "Dies sind die 300 EUR Kaufpreis."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Verfügung des D wird als entgeltlich im Sinne von § 816 Abs. 1 Satz 1 BGB behandelt, weil E dafür 300 EUR zahlte.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "D; Entgeltlichkeit seiner Verfügung an E im Rahmen von § 816 Abs. 1 Satz 1 BGB",
+            "evidence_scope": "D; die Verfügung an E und die 300 EUR Kaufpreis als Erlangtes nach § 816 Abs. 1 Satz 1 BGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "D erhielt für die Verfügung 300 EUR Kaufpreis.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die Verfügung des D nicht als unentgeltlich und wendet auch nicht § 816 Abs. 1 Satz 2 BGB an. Durch die Anwendung von § 816 Abs. 1 Satz 1 BGB und die Bezeichnung des Erlangten als 300 EUR Kaufpreis wird die Verfügung des D konkludent, aber eindeutig als entgeltlich eingeordnet.",
+          "evidence": [
+            "D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben. Dies sind die 300 EUR Kaufpreis."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Verfügung des D wird als entgeltlich im Sinne von § 816 Abs. 1 Satz 1 BGB behandelt.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Die Entgeltlichkeit wird auf die 300-EUR-Zahlung des E gestützt.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Abwandlung 2: Verfügung des D an E, Einordnung als entgeltlich nach § 816 Abs. 1 Satz 1 BGB",
+            "evidence_scope": "Abwandlung 2: D als Nichtberechtigter, Genehmigung durch G und Herausgabe des 300-EUR-Kaufpreises nach § 816 Abs. 1 Satz 1 BGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben; dies sind die 300 EUR Kaufpreis.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {
+        "input_tokens": 10369,
+        "output_tokens": 4943,
+        "total_tokens": 15312,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 4871
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt die Verfügung als entgeltlich: D veräußerte das Geschirr an E und erhielt dafür 300 EUR Kaufpreis. § 816 Abs. 1 Satz 2 BGB wird nicht angewendet.",
+              "evidence": [
+                "Dies sind die 300 EUR Kaufpreis."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Verfügung des D wird als entgeltlich im Sinne von § 816 Abs. 1 Satz 1 BGB behandelt, weil E dafür 300 EUR zahlte.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "D; Entgeltlichkeit seiner Verfügung an E im Rahmen von § 816 Abs. 1 Satz 1 BGB",
+                "evidence_scope": "D; die Verfügung an E und die 300 EUR Kaufpreis als Erlangtes nach § 816 Abs. 1 Satz 1 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "D erhielt für die Verfügung 300 EUR Kaufpreis.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt die Verfügung des D nicht als unentgeltlich und wendet auch nicht § 816 Abs. 1 Satz 2 BGB an. Durch die Anwendung von § 816 Abs. 1 Satz 1 BGB und die Bezeichnung des Erlangten als 300 EUR Kaufpreis wird die Verfügung des D konkludent, aber eindeutig als entgeltlich eingeordnet.",
+              "evidence": [
+                "D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben. Dies sind die 300 EUR Kaufpreis."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Verfügung des D wird als entgeltlich im Sinne von § 816 Abs. 1 Satz 1 BGB behandelt.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Die Entgeltlichkeit wird auf die 300-EUR-Zahlung des E gestützt.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Abwandlung 2: Verfügung des D an E, Einordnung als entgeltlich nach § 816 Abs. 1 Satz 1 BGB",
+                "evidence_scope": "Abwandlung 2: D als Nichtberechtigter, Genehmigung durch G und Herausgabe des 300-EUR-Kaufpreises nach § 816 Abs. 1 Satz 1 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben; dies sind die 300 EUR Kaufpreis.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-041",
+      "title": "Veräußerungserlös als Erlangtes",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort setzt ausdrücklich den Veräußerungserlös von 300 EUR an und bezeichnet ihn als das durch die Verfügung Erlangte. Damit liegt weder eine bloße Ansetzung des objektiven Werts von 280 EUR noch eine unbegründete Nennung von 300 EUR vor.",
+      "evidence": [
+        "D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben. Dies sind die 300 EUR Kaufpreis."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort setzt ausdrücklich den Veräußerungserlös von 300 EUR an und bezeichnet ihn als das durch die Verfügung Erlangte. Damit liegt weder eine bloße Ansetzung des objektiven Werts von 280 EUR noch eine unbegründete Nennung von 300 EUR vor.",
+          "evidence": [
+            "D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben. Dies sind die 300 EUR Kaufpreis."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Als Ausgangsbetrag für § 816 Abs. 1 Satz 1 BGB werden 300 EUR und nicht lediglich der objektive Geschirrwert von 280 EUR angesetzt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die 300 EUR werden mit dem durch die entgeltliche Verfügung erzielten Kaufpreis oder einer rechtlich gleichwertigen Begründung verknüpft.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Gegen D: § 816 Abs. 1 Satz 1 BGB, insbesondere das durch Ds Verfügung Erlangte.",
+            "evidence_scope": "Gegen D: § 816 Abs. 1 Satz 1 BGB; als durch die Verfügung Erlangtes werden die 300 EUR Kaufpreis benannt.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "§ 816 Abs. 1 Satz 1 BGB erfasst das durch die Verfügung Erlangte; die Antwort identifiziert dieses bei Ds Verkauf ausdrücklich als den Kaufpreis von 300 EUR.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort setzt bei § 816 Abs. 1 Satz 1 BGB nicht den Sachwert von 280 €, sondern den erzielten Kaufpreis von 300 € als Erlangtes an. Sie benennt diesen ausdrücklich als das durch die Verfügung Erlangte, was dem Zugriff auf die Gegenleistung entspricht.",
+          "evidence": [
+            "D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben. Dies sind die 300 EUR Kaufpreis."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Setzt als Erlangtes den Veräußerungserlös von 300 € an",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Erklärt dies mit dem Zugriff auf die durch die entgeltliche Verfügung erzielte Gegenleistung oder einer gleichwertigen Begründung",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "§ 816 Abs. 1 Satz 1 BGB in Abwandlung 2: Erlangtes des nichtberechtigten D aus der Veräußerung",
+            "evidence_scope": "§ 816 Abs. 1 Satz 1 BGB gegenüber D in Abwandlung 2, Herausgabe des durch die Verfügung Erlangten",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das durch die Verfügung Erlangte sind die 300 EUR Kaufpreis.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {
+        "input_tokens": 10473,
+        "output_tokens": 3049,
+        "total_tokens": 13522,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 4920
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort setzt ausdrücklich den Veräußerungserlös von 300 EUR an und bezeichnet ihn als das durch die Verfügung Erlangte. Damit liegt weder eine bloße Ansetzung des objektiven Werts von 280 EUR noch eine unbegründete Nennung von 300 EUR vor.",
+              "evidence": [
+                "D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben. Dies sind die 300 EUR Kaufpreis."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Als Ausgangsbetrag für § 816 Abs. 1 Satz 1 BGB werden 300 EUR und nicht lediglich der objektive Geschirrwert von 280 EUR angesetzt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die 300 EUR werden mit dem durch die entgeltliche Verfügung erzielten Kaufpreis oder einer rechtlich gleichwertigen Begründung verknüpft.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Gegen D: § 816 Abs. 1 Satz 1 BGB, insbesondere das durch Ds Verfügung Erlangte.",
+                "evidence_scope": "Gegen D: § 816 Abs. 1 Satz 1 BGB; als durch die Verfügung Erlangtes werden die 300 EUR Kaufpreis benannt.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "§ 816 Abs. 1 Satz 1 BGB erfasst das durch die Verfügung Erlangte; die Antwort identifiziert dieses bei Ds Verkauf ausdrücklich als den Kaufpreis von 300 EUR.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort setzt bei § 816 Abs. 1 Satz 1 BGB nicht den Sachwert von 280 €, sondern den erzielten Kaufpreis von 300 € als Erlangtes an. Sie benennt diesen ausdrücklich als das durch die Verfügung Erlangte, was dem Zugriff auf die Gegenleistung entspricht.",
+              "evidence": [
+                "D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben. Dies sind die 300 EUR Kaufpreis."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Setzt als Erlangtes den Veräußerungserlös von 300 € an",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erklärt dies mit dem Zugriff auf die durch die entgeltliche Verfügung erzielte Gegenleistung oder einer gleichwertigen Begründung",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "§ 816 Abs. 1 Satz 1 BGB in Abwandlung 2: Erlangtes des nichtberechtigten D aus der Veräußerung",
+                "evidence_scope": "§ 816 Abs. 1 Satz 1 BGB gegenüber D in Abwandlung 2, Herausgabe des durch die Verfügung Erlangten",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das durch die Verfügung Erlangte sind die 300 EUR Kaufpreis.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-037",
+      "title": "Entgeltlichkeit der Verfügung",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort ordnet die Verfügung ausdrücklich § 816 Abs. 1 Satz 1 BGB zu und verbindet den daraus folgenden Herausgabeanspruch mit den 300 EUR, die D als Kaufpreis erhielt. Die Prüfung ist damit für diese Frage abgeschlossen.",
+      "evidence": [
+        "Dann wird E Eigentümer, G verliert ihr Eigentum und D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben.",
+        "Dies sind die 300 EUR Kaufpreis."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet die Verfügung ausdrücklich § 816 Abs. 1 Satz 1 BGB zu und verbindet den daraus folgenden Herausgabeanspruch mit den 300 EUR, die D als Kaufpreis erhielt. Die Prüfung ist damit für diese Frage abgeschlossen.",
+          "evidence": [
+            "Dann wird E Eigentümer, G verliert ihr Eigentum und D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben.",
+            "Dies sind die 300 EUR Kaufpreis."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Verfügung des D im Rahmen von § 816 Abs. 1 Satz 1 BGB und verknüpft die einschlägige Norm mit dem konkreten Umstand des 300-EUR-Kaufpreises sowie dem Ergebnis, dass D das Erlangte herauszugeben hat. Zwar wird das Wort „entgeltlich“ nicht ausdrücklich verwendet; die Anwendung gerade von Satz 1 und die Kennzeichnung des Erlangten als Kaufpreis zeigen jedoch eine hinreichend methodische Erfassung der Entgeltlichkeit.",
+          "evidence": [
+            "D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben. Dies sind die 300 EUR Kaufpreis."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort ordnet die Verfügung ausdrücklich § 816 Abs. 1 Satz 1 BGB zu und verbindet den daraus folgenden Herausgabeanspruch mit den 300 EUR, die D als Kaufpreis erhielt. Die Prüfung ist damit für diese Frage abgeschlossen.",
+              "evidence": [
+                "Dann wird E Eigentümer, G verliert ihr Eigentum und D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben.",
+                "Dies sind die 300 EUR Kaufpreis."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Verfügung des D im Rahmen von § 816 Abs. 1 Satz 1 BGB und verknüpft die einschlägige Norm mit dem konkreten Umstand des 300-EUR-Kaufpreises sowie dem Ergebnis, dass D das Erlangte herauszugeben hat. Zwar wird das Wort „entgeltlich“ nicht ausdrücklich verwendet; die Anwendung gerade von Satz 1 und die Kennzeichnung des Erlangten als Kaufpreis zeigen jedoch eine hinreichend methodische Erfassung der Entgeltlichkeit.",
+              "evidence": [
+                "D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben. Dies sind die 300 EUR Kaufpreis."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-041",
+      "title": "Veräußerungserlös als Erlangtes",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort nennt den Tatbestand des § 816 Abs. 1 Satz 1 BGB, wendet ihn auf Ds wirksame Verfügung nach Genehmigung an und ordnet den Kaufpreis von 300 EUR ausdrücklich dem durch die Verfügung Erlangten zu. Damit ist die Prüfung dieser Frage abgeschlossen.",
+      "evidence": [
+        "Ein Anspruch aus § 816 Abs. 1 Satz 1 BGB setzt voraus, dass ein Nichtberechtigter eine dem Berechtigten gegenüber wirksame Verfügung getroffen und dadurch etwas erlangt hat.",
+        "Dann wird E Eigentümer, G verliert ihr Eigentum und D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben. Dies sind die 300 EUR Kaufpreis."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort nennt den Tatbestand des § 816 Abs. 1 Satz 1 BGB, wendet ihn auf Ds wirksame Verfügung nach Genehmigung an und ordnet den Kaufpreis von 300 EUR ausdrücklich dem durch die Verfügung Erlangten zu. Damit ist die Prüfung dieser Frage abgeschlossen.",
+          "evidence": [
+            "Ein Anspruch aus § 816 Abs. 1 Satz 1 BGB setzt voraus, dass ein Nichtberechtigter eine dem Berechtigten gegenüber wirksame Verfügung getroffen und dadurch etwas erlangt hat.",
+            "Dann wird E Eigentümer, G verliert ihr Eigentum und D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben. Dies sind die 300 EUR Kaufpreis."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft an der einschlägigen Stelle des § 816 Abs. 1 Satz 1 BGB den Begriff des Erlangten, verknüpft ihn mit dem konkreten Kaufpreis von 300 € und zieht daraus die Herausgabekonsequenz. Das ist eine knappe, aber vollständige criteriumsbezogene Anspruchsprüfung.",
+          "evidence": [
+            "D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben. Dies sind die 300 EUR Kaufpreis."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort nennt den Tatbestand des § 816 Abs. 1 Satz 1 BGB, wendet ihn auf Ds wirksame Verfügung nach Genehmigung an und ordnet den Kaufpreis von 300 EUR ausdrücklich dem durch die Verfügung Erlangten zu. Damit ist die Prüfung dieser Frage abgeschlossen.",
+              "evidence": [
+                "Ein Anspruch aus § 816 Abs. 1 Satz 1 BGB setzt voraus, dass ein Nichtberechtigter eine dem Berechtigten gegenüber wirksame Verfügung getroffen und dadurch etwas erlangt hat.",
+                "Dann wird E Eigentümer, G verliert ihr Eigentum und D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben. Dies sind die 300 EUR Kaufpreis."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft an der einschlägigen Stelle des § 816 Abs. 1 Satz 1 BGB den Begriff des Erlangten, verknüpft ihn mit dem konkreten Kaufpreis von 300 € und zieht daraus die Herausgabekonsequenz. Das ist eine knappe, aber vollständige criteriumsbezogene Anspruchsprüfung.",
+              "evidence": [
+                "D muss nach § 816 Abs. 1 Satz 1 BGB das durch die Verfügung Erlangte herausgeben. Dies sind die 300 EUR Kaufpreis."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

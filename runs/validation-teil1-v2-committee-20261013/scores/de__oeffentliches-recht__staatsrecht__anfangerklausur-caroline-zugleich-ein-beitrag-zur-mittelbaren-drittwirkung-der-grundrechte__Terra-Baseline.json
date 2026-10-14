@@ -1,0 +1,371 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/anfangerklausur-caroline-zugleich-ein-beitrag-zur-mittelbaren-drittwirkung-der-grundrechte",
+    "title": "Anfängerklausur: Caroline Zugleich ein Beitrag zur mittelbaren Drittwirkung der Grundrechte in der Fallbearbeitung"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-caroline-zugleich-ein-beitrag-zur-mittelbaren-drittwirkung-der-grundrechte/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/anfangerklausur-caroline-zugleich-ein-beitrag-zur-mittelbaren-drittwirkung-der-grundrechte/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:33:35.273027+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Lösungsvorschlag zum Ausgangsfall": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Lösungsvorschlag zum Ausgangsfall › Begründetheit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "rule_statement": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 14688,
+    "output_tokens": 1804,
+    "total_tokens": 16492,
+    "cached_input_tokens": 1024,
+    "cache_write_tokens": 6786
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 14688,
+    "output_tokens": 1804,
+    "total_tokens": 16492,
+    "cached_input_tokens": 1024,
+    "cache_write_tokens": 6786
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-011",
+      "title": "Keine unmittelbare Grundrechtsbindung des Y-Verlages",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort erläutert ausdrücklich, dass die Grundrechte im Verhältnis zwischen C und dem privaten Y-Verlag nicht unmittelbar gelten, und ordnet die Bindung nach Art. 1 Abs. 3 GG den Zivilgerichten als staatlichen Akteuren zu. Sie leitet den Unterlassungsanspruch nicht aus einer unmittelbaren Grundrechtsbindung des Verlags her, sondern beschreibt die mittelbare Drittwirkung.",
+      "evidence": [
+        "Die Grundrechte gelten im Verhältnis zwischen C und dem privaten Y-Verlag nicht unmittelbar.",
+        "Der Verlag ist kein staatlicher Grundrechtsverpflichteter.",
+        "Die Zivilgerichte sind jedoch gemäß Art. 1 Abs. 3 GG selbst an die Grundrechte gebunden."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erläutert ausdrücklich, dass die Grundrechte im Verhältnis zwischen C und dem privaten Y-Verlag nicht unmittelbar gelten, und ordnet die Bindung nach Art. 1 Abs. 3 GG den Zivilgerichten als staatlichen Akteuren zu. Sie leitet den Unterlassungsanspruch nicht aus einer unmittelbaren Grundrechtsbindung des Verlags her, sondern beschreibt die mittelbare Drittwirkung.",
+          "evidence": [
+            "Die Grundrechte gelten im Verhältnis zwischen C und dem privaten Y-Verlag nicht unmittelbar.",
+            "Der Verlag ist kein staatlicher Grundrechtsverpflichteter.",
+            "Die Zivilgerichte sind jedoch gemäß Art. 1 Abs. 3 GG selbst an die Grundrechte gebunden."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Erläutert, dass der private Y-Verlag gegenüber C grundsätzlich nicht unmittelbar durch die Grundrechte des Grundgesetzes verpflichtet wird.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Erläutert, dass die Grundrechtsbindung nach Art. 1 Abs. 3 GG die staatliche Gewalt, hier die Zivilgerichte, trifft.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Begründetheit des Ausgangsfalls: unmittelbare Grundrechtsbindung des privaten Y-Verlags gegenüber C",
+            "evidence_scope": "Begründetheit der Verfassungsbeschwerde der C im Ausgangsfall: Grundrechtsverhältnis zwischen C, dem privaten Y-Verlag und den Zivilgerichten",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Verlag ist kein staatlicher Grundrechtsverpflichteter; die Zivilgerichte sind dagegen nach Art. 1 Abs. 3 GG an die Grundrechte gebunden und müssen das Zivilrecht grundrechtsgeleitet auslegen und anwenden.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erläutert im Begründetheitsteil des Ausgangsfalls ausdrücklich, dass der private Y-Verlag kein staatlicher Grundrechtsverpflichteter ist und die Grundrechte zwischen C und dem Verlag nicht unmittelbar gelten. Zugleich wird Art. 1 Abs. 3 GG auf die Bindung der Zivilgerichte bezogen und die mittelbare Drittwirkung anerkannt. Damit ist die verlangte Aussage erfüllt; die Nicht-Erfüllt-Alternativen liegen nicht vor.",
+          "evidence": [
+            "Die Grundrechte gelten im Verhältnis zwischen C und dem privaten Y-Verlag nicht unmittelbar. Der Verlag ist kein staatlicher Grundrechtsverpflichteter.",
+            "Die Zivilgerichte sind jedoch gemäß Art. 1 Abs. 3 GG selbst an die Grundrechte gebunden.",
+            "In diesem Sinne entfalten die Grundrechte mittelbare Drittwirkung."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Erläuterung, dass Art. 1 Abs. 3 GG primär die staatliche Gewalt bindet.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Erläuterung, dass der private Y-Verlag gegenüber C grundsätzlich nicht unmittelbar durch die Grundrechte des Grundgesetzes verpflichtet wird.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Kein Herleiten des Unterlassungsanspruchs aus einer unmittelbaren Grundrechtsbindung des Verlages und keine Verneinung jeder Grundrechtsrelevanz wegen dessen Privatheit.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Begründetheit des Ausgangsfalls; Verhältnis C zum privaten Y-Verlag; unmittelbare Grundrechtsbindung bzw. mittelbare Drittwirkung",
+            "evidence_scope": "Begründetheit des Ausgangsfalls; Verhältnis C zum privaten Y-Verlag; Prüfungsmaßstab der Grundrechtsbindung und mittelbaren Drittwirkung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Grundrechte binden im Verhältnis zu dem privaten Y-Verlag nicht unmittelbar; Art. 1 Abs. 3 GG bindet die Zivilgerichte, welche das Zivilrecht im Lichte der Grundrechte auslegen müssen (mittelbare Drittwirkung).",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 14688,
+        "output_tokens": 1804,
+        "total_tokens": 16492,
+        "cached_input_tokens": 1024,
+        "cache_write_tokens": 6786
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erläutert ausdrücklich, dass die Grundrechte im Verhältnis zwischen C und dem privaten Y-Verlag nicht unmittelbar gelten, und ordnet die Bindung nach Art. 1 Abs. 3 GG den Zivilgerichten als staatlichen Akteuren zu. Sie leitet den Unterlassungsanspruch nicht aus einer unmittelbaren Grundrechtsbindung des Verlags her, sondern beschreibt die mittelbare Drittwirkung.",
+              "evidence": [
+                "Die Grundrechte gelten im Verhältnis zwischen C und dem privaten Y-Verlag nicht unmittelbar.",
+                "Der Verlag ist kein staatlicher Grundrechtsverpflichteter.",
+                "Die Zivilgerichte sind jedoch gemäß Art. 1 Abs. 3 GG selbst an die Grundrechte gebunden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erläutert, dass der private Y-Verlag gegenüber C grundsätzlich nicht unmittelbar durch die Grundrechte des Grundgesetzes verpflichtet wird.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erläutert, dass die Grundrechtsbindung nach Art. 1 Abs. 3 GG die staatliche Gewalt, hier die Zivilgerichte, trifft.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Begründetheit des Ausgangsfalls: unmittelbare Grundrechtsbindung des privaten Y-Verlags gegenüber C",
+                "evidence_scope": "Begründetheit der Verfassungsbeschwerde der C im Ausgangsfall: Grundrechtsverhältnis zwischen C, dem privaten Y-Verlag und den Zivilgerichten",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Verlag ist kein staatlicher Grundrechtsverpflichteter; die Zivilgerichte sind dagegen nach Art. 1 Abs. 3 GG an die Grundrechte gebunden und müssen das Zivilrecht grundrechtsgeleitet auslegen und anwenden.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erläutert im Begründetheitsteil des Ausgangsfalls ausdrücklich, dass der private Y-Verlag kein staatlicher Grundrechtsverpflichteter ist und die Grundrechte zwischen C und dem Verlag nicht unmittelbar gelten. Zugleich wird Art. 1 Abs. 3 GG auf die Bindung der Zivilgerichte bezogen und die mittelbare Drittwirkung anerkannt. Damit ist die verlangte Aussage erfüllt; die Nicht-Erfüllt-Alternativen liegen nicht vor.",
+              "evidence": [
+                "Die Grundrechte gelten im Verhältnis zwischen C und dem privaten Y-Verlag nicht unmittelbar. Der Verlag ist kein staatlicher Grundrechtsverpflichteter.",
+                "Die Zivilgerichte sind jedoch gemäß Art. 1 Abs. 3 GG selbst an die Grundrechte gebunden.",
+                "In diesem Sinne entfalten die Grundrechte mittelbare Drittwirkung."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erläuterung, dass Art. 1 Abs. 3 GG primär die staatliche Gewalt bindet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erläuterung, dass der private Y-Verlag gegenüber C grundsätzlich nicht unmittelbar durch die Grundrechte des Grundgesetzes verpflichtet wird.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Kein Herleiten des Unterlassungsanspruchs aus einer unmittelbaren Grundrechtsbindung des Verlages und keine Verneinung jeder Grundrechtsrelevanz wegen dessen Privatheit.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Begründetheit des Ausgangsfalls; Verhältnis C zum privaten Y-Verlag; unmittelbare Grundrechtsbindung bzw. mittelbare Drittwirkung",
+                "evidence_scope": "Begründetheit des Ausgangsfalls; Verhältnis C zum privaten Y-Verlag; Prüfungsmaßstab der Grundrechtsbindung und mittelbaren Drittwirkung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Grundrechte binden im Verhältnis zu dem privaten Y-Verlag nicht unmittelbar; Art. 1 Abs. 3 GG bindet die Zivilgerichte, welche das Zivilrecht im Lichte der Grundrechte auslegen müssen (mittelbare Drittwirkung).",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": []
+}

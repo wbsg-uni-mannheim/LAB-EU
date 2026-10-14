@@ -1,0 +1,534 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/examensubungsklausur-die-falsche-gisela",
+    "title": "Examensübungsklausur: Die falsche Gisela"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__zivilrecht__schuldrecht__examensubungsklausur-die-falsche-gisela/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/examensubungsklausur-die-falsche-gisela/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:32:44.860431+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Anspruch auf Zahlung des Werklohns i.H.v. 100.000 € aus § 631 Abs. 1 BGB": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Anspruch auf Zahlung des Werklohns i.H.v. 100.000 € aus § 631 Abs. 1 BGB › Anspruch der E gegen R auf Zahlung der vereinbarten Vergütung": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 21279,
+    "output_tokens": 2936,
+    "total_tokens": 24215,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 9787
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 21279,
+    "output_tokens": 2936,
+    "total_tokens": 24215,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 9787
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-031",
+      "title": "Angemessene Abnahmefrist",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort behandelt die Aufforderung trotz fehlenden festen Enddatums als Fristsetzung und erklärt ausdrücklich, dass eine zu kurze Frist eine objektiv angemessene Frist in Gang setzt. Sie begründet außerdem die Angemessenheit anhand der Prüfung der Dokumentation durch R.",
+      "evidence": [
+        "Dies ist als zeitlich bestimmbare Fristsetzung auszulegen.",
+        "Sollte die verlangte unverzügliche Abnahme für sich genommen zu knapp gewesen sein, setzte die Aufforderung jedenfalls eine objektiv angemessene Frist in Gang.",
+        "R hatte die nur dreißigminütige Dokumentation bereits angesehen und inhaltlich geprüft. Ein Zeitraum von mehr als zwei Wochen war deshalb ohne Weiteres angemessen."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die Aufforderung trotz fehlenden festen Enddatums als Fristsetzung und erklärt ausdrücklich, dass eine zu kurze Frist eine objektiv angemessene Frist in Gang setzt. Sie begründet außerdem die Angemessenheit anhand der Prüfung der Dokumentation durch R.",
+          "evidence": [
+            "Dies ist als zeitlich bestimmbare Fristsetzung auszulegen.",
+            "Sollte die verlangte unverzügliche Abnahme für sich genommen zu knapp gewesen sein, setzte die Aufforderung jedenfalls eine objektiv angemessene Frist in Gang.",
+            "R hatte die nur dreißigminütige Dokumentation bereits angesehen und inhaltlich geprüft. Ein Zeitraum von mehr als zwei Wochen war deshalb ohne Weiteres angemessen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Aufforderung zur unverzüglichen Abnahme wird trotz fehlenden kalendermäßigen Endtermins als Fristsetzung nach § 640 Abs. 2 BGB behandelt.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Für den Fall, dass die verlangte Frist zu kurz war, wird erläutert, dass dadurch eine objektiv angemessene Prüfungsfrist in Lauf gesetzt wird.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Angemessenheit der Prüfungsfrist wird anhand der Umstände erläutert.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "E und R; angemessene Abnahmefrist für das fertiggestellte Werk nach § 640 Abs. 2 BGB",
+            "evidence_scope": "E und R; Fristsetzung zur Abnahme der Dokumentation nach § 640 Abs. 2 BGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Aufforderung zur unverzüglichen Abnahme sei zeitlich bestimmbar; selbst bei zu kurzer Frist setze sie eine objektiv angemessene Frist in Gang. Weil R die kurze Dokumentation bereits angesehen und geprüft hatte, seien mehr als zwei Wochen angemessen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die fehlende kalendermäßige Befristung nicht als Ausschlussgrund, sondern legt die Aufforderung „unverzüglich abzunehmen“ als Fristsetzung im Sinne des § 640 Abs. 2 BGB aus. Zudem erklärt sie hilfsweise, dass eine zu kurze Frist jedenfalls eine objektiv angemessene Frist in Lauf setzt. Damit ist die criterion-relevante Aussage vollständig erfüllt.",
+          "evidence": [
+            "Mit der Aufforderung zur „unverzüglichen“ Abnahme verlangte E eine Abnahme ohne schuldhaftes Zögern. Dies ist als zeitlich bestimmbare Fristsetzung auszulegen.",
+            "Sollte die verlangte unverzügliche Abnahme für sich genommen zu knapp gewesen sein, setzte die Aufforderung jedenfalls eine objektiv angemessene Frist in Gang."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Aufforderung der E, das Werk „unverzüglich“ abzunehmen, wird trotz fehlenden kalendermäßigen Endtermins als Fristsetzung nach § 640 Abs. 2 BGB behandelt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Es wird erläutert, dass eine zu kurze Frist eine objektiv angemessene Prüfungsfrist in Lauf setzt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Fertigstellung des Werkes wird bejaht.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "§ 640 Abs. 2 BGB, Abnahmefiktion: Aufforderung der E an R zur Abnahme, Fristsetzung trotz fehlenden Endtermins",
+            "evidence_scope": "§ 640 Abs. 2 BGB, Abnahmefiktion: Aufforderung der E an R zur Abnahme, Fristsetzung trotz fehlenden Endtermins",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Formulierung „unverzüglich“ ist als zeitlich bestimmbare Fristsetzung auszulegen; für den Fall einer zu knappen Frist setzt sie jedenfalls eine objektiv angemessene Frist in Gang, wobei hier mehr als zwei Wochen angemessen waren.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 21279,
+        "output_tokens": 2936,
+        "total_tokens": 24215,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 9787
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt die Aufforderung trotz fehlenden festen Enddatums als Fristsetzung und erklärt ausdrücklich, dass eine zu kurze Frist eine objektiv angemessene Frist in Gang setzt. Sie begründet außerdem die Angemessenheit anhand der Prüfung der Dokumentation durch R.",
+              "evidence": [
+                "Dies ist als zeitlich bestimmbare Fristsetzung auszulegen.",
+                "Sollte die verlangte unverzügliche Abnahme für sich genommen zu knapp gewesen sein, setzte die Aufforderung jedenfalls eine objektiv angemessene Frist in Gang.",
+                "R hatte die nur dreißigminütige Dokumentation bereits angesehen und inhaltlich geprüft. Ein Zeitraum von mehr als zwei Wochen war deshalb ohne Weiteres angemessen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Aufforderung zur unverzüglichen Abnahme wird trotz fehlenden kalendermäßigen Endtermins als Fristsetzung nach § 640 Abs. 2 BGB behandelt.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Für den Fall, dass die verlangte Frist zu kurz war, wird erläutert, dass dadurch eine objektiv angemessene Prüfungsfrist in Lauf gesetzt wird.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Angemessenheit der Prüfungsfrist wird anhand der Umstände erläutert.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "E und R; angemessene Abnahmefrist für das fertiggestellte Werk nach § 640 Abs. 2 BGB",
+                "evidence_scope": "E und R; Fristsetzung zur Abnahme der Dokumentation nach § 640 Abs. 2 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Aufforderung zur unverzüglichen Abnahme sei zeitlich bestimmbar; selbst bei zu kurzer Frist setze sie eine objektiv angemessene Frist in Gang. Weil R die kurze Dokumentation bereits angesehen und geprüft hatte, seien mehr als zwei Wochen angemessen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt die fehlende kalendermäßige Befristung nicht als Ausschlussgrund, sondern legt die Aufforderung „unverzüglich abzunehmen“ als Fristsetzung im Sinne des § 640 Abs. 2 BGB aus. Zudem erklärt sie hilfsweise, dass eine zu kurze Frist jedenfalls eine objektiv angemessene Frist in Lauf setzt. Damit ist die criterion-relevante Aussage vollständig erfüllt.",
+              "evidence": [
+                "Mit der Aufforderung zur „unverzüglichen“ Abnahme verlangte E eine Abnahme ohne schuldhaftes Zögern. Dies ist als zeitlich bestimmbare Fristsetzung auszulegen.",
+                "Sollte die verlangte unverzügliche Abnahme für sich genommen zu knapp gewesen sein, setzte die Aufforderung jedenfalls eine objektiv angemessene Frist in Gang."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Aufforderung der E, das Werk „unverzüglich“ abzunehmen, wird trotz fehlenden kalendermäßigen Endtermins als Fristsetzung nach § 640 Abs. 2 BGB behandelt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Es wird erläutert, dass eine zu kurze Frist eine objektiv angemessene Prüfungsfrist in Lauf setzt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Fertigstellung des Werkes wird bejaht.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "§ 640 Abs. 2 BGB, Abnahmefiktion: Aufforderung der E an R zur Abnahme, Fristsetzung trotz fehlenden Endtermins",
+                "evidence_scope": "§ 640 Abs. 2 BGB, Abnahmefiktion: Aufforderung der E an R zur Abnahme, Fristsetzung trotz fehlenden Endtermins",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Formulierung „unverzüglich“ ist als zeitlich bestimmbare Fristsetzung auszulegen; für den Fall einer zu knappen Frist setzt sie jedenfalls eine objektiv angemessene Frist in Gang, wobei hier mehr als zwei Wochen angemessen waren.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-031",
+      "title": "Angemessene Abnahmefrist",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort stellt den Maßstab des § 640 Abs. 2 BGB der konkreten Aufforderung gegenüber, begründet die zeitliche Bestimmbarkeit und prüft hilfsweise die Wirkung einer zu kurzen Frist anhand der konkreten Umstände. Der Prüfungsgang ist abgeschlossen.",
+      "evidence": [
+        "Mit der Aufforderung zur „unverzüglichen“ Abnahme verlangte E eine Abnahme ohne schuldhaftes Zögern. Dies ist als zeitlich bestimmbare Fristsetzung auszulegen.",
+        "Sollte die verlangte unverzügliche Abnahme für sich genommen zu knapp gewesen sein, setzte die Aufforderung jedenfalls eine objektiv angemessene Frist in Gang."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort stellt den Maßstab des § 640 Abs. 2 BGB der konkreten Aufforderung gegenüber, begründet die zeitliche Bestimmbarkeit und prüft hilfsweise die Wirkung einer zu kurzen Frist anhand der konkreten Umstände. Der Prüfungsgang ist abgeschlossen.",
+          "evidence": [
+            "Mit der Aufforderung zur „unverzüglichen“ Abnahme verlangte E eine Abnahme ohne schuldhaftes Zögern. Dies ist als zeitlich bestimmbare Fristsetzung auszulegen.",
+            "Sollte die verlangte unverzügliche Abnahme für sich genommen zu knapp gewesen sein, setzte die Aufforderung jedenfalls eine objektiv angemessene Frist in Gang."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Fristsetzung im Rahmen der Abnahmefiktion nach § 640 Abs. 2 BGB. Sie verbindet den rechtlichen Maßstab der Fristsetzung mit der konkreten Aufforderung „unverzüglich“ abzunehmen und leitet daraus eine zeitlich bestimmbare bzw. objektiv angemessene Frist her. Damit liegt eine vollständige methodische Anwendung auf den konkreten Prüfungsgegenstand vor.",
+          "evidence": [
+            "Mit der Aufforderung zur „unverzüglichen“ Abnahme verlangte E eine Abnahme ohne schuldhaftes Zögern. Dies ist als zeitlich bestimmbare Fristsetzung auszulegen.",
+            "Sollte die verlangte unverzügliche Abnahme für sich genommen zu knapp gewesen sein, setzte die Aufforderung jedenfalls eine objektiv angemessene Frist in Gang.",
+            "Ein Zeitraum von mehr als zwei Wochen war deshalb ohne Weiteres angemessen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort stellt den Maßstab des § 640 Abs. 2 BGB der konkreten Aufforderung gegenüber, begründet die zeitliche Bestimmbarkeit und prüft hilfsweise die Wirkung einer zu kurzen Frist anhand der konkreten Umstände. Der Prüfungsgang ist abgeschlossen.",
+              "evidence": [
+                "Mit der Aufforderung zur „unverzüglichen“ Abnahme verlangte E eine Abnahme ohne schuldhaftes Zögern. Dies ist als zeitlich bestimmbare Fristsetzung auszulegen.",
+                "Sollte die verlangte unverzügliche Abnahme für sich genommen zu knapp gewesen sein, setzte die Aufforderung jedenfalls eine objektiv angemessene Frist in Gang."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Fristsetzung im Rahmen der Abnahmefiktion nach § 640 Abs. 2 BGB. Sie verbindet den rechtlichen Maßstab der Fristsetzung mit der konkreten Aufforderung „unverzüglich“ abzunehmen und leitet daraus eine zeitlich bestimmbare bzw. objektiv angemessene Frist her. Damit liegt eine vollständige methodische Anwendung auf den konkreten Prüfungsgegenstand vor.",
+              "evidence": [
+                "Mit der Aufforderung zur „unverzüglichen“ Abnahme verlangte E eine Abnahme ohne schuldhaftes Zögern. Dies ist als zeitlich bestimmbare Fristsetzung auszulegen.",
+                "Sollte die verlangte unverzügliche Abnahme für sich genommen zu knapp gewesen sein, setzte die Aufforderung jedenfalls eine objektiv angemessene Frist in Gang.",
+                "Ein Zeitraum von mehr als zwei Wochen war deshalb ohne Weiteres angemessen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

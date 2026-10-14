@@ -37,6 +37,7 @@ SCRIPTS_DIR = pathlib.Path(__file__).resolve().parent
 REPO_ROOT = SCRIPTS_DIR.parent
 sys.path.insert(0, str(REPO_ROOT))
 
+import evaluation.run as evaluation_run  # noqa: E402
 from evaluation.run import (  # noqa: E402
     DEFAULT_API_BASE,
     JudgeSpec,
@@ -75,6 +76,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--study", type=pathlib.Path, default=None,
                         help="Study definition supplying the committee and style setting.")
     parser.add_argument("--judge-committee", type=pathlib.Path, default=None)
+    parser.add_argument("--committee-tiebreaker", action="store_true",
+                        help="Prewarm for a tiebreaker run: batch only members 1 and 2, "
+                             "under the primary-phase cache keys that run reads.")
+    parser.add_argument("--judge-prompt-version", choices=("v1", "v2", "v3", "v4"),
+                        default="v1", help="Content judge prompt revision (see evaluation.run).")
     parser.add_argument("--style-evaluation", dest="style_evaluation",
                         action="store_true", default=None)
     parser.add_argument("--no-style-evaluation", dest="style_evaluation",
@@ -119,7 +125,7 @@ def batchable(specs: list[JudgeSpec]) -> tuple[list[JudgeSpec], list[JudgeSpec]]
 
 
 def collect_jobs(run_dirs: list[pathlib.Path], specs: list[JudgeSpec],
-                 style: bool) -> tuple[list[dict], dict[str, dict]]:
+                 style: bool, tiebreaker: bool = False) -> tuple[list[dict], dict[str, dict]]:
     """Build one batch line per (task, criterion, judge) vote still missing."""
     lines: list[dict[str, Any]] = []
     mapping: dict[str, dict[str, Any]] = {}
@@ -144,6 +150,8 @@ def collect_jobs(run_dirs: list[pathlib.Path], specs: list[JudgeSpec],
                 agent_output = load_agent_output(submission, criterion)
                 combined = style and is_style_eligible_criterion(criterion)
                 phase = ROUND1_COMBINED_PHASE if combined else ROUND1_CONTENT_PHASE
+                if tiebreaker:
+                    phase = phase.replace("-r1", "-primary")
                 prompt = (combined_content_style_prompt(
                               task, task_dir, agent_output, criterion, style_profiles)
                           if combined else
@@ -370,7 +378,10 @@ def main() -> int:
     else:
         if not args.run_dirs:
             raise SystemExit("Give at least one run dir (or --resume).")
+        evaluation_run.JUDGE_PROMPT_VERSION = args.judge_prompt_version
         specs, style = resolve_config(args)
+        if args.committee_tiebreaker:
+            specs = specs[:2]
         batch_specs, live_specs = batchable(specs)
         if not batch_specs:
             raise SystemExit("No committee member uses the OpenAI endpoint; "
@@ -385,7 +396,8 @@ def main() -> int:
               f"{', '.join(s.name for s in live_specs) or '(none)'}")
         print(f"Style evaluation: {style}")
 
-        lines, mapping = collect_jobs(run_dirs, batch_specs, style)
+        print(f"Judge prompt: {args.judge_prompt_version}, tiebreaker phases: {args.committee_tiebreaker}")
+        lines, mapping = collect_jobs(run_dirs, batch_specs, style, args.committee_tiebreaker)
         if not lines:
             print("Nothing to batch — every vote is already cached.")
             return 0

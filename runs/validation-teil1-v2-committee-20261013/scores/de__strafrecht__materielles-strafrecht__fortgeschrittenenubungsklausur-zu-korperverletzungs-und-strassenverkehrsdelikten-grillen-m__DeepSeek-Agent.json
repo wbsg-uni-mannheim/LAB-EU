@@ -1,0 +1,874 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-zu-korperverletzungs-und-strassenverkehrsdelikten-grillen-m",
+    "title": "Fortgeschrittenenübungsklausur zu Körperverletzungs- und Straßenverkehrsdelikten: Grillen mit Hindernissen"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenubungsklausur-zu-korperverletzungs-und-strassenverkehrsdelikten-grillen-m/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-zu-korperverletzungs-und-strassenverkehrsdelikten-grillen-m/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:31:45.457142+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 2,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.5,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 1,
+    "root_pass_rate": 0.5,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 3,
+    "points_available": 4,
+    "pass_rate": 0.75,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 2,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 2
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 2
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 2
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 2
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Die Manipulation des Stuhls": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "breakdown_by_outline": {
+    "Die Manipulation des Stuhls › §§ 223 Abs. 1, 224 Abs. 1 Nr. 2 Var. 2, Nrn. 3, 5 StGB gegenüber P durch Manipulation des Stuhls": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "argumentation": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 34227,
+    "output_tokens": 10719,
+    "total_tokens": 44946,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 15831
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 34227,
+    "output_tokens": 10719,
+    "total_tokens": 44946,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 15831
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-007",
+      "title": "Körperverletzung mittels des Stuhls",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort stellt zwar einen allgemeinen Zusammenhang zwischen dem Stuhlzusammenbruch und den Hämatomen her, bejaht aber nicht, dass diese gerade durch den Aufprall auf die Stuhlelemente entstanden. Das geforderte Merkmal bleibt unerörtert.",
+      "evidence": [
+        "P hat durch den Zusammenbruch des Stuhls tatsächlich mehrere schmerzhafte und über Wochen sichtbare Hämatome am Rücken erlitten."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort stellt zwar einen allgemeinen Zusammenhang zwischen dem Stuhlzusammenbruch und den Hämatomen her, bejaht aber nicht, dass diese gerade durch den Aufprall auf die Stuhlelemente entstanden. Das geforderte Merkmal bleibt unerörtert.",
+          "evidence": [
+            "P hat durch den Zusammenbruch des Stuhls tatsächlich mehrere schmerzhafte und über Wochen sichtbare Hämatome am Rücken erlitten."
+          ],
+          "component_checks": [
+            {
+              "requirement": "§ 224 Abs. 1 Nr. 2 Var. 2 StGB („mittels“) wird bejaht, weil Ps Hämatome durch den Aufprall auf die Teile des auseinanderfallenden Stuhls entstanden.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "P; Körperverletzung mittels des Stuhls nach § 224 Abs. 1 Nr. 2 Var. 2 StGB",
+            "evidence_scope": "P; tatsächliche Hämatome im Rahmen der Prüfung einer vorsätzlichen Körperverletzung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Hämatome seien durch den Zusammenbruch des Stuhls entstanden; ein Aufprall auf Teile des Stuhls oder die rechtliche Bedeutung als „mittels“ wird nicht genannt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Merkmal „mittels“ in § 224 Abs. 1 Nr. 2 Var. 2 StGB wird für P nicht bejaht. Die Antwort verneint eine vollendete vorsätzliche Körperverletzung bereits auf subjektiver Ebene und setzt sich mit dem Wirkungszusammenhang zwischen den Stuhlteilen und den Hämatomen nicht im Sinne der Kriteriumsanforderung auseinander.",
+          "evidence": [
+            "Fraglich ist, ob O sich wegen vollendeter (gefährlicher) Körperverletzung zum Nachteil der P strafbar gemacht hat.",
+            "P hat durch den Zusammenbruch des Stuhls tatsächlich mehrere schmerzhafte und über Wochen sichtbare Hämatome am Rücken erlitten.",
+            "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bejahung des Merkmals „mittels“ in § 224 Abs. 1 Nr. 2 Var. 2 StGB bezüglich P",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Begründung, dass Ps Hämatome gerade durch den Aufprall auf die Teile des auseinanderfallenden Stuhls entstanden",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Körperverletzung zum Nachteil der P mittels des Stuhls, § 224 Abs. 1 Nr. 2 Var. 2 StGB",
+            "evidence_scope": "Strafbarkeit wegen (gefährlicher) Körperverletzung zum Nachteil der P; Schwerpunkt aber Vorsatz/aberratio ictus, ohne Prüfung des „mittels“-Merkmals",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Eine vollendete vorsätzliche Körperverletzung zum Nachteil der P wird wegen aberratio ictus und fehlendem Vorsatz abgelehnt; das „mittels“ des Stuhls wird nicht bejaht.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {
+        "input_tokens": 16988,
+        "output_tokens": 5549,
+        "total_tokens": 22537,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 7858
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt zwar einen allgemeinen Zusammenhang zwischen dem Stuhlzusammenbruch und den Hämatomen her, bejaht aber nicht, dass diese gerade durch den Aufprall auf die Stuhlelemente entstanden. Das geforderte Merkmal bleibt unerörtert.",
+              "evidence": [
+                "P hat durch den Zusammenbruch des Stuhls tatsächlich mehrere schmerzhafte und über Wochen sichtbare Hämatome am Rücken erlitten."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§ 224 Abs. 1 Nr. 2 Var. 2 StGB („mittels“) wird bejaht, weil Ps Hämatome durch den Aufprall auf die Teile des auseinanderfallenden Stuhls entstanden.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "P; Körperverletzung mittels des Stuhls nach § 224 Abs. 1 Nr. 2 Var. 2 StGB",
+                "evidence_scope": "P; tatsächliche Hämatome im Rahmen der Prüfung einer vorsätzlichen Körperverletzung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Hämatome seien durch den Zusammenbruch des Stuhls entstanden; ein Aufprall auf Teile des Stuhls oder die rechtliche Bedeutung als „mittels“ wird nicht genannt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Merkmal „mittels“ in § 224 Abs. 1 Nr. 2 Var. 2 StGB wird für P nicht bejaht. Die Antwort verneint eine vollendete vorsätzliche Körperverletzung bereits auf subjektiver Ebene und setzt sich mit dem Wirkungszusammenhang zwischen den Stuhlteilen und den Hämatomen nicht im Sinne der Kriteriumsanforderung auseinander.",
+              "evidence": [
+                "Fraglich ist, ob O sich wegen vollendeter (gefährlicher) Körperverletzung zum Nachteil der P strafbar gemacht hat.",
+                "P hat durch den Zusammenbruch des Stuhls tatsächlich mehrere schmerzhafte und über Wochen sichtbare Hämatome am Rücken erlitten.",
+                "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung des Merkmals „mittels“ in § 224 Abs. 1 Nr. 2 Var. 2 StGB bezüglich P",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Begründung, dass Ps Hämatome gerade durch den Aufprall auf die Teile des auseinanderfallenden Stuhls entstanden",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Körperverletzung zum Nachteil der P mittels des Stuhls, § 224 Abs. 1 Nr. 2 Var. 2 StGB",
+                "evidence_scope": "Strafbarkeit wegen (gefährlicher) Körperverletzung zum Nachteil der P; Schwerpunkt aber Vorsatz/aberratio ictus, ohne Prüfung des „mittels“-Merkmals",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Eine vollendete vorsätzliche Körperverletzung zum Nachteil der P wird wegen aberratio ictus und fehlendem Vorsatz abgelehnt; das „mittels“ des Stuhls wird nicht bejaht.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-012",
+      "title": "Opferabweichung von N zu P im Distanzfall",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort wählt die ausdrücklich zugelassene Aberratio-ictus-Lösung, begründet sie mit der Konkretisierung des Vorsatzes auf N und verneint folgerichtig Vorsatz gegenüber P.",
+      "evidence": [
+        "Es liegt ein Fall der aberratio ictus (Fehlgehen der Tat) vor: O zielte auf die Verletzung der N ab, traf aber tatsächlich die P.",
+        "Der Täter entschließt sich zur Verletzung gerade dieser Person; ein hiervon abweichender Geschehensverlauf ist vom Vorsatz nicht mehr gedeckt.",
+        "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort wählt die ausdrücklich zugelassene Aberratio-ictus-Lösung, begründet sie mit der Konkretisierung des Vorsatzes auf N und verneint folgerichtig Vorsatz gegenüber P.",
+          "evidence": [
+            "Es liegt ein Fall der aberratio ictus (Fehlgehen der Tat) vor: O zielte auf die Verletzung der N ab, traf aber tatsächlich die P.",
+            "Der Täter entschließt sich zur Verletzung gerade dieser Person; ein hiervon abweichender Geschehensverlauf ist vom Vorsatz nicht mehr gedeckt.",
+            "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einen ausdrücklich zugelassenen Ansatz auswählen und begründet anwenden.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Auf O, die anvisierte N und die tatsächlich getroffene P anwenden.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Vorsatzfolge des gewählten Aberratio-ictus-Ansatzes umsetzen: kein Vorsatz gegenüber P.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "O; Abweichung vom anvisierten Opfer N zur tatsächlich getroffenen P; Vorsatzfolge bei der Körperverletzung",
+            "evidence_scope": "O; N als anvisierte und P als tatsächlich getroffene Person; aberratio ictus und Vorsatz gegenüber P",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Nach der Konkretisierungstheorie ist der Vorsatz auf die konkret anvisierte Person N bezogen; der abweichende Treffer bei P ist deshalb nicht vom Vorsatz gedeckt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort beschränkt sich nicht auf ein Schlagwort, sondern wendet den Ansatz des Aberratio ictus/Konkretisierungstheorie auf O, N und P an und leitet daraus konsequent ab, dass kein Vorsatz gegenüber P besteht. Damit ist die nach Variante (4) zulässige Vorsatzfolge umgesetzt.",
+          "evidence": [
+            "Es liegt ein Fall der **aberratio ictus** (Fehlgehen der Tat) vor: O zielte auf die Verletzung der N ab, traf aber tatsächlich die P.",
+            "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen. O handelte insoweit ohne Vorsatz."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Lösung des Distanzfalls nach einem zugelassenen Ansatz",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Anwendung auf O, N und P",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Umsetzung der Vorsatzfolge: kein Vorsatz gegenüber P",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Opferabweichung von N zu P bei der Stuhlpräparation; Vorsatz des O gegenüber P",
+            "evidence_scope": "Opferabweichung von N zu P bei der Stuhlpräparation; Vorsatz des O gegenüber P",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Aberratio ictus/Konkretisierungstheorie: Der Vorsatz war auf die konkret individualisierte N bezogen; die Abweichung zu P ist davon nicht gedeckt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {
+        "input_tokens": 17239,
+        "output_tokens": 5170,
+        "total_tokens": 22409,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 7973
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort wählt die ausdrücklich zugelassene Aberratio-ictus-Lösung, begründet sie mit der Konkretisierung des Vorsatzes auf N und verneint folgerichtig Vorsatz gegenüber P.",
+              "evidence": [
+                "Es liegt ein Fall der aberratio ictus (Fehlgehen der Tat) vor: O zielte auf die Verletzung der N ab, traf aber tatsächlich die P.",
+                "Der Täter entschließt sich zur Verletzung gerade dieser Person; ein hiervon abweichender Geschehensverlauf ist vom Vorsatz nicht mehr gedeckt.",
+                "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einen ausdrücklich zugelassenen Ansatz auswählen und begründet anwenden.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Auf O, die anvisierte N und die tatsächlich getroffene P anwenden.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Vorsatzfolge des gewählten Aberratio-ictus-Ansatzes umsetzen: kein Vorsatz gegenüber P.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "O; Abweichung vom anvisierten Opfer N zur tatsächlich getroffenen P; Vorsatzfolge bei der Körperverletzung",
+                "evidence_scope": "O; N als anvisierte und P als tatsächlich getroffene Person; aberratio ictus und Vorsatz gegenüber P",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Nach der Konkretisierungstheorie ist der Vorsatz auf die konkret anvisierte Person N bezogen; der abweichende Treffer bei P ist deshalb nicht vom Vorsatz gedeckt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort beschränkt sich nicht auf ein Schlagwort, sondern wendet den Ansatz des Aberratio ictus/Konkretisierungstheorie auf O, N und P an und leitet daraus konsequent ab, dass kein Vorsatz gegenüber P besteht. Damit ist die nach Variante (4) zulässige Vorsatzfolge umgesetzt.",
+              "evidence": [
+                "Es liegt ein Fall der **aberratio ictus** (Fehlgehen der Tat) vor: O zielte auf die Verletzung der N ab, traf aber tatsächlich die P.",
+                "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen. O handelte insoweit ohne Vorsatz."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Lösung des Distanzfalls nach einem zugelassenen Ansatz",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Anwendung auf O, N und P",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Umsetzung der Vorsatzfolge: kein Vorsatz gegenüber P",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Opferabweichung von N zu P bei der Stuhlpräparation; Vorsatz des O gegenüber P",
+                "evidence_scope": "Opferabweichung von N zu P bei der Stuhlpräparation; Vorsatz des O gegenüber P",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Aberratio ictus/Konkretisierungstheorie: Der Vorsatz war auf die konkret individualisierte N bezogen; die Abweichung zu P ist davon nicht gedeckt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-007",
+      "title": "Körperverletzung mittels des Stuhls",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort behandelt P und ihre Hämatome, prüft aber nicht das Merkmal „mittels“ des § 224 Abs. 1 Nr. 2 Var. 2 StGB. Sie stellt weder den unmittelbaren Aufprall auf Stuhlelemente fest noch zieht sie daraus eine Schlussfolgerung zu diesem Merkmal.",
+      "evidence": [
+        "P hat durch den Zusammenbruch des Stuhls tatsächlich mehrere schmerzhafte und über Wochen sichtbare Hämatome am Rücken erlitten.",
+        "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt P und ihre Hämatome, prüft aber nicht das Merkmal „mittels“ des § 224 Abs. 1 Nr. 2 Var. 2 StGB. Sie stellt weder den unmittelbaren Aufprall auf Stuhlelemente fest noch zieht sie daraus eine Schlussfolgerung zu diesem Merkmal.",
+          "evidence": [
+            "P hat durch den Zusammenbruch des Stuhls tatsächlich mehrere schmerzhafte und über Wochen sichtbare Hämatome am Rücken erlitten.",
+            "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft zwar die Körperverletzung zum Nachteil der P, verbindet aber keinen spezifischen § 224 Abs. 1 Nr. 2 Var. 2 StGB-Standard („mittels“) mit dem Aufprall auf die Stuhlteile und einer Bejahung dieses Merkmals. Die Prüfung endet beim Vorsatz bzw. bei aberratio ictus; das „mittels“-Merkmal wird nicht methodisch untersucht.",
+          "evidence": [
+            "Fraglich ist, ob O sich wegen vollendeter (gefährlicher) Körperverletzung zum Nachteil der P strafbar gemacht hat.",
+            "P hat durch den Zusammenbruch des Stuhls tatsächlich mehrere schmerzhafte und über Wochen sichtbare Hämatome am Rücken erlitten. Damit liegt der Erfolg einer körperlichen Misshandlung und Gesundheitsschädigung i.S.d. § 223 I StGB vor.",
+            "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort behandelt P und ihre Hämatome, prüft aber nicht das Merkmal „mittels“ des § 224 Abs. 1 Nr. 2 Var. 2 StGB. Sie stellt weder den unmittelbaren Aufprall auf Stuhlelemente fest noch zieht sie daraus eine Schlussfolgerung zu diesem Merkmal.",
+              "evidence": [
+                "P hat durch den Zusammenbruch des Stuhls tatsächlich mehrere schmerzhafte und über Wochen sichtbare Hämatome am Rücken erlitten.",
+                "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft zwar die Körperverletzung zum Nachteil der P, verbindet aber keinen spezifischen § 224 Abs. 1 Nr. 2 Var. 2 StGB-Standard („mittels“) mit dem Aufprall auf die Stuhlteile und einer Bejahung dieses Merkmals. Die Prüfung endet beim Vorsatz bzw. bei aberratio ictus; das „mittels“-Merkmal wird nicht methodisch untersucht.",
+              "evidence": [
+                "Fraglich ist, ob O sich wegen vollendeter (gefährlicher) Körperverletzung zum Nachteil der P strafbar gemacht hat.",
+                "P hat durch den Zusammenbruch des Stuhls tatsächlich mehrere schmerzhafte und über Wochen sichtbare Hämatome am Rücken erlitten. Damit liegt der Erfolg einer körperlichen Misshandlung und Gesundheitsschädigung i.S.d. § 223 I StGB vor.",
+                "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-012",
+      "title": "Opferabweichung von N zu P im Distanzfall",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort benennt den für die aberratio ictus maßgeblichen Vorsatzbezug auf das anvisierte Tatobjekt, verknüpft ihn mit Os Ziel, N zu treffen, und dem tatsächlichen Treffer bei P und zieht daraus ausdrücklich die Folge für den Vorsatz gegenüber P.",
+      "evidence": [
+        "Nach der herrschenden Konkretisierungstheorie konkretisiert der Täter seinen Vorsatz auf das anvisierte Tatobjekt.",
+        "O zielte auf die Verletzung der N ab, traf aber tatsächlich die P.",
+        "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort benennt den für die aberratio ictus maßgeblichen Vorsatzbezug auf das anvisierte Tatobjekt, verknüpft ihn mit Os Ziel, N zu treffen, und dem tatsächlichen Treffer bei P und zieht daraus ausdrücklich die Folge für den Vorsatz gegenüber P.",
+          "evidence": [
+            "Nach der herrschenden Konkretisierungstheorie konkretisiert der Täter seinen Vorsatz auf das anvisierte Tatobjekt.",
+            "O zielte auf die Verletzung der N ab, traf aber tatsächlich die P.",
+            "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort setzt für die Opferabweichung N/P einen bestimmten Ansatz (aberratio ictus/Konkretisierungstheorie) ein, verbindet ihn mit den konkreten Umständen (O wollte N treffen, P setzte sich) und zieht daraus den Schluss fehlenden Vorsatzes gegenüber P. Das ist eine kriteriumsspezifische, vollständige Argumentationslinie.",
+          "evidence": [
+            "Es liegt ein Fall der **aberratio ictus** (Fehlgehen der Tat) vor: O zielte auf die Verletzung der N ab, traf aber tatsächlich die P.",
+            "Der Vorsatz ist stets auf ein konkret individualisiertes Tatobjekt bezogen. Der Täter entschließt sich zur Verletzung gerade *dieser* Person; ein hiervon abweichender Geschehensverlauf ist vom Vorsatz nicht mehr gedeckt.",
+            "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen. O handelte insoweit ohne Vorsatz."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort benennt den für die aberratio ictus maßgeblichen Vorsatzbezug auf das anvisierte Tatobjekt, verknüpft ihn mit Os Ziel, N zu treffen, und dem tatsächlichen Treffer bei P und zieht daraus ausdrücklich die Folge für den Vorsatz gegenüber P.",
+              "evidence": [
+                "Nach der herrschenden Konkretisierungstheorie konkretisiert der Täter seinen Vorsatz auf das anvisierte Tatobjekt.",
+                "O zielte auf die Verletzung der N ab, traf aber tatsächlich die P.",
+                "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort setzt für die Opferabweichung N/P einen bestimmten Ansatz (aberratio ictus/Konkretisierungstheorie) ein, verbindet ihn mit den konkreten Umständen (O wollte N treffen, P setzte sich) und zieht daraus den Schluss fehlenden Vorsatzes gegenüber P. Das ist eine kriteriumsspezifische, vollständige Argumentationslinie.",
+              "evidence": [
+                "Es liegt ein Fall der **aberratio ictus** (Fehlgehen der Tat) vor: O zielte auf die Verletzung der N ab, traf aber tatsächlich die P.",
+                "Der Vorsatz ist stets auf ein konkret individualisiertes Tatobjekt bezogen. Der Täter entschließt sich zur Verletzung gerade *dieser* Person; ein hiervon abweichender Geschehensverlauf ist vom Vorsatz nicht mehr gedeckt.",
+                "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen. O handelte insoweit ohne Vorsatz."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

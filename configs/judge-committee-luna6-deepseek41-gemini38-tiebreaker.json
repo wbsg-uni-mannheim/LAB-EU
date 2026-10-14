@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.1",
+  "description": "Eingefrorener Judge ab 2026-10-14 (vor Auswertung von Teil 2 der Juristen-Validierung): GPT-6 Luna und DeepSeek V4.1 Flash als Primaerjudges, Gemini 3.8 Flash nur bei binaerem Dissens (--committee-tiebreaker). Alle drei mit Reasoning medium. Zu verwenden mit --judge-prompt-version v4 und --style-evaluation. Drei Modellfamilien, keine stellt die Mehrheit. Keine datierten Modell-IDs verfuegbar (Stand 2026-10-13). Begruendung: studies/de-core-45/validation/JUDGE_VALIDATION.md",
+  "judges": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ]
+}

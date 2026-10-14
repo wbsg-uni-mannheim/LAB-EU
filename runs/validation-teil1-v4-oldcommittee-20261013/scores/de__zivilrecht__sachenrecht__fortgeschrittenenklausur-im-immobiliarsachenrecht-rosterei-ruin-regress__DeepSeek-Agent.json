@@ -1,0 +1,673 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/sachenrecht/fortgeschrittenenklausur-im-immobiliarsachenrecht-rosterei-ruin-regress",
+    "title": "Fortgeschrittenenklausur im Immobiliarsachenrecht: Rösterei, Ruin, Regress"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__zivilrecht__sachenrecht__fortgeschrittenenklausur-im-immobiliarsachenrecht-rosterei-ruin-regress/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/sachenrecht/fortgeschrittenenklausur-im-immobiliarsachenrecht-rosterei-ruin-regress/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna",
+      "model": "gpt-5.6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "terra",
+      "model": "gpt-5.6-terra",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "gemini-3.6-flash",
+      "model": "google/gemini-3.6-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": null,
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T15:05:46.404439+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 3,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "terra": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.6-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "terra": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.6-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Schadensersatz wegen der Kosten für den besonderen Prüfungstermin": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Schadensersatz wegen der Kosten für den besonderen Prüfungstermin › Anspruch des A gegen K auf Schadensersatz wegen der Kosten des besonderen Prüfungstermins gem. §§ 280 Abs. 1 und 2, 286, 311 Abs. 1 BGB (Sicherungsvertrag)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 21400,
+    "output_tokens": 3382,
+    "total_tokens": 24782,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 11264
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 21400,
+    "output_tokens": 3382,
+    "total_tokens": 24782,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 11264
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-020",
+      "title": "Tilgungsrichtung der Zahlung des A",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort behandelt die Zahlung ausdrücklich als Zahlung auf die gesicherte Darlehensforderung und nimmt eine konkludente Leistungsbestimmung zugunsten des Forderungsübergangs an. Damit verfehlt sie die geforderte Auslegung als Zahlung auf die Grundschuld und übernimmt gerade die ausgeschlossene Gegenposition.",
+      "evidence": [
+        "A zahlte als Drittsicherungsgeber und nicht als Schuldner.",
+        "Sein gleichzeitig mit der Zahlung geäußertes Verlangen nach Abtretung der Darlehensforderung zeigt zudem, dass er die Forderung nicht zum Erlöschen bringen, sondern auf sich überleiten wollte.",
+        "die Zahlung zur Erfüllung der gesicherten Darlehensforderung unter der Bedingung des Forderungsübergangs"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt die Zahlung ausdrücklich als Zahlung auf die gesicherte Darlehensforderung und nimmt eine konkludente Leistungsbestimmung zugunsten des Forderungsübergangs an. Damit verfehlt sie die geforderte Auslegung als Zahlung auf die Grundschuld und übernimmt gerade die ausgeschlossene Gegenposition.",
+          "evidence": [
+            "A zahlte als Drittsicherungsgeber und nicht als Schuldner.",
+            "Sein gleichzeitig mit der Zahlung geäußertes Verlangen nach Abtretung der Darlehensforderung zeigt zudem, dass er die Forderung nicht zum Erlöschen bringen, sondern auf sich überleiten wollte.",
+            "die Zahlung zur Erfüllung der gesicherten Darlehensforderung unter der Bedingung des Forderungsübergangs"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Zahlung wird mangels ausdrücklicher oder konkludenter Tilgungsbestimmung als Zahlung auf die Grundschuld ausgelegt.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "A wird trotz des Verkaufs weiterhin als Eigentümer behandelt, weil Auflassung und Eintragung des Käufers nicht festgestellt sind.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Zahlung wird damit begründet, dass A als personenverschiedener Eigentümer seine dingliche Haftung beseitigen wollte.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Eine Zahlung auf die Darlehensforderung wird nicht angenommen.",
+              "satisfied": false,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A, seine Zahlung an K, Tilgungsrichtung zwischen Grundschuld und gesicherter Darlehensforderung",
+            "evidence_scope": "A, seine Zahlung an K und die behauptete konkludente Leistungsbestimmung zugunsten der Darlehensforderung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das Abtretungsverlangen zeige, dass A die Darlehensforderung auf sich überleiten wollte; deshalb sei die Zahlung als Erfüllung der Darlehensforderung unter der Bedingung des Forderungsübergangs zu verstehen.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna",
+            "model": "gpt-5.6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort nimmt gerade eine konkludente Tilgungsbestimmung an und ordnet die Zahlung der Erfüllung der Darlehensforderung zu. Damit vertritt sie eine nach dem Kriterium ausdrücklich ausschließende Tilgungsrichtung und prüft nicht die Zahlung auf die Grundschuld wegen fortbestehender dinglicher Haftung des A.",
+          "evidence": [
+            "Sein gleichzeitig mit der Zahlung geäußertes Verlangen nach Abtretung der Darlehensforderung zeigt zudem, dass er die Forderung nicht zum Erlöschen bringen, sondern auf sich überleiten wollte.",
+            "Der Sache nach liegt hierin eine konkludente Leistungsbestimmung dahingehend, dass die Zahlung zur Erfüllung der gesicherten Darlehensforderung unter der Bedingung des Forderungsübergangs erfolgt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Zahlung wird mangels ausdrücklicher oder konkludenter Tilgungsbestimmung als Zahlung auf die Grundschuld ausgelegt.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "A wird als trotz Verkaufs noch Eigentümer und als von R personenverschiedener dinglich Haftender eingeordnet.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Tilgungsrichtung wird mit dem Ziel begründet, die dingliche Haftung aus der Grundschuld zu beseitigen.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Tilgungsrichtung der Zahlung des weiterhin als Eigentümer dinglich haftenden A im Verhältnis zur Grundschuld oder Darlehensforderung der R.",
+            "evidence_scope": "Tilgungsrichtung derselben Zahlung des A nach deren Eingang bei K und im Zusammenhang mit der Abtretung der Darlehensforderung gegen R.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das Abtretungsverlangen sei eine konkludente Leistungsbestimmung zur Erfüllung und Überleitung der gesicherten Darlehensforderung.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "terra",
+            "model": "gpt-5.6-terra",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Kriterium gilt ausdrücklich als NICHT ERFÜLLT, wenn die Antwort eine nicht belegte Tilgungsbestimmung oder eine Zahlung auf die Darlehensforderung annimmt. Die Antwort nimmt hier ausdrücklich eine konkludente Leistungsbestimmung zur Erfüllung der Darlehensforderung an.",
+          "evidence": [
+            "Der Sache nach liegt hierin eine konkludente Leistungsbestimmung dahingehend, dass die Zahlung zur Erfüllung der gesicherten Darlehensforderung unter der Bedingung des Forderungsübergangs erfolgt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Auslegung der Zahlung des A als Zahlung auf die Grundschuld (mangels Bestimmung zur Beseitigung der dinglichen Haftung des Eigentümers)",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Tilgungsrichtung der Zahlung des A bei Inanspruchnahme aus der Grundschuld",
+            "evidence_scope": "Tilgungsrichtung der Zahlung des A im Rahmen der Pflichtverletzung aus der Sicherungsabrede",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Zahlung wird als konkludente Leistungsbestimmung zur Erfüllung der gesicherten Darlehensforderung ausgelegt.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.6-flash",
+            "model": "google/gemini-3.6-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": null,
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 21400,
+        "output_tokens": 3382,
+        "total_tokens": 24782,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 11264
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort behandelt die Zahlung ausdrücklich als Zahlung auf die gesicherte Darlehensforderung und nimmt eine konkludente Leistungsbestimmung zugunsten des Forderungsübergangs an. Damit verfehlt sie die geforderte Auslegung als Zahlung auf die Grundschuld und übernimmt gerade die ausgeschlossene Gegenposition.",
+              "evidence": [
+                "A zahlte als Drittsicherungsgeber und nicht als Schuldner.",
+                "Sein gleichzeitig mit der Zahlung geäußertes Verlangen nach Abtretung der Darlehensforderung zeigt zudem, dass er die Forderung nicht zum Erlöschen bringen, sondern auf sich überleiten wollte.",
+                "die Zahlung zur Erfüllung der gesicherten Darlehensforderung unter der Bedingung des Forderungsübergangs"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Zahlung wird mangels ausdrücklicher oder konkludenter Tilgungsbestimmung als Zahlung auf die Grundschuld ausgelegt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "A wird trotz des Verkaufs weiterhin als Eigentümer behandelt, weil Auflassung und Eintragung des Käufers nicht festgestellt sind.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Zahlung wird damit begründet, dass A als personenverschiedener Eigentümer seine dingliche Haftung beseitigen wollte.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Eine Zahlung auf die Darlehensforderung wird nicht angenommen.",
+                  "satisfied": false,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A, seine Zahlung an K, Tilgungsrichtung zwischen Grundschuld und gesicherter Darlehensforderung",
+                "evidence_scope": "A, seine Zahlung an K und die behauptete konkludente Leistungsbestimmung zugunsten der Darlehensforderung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das Abtretungsverlangen zeige, dass A die Darlehensforderung auf sich überleiten wollte; deshalb sei die Zahlung als Erfüllung der Darlehensforderung unter der Bedingung des Forderungsübergangs zu verstehen.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna",
+                "model": "gpt-5.6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort nimmt gerade eine konkludente Tilgungsbestimmung an und ordnet die Zahlung der Erfüllung der Darlehensforderung zu. Damit vertritt sie eine nach dem Kriterium ausdrücklich ausschließende Tilgungsrichtung und prüft nicht die Zahlung auf die Grundschuld wegen fortbestehender dinglicher Haftung des A.",
+              "evidence": [
+                "Sein gleichzeitig mit der Zahlung geäußertes Verlangen nach Abtretung der Darlehensforderung zeigt zudem, dass er die Forderung nicht zum Erlöschen bringen, sondern auf sich überleiten wollte.",
+                "Der Sache nach liegt hierin eine konkludente Leistungsbestimmung dahingehend, dass die Zahlung zur Erfüllung der gesicherten Darlehensforderung unter der Bedingung des Forderungsübergangs erfolgt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Zahlung wird mangels ausdrücklicher oder konkludenter Tilgungsbestimmung als Zahlung auf die Grundschuld ausgelegt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "A wird als trotz Verkaufs noch Eigentümer und als von R personenverschiedener dinglich Haftender eingeordnet.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Tilgungsrichtung wird mit dem Ziel begründet, die dingliche Haftung aus der Grundschuld zu beseitigen.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Tilgungsrichtung der Zahlung des weiterhin als Eigentümer dinglich haftenden A im Verhältnis zur Grundschuld oder Darlehensforderung der R.",
+                "evidence_scope": "Tilgungsrichtung derselben Zahlung des A nach deren Eingang bei K und im Zusammenhang mit der Abtretung der Darlehensforderung gegen R.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das Abtretungsverlangen sei eine konkludente Leistungsbestimmung zur Erfüllung und Überleitung der gesicherten Darlehensforderung.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "terra",
+                "model": "gpt-5.6-terra",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium gilt ausdrücklich als NICHT ERFÜLLT, wenn die Antwort eine nicht belegte Tilgungsbestimmung oder eine Zahlung auf die Darlehensforderung annimmt. Die Antwort nimmt hier ausdrücklich eine konkludente Leistungsbestimmung zur Erfüllung der Darlehensforderung an.",
+              "evidence": [
+                "Der Sache nach liegt hierin eine konkludente Leistungsbestimmung dahingehend, dass die Zahlung zur Erfüllung der gesicherten Darlehensforderung unter der Bedingung des Forderungsübergangs erfolgt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Auslegung der Zahlung des A als Zahlung auf die Grundschuld (mangels Bestimmung zur Beseitigung der dinglichen Haftung des Eigentümers)",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Tilgungsrichtung der Zahlung des A bei Inanspruchnahme aus der Grundschuld",
+                "evidence_scope": "Tilgungsrichtung der Zahlung des A im Rahmen der Pflichtverletzung aus der Sicherungsabrede",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Zahlung wird als konkludente Leistungsbestimmung zur Erfüllung der gesicherten Darlehensforderung ausgelegt.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.6-flash",
+                "model": "google/gemini-3.6-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": null,
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-020",
+      "title": "Tilgungsrichtung der Zahlung des A",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort prüft die Tilgungsrichtung ausdrücklich, verknüpft die fehlende Tilgungsbestimmung und das Abtretungsverlangen mit einer konkreten Auslegung und zieht daraus einen eindeutigen Schluss. Die Argumentation ist daher methodisch vollständig, auch wenn sie inhaltlich in die falsche Richtung geht.",
+      "evidence": [
+        "Auch die Tatsache, dass A ohne Tilgungsbestimmung zahlte, steht dieser Würdigung nicht entgegen.",
+        "A zahlte als Drittsicherungsgeber und nicht als Schuldner.",
+        "Der Sache nach liegt hierin eine konkludente Leistungsbestimmung dahingehend, dass die Zahlung zur Erfüllung der gesicherten Darlehensforderung unter der Bedingung des Forderungsübergangs erfolgt."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Tilgungsrichtung ausdrücklich, verknüpft die fehlende Tilgungsbestimmung und das Abtretungsverlangen mit einer konkreten Auslegung und zieht daraus einen eindeutigen Schluss. Die Argumentation ist daher methodisch vollständig, auch wenn sie inhaltlich in die falsche Richtung geht.",
+          "evidence": [
+            "Auch die Tatsache, dass A ohne Tilgungsbestimmung zahlte, steht dieser Würdigung nicht entgegen.",
+            "A zahlte als Drittsicherungsgeber und nicht als Schuldner.",
+            "Der Sache nach liegt hierin eine konkludente Leistungsbestimmung dahingehend, dass die Zahlung zur Erfüllung der gesicherten Darlehensforderung unter der Bedingung des Forderungsübergangs erfolgt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna",
+            "model": "gpt-5.6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort untersucht die Tilgungsrichtung derselben Zahlung des A ausdrücklich, stellt auf das Fehlen einer ausdrücklichen Tilgungsbestimmung und das Abtretungsverlangen ab und zieht daraus eine ausdrückliche Schlussfolgerung. Der Prüfungsweg ist methodisch vollständig, auch wenn seine materielle Bewertung unzutreffend ist.",
+          "evidence": [
+            "Auch die Tatsache, dass A ohne Tilgungsbestimmung zahlte, steht dieser Würdigung nicht entgegen.",
+            "Sein gleichzeitig mit der Zahlung geäußertes Verlangen nach Abtretung der Darlehensforderung zeigt zudem, dass er die Forderung nicht zum Erlöschen bringen, sondern auf sich überleiten wollte.",
+            "Der Sache nach liegt hierin eine konkludente Leistungsbestimmung dahingehend, dass die Zahlung zur Erfüllung der gesicherten Darlehensforderung unter der Bedingung des Forderungsübergangs erfolgt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "terra",
+            "model": "gpt-5.6-terra",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erörtert die Tilgungsrichtung der Zahlung des A methodisch sauber unter Verknüpfung von Obersatz, Sachverhaltsangaben (Abtretungsverlangen) und einem konkreten Subsumtionsergebnis (konkludente Leistungsbestimmung auf die Darlehensforderung).",
+          "evidence": [
+            "Auch die Tatsache, dass A ohne Tilgungsbestimmung zahlte, steht dieser Würdigung nicht entgegen. Seine gleichzeitig mit der Zahlung geäußertes Verlangen nach Abtretung der Darlehensforderung zeigt zudem, dass er die Forderung nicht zum Erlöschen bringen, sondern auf sich überleiten wollte. Der Sache nach liegt hierin eine konkludente Leistungsbestimmung dahingehend, dass die Zahlung zur Erfüllung der gesicherten Darlehensforderung unter der Bedingung des Forderungsübergangs erfolgt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.6-flash",
+            "model": "google/gemini-3.6-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": null,
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Tilgungsrichtung ausdrücklich, verknüpft die fehlende Tilgungsbestimmung und das Abtretungsverlangen mit einer konkreten Auslegung und zieht daraus einen eindeutigen Schluss. Die Argumentation ist daher methodisch vollständig, auch wenn sie inhaltlich in die falsche Richtung geht.",
+              "evidence": [
+                "Auch die Tatsache, dass A ohne Tilgungsbestimmung zahlte, steht dieser Würdigung nicht entgegen.",
+                "A zahlte als Drittsicherungsgeber und nicht als Schuldner.",
+                "Der Sache nach liegt hierin eine konkludente Leistungsbestimmung dahingehend, dass die Zahlung zur Erfüllung der gesicherten Darlehensforderung unter der Bedingung des Forderungsübergangs erfolgt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna",
+                "model": "gpt-5.6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort untersucht die Tilgungsrichtung derselben Zahlung des A ausdrücklich, stellt auf das Fehlen einer ausdrücklichen Tilgungsbestimmung und das Abtretungsverlangen ab und zieht daraus eine ausdrückliche Schlussfolgerung. Der Prüfungsweg ist methodisch vollständig, auch wenn seine materielle Bewertung unzutreffend ist.",
+              "evidence": [
+                "Auch die Tatsache, dass A ohne Tilgungsbestimmung zahlte, steht dieser Würdigung nicht entgegen.",
+                "Sein gleichzeitig mit der Zahlung geäußertes Verlangen nach Abtretung der Darlehensforderung zeigt zudem, dass er die Forderung nicht zum Erlöschen bringen, sondern auf sich überleiten wollte.",
+                "Der Sache nach liegt hierin eine konkludente Leistungsbestimmung dahingehend, dass die Zahlung zur Erfüllung der gesicherten Darlehensforderung unter der Bedingung des Forderungsübergangs erfolgt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "terra",
+                "model": "gpt-5.6-terra",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erörtert die Tilgungsrichtung der Zahlung des A methodisch sauber unter Verknüpfung von Obersatz, Sachverhaltsangaben (Abtretungsverlangen) und einem konkreten Subsumtionsergebnis (konkludente Leistungsbestimmung auf die Darlehensforderung).",
+              "evidence": [
+                "Auch die Tatsache, dass A ohne Tilgungsbestimmung zahlte, steht dieser Würdigung nicht entgegen. Seine gleichzeitig mit der Zahlung geäußertes Verlangen nach Abtretung der Darlehensforderung zeigt zudem, dass er die Forderung nicht zum Erlöschen bringen, sondern auf sich überleiten wollte. Der Sache nach liegt hierin eine konkludente Leistungsbestimmung dahingehend, dass die Zahlung zur Erfüllung der gesicherten Darlehensforderung unter der Bedingung des Forderungsübergangs erfolgt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.6-flash",
+                "model": "google/gemini-3.6-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": null,
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

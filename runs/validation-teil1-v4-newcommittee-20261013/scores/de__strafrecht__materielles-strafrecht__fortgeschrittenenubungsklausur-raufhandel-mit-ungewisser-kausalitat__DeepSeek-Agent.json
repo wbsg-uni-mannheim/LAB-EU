@@ -1,0 +1,418 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-raufhandel-mit-ungewisser-kausalitat",
+    "title": "Fortgeschrittenenübungsklausur: Raufhandel mit ungewisser Kausalität"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenubungsklausur-raufhandel-mit-ungewisser-kausalitat/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-raufhandel-mit-ungewisser-kausalitat/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T15:08:41.148137+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 1,
+    "points_available": 1,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Strafbarkeit von T": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Strafbarkeit von T › §§ 223 Abs. 1, 224 Abs. 1 Nr. 2, 22, 23 Abs. 1 StGB gegenüber R und S": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "conclusion": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 32236,
+    "output_tokens": 2759,
+    "total_tokens": 34995,
+    "cached_input_tokens": 1024,
+    "cache_write_tokens": 10101
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 32236,
+    "output_tokens": 2759,
+    "total_tokens": 34995,
+    "cached_input_tokens": 1024,
+    "cache_write_tokens": 10101
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-032",
+      "title": "Keine vollendete Körperverletzung des T an R",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort prüft ausdrücklich eine vollendete Körperverletzung des T zum Nachteil von R und/oder S. Sie stellt fest, dass nicht einmal die blauen Flecke einem bestimmten Verursacher zugeordnet werden können, und verneint deshalb eine durch T verursachte vollendete Körperverletzung. Das erfüllt das Kriterium.",
+      "evidence": [
+        "Zwar wiesen R und S großflächige blaue Flecke auf, jedoch ist nach gerichtlicher Überzeugung „nicht einmal hinsichtlich der blauen Flecke klar, ob sie sich aus den Schlägen von anderen Raufenden ergeben hatten, oder aber etwa aus dem ungeschickten und selbstverschuldeten Umgang mit dem Inventar der Bar“.",
+        "Nach in dubio pro reo kann eine durch T verursachte vollendete Körperverletzung nicht festgestellt werden."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft ausdrücklich eine vollendete Körperverletzung des T zum Nachteil von R und/oder S. Sie stellt fest, dass nicht einmal die blauen Flecke einem bestimmten Verursacher zugeordnet werden können, und verneint deshalb eine durch T verursachte vollendete Körperverletzung. Das erfüllt das Kriterium.",
+          "evidence": [
+            "Zwar wiesen R und S großflächige blaue Flecke auf, jedoch ist nach gerichtlicher Überzeugung „nicht einmal hinsichtlich der blauen Flecke klar, ob sie sich aus den Schlägen von anderen Raufenden ergeben hatten, oder aber etwa aus dem ungeschickten und selbstverschuldeten Umgang mit dem Inventar der Bar“.",
+            "Nach in dubio pro reo kann eine durch T verursachte vollendete Körperverletzung nicht festgestellt werden."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Eine vollendete Körperverletzung des T zum Nachteil der R wird mangels Nachweises verneint, dass ein Faust- oder Vasenschlag des T einen Verletzungserfolg der R verursacht hat.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "T; vollendete Körperverletzung zum Nachteil der R, insbesondere Nachweis der Verursachung eines Verletzungserfolgs",
+            "evidence_scope": "T; Prüfung vollendeter Körperverletzung zum Nachteil von R und/oder S, mit ausdrücklicher Feststellung fehlender Zuordenbarkeit der blauen Flecke zu T",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Es lässt sich nicht feststellen, ob die blauen Flecke durch Schläge anderer Raufender oder durch den Umgang mit dem Inventar entstanden; eine durch T verursachte vollendete Körperverletzung ist daher nicht nachweisbar.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint ausdrücklich eine vollendete Körperverletzung des T zum Nachteil der R, weil nach in dubio pro reo nicht feststellbar ist, dass ein Treffer des T einen Verletzungserfolg der R verursacht hat. Damit ist die geforderte Prüfung und Verneinung erfüllt; die Nicht-Erfüllt-Alternative liegt nicht vor.",
+          "evidence": [
+            "T könnte sich wegen vollendeter Körperverletzung gem. § 223 Abs. 1 StGB strafbar gemacht haben, indem er im Rahmen der Schlägerei Faustschläge austeilte.",
+            "Wie bei R und S ist jedoch unklar, ob und welche Treffer T bei R und/oder S landete.",
+            "Nach in dubio pro reo kann eine durch T verursachte vollendete Körperverletzung nicht festgestellt werden."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort prüft eine vollendete Körperverletzung des T zum Nachteil der R nach § 223 Abs. 1 StGB.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort verneint diese vollendete Körperverletzung der R mangels Nachweises, dass ein Faust- oder Vasenschlag des T einen Verletzungserfolg der R verursacht hat.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "T als Täter, R als Opfer, vollendete Körperverletzung nach § 223 StGB",
+            "evidence_scope": "T als möglicher Täter, R und/oder S als Opfer, vollendete Körperverletzung nach § 223 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Unklarheit darüber, ob und welche Treffer T bei R und/oder S landete; nach in dubio pro reo keine durch T verursachte vollendete Körperverletzung feststellbar.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint ausdrücklich eine vollendete Körperverletzung des T zum Nachteil der R nach § 223 Abs. 1 StGB unter Verweis auf den Zweifelssatz, da nicht feststellbar ist, ob Schläge des T R trafen oder die blauen Flecke verursachten.",
+          "evidence": [
+            "Wie bei R und S ist jedoch unklar, ob und welche Treffer T bei R und/oder S landete. Zwar wiesen R und S großflächige blaue Flecke auf, jedoch ist nach gerichtlicher Überzeugung „nicht einmal hinsichtlich der blauen Flecke klar, ob sie sich aus den Schlägen von anderen Raufenden ergeben hatten, oder aber etwa aus dem ungeschickten und selbstverschuldeten Umgang mit dem Inventar der Bar“. Nach in dubio pro reo kann eine durch T verursachte vollendete Körperverletzung nicht festgestellt werden."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Verneinung einer vollendeten Körperverletzung des T zum Nachteil der R mangels Nachweises der Verursachung eines blauen Flecks oder sonstigen Verletzungserfolgs durch T",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Täter T, Opfer R, Delikt: vollendete Körperverletzung gem. § 223 Abs. 1 StGB",
+            "evidence_scope": "Täter T, Opfer R und/oder S, Delikt: vollendete Körperverletzung gem. § 223 Abs. 1 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Unklarheit über Treffer und Verursachung der blauen Flecke, Grundsatz in dubio pro reo",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 32236,
+        "output_tokens": 2759,
+        "total_tokens": 34995,
+        "cached_input_tokens": 1024,
+        "cache_write_tokens": 10101
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft ausdrücklich eine vollendete Körperverletzung des T zum Nachteil von R und/oder S. Sie stellt fest, dass nicht einmal die blauen Flecke einem bestimmten Verursacher zugeordnet werden können, und verneint deshalb eine durch T verursachte vollendete Körperverletzung. Das erfüllt das Kriterium.",
+              "evidence": [
+                "Zwar wiesen R und S großflächige blaue Flecke auf, jedoch ist nach gerichtlicher Überzeugung „nicht einmal hinsichtlich der blauen Flecke klar, ob sie sich aus den Schlägen von anderen Raufenden ergeben hatten, oder aber etwa aus dem ungeschickten und selbstverschuldeten Umgang mit dem Inventar der Bar“.",
+                "Nach in dubio pro reo kann eine durch T verursachte vollendete Körperverletzung nicht festgestellt werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Eine vollendete Körperverletzung des T zum Nachteil der R wird mangels Nachweises verneint, dass ein Faust- oder Vasenschlag des T einen Verletzungserfolg der R verursacht hat.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "T; vollendete Körperverletzung zum Nachteil der R, insbesondere Nachweis der Verursachung eines Verletzungserfolgs",
+                "evidence_scope": "T; Prüfung vollendeter Körperverletzung zum Nachteil von R und/oder S, mit ausdrücklicher Feststellung fehlender Zuordenbarkeit der blauen Flecke zu T",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Es lässt sich nicht feststellen, ob die blauen Flecke durch Schläge anderer Raufender oder durch den Umgang mit dem Inventar entstanden; eine durch T verursachte vollendete Körperverletzung ist daher nicht nachweisbar.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint ausdrücklich eine vollendete Körperverletzung des T zum Nachteil der R, weil nach in dubio pro reo nicht feststellbar ist, dass ein Treffer des T einen Verletzungserfolg der R verursacht hat. Damit ist die geforderte Prüfung und Verneinung erfüllt; die Nicht-Erfüllt-Alternative liegt nicht vor.",
+              "evidence": [
+                "T könnte sich wegen vollendeter Körperverletzung gem. § 223 Abs. 1 StGB strafbar gemacht haben, indem er im Rahmen der Schlägerei Faustschläge austeilte.",
+                "Wie bei R und S ist jedoch unklar, ob und welche Treffer T bei R und/oder S landete.",
+                "Nach in dubio pro reo kann eine durch T verursachte vollendete Körperverletzung nicht festgestellt werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort prüft eine vollendete Körperverletzung des T zum Nachteil der R nach § 223 Abs. 1 StGB.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort verneint diese vollendete Körperverletzung der R mangels Nachweises, dass ein Faust- oder Vasenschlag des T einen Verletzungserfolg der R verursacht hat.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "T als Täter, R als Opfer, vollendete Körperverletzung nach § 223 StGB",
+                "evidence_scope": "T als möglicher Täter, R und/oder S als Opfer, vollendete Körperverletzung nach § 223 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Unklarheit darüber, ob und welche Treffer T bei R und/oder S landete; nach in dubio pro reo keine durch T verursachte vollendete Körperverletzung feststellbar.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint ausdrücklich eine vollendete Körperverletzung des T zum Nachteil der R nach § 223 Abs. 1 StGB unter Verweis auf den Zweifelssatz, da nicht feststellbar ist, ob Schläge des T R trafen oder die blauen Flecke verursachten.",
+              "evidence": [
+                "Wie bei R und S ist jedoch unklar, ob und welche Treffer T bei R und/oder S landete. Zwar wiesen R und S großflächige blaue Flecke auf, jedoch ist nach gerichtlicher Überzeugung „nicht einmal hinsichtlich der blauen Flecke klar, ob sie sich aus den Schlägen von anderen Raufenden ergeben hatten, oder aber etwa aus dem ungeschickten und selbstverschuldeten Umgang mit dem Inventar der Bar“. Nach in dubio pro reo kann eine durch T verursachte vollendete Körperverletzung nicht festgestellt werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Verneinung einer vollendeten Körperverletzung des T zum Nachteil der R mangels Nachweises der Verursachung eines blauen Flecks oder sonstigen Verletzungserfolgs durch T",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Täter T, Opfer R, Delikt: vollendete Körperverletzung gem. § 223 Abs. 1 StGB",
+                "evidence_scope": "Täter T, Opfer R und/oder S, Delikt: vollendete Körperverletzung gem. § 223 Abs. 1 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Unklarheit über Treffer und Verursachung der blauen Flecke, Grundsatz in dubio pro reo",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": []
+}

@@ -1,0 +1,958 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-ein-wettstreit-unter-kollegen-mit-folgen",
+    "title": "Fortgeschrittenenklausur: Ein Wettstreit unter Kollegen mit Folgen"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenklausur-ein-wettstreit-unter-kollegen-mit-folgen/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-ein-wettstreit-unter-kollegen-mit-folgen/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:35:33.110380+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 2,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.5,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 1,
+    "root_pass_rate": 0.5,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 4,
+    "pass_rate": 0.5,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 2,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.834,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Der Wettstreit": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "breakdown_by_outline": {
+    "Der Wettstreit › Strafbarkeit der B": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 29469,
+    "output_tokens": 11694,
+    "total_tokens": 41163,
+    "cached_input_tokens": 2304,
+    "cache_write_tokens": 11022
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 29469,
+    "output_tokens": 11694,
+    "total_tokens": 41163,
+    "cached_input_tokens": 2304,
+    "cache_write_tokens": 11022
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-008",
+      "title": "Kein Tatentschluss zur Körperverletzung",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Lösung verneint den Versuch ausdrücklich und nennt fehlenden Verletzungsvorsatz. Sie begründet das Fehlen des kognitiven Vorsatzelements bei der Prüfung des Versuchs jedoch nicht mit B’s fehlenden Gedanken an eine mögliche Verletzung. Die entsprechende Tatsachen- und Vorsatzerwägung steht bei der Prüfung eines anderen Tatbestands und wird dort nicht ausdrücklich auf den Körperverletzungsversuch übertragen.",
+      "evidence": [
+        "Eine versuchte Körperverletzung, insbesondere nach §§ 223, 224, 22, 23 StGB, scheidet mangels Verletzungs- und Gefährdungsvorsatzes aus."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Lösung verneint den Versuch ausdrücklich und nennt fehlenden Verletzungsvorsatz. Sie begründet das Fehlen des kognitiven Vorsatzelements bei der Prüfung des Versuchs jedoch nicht mit B’s fehlenden Gedanken an eine mögliche Verletzung. Die entsprechende Tatsachen- und Vorsatzerwägung steht bei der Prüfung eines anderen Tatbestands und wird dort nicht ausdrücklich auf den Körperverletzungsversuch übertragen.",
+          "evidence": [
+            "Eine versuchte Körperverletzung, insbesondere nach §§ 223, 224, 22, 23 StGB, scheidet mangels Verletzungs- und Gefährdungsvorsatzes aus."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die versuchte gefährliche Körperverletzung der B zum Nachteil des C wird verneint.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Fehlender zumindest bedingter Vorsatz bezüglich einer Misshandlung oder Gesundheitsschädigung wird als Grund für das Ausscheiden des Versuchs angegeben.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Das Fehlen des kognitiven Vorsatzelements wird damit begründet, dass B sich über eine mögliche Verletzung anderer Verkehrsteilnehmer überhaupt keine Gedanken machte.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B; versuchte gefährliche Körperverletzung zum Nachteil des C; Tatentschluss",
+            "evidence_scope": "B; versuchte Körperverletzung zum Nachteil des C; Verletzungs- und Gefährdungsvorsatz",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Versuch scheide mangels Verletzungs- und Gefährdungsvorsatzes aus; eine Verknüpfung dieses Ergebnisses mit der fehlenden Gedankenbildung zur möglichen Verletzung enthält die Prüfung nicht.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung verneint ausdrücklich die versuchte gefährliche Körperverletzung der B zum Nachteil des C und stützt dies auf das Fehlen des Verletzungsvorsatzes – also gerade des Tatentschlusses. Damit ist die Verneinung aus dem vom Kriterium geforderten Grund (fehlender zumindest bedingter Vorsatz bezüglich Misshandlung/Gesundheitsschädigung) getragen. Die knappe Begründung ist zulässig, zumal der Sachverhalt das Fehlen von Gedanken an eine Verletzung belegt. Der Verneinungsfall (Bestrafung wegen Versuchs oder Folgerung aus der objektiven Gefährlichkeit) liegt nicht vor.",
+          "evidence": [
+            "Eine versuchte Körperverletzung, insbesondere nach §§ 223, 224, 22, 23 StGB, scheidet mangels Verletzungs- und Gefährdungsvorsatzes aus. C wurde zudem nicht verletzt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Versuchte (gefährliche) Körperverletzung der B zum Nachteil des C wird verneint",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Verneinung wegen fehlenden Tatentschlusses/Vorsatzes bezüglich einer Verletzung",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B, versuchte gefährliche Körperverletzung zum Nachteil des C, Verneinung mangels Tatentschlusses",
+            "evidence_scope": "B, versuchte Körperverletzung (§§ 223, 224, 22, 23 StGB) zum Nachteil des C",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die versuchte Körperverletzung scheidet mangels Verletzungs- und Gefährdungsvorsatzes aus; C wurde nicht verletzt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die versuchte Körperverletzung wird zwar zutreffend mangels Vorsatzes verneint. Das Kriterium verlangt jedoch die Begründung, warum der Vorsatz fehlt (B machte sich keine Gedanken / kognitives Element fehlt). Das bloße Wiederholen des gesetzlichen Tatbestandsmerkmals ('mangels Verletzungs- und Gefährdungsvorsatzes') ohne Nennung des sachverhaltlichen Grundes und ohne Rückverweis auf frühere Ausführungen reicht inhaltlich nicht aus.",
+          "evidence": [
+            "Eine versuchte Körperverletzung, insbesondere nach §§ 223, 224, 22, 23 StGB, scheidet mangels Verletzungs- und Gefährdungsvorsatzes aus."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Verneinung einer versuchten (gefährlichen) Körperverletzung der B zum Nachteil des C mangels Tatentschlusses/Vorsatzes",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Begründung des fehlenden Vorsatzes dadurch, dass B sich über eine Verletzung überhaupt keine Gedanken machte / Fehlen des kognitiven Elements",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B; C; versuchte gefährliche Körperverletzung (§§ 223, 224, 22 StGB); subjektiver Tatbestand / Tatentschluss",
+            "evidence_scope": "B; C; versuchte Körperverletzung (§§ 223, 224, 22, 23 StGB); subjektiver Tatbestand",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "mangels Verletzungs- und Gefährdungsvorsatzes",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 17706,
+        "output_tokens": 8028,
+        "total_tokens": 25734,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 5534
+      },
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Lösung verneint den Versuch ausdrücklich und nennt fehlenden Verletzungsvorsatz. Sie begründet das Fehlen des kognitiven Vorsatzelements bei der Prüfung des Versuchs jedoch nicht mit B’s fehlenden Gedanken an eine mögliche Verletzung. Die entsprechende Tatsachen- und Vorsatzerwägung steht bei der Prüfung eines anderen Tatbestands und wird dort nicht ausdrücklich auf den Körperverletzungsversuch übertragen.",
+              "evidence": [
+                "Eine versuchte Körperverletzung, insbesondere nach §§ 223, 224, 22, 23 StGB, scheidet mangels Verletzungs- und Gefährdungsvorsatzes aus."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die versuchte gefährliche Körperverletzung der B zum Nachteil des C wird verneint.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Fehlender zumindest bedingter Vorsatz bezüglich einer Misshandlung oder Gesundheitsschädigung wird als Grund für das Ausscheiden des Versuchs angegeben.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Das Fehlen des kognitiven Vorsatzelements wird damit begründet, dass B sich über eine mögliche Verletzung anderer Verkehrsteilnehmer überhaupt keine Gedanken machte.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B; versuchte gefährliche Körperverletzung zum Nachteil des C; Tatentschluss",
+                "evidence_scope": "B; versuchte Körperverletzung zum Nachteil des C; Verletzungs- und Gefährdungsvorsatz",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Versuch scheide mangels Verletzungs- und Gefährdungsvorsatzes aus; eine Verknüpfung dieses Ergebnisses mit der fehlenden Gedankenbildung zur möglichen Verletzung enthält die Prüfung nicht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung verneint ausdrücklich die versuchte gefährliche Körperverletzung der B zum Nachteil des C und stützt dies auf das Fehlen des Verletzungsvorsatzes – also gerade des Tatentschlusses. Damit ist die Verneinung aus dem vom Kriterium geforderten Grund (fehlender zumindest bedingter Vorsatz bezüglich Misshandlung/Gesundheitsschädigung) getragen. Die knappe Begründung ist zulässig, zumal der Sachverhalt das Fehlen von Gedanken an eine Verletzung belegt. Der Verneinungsfall (Bestrafung wegen Versuchs oder Folgerung aus der objektiven Gefährlichkeit) liegt nicht vor.",
+              "evidence": [
+                "Eine versuchte Körperverletzung, insbesondere nach §§ 223, 224, 22, 23 StGB, scheidet mangels Verletzungs- und Gefährdungsvorsatzes aus. C wurde zudem nicht verletzt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Versuchte (gefährliche) Körperverletzung der B zum Nachteil des C wird verneint",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Verneinung wegen fehlenden Tatentschlusses/Vorsatzes bezüglich einer Verletzung",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B, versuchte gefährliche Körperverletzung zum Nachteil des C, Verneinung mangels Tatentschlusses",
+                "evidence_scope": "B, versuchte Körperverletzung (§§ 223, 224, 22, 23 StGB) zum Nachteil des C",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die versuchte Körperverletzung scheidet mangels Verletzungs- und Gefährdungsvorsatzes aus; C wurde nicht verletzt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "stage": "tiebreaker",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die versuchte Körperverletzung wird zwar zutreffend mangels Vorsatzes verneint. Das Kriterium verlangt jedoch die Begründung, warum der Vorsatz fehlt (B machte sich keine Gedanken / kognitives Element fehlt). Das bloße Wiederholen des gesetzlichen Tatbestandsmerkmals ('mangels Verletzungs- und Gefährdungsvorsatzes') ohne Nennung des sachverhaltlichen Grundes und ohne Rückverweis auf frühere Ausführungen reicht inhaltlich nicht aus.",
+              "evidence": [
+                "Eine versuchte Körperverletzung, insbesondere nach §§ 223, 224, 22, 23 StGB, scheidet mangels Verletzungs- und Gefährdungsvorsatzes aus."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Verneinung einer versuchten (gefährlichen) Körperverletzung der B zum Nachteil des C mangels Tatentschlusses/Vorsatzes",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung des fehlenden Vorsatzes dadurch, dass B sich über eine Verletzung überhaupt keine Gedanken machte / Fehlen des kognitiven Elements",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B; C; versuchte gefährliche Körperverletzung (§§ 223, 224, 22 StGB); subjektiver Tatbestand / Tatentschluss",
+                "evidence_scope": "B; C; versuchte Körperverletzung (§§ 223, 224, 22, 23 StGB); subjektiver Tatbestand",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "mangels Verletzungs- und Gefährdungsvorsatzes",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "resolved_by_tiebreaker"
+    },
+    {
+      "id": "C-016",
+      "title": "Objektive Vorhersehbarkeit der Fußgängergefahr",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Lösung stellt ausdrücklich fest, dass bei der massiv überhöhten innerstädtischen Fahrt ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Lage geraten konnte und dies bei gebotener Aufmerksamkeit erkennbar war. Damit ist die objektive Vorhersehbarkeit der konkreten Gefahr erfüllt.",
+      "evidence": [
+        "B ließ bei doppelter zulässiger innerörtlicher Höchstgeschwindigkeit einen gerade benutzten Fußgängerüberweg ohne jede Geschwindigkeitsreduzierung passieren.",
+        "Bei der gebotenen Aufmerksamkeit war für B ohne Weiteres erkennbar und vermeidbar, dass ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Situation geraten konnte."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung stellt ausdrücklich fest, dass bei der massiv überhöhten innerstädtischen Fahrt ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Lage geraten konnte und dies bei gebotener Aufmerksamkeit erkennbar war. Damit ist die objektive Vorhersehbarkeit der konkreten Gefahr erfüllt.",
+          "evidence": [
+            "B ließ bei doppelter zulässiger innerörtlicher Höchstgeschwindigkeit einen gerade benutzten Fußgängerüberweg ohne jede Geschwindigkeitsreduzierung passieren.",
+            "Bei der gebotenen Aufmerksamkeit war für B ohne Weiteres erkennbar und vermeidbar, dass ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Situation geraten konnte."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die massiv überhöhte innerstädtische Rennfahrt macht die konkrete Gefahr für einen Fußgänger auf dem Überweg objektiv vorhersehbar.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die vorhersehbare Gefahr betrifft Leib oder Leben des Fußgängers.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Gefahr wird nicht als unvorhersehbarer Zufall oder außerhalb der allgemeinen Lebenserfahrung liegend behandelt.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B; konkrete Gefahr für den Fußgänger C bei der innerstädtischen Rennfahrt; § 315d Abs. 4 StGB",
+            "evidence_scope": "B; Fußgänger auf dem Überweg bei doppelter innerörtlicher Höchstgeschwindigkeit; fahrlässige Gefahrverursachung nach § 315d Abs. 4 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Bei gebotener Aufmerksamkeit war die unmittelbar lebensgefährliche Situation für einen Fußgänger auf dem Überweg erkennbar und vermeidbar.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung stellt bei § 315d Abs. 4 StGB ausdrücklich fest, dass bei doppelter zulässiger Geschwindigkeit über einen benutzten Fußgängerüberweg die konkrete Gefährdung eines Fußgängers wie C für B bei gebotener Aufmerksamkeit ohne Weiteres erkennbar und vermeidbar war. Damit ist die objektive Vorhersehbarkeit der Fußgängergefahr bejaht; die Gefahr wird nicht als außerhalb der Lebenserfahrung oder als unvorhersehbarer Zufall behandelt.",
+          "evidence": [
+            "B ließ bei doppelter zulässiger innerörtlicher Höchstgeschwindigkeit einen gerade benutzten Fußgängerüberweg ohne jede Geschwindigkeitsreduzierung passieren.",
+            "Bei der gebotenen Aufmerksamkeit war für B ohne Weiteres erkennbar und vermeidbar, dass ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Situation geraten konnte.",
+            "Sie verursachte die konkrete Gefahr somit fahrlässig."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Prüfung erfolgt bei § 315d Abs. 4 StGB.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Es liegt eine massiv überhöhte innerstädtische Fahrt im Rahmen des Rennens vor.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die konkrete Gefährdung eines Fußgängers wie C auf dem Fußgängerüberweg war objektiv vorhersehbar.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "§ 315d Abs. 4 StGB; objektive Vorhersehbarkeit der konkreten Gefahr für einen Fußgänger wie C auf einem Fußgängerüberweg bei massiv überhöhter innerstädtischer Rennfahrt",
+            "evidence_scope": "§ 315d Abs. 4 StGB; fahrlässige Verursachung der konkreten Gefahr für C durch die Fahrt mit doppelter zulässiger Geschwindigkeit über den benutzten Fußgängerüberweg",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Bei der gebotenen Aufmerksamkeit war für B ohne Weiteres erkennbar und vermeidbar, dass ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Situation geraten konnte.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 11763,
+        "output_tokens": 3666,
+        "total_tokens": 15429,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 5488
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung stellt ausdrücklich fest, dass bei der massiv überhöhten innerstädtischen Fahrt ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Lage geraten konnte und dies bei gebotener Aufmerksamkeit erkennbar war. Damit ist die objektive Vorhersehbarkeit der konkreten Gefahr erfüllt.",
+              "evidence": [
+                "B ließ bei doppelter zulässiger innerörtlicher Höchstgeschwindigkeit einen gerade benutzten Fußgängerüberweg ohne jede Geschwindigkeitsreduzierung passieren.",
+                "Bei der gebotenen Aufmerksamkeit war für B ohne Weiteres erkennbar und vermeidbar, dass ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Situation geraten konnte."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die massiv überhöhte innerstädtische Rennfahrt macht die konkrete Gefahr für einen Fußgänger auf dem Überweg objektiv vorhersehbar.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die vorhersehbare Gefahr betrifft Leib oder Leben des Fußgängers.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Gefahr wird nicht als unvorhersehbarer Zufall oder außerhalb der allgemeinen Lebenserfahrung liegend behandelt.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B; konkrete Gefahr für den Fußgänger C bei der innerstädtischen Rennfahrt; § 315d Abs. 4 StGB",
+                "evidence_scope": "B; Fußgänger auf dem Überweg bei doppelter innerörtlicher Höchstgeschwindigkeit; fahrlässige Gefahrverursachung nach § 315d Abs. 4 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Bei gebotener Aufmerksamkeit war die unmittelbar lebensgefährliche Situation für einen Fußgänger auf dem Überweg erkennbar und vermeidbar.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung stellt bei § 315d Abs. 4 StGB ausdrücklich fest, dass bei doppelter zulässiger Geschwindigkeit über einen benutzten Fußgängerüberweg die konkrete Gefährdung eines Fußgängers wie C für B bei gebotener Aufmerksamkeit ohne Weiteres erkennbar und vermeidbar war. Damit ist die objektive Vorhersehbarkeit der Fußgängergefahr bejaht; die Gefahr wird nicht als außerhalb der Lebenserfahrung oder als unvorhersehbarer Zufall behandelt.",
+              "evidence": [
+                "B ließ bei doppelter zulässiger innerörtlicher Höchstgeschwindigkeit einen gerade benutzten Fußgängerüberweg ohne jede Geschwindigkeitsreduzierung passieren.",
+                "Bei der gebotenen Aufmerksamkeit war für B ohne Weiteres erkennbar und vermeidbar, dass ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Situation geraten konnte.",
+                "Sie verursachte die konkrete Gefahr somit fahrlässig."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Prüfung erfolgt bei § 315d Abs. 4 StGB.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Es liegt eine massiv überhöhte innerstädtische Fahrt im Rahmen des Rennens vor.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die konkrete Gefährdung eines Fußgängers wie C auf dem Fußgängerüberweg war objektiv vorhersehbar.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "§ 315d Abs. 4 StGB; objektive Vorhersehbarkeit der konkreten Gefahr für einen Fußgänger wie C auf einem Fußgängerüberweg bei massiv überhöhter innerstädtischer Rennfahrt",
+                "evidence_scope": "§ 315d Abs. 4 StGB; fahrlässige Verursachung der konkreten Gefahr für C durch die Fahrt mit doppelter zulässiger Geschwindigkeit über den benutzten Fußgängerüberweg",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Bei der gebotenen Aufmerksamkeit war für B ohne Weiteres erkennbar und vermeidbar, dass ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Situation geraten konnte.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-008",
+      "title": "Kein Tatentschluss zur Körperverletzung",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Lösung verneint den Versuch zwar für B zum Nachteil des C und nennt fehlenden Verletzungsvorsatz. Sie verbindet dies an dieser Prüfungsstelle aber weder mit dem maßgeblichen kognitiven Vorsatzelement noch mit der Tatsache, dass B über eine mögliche Verletzung nicht nachdachte. Die Erwägung zur fehlenden Gedankenbildung steht bei einem anderen Tatbestand und vervollständigt diese Prüfung nicht.",
+      "evidence": [
+        "Eine versuchte Körperverletzung, insbesondere nach §§ 223, 224, 22, 23 StGB, scheidet mangels Verletzungs- und Gefährdungsvorsatzes aus."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Lösung verneint den Versuch zwar für B zum Nachteil des C und nennt fehlenden Verletzungsvorsatz. Sie verbindet dies an dieser Prüfungsstelle aber weder mit dem maßgeblichen kognitiven Vorsatzelement noch mit der Tatsache, dass B über eine mögliche Verletzung nicht nachdachte. Die Erwägung zur fehlenden Gedankenbildung steht bei einem anderen Tatbestand und vervollständigt diese Prüfung nicht.",
+          "evidence": [
+            "Eine versuchte Körperverletzung, insbesondere nach §§ 223, 224, 22, 23 StGB, scheidet mangels Verletzungs- und Gefährdungsvorsatzes aus."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": false
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Lösung verneint den Versuch der gefährlichen Körperverletzung nur mit einer bloßen Ergebnisformel ('mangels Verletzungs- und Gefährdungsvorsatzes'). Der einschlägige Maßstab (fehlender zumindest bedingter Vorsatz bezüglich Misshandlung/Gesundheitsschädigung) wird nicht mit den konkreten Tatsachen – etwa dass B sich über eine Verletzung anderer keine Gedanken machte – verbunden und daraus keine Schlussfolgerung gezogen. Die im Rahmen von § 315d Abs. 2 Abs. 4 StGB angestellte Erwägung zum fehlenden Gefährdungsvorsatz betrifft einen anderen Prüfungspunkt und wird nicht auf die Körperverletzung bezogen. Es fehlt eine eigenständige methodische Prüfung dieses Delikts.",
+          "evidence": [
+            "Eine versuchte Körperverletzung, insbesondere nach §§ 223, 224, 22, 23 StGB, scheidet mangels Verletzungs- und Gefährdungsvorsatzes aus. C wurde zudem nicht verletzt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": false
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Lösung verneint den Versuch zwar für B zum Nachteil des C und nennt fehlenden Verletzungsvorsatz. Sie verbindet dies an dieser Prüfungsstelle aber weder mit dem maßgeblichen kognitiven Vorsatzelement noch mit der Tatsache, dass B über eine mögliche Verletzung nicht nachdachte. Die Erwägung zur fehlenden Gedankenbildung steht bei einem anderen Tatbestand und vervollständigt diese Prüfung nicht.",
+              "evidence": [
+                "Eine versuchte Körperverletzung, insbesondere nach §§ 223, 224, 22, 23 StGB, scheidet mangels Verletzungs- und Gefährdungsvorsatzes aus."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": false
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Lösung verneint den Versuch der gefährlichen Körperverletzung nur mit einer bloßen Ergebnisformel ('mangels Verletzungs- und Gefährdungsvorsatzes'). Der einschlägige Maßstab (fehlender zumindest bedingter Vorsatz bezüglich Misshandlung/Gesundheitsschädigung) wird nicht mit den konkreten Tatsachen – etwa dass B sich über eine Verletzung anderer keine Gedanken machte – verbunden und daraus keine Schlussfolgerung gezogen. Die im Rahmen von § 315d Abs. 2 Abs. 4 StGB angestellte Erwägung zum fehlenden Gefährdungsvorsatz betrifft einen anderen Prüfungspunkt und wird nicht auf die Körperverletzung bezogen. Es fehlt eine eigenständige methodische Prüfung dieses Delikts.",
+              "evidence": [
+                "Eine versuchte Körperverletzung, insbesondere nach §§ 223, 224, 22, 23 StGB, scheidet mangels Verletzungs- und Gefährdungsvorsatzes aus. C wurde zudem nicht verletzt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": false
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-016",
+      "title": "Objektive Vorhersehbarkeit der Fußgängergefahr",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Lösung verknüpft die konkrete Rennfahrt und den benutzten Fußgängerüberweg mit dem Maßstab gebotener Aufmerksamkeit, stellt die Erkennbarkeit der lebensgefährlichen Lage fest und zieht daraus den Schluss fahrlässiger Gefahrverursachung.",
+      "evidence": [
+        "B ließ bei doppelter zulässiger innerörtlicher Höchstgeschwindigkeit einen gerade benutzten Fußgängerüberweg ohne jede Geschwindigkeitsreduzierung passieren.",
+        "Bei der gebotenen Aufmerksamkeit war für B ohne Weiteres erkennbar und vermeidbar, dass ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Situation geraten konnte.",
+        "Sie verursachte die konkrete Gefahr somit fahrlässig."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung verknüpft die konkrete Rennfahrt und den benutzten Fußgängerüberweg mit dem Maßstab gebotener Aufmerksamkeit, stellt die Erkennbarkeit der lebensgefährlichen Lage fest und zieht daraus den Schluss fahrlässiger Gefahrverursachung.",
+          "evidence": [
+            "B ließ bei doppelter zulässiger innerörtlicher Höchstgeschwindigkeit einen gerade benutzten Fußgängerüberweg ohne jede Geschwindigkeitsreduzierung passieren.",
+            "Bei der gebotenen Aufmerksamkeit war für B ohne Weiteres erkennbar und vermeidbar, dass ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Situation geraten konnte.",
+            "Sie verursachte die konkrete Gefahr somit fahrlässig."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung nennt im Rahmen von § 315d Abs. 4 StGB den Maßstab der fahrlässigen Gefahrverursachung, verbindet ihn mit den konkreten Umständen der massiv überhöhten innerstädtischen Fahrt über den benutzten Fußgängerüberweg und schließt mit der Feststellung, die konkrete Gefahr sei für B bei gebotener Aufmerksamkeit erkennbar und vermeidbar gewesen. Damit liegt eine vollständige, kriteriumsspezifische Prüfung vor.",
+          "evidence": [
+            "Nach § 315d Abs. 4 StGB ist strafbar, wer in den Fällen des Absatzes 2 die Gefahr fahrlässig verursacht. B ließ bei doppelter zulässiger innerörtlicher Höchstgeschwindigkeit einen gerade benutzten Fußgängerüberweg ohne jede Geschwindigkeitsreduzierung passieren.",
+            "Bei der gebotenen Aufmerksamkeit war für B ohne Weiteres erkennbar und vermeidbar, dass ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Situation geraten konnte. Sie verursachte die konkrete Gefahr somit fahrlässig."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung verknüpft die konkrete Rennfahrt und den benutzten Fußgängerüberweg mit dem Maßstab gebotener Aufmerksamkeit, stellt die Erkennbarkeit der lebensgefährlichen Lage fest und zieht daraus den Schluss fahrlässiger Gefahrverursachung.",
+              "evidence": [
+                "B ließ bei doppelter zulässiger innerörtlicher Höchstgeschwindigkeit einen gerade benutzten Fußgängerüberweg ohne jede Geschwindigkeitsreduzierung passieren.",
+                "Bei der gebotenen Aufmerksamkeit war für B ohne Weiteres erkennbar und vermeidbar, dass ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Situation geraten konnte.",
+                "Sie verursachte die konkrete Gefahr somit fahrlässig."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung nennt im Rahmen von § 315d Abs. 4 StGB den Maßstab der fahrlässigen Gefahrverursachung, verbindet ihn mit den konkreten Umständen der massiv überhöhten innerstädtischen Fahrt über den benutzten Fußgängerüberweg und schließt mit der Feststellung, die konkrete Gefahr sei für B bei gebotener Aufmerksamkeit erkennbar und vermeidbar gewesen. Damit liegt eine vollständige, kriteriumsspezifische Prüfung vor.",
+              "evidence": [
+                "Nach § 315d Abs. 4 StGB ist strafbar, wer in den Fällen des Absatzes 2 die Gefahr fahrlässig verursacht. B ließ bei doppelter zulässiger innerörtlicher Höchstgeschwindigkeit einen gerade benutzten Fußgängerüberweg ohne jede Geschwindigkeitsreduzierung passieren.",
+                "Bei der gebotenen Aufmerksamkeit war für B ohne Weiteres erkennbar und vermeidbar, dass ein Fußgänger auf dem Überweg in eine unmittelbar lebensgefährliche Situation geraten konnte. Sie verursachte die konkrete Gefahr somit fahrlässig."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

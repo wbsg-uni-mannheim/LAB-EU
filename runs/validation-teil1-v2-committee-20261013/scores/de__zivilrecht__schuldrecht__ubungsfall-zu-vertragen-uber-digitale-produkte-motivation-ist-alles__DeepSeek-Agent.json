@@ -1,0 +1,708 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/ubungsfall-zu-vertragen-uber-digitale-produkte-motivation-ist-alles",
+    "title": "Übungsfall zu Verträgen über digitale Produkte: Motivation ist alles"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__zivilrecht__schuldrecht__ubungsfall-zu-vertragen-uber-digitale-produkte-motivation-ist-alles/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/ubungsfall-zu-vertragen-uber-digitale-produkte-motivation-ist-alles/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:33:36.548647+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 2,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.5,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 1,
+    "root_pass_rate": 0.5,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 4,
+    "pass_rate": 0.5,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 2
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 0.834,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Kann V von U Zahlung i.H.v. 1.050 € verlangen?": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Stehen dem U im Gegenzug Ansprüche gegen V zu?": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Kann V von U Zahlung i.H.v. 1.050 € verlangen? › Anspruch V gegen U auf Rückzahlung des Kaufpreises i.H.v. 1.000 €": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Stehen dem U im Gegenzug Ansprüche gegen V zu? › Anspruch U gegen V auf Zahlung von Wertersatz aus § 346 Abs. 2 S. 1 Nr. 3 BGB": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "legal_basis": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "conclusion": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 26453,
+    "output_tokens": 17094,
+    "total_tokens": 43547,
+    "cached_input_tokens": 5760,
+    "cache_write_tokens": 9724
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 26453,
+    "output_tokens": 17094,
+    "total_tokens": 43547,
+    "cached_input_tokens": 5760,
+    "cache_write_tokens": 9724
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-018",
+      "title": "Rücktrittsfolgen für den Trainer",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort behandelt den Rücktritt vom gesamten Vertrag, einschließlich des Trainer-Teils, und bestimmt die Rückgewährfolgen ausdrücklich nach §§ 346 bis 348 BGB. Zwar stützt sie den Ausschluss von Wertersatz auch auf § 327o BGB, überträgt diese Regeln aber nicht ausschließlich auf den Trainer; sie behandelt die Folgen zudem unter §§ 346 ff. BGB.",
+      "evidence": [
+        "V konnte daher wirksam vom gesamten Vertrag zurücktreten.",
+        "Nach § 327n I BGB sind auf die Vertragsbeendigung die §§ 346 bis 348 BGB entsprechend anzuwenden.",
+        "Zug um Zug (§§ 348, 320 BGB) ist V zur Rückgabe des Fitness-Trainers verpflichtet.",
+        "Selbst wenn man § 327o BGB nicht für anwendbar hielte, wäre ein Wertersatzanspruch nach § 346 III 1 Nr. 3 BGB ausgeschlossen."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt den Rücktritt vom gesamten Vertrag, einschließlich des Trainer-Teils, und bestimmt die Rückgewährfolgen ausdrücklich nach §§ 346 bis 348 BGB. Zwar stützt sie den Ausschluss von Wertersatz auch auf § 327o BGB, überträgt diese Regeln aber nicht ausschließlich auf den Trainer; sie behandelt die Folgen zudem unter §§ 346 ff. BGB.",
+          "evidence": [
+            "V konnte daher wirksam vom gesamten Vertrag zurücktreten.",
+            "Nach § 327n I BGB sind auf die Vertragsbeendigung die §§ 346 bis 348 BGB entsprechend anzuwenden.",
+            "Zug um Zug (§§ 348, 320 BGB) ist V zur Rückgabe des Fitness-Trainers verpflichtet.",
+            "Selbst wenn man § 327o BGB nicht für anwendbar hielte, wäre ein Wertersatzanspruch nach § 346 III 1 Nr. 3 BGB ausgeschlossen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Ausübung des Rücktritts hinsichtlich des Trainer-Teils wird behandelt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Rücktrittsfolgen für den Trainer werden unter Heranziehung der §§ 346 ff. BGB behandelt und nicht ausschließlich nach §§ 327o, 327p BGB.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "V und der nicht digitale Fitness-Trainer; Ausübung und Folgen des Rücktritts hinsichtlich dieses Vertragsteils",
+            "evidence_scope": "V und der Fitness-Trainer als Teil des gesamten Vertrags; Rücktritt sowie Rückgewähr und Wertersatzfolgen",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die §§ 346 bis 348 BGB sind nach § 327n I BGB auf die Vertragsbeendigung entsprechend anzuwenden; V muss den Trainer zurückgeben. Für den Wertersatz nennt die Antwort zusätzlich hilfsweise § 346 III BGB.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die Rücktrittsfolgen für den Fitness-Trainer ausdrücklich anhand von § 327n I BGB i.V.m. §§ 346 ff. BGB und lässt V den Trainer Zug um Zug gegen Rückzahlung zurückgeben. Damit liegt nicht lediglich eine ausschließliche Rückabwicklung des Geräts nach den Regeln für digitale Produkte vor; das anwendbare Rückgewährregime wird bestimmt.",
+          "evidence": [
+            "Nach § 327n I BGB sind auf die Vertragsbeendigung die §§ 346 bis 348 BGB entsprechend anzuwenden.",
+            "Gemäß § 346 I BGB sind die empfangenen Leistungen zurückzugewähren.",
+            "Zug um Zug (§§ 348, 320 BGB) ist V zur Rückgabe des Fitness-Trainers verpflichtet.",
+            "V kann von U die Zahlung von 1.050 € Zug um Zug gegen Rückgabe des Fitness-Trainers verlangen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort behandelt die Ausübung des Rücktritts, der auch den Trainer-Teil erfasst.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort behandelt die Rücktrittsfolgen für den Trainer nach §§ 346 ff. BGB.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort überträgt nicht ausschließlich die Beendigungsfolgen der §§ 327o, 327p BGB auf das Gerät, sondern bestimmt ein anwendbares Rückgewährregime.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Rücktrittsfolgen für den nicht digitalen Trainer-Teil, insbesondere Ausübung und Rückgewähr nach §§ 346 ff. BGB",
+            "evidence_scope": "Rücktritt vom gesamten Vertrag einschließlich Fitness-Trainer; Rückzahlung und Rückgabe des Fitness-Trainers nach § 327n I BGB i.V.m. §§ 346 ff. BGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Nach § 327n I BGB sind §§ 346 ff. BGB entsprechend anzuwenden; nach § 346 I BGB ist der Fitness-Trainer zurückzugewähren, während U den Kaufpreis Zug um Zug zurückzahlt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 9592,
+        "output_tokens": 2913,
+        "total_tokens": 12505,
+        "cached_input_tokens": 4736,
+        "cache_write_tokens": 4485
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt den Rücktritt vom gesamten Vertrag, einschließlich des Trainer-Teils, und bestimmt die Rückgewährfolgen ausdrücklich nach §§ 346 bis 348 BGB. Zwar stützt sie den Ausschluss von Wertersatz auch auf § 327o BGB, überträgt diese Regeln aber nicht ausschließlich auf den Trainer; sie behandelt die Folgen zudem unter §§ 346 ff. BGB.",
+              "evidence": [
+                "V konnte daher wirksam vom gesamten Vertrag zurücktreten.",
+                "Nach § 327n I BGB sind auf die Vertragsbeendigung die §§ 346 bis 348 BGB entsprechend anzuwenden.",
+                "Zug um Zug (§§ 348, 320 BGB) ist V zur Rückgabe des Fitness-Trainers verpflichtet.",
+                "Selbst wenn man § 327o BGB nicht für anwendbar hielte, wäre ein Wertersatzanspruch nach § 346 III 1 Nr. 3 BGB ausgeschlossen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Ausübung des Rücktritts hinsichtlich des Trainer-Teils wird behandelt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Rücktrittsfolgen für den Trainer werden unter Heranziehung der §§ 346 ff. BGB behandelt und nicht ausschließlich nach §§ 327o, 327p BGB.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "V und der nicht digitale Fitness-Trainer; Ausübung und Folgen des Rücktritts hinsichtlich dieses Vertragsteils",
+                "evidence_scope": "V und der Fitness-Trainer als Teil des gesamten Vertrags; Rücktritt sowie Rückgewähr und Wertersatzfolgen",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die §§ 346 bis 348 BGB sind nach § 327n I BGB auf die Vertragsbeendigung entsprechend anzuwenden; V muss den Trainer zurückgeben. Für den Wertersatz nennt die Antwort zusätzlich hilfsweise § 346 III BGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt die Rücktrittsfolgen für den Fitness-Trainer ausdrücklich anhand von § 327n I BGB i.V.m. §§ 346 ff. BGB und lässt V den Trainer Zug um Zug gegen Rückzahlung zurückgeben. Damit liegt nicht lediglich eine ausschließliche Rückabwicklung des Geräts nach den Regeln für digitale Produkte vor; das anwendbare Rückgewährregime wird bestimmt.",
+              "evidence": [
+                "Nach § 327n I BGB sind auf die Vertragsbeendigung die §§ 346 bis 348 BGB entsprechend anzuwenden.",
+                "Gemäß § 346 I BGB sind die empfangenen Leistungen zurückzugewähren.",
+                "Zug um Zug (§§ 348, 320 BGB) ist V zur Rückgabe des Fitness-Trainers verpflichtet.",
+                "V kann von U die Zahlung von 1.050 € Zug um Zug gegen Rückgabe des Fitness-Trainers verlangen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort behandelt die Ausübung des Rücktritts, der auch den Trainer-Teil erfasst.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort behandelt die Rücktrittsfolgen für den Trainer nach §§ 346 ff. BGB.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort überträgt nicht ausschließlich die Beendigungsfolgen der §§ 327o, 327p BGB auf das Gerät, sondern bestimmt ein anwendbares Rückgewährregime.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Rücktrittsfolgen für den nicht digitalen Trainer-Teil, insbesondere Ausübung und Rückgewähr nach §§ 346 ff. BGB",
+                "evidence_scope": "Rücktritt vom gesamten Vertrag einschließlich Fitness-Trainer; Rückzahlung und Rückgabe des Fitness-Trainers nach § 327n I BGB i.V.m. §§ 346 ff. BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Nach § 327n I BGB sind §§ 346 ff. BGB entsprechend anzuwenden; nach § 346 I BGB ist der Fitness-Trainer zurückzugewähren, während U den Kaufpreis Zug um Zug zurückzahlt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-023",
+      "title": "Kein Wertersatz wegen Verschlechterung",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort stellt zwar fest, dass keine Verschlechterung eingetreten sei. Sie prüft dies aber nur als hilfsweisen Ausschluss nach § 346 Abs. 3 S. 1 Nr. 3 BGB. Sie behandelt weder den Wertersatzanspruch nach § 346 Abs. 2 S. 1 Nr. 3 BGB noch stellt sie klar, dass ein allein durch bestimmungsgemäße Ingebrauchnahme verursachter Neuwertigkeitsverlust nach Halbsatz 2 außer Betracht bleibt. Damit fehlt ein verlangter Bestandteil.",
+      "evidence": [
+        "V hat das Gerät nur ein einziges Mal für wenige Minuten bestimmungsgemäß genutzt.",
+        "Eine Verschlechterung ist nicht eingetreten."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort stellt zwar fest, dass keine Verschlechterung eingetreten sei. Sie prüft dies aber nur als hilfsweisen Ausschluss nach § 346 Abs. 3 S. 1 Nr. 3 BGB. Sie behandelt weder den Wertersatzanspruch nach § 346 Abs. 2 S. 1 Nr. 3 BGB noch stellt sie klar, dass ein allein durch bestimmungsgemäße Ingebrauchnahme verursachter Neuwertigkeitsverlust nach Halbsatz 2 außer Betracht bleibt. Damit fehlt ein verlangter Bestandteil.",
+          "evidence": [
+            "V hat das Gerät nur ein einziges Mal für wenige Minuten bestimmungsgemäß genutzt.",
+            "Eine Verschlechterung ist nicht eingetreten."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Den Wertersatzanspruch wegen Verschlechterung nach § 346 Abs. 2 S. 1 Nr. 3 BGB verneinen",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Festhalten, dass die kurze bestimmungsgemäße Nutzung keine Beschädigung verursachte",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Einen allein durch bestimmungsgemäße Ingebrauchnahme eintretenden Neuwertigkeitsverlust nach Halbsatz 2 außer Betracht lassen",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Vs Nutzung des Fitness-Trainers und ein Wertersatzanspruch wegen Verschlechterung nach § 346 Abs. 2 S. 1 Nr. 3 BGB",
+            "evidence_scope": "Vs Nutzung des Fitness-Trainers; hilfsweise Prüfung des Ausschlusses nach § 346 Abs. 3 S. 1 Nr. 3 BGB",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Hilfsweise entfalle Wertersatz nach § 346 Abs. 3 S. 1 Nr. 3 BGB, weil V das Gerät nur kurz bestimmungsgemäß genutzt habe und keine Verschlechterung eingetreten sei.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint einen Wertersatzanspruch wegen Verschlechterung. Sie stellt auf die einmalige, kurzzeitige, bestimmungsgemäße Nutzung ab und bejaht keine Beschädigung bzw. Verschlechterung. Damit wird auch ein bloßer Neuwertigkeitsverlust aus bestimmungsgemäßer Ingebrauchnahme nicht als ersatzpflichtige Verschlechterung behandelt. Dass die Antwort dabei § 346 III statt ausdrücklich § 346 Abs. 2 S. 1 Nr. 3 BGB nennt, ändert am rechtlichen Ergebnis nichts.",
+          "evidence": [
+            "wäre ein Wertersatzanspruch nach § 346 III 1 Nr. 3 BGB ausgeschlossen",
+            "V hat das Gerät nur ein einziges Mal für wenige Minuten bestimmungsgemäß genutzt. Eine Verschlechterung ist nicht eingetreten.",
+            "Auch insoweit scheidet ein Wertersatzanspruch aus."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Verneinung eines Wertersatzanspruchs des U wegen Verschlechterung",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Einmalige knapp zehnminütige, bestimmungsgemäße Nutzung verursachte keine geschilderte Beschädigung/Verschlechterung",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Allein durch bestimmungsgemäße Ingebrauchnahme eintretender Neuwertigkeitsverlust bleibt außer Betracht",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "U gegen V; Wertersatz wegen Verschlechterung des Fitness-Trainers durch kurze Nutzung",
+            "evidence_scope": "U gegen V; Wertersatz wegen Nutzung/Verschlechterung des Fitness-Trainers",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Kein Wertersatz, weil das Gerät nur einmal kurz bestimmungsgemäß genutzt wurde und keine Verschlechterung eingetreten ist; hilfsweise Ausschluss nach § 346 III 1 Nr. 3 BGB.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Kriterium verlangt die Verneinung eines Wertersatzanspruchs aus § 346 Abs. 2 S. 1 Nr. 3 BGB unter Berücksichtigung von Halbsatz 2 (Ingebrauchnahmeprivileg). Die Gutachtenlösung prüft diesen Anspruchstatbestand überhaupt nicht, sondern stützt sich auf den Nutzungswertersatz nach § 346 Abs. 2 S. 1 Nr. 1 BGB und erwähnt das Thema Verschlechterung lediglich kursorisch unter § 346 Abs. 3 S. 1 Nr. 3 BGB.",
+          "evidence": [
+            "A. Anspruch auf Wertersatz für die Nutzung des Fitness-Trainers gemäß § 346 II 1 Nr. 1 BGB",
+            "Selbst wenn man § 327o BGB nicht für anwendbar hielte, wäre ein Wertersatzanspruch nach § 346 III 1 Nr. 3 BGB ausgeschlossen.",
+            "Eine Verschlechterung ist nicht eingetreten."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Prüfung und Verneinung eines Anspruchs auf Wertersatz wegen Verschlechterung aus § 346 Abs. 2 S. 1 Nr. 3 BGB",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Ausschluss eines etwaigen Neuwertigkeitsverlusts nach § 346 Abs. 2 S. 1 Nr. 3 Hs. 2 BGB wegen bloßer bestimmungsgemäßer Ingebrauchnahme",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Wertersatzanspruch des U gegen V wegen Verschlechterung (§ 346 Abs. 2 S. 1 Nr. 3 BGB inkl. Hs. 2)",
+            "evidence_scope": "Wertersatz wegen Nutzung (§ 346 Abs. 2 S. 1 Nr. 1 BGB i.V.m. § 327o BGB sowie § 346 Abs. 3 S. 1 Nr. 3 BGB)",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Antwort prüft primär Wertersatz für Nutzungen (§ 346 Abs. 2 S. 1 Nr. 1 BGB) und erwähnt Verschlechterung nur beiläufig im Rahmen des § 346 Abs. 3 S. 1 Nr. 3 BGB, ohne § 346 Abs. 2 S. 1 Nr. 3 BGB und dessen Hs. 2 (bestimmungsgemäße Ingebrauchnahme) zu prüfen.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 16861,
+        "output_tokens": 14181,
+        "total_tokens": 31042,
+        "cached_input_tokens": 1024,
+        "cache_write_tokens": 5239
+      },
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt zwar fest, dass keine Verschlechterung eingetreten sei. Sie prüft dies aber nur als hilfsweisen Ausschluss nach § 346 Abs. 3 S. 1 Nr. 3 BGB. Sie behandelt weder den Wertersatzanspruch nach § 346 Abs. 2 S. 1 Nr. 3 BGB noch stellt sie klar, dass ein allein durch bestimmungsgemäße Ingebrauchnahme verursachter Neuwertigkeitsverlust nach Halbsatz 2 außer Betracht bleibt. Damit fehlt ein verlangter Bestandteil.",
+              "evidence": [
+                "V hat das Gerät nur ein einziges Mal für wenige Minuten bestimmungsgemäß genutzt.",
+                "Eine Verschlechterung ist nicht eingetreten."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Den Wertersatzanspruch wegen Verschlechterung nach § 346 Abs. 2 S. 1 Nr. 3 BGB verneinen",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Festhalten, dass die kurze bestimmungsgemäße Nutzung keine Beschädigung verursachte",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Einen allein durch bestimmungsgemäße Ingebrauchnahme eintretenden Neuwertigkeitsverlust nach Halbsatz 2 außer Betracht lassen",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Vs Nutzung des Fitness-Trainers und ein Wertersatzanspruch wegen Verschlechterung nach § 346 Abs. 2 S. 1 Nr. 3 BGB",
+                "evidence_scope": "Vs Nutzung des Fitness-Trainers; hilfsweise Prüfung des Ausschlusses nach § 346 Abs. 3 S. 1 Nr. 3 BGB",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Hilfsweise entfalle Wertersatz nach § 346 Abs. 3 S. 1 Nr. 3 BGB, weil V das Gerät nur kurz bestimmungsgemäß genutzt habe und keine Verschlechterung eingetreten sei.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint einen Wertersatzanspruch wegen Verschlechterung. Sie stellt auf die einmalige, kurzzeitige, bestimmungsgemäße Nutzung ab und bejaht keine Beschädigung bzw. Verschlechterung. Damit wird auch ein bloßer Neuwertigkeitsverlust aus bestimmungsgemäßer Ingebrauchnahme nicht als ersatzpflichtige Verschlechterung behandelt. Dass die Antwort dabei § 346 III statt ausdrücklich § 346 Abs. 2 S. 1 Nr. 3 BGB nennt, ändert am rechtlichen Ergebnis nichts.",
+              "evidence": [
+                "wäre ein Wertersatzanspruch nach § 346 III 1 Nr. 3 BGB ausgeschlossen",
+                "V hat das Gerät nur ein einziges Mal für wenige Minuten bestimmungsgemäß genutzt. Eine Verschlechterung ist nicht eingetreten.",
+                "Auch insoweit scheidet ein Wertersatzanspruch aus."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Verneinung eines Wertersatzanspruchs des U wegen Verschlechterung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Einmalige knapp zehnminütige, bestimmungsgemäße Nutzung verursachte keine geschilderte Beschädigung/Verschlechterung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Allein durch bestimmungsgemäße Ingebrauchnahme eintretender Neuwertigkeitsverlust bleibt außer Betracht",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "U gegen V; Wertersatz wegen Verschlechterung des Fitness-Trainers durch kurze Nutzung",
+                "evidence_scope": "U gegen V; Wertersatz wegen Nutzung/Verschlechterung des Fitness-Trainers",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Kein Wertersatz, weil das Gerät nur einmal kurz bestimmungsgemäß genutzt wurde und keine Verschlechterung eingetreten ist; hilfsweise Ausschluss nach § 346 III 1 Nr. 3 BGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "stage": "tiebreaker",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium verlangt die Verneinung eines Wertersatzanspruchs aus § 346 Abs. 2 S. 1 Nr. 3 BGB unter Berücksichtigung von Halbsatz 2 (Ingebrauchnahmeprivileg). Die Gutachtenlösung prüft diesen Anspruchstatbestand überhaupt nicht, sondern stützt sich auf den Nutzungswertersatz nach § 346 Abs. 2 S. 1 Nr. 1 BGB und erwähnt das Thema Verschlechterung lediglich kursorisch unter § 346 Abs. 3 S. 1 Nr. 3 BGB.",
+              "evidence": [
+                "A. Anspruch auf Wertersatz für die Nutzung des Fitness-Trainers gemäß § 346 II 1 Nr. 1 BGB",
+                "Selbst wenn man § 327o BGB nicht für anwendbar hielte, wäre ein Wertersatzanspruch nach § 346 III 1 Nr. 3 BGB ausgeschlossen.",
+                "Eine Verschlechterung ist nicht eingetreten."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Prüfung und Verneinung eines Anspruchs auf Wertersatz wegen Verschlechterung aus § 346 Abs. 2 S. 1 Nr. 3 BGB",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Ausschluss eines etwaigen Neuwertigkeitsverlusts nach § 346 Abs. 2 S. 1 Nr. 3 Hs. 2 BGB wegen bloßer bestimmungsgemäßer Ingebrauchnahme",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Wertersatzanspruch des U gegen V wegen Verschlechterung (§ 346 Abs. 2 S. 1 Nr. 3 BGB inkl. Hs. 2)",
+                "evidence_scope": "Wertersatz wegen Nutzung (§ 346 Abs. 2 S. 1 Nr. 1 BGB i.V.m. § 327o BGB sowie § 346 Abs. 3 S. 1 Nr. 3 BGB)",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Antwort prüft primär Wertersatz für Nutzungen (§ 346 Abs. 2 S. 1 Nr. 1 BGB) und erwähnt Verschlechterung nur beiläufig im Rahmen des § 346 Abs. 3 S. 1 Nr. 3 BGB, ohne § 346 Abs. 2 S. 1 Nr. 3 BGB und dessen Hs. 2 (bestimmungsgemäße Ingebrauchnahme) zu prüfen.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "resolved_by_tiebreaker"
+    }
+  ],
+  "style_results": []
+}

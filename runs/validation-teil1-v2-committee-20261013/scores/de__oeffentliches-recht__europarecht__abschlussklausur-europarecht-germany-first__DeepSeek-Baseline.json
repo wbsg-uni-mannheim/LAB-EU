@@ -1,0 +1,499 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/europarecht/abschlussklausur-europarecht-germany-first",
+    "title": "Abschlussklausur Europarecht: „Germany first“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__europarecht__abschlussklausur-europarecht-germany-first/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/europarecht/abschlussklausur-europarecht-germany-first/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:34:53.659975+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Zulässigkeit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Zulässigkeit › Klagegegenstand": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 15362,
+    "output_tokens": 9204,
+    "total_tokens": 24566,
+    "cached_input_tokens": 8336,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 15362,
+    "output_tokens": 9204,
+    "total_tokens": 24566,
+    "cached_input_tokens": 8336,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-011",
+      "title": "Art. 35 AEUV als Klagegegenstand",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort behandelt die konkrete Rüge gegen das deutsche Vorkaufsrecht als zulässigen Gegenstand nach Art. 258 AEUV und stellt im selben Fall den Verstoß gegen Art. 35 AEUV fest. Sie verwirft die Rüge nicht als grundsätzlich unüberprüfbar.",
+      "evidence": [
+        "Die Kommission macht geltend, die BRD habe durch den Erlass einer Rechtsverordnung ... gegen ihre Verpflichtungen aus dem AEUV verstoßen. Dies ist ein zulässiger Klagegegenstand im Sinne des Art. 258 Abs. 1 AEUV.",
+        "Die deutsche Rechtsverordnung verstößt gegen das Verbot mengenmäßiger Ausfuhrbeschränkungen und Maßnahmen gleicher Wirkung aus Art. 35 AEUV."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die konkrete Rüge gegen das deutsche Vorkaufsrecht als zulässigen Gegenstand nach Art. 258 AEUV und stellt im selben Fall den Verstoß gegen Art. 35 AEUV fest. Sie verwirft die Rüge nicht als grundsätzlich unüberprüfbar.",
+          "evidence": [
+            "Die Kommission macht geltend, die BRD habe durch den Erlass einer Rechtsverordnung ... gegen ihre Verpflichtungen aus dem AEUV verstoßen. Dies ist ein zulässiger Klagegegenstand im Sinne des Art. 258 Abs. 1 AEUV.",
+            "Die deutsche Rechtsverordnung verstößt gegen das Verbot mengenmäßiger Ausfuhrbeschränkungen und Maßnahmen gleicher Wirkung aus Art. 35 AEUV."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die behauptete Verletzung der Ausfuhrfreiheit aus Art. 35 AEUV durch das deutsche Impfstoff-Vorkaufsrecht wird als tauglicher Gegenstand des Vertragsverletzungsverfahrens behandelt.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Die gegen Deutschland gerichtete Rüge, dass das Impfstoff-Vorkaufsrecht Art. 35 AEUV verletzt, als Gegenstand der Vertragsverletzungsverfahren.",
+            "evidence_scope": "Die Kommission beanstandet die deutsche Rechtsverordnung als AEUV-widrig und die Antwort stellt später für dieselbe Rechtsverordnung einen Verstoß gegen Art. 35 AEUV fest.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die konkrete Rüge betrifft eine mögliche Verletzung von Verpflichtungen aus dem AEUV; deshalb sei sie ein zulässiger Klagegegenstand nach Art. 258 AEUV.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verwirft die Art. 35-Rüge nicht als unüberprüfbar, sondern behandelt sie als Hauptprüfungsmaßstab und bejaht einen Verstoß. Damit ist die mögliche Primärrechtsverletzung als tauglicher Klagegegenstand behandelt.",
+          "evidence": [
+            "Dies ist ein zulässiger Klagegegenstand im Sinne des Art. 258 Abs. 1 AEUV.",
+            "Als Hauptprüfungsmaßstab kommt das Verbot mengenmäßiger Ausfuhrbeschränkungen und Maßnahmen gleicher Wirkung (Art. 35 AEUV) nebst der Rechtfertigungsmöglichkeit nach Art. 36 AEUV in Betracht.",
+            "Die deutsche Rechtsverordnung verstößt gegen das Verbot mengenmäßiger Ausfuhrbeschränkungen und Maßnahmen gleicher Wirkung aus Art. 35 AEUV."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die behauptete Verletzung der Ausfuhrfreiheit aus Art. 35 AEUV durch das deutsche Impfstoff-Vorkaufsrecht wird als tauglicher Gegenstand der Vertragsverletzungsverfahren behandelt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Rüge betrifft eine mögliche Verletzung primären Unionsrechts durch Deutschland.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Deutschland; deutsches Impfstoff-Vorkaufsrecht; Verletzung der Ausfuhrfreiheit aus Art. 35 AEUV als Gegenstand der Vertragsverletzungsverfahren (Art. 258/259 AEUV).",
+            "evidence_scope": "Deutschland; Rechtsverordnung mit Export-Vorkaufsrecht; Verstoß gegen Verpflichtungen aus AEUV/Art. 35 AEUV; zulässiger Klagegegenstand nach Art. 258 Abs. 1 AEUV.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Eine behauptete Verletzung von Verpflichtungen aus dem AEUV bzw. des Art. 35 AEUV durch die BRD ist ein zulässiger Klagegegenstand im Sinne des Art. 258 Abs. 1 AEUV.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 15362,
+        "output_tokens": 9204,
+        "total_tokens": 24566,
+        "cached_input_tokens": 8336,
+        "cache_write_tokens": 0
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt die konkrete Rüge gegen das deutsche Vorkaufsrecht als zulässigen Gegenstand nach Art. 258 AEUV und stellt im selben Fall den Verstoß gegen Art. 35 AEUV fest. Sie verwirft die Rüge nicht als grundsätzlich unüberprüfbar.",
+              "evidence": [
+                "Die Kommission macht geltend, die BRD habe durch den Erlass einer Rechtsverordnung ... gegen ihre Verpflichtungen aus dem AEUV verstoßen. Dies ist ein zulässiger Klagegegenstand im Sinne des Art. 258 Abs. 1 AEUV.",
+                "Die deutsche Rechtsverordnung verstößt gegen das Verbot mengenmäßiger Ausfuhrbeschränkungen und Maßnahmen gleicher Wirkung aus Art. 35 AEUV."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die behauptete Verletzung der Ausfuhrfreiheit aus Art. 35 AEUV durch das deutsche Impfstoff-Vorkaufsrecht wird als tauglicher Gegenstand des Vertragsverletzungsverfahrens behandelt.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Die gegen Deutschland gerichtete Rüge, dass das Impfstoff-Vorkaufsrecht Art. 35 AEUV verletzt, als Gegenstand der Vertragsverletzungsverfahren.",
+                "evidence_scope": "Die Kommission beanstandet die deutsche Rechtsverordnung als AEUV-widrig und die Antwort stellt später für dieselbe Rechtsverordnung einen Verstoß gegen Art. 35 AEUV fest.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die konkrete Rüge betrifft eine mögliche Verletzung von Verpflichtungen aus dem AEUV; deshalb sei sie ein zulässiger Klagegegenstand nach Art. 258 AEUV.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verwirft die Art. 35-Rüge nicht als unüberprüfbar, sondern behandelt sie als Hauptprüfungsmaßstab und bejaht einen Verstoß. Damit ist die mögliche Primärrechtsverletzung als tauglicher Klagegegenstand behandelt.",
+              "evidence": [
+                "Dies ist ein zulässiger Klagegegenstand im Sinne des Art. 258 Abs. 1 AEUV.",
+                "Als Hauptprüfungsmaßstab kommt das Verbot mengenmäßiger Ausfuhrbeschränkungen und Maßnahmen gleicher Wirkung (Art. 35 AEUV) nebst der Rechtfertigungsmöglichkeit nach Art. 36 AEUV in Betracht.",
+                "Die deutsche Rechtsverordnung verstößt gegen das Verbot mengenmäßiger Ausfuhrbeschränkungen und Maßnahmen gleicher Wirkung aus Art. 35 AEUV."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die behauptete Verletzung der Ausfuhrfreiheit aus Art. 35 AEUV durch das deutsche Impfstoff-Vorkaufsrecht wird als tauglicher Gegenstand der Vertragsverletzungsverfahren behandelt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Rüge betrifft eine mögliche Verletzung primären Unionsrechts durch Deutschland.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Deutschland; deutsches Impfstoff-Vorkaufsrecht; Verletzung der Ausfuhrfreiheit aus Art. 35 AEUV als Gegenstand der Vertragsverletzungsverfahren (Art. 258/259 AEUV).",
+                "evidence_scope": "Deutschland; Rechtsverordnung mit Export-Vorkaufsrecht; Verstoß gegen Verpflichtungen aus AEUV/Art. 35 AEUV; zulässiger Klagegegenstand nach Art. 258 Abs. 1 AEUV.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Eine behauptete Verletzung von Verpflichtungen aus dem AEUV bzw. des Art. 35 AEUV durch die BRD ist ein zulässiger Klagegegenstand im Sinne des Art. 258 Abs. 1 AEUV.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-011",
+      "title": "Art. 35 AEUV als Klagegegenstand",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Im Abschnitt zum Klagegegenstand verbindet die Antwort die konkrete Rechtsverordnung mit der behaupteten Verletzung von AEUV-Verpflichtungen und zieht daraus den Schluss, dass ein zulässiger Gegenstand nach Art. 258 AEUV vorliegt. Die allgemeine Bezugnahme auf AEUV-Verpflichtungen genügt hier als maßgebliche Prämisse für die Rüge aus Art. 35 AEUV.",
+      "evidence": [
+        "Die Kommission macht geltend, die BRD habe durch den Erlass einer Rechtsverordnung ... gegen ihre Verpflichtungen aus dem AEUV verstoßen.",
+        "Dies ist ein zulässiger Klagegegenstand im Sinne des Art. 258 Abs. 1 AEUV."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Im Abschnitt zum Klagegegenstand verbindet die Antwort die konkrete Rechtsverordnung mit der behaupteten Verletzung von AEUV-Verpflichtungen und zieht daraus den Schluss, dass ein zulässiger Gegenstand nach Art. 258 AEUV vorliegt. Die allgemeine Bezugnahme auf AEUV-Verpflichtungen genügt hier als maßgebliche Prämisse für die Rüge aus Art. 35 AEUV.",
+          "evidence": [
+            "Die Kommission macht geltend, die BRD habe durch den Erlass einer Rechtsverordnung ... gegen ihre Verpflichtungen aus dem AEUV verstoßen.",
+            "Dies ist ein zulässiger Klagegegenstand im Sinne des Art. 258 Abs. 1 AEUV."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verbindet im Abschnitt zum Klagegegenstand den Maßstab des Art. 258 Abs. 1 AEUV, den konkreten Sachverhalt der Exportbeschränkung und die Schlussfolgerung, dass ein zulässiger Klagegegenstand vorliegt; die spätere Art. 35-Prüfung bestätigt den Gegenstand. Das ist methodisch ausreichend.",
+          "evidence": [
+            "Die Kommission macht geltend, die BRD habe durch den Erlass einer Rechtsverordnung, die den Export eines Impfstoffs gegen die D‑Variante des Corona‑Virus unter ein Vorkaufsrecht der BRD stellt, gegen ihre Verpflichtungen aus dem AEUV verstoßen. Dies ist ein zulässiger Klagegegenstand im Sinne des Art. 258 Abs. 1 AEUV."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Im Abschnitt zum Klagegegenstand verbindet die Antwort die konkrete Rechtsverordnung mit der behaupteten Verletzung von AEUV-Verpflichtungen und zieht daraus den Schluss, dass ein zulässiger Gegenstand nach Art. 258 AEUV vorliegt. Die allgemeine Bezugnahme auf AEUV-Verpflichtungen genügt hier als maßgebliche Prämisse für die Rüge aus Art. 35 AEUV.",
+              "evidence": [
+                "Die Kommission macht geltend, die BRD habe durch den Erlass einer Rechtsverordnung ... gegen ihre Verpflichtungen aus dem AEUV verstoßen.",
+                "Dies ist ein zulässiger Klagegegenstand im Sinne des Art. 258 Abs. 1 AEUV."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verbindet im Abschnitt zum Klagegegenstand den Maßstab des Art. 258 Abs. 1 AEUV, den konkreten Sachverhalt der Exportbeschränkung und die Schlussfolgerung, dass ein zulässiger Klagegegenstand vorliegt; die spätere Art. 35-Prüfung bestätigt den Gegenstand. Das ist methodisch ausreichend.",
+              "evidence": [
+                "Die Kommission macht geltend, die BRD habe durch den Erlass einer Rechtsverordnung, die den Export eines Impfstoffs gegen die D‑Variante des Corona‑Virus unter ein Vorkaufsrecht der BRD stellt, gegen ihre Verpflichtungen aus dem AEUV verstoßen. Dies ist ein zulässiger Klagegegenstand im Sinne des Art. 258 Abs. 1 AEUV."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-raufhandel-mit-ungewisser-kausalitat",
+    "title": "Fortgeschrittenenübungsklausur: Raufhandel mit ungewisser Kausalität"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenubungsklausur-raufhandel-mit-ungewisser-kausalitat/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-raufhandel-mit-ungewisser-kausalitat/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:32:22.967159+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 1,
+    "points_available": 1,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Strafbarkeit von T": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Strafbarkeit von T › §§ 223 Abs. 1, 224 Abs. 1 Nr. 2, 22, 23 Abs. 1 StGB gegenüber R und S": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "conclusion": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 21599,
+    "output_tokens": 1476,
+    "total_tokens": 23075,
+    "cached_input_tokens": 1024,
+    "cache_write_tokens": 10167
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 21599,
+    "output_tokens": 1476,
+    "total_tokens": 23075,
+    "cached_input_tokens": 1024,
+    "cache_write_tokens": 10167
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-032",
+      "title": "Keine vollendete Körperverletzung des T an R",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort behandelt ausdrücklich T als möglichen Täter einer vollendeten Körperverletzung zulasten von R. Sie verneint die Zurechnung, weil sich kein durch T verursachter Verletzungserfolg feststellen lässt.",
+      "evidence": [
+        "Nach in dubio pro reo kann eine durch T verursachte vollendete Körperverletzung nicht festgestellt werden."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt ausdrücklich T als möglichen Täter einer vollendeten Körperverletzung zulasten von R. Sie verneint die Zurechnung, weil sich kein durch T verursachter Verletzungserfolg feststellen lässt.",
+          "evidence": [
+            "Nach in dubio pro reo kann eine durch T verursachte vollendete Körperverletzung nicht festgestellt werden."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Eine vollendete Körperverletzung des T zum Nachteil der R wird mangels Nachweises eines von T verursachten Verletzungserfolgs verneint.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "T; vollendete Körperverletzung zum Nachteil der R",
+            "evidence_scope": "T; vollendete Körperverletzung zum Nachteil der R und/oder S",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Ein durch T verursachter Verletzungserfolg der R ist nach dem Zweifelssatz nicht feststellbar.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft ausdrücklich eine vollendete Körperverletzung des T zum Nachteil der R mit und verneint sie wegen nicht nachweisbarer Treffer bzw. Kausalität nach dem Zweifelssatz. Damit ist die geforderte Verneinung erfüllt.",
+          "evidence": [
+            "T könnte sich wegen vollendeter Körperverletzung gem. § 223 Abs. 1 StGB strafbar gemacht haben, indem er im Rahmen der Schlägerei Faustschläge austeilte. Wie bei R und S ist jedoch unklar, ob und welche Treffer T bei R und/oder S landete.",
+            "Nach in dubio pro reo kann eine durch T verursachte vollendete Körperverletzung nicht festgestellt werden."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort verneint eine vollendete Körperverletzung des T zum Nachteil der R.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Verneinung stützt sich darauf, dass kein Faust- oder Vasenschlag des T als Ursache eines Verletzungserfolgs der R nachweisbar ist.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "T als möglicher Täter, R als Verletzte, vollendete Körperverletzung nach § 223 StGB",
+            "evidence_scope": "T als möglicher Täter, R und/oder S als Verletzte, vollendete Körperverletzung nach § 223 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Es ist nicht feststellbar, ob und welche Treffer T bei R landete; nach in dubio pro reo kann eine durch T verursachte vollendete Körperverletzung nicht festgestellt werden.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 21599,
+        "output_tokens": 1476,
+        "total_tokens": 23075,
+        "cached_input_tokens": 1024,
+        "cache_write_tokens": 10167
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt ausdrücklich T als möglichen Täter einer vollendeten Körperverletzung zulasten von R. Sie verneint die Zurechnung, weil sich kein durch T verursachter Verletzungserfolg feststellen lässt.",
+              "evidence": [
+                "Nach in dubio pro reo kann eine durch T verursachte vollendete Körperverletzung nicht festgestellt werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Eine vollendete Körperverletzung des T zum Nachteil der R wird mangels Nachweises eines von T verursachten Verletzungserfolgs verneint.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "T; vollendete Körperverletzung zum Nachteil der R",
+                "evidence_scope": "T; vollendete Körperverletzung zum Nachteil der R und/oder S",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Ein durch T verursachter Verletzungserfolg der R ist nach dem Zweifelssatz nicht feststellbar.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft ausdrücklich eine vollendete Körperverletzung des T zum Nachteil der R mit und verneint sie wegen nicht nachweisbarer Treffer bzw. Kausalität nach dem Zweifelssatz. Damit ist die geforderte Verneinung erfüllt.",
+              "evidence": [
+                "T könnte sich wegen vollendeter Körperverletzung gem. § 223 Abs. 1 StGB strafbar gemacht haben, indem er im Rahmen der Schlägerei Faustschläge austeilte. Wie bei R und S ist jedoch unklar, ob und welche Treffer T bei R und/oder S landete.",
+                "Nach in dubio pro reo kann eine durch T verursachte vollendete Körperverletzung nicht festgestellt werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort verneint eine vollendete Körperverletzung des T zum Nachteil der R.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Verneinung stützt sich darauf, dass kein Faust- oder Vasenschlag des T als Ursache eines Verletzungserfolgs der R nachweisbar ist.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "T als möglicher Täter, R als Verletzte, vollendete Körperverletzung nach § 223 StGB",
+                "evidence_scope": "T als möglicher Täter, R und/oder S als Verletzte, vollendete Körperverletzung nach § 223 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Es ist nicht feststellbar, ob und welche Treffer T bei R landete; nach in dubio pro reo kann eine durch T verursachte vollendete Körperverletzung nicht festgestellt werden.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": []
+}

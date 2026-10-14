@@ -1,0 +1,913 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/anfangerhausarbeit-wie-du-mir-so-ich-dir",
+    "title": "Anfängerhausarbeit: „Wie du mir, so ich dir“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-sol-high/20260730T221733Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerhausarbeit-wie-du-mir-so-ich-dir/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/anfangerhausarbeit-wie-du-mir-so-ich-dir/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:31:46.215519+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 2,
+  "n_passed": 2,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 2,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 2,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 5,
+    "points_available": 5,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 2,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 2
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 2
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 2
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 2
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Zulässigkeit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Begründetheit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Zulässigkeit › Beschwerdebefugnis": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Begründetheit › Religionsfreiheit, Art. 4 Abs. 1, Abs. 2 GG der T": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 2,
+      "n_passed": 2,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 57388,
+    "output_tokens": 12301,
+    "total_tokens": 69689,
+    "cached_input_tokens": 2432,
+    "cache_write_tokens": 26543
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 57388,
+    "output_tokens": 12301,
+    "total_tokens": 69689,
+    "cached_input_tokens": 2432,
+    "cache_write_tokens": 26543
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-004",
+      "title": "Mögliche Gleichheitsverletzung",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort erklärt ausdrücklich, dass eine Verletzung von Art. 3 Abs. 1 GG für J und aus denselben Gründen für T in Betracht kommt. Die Bezugnahme auf ihre ungünstigere Wartelistenposition und auf die Satz-2-Begünstigung sowie den zusätzlichen Vorrang lässt die mögliche Ungleichbehandlung erkennen; sie wird nicht ausgeschlossen.",
+      "evidence": [
+        "J beanstandet, durch die Aussicht auf eine wesentlich ungünstigere Position auf einer künftigen Warteliste",
+        "kommen ferner Verletzungen des Rechts auf Leben und körperliche Unversehrtheit aus Art. 2 Abs. 2 Satz 1 GG sowie des allgemeinen Gleichheitssatzes aus Art. 3 Abs. 1 GG in Betracht.",
+        "Die Ausnahme bezieht sich ihrem eindeutigen Wortlaut nach aber nur auf die Priorisierung in § 12 Abs. 3 Satz 2 TPG, nicht auf den zusätzlichen Vorrang nach Satz 3."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erklärt ausdrücklich, dass eine Verletzung von Art. 3 Abs. 1 GG für J und aus denselben Gründen für T in Betracht kommt. Die Bezugnahme auf ihre ungünstigere Wartelistenposition und auf die Satz-2-Begünstigung sowie den zusätzlichen Vorrang lässt die mögliche Ungleichbehandlung erkennen; sie wird nicht ausgeschlossen.",
+          "evidence": [
+            "J beanstandet, durch die Aussicht auf eine wesentlich ungünstigere Position auf einer künftigen Warteliste",
+            "kommen ferner Verletzungen des Rechts auf Leben und körperliche Unversehrtheit aus Art. 2 Abs. 2 Satz 1 GG sowie des allgemeinen Gleichheitssatzes aus Art. 3 Abs. 1 GG in Betracht.",
+            "Die Ausnahme bezieht sich ihrem eindeutigen Wortlaut nach aber nur auf die Priorisierung in § 12 Abs. 3 Satz 2 TPG, nicht auf den zusätzlichen Vorrang nach Satz 3."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort prüft die Beschwerdebefugnis von J und T hinsichtlich Art. 3 Abs. 1 oder Abs. 3 GG.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Eine mögliche Gleichheitsverletzung wird nicht von vornherein ausgeschlossen.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Möglichkeit einer Ungleichbehandlung durch die Bevorzugung Spendenwilliger mittels Punkte-Multiplikator und Vorrang wird auf die ungünstigere Wartelistenposition der Beschwerdeführerinnen bezogen.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Beschwerdebefugnis von J und T; mögliche Gleichheitsverletzung wegen der Bevorzugung Spendenwilliger durch Faktor 1,5 und Vorrang in Pattsituationen",
+            "evidence_scope": "Beschwerdebefugnis von J und T; mögliche Verletzung von Art. 3 Abs. 1 GG durch geänderte Chancen auf der Warteliste und die Regelungen des § 12 Abs. 3 Sätze 2 und 3 TPG",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Neuregelung verändert die Chancen auf ein möglicherweise lebensrettendes Organ und kann J eine wesentlich ungünstigere Wartelistenposition bescheren; der zusätzliche Vorrang nach Satz 3 gilt auch bei den genannten Ausnahmen nicht.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort nennt im Rahmen der Beschwerdebefugnis für J Art. 3 Abs. 1 GG und für T Art. 3 Abs. 1 sowie Art. 3 Abs. 3 Satz 1 GG ausdrücklich als möglicherweise verletzt. Damit wird eine Gleichheitsverletzung nicht von vornherein ausgeschlossen, und es liegt kein Ausschluss der möglichen Gleichheitsverletzung vor. Dass die konkrete Bevorzugung durch Faktor 1,5 und Vorrang nicht im Detail entfaltet wird, steht der Erfüllung dieser niedrigschwelligen Prüfung nicht entgegen.",
+          "evidence": [
+            "Da die Neuregelung die Chancen auf den Erhalt eines möglicherweise lebensrettenden Organs verändert, kommen ferner Verletzungen des Rechts auf Leben und körperliche Unversehrtheit aus Art. 2 Abs. 2 Satz 1 GG sowie des allgemeinen Gleichheitssatzes aus Art. 3 Abs. 1 GG in Betracht.",
+            "Für T kommen aus denselben Gründen Verletzungen aus Art. 2 Abs. 1 in Verbindung mit Art. 1 Abs. 1 GG, Art. 2 Abs. 2 Satz 1 GG und Art. 3 Abs. 1 GG in Betracht.",
+            "ist auch eine Verletzung von Art. 3 Abs. 3 Satz 1 GG nicht von vornherein ausgeschlossen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Für J wird bei der Beschwerdebefugnis eine Verletzung von Art. 3 Abs. 1 GG als möglich bezeichnet und nicht ausgeschlossen.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Für T wird bei der Beschwerdebefugnis eine Verletzung von Art. 3 Abs. 1 oder Art. 3 Abs. 3 GG als möglich bezeichnet und nicht ausgeschlossen.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die mögliche Gleichheitsverletzung wird nicht unter Hinweis auf die Bevorzugung von Spendenwilligen verneint.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Beschwerdebefugnis für J und T; mögliche Verletzung von Art. 3 Abs. 1 oder Abs. 3 GG wegen Bevorzugung Spendenwilliger durch Faktor 1,5 und Vorrang in Pattsituationen",
+            "evidence_scope": "Abschnitt A (Beschwerdebefugnis), I. Möglichkeit einer Grundrechtsverletzung, 1. J und 2. T; dortige Erwähnung von Art. 3 Abs. 1 GG bzw. Art. 3 Abs. 3 Satz 1 GG als möglicherweise verletzt",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Neuregelung verändere die Chancen auf ein lebensrettendes Organ; für T sei zudem eine Benachteiligung wegen ihres Glaubens nicht ausgeschlossen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {
+        "input_tokens": 28653,
+        "output_tokens": 8966,
+        "total_tokens": 37619,
+        "cached_input_tokens": 1280,
+        "cache_write_tokens": 13253
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erklärt ausdrücklich, dass eine Verletzung von Art. 3 Abs. 1 GG für J und aus denselben Gründen für T in Betracht kommt. Die Bezugnahme auf ihre ungünstigere Wartelistenposition und auf die Satz-2-Begünstigung sowie den zusätzlichen Vorrang lässt die mögliche Ungleichbehandlung erkennen; sie wird nicht ausgeschlossen.",
+              "evidence": [
+                "J beanstandet, durch die Aussicht auf eine wesentlich ungünstigere Position auf einer künftigen Warteliste",
+                "kommen ferner Verletzungen des Rechts auf Leben und körperliche Unversehrtheit aus Art. 2 Abs. 2 Satz 1 GG sowie des allgemeinen Gleichheitssatzes aus Art. 3 Abs. 1 GG in Betracht.",
+                "Die Ausnahme bezieht sich ihrem eindeutigen Wortlaut nach aber nur auf die Priorisierung in § 12 Abs. 3 Satz 2 TPG, nicht auf den zusätzlichen Vorrang nach Satz 3."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort prüft die Beschwerdebefugnis von J und T hinsichtlich Art. 3 Abs. 1 oder Abs. 3 GG.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Eine mögliche Gleichheitsverletzung wird nicht von vornherein ausgeschlossen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Möglichkeit einer Ungleichbehandlung durch die Bevorzugung Spendenwilliger mittels Punkte-Multiplikator und Vorrang wird auf die ungünstigere Wartelistenposition der Beschwerdeführerinnen bezogen.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Beschwerdebefugnis von J und T; mögliche Gleichheitsverletzung wegen der Bevorzugung Spendenwilliger durch Faktor 1,5 und Vorrang in Pattsituationen",
+                "evidence_scope": "Beschwerdebefugnis von J und T; mögliche Verletzung von Art. 3 Abs. 1 GG durch geänderte Chancen auf der Warteliste und die Regelungen des § 12 Abs. 3 Sätze 2 und 3 TPG",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Neuregelung verändert die Chancen auf ein möglicherweise lebensrettendes Organ und kann J eine wesentlich ungünstigere Wartelistenposition bescheren; der zusätzliche Vorrang nach Satz 3 gilt auch bei den genannten Ausnahmen nicht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort nennt im Rahmen der Beschwerdebefugnis für J Art. 3 Abs. 1 GG und für T Art. 3 Abs. 1 sowie Art. 3 Abs. 3 Satz 1 GG ausdrücklich als möglicherweise verletzt. Damit wird eine Gleichheitsverletzung nicht von vornherein ausgeschlossen, und es liegt kein Ausschluss der möglichen Gleichheitsverletzung vor. Dass die konkrete Bevorzugung durch Faktor 1,5 und Vorrang nicht im Detail entfaltet wird, steht der Erfüllung dieser niedrigschwelligen Prüfung nicht entgegen.",
+              "evidence": [
+                "Da die Neuregelung die Chancen auf den Erhalt eines möglicherweise lebensrettenden Organs verändert, kommen ferner Verletzungen des Rechts auf Leben und körperliche Unversehrtheit aus Art. 2 Abs. 2 Satz 1 GG sowie des allgemeinen Gleichheitssatzes aus Art. 3 Abs. 1 GG in Betracht.",
+                "Für T kommen aus denselben Gründen Verletzungen aus Art. 2 Abs. 1 in Verbindung mit Art. 1 Abs. 1 GG, Art. 2 Abs. 2 Satz 1 GG und Art. 3 Abs. 1 GG in Betracht.",
+                "ist auch eine Verletzung von Art. 3 Abs. 3 Satz 1 GG nicht von vornherein ausgeschlossen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Für J wird bei der Beschwerdebefugnis eine Verletzung von Art. 3 Abs. 1 GG als möglich bezeichnet und nicht ausgeschlossen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Für T wird bei der Beschwerdebefugnis eine Verletzung von Art. 3 Abs. 1 oder Art. 3 Abs. 3 GG als möglich bezeichnet und nicht ausgeschlossen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die mögliche Gleichheitsverletzung wird nicht unter Hinweis auf die Bevorzugung von Spendenwilligen verneint.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Beschwerdebefugnis für J und T; mögliche Verletzung von Art. 3 Abs. 1 oder Abs. 3 GG wegen Bevorzugung Spendenwilliger durch Faktor 1,5 und Vorrang in Pattsituationen",
+                "evidence_scope": "Abschnitt A (Beschwerdebefugnis), I. Möglichkeit einer Grundrechtsverletzung, 1. J und 2. T; dortige Erwähnung von Art. 3 Abs. 1 GG bzw. Art. 3 Abs. 3 Satz 1 GG als möglicherweise verletzt",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Neuregelung verändere die Chancen auf ein lebensrettendes Organ; für T sei zudem eine Benachteiligung wegen ihres Glaubens nicht ausgeschlossen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-013",
+      "title": "Influenzierender Eingriff in Ts Religionsfreiheit",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort bejaht ausdrücklich den mittelbaren Eingriff und begründet ihn mit beiden Priorisierungsvorteilen, den daraus folgenden erheblichen Überlebensnachteilen für T sowie der gezielten Verhaltenslenkung.",
+      "evidence": [
+        "Wegen des Faktors 1,5 und des Vorrangs bei maßgeblicher Wartezeit muss sie zwischen Glaubenstreue und einer erheblich besseren Überlebenschance wählen.",
+        "Der Staat beabsichtigt gerade, durch diesen Nachteil eine Verhaltensänderung herbeizuführen.",
+        "Eine derart zielgerichtete und gewichtige mittelbare Belastung ist ein Eingriff in Art. 4 Abs. 1 und 2 GG."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht ausdrücklich den mittelbaren Eingriff und begründet ihn mit beiden Priorisierungsvorteilen, den daraus folgenden erheblichen Überlebensnachteilen für T sowie der gezielten Verhaltenslenkung.",
+          "evidence": [
+            "Wegen des Faktors 1,5 und des Vorrangs bei maßgeblicher Wartezeit muss sie zwischen Glaubenstreue und einer erheblich besseren Überlebenschance wählen.",
+            "Der Staat beabsichtigt gerade, durch diesen Nachteil eine Verhaltensänderung herbeizuführen.",
+            "Eine derart zielgerichtete und gewichtige mittelbare Belastung ist ein Eingriff in Art. 4 Abs. 1 und 2 GG."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Mittelbarer beziehungsweise influenzierender Eingriff in Ts Religionsfreiheit wird bejaht, obwohl kein rechtlicher Spendezwang besteht.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Faktor 1,5 und Vorrang in Pattsituationen verbinden Ts glaubensgemäße Spendenablehnung mit spürbaren Nachteilen.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Nachteile lenken Ts Willensbildung gezielt zugunsten einer Spendenbereitschaft.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "T; Art. 4 Abs. 1 und 2 GG; Eingriff durch die angegriffene Priorisierung",
+            "evidence_scope": "T; Art. 4 Abs. 1 und 2 GG; Eingriff durch Faktor 1,5 und Vorrang bei maßgeblicher Wartezeit",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Priorisierung verschlechtert gezielt Ts Überlebenschancen, wenn sie ihrem Glauben gemäß eine Spende ablehnt, und soll sie durch diesen Nachteil zu einer Verhaltensänderung bewegen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht ausdrücklich einen zielgerichteten mittelbaren Eingriff in Art. 4 GG, benennt Faktor 1,5 und Wartezeitvorrang als nachteilige Verknüpfung mit Ts religiöser Spendenablehnung und stellt auf die staatliche Lenkung der Willensbildung zugunsten der Spendenbereitschaft ab. Damit sind alle PASS-Komponenten erfüllt; die FAIL-Bedingung greift nicht.",
+          "evidence": [
+            "Sie verschlechtern aber gezielt ihre Chancen auf ein lebensrettendes Organ, wenn sie das religiös gebotene Verhalten befolgt. Wegen des Faktors 1,5 und des Vorrangs bei maßgeblicher Wartezeit muss sie zwischen Glaubenstreue und einer erheblich besseren Überlebenschance wählen. Der Staat beabsichtigt gerade, durch diesen Nachteil eine Verhaltensänderung herbeizuführen. Eine derart zielgerichtete und gewichtige mittelbare Belastung ist ein Eingriff in Art. 4 Abs. 1 und 2 GG.",
+            "T ist folglich auch in ihrer Glaubensfreiheit aus Art. 4 Abs. 1 und 2 GG verletzt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort bejaht einen mittelbaren beziehungsweise influenzierenden Eingriff in Ts Religionsfreiheit und verneint ihn nicht wegen fehlenden rechtlichen Spendezwangs.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Der Eingriff wird damit begründet, dass der Faktor 1,5 und der Vorrang in Pattsituationen Ts glaubensgemäße Spendenablehnung mit spürbaren Nachteilen verbinden.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort stellt darauf ab, dass der Staat die Willensbildung gezielt zugunsten einer Spendenbereitschaft lenken will.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "T, Religionsfreiheit Art. 4 GG; influenzierender/mittelbarer Eingriff durch Faktor 1,5 und Vorrang wegen glaubensgemäßer Spendenablehnung",
+            "evidence_scope": "T, Art. 4 Abs. 1 und 2 GG; mittelbarer Eingriff durch Faktor 1,5 und Vorrang bei Wartezeit wegen religiös gebotener Spendenablehnung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Staat verschlechtert gezielt Ts Chancen auf ein lebensrettendes Organ, wenn sie ihre religiös gebotene Spendenablehnung befolgt; Faktor 1,5 und Wartezeitvorrang erzwingen eine Wahl zwischen Glaubenstreue und Überlebenschance, wobei der Staat gerade eine Verhaltensänderung herbeiführen will.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {
+        "input_tokens": 28735,
+        "output_tokens": 3335,
+        "total_tokens": 32070,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 13290
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht ausdrücklich den mittelbaren Eingriff und begründet ihn mit beiden Priorisierungsvorteilen, den daraus folgenden erheblichen Überlebensnachteilen für T sowie der gezielten Verhaltenslenkung.",
+              "evidence": [
+                "Wegen des Faktors 1,5 und des Vorrangs bei maßgeblicher Wartezeit muss sie zwischen Glaubenstreue und einer erheblich besseren Überlebenschance wählen.",
+                "Der Staat beabsichtigt gerade, durch diesen Nachteil eine Verhaltensänderung herbeizuführen.",
+                "Eine derart zielgerichtete und gewichtige mittelbare Belastung ist ein Eingriff in Art. 4 Abs. 1 und 2 GG."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Mittelbarer beziehungsweise influenzierender Eingriff in Ts Religionsfreiheit wird bejaht, obwohl kein rechtlicher Spendezwang besteht.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Faktor 1,5 und Vorrang in Pattsituationen verbinden Ts glaubensgemäße Spendenablehnung mit spürbaren Nachteilen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Nachteile lenken Ts Willensbildung gezielt zugunsten einer Spendenbereitschaft.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "T; Art. 4 Abs. 1 und 2 GG; Eingriff durch die angegriffene Priorisierung",
+                "evidence_scope": "T; Art. 4 Abs. 1 und 2 GG; Eingriff durch Faktor 1,5 und Vorrang bei maßgeblicher Wartezeit",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Priorisierung verschlechtert gezielt Ts Überlebenschancen, wenn sie ihrem Glauben gemäß eine Spende ablehnt, und soll sie durch diesen Nachteil zu einer Verhaltensänderung bewegen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht ausdrücklich einen zielgerichteten mittelbaren Eingriff in Art. 4 GG, benennt Faktor 1,5 und Wartezeitvorrang als nachteilige Verknüpfung mit Ts religiöser Spendenablehnung und stellt auf die staatliche Lenkung der Willensbildung zugunsten der Spendenbereitschaft ab. Damit sind alle PASS-Komponenten erfüllt; die FAIL-Bedingung greift nicht.",
+              "evidence": [
+                "Sie verschlechtern aber gezielt ihre Chancen auf ein lebensrettendes Organ, wenn sie das religiös gebotene Verhalten befolgt. Wegen des Faktors 1,5 und des Vorrangs bei maßgeblicher Wartezeit muss sie zwischen Glaubenstreue und einer erheblich besseren Überlebenschance wählen. Der Staat beabsichtigt gerade, durch diesen Nachteil eine Verhaltensänderung herbeizuführen. Eine derart zielgerichtete und gewichtige mittelbare Belastung ist ein Eingriff in Art. 4 Abs. 1 und 2 GG.",
+                "T ist folglich auch in ihrer Glaubensfreiheit aus Art. 4 Abs. 1 und 2 GG verletzt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort bejaht einen mittelbaren beziehungsweise influenzierenden Eingriff in Ts Religionsfreiheit und verneint ihn nicht wegen fehlenden rechtlichen Spendezwangs.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Eingriff wird damit begründet, dass der Faktor 1,5 und der Vorrang in Pattsituationen Ts glaubensgemäße Spendenablehnung mit spürbaren Nachteilen verbinden.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort stellt darauf ab, dass der Staat die Willensbildung gezielt zugunsten einer Spendenbereitschaft lenken will.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "T, Religionsfreiheit Art. 4 GG; influenzierender/mittelbarer Eingriff durch Faktor 1,5 und Vorrang wegen glaubensgemäßer Spendenablehnung",
+                "evidence_scope": "T, Art. 4 Abs. 1 und 2 GG; mittelbarer Eingriff durch Faktor 1,5 und Vorrang bei Wartezeit wegen religiös gebotener Spendenablehnung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Staat verschlechtert gezielt Ts Chancen auf ein lebensrettendes Organ, wenn sie ihre religiös gebotene Spendenablehnung befolgt; Faktor 1,5 und Wartezeitvorrang erzwingen eine Wahl zwischen Glaubenstreue und Überlebenschance, wobei der Staat gerade eine Verhaltensänderung herbeiführen will.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-004",
+      "title": "Mögliche Gleichheitsverletzung",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort verknüpft J.s drohende ungünstigere Wartelistenposition mit der Möglichkeit einer Verletzung von Art. 3 Abs. 1 GG und schließt diesen Prüfungsgang ab. In der Beschwerdebefugnis benennt sie aber nicht die entscheidende Ungleichbehandlung zwischen Spendenwilligen und Spendenunwilligen durch Multiplikator und Vorrang; diese fehlende Prämisse darf nicht aus der späteren Begründetheitsprüfung ergänzt werden.",
+      "evidence": [
+        "J beanstandet, durch die Aussicht auf eine wesentlich ungünstigere Position auf einer künftigen Warteliste",
+        "Da die Neuregelung die Chancen auf den Erhalt eines möglicherweise lebensrettenden Organs verändert, kommen ferner Verletzungen ... aus Art. 3 Abs. 1 GG in Betracht."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort verknüpft J.s drohende ungünstigere Wartelistenposition mit der Möglichkeit einer Verletzung von Art. 3 Abs. 1 GG und schließt diesen Prüfungsgang ab. In der Beschwerdebefugnis benennt sie aber nicht die entscheidende Ungleichbehandlung zwischen Spendenwilligen und Spendenunwilligen durch Multiplikator und Vorrang; diese fehlende Prämisse darf nicht aus der späteren Begründetheitsprüfung ergänzt werden.",
+          "evidence": [
+            "J beanstandet, durch die Aussicht auf eine wesentlich ungünstigere Position auf einer künftigen Warteliste",
+            "Da die Neuregelung die Chancen auf den Erhalt eines möglicherweise lebensrettenden Organs verändert, kommen ferner Verletzungen ... aus Art. 3 Abs. 1 GG in Betracht."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Bei der Beschwerdebefugnis wird Art. 3 Abs. 1 bzw. Abs. 3 GG nur als möglich erwähnt, ohne den Gleichheitssatz, die konkrete Ungleichbehandlung durch den Faktor 1,5 und den Vorrang in Pattsituationen sowie eine daraus folgende mögliche Verletzung methodisch zu verbinden. Es bleibt bei einer bloßen Behauptung; die ausführliche Gleichheitsprüfung findet sich erst in der Begründetheit und darf für diese Station nicht herangezogen werden.",
+          "evidence": [
+            "Da die Neuregelung die Chancen auf den Erhalt eines möglicherweise lebensrettenden Organs verändert, kommen ferner Verletzungen des Rechts auf Leben und körperliche Unversehrtheit aus Art. 2 Abs. 2 Satz 1 GG sowie des allgemeinen Gleichheitssatzes aus Art. 3 Abs. 1 GG in Betracht.",
+            "Für T kommen aus denselben Gründen Verletzungen aus Art. 2 Abs. 1 in Verbindung mit Art. 1 Abs. 1 GG, Art. 2 Abs. 2 Satz 1 GG und Art. 3 Abs. 1 GG in Betracht.",
+            "ist auch eine Verletzung von Art. 3 Abs. 3 Satz 1 GG nicht von vornherein ausgeschlossen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort verknüpft J.s drohende ungünstigere Wartelistenposition mit der Möglichkeit einer Verletzung von Art. 3 Abs. 1 GG und schließt diesen Prüfungsgang ab. In der Beschwerdebefugnis benennt sie aber nicht die entscheidende Ungleichbehandlung zwischen Spendenwilligen und Spendenunwilligen durch Multiplikator und Vorrang; diese fehlende Prämisse darf nicht aus der späteren Begründetheitsprüfung ergänzt werden.",
+              "evidence": [
+                "J beanstandet, durch die Aussicht auf eine wesentlich ungünstigere Position auf einer künftigen Warteliste",
+                "Da die Neuregelung die Chancen auf den Erhalt eines möglicherweise lebensrettenden Organs verändert, kommen ferner Verletzungen ... aus Art. 3 Abs. 1 GG in Betracht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Bei der Beschwerdebefugnis wird Art. 3 Abs. 1 bzw. Abs. 3 GG nur als möglich erwähnt, ohne den Gleichheitssatz, die konkrete Ungleichbehandlung durch den Faktor 1,5 und den Vorrang in Pattsituationen sowie eine daraus folgende mögliche Verletzung methodisch zu verbinden. Es bleibt bei einer bloßen Behauptung; die ausführliche Gleichheitsprüfung findet sich erst in der Begründetheit und darf für diese Station nicht herangezogen werden.",
+              "evidence": [
+                "Da die Neuregelung die Chancen auf den Erhalt eines möglicherweise lebensrettenden Organs verändert, kommen ferner Verletzungen des Rechts auf Leben und körperliche Unversehrtheit aus Art. 2 Abs. 2 Satz 1 GG sowie des allgemeinen Gleichheitssatzes aus Art. 3 Abs. 1 GG in Betracht.",
+                "Für T kommen aus denselben Gründen Verletzungen aus Art. 2 Abs. 1 in Verbindung mit Art. 1 Abs. 1 GG, Art. 2 Abs. 2 Satz 1 GG und Art. 3 Abs. 1 GG in Betracht.",
+                "ist auch eine Verletzung von Art. 3 Abs. 3 Satz 1 GG nicht von vornherein ausgeschlossen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-013",
+      "title": "Influenzierender Eingriff in Ts Religionsfreiheit",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort formuliert für Ts Glaubensfreiheit den Maßstab des mittelbaren Eingriffs, verknüpft ihn mit den konkreten Nachteilen aus Faktor 1,5 und Vorrang sowie der glaubensbedingten Spendenablehnung und bejaht darauf gestützt den Eingriff.",
+      "evidence": [
+        "Sie verschlechtern aber gezielt ihre Chancen auf ein lebensrettendes Organ, wenn sie das religiös gebotene Verhalten befolgt.",
+        "Wegen des Faktors 1,5 und des Vorrangs bei maßgeblicher Wartezeit muss sie zwischen Glaubenstreue und einer erheblich besseren Überlebenschance wählen.",
+        "Eine derart zielgerichtete und gewichtige mittelbare Belastung ist ein Eingriff in Art. 4 Abs. 1 und 2 GG."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort formuliert für Ts Glaubensfreiheit den Maßstab des mittelbaren Eingriffs, verknüpft ihn mit den konkreten Nachteilen aus Faktor 1,5 und Vorrang sowie der glaubensbedingten Spendenablehnung und bejaht darauf gestützt den Eingriff.",
+          "evidence": [
+            "Sie verschlechtern aber gezielt ihre Chancen auf ein lebensrettendes Organ, wenn sie das religiös gebotene Verhalten befolgt.",
+            "Wegen des Faktors 1,5 und des Vorrangs bei maßgeblicher Wartezeit muss sie zwischen Glaubenstreue und einer erheblich besseren Überlebenschance wählen.",
+            "Eine derart zielgerichtete und gewichtige mittelbare Belastung ist ein Eingriff in Art. 4 Abs. 1 und 2 GG."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft spezifisch für T und Art. 4 GG einen mittelbaren Eingriff, benennt als Prüfungsmaßstab die gezielte Verschlechterung der Überlebenschance, verknüpft dies mit Faktor 1,5 und Wartezeitvorrang und gelangt ausdrücklich zur Bejahung eines influenzierenden Eingriffs. Regel, Tatsachen und Ergebnis sind im selben Prüfungsschritt verbunden.",
+          "evidence": [
+            "Die Vorschriften verbieten T nicht, an ihrer Überzeugung festzuhalten, und zwingen sie nicht rechtlich zu einer Spendeerklärung. Sie verschlechtern aber gezielt ihre Chancen auf ein lebensrettendes Organ, wenn sie das religiös gebotene Verhalten befolgt. Wegen des Faktors 1,5 und des Vorrangs bei maßgeblicher Wartezeit muss sie zwischen Glaubenstreue und einer erheblich besseren Überlebenschance wählen. Der Staat beabsichtigt gerade, durch diesen Nachteil eine Verhaltensänderung herbeizuführen. Eine derart zielgerichtete und gewichtige mittelbare Belastung ist ein Eingriff in Art. 4 Abs. 1 und 2 GG."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort formuliert für Ts Glaubensfreiheit den Maßstab des mittelbaren Eingriffs, verknüpft ihn mit den konkreten Nachteilen aus Faktor 1,5 und Vorrang sowie der glaubensbedingten Spendenablehnung und bejaht darauf gestützt den Eingriff.",
+              "evidence": [
+                "Sie verschlechtern aber gezielt ihre Chancen auf ein lebensrettendes Organ, wenn sie das religiös gebotene Verhalten befolgt.",
+                "Wegen des Faktors 1,5 und des Vorrangs bei maßgeblicher Wartezeit muss sie zwischen Glaubenstreue und einer erheblich besseren Überlebenschance wählen.",
+                "Eine derart zielgerichtete und gewichtige mittelbare Belastung ist ein Eingriff in Art. 4 Abs. 1 und 2 GG."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft spezifisch für T und Art. 4 GG einen mittelbaren Eingriff, benennt als Prüfungsmaßstab die gezielte Verschlechterung der Überlebenschance, verknüpft dies mit Faktor 1,5 und Wartezeitvorrang und gelangt ausdrücklich zur Bejahung eines influenzierenden Eingriffs. Regel, Tatsachen und Ergebnis sind im selben Prüfungsschritt verbunden.",
+              "evidence": [
+                "Die Vorschriften verbieten T nicht, an ihrer Überzeugung festzuhalten, und zwingen sie nicht rechtlich zu einer Spendeerklärung. Sie verschlechtern aber gezielt ihre Chancen auf ein lebensrettendes Organ, wenn sie das religiös gebotene Verhalten befolgt. Wegen des Faktors 1,5 und des Vorrangs bei maßgeblicher Wartezeit muss sie zwischen Glaubenstreue und einer erheblich besseren Überlebenschance wählen. Der Staat beabsichtigt gerade, durch diesen Nachteil eine Verhaltensänderung herbeizuführen. Eine derart zielgerichtete und gewichtige mittelbare Belastung ist ein Eingriff in Art. 4 Abs. 1 und 2 GG."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

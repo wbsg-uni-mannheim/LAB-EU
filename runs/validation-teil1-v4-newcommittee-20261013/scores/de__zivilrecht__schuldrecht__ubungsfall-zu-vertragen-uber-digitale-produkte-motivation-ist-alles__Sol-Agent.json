@@ -1,0 +1,578 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/ubungsfall-zu-vertragen-uber-digitale-produkte-motivation-ist-alles",
+    "title": "Übungsfall zu Verträgen über digitale Produkte: Motivation ist alles"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-sol-high/20260730T221733Z/tasks/de__zivilrecht__schuldrecht__ubungsfall-zu-vertragen-uber-digitale-produkte-motivation-ist-alles/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/ubungsfall-zu-vertragen-uber-digitale-produkte-motivation-ist-alles/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T15:16:35.327805+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Kann V von U Zahlung i.H.v. 1.050 € verlangen?": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Kann V von U Zahlung i.H.v. 1.050 € verlangen? › Anspruch V gegen U auf Rückzahlung von 50 € für die App aus § 327o Abs. 2 BGB": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "conclusion": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 16870,
+    "output_tokens": 3829,
+    "total_tokens": 20699,
+    "cached_input_tokens": 11242,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 16870,
+    "output_tokens": 3829,
+    "total_tokens": 20699,
+    "cached_input_tokens": 11242,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-011",
+      "title": "Erstattung des App-Entgelts",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort bejaht ausdrücklich einen Anspruch des V gegen U auf Erstattung der für die App gezahlten 50 Euro aus § 327o Abs. 2 BGB und stellt zuvor die wirksame Beendigung des App-Vertragsteils fest. Damit ist das Kriterium erfüllt.",
+      "evidence": [
+        "V könnte gegen U einen Anspruch auf Erstattung von 50 Euro aus § 327o Abs. 2 BGB haben.",
+        "V hat den Vertrag hinsichtlich der App somit wirksam nach § 327c Abs. 1 Satz 2 BGB beendet.",
+        "Nach § 327o Abs. 2 BGB muss U die zur Erfüllung des beendeten Vertrags geleisteten Zahlungen erstatten. V kann deshalb die für die App gezahlten 50 Euro zurückverlangen."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort spricht den Erstattungsanspruch über 50 € aus § 327o Abs. 2 BGB ausdrücklich zu. Sie macht dessen Durchsetzung jedoch zusätzlich von der Rückgewährpflicht hinsichtlich des Trainers abhängig, indem sie U auch gegenüber diesem Anspruch ein Zurückbehaltungsrecht zuspricht. Damit wird die Erstattung trotz wirksamer Beendigung von einer zusätzlichen Voraussetzung abhängig gemacht.",
+          "evidence": [
+            "V hat den Vertrag hinsichtlich der App somit wirksam nach § 327c Abs. 1 Satz 2 BGB beendet.",
+            "V kann deshalb die für die App gezahlten 50 Euro zurückverlangen.",
+            "Aufgrund des einheitlichen Paketvertrags kann U aber auch ihm gegenüber bei entsprechender Geltendmachung ein Zurückbehaltungsrecht aus § 273 Abs. 1 BGB auf seine konnexen Rückgewähransprüche stützen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "V wird infolge der wirksamen Beendigung des App-Vertragsteils ein Anspruch gegen U auf Erstattung der dafür gezahlten 50 € aus § 327o Abs. 2 BGB zugesprochen.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Erstattung wird nicht trotz der Beendigung von zusätzlichen Voraussetzungen abhängig gemacht.",
+              "satisfied": false,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "V gegen U; Erstattung des App-Entgelts als Rechtsfolge der wirksamen Beendigung des App-Vertragsteils, § 327o Abs. 2 BGB",
+            "evidence_scope": "V gegen U; Erstattung der 50 € für die App nach deren wirksamer Beendigung; zusätzlich wird ein Zurückbehaltungsrecht gegenüber diesem Erstattungsanspruch erörtert",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die App wurde nach Aufforderung nicht bereitgestellt und der App-Vertragsteil wirksam beendet; deshalb sind die dafür geleisteten 50 € nach § 327o Abs. 2 BGB zu erstatten.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht ausdrücklich einen Anspruch des V gegen U auf Erstattung der für die App gezahlten 50 Euro aus § 327o Abs. 2 BGB und stellt zuvor die wirksame Beendigung des App-Vertragsteils fest. Damit ist das Kriterium erfüllt.",
+          "evidence": [
+            "V könnte gegen U einen Anspruch auf Erstattung von 50 Euro aus § 327o Abs. 2 BGB haben.",
+            "V hat den Vertrag hinsichtlich der App somit wirksam nach § 327c Abs. 1 Satz 2 BGB beendet.",
+            "Nach § 327o Abs. 2 BGB muss U die zur Erfüllung des beendeten Vertrags geleisteten Zahlungen erstatten. V kann deshalb die für die App gezahlten 50 Euro zurückverlangen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "V hat den auf die App bezogenen Vertragsteil wirksam beendet.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Der Anspruch richtet sich gegen U.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Der Anspruch betrifft die Erstattung der für die App gezahlten 50 Euro.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Der Anspruch wird aus § 327o Abs. 2 BGB hergeleitet.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "V gegen U auf Erstattung des App-Entgelts von 50 Euro aus § 327o Abs. 2 BGB infolge wirksamer Beendigung des App-Vertragsteils",
+            "evidence_scope": "V gegen U auf Erstattung der für die App gezahlten 50 Euro aus § 327o Abs. 2 BGB nach wirksamer Beendigung des App-Vertragsteils",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Wirksame Beendigung des App-Vertragsteils nach § 327c Abs. 1 Satz 2 BGB wegen unterbliebener Bereitstellung; Rechtsfolge der Erstattung aus § 327o Abs. 2 BGB.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Falllösung prüft und bejaht den Anspruch des V gegen U auf Rückzahlung der 50 € für die App ausdrücklich auf Grundlage von § 327o Abs. 2 BGB infolge der wirksamen Vertragsbeendigung nach § 327c BGB.",
+          "evidence": [
+            "V könnte gegen U einen Anspruch auf Erstattung von 50 Euro aus § 327o Abs. 2 BGB haben.",
+            "V hat den Vertrag hinsichtlich der App somit wirksam nach § 327c Abs. 1 Satz 2 BGB beendet.",
+            "Nach § 327o Abs. 2 BGB muss U die zur Erfüllung des beendeten Vertrags geleisteten Zahlungen erstatten. V kann deshalb die für die App gezahlten 50 Euro zurückverlangen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Zusprechen eines Anspruchs des V gegen U auf Erstattung der 50 € für die App aus § 327o Abs. 2 BGB infolge wirksamer Vertragsbeendigung",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "V gegen U, Anspruch auf Erstattung von 50 € aus § 327o Abs. 2 BGB wegen Beendigung des App-Vertrags",
+            "evidence_scope": "V gegen U, Anspruch auf Erstattung von 50 € aus § 327o Abs. 2 BGB wegen Beendigung des App-Vertrags",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Wirksame Beendigung des Vertrags über das digitale Produkt nach § 327c Abs. 1 BGB wegen unterbliebener Bereitstellung trotz Aufforderung, Rechtsfolge gem. § 327o Abs. 2 BGB",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 16870,
+        "output_tokens": 3829,
+        "total_tokens": 20699,
+        "cached_input_tokens": 11242,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort spricht den Erstattungsanspruch zwar ausdrücklich zu. Sie macht die Erstattung aber zusätzlich davon abhängig, dass V die Rückgewährpflichten hinsichtlich des Trainers erfüllt, indem U auch gegenüber dem 50-Euro-Anspruch ein Zurückbehaltungsrecht geltend machen könne. Damit ist die Erstattung trotz Beendigung von einer zusätzlichen Voraussetzung abhängig.",
+              "evidence": [
+                "V hat den Vertrag hinsichtlich der App somit wirksam nach § 327c Abs. 1 Satz 2 BGB beendet.",
+                "V kann deshalb die für die App gezahlten 50 Euro zurückverlangen.",
+                "U aber auch ihm gegenüber bei entsprechender Geltendmachung ein Zurückbehaltungsrecht aus § 273 Abs. 1 BGB auf seine konnexen Rückgewähransprüche stützen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "V hat infolge der wirksamen Beendigung des App-Vertragsteils gegen U einen Anspruch auf Erstattung der 50 Euro aus § 327o Abs. 2 BGB.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "V; Erstattung des für den App-Vertragsteil gezahlten Entgelts nach wirksamer Beendigung.",
+                "evidence_scope": "V; Erstattung der 50 Euro für die App nach deren Beendigung sowie ein Zurückbehaltungsrecht an diesem Erstattungsanspruch.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "U hat die App trotz Aufforderung nicht unverzüglich bereitgestellt; nach wirksamer Beendigung muss er die dafür geleisteten 50 Euro nach § 327o Abs. 2 BGB erstatten.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort spricht V ausdrücklich einen Anspruch gegen U auf Erstattung der 50 Euro für die App aus § 327o Abs. 2 BGB zu und stützt dies auf die wirksame Beendigung des App-Vertragsteils. Damit ist das Kriterium erfüllt.",
+              "evidence": [
+                "V hat den Vertrag hinsichtlich der App somit wirksam nach § 327c Abs. 1 Satz 2 BGB beendet.",
+                "Nach § 327o Abs. 2 BGB muss U die zur Erfüllung des beendeten Vertrags geleisteten Zahlungen erstatten. V kann deshalb die für die App gezahlten 50 Euro zurückverlangen.",
+                "V kann insgesamt 1.050 Euro zurückverlangen, davon 50 Euro aus § 327o Abs. 2 BGB"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Wirksame Beendigung des App-Vertragsteils",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Anspruch des V gegen U auf Erstattung der für die App gezahlten 50 Euro aus § 327o Abs. 2 BGB",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "V gegen U; Erstattung des App-Entgelts von 50 Euro infolge wirksamer Beendigung des App-Vertragsteils aus § 327o Abs. 2 BGB",
+                "evidence_scope": "V gegen U; Rückzahlung der für die App gezahlten 50 Euro nach wirksamer Beendigung des App-Vertragsteils aus § 327o Abs. 2 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Wirksame Beendigung des App-Vertragsteils nach § 327c Abs. 1 Satz 2 BGB; daher Erstattung der für die App geleisteten 50 Euro nach § 327o Abs. 2 BGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Falllösung prüft und bejaht die wirksame Vertragsbeendigung hinsichtlich der App und spricht V infolgedessen einen Anspruch gegen U auf Rückzahlung der 50 € aus § 327o Abs. 2 BGB zu.",
+              "evidence": [
+                "V hat den Vertrag hinsichtlich der App somit wirksam nach § 327c Abs. 1 Satz 2 BGB beendet.",
+                "Nach § 327o Abs. 2 BGB muss U die zur Erfüllung des beendeten Vertrags geleisteten Zahlungen erstatten. V kann deshalb die für die App gezahlten 50 Euro zurückverlangen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Zusprechung eines Anspruchs des V gegen U auf Erstattung der 50 € für die App",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Anspruchsgrundlage § 327o Abs. 2 BGB infolge wirksamer Beendigung des App-Vertragsteils",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "V gegen U, Anspruch auf Erstattung von 50 € für die App aus § 327o Abs. 2 BGB nach Beendigung",
+                "evidence_scope": "V gegen U, Anspruch auf Erstattung von 50 € für die App aus § 327o Abs. 2 BGB nach Beendigung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Nach wirksamer Beendigung des Vertrags bezüglich der App wegen unterbliebener Bereitstellung (§ 327c BGB) muss U nach § 327o Abs. 2 BGB die geleistete Zahlung von 50 Euro erstatten.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort spricht den Erstattungsanspruch über 50 € aus § 327o Abs. 2 BGB ausdrücklich zu. Sie macht dessen Durchsetzung jedoch zusätzlich von der Rückgewährpflicht hinsichtlich des Trainers abhängig, indem sie U auch gegenüber diesem Anspruch ein Zurückbehaltungsrecht zuspricht. Damit wird die Erstattung trotz wirksamer Beendigung von einer zusätzlichen Voraussetzung abhängig gemacht.",
+              "evidence": [
+                "V hat den Vertrag hinsichtlich der App somit wirksam nach § 327c Abs. 1 Satz 2 BGB beendet.",
+                "V kann deshalb die für die App gezahlten 50 Euro zurückverlangen.",
+                "Aufgrund des einheitlichen Paketvertrags kann U aber auch ihm gegenüber bei entsprechender Geltendmachung ein Zurückbehaltungsrecht aus § 273 Abs. 1 BGB auf seine konnexen Rückgewähransprüche stützen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "V wird infolge der wirksamen Beendigung des App-Vertragsteils ein Anspruch gegen U auf Erstattung der dafür gezahlten 50 € aus § 327o Abs. 2 BGB zugesprochen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Erstattung wird nicht trotz der Beendigung von zusätzlichen Voraussetzungen abhängig gemacht.",
+                  "satisfied": false,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "V gegen U; Erstattung des App-Entgelts als Rechtsfolge der wirksamen Beendigung des App-Vertragsteils, § 327o Abs. 2 BGB",
+                "evidence_scope": "V gegen U; Erstattung der 50 € für die App nach deren wirksamer Beendigung; zusätzlich wird ein Zurückbehaltungsrecht gegenüber diesem Erstattungsanspruch erörtert",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die App wurde nach Aufforderung nicht bereitgestellt und der App-Vertragsteil wirksam beendet; deshalb sind die dafür geleisteten 50 € nach § 327o Abs. 2 BGB zu erstatten.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht ausdrücklich einen Anspruch des V gegen U auf Erstattung der für die App gezahlten 50 Euro aus § 327o Abs. 2 BGB und stellt zuvor die wirksame Beendigung des App-Vertragsteils fest. Damit ist das Kriterium erfüllt.",
+              "evidence": [
+                "V könnte gegen U einen Anspruch auf Erstattung von 50 Euro aus § 327o Abs. 2 BGB haben.",
+                "V hat den Vertrag hinsichtlich der App somit wirksam nach § 327c Abs. 1 Satz 2 BGB beendet.",
+                "Nach § 327o Abs. 2 BGB muss U die zur Erfüllung des beendeten Vertrags geleisteten Zahlungen erstatten. V kann deshalb die für die App gezahlten 50 Euro zurückverlangen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "V hat den auf die App bezogenen Vertragsteil wirksam beendet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Anspruch richtet sich gegen U.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Anspruch betrifft die Erstattung der für die App gezahlten 50 Euro.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Anspruch wird aus § 327o Abs. 2 BGB hergeleitet.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "V gegen U auf Erstattung des App-Entgelts von 50 Euro aus § 327o Abs. 2 BGB infolge wirksamer Beendigung des App-Vertragsteils",
+                "evidence_scope": "V gegen U auf Erstattung der für die App gezahlten 50 Euro aus § 327o Abs. 2 BGB nach wirksamer Beendigung des App-Vertragsteils",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Wirksame Beendigung des App-Vertragsteils nach § 327c Abs. 1 Satz 2 BGB wegen unterbliebener Bereitstellung; Rechtsfolge der Erstattung aus § 327o Abs. 2 BGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Falllösung prüft und bejaht den Anspruch des V gegen U auf Rückzahlung der 50 € für die App ausdrücklich auf Grundlage von § 327o Abs. 2 BGB infolge der wirksamen Vertragsbeendigung nach § 327c BGB.",
+              "evidence": [
+                "V könnte gegen U einen Anspruch auf Erstattung von 50 Euro aus § 327o Abs. 2 BGB haben.",
+                "V hat den Vertrag hinsichtlich der App somit wirksam nach § 327c Abs. 1 Satz 2 BGB beendet.",
+                "Nach § 327o Abs. 2 BGB muss U die zur Erfüllung des beendeten Vertrags geleisteten Zahlungen erstatten. V kann deshalb die für die App gezahlten 50 Euro zurückverlangen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Zusprechen eines Anspruchs des V gegen U auf Erstattung der 50 € für die App aus § 327o Abs. 2 BGB infolge wirksamer Vertragsbeendigung",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "V gegen U, Anspruch auf Erstattung von 50 € aus § 327o Abs. 2 BGB wegen Beendigung des App-Vertrags",
+                "evidence_scope": "V gegen U, Anspruch auf Erstattung von 50 € aus § 327o Abs. 2 BGB wegen Beendigung des App-Vertrags",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Wirksame Beendigung des Vertrags über das digitale Produkt nach § 327c Abs. 1 BGB wegen unterbliebener Bereitstellung trotz Aufforderung, Rechtsfolge gem. § 327o Abs. 2 BGB",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": []
+}

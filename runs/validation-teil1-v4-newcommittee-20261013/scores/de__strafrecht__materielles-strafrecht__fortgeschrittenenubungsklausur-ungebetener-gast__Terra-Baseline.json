@@ -1,0 +1,663 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-ungebetener-gast",
+    "title": "Fortgeschrittenenübungsklausur: Ungebetener Gast"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenubungsklausur-ungebetener-gast/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-ungebetener-gast/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T15:14:34.108819+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 1,
+    "points_available": 1,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Strafbarkeit von A und B": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Strafbarkeit von A und B › §§ 242 Abs. 1, 25 Abs. 2, 243 Abs. 1 S. 2 Nr. 1 StGB": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 18142,
+    "output_tokens": 10210,
+    "total_tokens": 28352,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 5679
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 18142,
+    "output_tokens": 10210,
+    "total_tokens": 28352,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 5679
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-023",
+      "title": "Einbruchsregelbeispiel nach § 243 StGB",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort bejaht das Regelbeispiel ausdrücklich sowohl im Abschnitt zu A als auch im Abschnitt zu B und knüpft es an das Einschlagen der Terrassentür. Dass es hinter § 244 Abs. 1 Nr. 3 StGB zurücktritt, steht der Bejahung nicht entgegen.",
+      "evidence": [
+        "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen zwar auch das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+        "B erfüllte durch das Einschlagen der Terrassentür zwar zugleich das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht das Regelbeispiel ausdrücklich sowohl im Abschnitt zu A als auch im Abschnitt zu B und knüpft es an das Einschlagen der Terrassentür. Dass es hinter § 244 Abs. 1 Nr. 3 StGB zurücktritt, steht der Bejahung nicht entgegen.",
+          "evidence": [
+            "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen zwar auch das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+            "B erfüllte durch das Einschlagen der Terrassentür zwar zugleich das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB."
+          ],
+          "component_checks": [
+            {
+              "requirement": "§ 243 Abs. 1 Satz 2 Nr. 1 StGB wird für A bejaht.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "§ 243 Abs. 1 Satz 2 Nr. 1 StGB wird für B bejaht.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Bejahung wird auf das gewaltsame Öffnen durch Einschlagen der Terrassentür gestützt.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und B; Einbruchsregelbeispiel nach § 243 Abs. 1 Satz 2 Nr. 1 StGB",
+            "evidence_scope": "A und B; Einbruchsregelbeispiel nach § 243 Abs. 1 Satz 2 Nr. 1 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen das Einbruchsregelbeispiel.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht für A und B ausdrücklich das Regelbeispiel des § 243 Abs. 1 S. 2 Nr. 1 StGB und stützt dies auf das Einschlagen der Terrassentür und das gewaltsame Eindringen. Die Behandlung bei den Konkurrenzen genügt nach dem Kriterium; ein vollständiges Übergehen oder eine tragfähig begründete Verneinung liegt nicht vor.",
+          "evidence": [
+            "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen zwar auch das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+            "B erfüllte durch das Einschlagen der Terrassentür zwar zugleich das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+            "B schlug die Glasscheibe der verschlossenen Terrassentür ein und verschaffte sich dadurch gewaltsam Zutritt zum Haus."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Für A wird § 243 Abs. 1 S. 2 Nr. 1 StGB zumindest summarisch bejaht",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Für B wird § 243 Abs. 1 S. 2 Nr. 1 StGB zumindest summarisch bejaht",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Bejahung wird mit dem Einschlagen der verschlossenen Terrassentür/gewaltsamen Öffnen des Zugangs begründet",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und B; Einbruchsregelbeispiel nach § 243 Abs. 1 S. 2 Nr. 1 StGB",
+            "evidence_scope": "A und B; § 243 Abs. 1 S. 2 Nr. 1 StGB in den Konkurrenzausführungen",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen das Regelbeispiel; für B durch das Einschlagen der Terrassentür.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB für A und B jeweils ausdrücklich unter Bezugnahme auf das Einschlagen der Terrassentür.",
+          "evidence": [
+            "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen zwar auch das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+            "B erfüllte durch das Einschlagen der Terrassentür zwar zugleich das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Summarische Bejahung von § 243 Abs. 1 S. 2 Nr. 1 StGB für A und B unter Bezugnahme auf das Einschlagen der Terrassentür",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und B, Regelbeispiel nach § 243 Abs. 1 S. 2 Nr. 1 StGB",
+            "evidence_scope": "A und B, Regelbeispiel nach § 243 Abs. 1 S. 2 Nr. 1 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Verwirklichung des Regelbeispiels durch Einschlagen der Terrassentür (und anschließendes Zurücktreten hinter § 244 Abs. 1 Nr. 3 StGB)",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 18142,
+        "output_tokens": 10210,
+        "total_tokens": 28352,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 5679
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht das Regelbeispiel ausdrücklich sowohl im Abschnitt zu A als auch im Abschnitt zu B und knüpft es an das Einschlagen der Terrassentür. Dass es hinter § 244 Abs. 1 Nr. 3 StGB zurücktritt, steht der Bejahung nicht entgegen.",
+              "evidence": [
+                "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen zwar auch das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+                "B erfüllte durch das Einschlagen der Terrassentür zwar zugleich das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§ 243 Abs. 1 Satz 2 Nr. 1 StGB wird für A bejaht.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "§ 243 Abs. 1 Satz 2 Nr. 1 StGB wird für B bejaht.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Bejahung wird auf das gewaltsame Öffnen durch Einschlagen der Terrassentür gestützt.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und B; Einbruchsregelbeispiel nach § 243 Abs. 1 Satz 2 Nr. 1 StGB",
+                "evidence_scope": "A und B; Einbruchsregelbeispiel nach § 243 Abs. 1 Satz 2 Nr. 1 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen das Einbruchsregelbeispiel.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht für A und B ausdrücklich das Regelbeispiel des § 243 Abs. 1 S. 2 Nr. 1 StGB und stützt dies auf das Einschlagen der Terrassentür und das gewaltsame Eindringen. Die Behandlung bei den Konkurrenzen genügt nach dem Kriterium; ein vollständiges Übergehen oder eine tragfähig begründete Verneinung liegt nicht vor.",
+              "evidence": [
+                "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen zwar auch das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+                "B erfüllte durch das Einschlagen der Terrassentür zwar zugleich das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+                "B schlug die Glasscheibe der verschlossenen Terrassentür ein und verschaffte sich dadurch gewaltsam Zutritt zum Haus."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Für A wird § 243 Abs. 1 S. 2 Nr. 1 StGB zumindest summarisch bejaht",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Für B wird § 243 Abs. 1 S. 2 Nr. 1 StGB zumindest summarisch bejaht",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Bejahung wird mit dem Einschlagen der verschlossenen Terrassentür/gewaltsamen Öffnen des Zugangs begründet",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und B; Einbruchsregelbeispiel nach § 243 Abs. 1 S. 2 Nr. 1 StGB",
+                "evidence_scope": "A und B; § 243 Abs. 1 S. 2 Nr. 1 StGB in den Konkurrenzausführungen",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen das Regelbeispiel; für B durch das Einschlagen der Terrassentür.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB für A und B jeweils ausdrücklich unter Bezugnahme auf das Einschlagen der Terrassentür.",
+              "evidence": [
+                "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen zwar auch das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+                "B erfüllte durch das Einschlagen der Terrassentür zwar zugleich das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Summarische Bejahung von § 243 Abs. 1 S. 2 Nr. 1 StGB für A und B unter Bezugnahme auf das Einschlagen der Terrassentür",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und B, Regelbeispiel nach § 243 Abs. 1 S. 2 Nr. 1 StGB",
+                "evidence_scope": "A und B, Regelbeispiel nach § 243 Abs. 1 S. 2 Nr. 1 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Verwirklichung des Regelbeispiels durch Einschlagen der Terrassentür (und anschließendes Zurücktreten hinter § 244 Abs. 1 Nr. 3 StGB)",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-023",
+      "title": "Einbruchsregelbeispiel nach § 243 StGB",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Für A und B wird das konkrete Einschlagen der Terrassentür ausdrücklich mit der Erfüllung des Einbruchsregelbeispiels verknüpft; anschließend wird dessen konkurrenzrechtliche Behandlung abgeschlossen. Die knappe Anwendung ist funktional.",
+      "evidence": [
+        "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen zwar auch das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+        "B erfüllte durch das Einschlagen der Terrassentür zwar zugleich das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Für A und B wird das konkrete Einschlagen der Terrassentür ausdrücklich mit der Erfüllung des Einbruchsregelbeispiels verknüpft; anschließend wird dessen konkurrenzrechtliche Behandlung abgeschlossen. Die knappe Anwendung ist funktional.",
+          "evidence": [
+            "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen zwar auch das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+            "B erfüllte durch das Einschlagen der Terrassentür zwar zugleich das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft § 243 Abs. 1 S. 2 Nr. 1 StGB bei den Konkurrenzen für A und B. Sie nennt das Regelbeispiel als rechtlichen Maßstab, verknüpft es mit dem Einschlagen der Terrassentür und dem Eindringen in das Haus und zieht die Schlussfolgerung, dass es verwirklicht ist; die knappe Form ist methodisch ausreichend.",
+          "evidence": [
+            "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen zwar auch das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+            "B erfüllte durch das Einschlagen der Terrassentür zwar zugleich das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+            "Dieses tritt jedoch hinter die speziellere Qualifikation des § 244 Abs. 1 Nr. 3 StGB zurück"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort subsumiert das Einschlagen der Terrassentür sowohl für A als auch für B summarisch unter das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB und schließt die Prüfung mit dem Zurücktreten hinter § 244 Abs. 1 Nr. 3 StGB folgerichtig ab.",
+          "evidence": [
+            "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen zwar auch das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB. Dieses tritt jedoch hinter die speziellere Qualifikation des § 244 Abs. 1 Nr. 3 StGB zurück",
+            "B erfüllte durch das Einschlagen der Terrassentür zwar zugleich das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB. Dieses tritt hinter § 244 Abs. 1 Nr. 3 StGB als speziellere Qualifikation zurück."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Für A und B wird das konkrete Einschlagen der Terrassentür ausdrücklich mit der Erfüllung des Einbruchsregelbeispiels verknüpft; anschließend wird dessen konkurrenzrechtliche Behandlung abgeschlossen. Die knappe Anwendung ist funktional.",
+              "evidence": [
+                "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen zwar auch das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+                "B erfüllte durch das Einschlagen der Terrassentür zwar zugleich das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft § 243 Abs. 1 S. 2 Nr. 1 StGB bei den Konkurrenzen für A und B. Sie nennt das Regelbeispiel als rechtlichen Maßstab, verknüpft es mit dem Einschlagen der Terrassentür und dem Eindringen in das Haus und zieht die Schlussfolgerung, dass es verwirklicht ist; die knappe Form ist methodisch ausreichend.",
+              "evidence": [
+                "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen zwar auch das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+                "B erfüllte durch das Einschlagen der Terrassentür zwar zugleich das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB.",
+                "Dieses tritt jedoch hinter die speziellere Qualifikation des § 244 Abs. 1 Nr. 3 StGB zurück"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort subsumiert das Einschlagen der Terrassentür sowohl für A als auch für B summarisch unter das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB und schließt die Prüfung mit dem Zurücktreten hinter § 244 Abs. 1 Nr. 3 StGB folgerichtig ab.",
+              "evidence": [
+                "Das Einschlagen der Terrassentür und das Eindringen in das Haus verwirklichen zwar auch das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB. Dieses tritt jedoch hinter die speziellere Qualifikation des § 244 Abs. 1 Nr. 3 StGB zurück",
+                "B erfüllte durch das Einschlagen der Terrassentür zwar zugleich das Regelbeispiel des § 243 Abs. 1 Satz 2 Nr. 1 StGB. Dieses tritt hinter § 244 Abs. 1 Nr. 3 StGB als speziellere Qualifikation zurück."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

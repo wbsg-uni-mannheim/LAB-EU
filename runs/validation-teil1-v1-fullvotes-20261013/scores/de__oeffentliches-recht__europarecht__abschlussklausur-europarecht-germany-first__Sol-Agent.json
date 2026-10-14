@@ -1,0 +1,736 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/europarecht/abschlussklausur-europarecht-germany-first",
+    "title": "Abschlussklausur Europarecht: „Germany first“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-sol-high/20260730T221733Z/tasks/de__oeffentliches-recht__europarecht__abschlussklausur-europarecht-germany-first/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/europarecht/abschlussklausur-europarecht-germany-first/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T11:34:47.860599+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 2,
+  "n_passed": 2,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 2,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 2,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 5,
+    "points_available": 5,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v1",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Zulässigkeit": {
+      "n_criteria": 2,
+      "n_passed": 2,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Zulässigkeit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Zulässigkeit › Vorverfahren": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "legal_basis": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "rule_statement": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 56357,
+    "output_tokens": 5375,
+    "total_tokens": 61732,
+    "cached_input_tokens": 9856,
+    "cache_write_tokens": 17613
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 56357,
+    "output_tokens": 5375,
+    "total_tokens": 61732,
+    "cached_input_tokens": 9856,
+    "cache_write_tokens": 17613
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-002",
+      "title": "Klageart Polens",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort ordnet die polnische Klage ausdrücklich als zwischenstaatliche Vertragsverletzungsklage nach Art. 259 AEUV ein und wählt nicht Art. 258 AEUV.",
+      "evidence": [
+        "Nach Art. 259 Abs. 1 AEUV kann jeder Mitgliedstaat den Gerichtshof anrufen",
+        "Polen beanstandet eine deutsche Maßnahme wegen ihrer Unvereinbarkeit mit Unionsrecht.",
+        "Statthaft ist somit die zwischenstaatliche Vertragsverletzungsklage nach Art. 259 AEUV"
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet die polnische Klage ausdrücklich als zwischenstaatliche Vertragsverletzungsklage nach Art. 259 AEUV ein und wählt nicht Art. 258 AEUV.",
+          "evidence": [
+            "Nach Art. 259 Abs. 1 AEUV kann jeder Mitgliedstaat den Gerichtshof anrufen",
+            "Polen beanstandet eine deutsche Maßnahme wegen ihrer Unvereinbarkeit mit Unionsrecht.",
+            "Statthaft ist somit die zwischenstaatliche Vertragsverletzungsklage nach Art. 259 AEUV"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Klage Polens gegen die deutsche Impfstoff-Rechtsverordnung wird als Vertragsverletzungsklage eines Mitgliedstaats nach Art. 259 Abs. 1 AEUV eingeordnet, nicht als Klage nach Art. 258 AEUV.",
+              "satisfied": true
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Polen; Klage gegen die deutsche Impfstoff-Rechtsverordnung; Klageart",
+            "evidence_scope": "Polen; Klage gegen eine deutsche Maßnahme; zwischenstaatliche Vertragsverletzungsklage nach Art. 259 AEUV",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Polen beanstandet als Mitgliedstaat eine deutsche Maßnahme wegen ihrer Unvereinbarkeit mit Unionsrecht; Art. 259 Abs. 1 AEUV eröffnet dafür die Klage.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet die Klage Polens ausdrücklich als Vertragsverletzungsklage eines Mitgliedstaats nach Art. 259 Abs. 1 AEUV ein. Eine andere Klageart oder Art. 258 AEUV als Rechtsgrundlage der polnischen Klage wird nicht gewählt.",
+          "evidence": [
+            "Nach Art. 259 Abs. 1 AEUV kann jeder Mitgliedstaat den Gerichtshof anrufen, wenn er der Auffassung ist, ein anderer Mitgliedstaat habe gegen eine Verpflichtung aus den Verträgen verstoßen.",
+            "Statthaft ist somit die zwischenstaatliche Vertragsverletzungsklage nach Art. 259 AEUV"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einordnung der polnischen Klage als Vertragsverletzungsklage eines Mitgliedstaats nach Art. 259 Abs. 1 AEUV",
+              "satisfied": true
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Klage der Republik Polen gegen die deutsche Impfstoff-Rechtsverordnung; Rechtsgrundlage/Klageart",
+            "evidence_scope": "Polnische Klage gegen deutsche Maßnahme; statthafte Klageart nach Art. 259 AEUV",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Polen beanstandet die deutsche Maßnahme als Unionsrechtsverstoß; statthaft ist die zwischenstaatliche Vertragsverletzungsklage nach Art. 259 AEUV.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet die Klage Polens ausdrücklich und zutreffend als zwischenstaatliche Vertragsverletzungsklage nach Art. 259 Abs. 1 AEUV ein.",
+          "evidence": [
+            "Nach Art. 259 Abs. 1 AEUV kann jeder Mitgliedstaat den Gerichtshof anrufen, wenn er der Auffassung ist, ein anderer Mitgliedstaat habe gegen eine Verpflichtung aus den Verträgen verstoßen. Polen beanstandet eine deutsche Maßnahme wegen ihrer Unvereinbarkeit mit Unionsrecht. Statthaft ist somit die zwischenstaatliche Vertragsverletzungsklage nach Art. 259 AEUV"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einordnung der Klage der Republik Polen gegen die deutsche Impfstoff-Rechtsverordnung als Vertragsverletzungsklage eines Mitgliedstaats nach Art. 259 Abs. 1 AEUV",
+              "satisfied": true
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Republik Polen; Klageart / statthafte Klageart nach Art. 259 Abs. 1 AEUV",
+            "evidence_scope": "Republik Polen; Klageart / statthafte Klageart nach Art. 259 Abs. 1 AEUV",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Polen beanstandet eine deutsche Maßnahme wegen Unvereinbarkeit mit Unionsrecht, weshalb die zwischenstaatliche Vertragsverletzungsklage nach Art. 259 Abs. 1 AEUV statthaft ist.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 28052,
+        "output_tokens": 1732,
+        "total_tokens": 29784,
+        "cached_input_tokens": 9856,
+        "cache_write_tokens": 8768
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort ordnet die polnische Klage ausdrücklich als zwischenstaatliche Vertragsverletzungsklage nach Art. 259 AEUV ein und wählt nicht Art. 258 AEUV.",
+              "evidence": [
+                "Nach Art. 259 Abs. 1 AEUV kann jeder Mitgliedstaat den Gerichtshof anrufen",
+                "Polen beanstandet eine deutsche Maßnahme wegen ihrer Unvereinbarkeit mit Unionsrecht.",
+                "Statthaft ist somit die zwischenstaatliche Vertragsverletzungsklage nach Art. 259 AEUV"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Klage Polens gegen die deutsche Impfstoff-Rechtsverordnung wird als Vertragsverletzungsklage eines Mitgliedstaats nach Art. 259 Abs. 1 AEUV eingeordnet, nicht als Klage nach Art. 258 AEUV.",
+                  "satisfied": true
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Polen; Klage gegen die deutsche Impfstoff-Rechtsverordnung; Klageart",
+                "evidence_scope": "Polen; Klage gegen eine deutsche Maßnahme; zwischenstaatliche Vertragsverletzungsklage nach Art. 259 AEUV",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Polen beanstandet als Mitgliedstaat eine deutsche Maßnahme wegen ihrer Unvereinbarkeit mit Unionsrecht; Art. 259 Abs. 1 AEUV eröffnet dafür die Klage.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort ordnet die Klage Polens ausdrücklich als Vertragsverletzungsklage eines Mitgliedstaats nach Art. 259 Abs. 1 AEUV ein. Eine andere Klageart oder Art. 258 AEUV als Rechtsgrundlage der polnischen Klage wird nicht gewählt.",
+              "evidence": [
+                "Nach Art. 259 Abs. 1 AEUV kann jeder Mitgliedstaat den Gerichtshof anrufen, wenn er der Auffassung ist, ein anderer Mitgliedstaat habe gegen eine Verpflichtung aus den Verträgen verstoßen.",
+                "Statthaft ist somit die zwischenstaatliche Vertragsverletzungsklage nach Art. 259 AEUV"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung der polnischen Klage als Vertragsverletzungsklage eines Mitgliedstaats nach Art. 259 Abs. 1 AEUV",
+                  "satisfied": true
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Klage der Republik Polen gegen die deutsche Impfstoff-Rechtsverordnung; Rechtsgrundlage/Klageart",
+                "evidence_scope": "Polnische Klage gegen deutsche Maßnahme; statthafte Klageart nach Art. 259 AEUV",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Polen beanstandet die deutsche Maßnahme als Unionsrechtsverstoß; statthaft ist die zwischenstaatliche Vertragsverletzungsklage nach Art. 259 AEUV.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort ordnet die Klage Polens ausdrücklich und zutreffend als zwischenstaatliche Vertragsverletzungsklage nach Art. 259 Abs. 1 AEUV ein.",
+              "evidence": [
+                "Nach Art. 259 Abs. 1 AEUV kann jeder Mitgliedstaat den Gerichtshof anrufen, wenn er der Auffassung ist, ein anderer Mitgliedstaat habe gegen eine Verpflichtung aus den Verträgen verstoßen. Polen beanstandet eine deutsche Maßnahme wegen ihrer Unvereinbarkeit mit Unionsrecht. Statthaft ist somit die zwischenstaatliche Vertragsverletzungsklage nach Art. 259 AEUV"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung der Klage der Republik Polen gegen die deutsche Impfstoff-Rechtsverordnung als Vertragsverletzungsklage eines Mitgliedstaats nach Art. 259 Abs. 1 AEUV",
+                  "satisfied": true
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Republik Polen; Klageart / statthafte Klageart nach Art. 259 Abs. 1 AEUV",
+                "evidence_scope": "Republik Polen; Klageart / statthafte Klageart nach Art. 259 Abs. 1 AEUV",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Polen beanstandet eine deutsche Maßnahme wegen Unvereinbarkeit mit Unionsrecht, weshalb die zwischenstaatliche Vertragsverletzungsklage nach Art. 259 Abs. 1 AEUV statthaft ist.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-017-S1",
+      "title": "Anforderungen des Vorverfahrens der polnischen Klage",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort behandelt das Vorverfahren ausdrücklich bei der Zulässigkeit der polnischen Klage. Sie erfasst die Beschwerden Polens und Ungarns, nennt die Äußerungsmöglichkeit der beteiligten Staaten und die abschließende Stellungnahme der Kommission. Damit sind die geforderten Bestandteile erläutert.",
+      "evidence": [
+        "Polen hat sich wegen der deutschen Verordnung an die Kommission gewandt und diese damit befasst.",
+        "Die Sachverhaltsangaben sind dahin auszulegen, dass die Kommission die Beschwerden beider Staaten behandelte und den beteiligten Staaten das nach Art. 259 Abs. 3 AEUV erforderliche kontradiktorische Gehör gewährte.",
+        "Deutschland erhielt Gelegenheit zur Äußerung; die Kommission gab anschließend eine abschließende Stellungnahme ab."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt das Vorverfahren ausdrücklich bei der Zulässigkeit der polnischen Klage. Sie erfasst die Beschwerden Polens und Ungarns, nennt die Äußerungsmöglichkeit der beteiligten Staaten und die abschließende Stellungnahme der Kommission. Damit sind die geforderten Bestandteile erläutert.",
+          "evidence": [
+            "Polen hat sich wegen der deutschen Verordnung an die Kommission gewandt und diese damit befasst.",
+            "Die Sachverhaltsangaben sind dahin auszulegen, dass die Kommission die Beschwerden beider Staaten behandelte und den beteiligten Staaten das nach Art. 259 Abs. 3 AEUV erforderliche kontradiktorische Gehör gewährte.",
+            "Deutschland erhielt Gelegenheit zur Äußerung; die Kommission gab anschließend eine abschließende Stellungnahme ab."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Das Vorverfahren der polnischen Klage wird in der Zulässigkeit nach Art. 259 AEUV behandelt.",
+              "satisfied": true
+            },
+            {
+              "requirement": "Die Anhörung des betroffenen Mitgliedstaats wird erläutert.",
+              "satisfied": true
+            },
+            {
+              "requirement": "Die Beteiligung der anderen Kläger im Verfahren nach Art. 259 AEUV wird erläutert.",
+              "satisfied": true
+            },
+            {
+              "requirement": "Eine abschließende Stellungnahme der Kommission wird genannt.",
+              "satisfied": true
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Zulässigkeit der polnischen Klage und deren Vorverfahren nach Art. 259 AEUV",
+            "evidence_scope": "Zulässigkeit der polnischen Klage; das Vorverfahren nach Art. 259 Abs. 2 bis 4 AEUV, einschließlich der Beschwerden beider Staaten",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Antwort behandelt das Vorverfahren als kontradiktorisches Verfahren nach Art. 259 Abs. 3 AEUV, in dem die beteiligten Staaten Gelegenheit zur Äußerung erhalten, und nennt die abschließende Stellungnahme der Kommission.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt im Abschnitt zur Zulässigkeit der polnischen Klage ausdrücklich das Vorverfahren nach Art. 259 AEUV. Sie benennt die Gelegenheit zur Äußerung für Deutschland, die Beteiligung der beteiligten Staaten bzw. beider Staaten im kontradiktorischen Verfahren und die abschließende Stellungnahme der Kommission. Damit sind die vom Kriterium verlangten Bestandteile erfüllt.",
+          "evidence": [
+            "Nach Art. 259 Abs. 1 AEUV kann jeder Mitgliedstaat den Gerichtshof anrufen, wenn er der Auffassung ist, ein anderer Mitgliedstaat habe gegen eine Verpflichtung aus den Verträgen verstoßen.",
+            "Gemäß Art. 259 Abs. 3 AEUV gibt die Kommission den beteiligten Staaten in einem kontradiktorischen Verfahren Gelegenheit zur schriftlichen und mündlichen Äußerung und erlässt anschließend eine mit Gründen versehene Stellungnahme.",
+            "Polen hat sich wegen der deutschen Verordnung an die Kommission gewandt und diese damit befasst. Deutschland erhielt Gelegenheit zur Äußerung; die Kommission gab anschließend eine abschließende Stellungnahme ab.",
+            "Die Sachverhaltsangaben sind dahin auszulegen, dass die Kommission die Beschwerden beider Staaten behandelte und den beteiligten Staaten das nach Art. 259 Abs. 3 AEUV erforderliche kontradiktorische Gehör gewährte."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort behandelt bei der Zulässigkeit der polnischen Klage das Vorverfahren nach Art. 259 AEUV.",
+              "satisfied": true
+            },
+            {
+              "requirement": "Die Antwort erläutert die Anhörung des betroffenen Mitgliedstaats im Vorverfahren nach Art. 259 AEUV.",
+              "satisfied": true
+            },
+            {
+              "requirement": "Die Antwort erläutert die Beteiligung der anderen Kläger bzw. beteiligten Staaten im kontradiktorischen Verfahren nach Art. 259 Abs. 3 AEUV.",
+              "satisfied": true
+            },
+            {
+              "requirement": "Die Antwort erläutert die abschließende Stellungnahme der Kommission.",
+              "satisfied": true
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Zulässigkeit der polnischen Klage, Vorverfahren nach Art. 259 AEUV mit Anhörung des betroffenen Mitgliedstaats, Beteiligung anderer Kläger und abschließender Stellungnahme der Kommission",
+            "evidence_scope": "Zulässigkeit der polnischen Klage, Vorverfahren nach Art. 259 Abs. 2 bis 4 AEUV, Anhörung Deutschlands, Beteiligung der beteiligten Staaten/beider Staaten und abschließende Stellungnahme der Kommission",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das Vorverfahren nach Art. 259 AEUV umfasst Befassung der Kommission, kontradiktorisches Gehör der beteiligten Staaten einschließlich Deutschlands sowie eine anschließende abschließende Stellungnahme der Kommission.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft bei der Zulässigkeit der polnischen Klage explizit das Vorverfahren nach Art. 259 AEUV und erläutert sowohl die Anhörung des betroffenen Mitgliedstaats, das kontradiktorische Gehör der beteiligten Staaten als auch das Erfordernis einer Stellungnahme der Kommission.",
+          "evidence": [
+            "Bevor ein Mitgliedstaat Klage erhebt, muss er nach Art. 259 Abs. 2 AEUV die Kommission mit der Angelegenheit befassen. Gemäß Art. 259 Abs. 3 AEUV gibt die Kommission den beteiligten Staaten in einem kontradiktorischen Verfahren Gelegenheit zur schriftlichen und mündlichen Äußerung und erlässt anschließend eine mit Gründen versehene Stellungnahme.",
+            "Polen hat sich wegen der deutschen Verordnung an die Kommission gewandt und diese damit befasst. Deutschland erhielt Gelegenheit zur Äußerung; die Kommission gab anschließend eine abschließende Stellungnahme ab. Die Sachverhaltsangaben sind dahin auszulegen, dass die Kommission die Beschwerden beider Staaten behandelte und den beteiligten Staaten das nach Art. 259 Abs. 3 AEUV erforderliche kontradiktorische Gehör gewährte."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Behandlung des Vorverfahrens nach Art. 259 AEUV bei der Zulässigkeit der polnischen Klage",
+              "satisfied": true
+            },
+            {
+              "requirement": "Erläuterung, dass das Vorverfahren eine Anhörung des betroffenen Mitgliedstaats umfasst",
+              "satisfied": true
+            },
+            {
+              "requirement": "Erläuterung, dass das Vorverfahren auch eine Beteiligung des klagenden Mitgliedstaats (kontradiktorisches Gehör beider beteiligter Staaten) umfasst",
+              "satisfied": true
+            },
+            {
+              "requirement": "Erläuterung, dass das Vorverfahren eine mit Gründen versehene / abschließende Stellungnahme der Kommission umfasst",
+              "satisfied": true
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Klage Polens, Zulässigkeit, Vorverfahren nach Art. 259 AEUV",
+            "evidence_scope": "Klage Polens, Zulässigkeit, Vorverfahren nach Art. 259 AEUV",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Antwort subsumiert das Vorverfahren der polnischen Klage unter Art. 259 AEUV und legt dessen Bestandteile (Befassung der Kommission, kontradiktorisches Gehör/Anhörung beider Staaten, Stellungnahme der Kommission) vollständig dar.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 28305,
+        "output_tokens": 3643,
+        "total_tokens": 31948,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 8845
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt das Vorverfahren ausdrücklich bei der Zulässigkeit der polnischen Klage. Sie erfasst die Beschwerden Polens und Ungarns, nennt die Äußerungsmöglichkeit der beteiligten Staaten und die abschließende Stellungnahme der Kommission. Damit sind die geforderten Bestandteile erläutert.",
+              "evidence": [
+                "Polen hat sich wegen der deutschen Verordnung an die Kommission gewandt und diese damit befasst.",
+                "Die Sachverhaltsangaben sind dahin auszulegen, dass die Kommission die Beschwerden beider Staaten behandelte und den beteiligten Staaten das nach Art. 259 Abs. 3 AEUV erforderliche kontradiktorische Gehör gewährte.",
+                "Deutschland erhielt Gelegenheit zur Äußerung; die Kommission gab anschließend eine abschließende Stellungnahme ab."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Das Vorverfahren der polnischen Klage wird in der Zulässigkeit nach Art. 259 AEUV behandelt.",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Die Anhörung des betroffenen Mitgliedstaats wird erläutert.",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Die Beteiligung der anderen Kläger im Verfahren nach Art. 259 AEUV wird erläutert.",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Eine abschließende Stellungnahme der Kommission wird genannt.",
+                  "satisfied": true
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Zulässigkeit der polnischen Klage und deren Vorverfahren nach Art. 259 AEUV",
+                "evidence_scope": "Zulässigkeit der polnischen Klage; das Vorverfahren nach Art. 259 Abs. 2 bis 4 AEUV, einschließlich der Beschwerden beider Staaten",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Antwort behandelt das Vorverfahren als kontradiktorisches Verfahren nach Art. 259 Abs. 3 AEUV, in dem die beteiligten Staaten Gelegenheit zur Äußerung erhalten, und nennt die abschließende Stellungnahme der Kommission.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt im Abschnitt zur Zulässigkeit der polnischen Klage ausdrücklich das Vorverfahren nach Art. 259 AEUV. Sie benennt die Gelegenheit zur Äußerung für Deutschland, die Beteiligung der beteiligten Staaten bzw. beider Staaten im kontradiktorischen Verfahren und die abschließende Stellungnahme der Kommission. Damit sind die vom Kriterium verlangten Bestandteile erfüllt.",
+              "evidence": [
+                "Nach Art. 259 Abs. 1 AEUV kann jeder Mitgliedstaat den Gerichtshof anrufen, wenn er der Auffassung ist, ein anderer Mitgliedstaat habe gegen eine Verpflichtung aus den Verträgen verstoßen.",
+                "Gemäß Art. 259 Abs. 3 AEUV gibt die Kommission den beteiligten Staaten in einem kontradiktorischen Verfahren Gelegenheit zur schriftlichen und mündlichen Äußerung und erlässt anschließend eine mit Gründen versehene Stellungnahme.",
+                "Polen hat sich wegen der deutschen Verordnung an die Kommission gewandt und diese damit befasst. Deutschland erhielt Gelegenheit zur Äußerung; die Kommission gab anschließend eine abschließende Stellungnahme ab.",
+                "Die Sachverhaltsangaben sind dahin auszulegen, dass die Kommission die Beschwerden beider Staaten behandelte und den beteiligten Staaten das nach Art. 259 Abs. 3 AEUV erforderliche kontradiktorische Gehör gewährte."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort behandelt bei der Zulässigkeit der polnischen Klage das Vorverfahren nach Art. 259 AEUV.",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Die Antwort erläutert die Anhörung des betroffenen Mitgliedstaats im Vorverfahren nach Art. 259 AEUV.",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Die Antwort erläutert die Beteiligung der anderen Kläger bzw. beteiligten Staaten im kontradiktorischen Verfahren nach Art. 259 Abs. 3 AEUV.",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Die Antwort erläutert die abschließende Stellungnahme der Kommission.",
+                  "satisfied": true
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Zulässigkeit der polnischen Klage, Vorverfahren nach Art. 259 AEUV mit Anhörung des betroffenen Mitgliedstaats, Beteiligung anderer Kläger und abschließender Stellungnahme der Kommission",
+                "evidence_scope": "Zulässigkeit der polnischen Klage, Vorverfahren nach Art. 259 Abs. 2 bis 4 AEUV, Anhörung Deutschlands, Beteiligung der beteiligten Staaten/beider Staaten und abschließende Stellungnahme der Kommission",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das Vorverfahren nach Art. 259 AEUV umfasst Befassung der Kommission, kontradiktorisches Gehör der beteiligten Staaten einschließlich Deutschlands sowie eine anschließende abschließende Stellungnahme der Kommission.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft bei der Zulässigkeit der polnischen Klage explizit das Vorverfahren nach Art. 259 AEUV und erläutert sowohl die Anhörung des betroffenen Mitgliedstaats, das kontradiktorische Gehör der beteiligten Staaten als auch das Erfordernis einer Stellungnahme der Kommission.",
+              "evidence": [
+                "Bevor ein Mitgliedstaat Klage erhebt, muss er nach Art. 259 Abs. 2 AEUV die Kommission mit der Angelegenheit befassen. Gemäß Art. 259 Abs. 3 AEUV gibt die Kommission den beteiligten Staaten in einem kontradiktorischen Verfahren Gelegenheit zur schriftlichen und mündlichen Äußerung und erlässt anschließend eine mit Gründen versehene Stellungnahme.",
+                "Polen hat sich wegen der deutschen Verordnung an die Kommission gewandt und diese damit befasst. Deutschland erhielt Gelegenheit zur Äußerung; die Kommission gab anschließend eine abschließende Stellungnahme ab. Die Sachverhaltsangaben sind dahin auszulegen, dass die Kommission die Beschwerden beider Staaten behandelte und den beteiligten Staaten das nach Art. 259 Abs. 3 AEUV erforderliche kontradiktorische Gehör gewährte."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Behandlung des Vorverfahrens nach Art. 259 AEUV bei der Zulässigkeit der polnischen Klage",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Erläuterung, dass das Vorverfahren eine Anhörung des betroffenen Mitgliedstaats umfasst",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Erläuterung, dass das Vorverfahren auch eine Beteiligung des klagenden Mitgliedstaats (kontradiktorisches Gehör beider beteiligter Staaten) umfasst",
+                  "satisfied": true
+                },
+                {
+                  "requirement": "Erläuterung, dass das Vorverfahren eine mit Gründen versehene / abschließende Stellungnahme der Kommission umfasst",
+                  "satisfied": true
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Klage Polens, Zulässigkeit, Vorverfahren nach Art. 259 AEUV",
+                "evidence_scope": "Klage Polens, Zulässigkeit, Vorverfahren nach Art. 259 AEUV",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Antwort subsumiert das Vorverfahren der polnischen Klage unter Art. 259 AEUV und legt dessen Bestandteile (Befassung der Kommission, kontradiktorisches Gehör/Anhörung beider Staaten, Stellungnahme der Kommission) vollständig dar.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": []
+}

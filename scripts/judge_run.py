@@ -89,6 +89,12 @@ def parse_args() -> argparse.Namespace:
         help="Targeted retries per errored committee vote before a criterion stays unresolved.",
     )
     parser.add_argument(
+        "--judge-prompt-version",
+        choices=("v1", "v2", "v3", "v4"),
+        default="v1",
+        help="Pass through to evaluation.run. v1 reproduces the published scores.",
+    )
+    parser.add_argument(
         "--committee-tiebreaker",
         action="store_true",
         help=(
@@ -306,6 +312,7 @@ def judge_one(args: argparse.Namespace, metadata_path: pathlib.Path) -> tuple[pa
         command.extend(["--committee-error-retries", str(args.committee_error_retries)])
     if args.committee_tiebreaker:
         command.append("--committee-tiebreaker")
+    command.extend(["--judge-prompt-version", args.judge_prompt_version])
     if args.vote_cache_dir is not None:
         command.extend(["--vote-cache-dir", str(args.vote_cache_dir)])
     if args.adaptive:

@@ -1,0 +1,1084 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-ungebetener-gast",
+    "title": "Fortgeschrittenenübungsklausur: Ungebetener Gast"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenubungsklausur-ungebetener-gast/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-ungebetener-gast/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna",
+      "model": "gpt-5.6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "terra",
+      "model": "gpt-5.6-terra",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "gemini-3.6-flash",
+      "model": "google/gemini-3.6-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": null,
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T15:08:55.722677+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 2,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.5,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 1,
+    "root_pass_rate": 0.5,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 4,
+    "pass_rate": 0.5,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 2,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "terra": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.6-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "terra": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.6-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Tatbestand": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Strafbarkeit von A und B": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Tatbestand › Objektiver Tatbestand": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Strafbarkeit von A und B › §§ 242 Abs. 1, 244 Abs. 1 Nr. 1 lit. b, Nr. 3, Abs. 4, 25 Abs. 2 StGB": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 28011,
+    "output_tokens": 7182,
+    "total_tokens": 35193,
+    "cached_input_tokens": 7168,
+    "cache_write_tokens": 7168
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 28011,
+    "output_tokens": 7182,
+    "total_tokens": 35193,
+    "cached_input_tokens": 7168,
+    "cache_write_tokens": 7168
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-007",
+      "title": "Personengewalt des A",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort bejaht ausdrücklich beide von A vorgenommenen Handlungen als körperlich wirkenden Zwang zur Verhinderung beziehungsweise Ausschaltung von Ts Widerstand. Damit ist die Personengewalt des A nach § 249 Abs. 1 StGB substantiv erfüllt.",
+      "evidence": [
+        "A sprang auf T, schlug ihr ins Gesicht, sodass sie benommen zu Boden fiel, und fesselte ihre Hände.",
+        "Dadurch war T jedenfalls körperlich daran gehindert, die Wegnahme zu vereiteln.",
+        "Der Faustschlag bewirkte eine körperliche Beeinträchtigung; zudem bewirkte die konkrete Fixierung jedenfalls zusammen mit dem Einschüchterungseffekt die Ausschaltung erwarteten Widerstands."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht ausdrücklich beide von A vorgenommenen Handlungen als körperlich wirkenden Zwang zur Verhinderung beziehungsweise Ausschaltung von Ts Widerstand. Damit ist die Personengewalt des A nach § 249 Abs. 1 StGB substantiv erfüllt.",
+          "evidence": [
+            "A sprang auf T, schlug ihr ins Gesicht, sodass sie benommen zu Boden fiel, und fesselte ihre Hände.",
+            "Dadurch war T jedenfalls körperlich daran gehindert, die Wegnahme zu vereiteln.",
+            "Der Faustschlag bewirkte eine körperliche Beeinträchtigung; zudem bewirkte die konkrete Fixierung jedenfalls zusammen mit dem Einschüchterungseffekt die Ausschaltung erwarteten Widerstands."
+          ],
+          "component_checks": [
+            {
+              "requirement": "As Faustschlag gegen Ts Gesicht wird als körperlich wirkender Zwang zur Ausschaltung tatsächlichen oder erwarteten Widerstands eingeordnet.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Das Fesseln von Ts Händen wird als körperlich wirkender Zwang zur Ausschaltung tatsächlichen oder erwarteten Widerstands eingeordnet.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A, T und die Personengewalt im Rahmen des Raubes nach § 249 Abs. 1 StGB",
+            "evidence_scope": "A, T und Faustschlag sowie Fesselung als Gewalt im Rahmen des Raubes nach § 249 Abs. 1 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Faustschlag bewirkte eine körperliche Beeinträchtigung; die Fixierung schaltete zusammen mit dem Einschüchterungseffekt erwarteten Widerstand aus.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna",
+            "model": "gpt-5.6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet beide von A vorgenommenen Handlungen ausdrücklich als körperlich wirkenden Zwang zur Überwindung beziehungsweise Ausschaltung von Widerstand ein und bejaht damit Personengewalt.",
+          "evidence": [
+            "Gewalt ist körperlich wirkender Zwang zur Überwindung eines geleisteten oder erwarteten Widerstands. A sprang auf T, schlug ihr ins Gesicht, sodass sie benommen zu Boden fiel, und fesselte ihre Hände. Dadurch war T jedenfalls körperlich daran gehindert, die Wegnahme zu vereiteln."
+          ],
+          "component_checks": [
+            {
+              "requirement": "As Faustschlag gegen Ts Gesicht und das Fesseln ihrer Hände als körperlich wirkenden Zwang zur Ausschaltung tatsächlichen oder erwarteten Widerstands und damit als Gewalt gegen eine Person nach § 249 Abs. 1 StGB einordnen",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A, T, Gewalt gegen eine Person nach § 249 Abs. 1 StGB",
+            "evidence_scope": "A, T, Gewalt gegen eine Person bei der Prüfung des § 249 Abs. 1 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Faustschlag und Fesselung hinderten T körperlich daran, die Wegnahme zu vereiteln, und überwanden damit erwarteten Widerstand.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "terra",
+            "model": "gpt-5.6-terra",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Das Kriterium ist vollständig erfüllt, da sowohl der Faustschlag als auch die Fesselung ausdrücklich als Gewalt gegen eine Person im Sinne des § 249 Abs. 1 StGB unter Angabe der entsprechenden Wirkung auf T eingeordnet werden.",
+          "evidence": [
+            "Gewalt ist körperlich wirkender Zwang zur Überwindung eines geleisteten oder erwarteten Widerstands. A sprang auf T, schlug ihr ins Gesicht, sodass sie benommen zu Boden fiel, und fesselte ihre Hände.",
+            "Der Faustschlag bewirkte eine körperliche Beeinträchtigung; zudem bewirkte die konkrete Fixierung jedenfalls zusammen mit dem Einschüchterungseffekt die Ausschaltung erwarteten Widerstands."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einordnung von As Faustschlag und Fesselung als körperlich wirkender Zwang zur Ausschaltung erwarteten/geleisteten Widerstands (Gewalt gegen eine Person)",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Personengewalt des A gemäß § 249 Abs. 1 StGB",
+            "evidence_scope": "Personengewalt des A gemäß § 249 Abs. 1 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Faustschlag und Fesselung stellten körperlich wirkenden Zwang dar, der zur Beeinträchtigung und Ausschaltung erwarteten Widerstands führte.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.6-flash",
+            "model": "google/gemini-3.6-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": null,
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 13998,
+        "output_tokens": 2755,
+        "total_tokens": 16753,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 7168
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht ausdrücklich beide von A vorgenommenen Handlungen als körperlich wirkenden Zwang zur Verhinderung beziehungsweise Ausschaltung von Ts Widerstand. Damit ist die Personengewalt des A nach § 249 Abs. 1 StGB substantiv erfüllt.",
+              "evidence": [
+                "A sprang auf T, schlug ihr ins Gesicht, sodass sie benommen zu Boden fiel, und fesselte ihre Hände.",
+                "Dadurch war T jedenfalls körperlich daran gehindert, die Wegnahme zu vereiteln.",
+                "Der Faustschlag bewirkte eine körperliche Beeinträchtigung; zudem bewirkte die konkrete Fixierung jedenfalls zusammen mit dem Einschüchterungseffekt die Ausschaltung erwarteten Widerstands."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "As Faustschlag gegen Ts Gesicht wird als körperlich wirkender Zwang zur Ausschaltung tatsächlichen oder erwarteten Widerstands eingeordnet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Das Fesseln von Ts Händen wird als körperlich wirkender Zwang zur Ausschaltung tatsächlichen oder erwarteten Widerstands eingeordnet.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A, T und die Personengewalt im Rahmen des Raubes nach § 249 Abs. 1 StGB",
+                "evidence_scope": "A, T und Faustschlag sowie Fesselung als Gewalt im Rahmen des Raubes nach § 249 Abs. 1 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Faustschlag bewirkte eine körperliche Beeinträchtigung; die Fixierung schaltete zusammen mit dem Einschüchterungseffekt erwarteten Widerstand aus.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna",
+                "model": "gpt-5.6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort ordnet beide von A vorgenommenen Handlungen ausdrücklich als körperlich wirkenden Zwang zur Überwindung beziehungsweise Ausschaltung von Widerstand ein und bejaht damit Personengewalt.",
+              "evidence": [
+                "Gewalt ist körperlich wirkender Zwang zur Überwindung eines geleisteten oder erwarteten Widerstands. A sprang auf T, schlug ihr ins Gesicht, sodass sie benommen zu Boden fiel, und fesselte ihre Hände. Dadurch war T jedenfalls körperlich daran gehindert, die Wegnahme zu vereiteln."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "As Faustschlag gegen Ts Gesicht und das Fesseln ihrer Hände als körperlich wirkenden Zwang zur Ausschaltung tatsächlichen oder erwarteten Widerstands und damit als Gewalt gegen eine Person nach § 249 Abs. 1 StGB einordnen",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A, T, Gewalt gegen eine Person nach § 249 Abs. 1 StGB",
+                "evidence_scope": "A, T, Gewalt gegen eine Person bei der Prüfung des § 249 Abs. 1 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Faustschlag und Fesselung hinderten T körperlich daran, die Wegnahme zu vereiteln, und überwanden damit erwarteten Widerstand.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "terra",
+                "model": "gpt-5.6-terra",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Das Kriterium ist vollständig erfüllt, da sowohl der Faustschlag als auch die Fesselung ausdrücklich als Gewalt gegen eine Person im Sinne des § 249 Abs. 1 StGB unter Angabe der entsprechenden Wirkung auf T eingeordnet werden.",
+              "evidence": [
+                "Gewalt ist körperlich wirkender Zwang zur Überwindung eines geleisteten oder erwarteten Widerstands. A sprang auf T, schlug ihr ins Gesicht, sodass sie benommen zu Boden fiel, und fesselte ihre Hände.",
+                "Der Faustschlag bewirkte eine körperliche Beeinträchtigung; zudem bewirkte die konkrete Fixierung jedenfalls zusammen mit dem Einschüchterungseffekt die Ausschaltung erwarteten Widerstands."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung von As Faustschlag und Fesselung als körperlich wirkender Zwang zur Ausschaltung erwarteten/geleisteten Widerstands (Gewalt gegen eine Person)",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Personengewalt des A gemäß § 249 Abs. 1 StGB",
+                "evidence_scope": "Personengewalt des A gemäß § 249 Abs. 1 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Faustschlag und Fesselung stellten körperlich wirkenden Zwang dar, der zur Beeinträchtigung und Ausschaltung erwarteten Widerstands führte.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.6-flash",
+                "model": "google/gemini-3.6-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": null,
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-027",
+      "title": "Keine Werkzeugqualifikation des B",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort verneint zwar eine Werkzeugqualifikation des B wegen fehlender Kenntnis und fehlenden Vorsatzes, tut dies aber nur für § 250 Abs. 1 Nr. 1 Buchst. b StGB. Die vom Kriterium verlangte Prüfung und Bejahung nach § 244 Abs. 1 Nr. 1 Buchst. b StGB für A erfolgt nicht; die Ausführungen zu § 244 betreffen ausschließlich Nr. 3.",
+      "evidence": [
+        "A führte während des Raubes einen Schal bei sich",
+        "B ... hatte den Einsatz von Gewalt gegen anwesende Personen nicht [im gemeinsamen Tatplan]",
+        "Mangels Kenntnis und Vorsatzes hinsichtlich der Gewalt kommt für B weder eine Strafbarkeit nach § 249 Abs. 1 StGB noch nach § 250 Abs. 1 Nr. 1 Buchst. b StGB in Betracht."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort verneint zwar eine Werkzeugqualifikation des B wegen fehlender Kenntnis und fehlenden Vorsatzes, tut dies aber nur für § 250 Abs. 1 Nr. 1 Buchst. b StGB. Die vom Kriterium verlangte Prüfung und Bejahung nach § 244 Abs. 1 Nr. 1 Buchst. b StGB für A erfolgt nicht; die Ausführungen zu § 244 betreffen ausschließlich Nr. 3.",
+          "evidence": [
+            "A führte während des Raubes einen Schal bei sich",
+            "B ... hatte den Einsatz von Gewalt gegen anwesende Personen nicht [im gemeinsamen Tatplan]",
+            "Mangels Kenntnis und Vorsatzes hinsichtlich der Gewalt kommt für B weder eine Strafbarkeit nach § 249 Abs. 1 StGB noch nach § 250 Abs. 1 Nr. 1 Buchst. b StGB in Betracht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "§ 244 Abs. 1 Nr. 1 Buchst. b StGB wird für A, nicht aber für B bejaht",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Der fehlende Vorsatz des B hinsichtlich des unabgesprochenen Schaleinsatzes wird unter der maßgeblichen Werkzeugqualifikation geprüft",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B und die Werkzeugqualifikation nach § 244 Abs. 1 Nr. 1 Buchst. b StGB",
+            "evidence_scope": "B und der Ausschluss der Qualifikation nach § 250 Abs. 1 Nr. 1 Buchst. b StGB; § 244 wird nur hinsichtlich Nr. 3 geprüft",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "B habe den Gewalteinsatz und damit nach der Antwort die Qualifikation nach § 250 Abs. 1 Nr. 1 Buchst. b StGB nicht gekannt und nicht vorsätzlich umfasst.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna",
+            "model": "gpt-5.6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort verneint lediglich eine Raubstrafbarkeit und die § 250-Qualifikation des B. Sie untersucht nicht § 244 Abs. 1 Nr. 1 lit. b StGB, weder objektives Beisichführen durch A noch Bs fehlenden Vorsatz bezüglich des Schals.",
+          "evidence": [
+            "II. Kein Raub und keine Zurechnung der Qualifikation des A",
+            "Mangels Kenntnis und Vorsatzes hinsichtlich der Gewalt kommt für B weder eine Strafbarkeit nach § 249 Abs. 1 StGB noch nach § 250 Abs. 1 Nr. 1 Buchst. b StGB in Betracht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "§ 244 Abs. 1 Nr. 1 lit. b StGB wird für B wegen fehlenden Vorsatzes bezüglich As unabgesprochenem Schaleinsatz nicht bejaht.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Antwort bejaht § 244 Abs. 1 Nr. 1 lit. b StGB allenfalls für A, nicht aber für B.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B, Werkzeugqualifikation nach § 244 Abs. 1 Nr. 1 lit. b StGB aufgrund des von A verwendeten Schals",
+            "evidence_scope": "B, fehlende Zurechnung von Gewalt und der Raubqualifikation nach § 250 Abs. 1 Nr. 1 Buchst. b StGB",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "B habe weder Gewalt ausgeübt noch von As Gewaltanwendung gewusst; daher fehle Vorsatz für §§ 249, 250 StGB.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "terra",
+            "model": "gpt-5.6-terra",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Lösung prüft den Qualifikationstatbestand des § 244 Abs. 1 Nr. 1 lit. b StGB weder für A noch für B. Die verlangte Gegenüberstellung und die Verneinung bezüglich B wegen fehlenden Vorsatzes fehlen somit vollständig.",
+          "evidence": [],
+          "component_checks": [
+            {
+              "requirement": "Bejahung von § 244 Abs. 1 Nr. 1 lit. b StGB für A und Verneinung für B mangels Vorsatzes bezüglich des Schaleinsatzes",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B - Diebstahl mit Waffen / gefährlichen Werkzeugen / sonstigen Werkzeugen (§ 244 Abs. 1 Nr. 1 lit. b StGB)",
+            "evidence_scope": "keine Prüfung von § 244 Abs. 1 Nr. 1 lit. b StGB in der Lösung vorhanden",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.6-flash",
+            "model": "google/gemini-3.6-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": null,
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 14013,
+        "output_tokens": 4427,
+        "total_tokens": 18440,
+        "cached_input_tokens": 7168,
+        "cache_write_tokens": 0
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort verneint zwar eine Werkzeugqualifikation des B wegen fehlender Kenntnis und fehlenden Vorsatzes, tut dies aber nur für § 250 Abs. 1 Nr. 1 Buchst. b StGB. Die vom Kriterium verlangte Prüfung und Bejahung nach § 244 Abs. 1 Nr. 1 Buchst. b StGB für A erfolgt nicht; die Ausführungen zu § 244 betreffen ausschließlich Nr. 3.",
+              "evidence": [
+                "A führte während des Raubes einen Schal bei sich",
+                "B ... hatte den Einsatz von Gewalt gegen anwesende Personen nicht [im gemeinsamen Tatplan]",
+                "Mangels Kenntnis und Vorsatzes hinsichtlich der Gewalt kommt für B weder eine Strafbarkeit nach § 249 Abs. 1 StGB noch nach § 250 Abs. 1 Nr. 1 Buchst. b StGB in Betracht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§ 244 Abs. 1 Nr. 1 Buchst. b StGB wird für A, nicht aber für B bejaht",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Der fehlende Vorsatz des B hinsichtlich des unabgesprochenen Schaleinsatzes wird unter der maßgeblichen Werkzeugqualifikation geprüft",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B und die Werkzeugqualifikation nach § 244 Abs. 1 Nr. 1 Buchst. b StGB",
+                "evidence_scope": "B und der Ausschluss der Qualifikation nach § 250 Abs. 1 Nr. 1 Buchst. b StGB; § 244 wird nur hinsichtlich Nr. 3 geprüft",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "B habe den Gewalteinsatz und damit nach der Antwort die Qualifikation nach § 250 Abs. 1 Nr. 1 Buchst. b StGB nicht gekannt und nicht vorsätzlich umfasst.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna",
+                "model": "gpt-5.6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort verneint lediglich eine Raubstrafbarkeit und die § 250-Qualifikation des B. Sie untersucht nicht § 244 Abs. 1 Nr. 1 lit. b StGB, weder objektives Beisichführen durch A noch Bs fehlenden Vorsatz bezüglich des Schals.",
+              "evidence": [
+                "II. Kein Raub und keine Zurechnung der Qualifikation des A",
+                "Mangels Kenntnis und Vorsatzes hinsichtlich der Gewalt kommt für B weder eine Strafbarkeit nach § 249 Abs. 1 StGB noch nach § 250 Abs. 1 Nr. 1 Buchst. b StGB in Betracht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§ 244 Abs. 1 Nr. 1 lit. b StGB wird für B wegen fehlenden Vorsatzes bezüglich As unabgesprochenem Schaleinsatz nicht bejaht.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Antwort bejaht § 244 Abs. 1 Nr. 1 lit. b StGB allenfalls für A, nicht aber für B.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B, Werkzeugqualifikation nach § 244 Abs. 1 Nr. 1 lit. b StGB aufgrund des von A verwendeten Schals",
+                "evidence_scope": "B, fehlende Zurechnung von Gewalt und der Raubqualifikation nach § 250 Abs. 1 Nr. 1 Buchst. b StGB",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "B habe weder Gewalt ausgeübt noch von As Gewaltanwendung gewusst; daher fehle Vorsatz für §§ 249, 250 StGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "terra",
+                "model": "gpt-5.6-terra",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Lösung prüft den Qualifikationstatbestand des § 244 Abs. 1 Nr. 1 lit. b StGB weder für A noch für B. Die verlangte Gegenüberstellung und die Verneinung bezüglich B wegen fehlenden Vorsatzes fehlen somit vollständig.",
+              "evidence": [],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung von § 244 Abs. 1 Nr. 1 lit. b StGB für A und Verneinung für B mangels Vorsatzes bezüglich des Schaleinsatzes",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B - Diebstahl mit Waffen / gefährlichen Werkzeugen / sonstigen Werkzeugen (§ 244 Abs. 1 Nr. 1 lit. b StGB)",
+                "evidence_scope": "keine Prüfung von § 244 Abs. 1 Nr. 1 lit. b StGB in der Lösung vorhanden",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.6-flash",
+                "model": "google/gemini-3.6-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": null,
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-007",
+      "title": "Personengewalt des A",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort stellt zunächst den Gewaltbegriff des § 249 Abs. 1 StGB dar, verknüpft ihn ausdrücklich mit As Faustschlag und dem Fesseln der T und zieht daraus den Schluss, dass ihr Widerstand ausgeschaltet wurde. Die Prüfung ist damit methodisch vollständig und kriterienspezifisch.",
+      "evidence": [
+        "Gewalt ist körperlich wirkender Zwang zur Überwindung eines geleisteten oder erwarteten Widerstands.",
+        "A sprang auf T, schlug ihr ins Gesicht, sodass sie benommen zu Boden fiel, und fesselte ihre Hände.",
+        "Dadurch war T jedenfalls körperlich daran gehindert, die Wegnahme zu vereiteln."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort stellt zunächst den Gewaltbegriff des § 249 Abs. 1 StGB dar, verknüpft ihn ausdrücklich mit As Faustschlag und dem Fesseln der T und zieht daraus den Schluss, dass ihr Widerstand ausgeschaltet wurde. Die Prüfung ist damit methodisch vollständig und kriterienspezifisch.",
+          "evidence": [
+            "Gewalt ist körperlich wirkender Zwang zur Überwindung eines geleisteten oder erwarteten Widerstands.",
+            "A sprang auf T, schlug ihr ins Gesicht, sodass sie benommen zu Boden fiel, und fesselte ihre Hände.",
+            "Dadurch war T jedenfalls körperlich daran gehindert, die Wegnahme zu vereiteln."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna",
+            "model": "gpt-5.6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort nennt den maßgeblichen Gewaltbegriff, ordnet As Faustschlag und Fesselung konkret darunter ein und schließt ausdrücklich auf die körperliche Verhinderung von Ts Widerstand.",
+          "evidence": [
+            "Die Wegnahme beruhte auf Gewalt gegen eine Person. Gewalt ist körperlich wirkender Zwang zur Überwindung eines geleisteten oder erwarteten Widerstands. A sprang auf T, schlug ihr ins Gesicht, sodass sie benommen zu Boden fiel, und fesselte ihre Hände. Dadurch war T jedenfalls körperlich daran gehindert, die Wegnahme zu vereiteln."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "terra",
+            "model": "gpt-5.6-terra",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort definiert das Merkmal der Gewalt im Rahmen der Raubprüfung des A zutreffend als körperlich wirkenden Zwang zur Überwindung von Widerstand, wendet dies konkret auf den Faustschlag sowie die Fesselung an und schließt die Subsumtion ab.",
+          "evidence": [
+            "Gewalt ist körperlich wirkender Zwang zur Überwindung eines geleisteten oder erwarteten Widerstands. A sprang auf T, schlug ihr ins Gesicht, sodass sie benommen zu Boden fiel, und fesselte ihre Hände. Dadurch war T jedenfalls körperlich daran gehindert, die Wegnahme zu vereiteln."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.6-flash",
+            "model": "google/gemini-3.6-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": null,
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort stellt zunächst den Gewaltbegriff des § 249 Abs. 1 StGB dar, verknüpft ihn ausdrücklich mit As Faustschlag und dem Fesseln der T und zieht daraus den Schluss, dass ihr Widerstand ausgeschaltet wurde. Die Prüfung ist damit methodisch vollständig und kriterienspezifisch.",
+              "evidence": [
+                "Gewalt ist körperlich wirkender Zwang zur Überwindung eines geleisteten oder erwarteten Widerstands.",
+                "A sprang auf T, schlug ihr ins Gesicht, sodass sie benommen zu Boden fiel, und fesselte ihre Hände.",
+                "Dadurch war T jedenfalls körperlich daran gehindert, die Wegnahme zu vereiteln."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna",
+                "model": "gpt-5.6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort nennt den maßgeblichen Gewaltbegriff, ordnet As Faustschlag und Fesselung konkret darunter ein und schließt ausdrücklich auf die körperliche Verhinderung von Ts Widerstand.",
+              "evidence": [
+                "Die Wegnahme beruhte auf Gewalt gegen eine Person. Gewalt ist körperlich wirkender Zwang zur Überwindung eines geleisteten oder erwarteten Widerstands. A sprang auf T, schlug ihr ins Gesicht, sodass sie benommen zu Boden fiel, und fesselte ihre Hände. Dadurch war T jedenfalls körperlich daran gehindert, die Wegnahme zu vereiteln."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "terra",
+                "model": "gpt-5.6-terra",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort definiert das Merkmal der Gewalt im Rahmen der Raubprüfung des A zutreffend als körperlich wirkenden Zwang zur Überwindung von Widerstand, wendet dies konkret auf den Faustschlag sowie die Fesselung an und schließt die Subsumtion ab.",
+              "evidence": [
+                "Gewalt ist körperlich wirkender Zwang zur Überwindung eines geleisteten oder erwarteten Widerstands. A sprang auf T, schlug ihr ins Gesicht, sodass sie benommen zu Boden fiel, und fesselte ihre Hände. Dadurch war T jedenfalls körperlich daran gehindert, die Wegnahme zu vereiteln."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.6-flash",
+                "model": "google/gemini-3.6-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": null,
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-027",
+      "title": "Keine Werkzeugqualifikation des B",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort verknüpft zwar Tatsachen, fehlende Kenntnis und einen abschließenden Ausschluss, prüft aber die Werkzeugqualifikation unter § 250 Abs. 1 Nr. 1 Buchst. b StGB und nicht die nach dem Kriterium maßgebliche § 244 Abs. 1 Nr. 1 Buchst. b StGB. Damit fehlt eine vollständige, kriterienspezifische Prüfung.",
+      "evidence": [
+        "B selbst übte gegenüber T weder Gewalt aus noch drohte er ihr.",
+        "Mangels Kenntnis und Vorsatzes hinsichtlich der Gewalt kommt für B weder eine Strafbarkeit nach § 249 Abs. 1 StGB noch nach § 250 Abs. 1 Nr. 1 Buchst. b StGB in Betracht."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort verknüpft zwar Tatsachen, fehlende Kenntnis und einen abschließenden Ausschluss, prüft aber die Werkzeugqualifikation unter § 250 Abs. 1 Nr. 1 Buchst. b StGB und nicht die nach dem Kriterium maßgebliche § 244 Abs. 1 Nr. 1 Buchst. b StGB. Damit fehlt eine vollständige, kriterienspezifische Prüfung.",
+          "evidence": [
+            "B selbst übte gegenüber T weder Gewalt aus noch drohte er ihr.",
+            "Mangels Kenntnis und Vorsatzes hinsichtlich der Gewalt kommt für B weder eine Strafbarkeit nach § 249 Abs. 1 StGB noch nach § 250 Abs. 1 Nr. 1 Buchst. b StGB in Betracht."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": true,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna",
+            "model": "gpt-5.6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erörtert bei B nur die fehlende Zurechnung des Raubes bzw. der § 250-Qualifikation wegen der Gewaltanwendung. Eine auf § 244 Abs. 1 Nr. 1 lit. b StGB und den Schaleinsatz bezogene Prüfung findet nicht statt.",
+          "evidence": [
+            "II. Kein Raub und keine Zurechnung der Qualifikation des A",
+            "Mangels Kenntnis und Vorsatzes hinsichtlich der Gewalt kommt für B weder eine Strafbarkeit nach § 249 Abs. 1 StGB noch nach § 250 Abs. 1 Nr. 1 Buchst. b StGB in Betracht."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "terra",
+            "model": "gpt-5.6-terra",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Eine methodische Prüfung der Werkzeugqualifikation gemäß § 244 Abs. 1 Nr. 1 lit. b StGB in Bezug auf B findet in der Bearbeitung nicht statt.",
+          "evidence": [],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.6-flash",
+            "model": "google/gemini-3.6-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": null,
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort verknüpft zwar Tatsachen, fehlende Kenntnis und einen abschließenden Ausschluss, prüft aber die Werkzeugqualifikation unter § 250 Abs. 1 Nr. 1 Buchst. b StGB und nicht die nach dem Kriterium maßgebliche § 244 Abs. 1 Nr. 1 Buchst. b StGB. Damit fehlt eine vollständige, kriterienspezifische Prüfung.",
+              "evidence": [
+                "B selbst übte gegenüber T weder Gewalt aus noch drohte er ihr.",
+                "Mangels Kenntnis und Vorsatzes hinsichtlich der Gewalt kommt für B weder eine Strafbarkeit nach § 249 Abs. 1 StGB noch nach § 250 Abs. 1 Nr. 1 Buchst. b StGB in Betracht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna",
+                "model": "gpt-5.6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erörtert bei B nur die fehlende Zurechnung des Raubes bzw. der § 250-Qualifikation wegen der Gewaltanwendung. Eine auf § 244 Abs. 1 Nr. 1 lit. b StGB und den Schaleinsatz bezogene Prüfung findet nicht statt.",
+              "evidence": [
+                "II. Kein Raub und keine Zurechnung der Qualifikation des A",
+                "Mangels Kenntnis und Vorsatzes hinsichtlich der Gewalt kommt für B weder eine Strafbarkeit nach § 249 Abs. 1 StGB noch nach § 250 Abs. 1 Nr. 1 Buchst. b StGB in Betracht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "terra",
+                "model": "gpt-5.6-terra",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Eine methodische Prüfung der Werkzeugqualifikation gemäß § 244 Abs. 1 Nr. 1 lit. b StGB in Bezug auf B findet in der Bearbeitung nicht statt.",
+              "evidence": [],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.6-flash",
+                "model": "google/gemini-3.6-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": null,
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

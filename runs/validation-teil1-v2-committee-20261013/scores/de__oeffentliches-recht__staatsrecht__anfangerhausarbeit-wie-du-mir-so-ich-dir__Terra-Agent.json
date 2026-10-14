@@ -1,0 +1,511 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/anfangerhausarbeit-wie-du-mir-so-ich-dir",
+    "title": "Anfängerhausarbeit: „Wie du mir, so ich dir“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerhausarbeit-wie-du-mir-so-ich-dir/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/anfangerhausarbeit-wie-du-mir-so-ich-dir/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:31:45.453928+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 1,
+    "points_available": 1,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Begründetheit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Begründetheit › Religionsfreiheit, Art. 4 Abs. 1, Abs. 2 GG der T": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 22342,
+    "output_tokens": 5304,
+    "total_tokens": 27646,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 10390
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 22342,
+    "output_tokens": 5304,
+    "total_tokens": 27646,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 10390
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-012",
+      "title": "Kein klassischer Eingriff mangels Imperativität",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Passage verneint unmittelbaren Zwang zur Organspende und beschreibt die Erklärung als eine Wahlmöglichkeit, deren Ablehnung einen erheblichen Nachteil auslöst. Die Antwort behandelt diesen Nachteil ausdrücklich als mittelbaren, nicht als vollstreckbares Gebot; damit ist der kriteriumsgemäße Unterschied erfüllt.",
+      "evidence": [
+        "Die Priorisierungsregeln zwingen T nicht unmittelbar zur Organspende.",
+        "Sie stellen sie aber bei einem späteren, lebensbedrohlichen Organversagen vor die Wahl, entweder ihrem Glauben treu zu bleiben und eine gravierend geringere Chance auf ein Organ hinzunehmen oder eine mit ihrem Glauben unvereinbare Erklärung abzugeben.",
+        "Ein derart existentieller Nachteil ist ein gewichtiger mittelbarer Eingriff in die Glaubensbetätigungsfreiheit."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Passage verneint unmittelbaren Zwang zur Organspende und beschreibt die Erklärung als eine Wahlmöglichkeit, deren Ablehnung einen erheblichen Nachteil auslöst. Die Antwort behandelt diesen Nachteil ausdrücklich als mittelbaren, nicht als vollstreckbares Gebot; damit ist der kriteriumsgemäße Unterschied erfüllt.",
+          "evidence": [
+            "Die Priorisierungsregeln zwingen T nicht unmittelbar zur Organspende.",
+            "Sie stellen sie aber bei einem späteren, lebensbedrohlichen Organversagen vor die Wahl, entweder ihrem Glauben treu zu bleiben und eine gravierend geringere Chance auf ein Organ hinzunehmen oder eine mit ihrem Glauben unvereinbare Erklärung abzugeben.",
+            "Ein derart existentieller Nachteil ist ein gewichtiger mittelbarer Eingriff in die Glaubensbetätigungsfreiheit."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort verneint einen Zwang zur Organspende.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort verneint, dass die Spendenbereitschaftserklärung mit Zwangsmitteln durchsetzbar geboten wird, und unterscheidet den Nachteil als mittelbaren Druck.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "T; klassischer Eingriff in die Religionsfreiheit durch § 12 TPG",
+            "evidence_scope": "T; Eingriff in die Glaubensbetätigungsfreiheit durch die Priorisierungsregeln",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Regeln erzwingen keine Organspende; sie lassen T vielmehr zwischen einer Erklärung und einem erheblichen späteren Zuteilungsnachteil wählen, den die Antwort als mittelbaren Eingriff einordnet.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint einen unmittelbaren/klassischen Eingriff und ordnet die Nachteile als mittelbaren Eingriff ein; sie setzt die Priorisierungsnachteile nicht einem vollstreckbaren Ge- oder Verbot gleich. Die fehlende Zwangswirkung auch hinsichtlich der Erklärung ist durch die Einordnung als mittelbarer Eingriff mitumfasst.",
+          "evidence": [
+            "Die Priorisierungsregeln zwingen T nicht unmittelbar zur Organspende. Sie stellen sie aber bei einem späteren, lebensbedrohlichen Organversagen vor die Wahl, entweder ihrem Glauben treu zu bleiben und eine gravierend geringere Chance auf ein Organ hinzunehmen oder eine mit ihrem Glauben unvereinbare Erklärung abzugeben. Ein derart existentieller Nachteil ist ein gewichtiger mittelbarer Eingriff in die Glaubensbetätigungsfreiheit."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Verneinung eines klassischen/imperativen Eingriffs in Ts Religionsfreiheit",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Keine durchsetzbare Pflicht zur Organspende oder Bereitschaftserklärung",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "T und klassischer Eingriff in Art. 4 GG",
+            "evidence_scope": "T und Art. 4 Abs. 1 und 2 GG, unmittelbarer vs. mittelbarer Eingriff",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Priorisierungsregeln zwingen T nicht unmittelbar zur Organspende, sondern bewirken nur einen mittelbaren Eingriff durch die Wahl zwischen Glauben und Organchance.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {
+        "input_tokens": 22342,
+        "output_tokens": 5304,
+        "total_tokens": 27646,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 10390
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Passage verneint unmittelbaren Zwang zur Organspende und beschreibt die Erklärung als eine Wahlmöglichkeit, deren Ablehnung einen erheblichen Nachteil auslöst. Die Antwort behandelt diesen Nachteil ausdrücklich als mittelbaren, nicht als vollstreckbares Gebot; damit ist der kriteriumsgemäße Unterschied erfüllt.",
+              "evidence": [
+                "Die Priorisierungsregeln zwingen T nicht unmittelbar zur Organspende.",
+                "Sie stellen sie aber bei einem späteren, lebensbedrohlichen Organversagen vor die Wahl, entweder ihrem Glauben treu zu bleiben und eine gravierend geringere Chance auf ein Organ hinzunehmen oder eine mit ihrem Glauben unvereinbare Erklärung abzugeben.",
+                "Ein derart existentieller Nachteil ist ein gewichtiger mittelbarer Eingriff in die Glaubensbetätigungsfreiheit."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort verneint einen Zwang zur Organspende.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort verneint, dass die Spendenbereitschaftserklärung mit Zwangsmitteln durchsetzbar geboten wird, und unterscheidet den Nachteil als mittelbaren Druck.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "T; klassischer Eingriff in die Religionsfreiheit durch § 12 TPG",
+                "evidence_scope": "T; Eingriff in die Glaubensbetätigungsfreiheit durch die Priorisierungsregeln",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Regeln erzwingen keine Organspende; sie lassen T vielmehr zwischen einer Erklärung und einem erheblichen späteren Zuteilungsnachteil wählen, den die Antwort als mittelbaren Eingriff einordnet.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint einen unmittelbaren/klassischen Eingriff und ordnet die Nachteile als mittelbaren Eingriff ein; sie setzt die Priorisierungsnachteile nicht einem vollstreckbaren Ge- oder Verbot gleich. Die fehlende Zwangswirkung auch hinsichtlich der Erklärung ist durch die Einordnung als mittelbarer Eingriff mitumfasst.",
+              "evidence": [
+                "Die Priorisierungsregeln zwingen T nicht unmittelbar zur Organspende. Sie stellen sie aber bei einem späteren, lebensbedrohlichen Organversagen vor die Wahl, entweder ihrem Glauben treu zu bleiben und eine gravierend geringere Chance auf ein Organ hinzunehmen oder eine mit ihrem Glauben unvereinbare Erklärung abzugeben. Ein derart existentieller Nachteil ist ein gewichtiger mittelbarer Eingriff in die Glaubensbetätigungsfreiheit."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Verneinung eines klassischen/imperativen Eingriffs in Ts Religionsfreiheit",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Keine durchsetzbare Pflicht zur Organspende oder Bereitschaftserklärung",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "T und klassischer Eingriff in Art. 4 GG",
+                "evidence_scope": "T und Art. 4 Abs. 1 und 2 GG, unmittelbarer vs. mittelbarer Eingriff",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Priorisierungsregeln zwingen T nicht unmittelbar zur Organspende, sondern bewirken nur einen mittelbaren Eingriff durch die Wahl zwischen Glauben und Organchance.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-012",
+      "title": "Kein klassischer Eingriff mangels Imperativität",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort unterscheidet bei T zwischen fehlendem unmittelbarem Zwang und dem konkreten, durch die Priorisierungsnachteile erzeugten Entscheidungsdruck und ordnet Letzteren als mittelbaren Eingriff ein. Damit ist die Prüfung des klassischen Eingriffs methodisch abgeschlossen.",
+      "evidence": [
+        "Die Priorisierungsregeln zwingen T nicht unmittelbar zur Organspende.",
+        "Sie stellen sie aber bei einem späteren, lebensbedrohlichen Organversagen vor die Wahl",
+        "Ein derart existentieller Nachteil ist ein gewichtiger mittelbarer Eingriff in die Glaubensbetätigungsfreiheit."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort unterscheidet bei T zwischen fehlendem unmittelbarem Zwang und dem konkreten, durch die Priorisierungsnachteile erzeugten Entscheidungsdruck und ordnet Letzteren als mittelbaren Eingriff ein. Damit ist die Prüfung des klassischen Eingriffs methodisch abgeschlossen.",
+          "evidence": [
+            "Die Priorisierungsregeln zwingen T nicht unmittelbar zur Organspende.",
+            "Sie stellen sie aber bei einem späteren, lebensbedrohlichen Organversagen vor die Wahl",
+            "Ein derart existentieller Nachteil ist ein gewichtiger mittelbarer Eingriff in die Glaubensbetätigungsfreiheit."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft im Rahmen der Glaubensfreiheit der T ausdrücklich, ob die Regelung unmittelbar zwingt, verneint dies und qualifiziert den Nachteil als mittelbaren Eingriff; Regel, Tatsachen und Ergebnis sind verbunden.",
+          "evidence": [
+            "Die Priorisierungsregeln zwingen T nicht unmittelbar zur Organspende. Sie stellen sie aber bei einem späteren, lebensbedrohlichen Organversagen vor die Wahl, entweder ihrem Glauben treu zu bleiben und eine gravierend geringere Chance auf ein Organ hinzunehmen oder eine mit ihrem Glauben unvereinbare Erklärung abzugeben. Ein derart existentieller Nachteil ist ein gewichtiger mittelbarer Eingriff in die Glaubensbetätigungsfreiheit."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort unterscheidet bei T zwischen fehlendem unmittelbarem Zwang und dem konkreten, durch die Priorisierungsnachteile erzeugten Entscheidungsdruck und ordnet Letzteren als mittelbaren Eingriff ein. Damit ist die Prüfung des klassischen Eingriffs methodisch abgeschlossen.",
+              "evidence": [
+                "Die Priorisierungsregeln zwingen T nicht unmittelbar zur Organspende.",
+                "Sie stellen sie aber bei einem späteren, lebensbedrohlichen Organversagen vor die Wahl",
+                "Ein derart existentieller Nachteil ist ein gewichtiger mittelbarer Eingriff in die Glaubensbetätigungsfreiheit."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft im Rahmen der Glaubensfreiheit der T ausdrücklich, ob die Regelung unmittelbar zwingt, verneint dies und qualifiziert den Nachteil als mittelbaren Eingriff; Regel, Tatsachen und Ergebnis sind verbunden.",
+              "evidence": [
+                "Die Priorisierungsregeln zwingen T nicht unmittelbar zur Organspende. Sie stellen sie aber bei einem späteren, lebensbedrohlichen Organversagen vor die Wahl, entweder ihrem Glauben treu zu bleiben und eine gravierend geringere Chance auf ein Organ hinzunehmen oder eine mit ihrem Glauben unvereinbare Erklärung abzugeben. Ein derart existentieller Nachteil ist ein gewichtiger mittelbarer Eingriff in die Glaubensbetätigungsfreiheit."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

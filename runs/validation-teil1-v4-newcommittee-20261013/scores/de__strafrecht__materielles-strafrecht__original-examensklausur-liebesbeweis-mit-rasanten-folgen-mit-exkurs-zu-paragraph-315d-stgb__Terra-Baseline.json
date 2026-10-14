@@ -1,0 +1,670 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/original-examensklausur-liebesbeweis-mit-rasanten-folgen-mit-exkurs-zu-paragraph-315d-stgb",
+    "title": "Original-Examensklausur: Liebesbeweis mit rasanten Folgen – mit Exkurs zu § 315d StGB"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__strafrecht__materielles-strafrecht__original-examensklausur-liebesbeweis-mit-rasanten-folgen-mit-exkurs-zu-paragraph-315d-stgb/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/original-examensklausur-liebesbeweis-mit-rasanten-folgen-mit-exkurs-zu-paragraph-315d-stgb/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T15:09:16.498143+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Tatkomplex: Bürogebäude": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Tatkomplex: Bürogebäude › Strafbarkeit des A": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 29708,
+    "output_tokens": 3732,
+    "total_tokens": 33440,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 9293
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 29708,
+    "output_tokens": 3732,
+    "total_tokens": 33440,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 9293
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-004",
+      "title": "Wegnahme des Tablets",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Lösung bejaht ausdrücklich den Gewahrsam des C am Tablet und dessen Bruch durch A sowie die Begründung neuen Gewahrsams. Der fehlende Wille des C ist im angewandten Wegnahmebegriff enthalten; eine freiwillige Gewahrsamsübertragung wird nicht angenommen.",
+      "evidence": [
+        "Spätestens mit dem Ansichnehmen des Tablets brach A den Gewahrsam des C und begründete eigenen Gewahrsam."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung bejaht ausdrücklich den Gewahrsam des C am Tablet und dessen Bruch durch A sowie die Begründung neuen Gewahrsams. Der fehlende Wille des C ist im angewandten Wegnahmebegriff enthalten; eine freiwillige Gewahrsamsübertragung wird nicht angenommen.",
+          "evidence": [
+            "Spätestens mit dem Ansichnehmen des Tablets brach A den Gewahrsam des C und begründete eigenen Gewahrsam."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Mitnahme des Tablets wird als Wegnahme eingeordnet.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Der fortbestehende Gewahrsam des C am Tablet wird trotz der Wegnahme aus der Schublade bejaht und als gebrochen behandelt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "A begründet neuen Gewahrsam.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Der Gewahrsamsbruch erfolgt ohne den Willen des C.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A; Tablet; Wegnahme im Rahmen des Diebstahls",
+            "evidence_scope": "A; Tablet; Wegnahme im Rahmen des Diebstahls, § 242 Abs. 1 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das Tablet befand sich in der Schublade im Büro des C; durch das Ansichnehmen brach A dessen Gewahrsam und begründete eigenen Gewahrsam.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung bejaht den Gewahrsamsbruch an dem in der Büroschublade liegenden Tablet und die Begründung neuen Gewahrsams durch A. Ein Fortbestehen des C-Gewahrsams trotz dessen Abwesenheit wird gerade angenommen (Schublade im Büro des C), nicht verneint; eine freiwillige Gewahrsamsübertragung wird nicht behauptet. Damit ist die Wegnahme im Sinne des Kriteriums bejaht.",
+          "evidence": [
+            "Das Tablet befand sich in einer Schreibtischschublade im Büro des C. Spätestens mit dem Ansichnehmen des Tablets brach A den Gewahrsam des C und begründete eigenen Gewahrsam."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einordnung der Mitnahme des Tablets als Wegnahme",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Bruch des in der Schublade fortbestehenden Gewahrsams des C ohne dessen Willen",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Begründung neuen (eigenen) Gewahrsams",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Wegnahme des Tablets durch A (Gewahrsamsbruch und -begründung)",
+            "evidence_scope": "Wegnahme des Tablets durch A unter § 242 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "A brach mit dem Ansichnehmen des in der Schreibtischschublade befindlichen Tablets den Gewahrsam des C und begründete eigenen Gewahrsam.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Falllösung bejaht die Wegnahme des Tablets durch A, da dieser den Gewahrsam des C an dem in der Schreibtischschublade befindlichen Tablet brach und neuen Gewahrsam begründete. Keine der Negativbedingungen greift ein.",
+          "evidence": [
+            "Das Tablet befand sich in einer Schreibtischschublade im Büro des C. Spätestens mit dem Ansichnehmen des Tablets brach A den Gewahrsam des C und begründete eigenen Gewahrsam."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einordnung der Mitnahme des Tablets als Wegnahme",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Begründung durch Bruch des in der Schublade fortbestehenden Gewahrsams des C und Begründung neuen Gewahrsams",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A - Diebstahl (§ 242 StGB) bzgl. Tablet - Wegnahme",
+            "evidence_scope": "A - Diebstahl (§ 242 StGB) bzgl. Tablet - Wegnahme",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das Tablet befand sich in einer Schreibtischschublade im Büro des C; A brach mit dem Ansichnehmen den Gewahrsam des C und begründete eigenen Gewahrsam.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 29708,
+        "output_tokens": 3732,
+        "total_tokens": 33440,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 9293
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung bejaht ausdrücklich den Gewahrsam des C am Tablet und dessen Bruch durch A sowie die Begründung neuen Gewahrsams. Der fehlende Wille des C ist im angewandten Wegnahmebegriff enthalten; eine freiwillige Gewahrsamsübertragung wird nicht angenommen.",
+              "evidence": [
+                "Spätestens mit dem Ansichnehmen des Tablets brach A den Gewahrsam des C und begründete eigenen Gewahrsam."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Mitnahme des Tablets wird als Wegnahme eingeordnet.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Der fortbestehende Gewahrsam des C am Tablet wird trotz der Wegnahme aus der Schublade bejaht und als gebrochen behandelt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "A begründet neuen Gewahrsam.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Gewahrsamsbruch erfolgt ohne den Willen des C.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; Tablet; Wegnahme im Rahmen des Diebstahls",
+                "evidence_scope": "A; Tablet; Wegnahme im Rahmen des Diebstahls, § 242 Abs. 1 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das Tablet befand sich in der Schublade im Büro des C; durch das Ansichnehmen brach A dessen Gewahrsam und begründete eigenen Gewahrsam.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung bejaht den Gewahrsamsbruch an dem in der Büroschublade liegenden Tablet und die Begründung neuen Gewahrsams durch A. Ein Fortbestehen des C-Gewahrsams trotz dessen Abwesenheit wird gerade angenommen (Schublade im Büro des C), nicht verneint; eine freiwillige Gewahrsamsübertragung wird nicht behauptet. Damit ist die Wegnahme im Sinne des Kriteriums bejaht.",
+              "evidence": [
+                "Das Tablet befand sich in einer Schreibtischschublade im Büro des C. Spätestens mit dem Ansichnehmen des Tablets brach A den Gewahrsam des C und begründete eigenen Gewahrsam."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung der Mitnahme des Tablets als Wegnahme",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Bruch des in der Schublade fortbestehenden Gewahrsams des C ohne dessen Willen",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Begründung neuen (eigenen) Gewahrsams",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Wegnahme des Tablets durch A (Gewahrsamsbruch und -begründung)",
+                "evidence_scope": "Wegnahme des Tablets durch A unter § 242 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "A brach mit dem Ansichnehmen des in der Schreibtischschublade befindlichen Tablets den Gewahrsam des C und begründete eigenen Gewahrsam.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Falllösung bejaht die Wegnahme des Tablets durch A, da dieser den Gewahrsam des C an dem in der Schreibtischschublade befindlichen Tablet brach und neuen Gewahrsam begründete. Keine der Negativbedingungen greift ein.",
+              "evidence": [
+                "Das Tablet befand sich in einer Schreibtischschublade im Büro des C. Spätestens mit dem Ansichnehmen des Tablets brach A den Gewahrsam des C und begründete eigenen Gewahrsam."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung der Mitnahme des Tablets als Wegnahme",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung durch Bruch des in der Schublade fortbestehenden Gewahrsams des C und Begründung neuen Gewahrsams",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A - Diebstahl (§ 242 StGB) bzgl. Tablet - Wegnahme",
+                "evidence_scope": "A - Diebstahl (§ 242 StGB) bzgl. Tablet - Wegnahme",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das Tablet befand sich in einer Schreibtischschublade im Büro des C; A brach mit dem Ansichnehmen den Gewahrsam des C und begründete eigenen Gewahrsam.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-004",
+      "title": "Wegnahme des Tablets",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Lösung nennt den Wegnahme-Maßstab, verknüpft ihn mit dem Tablet in der Schublade und dem Ansichnehmen durch A und zieht daraus den Abschluss, dass A den Gewahrsam des C brach und eigenen begründete.",
+      "evidence": [
+        "Wegnahme ist der Bruch fremden und die Begründung neuen, nicht notwendig tätereigenen Gewahrsams.",
+        "Das Tablet befand sich in einer Schreibtischschublade im Büro des C. Spätestens mit dem Ansichnehmen des Tablets brach A den Gewahrsam des C und begründete eigenen Gewahrsam."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung nennt den Wegnahme-Maßstab, verknüpft ihn mit dem Tablet in der Schublade und dem Ansichnehmen durch A und zieht daraus den Abschluss, dass A den Gewahrsam des C brach und eigenen begründete.",
+          "evidence": [
+            "Wegnahme ist der Bruch fremden und die Begründung neuen, nicht notwendig tätereigenen Gewahrsams.",
+            "Das Tablet befand sich in einer Schreibtischschublade im Büro des C. Spätestens mit dem Ansichnehmen des Tablets brach A den Gewahrsam des C und begründete eigenen Gewahrsam."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung verbindet die Wegnahmedefinition (Bruch fremden und Begründung neuen Gewahrsams), den konkreten Sachverhalt (Tablet in der Schreibtischschublade, Ansichnehmen) und die konkrete Subsumtion (A brach den Gewahrsam des C und begründete eigenen Gewahrsam). Regel, Tatsache und Ergebnis werden für dieselbe Person, dasselbe Objekt und dieselbe Prüfungsstation ausdrücklich verknüpft.",
+          "evidence": [
+            "Wegnahme ist der Bruch fremden und die Begründung neuen, nicht notwendig tätereigenen Gewahrsams.",
+            "Das Tablet befand sich in einer Schreibtischschublade im Büro des C. Spätestens mit dem Ansichnehmen des Tablets brach A den Gewahrsam des C und begründete eigenen Gewahrsam."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Falllösung definiert die Wegnahme methodisch einwandfrei, subsumiert den konkreten Sachverhalt (Schreibtischschublade im Büro des C, Ansichnehmen) darunter und schließt mit dem Ergebnis des Gewahrsamsbruchs und der Neubegründung ab.",
+          "evidence": [
+            "Wegnahme ist der Bruch fremden und die Begründung neuen, nicht notwendig tätereigenen Gewahrsams. Das Tablet befand sich in einer Schreibtischschublade im Büro des C. Spätestens mit dem Ansichnehmen des Tablets brach A den Gewahrsam des C und begründete eigenen Gewahrsam."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung nennt den Wegnahme-Maßstab, verknüpft ihn mit dem Tablet in der Schublade und dem Ansichnehmen durch A und zieht daraus den Abschluss, dass A den Gewahrsam des C brach und eigenen begründete.",
+              "evidence": [
+                "Wegnahme ist der Bruch fremden und die Begründung neuen, nicht notwendig tätereigenen Gewahrsams.",
+                "Das Tablet befand sich in einer Schreibtischschublade im Büro des C. Spätestens mit dem Ansichnehmen des Tablets brach A den Gewahrsam des C und begründete eigenen Gewahrsam."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung verbindet die Wegnahmedefinition (Bruch fremden und Begründung neuen Gewahrsams), den konkreten Sachverhalt (Tablet in der Schreibtischschublade, Ansichnehmen) und die konkrete Subsumtion (A brach den Gewahrsam des C und begründete eigenen Gewahrsam). Regel, Tatsache und Ergebnis werden für dieselbe Person, dasselbe Objekt und dieselbe Prüfungsstation ausdrücklich verknüpft.",
+              "evidence": [
+                "Wegnahme ist der Bruch fremden und die Begründung neuen, nicht notwendig tätereigenen Gewahrsams.",
+                "Das Tablet befand sich in einer Schreibtischschublade im Büro des C. Spätestens mit dem Ansichnehmen des Tablets brach A den Gewahrsam des C und begründete eigenen Gewahrsam."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Falllösung definiert die Wegnahme methodisch einwandfrei, subsumiert den konkreten Sachverhalt (Schreibtischschublade im Büro des C, Ansichnehmen) darunter und schließt mit dem Ergebnis des Gewahrsamsbruchs und der Neubegründung ab.",
+              "evidence": [
+                "Wegnahme ist der Bruch fremden und die Begründung neuen, nicht notwendig tätereigenen Gewahrsams. Das Tablet befand sich in einer Schreibtischschublade im Büro des C. Spätestens mit dem Ansichnehmen des Tablets brach A den Gewahrsam des C und begründete eigenen Gewahrsam."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

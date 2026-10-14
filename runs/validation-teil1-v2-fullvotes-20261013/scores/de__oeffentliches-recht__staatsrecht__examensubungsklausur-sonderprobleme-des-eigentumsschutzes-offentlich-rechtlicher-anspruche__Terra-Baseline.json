@@ -1,0 +1,823 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/examensubungsklausur-sonderprobleme-des-eigentumsschutzes-offentlich-rechtlicher-anspruche",
+    "title": "Examensübungsklausur: Sonderprobleme des Eigentumsschutzes öffentlich-rechtlicher Ansprüche bei staatlicher Verantwortungsübernahme"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__staatsrecht__examensubungsklausur-sonderprobleme-des-eigentumsschutzes-offentlich-rechtlicher-anspruche/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/examensubungsklausur-sonderprobleme-des-eigentumsschutzes-offentlich-rechtlicher-anspruche/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:41:43.759997+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 1,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 1,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 2,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Begründetheit": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Begründetheit › Vereinbarkeit von § 15 Abs. 2 S. 2 ContStiftG mit Art. 3 Abs. 1 GG": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 30230,
+    "output_tokens": 12786,
+    "total_tokens": 43016,
+    "cached_input_tokens": 20179,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 30230,
+    "output_tokens": 12786,
+    "total_tokens": 43016,
+    "cached_input_tokens": 20179,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-040",
+      "title": "Sachliche Differenzierungsgründe",
+      "verdict": "fail",
+      "resolution": "unresolved",
+      "reasoning": "The committee majority changed between two independent rounds; the criterion is conservatively unresolved.",
+      "evidence": [],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erkennt die Vermeidung echter Überentschädigung als möglichen sachlichen Grund an, bejaht aber die Ungleichbehandlung. Im maßgeblichen Gleichheitsprüfungsteil erkennt sie weder die Sicherung der Solidargemeinschaft noch den sparsamen Einsatz öffentlicher Mittel als Gründe für die Unterscheidung nach Drittleistungsbezug an. Daher sind nicht alle geforderten Gründe erfüllt.",
+          "evidence": [
+            "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen.",
+            "Gerade im Falle des X soll die irische Leistung die deutschen Leistungen signifikant erweitern."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Vermeidung thalidomidspezifischer Doppelleistungen wird als sachlicher Grund für die Unterscheidung nach Drittleistungsbezug anerkannt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Sicherung der Solidargemeinschaft wird als sachlicher Grund für die Unterscheidung nach Drittleistungsbezug anerkannt.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Der sparsame Einsatz öffentlicher Mittel wird als sachlicher Grund für die Unterscheidung nach Drittleistungsbezug anerkannt.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "X, Anrechnung der irischen Drittleistung auf die Conterganrente und deren sachliche Rechtfertigung nach Art. 3 Abs. 1 GG",
+            "evidence_scope": "X, Anrechnung der irischen Drittleistung auf die Conterganrente und deren sachliche Rechtfertigung nach Art. 3 Abs. 1 GG",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Vermeidung echter Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen; die Antwort hält diesen Grund im Fall des X aber mangels gleicher Ausgleichsfunktion und Gesamtvergleichs nicht für tragfähig.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort bejaht eine Ungleichbehandlung und erkennt die Vermeidung von Doppelleistungen als möglichen sachlichen Differenzierungsgrund an. Sie nennt im Art.-3-Kontext jedoch nicht die Sicherung der Solidargemeinschaft und den sparsamen Einsatz öffentlicher Mittel als sachliche Gründe. Diese Gründe erscheinen allenfalls im Art.-14-Abschnitt und werden nicht ausdrücklich auf die Art.-3-Rechtfertigung bezogen; damit fehlen für den hier geprüften Maßstab zwei verlangte Anerkennungskomponenten.",
+          "evidence": [
+            "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen.",
+            "Daran fehlt es. Die Vorschrift differenziert nicht danach, ob die ausländische Zahlung eine Haftungsentschädigung ersetzt, eine allgemeine Sozialleistung darstellt oder eine gezielte Ergänzung der deutschen Rente sein soll.",
+            "Die Ungleichbehandlung ist daher sachlich nicht hinreichend gerechtfertigt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Anerkenntnis der Vermeidung thalidomidspezifischer Doppelleistungen als sachlicher Grund",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Anerkenntnis der Sicherung der Solidargemeinschaft als sachlicher Grund",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Anerkenntnis des sparsamen Einsatzes öffentlicher Mittel als sachlicher Grund",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Art. 3 Abs. 1 GG: sachliche Differenzierungsgründe für die Unterscheidung nach Drittleistungsbezug bei bejahter Ungleichbehandlung",
+            "evidence_scope": "Art. 3 Abs. 1 GG: Rechtfertigung der bejahten Ungleichbehandlung durch Drittleistungsbezug; nur die Vermeidung von Doppelleistungen/Überentschädigung wird erwähnt",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen; die Regelung sei aber nicht sachlich angemessen, weil sie nicht nach der Funktion der ausländischen Leistung differenziere und keinen Gesamtvergleich vorsehe.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erkennt bei bejahter Ungleichbehandlung zwar die Vermeidung von Doppelleistungen/Überentschädigung als sachlichen Grund an. Die nach dem Kriterium kumulativ geforderten weiteren sachlichen Differenzierungsgründe (Sicherung der Solidargemeinschaft und sparsamer Einsatz öffentlicher Mittel) werden im Rahmen von Art. 3 Abs. 1 GG jedoch weder ausdrücklich noch sinngemäß anerkannt.",
+          "evidence": [
+            "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Anerkennung der Vermeidung thalidomidspezifischer Doppelleistungen als sachlicher Differenzierungsgrund",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Anerkennung der Sicherung der Solidargemeinschaft als sachlicher Differenzierungsgrund",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Anerkennung des sparsamen Einsatzes öffentlicher Mittel als sachlicher Differenzierungsgrund",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Rechtfertigung der Ungleichbehandlung unter Art. 3 Abs. 1 GG (sachliche Differenzierungsgründe)",
+            "evidence_scope": "Rechtfertigung der Ungleichbehandlung unter Art. 3 Abs. 1 GG (sachliche Differenzierungsgründe)",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen, die Ausgestaltung ist aber nicht sachlich angemessen",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 30230,
+        "output_tokens": 12786,
+        "total_tokens": 43016,
+        "cached_input_tokens": 20179,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erkennt die Vermeidung einer echten Überentschädigung als sachlichen Grund an. Im Abschnitt zur Gleichheitsprüfung erkennt sie jedoch weder die Sicherung der Solidargemeinschaft noch den sparsamen Einsatz öffentlicher Mittel als solche Gründe an. Da alle genannten Gründe verlangt sind, ist das Kriterium nicht erfüllt.",
+              "evidence": [
+                "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen.",
+                "Die Vorschrift differenziert nicht danach, ob die ausländische Zahlung eine Haftungsentschädigung ersetzt, eine allgemeine Sozialleistung darstellt oder eine gezielte Ergänzung der deutschen Rente sein soll."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Vermeidung thalidomidspezifischer Doppelleistungen wird als sachlicher Grund für die Unterscheidung nach Drittleistungsbezug anerkannt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Sicherung der Solidargemeinschaft wird als sachlicher Grund für die Unterscheidung nach Drittleistungsbezug anerkannt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Der sparsame Einsatz öffentlicher Mittel wird als sachlicher Grund für die Unterscheidung nach Drittleistungsbezug anerkannt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Die Ungleichbehandlung der Leistungsberechtigten mit und ohne Drittleistungen und deren sachliche Rechtfertigung nach Art. 3 Abs. 1 GG.",
+                "evidence_scope": "Die Ungleichbehandlung durch Anrechnung ausländischer Leistungen auf die Conterganrente und deren Rechtfertigung nach Art. 3 Abs. 1 GG.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Vermeidung einer echten Überentschädigung kann die Ungleichbehandlung grundsätzlich rechtfertigen; eine Anrechnung setzt aber voraus, dass die externe Zahlung dieselbe Funktion erfüllt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht eine Ungleichbehandlung und erkennt die Vermeidung von Doppelleistungen, die gleichmäßige Verteilung unter den Betroffenen und den sachgerechten Umgang mit begrenzten öffentlichen Mitteln als grundsätzlich legitime Differenzierungsgründe an. Dass sie diese im konkreten Fall für nicht ausreichend hält, beseitigt die Anerkennung als sachliche Gründe nicht. Die Kriteriumsvoraussetzungen sind erfüllt.",
+              "evidence": [
+                "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen.",
+                "Ebenso darf er die begrenzten Mittel einer öffentlich-rechtlichen Stiftung sachgerecht verwenden und eine gleichmäßige Verteilung der Leistungen unter den Betroffenen sichern.",
+                "Diese Ziele sind legitim.",
+                "Daran fehlt es. Die Vorschrift differenziert nicht danach, ob die ausländische Zahlung eine Haftungsentschädigung ersetzt, eine allgemeine Sozialleistung darstellt oder eine gezielte Ergänzung der deutschen Rente sein soll."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung einer Ungleichbehandlung nach Drittleistungsbezug",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Anerkennung der Vermeidung thalidomidspezifischer Doppelleistungen als sachlicher Differenzierungsgrund",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Anerkennung der Sicherung der Solidargemeinschaft bzw. gleichmäßigen Verteilung unter den Betroffenen als sachlicher Differenzierungsgrund",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Anerkennung des sparsamen Einsatzes öffentlicher Mittel bzw. sachgerechten Umgangs mit begrenzten Stiftungsmitteln als sachlicher Differenzierungsgrund",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Art. 3 Abs. 1 GG: sachliche Rechtfertigung der Ungleichbehandlung durch Anrechnung ausländischer Drittleistungen nach § 15 Abs. 2 S. 2 ContStifG",
+                "evidence_scope": "Art. 3 Abs. 1 GG: Ungleichbehandlung von Leistungsberechtigten mit und ohne Drittleistungsbezug sowie deren Rechtfertigung durch Vermeidung von Überentschädigung und Mittelverwendung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen; die Regelung differenziert aber nicht nach der Funktion der ausländischen Leistung und stützt sich auf keinen Gesamtvergleich, weshalb sie nicht hinreichend gerechtfertigt sei.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht die Ungleichbehandlung und erkennt die Vermeidung von Doppel- bzw. Überkompensation (sowie im Rahmen der Verhältnismäßigkeit den sparsamen und gleichmäßigen Stiftungsmiteleinsatz) dem Grunde nach als sachlichen Differenzierungsgrund an. Ein sachlicher Zusammenhang zwischen Drittleistungsbezug und Kürzung wird somit ausdrücklich gesehen.",
+              "evidence": [
+                "Diese tatsächliche Differenz rechtfertigt aber nur dann eine Anrechnung, wenn die externe Zahlung tatsächlich dieselbe Funktion erfüllt wie die deutsche Rente und eine Überkompensation bewirkt.",
+                "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen.",
+                "Ebenso darf er die begrenzten Mittel einer öffentlich-rechtlichen Stiftung sachgerecht verwenden und eine gleichmäßige Verteilung der Leistungen unter den Betroffenen sichern."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Anerkennung sachlicher Gründe (insb. Vermeidung von Doppelleistungen/Überkompensation, sparsamer Mitteleinsatz) für die Unterscheidung nach dem Drittleistungsbezug bei bejahter Ungleichbehandlung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erkennen eines sachlichen Zusammenhangs zwischen Drittleistungsbezug und Kürzung",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Art. 3 Abs. 1 GG, Rechtfertigung der Ungleichbehandlung durch sachliche Differenzierungsgründe",
+                "evidence_scope": "Art. 3 Abs. 1 GG, Rechtfertigung der Ungleichbehandlung (§ 15 Abs. 2 S. 2 ContStifG)",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Vermeidung einer echten Überentschädigung/Doppelleistung sowie die sachgerechte Mittelverwendung können eine Ungleichbehandlung dem Grunde nach sachlich rechtfertigen, greifen jedoch mangels Differenzierung im konkreten Gesetz nicht durch.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erkennt die Vermeidung echter Überentschädigung als möglichen sachlichen Grund an, bejaht aber die Ungleichbehandlung. Im maßgeblichen Gleichheitsprüfungsteil erkennt sie weder die Sicherung der Solidargemeinschaft noch den sparsamen Einsatz öffentlicher Mittel als Gründe für die Unterscheidung nach Drittleistungsbezug an. Daher sind nicht alle geforderten Gründe erfüllt.",
+              "evidence": [
+                "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen.",
+                "Gerade im Falle des X soll die irische Leistung die deutschen Leistungen signifikant erweitern."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Vermeidung thalidomidspezifischer Doppelleistungen wird als sachlicher Grund für die Unterscheidung nach Drittleistungsbezug anerkannt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Sicherung der Solidargemeinschaft wird als sachlicher Grund für die Unterscheidung nach Drittleistungsbezug anerkannt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Der sparsame Einsatz öffentlicher Mittel wird als sachlicher Grund für die Unterscheidung nach Drittleistungsbezug anerkannt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "X, Anrechnung der irischen Drittleistung auf die Conterganrente und deren sachliche Rechtfertigung nach Art. 3 Abs. 1 GG",
+                "evidence_scope": "X, Anrechnung der irischen Drittleistung auf die Conterganrente und deren sachliche Rechtfertigung nach Art. 3 Abs. 1 GG",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Vermeidung echter Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen; die Antwort hält diesen Grund im Fall des X aber mangels gleicher Ausgleichsfunktion und Gesamtvergleichs nicht für tragfähig.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht eine Ungleichbehandlung und erkennt die Vermeidung von Doppelleistungen als möglichen sachlichen Differenzierungsgrund an. Sie nennt im Art.-3-Kontext jedoch nicht die Sicherung der Solidargemeinschaft und den sparsamen Einsatz öffentlicher Mittel als sachliche Gründe. Diese Gründe erscheinen allenfalls im Art.-14-Abschnitt und werden nicht ausdrücklich auf die Art.-3-Rechtfertigung bezogen; damit fehlen für den hier geprüften Maßstab zwei verlangte Anerkennungskomponenten.",
+              "evidence": [
+                "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen.",
+                "Daran fehlt es. Die Vorschrift differenziert nicht danach, ob die ausländische Zahlung eine Haftungsentschädigung ersetzt, eine allgemeine Sozialleistung darstellt oder eine gezielte Ergänzung der deutschen Rente sein soll.",
+                "Die Ungleichbehandlung ist daher sachlich nicht hinreichend gerechtfertigt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Anerkenntnis der Vermeidung thalidomidspezifischer Doppelleistungen als sachlicher Grund",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Anerkenntnis der Sicherung der Solidargemeinschaft als sachlicher Grund",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Anerkenntnis des sparsamen Einsatzes öffentlicher Mittel als sachlicher Grund",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Art. 3 Abs. 1 GG: sachliche Differenzierungsgründe für die Unterscheidung nach Drittleistungsbezug bei bejahter Ungleichbehandlung",
+                "evidence_scope": "Art. 3 Abs. 1 GG: Rechtfertigung der bejahten Ungleichbehandlung durch Drittleistungsbezug; nur die Vermeidung von Doppelleistungen/Überentschädigung wird erwähnt",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen; die Regelung sei aber nicht sachlich angemessen, weil sie nicht nach der Funktion der ausländischen Leistung differenziere und keinen Gesamtvergleich vorsehe.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erkennt bei bejahter Ungleichbehandlung zwar die Vermeidung von Doppelleistungen/Überentschädigung als sachlichen Grund an. Die nach dem Kriterium kumulativ geforderten weiteren sachlichen Differenzierungsgründe (Sicherung der Solidargemeinschaft und sparsamer Einsatz öffentlicher Mittel) werden im Rahmen von Art. 3 Abs. 1 GG jedoch weder ausdrücklich noch sinngemäß anerkannt.",
+              "evidence": [
+                "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Anerkennung der Vermeidung thalidomidspezifischer Doppelleistungen als sachlicher Differenzierungsgrund",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Anerkennung der Sicherung der Solidargemeinschaft als sachlicher Differenzierungsgrund",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Anerkennung des sparsamen Einsatzes öffentlicher Mittel als sachlicher Differenzierungsgrund",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Rechtfertigung der Ungleichbehandlung unter Art. 3 Abs. 1 GG (sachliche Differenzierungsgründe)",
+                "evidence_scope": "Rechtfertigung der Ungleichbehandlung unter Art. 3 Abs. 1 GG (sachliche Differenzierungsgründe)",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen, die Ausgestaltung ist aber nicht sachlich angemessen",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "majority_flip"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-040",
+      "title": "Sachliche Differenzierungsgründe",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort prüft im Rahmen des Art. 3 Abs. 1 GG, ob die Vermeidung einer echten Überentschädigung die Ungleichbehandlung rechtfertigen kann, wendet dies auf die irische Ergänzungsleistung an und gelangt zu einem ausdrücklichen Ergebnis.",
+      "evidence": [
+        "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen.",
+        "Gerade im Falle des X soll die irische Leistung die deutschen Leistungen signifikant erweitern.",
+        "Die Ungleichbehandlung ist daher sachlich nicht hinreichend gerechtfertigt."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft im Rahmen des Art. 3 Abs. 1 GG, ob die Vermeidung einer echten Überentschädigung die Ungleichbehandlung rechtfertigen kann, wendet dies auf die irische Ergänzungsleistung an und gelangt zu einem ausdrücklichen Ergebnis.",
+          "evidence": [
+            "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen.",
+            "Gerade im Falle des X soll die irische Leistung die deutschen Leistungen signifikant erweitern.",
+            "Die Ungleichbehandlung ist daher sachlich nicht hinreichend gerechtfertigt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die sachliche Rechtfertigung der zuvor bejahten Ungleichbehandlung. Sie benennt den möglichen Rechtfertigungsgrund der Vermeidung von Überentschädigungen, verknüpft ihn mit den konkreten Umständen der irischen Leistung und gelangt zu einem begründeten Ergebnis. Damit liegt eine methodisch vollständige, kriteriumsbezogene Argumentation vor.",
+          "evidence": [
+            "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen.",
+            "Daran fehlt es. Die Vorschrift differenziert nicht danach, ob die ausländische Zahlung eine Haftungsentschädigung ersetzt, eine allgemeine Sozialleistung darstellt oder eine gezielte Ergänzung der deutschen Rente sein soll.",
+            "Die Ungleichbehandlung ist daher sachlich nicht hinreichend gerechtfertigt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Prüfung im Rahmen der Rechtfertigung zu Art. 3 Abs. 1 GG benennt den rechtlichen Maßstab (Rechtfertigung durch Vermeidung von Überentschädigung bei folgerichtiger Ausgestaltung), subsumiert unter die konkrete Ausgestaltung der Norm und schließt methodisch sauber ab.",
+          "evidence": [
+            "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen. Die Regelung muss aber auch im Rahmen von Art. 3 Abs. 1 GG sachlich angemessen und folgerichtig ausgestaltet sein. Daran fehlt es. Die Vorschrift differenziert nicht danach, ob die ausländische Zahlung eine Haftungsentschädigung ersetzt"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft im Rahmen des Art. 3 Abs. 1 GG, ob die Vermeidung einer echten Überentschädigung die Ungleichbehandlung rechtfertigen kann, wendet dies auf die irische Ergänzungsleistung an und gelangt zu einem ausdrücklichen Ergebnis.",
+              "evidence": [
+                "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen.",
+                "Gerade im Falle des X soll die irische Leistung die deutschen Leistungen signifikant erweitern.",
+                "Die Ungleichbehandlung ist daher sachlich nicht hinreichend gerechtfertigt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die sachliche Rechtfertigung der zuvor bejahten Ungleichbehandlung. Sie benennt den möglichen Rechtfertigungsgrund der Vermeidung von Überentschädigungen, verknüpft ihn mit den konkreten Umständen der irischen Leistung und gelangt zu einem begründeten Ergebnis. Damit liegt eine methodisch vollständige, kriteriumsbezogene Argumentation vor.",
+              "evidence": [
+                "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen.",
+                "Daran fehlt es. Die Vorschrift differenziert nicht danach, ob die ausländische Zahlung eine Haftungsentschädigung ersetzt, eine allgemeine Sozialleistung darstellt oder eine gezielte Ergänzung der deutschen Rente sein soll.",
+                "Die Ungleichbehandlung ist daher sachlich nicht hinreichend gerechtfertigt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Prüfung im Rahmen der Rechtfertigung zu Art. 3 Abs. 1 GG benennt den rechtlichen Maßstab (Rechtfertigung durch Vermeidung von Überentschädigung bei folgerichtiger Ausgestaltung), subsumiert unter die konkrete Ausgestaltung der Norm und schließt methodisch sauber ab.",
+              "evidence": [
+                "Die Vermeidung einer echten Überentschädigung kann eine Ungleichbehandlung grundsätzlich rechtfertigen. Die Regelung muss aber auch im Rahmen von Art. 3 Abs. 1 GG sachlich angemessen und folgerichtig ausgestaltet sein. Daran fehlt es. Die Vorschrift differenziert nicht danach, ob die ausländische Zahlung eine Haftungsentschädigung ersetzt"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

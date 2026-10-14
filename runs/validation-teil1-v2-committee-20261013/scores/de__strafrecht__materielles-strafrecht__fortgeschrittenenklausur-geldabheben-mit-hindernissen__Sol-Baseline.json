@@ -1,0 +1,513 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-geldabheben-mit-hindernissen",
+    "title": "Fortgeschrittenenklausur: Geldabheben mit Hindernissen"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenklausur-geldabheben-mit-hindernissen/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-geldabheben-mit-hindernissen/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:35:43.579982+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Das „Cash-Trapping“": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Das „Cash-Trapping“ › Strafbarkeit des W": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 15796,
+    "output_tokens": 5961,
+    "total_tokens": 21757,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 7384
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 15796,
+    "output_tokens": 5961,
+    "total_tokens": 21757,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 7384
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-003",
+      "title": "Fortbestehender Gewahrsam der Sparkasse beim Cash-Trapping",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort stellt ausdrücklich auf den Verbleib des Scheins im Herrschaftsbereich der S ab und bejaht daran anknüpfend ihren fortbestehenden Gewahrsam, den W brechen wollte. Damit ist der maßgebliche Gedanke des generellen Gewahrsamswillens inhaltlich impliziert.",
+      "evidence": [
+        "Der Schein befand sich trotz des Festklebens weiterhin im räumlichen Herrschaftsbereich der S.",
+        "W plante, den fortbestehenden Gewahrsam der S ohne deren Einverständnis aufzuheben"
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort stellt ausdrücklich auf den Verbleib des Scheins im Herrschaftsbereich der S ab und bejaht daran anknüpfend ihren fortbestehenden Gewahrsam, den W brechen wollte. Damit ist der maßgebliche Gedanke des generellen Gewahrsamswillens inhaltlich impliziert.",
+          "evidence": [
+            "Der Schein befand sich trotz des Festklebens weiterhin im räumlichen Herrschaftsbereich der S.",
+            "W plante, den fortbestehenden Gewahrsam der S ohne deren Einverständnis aufzuheben"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Nach Ws Vorstellung erfasste der generelle Gewahrsamswille der S auch den an der Blende hängengebliebenen Schein, weil dieser im Herrschaftsbereich der S verblieb.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "W; der an der Blende des ersten Geldautomaten hängengebliebene Schein; fortbestehender Gewahrsam der Sparkasse beim versuchten Diebstahl",
+            "evidence_scope": "W; der an der Blende hängengebliebene Schein; fortbestehender Gewahrsam der S im Tatentschluss zum versuchten Diebstahl",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Schein verblieb trotz des Festklebens im räumlichen Herrschaftsbereich der S; W wollte den fortbestehenden Gewahrsam der S aufheben.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht den fortbestehenden Gewahrsam der Sparkasse gerade wegen des Verbleibs des Scheins im räumlichen Herrschaftsbereich der S trotz des Festklebens. Sie verneint Gewahrsam nicht wegen Unkenntnis der Mitarbeiter und bezieht die Prüfung eindeutig auf den manipulierten ersten Geldautomaten. Die vom Kriterium geforderte Aussage ist damit der Sache nach erfüllt.",
+          "evidence": [
+            "Der Schein befand sich trotz des Festklebens weiterhin im räumlichen Herrschaftsbereich der S.",
+            "O hatte mangels tatsächlicher Zugriffsmöglichkeit noch keinen Gewahrsam erlangt.",
+            "W plante, den fortbestehenden Gewahrsam der S ohne deren Einverständnis aufzuheben und eigenen Gewahrsam zu begründen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Fortbestehender Gewahrsam der Sparkasse S an dem an der Blende hängenbleibenden 100-€-Schein",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Grund hierfür ist der Verbleib der Scheine im räumlichen Herrschaftsbereich der S, was auch unbekannt hängenbleibende Scheine erfasst",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Dies wird auf den manipulierten Automaten und den konkreten Schein bezogen, nicht auf bloße Unkenntnis der Mitarbeiter gestützt",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "W / erster Geldautomat / fortbestehender Gewahrsam der Sparkasse S beim Cash-Trapping",
+            "evidence_scope": "W / erster Geldautomat / Tatentschluss zum versuchten Diebstahl und fortbestehender Gewahrsam der S am festklebenden 100-€-Schein",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Schein befand sich trotz des Festklebens weiterhin im räumlichen Herrschaftsbereich der S.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 15796,
+        "output_tokens": 5961,
+        "total_tokens": 21757,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 7384
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort stellt ausdrücklich auf den Verbleib des Scheins im Herrschaftsbereich der S ab und bejaht daran anknüpfend ihren fortbestehenden Gewahrsam, den W brechen wollte. Damit ist der maßgebliche Gedanke des generellen Gewahrsamswillens inhaltlich impliziert.",
+              "evidence": [
+                "Der Schein befand sich trotz des Festklebens weiterhin im räumlichen Herrschaftsbereich der S.",
+                "W plante, den fortbestehenden Gewahrsam der S ohne deren Einverständnis aufzuheben"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Nach Ws Vorstellung erfasste der generelle Gewahrsamswille der S auch den an der Blende hängengebliebenen Schein, weil dieser im Herrschaftsbereich der S verblieb.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "W; der an der Blende des ersten Geldautomaten hängengebliebene Schein; fortbestehender Gewahrsam der Sparkasse beim versuchten Diebstahl",
+                "evidence_scope": "W; der an der Blende hängengebliebene Schein; fortbestehender Gewahrsam der S im Tatentschluss zum versuchten Diebstahl",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Schein verblieb trotz des Festklebens im räumlichen Herrschaftsbereich der S; W wollte den fortbestehenden Gewahrsam der S aufheben.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht den fortbestehenden Gewahrsam der Sparkasse gerade wegen des Verbleibs des Scheins im räumlichen Herrschaftsbereich der S trotz des Festklebens. Sie verneint Gewahrsam nicht wegen Unkenntnis der Mitarbeiter und bezieht die Prüfung eindeutig auf den manipulierten ersten Geldautomaten. Die vom Kriterium geforderte Aussage ist damit der Sache nach erfüllt.",
+              "evidence": [
+                "Der Schein befand sich trotz des Festklebens weiterhin im räumlichen Herrschaftsbereich der S.",
+                "O hatte mangels tatsächlicher Zugriffsmöglichkeit noch keinen Gewahrsam erlangt.",
+                "W plante, den fortbestehenden Gewahrsam der S ohne deren Einverständnis aufzuheben und eigenen Gewahrsam zu begründen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Fortbestehender Gewahrsam der Sparkasse S an dem an der Blende hängenbleibenden 100-€-Schein",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Grund hierfür ist der Verbleib der Scheine im räumlichen Herrschaftsbereich der S, was auch unbekannt hängenbleibende Scheine erfasst",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Dies wird auf den manipulierten Automaten und den konkreten Schein bezogen, nicht auf bloße Unkenntnis der Mitarbeiter gestützt",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "W / erster Geldautomat / fortbestehender Gewahrsam der Sparkasse S beim Cash-Trapping",
+                "evidence_scope": "W / erster Geldautomat / Tatentschluss zum versuchten Diebstahl und fortbestehender Gewahrsam der S am festklebenden 100-€-Schein",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Schein befand sich trotz des Festklebens weiterhin im räumlichen Herrschaftsbereich der S.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-003",
+      "title": "Fortbestehender Gewahrsam der Sparkasse beim Cash-Trapping",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort verbindet den Verbleib des Scheins im Herrschaftsbereich der S mit dem fortbestehenden Gewahrsam und leitet daraus Ws Tatentschluss zur Wegnahme ab. Die Prüfung betrifft genau den Gewahrsam am manipulierten Automaten.",
+      "evidence": [
+        "Der Schein befand sich trotz des Festklebens weiterhin im räumlichen Herrschaftsbereich der S.",
+        "W plante, den fortbestehenden Gewahrsam der S ohne deren Einverständnis aufzuheben"
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verbindet den Verbleib des Scheins im Herrschaftsbereich der S mit dem fortbestehenden Gewahrsam und leitet daraus Ws Tatentschluss zur Wegnahme ab. Die Prüfung betrifft genau den Gewahrsam am manipulierten Automaten.",
+          "evidence": [
+            "Der Schein befand sich trotz des Festklebens weiterhin im räumlichen Herrschaftsbereich der S.",
+            "W plante, den fortbestehenden Gewahrsam der S ohne deren Einverständnis aufzuheben"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft den fortbestehenden Gewahrsam der Sparkasse im Rahmen des Tatentschlusses zum versuchten Diebstahl am ersten Geldautomaten. Sie verknüpft den rechtlichen Ausgangspunkt des räumlichen Herrschaftsbereichs mit dem konkreten Umstand des festklebenden Scheins und leitet daraus die geplante Gewahrsamsaufhebung sowie den Wegnahmevorsatz ab. Damit ist eine kriteriumsspezifische, vollständige Gedankenführung vorhanden.",
+          "evidence": [
+            "Der Schein befand sich trotz des Festklebens weiterhin im räumlichen Herrschaftsbereich der S.",
+            "W plante, den fortbestehenden Gewahrsam der S ohne deren Einverständnis aufzuheben und eigenen Gewahrsam zu begründen.",
+            "Er hatte somit Vorsatz hinsichtlich einer Wegnahme."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verbindet den Verbleib des Scheins im Herrschaftsbereich der S mit dem fortbestehenden Gewahrsam und leitet daraus Ws Tatentschluss zur Wegnahme ab. Die Prüfung betrifft genau den Gewahrsam am manipulierten Automaten.",
+              "evidence": [
+                "Der Schein befand sich trotz des Festklebens weiterhin im räumlichen Herrschaftsbereich der S.",
+                "W plante, den fortbestehenden Gewahrsam der S ohne deren Einverständnis aufzuheben"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft den fortbestehenden Gewahrsam der Sparkasse im Rahmen des Tatentschlusses zum versuchten Diebstahl am ersten Geldautomaten. Sie verknüpft den rechtlichen Ausgangspunkt des räumlichen Herrschaftsbereichs mit dem konkreten Umstand des festklebenden Scheins und leitet daraus die geplante Gewahrsamsaufhebung sowie den Wegnahmevorsatz ab. Damit ist eine kriteriumsspezifische, vollständige Gedankenführung vorhanden.",
+              "evidence": [
+                "Der Schein befand sich trotz des Festklebens weiterhin im räumlichen Herrschaftsbereich der S.",
+                "W plante, den fortbestehenden Gewahrsam der S ohne deren Einverständnis aufzuheben und eigenen Gewahrsam zu begründen.",
+                "Er hatte somit Vorsatz hinsichtlich einer Wegnahme."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

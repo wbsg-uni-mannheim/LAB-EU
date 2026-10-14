@@ -1,0 +1,815 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/handels-und-gesellschaftsrecht/fortgeschrittenenklausur-zum-handels-und-gesellschaftsrecht-bezahlen-fur-den-porsche-der-a",
+    "title": "Fortgeschrittenenklausur zum Handels- und Gesellschaftsrecht: „Bezahlen für den Porsche der anderen?“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__zivilrecht__handels-und-gesellschaftsrecht__fortgeschrittenenklausur-zum-handels-und-gesellschaftsrecht-bezahlen-fur-den-porsche-der-a/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/handels-und-gesellschaftsrecht/fortgeschrittenenklausur-zum-handels-und-gesellschaftsrecht-bezahlen-fur-den-porsche-der-a/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T11:08:55.246427+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v3",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Kaufpreisschuld als Gesellschaftsverbindlichkeit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Kaufpreisschuld als Gesellschaftsverbindlichkeit › Kaufpreisschuld als „Verbindlichkeit des früheren Inhabers“": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 15484,
+    "output_tokens": 11777,
+    "total_tokens": 27261,
+    "cached_input_tokens": 10114,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 15484,
+    "output_tokens": 11777,
+    "total_tokens": 27261,
+    "cached_input_tokens": 10114,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-011",
+      "title": "Fortbestand der Prokura am 20.2.2025",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort verneint ein Erlöschen der Prokura bereits am 10.2.2025 und rechnet X am 20.2.2025 nicht der ABC zu. Sie stellt vielmehr auf den Fortbestand der Prokura bei W ab, weil die Übertragung erst am 1.3.2025 erfolgte. Damit ist der Fortbestand der Prokura am 20.2.2025 inhaltlich bejaht.",
+      "evidence": [
+        "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts. Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen. Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort stellt zwar zutreffend auf den späteren Vollzug ab und lässt X am 20. Februar für W handeln. Sie erkennt aber nicht, dass ein Wechsel des Unternehmensträgers die persönlich geprägte Prokura grundsätzlich beendet; diese zwingende Komponente ist weder ausdrücklich noch notwendig impliziert.",
+          "evidence": [
+            "„Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts.“",
+            "„Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen.“",
+            "„Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden.“"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Erkennt, dass ein Wechsel des Unternehmensträgers die persönlich geprägte Prokura grundsätzlich beendet.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "X konnte am 20. Februar noch für W handeln, weil die Unternehmensübertragung erst am 1. März erfolgte.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Der Unternehmenskaufvertrag vom 10. Februar ließ die Prokura allein nicht erlöschen.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "X wird am 20. Februar nicht der ABC-OHG zugerechnet.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "X und der Fortbestand seiner Prokura am 20. Februar 2025 nach dem Unternehmenskaufvertrag und vor der Unternehmensübertragung",
+            "evidence_scope": "X, W und die Wirksamkeit seines Handelns am 20. Februar 2025",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der bloße Unternehmenskaufvertrag ließ die Prokura unberührt; die Übertragung wurde erst am 1. März vollzogen, sodass W am 20. Februar noch Inhaber war und durch X handeln konnte.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint ein Erlöschen der Prokura bereits am 10.2.2025 und rechnet X am 20.2.2025 nicht der ABC zu. Sie stellt vielmehr auf den Fortbestand der Prokura bei W ab, weil die Übertragung erst am 1.3.2025 erfolgte. Damit ist der Fortbestand der Prokura am 20.2.2025 inhaltlich bejaht.",
+          "evidence": [
+            "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts. Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen. Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Der Unternehmenskaufvertrag vom 10.2.2025 ließ die Prokura nicht erlöschen.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Am 20.2.2025 war W noch Inhaber, weil die Unternehmensübertragung erst am 1.3.2025 erfolgte.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "X konnte am 20.2.2025 noch für W handeln und die Prokura bestand fort.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Fortbestand der prokuristischen Vertretungsmacht des X für W am 20.2.2025",
+            "evidence_scope": "Prokura des X, W als Inhaber, Zeitpunkt der Unternehmensübertragung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Unternehmensübertragung erfolgte erst am 1.3.2025; am 20.2.2025 war W noch Inhaber und konnte durch seinen Prokuristen verpflichtet werden.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht zutreffend den Fortbestand der Prokura am 20.2.2025 mit der Begründung, dass der Kaufvertrag vom 10.2.2025 die Prokura nicht erlöschen ließ, da die Übertragung erst am 1.3.2025 vollzogen wurde. Keine der Ausschlussbedingungen greift ein.",
+          "evidence": [
+            "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts. Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen. Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Erkenntnis, dass ein Wechsel des Unternehmensträgers die Prokura beendet bzw. die Inhaberstellung maßgeblich ist",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "X konnte am 20.2.2025 noch für W handeln, weil der Unternehmenskaufvertrag vom 10.2.2025 die Prokura noch nicht erlöschen ließ und der Vollzug erst am 1.3.2025 stattfand",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Fortbestand der Vertretungsmacht/Prokura des X für W am 20.2.2025 trotz des Unternehmenskaufvertrags vom 10.2.2025",
+            "evidence_scope": "Fortbestand der Vertretungsmacht/Prokura des X für W am 20.2.2025 trotz des Unternehmenskaufvertrags vom 10.2.2025",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "W war am 20. Februar noch Inhaber des Unternehmens, da der Unternehmenskaufvertrag vom 10. Februar die Übertragung erst am 1. März vorsah, sodass W durch den Prokuristen verpflichtet werden konnte.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 15484,
+        "output_tokens": 11777,
+        "total_tokens": 27261,
+        "cached_input_tokens": 10114,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt zutreffend auf den späteren Vollzug ab und lässt X am 20. Februar für W handeln. Sie erkennt jedoch nicht, dass die persönlich geprägte Prokura grundsätzlich mit einem Wechsel des Unternehmensträgers endet; ein erforderlicher Bestandteil der positiven Bedingung fehlt.",
+              "evidence": [
+                "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts.",
+                "Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen.",
+                "Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erkennen, dass ein Wechsel des Unternehmensträgers die persönlich geprägte Prokura grundsätzlich beendet.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "X konnte am 20. Februar noch für W handeln, weil die Unternehmensübertragung erst am 1. März erfolgte.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Unternehmenskaufvertrag vom 10. Februar ließ die Prokura allein nicht erlöschen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "X wird am 20. Februar nicht der ABC-OHG zugerechnet.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "X; Fortbestand seiner Prokura für W am 20. Februar 2025 angesichts des Unternehmenskaufvertrags und des späteren Vollzugs der Übertragung",
+                "evidence_scope": "X; Vertretung des W am 20. Februar 2025 angesichts des erst am 1. März vollzogenen Unternehmenserwerbs durch die ABC",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Unternehmenskaufvertrag allein änderte nichts; die Übertragung wurde erst am 1. März vollzogen, sodass W am 20. Februar noch Inhaber war und durch seinen Prokuristen verpflichtet werden konnte.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht den Fortbestand der Prokura am 20.02.2025. Sie stützt dies darauf, dass W zu diesem Zeitpunkt noch Inhaber war, weil die Unternehmensübertragung erst am 01.03.2025 erfolgte und der Unternehmenskaufvertrag vom 10.02.2025 die Prokura nicht beendete. Damit wird die persönliche Bindung der Prokura an W jedenfalls implizit vorausgesetzt; eine Zurechnung an die ABC-OHG erfolgt nicht.",
+              "evidence": [
+                "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts. Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen. Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Ein Wechsel des Unternehmensträgers beendet die persönlich geprägte Prokura grundsätzlich.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "X konnte am 20.02.2025 noch für W handeln, weil die Unternehmensübertragung erst am 01.03.2025 erfolgte.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Unternehmenskaufvertrag vom 10.02.2025 allein ließ die Prokura nicht erlöschen.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Fortbestand der Prokura des X für W e.K. am 20.02.2025; persönliche Bindung an den Unternehmensträger, kein Erlöschen durch den Unternehmenskaufvertrag vom 10.02.2025, keine Zurechnung an die ABC-OHG.",
+                "evidence_scope": "Wirksamkeit der Prokura des X für W e.K. beim Kauf am 20.02.2025; Verhältnis zum Unternehmenskaufvertrag vom 10.02.2025 und zur Unternehmensübertragung am 01.03.2025.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "W war am 20.02.2025 noch Inhaber des Unternehmens; die Übertragung erfolgte erst am 01.03.2025, der Unternehmenskaufvertrag vom 10.02.2025 änderte daran nichts.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Klausurlösung arbeitet zutreffend heraus, dass der schuldrechtliche Kaufvertrag vom 10.2.2025 die Prokura nicht beendete und X am 20.2.2025 noch wirksam für W handeln konnte, da der Vollzug (Inhaberwechsel) erst zum 1.3.2025 stattfand. Keiner der negativen Ausschlussgründe liegt vor.",
+              "evidence": [
+                "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts. Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen. Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erkenntnis, dass der Unternehmenskaufvertrag vom 10.2.2025 die Prokura noch nicht erlöschen ließ und X am 20.2.2025 noch für W handeln konnte, weil die Übertragung erst am 1.3.2025 erfolgte",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erkenntnis des Zusammenhangs zwischen Inhaberwechsel/Übertragung und dem Fortbestand der Vertretungsmacht für W",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Fortbestand der Prokura des X am 20.2.2025 trotz Unternehmenskaufvertrag vom 10.2.2025",
+                "evidence_scope": "Fortbestand der Prokura des X am 20.2.2025 trotz Unternehmenskaufvertrag vom 10.2.2025",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Unternehmenskaufvertrag vom 10.2. berührt die Vertretungsmacht nicht, da der Vollzug erst am 1.3. stattfand und W am 20.2. noch Inhaber war.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt zwar zutreffend auf den späteren Vollzug ab und lässt X am 20. Februar für W handeln. Sie erkennt aber nicht, dass ein Wechsel des Unternehmensträgers die persönlich geprägte Prokura grundsätzlich beendet; diese zwingende Komponente ist weder ausdrücklich noch notwendig impliziert.",
+              "evidence": [
+                "„Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts.“",
+                "„Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen.“",
+                "„Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden.“"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erkennt, dass ein Wechsel des Unternehmensträgers die persönlich geprägte Prokura grundsätzlich beendet.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "X konnte am 20. Februar noch für W handeln, weil die Unternehmensübertragung erst am 1. März erfolgte.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Unternehmenskaufvertrag vom 10. Februar ließ die Prokura allein nicht erlöschen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "X wird am 20. Februar nicht der ABC-OHG zugerechnet.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "X und der Fortbestand seiner Prokura am 20. Februar 2025 nach dem Unternehmenskaufvertrag und vor der Unternehmensübertragung",
+                "evidence_scope": "X, W und die Wirksamkeit seines Handelns am 20. Februar 2025",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der bloße Unternehmenskaufvertrag ließ die Prokura unberührt; die Übertragung wurde erst am 1. März vollzogen, sodass W am 20. Februar noch Inhaber war und durch X handeln konnte.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint ein Erlöschen der Prokura bereits am 10.2.2025 und rechnet X am 20.2.2025 nicht der ABC zu. Sie stellt vielmehr auf den Fortbestand der Prokura bei W ab, weil die Übertragung erst am 1.3.2025 erfolgte. Damit ist der Fortbestand der Prokura am 20.2.2025 inhaltlich bejaht.",
+              "evidence": [
+                "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts. Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen. Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Der Unternehmenskaufvertrag vom 10.2.2025 ließ die Prokura nicht erlöschen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Am 20.2.2025 war W noch Inhaber, weil die Unternehmensübertragung erst am 1.3.2025 erfolgte.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "X konnte am 20.2.2025 noch für W handeln und die Prokura bestand fort.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Fortbestand der prokuristischen Vertretungsmacht des X für W am 20.2.2025",
+                "evidence_scope": "Prokura des X, W als Inhaber, Zeitpunkt der Unternehmensübertragung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Unternehmensübertragung erfolgte erst am 1.3.2025; am 20.2.2025 war W noch Inhaber und konnte durch seinen Prokuristen verpflichtet werden.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht zutreffend den Fortbestand der Prokura am 20.2.2025 mit der Begründung, dass der Kaufvertrag vom 10.2.2025 die Prokura nicht erlöschen ließ, da die Übertragung erst am 1.3.2025 vollzogen wurde. Keine der Ausschlussbedingungen greift ein.",
+              "evidence": [
+                "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts. Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen. Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erkenntnis, dass ein Wechsel des Unternehmensträgers die Prokura beendet bzw. die Inhaberstellung maßgeblich ist",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "X konnte am 20.2.2025 noch für W handeln, weil der Unternehmenskaufvertrag vom 10.2.2025 die Prokura noch nicht erlöschen ließ und der Vollzug erst am 1.3.2025 stattfand",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Fortbestand der Vertretungsmacht/Prokura des X für W am 20.2.2025 trotz des Unternehmenskaufvertrags vom 10.2.2025",
+                "evidence_scope": "Fortbestand der Vertretungsmacht/Prokura des X für W am 20.2.2025 trotz des Unternehmenskaufvertrags vom 10.2.2025",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "W war am 20. Februar noch Inhaber des Unternehmens, da der Unternehmenskaufvertrag vom 10. Februar die Übertragung erst am 1. März vorsah, sodass W durch den Prokuristen verpflichtet werden konnte.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-011",
+      "title": "Fortbestand der Prokura am 20.2.2025",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort verknüpft den noch nicht vollzogenen Unternehmenstransfer mit der fortbestehenden Inhaberschaft des W und zieht daraus den Schluss, dass X am 20. Februar für W handeln konnte. Die Prüfung ist auf die Prokura zu diesem Zeitpunkt bezogen.",
+      "evidence": [
+        "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts.",
+        "Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen.",
+        "Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verknüpft den noch nicht vollzogenen Unternehmenstransfer mit der fortbestehenden Inhaberschaft des W und zieht daraus den Schluss, dass X am 20. Februar für W handeln konnte. Die Prüfung ist auf die Prokura zu diesem Zeitpunkt bezogen.",
+          "evidence": [
+            "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts.",
+            "Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen.",
+            "Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft den Fortbestand der Prokura am 20.02.2025 anhand der konkreten zeitlichen Umstände: Der Unternehmenskaufvertrag vom 10.02.2025 lässt die Prokura unberührt, die Übertragung erfolgt erst am 01.03.2025, und am 20.02.2025 ist W noch Inhaber. Daraus wird der Schluss gezogen, dass X W wirksam verpflichten konnte. Diese Prüfung ist auf denselben Gegenstand bezogen und methodisch vollzogen.",
+          "evidence": [
+            "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts. Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen. Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verknüpft die Prämisse zur zeitlichen Maßgeblichkeit des Vollzugs der Unternehmensübertragung mit den Daten des Sachverhalts und folgert daraus widerspruchsfrei den Fortbestand der Vertretungsmacht am 20.2.2025.",
+          "evidence": [
+            "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts. Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen. Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verknüpft den noch nicht vollzogenen Unternehmenstransfer mit der fortbestehenden Inhaberschaft des W und zieht daraus den Schluss, dass X am 20. Februar für W handeln konnte. Die Prüfung ist auf die Prokura zu diesem Zeitpunkt bezogen.",
+              "evidence": [
+                "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts.",
+                "Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen.",
+                "Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft den Fortbestand der Prokura am 20.02.2025 anhand der konkreten zeitlichen Umstände: Der Unternehmenskaufvertrag vom 10.02.2025 lässt die Prokura unberührt, die Übertragung erfolgt erst am 01.03.2025, und am 20.02.2025 ist W noch Inhaber. Daraus wird der Schluss gezogen, dass X W wirksam verpflichten konnte. Diese Prüfung ist auf denselben Gegenstand bezogen und methodisch vollzogen.",
+              "evidence": [
+                "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts. Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen. Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verknüpft die Prämisse zur zeitlichen Maßgeblichkeit des Vollzugs der Unternehmensübertragung mit den Daten des Sachverhalts und folgert daraus widerspruchsfrei den Fortbestand der Vertretungsmacht am 20.2.2025.",
+              "evidence": [
+                "Dass W am 10. Februar 2025 bereits einen Unternehmenskaufvertrag geschlossen hatte, ändert daran nichts. Die Übertragung des Unternehmens wurde nach dem Sachverhalt erst am 1. März 2025 vollzogen. Am 20. Februar war W noch Inhaber des Unternehmens und konnte durch seinen Prokuristen verpflichtet werden."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

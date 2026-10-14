@@ -1,0 +1,529 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/europarecht/abschlussklausur-europarecht-germany-first",
+    "title": "Abschlussklausur Europarecht: „Germany first“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__europarecht__abschlussklausur-europarecht-germany-first/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/europarecht/abschlussklausur-europarecht-germany-first/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:33:41.419148+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 1,
+    "points_available": 1,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 1
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Zulässigkeit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Zulässigkeit › Klagebefugnis bzw. -berechtigung": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 15298,
+    "output_tokens": 5027,
+    "total_tokens": 20325,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 7106
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 15298,
+    "output_tokens": 5027,
+    "total_tokens": 20325,
+    "cached_input_tokens": 1152,
+    "cache_write_tokens": 7106
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-013",
+      "title": "Objektive Klageberechtigung der Kommission",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort fordert ausdrücklich keine eigene Betroffenheit der Kommission. Ihre Behauptung einer Vertragsverletzung durch die Verordnung und die anschließende Feststellung eines Verstoßes gegen Art. 35 AEUV erfüllen den in der Voraussetzung beschriebenen Maßstab.",
+      "evidence": [
+        "Die Kommission macht geltend, die Bundesrepublik Deutschland habe durch eine fortgeltende Rechtsverordnung gegen Verpflichtungen aus den Verträgen verstoßen.",
+        "Einer besonderen Betroffenheit der Kommission oder eines Nachweises eines Verschuldens bedarf es nicht.",
+        "Die Ausfuhrbeschränkung für Lieferungen in andere Mitgliedstaaten ist folglich nicht nach Art. 36 AEUV gerechtfertigt und verletzt Art. 35 AEUV."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort fordert ausdrücklich keine eigene Betroffenheit der Kommission. Ihre Behauptung einer Vertragsverletzung durch die Verordnung und die anschließende Feststellung eines Verstoßes gegen Art. 35 AEUV erfüllen den in der Voraussetzung beschriebenen Maßstab.",
+          "evidence": [
+            "Die Kommission macht geltend, die Bundesrepublik Deutschland habe durch eine fortgeltende Rechtsverordnung gegen Verpflichtungen aus den Verträgen verstoßen.",
+            "Einer besonderen Betroffenheit der Kommission oder eines Nachweises eines Verschuldens bedarf es nicht.",
+            "Die Ausfuhrbeschränkung für Lieferungen in andere Mitgliedstaaten ist folglich nicht nach Art. 36 AEUV gerechtfertigt und verletzt Art. 35 AEUV."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort verlangt für die Klage der Kommission keine Verletzung eigener Rechte oder besondere Betroffenheit.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort lässt die erkennbare Überzeugung der Kommission genügen, dass das deutsche Vorkaufsrecht unionsrechtliche Verpflichtungen verletzt.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Kommission; objektive Klageberechtigung im Vertragsverletzungsverfahren wegen des deutschen Vorkaufsrechts",
+            "evidence_scope": "Kommission; Zulässigkeit der Klage nach Art. 258 AEUV und anschließend Prüfung des Vorkaufsrechts am Maßstab von Art. 35 AEUV",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Eine besondere Betroffenheit der Kommission oder ein Verschuldensnachweis ist nicht erforderlich; die Kommission macht eine Vertragsverletzung durch die Verordnung geltend.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verlangt für die Kommission keine eigene subjektive Rechtsverletzung, sondern lässt ihre Beanstandung nach durchgeführtem Vorverfahren genügen. Damit ist die objektive Klageberechtigung der Kommission bejaht.",
+          "evidence": [
+            "Die Kommission macht geltend, die Bundesrepublik Deutschland habe durch eine fortgeltende Rechtsverordnung gegen Verpflichtungen aus den Verträgen verstoßen.",
+            "Einer besonderen Betroffenheit der Kommission oder eines Nachweises eines Verschuldens bedarf es nicht.",
+            "Die schriftlich erhobene Klage ist daher zulässig."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Keine Verletzung eigener Rechte der Kommission verlangen",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die erkennbare Überzeugung der Kommission von einer Vertragsverletzung genügen lassen",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Keine eigene subjektive Rechtsverletzung der Kommission fordern",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Kommission als Klägerin; Zulässigkeit der Vertragsverletzungsklage; objektive Klageberechtigung",
+            "evidence_scope": "Kommission; Zulässigkeit der Klage nach Art. 258 AEUV; keine besondere Betroffenheit oder Verschulden erforderlich",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Einer besonderen Betroffenheit der Kommission oder eines Nachweises eines Verschuldens bedarf es nicht.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 15298,
+        "output_tokens": 5027,
+        "total_tokens": 20325,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 7106
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort fordert ausdrücklich keine eigene Betroffenheit der Kommission. Ihre Behauptung einer Vertragsverletzung durch die Verordnung und die anschließende Feststellung eines Verstoßes gegen Art. 35 AEUV erfüllen den in der Voraussetzung beschriebenen Maßstab.",
+              "evidence": [
+                "Die Kommission macht geltend, die Bundesrepublik Deutschland habe durch eine fortgeltende Rechtsverordnung gegen Verpflichtungen aus den Verträgen verstoßen.",
+                "Einer besonderen Betroffenheit der Kommission oder eines Nachweises eines Verschuldens bedarf es nicht.",
+                "Die Ausfuhrbeschränkung für Lieferungen in andere Mitgliedstaaten ist folglich nicht nach Art. 36 AEUV gerechtfertigt und verletzt Art. 35 AEUV."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort verlangt für die Klage der Kommission keine Verletzung eigener Rechte oder besondere Betroffenheit.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort lässt die erkennbare Überzeugung der Kommission genügen, dass das deutsche Vorkaufsrecht unionsrechtliche Verpflichtungen verletzt.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Kommission; objektive Klageberechtigung im Vertragsverletzungsverfahren wegen des deutschen Vorkaufsrechts",
+                "evidence_scope": "Kommission; Zulässigkeit der Klage nach Art. 258 AEUV und anschließend Prüfung des Vorkaufsrechts am Maßstab von Art. 35 AEUV",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Eine besondere Betroffenheit der Kommission oder ein Verschuldensnachweis ist nicht erforderlich; die Kommission macht eine Vertragsverletzung durch die Verordnung geltend.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verlangt für die Kommission keine eigene subjektive Rechtsverletzung, sondern lässt ihre Beanstandung nach durchgeführtem Vorverfahren genügen. Damit ist die objektive Klageberechtigung der Kommission bejaht.",
+              "evidence": [
+                "Die Kommission macht geltend, die Bundesrepublik Deutschland habe durch eine fortgeltende Rechtsverordnung gegen Verpflichtungen aus den Verträgen verstoßen.",
+                "Einer besonderen Betroffenheit der Kommission oder eines Nachweises eines Verschuldens bedarf es nicht.",
+                "Die schriftlich erhobene Klage ist daher zulässig."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Keine Verletzung eigener Rechte der Kommission verlangen",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die erkennbare Überzeugung der Kommission von einer Vertragsverletzung genügen lassen",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Keine eigene subjektive Rechtsverletzung der Kommission fordern",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Kommission als Klägerin; Zulässigkeit der Vertragsverletzungsklage; objektive Klageberechtigung",
+                "evidence_scope": "Kommission; Zulässigkeit der Klage nach Art. 258 AEUV; keine besondere Betroffenheit oder Verschulden erforderlich",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Einer besonderen Betroffenheit der Kommission oder eines Nachweises eines Verschuldens bedarf es nicht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-013",
+      "title": "Objektive Klageberechtigung der Kommission",
+      "verdict": "pass",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort ordnet die behauptete Vertragsverletzung der Kommission der fehlenden Voraussetzung eigener Betroffenheit zu und schließt die Prüfung ihrer Zulässigkeit ab.",
+      "evidence": [
+        "Die Kommission macht geltend, die Bundesrepublik Deutschland habe durch eine fortgeltende Rechtsverordnung gegen Verpflichtungen aus den Verträgen verstoßen.",
+        "Einer besonderen Betroffenheit der Kommission oder eines Nachweises eines Verschuldens bedarf es nicht.",
+        "Die schriftlich erhobene Klage ist daher zulässig."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet die behauptete Vertragsverletzung der Kommission der fehlenden Voraussetzung eigener Betroffenheit zu und schließt die Prüfung ihrer Zulässigkeit ab.",
+          "evidence": [
+            "Die Kommission macht geltend, die Bundesrepublik Deutschland habe durch eine fortgeltende Rechtsverordnung gegen Verpflichtungen aus den Verträgen verstoßen.",
+            "Einer besonderen Betroffenheit der Kommission oder eines Nachweises eines Verschuldens bedarf es nicht.",
+            "Die schriftlich erhobene Klage ist daher zulässig."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Klageberechtigung der Kommission im Rahmen der Zulässigkeit, benennt als Maßstab, dass weder besondere Betroffenheit noch Verschulden erforderlich sind, und leitet daraus die Zulässigkeit der Klage ab. Die Prüfung betrifft dieselbe Person, dasselbe Verfahren und dieselbe Station.",
+          "evidence": [
+            "Die Klage ist als Vertragsverletzungsklage nach Art. 258 AEUV statthaft.",
+            "Einer besonderen Betroffenheit der Kommission oder eines Nachweises eines Verschuldens bedarf es nicht.",
+            "Die schriftlich erhobene Klage ist daher zulässig."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort ordnet die behauptete Vertragsverletzung der Kommission der fehlenden Voraussetzung eigener Betroffenheit zu und schließt die Prüfung ihrer Zulässigkeit ab.",
+              "evidence": [
+                "Die Kommission macht geltend, die Bundesrepublik Deutschland habe durch eine fortgeltende Rechtsverordnung gegen Verpflichtungen aus den Verträgen verstoßen.",
+                "Einer besonderen Betroffenheit der Kommission oder eines Nachweises eines Verschuldens bedarf es nicht.",
+                "Die schriftlich erhobene Klage ist daher zulässig."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Klageberechtigung der Kommission im Rahmen der Zulässigkeit, benennt als Maßstab, dass weder besondere Betroffenheit noch Verschulden erforderlich sind, und leitet daraus die Zulässigkeit der Klage ab. Die Prüfung betrifft dieselbe Person, dasselbe Verfahren und dieselbe Station.",
+              "evidence": [
+                "Die Klage ist als Vertragsverletzungsklage nach Art. 258 AEUV statthaft.",
+                "Einer besonderen Betroffenheit der Kommission oder eines Nachweises eines Verschuldens bedarf es nicht.",
+                "Die schriftlich erhobene Klage ist daher zulässig."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

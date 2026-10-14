@@ -1,0 +1,870 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-die-reise-ins-gericht-wenn-der-einbruch-nach-hinten-losgeht",
+    "title": "Fortgeschrittenenklausur: Die Reise ins Gericht: Wenn der Einbruch nach hinten losgeht"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenklausur-die-reise-ins-gericht-wenn-der-einbruch-nach-hinten-losgeht/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-die-reise-ins-gericht-wenn-der-einbruch-nach-hinten-losgeht/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "primary_pair_with_tiebreaker",
+  "primary_votes_per_criterion": 2,
+  "tiebreaker_votes_per_conflict": 1,
+  "committee_conflict_recheck": false,
+  "committee_tiebreaker": true,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:31:55.920464+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 2,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 5,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 2,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 2
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 2
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 2
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 2
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Die Mitnahme des Schmucks": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "Die Verhandlung": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Die Mitnahme des Schmucks › Strafbarkeit des T": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "Die Verhandlung › Strafbarkeit des S": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "argumentation": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 26517,
+    "output_tokens": 9912,
+    "total_tokens": 36429,
+    "cached_input_tokens": 2304,
+    "cache_write_tokens": 12451
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 26517,
+    "output_tokens": 9912,
+    "total_tokens": 36429,
+    "cached_input_tokens": 2304,
+    "cache_write_tokens": 12451
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-012",
+      "title": "Indizwirkung des versuchten Regelbeispiels",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort erkennt das Einstecken der Karte nicht als unmittelbares Ansetzen zum Regelbeispiel und erörtert die Indizwirkung nicht. Der Hinweis auf eine fehlende selbstständige Versuchsstrafbarkeit ersetzt die verlangte fallbezogene Lösung nicht.",
+      "evidence": [
+        "T zückte eine Kunststoffkarte, um mit dieser die Tür zu öffnen.",
+        "Da T die Tür ohne Einsatz der Karte öffnen konnte, hat er den Tatbestand des § 243 Abs. 1 S. 2 Nr. 1 StGB nicht verwirklicht.",
+        "Ein Versuch des besonders schweren Falles nach § 243 StGB ist nicht gesondert vertypt."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erkennt das Einstecken der Karte nicht als unmittelbares Ansetzen zum Regelbeispiel und erörtert die Indizwirkung nicht. Der Hinweis auf eine fehlende selbstständige Versuchsstrafbarkeit ersetzt die verlangte fallbezogene Lösung nicht.",
+          "evidence": [
+            "T zückte eine Kunststoffkarte, um mit dieser die Tür zu öffnen.",
+            "Da T die Tür ohne Einsatz der Karte öffnen konnte, hat er den Tatbestand des § 243 Abs. 1 S. 2 Nr. 1 StGB nicht verwirklicht.",
+            "Ein Versuch des besonders schweren Falles nach § 243 StGB ist nicht gesondert vertypt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Das Einstecken der Karte wird als unmittelbares Ansetzen zum versuchten Regelbeispiel erkannt.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Indizwirkung des versuchten Regelbeispiels wird fallbezogen anhand eines Streitstandes gelöst.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "T; Einstecken der Kunststoffkarte und Indizwirkung des versuchten Regelbeispiels nach § 243 StGB",
+            "evidence_scope": "T; § 243-Regelbeispiel wird wegen Nichtverwendung der Karte abgelehnt; die Prüfung des unmittelbaren Ansetzens betrifft dagegen § 244 Abs. 1 Nr. 3 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Ein Versuch des besonders schweren Falles nach § 243 StGB sei nicht gesondert vertypt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erkennt das Einstecken der Karte zwar als unmittelbares Ansetzen, aber ausschließlich für § 244 Abs. 1 Nr. 3 StGB. Für das versuchte Regelbeispiel § 243 Abs. 1 S. 2 Nr. 1 StGB fehlt die Erörterung der Indizwirkung; der Streit wird weder bejahend noch ablehnend geführt. Damit ist die criterion-spezifische Streitlösung nicht geleistet.",
+          "evidence": [
+            "Fraglich ist, ob das bloße Bereithalten der Kunststoffkarte ausreicht, um das Regelbeispiel zu erfüllen.",
+            "Das schlichte Mitsichführen des Werkzeugs ohne dessen Einsatz genügt nicht.",
+            "Ein Versuch des besonders schweren Falles nach § 243 StGB ist nicht gesondert vertypt. Eine Versuchsstrafbarkeit scheidet daher aus.",
+            "Darin liegt das unmittelbare Ansetzen zur Verwirklichung des Tatbestands des § 244 Abs. 1 Nr. 3 StGB."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einstecken der Karte als unmittelbares Ansetzen im Rahmen des versuchten Regelbeispiels § 243 StGB erkennen",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Den Streit zur Indizwirkung des versuchten Regelbeispiels fallbezogen lösen, sei es durch Bejahen oder Ablehnen der Regelwirkung mit Begründung",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "versuchtes Regelbeispiel § 243 Abs. 1 S. 2 Nr. 1 StGB, Einstecken der Karte als unmittelbares Ansetzen und Indizwirkung",
+            "evidence_scope": "§ 243 nur als vollendetes Regelbeispiel verneint; versuchter Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB mit Rücktritt/Konsumption",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "§ 243 StGB sei nicht gesondert vertypt, eine Versuchsstrafbarkeit scheide aus; das Werkzeug sei nicht eingesetzt worden.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {
+        "input_tokens": 13314,
+        "output_tokens": 7137,
+        "total_tokens": 20451,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 6251
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erkennt das Einstecken der Karte nicht als unmittelbares Ansetzen zum Regelbeispiel und erörtert die Indizwirkung nicht. Der Hinweis auf eine fehlende selbstständige Versuchsstrafbarkeit ersetzt die verlangte fallbezogene Lösung nicht.",
+              "evidence": [
+                "T zückte eine Kunststoffkarte, um mit dieser die Tür zu öffnen.",
+                "Da T die Tür ohne Einsatz der Karte öffnen konnte, hat er den Tatbestand des § 243 Abs. 1 S. 2 Nr. 1 StGB nicht verwirklicht.",
+                "Ein Versuch des besonders schweren Falles nach § 243 StGB ist nicht gesondert vertypt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Das Einstecken der Karte wird als unmittelbares Ansetzen zum versuchten Regelbeispiel erkannt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Indizwirkung des versuchten Regelbeispiels wird fallbezogen anhand eines Streitstandes gelöst.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "T; Einstecken der Kunststoffkarte und Indizwirkung des versuchten Regelbeispiels nach § 243 StGB",
+                "evidence_scope": "T; § 243-Regelbeispiel wird wegen Nichtverwendung der Karte abgelehnt; die Prüfung des unmittelbaren Ansetzens betrifft dagegen § 244 Abs. 1 Nr. 3 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Ein Versuch des besonders schweren Falles nach § 243 StGB sei nicht gesondert vertypt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erkennt das Einstecken der Karte zwar als unmittelbares Ansetzen, aber ausschließlich für § 244 Abs. 1 Nr. 3 StGB. Für das versuchte Regelbeispiel § 243 Abs. 1 S. 2 Nr. 1 StGB fehlt die Erörterung der Indizwirkung; der Streit wird weder bejahend noch ablehnend geführt. Damit ist die criterion-spezifische Streitlösung nicht geleistet.",
+              "evidence": [
+                "Fraglich ist, ob das bloße Bereithalten der Kunststoffkarte ausreicht, um das Regelbeispiel zu erfüllen.",
+                "Das schlichte Mitsichführen des Werkzeugs ohne dessen Einsatz genügt nicht.",
+                "Ein Versuch des besonders schweren Falles nach § 243 StGB ist nicht gesondert vertypt. Eine Versuchsstrafbarkeit scheidet daher aus.",
+                "Darin liegt das unmittelbare Ansetzen zur Verwirklichung des Tatbestands des § 244 Abs. 1 Nr. 3 StGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einstecken der Karte als unmittelbares Ansetzen im Rahmen des versuchten Regelbeispiels § 243 StGB erkennen",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Den Streit zur Indizwirkung des versuchten Regelbeispiels fallbezogen lösen, sei es durch Bejahen oder Ablehnen der Regelwirkung mit Begründung",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "versuchtes Regelbeispiel § 243 Abs. 1 S. 2 Nr. 1 StGB, Einstecken der Karte als unmittelbares Ansetzen und Indizwirkung",
+                "evidence_scope": "§ 243 nur als vollendetes Regelbeispiel verneint; versuchter Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB mit Rücktritt/Konsumption",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "§ 243 StGB sei nicht gesondert vertypt, eine Versuchsstrafbarkeit scheide aus; das Werkzeug sei nicht eingesetzt worden.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-030",
+      "title": "Berichtigung der Falschaussage",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Antwort erwähnt zwar, dass S nach dem Abbruch der Eidesformel die Wahrheit sagte, erkennt dies aber nicht als Berichtigung der früheren Falschaussage nach § 158 Abs. 1 StGB an.",
+      "evidence": [
+        "S brach die Eidesformel ab und sagte plötzlich die Wahrheit.",
+        "S ist strafbefreiend vom versuchten Meineid zurückgetreten."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erwähnt zwar, dass S nach dem Abbruch der Eidesformel die Wahrheit sagte, erkennt dies aber nicht als Berichtigung der früheren Falschaussage nach § 158 Abs. 1 StGB an.",
+          "evidence": [
+            "S brach die Eidesformel ab und sagte plötzlich die Wahrheit.",
+            "S ist strafbefreiend vom versuchten Meineid zurückgetreten."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die wahrheitsgemäße Schilderung wird als Berichtigung der früheren Erinnerungslosigkeitsbehauptung nach § 158 Abs. 1 StGB anerkannt.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "S; Berichtigung seiner falschen uneidlichen Aussage nach § 158 Abs. 1 StGB",
+            "evidence_scope": "S; Rücktritt vom versuchten Meineid nach Abbruch der Eidesformel",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die wahrheitsgemäße Aussage wird als Aufgabe der weiteren Ausführung des versuchten Meineids behandelt; zur Berichtigung der früheren Falschaussage wird kein Grund genannt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erörtert die Berichtigung der Falschaussage nach § 158 Abs. 1 StGB nicht. Sie bejaht lediglich eine Strafbarkeit nach § 153 StGB und einen strafbefreienden Rücktritt vom versuchten Meineid. Damit fehlt sowohl die erforderliche Norm als auch die tatbestandliche Verknüpfung mit der tatsächlich erfolgten wahrheitsgemäßen Ersatzschilderung.",
+          "evidence": [
+            "S hat sich wegen falscher uneidlicher Aussage gemäß § 153 StGB strafbar gemacht.",
+            "S ist strafbefreiend vom versuchten Meineid zurückgetreten.",
+            "§ 158 StGB wird nicht erwähnt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort bejaht eine Berichtigung nach § 158 Abs. 1 StGB.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Berichtigung wird darauf gestützt, dass S seine Erinnerungslosigkeitsbehauptung zurücknahm und durch eine wahrheitsgemäße Schilderung seiner Beobachtung des T ersetzte.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "S als Zeuge; Berichtigung einer falschen uneidlichen Aussage nach § 158 Abs. 1 StGB durch Rücknahme der Erinnerungslosigkeitsbehauptung und Ersetzung durch wahrheitsgemäße Schilderung",
+            "evidence_scope": "S als Zeuge; falsche uneidliche Aussage nach § 153 StGB und Rücktritt vom versuchten Meineid nach §§ 154, 22, 23 StGB",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "keine Begründung zu § 158 Abs. 1 StGB; die Antwort behandelt nur § 153 StGB und den Rücktritt vom versuchten Meineid.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {
+        "input_tokens": 13203,
+        "output_tokens": 2775,
+        "total_tokens": 15978,
+        "cached_input_tokens": 1152,
+        "cache_write_tokens": 6200
+      },
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erwähnt zwar, dass S nach dem Abbruch der Eidesformel die Wahrheit sagte, erkennt dies aber nicht als Berichtigung der früheren Falschaussage nach § 158 Abs. 1 StGB an.",
+              "evidence": [
+                "S brach die Eidesformel ab und sagte plötzlich die Wahrheit.",
+                "S ist strafbefreiend vom versuchten Meineid zurückgetreten."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die wahrheitsgemäße Schilderung wird als Berichtigung der früheren Erinnerungslosigkeitsbehauptung nach § 158 Abs. 1 StGB anerkannt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S; Berichtigung seiner falschen uneidlichen Aussage nach § 158 Abs. 1 StGB",
+                "evidence_scope": "S; Rücktritt vom versuchten Meineid nach Abbruch der Eidesformel",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die wahrheitsgemäße Aussage wird als Aufgabe der weiteren Ausführung des versuchten Meineids behandelt; zur Berichtigung der früheren Falschaussage wird kein Grund genannt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erörtert die Berichtigung der Falschaussage nach § 158 Abs. 1 StGB nicht. Sie bejaht lediglich eine Strafbarkeit nach § 153 StGB und einen strafbefreienden Rücktritt vom versuchten Meineid. Damit fehlt sowohl die erforderliche Norm als auch die tatbestandliche Verknüpfung mit der tatsächlich erfolgten wahrheitsgemäßen Ersatzschilderung.",
+              "evidence": [
+                "S hat sich wegen falscher uneidlicher Aussage gemäß § 153 StGB strafbar gemacht.",
+                "S ist strafbefreiend vom versuchten Meineid zurückgetreten.",
+                "§ 158 StGB wird nicht erwähnt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort bejaht eine Berichtigung nach § 158 Abs. 1 StGB.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Berichtigung wird darauf gestützt, dass S seine Erinnerungslosigkeitsbehauptung zurücknahm und durch eine wahrheitsgemäße Schilderung seiner Beobachtung des T ersetzte.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S als Zeuge; Berichtigung einer falschen uneidlichen Aussage nach § 158 Abs. 1 StGB durch Rücknahme der Erinnerungslosigkeitsbehauptung und Ersetzung durch wahrheitsgemäße Schilderung",
+                "evidence_scope": "S als Zeuge; falsche uneidliche Aussage nach § 153 StGB und Rücktritt vom versuchten Meineid nach §§ 154, 22, 23 StGB",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "keine Begründung zu § 158 Abs. 1 StGB; die Antwort behandelt nur § 153 StGB und den Rücktritt vom versuchten Meineid.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-012",
+      "title": "Indizwirkung des versuchten Regelbeispiels",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Ausführungen zu § 243 verknüpfen die Karte nicht mit einem unmittelbaren Ansetzen zum Regelbeispiel und behandeln die Indizwirkung nicht. Das unmittelbare Ansetzen wird nur zum eigenständigen Qualifikationstatbestand des § 244 geprüft; dieser Prüfungsgang kann die fehlende §-243-Prüfung nicht ersetzen.",
+      "evidence": [
+        "Ein Versuch des besonders schweren Falles nach § 243 StGB ist nicht gesondert vertypt. Eine Versuchsstrafbarkeit scheidet daher aus.",
+        "Darin liegt das unmittelbare Ansetzen zur Verwirklichung des Tatbestands des § 244 Abs. 1 Nr. 3 StGB."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Ausführungen zu § 243 verknüpfen die Karte nicht mit einem unmittelbaren Ansetzen zum Regelbeispiel und behandeln die Indizwirkung nicht. Das unmittelbare Ansetzen wird nur zum eigenständigen Qualifikationstatbestand des § 244 geprüft; dieser Prüfungsgang kann die fehlende §-243-Prüfung nicht ersetzen.",
+          "evidence": [
+            "Ein Versuch des besonders schweren Falles nach § 243 StGB ist nicht gesondert vertypt. Eine Versuchsstrafbarkeit scheidet daher aus.",
+            "Darin liegt das unmittelbare Ansetzen zur Verwirklichung des Tatbestands des § 244 Abs. 1 Nr. 3 StGB."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft § 243 StGB nur als vollendetes Regelbeispiel und verneint dessen Erfüllung. Den Streit zur Indizwirkung eines versuchten Regelbeispiels erörtert sie nicht. Der Versuch wird allein zu § 244 Abs. 1 Nr. 3 StGB behandelt; dort wird zwar das unmittelbare Ansetzen bejaht, aber nicht die criterion-spezifische Indizwirkungsfrage. Es fehlt eine methodische Verknüpfung von spezifischem Maßstab, Fallfakten und abschließender Lösung.",
+          "evidence": [
+            "Da T die Tür ohne Einsatz der Karte öffnen konnte, hat er den Tatbestand des § 243 Abs. 1 S. 2 Nr. 1 StGB nicht verwirklicht.",
+            "Ein Versuch des besonders schweren Falles nach § 243 StGB ist nicht gesondert vertypt. Eine Versuchsstrafbarkeit scheidet daher aus.",
+            "Darin liegt das unmittelbare Ansetzen zur Verwirklichung des Tatbestands des § 244 Abs. 1 Nr. 3 StGB."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Ausführungen zu § 243 verknüpfen die Karte nicht mit einem unmittelbaren Ansetzen zum Regelbeispiel und behandeln die Indizwirkung nicht. Das unmittelbare Ansetzen wird nur zum eigenständigen Qualifikationstatbestand des § 244 geprüft; dieser Prüfungsgang kann die fehlende §-243-Prüfung nicht ersetzen.",
+              "evidence": [
+                "Ein Versuch des besonders schweren Falles nach § 243 StGB ist nicht gesondert vertypt. Eine Versuchsstrafbarkeit scheidet daher aus.",
+                "Darin liegt das unmittelbare Ansetzen zur Verwirklichung des Tatbestands des § 244 Abs. 1 Nr. 3 StGB."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft § 243 StGB nur als vollendetes Regelbeispiel und verneint dessen Erfüllung. Den Streit zur Indizwirkung eines versuchten Regelbeispiels erörtert sie nicht. Der Versuch wird allein zu § 244 Abs. 1 Nr. 3 StGB behandelt; dort wird zwar das unmittelbare Ansetzen bejaht, aber nicht die criterion-spezifische Indizwirkungsfrage. Es fehlt eine methodische Verknüpfung von spezifischem Maßstab, Fallfakten und abschließender Lösung.",
+              "evidence": [
+                "Da T die Tür ohne Einsatz der Karte öffnen konnte, hat er den Tatbestand des § 243 Abs. 1 S. 2 Nr. 1 StGB nicht verwirklicht.",
+                "Ein Versuch des besonders schweren Falles nach § 243 StGB ist nicht gesondert vertypt. Eine Versuchsstrafbarkeit scheidet daher aus.",
+                "Darin liegt das unmittelbare Ansetzen zur Verwirklichung des Tatbestands des § 244 Abs. 1 Nr. 3 StGB."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-030",
+      "title": "Berichtigung der Falschaussage",
+      "verdict": "fail",
+      "resolution": "resolved",
+      "reasoning": "Die Passage behandelt den Rücktritt vom versuchten Meineid. Sie prüft nicht die Berichtigung der zuvor abgegebenen Falschaussage nach § 158 Abs. 1 StGB; die wahrheitsgemäße Aussage wird nur im Zusammenhang mit dem Rücktritt erwähnt.",
+      "evidence": [
+        "S brach die Eidesformel ab und sagte plötzlich die Wahrheit.",
+        "S ist strafbefreiend vom versuchten Meineid zurückgetreten."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Passage behandelt den Rücktritt vom versuchten Meineid. Sie prüft nicht die Berichtigung der zuvor abgegebenen Falschaussage nach § 158 Abs. 1 StGB; die wahrheitsgemäße Aussage wird nur im Zusammenhang mit dem Rücktritt erwähnt.",
+          "evidence": [
+            "S brach die Eidesformel ab und sagte plötzlich die Wahrheit.",
+            "S ist strafbefreiend vom versuchten Meineid zurückgetreten."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": true
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft weder § 158 Abs. 1 StGB noch die Voraussetzungen einer Berichtigung der Falschaussage. Sie behandelt lediglich den Rücktritt vom versuchten Meineid und die falsche uneidliche Aussage. Eine methodische Verknüpfung von Norm, Sachverhalt und Ergebnis speziell zur Berichtigung fehlt.",
+          "evidence": [
+            "S ist strafbefreiend vom versuchten Meineid zurückgetreten.",
+            "§ 158 StGB wird nicht erwähnt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": false
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": true
+        }
+      ],
+      "usage": {},
+      "committee_status": "primary_consensus",
+      "voting_rounds": [
+        {
+          "stage": "primary",
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Passage behandelt den Rücktritt vom versuchten Meineid. Sie prüft nicht die Berichtigung der zuvor abgegebenen Falschaussage nach § 158 Abs. 1 StGB; die wahrheitsgemäße Aussage wird nur im Zusammenhang mit dem Rücktritt erwähnt.",
+              "evidence": [
+                "S brach die Eidesformel ab und sagte plötzlich die Wahrheit.",
+                "S ist strafbefreiend vom versuchten Meineid zurückgetreten."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": true
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft weder § 158 Abs. 1 StGB noch die Voraussetzungen einer Berichtigung der Falschaussage. Sie behandelt lediglich den Rücktritt vom versuchten Meineid und die falsche uneidliche Aussage. Eine methodische Verknüpfung von Norm, Sachverhalt und Ergebnis speziell zur Berichtigung fehlt.",
+              "evidence": [
+                "S ist strafbefreiend vom versuchten Meineid zurückgetreten.",
+                "§ 158 StGB wird nicht erwähnt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": false
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

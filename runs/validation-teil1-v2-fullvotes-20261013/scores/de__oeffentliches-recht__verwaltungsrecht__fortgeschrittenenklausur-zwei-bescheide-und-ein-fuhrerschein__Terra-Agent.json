@@ -1,0 +1,899 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/verwaltungsrecht/fortgeschrittenenklausur-zwei-bescheide-und-ein-fuhrerschein",
+    "title": "Fortgeschrittenenklausur: Zwei Bescheide und ein Führerschein"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__verwaltungsrecht__fortgeschrittenenklausur-zwei-bescheide-und-ein-fuhrerschein/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/verwaltungsrecht/fortgeschrittenenklausur-zwei-bescheide-und-ein-fuhrerschein/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T10:38:55.349794+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v2",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Begründetheit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Begründetheit › Materielle Rechtswidrigkeit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "argumentation": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 28640,
+    "output_tokens": 6462,
+    "total_tokens": 35102,
+    "cached_input_tokens": 19080,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 28640,
+    "output_tokens": 6462,
+    "total_tokens": 35102,
+    "cached_input_tokens": 19080,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-019",
+      "title": "Maßgeblichkeit der Wirksamkeit des Rücknahmebescheids",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort prüft die Wirksamkeit des Rücknahmebescheids vom 8.11.2021 ausdrücklich, verneint dessen Nichtigkeit nach § 44 Abs. 1 LVwVfG und stellt klar, dass die bloße Rechtswidrigkeit die Wirksamkeit nach § 43 Abs. 2 LVwVfG nicht entfallen lässt. Damit ist die vom Kriterium verlangte Unterscheidung zwischen Rechtswidrigkeit und Unwirksamkeit getroffen.",
+      "evidence": [
+        "Der Bescheid ist jedoch nicht schon deshalb nichtig. Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+        "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam, solange er nicht zurückgenommen, widerrufen, anderweitig aufgehoben oder durch Zeitablauf erledigt ist.",
+        "Seine Wirksamkeit verleiht dem Landratsamt allerdings keine Kompetenz, den tschechischen Hoheitsakt außerhalb Deutschlands zu beseitigen."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort stellt zutreffend klar, dass Rechtswidrigkeit nicht ohne Weiteres Unwirksamkeit bedeutet. Sie verknüpft die Wirksamkeit aber nicht mit dem erforderlichen Schluss, dass A bei wirksamer Beseitigung der Fahrerlaubnis ihr Ziel durch die Anfechtung des zweiten Bescheids nicht erreichen könnte.",
+          "evidence": [
+            "Der Bescheid ist jedoch nicht schon deshalb nichtig.",
+            "Der Fehler ist daher nicht in dem für § 44 Abs. 1 LVwVfG erforderlichen Sinne evident.",
+            "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort prüft inzident die Wirksamkeit und insbesondere die Nichtigkeit des Rücknahmebescheids vom 8.11.2021.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort erläutert, dass bloße Rechtswidrigkeit die Wirksamkeit des Bescheids nicht beseitigt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort verknüpft die Wirksamkeit mit As fehlender Zielerreichung, falls die Fahrerlaubnis durch den ersten Bescheid wirksam beseitigt wurde.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A; Fortbestand der tschechischen Fahrerlaubnis und Wirksamkeit beziehungsweise Nichtigkeit des Rücknahmebescheids vom 8.11.2021",
+            "evidence_scope": "A; Wirksamkeit und Nichtigkeit des Bescheids vom 8.11.2021 im Zusammenhang mit der Anerkennungsfrage",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Fehler ist nicht offensichtlich im Sinne des § 44 Abs. 1 LVwVfG; die Abgrenzung zwischen den fahrerlaubnisrechtlichen Instrumenten und einer unzulässigen Rücknahme erfordert eine rechtliche Prüfung. Der rechtswidrige Bescheid bleibt mangels Anfechtung nach § 43 Abs. 2 LVwVfG wirksam.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Wirksamkeit des Rücknahmebescheids vom 8.11.2021 ausdrücklich, verneint dessen Nichtigkeit nach § 44 Abs. 1 LVwVfG und stellt klar, dass die bloße Rechtswidrigkeit die Wirksamkeit nach § 43 Abs. 2 LVwVfG nicht entfallen lässt. Damit ist die vom Kriterium verlangte Unterscheidung zwischen Rechtswidrigkeit und Unwirksamkeit getroffen.",
+          "evidence": [
+            "Der Bescheid ist jedoch nicht schon deshalb nichtig. Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+            "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam, solange er nicht zurückgenommen, widerrufen, anderweitig aufgehoben oder durch Zeitablauf erledigt ist.",
+            "Seine Wirksamkeit verleiht dem Landratsamt allerdings keine Kompetenz, den tschechischen Hoheitsakt außerhalb Deutschlands zu beseitigen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Inzidente Prüfung der Wirksamkeit und insbesondere der Nichtigkeit des Rücknahmebescheids vom 8.11.2021",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Erläuterung, dass bloße Rechtswidrigkeit die Wirksamkeit nicht beseitigt",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Fortbestand der tschechischen Fahrerlaubnis / Wirksamkeit und Nichtigkeit des Rücknahmebescheids vom 8.11.2021 gegenüber A",
+            "evidence_scope": "Wirksamkeit und Nichtigkeit des ersten Bescheids vom 8.11.2021 gegenüber A im Rahmen der Begründetheitsprüfung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der erste Bescheid ist rechtswidrig, aber nicht nichtig, weil der Fehler nicht die Evidenzschwelle des § 44 Abs. 1 LVwVfG erreicht; nach § 43 Abs. 2 LVwVfG bleibt er daher wirksam.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Das Kriterium ist vollumfänglich erfüllt. Die Antwort prüft ausführlich die Nichtigkeit nach § 44 Abs. 1 LVwVfG und stellt klar, dass der Bescheid trotz Rechtswidrigkeit mangels Nichtigkeit nach § 43 Abs. 2 LVwVfG wirksam bleibt.",
+          "evidence": [
+            "Der Bescheid ist jedoch nicht schon deshalb nichtig. Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+            "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam, solange er nicht zurückgenommen, widerrufen, anderweitig aufgehoben oder durch Zeitablauf erledigt ist."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Inzidente Prüfung der Wirksamkeit und insbesondere der Nichtigkeit des Rücknahmebescheids vom 8.11.2021",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Erläuterung, dass bloße Rechtswidrigkeit die Wirksamkeit nicht beseitigt (keine Gleichsetzung von Rechtswidrigkeit mit Unwirksamkeit)",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Rücknahmebescheid vom 8.11.2021, Wirksamkeit/Nichtigkeit im Rahmen der Klageprüfung",
+            "evidence_scope": "Rücknahmebescheid vom 8.11.2021, Wirksamkeit/Nichtigkeit unter Abschnitt B. II.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Bescheid leidet an keinem offensichtlichen und schwerwiegenden Fehler i.S.d. § 44 Abs. 1 LVwVfG und bleibt daher mangels Nichtigkeit und mangels Anfechtung nach § 43 Abs. 2 LVwVfG wirksam.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 28640,
+        "output_tokens": 6462,
+        "total_tokens": 35102,
+        "cached_input_tokens": 19080,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft Nichtigkeit und Wirksamkeit und trennt sie ausdrücklich von der bloßen Rechtswidrigkeit. Sie verknüpft diese Prüfung jedoch nicht mit As fehlender Zielerreichung für den Fall, dass der erste Bescheid die Fahrerlaubnis wirksam beseitigt hätte. Ein zwingender PASS-Bestandteil fehlt.",
+              "evidence": [
+                "Der Bescheid ist jedoch nicht schon deshalb nichtig.",
+                "Der Fehler ist daher nicht in dem für § 44 Abs. 1 LVwVfG erforderlichen Sinne evident.",
+                "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam",
+                "Seine Wirksamkeit verleiht dem Landratsamt allerdings keine Kompetenz, den tschechischen Hoheitsakt außerhalb Deutschlands zu beseitigen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort prüft inzident die Wirksamkeit und insbesondere die Nichtigkeit des Rücknahmebescheids vom 8.11.2021.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort erläutert, dass bloße Rechtswidrigkeit die Wirksamkeit des Bescheids nicht beseitigt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Prüfung wird mit As fehlender Zielerreichung verknüpft, falls die Fahrerlaubnis durch den ersten Bescheid wirksam beseitigt wäre.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; Fortbestand der tschechischen Fahrerlaubnis und Wirksamkeit/Nichtigkeit des Rücknahmebescheids vom 8.11.2021",
+                "evidence_scope": "A; Wirksamkeit/Nichtigkeit des Rücknahmebescheids vom 8.11.2021 und dessen Bedeutung für die tschechische Fahrerlaubnis",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Bescheid ist trotz Rechtswidrigkeit nicht nichtig, weil der Fehler nicht offensichtlich im Sinne des § 44 Abs. 1 LVwVfG ist; mangels rechtzeitiger Anfechtung bleibt er nach § 43 Abs. 2 LVwVfG wirksam.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft ausdrücklich die Nichtigkeit und Wirksamkeit des Rücknahmebescheids vom 8.11.2021. Sie setzt Rechtswidrigkeit nicht mit Unwirksamkeit gleich, sondern erläutert, dass der Bescheid trotz Rechtswidrigkeit wirksam bleibt, solange er nicht angefochten oder aufgehoben wird. Damit ist der inhaltliche Kern der Criterion erfüllt.",
+              "evidence": [
+                "Der Bescheid ist jedoch nicht schon deshalb nichtig.",
+                "Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+                "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam, solange er nicht zurückgenommen, widerrufen, anderweitig aufgehoben oder durch Zeitablauf erledigt ist.",
+                "Selbst wenn man wegen des ausdrücklich beanspruchten ausländischen Gesamtaufhebungsanspruchs eine Nichtigkeit nach § 44 Abs. 1 LVwVfG annehmen wollte, änderte dies am Ergebnis zur Prüfung des zweiten Bescheids nichts: Dann wäre der erste Bescheid schlicht wirkungslos und die Berechtigung der A allein nach § 28 FeV zu beurteilen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Prüfung der Wirksamkeit und insbesondere der Nichtigkeit des Rücknahmebescheids vom 8.11.2021 im Kontext des Fortbestands der tschechischen Fahrerlaubnis",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erläuterung, dass bloße Rechtswidrigkeit die Wirksamkeit des Rücknahmebescheids nicht beseitigt",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Keine Gleichsetzung von einfacher Rechtswidrigkeit mit Unwirksamkeit",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Wirksamkeit/Nichtigkeit des Rücknahmebescheids vom 8.11.2021 für den Fortbestand der tschechischen Fahrerlaubnis",
+                "evidence_scope": "Der Rücknahmebescheid vom 8.11.2021, seine Rechtswidrigkeit, Nichtigkeit nach § 44 LVwVfG und Wirksamkeit nach § 43 Abs. 2 LVwVfG",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Bescheid ist rechtswidrig, aber nicht nichtig; mangels rechtzeitiger Anfechtung bleibt er nach § 43 Abs. 2 LVwVfG wirksam.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Klausurlösung prüft die Wirksamkeit des Rücknahmebescheids ausdrücklich, verneint die Nichtigkeit nach § 44 LVwVfG und stellt klar, dass bloße Rechtswidrigkeit wegen § 43 Abs. 2 LVwVfG nicht zur Unbeachtlichkeit bzw. Unwirksamkeit führt.",
+              "evidence": [
+                "Der Bescheid ist jedoch nicht schon deshalb nichtig. Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+                "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam, solange er nicht zurückgenommen, widerrufen, anderweitig aufgehoben oder durch Zeitablauf erledigt ist. Die Aussage des Landratsamts, er sei „von vornherein unbeachtlich“, trifft folglich nicht zu."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Inzidente Prüfung der Wirksamkeit und insbesondere der Nichtigkeit des Rücknahmebescheids vom 8.11.2021 im Kontext des Fortbestands der Fahrerlaubnis / § 28 FeV",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erläuterung, dass bloße Rechtswidrigkeit die Wirksamkeit nicht beseitigt (keine Gleichsetzung von Rechtswidrigkeit mit Unwirksamkeit)",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Wirksamkeit/Nichtigkeit des Rücknahmebescheids vom 8.11.2021 bei der Beurteilung der Berechtigung nach § 28 FeV",
+                "evidence_scope": "Wirksamkeit/Nichtigkeit des Rücknahmebescheids vom 8.11.2021 unter Gliederungspunkt B. II.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Bescheid ist zwar rechtswidrig, aber mangels offensichtlicher und schwerwiegender Fehlerhaftigkeit nicht nach § 44 Abs. 1 LVwVfG nichtig und bleibt daher nach § 43 Abs. 2 LVwVfG bis zu einer Aufhebung wirksam.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt zutreffend klar, dass Rechtswidrigkeit nicht ohne Weiteres Unwirksamkeit bedeutet. Sie verknüpft die Wirksamkeit aber nicht mit dem erforderlichen Schluss, dass A bei wirksamer Beseitigung der Fahrerlaubnis ihr Ziel durch die Anfechtung des zweiten Bescheids nicht erreichen könnte.",
+              "evidence": [
+                "Der Bescheid ist jedoch nicht schon deshalb nichtig.",
+                "Der Fehler ist daher nicht in dem für § 44 Abs. 1 LVwVfG erforderlichen Sinne evident.",
+                "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort prüft inzident die Wirksamkeit und insbesondere die Nichtigkeit des Rücknahmebescheids vom 8.11.2021.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort erläutert, dass bloße Rechtswidrigkeit die Wirksamkeit des Bescheids nicht beseitigt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort verknüpft die Wirksamkeit mit As fehlender Zielerreichung, falls die Fahrerlaubnis durch den ersten Bescheid wirksam beseitigt wurde.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; Fortbestand der tschechischen Fahrerlaubnis und Wirksamkeit beziehungsweise Nichtigkeit des Rücknahmebescheids vom 8.11.2021",
+                "evidence_scope": "A; Wirksamkeit und Nichtigkeit des Bescheids vom 8.11.2021 im Zusammenhang mit der Anerkennungsfrage",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Fehler ist nicht offensichtlich im Sinne des § 44 Abs. 1 LVwVfG; die Abgrenzung zwischen den fahrerlaubnisrechtlichen Instrumenten und einer unzulässigen Rücknahme erfordert eine rechtliche Prüfung. Der rechtswidrige Bescheid bleibt mangels Anfechtung nach § 43 Abs. 2 LVwVfG wirksam.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Wirksamkeit des Rücknahmebescheids vom 8.11.2021 ausdrücklich, verneint dessen Nichtigkeit nach § 44 Abs. 1 LVwVfG und stellt klar, dass die bloße Rechtswidrigkeit die Wirksamkeit nach § 43 Abs. 2 LVwVfG nicht entfallen lässt. Damit ist die vom Kriterium verlangte Unterscheidung zwischen Rechtswidrigkeit und Unwirksamkeit getroffen.",
+              "evidence": [
+                "Der Bescheid ist jedoch nicht schon deshalb nichtig. Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+                "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam, solange er nicht zurückgenommen, widerrufen, anderweitig aufgehoben oder durch Zeitablauf erledigt ist.",
+                "Seine Wirksamkeit verleiht dem Landratsamt allerdings keine Kompetenz, den tschechischen Hoheitsakt außerhalb Deutschlands zu beseitigen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Inzidente Prüfung der Wirksamkeit und insbesondere der Nichtigkeit des Rücknahmebescheids vom 8.11.2021",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erläuterung, dass bloße Rechtswidrigkeit die Wirksamkeit nicht beseitigt",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Fortbestand der tschechischen Fahrerlaubnis / Wirksamkeit und Nichtigkeit des Rücknahmebescheids vom 8.11.2021 gegenüber A",
+                "evidence_scope": "Wirksamkeit und Nichtigkeit des ersten Bescheids vom 8.11.2021 gegenüber A im Rahmen der Begründetheitsprüfung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der erste Bescheid ist rechtswidrig, aber nicht nichtig, weil der Fehler nicht die Evidenzschwelle des § 44 Abs. 1 LVwVfG erreicht; nach § 43 Abs. 2 LVwVfG bleibt er daher wirksam.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Das Kriterium ist vollumfänglich erfüllt. Die Antwort prüft ausführlich die Nichtigkeit nach § 44 Abs. 1 LVwVfG und stellt klar, dass der Bescheid trotz Rechtswidrigkeit mangels Nichtigkeit nach § 43 Abs. 2 LVwVfG wirksam bleibt.",
+              "evidence": [
+                "Der Bescheid ist jedoch nicht schon deshalb nichtig. Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+                "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam, solange er nicht zurückgenommen, widerrufen, anderweitig aufgehoben oder durch Zeitablauf erledigt ist."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Inzidente Prüfung der Wirksamkeit und insbesondere der Nichtigkeit des Rücknahmebescheids vom 8.11.2021",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erläuterung, dass bloße Rechtswidrigkeit die Wirksamkeit nicht beseitigt (keine Gleichsetzung von Rechtswidrigkeit mit Unwirksamkeit)",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Rücknahmebescheid vom 8.11.2021, Wirksamkeit/Nichtigkeit im Rahmen der Klageprüfung",
+                "evidence_scope": "Rücknahmebescheid vom 8.11.2021, Wirksamkeit/Nichtigkeit unter Abschnitt B. II.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Bescheid leidet an keinem offensichtlichen und schwerwiegenden Fehler i.S.d. § 44 Abs. 1 LVwVfG und bleibt daher mangels Nichtigkeit und mangels Anfechtung nach § 43 Abs. 2 LVwVfG wirksam.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-019",
+      "title": "Maßgeblichkeit der Wirksamkeit des Rücknahmebescheids",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort prüft die Nichtigkeit des Bescheids vom 8.11.2021 anhand des § 44 Abs. 1 LVwVfG, wendet den Maßstab auf den konkreten Fehler an und folgert daraus seine Wirksamkeit trotz Rechtswidrigkeit.",
+      "evidence": [
+        "Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+        "Der Fehler ist daher nicht in dem für § 44 Abs. 1 LVwVfG erforderlichen Sinne evident.",
+        "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam"
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Nichtigkeit des Bescheids vom 8.11.2021 anhand des § 44 Abs. 1 LVwVfG, wendet den Maßstab auf den konkreten Fehler an und folgert daraus seine Wirksamkeit trotz Rechtswidrigkeit.",
+          "evidence": [
+            "Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+            "Der Fehler ist daher nicht in dem für § 44 Abs. 1 LVwVfG erforderlichen Sinne evident.",
+            "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort führt am Bescheid vom 8.11.2021 einen eigenständigen Prüfungsgang zur Wirksamkeit durch: Sie benennt mit § 44 Abs. 1 LVwVfG und § 43 Abs. 2 LVwVfG den maßgeblichen Maßstab, verknüpft ihn mit den konkreten Umständen (Abgrenzung der Instrumente, späteres Einschreiten der Rechtsaufsicht, bestehende Eingriffsbefugnis) und gelangt zum Ergebnis, dass der Bescheid trotz Rechtswidrigkeit nicht nichtig und damit wirksam ist. Regel, Tatsache und Resultat sind ausdrücklich inferentiell verbunden.",
+          "evidence": [
+            "Der Bescheid ist jedoch nicht schon deshalb nichtig. Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+            "Hier bestand für das Landratsamt immerhin eine fahrerlaubnisrechtliche Eingriffsbefugnis gegenüber A, allerdings nur mit der auf das Inland beschränkten Rechtsfolge des § 46 Abs. 5 FeV beziehungsweise der Feststellung nach § 28 Abs. 4 Satz 2 FeV. Die Abgrenzung zwischen diesen Instrumenten und einer unzulässigen Rücknahme einer ausländischen Fahrerlaubnis erfordert eine rechtliche Prüfung; auch die spätere Einschaltung der Rechtsaufsicht zeigt dies.",
+            "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam, solange er nicht zurückgenommen, widerrufen, anderweitig aufgehoben oder durch Zeitablauf erledigt ist."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Falllösung verbindet den rechtlichen Maßstab für die Nichtigkeit (§ 44 Abs. 1 LVwVfG) und die Wirksamkeit rechtswidriger Verwaltungsakte (§ 43 Abs. 2 LVwVfG) mit den konkreten Umständen des Rücknahmebescheids vom 8.11.2021 und zieht daraus den methodisch einwandfreien Subsumtionsschluss.",
+          "evidence": [
+            "Der Bescheid ist jedoch nicht schon deshalb nichtig. Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist. Diese strenge Ausnahme liegt nicht bereits bei jeder sachlichen Unzuständigkeit oder bei der Wahl einer falschen Rechtsgrundlage vor. Hier bestand für das Landratsamt immerhin eine fahrerlaubnisrechtliche Eingriffsbefugnis gegenüber A, allerdings nur mit der auf das Inland beschränkten Rechtsfolge des § 46 Abs. 5 FeV beziehungsweise der Feststellung nach § 28 Abs. 4 Satz 2 FeV. Die Abgrenzung zwischen diesen Instrumenten und einer unzulässigen Rücknahme einer ausländischen Fahrerlaubnis erfordert eine rechtliche Prüfung; auch die spätere Einschaltung der Rechtsaufsicht zeigt dies. Der Fehler ist daher nicht in dem für § 44 Abs. 1 LVwVfG erforderlichen Sinne evident. Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft die Nichtigkeit des konkreten Rücknahmebescheids anhand eines Maßstabs, wendet ihn auf die Abgrenzung der Eingriffsinstrumente an und folgert, dass der Bescheid wirksam bleibt. Sie verbindet diese Prüfung aber nicht ausdrücklich mit As fehlender Zielerreichung, falls die Fahrerlaubnis wirksam beseitigt wäre; die Prüfungslinie bleibt insoweit unvollständig.",
+              "evidence": [
+                "Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+                "Der Fehler ist daher nicht in dem für § 44 Abs. 1 LVwVfG erforderlichen Sinne evident.",
+                "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft beim Bescheid vom 8.11.2021 ausdrücklich die Rechtswidrigkeit, sodann die Nichtigkeit nach § 44 LVwVfG und die Wirksamkeit nach § 43 Abs. 2 LVwVfG. Sie verbindet den Maßstab mit den konkreten Umständen und gelangt zu einem eigenen Zwischenergebnis. Die Unterscheidung zwischen Rechtswidrigkeit und Nichtigkeit/Unwirksamkeit wird methodisch vollzogen.",
+              "evidence": [
+                "Der Bescheid ist jedoch nicht schon deshalb nichtig. Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+                "Hier bestand für das Landratsamt immerhin eine fahrerlaubnisrechtliche Eingriffsbefugnis gegenüber A, allerdings nur mit der auf das Inland beschränkten Rechtsfolge des § 46 Abs. 5 FeV beziehungsweise der Feststellung nach § 28 Abs. 4 Satz 2 FeV. Die Abgrenzung zwischen diesen Instrumenten und einer unzulässigen Rücknahme einer ausländischen Fahrerlaubnis erfordert eine rechtliche Prüfung; auch die spätere Einschaltung der Rechtsaufsicht zeigt dies. Der Fehler ist daher nicht in dem für § 44 Abs. 1 LVwVfG erforderlichen Sinne evident.",
+                "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam, solange er nicht zurückgenommen, widerrufen, anderweitig aufgehoben oder durch Zeitablauf erledigt ist."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Prüfung erfolgt methodisch sauber im Obersatz-Subsumtions-Stil unter zutreffender Heranziehung der maßgeblichen Vorschriften (§§ 43, 44 LVwVfG) und führt zu einem begründeten Ergebnis.",
+              "evidence": [
+                "Der Bescheid ist jedoch nicht schon deshalb nichtig. Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+                "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam, solange er nicht zurückgenommen, widerrufen, anderweitig aufgehoben oder durch Zeitablauf erledigt ist. Die Aussage des Landratsamts, er sei „von vornherein unbeachtlich“, trifft folglich nicht zu."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Nichtigkeit des Bescheids vom 8.11.2021 anhand des § 44 Abs. 1 LVwVfG, wendet den Maßstab auf den konkreten Fehler an und folgert daraus seine Wirksamkeit trotz Rechtswidrigkeit.",
+              "evidence": [
+                "Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+                "Der Fehler ist daher nicht in dem für § 44 Abs. 1 LVwVfG erforderlichen Sinne evident.",
+                "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort führt am Bescheid vom 8.11.2021 einen eigenständigen Prüfungsgang zur Wirksamkeit durch: Sie benennt mit § 44 Abs. 1 LVwVfG und § 43 Abs. 2 LVwVfG den maßgeblichen Maßstab, verknüpft ihn mit den konkreten Umständen (Abgrenzung der Instrumente, späteres Einschreiten der Rechtsaufsicht, bestehende Eingriffsbefugnis) und gelangt zum Ergebnis, dass der Bescheid trotz Rechtswidrigkeit nicht nichtig und damit wirksam ist. Regel, Tatsache und Resultat sind ausdrücklich inferentiell verbunden.",
+              "evidence": [
+                "Der Bescheid ist jedoch nicht schon deshalb nichtig. Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist.",
+                "Hier bestand für das Landratsamt immerhin eine fahrerlaubnisrechtliche Eingriffsbefugnis gegenüber A, allerdings nur mit der auf das Inland beschränkten Rechtsfolge des § 46 Abs. 5 FeV beziehungsweise der Feststellung nach § 28 Abs. 4 Satz 2 FeV. Die Abgrenzung zwischen diesen Instrumenten und einer unzulässigen Rücknahme einer ausländischen Fahrerlaubnis erfordert eine rechtliche Prüfung; auch die spätere Einschaltung der Rechtsaufsicht zeigt dies.",
+                "Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam, solange er nicht zurückgenommen, widerrufen, anderweitig aufgehoben oder durch Zeitablauf erledigt ist."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Falllösung verbindet den rechtlichen Maßstab für die Nichtigkeit (§ 44 Abs. 1 LVwVfG) und die Wirksamkeit rechtswidriger Verwaltungsakte (§ 43 Abs. 2 LVwVfG) mit den konkreten Umständen des Rücknahmebescheids vom 8.11.2021 und zieht daraus den methodisch einwandfreien Subsumtionsschluss.",
+              "evidence": [
+                "Der Bescheid ist jedoch nicht schon deshalb nichtig. Nichtigkeit nach § 44 Abs. 1 LVwVfG verlangt einen besonders schwerwiegenden Fehler, der bei verständiger Würdigung aller in Betracht kommenden Umstände offensichtlich ist. Diese strenge Ausnahme liegt nicht bereits bei jeder sachlichen Unzuständigkeit oder bei der Wahl einer falschen Rechtsgrundlage vor. Hier bestand für das Landratsamt immerhin eine fahrerlaubnisrechtliche Eingriffsbefugnis gegenüber A, allerdings nur mit der auf das Inland beschränkten Rechtsfolge des § 46 Abs. 5 FeV beziehungsweise der Feststellung nach § 28 Abs. 4 Satz 2 FeV. Die Abgrenzung zwischen diesen Instrumenten und einer unzulässigen Rücknahme einer ausländischen Fahrerlaubnis erfordert eine rechtliche Prüfung; auch die spätere Einschaltung der Rechtsaufsicht zeigt dies. Der Fehler ist daher nicht in dem für § 44 Abs. 1 LVwVfG erforderlichen Sinne evident. Mangels rechtzeitiger Anfechtung bleibt der rechtswidrige erste Bescheid nach § 43 Abs. 2 LVwVfG wirksam"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ]
+}

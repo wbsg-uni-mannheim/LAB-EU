@@ -1,0 +1,651 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/examensubungsklausur-falsche-liebe",
+    "title": "Examensübungsklausur: Falsche Liebe"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__staatsrecht__examensubungsklausur-falsche-liebe/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/examensubungsklausur-falsche-liebe/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-13T11:05:40.655817+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 1,
+    "points_available": 1,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v3",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Begründetheit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Begründetheit › Art. 5 Abs. 1 S. 1 Var. 1 GG": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 29061,
+    "output_tokens": 4748,
+    "total_tokens": 33809,
+    "cached_input_tokens": 1280,
+    "cache_write_tokens": 9139
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 29061,
+    "output_tokens": 4748,
+    "total_tokens": 33809,
+    "cached_input_tokens": 1280,
+    "cache_write_tokens": 9139
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-032",
+      "title": "Vollzugsziel als Zweck des Anhaltens",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort prüft die Vollzugsziel-Variante ausdrücklich und stellt die Äußerungen der S in Beziehung zur behaupteten Gefahr. Sie behandelt das Vollzugsziel nicht als politische Konformitätspflicht, sondern grenzt Resozialisierung davon ab.",
+      "evidence": [
+        "Damit stützt sie sich der Sache nach auf § 42 Abs. 1 Nr. 6 JVollzGB I LSA.",
+        "Die bloße Ablehnung oder Verachtung staatlicher Institutionen ist keine Gefährdung des Vollzugsziels.",
+        "Resozialisierung bedeutet nicht Herstellung politischer Loyalität gegenüber dem Staat."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Vollzugsziel-Variante ausdrücklich und stellt die Äußerungen der S in Beziehung zur behaupteten Gefahr. Sie behandelt das Vollzugsziel nicht als politische Konformitätspflicht, sondern grenzt Resozialisierung davon ab.",
+          "evidence": [
+            "Damit stützt sie sich der Sache nach auf § 42 Abs. 1 Nr. 6 JVollzGB I LSA.",
+            "Die bloße Ablehnung oder Verachtung staatlicher Institutionen ist keine Gefährdung des Vollzugsziels.",
+            "Resozialisierung bedeutet nicht Herstellung politischer Loyalität gegenüber dem Staat."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Gefährdung des Vollzugsziels der S nach § 42 Abs. 1 Nr. 6 JVollzGB I LSA wird als möglicher Zweck des Briefanhaltens geprüft.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Das Vollzugsziel wird nicht als bloße politische Anpassungspflicht ohne Resozialisierungsbezug beschrieben.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "S; Anhalten ihres Briefes nach § 42 Abs. 1 Nr. 6 JVollzGB I LSA wegen einer möglichen Gefährdung ihres Vollzugsziels",
+            "evidence_scope": "S; die Anwendung von § 42 Abs. 1 Nr. 6 auf das Anhalten ihres Briefes und die daraus abgeleitete Gefährdung des Vollzugsziels",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die bloße Ablehnung oder Verachtung staatlicher Institutionen und staatskritische Äußerungen belegen keine Gefährdung des Vollzugsziels; Resozialisierung verlangt keine politische Loyalität gegenüber dem Staat.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erkennt ausdrücklich, dass sich die angegriffene Entscheidung der Sache nach auf § 42 Abs. 1 Nr. 6 JVollzGB I LSA stützt, und prüft diese Tatbestandsvariante als Zweck des Anhaltens. Sie beschreibt das Vollzugsziel gerade nicht als bloße politische Anpassungspflicht, sondern betont dessen Resozialisierungsbezug und lehnt eine Gleichsetzung mit politischer Loyalität ab. Damit sind beide PASS-Komponenten erfüllt und keine FAIL-Bedingung greift.",
+          "evidence": [
+            "Damit stützt sie sich der Sache nach auf § 42 Abs. 1 Nr. 6 JVollzGB I LSA.",
+            "Die bloße Ablehnung oder Verachtung staatlicher Institutionen ist keine Gefährdung des Vollzugsziels. Der Strafvollzug darf nicht der politischen oder weltanschauunglichen Umerziehung dienen.",
+            "Resozialisierung bedeutet nicht Herstellung politischer Loyalität gegenüber dem Staat."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Prüfung der Verhütung einer Gefährdung des Vollzugsziels der S nach § 42 Abs. 1 Nr. 6 JVollzGB I LSA als Zweck des Briefanhaltens",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Vollzugsziel nicht als bloße politische Anpassungspflicht ohne Resozialisierungsbezug beschrieben",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Briefanhalten der S, § 42 Abs. 1 Nr. 6 JVollzGB I LSA (Vollzugsziel), Rechtfertigungsebene",
+            "evidence_scope": "Briefanhalten der S, § 42 Abs. 1 Nr. 6 JVollzGB I LSA, Rechtfertigungsebene",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die vom OLG angenommene Gefährdung des Vollzugsziels beruhe allein auf staatskritischen Äußerungen und „renitenter Besserungsresistenz“; das Vollzugsziel sei aber Resozialisierung, nicht Herstellung politischer Loyalität, weshalb eine Gefährdung nicht tragfähig begründet sei.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Tatbestandsvariante des § 42 Abs. 1 Nr. 6 JVollzGB I LSA wird ausdrücklich geprüft und das Vollzugsziel zutreffend mit Resozialisierung verknüpft, statt es auf eine bloße politische Anpassungspflicht zu verengen.",
+          "evidence": [
+            "Damit stützt sie sich der Sache nach auf § 42 Abs. 1 Nr. 6 JVollzGB I LSA.",
+            "Die bloße Ablehnung oder Verachtung staatlicher Institutionen ist keine Gefährdung des Vollzugsziels. Der Strafvollzug darf nicht der politischen oder weltanschaulichen Umerziehung dienen.",
+            "Resozialisierung bedeutet nicht Herstellung politischer Loyalität gegenüber dem Staat."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Prüfung der Verhütung einer Gefährdung des Vollzugsziels nach § 42 Abs. 1 Nr. 6 JVollzGB I LSA als legitimer Zweck des Anhaltens unter zutreffender Einordnung (keine bloße politische Anpassungspflicht)",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Prüfung des Vollzugsziels (§ 42 Abs. 1 Nr. 6 JVollzGB I LSA) beim Anhalten des Briefes der S",
+            "evidence_scope": "Prüfung des Vollzugsziels (§ 42 Abs. 1 Nr. 6 JVollzGB I LSA) beim Anhalten des Briefes der S",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "§ 42 Abs. 1 Nr. 6 JVollzGB I LSA rechtfertigt das Anhalten nicht, da die Ablehnung staatlicher Institutionen keine Gefährdung des Vollzugsziels darstellt und Resozialisierung keine bloße politische Umerziehung bzw. Loyalitätsherstellung bedeutet.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 29061,
+        "output_tokens": 4748,
+        "total_tokens": 33809,
+        "cached_input_tokens": 1280,
+        "cache_write_tokens": 9139
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Vollzugsziel-Variante ausdrücklich und stellt die Äußerungen der S in Beziehung zur behaupteten Gefahr. Sie behandelt das Vollzugsziel nicht als politische Konformitätspflicht, sondern grenzt Resozialisierung davon ab.",
+              "evidence": [
+                "Damit stützt sie sich der Sache nach auf § 42 Abs. 1 Nr. 6 JVollzGB I LSA.",
+                "Die bloße Ablehnung oder Verachtung staatlicher Institutionen ist keine Gefährdung des Vollzugsziels.",
+                "Resozialisierung bedeutet nicht Herstellung politischer Loyalität gegenüber dem Staat."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Gefährdung des Vollzugsziels der S nach § 42 Abs. 1 Nr. 6 JVollzGB I LSA wird als möglicher Zweck des Briefanhaltens geprüft.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Das Vollzugsziel wird nicht als bloße politische Anpassungspflicht ohne Resozialisierungsbezug beschrieben.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S; Anhalten ihres Briefes nach § 42 Abs. 1 Nr. 6 JVollzGB I LSA wegen einer möglichen Gefährdung ihres Vollzugsziels",
+                "evidence_scope": "S; die Anwendung von § 42 Abs. 1 Nr. 6 auf das Anhalten ihres Briefes und die daraus abgeleitete Gefährdung des Vollzugsziels",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die bloße Ablehnung oder Verachtung staatlicher Institutionen und staatskritische Äußerungen belegen keine Gefährdung des Vollzugsziels; Resozialisierung verlangt keine politische Loyalität gegenüber dem Staat.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erkennt ausdrücklich, dass sich die angegriffene Entscheidung der Sache nach auf § 42 Abs. 1 Nr. 6 JVollzGB I LSA stützt, und prüft diese Tatbestandsvariante als Zweck des Anhaltens. Sie beschreibt das Vollzugsziel gerade nicht als bloße politische Anpassungspflicht, sondern betont dessen Resozialisierungsbezug und lehnt eine Gleichsetzung mit politischer Loyalität ab. Damit sind beide PASS-Komponenten erfüllt und keine FAIL-Bedingung greift.",
+              "evidence": [
+                "Damit stützt sie sich der Sache nach auf § 42 Abs. 1 Nr. 6 JVollzGB I LSA.",
+                "Die bloße Ablehnung oder Verachtung staatlicher Institutionen ist keine Gefährdung des Vollzugsziels. Der Strafvollzug darf nicht der politischen oder weltanschauunglichen Umerziehung dienen.",
+                "Resozialisierung bedeutet nicht Herstellung politischer Loyalität gegenüber dem Staat."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Prüfung der Verhütung einer Gefährdung des Vollzugsziels der S nach § 42 Abs. 1 Nr. 6 JVollzGB I LSA als Zweck des Briefanhaltens",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Vollzugsziel nicht als bloße politische Anpassungspflicht ohne Resozialisierungsbezug beschrieben",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Briefanhalten der S, § 42 Abs. 1 Nr. 6 JVollzGB I LSA (Vollzugsziel), Rechtfertigungsebene",
+                "evidence_scope": "Briefanhalten der S, § 42 Abs. 1 Nr. 6 JVollzGB I LSA, Rechtfertigungsebene",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die vom OLG angenommene Gefährdung des Vollzugsziels beruhe allein auf staatskritischen Äußerungen und „renitenter Besserungsresistenz“; das Vollzugsziel sei aber Resozialisierung, nicht Herstellung politischer Loyalität, weshalb eine Gefährdung nicht tragfähig begründet sei.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Tatbestandsvariante des § 42 Abs. 1 Nr. 6 JVollzGB I LSA wird ausdrücklich geprüft und das Vollzugsziel zutreffend mit Resozialisierung verknüpft, statt es auf eine bloße politische Anpassungspflicht zu verengen.",
+              "evidence": [
+                "Damit stützt sie sich der Sache nach auf § 42 Abs. 1 Nr. 6 JVollzGB I LSA.",
+                "Die bloße Ablehnung oder Verachtung staatlicher Institutionen ist keine Gefährdung des Vollzugsziels. Der Strafvollzug darf nicht der politischen oder weltanschaulichen Umerziehung dienen.",
+                "Resozialisierung bedeutet nicht Herstellung politischer Loyalität gegenüber dem Staat."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Prüfung der Verhütung einer Gefährdung des Vollzugsziels nach § 42 Abs. 1 Nr. 6 JVollzGB I LSA als legitimer Zweck des Anhaltens unter zutreffender Einordnung (keine bloße politische Anpassungspflicht)",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Prüfung des Vollzugsziels (§ 42 Abs. 1 Nr. 6 JVollzGB I LSA) beim Anhalten des Briefes der S",
+                "evidence_scope": "Prüfung des Vollzugsziels (§ 42 Abs. 1 Nr. 6 JVollzGB I LSA) beim Anhalten des Briefes der S",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "§ 42 Abs. 1 Nr. 6 JVollzGB I LSA rechtfertigt das Anhalten nicht, da die Ablehnung staatlicher Institutionen keine Gefährdung des Vollzugsziels darstellt und Resozialisierung keine bloße politische Umerziehung bzw. Loyalitätsherstellung bedeutet.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-032",
+      "title": "Vollzugsziel als Zweck des Anhaltens",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort ordnet das Anhalten § 42 Abs. 1 Nr. 6 JVollzGB I LSA zu, prüft die behauptete Gefährdung des Vollzugsziels anhand der staatskritischen Äußerungen der S und kommt zu einem ausdrücklichen Ergebnis. Die Prüfung ist nicht aus anderen Passagen zusammenzusetzen.",
+      "evidence": [
+        "Diese Anwendung der Vorschrift genügt nicht den verfassungsrechtlichen Anforderungen.",
+        "Die bloße Ablehnung oder Verachtung staatlicher Institutionen ist keine Gefährdung des Vollzugsziels.",
+        "Der Strafvollzug darf nicht der politischen oder weltanschaulichen Umerziehung dienen."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet das Anhalten § 42 Abs. 1 Nr. 6 JVollzGB I LSA zu, prüft die behauptete Gefährdung des Vollzugsziels anhand der staatskritischen Äußerungen der S und kommt zu einem ausdrücklichen Ergebnis. Die Prüfung ist nicht aus anderen Passagen zusammenzusetzen.",
+          "evidence": [
+            "Diese Anwendung der Vorschrift genügt nicht den verfassungsrechtlichen Anforderungen.",
+            "Die bloße Ablehnung oder Verachtung staatlicher Institutionen ist keine Gefährdung des Vollzugsziels.",
+            "Der Strafvollzug darf nicht der politischen oder weltanschaulichen Umerziehung dienen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort benennt die einschlägige Norm (§ 42 Abs. 1 Nr. 6 JVollzGB I LSA), formuliert den maßstabsspezifischen Satz, dass bloße Staatsablehnung keine Gefährdung des Vollzugsziels ist, verknüpft dies mit den konkreten Umständen (privater Brief, keine konkrete Gefahr) und schließt mit dem Ergebnis der fehlenden Rechtfertigung. Damit liegt eine vollständige, auf dieselbe Norm und denselben Prüfungspunkt bezogene Argumentationskette vor.",
+          "evidence": [
+            "Die Entscheidung des OLG stellt im Wesentlichen darauf ab, die Äußerungen offenbarten eine „fundamentale Missachtung der staatlichen Grundordnung“ und eine „renitente Besserungsresistenz“. Damit stützt sie sich der Sache nach auf § 42 Abs. 1 Nr. 6 JVollzGB I LSA.",
+            "Die bloße Ablehnung oder Verachtung staatlicher Institutionen ist keine Gefährdung des Vollzugsziels. Der Strafvollzug darf nicht der politischen oder weltanschaulichen Umerziehung dienen.",
+            "Das Anhalten des Briefes war somit weder auf Grundlage des § 42 Abs. 1 Nr. 6 oder Nr. 8 JVollzGB I LSA hinreichend gerechtfertigt noch verhältnismäßig."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Prüfung verknüpft den Tatbestand des § 42 Abs. 1 Nr. 6 JVollzGB I LSA methodisch sauber mit dem Sachverhalt und begründet schlüssig, warum das Vollzugsziel hier nicht gefährdet ist.",
+          "evidence": [
+            "Damit stützt sie sich der Sache nach auf § 42 Abs. 1 Nr. 6 JVollzGB I LSA.",
+            "Die Unterdrückung eines privaten Briefes kann nicht darauf gestützt werden, dass die Gefangene in scharfer, polemischer und staatskritischer Form ihre Empörung über einen Polizeibeamten und über staatliches Handeln äußert. Die bloße Ablehnung oder Verachtung staatlicher Institutionen ist keine Gefährdung des Vollzugsziels. Der Strafvollzug darf nicht der politischen oder weltanschaulichen Umerziehung dienen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort ordnet das Anhalten § 42 Abs. 1 Nr. 6 JVollzGB I LSA zu, prüft die behauptete Gefährdung des Vollzugsziels anhand der staatskritischen Äußerungen der S und kommt zu einem ausdrücklichen Ergebnis. Die Prüfung ist nicht aus anderen Passagen zusammenzusetzen.",
+              "evidence": [
+                "Diese Anwendung der Vorschrift genügt nicht den verfassungsrechtlichen Anforderungen.",
+                "Die bloße Ablehnung oder Verachtung staatlicher Institutionen ist keine Gefährdung des Vollzugsziels.",
+                "Der Strafvollzug darf nicht der politischen oder weltanschaulichen Umerziehung dienen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort benennt die einschlägige Norm (§ 42 Abs. 1 Nr. 6 JVollzGB I LSA), formuliert den maßstabsspezifischen Satz, dass bloße Staatsablehnung keine Gefährdung des Vollzugsziels ist, verknüpft dies mit den konkreten Umständen (privater Brief, keine konkrete Gefahr) und schließt mit dem Ergebnis der fehlenden Rechtfertigung. Damit liegt eine vollständige, auf dieselbe Norm und denselben Prüfungspunkt bezogene Argumentationskette vor.",
+              "evidence": [
+                "Die Entscheidung des OLG stellt im Wesentlichen darauf ab, die Äußerungen offenbarten eine „fundamentale Missachtung der staatlichen Grundordnung“ und eine „renitente Besserungsresistenz“. Damit stützt sie sich der Sache nach auf § 42 Abs. 1 Nr. 6 JVollzGB I LSA.",
+                "Die bloße Ablehnung oder Verachtung staatlicher Institutionen ist keine Gefährdung des Vollzugsziels. Der Strafvollzug darf nicht der politischen oder weltanschaulichen Umerziehung dienen.",
+                "Das Anhalten des Briefes war somit weder auf Grundlage des § 42 Abs. 1 Nr. 6 oder Nr. 8 JVollzGB I LSA hinreichend gerechtfertigt noch verhältnismäßig."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Prüfung verknüpft den Tatbestand des § 42 Abs. 1 Nr. 6 JVollzGB I LSA methodisch sauber mit dem Sachverhalt und begründet schlüssig, warum das Vollzugsziel hier nicht gefährdet ist.",
+              "evidence": [
+                "Damit stützt sie sich der Sache nach auf § 42 Abs. 1 Nr. 6 JVollzGB I LSA.",
+                "Die Unterdrückung eines privaten Briefes kann nicht darauf gestützt werden, dass die Gefangene in scharfer, polemischer und staatskritischer Form ihre Empörung über einen Polizeibeamten und über staatliches Handeln äußert. Die bloße Ablehnung oder Verachtung staatlicher Institutionen ist keine Gefährdung des Vollzugsziels. Der Strafvollzug darf nicht der politischen oder weltanschaulichen Umerziehung dienen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
