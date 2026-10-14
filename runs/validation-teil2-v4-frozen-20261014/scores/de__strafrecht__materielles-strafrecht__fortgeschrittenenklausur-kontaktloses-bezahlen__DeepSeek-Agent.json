@@ -1,0 +1,807 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-kontaktloses-bezahlen",
+    "title": "Fortgeschrittenenklausur: Kontaktloses Bezahlen"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenklausur-kontaktloses-bezahlen/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-kontaktloses-bezahlen/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:22:16.982595+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Erster Handlungsabschnitt: Das Einstecken der EC-Karte": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Erster Handlungsabschnitt: Das Einstecken der EC-Karte › Unterschlagung der EC-Karte gem. § 246 Abs. 1 StGB": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 29290,
+    "output_tokens": 8399,
+    "total_tokens": 37689,
+    "cached_input_tokens": 19131,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 29290,
+    "output_tokens": 8399,
+    "total_tokens": 37689,
+    "cached_input_tokens": 19131,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-005",
+      "title": "Keine Unterschlagung beim Einstecken",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort verneint die Zueignung beim Einstecken und begründet dies mit dem konkreten Rückführungswillen. Damit ist der fehlende Enteignungsvorsatz hinreichend klar erfasst.",
+      "evidence": [
+        "A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“.",
+        "Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten.",
+        "Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint die Zueignung beim Einstecken und begründet dies mit dem konkreten Rückführungswillen. Damit ist der fehlende Enteignungsvorsatz hinreichend klar erfasst.",
+          "evidence": [
+            "A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“.",
+            "Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten.",
+            "Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Eine nach außen manifestierte Zueignung der EC-Karte wird für das Einstecken verneint.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Der beim Einstecken bestehende Rückführungswille wird als Grund für den fehlenden Vorsatz dauernder Enteignung herangezogen.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A; EC-Karte; Unterschlagung nach § 246 Abs. 1 StGB beim Einstecken",
+            "evidence_scope": "A; EC-Karte; Prüfung der Zueignung nach § 246 Abs. 1 StGB beim Einstecken",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "A wollte die Karte bei der Sparkasse abgeben; deshalb handelte er beim Einstecken mit Rückführungswillen und ohne Zueignungswillen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint eine Zueignung bereits beim Einstecken, weil A die Karte nach eigener Vorstellung bei der Sparkasse abgeben wollte. Sie verknüpft den Rückführungswillen mit dem fehlenden Zueignungswillen; da die zuvor definierte Zueignung auch die dauerhafte Enteignung umfasst, ist damit der fehlende Enteignungsvorsatz hinreichend erfasst. Die FAIL-Alternative, das Einstecken trotz Rückgabewillens als Unterschlagung zu behandeln, liegt nicht vor.",
+          "evidence": [
+            "Zueignung ist die Manifestation des Willens, die Sache selbst oder den in ihr verkörperten Sachwert dem eigenen Vermögen einzuverleiben (Aneignung) und den Eigentümer dauerhaft von der wirtschaftlichen Nutzung auszuschließen (Enteignung).",
+            "Zunächst ist zu prüfen, ob bereits das Einstecken der Karte eine Zueignung darstellt. A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“. Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten. Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar.",
+            "Eine Zueignung scheidet daher aus."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Eine Zueignung der EC-Karte beim Einstecken nach § 246 Abs. 1 StGB wird verneint.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Verneinung wird darauf gestützt, dass A die Karte zu diesem Zeitpunkt bei der Sparkasse abgeben wollte.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Der feste Rückführungswille wird mit dem fehlenden Vorsatz dauernder Enteignung verknüpft.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Zueignung der EC-Karte beim Einstecken, § 246 Abs. 1 StGB, Rückführungswille und fehlender Enteignungsvorsatz",
+            "evidence_scope": "Zueignung der EC-Karte beim Einstecken im Rahmen der Unterschlagungsprüfung, Rückführungswille zugunsten des Berechtigten",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "A steckte die Karte mit Rückführungswillen ein; deshalb fehlte der Zueignungswille, sodass eine bloße Inbesitznahme keine Zueignung darstellt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Kriterium verlangt ausdrücklich, dass der Rückführungswille mit dem fehlenden Enteignungsvorsatz verknüpft wird, und schließt die Erfüllung aus, wenn dieser Link fehlt. Die Falllösung verneint beim Einstecken lediglich pauschal den 'Zueignungswillen', ohne den Enteignungsvorsatz zu adressieren.",
+          "evidence": [
+            "A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“. Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten. Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Verneinung einer Zueignung beim Einstecken nach § 246 Abs. 1 StGB",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Begründung durch Abgabewillen bei der Sparkasse",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Verknüpfung des Rückführungswillens mit dem Ausschluss des dauernden Enteignungsvorsatzes",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A, EC-Karte, § 246 I StGB beim Einstecken, Ausschluss des Enteignungsvorsatzes durch Rückführungswillen",
+            "evidence_scope": "A, EC-Karte, § 246 I StGB beim Einstecken, Fehlen des Zueignungswillens durch Rückführungswillen",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "A hatte wegen seines Rückführungswillens keinen Zueignungswillen",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 29290,
+        "output_tokens": 8399,
+        "total_tokens": 37689,
+        "cached_input_tokens": 19131,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint die Zueignung beim Einstecken ausdrücklich und begründet dies mit As damaligem Rückführungswillen. Das schließt nach der Antwort den erforderlichen Zueignungswillen und damit auch den Enteignungsvorsatz für diese Handlung aus.",
+              "evidence": [
+                "A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“.",
+                "Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten.",
+                "Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Eine nach außen manifestierte Zueignung der EC-Karte beim Einstecken wird verneint.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Rückführungswille bei der Sparkasse wird als Grund für das Fehlen des Enteignungsvorsatzes herangezogen.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; EC-Karte; § 246 Abs. 1 StGB; Zueignung beim Einstecken",
+                "evidence_scope": "A; EC-Karte; § 246 Abs. 1 StGB; Zueignung beim Einstecken",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "A wollte die Karte zunächst bei der Sparkasse abgeben; deshalb handelte er beim Einstecken mit Rückführungswillen und ohne Zueignungswillen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint beim Einstecken der EC-Karte die Zueignung, weil A die Karte nach dem Fund in der Sparkassenfiliale abgeben wollte. Damit ist der feste Rückführungswille mit dem fehlenden Enteignungs-/Zueignungsvorsatz verknüpft; die später erörterte Nutzung betrifft nicht mehr das Einstecken.",
+              "evidence": [
+                "A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“. Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten.",
+                "Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar.",
+                "Eine Zueignung scheidet daher aus."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Beim Einstecken der EC-Karte wird eine Zueignung nach § 246 Abs. 1 StGB verneint.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "A wollte die Karte zu diesem Zeitpunkt bei der Sparkasse abgeben (Rückführungswille).",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Rückführungswille wird mit dem fehlenden Vorsatz dauernder Enteignung/Zueignung verknüpft.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und die EC-Karte des V; § 246 Abs. 1 StGB; Einstecken der Karte nach dem Fund.",
+                "evidence_scope": "A und die EC-Karte; § 246 Abs. 1 StGB; Einstecken mit Rückgabeabsicht, danach spätere Verwendungsabsicht.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "A hatte beim Einstecken keinen Zueignungswillen, sondern Rückführungswillen; die bloße Inbesitznahme zum Zurückgeben ist keine Zueignung.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Zwar wird eine Zueignung beim Einstecken unter Verweis auf den Rückführungswillen zutreffend verneint, die Begründung verknüpft den Rückführungswillen jedoch lediglich pauschal mit dem Fehlen eines 'Zueignungswillens' und führt nicht – wie vom Kriterium ausdrücklich gefordert – aus, dass der Rückführungswille gerade den Enteignungsvorsatz ausschließt. Damit greift die negative Bedingung des Kriteriums ein.",
+              "evidence": [
+                "Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten. Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Verneinung einer Zueignung der EC-Karte beim Einstecken nach § 246 Abs. 1 StGB",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Verknüpfung des Rückführungswillens mit dem Ausschluss des (dauernden) Enteignungsvorsatzes",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; EC-Karte; § 246 Abs. 1 StGB beim Einstecken",
+                "evidence_scope": "A; EC-Karte; § 246 Abs. 1 StGB beim Einstecken",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Inbesitznahme mit Rückführungswillen schließt Zueignungswillen allgemein aus",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint die Zueignung beim Einstecken und begründet dies mit dem konkreten Rückführungswillen. Damit ist der fehlende Enteignungsvorsatz hinreichend klar erfasst.",
+              "evidence": [
+                "A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“.",
+                "Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten.",
+                "Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Eine nach außen manifestierte Zueignung der EC-Karte wird für das Einstecken verneint.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der beim Einstecken bestehende Rückführungswille wird als Grund für den fehlenden Vorsatz dauernder Enteignung herangezogen.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; EC-Karte; Unterschlagung nach § 246 Abs. 1 StGB beim Einstecken",
+                "evidence_scope": "A; EC-Karte; Prüfung der Zueignung nach § 246 Abs. 1 StGB beim Einstecken",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "A wollte die Karte bei der Sparkasse abgeben; deshalb handelte er beim Einstecken mit Rückführungswillen und ohne Zueignungswillen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint eine Zueignung bereits beim Einstecken, weil A die Karte nach eigener Vorstellung bei der Sparkasse abgeben wollte. Sie verknüpft den Rückführungswillen mit dem fehlenden Zueignungswillen; da die zuvor definierte Zueignung auch die dauerhafte Enteignung umfasst, ist damit der fehlende Enteignungsvorsatz hinreichend erfasst. Die FAIL-Alternative, das Einstecken trotz Rückgabewillens als Unterschlagung zu behandeln, liegt nicht vor.",
+              "evidence": [
+                "Zueignung ist die Manifestation des Willens, die Sache selbst oder den in ihr verkörperten Sachwert dem eigenen Vermögen einzuverleiben (Aneignung) und den Eigentümer dauerhaft von der wirtschaftlichen Nutzung auszuschließen (Enteignung).",
+                "Zunächst ist zu prüfen, ob bereits das Einstecken der Karte eine Zueignung darstellt. A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“. Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten. Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar.",
+                "Eine Zueignung scheidet daher aus."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Eine Zueignung der EC-Karte beim Einstecken nach § 246 Abs. 1 StGB wird verneint.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Verneinung wird darauf gestützt, dass A die Karte zu diesem Zeitpunkt bei der Sparkasse abgeben wollte.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der feste Rückführungswille wird mit dem fehlenden Vorsatz dauernder Enteignung verknüpft.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Zueignung der EC-Karte beim Einstecken, § 246 Abs. 1 StGB, Rückführungswille und fehlender Enteignungsvorsatz",
+                "evidence_scope": "Zueignung der EC-Karte beim Einstecken im Rahmen der Unterschlagungsprüfung, Rückführungswille zugunsten des Berechtigten",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "A steckte die Karte mit Rückführungswillen ein; deshalb fehlte der Zueignungswille, sodass eine bloße Inbesitznahme keine Zueignung darstellt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium verlangt ausdrücklich, dass der Rückführungswille mit dem fehlenden Enteignungsvorsatz verknüpft wird, und schließt die Erfüllung aus, wenn dieser Link fehlt. Die Falllösung verneint beim Einstecken lediglich pauschal den 'Zueignungswillen', ohne den Enteignungsvorsatz zu adressieren.",
+              "evidence": [
+                "A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“. Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten. Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Verneinung einer Zueignung beim Einstecken nach § 246 Abs. 1 StGB",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung durch Abgabewillen bei der Sparkasse",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Verknüpfung des Rückführungswillens mit dem Ausschluss des dauernden Enteignungsvorsatzes",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A, EC-Karte, § 246 I StGB beim Einstecken, Ausschluss des Enteignungsvorsatzes durch Rückführungswillen",
+                "evidence_scope": "A, EC-Karte, § 246 I StGB beim Einstecken, Fehlen des Zueignungswillens durch Rückführungswillen",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "A hatte wegen seines Rückführungswillens keinen Zueignungswillen",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-005",
+      "title": "Keine Unterschlagung beim Einstecken",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort prüft die Zueignung der EC-Karte beim Einstecken, verknüpft den konkreten Rückführungswillen mit dem fehlenden Zueignungswillen und verneint die Zueignung. Die Prüfung ist damit für diese Station methodisch vollständig.",
+      "evidence": [
+        "A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“.",
+        "Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten.",
+        "Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Zueignung der EC-Karte beim Einstecken, verknüpft den konkreten Rückführungswillen mit dem fehlenden Zueignungswillen und verneint die Zueignung. Die Prüfung ist damit für diese Station methodisch vollständig.",
+          "evidence": [
+            "A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“.",
+            "Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten.",
+            "Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verbindet den § 246-Standard der Zueignung mit den konkreten Tatsachen des Einsteckens und dem Rückführungswillen und leitet daraus den Ausschluss der Zueignung ab. Die Prüfung ist auf dieselbe Person, Sache und Handlung bezogen.",
+          "evidence": [
+            "A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“. Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten.",
+            "Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar.",
+            "Eine Zueignung scheidet daher aus."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Fallbearbeitung prüft die Zueignung beim Einstecken methodisch einwandfrei im Gutachtensstil mit Obersatz, Subsumtion anhand des konkreten Sachverhalts und Ergebnis.",
+          "evidence": [
+            "Zunächst ist zu prüfen, ob bereits das Einstecken der Karte eine Zueignung darstellt. A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“. Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten. Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Zueignung der EC-Karte beim Einstecken, verknüpft den konkreten Rückführungswillen mit dem fehlenden Zueignungswillen und verneint die Zueignung. Die Prüfung ist damit für diese Station methodisch vollständig.",
+              "evidence": [
+                "A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“.",
+                "Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten.",
+                "Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verbindet den § 246-Standard der Zueignung mit den konkreten Tatsachen des Einsteckens und dem Rückführungswillen und leitet daraus den Ausschluss der Zueignung ab. Die Prüfung ist auf dieselbe Person, Sache und Handlung bezogen.",
+              "evidence": [
+                "A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“. Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten.",
+                "Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar.",
+                "Eine Zueignung scheidet daher aus."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Fallbearbeitung prüft die Zueignung beim Einstecken methodisch einwandfrei im Gutachtensstil mit Obersatz, Subsumtion anhand des konkreten Sachverhalts und Ergebnis.",
+              "evidence": [
+                "Zunächst ist zu prüfen, ob bereits das Einstecken der Karte eine Zueignung darstellt. A steckte die Karte ein, „um sie in der nächsten Sparkassenfiliale abzugeben“. Er hatte zu diesem Zeitpunkt also keinen Zueignungswillen, sondern handelte mit Rückführungswillen zugunsten des Berechtigten. Eine bloße Inbesitznahme mit dem Vorsatz, die Sache an den Eigentümer zurückzugeben, stellt keine Zueignung dar."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

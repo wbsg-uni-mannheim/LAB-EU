@@ -1,0 +1,488 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/anfangerubungsklausur-alte-feindschaft",
+    "title": "Anfängerübungsklausur: Alte Feindschaft"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__strafrecht__materielles-strafrecht__anfangerubungsklausur-alte-feindschaft/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/anfangerubungsklausur-alte-feindschaft/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:28:36.432830+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 3,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Gesamtergebnis": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Gesamtergebnis": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "conclusion": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 17037,
+    "output_tokens": 10039,
+    "total_tokens": 27076,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 5371
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 17037,
+    "output_tokens": 10039,
+    "total_tokens": 27076,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 5371
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-025",
+      "title": "Konkurrenzen der Taten des T",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort nimmt für den Schuss in der Lagerhalle wegen des ETBI keine vorsätzliche Körperverletzung des O, sondern eine fahrlässige Körperverletzung nach § 229 StGB an. Für die Stolperfalle nimmt sie dagegen eine vorsätzliche Körperverletzung des N nach § 223 StGB an und setzt diese Delikte in Tatmehrheit. Damit erfüllt sie nicht die ausdrücklich genannte Konstellation zweier vorsätzlicher Körperverletzungen; einen aberratio-ictus-Ansatz verfolgt sie ebenfalls nicht. Ihr Gesamtergebnis widerspricht zwar nicht ihrem gewählten Vorsatzansatz, aber keiner der für den Pass maßgeblichen Fallalternativen ist erfüllt.",
+      "evidence": [
+        "Danach ist der Vorsatz für § 223 StGB entfallen.",
+        "T hat sich gem. § 229 StGB der fahrlässigen Körperverletzung strafbar gemacht.",
+        "T ist gem. § 223 StGB der vorsätzlichen Körperverletzung zum Nachteil des N strafbar.",
+        "Sie stehen zueinander in Tatmehrheit (§ 53 StGB)."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort nimmt für den Schuss in der Lagerhalle wegen des ETBI keine vorsätzliche Körperverletzung des O, sondern eine fahrlässige Körperverletzung nach § 229 StGB an. Für die Stolperfalle nimmt sie dagegen eine vorsätzliche Körperverletzung des N nach § 223 StGB an und setzt diese Delikte in Tatmehrheit. Damit erfüllt sie nicht die ausdrücklich genannte Konstellation zweier vorsätzlicher Körperverletzungen; einen aberratio-ictus-Ansatz verfolgt sie ebenfalls nicht. Ihr Gesamtergebnis widerspricht zwar nicht ihrem gewählten Vorsatzansatz, aber keiner der für den Pass maßgeblichen Fallalternativen ist erfüllt.",
+          "evidence": [
+            "Danach ist der Vorsatz für § 223 StGB entfallen.",
+            "T hat sich gem. § 229 StGB der fahrlässigen Körperverletzung strafbar gemacht.",
+            "T ist gem. § 223 StGB der vorsätzlichen Körperverletzung zum Nachteil des N strafbar.",
+            "Sie stehen zueinander in Tatmehrheit (§ 53 StGB)."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bei vorsätzlicher Körperverletzung des O in der Lagerhalle und vorsätzlicher Körperverletzung des N durch die Stolperfalle Tatmehrheit nach § 53 StGB annehmen.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Bei einem aberratio-ictus-Ansatz das Gesamtergebnis an versuchte Körperverletzung zulasten des O und fahrlässige Körperverletzung zulasten des N anpassen.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Das Gesamtergebnis darf dem gewählten Vorsatzansatz nicht widersprechen.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "T; Konkurrenzen zwischen der Körperverletzung in der Lagerhalle und der späteren Stolperfalle, einschließlich der für diese Delikte gewählten Vorsatzansätze.",
+            "evidence_scope": "T; Konkurrenzen zwischen der fahrlässigen Körperverletzung aus Tatkomplex 1 und der vorsätzlichen Körperverletzung zulasten des N aus Tatkomplex 2.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Taten beruhten auf selbständigen, zeitlich und situativ getrennten Entschlüssen und Handlungen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort bejaht für die Stolperfalle eine vorsätzliche Körperverletzung zulasten N, verneint aber für den Schuss in der Lagerhalle eine vorsätzliche Körperverletzung zulasten O und nimmt dort nur § 229 StGB an. Sie stützt die Tatmehrheit daher auf fahrlässige Körperverletzung zulasten O und vorsätzliche Körperverletzung zulasten N. Damit ist weder die erste vom Kriterium verlangte Konstellation noch der ausdrückliche aberratio-ictus-Ansatz mit versuchter Körperverletzung zulasten O und fahrlässiger Körperverletzung zulasten N erfüllt.",
+          "evidence": [
+            "T hat sich nicht gem. § 223 StGB strafbar gemacht.",
+            "T ist gem. § 223 StGB der vorsätzlichen Körperverletzung zum Nachteil des N strafbar.",
+            "Die fahrlässige Körperverletzung aus Tatkomplex 1 (§ 229 StGB) und die vorsätzliche Körperverletzung aus Tatkomplex 2 (§ 223 StGB) beruhen auf selbständigen, zeitlich und situativ getrennten Entschlüssen und Handlungen. Sie stehen zueinander in Tatmehrheit (§ 53 StGB)."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Annahme einer vorsätzlichen Körperverletzung zum Nachteil des O in der Lagerhalle",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Annahme einer vorsätzlichen Körperverletzung zum Nachteil des N durch die spätere Stolperfalle",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Tatmehrheit nach § 53 StGB zwischen diesen beiden vorsätzlichen Körperverletzungen",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Alternativ ausdrücklicher aberratio-ictus-Ansatz mit Gesamtergebnis versuchte Körperverletzung zulasten O und fahrlässige Körperverletzung zulasten N",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Taten des T: Konkurrenzverhältnis zwischen Lagerhallen-Schuss zulasten O und späterer Stolperfalle zulasten N",
+            "evidence_scope": "Antwort prüft T: Tatkomplex 1 § 229 StGB zulasten O und Tatkomplex 2 § 223 StGB zulasten N sowie deren Konkurrenz",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die fahrlässige Körperverletzung aus Tatkomplex 1 und die vorsätzliche Körperverletzung aus Tatkomplex 2 beruhen auf selbständigen, zeitlich und situativ getrennten Entschlüssen und Handlungen; daher Tatmehrheit nach § 53 StGB.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Kriterium verlangt für die Erfüllung die Annahme von Tatmehrheit (§ 53 StGB) bei Annahme einer vorsätzlichen Körperverletzung des O in der Lagerhalle und einer vorsätzlichen Körperverletzung des N durch die Stolperfalle (bzw. eine Anpassung an den aberratio-ictus-Ansatz). Die Antwort nimmt für die Lagerhalle jedoch keine vorsätzliche Körperverletzung nach § 223 StGB an (Vorsatz wegen Erlaubnistatbestandsirrtums verneint), sondern lediglich eine fahrlässige Körperverletzung nach § 229 StGB. Damit fehlt eine zwingende Voraussetzung der Erfüllungsbedingung.",
+          "evidence": [
+            "e) Ergebnis zu § 223 StGB: T hat sich nicht gem. § 223 StGB strafbar gemacht.",
+            "T hat sich gem. § 229 StGB der fahrlässigen Körperverletzung strafbar gemacht.",
+            "Die fahrlässige Körperverletzung aus Tatkomplex 1 (§ 229 StGB) und die vorsätzliche Körperverletzung aus Tatkomplex 2 (§ 223 StGB) beruhen auf selbständigen, zeitlich und situativ getrennten Entschlüssen und Handlungen. Sie stehen zueinander in Tatmehrheit (§ 53 StGB)."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Annahme einer vorsätzlichen Körperverletzung des O in der Lagerhalle",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Annahme einer vorsätzlichen Körperverletzung des N durch die spätere Stolperfalle",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Annahme von Tatmehrheit nach § 53 StGB (bzw. bei aberratio ictus ein entsprechend angepasstes Gesamtergebnis)",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "T / Konkurrenzen und Gesamtergebnis (§ 53 StGB bei vorsätzlicher KV an O und vorsätzlicher KV an N)",
+            "evidence_scope": "T / Konkurrenzen (§ 53 StGB bei fahrlässiger KV an O und vorsätzlicher KV an N)",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die fahrlässige Körperverletzung aus Tatkomplex 1 und die vorsätzliche Körperverletzung aus Tatkomplex 2 beruhen auf selbständigen, zeitlich und situativ getrennten Entschlüssen und Handlungen und stehen in Tatmehrheit (§ 53 StGB).",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 17037,
+        "output_tokens": 10039,
+        "total_tokens": 27076,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 5371
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort nimmt für den Schuss in der Lagerhalle wegen des ETBI keine vorsätzliche Körperverletzung des O, sondern eine fahrlässige Körperverletzung nach § 229 StGB an. Für die Stolperfalle nimmt sie dagegen eine vorsätzliche Körperverletzung des N nach § 223 StGB an und setzt diese Delikte in Tatmehrheit. Damit erfüllt sie nicht die ausdrücklich genannte Konstellation zweier vorsätzlicher Körperverletzungen; einen aberratio-ictus-Ansatz verfolgt sie ebenfalls nicht. Ihr Gesamtergebnis widerspricht zwar nicht ihrem gewählten Vorsatzansatz, aber keiner der für den Pass maßgeblichen Fallalternativen ist erfüllt.",
+              "evidence": [
+                "Danach ist der Vorsatz für § 223 StGB entfallen.",
+                "T hat sich gem. § 229 StGB der fahrlässigen Körperverletzung strafbar gemacht.",
+                "T ist gem. § 223 StGB der vorsätzlichen Körperverletzung zum Nachteil des N strafbar.",
+                "Sie stehen zueinander in Tatmehrheit (§ 53 StGB)."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bei vorsätzlicher Körperverletzung des O in der Lagerhalle und vorsätzlicher Körperverletzung des N durch die Stolperfalle Tatmehrheit nach § 53 StGB annehmen.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Bei einem aberratio-ictus-Ansatz das Gesamtergebnis an versuchte Körperverletzung zulasten des O und fahrlässige Körperverletzung zulasten des N anpassen.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Das Gesamtergebnis darf dem gewählten Vorsatzansatz nicht widersprechen.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "T; Konkurrenzen zwischen der Körperverletzung in der Lagerhalle und der späteren Stolperfalle, einschließlich der für diese Delikte gewählten Vorsatzansätze.",
+                "evidence_scope": "T; Konkurrenzen zwischen der fahrlässigen Körperverletzung aus Tatkomplex 1 und der vorsätzlichen Körperverletzung zulasten des N aus Tatkomplex 2.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Taten beruhten auf selbständigen, zeitlich und situativ getrennten Entschlüssen und Handlungen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht für die Stolperfalle eine vorsätzliche Körperverletzung zulasten N, verneint aber für den Schuss in der Lagerhalle eine vorsätzliche Körperverletzung zulasten O und nimmt dort nur § 229 StGB an. Sie stützt die Tatmehrheit daher auf fahrlässige Körperverletzung zulasten O und vorsätzliche Körperverletzung zulasten N. Damit ist weder die erste vom Kriterium verlangte Konstellation noch der ausdrückliche aberratio-ictus-Ansatz mit versuchter Körperverletzung zulasten O und fahrlässiger Körperverletzung zulasten N erfüllt.",
+              "evidence": [
+                "T hat sich nicht gem. § 223 StGB strafbar gemacht.",
+                "T ist gem. § 223 StGB der vorsätzlichen Körperverletzung zum Nachteil des N strafbar.",
+                "Die fahrlässige Körperverletzung aus Tatkomplex 1 (§ 229 StGB) und die vorsätzliche Körperverletzung aus Tatkomplex 2 (§ 223 StGB) beruhen auf selbständigen, zeitlich und situativ getrennten Entschlüssen und Handlungen. Sie stehen zueinander in Tatmehrheit (§ 53 StGB)."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Annahme einer vorsätzlichen Körperverletzung zum Nachteil des O in der Lagerhalle",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Annahme einer vorsätzlichen Körperverletzung zum Nachteil des N durch die spätere Stolperfalle",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Tatmehrheit nach § 53 StGB zwischen diesen beiden vorsätzlichen Körperverletzungen",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Alternativ ausdrücklicher aberratio-ictus-Ansatz mit Gesamtergebnis versuchte Körperverletzung zulasten O und fahrlässige Körperverletzung zulasten N",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Taten des T: Konkurrenzverhältnis zwischen Lagerhallen-Schuss zulasten O und späterer Stolperfalle zulasten N",
+                "evidence_scope": "Antwort prüft T: Tatkomplex 1 § 229 StGB zulasten O und Tatkomplex 2 § 223 StGB zulasten N sowie deren Konkurrenz",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die fahrlässige Körperverletzung aus Tatkomplex 1 und die vorsätzliche Körperverletzung aus Tatkomplex 2 beruhen auf selbständigen, zeitlich und situativ getrennten Entschlüssen und Handlungen; daher Tatmehrheit nach § 53 StGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium verlangt für die Erfüllung die Annahme von Tatmehrheit (§ 53 StGB) bei Annahme einer vorsätzlichen Körperverletzung des O in der Lagerhalle und einer vorsätzlichen Körperverletzung des N durch die Stolperfalle (bzw. eine Anpassung an den aberratio-ictus-Ansatz). Die Antwort nimmt für die Lagerhalle jedoch keine vorsätzliche Körperverletzung nach § 223 StGB an (Vorsatz wegen Erlaubnistatbestandsirrtums verneint), sondern lediglich eine fahrlässige Körperverletzung nach § 229 StGB. Damit fehlt eine zwingende Voraussetzung der Erfüllungsbedingung.",
+              "evidence": [
+                "e) Ergebnis zu § 223 StGB: T hat sich nicht gem. § 223 StGB strafbar gemacht.",
+                "T hat sich gem. § 229 StGB der fahrlässigen Körperverletzung strafbar gemacht.",
+                "Die fahrlässige Körperverletzung aus Tatkomplex 1 (§ 229 StGB) und die vorsätzliche Körperverletzung aus Tatkomplex 2 (§ 223 StGB) beruhen auf selbständigen, zeitlich und situativ getrennten Entschlüssen und Handlungen. Sie stehen zueinander in Tatmehrheit (§ 53 StGB)."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Annahme einer vorsätzlichen Körperverletzung des O in der Lagerhalle",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Annahme einer vorsätzlichen Körperverletzung des N durch die spätere Stolperfalle",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Annahme von Tatmehrheit nach § 53 StGB (bzw. bei aberratio ictus ein entsprechend angepasstes Gesamtergebnis)",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "T / Konkurrenzen und Gesamtergebnis (§ 53 StGB bei vorsätzlicher KV an O und vorsätzlicher KV an N)",
+                "evidence_scope": "T / Konkurrenzen (§ 53 StGB bei fahrlässiger KV an O und vorsätzlicher KV an N)",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die fahrlässige Körperverletzung aus Tatkomplex 1 und die vorsätzliche Körperverletzung aus Tatkomplex 2 beruhen auf selbständigen, zeitlich und situativ getrennten Entschlüssen und Handlungen und stehen in Tatmehrheit (§ 53 StGB).",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": []
+}

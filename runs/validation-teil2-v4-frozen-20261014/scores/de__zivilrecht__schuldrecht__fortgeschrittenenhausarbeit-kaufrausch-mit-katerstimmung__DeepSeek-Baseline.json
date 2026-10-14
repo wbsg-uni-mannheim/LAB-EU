@@ -1,0 +1,438 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung",
+    "title": "Fortgeschrittenenhausarbeit: „Kaufrausch mit Katerstimmung“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:50:17.825727+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 2,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Stehen M die geforderten 14.000 € zu?": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Stehen M die geforderten 14.000 € zu? › §§ 812 Abs. 1 S. 2 Alt. 2, 818 Abs. 1 und Abs. 4, 820, 285 BGB": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "legal_basis": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 13466,
+    "output_tokens": 4220,
+    "total_tokens": 17686,
+    "cached_input_tokens": 1024,
+    "cache_write_tokens": 3188
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 13466,
+    "output_tokens": 4220,
+    "total_tokens": 17686,
+    "cached_input_tokens": 1024,
+    "cache_write_tokens": 3188
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-013",
+      "title": "Veranlassungszweck statt Schuldtilgung",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort stellt zwar ausdrücklich fest, dass M den Besitz zur Förderung des noch nicht zustande gekommenen Kaufvertrags übergab. Sie prüft den Anspruch aber aus § 816 Abs. 1 S. 1 BGB und zieht § 812 Abs. 1 S. 2 Alt. 2 BGB nicht heran. Damit fehlt die nach dem Kriterium erforderliche bereicherungsrechtliche Einordnung an der maßgeblichen Prüfungsstation.",
+      "evidence": [
+        "M könnte gegen S einen Anspruch auf Zahlung von 14.000 € aus § 816 Abs. 1 Satz 1 BGB haben.",
+        "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags, was S auch erkannte."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort stellt zwar ausdrücklich fest, dass M den Besitz zur Förderung des noch nicht zustande gekommenen Kaufvertrags übergab. Sie prüft den Anspruch aber aus § 816 Abs. 1 S. 1 BGB und zieht § 812 Abs. 1 S. 2 Alt. 2 BGB nicht heran. Damit fehlt die nach dem Kriterium erforderliche bereicherungsrechtliche Einordnung an der maßgeblichen Prüfungsstation.",
+          "evidence": [
+            "M könnte gegen S einen Anspruch auf Zahlung von 14.000 € aus § 816 Abs. 1 Satz 1 BGB haben.",
+            "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags, was S auch erkannte."
+          ],
+          "component_checks": [
+            {
+              "requirement": "§ 812 Abs. 1 S. 2 Alt. 2 BGB wird statt der condictio indebiti herangezogen.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Übertragung des Besitzes wird als nicht zur Erfüllung einer bestehenden Verbindlichkeit, sondern zur Förderung des erhofften Kaufvertrags erfolgt eingeordnet.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "M gegen S wegen der Besitzübertragung an der Hebebühne: Bereicherungsrechtliche Prüfung des Veranlassungszwecks nach § 812 Abs. 1 S. 2 Alt. 2 BGB statt Schuldtilgung.",
+            "evidence_scope": "M gegen S wegen der Hebebühne: Prüfung des Anspruchs aus § 816 Abs. 1 S. 1 BGB und der Eigentumsübertragung an X; der Veranlassungszweck wird nur bei der Frage des Eigentumserwerbs erwähnt.",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Übergabe diente der Förderung des noch nicht zustande gekommenen Kaufvertrags; die Antwort führt diesen Grund jedoch nicht bei einer Prüfung nach § 812 Abs. 1 S. 2 Alt. 2 BGB an.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft für die Hebebühne allein § 816 Abs. 1 S. 1 BGB. Sie erwähnt zwar den Förderzweck der Übergabe, zieht daraus aber keine condictio ob rem nach § 812 Abs. 1 S. 2 Alt. 2 BGB heran und grenzt sie nicht von der condictio indebiti ab. Damit fehlt die vom Kriterium verlangte Anspruchsgrundlage und Begründung.",
+          "evidence": [
+            "M könnte gegen S einen Anspruch auf Zahlung von 14.000 € aus § 816 Abs. 1 Satz 1 BGB haben.",
+            "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags, was S auch erkannte.",
+            "§ 816 Abs. 1 Satz 1 BGB verpflichtet den Nichtberechtigten zur Herausgabe des durch die Verfügung Erlangten."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort zieht § 812 Abs. 1 S. 2 Alt. 2 BGB heran.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Antwort begründet den Anspruch mit dem Veranlassungszweck, dass M den Besitz nicht zur Schuldtilgung, sondern zur Förderung des erhofften Kaufvertrags über die Reifenwuchtmaschine übertrug.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "M gegen S bezüglich der Hebebühne; Prüfung des § 812 Abs. 1 S. 2 Alt. 2 BGB statt der condictio indebiti wegen Veranlassungszwecks.",
+            "evidence_scope": "M gegen S bezüglich der Hebebühne; Prüfung des § 816 Abs. 1 S. 1 BGB wegen wirksamer Verfügung des Nichtberechtigten.",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Anspruch aus § 816 Abs. 1 S. 1 BGB, weil S als Nichtberechtigter über die Hebebühne verfügte und dadurch 14.000 € erlangte; die Übergabe an S diente nur der Förderung des noch nicht zustande gekommenen Kaufvertrags.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Falllösung prüft in Frage 1 ausschließlich § 816 Abs. 1 Satz 1 BGB und verzichtet ausdrücklich auf weitere Anspruchsgrundlagen. Ein bereicherungsrechtlicher Anspruch aus § 812 Abs. 1 Satz 2 Alt. 2 BGB (condictio ob rem) wird an keiner Stelle herangezogen oder erörtert.",
+          "evidence": [
+            "Auf weitere mögliche Anspruchsgrundlagen (etwa § 285 BGB oder § 687 Abs. 2 BGB), die zu keinem anderen Ergebnis führen, kommt es nicht an."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Heranziehung von § 812 Abs. 1 S. 2 Alt. 2 BGB statt der condictio indebiti bezüglich der Besitzübertragung der Hebebühne",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Begründung, dass M den Besitz nicht zur Erfüllung einer Verbindlichkeit, sondern zur Förderung des erhofften Kaufvertrags übertrug",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Frage 1: Bereicherungsrechtliche Einordnung der Besitzübertragung an der Hebebühne (§ 812 Abs. 1 S. 2 Alt. 2 BGB statt condictio indebiti wegen Veranlassungszweck)",
+            "evidence_scope": "Frage 1: Prüfung von § 816 Abs. 1 S. 1 BGB ohne Prüfung von § 812 Abs. 1 S. 2 Alt. 2 BGB",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 13466,
+        "output_tokens": 4220,
+        "total_tokens": 17686,
+        "cached_input_tokens": 1024,
+        "cache_write_tokens": 3188
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt zwar ausdrücklich fest, dass M den Besitz zur Förderung des noch nicht zustande gekommenen Kaufvertrags übergab. Sie prüft den Anspruch aber aus § 816 Abs. 1 S. 1 BGB und zieht § 812 Abs. 1 S. 2 Alt. 2 BGB nicht heran. Damit fehlt die nach dem Kriterium erforderliche bereicherungsrechtliche Einordnung an der maßgeblichen Prüfungsstation.",
+              "evidence": [
+                "M könnte gegen S einen Anspruch auf Zahlung von 14.000 € aus § 816 Abs. 1 Satz 1 BGB haben.",
+                "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags, was S auch erkannte."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§ 812 Abs. 1 S. 2 Alt. 2 BGB wird statt der condictio indebiti herangezogen.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Übertragung des Besitzes wird als nicht zur Erfüllung einer bestehenden Verbindlichkeit, sondern zur Förderung des erhofften Kaufvertrags erfolgt eingeordnet.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "M gegen S wegen der Besitzübertragung an der Hebebühne: Bereicherungsrechtliche Prüfung des Veranlassungszwecks nach § 812 Abs. 1 S. 2 Alt. 2 BGB statt Schuldtilgung.",
+                "evidence_scope": "M gegen S wegen der Hebebühne: Prüfung des Anspruchs aus § 816 Abs. 1 S. 1 BGB und der Eigentumsübertragung an X; der Veranlassungszweck wird nur bei der Frage des Eigentumserwerbs erwähnt.",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Übergabe diente der Förderung des noch nicht zustande gekommenen Kaufvertrags; die Antwort führt diesen Grund jedoch nicht bei einer Prüfung nach § 812 Abs. 1 S. 2 Alt. 2 BGB an.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft für die Hebebühne allein § 816 Abs. 1 S. 1 BGB. Sie erwähnt zwar den Förderzweck der Übergabe, zieht daraus aber keine condictio ob rem nach § 812 Abs. 1 S. 2 Alt. 2 BGB heran und grenzt sie nicht von der condictio indebiti ab. Damit fehlt die vom Kriterium verlangte Anspruchsgrundlage und Begründung.",
+              "evidence": [
+                "M könnte gegen S einen Anspruch auf Zahlung von 14.000 € aus § 816 Abs. 1 Satz 1 BGB haben.",
+                "Die Übergabe diente lediglich der Förderung des noch nicht zustande gekommenen Kaufvertrags, was S auch erkannte.",
+                "§ 816 Abs. 1 Satz 1 BGB verpflichtet den Nichtberechtigten zur Herausgabe des durch die Verfügung Erlangten."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort zieht § 812 Abs. 1 S. 2 Alt. 2 BGB heran.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Antwort begründet den Anspruch mit dem Veranlassungszweck, dass M den Besitz nicht zur Schuldtilgung, sondern zur Förderung des erhofften Kaufvertrags über die Reifenwuchtmaschine übertrug.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "M gegen S bezüglich der Hebebühne; Prüfung des § 812 Abs. 1 S. 2 Alt. 2 BGB statt der condictio indebiti wegen Veranlassungszwecks.",
+                "evidence_scope": "M gegen S bezüglich der Hebebühne; Prüfung des § 816 Abs. 1 S. 1 BGB wegen wirksamer Verfügung des Nichtberechtigten.",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Anspruch aus § 816 Abs. 1 S. 1 BGB, weil S als Nichtberechtigter über die Hebebühne verfügte und dadurch 14.000 € erlangte; die Übergabe an S diente nur der Förderung des noch nicht zustande gekommenen Kaufvertrags.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Falllösung prüft in Frage 1 ausschließlich § 816 Abs. 1 Satz 1 BGB und verzichtet ausdrücklich auf weitere Anspruchsgrundlagen. Ein bereicherungsrechtlicher Anspruch aus § 812 Abs. 1 Satz 2 Alt. 2 BGB (condictio ob rem) wird an keiner Stelle herangezogen oder erörtert.",
+              "evidence": [
+                "Auf weitere mögliche Anspruchsgrundlagen (etwa § 285 BGB oder § 687 Abs. 2 BGB), die zu keinem anderen Ergebnis führen, kommt es nicht an."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Heranziehung von § 812 Abs. 1 S. 2 Alt. 2 BGB statt der condictio indebiti bezüglich der Besitzübertragung der Hebebühne",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Begründung, dass M den Besitz nicht zur Erfüllung einer Verbindlichkeit, sondern zur Förderung des erhofften Kaufvertrags übertrug",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Frage 1: Bereicherungsrechtliche Einordnung der Besitzübertragung an der Hebebühne (§ 812 Abs. 1 S. 2 Alt. 2 BGB statt condictio indebiti wegen Veranlassungszweck)",
+                "evidence_scope": "Frage 1: Prüfung von § 816 Abs. 1 S. 1 BGB ohne Prüfung von § 812 Abs. 1 S. 2 Alt. 2 BGB",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": []
+}

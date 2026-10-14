@@ -1,0 +1,754 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/anfangerklausur-caroline-zugleich-ein-beitrag-zur-mittelbaren-drittwirkung-der-grundrechte",
+    "title": "Anfängerklausur: Caroline Zugleich ein Beitrag zur mittelbaren Drittwirkung der Grundrechte in der Fallbearbeitung"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerklausur-caroline-zugleich-ein-beitrag-zur-mittelbaren-drittwirkung-der-grundrechte/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/anfangerklausur-caroline-zugleich-ein-beitrag-zur-mittelbaren-drittwirkung-der-grundrechte/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:19:13.517349+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 2,
+  "n_passed": 2,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 2,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 2,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 4,
+    "points_available": 4,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Lösungsvorschlag zum Ausgangsfall": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Lösungsvorschlag zur Abwandlung": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Lösungsvorschlag zum Ausgangsfall › Begründetheit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Lösungsvorschlag zur Abwandlung › Anwendung durch den BGH": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "rule_statement": {
+      "n_criteria": 2,
+      "n_passed": 2,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 2,
+      "n_passed": 2,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 35759,
+    "output_tokens": 10072,
+    "total_tokens": 45831,
+    "cached_input_tokens": 7040,
+    "cache_write_tokens": 11153
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 35759,
+    "output_tokens": 10072,
+    "total_tokens": 45831,
+    "cached_input_tokens": 7040,
+    "cache_write_tokens": 11153
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-012",
+      "title": "Mittelbare Drittwirkung im Unterlassungsstreit",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort ordnet die Prüfung ausdrücklich der mittelbaren Drittwirkung im Zivilurteil zu und verlangt, die betroffenen Grundrechtspositionen bei der Anwendung der Bildnisschutzregeln abzuwägen. Damit behandelt sie die Grundrechte als maßgebliche verfassungsrechtliche Wertungen, ohne sie unmittelbar an die Stelle des Privatrechts zu setzen.",
+      "evidence": [
+        "Das BVerfG prüft nicht die richtige Anwendung einfachen Rechts, sondern allein, ob das Zivilgericht die aus den Grundrechten folgende mittelbare Drittwirkung hinreichend beachtet hat.",
+        "Beide Grundrechte sind in der zivilgerichtlichen Abwägung nach Maßgabe der §§ 22, 23 KunstUrhG in Ausgleich zu bringen."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort ordnet die Prüfung ausdrücklich der mittelbaren Drittwirkung im Zivilurteil zu und verlangt, die betroffenen Grundrechtspositionen bei der Anwendung der Bildnisschutzregeln abzuwägen. Damit behandelt sie die Grundrechte als maßgebliche verfassungsrechtliche Wertungen, ohne sie unmittelbar an die Stelle des Privatrechts zu setzen.",
+          "evidence": [
+            "Das BVerfG prüft nicht die richtige Anwendung einfachen Rechts, sondern allein, ob das Zivilgericht die aus den Grundrechten folgende mittelbare Drittwirkung hinreichend beachtet hat.",
+            "Beide Grundrechte sind in der zivilgerichtlichen Abwägung nach Maßgabe der §§ 22, 23 KunstUrhG in Ausgleich zu bringen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Grundrechte werden als verfassungsrechtliche Wertentscheidungen eingeordnet.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Daraus wird abgeleitet, dass der BGH die Grundrechte bei der zivilrechtlichen Anwendung der Bildnisschutzregeln im Unterlassungsstreit der C berücksichtigen musste.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "C und ihr Unterlassungsstreit gegen den BGH wegen der 2002-Fotografien; mittelbare Drittwirkung bei Anwendung der §§ 1004 Abs. 1 Satz 2, 823 Abs. 1 BGB i.V.m. §§ 22, 23 KunstUrhG oder gleichwertigen Bildnisschutzregeln.",
+            "evidence_scope": "Ausgangsfall der C wegen der 2002-Fotografien; grundrechtliche Abwägung im Zivilurteil nach Maßgabe der §§ 22, 23 KunstUrhG.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Grundrechte entfalten mittelbare Drittwirkung; deshalb muss das Zivilgericht sie bei der Anwendung der §§ 22, 23 KunstUrhG in seiner Abwägung berücksichtigen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht ausdrücklich eine mittelbare Drittwirkung der Grundrechte im zivilgerichtlichen Unterlassungsstreit und verlangt, dass der BGH die Grundrechtspositionen bei der Anwendung der §§ 22, 23 KunstUrhG berücksichtigt und abwägt. Damit behandelt sie die Grundrechte nicht als bedeutungslos und wendet sie auch nicht unmittelbar anstelle des Privatrechts an.",
+          "evidence": [
+            "Das BVerfG prüft nicht die richtige Anwendung einfachen Rechts, sondern allein, ob das Zivilgericht die aus den Grundrechten folgende mittelbare Drittwirkung hinreichend beachtet hat.",
+            "Beide Grundrechte sind in der zivilgerichtlichen Abwägung nach Maßgabe der §§ 22, 23 KunstUrhG in Ausgleich zu bringen.",
+            "Entscheidend ist, ob der BGH bei deren Anwendung die betroffenen Grundrechtspositionen zutreffend gewichtet und einen angemessenen Ausgleich hergestellt hat."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort ordnet die Grundrechte als verfassungsrechtliche Wertentscheidungen bzw. als im Zivilrecht mittelbar wirkende Grundrechtspositionen ein.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Die Antwort leitet daraus ab, dass der BGH die Grundrechte bei der Anwendung der Bildnisschutzregeln im Unterlassungsstreit der C berücksichtigen musste.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Unterlassungsstreit der C; Berücksichtigung der Grundrechte durch den BGH bei Auslegung/Anwendung der §§ 1004 Abs. 1 Satz 2, 823 Abs. 1 BGB i.V.m. §§ 22, 23 KunstUrhG oder gleichwertigen Bildnisschutzregeln.",
+            "evidence_scope": "Verfassungsbeschwerde der C gegen das BGH-Urteil im zivilrechtlichen Unterlassungsstreit; Berücksichtigung der Grundrechtspositionen bei der zivilgerichtlichen Anwendung der §§ 22, 23 KunstUrhG.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Den Grundrechten kommt im Zivilstreit mittelbare Drittwirkung zu; der BGH musste daher die betroffenen Grundrechtspositionen bei Anwendung der §§ 22, 23 KunstUrhG gewichten und ausgleichen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort führt die Rechtsfigur der mittelbaren Drittwirkung der Grundrechte zutreffend ein und leitet daraus ausdrücklich ab, dass der BGH bei der zivilgerichtlichen Abwägung nach Maßgabe der §§ 22, 23 KunstUrhG die betroffenen Grundrechte (allgemeines Persönlichkeitsrecht und Pressefreiheit) gewichten und ausgleichen muss. Eine unmittelbare Drittwirkung oder Unbeachtlichkeit der Grundrechte wird nicht vertreten.",
+          "evidence": [
+            "Das BVerfG prüft nicht die richtige Anwendung einfachen Rechts, sondern allein, ob das Zivilgericht die aus den Grundrechten folgende mittelbare Drittwirkung hinreichend beachtet hat.",
+            "Entscheidend ist, ob der BGH bei deren Anwendung die betroffenen Grundrechtspositionen zutreffend gewichtet und einen angemessenen Ausgleich hergestellt hat.",
+            "Beide Grundrechte sind in der zivilgerichtlichen Abwägung nach Maßgabe der §§ 22, 23 KunstUrhG in Ausgleich zu bringen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einordnung der Grundrechte im Wege der mittelbaren Drittwirkung als verfassungsrechtliche Maßstäbe/Wertentscheidungen für das Zivilrecht",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Ableitung, dass der BGH die Grundrechte bei der Auslegung/Anwendung der zivilrechtlichen Bildnisschutzregeln (§§ 22, 23 KunstUrhG) im Unterlassungsstreit berücksichtigen und abwägen musste",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Ausgangsfall C gegen BGH-Entscheidung: Mittelbare Drittwirkung der Grundrechte bei der Auslegung der zivilrechtlichen Unterlassungsnormen (§§ 22, 23 KunstUrhG)",
+            "evidence_scope": "Ausgangsfall C gegen BGH-Entscheidung: Mittelbare Drittwirkung der Grundrechte bei der Auslegung der zivilrechtlichen Unterlassungsnormen (§§ 22, 23 KunstUrhG)",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Zivilgerichte müssen die aus den Grundrechten folgende mittelbare Drittwirkung beachten, indem sie die Grundrechtspositionen bei der Anwendung der §§ 22, 23 KunstUrhG zutreffend gewichten und in Ausgleich bringen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 17907,
+        "output_tokens": 5883,
+        "total_tokens": 23790,
+        "cached_input_tokens": 6016,
+        "cache_write_tokens": 5586
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort ordnet die Prüfung ausdrücklich der mittelbaren Drittwirkung im Zivilurteil zu und verlangt, die betroffenen Grundrechtspositionen bei der Anwendung der Bildnisschutzregeln abzuwägen. Damit behandelt sie die Grundrechte als maßgebliche verfassungsrechtliche Wertungen, ohne sie unmittelbar an die Stelle des Privatrechts zu setzen.",
+              "evidence": [
+                "Das BVerfG prüft nicht die richtige Anwendung einfachen Rechts, sondern allein, ob das Zivilgericht die aus den Grundrechten folgende mittelbare Drittwirkung hinreichend beachtet hat.",
+                "Beide Grundrechte sind in der zivilgerichtlichen Abwägung nach Maßgabe der §§ 22, 23 KunstUrhG in Ausgleich zu bringen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Grundrechte werden als verfassungsrechtliche Wertentscheidungen eingeordnet.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Daraus wird abgeleitet, dass der BGH die Grundrechte bei der zivilrechtlichen Anwendung der Bildnisschutzregeln im Unterlassungsstreit der C berücksichtigen musste.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "C und ihr Unterlassungsstreit gegen den BGH wegen der 2002-Fotografien; mittelbare Drittwirkung bei Anwendung der §§ 1004 Abs. 1 Satz 2, 823 Abs. 1 BGB i.V.m. §§ 22, 23 KunstUrhG oder gleichwertigen Bildnisschutzregeln.",
+                "evidence_scope": "Ausgangsfall der C wegen der 2002-Fotografien; grundrechtliche Abwägung im Zivilurteil nach Maßgabe der §§ 22, 23 KunstUrhG.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Grundrechte entfalten mittelbare Drittwirkung; deshalb muss das Zivilgericht sie bei der Anwendung der §§ 22, 23 KunstUrhG in seiner Abwägung berücksichtigen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht ausdrücklich eine mittelbare Drittwirkung der Grundrechte im zivilgerichtlichen Unterlassungsstreit und verlangt, dass der BGH die Grundrechtspositionen bei der Anwendung der §§ 22, 23 KunstUrhG berücksichtigt und abwägt. Damit behandelt sie die Grundrechte nicht als bedeutungslos und wendet sie auch nicht unmittelbar anstelle des Privatrechts an.",
+              "evidence": [
+                "Das BVerfG prüft nicht die richtige Anwendung einfachen Rechts, sondern allein, ob das Zivilgericht die aus den Grundrechten folgende mittelbare Drittwirkung hinreichend beachtet hat.",
+                "Beide Grundrechte sind in der zivilgerichtlichen Abwägung nach Maßgabe der §§ 22, 23 KunstUrhG in Ausgleich zu bringen.",
+                "Entscheidend ist, ob der BGH bei deren Anwendung die betroffenen Grundrechtspositionen zutreffend gewichtet und einen angemessenen Ausgleich hergestellt hat."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort ordnet die Grundrechte als verfassungsrechtliche Wertentscheidungen bzw. als im Zivilrecht mittelbar wirkende Grundrechtspositionen ein.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Die Antwort leitet daraus ab, dass der BGH die Grundrechte bei der Anwendung der Bildnisschutzregeln im Unterlassungsstreit der C berücksichtigen musste.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Unterlassungsstreit der C; Berücksichtigung der Grundrechte durch den BGH bei Auslegung/Anwendung der §§ 1004 Abs. 1 Satz 2, 823 Abs. 1 BGB i.V.m. §§ 22, 23 KunstUrhG oder gleichwertigen Bildnisschutzregeln.",
+                "evidence_scope": "Verfassungsbeschwerde der C gegen das BGH-Urteil im zivilrechtlichen Unterlassungsstreit; Berücksichtigung der Grundrechtspositionen bei der zivilgerichtlichen Anwendung der §§ 22, 23 KunstUrhG.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Den Grundrechten kommt im Zivilstreit mittelbare Drittwirkung zu; der BGH musste daher die betroffenen Grundrechtspositionen bei Anwendung der §§ 22, 23 KunstUrhG gewichten und ausgleichen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort führt die Rechtsfigur der mittelbaren Drittwirkung der Grundrechte zutreffend ein und leitet daraus ausdrücklich ab, dass der BGH bei der zivilgerichtlichen Abwägung nach Maßgabe der §§ 22, 23 KunstUrhG die betroffenen Grundrechte (allgemeines Persönlichkeitsrecht und Pressefreiheit) gewichten und ausgleichen muss. Eine unmittelbare Drittwirkung oder Unbeachtlichkeit der Grundrechte wird nicht vertreten.",
+              "evidence": [
+                "Das BVerfG prüft nicht die richtige Anwendung einfachen Rechts, sondern allein, ob das Zivilgericht die aus den Grundrechten folgende mittelbare Drittwirkung hinreichend beachtet hat.",
+                "Entscheidend ist, ob der BGH bei deren Anwendung die betroffenen Grundrechtspositionen zutreffend gewichtet und einen angemessenen Ausgleich hergestellt hat.",
+                "Beide Grundrechte sind in der zivilgerichtlichen Abwägung nach Maßgabe der §§ 22, 23 KunstUrhG in Ausgleich zu bringen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung der Grundrechte im Wege der mittelbaren Drittwirkung als verfassungsrechtliche Maßstäbe/Wertentscheidungen für das Zivilrecht",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Ableitung, dass der BGH die Grundrechte bei der Auslegung/Anwendung der zivilrechtlichen Bildnisschutzregeln (§§ 22, 23 KunstUrhG) im Unterlassungsstreit berücksichtigen und abwägen musste",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Ausgangsfall C gegen BGH-Entscheidung: Mittelbare Drittwirkung der Grundrechte bei der Auslegung der zivilrechtlichen Unterlassungsnormen (§§ 22, 23 KunstUrhG)",
+                "evidence_scope": "Ausgangsfall C gegen BGH-Entscheidung: Mittelbare Drittwirkung der Grundrechte bei der Auslegung der zivilrechtlichen Unterlassungsnormen (§§ 22, 23 KunstUrhG)",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Zivilgerichte müssen die aus den Grundrechten folgende mittelbare Drittwirkung beachten, indem sie die Grundrechtspositionen bei der Anwendung der §§ 22, 23 KunstUrhG zutreffend gewichten und in Ausgleich bringen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-026",
+      "title": "Keine Absenkung des grundgesetzlichen Schutzes",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort formuliert den gleichwertigen Schutzgedanken ausdrücklich: Die EMRK darf nicht zur Preisgabe des eigenständigen grundgesetzlichen Grundrechtsschutzes führen. Sie wendet dies auf die Pressefreiheit des Y-Verlags an und beanstandet gerade, dass der BGH ohne eigene Abwägung dem EGMR-Ergebnis folgte. Art. 53 EMRK wird nicht genannt, aber der verlangte gleichwertige Schutzgedanke ist enthalten.",
+      "evidence": [
+        "Diese Pflicht darf jedoch nicht zu einer Preisgabe des eigenständigen grundgesetzlichen Grundrechtsschutzes führen.",
+        "Ein Gericht muss die Gewährleistungen der EMRK und die des Grundgesetzes in praktische Konkordanz bringen; es darf nicht ein EGMR‑Urteil als allein maßgeblich behandeln und die erforderliche Abwägung mit den nationalen Grundrechten unterlassen",
+        "Durch diese einseitige, auf die vermeintliche Verbindlichkeit des EGMR‑Urteils gestützte Entscheidung hat der BGH die Pressefreiheit des Y‑Verlags in verfassungswidriger Weise ignoriert."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort formuliert den gleichwertigen Schutzgedanken ausdrücklich: Die EMRK darf nicht zur Preisgabe des eigenständigen grundgesetzlichen Grundrechtsschutzes führen. Sie wendet dies auf die Pressefreiheit des Y-Verlags an und beanstandet gerade, dass der BGH ohne eigene Abwägung dem EGMR-Ergebnis folgte. Art. 53 EMRK wird nicht genannt, aber der verlangte gleichwertige Schutzgedanke ist enthalten.",
+          "evidence": [
+            "Diese Pflicht darf jedoch nicht zu einer Preisgabe des eigenständigen grundgesetzlichen Grundrechtsschutzes führen.",
+            "Ein Gericht muss die Gewährleistungen der EMRK und die des Grundgesetzes in praktische Konkordanz bringen; es darf nicht ein EGMR‑Urteil als allein maßgeblich behandeln und die erforderliche Abwägung mit den nationalen Grundrechten unterlassen",
+            "Durch diese einseitige, auf die vermeintliche Verbindlichkeit des EGMR‑Urteils gestützte Entscheidung hat der BGH die Pressefreiheit des Y‑Verlags in verfassungswidriger Weise ignoriert."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Als Grenze der konventionsfreundlichen Auslegung festhalten, dass die EMRK nicht zur Absenkung des grundgesetzlichen Schutzes der Pressefreiheit des Y-Verlages eingesetzt werden darf.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Art. 53 EMRK oder einen rechtlich gleichwertigen Schutzgedanken anführen.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Das grundgesetzliche Schutzniveau nicht ohne eigene verfassungsrechtliche Prüfung hinter dem EGMR-Ergebnis zurücktreten lassen.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Y-Verlag; Grenze konventionsfreundlicher Auslegung und Schutz der Pressefreiheit in der Begründetheit seiner Verfassungsbeschwerde.",
+            "evidence_scope": "Y-Verlag; Begründetheit seiner Verfassungsbeschwerde, Verhältnis von EGMR-Rechtsprechung und eigenständigem grundgesetzlichem Schutz der Pressefreiheit.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die EMRK hat innerstaatlich keinen verfassungsrechtlichen Vorrang; das Gericht muss EMRK und Grundgesetz in praktische Konkordanz bringen und darf nicht allein aus einem EGMR-Urteil entscheiden, sondern muss die Pressefreiheit eigenständig abwägen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verlangt in der Abwandlung für den Y-Verlag eine eigenständige verfassungsrechtliche Abwägung der Pressefreiheit und betont, dass die Berücksichtigung der EMRK nicht zu einer Preisgabe des grundgesetzlichen Schutzniveaus führen darf. Damit wird der Sache nach ein rechtlich gleichwertiger Schutzgedanke zu Art. 53 EMRK angeführt.",
+          "evidence": [
+            "Diese Pflicht darf jedoch nicht zu einer Preisgabe des eigenständigen grundgesetzlichen Grundrechtsschutzes führen.",
+            "Die EMRK erlangt im innerdeutschen Recht keinen verfassungsrechtlichen Vorrang.",
+            "Ein Gericht muss die Gewährleistungen der EMRK und die des Grundgesetzes in praktische Konkordanz bringen; es darf nicht ein EGMR‑Urteil als allein maßgeblich behandeln und die erforderliche Abwägung mit den nationalen Grundrechten unterlassen",
+            "Durch diese einseitige, auf die vermeintliche Verbindlichkeit des EGMR‑Urteils gestützte Entscheidung hat der BGH die Pressefreiheit des Y‑Verlags in verfassungswidriger Weise ignoriert."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort hält als Grenze konventionsfreundlicher Auslegung fest, dass die EMRK nicht zur Absenkung des grundgesetzlichen Schutzes der Pressefreiheit des Y-Verlages führen darf.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort führt Art. 53 EMRK oder einen rechtlich gleichwertigen Schutzgedanken für diese Grenze an.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Das grundgesetzliche Schutzniveau wird nicht ohne eigene verfassungsrechtliche Prüfung hinter dem EGMR-Ergebnis zurückgelassen.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Pressefreiheit des Y-Verlages in der Abwandlung; Grenze der Berücksichtigung der EMRK/EGMR-Rechtsprechung",
+            "evidence_scope": "Pressefreiheit des Y-Verlags aus Art. 5 Abs. 1 Satz 2 GG in der Abwandlung; Grenze der EMRK-Berücksichtigung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die EMRK ist zu berücksichtigen, darf aber nicht zum Verlust eigenständigen grundgesetzlichen Grundrechtsschutzes führen; EMRK und GG sind in praktische Konkordanz zu bringen, und das EGMR-Urteil darf nicht ohne eigene Abwägung mit der Pressefreiheit allein maßgeblich sein.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort stellt ausdrücklich klar, dass die Pflicht zur Berücksichtigung der EMRK nicht zur Preisgabe des eigenständigen grundgesetzlichen Grundrechtsschutzes führen darf und dass der BGH die Pressefreiheit des Y-Verlags nicht zugunsten einer vermeintlichen unmittelbaren Verbindlichkeit des EGMR-Urteils ignorieren durfte. Damit ist der Schutzgedanke (Vorrang des Schutzniveaus des GG / Grenze konventionsfreundlicher Auslegung) erfüllt.",
+          "evidence": [
+            "Diese Pflicht darf jedoch nicht zu einer Preisgabe des eigenständigen grundgesetzlichen Grundrechtsschutzes führen. Die EMRK erlangt im innerdeutschen Recht keinen verfassungsrechtlichen Vorrang.",
+            "Der BGH hat im vorliegenden Fall seine eigene Rechtsprechung vollständig aufgegeben und ohne jegliche Auseinandersetzung mit dem Inhalt der Pressefreiheit des Y-Verlags die Veröffentlichung verboten.",
+            "Durch diese einseitige, auf die vermeintliche Verbindlichkeit des EGMR-Urteils gestützte Entscheidung hat der BGH die Pressefreiheit des Y-Verlags in verfassungswidriger Weise ignoriert."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Festhalten als Grenze der konventionsfreundlichen Auslegung, dass die EMRK nicht zur Absenkung des durch das GG gewährleisteten Schutzes der Pressefreiheit des Y-Verlags eingesetzt werden darf",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Anführen von Art. 53 EMRK oder eines rechtlich gleichwertigen Schutzgedankens (z. B. Verbot der Preisgabe des eigenständigen nationalen Grundrechtsschutzes/Mindeststandardgedanke)",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Abwandlung, Verfassungsbeschwerde des Y-Verlags, Begründetheit (Grenzen der Berücksichtigungspflicht / Schutz der Pressefreiheit)",
+            "evidence_scope": "Abwandlung, Verfassungsbeschwerde des Y-Verlags, Begründetheit (Grenzen der Berücksichtigungspflicht / Schutz der Pressefreiheit)",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Berücksichtigungspflicht darf nicht zu einer Preisgabe des eigenständigen grundgesetzlichen Grundrechtsschutzes führen, weshalb das EGMR-Urteil nicht unter Ausblendung der durch Art. 5 Abs. 1 S. 2 GG geschützten Pressefreiheit des Verlags einfach übernommen werden darf.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 17852,
+        "output_tokens": 4189,
+        "total_tokens": 22041,
+        "cached_input_tokens": 1024,
+        "cache_write_tokens": 5567
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort formuliert den gleichwertigen Schutzgedanken ausdrücklich: Die EMRK darf nicht zur Preisgabe des eigenständigen grundgesetzlichen Grundrechtsschutzes führen. Sie wendet dies auf die Pressefreiheit des Y-Verlags an und beanstandet gerade, dass der BGH ohne eigene Abwägung dem EGMR-Ergebnis folgte. Art. 53 EMRK wird nicht genannt, aber der verlangte gleichwertige Schutzgedanke ist enthalten.",
+              "evidence": [
+                "Diese Pflicht darf jedoch nicht zu einer Preisgabe des eigenständigen grundgesetzlichen Grundrechtsschutzes führen.",
+                "Ein Gericht muss die Gewährleistungen der EMRK und die des Grundgesetzes in praktische Konkordanz bringen; es darf nicht ein EGMR‑Urteil als allein maßgeblich behandeln und die erforderliche Abwägung mit den nationalen Grundrechten unterlassen",
+                "Durch diese einseitige, auf die vermeintliche Verbindlichkeit des EGMR‑Urteils gestützte Entscheidung hat der BGH die Pressefreiheit des Y‑Verlags in verfassungswidriger Weise ignoriert."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Als Grenze der konventionsfreundlichen Auslegung festhalten, dass die EMRK nicht zur Absenkung des grundgesetzlichen Schutzes der Pressefreiheit des Y-Verlages eingesetzt werden darf.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Art. 53 EMRK oder einen rechtlich gleichwertigen Schutzgedanken anführen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Das grundgesetzliche Schutzniveau nicht ohne eigene verfassungsrechtliche Prüfung hinter dem EGMR-Ergebnis zurücktreten lassen.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Y-Verlag; Grenze konventionsfreundlicher Auslegung und Schutz der Pressefreiheit in der Begründetheit seiner Verfassungsbeschwerde.",
+                "evidence_scope": "Y-Verlag; Begründetheit seiner Verfassungsbeschwerde, Verhältnis von EGMR-Rechtsprechung und eigenständigem grundgesetzlichem Schutz der Pressefreiheit.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die EMRK hat innerstaatlich keinen verfassungsrechtlichen Vorrang; das Gericht muss EMRK und Grundgesetz in praktische Konkordanz bringen und darf nicht allein aus einem EGMR-Urteil entscheiden, sondern muss die Pressefreiheit eigenständig abwägen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verlangt in der Abwandlung für den Y-Verlag eine eigenständige verfassungsrechtliche Abwägung der Pressefreiheit und betont, dass die Berücksichtigung der EMRK nicht zu einer Preisgabe des grundgesetzlichen Schutzniveaus führen darf. Damit wird der Sache nach ein rechtlich gleichwertiger Schutzgedanke zu Art. 53 EMRK angeführt.",
+              "evidence": [
+                "Diese Pflicht darf jedoch nicht zu einer Preisgabe des eigenständigen grundgesetzlichen Grundrechtsschutzes führen.",
+                "Die EMRK erlangt im innerdeutschen Recht keinen verfassungsrechtlichen Vorrang.",
+                "Ein Gericht muss die Gewährleistungen der EMRK und die des Grundgesetzes in praktische Konkordanz bringen; es darf nicht ein EGMR‑Urteil als allein maßgeblich behandeln und die erforderliche Abwägung mit den nationalen Grundrechten unterlassen",
+                "Durch diese einseitige, auf die vermeintliche Verbindlichkeit des EGMR‑Urteils gestützte Entscheidung hat der BGH die Pressefreiheit des Y‑Verlags in verfassungswidriger Weise ignoriert."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort hält als Grenze konventionsfreundlicher Auslegung fest, dass die EMRK nicht zur Absenkung des grundgesetzlichen Schutzes der Pressefreiheit des Y-Verlages führen darf.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort führt Art. 53 EMRK oder einen rechtlich gleichwertigen Schutzgedanken für diese Grenze an.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Das grundgesetzliche Schutzniveau wird nicht ohne eigene verfassungsrechtliche Prüfung hinter dem EGMR-Ergebnis zurückgelassen.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Pressefreiheit des Y-Verlages in der Abwandlung; Grenze der Berücksichtigung der EMRK/EGMR-Rechtsprechung",
+                "evidence_scope": "Pressefreiheit des Y-Verlags aus Art. 5 Abs. 1 Satz 2 GG in der Abwandlung; Grenze der EMRK-Berücksichtigung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die EMRK ist zu berücksichtigen, darf aber nicht zum Verlust eigenständigen grundgesetzlichen Grundrechtsschutzes führen; EMRK und GG sind in praktische Konkordanz zu bringen, und das EGMR-Urteil darf nicht ohne eigene Abwägung mit der Pressefreiheit allein maßgeblich sein.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort stellt ausdrücklich klar, dass die Pflicht zur Berücksichtigung der EMRK nicht zur Preisgabe des eigenständigen grundgesetzlichen Grundrechtsschutzes führen darf und dass der BGH die Pressefreiheit des Y-Verlags nicht zugunsten einer vermeintlichen unmittelbaren Verbindlichkeit des EGMR-Urteils ignorieren durfte. Damit ist der Schutzgedanke (Vorrang des Schutzniveaus des GG / Grenze konventionsfreundlicher Auslegung) erfüllt.",
+              "evidence": [
+                "Diese Pflicht darf jedoch nicht zu einer Preisgabe des eigenständigen grundgesetzlichen Grundrechtsschutzes führen. Die EMRK erlangt im innerdeutschen Recht keinen verfassungsrechtlichen Vorrang.",
+                "Der BGH hat im vorliegenden Fall seine eigene Rechtsprechung vollständig aufgegeben und ohne jegliche Auseinandersetzung mit dem Inhalt der Pressefreiheit des Y-Verlags die Veröffentlichung verboten.",
+                "Durch diese einseitige, auf die vermeintliche Verbindlichkeit des EGMR-Urteils gestützte Entscheidung hat der BGH die Pressefreiheit des Y-Verlags in verfassungswidriger Weise ignoriert."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Festhalten als Grenze der konventionsfreundlichen Auslegung, dass die EMRK nicht zur Absenkung des durch das GG gewährleisteten Schutzes der Pressefreiheit des Y-Verlags eingesetzt werden darf",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Anführen von Art. 53 EMRK oder eines rechtlich gleichwertigen Schutzgedankens (z. B. Verbot der Preisgabe des eigenständigen nationalen Grundrechtsschutzes/Mindeststandardgedanke)",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Abwandlung, Verfassungsbeschwerde des Y-Verlags, Begründetheit (Grenzen der Berücksichtigungspflicht / Schutz der Pressefreiheit)",
+                "evidence_scope": "Abwandlung, Verfassungsbeschwerde des Y-Verlags, Begründetheit (Grenzen der Berücksichtigungspflicht / Schutz der Pressefreiheit)",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Berücksichtigungspflicht darf nicht zu einer Preisgabe des eigenständigen grundgesetzlichen Grundrechtsschutzes führen, weshalb das EGMR-Urteil nicht unter Ausblendung der durch Art. 5 Abs. 1 S. 2 GG geschützten Pressefreiheit des Verlags einfach übernommen werden darf.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": []
+}

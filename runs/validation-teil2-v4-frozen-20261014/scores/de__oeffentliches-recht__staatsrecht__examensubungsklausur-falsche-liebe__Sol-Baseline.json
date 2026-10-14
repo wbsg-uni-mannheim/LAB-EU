@@ -1,0 +1,1161 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/examensubungsklausur-falsche-liebe",
+    "title": "Examensübungsklausur: Falsche Liebe"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__oeffentliches-recht__staatsrecht__examensubungsklausur-falsche-liebe/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/examensubungsklausur-falsche-liebe/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:23:16.620644+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 2,
+  "n_passed": 2,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 2,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 2,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 5,
+    "points_available": 5,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 2,
+    "n_eligible": 2,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Zulässigkeit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Begründetheit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Zulässigkeit › Form und Frist": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Begründetheit › Art. 5 Abs. 1 S. 1 Var. 1 GG": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 2,
+      "n_passed": 2,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 65604,
+    "output_tokens": 10293,
+    "total_tokens": 75897,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 20548
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 65604,
+    "output_tokens": 10293,
+    "total_tokens": 75897,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 20548
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-009",
+      "title": "Unverschuldete krankheitsbedingte Fristversäumung",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort lässt nicht jede Erkrankung genügen, sondern nennt den Ausschluss eigenen Handelns und der Beauftragung eines Dritten als Maßstab. Sie würdigt die konkrete Depression und die vierwöchige stationäre Behandlung und bejaht eine dadurch bedingte Handlungsunfähigkeit.",
+      "evidence": [
+        "Sie muss so schwer sein, dass die betroffene Person weder selbst fristwahrend handeln noch einen Dritten mit der Wahrnehmung ihrer Rechte beauftragen kann.",
+        "S war nach der Zustellung des Beschlusses aufgrund ihrer psychischen Verfassung zunächst zu deprimiert, um weitere rechtliche Schritte einzuleiten.",
+        "Auf ärztlichen Rat begab sie sich zur Aufarbeitung ihres Traumas in eine vierwöchige stationäre Psychotherapie.",
+        "Nach dem Sachverhalt war S gerade wegen dieser Beeinträchtigung nicht in der Lage, rechtzeitig tätig zu werden."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort lässt nicht jede Erkrankung genügen, sondern nennt den Ausschluss eigenen Handelns und der Beauftragung eines Dritten als Maßstab. Sie würdigt die konkrete Depression und die vierwöchige stationäre Behandlung und bejaht eine dadurch bedingte Handlungsunfähigkeit.",
+          "evidence": [
+            "Sie muss so schwer sein, dass die betroffene Person weder selbst fristwahrend handeln noch einen Dritten mit der Wahrnehmung ihrer Rechte beauftragen kann.",
+            "S war nach der Zustellung des Beschlusses aufgrund ihrer psychischen Verfassung zunächst zu deprimiert, um weitere rechtliche Schritte einzuleiten.",
+            "Auf ärztlichen Rat begab sie sich zur Aufarbeitung ihres Traumas in eine vierwöchige stationäre Psychotherapie.",
+            "Nach dem Sachverhalt war S gerade wegen dieser Beeinträchtigung nicht in der Lage, rechtzeitig tätig zu werden."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Eine Erkrankung entschuldigt die Fristversäumung nur, wenn sie eigenes fristwahrendes Handeln oder die Beauftragung eines Dritten ausschließt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Der erforderliche Schweregrad wird anhand der handlungshemmenden Depression und der vierwöchigen stationären Behandlung der S bejaht.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "S; Wiedereinsetzung wegen krankheitsbedingter Versäumung der Verfassungsbeschwerdefrist",
+            "evidence_scope": "S; krankheitsbedingte Verhinderung im Rahmen der Wiedereinsetzung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die psychische Beeinträchtigung habe S am rechtzeitigen Tätigwerden gehindert; die Depression und die vierwöchige stationäre Behandlung belegten eine erhebliche Beeinträchtigung.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort wendet den vom Kriterium verlangten Schweregradmaßstab an und bejaht ihn ausdrücklich wegen der Depression der S sowie der vierwöchigen stationären Psychotherapie. Sie lässt nicht jede Erkrankung genügen und würdigt die konkreten Umstände.",
+          "evidence": [
+            "Sie muss so schwer sein, dass die betroffene Person weder selbst fristwahrend handeln noch einen Dritten mit der Wahrnehmung ihrer Rechte beauftragen kann.",
+            "Auf ärztlichen Rat begab sie sich zur Aufarbeitung ihres Traumas in eine vierwöchige stationäre Psychotherapie.",
+            "Nach dem Sachverhalt war S gerade wegen dieser Beeinträchtigung nicht in der Lage, rechtzeitig tätig zu werden."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Maßstab: Erkrankung entschuldigt nur, wenn sie die eigene fristwahrende Handlung oder die Einschaltung eines Bevollmächtigten praktisch ausschließt",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Würdigung der konkreten Umstände: handlungshemmende Depression und vierwöchige stationäre Behandlung der S",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Bejahung des erforderlichen Schweregrades der Erkrankung",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "S, Wiedereinsetzung wegen krankheitsbedingter Fristversäumung der Verfassungsbeschwerde",
+            "evidence_scope": "S, Wiedereinsetzung wegen krankheitsbedingter Fristversäumung der Verfassungsbeschwerde",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Eine Erkrankung entschuldigt nur bei so schwerer Beeinträchtigung, dass die Person weder selbst fristwahrend handeln noch einen Dritten beauftragen kann; S war wegen Depression und stationärer Behandlung nicht in der Lage, rechtzeitig tätig zu werden.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Der Maßstab wird ausdrücklich benannt und unter Heranziehung der Depression und des vierwöchigen stationären Aufenthalts bejaht.",
+          "evidence": [
+            "Sie muss so schwer sein, dass die betroffene Person weder selbst fristwahrend handeln noch einen Dritten mit der Wahrnehmung ihrer Rechte beauftragen kann.",
+            "S war nach der Zustellung des Beschlusses aufgrund ihrer psychischen Verfassung zunächst zu deprimiert, um weitere rechtliche Schritte einzuleiten. Auf ärztlichen Rat begab sie sich zur Aufarbeitung ihres Traumas in eine vierwöchige stationäre Psychotherapie.",
+            "Nach dem Sachverhalt war S gerade wegen dieser Beeinträchtigung nicht in der Lage, rechtzeitig tätig zu werden."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Anwendung des Maßstabs, dass eine Erkrankung die Fristversäumung nur entschuldigt, wenn sie Abfassung/Versendung oder Einschaltung eines Bevollmächtigten praktisch ausschließt",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Bejahung dieses Schweregrads wegen der handlungshemmenden Depression sowie der vierwöchigen stationären Behandlung der S",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "S, Wiedereinsetzung (§ 93 Abs. 2 BVerfGG) / Fristversäumung wegen Erkrankung",
+            "evidence_scope": "S, Wiedereinsetzung (§ 93 Abs. 2 BVerfGG) / Fristversäumung wegen Erkrankung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Erkrankung muss die eigene fristwahrende Handlung oder die Beauftragung Dritter ausschließen; dies ist angesichts der akuten Depression und der vierwöchigen stationären Psychotherapie zur Aufarbeitung des Traumas der Fall.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 32806,
+        "output_tokens": 5843,
+        "total_tokens": 38649,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 10275
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort lässt nicht jede Erkrankung genügen, sondern nennt den Ausschluss eigenen Handelns und der Beauftragung eines Dritten als Maßstab. Sie würdigt die konkrete Depression und die vierwöchige stationäre Behandlung und bejaht eine dadurch bedingte Handlungsunfähigkeit.",
+              "evidence": [
+                "Sie muss so schwer sein, dass die betroffene Person weder selbst fristwahrend handeln noch einen Dritten mit der Wahrnehmung ihrer Rechte beauftragen kann.",
+                "S war nach der Zustellung des Beschlusses aufgrund ihrer psychischen Verfassung zunächst zu deprimiert, um weitere rechtliche Schritte einzuleiten.",
+                "Auf ärztlichen Rat begab sie sich zur Aufarbeitung ihres Traumas in eine vierwöchige stationäre Psychotherapie.",
+                "Nach dem Sachverhalt war S gerade wegen dieser Beeinträchtigung nicht in der Lage, rechtzeitig tätig zu werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Eine Erkrankung entschuldigt die Fristversäumung nur, wenn sie eigenes fristwahrendes Handeln oder die Beauftragung eines Dritten ausschließt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der erforderliche Schweregrad wird anhand der handlungshemmenden Depression und der vierwöchigen stationären Behandlung der S bejaht.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S; Wiedereinsetzung wegen krankheitsbedingter Versäumung der Verfassungsbeschwerdefrist",
+                "evidence_scope": "S; krankheitsbedingte Verhinderung im Rahmen der Wiedereinsetzung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die psychische Beeinträchtigung habe S am rechtzeitigen Tätigwerden gehindert; die Depression und die vierwöchige stationäre Behandlung belegten eine erhebliche Beeinträchtigung.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort wendet den vom Kriterium verlangten Schweregradmaßstab an und bejaht ihn ausdrücklich wegen der Depression der S sowie der vierwöchigen stationären Psychotherapie. Sie lässt nicht jede Erkrankung genügen und würdigt die konkreten Umstände.",
+              "evidence": [
+                "Sie muss so schwer sein, dass die betroffene Person weder selbst fristwahrend handeln noch einen Dritten mit der Wahrnehmung ihrer Rechte beauftragen kann.",
+                "Auf ärztlichen Rat begab sie sich zur Aufarbeitung ihres Traumas in eine vierwöchige stationäre Psychotherapie.",
+                "Nach dem Sachverhalt war S gerade wegen dieser Beeinträchtigung nicht in der Lage, rechtzeitig tätig zu werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Maßstab: Erkrankung entschuldigt nur, wenn sie die eigene fristwahrende Handlung oder die Einschaltung eines Bevollmächtigten praktisch ausschließt",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Würdigung der konkreten Umstände: handlungshemmende Depression und vierwöchige stationäre Behandlung der S",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Bejahung des erforderlichen Schweregrades der Erkrankung",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S, Wiedereinsetzung wegen krankheitsbedingter Fristversäumung der Verfassungsbeschwerde",
+                "evidence_scope": "S, Wiedereinsetzung wegen krankheitsbedingter Fristversäumung der Verfassungsbeschwerde",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Eine Erkrankung entschuldigt nur bei so schwerer Beeinträchtigung, dass die Person weder selbst fristwahrend handeln noch einen Dritten beauftragen kann; S war wegen Depression und stationärer Behandlung nicht in der Lage, rechtzeitig tätig zu werden.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Der Maßstab wird ausdrücklich benannt und unter Heranziehung der Depression und des vierwöchigen stationären Aufenthalts bejaht.",
+              "evidence": [
+                "Sie muss so schwer sein, dass die betroffene Person weder selbst fristwahrend handeln noch einen Dritten mit der Wahrnehmung ihrer Rechte beauftragen kann.",
+                "S war nach der Zustellung des Beschlusses aufgrund ihrer psychischen Verfassung zunächst zu deprimiert, um weitere rechtliche Schritte einzuleiten. Auf ärztlichen Rat begab sie sich zur Aufarbeitung ihres Traumas in eine vierwöchige stationäre Psychotherapie.",
+                "Nach dem Sachverhalt war S gerade wegen dieser Beeinträchtigung nicht in der Lage, rechtzeitig tätig zu werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Anwendung des Maßstabs, dass eine Erkrankung die Fristversäumung nur entschuldigt, wenn sie Abfassung/Versendung oder Einschaltung eines Bevollmächtigten praktisch ausschließt",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Bejahung dieses Schweregrads wegen der handlungshemmenden Depression sowie der vierwöchigen stationären Behandlung der S",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S, Wiedereinsetzung (§ 93 Abs. 2 BVerfGG) / Fristversäumung wegen Erkrankung",
+                "evidence_scope": "S, Wiedereinsetzung (§ 93 Abs. 2 BVerfGG) / Fristversäumung wegen Erkrankung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Erkrankung muss die eigene fristwahrende Handlung oder die Beauftragung Dritter ausschließen; dies ist angesichts der akuten Depression und der vierwöchigen stationären Psychotherapie zur Aufarbeitung des Traumas der Fall.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-023",
+      "title": "Äußerung über P als Werturteil",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Beide geforderten Komponenten sind für die konkrete Äußerung über P ausdrücklich erfüllt; die Antwort verneint den Meinungscharakter nicht wegen der groben Wortwahl.",
+      "evidence": [
+        "Die Bezeichnungen des P als „verdammtes Bullenschwein“ ... sind wertende Urteile.",
+        "Dass die Formulierungen grob, verletzend, polemisch oder geschmacklos sind, nimmt ihnen nicht den Charakter als Meinung.",
+        "Art. 5 Abs. 1 Satz 1 GG schützt gerade auch scharfe und emotionalisierte Kritik."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Beide geforderten Komponenten sind für die konkrete Äußerung über P ausdrücklich erfüllt; die Antwort verneint den Meinungscharakter nicht wegen der groben Wortwahl.",
+          "evidence": [
+            "Die Bezeichnungen des P als „verdammtes Bullenschwein“ ... sind wertende Urteile.",
+            "Dass die Formulierungen grob, verletzend, polemisch oder geschmacklos sind, nimmt ihnen nicht den Charakter als Meinung.",
+            "Art. 5 Abs. 1 Satz 1 GG schützt gerade auch scharfe und emotionalisierte Kritik."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Bezeichnung des P als „verdammtes Bullenschwein“ wird als wertende Stellungnahme eingeordnet.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort erkennt an, dass auch polemische, emotionale oder ehrverletzende Werturteile grundsätzlich von Art. 5 Abs. 1 S. 1 Var. 1 GG erfasst werden.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Die Äußerung über P als Werturteil im Schutzbereich der Meinungsfreiheit nach Art. 5 Abs. 1 S. 1 Var. 1 GG.",
+            "evidence_scope": "Die Bezeichnung des P als „verdammtes Bullenschwein“ wird im Schutzbereich der Meinungsfreiheit als wertendes Urteil behandelt.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Bezeichnung ist eine wertende, nicht objektiv beweisbare Äußerung; grobe, verletzende oder polemische Wortwahl beseitigt den Meinungscharakter nicht.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erfüllt beide PASS-Komponenten ausdrücklich: Sie ordnet die Bezeichnung des P als wertendes Urteil ein und bejaht den Schutz durch Art. 5 Abs. 1 Satz 1 GG trotz polemischer, emotionaler und ehrverletzender Wortwahl. Keine FAIL-Alternative wird als maßgebliche Position übernommen.",
+          "evidence": [
+            "Die Bezeichnungen des P als „verdammtes Bullenschwein“ und des Landes als „scheiß Nazistaat Sachsen-Anhalt“ sind wertende Urteile.",
+            "Dass die Formulierungen grob, verletzend, polemisch oder geschmacklos sind, nimmt ihnen nicht den Charakter als Meinung. Art. 5 Abs. 1 Satz 1 GG schützt gerade auch scharfe und emotionalisierte Kritik."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Bezeichnung des P als „verdammtes Bullenschwein“ wird als wertende Stellungnahme eingeordnet.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Es wird anerkannt, dass polemische, emotionale oder ehrverletzende Werturteile grundsätzlich von Art. 5 Abs. 1 Satz 1 Var. 1 GG erfasst werden.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Äußerung über P als Werturteil im Rahmen der Meinungsfreiheit nach Art. 5 Abs. 1 Satz 1 GG",
+            "evidence_scope": "Bezeichnung des P als „verdammtes Bullenschwein“ als wertendes Urteil im Schutzbereich der Meinungsfreiheit nach Art. 5 Abs. 1 Satz 1 GG",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Äußerung sei ein wertendes Urteil, nicht objektiv beweisbar; grobe, verletzende, polemische oder geschmacklose Formulierungen nähmen den Meinungscharakter nicht, da Art. 5 Abs. 1 Satz 1 GG gerade auch scharfe und emotionalisierte Kritik schützt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Beide Anforderungen des Kriteriums sind ausdrücklich erfüllt, und keine der Ausschlussbedingungen liegt vor.",
+          "evidence": [
+            "Die Bezeichnungen des P als „verdammtes Bullenschwein“ und des Landes als „scheiß Nazistaat Sachsen-Anhalt“ sind wertende Urteile.",
+            "Dass die Formulierungen grob, verletzend, polemisch oder geschmacklos sind, nimmt ihnen nicht den Charakter als Meinung. Art. 5 Abs. 1 Satz 1 GG schützt gerade auch scharfe und emotionalisierte Kritik."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einordnung der Bezeichnung des P als „verdammtes Bullenschwein“ als wertende Stellungnahme / Werturteil",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Anerkennung, dass auch polemische, emotionale oder ehrverletzende Werturteile grundsätzlich von Art. 5 Abs. 1 S. 1 Var. 1 GG erfasst werden",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Schutzbereich des Art. 5 Abs. 1 S. 1 GG bezüglich der Äußerung über P als „verdammtes Bullenschwein“",
+            "evidence_scope": "Schutzbereich des Art. 5 Abs. 1 S. 1 GG bezüglich der Äußerung über P als „verdammtes Bullenschwein“",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Äußerung ist als wertendes Urteil keinem objektiven Beweis zugänglich; grobe, verletzende, polemische oder geschmacklose Formulierungen sowie scharfe, emotionalisierte Kritik unterfallen dennoch dem Schutzbereich.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 32798,
+        "output_tokens": 4450,
+        "total_tokens": 37248,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 10273
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Beide geforderten Komponenten sind für die konkrete Äußerung über P ausdrücklich erfüllt; die Antwort verneint den Meinungscharakter nicht wegen der groben Wortwahl.",
+              "evidence": [
+                "Die Bezeichnungen des P als „verdammtes Bullenschwein“ ... sind wertende Urteile.",
+                "Dass die Formulierungen grob, verletzend, polemisch oder geschmacklos sind, nimmt ihnen nicht den Charakter als Meinung.",
+                "Art. 5 Abs. 1 Satz 1 GG schützt gerade auch scharfe und emotionalisierte Kritik."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Bezeichnung des P als „verdammtes Bullenschwein“ wird als wertende Stellungnahme eingeordnet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort erkennt an, dass auch polemische, emotionale oder ehrverletzende Werturteile grundsätzlich von Art. 5 Abs. 1 S. 1 Var. 1 GG erfasst werden.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Die Äußerung über P als Werturteil im Schutzbereich der Meinungsfreiheit nach Art. 5 Abs. 1 S. 1 Var. 1 GG.",
+                "evidence_scope": "Die Bezeichnung des P als „verdammtes Bullenschwein“ wird im Schutzbereich der Meinungsfreiheit als wertendes Urteil behandelt.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Bezeichnung ist eine wertende, nicht objektiv beweisbare Äußerung; grobe, verletzende oder polemische Wortwahl beseitigt den Meinungscharakter nicht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erfüllt beide PASS-Komponenten ausdrücklich: Sie ordnet die Bezeichnung des P als wertendes Urteil ein und bejaht den Schutz durch Art. 5 Abs. 1 Satz 1 GG trotz polemischer, emotionaler und ehrverletzender Wortwahl. Keine FAIL-Alternative wird als maßgebliche Position übernommen.",
+              "evidence": [
+                "Die Bezeichnungen des P als „verdammtes Bullenschwein“ und des Landes als „scheiß Nazistaat Sachsen-Anhalt“ sind wertende Urteile.",
+                "Dass die Formulierungen grob, verletzend, polemisch oder geschmacklos sind, nimmt ihnen nicht den Charakter als Meinung. Art. 5 Abs. 1 Satz 1 GG schützt gerade auch scharfe und emotionalisierte Kritik."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Bezeichnung des P als „verdammtes Bullenschwein“ wird als wertende Stellungnahme eingeordnet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Es wird anerkannt, dass polemische, emotionale oder ehrverletzende Werturteile grundsätzlich von Art. 5 Abs. 1 Satz 1 Var. 1 GG erfasst werden.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Äußerung über P als Werturteil im Rahmen der Meinungsfreiheit nach Art. 5 Abs. 1 Satz 1 GG",
+                "evidence_scope": "Bezeichnung des P als „verdammtes Bullenschwein“ als wertendes Urteil im Schutzbereich der Meinungsfreiheit nach Art. 5 Abs. 1 Satz 1 GG",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Äußerung sei ein wertendes Urteil, nicht objektiv beweisbar; grobe, verletzende, polemische oder geschmacklose Formulierungen nähmen den Meinungscharakter nicht, da Art. 5 Abs. 1 Satz 1 GG gerade auch scharfe und emotionalisierte Kritik schützt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Beide Anforderungen des Kriteriums sind ausdrücklich erfüllt, und keine der Ausschlussbedingungen liegt vor.",
+              "evidence": [
+                "Die Bezeichnungen des P als „verdammtes Bullenschwein“ und des Landes als „scheiß Nazistaat Sachsen-Anhalt“ sind wertende Urteile.",
+                "Dass die Formulierungen grob, verletzend, polemisch oder geschmacklos sind, nimmt ihnen nicht den Charakter als Meinung. Art. 5 Abs. 1 Satz 1 GG schützt gerade auch scharfe und emotionalisierte Kritik."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung der Bezeichnung des P als „verdammtes Bullenschwein“ als wertende Stellungnahme / Werturteil",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Anerkennung, dass auch polemische, emotionale oder ehrverletzende Werturteile grundsätzlich von Art. 5 Abs. 1 S. 1 Var. 1 GG erfasst werden",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Schutzbereich des Art. 5 Abs. 1 S. 1 GG bezüglich der Äußerung über P als „verdammtes Bullenschwein“",
+                "evidence_scope": "Schutzbereich des Art. 5 Abs. 1 S. 1 GG bezüglich der Äußerung über P als „verdammtes Bullenschwein“",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Äußerung ist als wertendes Urteil keinem objektiven Beweis zugänglich; grobe, verletzende, polemische oder geschmacklose Formulierungen sowie scharfe, emotionalisierte Kritik unterfallen dennoch dem Schutzbereich.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-009",
+      "title": "Unverschuldete krankheitsbedingte Fristversäumung",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort formuliert den Maßstab für die krankheitsbedingte Fristversäumung, verknüpft ihn mit S’ Depression und stationärer Behandlung und kommt zu einem Ergebnis zur Handlungsfähigkeit. Damit ist die Prüfung methodisch geschlossen.",
+      "evidence": [
+        "Eine Erkrankung begründet nicht schon als solche Wiedereinsetzung.",
+        "Sie muss so schwer sein, dass die betroffene Person weder selbst fristwahrend handeln noch einen Dritten mit der Wahrnehmung ihrer Rechte beauftragen kann.",
+        "Nach dem Sachverhalt war S gerade wegen dieser Beeinträchtigung nicht in der Lage, rechtzeitig tätig zu werden."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort formuliert den Maßstab für die krankheitsbedingte Fristversäumung, verknüpft ihn mit S’ Depression und stationärer Behandlung und kommt zu einem Ergebnis zur Handlungsfähigkeit. Damit ist die Prüfung methodisch geschlossen.",
+          "evidence": [
+            "Eine Erkrankung begründet nicht schon als solche Wiedereinsetzung.",
+            "Sie muss so schwer sein, dass die betroffene Person weder selbst fristwahrend handeln noch einen Dritten mit der Wahrnehmung ihrer Rechte beauftragen kann.",
+            "Nach dem Sachverhalt war S gerade wegen dieser Beeinträchtigung nicht in der Lage, rechtzeitig tätig zu werden."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort entwickelt im Abschnitt zur Wiedereinsetzung den einschlägigen Maßstab, verbindet ihn mit den konkreten Umständen der S und führt zu einem Ergebnis für die krankheitsbedingte Fristversäumung. Damit liegt eine funktionale rechtliche Prüfung vor.",
+          "evidence": [
+            "Eine Erkrankung begründet nicht schon als solche Wiedereinsetzung. Sie muss so schwer sein, dass die betroffene Person weder selbst fristwahrend handeln noch einen Dritten mit der Wahrnehmung ihrer Rechte beauftragen kann.",
+            "S war nach der Zustellung des Beschlusses aufgrund ihrer psychischen Verfassung zunächst zu deprimiert, um weitere rechtliche Schritte einzuleiten.",
+            "Nach dem Sachverhalt war S gerade wegen dieser Beeinträchtigung nicht in der Lage, rechtzeitig tätig zu werden.",
+            "Bei unverzüglicher Einreichung und hinreichender medizinischer Glaubhaftmachung hat ein Wiedereinsetzungsantrag gute Aussicht auf Erfolg."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort formuliert den zutreffenden Obersatz (Erkrankung muss so schwer sein, dass Handeln oder Beauftragung Dritter unmöglich ist), subsumiert darunter die handlungshemmende psychische Verfassung und den stationären Aufenthalt und zieht die entsprechende Schlussfolgerung.",
+          "evidence": [
+            "Eine Erkrankung begründet nicht schon als solche Wiedereinsetzung. Sie muss so schwer sein, dass die betroffene Person weder selbst fristwahrend handeln noch einen Dritten mit der Wahrnehmung ihrer Rechte beauftragen kann.",
+            "S war nach der Zustellung des Beschlusses aufgrund ihrer psychischen Verfassung zunächst zu deprimiert, um weitere rechtliche Schritte einzuleiten. Auf ärztlichen Rat begab sie sich zur Aufarbeitung ihres Traumas in eine vierwöchige stationäre Psychotherapie. Dies spricht für eine erhebliche und medizinisch behandlungsbedürftige psychische Beeinträchtigung. Nach dem Sachverhalt war S gerade wegen dieser Beeinträchtigung nicht in der Lage, rechtzeitig tätig zu werden."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort formuliert den Maßstab für die krankheitsbedingte Fristversäumung, verknüpft ihn mit S’ Depression und stationärer Behandlung und kommt zu einem Ergebnis zur Handlungsfähigkeit. Damit ist die Prüfung methodisch geschlossen.",
+              "evidence": [
+                "Eine Erkrankung begründet nicht schon als solche Wiedereinsetzung.",
+                "Sie muss so schwer sein, dass die betroffene Person weder selbst fristwahrend handeln noch einen Dritten mit der Wahrnehmung ihrer Rechte beauftragen kann.",
+                "Nach dem Sachverhalt war S gerade wegen dieser Beeinträchtigung nicht in der Lage, rechtzeitig tätig zu werden."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort entwickelt im Abschnitt zur Wiedereinsetzung den einschlägigen Maßstab, verbindet ihn mit den konkreten Umständen der S und führt zu einem Ergebnis für die krankheitsbedingte Fristversäumung. Damit liegt eine funktionale rechtliche Prüfung vor.",
+              "evidence": [
+                "Eine Erkrankung begründet nicht schon als solche Wiedereinsetzung. Sie muss so schwer sein, dass die betroffene Person weder selbst fristwahrend handeln noch einen Dritten mit der Wahrnehmung ihrer Rechte beauftragen kann.",
+                "S war nach der Zustellung des Beschlusses aufgrund ihrer psychischen Verfassung zunächst zu deprimiert, um weitere rechtliche Schritte einzuleiten.",
+                "Nach dem Sachverhalt war S gerade wegen dieser Beeinträchtigung nicht in der Lage, rechtzeitig tätig zu werden.",
+                "Bei unverzüglicher Einreichung und hinreichender medizinischer Glaubhaftmachung hat ein Wiedereinsetzungsantrag gute Aussicht auf Erfolg."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort formuliert den zutreffenden Obersatz (Erkrankung muss so schwer sein, dass Handeln oder Beauftragung Dritter unmöglich ist), subsumiert darunter die handlungshemmende psychische Verfassung und den stationären Aufenthalt und zieht die entsprechende Schlussfolgerung.",
+              "evidence": [
+                "Eine Erkrankung begründet nicht schon als solche Wiedereinsetzung. Sie muss so schwer sein, dass die betroffene Person weder selbst fristwahrend handeln noch einen Dritten mit der Wahrnehmung ihrer Rechte beauftragen kann.",
+                "S war nach der Zustellung des Beschlusses aufgrund ihrer psychischen Verfassung zunächst zu deprimiert, um weitere rechtliche Schritte einzuleiten. Auf ärztlichen Rat begab sie sich zur Aufarbeitung ihres Traumas in eine vierwöchige stationäre Psychotherapie. Dies spricht für eine erhebliche und medizinisch behandlungsbedürftige psychische Beeinträchtigung. Nach dem Sachverhalt war S gerade wegen dieser Beeinträchtigung nicht in der Lage, rechtzeitig tätig zu werden."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-023",
+      "title": "Äußerung über P als Werturteil",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort nennt den Maßstab für Meinungen, ordnet die konkrete Bezeichnung des P daran als wertendes Urteil ein und erklärt, weshalb grobe und emotionale Formulierungen den Schutz nicht ausschließen. Die Prüfung wird mit dem Ergebnis zum Schutzbereich abgeschlossen.",
+      "evidence": [
+        "Die Bezeichnungen des P als „verdammtes Bullenschwein“ ... sind wertende Urteile.",
+        "Dass die Formulierungen grob, verletzend, polemisch oder geschmacklos sind, nimmt ihnen nicht den Charakter als Meinung.",
+        "Art. 5 Abs. 1 Satz 1 GG schützt gerade auch scharfe und emotionalisierte Kritik."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort nennt den Maßstab für Meinungen, ordnet die konkrete Bezeichnung des P daran als wertendes Urteil ein und erklärt, weshalb grobe und emotionale Formulierungen den Schutz nicht ausschließen. Die Prüfung wird mit dem Ergebnis zum Schutzbereich abgeschlossen.",
+          "evidence": [
+            "Die Bezeichnungen des P als „verdammtes Bullenschwein“ ... sind wertende Urteile.",
+            "Dass die Formulierungen grob, verletzend, polemisch oder geschmacklos sind, nimmt ihnen nicht den Charakter als Meinung.",
+            "Art. 5 Abs. 1 Satz 1 GG schützt gerade auch scharfe und emotionalisierte Kritik."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft im Schutzbereich der Meinungsfreiheit spezifisch, ob die Bezeichnung des P als „verdammtes Bullenschwein“ ein wertendes Urteil ist, verknüpft dies mit dem Maßstab des Art. 5 Abs. 1 Satz 1 GG und gelangt zu dem Ergebnis, dass der Meinungscharakter trotz grober Wortwahl erhalten bleibt.",
+          "evidence": [
+            "Die Bezeichnungen des P als „verdammtes Bullenschwein“ und des Landes als „scheiß Nazistaat Sachsen-Anhalt“ sind wertende Urteile.",
+            "Dass die Formulierungen grob, verletzend, polemisch oder geschmacklos sind, nimmt ihnen nicht den Charakter als Meinung. Art. 5 Abs. 1 Satz 1 GG schützt gerade auch scharfe und emotionalisierte Kritik."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort definiert den verfassungsrechtlichen Meinungsbegriff, subsumiert die konkrete Äußerung über P darunter und begründet schlüssig, warum auch grobe und verletzende Formulierungen dem Schutzbereich unterfallen.",
+          "evidence": [
+            "Meinungen sind durch Elemente der Stellungnahme, des Dafürhaltens und der wertenden Beurteilung geprägt. Die Bezeichnungen des P als „verdammtes Bullenschwein“ und des Landes als „scheiß Nazistaat Sachsen-Anhalt“ sind wertende Urteile. Sie sind nicht einem objektiven Beweis zugänglich. Dass die Formulierungen grob, verletzend, polemisch oder geschmacklos sind, nimmt ihnen nicht den Charakter als Meinung."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort nennt den Maßstab für Meinungen, ordnet die konkrete Bezeichnung des P daran als wertendes Urteil ein und erklärt, weshalb grobe und emotionale Formulierungen den Schutz nicht ausschließen. Die Prüfung wird mit dem Ergebnis zum Schutzbereich abgeschlossen.",
+              "evidence": [
+                "Die Bezeichnungen des P als „verdammtes Bullenschwein“ ... sind wertende Urteile.",
+                "Dass die Formulierungen grob, verletzend, polemisch oder geschmacklos sind, nimmt ihnen nicht den Charakter als Meinung.",
+                "Art. 5 Abs. 1 Satz 1 GG schützt gerade auch scharfe und emotionalisierte Kritik."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft im Schutzbereich der Meinungsfreiheit spezifisch, ob die Bezeichnung des P als „verdammtes Bullenschwein“ ein wertendes Urteil ist, verknüpft dies mit dem Maßstab des Art. 5 Abs. 1 Satz 1 GG und gelangt zu dem Ergebnis, dass der Meinungscharakter trotz grober Wortwahl erhalten bleibt.",
+              "evidence": [
+                "Die Bezeichnungen des P als „verdammtes Bullenschwein“ und des Landes als „scheiß Nazistaat Sachsen-Anhalt“ sind wertende Urteile.",
+                "Dass die Formulierungen grob, verletzend, polemisch oder geschmacklos sind, nimmt ihnen nicht den Charakter als Meinung. Art. 5 Abs. 1 Satz 1 GG schützt gerade auch scharfe und emotionalisierte Kritik."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort definiert den verfassungsrechtlichen Meinungsbegriff, subsumiert die konkrete Äußerung über P darunter und begründet schlüssig, warum auch grobe und verletzende Formulierungen dem Schutzbereich unterfallen.",
+              "evidence": [
+                "Meinungen sind durch Elemente der Stellungnahme, des Dafürhaltens und der wertenden Beurteilung geprägt. Die Bezeichnungen des P als „verdammtes Bullenschwein“ und des Landes als „scheiß Nazistaat Sachsen-Anhalt“ sind wertende Urteile. Sie sind nicht einem objektiven Beweis zugänglich. Dass die Formulierungen grob, verletzend, polemisch oder geschmacklos sind, nimmt ihnen nicht den Charakter als Meinung."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

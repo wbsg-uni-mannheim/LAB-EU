@@ -1,0 +1,470 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/examensklausur-ehe-und-espresso",
+    "title": "Examensklausur: Ehe und Espresso"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__zivilrecht__schuldrecht__examensklausur-ehe-und-espresso/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/examensklausur-ehe-und-espresso/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:36:48.879493+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 2,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Aufgabe 2": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Aufgabe 2 › Anspruch der F gegen B aus § 985 BGB": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "conclusion": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 26448,
+    "output_tokens": 8898,
+    "total_tokens": 35346,
+    "cached_input_tokens": 1024,
+    "cache_write_tokens": 8183
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 26448,
+    "output_tokens": 8898,
+    "total_tokens": 35346,
+    "cached_input_tokens": 1024,
+    "cache_write_tokens": 8183
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-041",
+      "title": "Kein Recht der B zum Besitz",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort spricht B gegenüber F ausdrücklich ein Recht zum Besitz ab. Sie begründet dies jedoch nicht damit, dass F aus dem Kaufvertrag M–B nicht nach § 1357 Abs. 1 S. 2 BGB mitverpflichtet wurde; § 1357 wird an dieser Prüfungsstelle nicht behandelt. Die geforderte Begründung ist daher nicht vollständig.",
+      "evidence": [
+        "Ein schuldrechtliches Besitzrecht wirkt jedoch grundsätzlich nur gegenüber dem Vertragspartner und nicht gegenüber F.",
+        "Da F weder eingewilligt noch genehmigt hat, kann B daraus kein gegenüber F wirksames Recht zum Besitz herleiten."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort spricht B gegenüber F ausdrücklich ein Recht zum Besitz ab. Sie begründet dies jedoch nicht damit, dass F aus dem Kaufvertrag M–B nicht nach § 1357 Abs. 1 S. 2 BGB mitverpflichtet wurde; § 1357 wird an dieser Prüfungsstelle nicht behandelt. Die geforderte Begründung ist daher nicht vollständig.",
+          "evidence": [
+            "Ein schuldrechtliches Besitzrecht wirkt jedoch grundsätzlich nur gegenüber dem Vertragspartner und nicht gegenüber F.",
+            "Da F weder eingewilligt noch genehmigt hat, kann B daraus kein gegenüber F wirksames Recht zum Besitz herleiten."
+          ],
+          "component_checks": [
+            {
+              "requirement": "B gegenüber F ein Recht zum Besitz nach § 986 Abs. 1 S. 1 BGB absprechen",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die fehlende Besitzberechtigung damit begründen, dass der Kaufvertrag M–B unwirksam ist",
+              "satisfied": "Die Antwort stützt das Ergebnis auf fehlende Einwilligung nach § 1369 BGB, stellt aber nicht ausdrücklich fest, dass der Kaufvertrag M–B unwirksam ist.",
+              "basis": "implied"
+            },
+            {
+              "requirement": "Feststellen, dass F aus dem Kaufvertrag nicht nach § 1357 Abs. 1 S. 2 BGB mitverpflichtet wurde",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B gegenüber F: Recht zum Besitz nach § 986 Abs. 1 S. 1 BGB aus dem Kaufvertrag M–B und eine mögliche Mitverpflichtung der F nach § 1357 Abs. 1 S. 2 BGB.",
+            "evidence_scope": "B gegenüber F: Recht zum Besitz nach § 986 Abs. 1 S. 1 BGB aus dem Kaufvertrag M–B; die Antwort prüft die Wirkung des Vertrags relativ und die fehlende Einwilligung nach § 1369 BGB.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das schuldrechtliche Besitzrecht wirkt grundsätzlich nur gegenüber M als Vertragspartner; außerdem fehlt F's Einwilligung zur Verpflichtung des M zur Veräußerung des Haushaltsgegenstands nach § 1369 BGB.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort verneint zwar ein Besitzrecht der B gegenüber F nach § 986 Abs. 1 BGB, stützt dies aber auf die fehlende Wirkung des Vertrags zwischen M und B bzw. § 1369 BGB. Die im Kriterium verlangte Prüfung, dass F aus dem Kaufvertrag M–B nicht nach § 1357 Abs. 1 S. 2 BGB mitverpflichtet wurde, fehlt. Damit ist die PASS-Voraussetzung in ihrem spezifischen Begründungselement nicht erfüllt.",
+          "evidence": [
+            "B könnte ein Recht zum Besitz aus dem mit M geschlossenen Kaufvertrag haben. Ein schuldrechtliches Besitzrecht wirkt jedoch grundsätzlich nur gegenüber dem Vertragspartner und nicht gegenüber F.",
+            "Da F weder eingewilligt noch genehmigt hat, kann B daraus kein gegenüber F wirksames Recht zum Besitz herleiten.",
+            "B ist daher nicht nach § 986 Abs. 1 BGB zum Besitz gegenüber F berechtigt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort spricht B gegenüber F ein Recht zum Besitz nach § 986 Abs. 1 S. 1 BGB ab.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Sie stützt dies darauf, dass der Kaufvertrag M–B unwirksam ist.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Sie prüft, dass F daraus nicht nach § 1357 Abs. 1 S. 2 BGB mitverpflichtet wurde.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B gegenüber F; Recht zum Besitz nach § 986 Abs. 1 S. 1 BGB; Begründung: Unwirksamkeit des Kaufvertrags M–B und keine Mitverpflichtung der F nach § 1357 Abs. 1 S. 2 BGB",
+            "evidence_scope": "B gegenüber F; Recht zum Besitz nach § 986 Abs. 1 BGB; Begründung: Vertrag wirkt nur zwischen den Parteien und § 1369 BGB verlangt Einwilligung der F",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "B habe kein gegenüber F wirksames Besitzrecht, weil das schuldrechtliche Besitzrecht nur gegenüber dem Vertragspartner wirke und die Verpflichtung des M zur Veräußerung nach § 1369 BGB von der fehlenden Einwilligung der F abhänge.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort spricht B ein Recht zum Besitz gegenüber F nach § 986 Abs. 1 BGB ab und verweist auf die Unwirksamkeit des Verpflichtungsgeschäfts nach § 1369 Abs. 1 BGB. Sie prüft jedoch an keiner Stelle, ob F aus dem Kaufvertrag nach § 1357 Abs. 1 S. 2 BGB mitverpflichtet wurde. Diese im Kriterium ausdrücklich geforderte Komponente fehlt.",
+          "evidence": [
+            "B könnte ein Recht zum Besitz aus dem mit M geschlossenen Kaufvertrag haben. Ein schuldrechtliches Besitzrecht wirkt jedoch grundsätzlich nur gegenüber dem Vertragspartner und nicht gegenüber F. Außerdem war bereits die Verpflichtung des M zur Veräußerung des Haushaltsgegenstands nach § 1369 Abs. 1 BGB von der Einwilligung der F abhängig. Da F weder eingewilligt noch genehmigt hat, kann B daraus kein gegenüber F wirkendes Recht zum Besitz herleiten.",
+            "B ist daher nicht nach § 986 Abs. 1 BGB zum Besitz gegenüber F berechtigt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "B gegenüber F ein Recht zum Besitz nach § 986 Abs. 1 S. 1 BGB absprechen",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Begründung: Kaufvertrag M–B ist unwirksam",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Begründung: F wurde daraus nicht nach § 1357 Abs. 1 S. 2 BGB mitverpflichtet",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Aufgabe 2: Recht zum Besitz der B gegenüber F gem. § 986 Abs. 1 S. 1 BGB",
+            "evidence_scope": "Aufgabe 2: Recht zum Besitz der B gegenüber F gem. § 986 Abs. 1 BGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Relativität schuldrechtlicher Verträge und schwebende Unwirksamkeit des Verpflichtungsgeschäfts gem. § 1369 Abs. 1 BGB",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 26448,
+        "output_tokens": 8898,
+        "total_tokens": 35346,
+        "cached_input_tokens": 1024,
+        "cache_write_tokens": 8183
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort spricht B gegenüber F ausdrücklich ein Recht zum Besitz ab. Sie begründet dies jedoch nicht damit, dass F aus dem Kaufvertrag M–B nicht nach § 1357 Abs. 1 S. 2 BGB mitverpflichtet wurde; § 1357 wird an dieser Prüfungsstelle nicht behandelt. Die geforderte Begründung ist daher nicht vollständig.",
+              "evidence": [
+                "Ein schuldrechtliches Besitzrecht wirkt jedoch grundsätzlich nur gegenüber dem Vertragspartner und nicht gegenüber F.",
+                "Da F weder eingewilligt noch genehmigt hat, kann B daraus kein gegenüber F wirksames Recht zum Besitz herleiten."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "B gegenüber F ein Recht zum Besitz nach § 986 Abs. 1 S. 1 BGB absprechen",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die fehlende Besitzberechtigung damit begründen, dass der Kaufvertrag M–B unwirksam ist",
+                  "satisfied": "Die Antwort stützt das Ergebnis auf fehlende Einwilligung nach § 1369 BGB, stellt aber nicht ausdrücklich fest, dass der Kaufvertrag M–B unwirksam ist.",
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Feststellen, dass F aus dem Kaufvertrag nicht nach § 1357 Abs. 1 S. 2 BGB mitverpflichtet wurde",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B gegenüber F: Recht zum Besitz nach § 986 Abs. 1 S. 1 BGB aus dem Kaufvertrag M–B und eine mögliche Mitverpflichtung der F nach § 1357 Abs. 1 S. 2 BGB.",
+                "evidence_scope": "B gegenüber F: Recht zum Besitz nach § 986 Abs. 1 S. 1 BGB aus dem Kaufvertrag M–B; die Antwort prüft die Wirkung des Vertrags relativ und die fehlende Einwilligung nach § 1369 BGB.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das schuldrechtliche Besitzrecht wirkt grundsätzlich nur gegenüber M als Vertragspartner; außerdem fehlt F's Einwilligung zur Verpflichtung des M zur Veräußerung des Haushaltsgegenstands nach § 1369 BGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort verneint zwar ein Besitzrecht der B gegenüber F nach § 986 Abs. 1 BGB, stützt dies aber auf die fehlende Wirkung des Vertrags zwischen M und B bzw. § 1369 BGB. Die im Kriterium verlangte Prüfung, dass F aus dem Kaufvertrag M–B nicht nach § 1357 Abs. 1 S. 2 BGB mitverpflichtet wurde, fehlt. Damit ist die PASS-Voraussetzung in ihrem spezifischen Begründungselement nicht erfüllt.",
+              "evidence": [
+                "B könnte ein Recht zum Besitz aus dem mit M geschlossenen Kaufvertrag haben. Ein schuldrechtliches Besitzrecht wirkt jedoch grundsätzlich nur gegenüber dem Vertragspartner und nicht gegenüber F.",
+                "Da F weder eingewilligt noch genehmigt hat, kann B daraus kein gegenüber F wirksames Recht zum Besitz herleiten.",
+                "B ist daher nicht nach § 986 Abs. 1 BGB zum Besitz gegenüber F berechtigt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort spricht B gegenüber F ein Recht zum Besitz nach § 986 Abs. 1 S. 1 BGB ab.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Sie stützt dies darauf, dass der Kaufvertrag M–B unwirksam ist.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Sie prüft, dass F daraus nicht nach § 1357 Abs. 1 S. 2 BGB mitverpflichtet wurde.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B gegenüber F; Recht zum Besitz nach § 986 Abs. 1 S. 1 BGB; Begründung: Unwirksamkeit des Kaufvertrags M–B und keine Mitverpflichtung der F nach § 1357 Abs. 1 S. 2 BGB",
+                "evidence_scope": "B gegenüber F; Recht zum Besitz nach § 986 Abs. 1 BGB; Begründung: Vertrag wirkt nur zwischen den Parteien und § 1369 BGB verlangt Einwilligung der F",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "B habe kein gegenüber F wirksames Besitzrecht, weil das schuldrechtliche Besitzrecht nur gegenüber dem Vertragspartner wirke und die Verpflichtung des M zur Veräußerung nach § 1369 BGB von der fehlenden Einwilligung der F abhänge.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort spricht B ein Recht zum Besitz gegenüber F nach § 986 Abs. 1 BGB ab und verweist auf die Unwirksamkeit des Verpflichtungsgeschäfts nach § 1369 Abs. 1 BGB. Sie prüft jedoch an keiner Stelle, ob F aus dem Kaufvertrag nach § 1357 Abs. 1 S. 2 BGB mitverpflichtet wurde. Diese im Kriterium ausdrücklich geforderte Komponente fehlt.",
+              "evidence": [
+                "B könnte ein Recht zum Besitz aus dem mit M geschlossenen Kaufvertrag haben. Ein schuldrechtliches Besitzrecht wirkt jedoch grundsätzlich nur gegenüber dem Vertragspartner und nicht gegenüber F. Außerdem war bereits die Verpflichtung des M zur Veräußerung des Haushaltsgegenstands nach § 1369 Abs. 1 BGB von der Einwilligung der F abhängig. Da F weder eingewilligt noch genehmigt hat, kann B daraus kein gegenüber F wirkendes Recht zum Besitz herleiten.",
+                "B ist daher nicht nach § 986 Abs. 1 BGB zum Besitz gegenüber F berechtigt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "B gegenüber F ein Recht zum Besitz nach § 986 Abs. 1 S. 1 BGB absprechen",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung: Kaufvertrag M–B ist unwirksam",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung: F wurde daraus nicht nach § 1357 Abs. 1 S. 2 BGB mitverpflichtet",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Aufgabe 2: Recht zum Besitz der B gegenüber F gem. § 986 Abs. 1 S. 1 BGB",
+                "evidence_scope": "Aufgabe 2: Recht zum Besitz der B gegenüber F gem. § 986 Abs. 1 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Relativität schuldrechtlicher Verträge und schwebende Unwirksamkeit des Verpflichtungsgeschäfts gem. § 1369 Abs. 1 BGB",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": []
+}

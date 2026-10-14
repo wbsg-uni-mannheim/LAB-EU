@@ -1,0 +1,938 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung",
+    "title": "Fortgeschrittenenhausarbeit: „Kaufrausch mit Katerstimmung“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:28:11.368362+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 2,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.5,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 1,
+    "root_pass_rate": 0.5,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 1,
+    "points_available": 3,
+    "pass_rate": 0.3333333333333333,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Stehen M die geforderten 14.000 € zu?": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Hat M gegen S einen Anspruch auf Zahlung von 20.000 € oder sogar 30.000 €?": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Stehen M die geforderten 14.000 € zu? › Ansprüche auf Schadensersatz": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Hat M gegen S einen Anspruch auf Zahlung von 20.000 € oder sogar 30.000 €? › § 951 Abs. 1 S. 1 BGB i.V.m. Bereicherungsrecht": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "rule_statement": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "argumentation": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 56189,
+    "output_tokens": 10418,
+    "total_tokens": 66607,
+    "cached_input_tokens": 1792,
+    "cache_write_tokens": 17444
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 56189,
+    "output_tokens": 10418,
+    "total_tokens": 66607,
+    "cached_input_tokens": 1792,
+    "cache_write_tokens": 17444
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-010",
+      "title": "Schadensersatz nur in Höhe von 10.000 €",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort begrenzt den Schadensersatz aus §§ 989, 990 BGB ausdrücklich auf 10.000 € und schließt den Mehrerlös als Schaden aus. Die 14.000 € werden gesondert als Erlösherausgabe insbesondere aus § 816 Abs. 1 S. 1 BGB behandelt, nicht als Schadensersatz.",
+      "evidence": [
+        "Der Schadensersatz bemisst sich nach §§ 249 ff. BGB. M hat durch den Verlust des Eigentums einen Schaden in Höhe des Verkehrswerts der Hebebühne erlitten. Dieser beträgt laut Sachverhalt 10.000 €.",
+        "Ein entgangener Gewinn (§ 252 BGB) in Höhe des von S erzielten Mehrerlöses von 4.000 € ist nicht ersatzfähig, da M die Hebebühne nicht selbst zu diesem Preis verkauft hätte (er wollte sie in Zahlung geben).",
+        "Ein Anspruch aus §§ 989, 990 BGB besteht nur in Höhe von 10.000 €, nicht in der begehrten Höhe von 14.000 €.",
+        "§ 816 Abs. 1 S. 1 BGB gewährt eine rechtsgrundunabhängige Herausgabepflicht; S kann sich nicht auf einen etwaigen Rechtsgrund im Verhältnis zu M berufen."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort begrenzt den Schadensersatz aus §§ 989, 990 BGB ausdrücklich auf 10.000 € und schließt den Mehrerlös als Schaden aus. Die 14.000 € werden gesondert als Erlösherausgabe insbesondere aus § 816 Abs. 1 S. 1 BGB behandelt, nicht als Schadensersatz.",
+          "evidence": [
+            "Der Schadensersatz bemisst sich nach §§ 249 ff. BGB. M hat durch den Verlust des Eigentums einen Schaden in Höhe des Verkehrswerts der Hebebühne erlitten. Dieser beträgt laut Sachverhalt 10.000 €.",
+            "Ein entgangener Gewinn (§ 252 BGB) in Höhe des von S erzielten Mehrerlöses von 4.000 € ist nicht ersatzfähig, da M die Hebebühne nicht selbst zu diesem Preis verkauft hätte (er wollte sie in Zahlung geben).",
+            "Ein Anspruch aus §§ 989, 990 BGB besteht nur in Höhe von 10.000 €, nicht in der begehrten Höhe von 14.000 €.",
+            "§ 816 Abs. 1 S. 1 BGB gewährt eine rechtsgrundunabhängige Herausgabepflicht; S kann sich nicht auf einen etwaigen Rechtsgrund im Verhältnis zu M berufen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Erkennt, dass der Schadensersatzanspruch aus § 989 BGB nur den objektiven Verlust von 10.000 € ausgleicht.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Behandelt den Verkaufserlös von 14.000 € nicht als Schaden des M, sondern allenfalls als Gegenstand eines besonderen Erlösherausgabeanspruchs.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "M gegen S; Schadensersatz wegen der Veräußerung der Hebebühne, insbesondere aus § 989 BGB beziehungsweise §§ 687 Abs. 2 S. 1, 678 BGB.",
+            "evidence_scope": "M gegen S; Schadensersatz aus §§ 989, 990 BGB wegen des Verlusts der Hebebühne sowie gesonderte Erlösherausgabe aus § 816 Abs. 1 S. 1 BGB.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Schaden aus dem Eigentumsverlust bemisst sich nach dem Verkehrswert der Hebebühne von 10.000 €; der Mehrerlös ist kein ersatzfähiger entgangener Gewinn, da M nicht selbst zu diesem Preis verkauft hätte.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft den Schadensersatz aus §§ 989, 990 BGB und stellt ausdrücklich klar, dass dieser nur den objektiven Verlust der Hebebühne von 10.000 € umfasst und nicht den Verkaufserlös von 14.000 € abschöpft. Der Übererlös wird gerade nicht als Schaden des M behandelt, sondern nur über spezielle Herausgabeansprüche wie § 816 Abs. 1 S. 1 BGB erfasst. Damit ist das Kriterium erfüllt.",
+          "evidence": [
+            "Ein Anspruch aus §§ 989, 990 BGB besteht nur in Höhe von 10.000 €, nicht in der begehrten Höhe von 14.000 €.",
+            "Ein entgangener Gewinn (§ 252 BGB) in Höhe des von S erzielten Mehrerlöses von 4.000 € ist nicht ersatzfähig"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort erkennt, dass Schadensersatz aus § 989 BGB nur den objektiven Verlust von 10.000 € ausgleicht.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort behandelt den Verkaufserlös von 14.000 € nicht als ersatzfähigen Schaden des M.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Schadensersatzanspruch des M gegen S aus §§ 687 Abs. 2 S. 1, 678 BGB oder § 989 BGB wegen der Hebebühne; nur objektiver Verlust 10.000 € statt Verkaufserlös 14.000 €.",
+            "evidence_scope": "Schadensersatz aus §§ 989, 990 BGB im Verhältnis M/S wegen der Hebebühne; Begrenzung auf 10.000 € und Ablehnung des Mehrerlöses als Schaden.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "§§ 989, 990 BGB ersetzen nur den tatsächlichen Schaden in Höhe des Verkehrswerts von 10.000 €; der Mehrerlös von 4.000 € ist kein ersatzfähiger entgangener Gewinn.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Falllösung prüft §§ 989, 990 BGB und stellt dort ausdrücklich fest, dass der Schadensersatzanspruch auf den objektiven Verkehrswert von 10.000 € beschränkt ist und der Mehrerlös von 4.000 € (bzw. der Gesamterlös von 14.000 €) nicht als Schaden verlangt werden kann.",
+          "evidence": [
+            "M hat durch den Verlust des Eigentums einen Schaden in Höhe des Verkehrswerts der Hebebühne erlitten. Dieser beträgt laut Sachverhalt 10.000 €. Ein entgangener Gewinn (§ 252 BGB) in Höhe des von S erzielten Mehrerlöses von 4.000 € ist nicht ersatzfähig",
+            "Ein Anspruch aus §§ 989, 990 BGB besteht nur in Höhe von 10.000 €, nicht in der begehrten Höhe von 14.000 €."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Erkenntnis, dass Schadensersatz aus §§ 687 Abs. 2 S. 1, 678 BGB oder § 989 BGB nur den objektiven Verlust von 10.000 € ausgleicht und nicht den Verkaufserlös von 14.000 € abschöpft",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Schadensumfang bei §§ 687 Abs. 2 S. 1, 678 BGB oder § 989 BGB bezüglich der Hebebühne (10.000 € vs. 14.000 €)",
+            "evidence_scope": "Schadensumfang bei §§ 989, 990 BGB bezüglich der Hebebühne (10.000 € vs. 14.000 €)",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Schaden bemisst sich nach §§ 249 ff. BGB am Verkehrswert von 10.000 €; der Mehrerlös von 4.000 € ist kein ersatzfähiger Schaden, sodass der Anspruch nur i.H.v. 10.000 € besteht.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 27669,
+        "output_tokens": 3852,
+        "total_tokens": 31521,
+        "cached_input_tokens": 1024,
+        "cache_write_tokens": 8585
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort begrenzt den Schadensersatz aus §§ 989, 990 BGB ausdrücklich auf 10.000 € und schließt den Mehrerlös als Schaden aus. Die 14.000 € werden gesondert als Erlösherausgabe insbesondere aus § 816 Abs. 1 S. 1 BGB behandelt, nicht als Schadensersatz.",
+              "evidence": [
+                "Der Schadensersatz bemisst sich nach §§ 249 ff. BGB. M hat durch den Verlust des Eigentums einen Schaden in Höhe des Verkehrswerts der Hebebühne erlitten. Dieser beträgt laut Sachverhalt 10.000 €.",
+                "Ein entgangener Gewinn (§ 252 BGB) in Höhe des von S erzielten Mehrerlöses von 4.000 € ist nicht ersatzfähig, da M die Hebebühne nicht selbst zu diesem Preis verkauft hätte (er wollte sie in Zahlung geben).",
+                "Ein Anspruch aus §§ 989, 990 BGB besteht nur in Höhe von 10.000 €, nicht in der begehrten Höhe von 14.000 €.",
+                "§ 816 Abs. 1 S. 1 BGB gewährt eine rechtsgrundunabhängige Herausgabepflicht; S kann sich nicht auf einen etwaigen Rechtsgrund im Verhältnis zu M berufen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erkennt, dass der Schadensersatzanspruch aus § 989 BGB nur den objektiven Verlust von 10.000 € ausgleicht.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Behandelt den Verkaufserlös von 14.000 € nicht als Schaden des M, sondern allenfalls als Gegenstand eines besonderen Erlösherausgabeanspruchs.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "M gegen S; Schadensersatz wegen der Veräußerung der Hebebühne, insbesondere aus § 989 BGB beziehungsweise §§ 687 Abs. 2 S. 1, 678 BGB.",
+                "evidence_scope": "M gegen S; Schadensersatz aus §§ 989, 990 BGB wegen des Verlusts der Hebebühne sowie gesonderte Erlösherausgabe aus § 816 Abs. 1 S. 1 BGB.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Schaden aus dem Eigentumsverlust bemisst sich nach dem Verkehrswert der Hebebühne von 10.000 €; der Mehrerlös ist kein ersatzfähiger entgangener Gewinn, da M nicht selbst zu diesem Preis verkauft hätte.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft den Schadensersatz aus §§ 989, 990 BGB und stellt ausdrücklich klar, dass dieser nur den objektiven Verlust der Hebebühne von 10.000 € umfasst und nicht den Verkaufserlös von 14.000 € abschöpft. Der Übererlös wird gerade nicht als Schaden des M behandelt, sondern nur über spezielle Herausgabeansprüche wie § 816 Abs. 1 S. 1 BGB erfasst. Damit ist das Kriterium erfüllt.",
+              "evidence": [
+                "Ein Anspruch aus §§ 989, 990 BGB besteht nur in Höhe von 10.000 €, nicht in der begehrten Höhe von 14.000 €.",
+                "Ein entgangener Gewinn (§ 252 BGB) in Höhe des von S erzielten Mehrerlöses von 4.000 € ist nicht ersatzfähig"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort erkennt, dass Schadensersatz aus § 989 BGB nur den objektiven Verlust von 10.000 € ausgleicht.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort behandelt den Verkaufserlös von 14.000 € nicht als ersatzfähigen Schaden des M.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Schadensersatzanspruch des M gegen S aus §§ 687 Abs. 2 S. 1, 678 BGB oder § 989 BGB wegen der Hebebühne; nur objektiver Verlust 10.000 € statt Verkaufserlös 14.000 €.",
+                "evidence_scope": "Schadensersatz aus §§ 989, 990 BGB im Verhältnis M/S wegen der Hebebühne; Begrenzung auf 10.000 € und Ablehnung des Mehrerlöses als Schaden.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "§§ 989, 990 BGB ersetzen nur den tatsächlichen Schaden in Höhe des Verkehrswerts von 10.000 €; der Mehrerlös von 4.000 € ist kein ersatzfähiger entgangener Gewinn.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Falllösung prüft §§ 989, 990 BGB und stellt dort ausdrücklich fest, dass der Schadensersatzanspruch auf den objektiven Verkehrswert von 10.000 € beschränkt ist und der Mehrerlös von 4.000 € (bzw. der Gesamterlös von 14.000 €) nicht als Schaden verlangt werden kann.",
+              "evidence": [
+                "M hat durch den Verlust des Eigentums einen Schaden in Höhe des Verkehrswerts der Hebebühne erlitten. Dieser beträgt laut Sachverhalt 10.000 €. Ein entgangener Gewinn (§ 252 BGB) in Höhe des von S erzielten Mehrerlöses von 4.000 € ist nicht ersatzfähig",
+                "Ein Anspruch aus §§ 989, 990 BGB besteht nur in Höhe von 10.000 €, nicht in der begehrten Höhe von 14.000 €."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erkenntnis, dass Schadensersatz aus §§ 687 Abs. 2 S. 1, 678 BGB oder § 989 BGB nur den objektiven Verlust von 10.000 € ausgleicht und nicht den Verkaufserlös von 14.000 € abschöpft",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Schadensumfang bei §§ 687 Abs. 2 S. 1, 678 BGB oder § 989 BGB bezüglich der Hebebühne (10.000 € vs. 14.000 €)",
+                "evidence_scope": "Schadensumfang bei §§ 989, 990 BGB bezüglich der Hebebühne (10.000 € vs. 14.000 €)",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Schaden bemisst sich nach §§ 249 ff. BGB am Verkehrswert von 10.000 €; der Mehrerlös von 4.000 € ist kein ersatzfähiger Schaden, sodass der Anspruch nur i.H.v. 10.000 € besteht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-040",
+      "title": "Keine EBV-Sperre gegenüber § 951 BGB",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort verneint keine EBV-Sperre gegenüber § 951 BGB aus dem geforderten Grund. Sie behandelt dort stattdessen den Vorrang der Leistungskondiktion; die Erörterung des EBV bezieht sich auf eine andere Anspruchskonkurrenz.",
+      "evidence": [
+        "Da M an S geleistet hat (siehe oben A.II.), ist die Eingriffskondiktion grundsätzlich gesperrt.",
+        "Das Verhältnis der mietrechtlichen Verwendungsersatzregelung (§ 539 BGB) zum EBV ist umstritten."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort verneint keine EBV-Sperre gegenüber § 951 BGB aus dem geforderten Grund. Sie behandelt dort stattdessen den Vorrang der Leistungskondiktion; die Erörterung des EBV bezieht sich auf eine andere Anspruchskonkurrenz.",
+          "evidence": [
+            "Da M an S geleistet hat (siehe oben A.II.), ist die Eingriffskondiktion grundsätzlich gesperrt.",
+            "Das Verhältnis der mietrechtlichen Verwendungsersatzregelung (§ 539 BGB) zum EBV ist umstritten."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort verneint eine Sperrwirkung der §§ 994 ff. BGB gegenüber § 951 Abs. 1 S. 1 BGB.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Antwort begründet dies damit, dass mangels Vindikationslage der Anwendungsbereich der EBV-Verwendungsersatzregeln nicht eröffnet ist.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Anspruch des M gegen S aus § 951 Abs. 1 S. 1 BGB; Frage einer EBV-Sperre mangels Vindikationslage",
+            "evidence_scope": "Bei § 951 BGB wird der Vorrang der Leistungskondiktion behandelt; die EBV-Erörterung betrifft das Verhältnis von § 539 BGB zu § 996 BGB.",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Eingriffskondiktion soll der Vorrang der Leistungskondiktion entgegenstehen, weil M an S geleistet habe.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt § 951 Abs. 1 S. 1 BGB nur unter dem Gesichtspunkt der Subsidiarität der Eingriffskondiktion und verdrängt ihn durch die Leistungskondiktion. Sie verneint die EBV-Sperre nicht mit fehlender Vindikationslage; diese Begründung fehlt. Die späteren EBV-Ausführungen betreffen § 996 BGB / mietrechtlichen Verwendungsersatz, nicht die Sperrwirkung gegenüber § 951 BGB.",
+          "evidence": [
+            "Nach der herrschenden Subsidiaritätslehre hat die Leistungskondiktion Vorrang vor der Eingriffskondiktion. Da M an S geleistet hat (siehe oben A.II.), ist die Eingriffskondiktion grundsätzlich gesperrt.",
+            "Der Anspruch aus § 812 Abs. 1 S. 2 Alt. 2 BGB verdrängt als vorrangige Leistungskondiktion den Anspruch aus § 951 Abs. 1 S. 1 BGB."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort verneint eine Sperrwirkung der §§ 994 ff. BGB gegenüber § 951 Abs. 1 S. 1 BGB.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Sie stützt dies darauf, dass mangels Vindikationslage der Anwendungsbereich des EBV-Verwendungsersatzes nicht eröffnet ist.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "§ 951 Abs. 1 S. 1 BGB; Verhältnis zu §§ 994 ff. BGB (EBV-Verwendungsersatz), konkret: keine EBV-Sperre mangels Vindikationslage",
+            "evidence_scope": "§ 951 Abs. 1 S. 1 BGB wird nur gegenüber § 812 Abs. 1 S. 1 Alt. 2 BGB (Leistungskondiktion) behandelt; EBV wird später bei § 996 BGB erörtert.",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Vorrang/Subsidiarität der Leistungskondiktion bzw. Verdrängung des § 951 Abs. 1 S. 1 BGB durch § 812 Abs. 1 S. 2 Alt. 2 BGB.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Kriterium ist nicht erfüllt, da die Frage einer EBV-Sperre gegenüber § 951 BGB im Gutachten überhaupt nicht erörtert wird. Die Ablehnung bzw. Zurückstellung von § 951 BGB erfolgt allein aufgrund des Vorrangs der Leistungskondiktion.",
+          "evidence": [
+            "Der Anspruch aus § 812 Abs. 1 S. 2 Alt. 2 BGB verdrängt als vorrangige Leistungskondiktion den Anspruch aus § 951 Abs. 1 S. 1 BGB."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Verneinung einer Sperrwirkung der §§ 994 ff. BGB gegenüber § 951 Abs. 1 S. 1 BGB",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Begründung durch Fehlen einer Vindikationslage (kein Anwendungsbereich des EBV)",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Verhältnis von §§ 994 ff. BGB zu § 951 BGB bei Verwendungen durch M auf das Grundstück des S",
+            "evidence_scope": "Prüfung von § 951 BGB nur im Hinblick auf den Vorrang der Leistungskondiktion",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 28520,
+        "output_tokens": 6566,
+        "total_tokens": 35086,
+        "cached_input_tokens": 768,
+        "cache_write_tokens": 8859
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort verneint keine EBV-Sperre gegenüber § 951 BGB aus dem geforderten Grund. Sie behandelt dort stattdessen den Vorrang der Leistungskondiktion; die Erörterung des EBV bezieht sich auf eine andere Anspruchskonkurrenz.",
+              "evidence": [
+                "Da M an S geleistet hat (siehe oben A.II.), ist die Eingriffskondiktion grundsätzlich gesperrt.",
+                "Das Verhältnis der mietrechtlichen Verwendungsersatzregelung (§ 539 BGB) zum EBV ist umstritten."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort verneint eine Sperrwirkung der §§ 994 ff. BGB gegenüber § 951 Abs. 1 S. 1 BGB.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Antwort begründet dies damit, dass mangels Vindikationslage der Anwendungsbereich der EBV-Verwendungsersatzregeln nicht eröffnet ist.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Anspruch des M gegen S aus § 951 Abs. 1 S. 1 BGB; Frage einer EBV-Sperre mangels Vindikationslage",
+                "evidence_scope": "Bei § 951 BGB wird der Vorrang der Leistungskondiktion behandelt; die EBV-Erörterung betrifft das Verhältnis von § 539 BGB zu § 996 BGB.",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Eingriffskondiktion soll der Vorrang der Leistungskondiktion entgegenstehen, weil M an S geleistet habe.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort behandelt § 951 Abs. 1 S. 1 BGB nur unter dem Gesichtspunkt der Subsidiarität der Eingriffskondiktion und verdrängt ihn durch die Leistungskondiktion. Sie verneint die EBV-Sperre nicht mit fehlender Vindikationslage; diese Begründung fehlt. Die späteren EBV-Ausführungen betreffen § 996 BGB / mietrechtlichen Verwendungsersatz, nicht die Sperrwirkung gegenüber § 951 BGB.",
+              "evidence": [
+                "Nach der herrschenden Subsidiaritätslehre hat die Leistungskondiktion Vorrang vor der Eingriffskondiktion. Da M an S geleistet hat (siehe oben A.II.), ist die Eingriffskondiktion grundsätzlich gesperrt.",
+                "Der Anspruch aus § 812 Abs. 1 S. 2 Alt. 2 BGB verdrängt als vorrangige Leistungskondiktion den Anspruch aus § 951 Abs. 1 S. 1 BGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort verneint eine Sperrwirkung der §§ 994 ff. BGB gegenüber § 951 Abs. 1 S. 1 BGB.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Sie stützt dies darauf, dass mangels Vindikationslage der Anwendungsbereich des EBV-Verwendungsersatzes nicht eröffnet ist.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "§ 951 Abs. 1 S. 1 BGB; Verhältnis zu §§ 994 ff. BGB (EBV-Verwendungsersatz), konkret: keine EBV-Sperre mangels Vindikationslage",
+                "evidence_scope": "§ 951 Abs. 1 S. 1 BGB wird nur gegenüber § 812 Abs. 1 S. 1 Alt. 2 BGB (Leistungskondiktion) behandelt; EBV wird später bei § 996 BGB erörtert.",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Vorrang/Subsidiarität der Leistungskondiktion bzw. Verdrängung des § 951 Abs. 1 S. 1 BGB durch § 812 Abs. 1 S. 2 Alt. 2 BGB.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium ist nicht erfüllt, da die Frage einer EBV-Sperre gegenüber § 951 BGB im Gutachten überhaupt nicht erörtert wird. Die Ablehnung bzw. Zurückstellung von § 951 BGB erfolgt allein aufgrund des Vorrangs der Leistungskondiktion.",
+              "evidence": [
+                "Der Anspruch aus § 812 Abs. 1 S. 2 Alt. 2 BGB verdrängt als vorrangige Leistungskondiktion den Anspruch aus § 951 Abs. 1 S. 1 BGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Verneinung einer Sperrwirkung der §§ 994 ff. BGB gegenüber § 951 Abs. 1 S. 1 BGB",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Begründung durch Fehlen einer Vindikationslage (kein Anwendungsbereich des EBV)",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Verhältnis von §§ 994 ff. BGB zu § 951 BGB bei Verwendungen durch M auf das Grundstück des S",
+                "evidence_scope": "Prüfung von § 951 BGB nur im Hinblick auf den Vorrang der Leistungskondiktion",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-040",
+      "title": "Keine EBV-Sperre gegenüber § 951 BGB",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort wendet für den Anspruch aus § 951 BGB zwar eine andere Sperre – den Vorrang der Leistungskondiktion – auf konkrete Tatsachen an. Eine Prüfung der EBV-Sperre wegen fehlender Vindikationslage enthält sie an dieser Prüfungsstelle nicht; die Erörterung des EBV an anderer Stelle betrifft § 539 BGB und § 996 BGB.",
+      "evidence": [
+        "Da M an S geleistet hat (siehe oben A.II.), ist die Eingriffskondiktion grundsätzlich gesperrt.",
+        "Der Anspruch aus § 812 Abs. 1 S. 2 Alt. 2 BGB verdrängt als vorrangige Leistungskondiktion den Anspruch aus § 951 Abs. 1 BGB."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort wendet für den Anspruch aus § 951 BGB zwar eine andere Sperre – den Vorrang der Leistungskondiktion – auf konkrete Tatsachen an. Eine Prüfung der EBV-Sperre wegen fehlender Vindikationslage enthält sie an dieser Prüfungsstelle nicht; die Erörterung des EBV an anderer Stelle betrifft § 539 BGB und § 996 BGB.",
+          "evidence": [
+            "Da M an S geleistet hat (siehe oben A.II.), ist die Eingriffskondiktion grundsätzlich gesperrt.",
+            "Der Anspruch aus § 812 Abs. 1 S. 2 Alt. 2 BGB verdrängt als vorrangige Leistungskondiktion den Anspruch aus § 951 Abs. 1 BGB."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft § 951 Abs. 1 S. 1 BGB, verneint den Anspruch aber wegen Vorrangs der Leistungskondiktion, nicht wegen einer EBV-Sperre. Eine eigene Linie zum Nichtbestehen der EBV-Sperre mangels Vindikationslage fehlt; die EBV-Erörterung bei § 996 betrifft eine andere Frage. Damit fehlt der criteriumsspezifische Maßstab und Abschluss.",
+          "evidence": [
+            "Nach der herrschenden Subsidiaritätslehre hat die Leistungskondiktion Vorrang vor der Eingriffskondiktion. Da M an S geleistet hat (siehe oben A.II.), ist die Eingriffskondiktion grundsätzlich gesperrt.",
+            "Der Anspruch aus § 812 Abs. 1 S. 2 Alt. 2 BGB verdrängt als vorrangige Leistungskondiktion den Anspruch aus § 951 Abs. 1 S. 1 BGB."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort thematisiert bei § 951 BGB lediglich den Vorrang der Leistungskondiktion, prüft aber an keiner Stelle das Verhältnis zwischen den §§ 994 ff. BGB und § 951 BGB (EBV-Sperre). Eine methodische Prüfung anhand eines diesbezüglichen Obersatzes und konkreter Subsumtion fehlt völlig.",
+          "evidence": [
+            "Nach der herrschenden Subsidiaritätslehre hat die Leistungskondiktion Vorrang vor der Eingriffskondiktion. Da M an S geleistet hat (siehe oben A.II.), ist die Eingriffskondiktion grundsätzlich gesperrt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort wendet für den Anspruch aus § 951 BGB zwar eine andere Sperre – den Vorrang der Leistungskondiktion – auf konkrete Tatsachen an. Eine Prüfung der EBV-Sperre wegen fehlender Vindikationslage enthält sie an dieser Prüfungsstelle nicht; die Erörterung des EBV an anderer Stelle betrifft § 539 BGB und § 996 BGB.",
+              "evidence": [
+                "Da M an S geleistet hat (siehe oben A.II.), ist die Eingriffskondiktion grundsätzlich gesperrt.",
+                "Der Anspruch aus § 812 Abs. 1 S. 2 Alt. 2 BGB verdrängt als vorrangige Leistungskondiktion den Anspruch aus § 951 Abs. 1 BGB."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft § 951 Abs. 1 S. 1 BGB, verneint den Anspruch aber wegen Vorrangs der Leistungskondiktion, nicht wegen einer EBV-Sperre. Eine eigene Linie zum Nichtbestehen der EBV-Sperre mangels Vindikationslage fehlt; die EBV-Erörterung bei § 996 betrifft eine andere Frage. Damit fehlt der criteriumsspezifische Maßstab und Abschluss.",
+              "evidence": [
+                "Nach der herrschenden Subsidiaritätslehre hat die Leistungskondiktion Vorrang vor der Eingriffskondiktion. Da M an S geleistet hat (siehe oben A.II.), ist die Eingriffskondiktion grundsätzlich gesperrt.",
+                "Der Anspruch aus § 812 Abs. 1 S. 2 Alt. 2 BGB verdrängt als vorrangige Leistungskondiktion den Anspruch aus § 951 Abs. 1 S. 1 BGB."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort thematisiert bei § 951 BGB lediglich den Vorrang der Leistungskondiktion, prüft aber an keiner Stelle das Verhältnis zwischen den §§ 994 ff. BGB und § 951 BGB (EBV-Sperre). Eine methodische Prüfung anhand eines diesbezüglichen Obersatzes und konkreter Subsumtion fehlt völlig.",
+              "evidence": [
+                "Nach der herrschenden Subsidiaritätslehre hat die Leistungskondiktion Vorrang vor der Eingriffskondiktion. Da M an S geleistet hat (siehe oben A.II.), ist die Eingriffskondiktion grundsätzlich gesperrt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

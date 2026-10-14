@@ -1,0 +1,808 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-wertpapier-werkstatt-und-weed",
+    "title": "Fortgeschrittenenklausur: Wertpapier, Werkstatt und Weed"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenklausur-wertpapier-werkstatt-und-weed/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-wertpapier-werkstatt-und-weed/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:33:08.282587+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Ansprüche des R gegen S (Reparaturkosten)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Ansprüche des R gegen S (Reparaturkosten) › Anspruch des R gegen S auf Schadensersatz aus §§ 634 Nr. 4, 280 Abs. 1 und 3, 281 Abs. 1 S. 1 BGB (Ersatzkette)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 19827,
+    "output_tokens": 8684,
+    "total_tokens": 28511,
+    "cached_input_tokens": 17394,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 19827,
+    "output_tokens": 8684,
+    "total_tokens": 28511,
+    "cached_input_tokens": 17394,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-026",
+      "title": "Abwarten der Betriebsferien zumutbar",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort bewertet genau das Abwarten der einwöchigen Betriebsferien als zumutbar und verneint eine Unzumutbarkeit der Nacherfüllung. Sie stützt dies auf fehlende besondere Dringlichkeit bzw. Eilbedürftigkeit beim Rennrad und nimmt keinen unbegründeten Notfall an.",
+      "evidence": [
+        "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar.",
+        "Sie verhinderten nur eine sofortige Reparatur; R hätte S nach Ende der Betriebsferien eine angemessene Frist setzen können.",
+        "Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort gelangt zwar ausdrücklich zu dem Ergebnis, dass das Abwarten zumutbar war, nennt aber weder den Freizeitzweck des Rennrads noch einen begründeten Kompetenzverlust gegenüber A. Die verlangte Begründung ist daher nicht vollständig erfüllt.",
+          "evidence": [
+            "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar.",
+            "Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Das Abwarten der einwöchigen Betriebsferien wird als zumutbar bewertet.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Zumutbarkeit wird damit begründet, dass das Rennrad nur Freizeitzwecken diente.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Eine besondere Dringlichkeit oder ein begründeter Kompetenzverlust gegenüber A wird ausgeschlossen.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "R gegen S; Zumutbarkeit des Abwartens der einwöchigen Betriebsferien bei der Nacherfüllung wegen der Kettenmontage",
+            "evidence_scope": "R gegen S; Zumutbarkeit der Nacherfüllung und der Fristsetzung nach den Betriebsferien",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Ferien verhinderten nur eine sofortige Reparatur; R hätte danach eine angemessene Frist setzen können. Besondere Umstände wie berufliche Angewiesenheit oder sonstige Eilbedürftigkeit seien nicht mitgeteilt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bewertet genau das Abwarten der einwöchigen Betriebsferien als zumutbar und verneint eine Unzumutbarkeit der Nacherfüllung. Sie stützt dies auf fehlende besondere Dringlichkeit bzw. Eilbedürftigkeit beim Rennrad und nimmt keinen unbegründeten Notfall an.",
+          "evidence": [
+            "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar.",
+            "Sie verhinderten nur eine sofortige Reparatur; R hätte S nach Ende der Betriebsferien eine angemessene Frist setzen können.",
+            "Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Das Abwarten der einwöchigen Betriebsferien wird als zumutbar bzw. die Nacherfüllung nicht als unzumutbar bewertet.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Zumutbarkeit wird auf das Rennrad und das Fehlen besonderer Dringlichkeit, beruflicher Angewiesenheit oder Eilbedürftigkeit gestützt.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Werkvertraglicher Ersatz der 400 € für die Kettenmontage zwischen R und S; Zumutbarkeit des Abwartens der einwöchigen Betriebsferien für die Nacherfüllung.",
+            "evidence_scope": "Prüfung der Fristsetzung und Unzumutbarkeit der Nacherfüllung im Rahmen des Anspruchs auf Ersatz der 400 € gegen S.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Betriebsferien verhindern nur eine sofortige Reparatur; R hätte danach eine Frist setzen können, und besondere Umstände wie berufliche Angewiesenheit oder Eilbedürftigkeit bei einem Rennrad sind nicht mitgeteilt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Das Abwarten der Betriebsferien wird ausdrücklich als zumutbar bewertet, da keine Eilbedürftigkeit oder berufliche Angewiesenheit auf das Rennrad vorliegt. Es wird kein unbegründeter Notfall angenommen.",
+          "evidence": [
+            "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar. Sie verhinderten nur eine sofortige Reparatur; R hätte S nach Ende der Betriebsferien eine angemessene Frist setzen können. Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bewertung des Abwartens der einwöchigen Betriebsferien als zumutbar",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Begründung mit fehlender besonderer Eilbedürftigkeit / Freizeitzweck des Rennrads",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "R gegen S, Entbehrlichkeit der Fristsetzung wegen Unzumutbarkeit bei Betriebsferien",
+            "evidence_scope": "R gegen S, Entbehrlichkeit der Fristsetzung wegen Unzumutbarkeit bei Betriebsferien",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Betriebsferien verhinderten nur eine sofortige Reparatur; besondere Umstände wie eine berufliche Angewiesenheit auf das Rennrad oder sonstige Eilbedürftigkeit sind nicht ersichtlich.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 19827,
+        "output_tokens": 8684,
+        "total_tokens": 28511,
+        "cached_input_tokens": 17394,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort kommt zwar zum geforderten Ergebnis und verneint eine besondere Dringlichkeit. Sie stellt aber weder fest, dass das Rennrad nur Freizeitzwecken diente, noch prüft sie einen möglichen begründeten Kompetenzverlust gegenüber A. Damit fehlt ein Teil der im Kriterium verlangten Begründung.",
+              "evidence": [
+                "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar.",
+                "Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt.",
+                "Die gesetzlich geschützte zweite Andienungschance der S geht daher vor."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Das Abwarten der einwöchigen Betriebsferien wird als zumutbar bewertet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Zumutbarkeit wird damit begründet, dass das Rennrad nur Freizeitzwecken diente.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Es bestand keine besondere Dringlichkeit.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Es bestand kein begründeter Kompetenzverlust gegenüber A.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Es wird kein sachverhaltsfremder Notfall oder keine unzumutbare Nutzungseinschränkung angenommen.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "R; Zumutbarkeit des Abwartens der einwöchigen Betriebsferien bei der Nacherfüllung durch S im Zusammenhang mit dem Anspruch auf Ersatz der Kettenmontagekosten",
+                "evidence_scope": "R; Zumutbarkeit des Abwartens der Betriebsferien und Fristsetzung zur Nacherfüllung gegenüber S hinsichtlich der Kettenmontagekosten",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Betriebsferien verhinderten nur eine sofortige Reparatur; eine besondere Dringlichkeit oder berufliche Angewiesenheit sei nicht mitgeteilt, und R hätte nach Ende der Betriebsferien eine angemessene Frist setzen können.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bewertet das Abwarten der einwöchigen Betriebsferien ausdrücklich als zumutbar und stützt dies darauf, dass nur eine sofortige Reparatur verhindert wurde und keine besondere Dringlichkeit oder berufliche Angewiesenheit bestand. Damit ist die im Kriterium verlangte Zumutbarkeitsbewertung erfüllt; ein Notfall oder eine unzumutbare Nutzungseinschränkung wird nicht angenommen.",
+              "evidence": [
+                "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar.",
+                "Sie verhinderten nur eine sofortige Reparatur; R hätte S nach Ende der Betriebsferien eine angemessene Frist setzen können.",
+                "Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Abwarten der einwöchigen Betriebsferien wird als zumutbar bewertet",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Keine besondere Dringlichkeit bzw. kein beruflicher/notwendiger Nutzungsbedarf, der das Abwarten unzumutbar machen würde",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Kein Notfall oder unzumutbare Nutzungseinschränkung wird ohne Sachverhaltsgrundlage angenommen",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "R gegen S, Werkvertrag/Nacherfüllung, Zumutbarkeit des Abwartens der einwöchigen Betriebsferien für die Rennradreparatur",
+                "evidence_scope": "R gegen S, Werkvertrag, Fristsetzung/Nacherfüllung, einwöchige Betriebsferien und Rennrad",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Betriebsferien verhinderten nur eine sofortige Reparatur; R hätte nach ihrem Ende eine Frist setzen können; besondere Umstände wie berufliche Angewiesenheit oder Eilbedürftigkeit sind nicht mitgeteilt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht die Zumutbarkeit des Zuwartens unter Hinweis auf die fehlende Eilbedürftigkeit bzw. fehlende berufliche Angewiesenheit bei einem Rennrad vollumfänglich und ohne sachverhaltsfremde Annahmen.",
+              "evidence": [
+                "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar. Sie verhinderten nur eine sofortige Reparatur; R hätte S nach Ende der Betriebsferien eine angemessene Frist setzen können. Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bewertung des Abwartens der einwöchigen Betriebsferien als zumutbar",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung mit fehlender besonderer Dringlichkeit / fehlender beruflicher Angewiesenheit bezüglich des Rennrads",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "R gegen S, Zumutbarkeit des Abwartens der Betriebsferien im Rahmen der Fristsetzung zur Nacherfüllung",
+                "evidence_scope": "R gegen S, Zumutbarkeit des Abwartens der Betriebsferien im Rahmen der Fristsetzung zur Nacherfüllung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Betriebsferien verhindern nur die sofortige Reparatur; mangels beruflicher Angewiesenheit oder Eilbedürftigkeit ist das Zuwarten für R zumutbar.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort gelangt zwar ausdrücklich zu dem Ergebnis, dass das Abwarten zumutbar war, nennt aber weder den Freizeitzweck des Rennrads noch einen begründeten Kompetenzverlust gegenüber A. Die verlangte Begründung ist daher nicht vollständig erfüllt.",
+              "evidence": [
+                "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar.",
+                "Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Das Abwarten der einwöchigen Betriebsferien wird als zumutbar bewertet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Zumutbarkeit wird damit begründet, dass das Rennrad nur Freizeitzwecken diente.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Eine besondere Dringlichkeit oder ein begründeter Kompetenzverlust gegenüber A wird ausgeschlossen.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "R gegen S; Zumutbarkeit des Abwartens der einwöchigen Betriebsferien bei der Nacherfüllung wegen der Kettenmontage",
+                "evidence_scope": "R gegen S; Zumutbarkeit der Nacherfüllung und der Fristsetzung nach den Betriebsferien",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Ferien verhinderten nur eine sofortige Reparatur; R hätte danach eine angemessene Frist setzen können. Besondere Umstände wie berufliche Angewiesenheit oder sonstige Eilbedürftigkeit seien nicht mitgeteilt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bewertet genau das Abwarten der einwöchigen Betriebsferien als zumutbar und verneint eine Unzumutbarkeit der Nacherfüllung. Sie stützt dies auf fehlende besondere Dringlichkeit bzw. Eilbedürftigkeit beim Rennrad und nimmt keinen unbegründeten Notfall an.",
+              "evidence": [
+                "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar.",
+                "Sie verhinderten nur eine sofortige Reparatur; R hätte S nach Ende der Betriebsferien eine angemessene Frist setzen können.",
+                "Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Das Abwarten der einwöchigen Betriebsferien wird als zumutbar bzw. die Nacherfüllung nicht als unzumutbar bewertet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Zumutbarkeit wird auf das Rennrad und das Fehlen besonderer Dringlichkeit, beruflicher Angewiesenheit oder Eilbedürftigkeit gestützt.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Werkvertraglicher Ersatz der 400 € für die Kettenmontage zwischen R und S; Zumutbarkeit des Abwartens der einwöchigen Betriebsferien für die Nacherfüllung.",
+                "evidence_scope": "Prüfung der Fristsetzung und Unzumutbarkeit der Nacherfüllung im Rahmen des Anspruchs auf Ersatz der 400 € gegen S.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Betriebsferien verhindern nur eine sofortige Reparatur; R hätte danach eine Frist setzen können, und besondere Umstände wie berufliche Angewiesenheit oder Eilbedürftigkeit bei einem Rennrad sind nicht mitgeteilt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Das Abwarten der Betriebsferien wird ausdrücklich als zumutbar bewertet, da keine Eilbedürftigkeit oder berufliche Angewiesenheit auf das Rennrad vorliegt. Es wird kein unbegründeter Notfall angenommen.",
+              "evidence": [
+                "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar. Sie verhinderten nur eine sofortige Reparatur; R hätte S nach Ende der Betriebsferien eine angemessene Frist setzen können. Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bewertung des Abwartens der einwöchigen Betriebsferien als zumutbar",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung mit fehlender besonderer Eilbedürftigkeit / Freizeitzweck des Rennrads",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "R gegen S, Entbehrlichkeit der Fristsetzung wegen Unzumutbarkeit bei Betriebsferien",
+                "evidence_scope": "R gegen S, Entbehrlichkeit der Fristsetzung wegen Unzumutbarkeit bei Betriebsferien",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Betriebsferien verhinderten nur eine sofortige Reparatur; besondere Umstände wie eine berufliche Angewiesenheit auf das Rennrad oder sonstige Eilbedürftigkeit sind nicht ersichtlich.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-026",
+      "title": "Abwarten der Betriebsferien zumutbar",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort prüft konkret, ob das Abwarten der Betriebsferien die Nacherfüllung unzumutbar machte, verknüpft die Dauer und das Fehlen besonderer Dringlichkeit mit der geschützten zweiten Andienungschance und kommt zu einem eindeutigen Ergebnis.",
+      "evidence": [
+        "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar.",
+        "Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt.",
+        "Die gesetzlich geschützte zweite Andienungschance der S geht daher vor."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft konkret, ob das Abwarten der Betriebsferien die Nacherfüllung unzumutbar machte, verknüpft die Dauer und das Fehlen besonderer Dringlichkeit mit der geschützten zweiten Andienungschance und kommt zu einem eindeutigen Ergebnis.",
+          "evidence": [
+            "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar.",
+            "Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt.",
+            "Die gesetzlich geschützte zweite Andienungschance der S geht daher vor."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft im Rahmen der Fristsetzung nach § 637 BGB spezifisch die Zumutbarkeit des Abwartens der Betriebsferien. Sie verbindet den rechtlichen Maßstab der Unzumutbarkeit mit den konkreten Umständen der einwöchigen Betriebsferien und dem Rennrad und gelangt ausdrücklich zu dem Ergebnis, dass eine Nacherfüllung nicht unzumutbar war.",
+          "evidence": [
+            "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar. Sie verhinderten nur eine sofortige Reparatur; R hätte S nach Ende der Betriebsferien eine angemessene Frist setzen können. Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt.",
+            "Die gesetzlich geschützte zweite Andienungschance der S geht daher vor."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort wendet den Maßstab der Unzumutbarkeit nach § 637 Abs. 2 Satz 2 BGB methodisch einwandfrei auf die konkreten Umstände (einwöchige Betriebsferien, Rennrad, fehlende Eilbedürftigkeit oder berufliche Angewiesenheit) an und leitet daraus das Ergebnis ab.",
+          "evidence": [
+            "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar. Sie verhinderten nur eine sofortige Reparatur; R hätte S nach Ende der Betriebsferien eine angemessene Frist setzen können. Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft konkret, ob das Abwarten der Betriebsferien die Nacherfüllung unzumutbar machte, verknüpft die Dauer und das Fehlen besonderer Dringlichkeit mit der geschützten zweiten Andienungschance und kommt zu einem eindeutigen Ergebnis.",
+              "evidence": [
+                "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar.",
+                "Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt.",
+                "Die gesetzlich geschützte zweite Andienungschance der S geht daher vor."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft im Rahmen der Fristsetzung nach § 637 BGB spezifisch die Zumutbarkeit des Abwartens der Betriebsferien. Sie verbindet den rechtlichen Maßstab der Unzumutbarkeit mit den konkreten Umständen der einwöchigen Betriebsferien und dem Rennrad und gelangt ausdrücklich zu dem Ergebnis, dass eine Nacherfüllung nicht unzumutbar war.",
+              "evidence": [
+                "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar. Sie verhinderten nur eine sofortige Reparatur; R hätte S nach Ende der Betriebsferien eine angemessene Frist setzen können. Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt.",
+                "Die gesetzlich geschützte zweite Andienungschance der S geht daher vor."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort wendet den Maßstab der Unzumutbarkeit nach § 637 Abs. 2 Satz 2 BGB methodisch einwandfrei auf die konkreten Umstände (einwöchige Betriebsferien, Rennrad, fehlende Eilbedürftigkeit oder berufliche Angewiesenheit) an und leitet daraus das Ergebnis ab.",
+              "evidence": [
+                "Allein die einwöchigen Betriebsferien machen eine Nacherfüllung nicht unzumutbar. Sie verhinderten nur eine sofortige Reparatur; R hätte S nach Ende der Betriebsferien eine angemessene Frist setzen können. Besondere Umstände, die gerade bei einem Rennrad ein Zuwarten untragbar machten, etwa eine berufliche Angewiesenheit oder eine sonstige Eilbedürftigkeit, sind nicht mitgeteilt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

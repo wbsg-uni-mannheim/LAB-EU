@@ -1,0 +1,915 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung",
+    "title": "Fortgeschrittenenhausarbeit: „Kaufrausch mit Katerstimmung“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:32:39.416233+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 2,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 3,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Stehen M die geforderten 14.000 € zu?": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "Hat M gegen S einen Anspruch auf Zahlung von 20.000 € oder sogar 30.000 €?": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Stehen M die geforderten 14.000 € zu? › §§ 812 Abs. 1 S. 2 Alt. 2, 818 Abs. 1 und Abs. 4, 820, 285 BGB": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "Hat M gegen S einen Anspruch auf Zahlung von 20.000 € oder sogar 30.000 €? › § 539 Abs. 1 BGB ggf. i.V.m. §§ 677, 683 S. 1, 670 BGB": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "conclusion": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 32128,
+    "output_tokens": 10507,
+    "total_tokens": 42635,
+    "cached_input_tokens": 1792,
+    "cache_write_tokens": 9992
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 32128,
+    "output_tokens": 10507,
+    "total_tokens": 42635,
+    "cached_input_tokens": 1792,
+    "cache_write_tokens": 9992
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-018",
+      "title": "Verschärfte Haftung nach § 818 Abs. 4 BGB",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Das rechtskräftige Herausgabeurteil wird zwar erwähnt, aber nicht als Grund für eine Anwendung des § 818 Abs. 4 BGB herangezogen. Die Antwort prüft stattdessen den Anspruch aus § 816 BGB und erfüllt damit das Kriterium nicht.",
+      "evidence": [
+        "M hatte S die Hebebühne lediglich übergeben",
+        "Das rechtskräftige Herausgabeurteil bestätigt zudem, dass S gegenüber M zur Herausgabe verpflichtet war.",
+        "M hat gegen S einen Anspruch auf Herausgabe von 14.000 € aus § 816 Abs. 1 Satz 1 BGB."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Das rechtskräftige Herausgabeurteil wird zwar erwähnt, aber nicht als Grund für eine Anwendung des § 818 Abs. 4 BGB herangezogen. Die Antwort prüft stattdessen den Anspruch aus § 816 BGB und erfüllt damit das Kriterium nicht.",
+          "evidence": [
+            "M hatte S die Hebebühne lediglich übergeben",
+            "Das rechtskräftige Herausgabeurteil bestätigt zudem, dass S gegenüber M zur Herausgabe verpflichtet war.",
+            "M hat gegen S einen Anspruch auf Herausgabe von 14.000 € aus § 816 Abs. 1 Satz 1 BGB."
+          ],
+          "component_checks": [
+            {
+              "requirement": "§ 818 Abs. 4 BGB auf S anwenden und dies damit begründen, dass M die Herausgabe bereits gerichtlich geltend gemacht hatte und S erst nach dem rechtskräftigen Herausgabeurteil veräußerte",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "M gegen S hinsichtlich der Hebebühne: verschärfte Haftung nach § 818 Abs. 4 BGB",
+            "evidence_scope": "M gegen S hinsichtlich der Hebebühne: Anspruch auf den Veräußerungserlös nach § 816 Abs. 1 Satz 1 BGB",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "§ 818 Abs. 4 BGB wird an keiner Stelle angewendet. Das rechtskräftige Herausgabeurteil wird ausschließlich im Rahmen von § 816 Abs. 1 Satz 1 BGB verwertet. Die verschärfte Bereicherungshaftung ist damit nicht geprüft; die criterion ist inhaltlich nicht erfüllt.",
+          "evidence": [
+            "M könnte gegen S einen Anspruch auf Herausgabe der von S durch die Veräußerung der Hebebühne erzielten 14.000 € aus § 816 Abs. 1 Satz 1 BGB haben.",
+            "Das rechtskräftige Herausgabeurteil bestätigt zudem, dass S gegenüber M zur Herausgabe verpflichtet war. S handelte bei der Veräußerung folglich als Nichtberechtigter.",
+            "Der Anspruch aus § 816 Abs. 1 Satz 1 BGB erfasst gerade den vollen Erlös der wirksamen Verfügung."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Anwendung des § 818 Abs. 4 BGB auf die Veräußerung der Hebebühne durch S.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "M hatte die Herausgabe bereits gerichtlich geltend gemacht, wovon das rechtskräftige Herausgabeurteil zeugt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "S veräußerte die Hebebühne erst nach dem rechtskräftigen Herausgabeurteil.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "S als Bereicherungsschuldner hinsichtlich der Hebebühne und verschärfte Haftung nach § 818 Abs. 4 BGB wegen Veräußerung nach rechtskräftigem Herausgabeurteil.",
+            "evidence_scope": "S als Nichtberechtigter bei der Veräußerung der Hebebühne im Rahmen von § 816 Abs. 1 Satz 1 BGB; das Herausgabeurteil dient nur der Berechtigungsprüfung.",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Anspruch aus § 816 Abs. 1 Satz 1 BGB wegen wirksamer Verfügung eines Nichtberechtigten und erzielten Erlöses von 14.000 €.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Bearbeitung wendet § 818 Abs. 4 BGB an keiner Stelle an und thematisiert die verschärfte Haftung infolge der vorangegangenen Verurteilung nicht.",
+          "evidence": [],
+          "component_checks": [
+            {
+              "requirement": "Anwendung von § 818 Abs. 4 BGB wegen vorheriger gerichtlicher Geltendmachung / Veräußerung nach rechtskräftigem Herausgabeurteil",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "S und M; verschärfte Haftung nach § 818 Abs. 4 BGB im Rahmen des Anspruchs wegen der Hebebühne (Frage 1)",
+            "evidence_scope": "Keine Prüfung von § 818 Abs. 4 BGB vorhanden",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 16478,
+        "output_tokens": 7487,
+        "total_tokens": 23965,
+        "cached_input_tokens": 768,
+        "cache_write_tokens": 5131
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Das rechtskräftige Herausgabeurteil wird zwar erwähnt, aber nicht als Grund für eine Anwendung des § 818 Abs. 4 BGB herangezogen. Die Antwort prüft stattdessen den Anspruch aus § 816 BGB und erfüllt damit das Kriterium nicht.",
+              "evidence": [
+                "M hatte S die Hebebühne lediglich übergeben",
+                "Das rechtskräftige Herausgabeurteil bestätigt zudem, dass S gegenüber M zur Herausgabe verpflichtet war.",
+                "M hat gegen S einen Anspruch auf Herausgabe von 14.000 € aus § 816 Abs. 1 Satz 1 BGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§ 818 Abs. 4 BGB auf S anwenden und dies damit begründen, dass M die Herausgabe bereits gerichtlich geltend gemacht hatte und S erst nach dem rechtskräftigen Herausgabeurteil veräußerte",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "M gegen S hinsichtlich der Hebebühne: verschärfte Haftung nach § 818 Abs. 4 BGB",
+                "evidence_scope": "M gegen S hinsichtlich der Hebebühne: Anspruch auf den Veräußerungserlös nach § 816 Abs. 1 Satz 1 BGB",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "§ 818 Abs. 4 BGB wird an keiner Stelle angewendet. Das rechtskräftige Herausgabeurteil wird ausschließlich im Rahmen von § 816 Abs. 1 Satz 1 BGB verwertet. Die verschärfte Bereicherungshaftung ist damit nicht geprüft; die criterion ist inhaltlich nicht erfüllt.",
+              "evidence": [
+                "M könnte gegen S einen Anspruch auf Herausgabe der von S durch die Veräußerung der Hebebühne erzielten 14.000 € aus § 816 Abs. 1 Satz 1 BGB haben.",
+                "Das rechtskräftige Herausgabeurteil bestätigt zudem, dass S gegenüber M zur Herausgabe verpflichtet war. S handelte bei der Veräußerung folglich als Nichtberechtigter.",
+                "Der Anspruch aus § 816 Abs. 1 Satz 1 BGB erfasst gerade den vollen Erlös der wirksamen Verfügung."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Anwendung des § 818 Abs. 4 BGB auf die Veräußerung der Hebebühne durch S.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "M hatte die Herausgabe bereits gerichtlich geltend gemacht, wovon das rechtskräftige Herausgabeurteil zeugt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "S veräußerte die Hebebühne erst nach dem rechtskräftigen Herausgabeurteil.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S als Bereicherungsschuldner hinsichtlich der Hebebühne und verschärfte Haftung nach § 818 Abs. 4 BGB wegen Veräußerung nach rechtskräftigem Herausgabeurteil.",
+                "evidence_scope": "S als Nichtberechtigter bei der Veräußerung der Hebebühne im Rahmen von § 816 Abs. 1 Satz 1 BGB; das Herausgabeurteil dient nur der Berechtigungsprüfung.",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Anspruch aus § 816 Abs. 1 Satz 1 BGB wegen wirksamer Verfügung eines Nichtberechtigten und erzielten Erlöses von 14.000 €.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Bearbeitung wendet § 818 Abs. 4 BGB an keiner Stelle an und thematisiert die verschärfte Haftung infolge der vorangegangenen Verurteilung nicht.",
+              "evidence": [],
+              "component_checks": [
+                {
+                  "requirement": "Anwendung von § 818 Abs. 4 BGB wegen vorheriger gerichtlicher Geltendmachung / Veräußerung nach rechtskräftigem Herausgabeurteil",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S und M; verschärfte Haftung nach § 818 Abs. 4 BGB im Rahmen des Anspruchs wegen der Hebebühne (Frage 1)",
+                "evidence_scope": "Keine Prüfung von § 818 Abs. 4 BGB vorhanden",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-037",
+      "title": "Keine Ansprüche aus echter GoA",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort erklärt zwar, M habe das Lager im eigenen wirtschaftlichen Interesse errichtet. Sie lehnt aber keine eigenständigen Ansprüche aus echter GoA ab und prüft insbesondere nicht, ob der Fremdgeschäftsführungswille fehlt. Die Ausführungen zur Leistungskondiktion ersetzen diese Prüfung nicht.",
+      "evidence": [
+        "M errichtete das Lager jedoch nicht, um S zu bereichern.",
+        "Die Bebauung erfolgte somit im eigenen wirtschaftlichen Interesse des M."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erklärt zwar, M habe das Lager im eigenen wirtschaftlichen Interesse errichtet. Sie lehnt aber keine eigenständigen Ansprüche aus echter GoA ab und prüft insbesondere nicht, ob der Fremdgeschäftsführungswille fehlt. Die Ausführungen zur Leistungskondiktion ersetzen diese Prüfung nicht.",
+          "evidence": [
+            "M errichtete das Lager jedoch nicht, um S zu bereichern.",
+            "Die Bebauung erfolgte somit im eigenen wirtschaftlichen Interesse des M."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Eigenständige Ansprüche aus berechtigter oder unberechtigter echter GoA wegen fehlenden Fremdgeschäftsführungswillens beim Bau des für den eigenen Betrieb bestimmten Lagers ablehnen.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Ansprüche des M aus echter GoA wegen des Lagerbaus; Prüfung des Fremdgeschäftsführungswillens.",
+            "evidence_scope": "Bereicherungsrechtliche Ansprüche des M wegen des Lagerbaus; keine Prüfung echter GoA.",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Für die Leistungskondiktion stellt die Antwort auf Ms eigenes wirtschaftliches Interesse ab; einen Grund zur Ablehnung von GoA-Ansprüchen nennt sie nicht.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erörtert keine Ansprüche aus echter Geschäftsführung ohne Auftrag und lehnt solche Ansprüche daher auch nicht wegen fehlenden Fremdgeschäftsführungswillens ab. Die Ausführungen zum eigenen wirtschaftlichen Interesse betreffen die Leistungskondiktion, nicht die GoA.",
+          "evidence": [
+            "In Betracht kommt insbesondere ein Anspruch aus § 951 Abs. 1 Satz 1 BGB in Verbindung mit §§ 812 Abs. 1 Satz 1 Alt. 2, 818 Abs. 2 BGB.",
+            "M errichtete das Lager jedoch nicht, um S zu bereichern.",
+            "Ein weitergehender Anspruch aus vorvertraglicher Pflichtverletzung scheidet daher aus."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort prüft eigenständige Ansprüche aus berechtigter oder unberechtigter echter Geschäftsführung ohne Auftrag wegen des Lagerbaus.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Antwort lehnt solche Ansprüche aus echter GoA ab.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Ablehnung stützt sich auf fehlenden Fremdgeschäftsführungswillen beim Bau des für den eigenen Betrieb bestimmten Lagers.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "M gegen S, Lagerbau auf dem Grundstück, Ansprüche aus echter GoA",
+            "evidence_scope": "M gegen S, Lagerbau, Ansprüche aus § 951 BGB, Bereicherungsrecht und vorvertraglicher Pflichtverletzung",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft zu Frage 2 weder Ansprüche aus berechtigter noch aus unberechtigter Geschäftsführung ohne Auftrag (§§ 677 ff. BGB) und lehnt diese folglich auch nicht wegen eines fehlenden Fremdgeschäftsführungswillens ab.",
+          "evidence": [],
+          "component_checks": [
+            {
+              "requirement": "Ablehnung eigenständiger Ansprüche des M aus berechtigter oder unberechtigter echter GoA wegen fehlenden Fremdgeschäftsführungswillens",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "M gegen S, Ansprüche aus GoA (§§ 677 ff. BGB) bezüglich des Baus des Lagers",
+            "evidence_scope": "Nicht geprüft",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 15650,
+        "output_tokens": 3020,
+        "total_tokens": 18670,
+        "cached_input_tokens": 1024,
+        "cache_write_tokens": 4861
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erklärt zwar, M habe das Lager im eigenen wirtschaftlichen Interesse errichtet. Sie lehnt aber keine eigenständigen Ansprüche aus echter GoA ab und prüft insbesondere nicht, ob der Fremdgeschäftsführungswille fehlt. Die Ausführungen zur Leistungskondiktion ersetzen diese Prüfung nicht.",
+              "evidence": [
+                "M errichtete das Lager jedoch nicht, um S zu bereichern.",
+                "Die Bebauung erfolgte somit im eigenen wirtschaftlichen Interesse des M."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Eigenständige Ansprüche aus berechtigter oder unberechtigter echter GoA wegen fehlenden Fremdgeschäftsführungswillens beim Bau des für den eigenen Betrieb bestimmten Lagers ablehnen.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Ansprüche des M aus echter GoA wegen des Lagerbaus; Prüfung des Fremdgeschäftsführungswillens.",
+                "evidence_scope": "Bereicherungsrechtliche Ansprüche des M wegen des Lagerbaus; keine Prüfung echter GoA.",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Für die Leistungskondiktion stellt die Antwort auf Ms eigenes wirtschaftliches Interesse ab; einen Grund zur Ablehnung von GoA-Ansprüchen nennt sie nicht.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erörtert keine Ansprüche aus echter Geschäftsführung ohne Auftrag und lehnt solche Ansprüche daher auch nicht wegen fehlenden Fremdgeschäftsführungswillens ab. Die Ausführungen zum eigenen wirtschaftlichen Interesse betreffen die Leistungskondiktion, nicht die GoA.",
+              "evidence": [
+                "In Betracht kommt insbesondere ein Anspruch aus § 951 Abs. 1 Satz 1 BGB in Verbindung mit §§ 812 Abs. 1 Satz 1 Alt. 2, 818 Abs. 2 BGB.",
+                "M errichtete das Lager jedoch nicht, um S zu bereichern.",
+                "Ein weitergehender Anspruch aus vorvertraglicher Pflichtverletzung scheidet daher aus."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort prüft eigenständige Ansprüche aus berechtigter oder unberechtigter echter Geschäftsführung ohne Auftrag wegen des Lagerbaus.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Antwort lehnt solche Ansprüche aus echter GoA ab.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Ablehnung stützt sich auf fehlenden Fremdgeschäftsführungswillen beim Bau des für den eigenen Betrieb bestimmten Lagers.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "M gegen S, Lagerbau auf dem Grundstück, Ansprüche aus echter GoA",
+                "evidence_scope": "M gegen S, Lagerbau, Ansprüche aus § 951 BGB, Bereicherungsrecht und vorvertraglicher Pflichtverletzung",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft zu Frage 2 weder Ansprüche aus berechtigter noch aus unberechtigter Geschäftsführung ohne Auftrag (§§ 677 ff. BGB) und lehnt diese folglich auch nicht wegen eines fehlenden Fremdgeschäftsführungswillens ab.",
+              "evidence": [],
+              "component_checks": [
+                {
+                  "requirement": "Ablehnung eigenständiger Ansprüche des M aus berechtigter oder unberechtigter echter GoA wegen fehlenden Fremdgeschäftsführungswillens",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "M gegen S, Ansprüche aus GoA (§§ 677 ff. BGB) bezüglich des Baus des Lagers",
+                "evidence_scope": "Nicht geprüft",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-018",
+      "title": "Verschärfte Haftung nach § 818 Abs. 4 BGB",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort prüft den Erlösanspruch aus § 816 Abs. 1 Satz 1 BGB. Eine Prüfung der verschärften Haftung nach § 818 Abs. 4 BGB und eine Verknüpfung dieser Norm mit dem Herausgabeverlangen vor der Veräußerung fehlen.",
+      "evidence": [
+        "Der Anspruch aus § 816 Abs. 1 Satz 1 BGB erfasst gerade den vollen Erlös",
+        "M hat gegen S einen Anspruch auf Herausgabe von 14.000 € aus § 816 Abs. 1 Satz 1 BGB."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft den Erlösanspruch aus § 816 Abs. 1 Satz 1 BGB. Eine Prüfung der verschärften Haftung nach § 818 Abs. 4 BGB und eine Verknüpfung dieser Norm mit dem Herausgabeverlangen vor der Veräußerung fehlen.",
+          "evidence": [
+            "Der Anspruch aus § 816 Abs. 1 Satz 1 BGB erfasst gerade den vollen Erlös",
+            "M hat gegen S einen Anspruch auf Herausgabe von 14.000 € aus § 816 Abs. 1 Satz 1 BGB."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft § 816 Abs. 1 Satz 1 BGB, nicht § 818 Abs. 4 BGB. Das rechtskräftige Herausgabeurteil wird nur zur Begründung der Nichtberechtigung des S herangezogen und nicht mit einer Haftungsverschärfung verbunden. Damit fehlt der kriterienspezifische Maßstab, die Verknüpfung mit der Veräußerung nach dem Urteil und ein Abschluss unter § 818 Abs. 4 BGB.",
+          "evidence": [
+            "M könnte gegen S einen Anspruch auf Herausgabe der von S durch die Veräußerung der Hebebühne erzielten 14.000 € aus § 816 Abs. 1 Satz 1 BGB haben.",
+            "Das rechtskräftige Herausgabeurteil bestätigt zudem, dass S gegenüber M zur Herausgabe verpflichtet war. S handelte bei der Veräußerung folglich als Nichtberechtigter."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Bearbeitung prüft § 818 Abs. 4 BGB überhaupt nicht; es fehlt daher an jedem methodischen Obersatz, Subsumtion und Schlusssatz zu dieser Vorschrift.",
+          "evidence": [],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft den Erlösanspruch aus § 816 Abs. 1 Satz 1 BGB. Eine Prüfung der verschärften Haftung nach § 818 Abs. 4 BGB und eine Verknüpfung dieser Norm mit dem Herausgabeverlangen vor der Veräußerung fehlen.",
+              "evidence": [
+                "Der Anspruch aus § 816 Abs. 1 Satz 1 BGB erfasst gerade den vollen Erlös",
+                "M hat gegen S einen Anspruch auf Herausgabe von 14.000 € aus § 816 Abs. 1 Satz 1 BGB."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft § 816 Abs. 1 Satz 1 BGB, nicht § 818 Abs. 4 BGB. Das rechtskräftige Herausgabeurteil wird nur zur Begründung der Nichtberechtigung des S herangezogen und nicht mit einer Haftungsverschärfung verbunden. Damit fehlt der kriterienspezifische Maßstab, die Verknüpfung mit der Veräußerung nach dem Urteil und ein Abschluss unter § 818 Abs. 4 BGB.",
+              "evidence": [
+                "M könnte gegen S einen Anspruch auf Herausgabe der von S durch die Veräußerung der Hebebühne erzielten 14.000 € aus § 816 Abs. 1 Satz 1 BGB haben.",
+                "Das rechtskräftige Herausgabeurteil bestätigt zudem, dass S gegenüber M zur Herausgabe verpflichtet war. S handelte bei der Veräußerung folglich als Nichtberechtigter."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Bearbeitung prüft § 818 Abs. 4 BGB überhaupt nicht; es fehlt daher an jedem methodischen Obersatz, Subsumtion und Schlusssatz zu dieser Vorschrift.",
+              "evidence": [],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,898 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/examensubungsklausur-strafrecht-nur-bares-ist-wahres",
+    "title": "Examensübungsklausur Strafrecht: Nur Bares ist Wahres!"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-sol-high/20260730T221733Z/tasks/de__strafrecht__materielles-strafrecht__examensubungsklausur-strafrecht-nur-bares-ist-wahres/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/examensubungsklausur-strafrecht-nur-bares-ist-wahres/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:29:03.284765+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 1,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 1,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 2,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Materielles Strafrecht": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Materielles Strafrecht › Strafbarkeit von A und E": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 28214,
+    "output_tokens": 11145,
+    "total_tokens": 39359,
+    "cached_input_tokens": 9677,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 28214,
+    "output_tokens": 11145,
+    "total_tokens": 39359,
+    "cached_input_tokens": 9677,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-002",
+      "title": "Konkludente Drohung mit gegenwärtiger Lebensgefahr",
+      "verdict": "fail",
+      "resolution": "unresolved",
+      "reasoning": "The committee majority changed between two independent rounds; the criterion is conservatively unresolved.",
+      "evidence": [],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort ordnet die Pistole bei der Erpressung zwar als Drohung mit gegenwärtiger Gefahr ein. Sie begründet dort aber nicht, dass O bei einer Weigerung einen sofortigen Schuss erwarten musste. Die nähere Ausführung zur konkludenten Tötungs- oder Verletzungsdrohung steht bei § 239b und kann für die Erpressungsprüfung nicht herangezogen werden.",
+          "evidence": [
+            "durch die vorgehaltene, geladene Schreckschusspistole und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Einordnung erfolgt bei der Zahlungsforderung im Rahmen der §§ 253, 255 StGB.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Das Halten der Pistole an Os Kopf wird dort als konkludente Drohung mit gegenwärtiger Gefahr für Leib oder Leben eingeordnet.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Antwort begründet die Einordnung damit, dass O bei Weigerung einen sofortigen Schuss erwarten musste.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und E; die Drohung mit der Pistole bei der Zahlungsforderung als Nötigungsmittel der §§ 253, 255 StGB.",
+            "evidence_scope": "Die versuchte räuberische Erpressung; die vorgehaltene, geladene Schreckschusspistole wird als Drohung mit gegenwärtiger Gefahr für Leib oder Leben eingeordnet.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die vorgehaltene, geladene Schreckschusspistole begründe eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht die qualifizierte Drohung mit gegenwärtiger Gefahr für Leib oder Leben beim Einsatz der geladenen Schreckschusspistole an Os Kopf und ordnet dies im Rahmen der räuberischen Erpressung nach §§ 253, 255 StGB ein. Ein Ausschluss wegen der Art der Pistole oder fehlenden Realisierungswillens erfolgt nicht.",
+          "evidence": [
+            "Die beabsichtigte Erpressung sollte durch Schläge und damit durch Gewalt sowie durch das Anhalten der geladenen Pistole an Os Kopf und somit durch Drohung mit gegenwärtiger Gefahr für Leib oder Leben begangen werden.",
+            "Sie sollte folglich eine räuberische Erpressung nach § 255 StGB sein.",
+            "Die absprachegemäß eingesetzte, nach vorn entladende Schreckschusspistole wurde als Waffe zur Drohung verwendet."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Halten der geladenen Schreckschusspistole an Os Kopf bei der Zahlungsforderung",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Einordnung als konkludente Drohung mit gegenwärtiger Gefahr für Leib oder Leben",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Verknüpfung mit §§ 253, 255 StGB bzw. räuberischer Erpressung",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Grund, dass O bei Weigerung einen sofortigen Schuss erwarten musste",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A/E halten O die täuschend echt aussehende, durchgeladene Schreckschusspistole bei der Zahlungsforderung an den Kopf und drohen dadurch konkludent mit gegenwärtiger Gefahr für Leib oder Leben im Rahmen von §§ 253, 255 StGB.",
+            "evidence_scope": "A/E setzen die geladene Schreckschusspistole bei O zur Drohung mit gegenwärtiger Gefahr für Leib oder Leben ein; dies wird als räuberische Erpressung nach § 255 StGB eingeordnet.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das Anhalten der geladenen Pistole an Os Kopf sei eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben und daher eine räuberische Erpressung nach § 255 StGB.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Kriterium verlangt eine Begründung dafür, warum das Vorhalten der Waffe eine qualifizierte Drohung darstellt (weil O bei Weigerung einen sofortigen Schuss erwarten musste). Die Antwort nennt im Rahmen der Erpressungsprüfung lediglich das Ergebnis unter Verwendung des Gesetzeswortlauts ('und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben'), ohne hierfür eine Begründung zu liefern.",
+          "evidence": [
+            "sowie durch die vorgehaltene, geladene Schreckschusspistole und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einordnung des Haltens der Schreckschusspistole an Os Kopf als konkludente Drohung mit gegenwärtiger Gefahr für Leib oder Leben gem. §§ 253, 255 StGB",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Begründung, dass O bei Weigerung einen sofortigen Schuss erwarten musste (oder vergleichbare Begründung für die qualifizierte Drohung)",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und E, §§ 253, 255 StGB, Drohung mit gegenwärtiger Gefahr für Leib oder Leben",
+            "evidence_scope": "A und E, §§ 253, 255 StGB, Tatbestand/Nötigungsmittel",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 28214,
+        "output_tokens": 11145,
+        "total_tokens": 39359,
+        "cached_input_tokens": 9677,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort ordnet das Vorhalten der geladenen Pistole ausdrücklich als Drohung mit gegenwärtiger Gefahr für Leib oder Leben ein. Dass O bei einer Weigerung einen sofortigen Schuss erwarten musste, ist durch das Vorhalten an den Kopf und die ausdrücklich angenommene gegenwärtige Gefahr hinreichend impliziert.",
+              "evidence": [
+                "durch die vorgehaltene, geladene Schreckschusspistole und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Das Vorhalten der geladenen Schreckschusspistole an Os Kopf bei der Zahlungsforderung wird als Nötigungsmittel der räuberischen Erpressung erfasst.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Das Verhalten wird als Drohung mit gegenwärtiger Gefahr für Leib oder Leben gemäß §§ 253, 255 StGB eingeordnet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort macht deutlich, dass O bei einer Weigerung einen sofortigen Schuss erwarten musste.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "O; Vorhalten der Pistole bei der Zahlungsforderung; Nötigungsmittel der räuberischen Erpressung nach §§ 253, 255 StGB",
+                "evidence_scope": "O; Vorhalten der geladenen Pistole zur Erzwingung des Zahlungsversprechens; versuchte räuberische Erpressung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die geladene Pistole wurde O bei der Forderung vorgehalten und begründete deshalb eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht die konkludente Drohung mit gegenwärtiger Gefahr für Leib oder Leben durch das Vorhalten der durchgeladenen Schreckschusspistole am Kopf während der Zahlungsforderung und ordnet dies als Nötigungsmittel der räuberischen Erpressung nach §§ 253, 255 StGB ein. Ein Ausschluss wegen der Art der Pistole oder fehlenden Realisierungswillens erfolgt nicht.",
+              "evidence": [
+                "durch das Anhalten der geladenen Pistole an Os Kopf und somit durch Drohung mit gegenwärtiger Gefahr für Leib oder Leben",
+                "durch die vorgehaltene, geladene Schreckschusspistole und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu dem Versprechen",
+                "Das Vorhalten der durchgeladenen Pistole am Kopf brachte aus der Sicht eines objektiven Empfängers konkludent zum Ausdruck, O werde getötet oder jedenfalls schwer verletzt, falls er die Zusage verweigere.",
+                "Sie sollte folglich eine räuberische Erpressung nach § 255 StGB sein."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Halten der täuschend echt aussehenden, durchgeladenen Schreckschusspistole an Os Kopf bei der Zahlungsforderung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Einordnung als konkludente Drohung mit gegenwärtiger Gefahr für Leib oder Leben",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Verknüpfung mit §§ 253, 255 StGB bzw. räuberischer Erpressung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Grund: Bei Weigerung musste O einen sofortigen Schuss bzw. eine unmittelbare Todes-/Verletzungsgefahr erwarten",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A/E gegen O; konkludente Drohung mit gegenwärtiger Lebensgefahr bei der Zahlungsforderung als Nötigungsmittel der räuberischen Erpressung (§§ 253, 255 StGB)",
+                "evidence_scope": "A/E halten O die durchgeladene Schreckschusspistole an den Kopf, während die Zahlungszusage gefordert wird; Einordnung als Drohung mit gegenwärtiger Gefahr für Leib oder Leben und als § 255 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Halten der geladenen Pistole an den Kopf bei der Zahlungsforderung wird als Drohung mit gegenwärtiger Gefahr für Leib/Leben gewertet; bei Weigerung werde O getötet oder schwer verletzt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht bei der räuberischen Erpressung zwar das Vorliegen einer Drohung mit gegenwärtiger Gefahr für Leib oder Leben durch das Vorhalten der Pistole, benennt dort jedoch nur das Ergebnis ohne jede Begründung. Die Begründung, warum im Vorhalten eine konkludente Drohung mit Tötung/schwerer Verletzung bei Verweigerung liegt, wird erst bei § 239b StGB ausgeführt und darf nicht herübergezogen werden.",
+              "evidence": [
+                "sowie durch die vorgehaltene, geladene Schreckschusspistole und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu dem Versprechen, insgesamt 10.000 Euro zu zahlen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung des Haltens der Schreckschusspistole an Os Kopf als konkludente Drohung mit gegenwärtiger Gefahr für Leib oder Leben gem. §§ 253, 255 StGB",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung der Drohung (konkludent/Erwartung eines sofortigen Schusses bei Weigerung)",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "§§ 253, 255 StGB, Qualifiziertes Nötigungsmittel bei Zahlungsforderung",
+                "evidence_scope": "§§ 253, 255 StGB, Qualifiziertes Nötigungsmittel bei Zahlungsforderung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort ordnet die Pistole bei der Erpressung zwar als Drohung mit gegenwärtiger Gefahr ein. Sie begründet dort aber nicht, dass O bei einer Weigerung einen sofortigen Schuss erwarten musste. Die nähere Ausführung zur konkludenten Tötungs- oder Verletzungsdrohung steht bei § 239b und kann für die Erpressungsprüfung nicht herangezogen werden.",
+              "evidence": [
+                "durch die vorgehaltene, geladene Schreckschusspistole und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Einordnung erfolgt bei der Zahlungsforderung im Rahmen der §§ 253, 255 StGB.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Das Halten der Pistole an Os Kopf wird dort als konkludente Drohung mit gegenwärtiger Gefahr für Leib oder Leben eingeordnet.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Antwort begründet die Einordnung damit, dass O bei Weigerung einen sofortigen Schuss erwarten musste.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und E; die Drohung mit der Pistole bei der Zahlungsforderung als Nötigungsmittel der §§ 253, 255 StGB.",
+                "evidence_scope": "Die versuchte räuberische Erpressung; die vorgehaltene, geladene Schreckschusspistole wird als Drohung mit gegenwärtiger Gefahr für Leib oder Leben eingeordnet.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die vorgehaltene, geladene Schreckschusspistole begründe eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht die qualifizierte Drohung mit gegenwärtiger Gefahr für Leib oder Leben beim Einsatz der geladenen Schreckschusspistole an Os Kopf und ordnet dies im Rahmen der räuberischen Erpressung nach §§ 253, 255 StGB ein. Ein Ausschluss wegen der Art der Pistole oder fehlenden Realisierungswillens erfolgt nicht.",
+              "evidence": [
+                "Die beabsichtigte Erpressung sollte durch Schläge und damit durch Gewalt sowie durch das Anhalten der geladenen Pistole an Os Kopf und somit durch Drohung mit gegenwärtiger Gefahr für Leib oder Leben begangen werden.",
+                "Sie sollte folglich eine räuberische Erpressung nach § 255 StGB sein.",
+                "Die absprachegemäß eingesetzte, nach vorn entladende Schreckschusspistole wurde als Waffe zur Drohung verwendet."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Halten der geladenen Schreckschusspistole an Os Kopf bei der Zahlungsforderung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Einordnung als konkludente Drohung mit gegenwärtiger Gefahr für Leib oder Leben",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Verknüpfung mit §§ 253, 255 StGB bzw. räuberischer Erpressung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Grund, dass O bei Weigerung einen sofortigen Schuss erwarten musste",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A/E halten O die täuschend echt aussehende, durchgeladene Schreckschusspistole bei der Zahlungsforderung an den Kopf und drohen dadurch konkludent mit gegenwärtiger Gefahr für Leib oder Leben im Rahmen von §§ 253, 255 StGB.",
+                "evidence_scope": "A/E setzen die geladene Schreckschusspistole bei O zur Drohung mit gegenwärtiger Gefahr für Leib oder Leben ein; dies wird als räuberische Erpressung nach § 255 StGB eingeordnet.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das Anhalten der geladenen Pistole an Os Kopf sei eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben und daher eine räuberische Erpressung nach § 255 StGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium verlangt eine Begründung dafür, warum das Vorhalten der Waffe eine qualifizierte Drohung darstellt (weil O bei Weigerung einen sofortigen Schuss erwarten musste). Die Antwort nennt im Rahmen der Erpressungsprüfung lediglich das Ergebnis unter Verwendung des Gesetzeswortlauts ('und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben'), ohne hierfür eine Begründung zu liefern.",
+              "evidence": [
+                "sowie durch die vorgehaltene, geladene Schreckschusspistole und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung des Haltens der Schreckschusspistole an Os Kopf als konkludente Drohung mit gegenwärtiger Gefahr für Leib oder Leben gem. §§ 253, 255 StGB",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung, dass O bei Weigerung einen sofortigen Schuss erwarten musste (oder vergleichbare Begründung für die qualifizierte Drohung)",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und E, §§ 253, 255 StGB, Drohung mit gegenwärtiger Gefahr für Leib oder Leben",
+                "evidence_scope": "A und E, §§ 253, 255 StGB, Tatbestand/Nötigungsmittel",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "majority_flip"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-002",
+      "title": "Konkludente Drohung mit gegenwärtiger Lebensgefahr",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Im Abschnitt zur räuberischen Erpressung verknüpft die Antwort die vorgehaltene, geladene Pistole ausdrücklich mit der rechtlichen Einordnung als Drohung mit gegenwärtiger Gefahr. Das ist eine knappe, aber funktionale Anwendung auf diesen Prüfungspunkt.",
+      "evidence": [
+        "durch die vorgehaltene, geladene Schreckschusspistole und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben"
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Im Abschnitt zur räuberischen Erpressung verknüpft die Antwort die vorgehaltene, geladene Pistole ausdrücklich mit der rechtlichen Einordnung als Drohung mit gegenwärtiger Gefahr. Das ist eine knappe, aber funktionale Anwendung auf diesen Prüfungspunkt.",
+          "evidence": [
+            "durch die vorgehaltene, geladene Schreckschusspistole und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verbindet den Maßstab der Drohung mit gegenwärtiger Gefahr für Leib oder Leben mit dem konkreten Umstand, dass A und E dem O die geladene Pistole bei der Zahlungsforderung an den Kopf hielten, und leitet daraus die Einordnung als räuberische Erpressung nach § 255 StGB ab. Damit ist eine criterion-spezifische Prüfung mit Standard, Sachverhaltsbezug und Ergebnis vorhanden.",
+          "evidence": [
+            "Die beabsichtigte Erpressung sollte durch Schläge und damit durch Gewalt sowie durch das Anhalten der geladenen Pistole an Os Kopf und somit durch Drohung mit gegenwärtiger Gefahr für Leib oder Leben begangen werden.",
+            "Sie sollte folglich eine räuberische Erpressung nach § 255 StGB sein."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Einordnung der vorgehaltenen Schreckschusspistole als Drohung mit gegenwärtiger Gefahr für Leib oder Leben erfolgt lediglich als bloße Behauptung bzw. Ergebnissatz ('und damit durch...'). Ein Obersatz zum Maßstab einer konkludenten Drohung mit gegenwärtiger Lebensgefahr sowie eine methodische Subsumtion fehlen an dieser Prüfungsstation.",
+          "evidence": [
+            "sowie durch die vorgehaltene, geladene Schreckschusspistole und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu dem Versprechen, insgesamt 10.000 Euro zu zahlen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": true,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Im Prüfungspunkt zur versuchten räuberischen Erpressung verknüpft die Antwort das konkrete Vorhalten der geladenen Pistole mit der Drohung und ordnet diese als Gefahr für Leib oder Leben ein. Damit ist die Argumentation für diese Nötigungsmittelprüfung methodisch abgeschlossen.",
+              "evidence": [
+                "durch die vorgehaltene, geladene Schreckschusspistole und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verknüpft bei der Zahlungsforderung den konkreten Einsatz der durchgeladenen Schreckschusspistole am Kopf mit dem Standard einer Drohung mit gegenwärtiger Gefahr für Leib oder Leben und leitet daraus die räuberische Erpressung nach § 255 StGB her. Die konkludente Todes-/Verletzungsdrohung bei Verweigerung wird ebenfalls ausdrücklich benannt.",
+              "evidence": [
+                "Die beabsichtigte Erpressung sollte durch Schläge und damit durch Gewalt sowie durch das Anhalten der geladenen Pistole an Os Kopf und somit durch Drohung mit gegenwärtiger Gefahr für Leib oder Leben begangen werden. Sie sollte folglich eine räuberische Erpressung nach § 255 StGB sein.",
+                "Das Vorhalten der durchgeladenen Pistole am Kopf brachte aus der Sicht eines objektiven Empfängers konkludent zum Ausdruck, O werde getötet oder jedenfalls schwer verletzt, falls er die Zusage verweigere."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Einordnung als Drohung mit gegenwärtiger Gefahr für Leib oder Leben nach § 255 StGB erfolgt als bloße Tatsachenbehauptung/Ergebnisfeststellung ohne Obersatz zur konkludenten Drohung und ohne Herleitung, warum das Vorhalten der Waffe eine solche Erklärung darstellt. Die Erwägungen zur konkludenten Erklärung finden sich erst an anderer Stelle bei § 239b StGB.",
+              "evidence": [
+                "sowie durch die vorgehaltene, geladene Schreckschusspistole und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu dem Versprechen, insgesamt 10.000 Euro zu zahlen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": false
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Im Abschnitt zur räuberischen Erpressung verknüpft die Antwort die vorgehaltene, geladene Pistole ausdrücklich mit der rechtlichen Einordnung als Drohung mit gegenwärtiger Gefahr. Das ist eine knappe, aber funktionale Anwendung auf diesen Prüfungspunkt.",
+              "evidence": [
+                "durch die vorgehaltene, geladene Schreckschusspistole und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verbindet den Maßstab der Drohung mit gegenwärtiger Gefahr für Leib oder Leben mit dem konkreten Umstand, dass A und E dem O die geladene Pistole bei der Zahlungsforderung an den Kopf hielten, und leitet daraus die Einordnung als räuberische Erpressung nach § 255 StGB ab. Damit ist eine criterion-spezifische Prüfung mit Standard, Sachverhaltsbezug und Ergebnis vorhanden.",
+              "evidence": [
+                "Die beabsichtigte Erpressung sollte durch Schläge und damit durch Gewalt sowie durch das Anhalten der geladenen Pistole an Os Kopf und somit durch Drohung mit gegenwärtiger Gefahr für Leib oder Leben begangen werden.",
+                "Sie sollte folglich eine räuberische Erpressung nach § 255 StGB sein."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Einordnung der vorgehaltenen Schreckschusspistole als Drohung mit gegenwärtiger Gefahr für Leib oder Leben erfolgt lediglich als bloße Behauptung bzw. Ergebnissatz ('und damit durch...'). Ein Obersatz zum Maßstab einer konkludenten Drohung mit gegenwärtiger Lebensgefahr sowie eine methodische Subsumtion fehlen an dieser Prüfungsstation.",
+              "evidence": [
+                "sowie durch die vorgehaltene, geladene Schreckschusspistole und damit durch eine Drohung mit gegenwärtiger Gefahr für Leib oder Leben zu dem Versprechen, insgesamt 10.000 Euro zu zahlen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ]
+}

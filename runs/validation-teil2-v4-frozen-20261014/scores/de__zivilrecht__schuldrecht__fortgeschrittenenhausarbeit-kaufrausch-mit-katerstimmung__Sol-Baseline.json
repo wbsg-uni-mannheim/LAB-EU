@@ -1,0 +1,1605 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung",
+    "title": "Fortgeschrittenenhausarbeit: „Kaufrausch mit Katerstimmung“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenhausarbeit-kaufrausch-mit-katerstimmung/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:36:19.768245+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 2,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.5,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 1,
+    "root_pass_rate": 0.5,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 4,
+    "pass_rate": 0.5,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 2,
+    "n_eligible": 2,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Stehen M die geforderten 14.000 € zu?": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "breakdown_by_outline": {
+    "Stehen M die geforderten 14.000 € zu? › §§ 812 Abs. 1 S. 2 Alt. 2, 818 Abs. 1 und Abs. 4, 820, 285 BGB": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "Stehen M die geforderten 14.000 € zu? › § 816 Abs. 1 S. 1 BGB": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "argumentation": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 51432,
+    "output_tokens": 21256,
+    "total_tokens": 72688,
+    "cached_input_tokens": 25386,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 51432,
+    "output_tokens": 21256,
+    "total_tokens": 72688,
+    "cached_input_tokens": 25386,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-022",
+      "title": "Unmöglichkeit der Besitzrückgabe",
+      "verdict": "fail",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort ordnet die Rückgabe als nicht mehr möglich ein und verknüpft dies mit der Übereignung an den gutgläubigen X. Sie berücksichtigt jedoch nicht, dass X die Herausgabe verweigert; damit fehlt ein ausdrücklich verlangter Bestandteil der Begründung.",
+      "evidence": [
+        "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort ordnet die Rückgabe als nicht mehr möglich ein und verknüpft dies mit der Übereignung an den gutgläubigen X. Sie berücksichtigt jedoch nicht, dass X die Herausgabe verweigert; damit fehlt ein ausdrücklich verlangter Bestandteil der Begründung.",
+          "evidence": [
+            "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Rückgabe der Hebebühne durch S wird als unmöglich eingeordnet.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Die Unmöglichkeit wird mit dem gutgläubigen Eigentumserwerb des X begründet.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Die Antwort berücksichtigt, dass X die Herausgabe verweigert.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "S, Hebebühne, Unmöglichkeit der Besitzrückgabe",
+            "evidence_scope": "S, Hebebühne, Unfähigkeit zur Rückgabe im Rahmen der §§ 989, 990 BGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "S übereignete die Hebebühne an den gutgläubigen X und konnte sie deshalb nicht mehr an M herausgeben.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort nennt den gutgläubigen Eigentumserwerb des X und folgert daraus, dass S nicht mehr herausgeben konnte. Sie erwähnt aber nicht, dass X die Herausgabe verweigert; damit fehlt ein vom Kriterium verlangter Begründungsteil.",
+          "evidence": [
+            "X erwarb daher gutgläubig Eigentum an der Hebebühne.",
+            "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte."
+          ],
+          "component_checks": [
+            {
+              "requirement": "S's Rückgabe der Hebebühne wird als subjektiv unmöglich eingeordnet",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "X erwarb gutgläubig Eigentum",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "X verweigert die Herausgabe",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Rückgabe der Hebebühne durch S an M; subjektive Unmöglichkeit wegen gutgläubigem Eigentumserwerb und Herausgabeverweigerung des X",
+            "evidence_scope": "S und M/Hebebühne; gutgläubiger Eigentumserwerb des X und daraus folgende Unfähigkeit des S zur Herausgabe; Herausgabeverweigerung des X nicht erwähnt",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "S habe die Hebebühne an den gutgläubigen X übereignet und könne sie deshalb nicht mehr an M herausgeben.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Zwar nimmt die Falllösung eine Unmöglichkeit der Herausgabe an, stützt diese jedoch allein auf die Übereignung an den gutgläubigen X. Die vom Kriterium kumulativ geforderte Herausgabeverweigerung durch X wird an keiner Stelle herangezogen oder erwähnt.",
+          "evidence": [
+            "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte.",
+            "S hat gerade durch die Veräußerung, welche die Herausgabe unmöglich machte, den Erlös von 14.000 € erzielt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einordnung der Rückgabe der Hebebühne durch S als (subjektiv) unmöglich",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Begründung der Unmöglichkeit mit dem gutgläubigen Eigentumserwerb des X und dessen Verweigerung der Herausgabe",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "S/Hebebühne: Einordnung der Rückgabe als subjektiv unmöglich wegen Eigentumserwerbs und Herausgabeverweigerung des X",
+            "evidence_scope": "S/Hebebühne: Unmöglichkeit der Herausgabe im Rahmen von §§ 989, 990 BGB und § 285 BGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Übereignung an den gutgläubigen X machte die Herausgabe unmöglich",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 25706,
+        "output_tokens": 12303,
+        "total_tokens": 38009,
+        "cached_input_tokens": 8979,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort nimmt eine fehlende Rückgabemöglichkeit an und verbindet sie mit dem gutgläubigen Eigentumserwerb des X. Sie stellt aber nicht fest, dass X die Herausgabe verweigert. Damit fehlt ein ausdrücklich verlangter Bestandteil des Kriteriums.",
+              "evidence": [
+                "X erwarb daher gutgläubig Eigentum an der Hebebühne.",
+                "dass er sie an M nicht mehr herausgeben konnte."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "S ordnet die Rückgabe der Hebebühne als unmöglich ein.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Unmöglichkeit wird damit begründet, dass X gutgläubig Eigentum erworben hat.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Die Antwort stellt fest oder macht klar, dass X die Herausgabe verweigert.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S; Rückgabe der Hebebühne; subjektive Unmöglichkeit wegen gutgläubigen Eigentumserwerbs und Herausgabeverweigerung des X",
+                "evidence_scope": "S; Rückgabe der Hebebühne im Rahmen der §§ 989, 990 Abs. 1 BGB; Übereignung an den gutgläubigen X und fehlende Rückgabemöglichkeit",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "S übereignete die Hebebühne an den gutgläubigen X und konnte sie deshalb nicht mehr an M herausgeben; eine Weigerung des X wird nicht genannt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort ordnet die Herausgabe der Hebebühne als nachträglich unmöglich ein und stützt dies auf den gutgläubigen Eigentumserwerb des X nach Übergabe. Eine fortbestehende Herausgabemöglichkeit des S wird nicht angenommen; die Weigerung des X ist in der festgestellten fehlenden Rückgabemöglichkeit jedenfalls impliziert.",
+              "evidence": [
+                "X erwarb daher gutgläubig Eigentum an der Hebebühne.",
+                "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte.",
+                "S hat gerade durch die Veräußerung, welche die Herausgabe unmöglich machte, den Erlös von 14.000 € erzielt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Rückgabe der Hebebühne durch S wird als nicht mehr möglich eingeordnet",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Ursache ist der gutgläubige Eigentumserwerb des X",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "X verweigert die Herausgabe",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Rückgabe der Hebebühne durch S an M; subjektive Unmöglichkeit wegen gutgläubigen Eigentumserwerbs und Herausgabeverweigerung des X",
+                "evidence_scope": "S, M, Hebebühne, Übereignung an den gutgläubigen X, fehlende Herausgabemöglichkeit des S",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "S habe die Hebebühne an den gutgläubigen X übereignet und konnte sie deshalb nicht mehr herausgeben; die Veräußerung habe die Herausgabe unmöglich gemacht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt zwar fest, dass S die Hebebühne wegen der Veräußerung an X nicht mehr herausgeben konnte bzw. dies unmöglich wurde. Sie thematisiert jedoch an keiner Stelle den Umstand, dass X die Herausgabe verweigert bzw. nicht herausgabebereit ist, was für das Vorliegen subjektiver Unmöglichkeit bei Besitzverlust an einen Dritten zwingend erforderlich ist.",
+              "evidence": [
+                "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte.",
+                "S hat gerade durch die Veräußerung, welche die Herausgabe unmöglich machte, den Erlös von 14.000 € erzielt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung der Rückgabe der Hebebühne als (subjektiv) unmöglich",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung durch gutgläubigen Eigentumserwerb des X",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Begründung durch die fehlende Herausgabebereitschaft / Herausgabeverweigerung des X",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Rückgabe der Hebebühne durch S an M; Unmöglichkeit der Herausgabe",
+                "evidence_scope": "Rückgabe der Hebebühne durch S an M; Unmöglichkeit der Herausgabe unter §§ 989, 990 BGB und § 285 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Veräußerung / Übereignung an den gutgläubigen X machte die Herausgabe unmöglich",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort ordnet die Rückgabe als nicht mehr möglich ein und verknüpft dies mit der Übereignung an den gutgläubigen X. Sie berücksichtigt jedoch nicht, dass X die Herausgabe verweigert; damit fehlt ein ausdrücklich verlangter Bestandteil der Begründung.",
+              "evidence": [
+                "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Rückgabe der Hebebühne durch S wird als unmöglich eingeordnet.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Die Unmöglichkeit wird mit dem gutgläubigen Eigentumserwerb des X begründet.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Die Antwort berücksichtigt, dass X die Herausgabe verweigert.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S, Hebebühne, Unmöglichkeit der Besitzrückgabe",
+                "evidence_scope": "S, Hebebühne, Unfähigkeit zur Rückgabe im Rahmen der §§ 989, 990 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "S übereignete die Hebebühne an den gutgläubigen X und konnte sie deshalb nicht mehr an M herausgeben.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort nennt den gutgläubigen Eigentumserwerb des X und folgert daraus, dass S nicht mehr herausgeben konnte. Sie erwähnt aber nicht, dass X die Herausgabe verweigert; damit fehlt ein vom Kriterium verlangter Begründungsteil.",
+              "evidence": [
+                "X erwarb daher gutgläubig Eigentum an der Hebebühne.",
+                "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "S's Rückgabe der Hebebühne wird als subjektiv unmöglich eingeordnet",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "X erwarb gutgläubig Eigentum",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "X verweigert die Herausgabe",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Rückgabe der Hebebühne durch S an M; subjektive Unmöglichkeit wegen gutgläubigem Eigentumserwerb und Herausgabeverweigerung des X",
+                "evidence_scope": "S und M/Hebebühne; gutgläubiger Eigentumserwerb des X und daraus folgende Unfähigkeit des S zur Herausgabe; Herausgabeverweigerung des X nicht erwähnt",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "S habe die Hebebühne an den gutgläubigen X übereignet und könne sie deshalb nicht mehr an M herausgeben.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Zwar nimmt die Falllösung eine Unmöglichkeit der Herausgabe an, stützt diese jedoch allein auf die Übereignung an den gutgläubigen X. Die vom Kriterium kumulativ geforderte Herausgabeverweigerung durch X wird an keiner Stelle herangezogen oder erwähnt.",
+              "evidence": [
+                "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte.",
+                "S hat gerade durch die Veräußerung, welche die Herausgabe unmöglich machte, den Erlös von 14.000 € erzielt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung der Rückgabe der Hebebühne durch S als (subjektiv) unmöglich",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung der Unmöglichkeit mit dem gutgläubigen Eigentumserwerb des X und dessen Verweigerung der Herausgabe",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "S/Hebebühne: Einordnung der Rückgabe als subjektiv unmöglich wegen Eigentumserwerbs und Herausgabeverweigerung des X",
+                "evidence_scope": "S/Hebebühne: Unmöglichkeit der Herausgabe im Rahmen von §§ 989, 990 BGB und § 285 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Übereignung an den gutgläubigen X machte die Herausgabe unmöglich",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    },
+    {
+      "id": "C-025",
+      "title": "§ 816 BGB neben dem EBV",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort wendet § 816 Abs. 1 S. 1 BGB neben §§ 989, 990 BGB an und ordnet den Mehrerlös ausdrücklich § 816 zu, während sie den EBV-Schadensersatz auf den Eigentumsschaden begrenzt. Sie lehnt die Verfügungskondiktion nicht wegen einer umfassenden EBV-Sperre ab.",
+      "evidence": [
+        "Aus §§ 989, 990 Abs. 1 BGB könnte M lediglich Ersatz des Wertes der Hebebühne in Höhe von 10.000 € verlangen.",
+        "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort wendet § 816 Abs. 1 S. 1 BGB neben §§ 989, 990 BGB an und ordnet den Mehrerlös ausdrücklich § 816 zu, während sie den EBV-Schadensersatz auf den Eigentumsschaden begrenzt. Sie lehnt die Verfügungskondiktion nicht wegen einer umfassenden EBV-Sperre ab.",
+          "evidence": [
+            "Aus §§ 989, 990 Abs. 1 BGB könnte M lediglich Ersatz des Wertes der Hebebühne in Höhe von 10.000 € verlangen.",
+            "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB."
+          ],
+          "component_checks": [
+            {
+              "requirement": "§ 816 Abs. 1 S. 1 BGB wird neben Ansprüchen aus §§ 987 ff. BGB angewendet.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort begründet die Anwendung damit, dass der Veräußerungserlös beziehungsweise Mehrerlös nicht durch die EBV-Schadensersatzansprüche erfasst wird.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Die Verfügungskondiktion wird nicht wegen einer umfassenden EBV-Sperre abgelehnt.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "M gegen S; Herausgabe des Veräußerungserlöses aus der Veräußerung der Hebebühne; Verhältnis von § 816 Abs. 1 S. 1 BGB zu §§ 987 ff. BGB",
+            "evidence_scope": "M gegen S; Erlös aus der Veräußerung der Hebebühne; Anspruch aus §§ 989, 990 BGB und Abschöpfung des Mehrerlöses über § 816 Abs. 1 S. 1 BGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der EBV-Schadensersatz gleicht den Eigentumsschaden aus, der hier 10.000 € beträgt; die Abschöpfung des Mehrerlöses von 4.000 € erfolgt nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort wendet § 816 Abs. 1 S. 1 BGB an und stellt im EBV-Abschnitt klar, dass der EBV-Schadensersatz nur den Wertersatz von 10.000 € betrifft, während der Veräußerungserlös bzw. Mehrerlös über § 816 BGB abgeschöpft wird. Sie lehnt die Verfügungskondiktion nicht wegen einer umfassenden EBV-Sperre ab.",
+          "evidence": [
+            "M hat gegen S einen Anspruch auf Herausgabe der gesamten 14.000 € aus § 816 Abs. 1 S. 1 BGB.",
+            "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB.",
+            "Aus §§ 989, 990 Abs. 1 BGB könnte M lediglich Ersatz des Wertes der Hebebühne in Höhe von 10.000 € verlangen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Anwendung des § 816 Abs. 1 S. 1 BGB",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Anwendung neben dem EBV bzw. den §§ 987 ff. BGB",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Begründung, dass das EBV die Herausgabe des Veräußerungserlöses nicht regelt bzw. der Mehrerlös nicht über das EBV-Schadensrecht abgeschöpft wird",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Frage 1: Anspruch des M gegen S auf Herausgabe der 14.000 € aus § 816 Abs. 1 S. 1 BGB neben dem EBV betreffend die Hebebühne",
+            "evidence_scope": "Frage 1: § 816 Abs. 1 S. 1 BGB für die Hebebühne und 14.000 € sowie §§ 989, 990 Abs. 1 BGB im EBV; Verhältnis beim Mehrerlös",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der EBV-Schadensersatz erfasst nur den Verkehrswert von 10.000 €; die Abschöpfung des Mehrerlöses von 4.000 € erfolgt über § 816 Abs. 1 S. 1 BGB.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die inhaltlichen Anforderungen sind erfüllt: § 816 Abs. 1 S. 1 BGB wird nicht an einer Sperrwirkung des EBV scheitern gelassen, sondern neben dem EBV bejaht, da das EBV (Schadensersatz) nur den Verkehrswert abdeckt und den Veräußerungserlös nicht erfasst.",
+          "evidence": [
+            "Dass S einen höheren Erlös erzielt hat, erhöht den Schaden des M nicht ohne Weiteres auf 14.000 €.",
+            "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Anwendung von § 816 Abs. 1 S. 1 BGB neben den §§ 987 ff. BGB mit der Begründung, dass das EBV den Veräußerungserlös nicht erfasst",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Keine Ablehnung der Verfügungskondiktion wegen EBV-Sperre",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Verhältnis von § 816 Abs. 1 S. 1 BGB zu den §§ 987 ff. BGB bezüglich der Herausgabe des Veräußerungserlöses",
+            "evidence_scope": "Verhältnis von § 816 Abs. 1 S. 1 BGB zu den §§ 987 ff. BGB bezüglich der Herausgabe des Veräußerungserlöses",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das Schadensrecht des EBV deckt nur den Verkehrswert (Eigentumsschaden) ab, sodass die Abschöpfung des Erlöses über § 816 Abs. 1 S. 1 BGB erfolgt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 25726,
+        "output_tokens": 8953,
+        "total_tokens": 34679,
+        "cached_input_tokens": 16407,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort wendet § 816 Abs. 1 S. 1 BGB neben §§ 989, 990 Abs. 1 BGB an. Ihre Unterscheidung zwischen dem begrenzten Eigentumsschaden und dem tatsächlich erzielten Mehrerlös bringt zum Ausdruck, dass das EBV die Erlösherausgabe nicht regelt; eine umfassende EBV-Sperre wird nicht angenommen.",
+              "evidence": [
+                "Aus §§ 989, 990 Abs. 1 BGB könnte M lediglich Ersatz des Wertes der Hebebühne in Höhe von 10.000 € verlangen.",
+                "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB",
+                "M hat gegen S einen Anspruch auf Herausgabe der gesamten 14.000 € aus § 816 Abs. 1 S. 1 BGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§ 816 Abs. 1 S. 1 BGB wird neben Ansprüchen aus §§ 987 ff. BGB angewendet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort begründet die parallele Anwendung damit, dass das EBV den Veräußerungserlös nicht erfasst.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "M, Hebebühne, Herausgabe des Veräußerungserlöses aus § 816 Abs. 1 S. 1 BGB neben dem EBV",
+                "evidence_scope": "M, Hebebühne, Herausgabe des Veräußerungserlöses aus § 816 Abs. 1 S. 1 BGB neben Ansprüchen aus §§ 989, 990 Abs. 1 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der EBV-Schadensersatz ist auf den Wert der Hebebühne begrenzt; der Mehrerlös wird über § 816 Abs. 1 S. 1 BGB abgeschöpft.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort wendet § 816 Abs. 1 S. 1 BGB neben dem EBV an und erklärt ausdrücklich, dass der über den Verkehrswert hinausgehende Mehrerlös nicht über das EBV-Schadensrecht, sondern über die Verfügungskondiktion abgeschöpft wird. Eine umfassende EBV-Sperre gegen § 816 BGB wird nicht vertreten.",
+              "evidence": [
+                "M hat gegen S einen Anspruch auf Herausgabe der gesamten 14.000 € aus § 816 Abs. 1 S. 1 BGB.",
+                "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB.",
+                "Wegen der weitergehenden Herausgabeansprüche erhält er insgesamt jedoch die verlangten 14.000 €, nicht zusätzlich weitere 10.000 €."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§ 816 Abs. 1 S. 1 BGB wird neben den §§ 987 ff. BGB angewendet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Veräußerungserlös/Mehrerlös wird nicht über das EBV-Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB abgeschöpft.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "M gegen S, Hebebühne/Veräußerungserlös, Verhältnis von § 816 Abs. 1 S. 1 BGB zu §§ 987 ff. BGB",
+                "evidence_scope": "M gegen S, Hebebühne/Veräußerungserlös, EBV-Schadensersatz §§ 989, 990 BGB und § 816 Abs. 1 S. 1 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der EBV-Schadensersatz erfasst nur den Verkehrswert von 10.000 €, nicht den Mehrerlös; die Abschöpfung des Mehrerlöses erfolgt über § 816 Abs. 1 S. 1 BGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Begründungsanforderung ist nicht erfüllt. Die Antwort wendet § 816 Abs. 1 S. 1 BGB zwar im Ergebnis neben dem EBV an, thematisiert die Sperrwirkung des EBV (§ 993 Abs. 1 Hs. 2 BGB) gegenüber der Eingriffskondiktion jedoch an keiner Stelle und begründet das Nebeneinander nicht damit, dass das EBV den Veräußerungserlös nicht regelt.",
+              "evidence": [
+                "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Anwendung von § 816 Abs. 1 S. 1 BGB neben den §§ 987 ff. BGB",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung, dass das EBV die Herausgabe des Veräußerungserlöses (commodum ex negotiatione) nicht regelt / keine Sperrwirkung entfaltet",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Verhältnis von § 816 Abs. 1 S. 1 BGB zu den §§ 987 ff. BGB (EBV-Sperrwirkung)",
+                "evidence_scope": "Verhältnis von Schadensersatz aus EBV (§§ 989, 990 BGB) zu § 816 Abs. 1 S. 1 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort wendet § 816 Abs. 1 S. 1 BGB neben §§ 989, 990 BGB an und ordnet den Mehrerlös ausdrücklich § 816 zu, während sie den EBV-Schadensersatz auf den Eigentumsschaden begrenzt. Sie lehnt die Verfügungskondiktion nicht wegen einer umfassenden EBV-Sperre ab.",
+              "evidence": [
+                "Aus §§ 989, 990 Abs. 1 BGB könnte M lediglich Ersatz des Wertes der Hebebühne in Höhe von 10.000 € verlangen.",
+                "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§ 816 Abs. 1 S. 1 BGB wird neben Ansprüchen aus §§ 987 ff. BGB angewendet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort begründet die Anwendung damit, dass der Veräußerungserlös beziehungsweise Mehrerlös nicht durch die EBV-Schadensersatzansprüche erfasst wird.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Die Verfügungskondiktion wird nicht wegen einer umfassenden EBV-Sperre abgelehnt.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "M gegen S; Herausgabe des Veräußerungserlöses aus der Veräußerung der Hebebühne; Verhältnis von § 816 Abs. 1 S. 1 BGB zu §§ 987 ff. BGB",
+                "evidence_scope": "M gegen S; Erlös aus der Veräußerung der Hebebühne; Anspruch aus §§ 989, 990 BGB und Abschöpfung des Mehrerlöses über § 816 Abs. 1 S. 1 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der EBV-Schadensersatz gleicht den Eigentumsschaden aus, der hier 10.000 € beträgt; die Abschöpfung des Mehrerlöses von 4.000 € erfolgt nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort wendet § 816 Abs. 1 S. 1 BGB an und stellt im EBV-Abschnitt klar, dass der EBV-Schadensersatz nur den Wertersatz von 10.000 € betrifft, während der Veräußerungserlös bzw. Mehrerlös über § 816 BGB abgeschöpft wird. Sie lehnt die Verfügungskondiktion nicht wegen einer umfassenden EBV-Sperre ab.",
+              "evidence": [
+                "M hat gegen S einen Anspruch auf Herausgabe der gesamten 14.000 € aus § 816 Abs. 1 S. 1 BGB.",
+                "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB.",
+                "Aus §§ 989, 990 Abs. 1 BGB könnte M lediglich Ersatz des Wertes der Hebebühne in Höhe von 10.000 € verlangen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Anwendung des § 816 Abs. 1 S. 1 BGB",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Anwendung neben dem EBV bzw. den §§ 987 ff. BGB",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Begründung, dass das EBV die Herausgabe des Veräußerungserlöses nicht regelt bzw. der Mehrerlös nicht über das EBV-Schadensrecht abgeschöpft wird",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Frage 1: Anspruch des M gegen S auf Herausgabe der 14.000 € aus § 816 Abs. 1 S. 1 BGB neben dem EBV betreffend die Hebebühne",
+                "evidence_scope": "Frage 1: § 816 Abs. 1 S. 1 BGB für die Hebebühne und 14.000 € sowie §§ 989, 990 Abs. 1 BGB im EBV; Verhältnis beim Mehrerlös",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der EBV-Schadensersatz erfasst nur den Verkehrswert von 10.000 €; die Abschöpfung des Mehrerlöses von 4.000 € erfolgt über § 816 Abs. 1 S. 1 BGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die inhaltlichen Anforderungen sind erfüllt: § 816 Abs. 1 S. 1 BGB wird nicht an einer Sperrwirkung des EBV scheitern gelassen, sondern neben dem EBV bejaht, da das EBV (Schadensersatz) nur den Verkehrswert abdeckt und den Veräußerungserlös nicht erfasst.",
+              "evidence": [
+                "Dass S einen höheren Erlös erzielt hat, erhöht den Schaden des M nicht ohne Weiteres auf 14.000 €.",
+                "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Anwendung von § 816 Abs. 1 S. 1 BGB neben den §§ 987 ff. BGB mit der Begründung, dass das EBV den Veräußerungserlös nicht erfasst",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Keine Ablehnung der Verfügungskondiktion wegen EBV-Sperre",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Verhältnis von § 816 Abs. 1 S. 1 BGB zu den §§ 987 ff. BGB bezüglich der Herausgabe des Veräußerungserlöses",
+                "evidence_scope": "Verhältnis von § 816 Abs. 1 S. 1 BGB zu den §§ 987 ff. BGB bezüglich der Herausgabe des Veräußerungserlöses",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das Schadensrecht des EBV deckt nur den Verkehrswert (Eigentumsschaden) ab, sodass die Abschöpfung des Erlöses über § 816 Abs. 1 S. 1 BGB erfolgt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-022",
+      "title": "Unmöglichkeit der Besitzrückgabe",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort verknüpft die Übereignung an den gutgläubigen X ausdrücklich mit der daraus folgenden Unfähigkeit des S, die Hebebühne an M zurückzugeben. Damit prüft sie die Rückgabemöglichkeit methodisch nachvollziehbar, auch wenn sie diese nicht ausdrücklich als subjektive Unmöglichkeit bezeichnet.",
+      "evidence": [
+        "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verknüpft die Übereignung an den gutgläubigen X ausdrücklich mit der daraus folgenden Unfähigkeit des S, die Hebebühne an M zurückzugeben. Damit prüft sie die Rückgabemöglichkeit methodisch nachvollziehbar, auch wenn sie diese nicht ausdrücklich als subjektive Unmöglichkeit bezeichnet.",
+          "evidence": [
+            "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verbindet im selben Kontext die entscheidende Prämisse des gutgläubigen Eigentumserwerbs des X mit der konkreten Veräußerung und dem Ergebnis, dass S die Hebebühne nicht mehr herausgeben konnte. Damit liegt eine knappe, aber funktionale Anwendung des Unmöglichkeitsgedankens vor.",
+          "evidence": [
+            "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte.",
+            "S hat gerade durch die Veräußerung, welche die Herausgabe unmöglich machte, den Erlös von 14.000 € erzielt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort stellt keinen rechtlichen Obersatz zu den Voraussetzungen der subjektiven Unmöglichkeit/des Unvermögens auf und subsumiert nicht unter Einbeziehung der mangelnden Herausgabebereitschaft des Dritten, sondern behauptet das Unvermögen lediglich thesenartig.",
+          "evidence": [
+            "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte.",
+            "S hat gerade durch die Veräußerung, welche die Herausgabe unmöglich machte, den Erlös von 14.000 € erzielt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verknüpft die Übereignung an den gutgläubigen X ausdrücklich mit der fehlenden Rückgabemöglichkeit und zieht daraus eine Schlussfolgerung zur Haftung nach §§ 989, 990 Abs. 1 BGB. Das ist eine funktionale Prüfung der Rückgabemöglichkeit, auch wenn die Weigerung des X nicht eigens genannt wird.",
+              "evidence": [
+                "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die relevante Passage verknüpft die Übereignung an den gutgläubigen X mit der konkreten Feststellung, dass S die Hebebühne nicht mehr herausgeben konnte; die Unmöglichkeit wird als Ergebnis dieses Übereignungsvorgangs ausgewiesen.",
+              "evidence": [
+                "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte.",
+                "S hat gerade durch die Veräußerung, welche die Herausgabe unmöglich machte, den Erlös von 14.000 € erzielt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort subsumiert die Unmöglichkeit der Herausgabe nicht methodisch (keine Darlegung der Maßstäbe der subjektiven Unmöglichkeit nach § 275 Abs. 1 BGB bzw. des Unvermögens im EBV, kein Eingehen auf die fehlende Herausgabebereitschaft des X), sondern stellt das Unvermögen bzw. die Unmöglichkeit lediglich als bloße Behauptung fest.",
+              "evidence": [
+                "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte.",
+                "S hat gerade durch die Veräußerung, welche die Herausgabe unmöglich machte, den Erlös von 14.000 € erzielt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verknüpft die Übereignung an den gutgläubigen X ausdrücklich mit der daraus folgenden Unfähigkeit des S, die Hebebühne an M zurückzugeben. Damit prüft sie die Rückgabemöglichkeit methodisch nachvollziehbar, auch wenn sie diese nicht ausdrücklich als subjektive Unmöglichkeit bezeichnet.",
+              "evidence": [
+                "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verbindet im selben Kontext die entscheidende Prämisse des gutgläubigen Eigentumserwerbs des X mit der konkreten Veräußerung und dem Ergebnis, dass S die Hebebühne nicht mehr herausgeben konnte. Damit liegt eine knappe, aber funktionale Anwendung des Unmöglichkeitsgedankens vor.",
+              "evidence": [
+                "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte.",
+                "S hat gerade durch die Veräußerung, welche die Herausgabe unmöglich machte, den Erlös von 14.000 € erzielt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt keinen rechtlichen Obersatz zu den Voraussetzungen der subjektiven Unmöglichkeit/des Unvermögens auf und subsumiert nicht unter Einbeziehung der mangelnden Herausgabebereitschaft des Dritten, sondern behauptet das Unvermögen lediglich thesenartig.",
+              "evidence": [
+                "Indem S die Hebebühne an den gutgläubigen X übereignete, führte er schuldhaft herbei, dass er sie an M nicht mehr herausgeben konnte.",
+                "S hat gerade durch die Veräußerung, welche die Herausgabe unmöglich machte, den Erlös von 14.000 € erzielt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    },
+    {
+      "id": "C-025",
+      "title": "§ 816 BGB neben dem EBV",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort grenzt den EBV-Schadensersatz konkret auf den Eigentumsschaden von 10.000 € ein und ordnet den tatsächlich erzielten Mehrerlös von 4.000 € § 816 Abs. 1 S. 1 BGB zu. Damit verbindet sie die einschlägigen Ansprüche, den Sachverhalt und ein Ergebnis zur Erlösabschöpfung.",
+      "evidence": [
+        "Der Schadensersatzanspruch ist auf Ausgleich des Eigentumsschadens gerichtet.",
+        "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB"
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort grenzt den EBV-Schadensersatz konkret auf den Eigentumsschaden von 10.000 € ein und ordnet den tatsächlich erzielten Mehrerlös von 4.000 € § 816 Abs. 1 S. 1 BGB zu. Damit verbindet sie die einschlägigen Ansprüche, den Sachverhalt und ein Ergebnis zur Erlösabschöpfung.",
+          "evidence": [
+            "Der Schadensersatzanspruch ist auf Ausgleich des Eigentumsschadens gerichtet.",
+            "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verbindet im EBV-Abschnitt den Verkehrswert von 10.000 € und den erzielten Mehrerlös von 14.000 € mit der Aussage, dass der Mehrerlös nicht über das EBV-Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB abgeschöpft wird. Damit wird das Nebeneinander von § 816 BGB und EBV methodisch begründet.",
+          "evidence": [
+            "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB.",
+            "Aus §§ 989, 990 Abs. 1 BGB könnte M lediglich Ersatz des Wertes der Hebebühne in Höhe von 10.000 € verlangen. Wegen der weitergehenden Herausgabeansprüche erhält er insgesamt jedoch die verlangten 14.000 €"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Gutachtenmethode ist nicht gewahrt. Die Antwort formuliert keinen rechtlichen Obersatz zur Sperrwirkung des EBV (§ 993 Abs. 1 Hs. 2 BGB) gegenüber § 816 Abs. 1 S. 1 BGB und führt keine methodische Konkurrenzprüfung durch, sondern postuliert lediglich im Rahmen der Schadenshöhe der §§ 989, 990 BGB, dass der Mehrerlös über § 816 BGB abgeschöpft wird.",
+          "evidence": [
+            "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort grenzt den auf den Sachwert begrenzten Schadensersatz aus §§ 989, 990 BGB vom Anspruch auf den konkreten Veräußerungserlös ab und ordnet den Mehrerlös § 816 Abs. 1 S. 1 BGB zu. Sie verknüpft dies mit dem erzielten Erlös und kommt zum Ergebnis, dass M insgesamt 14.000 € verlangen kann.",
+              "evidence": [
+                "Der Schadensersatzanspruch ist auf Ausgleich des Eigentumsschadens gerichtet. Dieser entspricht grundsätzlich dem Verkehrswert der verlorenen Hebebühne, also 10.000 €.",
+                "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB",
+                "Wegen der weitergehenden Herausgabeansprüche erhält er insgesamt jedoch die verlangten 14.000 €"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verknüpft im EBV-Prüfungsteil den EBV-Schadensersatz mit dem erzielten Mehrerlös und leitet den über den Verkehrswert hinausgehenden Erlös ausdrücklich auf § 816 Abs. 1 S. 1 BGB über. Damit wird die Anwendung der Verfügungskondiktion neben dem EBV methodisch vollzogen.",
+              "evidence": [
+                "Der Schadensersatzanspruch ist auf Ausgleich des Eigentumsschadens gerichtet. Dieser entspricht grundsätzlich dem Verkehrswert der verlorenen Hebebühne, also 10.000 €.",
+                "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort formuliert keinen rechtlichen Prüfungsmaßstab zum Konkurrenzverhältnis zwischen § 816 Abs. 1 S. 1 BGB und der Sperrwirkung des EBV (§ 993 Abs. 1 Hs. 2 BGB). Das Verhältnis wird weder bei § 816 noch beim EBV methodisch sauber mit Obersatz, Subsumtion und Schlusssatz geprüft, sondern lediglich im Rahmen der Schadenshöhe beiläufig erwähnt.",
+              "evidence": [
+                "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort grenzt den EBV-Schadensersatz konkret auf den Eigentumsschaden von 10.000 € ein und ordnet den tatsächlich erzielten Mehrerlös von 4.000 € § 816 Abs. 1 S. 1 BGB zu. Damit verbindet sie die einschlägigen Ansprüche, den Sachverhalt und ein Ergebnis zur Erlösabschöpfung.",
+              "evidence": [
+                "Der Schadensersatzanspruch ist auf Ausgleich des Eigentumsschadens gerichtet.",
+                "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verbindet im EBV-Abschnitt den Verkehrswert von 10.000 € und den erzielten Mehrerlös von 14.000 € mit der Aussage, dass der Mehrerlös nicht über das EBV-Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB abgeschöpft wird. Damit wird das Nebeneinander von § 816 BGB und EBV methodisch begründet.",
+              "evidence": [
+                "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB.",
+                "Aus §§ 989, 990 Abs. 1 BGB könnte M lediglich Ersatz des Wertes der Hebebühne in Höhe von 10.000 € verlangen. Wegen der weitergehenden Herausgabeansprüche erhält er insgesamt jedoch die verlangten 14.000 €"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Gutachtenmethode ist nicht gewahrt. Die Antwort formuliert keinen rechtlichen Obersatz zur Sperrwirkung des EBV (§ 993 Abs. 1 Hs. 2 BGB) gegenüber § 816 Abs. 1 S. 1 BGB und führt keine methodische Konkurrenzprüfung durch, sondern postuliert lediglich im Rahmen der Schadenshöhe der §§ 989, 990 BGB, dass der Mehrerlös über § 816 BGB abgeschöpft wird.",
+              "evidence": [
+                "Die Abschöpfung des Mehrerlöses von 4.000 € erfolgt daher nicht über das Schadensrecht, sondern über § 816 Abs. 1 S. 1 BGB beziehungsweise §§ 687 Abs. 2, 681 S. 2, 667 BGB."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ]
+}

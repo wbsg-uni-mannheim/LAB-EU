@@ -1,0 +1,829 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/verwaltungsrecht/examensklausur-40-000-t-schredder-schrott",
+    "title": "Examensklausur: 40.000 t Schredder-Schrott"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-sol-high/20260730T221733Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/verwaltungsrecht/examensklausur-40-000-t-schredder-schrott/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:23:58.311560+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 2,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Begründetheit des Antrags": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Begründetheit des Antrags › Formelle Rechtswidrigkeit der Vollziehungsanordnung": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 27713,
+    "output_tokens": 9088,
+    "total_tokens": 36801,
+    "cached_input_tokens": 18387,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 27713,
+    "output_tokens": 9088,
+    "total_tokens": 36801,
+    "cached_input_tokens": 18387,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-013",
+      "title": "Gefahr im Verzug bei der Vollziehungsanordnung",
+      "verdict": "fail",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort bejaht Gefahr im Verzug und stützt dies auf die konkrete Brand- und Explosionsgefahr. Sie erklärt jedoch nicht, dass der drohende Schadenseintritt eine rechtzeitige Begründung unmöglich macht. Damit fehlt ein ausdrücklich geforderter Bestandteil.",
+      "evidence": [
+        "wenn die Behörde bei Gefahr im Verzug, insbesondere bei drohenden Nachteilen für Leben, Gesundheit oder Eigentum",
+        "Die Mitarbeiter haben aufgrund der sommerbedingt extrem hohen Methankonzentration eine akute Brand- und Explosionsgefahr festgestellt.",
+        "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor"
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort bejaht Gefahr im Verzug und stützt dies auf die konkrete Brand- und Explosionsgefahr. Sie erklärt jedoch nicht, dass der drohende Schadenseintritt eine rechtzeitige Begründung unmöglich macht. Damit fehlt ein ausdrücklich geforderter Bestandteil.",
+          "evidence": [
+            "wenn die Behörde bei Gefahr im Verzug, insbesondere bei drohenden Nachteilen für Leben, Gesundheit oder Eigentum",
+            "Die Mitarbeiter haben aufgrund der sommerbedingt extrem hohen Methankonzentration eine akute Brand- und Explosionsgefahr festgestellt.",
+            "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bei der formellen Rechtmäßigkeit wird Gefahr im Verzug im Sinne des § 80 Abs. 3 Satz 2 VwGO bejaht.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Gefahr im Verzug wird damit erklärt, dass wegen des drohenden Schadenseintritts eine rechtzeitige Begründung nicht mehr möglich ist.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Bejahung wird auf die drohende Brand- und Explosionsgefahr gestützt.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung gegen K; Gefahr im Verzug nach § 80 Abs. 3 Satz 2 VwGO.",
+            "evidence_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung gegen K; § 80 Abs. 3 Satz 2 VwGO und die konkrete Brand- und Explosionsgefahr.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Wegen der akuten Brand- und Explosionsgefahr und fehlender sicherer anderweitiger Abwehr liege ein Fall des § 80 Abs. 3 Satz 2 VwGO vor; die Unmöglichkeit einer rechtzeitigen Begründung wird nicht genannt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht im Rahmen der formellen Rechtmäßigkeit der Vollziehungsanordnung den Ausnahmefall des § 80 Abs. 3 S. 2 VwGO, verbindet ihn mit der akuten Brand- und Explosionsgefahr und leitet daraus das Entfallen der besonderen Begründung ab. Damit ist der von der Norm geforderte Zusammenhang hergestellt.",
+          "evidence": [
+            "Davon macht § 80 Abs. 3 Satz 2 VwGO jedoch eine Ausnahme, wenn die Behörde bei Gefahr im Verzug, insbesondere bei drohenden Nachteilen für Leben, Gesundheit oder Eigentum, vorsorglich eine als solche bezeichnete Notstandsmaßnahme im öffentlichen Interesse trifft.",
+            "Die Mitarbeiter haben aufgrund der sommerbedingt extrem hohen Methankonzentration eine akute Brand- und Explosionsgefahr festgestellt.",
+            "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor; einer darüber hinausgehenden besonderen Begründung nach Satz 1 bedurfte es nicht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bejahung von Gefahr im Verzug bzw. des Anwendungsfalls des § 80 Abs. 3 S. 2 VwGO bei der formellen Rechtmäßigkeit der Vollziehungsanordnung",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Erklärung des Begriffs als Ausnahmefall vom Begründungserfordernis wegen der Dringlichkeit",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Stützung der Bejahung auf die drohende Brand- und Explosionsgefahr",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung; Gefahr im Verzug nach § 80 Abs. 3 S. 2 VwGO wegen drohender Brand- und Explosionsgefahr",
+            "evidence_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung; § 80 Abs. 3 S. 2 VwGO; akute Brand- und Explosionsgefahr",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Wegen der sommerbedingt extrem hohen Methankonzentration bestehe eine akute Brand- und Explosionsgefahr; eine sichere anderweitige Abwehr sei nicht möglich; die Behörde habe die Anordnung ausdrücklich als Notstandsmaßnahme getroffen, weshalb § 80 Abs. 3 S. 2 VwGO vorliege und eine besondere Begründung nach Satz 1 entbehrlich sei.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort bejaht zwar § 80 Abs. 3 Satz 2 VwGO und stützt dies auf die Brand- und Explosionsgefahr, erklärt den Begriff der Gefahr im Verzug jedoch nicht damit, dass wegen drohenden Schadenseintritts eine vorherige Begründung nicht mehr rechtzeitig möglich gewesen wäre.",
+          "evidence": [
+            "Davon macht § 80 Abs. 3 Satz 2 VwGO jedoch eine Ausnahme, wenn die Behörde bei Gefahr im Verzug, insbesondere bei drohenden Nachteilen für Leben, Gesundheit oder Eigentum, vorsorglich eine als solche bezeichnete Notstandsmaßnahme im öffentlichen Interesse trifft.",
+            "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor; einer darüber hinausgehenden besonderen Begründung nach Satz 1 bedurfte es nicht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bejahung von Gefahr im Verzug i.S.d. § 80 Abs. 3 S. 2 VwGO bei der formellen Rechtmäßigkeit der Vollziehungsanordnung",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Erklärung des Begriffs der Gefahr im Verzug mit der wegen drohenden Schadenseintritts nicht mehr möglichen rechtzeitigen Begründung",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Stützung der Bejahung auf die drohende Brand- und Explosionsgefahr",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung, Ausnahme vom Begründungserfordernis nach § 80 Abs. 3 S. 2 VwGO",
+            "evidence_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung, Ausnahme vom Begründungserfordernis nach § 80 Abs. 3 S. 2 VwGO",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Behörde traf wegen akuter Brand- und Explosionsgefahr ausdrücklich eine Notstandsmaßnahme, womit der Fall des § 80 Abs. 3 Satz 2 VwGO vorliege.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 27713,
+        "output_tokens": 9088,
+        "total_tokens": 36801,
+        "cached_input_tokens": 18387,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht Gefahr im Verzug und stützt sich ausdrücklich auf die akute Brand- und Explosionsgefahr. Sie erklärt aber nicht, dass wegen des drohenden Schadenseintritts eine rechtzeitige Begründung nicht mehr möglich ist. Eine zwingende Komponente des Kriteriums fehlt daher.",
+              "evidence": [
+                "Die Mitarbeiter haben aufgrund der sommerbedingt extrem hohen Methankonzentration eine akute Brand- und Explosionsgefahr festgestellt.",
+                "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Gefahr im Verzug im Rahmen der formellen Rechtmäßigkeit bejahen",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Gefahr im Verzug damit erklären, dass wegen drohenden Schadenseintritts eine rechtzeitige Begründung nicht mehr möglich ist",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Bejahung auf die drohende Brand- und Explosionsgefahr stützen",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung gegenüber K; Gefahr im Verzug nach § 80 Abs. 3 Satz 2 VwGO",
+                "evidence_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung gegenüber K; Gefahr im Verzug nach § 80 Abs. 3 Satz 2 VwGO",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die akute Brand- und Explosionsgefahr infolge der extrem hohen Methankonzentration begründet den Fall des § 80 Abs. 3 Satz 2 VwGO.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht die Gefahr im Verzug ausdrücklich im Rahmen der formellen Rechtmäßigkeit der Vollziehungsanordnung. Sie verbindet die Ausnahme des § 80 Abs. 3 Satz 2 VwGO mit der Begründungspflicht und stützt die Bejahung auf die konkrete akute Brand- und Explosionsgefahr. Die PASS-Komponenten sind damit erfüllt; ein FAIL-Grund liegt nicht vor.",
+              "evidence": [
+                "Davon macht § 80 Abs. 3 Satz 2 VwGO jedoch eine Ausnahme, wenn die Behörde bei Gefahr im Verzug, insbesondere bei drohenden Nachteilen für Leben, Gesundheit oder Eigentum, vorsorglich eine als solche bezeichnete Notstandsmaßnahme im öffentlichen Interesse trifft.",
+                "Die Mitarbeiter haben aufgrund der sommerbedingt extrem hohen Methankonzentration eine akute Brand- und Explosionsgefahr festgestellt.",
+                "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor; einer darüber hinausgehenden besonderen Begründung nach Satz 1 bedurfte es nicht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung von Gefahr im Verzug im Sinne des § 80 Abs. 3 Satz 2 VwGO bei der formellen Rechtmäßigkeit der Vollziehungsanordnung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erklärung des Begriffs als Ausnahme von der Begründungspflicht wegen drohender Nachteile / nicht mehr möglicher rechtzeitiger Begründung",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Stützung der Bejahung auf die drohende Brand- und Explosionsgefahr",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "formelle Rechtmäßigkeit der Vollziehungsanordnung; Gefahr im Verzug nach § 80 Abs. 3 Satz 2 VwGO",
+                "evidence_scope": "Abschnitt zur formellen Rechtmäßigkeit der Vollziehungsanordnung; § 80 Abs. 3 Satz 1 und 2 VwGO; akute Brand- und Explosionsgefahr",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Wegen der sommerbedingt extrem hohen Methankonzentration bestehe eine akute Brand- und Explosionsgefahr; eine sichere anderweitige Abwehr sei nicht möglich; die Behörde habe ausdrücklich eine Notstandsmaßnahme getroffen, sodass die Ausnahme des § 80 Abs. 3 Satz 2 VwGO greife und eine besondere Begründung nach Satz 1 nicht erforderlich sei.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium verlangt ausdrücklich, dass der Begriff der Gefahr im Verzug damit erklärt wird, dass eine rechtzeitige Begründung wegen drohenden Schadenseintritts nicht mehr möglich ist. Die Bearbeitung gibt lediglich den Gesetzeswortlaut wieder und subsumiert die Brand- und Explosionsgefahr, erklärt den Rechtsbegriff der Gefahr im Verzug jedoch an keiner Stelle rechtlich in Bezug auf die Begründung.",
+              "evidence": [
+                "Davon macht § 80 Abs. 3 Satz 2 VwGO jedoch eine Ausnahme, wenn die Behörde bei Gefahr im Verzug, insbesondere bei drohenden Nachteilen für Leben, Gesundheit oder Eigentum, vorsorglich eine als solche bezeichnete Notstandsmaßnahme im öffentlichen Interesse trifft.",
+                "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor; einer darüber hinausgehenden besonderen Begründung nach Satz 1 bedurfte es nicht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung von Gefahr im Verzug i.S.d. § 80 Abs. 3 S. 2 VwGO bei der formellen Rechtmäßigkeit der Vollziehungsanordnung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erklärung des Begriffs der Gefahr im Verzug mit der wegen drohenden Schadenseintritts nicht mehr möglichen rechtzeitigen Begründung",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Stützung der Bejahung auf die drohende Brand- und Explosionsgefahr",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung (§ 80 Abs. 3 S. 2 VwGO, Gefahr im Verzug)",
+                "evidence_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung (§ 80 Abs. 3 S. 2 VwGO, Gefahr im Verzug)",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Wortlaut des Gesetzes zitiert und Vorliegen einer Notstandsmaßnahme wegen akuter Brand- und Explosionsgefahr bejaht, ohne den Begriff der Gefahr im Verzug (Verzögerung durch Begründungserfordernis droht Zweck der Maßnahme zu vereiteln) zu definieren/erklären",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht Gefahr im Verzug und stützt dies auf die konkrete Brand- und Explosionsgefahr. Sie erklärt jedoch nicht, dass der drohende Schadenseintritt eine rechtzeitige Begründung unmöglich macht. Damit fehlt ein ausdrücklich geforderter Bestandteil.",
+              "evidence": [
+                "wenn die Behörde bei Gefahr im Verzug, insbesondere bei drohenden Nachteilen für Leben, Gesundheit oder Eigentum",
+                "Die Mitarbeiter haben aufgrund der sommerbedingt extrem hohen Methankonzentration eine akute Brand- und Explosionsgefahr festgestellt.",
+                "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bei der formellen Rechtmäßigkeit wird Gefahr im Verzug im Sinne des § 80 Abs. 3 Satz 2 VwGO bejaht.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Gefahr im Verzug wird damit erklärt, dass wegen des drohenden Schadenseintritts eine rechtzeitige Begründung nicht mehr möglich ist.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Bejahung wird auf die drohende Brand- und Explosionsgefahr gestützt.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung gegen K; Gefahr im Verzug nach § 80 Abs. 3 Satz 2 VwGO.",
+                "evidence_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung gegen K; § 80 Abs. 3 Satz 2 VwGO und die konkrete Brand- und Explosionsgefahr.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Wegen der akuten Brand- und Explosionsgefahr und fehlender sicherer anderweitiger Abwehr liege ein Fall des § 80 Abs. 3 Satz 2 VwGO vor; die Unmöglichkeit einer rechtzeitigen Begründung wird nicht genannt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht im Rahmen der formellen Rechtmäßigkeit der Vollziehungsanordnung den Ausnahmefall des § 80 Abs. 3 S. 2 VwGO, verbindet ihn mit der akuten Brand- und Explosionsgefahr und leitet daraus das Entfallen der besonderen Begründung ab. Damit ist der von der Norm geforderte Zusammenhang hergestellt.",
+              "evidence": [
+                "Davon macht § 80 Abs. 3 Satz 2 VwGO jedoch eine Ausnahme, wenn die Behörde bei Gefahr im Verzug, insbesondere bei drohenden Nachteilen für Leben, Gesundheit oder Eigentum, vorsorglich eine als solche bezeichnete Notstandsmaßnahme im öffentlichen Interesse trifft.",
+                "Die Mitarbeiter haben aufgrund der sommerbedingt extrem hohen Methankonzentration eine akute Brand- und Explosionsgefahr festgestellt.",
+                "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor; einer darüber hinausgehenden besonderen Begründung nach Satz 1 bedurfte es nicht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung von Gefahr im Verzug bzw. des Anwendungsfalls des § 80 Abs. 3 S. 2 VwGO bei der formellen Rechtmäßigkeit der Vollziehungsanordnung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erklärung des Begriffs als Ausnahmefall vom Begründungserfordernis wegen der Dringlichkeit",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Stützung der Bejahung auf die drohende Brand- und Explosionsgefahr",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung; Gefahr im Verzug nach § 80 Abs. 3 S. 2 VwGO wegen drohender Brand- und Explosionsgefahr",
+                "evidence_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung; § 80 Abs. 3 S. 2 VwGO; akute Brand- und Explosionsgefahr",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Wegen der sommerbedingt extrem hohen Methankonzentration bestehe eine akute Brand- und Explosionsgefahr; eine sichere anderweitige Abwehr sei nicht möglich; die Behörde habe die Anordnung ausdrücklich als Notstandsmaßnahme getroffen, weshalb § 80 Abs. 3 S. 2 VwGO vorliege und eine besondere Begründung nach Satz 1 entbehrlich sei.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht zwar § 80 Abs. 3 Satz 2 VwGO und stützt dies auf die Brand- und Explosionsgefahr, erklärt den Begriff der Gefahr im Verzug jedoch nicht damit, dass wegen drohenden Schadenseintritts eine vorherige Begründung nicht mehr rechtzeitig möglich gewesen wäre.",
+              "evidence": [
+                "Davon macht § 80 Abs. 3 Satz 2 VwGO jedoch eine Ausnahme, wenn die Behörde bei Gefahr im Verzug, insbesondere bei drohenden Nachteilen für Leben, Gesundheit oder Eigentum, vorsorglich eine als solche bezeichnete Notstandsmaßnahme im öffentlichen Interesse trifft.",
+                "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor; einer darüber hinausgehenden besonderen Begründung nach Satz 1 bedurfte es nicht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung von Gefahr im Verzug i.S.d. § 80 Abs. 3 S. 2 VwGO bei der formellen Rechtmäßigkeit der Vollziehungsanordnung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erklärung des Begriffs der Gefahr im Verzug mit der wegen drohenden Schadenseintritts nicht mehr möglichen rechtzeitigen Begründung",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Stützung der Bejahung auf die drohende Brand- und Explosionsgefahr",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung, Ausnahme vom Begründungserfordernis nach § 80 Abs. 3 S. 2 VwGO",
+                "evidence_scope": "Formelle Rechtmäßigkeit der Vollziehungsanordnung, Ausnahme vom Begründungserfordernis nach § 80 Abs. 3 S. 2 VwGO",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Behörde traf wegen akuter Brand- und Explosionsgefahr ausdrücklich eine Notstandsmaßnahme, womit der Fall des § 80 Abs. 3 Satz 2 VwGO vorliege.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-013",
+      "title": "Gefahr im Verzug bei der Vollziehungsanordnung",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort prüft die formelle Rechtmäßigkeit der Vollziehungsanordnung, nennt die Ausnahme des § 80 Abs. 3 Satz 2 VwGO, verknüpft sie mit der akuten Brand- und Explosionsgefahr und zieht daraus ein Ergebnis. Die Prüfung ist methodisch geschlossen, auch wenn die inhaltlich verlangte nähere Erklärung des Begriffs fehlt.",
+      "evidence": [
+        "§ 80 Abs. 3 Satz 2 VwGO jedoch eine Ausnahme, wenn die Behörde bei Gefahr im Verzug",
+        "Die Mitarbeiter haben aufgrund der sommerbedingt extrem hohen Methankonzentration eine akute Brand- und Explosionsgefahr festgestellt.",
+        "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor"
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die formelle Rechtmäßigkeit der Vollziehungsanordnung, nennt die Ausnahme des § 80 Abs. 3 Satz 2 VwGO, verknüpft sie mit der akuten Brand- und Explosionsgefahr und zieht daraus ein Ergebnis. Die Prüfung ist methodisch geschlossen, auch wenn die inhaltlich verlangte nähere Erklärung des Begriffs fehlt.",
+          "evidence": [
+            "§ 80 Abs. 3 Satz 2 VwGO jedoch eine Ausnahme, wenn die Behörde bei Gefahr im Verzug",
+            "Die Mitarbeiter haben aufgrund der sommerbedingt extrem hohen Methankonzentration eine akute Brand- und Explosionsgefahr festgestellt.",
+            "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Gefahr im Verzug an der richtigen Stelle, nämlich bei der formellen Rechtmäßigkeit der Vollziehungsanordnung. Sie verbindet die Norm des § 80 Abs. 3 Satz 2 VwGO mit den konkreten Umständen der akuten Brand- und Explosionsgefahr und führt diesen Gedanken zu einem ausdrücklichen Ergebnis fort.",
+          "evidence": [
+            "Nach § 80 Abs. 3 Satz 1 VwGO ist das besondere Interesse an der sofortigen Vollziehung grundsätzlich schriftlich und einzelfallbezogen zu begründen. Davon macht § 80 Abs. 3 Satz 2 VwGO jedoch eine Ausnahme, wenn die Behörde bei Gefahr im Verzug, insbesondere bei drohenden Nachteilen für Leben, Gesundheit oder Eigentum, vorsorglich eine als solche bezeichnete Notstandsmaßnahme im öffentlichen Interesse trifft.",
+            "Die Mitarbeiter haben aufgrund der sommerbedingt extrem hohen Methankonzentration eine akute Brand- und Explosionsgefahr festgestellt. Eine sichere anderweitige Abwehr war nicht möglich.",
+            "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor; einer darüber hinausgehenden besonderen Begründung nach Satz 1 bedurfte es nicht."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort wendet die Ausnahme des § 80 Abs. 3 Satz 2 VwGO methodisch geordnet an, indem sie die gesetzliche Norm nennt, die festgestellten Tatsachen (Brand- und Explosionsgefahr) subsumiert und zu dem Schluss gelangt, dass keine gesonderte Begründung erforderlich war.",
+          "evidence": [
+            "Davon macht § 80 Abs. 3 Satz 2 VwGO jedoch eine Ausnahme, wenn die Behörde bei Gefahr im Verzug, insbesondere bei drohenden Nachteilen für Leben, Gesundheit oder Eigentum, vorsorglich eine als solche bezeichnete Notstandsmaßnahme im öffentlichen Interesse trifft. Die Mitarbeiter haben aufgrund der sommerbedingt extrem hohen Methankonzentration eine akute Brand- und Explosionsgefahr festgestellt. Eine sichere anderweitige Abwehr war nicht möglich. Die Behörde hat die Anordnung ausdrücklich als Notstandsmaßnahme getroffen. Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor; einer darüber hinausgehenden besonderen Begründung nach Satz 1 bedurfte es nicht."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die formelle Rechtmäßigkeit der Vollziehungsanordnung, nennt die Ausnahme des § 80 Abs. 3 Satz 2 VwGO, verknüpft sie mit der akuten Brand- und Explosionsgefahr und zieht daraus ein Ergebnis. Die Prüfung ist methodisch geschlossen, auch wenn die inhaltlich verlangte nähere Erklärung des Begriffs fehlt.",
+              "evidence": [
+                "§ 80 Abs. 3 Satz 2 VwGO jedoch eine Ausnahme, wenn die Behörde bei Gefahr im Verzug",
+                "Die Mitarbeiter haben aufgrund der sommerbedingt extrem hohen Methankonzentration eine akute Brand- und Explosionsgefahr festgestellt.",
+                "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Gefahr im Verzug an der richtigen Stelle, nämlich bei der formellen Rechtmäßigkeit der Vollziehungsanordnung. Sie verbindet die Norm des § 80 Abs. 3 Satz 2 VwGO mit den konkreten Umständen der akuten Brand- und Explosionsgefahr und führt diesen Gedanken zu einem ausdrücklichen Ergebnis fort.",
+              "evidence": [
+                "Nach § 80 Abs. 3 Satz 1 VwGO ist das besondere Interesse an der sofortigen Vollziehung grundsätzlich schriftlich und einzelfallbezogen zu begründen. Davon macht § 80 Abs. 3 Satz 2 VwGO jedoch eine Ausnahme, wenn die Behörde bei Gefahr im Verzug, insbesondere bei drohenden Nachteilen für Leben, Gesundheit oder Eigentum, vorsorglich eine als solche bezeichnete Notstandsmaßnahme im öffentlichen Interesse trifft.",
+                "Die Mitarbeiter haben aufgrund der sommerbedingt extrem hohen Methankonzentration eine akute Brand- und Explosionsgefahr festgestellt. Eine sichere anderweitige Abwehr war nicht möglich.",
+                "Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor; einer darüber hinausgehenden besonderen Begründung nach Satz 1 bedurfte es nicht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort wendet die Ausnahme des § 80 Abs. 3 Satz 2 VwGO methodisch geordnet an, indem sie die gesetzliche Norm nennt, die festgestellten Tatsachen (Brand- und Explosionsgefahr) subsumiert und zu dem Schluss gelangt, dass keine gesonderte Begründung erforderlich war.",
+              "evidence": [
+                "Davon macht § 80 Abs. 3 Satz 2 VwGO jedoch eine Ausnahme, wenn die Behörde bei Gefahr im Verzug, insbesondere bei drohenden Nachteilen für Leben, Gesundheit oder Eigentum, vorsorglich eine als solche bezeichnete Notstandsmaßnahme im öffentlichen Interesse trifft. Die Mitarbeiter haben aufgrund der sommerbedingt extrem hohen Methankonzentration eine akute Brand- und Explosionsgefahr festgestellt. Eine sichere anderweitige Abwehr war nicht möglich. Die Behörde hat die Anordnung ausdrücklich als Notstandsmaßnahme getroffen. Damit liegt gerade der Fall des § 80 Abs. 3 Satz 2 VwGO vor; einer darüber hinausgehenden besonderen Begründung nach Satz 1 bedurfte es nicht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

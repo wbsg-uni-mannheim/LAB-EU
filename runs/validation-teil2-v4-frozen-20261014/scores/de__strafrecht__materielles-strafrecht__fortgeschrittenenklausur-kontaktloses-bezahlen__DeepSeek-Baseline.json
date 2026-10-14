@@ -1,0 +1,808 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-kontaktloses-bezahlen",
+    "title": "Fortgeschrittenenklausur: Kontaktloses Bezahlen"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenklausur-kontaktloses-bezahlen/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-kontaktloses-bezahlen/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:51:23.647483+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 1,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Gesamtergebnis": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Gesamtergebnis": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 20667,
+    "output_tokens": 8274,
+    "total_tokens": 28941,
+    "cached_input_tokens": 9709,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 20667,
+    "output_tokens": 8274,
+    "total_tokens": 28941,
+    "cached_input_tokens": 9709,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-025",
+      "title": "Strafantrag beim geringwertigen Computerbetrug",
+      "verdict": "fail",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort behandelt Strafanträge zwar pauschal als gestellt. Sie erkennt aber nicht, dass das Antragserfordernis beim bejahten Computerbetrug gerade wegen des geringwertigen Rechnungsbetrags greift. Damit fehlt ein verpflichtender Bestandteil des Kriteriums.",
+      "evidence": [
+        "Erforderliche Strafanträge sind gestellt."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt Strafanträge zwar pauschal als gestellt. Sie erkennt aber nicht, dass das Antragserfordernis beim bejahten Computerbetrug gerade wegen des geringwertigen Rechnungsbetrags greift. Damit fehlt ein verpflichtender Bestandteil des Kriteriums.",
+          "evidence": [
+            "Erforderliche Strafanträge sind gestellt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Erkennen, dass beim bejahten Computerbetrug wegen des geringwertigen Rechnungsbetrags ein Strafantragserfordernis besteht.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Das Antragserfordernis aufgrund der Sachverhaltsangabe als erfüllt behandeln.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A; Strafantragserfordernis beim bejahten Computerbetrug wegen des geringwertigen Rechnungsbetrags",
+            "evidence_scope": "A; pauschale Aussage zu erforderlichen Strafanträgen nach dem Gesamtergebnis",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht den Computerbetrug nach § 263a StGB wegen eines Betrages von 32,76 € und behandelt die erforderlichen Strafanträge im Gesamtergebnis ausdrücklich als gestellt. Zwar werden §§ 263a Abs. 2, 263 Abs. 4, 248a StGB nicht zitiert; das Antragserfordernis wird aber nicht übergangen und es wird auch kein fehlender Strafantrag behauptet. Damit ist das Kriterium trotz knapper Behandlung substantiell erfüllt.",
+          "evidence": [
+            "A hat sich durch die Verwendung der EC-Karte zum Bezahlen im Supermarkt eines Computerbetrugs gemäß § 263a Abs. 1 StGB strafbar gemacht.",
+            "Lebensmittel und Getränke im Wert von insgesamt 32,76 €",
+            "A ist daher wegen Computerbetrugs nach § 263a Abs. 1 StGB zu bestrafen. Erforderliche Strafanträge sind gestellt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bejahung eines Computerbetrugs nach § 263a StGB",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Geringwertiger Rechnungsbetrag",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Strafantragserfordernis erkannt",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Strafantrag aufgrund der Sachverhaltsangabe als erfüllt behandelt",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A, Computerbetrug nach § 263a StGB wegen geringwertigen Rechnungsbetrags, Strafantragserfordernis",
+            "evidence_scope": "A, § 263a Abs. 1 StGB, Rechnungsbetrag 32,76 €, Erforderliche Strafanträge sind gestellt",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Erforderliche Strafanträge sind gestellt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Der Computerbetrug wurde bejaht, das Strafantragserfordernis aus §§ 263a Abs. 2, 263 Abs. 4 i.V.m. § 248a StGB wegen Geringwertigkeit des Betrags wurde jedoch nicht geprüft oder erkannt, sondern lediglich mit einer formelhaften Abschlussbemerkung übergangen.",
+          "evidence": [
+            "Erforderliche Strafanträge sind gestellt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bejahung des Computerbetrugs",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Erkennen des Strafantragserfordernisses aus §§ 263a Abs. 2, 263 Abs. 4 StGB i.V.m. § 248a StGB wegen geringwertigen Rechnungsbetrags",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Behandlung als erfüllt aufgrund der Sachverhaltsangabe",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A - Computerbetrug (§ 263a Abs. 1 StGB) - Strafantragserfordernis nach §§ 263a Abs. 2, 263 Abs. 4 i.V.m. § 248a StGB",
+            "evidence_scope": "A - Computerbetrug (§ 263a Abs. 1 StGB) - Strafantrag allgemein",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 20667,
+        "output_tokens": 8274,
+        "total_tokens": 28941,
+        "cached_input_tokens": 9709,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Schlussbemerkung behandelt Strafanträge pauschal als gestellt, erkennt aber nicht das durch den geringen Betrag ausgelöste Antragserfordernis und ordnet es weder den genannten Vorschriften noch der Sachverhaltsangabe zu. Daher ist das Kriterium nicht erfüllt.",
+              "evidence": [
+                "Erforderliche Strafanträge sind gestellt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Das Antragserfordernis wird wegen des geringwertigen Computerbetrugs erkannt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Das Antragserfordernis nach §§ 263a Abs. 2, 263 Abs. 4, 248a StGB wird benannt oder inhaltlich gleichwertig erkannt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Das Antragserfordernis wird aufgrund der Sachverhaltsangabe als erfüllt behandelt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; Strafantragserfordernis beim bejahten Computerbetrug nach § 263a StGB wegen des geringwertigen Rechnungsbetrags",
+                "evidence_scope": "A; allgemeine Schlussbemerkung zu erforderlichen Strafanträgen, ohne Bezug zum geringwertigen Computerbetrug",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Erforderliche Strafanträge sind gestellt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht den Computerbetrug nach § 263a Abs. 1 StGB und behandelt die erforderlichen Strafanträge ausdrücklich als gestellt. Damit ist das Antragserfordernis beim geringwertigen Computerbetrug nicht übergangen und kein fehlender Strafantrag behauptet; die bloße Knappheit der Prüfung schadet dem Inhalt nach der Kriterienfassung nicht.",
+              "evidence": [
+                "A hat sich durch die Verwendung der EC-Karte zum Bezahlen im Supermarkt eines Computerbetrugs gemäß § 263a Abs. 1 StGB strafbar gemacht.",
+                "A ist daher wegen Computerbetrugs nach § 263a Abs. 1 StGB zu bestrafen. Erforderliche Strafanträge sind gestellt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung eines Computerbetrugs nach § 263a Abs. 1 StGB",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Geringwertigkeit des Rechnungsbetrags",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Erkennen eines erforderlichen Strafantrags",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Behandlung des Strafantrags als gestellt/erfüllt",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A, geringwertiger Computerbetrug nach § 263a StGB, Strafantragserfordernis",
+                "evidence_scope": "A, § 263a Abs. 1 StGB, Rechnungsbetrag 32,76 €, erforderliche Strafanträge gestellt",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "keine Begründung, nur Feststellung: 'Erforderliche Strafanträge sind gestellt.'",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Strafantragserfordernis aus §§ 263a Abs. 2, 263 Abs. 4 i.V.m. § 248a StGB wegen der Geringwertigkeit des Schadens wird im Gutachten überhaupt nicht thematisiert; die bloße formelhafte Übernahme der Sachverhaltsangabe am Ende genügt dem Kriterium nicht.",
+              "evidence": [
+                "Erforderliche Strafanträge sind gestellt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erkennen des Strafantragserfordernisses aus §§ 263a Abs. 2, 263 Abs. 4 StGB i.V.m. § 248a StGB wegen geringwertigen Rechnungsbetrags",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Behandlung des Erfordernisses als erfüllt aufgrund der Sachverhaltsangabe",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A, Computerbetrug (§ 263a StGB), Strafantragserfordernis bei Geringwertigkeit (§§ 263a II, 263 IV, 248a StGB)",
+                "evidence_scope": "A, Gesamtergebnis/Strafantrag",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort behandelt Strafanträge zwar pauschal als gestellt. Sie erkennt aber nicht, dass das Antragserfordernis beim bejahten Computerbetrug gerade wegen des geringwertigen Rechnungsbetrags greift. Damit fehlt ein verpflichtender Bestandteil des Kriteriums.",
+              "evidence": [
+                "Erforderliche Strafanträge sind gestellt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erkennen, dass beim bejahten Computerbetrug wegen des geringwertigen Rechnungsbetrags ein Strafantragserfordernis besteht.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Das Antragserfordernis aufgrund der Sachverhaltsangabe als erfüllt behandeln.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; Strafantragserfordernis beim bejahten Computerbetrug wegen des geringwertigen Rechnungsbetrags",
+                "evidence_scope": "A; pauschale Aussage zu erforderlichen Strafanträgen nach dem Gesamtergebnis",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht den Computerbetrug nach § 263a StGB wegen eines Betrages von 32,76 € und behandelt die erforderlichen Strafanträge im Gesamtergebnis ausdrücklich als gestellt. Zwar werden §§ 263a Abs. 2, 263 Abs. 4, 248a StGB nicht zitiert; das Antragserfordernis wird aber nicht übergangen und es wird auch kein fehlender Strafantrag behauptet. Damit ist das Kriterium trotz knapper Behandlung substantiell erfüllt.",
+              "evidence": [
+                "A hat sich durch die Verwendung der EC-Karte zum Bezahlen im Supermarkt eines Computerbetrugs gemäß § 263a Abs. 1 StGB strafbar gemacht.",
+                "Lebensmittel und Getränke im Wert von insgesamt 32,76 €",
+                "A ist daher wegen Computerbetrugs nach § 263a Abs. 1 StGB zu bestrafen. Erforderliche Strafanträge sind gestellt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung eines Computerbetrugs nach § 263a StGB",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Geringwertiger Rechnungsbetrag",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Strafantragserfordernis erkannt",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Strafantrag aufgrund der Sachverhaltsangabe als erfüllt behandelt",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A, Computerbetrug nach § 263a StGB wegen geringwertigen Rechnungsbetrags, Strafantragserfordernis",
+                "evidence_scope": "A, § 263a Abs. 1 StGB, Rechnungsbetrag 32,76 €, Erforderliche Strafanträge sind gestellt",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Erforderliche Strafanträge sind gestellt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Der Computerbetrug wurde bejaht, das Strafantragserfordernis aus §§ 263a Abs. 2, 263 Abs. 4 i.V.m. § 248a StGB wegen Geringwertigkeit des Betrags wurde jedoch nicht geprüft oder erkannt, sondern lediglich mit einer formelhaften Abschlussbemerkung übergangen.",
+              "evidence": [
+                "Erforderliche Strafanträge sind gestellt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung des Computerbetrugs",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erkennen des Strafantragserfordernisses aus §§ 263a Abs. 2, 263 Abs. 4 StGB i.V.m. § 248a StGB wegen geringwertigen Rechnungsbetrags",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Behandlung als erfüllt aufgrund der Sachverhaltsangabe",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A - Computerbetrug (§ 263a Abs. 1 StGB) - Strafantragserfordernis nach §§ 263a Abs. 2, 263 Abs. 4 i.V.m. § 248a StGB",
+                "evidence_scope": "A - Computerbetrug (§ 263a Abs. 1 StGB) - Strafantrag allgemein",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-025",
+      "title": "Strafantrag beim geringwertigen Computerbetrug",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Der Schluss betrifft zwar A und den bejahten Computerbetrug, verbindet aber weder den geringen Rechnungsbetrag noch die einschlägigen Vorschriften mit dem Antragserfordernis. Die bloße Schlussformel enthält keine Prüfung dieses Punktes.",
+      "evidence": [
+        "Erforderliche Strafanträge sind gestellt."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Der Schluss betrifft zwar A und den bejahten Computerbetrug, verbindet aber weder den geringen Rechnungsbetrag noch die einschlägigen Vorschriften mit dem Antragserfordernis. Die bloße Schlussformel enthält keine Prüfung dieses Punktes.",
+          "evidence": [
+            "Erforderliche Strafanträge sind gestellt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antragsprüfung ist nur als bloße Schlussfloskel vorhanden. Es fehlt jede Verbindung zwischen dem geringwertigen Rechnungsbetrag, dem Strafantragserfordernis aus §§ 263a Abs. 2, 263 Abs. 4 i.V.m. § 248a StGB und der Antragstellung; Regel, Sachverhalt und Ergebnis werden für diese Prüfung nicht argumentativ verknüpft.",
+          "evidence": [
+            "A ist daher wegen Computerbetrugs nach § 263a Abs. 1 StGB zu bestrafen. Erforderliche Strafanträge sind gestellt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Es fehlt an einem kriterienspezifischen Obersatz bzw. einer Normnennung (§§ 263a Abs. 2, 263 Abs. 4 i.V.m. § 248a StGB) sowie an einer Subsumtion des Schadensbetrags unter das Merkmal der Geringwertigkeit. Der Schlusssatz stellt lediglich eine bloße Behauptung dar.",
+          "evidence": [
+            "Erforderliche Strafanträge sind gestellt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Der Schluss betrifft zwar A und den bejahten Computerbetrug, verbindet aber weder den geringen Rechnungsbetrag noch die einschlägigen Vorschriften mit dem Antragserfordernis. Die bloße Schlussformel enthält keine Prüfung dieses Punktes.",
+              "evidence": [
+                "Erforderliche Strafanträge sind gestellt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antragsprüfung ist nur als bloße Schlussfloskel vorhanden. Es fehlt jede Verbindung zwischen dem geringwertigen Rechnungsbetrag, dem Strafantragserfordernis aus §§ 263a Abs. 2, 263 Abs. 4 i.V.m. § 248a StGB und der Antragstellung; Regel, Sachverhalt und Ergebnis werden für diese Prüfung nicht argumentativ verknüpft.",
+              "evidence": [
+                "A ist daher wegen Computerbetrugs nach § 263a Abs. 1 StGB zu bestrafen. Erforderliche Strafanträge sind gestellt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Es fehlt an einem kriterienspezifischen Obersatz bzw. einer Normnennung (§§ 263a Abs. 2, 263 Abs. 4 i.V.m. § 248a StGB) sowie an einer Subsumtion des Schadensbetrags unter das Merkmal der Geringwertigkeit. Der Schlusssatz stellt lediglich eine bloße Behauptung dar.",
+              "evidence": [
+                "Erforderliche Strafanträge sind gestellt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

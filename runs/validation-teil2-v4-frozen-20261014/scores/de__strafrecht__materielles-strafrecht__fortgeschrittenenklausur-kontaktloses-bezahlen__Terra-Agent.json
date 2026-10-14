@@ -1,0 +1,413 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-kontaktloses-bezahlen",
+    "title": "Fortgeschrittenenklausur: Kontaktloses Bezahlen"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenklausur-kontaktloses-bezahlen/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-kontaktloses-bezahlen/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:20:35.897932+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 1,
+    "points_available": 1,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Gesamtergebnis": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Gesamtergebnis": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "conclusion": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 18252,
+    "output_tokens": 7053,
+    "total_tokens": 25305,
+    "cached_input_tokens": 1024,
+    "cache_write_tokens": 5722
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 18252,
+    "output_tokens": 7053,
+    "total_tokens": 25305,
+    "cached_input_tokens": 1024,
+    "cache_write_tokens": 5722
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-036",
+      "title": "Spezialität von § 274 gegenüber § 303a StGB",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "§ 303a wird bejaht, § 274 aber nicht. Damit werden die beiden im Kriterium genannten Tatbestände nicht zugleich bejaht; ein Zurücktreten wegen Spezialität ist daher nach dem Kriterium nicht erforderlich. Die Antwort nimmt auch keinen Vorrang des § 303a gegenüber § 274 an.",
+      "evidence": [
+        "A könnte sich auch wegen Datenveränderung gemäß § 303a Abs. 1 StGB strafbar gemacht haben.",
+        "Eine Urkundenunterdrückung nach § 274 Abs. 1 Nr. 1 StGB scheidet aus.",
+        "A hat sich somit wegen Computerbetrugs gemäß § 263a Abs. 1 StGB in Tateinheit mit Datenveränderung gemäß § 303a Abs. 1 StGB strafbar gemacht."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "§ 303a wird bejaht, § 274 aber nicht. Damit werden die beiden im Kriterium genannten Tatbestände nicht zugleich bejaht; ein Zurücktreten wegen Spezialität ist daher nach dem Kriterium nicht erforderlich. Die Antwort nimmt auch keinen Vorrang des § 303a gegenüber § 274 an.",
+          "evidence": [
+            "A könnte sich auch wegen Datenveränderung gemäß § 303a Abs. 1 StGB strafbar gemacht haben.",
+            "Eine Urkundenunterdrückung nach § 274 Abs. 1 Nr. 1 StGB scheidet aus.",
+            "A hat sich somit wegen Computerbetrugs gemäß § 263a Abs. 1 StGB in Tateinheit mit Datenveränderung gemäß § 303a Abs. 1 StGB strafbar gemacht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "§ 274 Abs. 1 Nr. 2 StGB und § 303a Abs. 1 StGB werden nicht beide bejaht; falls beide bejaht werden, muss § 303a wegen Spezialität zurücktreten.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A; Konkurrenzverhältnis zwischen § 274 Abs. 1 Nr. 2 StGB und § 303a Abs. 1 StGB hinsichtlich der verwendeten bzw. veränderten Daten",
+            "evidence_scope": "A; § 303a Abs. 1 StGB wird bejaht, während § 274 Abs. 1 Nr. 1 StGB ausdrücklich verneint wird",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "§ 274 Abs. 1 Nr. 1 StGB scheidet mangels Nachteilszufügungsvorsatzes aus; § 303a Abs. 1 StGB wird bejaht.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "§303a Abs. 1 StGB wird bejaht, §274 Abs. 1 Nr. 2 StGB wird nicht bejaht. Damit greift die Alternativbedingung des Kriteriums; eine unbegründete Tateinheit oder ein Vorrang des §303a gegenüber §274 Nr. 2 wird nicht angenommen.",
+          "evidence": [
+            "A hat sich auch wegen Datenveränderung gemäß § 303a Abs. 1 StGB strafbar gemacht.",
+            "Eine Urkundenunterdrückung nach § 274 Abs. 1 Nr. 1 StGB scheidet aus.",
+            "Der Computerbetrug nach § 263a Abs. 1 StGB und die Datenveränderung nach § 303a Abs. 1 StGB beruhen auf demselben Vorhalten der Karte."
+          ],
+          "component_checks": [
+            {
+              "requirement": "§274 Abs. 1 Nr. 2 StGB und §303a Abs. 1 StGB werden nicht gleichzeitig bejaht.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A; Konkurrenz/Spezialität zwischen §274 Abs. 1 Nr. 2 StGB und §303a Abs. 1 StGB; alternativ genügt, dass nicht beide Tatbestände bejaht werden.",
+            "evidence_scope": "A; §303a Abs. 1 StGB wird bejaht; §274 Abs. 1 Nr. 2 StGB wird nicht bejaht; §274 Abs. 1 Nr. 1 StGB wird verneint.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Keine Spezialitätsprüfung; die Antwort bejaht §303a Abs. 1 StGB und verneint nur §274 Abs. 1 Nr. 1 StGB; §274 Abs. 1 Nr. 2 StGB wird nicht bejaht.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Das Kriterium bestimmt ausdrücklich: 'Werden nicht beide Tatbestände bejaht, ist das Kriterium ebenfalls erfüllt.' Das Gutachten bejaht zwar § 303a Abs. 1 StGB, verneint jedoch § 274 StGB (und prüft § 274 Abs. 1 Nr. 2 StGB gar nicht erst). Da somit nicht beide Tatbestände bejaht wurden, ist das Kriterium erfüllt.",
+          "evidence": [
+            "A hat sich auch wegen Datenveränderung gemäß § 303a Abs. 1 StGB strafbar gemacht.",
+            "Eine Urkundenunterdrückung nach § 274 Abs. 1 Nr. 1 StGB scheidet aus."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Zurücktreten von § 303a StGB hinter § 274 StGB bei Bejahung beider Tatbestände ODER Nicht-Bejahung beider Tatbestände",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Konkurrenzverhältnis zwischen § 274 und § 303a StGB bzw. Nicht-Vorliegen beider Tatbestände",
+            "evidence_scope": "Prüfung von § 303a StGB (bejaht) und § 274 StGB (verneint)",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "§ 274 StGB wurde verneint, sodass nicht beide Delikte bejaht wurden.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 18252,
+        "output_tokens": 7053,
+        "total_tokens": 25305,
+        "cached_input_tokens": 1024,
+        "cache_write_tokens": 5722
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "§ 303a wird bejaht, § 274 aber nicht. Damit werden die beiden im Kriterium genannten Tatbestände nicht zugleich bejaht; ein Zurücktreten wegen Spezialität ist daher nach dem Kriterium nicht erforderlich. Die Antwort nimmt auch keinen Vorrang des § 303a gegenüber § 274 an.",
+              "evidence": [
+                "A könnte sich auch wegen Datenveränderung gemäß § 303a Abs. 1 StGB strafbar gemacht haben.",
+                "Eine Urkundenunterdrückung nach § 274 Abs. 1 Nr. 1 StGB scheidet aus.",
+                "A hat sich somit wegen Computerbetrugs gemäß § 263a Abs. 1 StGB in Tateinheit mit Datenveränderung gemäß § 303a Abs. 1 StGB strafbar gemacht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§ 274 Abs. 1 Nr. 2 StGB und § 303a Abs. 1 StGB werden nicht beide bejaht; falls beide bejaht werden, muss § 303a wegen Spezialität zurücktreten.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; Konkurrenzverhältnis zwischen § 274 Abs. 1 Nr. 2 StGB und § 303a Abs. 1 StGB hinsichtlich der verwendeten bzw. veränderten Daten",
+                "evidence_scope": "A; § 303a Abs. 1 StGB wird bejaht, während § 274 Abs. 1 Nr. 1 StGB ausdrücklich verneint wird",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "§ 274 Abs. 1 Nr. 1 StGB scheidet mangels Nachteilszufügungsvorsatzes aus; § 303a Abs. 1 StGB wird bejaht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "§303a Abs. 1 StGB wird bejaht, §274 Abs. 1 Nr. 2 StGB wird nicht bejaht. Damit greift die Alternativbedingung des Kriteriums; eine unbegründete Tateinheit oder ein Vorrang des §303a gegenüber §274 Nr. 2 wird nicht angenommen.",
+              "evidence": [
+                "A hat sich auch wegen Datenveränderung gemäß § 303a Abs. 1 StGB strafbar gemacht.",
+                "Eine Urkundenunterdrückung nach § 274 Abs. 1 Nr. 1 StGB scheidet aus.",
+                "Der Computerbetrug nach § 263a Abs. 1 StGB und die Datenveränderung nach § 303a Abs. 1 StGB beruhen auf demselben Vorhalten der Karte."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "§274 Abs. 1 Nr. 2 StGB und §303a Abs. 1 StGB werden nicht gleichzeitig bejaht.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; Konkurrenz/Spezialität zwischen §274 Abs. 1 Nr. 2 StGB und §303a Abs. 1 StGB; alternativ genügt, dass nicht beide Tatbestände bejaht werden.",
+                "evidence_scope": "A; §303a Abs. 1 StGB wird bejaht; §274 Abs. 1 Nr. 2 StGB wird nicht bejaht; §274 Abs. 1 Nr. 1 StGB wird verneint.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Keine Spezialitätsprüfung; die Antwort bejaht §303a Abs. 1 StGB und verneint nur §274 Abs. 1 Nr. 1 StGB; §274 Abs. 1 Nr. 2 StGB wird nicht bejaht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Das Kriterium bestimmt ausdrücklich: 'Werden nicht beide Tatbestände bejaht, ist das Kriterium ebenfalls erfüllt.' Das Gutachten bejaht zwar § 303a Abs. 1 StGB, verneint jedoch § 274 StGB (und prüft § 274 Abs. 1 Nr. 2 StGB gar nicht erst). Da somit nicht beide Tatbestände bejaht wurden, ist das Kriterium erfüllt.",
+              "evidence": [
+                "A hat sich auch wegen Datenveränderung gemäß § 303a Abs. 1 StGB strafbar gemacht.",
+                "Eine Urkundenunterdrückung nach § 274 Abs. 1 Nr. 1 StGB scheidet aus."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Zurücktreten von § 303a StGB hinter § 274 StGB bei Bejahung beider Tatbestände ODER Nicht-Bejahung beider Tatbestände",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Konkurrenzverhältnis zwischen § 274 und § 303a StGB bzw. Nicht-Vorliegen beider Tatbestände",
+                "evidence_scope": "Prüfung von § 303a StGB (bejaht) und § 274 StGB (verneint)",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "§ 274 StGB wurde verneint, sodass nicht beide Delikte bejaht wurden.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": []
+}

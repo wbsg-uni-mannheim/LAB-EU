@@ -1,0 +1,766 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-kontaktloses-bezahlen",
+    "title": "Fortgeschrittenenklausur: Kontaktloses Bezahlen"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-sol-high/20260730T221733Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenklausur-kontaktloses-bezahlen/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-kontaktloses-bezahlen/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:50:39.655695+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 1,
+    "points_available": 1,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Zweiter Handlungsabschnitt: Im Supermarkt": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Zweiter Handlungsabschnitt: Im Supermarkt › Betrug ggü. K zu Lasten der R-GmbH gem. § 263 Abs. 1 StGB": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 22210,
+    "output_tokens": 14075,
+    "total_tokens": 36285,
+    "cached_input_tokens": 14624,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 22210,
+    "output_tokens": 14075,
+    "total_tokens": 36285,
+    "cached_input_tokens": 14624,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-013",
+      "title": "Fehlendes Näheverhältnis beim Dreiecksbetrug",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort verneint einen Dreiecksbetrug zulasten der Sparkasse mit dem Fehlen einer Verfügung über deren Vermögen. Auch wenn das Wort Näheverhältnis nicht fällt, wird damit die erforderliche Verfügungsmacht bzw. Lagerstellung Ks verneint und K nicht als Verfügungsbefugter der Sparkasse behandelt. Das Kriterium ist daher substantiell erfüllt.",
+      "evidence": [
+        "K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort verwirft einen Dreiecksbetrug zulasten der Sparkasse, aber nicht aus dem im Kriterium verlangten Grund des fehlenden Näheverhältnisses. Der ausdrücklich festgestellte fehlende Irrtum gehört zur Prüfung des Betrugs zulasten der R-GmbH und erfüllt die alternative Bedingung daher nicht.",
+          "evidence": [
+            "K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet.",
+            "Es fehlt daher an einem entsprechenden Irrtum."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Der Dreiecksbetrug zulasten der Sparkasse oder des V scheitert am fehlenden Näheverhältnis; alternativ wird ein Dreiecksbetrug wegen fehlenden Irrtums nicht geprüft.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Dreiecksbetrug zulasten der Sparkasse oder des V und das Näheverhältnis des K zu deren Vermögen",
+            "evidence_scope": "Dreiecksbetrug zulasten der Sparkasse; die Irrtumserörterung betrifft hingegen den Betrug zulasten der R-GmbH",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "K verfügte nicht über Vermögen der Sparkasse; ein fehlendes Näheverhältnis wegen fehlender Verfügungsbefugnis und fehlender Lagerzugehörigkeit wird nicht benannt.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint einen Dreiecksbetrug zulasten der Sparkasse mit dem Fehlen einer Verfügung über deren Vermögen. Auch wenn das Wort Näheverhältnis nicht fällt, wird damit die erforderliche Verfügungsmacht bzw. Lagerstellung Ks verneint und K nicht als Verfügungsbefugter der Sparkasse behandelt. Das Kriterium ist daher substantiell erfüllt.",
+          "evidence": [
+            "K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Ein Dreiecksbetrug zulasten der Sparkasse oder V wird geprüft bzw. ausdrücklich ausgeschlossen.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Der Ausschluss beruht darauf, dass K keine Verfügungsmacht über das Vermögen der Sparkasse/V hatte bzw. nicht in deren Lager stand.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "K wird nicht ohne Sachverhaltsgrundlage als Verfügungsbefugter, Vertreter oder Lagerangehöriger der Sparkasse/V behandelt.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Dreiecksbetrug zulasten der Sparkasse oder V; fehlendes Näheverhältnis des K als möglicher Verfügungsbefugter/Lagerangehöriger.",
+            "evidence_scope": "Dreiecksbetrug zulasten der Sparkasse; K als Kassenkraft, der nicht über Vermögen der Sparkasse verfügte.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "K verfügte auch nicht über Vermögen der Sparkasse",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Das Kriterium ist inhaltlich erfüllt: Der Betrug scheitert bereits am fehlenden Irrtum des K, und ein Dreiecksbetrug zulasten der Sparkasse wird zudem ausdrücklich unter Verweis auf die fehlende Verfügungsbefugnis/Vermögenszuständigkeit des K abgelehnt, ohne K fehlerhaft als Lagerangehörigen einzustufen.",
+          "evidence": [
+            "Jedenfalls machte sich K keine für seine Vermögensverfügung erhebliche Vorstellung über die Berechtigung des A.",
+            "Es fehlt daher an einem entsprechenden Irrtum.",
+            "K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Dreiecksbetrug scheitert am fehlenden Näheverhältnis (fehlende Ermächtigung/Lagerzugehörigkeit) oder wird wegen fehlenden Irrtums gar nicht erst geprüft",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "K wird nicht fälschlich ohne Sachverhaltsgrundlage als Verfügungsbefugter/Lagerangehöriger behandelt",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Dreiecksbetrug zulasten der Sparkasse oder des V / Näheverhältnis des K",
+            "evidence_scope": "Betrugsprüfung beim Kassenmitarbeiter K und Dreiecksbetrug zu Lasten der Sparkasse",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "K verfügte nicht über Vermögen der Sparkasse; zudem fehlte bereits ein Irrtum des K",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 22210,
+        "output_tokens": 14075,
+        "total_tokens": 36285,
+        "cached_input_tokens": 14624,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort verneint einen Dreiecksbetrug zulasten der Sparkasse, begründet dies aber mit einer fehlenden Verfügung und nicht mit dem fehlenden Näheverhältnis. Der zusätzlich erwähnte fehlende Irrtum betrifft den Betrug zulasten der R-GmbH und kann deshalb die erforderliche Prüfung für Sparkasse oder V nicht ersetzen.",
+              "evidence": [
+                "„K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet.“",
+                "„Es fehlt daher an einem entsprechenden Irrtum.“"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Ein Dreiecksbetrug zulasten der Sparkasse oder des V scheitert daran, dass K weder zur Verfügung über deren Vermögen ermächtigt war noch in deren Lager stand; alternativ wird er wegen fehlenden Irrtums nicht geprüft.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Näheverhältnis beim Dreiecksbetrug zulasten der Sparkasse oder des V",
+                "evidence_scope": "Ausschluss eines Dreiecksbetrugs zulasten der Sparkasse wegen fehlender Verfügung; der ausdrücklich fehlende Irrtum wird im Betrugsabschnitt zulasten der R-GmbH behandelt",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "K habe nicht über Vermögen der Sparkasse verfügt.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint für den Dreiecksbetrug zulasten der Sparkasse eine Verfügung des K über deren Vermögen und schließt den Dreiecksbetrug deshalb aus. Das ist knapp, aber inhaltlich als fehlendes Näheverhältnis bzw. fehlende Verfügungsmacht tragfähig; K wird nicht als Verfügungsbefugter der Sparkasse behandelt.",
+              "evidence": [
+                "K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Dreiecksbetrug zulasten der Sparkasse wird erwogen bzw. ausgeschlossen",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Dreiecksbetrug scheitert an fehlender Verfügung des K über das Vermögen der Sparkasse bzw. fehlender Nähebeziehung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "K wird nicht als Verfügungsbefugter, Vertreter oder Lagerangehöriger der Sparkasse oder des V behandelt",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Dreiecksbetrug zulasten der Sparkasse oder des V; Näheverhältnis/Verfügungsmacht des K",
+                "evidence_scope": "Dreiecksbetrug zulasten der Sparkasse; K verfügte nicht über deren Vermögen",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Das Kriterium ist erfüllt, da der Dreiecksbetrug zulasten der Sparkasse mangels Verfügung über deren Vermögen abgelehnt wird (bzw. bereits der Irrtum des K verneint wurde) und K nicht ohne Sachverhaltsgrundlage als Vertreter/Lagerangehöriger eingestuft wird.",
+              "evidence": [
+                "Es fehlt daher an einem entsprechenden Irrtum.",
+                "K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Dreiecksbetrug scheitert am fehlenden Näheverhältnis (keine Verfügungsbefugnis/keine Lagerzugehörigkeit) oder wird bereits mangels Irrtums nicht geprüft",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "K wird nicht fälschlich als Verfügungsbefugter, Vertreter oder Lagerangehöriger behandelt",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Dreiecksbetrug zulasten der Sparkasse/des V; Näheverhältnis bzw. Nichtprüfung wegen fehlenden Irrtums",
+                "evidence_scope": "Betrug (§ 263 StGB), Irrtum des K und Dreiecksbetrug zulasten der Sparkasse",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "K verfügte nicht über Vermögen der Sparkasse; zudem fehlte bereits ein Irrtum",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort verwirft einen Dreiecksbetrug zulasten der Sparkasse, aber nicht aus dem im Kriterium verlangten Grund des fehlenden Näheverhältnisses. Der ausdrücklich festgestellte fehlende Irrtum gehört zur Prüfung des Betrugs zulasten der R-GmbH und erfüllt die alternative Bedingung daher nicht.",
+              "evidence": [
+                "K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet.",
+                "Es fehlt daher an einem entsprechenden Irrtum."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Der Dreiecksbetrug zulasten der Sparkasse oder des V scheitert am fehlenden Näheverhältnis; alternativ wird ein Dreiecksbetrug wegen fehlenden Irrtums nicht geprüft.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Dreiecksbetrug zulasten der Sparkasse oder des V und das Näheverhältnis des K zu deren Vermögen",
+                "evidence_scope": "Dreiecksbetrug zulasten der Sparkasse; die Irrtumserörterung betrifft hingegen den Betrug zulasten der R-GmbH",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "K verfügte nicht über Vermögen der Sparkasse; ein fehlendes Näheverhältnis wegen fehlender Verfügungsbefugnis und fehlender Lagerzugehörigkeit wird nicht benannt.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint einen Dreiecksbetrug zulasten der Sparkasse mit dem Fehlen einer Verfügung über deren Vermögen. Auch wenn das Wort Näheverhältnis nicht fällt, wird damit die erforderliche Verfügungsmacht bzw. Lagerstellung Ks verneint und K nicht als Verfügungsbefugter der Sparkasse behandelt. Das Kriterium ist daher substantiell erfüllt.",
+              "evidence": [
+                "K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Ein Dreiecksbetrug zulasten der Sparkasse oder V wird geprüft bzw. ausdrücklich ausgeschlossen.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Ausschluss beruht darauf, dass K keine Verfügungsmacht über das Vermögen der Sparkasse/V hatte bzw. nicht in deren Lager stand.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "K wird nicht ohne Sachverhaltsgrundlage als Verfügungsbefugter, Vertreter oder Lagerangehöriger der Sparkasse/V behandelt.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Dreiecksbetrug zulasten der Sparkasse oder V; fehlendes Näheverhältnis des K als möglicher Verfügungsbefugter/Lagerangehöriger.",
+                "evidence_scope": "Dreiecksbetrug zulasten der Sparkasse; K als Kassenkraft, der nicht über Vermögen der Sparkasse verfügte.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "K verfügte auch nicht über Vermögen der Sparkasse",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Das Kriterium ist inhaltlich erfüllt: Der Betrug scheitert bereits am fehlenden Irrtum des K, und ein Dreiecksbetrug zulasten der Sparkasse wird zudem ausdrücklich unter Verweis auf die fehlende Verfügungsbefugnis/Vermögenszuständigkeit des K abgelehnt, ohne K fehlerhaft als Lagerangehörigen einzustufen.",
+              "evidence": [
+                "Jedenfalls machte sich K keine für seine Vermögensverfügung erhebliche Vorstellung über die Berechtigung des A.",
+                "Es fehlt daher an einem entsprechenden Irrtum.",
+                "K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Dreiecksbetrug scheitert am fehlenden Näheverhältnis (fehlende Ermächtigung/Lagerzugehörigkeit) oder wird wegen fehlenden Irrtums gar nicht erst geprüft",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "K wird nicht fälschlich ohne Sachverhaltsgrundlage als Verfügungsbefugter/Lagerangehöriger behandelt",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Dreiecksbetrug zulasten der Sparkasse oder des V / Näheverhältnis des K",
+                "evidence_scope": "Betrugsprüfung beim Kassenmitarbeiter K und Dreiecksbetrug zu Lasten der Sparkasse",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "K verfügte nicht über Vermögen der Sparkasse; zudem fehlte bereits ein Irrtum des K",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-013",
+      "title": "Fehlendes Näheverhältnis beim Dreiecksbetrug",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Der Antwortsatz behandelt zwar ausdrücklich einen Dreiecksbetrug zulasten der Sparkasse und nennt ein Ergebnis. Er erklärt aber weder anhand konkreter Tatsachen, warum K nicht zu Verfügungen ermächtigt war oder nicht im Lager der Sparkasse stand, noch prüft er diesen Nähebezug als maßgebliche Voraussetzung.",
+      "evidence": [
+        "„K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet.“"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Der Antwortsatz behandelt zwar ausdrücklich einen Dreiecksbetrug zulasten der Sparkasse und nennt ein Ergebnis. Er erklärt aber weder anhand konkreter Tatsachen, warum K nicht zu Verfügungen ermächtigt war oder nicht im Lager der Sparkasse stand, noch prüft er diesen Nähebezug als maßgebliche Voraussetzung.",
+          "evidence": [
+            "„K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet.“"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Der Dreiecksbetrug wird nur mit einer Ergebnisbehauptung ausgeschlossen. Es fehlt ein criterion-spezifischer Maßstab zum fehlenden Näheverhältnis sowie die Verbindung konkreter Tatsachen zur Stellung des K und eine ausgeführte Prüfung; damit liegt keine funktionale rechtliche Argumentation vor.",
+          "evidence": [
+            "K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Der Dreiecksbetrug bzw. das dafür erforderliche Näheverhältnis wird lediglich mit einer bloßen Behauptung ohne Nennung eines Maßstabs (wie Befugnis- oder Lagertheorie) und ohne Subsumtion abgehandelt.",
+          "evidence": [
+            "K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Der Antwortsatz behandelt zwar ausdrücklich einen Dreiecksbetrug zulasten der Sparkasse und nennt ein Ergebnis. Er erklärt aber weder anhand konkreter Tatsachen, warum K nicht zu Verfügungen ermächtigt war oder nicht im Lager der Sparkasse stand, noch prüft er diesen Nähebezug als maßgebliche Voraussetzung.",
+              "evidence": [
+                "„K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet.“"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Der Dreiecksbetrug wird nur mit einer Ergebnisbehauptung ausgeschlossen. Es fehlt ein criterion-spezifischer Maßstab zum fehlenden Näheverhältnis sowie die Verbindung konkreter Tatsachen zur Stellung des K und eine ausgeführte Prüfung; damit liegt keine funktionale rechtliche Argumentation vor.",
+              "evidence": [
+                "K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Der Dreiecksbetrug bzw. das dafür erforderliche Näheverhältnis wird lediglich mit einer bloßen Behauptung ohne Nennung eines Maßstabs (wie Befugnis- oder Lagertheorie) und ohne Subsumtion abgehandelt.",
+              "evidence": [
+                "K verfügte auch nicht über Vermögen der Sparkasse, sodass ein Dreiecksbetrug zu deren Nachteil ausscheidet."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

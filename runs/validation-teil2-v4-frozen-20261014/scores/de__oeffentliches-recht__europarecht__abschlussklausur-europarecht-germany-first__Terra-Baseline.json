@@ -1,0 +1,776 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/europarecht/abschlussklausur-europarecht-germany-first",
+    "title": "Abschlussklausur Europarecht: „Germany first“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__europarecht__abschlussklausur-europarecht-germany-first/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/europarecht/abschlussklausur-europarecht-germany-first/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:28:41.011676+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 1,
+    "points_available": 1,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Zulässigkeit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Zulässigkeit › Rechtsschutzinteresse": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 29234,
+    "output_tokens": 11617,
+    "total_tokens": 40851,
+    "cached_input_tokens": 9112,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 29234,
+    "output_tokens": 11617,
+    "total_tokens": 40851,
+    "cached_input_tokens": 9112,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-019",
+      "title": "Fortbestehendes Rechtsschutzinteresse",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort bejaht ausdrücklich den Fortbestand der gerügten Vertragsverletzung und stützt dies darauf, dass Deutschland die beanstandete Rechtsverordnung nicht aufgehoben hat. Damit ist die vom Kriterium geforderte Begründung erfüllt.",
+      "evidence": [
+        "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben.",
+        "Sie gilt daher fort und kann weiterhin die Ausfuhr von Impfstoff aus Deutschland in andere Mitgliedstaaten verhindern oder erschweren.",
+        "Die behauptete Vertragsverletzung besteht fort."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort bejaht für die Kommissionsklage ausdrücklich den Fortbestand der behaupteten Vertragsverletzung und nennt den passenden Grund. Für die Klagen Polens und Ungarns fehlt jedoch eine entsprechende Begründung des fortbestehenden Rechtsschutzinteresses; die allgemeine Feststellung ihrer Zulässigkeit ersetzt sie nicht.",
+          "evidence": [
+            "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben. Sie gilt daher fort",
+            "Die behauptete Vertragsverletzung besteht fort.",
+            "Die Klagen Polens und Ungarns sind jeweils zulässig."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Fortbestehendes Rechtsschutzinteresse für die Vertragsverletzungsklagen, weil Deutschland an der Rechtsverordnung festhält und die gerügte Vertragsverletzung daher nicht erledigt ist",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Kommissionsklage nach Art. 258 AEUV sowie die Klagen Polens und Ungarns nach Art. 259 AEUV; Fortbestand des Rechtsschutzinteresses in der Zulässigkeit",
+            "evidence_scope": "Der Fortbestand der behaupteten Vertragsverletzung wird im Zulässigkeitsabschnitt zur Kommissionsklage behandelt; für Polen und Ungarn wird nur das Zulässigkeitsergebnis genannt",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Für die Kommissionsklage: Deutschland hat die Verordnung nicht aufgehoben, sie gilt fort und kann Ausfuhren weiterhin verhindern oder erschweren.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht ausdrücklich den Fortbestand der gerügten Vertragsverletzung und stützt dies darauf, dass Deutschland die beanstandete Rechtsverordnung nicht aufgehoben hat. Damit ist die vom Kriterium geforderte Begründung erfüllt.",
+          "evidence": [
+            "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben.",
+            "Sie gilt daher fort und kann weiterhin die Ausfuhr von Impfstoff aus Deutschland in andere Mitgliedstaaten verhindern oder erschweren.",
+            "Die behauptete Vertragsverletzung besteht fort."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bejahung eines fortbestehenden Rechtsschutzinteresses bzw. Fortbestands der gerügten Vertragsverletzung",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Grund: Deutschland hält an der Rechtsverordnung mit Vorkaufsrecht fest",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Keine Erledigung der gerügten Vertragsverletzung",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Vertragsverletzungsklagen gegen Deutschland wegen der Rechtsverordnung mit Vorkaufsrecht; Zulässigkeitsstation Fortbestehen des Rechtsschutzinteresses",
+            "evidence_scope": "Zulässigkeit der Kommissionsklage nach Art. 258 AEUV; Fortbestehen der behaupteten Vertragsverletzung wegen Nichtaufhebung der Rechtsverordnung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben; sie gilt daher fort und die behauptete Vertragsverletzung besteht fort.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht das Fortbestehen der Vertragsverletzung bzw. des Rechtsschutzinteresses ausdrücklich mit der Begründung, dass Deutschland die Rechtsverordnung trotz Aufforderung nicht aufgehoben hat und diese somit fortgilt.",
+          "evidence": [
+            "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben. Sie gilt daher fort und kann weiterhin die Ausfuhr von Impfstoff aus Deutschland in andere Mitgliedstaaten verhindern oder erschweren.",
+            "Die behauptete Vertragsverletzung besteht fort."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bejahung eines fortbestehenden Rechtsschutzinteresses / Fortbestehens des Verstoßes, weil Deutschland an der Verordnung festhält und keine Erledigung eingetreten ist",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Zulässigkeit der Vertragsverletzungsklage: fortbestehendes Rechtsschutzinteresse / Fortbestehen der Verletzung wegen Nichtaufhebung der Verordnung",
+            "evidence_scope": "Zulässigkeit der Vertragsverletzungsklage: Fortbestehen der behaupteten Vertragsverletzung wegen Nichtaufhebung der Verordnung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben, sodass die beanstandete Maßnahme fortgilt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 29234,
+        "output_tokens": 11617,
+        "total_tokens": 40851,
+        "cached_input_tokens": 9112,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht ausdrücklich die Fortdauer der Vertragsverletzung und nennt dafür einen passenden Grund. Sie prüft diesen Punkt aber nur bei der Klage der Kommission, nicht für die Vertragsverletzungsklagen insgesamt; die Zulässigkeitsfeststellung zu Polen und Ungarn ersetzt diese Prüfung nicht.",
+              "evidence": [
+                "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben.",
+                "Die behauptete Vertragsverletzung besteht fort."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Fortbestehendes Rechtsschutzinteresse für die Vertragsverletzungsklagen wird bejaht.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Antwort begründet dies damit, dass Deutschland an der Rechtsverordnung festhält und die gerügte Vertragsverletzung daher nicht erledigt ist.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Fortbestehendes Rechtsschutzinteresse für die Vertragsverletzungsklagen der Kommission, Polens und Ungarns.",
+                "evidence_scope": "Fortbestehen der Vertragsverletzung im Zulässigkeitsabschnitt zur Klage der Kommission; für die Klagen Polens und Ungarns wird dies nicht gesondert geprüft.",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben, sodass die behauptete Vertragsverletzung fortbesteht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht zwar nicht wörtlich ein „fortbestehendes Rechtsschutzinteresse“, stellt aber im zulässigkeitsrelevanten Abschnitt ausdrücklich fest, dass Deutschland die beanstandete Rechtsverordnung nicht aufgehoben hat und die gerügte Vertragsverletzung deshalb fortbesteht. Damit wird die nach der Kriteriumsvorgabe entscheidende Nichterledigung bejaht und keine Erledigung oder fehlendes Rechtsschutzinteresse angenommen.",
+              "evidence": [
+                "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben. Sie gilt daher fort und kann weiterhin die Ausfuhr von Impfstoff aus Deutschland in andere Mitgliedstaaten verhindern oder erschweren.",
+                "Die behauptete Vertragsverletzung besteht fort.",
+                "Die Vertragsverletzungsklage der Kommission ist zulässig.",
+                "Die Klagen Polens und Ungarns sind jeweils zulässig."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung eines fortbestehenden Rechtsschutzinteresses für die Vertragsverletzungsklage(n)",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Grund: Deutschland hält an der Rechtsverordnung mit dem Vorkaufsrecht fest",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Gerügte Vertragsverletzung ist daher nicht erledigt",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Vertragsverletzungsklagen; fortbestehendes Rechtsschutzinteresse wegen fortbestehender Rechtsverordnung und Nichterledigung der gerügten Vertragsverletzung",
+                "evidence_scope": "Zulässigkeit der Vertragsverletzungsklagen; Fortbestehen der behaupteten Vertragsverletzung wegen Nichtaufhebung der Rechtsverordnung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben; sie gilt daher fort; die behauptete Vertragsverletzung besteht fort.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Kriterienanforderungen sind erfüllt. Die Falllösung stellt unter der Zulässigkeit darauf ab, dass die Vertragsverletzung fortbesteht und nicht erledigt ist, da Deutschland die Rechtsverordnung trotz Aufforderung nicht aufgehoben hat.",
+              "evidence": [
+                "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben. Sie gilt daher fort",
+                "Die behauptete Vertragsverletzung besteht fort."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung eines fortbestehenden Rechtsschutzinteresses / Fortbestehens der gerügten Vertragsverletzung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Begründung damit, dass Deutschland an der Verordnung festhält / sie nicht aufgehoben hat und die Verletzung nicht erledigt ist",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Fortbestehendes Rechtsschutzinteresse / Fortbestehen der Vertragsverletzung im Rahmen der Zulässigkeit der Vertragsverletzungsklage",
+                "evidence_scope": "Fortbestehendes Rechtsschutzinteresse / Fortbestehen der Vertragsverletzung im Rahmen der Zulässigkeit der Vertragsverletzungsklage",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben, sodass die Verletzung fortbesteht",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht für die Kommissionsklage ausdrücklich den Fortbestand der behaupteten Vertragsverletzung und nennt den passenden Grund. Für die Klagen Polens und Ungarns fehlt jedoch eine entsprechende Begründung des fortbestehenden Rechtsschutzinteresses; die allgemeine Feststellung ihrer Zulässigkeit ersetzt sie nicht.",
+              "evidence": [
+                "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben. Sie gilt daher fort",
+                "Die behauptete Vertragsverletzung besteht fort.",
+                "Die Klagen Polens und Ungarns sind jeweils zulässig."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Fortbestehendes Rechtsschutzinteresse für die Vertragsverletzungsklagen, weil Deutschland an der Rechtsverordnung festhält und die gerügte Vertragsverletzung daher nicht erledigt ist",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Kommissionsklage nach Art. 258 AEUV sowie die Klagen Polens und Ungarns nach Art. 259 AEUV; Fortbestand des Rechtsschutzinteresses in der Zulässigkeit",
+                "evidence_scope": "Der Fortbestand der behaupteten Vertragsverletzung wird im Zulässigkeitsabschnitt zur Kommissionsklage behandelt; für Polen und Ungarn wird nur das Zulässigkeitsergebnis genannt",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Für die Kommissionsklage: Deutschland hat die Verordnung nicht aufgehoben, sie gilt fort und kann Ausfuhren weiterhin verhindern oder erschweren.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht ausdrücklich den Fortbestand der gerügten Vertragsverletzung und stützt dies darauf, dass Deutschland die beanstandete Rechtsverordnung nicht aufgehoben hat. Damit ist die vom Kriterium geforderte Begründung erfüllt.",
+              "evidence": [
+                "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben.",
+                "Sie gilt daher fort und kann weiterhin die Ausfuhr von Impfstoff aus Deutschland in andere Mitgliedstaaten verhindern oder erschweren.",
+                "Die behauptete Vertragsverletzung besteht fort."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung eines fortbestehenden Rechtsschutzinteresses bzw. Fortbestands der gerügten Vertragsverletzung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Grund: Deutschland hält an der Rechtsverordnung mit Vorkaufsrecht fest",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Keine Erledigung der gerügten Vertragsverletzung",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Vertragsverletzungsklagen gegen Deutschland wegen der Rechtsverordnung mit Vorkaufsrecht; Zulässigkeitsstation Fortbestehen des Rechtsschutzinteresses",
+                "evidence_scope": "Zulässigkeit der Kommissionsklage nach Art. 258 AEUV; Fortbestehen der behaupteten Vertragsverletzung wegen Nichtaufhebung der Rechtsverordnung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben; sie gilt daher fort und die behauptete Vertragsverletzung besteht fort.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht das Fortbestehen der Vertragsverletzung bzw. des Rechtsschutzinteresses ausdrücklich mit der Begründung, dass Deutschland die Rechtsverordnung trotz Aufforderung nicht aufgehoben hat und diese somit fortgilt.",
+              "evidence": [
+                "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben. Sie gilt daher fort und kann weiterhin die Ausfuhr von Impfstoff aus Deutschland in andere Mitgliedstaaten verhindern oder erschweren.",
+                "Die behauptete Vertragsverletzung besteht fort."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung eines fortbestehenden Rechtsschutzinteresses / Fortbestehens des Verstoßes, weil Deutschland an der Verordnung festhält und keine Erledigung eingetreten ist",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Zulässigkeit der Vertragsverletzungsklage: fortbestehendes Rechtsschutzinteresse / Fortbestehen der Verletzung wegen Nichtaufhebung der Verordnung",
+                "evidence_scope": "Zulässigkeit der Vertragsverletzungsklage: Fortbestehen der behaupteten Vertragsverletzung wegen Nichtaufhebung der Verordnung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben, sodass die beanstandete Maßnahme fortgilt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-019",
+      "title": "Fortbestehendes Rechtsschutzinteresse",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Für die Klage der Kommission verknüpft die Antwort die Fortdauer der Vertragsverletzung mit dem Umstand, dass Deutschland die Verordnung nicht aufgehoben hat, und zieht daraus ausdrücklich den Schluss, dass die Vertragsverletzung fortbesteht. Das ist eine methodisch vollständige Prüfung dieses Aspekts.",
+      "evidence": [
+        "Die Vertragsverletzung muss jedenfalls bei Ablauf der in der Stellungnahme gesetzten Frist vorgelegen haben.",
+        "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben.",
+        "Die behauptete Vertragsverletzung besteht fort."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Für die Klage der Kommission verknüpft die Antwort die Fortdauer der Vertragsverletzung mit dem Umstand, dass Deutschland die Verordnung nicht aufgehoben hat, und zieht daraus ausdrücklich den Schluss, dass die Vertragsverletzung fortbesteht. Das ist eine methodisch vollständige Prüfung dieses Aspekts.",
+          "evidence": [
+            "Die Vertragsverletzung muss jedenfalls bei Ablauf der in der Stellungnahme gesetzten Frist vorgelegen haben.",
+            "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben.",
+            "Die behauptete Vertragsverletzung besteht fort."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft im Rahmen der Zulässigkeit das Fortbestehen der gerügten Vertragsverletzung. Sie verbindet die maßgebliche Prämisse, dass die Verletzung bei Fristablauf noch vorliegen muss, mit dem konkreten Umstand der Nichtaufhebung der Rechtsverordnung und dem Ergebnis, dass die Vertragsverletzung fortbesteht. Damit liegt eine funktionale rechtliche Argumentationslinie zum fortbestehenden Rechtsschutzinteresse vor.",
+          "evidence": [
+            "Die Vertragsverletzung muss jedenfalls bei Ablauf der in der Stellungnahme gesetzten Frist vorgelegen haben. Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben. Sie gilt daher fort und kann weiterhin die Ausfuhr von Impfstoff aus Deutschland in andere Mitgliedstaaten verhindern oder erschweren. Die behauptete Vertragsverletzung besteht fort."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort formuliert einen kriterienspezifischen Obersatz für das Fortbestehen der Vertragsverletzung bei Fristablauf, subsumiert die Nichtaufhebung der Verordnung durch Deutschland hierunter und schließt methodisch vollständig ab.",
+          "evidence": [
+            "Die Vertragsverletzung muss jedenfalls bei Ablauf der in der Stellungnahme gesetzten Frist vorgelegen haben. Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben. Sie gilt daher fort und kann weiterhin die Ausfuhr von Impfstoff aus Deutschland in andere Mitgliedstaaten verhindern oder erschweren. Die behauptete Vertragsverletzung besteht fort."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Für die Klage der Kommission verknüpft die Antwort die Fortdauer der Vertragsverletzung mit dem Umstand, dass Deutschland die Verordnung nicht aufgehoben hat, und zieht daraus ausdrücklich den Schluss, dass die Vertragsverletzung fortbesteht. Das ist eine methodisch vollständige Prüfung dieses Aspekts.",
+              "evidence": [
+                "Die Vertragsverletzung muss jedenfalls bei Ablauf der in der Stellungnahme gesetzten Frist vorgelegen haben.",
+                "Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben.",
+                "Die behauptete Vertragsverletzung besteht fort."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft im Rahmen der Zulässigkeit das Fortbestehen der gerügten Vertragsverletzung. Sie verbindet die maßgebliche Prämisse, dass die Verletzung bei Fristablauf noch vorliegen muss, mit dem konkreten Umstand der Nichtaufhebung der Rechtsverordnung und dem Ergebnis, dass die Vertragsverletzung fortbesteht. Damit liegt eine funktionale rechtliche Argumentationslinie zum fortbestehenden Rechtsschutzinteresse vor.",
+              "evidence": [
+                "Die Vertragsverletzung muss jedenfalls bei Ablauf der in der Stellungnahme gesetzten Frist vorgelegen haben. Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben. Sie gilt daher fort und kann weiterhin die Ausfuhr von Impfstoff aus Deutschland in andere Mitgliedstaaten verhindern oder erschweren. Die behauptete Vertragsverletzung besteht fort."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort formuliert einen kriterienspezifischen Obersatz für das Fortbestehen der Vertragsverletzung bei Fristablauf, subsumiert die Nichtaufhebung der Verordnung durch Deutschland hierunter und schließt methodisch vollständig ab.",
+              "evidence": [
+                "Die Vertragsverletzung muss jedenfalls bei Ablauf der in der Stellungnahme gesetzten Frist vorgelegen haben. Deutschland hat die Rechtsverordnung trotz Aufforderung nicht aufgehoben. Sie gilt daher fort und kann weiterhin die Ausfuhr von Impfstoff aus Deutschland in andere Mitgliedstaaten verhindern oder erschweren. Die behauptete Vertragsverletzung besteht fort."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

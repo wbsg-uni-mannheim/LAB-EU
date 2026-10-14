@@ -1,0 +1,1194 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/anfangerhausarbeit-wie-du-mir-so-ich-dir",
+    "title": "Anfängerhausarbeit: „Wie du mir, so ich dir“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__staatsrecht__anfangerhausarbeit-wie-du-mir-so-ich-dir/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/anfangerhausarbeit-wie-du-mir-so-ich-dir/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:24:16.578696+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 2,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.5,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 1,
+    "root_pass_rate": 0.5,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 1,
+    "points_available": 3,
+    "pass_rate": 0.3333333333333333,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 2,
+    "n_errors": 0,
+    "n_unresolved": 1,
+    "pass_rate": 0.5,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 2,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Begründetheit": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "breakdown_by_outline": {
+    "Begründetheit › Grundrecht auf Gleichbehandlung, Art. 3 Abs. 1 GG durch Zusatzpunkte für Spendenwillige": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "breakdown_by_function": {
+    "argumentation": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 139665,
+    "output_tokens": 29469,
+    "total_tokens": 169134,
+    "cached_input_tokens": 43151,
+    "cache_write_tokens": 29091
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 93079,
+    "output_tokens": 18315,
+    "total_tokens": 111394,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 29091
+  },
+  "style_judge_usage_total": {
+    "input_tokens": 46586,
+    "output_tokens": 11154,
+    "total_tokens": 57740,
+    "cached_input_tokens": 43151,
+    "cache_write_tokens": 0
+  },
+  "criteria_results": [
+    {
+      "id": "C-038",
+      "title": "Gleichheitsrechtliche Geeignetheit trotz Opt-out",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort hält die Differenzierung zwar grundsätzlich für geeignet, ein Anreizsystem zu begründen. Im Gleichheitsabschnitt erklärt sie aber nicht, weshalb die Widerrufsmöglichkeit trotz verbreiteter Spendenbefürwortung und der Unvorhersehbarkeit des Todes die erwartbare Anreizwirkung nicht beseitigt. Die erforderliche Begründung fehlt an dieser Prüfungsstelle.",
+      "evidence": [
+        "Der Unterschied kann geeignet sein, ein Anreizsystem zu begründen.",
+        "Die Erklärung kann widerrufen werden."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort hält die Differenzierung zwar grundsätzlich für geeignet, ein Anreizsystem zu begründen. Im Gleichheitsabschnitt erklärt sie aber nicht, weshalb die Widerrufsmöglichkeit trotz verbreiteter Spendenbefürwortung und der Unvorhersehbarkeit des Todes die erwartbare Anreizwirkung nicht beseitigt. Die erforderliche Begründung fehlt an dieser Prüfungsstelle.",
+          "evidence": [
+            "Der Unterschied kann geeignet sein, ein Anreizsystem zu begründen.",
+            "Die Erklärung kann widerrufen werden."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Differenzierung nach Spendenbereitschaft wird als geeignet eingeordnet, den Spenderpool zu vergrößern.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Es wird erklärt, weshalb ein möglicher späterer Widerruf angesichts verbreiteter Spendenbefürwortung und der Unvorhersehbarkeit des Todes die erwartbare Anreizwirkung nicht entfallen lässt.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Differenzierung nach Spendenbereitschaft bei § 12 Abs. 3 S. 2 TPG n.F. im Rahmen des allgemeinen Gleichheitssatzes, insbesondere ihre Geeignetheit trotz möglichem Widerruf",
+            "evidence_scope": "§ 12 Abs. 3 S. 2 TPG n.F. im Abschnitt zum allgemeinen Gleichheitssatz",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Erklärung belege wegen der Widerrufsmöglichkeit nicht zuverlässig eine spätere tatsächliche Spende.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt die gleichheitsrechtliche Geeignetheit nur dahin, dass die Differenzierung ein Anreizsystem begründen könne, und setzt dann die Widerrufsmöglichkeit gerade gegen die Rechtfertigung ein. Die nach der Criterion erforderliche Prognose, dass der mögliche Widerruf wegen verbreiteter Spendenbefürwortung und unvorhersehbaren Todes die erwartbare Anreizwirkung nicht entfallen lässt, fehlt.",
+          "evidence": [
+            "Der Gesetzgeber will die Bereitschaft zur Organspende und damit mittelbar das Organangebot erhöhen.",
+            "Der Unterschied kann geeignet sein, ein Anreizsystem zu begründen.",
+            "Erstens besagt eine einmalige Erklärung nicht zuverlässig, dass die Person bei ihrem Tod tatsächlich Organe spenden wird. Die Erklärung kann widerrufen werden."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Differenzierung nach der Spendenbereitschaft wird als zur Vergrößerung des Spenderpools geeignet eingeordnet.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Es wird erklärt, weshalb ein möglicher späterer Widerruf angesichts der verbreiteten Spendenbefürwortung und der Unvorhersehbarkeit des Todes die erwartbare Anreizwirkung nicht entfallen lässt.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Art. 3 Abs. 1 GG, § 12 Abs. 3 S. 2 TPG n.F.: Geeignetheit der Differenzierung nach Spendenbereitschaft zur Vergrößerung des Spenderpools trotz möglicher späterer Widerrufsmöglichkeit.",
+            "evidence_scope": "Art. 3 Abs. 1 GG, Abschnitt V zu § 12 Abs. 3 S. 2 TPG n.F.; die Erwägung hoher Spendenbefürwortung findet sich nur im Art.-2-Abs.-1-Abschnitt und wird für die Gleichheitsprüfung nicht fruchtbar gemacht.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die einmalige, widerrufliche Erklärung sichere keinen verlässlichen Anreiz; deshalb sei die Priorisierung nicht sachgerecht genug.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Kriterium verlangt die Feststellung, dass die spätere Widerrufsmöglichkeit die Anreizwirkung angesichts der Unvorhersehbarkeit des Todes und der verbreiteten Spendenbefürwortung nicht entfallen lässt. Die Bearbeitung geht auf diese Aspekte im Gleichheitssatz nicht ein, sondern führt die Widerrufsmöglichkeit im Gegenteil als Defizit der Regelung an.",
+          "evidence": [
+            "Erstens besagt eine einmalige Erklärung nicht zuverlässig, dass die Person bei ihrem Tod tatsächlich Organe spenden wird. Die Erklärung kann widerrufen werden. Die gesetzliche Vergünstigung bleibt nach dem Wortlaut dennoch erhalten, weil allein eine frühere Erklärung maßgeblich ist."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einordnung der Differenzierung nach der Spendenbereitschaft als zur Vergrößerung des Spenderpools geeignet",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Erklärung, weshalb ein möglicher späterer Widerruf angesichts der verbreiteten Spendenbefürwortung und der Unvorhersehbarkeit des Todes die erwartbare Anreizwirkung nicht entfallen lässt",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Gleichheitsrechtliche Rechtfertigung / Geeignetheit der Differenzierung nach Spendenbereitschaft (§ 12 Abs. 3 S. 2 TPG n.F.) trotz Opt-out-Möglichkeit",
+            "evidence_scope": "Art. 3 Abs. 1 GG, Rechtfertigung / Sachlicher Grund",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Widerrufsmöglichkeit wird als Argument gegen die Sachgerechtigkeit angeführt, ohne auf die Unvorhersehbarkeit des Todes und die hohe Spendenbefürwortung einzugehen",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 46586,
+        "output_tokens": 10411,
+        "total_tokens": 56997,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 14560
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort hält die Differenzierung zwar grundsätzlich für geeignet, ein Anreizsystem zu begründen. Im Gleichheitsabschnitt erklärt sie aber nicht, weshalb die Widerrufsmöglichkeit trotz verbreiteter Spendenbefürwortung und der Unvorhersehbarkeit des Todes die erwartbare Anreizwirkung nicht beseitigt. Die erforderliche Begründung fehlt an dieser Prüfungsstelle.",
+              "evidence": [
+                "Der Unterschied kann geeignet sein, ein Anreizsystem zu begründen.",
+                "Die Erklärung kann widerrufen werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Differenzierung nach Spendenbereitschaft wird als geeignet eingeordnet, den Spenderpool zu vergrößern.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Es wird erklärt, weshalb ein möglicher späterer Widerruf angesichts verbreiteter Spendenbefürwortung und der Unvorhersehbarkeit des Todes die erwartbare Anreizwirkung nicht entfallen lässt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Differenzierung nach Spendenbereitschaft bei § 12 Abs. 3 S. 2 TPG n.F. im Rahmen des allgemeinen Gleichheitssatzes, insbesondere ihre Geeignetheit trotz möglichem Widerruf",
+                "evidence_scope": "§ 12 Abs. 3 S. 2 TPG n.F. im Abschnitt zum allgemeinen Gleichheitssatz",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Erklärung belege wegen der Widerrufsmöglichkeit nicht zuverlässig eine spätere tatsächliche Spende.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort behandelt die gleichheitsrechtliche Geeignetheit nur dahin, dass die Differenzierung ein Anreizsystem begründen könne, und setzt dann die Widerrufsmöglichkeit gerade gegen die Rechtfertigung ein. Die nach der Criterion erforderliche Prognose, dass der mögliche Widerruf wegen verbreiteter Spendenbefürwortung und unvorhersehbaren Todes die erwartbare Anreizwirkung nicht entfallen lässt, fehlt.",
+              "evidence": [
+                "Der Gesetzgeber will die Bereitschaft zur Organspende und damit mittelbar das Organangebot erhöhen.",
+                "Der Unterschied kann geeignet sein, ein Anreizsystem zu begründen.",
+                "Erstens besagt eine einmalige Erklärung nicht zuverlässig, dass die Person bei ihrem Tod tatsächlich Organe spenden wird. Die Erklärung kann widerrufen werden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Differenzierung nach der Spendenbereitschaft wird als zur Vergrößerung des Spenderpools geeignet eingeordnet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Es wird erklärt, weshalb ein möglicher späterer Widerruf angesichts der verbreiteten Spendenbefürwortung und der Unvorhersehbarkeit des Todes die erwartbare Anreizwirkung nicht entfallen lässt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Art. 3 Abs. 1 GG, § 12 Abs. 3 S. 2 TPG n.F.: Geeignetheit der Differenzierung nach Spendenbereitschaft zur Vergrößerung des Spenderpools trotz möglicher späterer Widerrufsmöglichkeit.",
+                "evidence_scope": "Art. 3 Abs. 1 GG, Abschnitt V zu § 12 Abs. 3 S. 2 TPG n.F.; die Erwägung hoher Spendenbefürwortung findet sich nur im Art.-2-Abs.-1-Abschnitt und wird für die Gleichheitsprüfung nicht fruchtbar gemacht.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die einmalige, widerrufliche Erklärung sichere keinen verlässlichen Anreiz; deshalb sei die Priorisierung nicht sachgerecht genug.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium verlangt die Feststellung, dass die spätere Widerrufsmöglichkeit die Anreizwirkung angesichts der Unvorhersehbarkeit des Todes und der verbreiteten Spendenbefürwortung nicht entfallen lässt. Die Bearbeitung geht auf diese Aspekte im Gleichheitssatz nicht ein, sondern führt die Widerrufsmöglichkeit im Gegenteil als Defizit der Regelung an.",
+              "evidence": [
+                "Erstens besagt eine einmalige Erklärung nicht zuverlässig, dass die Person bei ihrem Tod tatsächlich Organe spenden wird. Die Erklärung kann widerrufen werden. Die gesetzliche Vergünstigung bleibt nach dem Wortlaut dennoch erhalten, weil allein eine frühere Erklärung maßgeblich ist."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung der Differenzierung nach der Spendenbereitschaft als zur Vergrößerung des Spenderpools geeignet",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Erklärung, weshalb ein möglicher späterer Widerruf angesichts der verbreiteten Spendenbefürwortung und der Unvorhersehbarkeit des Todes die erwartbare Anreizwirkung nicht entfallen lässt",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Gleichheitsrechtliche Rechtfertigung / Geeignetheit der Differenzierung nach Spendenbereitschaft (§ 12 Abs. 3 S. 2 TPG n.F.) trotz Opt-out-Möglichkeit",
+                "evidence_scope": "Art. 3 Abs. 1 GG, Rechtfertigung / Sachlicher Grund",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Widerrufsmöglichkeit wird als Argument gegen die Sachgerechtigkeit angeführt, ohne auf die Unvorhersehbarkeit des Todes und die hohe Spendenbefürwortung einzugehen",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-041-S9",
+      "title": "Sicherstellung informierter Einwilligung",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort nimmt die vorherige Aufklärung ausdrücklich als Schutzvorkehrung in die gleichheitsrechtliche Prüfung auf und bewertet ihre Wirkung. Dass sie die Schutzwirkung für unzureichend hält, steht der Erfüllung des Kriteriums nicht entgegen.",
+      "evidence": [
+        "Die vorherige Aufklärung nach § 2 Abs. 1a TPG genügt nicht, um die fehlende Übergangsregelung zu ersetzen.",
+        "Aufklärung ermöglicht eine informierte Entscheidung, nimmt aber nicht den erheblichen Druck, die Entscheidung schon im Minderjährigenalter treffen zu müssen."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort nimmt die vorherige Aufklärung ausdrücklich als Schutzvorkehrung in die gleichheitsrechtliche Prüfung auf und bewertet ihre Wirkung. Dass sie die Schutzwirkung für unzureichend hält, steht der Erfüllung des Kriteriums nicht entgegen.",
+          "evidence": [
+            "Die vorherige Aufklärung nach § 2 Abs. 1a TPG genügt nicht, um die fehlende Übergangsregelung zu ersetzen.",
+            "Aufklärung ermöglicht eine informierte Entscheidung, nimmt aber nicht den erheblichen Druck, die Entscheidung schon im Minderjährigenalter treffen zu müssen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die gleichheitsrechtliche Angemessenheitsprüfung der Faktorpriorisierung berücksichtigt die Sicherstellung einer informierten Einwilligung als Schutzvorkehrung.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Gleichheitsrechtliche Angemessenheit der Faktorpriorisierung nach § 12 Abs. 3 S. 2 TPG n.F.",
+            "evidence_scope": "Art. 3 Abs. 1 GG, insbesondere die Altersdifferenzierung bei den Ausnahmen von der Faktorpriorisierung nach § 12 Abs. 3a TPG n.F.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die vorherige Aufklärung ermöglicht eine informierte Entscheidung, beseitigt aber nicht den Druck, die Entscheidung bereits im Minderjährigenalter treffen zu müssen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort berücksichtigt im gleichheitsrechtlichen Prüfungsabschnitt zur Faktorpriorisierung ausdrücklich die vorherige Aufklärung nach § 2 Abs. 1a TPG und bewertet sie als Ermöglichung einer informierten Entscheidung. Damit wird der Sicherungsmechanismus einbezogen; die Faktorbegünstigung wird nicht auf eine uninformierte Erklärung gestützt.",
+          "evidence": [
+            "Die vorherige Aufklärung nach § 2 Abs. 1a TPG genügt nicht, um die fehlende Übergangsregelung zu ersetzen. Aufklärung ermöglicht eine informierte Entscheidung, nimmt aber nicht den erheblichen Druck, die Entscheidung schon im Minderjährigenalter treffen zu müssen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "In der gleichheitsrechtlichen Angemessenheit der Faktorpriorisierung wird die Sicherstellung informierter Einwilligung als Schutzvorkehrung berücksichtigt.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Art. 3 Abs. 1 GG, Faktorpriorisierung nach § 12 Abs. 3 S. 2 TPG, Sicherstellung informierter Einwilligung als Schutzvorkehrung in der Angemessenheit",
+            "evidence_scope": "Abschnitt V zu Art. 3 Abs. 1 GG, Faktorpriorisierung nach § 12 Abs. 3 S. 2 TPG; im Unterabschnitt zu Minderjährigen wird § 2 Abs. 1a TPG und informierte Entscheidung ausdrücklich erwähnt",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Vorherige Aufklärung nach § 2 Abs. 1a TPG ermöglicht eine informierte Entscheidung, genügt aber nicht, um den Entscheidungsdruck bei Minderjährigen zu beseitigen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bezieht die vorherige Aufklärung (§ 2 Abs. 1a TPG) zur Ermöglichung einer informierten Entscheidung bei der gleichheitsrechtlichen Angemessenheitsprüfung der Faktorpriorisierung ausdrücklich als Schutzvorkehrung ein und würdigt deren Reichweite.",
+          "evidence": [
+            "Die vorherige Aufklärung nach § 2 Abs. 1a TPG genügt nicht, um die fehlende Übergangsregelung zu ersetzen. Aufklärung ermöglicht eine informierte Entscheidung, nimmt aber nicht den erheblichen Druck, die Entscheidung schon im Minderjährigenalter treffen zu müssen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Berücksichtigung der Sicherstellung einer informierten Einwilligung als Schutzvorkehrung bei der gleichheitsrechtlichen Angemessenheitsprüfung der Faktorpriorisierung",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Gleichheitsrechtliche Angemessenheitsprüfung der Faktorpriorisierung bezüglich der Sicherstellung einer informierten Einwilligung",
+            "evidence_scope": "Gleichheitsrechtliche Angemessenheitsprüfung (§ 12 Abs. 3 S. 2 TPG n.F. i.V.m. Art. 3 Abs. 1 GG) zur Frage der Aufklärung nach § 2 Abs. 1a TPG",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die vorherige Aufklärung nach § 2 Abs. 1a TPG ermöglicht zwar eine informierte Entscheidung, nimmt aber nicht den Zwang zur Entscheidung im Minderjährigenalter und ersetzt die fehlende Übergangsregelung nicht.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 46493,
+        "output_tokens": 7904,
+        "total_tokens": 54397,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 14531
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort nimmt die vorherige Aufklärung ausdrücklich als Schutzvorkehrung in die gleichheitsrechtliche Prüfung auf und bewertet ihre Wirkung. Dass sie die Schutzwirkung für unzureichend hält, steht der Erfüllung des Kriteriums nicht entgegen.",
+              "evidence": [
+                "Die vorherige Aufklärung nach § 2 Abs. 1a TPG genügt nicht, um die fehlende Übergangsregelung zu ersetzen.",
+                "Aufklärung ermöglicht eine informierte Entscheidung, nimmt aber nicht den erheblichen Druck, die Entscheidung schon im Minderjährigenalter treffen zu müssen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die gleichheitsrechtliche Angemessenheitsprüfung der Faktorpriorisierung berücksichtigt die Sicherstellung einer informierten Einwilligung als Schutzvorkehrung.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Gleichheitsrechtliche Angemessenheit der Faktorpriorisierung nach § 12 Abs. 3 S. 2 TPG n.F.",
+                "evidence_scope": "Art. 3 Abs. 1 GG, insbesondere die Altersdifferenzierung bei den Ausnahmen von der Faktorpriorisierung nach § 12 Abs. 3a TPG n.F.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die vorherige Aufklärung ermöglicht eine informierte Entscheidung, beseitigt aber nicht den Druck, die Entscheidung bereits im Minderjährigenalter treffen zu müssen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort berücksichtigt im gleichheitsrechtlichen Prüfungsabschnitt zur Faktorpriorisierung ausdrücklich die vorherige Aufklärung nach § 2 Abs. 1a TPG und bewertet sie als Ermöglichung einer informierten Entscheidung. Damit wird der Sicherungsmechanismus einbezogen; die Faktorbegünstigung wird nicht auf eine uninformierte Erklärung gestützt.",
+              "evidence": [
+                "Die vorherige Aufklärung nach § 2 Abs. 1a TPG genügt nicht, um die fehlende Übergangsregelung zu ersetzen. Aufklärung ermöglicht eine informierte Entscheidung, nimmt aber nicht den erheblichen Druck, die Entscheidung schon im Minderjährigenalter treffen zu müssen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "In der gleichheitsrechtlichen Angemessenheit der Faktorpriorisierung wird die Sicherstellung informierter Einwilligung als Schutzvorkehrung berücksichtigt.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Art. 3 Abs. 1 GG, Faktorpriorisierung nach § 12 Abs. 3 S. 2 TPG, Sicherstellung informierter Einwilligung als Schutzvorkehrung in der Angemessenheit",
+                "evidence_scope": "Abschnitt V zu Art. 3 Abs. 1 GG, Faktorpriorisierung nach § 12 Abs. 3 S. 2 TPG; im Unterabschnitt zu Minderjährigen wird § 2 Abs. 1a TPG und informierte Entscheidung ausdrücklich erwähnt",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Vorherige Aufklärung nach § 2 Abs. 1a TPG ermöglicht eine informierte Entscheidung, genügt aber nicht, um den Entscheidungsdruck bei Minderjährigen zu beseitigen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bezieht die vorherige Aufklärung (§ 2 Abs. 1a TPG) zur Ermöglichung einer informierten Entscheidung bei der gleichheitsrechtlichen Angemessenheitsprüfung der Faktorpriorisierung ausdrücklich als Schutzvorkehrung ein und würdigt deren Reichweite.",
+              "evidence": [
+                "Die vorherige Aufklärung nach § 2 Abs. 1a TPG genügt nicht, um die fehlende Übergangsregelung zu ersetzen. Aufklärung ermöglicht eine informierte Entscheidung, nimmt aber nicht den erheblichen Druck, die Entscheidung schon im Minderjährigenalter treffen zu müssen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Berücksichtigung der Sicherstellung einer informierten Einwilligung als Schutzvorkehrung bei der gleichheitsrechtlichen Angemessenheitsprüfung der Faktorpriorisierung",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Gleichheitsrechtliche Angemessenheitsprüfung der Faktorpriorisierung bezüglich der Sicherstellung einer informierten Einwilligung",
+                "evidence_scope": "Gleichheitsrechtliche Angemessenheitsprüfung (§ 12 Abs. 3 S. 2 TPG n.F. i.V.m. Art. 3 Abs. 1 GG) zur Frage der Aufklärung nach § 2 Abs. 1a TPG",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die vorherige Aufklärung nach § 2 Abs. 1a TPG ermöglicht zwar eine informierte Entscheidung, nimmt aber nicht den Zwang zur Entscheidung im Minderjährigenalter und ersetzt die fehlende Übergangsregelung nicht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-038",
+      "title": "Gleichheitsrechtliche Geeignetheit trotz Opt-out",
+      "verdict": "fail",
+      "resolution": "unresolved",
+      "reasoning": "The committee majority changed between two independent rounds; the criterion is conservatively unresolved.",
+      "evidence": [],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Differenzierung bei Art. 3 Abs. 1 GG, stellt den Anreiz zur Erhöhung der Spendenbereitschaft der Widerrufsmöglichkeit gegenüber und zieht daraus eine Schlussfolgerung zur Rechtfertigung der konkreten Priorisierung. Die Prüfung ist methodisch durchgeführt, auch wenn die für das inhaltliche Kriterium verlangte Prognose fehlt.",
+          "evidence": [
+            "Der allgemeine Gleichheitssatz verlangt, wesentlich Gleiches gleich und wesentlich Ungleiches ungleich zu behandeln.",
+            "Der Unterschied kann geeignet sein, ein Anreizsystem zu begründen.",
+            "Die Erklärung kann widerrufen werden.",
+            "Die gesetzliche Priorisierung ist jedoch in ihrer konkreten Ausgestaltung nicht sachgerecht genug, um eine Punktevermehrung von 50 % zu rechtfertigen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft im Rahmen von Art. 3 Abs. 1 GG die Ungleichbehandlung nach Spendenbereitschaft und verknüpft die Geeignetheit eines Anreizsystems mit der konkreten Widerrufsmöglichkeit und einer daraus gezogenen Schlussfolgerung. Das ist eine methodisch vollzogene, wenn auch inhaltlich nicht kriteriengerechte Argumentationslinie.",
+          "evidence": [
+            "Der Gesetzgeber will die Bereitschaft zur Organspende und damit mittelbar das Organangebot erhöhen. Eine dokumentierte Spendebereitschaft unterscheidet sich grundsätzlich von einer fehlenden Erklärung. Der Unterschied kann geeignet sein, ein Anreizsystem zu begründen.",
+            "Erstens besagt eine einmalige Erklärung nicht zuverlässig, dass die Person bei ihrem Tod tatsächlich Organe spenden wird. Die Erklärung kann widerrufen werden. Die gesetzliche Vergünstigung bleibt nach dem Wortlaut dennoch erhalten, weil allein eine frühere Erklärung maßgeblich ist.",
+            "Die gesetzliche Priorisierung ist jedoch in ihrer konkreten Ausgestaltung nicht sachgerecht genug, um eine Punktevermehrung von 50 % zu rechtfertigen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Fallbearbeitung prüft im Rahmen des Gleichheitssatzes zwar die Eignung/Sachlichkeit der Differenzierung, stellt aber bezüglich der Widerrufsmöglichkeit (Opt-out) keinen methodischen Prüfungsstrang an, der die Sachverhaltsangaben zur Unvorhersehbarkeit des Todes und zur hohen Spendenbefürwortung mit der Aufrechterhaltung der Geeignetheit verknüpft.",
+          "evidence": [
+            "Der Unterschied kann geeignet sein, ein Anreizsystem zu begründen.",
+            "Erstens besagt eine einmalige Erklärung nicht zuverlässig, dass die Person bei ihrem Tod tatsächlich Organe spenden wird. Die Erklärung kann widerrufen werden."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 46586,
+        "output_tokens": 11154,
+        "total_tokens": 57740,
+        "cached_input_tokens": 43151,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Im Abschnitt zu Art. 3 Abs. 1 GG nennt die Antwort sowohl den Anreizgedanken als auch die Widerrufsmöglichkeit. Sie führt diese jedoch nicht zu einer abgeschlossenen Prüfung zusammen: Es fehlt dort eine ausdrückliche Schlussfolgerung dazu, ob der Widerruf die erwartbare Anreizwirkung entfallen lässt.",
+              "evidence": [
+                "Der Unterschied kann geeignet sein, ein Anreizsystem zu begründen.",
+                "Die Erklärung kann widerrufen werden."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft im Rahmen des Art. 3 Abs. 1 GG die Rechtfertigung der Differenzierung, benennt mit der Eignung eines Anreizsystems einen Maßstab, verknüpft ihn mit dem konkreten Umstand der Widerruflichkeit der Erklärung und führt zu einem Ergebnis. Die Argumentation ist damit methodisch als Anwendung auf die gleichheitsrechtliche Geeignetheit angelegt, auch wenn sie inhaltlich die erforderliche Prognose nicht trägt.",
+              "evidence": [
+                "Der Unterschied kann geeignet sein, ein Anreizsystem zu begründen.",
+                "Die gesetzliche Priorisierung ist jedoch in ihrer konkreten Ausgestaltung nicht sachgerecht genug, um eine Punktevermehrung von 50 % zu rechtfertigen.",
+                "Erstens besagt eine einmalige Erklärung nicht zuverlässig, dass die Person bei ihrem Tod tatsächlich Organe spenden wird. Die Erklärung kann widerrufen werden."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort enthält keinen methodischen Subsumtionsschritt, der darlegt, warum die Anreizwirkung trotz möglicher Widerrufe unter Berücksichtigung der Unvorhersehbarkeit des Todes und der hohen Spendenbefürwortung erhalten bleibt. Die Sachverhaltsargumente dazu werden im Rahmen des Gleichheitssatzes weder herangezogen noch mit einem Obersatz verknüpft.",
+              "evidence": [
+                "Der Unterschied kann geeignet sein, ein Anreizsystem zu begründen.",
+                "Erstens besagt eine einmalige Erklärung nicht zuverlässig, dass die Person bei ihrem Tod tatsächlich Organe spenden wird. Die Erklärung kann widerrufen werden. Die gesetzliche Vergünstigung bleibt nach dem Wortlaut dennoch erhalten, weil allein eine frühere Erklärung maßgeblich ist."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Differenzierung bei Art. 3 Abs. 1 GG, stellt den Anreiz zur Erhöhung der Spendenbereitschaft der Widerrufsmöglichkeit gegenüber und zieht daraus eine Schlussfolgerung zur Rechtfertigung der konkreten Priorisierung. Die Prüfung ist methodisch durchgeführt, auch wenn die für das inhaltliche Kriterium verlangte Prognose fehlt.",
+              "evidence": [
+                "Der allgemeine Gleichheitssatz verlangt, wesentlich Gleiches gleich und wesentlich Ungleiches ungleich zu behandeln.",
+                "Der Unterschied kann geeignet sein, ein Anreizsystem zu begründen.",
+                "Die Erklärung kann widerrufen werden.",
+                "Die gesetzliche Priorisierung ist jedoch in ihrer konkreten Ausgestaltung nicht sachgerecht genug, um eine Punktevermehrung von 50 % zu rechtfertigen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft im Rahmen von Art. 3 Abs. 1 GG die Ungleichbehandlung nach Spendenbereitschaft und verknüpft die Geeignetheit eines Anreizsystems mit der konkreten Widerrufsmöglichkeit und einer daraus gezogenen Schlussfolgerung. Das ist eine methodisch vollzogene, wenn auch inhaltlich nicht kriteriengerechte Argumentationslinie.",
+              "evidence": [
+                "Der Gesetzgeber will die Bereitschaft zur Organspende und damit mittelbar das Organangebot erhöhen. Eine dokumentierte Spendebereitschaft unterscheidet sich grundsätzlich von einer fehlenden Erklärung. Der Unterschied kann geeignet sein, ein Anreizsystem zu begründen.",
+                "Erstens besagt eine einmalige Erklärung nicht zuverlässig, dass die Person bei ihrem Tod tatsächlich Organe spenden wird. Die Erklärung kann widerrufen werden. Die gesetzliche Vergünstigung bleibt nach dem Wortlaut dennoch erhalten, weil allein eine frühere Erklärung maßgeblich ist.",
+                "Die gesetzliche Priorisierung ist jedoch in ihrer konkreten Ausgestaltung nicht sachgerecht genug, um eine Punktevermehrung von 50 % zu rechtfertigen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Fallbearbeitung prüft im Rahmen des Gleichheitssatzes zwar die Eignung/Sachlichkeit der Differenzierung, stellt aber bezüglich der Widerrufsmöglichkeit (Opt-out) keinen methodischen Prüfungsstrang an, der die Sachverhaltsangaben zur Unvorhersehbarkeit des Todes und zur hohen Spendenbefürwortung mit der Aufrechterhaltung der Geeignetheit verknüpft.",
+              "evidence": [
+                "Der Unterschied kann geeignet sein, ein Anreizsystem zu begründen.",
+                "Erstens besagt eine einmalige Erklärung nicht zuverlässig, dass die Person bei ihrem Tod tatsächlich Organe spenden wird. Die Erklärung kann widerrufen werden."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "majority_flip"
+    },
+    {
+      "id": "C-041-S9",
+      "title": "Sicherstellung informierter Einwilligung",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Im gleichheitsrechtlichen Abschnitt zur Altersdifferenzierung berücksichtigt die Antwort die vorherige Aufklärung als Schutzvorkehrung, verknüpft sie mit dem fortbestehenden Entscheidungsdruck und gelangt zu einem ausdrücklichen Ergebnis. Das ist eine abgeschlossene, kriterienspezifische Prüfung.",
+      "evidence": [
+        "Die vorherige Aufklärung nach § 2 Abs. 1a TPG genügt nicht, um die fehlende Übergangsregelung zu ersetzen.",
+        "Aufklärung ermöglicht eine informierte Entscheidung, nimmt aber nicht den erheblichen Druck, die Entscheidung schon im Minderjährigenalter treffen zu müssen.",
+        "Die Differenzierung zwischen Personen unter 17 Jahren und solchen, die das 17. Lebensjahr vollendet haben, ist ... nicht hinreichend gerechtfertigt."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Im gleichheitsrechtlichen Abschnitt zur Altersdifferenzierung berücksichtigt die Antwort die vorherige Aufklärung als Schutzvorkehrung, verknüpft sie mit dem fortbestehenden Entscheidungsdruck und gelangt zu einem ausdrücklichen Ergebnis. Das ist eine abgeschlossene, kriterienspezifische Prüfung.",
+          "evidence": [
+            "Die vorherige Aufklärung nach § 2 Abs. 1a TPG genügt nicht, um die fehlende Übergangsregelung zu ersetzen.",
+            "Aufklärung ermöglicht eine informierte Entscheidung, nimmt aber nicht den erheblichen Druck, die Entscheidung schon im Minderjährigenalter treffen zu müssen.",
+            "Die Differenzierung zwischen Personen unter 17 Jahren und solchen, die das 17. Lebensjahr vollendet haben, ist ... nicht hinreichend gerechtfertigt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Passage verbindet im Abschnitt zu Art. 3 Abs. 1 GG die Schutzvorkehrung der vorherigen Aufklärung nach § 2 Abs. 1a TPG mit dem konkreten Umstand der Entscheidung Minderjähriger und zieht daraus die Folgerung, dass Aufklärung den Druck nicht beseitigt. Damit liegt eine kriteriumsbezogene Anwendung vor.",
+          "evidence": [
+            "Die vorherige Aufklärung nach § 2 Abs. 1a TPG genügt nicht, um die fehlende Übergangsregelung zu ersetzen. Aufklärung ermöglicht eine informierte Entscheidung, nimmt aber nicht den erheblichen Druck, die Entscheidung schon im Minderjährigenalter treffen zu müssen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bindet die Sicherstellung einer informierten Entscheidung über § 2 Abs. 1a TPG methodisch sauber mit Obersatz, Subsumtion und Zwischenergebnis in die gleichheitsrechtliche Verhältnismäßigkeitsprüfung ein.",
+          "evidence": [
+            "Die vorherige Aufklärung nach § 2 Abs. 1a TPG genügt nicht, um die fehlende Übergangsregelung zu ersetzen. Aufklärung ermöglicht eine informierte Entscheidung, nimmt aber nicht den erheblichen Druck, die Entscheidung schon im Minderjährigenalter treffen zu müssen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Im gleichheitsrechtlichen Abschnitt zur Altersdifferenzierung berücksichtigt die Antwort die vorherige Aufklärung als Schutzvorkehrung, verknüpft sie mit dem fortbestehenden Entscheidungsdruck und gelangt zu einem ausdrücklichen Ergebnis. Das ist eine abgeschlossene, kriterienspezifische Prüfung.",
+              "evidence": [
+                "Die vorherige Aufklärung nach § 2 Abs. 1a TPG genügt nicht, um die fehlende Übergangsregelung zu ersetzen.",
+                "Aufklärung ermöglicht eine informierte Entscheidung, nimmt aber nicht den erheblichen Druck, die Entscheidung schon im Minderjährigenalter treffen zu müssen.",
+                "Die Differenzierung zwischen Personen unter 17 Jahren und solchen, die das 17. Lebensjahr vollendet haben, ist ... nicht hinreichend gerechtfertigt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Passage verbindet im Abschnitt zu Art. 3 Abs. 1 GG die Schutzvorkehrung der vorherigen Aufklärung nach § 2 Abs. 1a TPG mit dem konkreten Umstand der Entscheidung Minderjähriger und zieht daraus die Folgerung, dass Aufklärung den Druck nicht beseitigt. Damit liegt eine kriteriumsbezogene Anwendung vor.",
+              "evidence": [
+                "Die vorherige Aufklärung nach § 2 Abs. 1a TPG genügt nicht, um die fehlende Übergangsregelung zu ersetzen. Aufklärung ermöglicht eine informierte Entscheidung, nimmt aber nicht den erheblichen Druck, die Entscheidung schon im Minderjährigenalter treffen zu müssen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bindet die Sicherstellung einer informierten Entscheidung über § 2 Abs. 1a TPG methodisch sauber mit Obersatz, Subsumtion und Zwischenergebnis in die gleichheitsrechtliche Verhältnismäßigkeitsprüfung ein.",
+              "evidence": [
+                "Die vorherige Aufklärung nach § 2 Abs. 1a TPG genügt nicht, um die fehlende Übergangsregelung zu ersetzen. Aufklärung ermöglicht eine informierte Entscheidung, nimmt aber nicht den erheblichen Druck, die Entscheidung schon im Minderjährigenalter treffen zu müssen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

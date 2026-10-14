@@ -1,0 +1,736 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/original-examensklausur-liebesbeweis-mit-rasanten-folgen-mit-exkurs-zu-paragraph-315d-stgb",
+    "title": "Original-Examensklausur: Liebesbeweis mit rasanten Folgen – mit Exkurs zu § 315d StGB"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__strafrecht__materielles-strafrecht__original-examensklausur-liebesbeweis-mit-rasanten-folgen-mit-exkurs-zu-paragraph-315d-stgb/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/original-examensklausur-liebesbeweis-mit-rasanten-folgen-mit-exkurs-zu-paragraph-315d-stgb/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:51:29.359751+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 2,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Tatkomplex: Das Rennen": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Tatkomplex: Das Rennen › Strafbarkeit des B": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 63326,
+    "output_tokens": 15277,
+    "total_tokens": 78603,
+    "cached_input_tokens": 19723,
+    "cache_write_tokens": 7947
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 31663,
+    "output_tokens": 8780,
+    "total_tokens": 40443,
+    "cached_input_tokens": 768,
+    "cache_write_tokens": 7947
+  },
+  "style_judge_usage_total": {
+    "input_tokens": 31663,
+    "output_tokens": 6497,
+    "total_tokens": 38160,
+    "cached_input_tokens": 18955,
+    "cache_write_tokens": 0
+  },
+  "criteria_results": [
+    {
+      "id": "C-062",
+      "title": "Keine zurechenbare Gefahr für D aus Bs Fahrfehlern",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Lösung rechnet B die konkrete Gefahr für D und dessen Audi ausdrücklich als von seinen eigenen Verstößen mitverursacht zu und bejaht eine vollendete §-315c-Tat. Sie enthält nicht die im Kriterium verlangte Begrenzung der Schutzrichtung der §§ 8, 3 StVO.",
+      "evidence": [
+        "Dadurch wurden Leib und Leben des D sowie der fabrikneue Audi konkret gefährdet; die Gefahr realisierte sich sogar in der Tötung des D und der vollständigen Zerstörung des Fahrzeugs.",
+        "B hatte die durch das Rennen geschaffene Gefahr mitverursacht."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Lösung rechnet B die konkrete Gefahr für D und dessen Audi ausdrücklich als von seinen eigenen Verstößen mitverursacht zu und bejaht eine vollendete §-315c-Tat. Sie enthält nicht die im Kriterium verlangte Begrenzung der Schutzrichtung der §§ 8, 3 StVO.",
+          "evidence": [
+            "Dadurch wurden Leib und Leben des D sowie der fabrikneue Audi konkret gefährdet; die Gefahr realisierte sich sogar in der Tötung des D und der vollständigen Zerstörung des Fahrzeugs.",
+            "B hatte die durch das Rennen geschaffene Gefahr mitverursacht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Gefahr für D und dessen Audi wird nicht als Gefahrerfolg von Bs eigenen Verstößen nach § 315c Abs. 1 Nr. 2 lit. a oder lit. d behandelt.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Lösung begründet die fehlende Zurechnung damit, dass §§ 8, 3 StVO nicht eigenständige Verkehrsverstöße eines anderen Fahrers verhindern sollen.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B; konkrete Gefahr für D und dessen Audi im Rahmen von § 315c Abs. 1 Nr. 2 lit. a oder lit. d StGB",
+            "evidence_scope": "B; konkrete Gefahr für D und dessen Audi sowie Zurechnung im Rahmen der Prüfung des § 315c Abs. 1 Nr. 2 lit. a und d StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "B habe die durch das Rennen geschaffene Gefahr mitverursacht.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Falllösung rechnet B eine eigene vollendete §-315c-Tat gegenüber D zu und behandelt die von C ausgehende Kollisionsgefahr als von B mitverursachten Gefahrerfolg. Damit liegt genau die im Criterion als NICHT ERFÜLLT beschriebene Behandlung vor.",
+          "evidence": [
+            "Dadurch wurden Leib und Leben des D sowie der fabrikneue Audi konkret gefährdet; die Gefahr realisierte sich sogar in der Tötung des D und der vollständigen Zerstörung des Fahrzeugs.",
+            "B hatte die durch das Rennen geschaffene Gefahr mitverursacht.",
+            "B hat sich daher gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die von C verursachte Gefahr für D und dessen Audi wird nicht als Gefahrerfolg von Bs eigenen Verstößen nach § 315c Abs. 1 Nr. 2 lit. a oder lit. d StGB behandelt; keine Zurechnung allein aufgrund der Rennabrede.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B, § 315c Abs. 1 Nr. 2 lit. a/d, konkrete Gefahr für D und dessen Audi",
+            "evidence_scope": "B, § 315c Abs. 1 Nr. 2 lit. a/d, konkrete Gefahr für D und dessen Audi",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "B habe durch die Rennabrede, Rotlichtmissachtung und 200 km/h die Gefahr für D und dessen Audi mitverursacht und dadurch § 315c Abs. 1 Nr. 2 lit. a/d vollendet.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Kriterium ist ausdrücklich nicht erfüllt, da die Falllösung B die Gefährdung von D und dessen Audi allein aufgrund der Rennabrede und Mitverursachung als vollendete Tat nach § 315c StGB zurechnet.",
+          "evidence": [
+            "Dadurch wurden Leib und Leben des D sowie der fabrikneue Audi konkret gefährdet; die Gefahr realisierte sich sogar in der Tötung des D und der vollständigen Zerstörung des Fahrzeugs. B hatte die durch das Rennen geschaffene Gefahr mitverursacht.",
+            "B hat sich daher gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Keine Behandlung der von C verursachten Gefahr für D/Audi als Gefahrerfolg von Bs §-315c-Tat",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "B, Gefährdung des D und dessen Audi bei § 315c StGB",
+            "evidence_scope": "B, Gefährdung des D und dessen Audi bei § 315c StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "B habe die durch das Rennen geschaffene Gefahr mitverursacht, weshalb ihm die Gefährdung von D und dessen Audi zugerechnet wird",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 31663,
+        "output_tokens": 8780,
+        "total_tokens": 40443,
+        "cached_input_tokens": 768,
+        "cache_write_tokens": 7947
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Lösung rechnet B die konkrete Gefahr für D und dessen Audi ausdrücklich als von seinen eigenen Verstößen mitverursacht zu und bejaht eine vollendete §-315c-Tat. Sie enthält nicht die im Kriterium verlangte Begrenzung der Schutzrichtung der §§ 8, 3 StVO.",
+              "evidence": [
+                "Dadurch wurden Leib und Leben des D sowie der fabrikneue Audi konkret gefährdet; die Gefahr realisierte sich sogar in der Tötung des D und der vollständigen Zerstörung des Fahrzeugs.",
+                "B hatte die durch das Rennen geschaffene Gefahr mitverursacht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Gefahr für D und dessen Audi wird nicht als Gefahrerfolg von Bs eigenen Verstößen nach § 315c Abs. 1 Nr. 2 lit. a oder lit. d behandelt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Lösung begründet die fehlende Zurechnung damit, dass §§ 8, 3 StVO nicht eigenständige Verkehrsverstöße eines anderen Fahrers verhindern sollen.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B; konkrete Gefahr für D und dessen Audi im Rahmen von § 315c Abs. 1 Nr. 2 lit. a oder lit. d StGB",
+                "evidence_scope": "B; konkrete Gefahr für D und dessen Audi sowie Zurechnung im Rahmen der Prüfung des § 315c Abs. 1 Nr. 2 lit. a und d StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "B habe die durch das Rennen geschaffene Gefahr mitverursacht.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Falllösung rechnet B eine eigene vollendete §-315c-Tat gegenüber D zu und behandelt die von C ausgehende Kollisionsgefahr als von B mitverursachten Gefahrerfolg. Damit liegt genau die im Criterion als NICHT ERFÜLLT beschriebene Behandlung vor.",
+              "evidence": [
+                "Dadurch wurden Leib und Leben des D sowie der fabrikneue Audi konkret gefährdet; die Gefahr realisierte sich sogar in der Tötung des D und der vollständigen Zerstörung des Fahrzeugs.",
+                "B hatte die durch das Rennen geschaffene Gefahr mitverursacht.",
+                "B hat sich daher gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die von C verursachte Gefahr für D und dessen Audi wird nicht als Gefahrerfolg von Bs eigenen Verstößen nach § 315c Abs. 1 Nr. 2 lit. a oder lit. d StGB behandelt; keine Zurechnung allein aufgrund der Rennabrede.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B, § 315c Abs. 1 Nr. 2 lit. a/d, konkrete Gefahr für D und dessen Audi",
+                "evidence_scope": "B, § 315c Abs. 1 Nr. 2 lit. a/d, konkrete Gefahr für D und dessen Audi",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "B habe durch die Rennabrede, Rotlichtmissachtung und 200 km/h die Gefahr für D und dessen Audi mitverursacht und dadurch § 315c Abs. 1 Nr. 2 lit. a/d vollendet.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium ist ausdrücklich nicht erfüllt, da die Falllösung B die Gefährdung von D und dessen Audi allein aufgrund der Rennabrede und Mitverursachung als vollendete Tat nach § 315c StGB zurechnet.",
+              "evidence": [
+                "Dadurch wurden Leib und Leben des D sowie der fabrikneue Audi konkret gefährdet; die Gefahr realisierte sich sogar in der Tötung des D und der vollständigen Zerstörung des Fahrzeugs. B hatte die durch das Rennen geschaffene Gefahr mitverursacht.",
+                "B hat sich daher gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Keine Behandlung der von C verursachten Gefahr für D/Audi als Gefahrerfolg von Bs §-315c-Tat",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "B, Gefährdung des D und dessen Audi bei § 315c StGB",
+                "evidence_scope": "B, Gefährdung des D und dessen Audi bei § 315c StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "B habe die durch das Rennen geschaffene Gefahr mitverursacht, weshalb ihm die Gefährdung von D und dessen Audi zugerechnet wird",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-062",
+      "title": "Keine zurechenbare Gefahr für D aus Bs Fahrfehlern",
+      "verdict": "fail",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort prüft zwar § 315c StGB gegenüber D, verbindet aber nicht die kriteriumsspezifische Prämisse zu §§ 8, 3 StVO und zur fehlenden Zurechnung einer allein von C verursachten Gefahr. Sie setzt die allgemeinen §-315c-Merkmale an und leitet daraus eine vollendete Tat des B ab, ohne die entscheidende Nichtzurechnungsfrage methodisch zu entfalten.",
+      "evidence": [
+        "B könnte sich wegen Gefährdung des Straßenverkehrs gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht haben.",
+        "Dadurch wurden Leib und Leben des D sowie der fabrikneue Audi konkret gefährdet; die Gefahr realisierte sich sogar in der Tötung des D und der vollständigen Zerstörung des Fahrzeugs.",
+        "B hat sich daher gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung prüft Bs vollendete §-315c-Tat gegenüber D, verknüpft die Rennabsprache und Cs Verhalten ausdrücklich mit der Zurechnung der Gefahr und zieht daraus ein Ergebnis. Die Zurechnung ist inhaltlich falsch, aber methodisch als vollständige Prüfung dieser Frage angelegt.",
+          "evidence": [
+            "B hatte die durch das Rennen geschaffene Gefahr mitverursacht.",
+            "Das eigenverantwortliche Verhalten des C unterbricht die Zurechnung nicht. Es war kein atypisches, außerhalb des gemeinsamen Vorhabens liegendes Dazwischentreten, sondern entsprach exakt der mit B getroffenen Rennabsprache.",
+            "B hat sich daher gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft zwar § 315c StGB gegenüber D, verbindet aber nicht die kriteriumsspezifische Prämisse zu §§ 8, 3 StVO und zur fehlenden Zurechnung einer allein von C verursachten Gefahr. Sie setzt die allgemeinen §-315c-Merkmale an und leitet daraus eine vollendete Tat des B ab, ohne die entscheidende Nichtzurechnungsfrage methodisch zu entfalten.",
+          "evidence": [
+            "B könnte sich wegen Gefährdung des Straßenverkehrs gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht haben.",
+            "Dadurch wurden Leib und Leben des D sowie der fabrikneue Audi konkret gefährdet; die Gefahr realisierte sich sogar in der Tötung des D und der vollständigen Zerstörung des Fahrzeugs.",
+            "B hat sich daher gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Falllösung behauptet die Zurechnung der konkreten Gefährdung des D und dessen Fahrzeugs zu Bs Pflichtverletzung lediglich thesenhaft ('B hatte die durch das Rennen geschaffene Gefahr mitverursacht'), ohne hierfür einen rechtlichen Maßstab (z. B. zum Schutzzweck der verletzten Verkehrsnormen bei mehraktigen/fremden Geschehensabläufen) aufzustellen und methodisch zu subsumieren.",
+          "evidence": [
+            "Dadurch wurden Leib und Leben des D sowie der fabrikneue Audi konkret gefährdet; die Gefahr realisierte sich sogar in der Tötung des D und der vollständigen Zerstörung des Fahrzeugs. B hatte die durch das Rennen geschaffene Gefahr mitverursacht."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": true,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 31663,
+        "output_tokens": 6497,
+        "total_tokens": 38160,
+        "cached_input_tokens": 18955,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung prüft Bs Strafbarkeit nach § 315c im passenden Abschnitt, verknüpft die konkrete Gefahr für D und dessen Audi mit Bs Fahrverstößen und bejaht eine Mitverursachung. Damit ist die Argumentation methodisch abgeschlossen, auch wenn die Zurechnung materiell-rechtlich nicht überzeugt.",
+              "evidence": [
+                "B hatte die durch das Rennen geschaffene Gefahr mitverursacht.",
+                "B hat sich daher gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Der Abschnitt prüft zwar § 315c Abs. 1 Nr. 2 lit. a/d für B gegenüber D und verknüpft Tatsachen mit einem Ergebnis. Die criterion-spezifische Prämisse, dass die von C verursachte Gefahr für D und dessen Audi nicht als Gefahrerfolg von Bs eigenen Verstößen zuzurechnen ist, weil §§ 8, 3 StVO keine eigenständigen Verkehrsverstöße eines anderen Fahrers verhindern sollen, wird jedoch nicht aufgestellt oder geprüft.",
+              "evidence": [
+                "B könnte sich wegen Gefährdung des Straßenverkehrs gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht haben.",
+                "Dadurch wurden Leib und Leben des D sowie der fabrikneue Audi konkret gefährdet; die Gefahr realisierte sich sogar in der Tötung des D und der vollständigen Zerstörung des Fahrzeugs.",
+                "B hat sich daher gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Falllösung behauptet die Zurechnung der Gefährdung des D zu den Verkehrsverstößen des B lediglich mit dem pauschalen Satz, B habe die Gefahr durch das Rennen mitverursacht, ohne einen rechtlichen Prüfungsmaßstab zur Erfolgszurechnung bzw. zum Schutzzweck der Norm bei § 315c StGB aufzustellen.",
+              "evidence": [
+                "Dadurch wurden Leib und Leben des D sowie der fabrikneue Audi konkret gefährdet; die Gefahr realisierte sich sogar in der Tötung des D und der vollständigen Zerstörung des Fahrzeugs. B hatte die durch das Rennen geschaffene Gefahr mitverursacht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung prüft Bs vollendete §-315c-Tat gegenüber D, verknüpft die Rennabsprache und Cs Verhalten ausdrücklich mit der Zurechnung der Gefahr und zieht daraus ein Ergebnis. Die Zurechnung ist inhaltlich falsch, aber methodisch als vollständige Prüfung dieser Frage angelegt.",
+              "evidence": [
+                "B hatte die durch das Rennen geschaffene Gefahr mitverursacht.",
+                "Das eigenverantwortliche Verhalten des C unterbricht die Zurechnung nicht. Es war kein atypisches, außerhalb des gemeinsamen Vorhabens liegendes Dazwischentreten, sondern entsprach exakt der mit B getroffenen Rennabsprache.",
+                "B hat sich daher gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft zwar § 315c StGB gegenüber D, verbindet aber nicht die kriteriumsspezifische Prämisse zu §§ 8, 3 StVO und zur fehlenden Zurechnung einer allein von C verursachten Gefahr. Sie setzt die allgemeinen §-315c-Merkmale an und leitet daraus eine vollendete Tat des B ab, ohne die entscheidende Nichtzurechnungsfrage methodisch zu entfalten.",
+              "evidence": [
+                "B könnte sich wegen Gefährdung des Straßenverkehrs gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht haben.",
+                "Dadurch wurden Leib und Leben des D sowie der fabrikneue Audi konkret gefährdet; die Gefahr realisierte sich sogar in der Tötung des D und der vollständigen Zerstörung des Fahrzeugs.",
+                "B hat sich daher gemäß § 315c Abs. 1 Nr. 2 Buchst. a und d StGB strafbar gemacht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Falllösung behauptet die Zurechnung der konkreten Gefährdung des D und dessen Fahrzeugs zu Bs Pflichtverletzung lediglich thesenhaft ('B hatte die durch das Rennen geschaffene Gefahr mitverursacht'), ohne hierfür einen rechtlichen Maßstab (z. B. zum Schutzzweck der verletzten Verkehrsnormen bei mehraktigen/fremden Geschehensabläufen) aufzustellen und methodisch zu subsumieren.",
+              "evidence": [
+                "Dadurch wurden Leib und Leben des D sowie der fabrikneue Audi konkret gefährdet; die Gefahr realisierte sich sogar in der Tötung des D und der vollständigen Zerstörung des Fahrzeugs. B hatte die durch das Rennen geschaffene Gefahr mitverursacht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ]
+}

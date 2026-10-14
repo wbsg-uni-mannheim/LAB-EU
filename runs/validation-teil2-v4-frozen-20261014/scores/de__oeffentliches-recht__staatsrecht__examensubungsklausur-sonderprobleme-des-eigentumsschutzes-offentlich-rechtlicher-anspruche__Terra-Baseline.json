@@ -1,0 +1,1926 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/examensubungsklausur-sonderprobleme-des-eigentumsschutzes-offentlich-rechtlicher-anspruche",
+    "title": "Examensübungsklausur: Sonderprobleme des Eigentumsschutzes öffentlich-rechtlicher Ansprüche bei staatlicher Verantwortungsübernahme"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__staatsrecht__examensubungsklausur-sonderprobleme-des-eigentumsschutzes-offentlich-rechtlicher-anspruche/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/staatsrecht/examensubungsklausur-sonderprobleme-des-eigentumsschutzes-offentlich-rechtlicher-anspruche/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:42:53.806441+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 3,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.3333333333333333,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 3,
+    "n_scored": 3,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.3333333333333333
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 3,
+    "n_root_passed": 1,
+    "root_pass_rate": 0.3333333333333333,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 7,
+    "pass_rate": 0.2857142857142857,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 2,
+    "n_eligible": 3,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.6666666666666666,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 3,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 2,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 2,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 2,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 2,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.778,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Zulässigkeit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Begründetheit": {
+      "n_criteria": 2,
+      "n_passed": 0,
+      "n_failed": 2,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Zulässigkeit › Vorrangigkeit eines Vorabentscheidungsverfahrens nach Art. 267 AEUV?": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Begründetheit › Vereinbarkeit von § 15 Abs. 2 S. 2 ContStifG mit Art. 14 Abs. 1 GG": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "Begründetheit › Vereinbarkeit von § 15 Abs. 2 S. 2 ContStiftG mit Art. 3 Abs. 1 GG": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "argumentation": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    },
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    },
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 90618,
+    "output_tokens": 25480,
+    "total_tokens": 116098,
+    "cached_input_tokens": 40122,
+    "cache_write_tokens": 9367
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 90618,
+    "output_tokens": 25480,
+    "total_tokens": 116098,
+    "cached_input_tokens": 40122,
+    "cache_write_tokens": 9367
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-009",
+      "title": "Verhältnis zum Vorabentscheidungsverfahren",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort erkennt zutreffend, dass eine relevante unionsrechtliche Frage ein Vorabentscheidungsersuchen erforderlich machen kann, verneint aber eine solche Frage hier und verneint damit einen Vorrang des EuGH-Verfahrens. Sie hält insbesondere nicht allein wegen der irischen Staatsangehörigkeit oder der irischen Zahlung den EuGH für zuständig.",
+      "evidence": [
+        "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt. Daran fehlt es.",
+        "Zwar hat der Fall einen grenzüberschreitenden Sachverhalt: X ist irischer Staatsangehöriger, lebt außerhalb Deutschlands und erhält Leistungen eines ausländischen Staates. Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+        "Auch sonst ist keine unionsrechtliche Frage ersichtlich, deren Beantwortung für die Prüfung des § 15 Abs. 2 Satz 2 ContStifG am Maßstab des Grundgesetzes erforderlich wäre.",
+        "Das BVerfG ist daher nicht wegen eines unionsrechtlichen Anwendungsvorrangs an einer Entscheidung gehindert; ein Vorabentscheidungsersuchen ist nicht veranlasst."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort verwirft den Vorrang des Vorabentscheidungsverfahrens für den konkreten Fall nachvollziehbar. Sie formuliert aber nicht, dass eine entscheidungserhebliche unionsrechtliche Determinierung ohne nationalen Spielraum eine Vorlage erforderlich machen könnte; diese verlangte Komponente bleibt unerörtert.",
+          "evidence": [
+            "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt.",
+            "Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+            "Das BVerfG ist daher nicht wegen eines unionsrechtlichen Anwendungsvorrangs an einer Entscheidung gehindert; ein Vorabentscheidungsersuchen ist nicht veranlasst."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Erkennen, dass eine entscheidungserhebliche unionsrechtliche Determinierung ohne nationalen Spielraum eine Vorlage nach Art. 267 AEUV erforderlich machen könnte",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Erkennen, dass der bloße Bezug zu Irland die konkrete Normenkontrolle nicht verdrängt",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Erkennen, dass hier mangels klärungsbedürftiger unionsrechtlicher Frage kein Vorrang des Vorabentscheidungsverfahrens besteht",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "X, § 15 Abs. 2 Satz 2 ContStifG und das Verhältnis einer möglichen Vorlage nach Art. 267 AEUV zur konkreten Normenkontrolle",
+            "evidence_scope": "X, die Anrechnung der irischen Zahlung nach § 15 Abs. 2 Satz 2 ContStifG und die Frage eines Vorabentscheidungsersuchens nach Art. 267 AEUV",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Eine Vorlage nach Art. 267 AEUV setzt eine entscheidungserhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts voraus; der grenzüberschreitende Sachverhalt allein genügt nicht, und eine solche Frage besteht hier nicht.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erkennt zutreffend, dass eine relevante unionsrechtliche Frage ein Vorabentscheidungsersuchen erforderlich machen kann, verneint aber eine solche Frage hier und verneint damit einen Vorrang des EuGH-Verfahrens. Sie hält insbesondere nicht allein wegen der irischen Staatsangehörigkeit oder der irischen Zahlung den EuGH für zuständig.",
+          "evidence": [
+            "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt. Daran fehlt es.",
+            "Zwar hat der Fall einen grenzüberschreitenden Sachverhalt: X ist irischer Staatsangehöriger, lebt außerhalb Deutschlands und erhält Leistungen eines ausländischen Staates. Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+            "Auch sonst ist keine unionsrechtliche Frage ersichtlich, deren Beantwortung für die Prüfung des § 15 Abs. 2 Satz 2 ContStifG am Maßstab des Grundgesetzes erforderlich wäre.",
+            "Das BVerfG ist daher nicht wegen eines unionsrechtlichen Anwendungsvorrangs an einer Entscheidung gehindert; ein Vorabentscheidungsersuchen ist nicht veranlasst."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Art. 267 AEUV setzt eine entscheidungserhebliche unionsrechtliche Auslegungs- oder Gültigkeitsfrage voraus",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Der bloße Bezug zu Irland bzw. ein grenzüberschreitender Sachverhalt verdrängt die konkrete Normenkontrolle nicht",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Mangels klärungsbedürftiger unionsrechtlicher Frage besteht kein Vorrang des Vorabentscheidungsverfahrens",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Verhältnis der konkreten Normenkontrolle zum Vorabentscheidungsverfahren nach Art. 267 AEUV im Fall der irischen Zahlung an X",
+            "evidence_scope": "Prüfung des Art. 267 AEUV, der grenzüberschreitenden Bezüge und der fehlenden unionsrechtlichen Frage im selben Verfahren",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Art. 267 AEUV verlange eine entscheidungserhebliche unionsrechtliche Auslegungs- oder Gültigkeitsfrage; der grenzüberschreitende Bezug allein genüge nicht, die Produkthaftungsrichtlinie sei nicht anwendbar und sonst sei keine unionsrechtliche Frage ersichtlich.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Kriterienanforderungen sind vollständig erfüllt. Die Bearbeitung stellt zutreffend fest, dass der bloße Irlandbezug keine EuGH-Zuständigkeit erzwingt und mangels anwendbaren Unionsrechts kein Vorrang des Art. 267 AEUV gegenüber der konkreten Normenkontrolle besteht.",
+          "evidence": [
+            "Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+            "Auch sonst ist keine unionsrechtliche Frage ersichtlich, deren Beantwortung für die Prüfung des § 15 Abs. 2 Satz 2 ContStifG am Maßstab des Grundgesetzes erforderlich wäre. Das BVerfG ist daher nicht wegen eines unionsrechtlichen Anwendungsvorrangs an einer Entscheidung gehindert; ein Vorabentscheidungsersuchen ist nicht veranlasst."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Erkennen, dass eine unionsrechtliche Determinierung eine Vorlage nach Art. 267 AEUV erfordern könnte, ein bloßer Auslands-/Irlandbezug die Normenkontrolle aber nicht verdrängt",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Feststellung, dass mangels klärungsbedürftiger unionsrechtlicher Frage kein Vorrang des Vorabentscheidungsverfahrens besteht",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Kein unbesehenes Annehmen einer zwingenden Vorrang-Zuständigkeit des EuGH allein wegen der irischen Staatsangehörigkeit/Zahlung",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Verhältnis der konkreten Normenkontrolle zum Vorabentscheidungsverfahren vor dem EuGH (Art. 267 AEUV)",
+            "evidence_scope": "Verhältnis der konkreten Normenkontrolle zum Vorabentscheidungsverfahren vor dem EuGH (Art. 267 AEUV)",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Ein grenzüberschreitender Lebenssachverhalt reicht ohne entscheidungserhebliche unionsrechtliche Rechtsfrage nicht aus; mangels Anwendbarkeit von Unionsrecht (etwa der Produkthaftungsrichtlinie) besteht kein Anwendungsvorrang und keine Vorlagepflicht.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 30167,
+        "output_tokens": 6607,
+        "total_tokens": 36774,
+        "cached_input_tokens": 19898,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort trifft die Aussagen, dass der Irlandbezug allein keinen Vorrang des EuGH begründet und hier keine klärungsbedürftige unionsrechtliche Frage besteht. Sie erkennt aber nicht, dass eine entscheidungserhebliche unionsrechtliche Determinierung ohne nationalen Spielraum eine Vorlage erforderlich machen könnte. Da diese Voraussetzung zum PASS gehört, ist das Kriterium nicht vollständig erfüllt.",
+              "evidence": [
+                "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt.",
+                "Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+                "Auch sonst ist keine unionsrechtliche Frage ersichtlich, deren Beantwortung für die Prüfung des § 15 Abs. 2 Satz 2 ContStifG am Maßstab des Grundgesetzes erforderlich wäre.",
+                "ein Vorabentscheidungsersuchen ist nicht veranlasst."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erkennen, dass eine entscheidungserhebliche unionsrechtliche Determinierung ohne nationalen Spielraum eine Vorlage nach Art. 267 AEUV erforderlich machen könnte",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Erkennen, dass der bloße Bezug zu Irland die konkrete Normenkontrolle nicht verdrängt",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erkennen, dass hier mangels klärungsbedürftiger unionsrechtlicher Frage kein Vorrang des Vorabentscheidungsverfahrens besteht",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "X und § 15 Abs. 2 Satz 2 ContStifG; Verhältnis des Vorabentscheidungsverfahrens nach Art. 267 AEUV zur konkreten Normenkontrolle",
+                "evidence_scope": "X und die Anrechnung nach § 15 Abs. 2 Satz 2 ContStifG; Prüfung, ob eine unionsrechtliche Frage eine Vorlage an den EuGH erfordert",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Art. 267 AEUV setzt eine entscheidungserhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts voraus; der grenzüberschreitende Sachverhalt allein begründet keine solche Frage, und die Richtlinie ist zeitlich nicht anwendbar.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint zutreffend einen Vorrang des Vorabentscheidungsverfahrens. Sie stellt auf die erforderliche entscheidungserhebliche unionsrechtliche Frage ab, verneint diese und macht deutlich, dass die irische Staatsangehörigkeit oder die irische Zahlung allein keine EuGH-Vorlage erzwingen.",
+              "evidence": [
+                "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt.",
+                "Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+                "Die Produkthaftungsrichtlinie 85/374/EWG ist nicht anwendbar. Nach Art. 17 dieser Richtlinie gilt sie nicht für Produkte, die in den Verkehr gebracht wurden, bevor die nationalen Umsetzungsvorschriften in Kraft getreten sind.",
+                "Das BVerfG ist daher nicht wegen eines unionsrechtlichen Anwendungsvorrangs an einer Entscheidung gehindert; ein Vorabentscheidungsersuchen ist nicht veranlasst."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort erkennt, dass ein Vorabentscheidungsersuchen nach Art. 267 AEUV eine entscheidungserhebliche unionsrechtliche Auslegungs- oder Gültigkeitsfrage voraussetzt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort erkennt, dass der bloße Bezug zu Irland bzw. ein grenzüberschreitender Sachverhalt die konkrete Normenkontrolle nicht verdrängt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort verneint mangels klärungsbedürftiger unionsrechtlicher Frage einen Vorrang des Vorabentscheidungsverfahrens.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Verhältnis zwischen Vorabentscheidungsverfahren nach Art. 267 AEUV und konkreter Normenkontrolle; Zuständigkeit von EuGH bzw. BVerfG.",
+                "evidence_scope": "Die Antwort prüft unter A.IV ausdrücklich, ob der EuGH statt des BVerfG befasst werden muss, und verneint eine unionsrechtliche Vorlagepflicht.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Es fehlt an einer für die Entscheidung erheblichen Frage der Auslegung oder Gültigkeit des Unionsrechts; der grenzüberschreitende Bezug allein genügt nicht, und die Produkthaftungsrichtlinie ist nach Art. 17 nicht anwendbar.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft das Verhältnis zum EuGH ausdrücklich und stellt zutreffend fest, dass mangels entscheidungserheblicher unionsrechtlicher Determinierung kein Vorrang des Vorabentscheidungsverfahrens besteht.",
+              "evidence": [
+                "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt. Daran fehlt es.",
+                "Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+                "Das BVerfG ist daher nicht wegen eines unionsrechtlichen Anwendungsvorrangs an einer Entscheidung gehindert; ein Vorabentscheidungsersuchen ist nicht veranlasst."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erkenntnis, dass ein Vorabentscheidungsverfahren nach Art. 267 AEUV eine entscheidungserhebliche unionsrechtliche Frage erfordert, der bloße Bezug zu Irland die konkrete Normenkontrolle nicht verdrängt und mangels klärungsbedürftiger unionsrechtlicher Frage kein Vorrang besteht",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Kein unbesehenes Zuweisen der Zuständigkeit an den EuGH allein wegen irischer Staatsangehörigkeit oder irischer Zahlung",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Zulässigkeit der konkreten Normenkontrolle: Verhältnis zum Vorabentscheidungsverfahren gem. Art. 267 AEUV",
+                "evidence_scope": "Zulässigkeit der konkreten Normenkontrolle: Verhältnis zum Vorabentscheidungsverfahren gem. Art. 267 AEUV",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Ein grenzüberschreitender Lebenssachverhalt allein begründet keine Vorlagepflicht; da die Produkthaftungsrichtlinie zeitlich unanwendbar ist und keine andere unionsrechtliche Frage besteht, hindert das Unionsrecht die Prüfung durch das BVerfG nicht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort verwirft den Vorrang des Vorabentscheidungsverfahrens für den konkreten Fall nachvollziehbar. Sie formuliert aber nicht, dass eine entscheidungserhebliche unionsrechtliche Determinierung ohne nationalen Spielraum eine Vorlage erforderlich machen könnte; diese verlangte Komponente bleibt unerörtert.",
+              "evidence": [
+                "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt.",
+                "Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+                "Das BVerfG ist daher nicht wegen eines unionsrechtlichen Anwendungsvorrangs an einer Entscheidung gehindert; ein Vorabentscheidungsersuchen ist nicht veranlasst."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erkennen, dass eine entscheidungserhebliche unionsrechtliche Determinierung ohne nationalen Spielraum eine Vorlage nach Art. 267 AEUV erforderlich machen könnte",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Erkennen, dass der bloße Bezug zu Irland die konkrete Normenkontrolle nicht verdrängt",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Erkennen, dass hier mangels klärungsbedürftiger unionsrechtlicher Frage kein Vorrang des Vorabentscheidungsverfahrens besteht",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "X, § 15 Abs. 2 Satz 2 ContStifG und das Verhältnis einer möglichen Vorlage nach Art. 267 AEUV zur konkreten Normenkontrolle",
+                "evidence_scope": "X, die Anrechnung der irischen Zahlung nach § 15 Abs. 2 Satz 2 ContStifG und die Frage eines Vorabentscheidungsersuchens nach Art. 267 AEUV",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Eine Vorlage nach Art. 267 AEUV setzt eine entscheidungserhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts voraus; der grenzüberschreitende Sachverhalt allein genügt nicht, und eine solche Frage besteht hier nicht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erkennt zutreffend, dass eine relevante unionsrechtliche Frage ein Vorabentscheidungsersuchen erforderlich machen kann, verneint aber eine solche Frage hier und verneint damit einen Vorrang des EuGH-Verfahrens. Sie hält insbesondere nicht allein wegen der irischen Staatsangehörigkeit oder der irischen Zahlung den EuGH für zuständig.",
+              "evidence": [
+                "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt. Daran fehlt es.",
+                "Zwar hat der Fall einen grenzüberschreitenden Sachverhalt: X ist irischer Staatsangehöriger, lebt außerhalb Deutschlands und erhält Leistungen eines ausländischen Staates. Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+                "Auch sonst ist keine unionsrechtliche Frage ersichtlich, deren Beantwortung für die Prüfung des § 15 Abs. 2 Satz 2 ContStifG am Maßstab des Grundgesetzes erforderlich wäre.",
+                "Das BVerfG ist daher nicht wegen eines unionsrechtlichen Anwendungsvorrangs an einer Entscheidung gehindert; ein Vorabentscheidungsersuchen ist nicht veranlasst."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Art. 267 AEUV setzt eine entscheidungserhebliche unionsrechtliche Auslegungs- oder Gültigkeitsfrage voraus",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der bloße Bezug zu Irland bzw. ein grenzüberschreitender Sachverhalt verdrängt die konkrete Normenkontrolle nicht",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Mangels klärungsbedürftiger unionsrechtlicher Frage besteht kein Vorrang des Vorabentscheidungsverfahrens",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Verhältnis der konkreten Normenkontrolle zum Vorabentscheidungsverfahren nach Art. 267 AEUV im Fall der irischen Zahlung an X",
+                "evidence_scope": "Prüfung des Art. 267 AEUV, der grenzüberschreitenden Bezüge und der fehlenden unionsrechtlichen Frage im selben Verfahren",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Art. 267 AEUV verlange eine entscheidungserhebliche unionsrechtliche Auslegungs- oder Gültigkeitsfrage; der grenzüberschreitende Bezug allein genüge nicht, die Produkthaftungsrichtlinie sei nicht anwendbar und sonst sei keine unionsrechtliche Frage ersichtlich.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Kriterienanforderungen sind vollständig erfüllt. Die Bearbeitung stellt zutreffend fest, dass der bloße Irlandbezug keine EuGH-Zuständigkeit erzwingt und mangels anwendbaren Unionsrechts kein Vorrang des Art. 267 AEUV gegenüber der konkreten Normenkontrolle besteht.",
+              "evidence": [
+                "Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+                "Auch sonst ist keine unionsrechtliche Frage ersichtlich, deren Beantwortung für die Prüfung des § 15 Abs. 2 Satz 2 ContStifG am Maßstab des Grundgesetzes erforderlich wäre. Das BVerfG ist daher nicht wegen eines unionsrechtlichen Anwendungsvorrangs an einer Entscheidung gehindert; ein Vorabentscheidungsersuchen ist nicht veranlasst."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Erkennen, dass eine unionsrechtliche Determinierung eine Vorlage nach Art. 267 AEUV erfordern könnte, ein bloßer Auslands-/Irlandbezug die Normenkontrolle aber nicht verdrängt",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Feststellung, dass mangels klärungsbedürftiger unionsrechtlicher Frage kein Vorrang des Vorabentscheidungsverfahrens besteht",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Kein unbesehenes Annehmen einer zwingenden Vorrang-Zuständigkeit des EuGH allein wegen der irischen Staatsangehörigkeit/Zahlung",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Verhältnis der konkreten Normenkontrolle zum Vorabentscheidungsverfahren vor dem EuGH (Art. 267 AEUV)",
+                "evidence_scope": "Verhältnis der konkreten Normenkontrolle zum Vorabentscheidungsverfahren vor dem EuGH (Art. 267 AEUV)",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Ein grenzüberschreitender Lebenssachverhalt reicht ohne entscheidungserhebliche unionsrechtliche Rechtsfrage nicht aus; mangels Anwendbarkeit von Unionsrecht (etwa der Produkthaftungsrichtlinie) besteht kein Anwendungsvorrang und keine Vorlagepflicht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    },
+    {
+      "id": "C-019",
+      "title": "Existenzsichernde Funktion der Conterganrente",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort behandelt die lebenslange Gewährung und die schweren Schäden, ordnet die Rente aber nicht wegen ihrer wesentlichen Bedeutung für die Lebensgestaltung als existenzsichernd ein. Die geforderte Einordnung ist daher nicht erfüllt.",
+      "evidence": [
+        "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen.",
+        "Der Anspruch des X hat wegen des Verzichts auf private Haftungsansprüche und der staatlichen Verantwortungsübernahme besonderes Gewicht."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt die lebenslange Gewährung und die schweren Schäden, ordnet die Rente aber nicht wegen ihrer wesentlichen Bedeutung für die Lebensgestaltung als existenzsichernd ein. Die geforderte Einordnung ist daher nicht erfüllt.",
+          "evidence": [
+            "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen.",
+            "Der Anspruch des X hat wegen des Verzichts auf private Haftungsansprüche und der staatlichen Verantwortungsübernahme besonderes Gewicht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die lebenslange Conterganrente wird wegen ihrer wesentlichen Bedeutung für die Lebensgestaltung von Menschen mit schweren dauerhaften Thalidomidschäden als existenzsichernd eingeordnet.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Antwort setzt sich mit der lebenslangen Gewährung und den schweren dauerhaften Schädigungen auseinander, statt die Rente als bloße freiwillige oder symbolische Zusatzleistung zu behandeln.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Funktion der lebenslangen Conterganrente im Rahmen ihrer verfassungsrechtlichen Bewertung",
+            "evidence_scope": "Anspruch des X auf Conterganrente in der Verhältnismäßigkeitsprüfung zu Art. 14 Abs. 1 GG",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Rente gleiche lebenslang die Folgen schwerster körperlicher Schädigungen aus; der Anspruch habe wegen des Verzichts auf private Haftungsansprüche und der staatlichen Verantwortungsübernahme besonderes Gewicht.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt die Rente als lebenslangen Ausgleich schwerer dauerhafter Schäden, ordnet sie aber nicht als existenzsichernd wegen ihrer wesentlichen Bedeutung für die Lebensgestaltung ein. Die criterion-spezifische PASS-Komponente fehlt.",
+          "evidence": [
+            "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen.",
+            "Der Anspruch ist Ausgleich für den Verlust oder den Verzicht auf private, haftungsrechtlich begründete Ansprüche."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Auseinandersetzung mit dauerhaften Schädigungen und lebenslanger Gewährung der Conterganrente",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Einordnung der Conterganrente als existenzsichernd wegen ihrer wesentlichen Bedeutung für die Lebensgestaltung",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Conterganrente und ihre existenzsichernde Funktion für Menschen mit schweren dauerhaften Thalidomidschäden",
+            "evidence_scope": "Conterganrente im Eigentumsschutz und in der Verhältnismäßigkeit; lebenslanger Ausgleich schwerer Körperschäden, aber keine Einordnung als Existenzsicherung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen und hat wegen Verzichts auf Haftungsansprüche und staatlicher Verantwortungsübernahme besonderes Gewicht.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erwähnt zwar, dass die Rente dem lebenslangen Ausgleich schwerster Schäden dient, ordnet sie jedoch an keiner Stelle ausdrücklich oder sinngemäß als existenzsichernd für die Lebensgestaltung der Betroffenen ein.",
+          "evidence": [
+            "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einordnung der lebenslangen Conterganrente als existenzsichernd wegen ihrer wesentlichen Bedeutung für die Lebensgestaltung von Menschen mit schweren dauerhaften Schäden",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Eigentumsschutz/Angemessenheit der Conterganrente: Qualifikation als existenzsichernde Leistung",
+            "evidence_scope": "Angemessenheit der Eigentumsbeschränkung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 30057,
+        "output_tokens": 9729,
+        "total_tokens": 39786,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 9367
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort behandelt die lebenslange Gewährung und die schweren Schäden, ordnet die Rente aber nicht wegen ihrer wesentlichen Bedeutung für die Lebensgestaltung als existenzsichernd ein. Die geforderte Einordnung ist daher nicht erfüllt.",
+              "evidence": [
+                "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen.",
+                "Der Anspruch des X hat wegen des Verzichts auf private Haftungsansprüche und der staatlichen Verantwortungsübernahme besonderes Gewicht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die lebenslange Conterganrente wird wegen ihrer wesentlichen Bedeutung für die Lebensgestaltung von Menschen mit schweren dauerhaften Thalidomidschäden als existenzsichernd eingeordnet.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Antwort setzt sich mit der lebenslangen Gewährung und den schweren dauerhaften Schädigungen auseinander, statt die Rente als bloße freiwillige oder symbolische Zusatzleistung zu behandeln.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Funktion der lebenslangen Conterganrente im Rahmen ihrer verfassungsrechtlichen Bewertung",
+                "evidence_scope": "Anspruch des X auf Conterganrente in der Verhältnismäßigkeitsprüfung zu Art. 14 Abs. 1 GG",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Rente gleiche lebenslang die Folgen schwerster körperlicher Schädigungen aus; der Anspruch habe wegen des Verzichts auf private Haftungsansprüche und der staatlichen Verantwortungsübernahme besonderes Gewicht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort behandelt die Rente als lebenslangen Ausgleich schwerer dauerhafter Schäden, ordnet sie aber nicht als existenzsichernd wegen ihrer wesentlichen Bedeutung für die Lebensgestaltung ein. Die criterion-spezifische PASS-Komponente fehlt.",
+              "evidence": [
+                "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen.",
+                "Der Anspruch ist Ausgleich für den Verlust oder den Verzicht auf private, haftungsrechtlich begründete Ansprüche."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Auseinandersetzung mit dauerhaften Schädigungen und lebenslanger Gewährung der Conterganrente",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Einordnung der Conterganrente als existenzsichernd wegen ihrer wesentlichen Bedeutung für die Lebensgestaltung",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Conterganrente und ihre existenzsichernde Funktion für Menschen mit schweren dauerhaften Thalidomidschäden",
+                "evidence_scope": "Conterganrente im Eigentumsschutz und in der Verhältnismäßigkeit; lebenslanger Ausgleich schwerer Körperschäden, aber keine Einordnung als Existenzsicherung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen und hat wegen Verzichts auf Haftungsansprüche und staatlicher Verantwortungsübernahme besonderes Gewicht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erwähnt zwar, dass die Rente dem lebenslangen Ausgleich schwerster Schäden dient, ordnet sie jedoch an keiner Stelle ausdrücklich oder sinngemäß als existenzsichernd für die Lebensgestaltung der Betroffenen ein.",
+              "evidence": [
+                "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung der lebenslangen Conterganrente als existenzsichernd wegen ihrer wesentlichen Bedeutung für die Lebensgestaltung von Menschen mit schweren dauerhaften Schäden",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Eigentumsschutz/Angemessenheit der Conterganrente: Qualifikation als existenzsichernde Leistung",
+                "evidence_scope": "Angemessenheit der Eigentumsbeschränkung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-038",
+      "title": "Vergleichsgruppen und Ungleichbehandlung",
+      "verdict": "fail",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort bejaht eine faktische Ungleichbehandlung auf Grundlage des Drittleistungsempfangs und begründet sie damit, dass nur diese Gruppe gekürzt wird. Sie stellt aber nicht klar, dass die Anknüpfung gerade nicht unmittelbar an Staatsangehörigkeit, Herkunft der Zahlung oder deren laufende beziehungsweise einmalige Form erfolgt. Damit fehlt ein ausdrücklich verlangter Bestandteil.",
+      "evidence": [
+        "§ 15 Abs. 2 Satz 2 ContStifG unterscheidet zwischen Leistungsberechtigten, die neben der Conterganrente Leistungen anderer, insbesondere ausländischer Staaten erhalten, und Leistungsberechtigten, die solche Leistungen nicht erhalten.",
+        "Die erste Gruppe erhält die deutsche Conterganrente nur gekürzt; die zweite Gruppe erhält sie ungekürzt.",
+        "Die Ungleichbehandlung knüpft damit nicht an die Schwere der Schädigung oder an den Umfang der Körperfunktionsstörungen an, obwohl diese Kriterien nach § 13 Abs. 2 ContStifG für die Höhe der Rente maßgeblich sind."
+      ],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort bejaht eine faktische Ungleichbehandlung auf Grundlage des Drittleistungsempfangs und begründet sie damit, dass nur diese Gruppe gekürzt wird. Sie stellt aber nicht klar, dass die Anknüpfung gerade nicht unmittelbar an Staatsangehörigkeit, Herkunft der Zahlung oder deren laufende beziehungsweise einmalige Form erfolgt. Damit fehlt ein ausdrücklich verlangter Bestandteil.",
+          "evidence": [
+            "§ 15 Abs. 2 Satz 2 ContStifG unterscheidet zwischen Leistungsberechtigten, die neben der Conterganrente Leistungen anderer, insbesondere ausländischer Staaten erhalten, und Leistungsberechtigten, die solche Leistungen nicht erhalten.",
+            "Die erste Gruppe erhält die deutsche Conterganrente nur gekürzt; die zweite Gruppe erhält sie ungekürzt.",
+            "Die Ungleichbehandlung knüpft damit nicht an die Schwere der Schädigung oder an den Umfang der Körperfunktionsstörungen an, obwohl diese Kriterien nach § 13 Abs. 2 ContStifG für die Höhe der Rente maßgeblich sind."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Klarstellen, dass die Regelung an den Empfang einer Drittleistung anknüpft und nicht unmittelbar an Staatsangehörigkeit, staatliche oder private Herkunft oder laufende beziehungsweise einmalige Zahlung.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Eine anerkannte Position zu den Vergleichsgruppen begründen, insbesondere eine faktische Ungleichbehandlung von Berechtigten mit und ohne anrechenbare Drittleistung bejahen können, weil nur Erstere gekürzt werden.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "§ 15 Abs. 2 Satz 2 ContStifG; Vergleichsgruppen und Ungleichbehandlung bei der Anrechnung, insbesondere bei der Conterganrente des X.",
+            "evidence_scope": "§ 15 Abs. 2 Satz 2 ContStifG; Gleichheitsprüfung der gekürzten Rente bei Empfängern von Drittleistungen gegenüber Empfängern ohne solche Leistungen.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Leistungsberechtigte mit einer Drittleistung erhalten die deutsche Rente gekürzt, während Leistungsberechtigte ohne eine solche Leistung sie ungekürzt erhalten.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort erfüllt die criterion-eigenen Anforderungen. Sie benennt die Vergleichsgruppen, verortet den Differenzierungsgrund im Empfang einer Drittleistung und nicht in der Staatsangehörigkeit oder Herkunft und bejaht die faktische Ungleichbehandlung wegen der nur bei Empfängern anrechenbarer Drittleistungen erfolgenden Kürzung.",
+          "evidence": [
+            "§ 15 Abs. 2 Satz 2 ContStifG unterscheidet zwischen Leistungsberechtigten, die neben der Conterganrente Leistungen anderer, insbesondere ausländischer Staaten erhalten, und Leistungsberechtigten, die solche Leistungen nicht erhalten.",
+            "Sie knüpft vielmehr daran an, ob ein anderer Staat oder ein anderer Dritter eine Leistung erbringt.",
+            "Die erste Gruppe erhält die deutsche Conterganrente nur gekürzt; die zweite Gruppe erhält sie ungekürzt.",
+            "Gerade im Falle des X soll die irische Leistung die deutschen Leistungen signifikant erweitern."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort stellt klar, dass § 15 Abs. 2 Satz 2 ContStifG an den Empfang einer Drittleistung und nicht unmittelbar an Staatsangehörigkeit, Herkunft oder Zahlungsart anknüpft.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort bejaht eine faktische Ungleichbehandlung von ContStifG-Berechtigten mit und ohne anrechenbare Drittleistung, weil nur Erstere gekürzt werden.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort behauptet keine unmittelbare Ausländerdiskriminierung und etikettiert keine bloße Alternative.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Art. 3 Abs. 1 GG: Vergleichsgruppen und Ungleichbehandlung durch § 15 Abs. 2 Satz 2 ContStifG, insbesondere Anknüpfung an Drittleistungsempfang.",
+            "evidence_scope": "Die Antwort prüft im Abschnitt zu Art. 3 Abs. 1 GG die Vergleichsgruppen unter § 15 Abs. 2 Satz 2 ContStifG, die Kürzung nur bei Empfängern anrechenbarer Drittleistungen und den ergänzenden Zweck der irischen Zahlung.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Norm knüpft an den Empfang einer Drittleistung an; Berechtigte mit solchen Leistungen werden gekürzt, andere nicht; die Rechtfertigung fehlt, weil die ausländische Zahlung nicht notwendig dieselbe Ausgleichsfunktion erfüllt und die irische Leistung die deutschen Zahlungen gerade erweitern soll.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort bejaht zwar nachvollziehbar eine Ungleichbehandlung von Berechtigten mit und ohne Drittleistung. Sie stellt jedoch nicht klar, dass die Norm nicht unmittelbar an die Staatsangehörigkeit, die staatliche/private Herkunft oder die Zahlungsart (laufend/einmalig) anknüpft, sondern grenzt die Anknüpfung lediglich von der Schadensschwere ab.",
+          "evidence": [
+            "§ 15 Abs. 2 Satz 2 ContStifG unterscheidet zwischen Leistungsberechtigten, die neben der Conterganrente Leistungen anderer, insbesondere ausländischer Staaten erhalten, und Leistungsberechtigten, die solche Leistungen nicht erhalten.",
+            "Die Ungleichbehandlung knüpft damit nicht an die Schwere der Schädigung oder an den Umfang der Körperfunktionsstörungen an [...]. Sie knüpft vielmehr daran an, ob ein anderer Staat oder ein anderer Dritter eine Leistung erbringt."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Klarstellung, dass § 15 Abs. 2 Satz 2 ContStifG an den Empfang einer Drittleistung und nicht unmittelbar an Staatsangehörigkeit, staatliche oder private Herkunft oder laufende beziehungsweise einmalige Zahlung anknüpft",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Begründung einer anerkannten Position (z. B. Bejahung einer faktischen Ungleichbehandlung wegen Kürzung nur der Gruppe mit Drittleistung)",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Art. 3 Abs. 1 GG; Vergleichsgruppen und Ungleichbehandlung bei § 15 Abs. 2 Satz 2 ContStifG",
+            "evidence_scope": "Art. 3 Abs. 1 GG; Ungleichbehandlung bei § 15 Abs. 2 Satz 2 ContStifG",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Ungleichbehandlung knüpft daran an, ob ein anderer Staat oder Dritter eine Leistung erbringt, wodurch nur diese Gruppe die Rente gekürzt erhält.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 30394,
+        "output_tokens": 9144,
+        "total_tokens": 39538,
+        "cached_input_tokens": 20224,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort begründet eine faktische Ungleichbehandlung und behauptet keine unmittelbare Ausländerdiskriminierung. Sie stellt aber nicht klar, dass die Anknüpfung gerade nicht unmittelbar von Staatsangehörigkeit, staatlicher oder privater Herkunft oder laufender beziehungsweise einmaliger Zahlung abhängt. Damit fehlt ein ausdrücklich verlangter Bestandteil.",
+              "evidence": [
+                "Die erste Gruppe erhält die deutsche Conterganrente nur gekürzt; die zweite Gruppe erhält sie ungekürzt.",
+                "knüpft vielmehr daran an, ob ein anderer Staat oder ein anderer Dritter eine Leistung erbringt.",
+                "Gerade im Falle des X soll die irische Leistung die deutschen Leistungen signifikant erweitern."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Klarstellen, dass § 15 Abs. 2 Satz 2 ContStifG an den Empfang einer Drittleistung und nicht unmittelbar an Staatsangehörigkeit, staatliche oder private Herkunft oder laufende beziehungsweise einmalige Zahlung anknüpft.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Eine anerkannte Position begründen, insbesondere eine faktische Ungleichbehandlung bejahen, weil nur Berechtigte mit anrechenbarer Drittleistung gekürzt werden.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "§ 15 Abs. 2 Satz 2 ContStifG; Vergleichsgruppen und Ungleichbehandlung im Rahmen von Art. 3 Abs. 1 GG",
+                "evidence_scope": "Anrechnung nach § 15 Abs. 2 Satz 2 ContStifG auf die Conterganrente des X; Ungleichbehandlung nach Art. 3 Abs. 1 GG",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Leistungsberechtigte mit Drittleistung erhalten eine gekürzte Rente; im Fall des X soll die irische Leistung die deutschen Leistungen ergänzen und werde durch die Anrechnung wirtschaftlich neutralisiert.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort benennt die einschlägigen Vergleichsgruppen, knüpft die Differenzierung an den Empfang einer anrechenbaren Drittleistung und bejaht die faktische Ungleichbehandlung wegen der Kürzung nur bei der ersten Gruppe. Sie behauptet keine unmittelbare Ausländerdiskriminierung und begründet die anerkannte Position ausreichend.",
+              "evidence": [
+                "§ 15 Abs. 2 Satz 2 ContStifG unterscheidet zwischen Leistungsberechtigten, die neben der Conterganrente Leistungen anderer, insbesondere ausländischer Staaten erhalten, und Leistungsberechtigten, die solche Leistungen nicht erhalten.",
+                "Die erste Gruppe erhält die deutsche Conterganrente nur gekürzt; die zweite Gruppe erhält sie ungekürzt.",
+                "Sie knüpft vielmehr daran an, ob ein anderer Staat oder ein anderer Dritter eine Leistung erbringt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort stellt klar, dass § 15 Abs. 2 Satz 2 ContStifG an den Empfang einer Drittleistung anknüpft.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort behauptet keine unmittelbare Anknüpfung an Staatsangehörigkeit oder eine unmittelbare Ausländerdiskriminierung.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Die Antwort bejaht eine faktische Ungleichbehandlung zwischen ContStifG-Berechtigten mit und ohne anrechenbare Drittleistung, weil nur Erstere gekürzt werden.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Art. 3 Abs. 1 GG – Vergleichsgruppen und Ungleichbehandlung bei § 15 Abs. 2 Satz 2 ContStifG",
+                "evidence_scope": "Art. 3 Abs. 1 GG – ContStifG-Berechtigte mit und ohne anrechenbare Drittleistung nach § 15 Abs. 2 Satz 2 ContStifG",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Vorschrift unterscheidet nach dem Empfang einer Drittleistung; Empfänger werden gekürzt, andere nicht; diese Ungleichbehandlung ist nicht hinreichend sachlich gerechtfertigt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht zwar eine Ungleichbehandlung zwischen Empfängern und Nichtempfängern von Drittzahlungen methodisch schlüssig, stellt aber an keiner Stelle klar, dass die Norm nicht unmittelbar an die Staatsangehörigkeit, die staatliche/private Herkunft oder die Zahlungsart (einmalig/laufend) anknüpft. Damit fehlt ein zwingender Bestandteil des Kriteriums.",
+              "evidence": [
+                "Die Ungleichbehandlung knüpft damit nicht an die Schwere der Schädigung oder an den Umfang der Körperfunktionsstörungen an, obwohl diese Kriterien nach § 13 Abs. 2 ContStifG für die Höhe der Rente maßgeblich sind. Sie knüpft vielmehr daran an, ob ein anderer Staat oder ein anderer Dritter eine Leistung erbringt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Klarstellung, dass die Norm an den Empfang einer Drittleistung und nicht unmittelbar an Staatsangehörigkeit, staatliche oder private Herkunft oder laufende bzw. einmalige Zahlung anknüpft",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Begründung einer anerkannten Position (z. B. Bejahung einer faktischen Ungleichbehandlung von Berechtigten mit und ohne anrechenbare Drittleistung, weil nur Erstere gekürzt werden)",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Art. 3 Abs. 1 GG, Prüfung der Ungleichbehandlung und Vergleichsgruppenbildung bei § 15 Abs. 2 Satz 2 ContStifG",
+                "evidence_scope": "Art. 3 Abs. 1 GG, Prüfung der Ungleichbehandlung und Vergleichsgruppenbildung bei § 15 Abs. 2 Satz 2 ContStifG",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Norm unterscheidet zwischen Leistungsberechtigten mit und ohne Leistungen anderer Staaten/Dritter, da nur erstere gekürzt werden und nicht an die Schwere des Schadens angeknüpft wird.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht eine faktische Ungleichbehandlung auf Grundlage des Drittleistungsempfangs und begründet sie damit, dass nur diese Gruppe gekürzt wird. Sie stellt aber nicht klar, dass die Anknüpfung gerade nicht unmittelbar an Staatsangehörigkeit, Herkunft der Zahlung oder deren laufende beziehungsweise einmalige Form erfolgt. Damit fehlt ein ausdrücklich verlangter Bestandteil.",
+              "evidence": [
+                "§ 15 Abs. 2 Satz 2 ContStifG unterscheidet zwischen Leistungsberechtigten, die neben der Conterganrente Leistungen anderer, insbesondere ausländischer Staaten erhalten, und Leistungsberechtigten, die solche Leistungen nicht erhalten.",
+                "Die erste Gruppe erhält die deutsche Conterganrente nur gekürzt; die zweite Gruppe erhält sie ungekürzt.",
+                "Die Ungleichbehandlung knüpft damit nicht an die Schwere der Schädigung oder an den Umfang der Körperfunktionsstörungen an, obwohl diese Kriterien nach § 13 Abs. 2 ContStifG für die Höhe der Rente maßgeblich sind."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Klarstellen, dass die Regelung an den Empfang einer Drittleistung anknüpft und nicht unmittelbar an Staatsangehörigkeit, staatliche oder private Herkunft oder laufende beziehungsweise einmalige Zahlung.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Eine anerkannte Position zu den Vergleichsgruppen begründen, insbesondere eine faktische Ungleichbehandlung von Berechtigten mit und ohne anrechenbare Drittleistung bejahen können, weil nur Erstere gekürzt werden.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "§ 15 Abs. 2 Satz 2 ContStifG; Vergleichsgruppen und Ungleichbehandlung bei der Anrechnung, insbesondere bei der Conterganrente des X.",
+                "evidence_scope": "§ 15 Abs. 2 Satz 2 ContStifG; Gleichheitsprüfung der gekürzten Rente bei Empfängern von Drittleistungen gegenüber Empfängern ohne solche Leistungen.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Leistungsberechtigte mit einer Drittleistung erhalten die deutsche Rente gekürzt, während Leistungsberechtigte ohne eine solche Leistung sie ungekürzt erhalten.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erfüllt die criterion-eigenen Anforderungen. Sie benennt die Vergleichsgruppen, verortet den Differenzierungsgrund im Empfang einer Drittleistung und nicht in der Staatsangehörigkeit oder Herkunft und bejaht die faktische Ungleichbehandlung wegen der nur bei Empfängern anrechenbarer Drittleistungen erfolgenden Kürzung.",
+              "evidence": [
+                "§ 15 Abs. 2 Satz 2 ContStifG unterscheidet zwischen Leistungsberechtigten, die neben der Conterganrente Leistungen anderer, insbesondere ausländischer Staaten erhalten, und Leistungsberechtigten, die solche Leistungen nicht erhalten.",
+                "Sie knüpft vielmehr daran an, ob ein anderer Staat oder ein anderer Dritter eine Leistung erbringt.",
+                "Die erste Gruppe erhält die deutsche Conterganrente nur gekürzt; die zweite Gruppe erhält sie ungekürzt.",
+                "Gerade im Falle des X soll die irische Leistung die deutschen Leistungen signifikant erweitern."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort stellt klar, dass § 15 Abs. 2 Satz 2 ContStifG an den Empfang einer Drittleistung und nicht unmittelbar an Staatsangehörigkeit, Herkunft oder Zahlungsart anknüpft.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort bejaht eine faktische Ungleichbehandlung von ContStifG-Berechtigten mit und ohne anrechenbare Drittleistung, weil nur Erstere gekürzt werden.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort behauptet keine unmittelbare Ausländerdiskriminierung und etikettiert keine bloße Alternative.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Art. 3 Abs. 1 GG: Vergleichsgruppen und Ungleichbehandlung durch § 15 Abs. 2 Satz 2 ContStifG, insbesondere Anknüpfung an Drittleistungsempfang.",
+                "evidence_scope": "Die Antwort prüft im Abschnitt zu Art. 3 Abs. 1 GG die Vergleichsgruppen unter § 15 Abs. 2 Satz 2 ContStifG, die Kürzung nur bei Empfängern anrechenbarer Drittleistungen und den ergänzenden Zweck der irischen Zahlung.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Norm knüpft an den Empfang einer Drittleistung an; Berechtigte mit solchen Leistungen werden gekürzt, andere nicht; die Rechtfertigung fehlt, weil die ausländische Zahlung nicht notwendig dieselbe Ausgleichsfunktion erfüllt und die irische Leistung die deutschen Zahlungen gerade erweitern soll.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht zwar nachvollziehbar eine Ungleichbehandlung von Berechtigten mit und ohne Drittleistung. Sie stellt jedoch nicht klar, dass die Norm nicht unmittelbar an die Staatsangehörigkeit, die staatliche/private Herkunft oder die Zahlungsart (laufend/einmalig) anknüpft, sondern grenzt die Anknüpfung lediglich von der Schadensschwere ab.",
+              "evidence": [
+                "§ 15 Abs. 2 Satz 2 ContStifG unterscheidet zwischen Leistungsberechtigten, die neben der Conterganrente Leistungen anderer, insbesondere ausländischer Staaten erhalten, und Leistungsberechtigten, die solche Leistungen nicht erhalten.",
+                "Die Ungleichbehandlung knüpft damit nicht an die Schwere der Schädigung oder an den Umfang der Körperfunktionsstörungen an [...]. Sie knüpft vielmehr daran an, ob ein anderer Staat oder ein anderer Dritter eine Leistung erbringt."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Klarstellung, dass § 15 Abs. 2 Satz 2 ContStifG an den Empfang einer Drittleistung und nicht unmittelbar an Staatsangehörigkeit, staatliche oder private Herkunft oder laufende beziehungsweise einmalige Zahlung anknüpft",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Begründung einer anerkannten Position (z. B. Bejahung einer faktischen Ungleichbehandlung wegen Kürzung nur der Gruppe mit Drittleistung)",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Art. 3 Abs. 1 GG; Vergleichsgruppen und Ungleichbehandlung bei § 15 Abs. 2 Satz 2 ContStifG",
+                "evidence_scope": "Art. 3 Abs. 1 GG; Ungleichbehandlung bei § 15 Abs. 2 Satz 2 ContStifG",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Ungleichbehandlung knüpft daran an, ob ein anderer Staat oder Dritter eine Leistung erbringt, wodurch nur diese Gruppe die Rente gekürzt erhält.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-009",
+      "title": "Verhältnis zum Vorabentscheidungsverfahren",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort formuliert den Maßstab des Art. 267 AEUV, wendet ihn auf den grenzüberschreitenden Sachverhalt und die zeitliche Nichtanwendbarkeit der Produkthaftungsrichtlinie an und zieht daraus eine abschließende Folgerung. Die fehlende Aussage zum fehlenden nationalen Spielraum betrifft die inhaltliche Vollständigkeit, nicht die methodische Verknüpfung.",
+      "evidence": [
+        "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt.",
+        "Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+        "Das BVerfG ist daher nicht wegen eines unionsrechtlichen Anwendungsvorrangs an einer Entscheidung gehindert; ein Vorabentscheidungsersuchen ist nicht veranlasst."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort formuliert den Maßstab des Art. 267 AEUV, wendet ihn auf den grenzüberschreitenden Sachverhalt und die zeitliche Nichtanwendbarkeit der Produkthaftungsrichtlinie an und zieht daraus eine abschließende Folgerung. Die fehlende Aussage zum fehlenden nationalen Spielraum betrifft die inhaltliche Vollständigkeit, nicht die methodische Verknüpfung.",
+          "evidence": [
+            "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt.",
+            "Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+            "Das BVerfG ist daher nicht wegen eines unionsrechtlichen Anwendungsvorrangs an einer Entscheidung gehindert; ein Vorabentscheidungsersuchen ist nicht veranlasst."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft im Abschnitt zum Vorabentscheidungsverfahren genau das Verhältnis von Art. 267 AEUV zur konkreten Normenkontrolle. Sie nennt den unionsrechtlichen Maßstab, verknüpft ihn mit den konkreten Tatsachen des grenzüberschreitenden Sachverhalts und der fehlenden unionsrechtlichen Frage und gelangt ausdrücklich zu dem Ergebnis, dass kein Vorabentscheidungsersuchen veranlasst ist.",
+          "evidence": [
+            "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt. Daran fehlt es.",
+            "Zwar hat der Fall einen grenzüberschreitenden Sachverhalt: X ist irischer Staatsangehöriger, lebt außerhalb Deutschlands und erhält Leistungen eines ausländischen Staates. Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+            "Das BVerfG ist daher nicht wegen eines unionsrechtlichen Anwendungsvorrangs an einer Entscheidung gehindert; ein Vorabentscheidungsersuchen ist nicht veranlasst."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Falllösung formuliert den rechtlichen Maßstab für ein Vorabentscheidungsersuchen nach Art. 267 AEUV, subsumiert die grenzüberschreitenden Tatumstände sowie die Unanwendbarkeit der Produkthaftungsrichtlinie und schließt folgerichtig ab.",
+          "evidence": [
+            "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt. Daran fehlt es. Zwar hat der Fall einen grenzüberschreitenden Sachverhalt: X ist irischer Staatsangehöriger, lebt außerhalb Deutschlands und erhält Leistungen eines ausländischen Staates. Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort formuliert den Maßstab des Art. 267 AEUV, wendet ihn auf den grenzüberschreitenden Sachverhalt und die zeitliche Nichtanwendbarkeit der Produkthaftungsrichtlinie an und zieht daraus eine abschließende Folgerung. Die fehlende Aussage zum fehlenden nationalen Spielraum betrifft die inhaltliche Vollständigkeit, nicht die methodische Verknüpfung.",
+              "evidence": [
+                "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt.",
+                "Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+                "Das BVerfG ist daher nicht wegen eines unionsrechtlichen Anwendungsvorrangs an einer Entscheidung gehindert; ein Vorabentscheidungsersuchen ist nicht veranlasst."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft im Abschnitt zum Vorabentscheidungsverfahren genau das Verhältnis von Art. 267 AEUV zur konkreten Normenkontrolle. Sie nennt den unionsrechtlichen Maßstab, verknüpft ihn mit den konkreten Tatsachen des grenzüberschreitenden Sachverhalts und der fehlenden unionsrechtlichen Frage und gelangt ausdrücklich zu dem Ergebnis, dass kein Vorabentscheidungsersuchen veranlasst ist.",
+              "evidence": [
+                "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt. Daran fehlt es.",
+                "Zwar hat der Fall einen grenzüberschreitenden Sachverhalt: X ist irischer Staatsangehöriger, lebt außerhalb Deutschlands und erhält Leistungen eines ausländischen Staates. Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung.",
+                "Das BVerfG ist daher nicht wegen eines unionsrechtlichen Anwendungsvorrangs an einer Entscheidung gehindert; ein Vorabentscheidungsersuchen ist nicht veranlasst."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Falllösung formuliert den rechtlichen Maßstab für ein Vorabentscheidungsersuchen nach Art. 267 AEUV, subsumiert die grenzüberschreitenden Tatumstände sowie die Unanwendbarkeit der Produkthaftungsrichtlinie und schließt folgerichtig ab.",
+              "evidence": [
+                "Ein Vorabentscheidungsersuchen nach Art. 267 AEUV setzt jedoch voraus, dass sich eine für die Entscheidung erhebliche Frage der Auslegung oder Gültigkeit des Unionsrechts stellt. Daran fehlt es. Zwar hat der Fall einen grenzüberschreitenden Sachverhalt: X ist irischer Staatsangehöriger, lebt außerhalb Deutschlands und erhält Leistungen eines ausländischen Staates. Ein grenzüberschreitender Lebenssachverhalt begründet für sich genommen aber keine unionsrechtliche Fragestellung."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-019",
+      "title": "Existenzsichernde Funktion der Conterganrente",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort verknüpft die lebenslange Rentengewährung und die schweren Schäden mit dem besonderen Gewicht des Anspruchs in der Verhältnismäßigkeitsprüfung. Sie stellt aber weder die entscheidende Prämisse einer existenzsichernden Funktion auf noch schließt sie eine Prüfung dieser Funktion mit einem entsprechenden Ergebnis ab.",
+      "evidence": [
+        "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen.",
+        "Der Anspruch des X hat wegen des Verzichts auf private Haftungsansprüche und der staatlichen Verantwortungsübernahme besonderes Gewicht."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort verknüpft die lebenslange Rentengewährung und die schweren Schäden mit dem besonderen Gewicht des Anspruchs in der Verhältnismäßigkeitsprüfung. Sie stellt aber weder die entscheidende Prämisse einer existenzsichernden Funktion auf noch schließt sie eine Prüfung dieser Funktion mit einem entsprechenden Ergebnis ab.",
+          "evidence": [
+            "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen.",
+            "Der Anspruch des X hat wegen des Verzichts auf private Haftungsansprüche und der staatlichen Verantwortungsübernahme besonderes Gewicht."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": true,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erörtert die lebenslange Conterganrente und die schweren Schäden, führt diese Gesichtspunkte aber nicht zu einer Einordnung als existenzsichernd wegen ihrer wesentlichen Bedeutung für die Lebensgestaltung. Der criterion-spezifische Maßstab wird daher nicht vollständig methodisch entfaltet.",
+          "evidence": [
+            "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen.",
+            "Der Anspruch des X hat wegen des Verzichts auf private Haftungsansprüche und der staatlichen Verantwortungsübernahme besonderes Gewicht.",
+            "Der Gesetzgeber darf diesen Ausgleich nicht ohne tragfähigen Grund dadurch entwerten"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": true,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort formuliert weder einen rechtlichen Obersatz zur existenzsichernden Funktion der Rente noch führt sie eine methodische Subsumtion bezüglich der Existenzsicherung bzw. Lebensgestaltung durch.",
+          "evidence": [
+            "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort verknüpft die lebenslange Rentengewährung und die schweren Schäden mit dem besonderen Gewicht des Anspruchs in der Verhältnismäßigkeitsprüfung. Sie stellt aber weder die entscheidende Prämisse einer existenzsichernden Funktion auf noch schließt sie eine Prüfung dieser Funktion mit einem entsprechenden Ergebnis ab.",
+              "evidence": [
+                "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen.",
+                "Der Anspruch des X hat wegen des Verzichts auf private Haftungsansprüche und der staatlichen Verantwortungsübernahme besonderes Gewicht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erörtert die lebenslange Conterganrente und die schweren Schäden, führt diese Gesichtspunkte aber nicht zu einer Einordnung als existenzsichernd wegen ihrer wesentlichen Bedeutung für die Lebensgestaltung. Der criterion-spezifische Maßstab wird daher nicht vollständig methodisch entfaltet.",
+              "evidence": [
+                "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen.",
+                "Der Anspruch des X hat wegen des Verzichts auf private Haftungsansprüche und der staatlichen Verantwortungsübernahme besonderes Gewicht.",
+                "Der Gesetzgeber darf diesen Ausgleich nicht ohne tragfähigen Grund dadurch entwerten"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort formuliert weder einen rechtlichen Obersatz zur existenzsichernden Funktion der Rente noch führt sie eine methodische Subsumtion bezüglich der Existenzsicherung bzw. Lebensgestaltung durch.",
+              "evidence": [
+                "Die Conterganrente soll lebenslang die Folgen schwerster körperlicher Schädigungen ausgleichen."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-038",
+      "title": "Vergleichsgruppen und Ungleichbehandlung",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort prüft die Ungleichbehandlung nach Art. 3 Abs. 1 GG, benennt die betroffenen Gruppen und verknüpft die Kürzung mit dem konkreten Zweck der irischen Leistung. Sie begründet daran anschließend, weshalb die Ungleichbehandlung nicht gerechtfertigt sei, und schließt die Prüfung mit einem Ergebnis ab.",
+      "evidence": [
+        "Die Ungleichbehandlung ist sachlich nicht hinreichend gerechtfertigt.",
+        "Gerade im Falle des X soll die irische Leistung die deutschen Leistungen signifikant erweitern.",
+        "Die erste Gruppe erhält die deutsche Conterganrente nur gekürzt; die zweite Gruppe erhält sie ungekürzt."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Ungleichbehandlung nach Art. 3 Abs. 1 GG, benennt die betroffenen Gruppen und verknüpft die Kürzung mit dem konkreten Zweck der irischen Leistung. Sie begründet daran anschließend, weshalb die Ungleichbehandlung nicht gerechtfertigt sei, und schließt die Prüfung mit einem Ergebnis ab.",
+          "evidence": [
+            "Die Ungleichbehandlung ist sachlich nicht hinreichend gerechtfertigt.",
+            "Gerade im Falle des X soll die irische Leistung die deutschen Leistungen signifikant erweitern.",
+            "Die erste Gruppe erhält die deutsche Conterganrente nur gekürzt; die zweite Gruppe erhält sie ungekürzt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft die Vergleichsgruppen und die Ungleichbehandlung unmittelbar im Rahmen von Art. 3 Abs. 1 GG. Sie benennt die beiden Gruppen, verknüpft sie mit der konkreten Kürzung nach § 15 Abs. 2 Satz 2 ContStifG, erörtert die Rechtfertigung und gelangt zu einem eigenen Ergebnis. Damit ist der criterion-spezifische Prüfungsweg methodisch vollständig.",
+          "evidence": [
+            "§ 15 Abs. 2 Satz 2 ContStifG unterscheidet zwischen Leistungsberechtigten, die neben der Conterganrente Leistungen anderer, insbesondere ausländischer Staaten erhalten, und Leistungsberechtigten, die solche Leistungen nicht erhalten. Die erste Gruppe erhält die deutsche Conterganrente nur gekürzt; die zweite Gruppe erhält sie ungekürzt.",
+            "Sie knüpft vielmehr daran an, ob ein anderer Staat oder ein anderer Dritter eine Leistung erbringt.",
+            "Die Ungleichbehandlung ist daher sachlich nicht hinreichend gerechtfertigt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Der Gutachtenstil ist bezüglich der Bildung von Vergleichsgruppen und der Feststellung der Ungleichbehandlung methodisch vollständig durchgeführt (Obersatz, Subsumtion anhand der Rechtsfolge des § 15 Abs. 2 Satz 2 ContStifG und Feststellung der Ungleichbehandlung).",
+          "evidence": [
+            "§ 15 Abs. 2 Satz 2 ContStifG unterscheidet zwischen Leistungsberechtigten, die neben der Conterganrente Leistungen anderer, insbesondere ausländischer Staaten erhalten, und Leistungsberechtigten, die solche Leistungen nicht erhalten. Die erste Gruppe erhält die deutsche Conterganrente nur gekürzt; die zweite Gruppe erhält sie ungekürzt."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Ungleichbehandlung nach Art. 3 Abs. 1 GG, benennt die betroffenen Gruppen und verknüpft die Kürzung mit dem konkreten Zweck der irischen Leistung. Sie begründet daran anschließend, weshalb die Ungleichbehandlung nicht gerechtfertigt sei, und schließt die Prüfung mit einem Ergebnis ab.",
+              "evidence": [
+                "Die Ungleichbehandlung ist sachlich nicht hinreichend gerechtfertigt.",
+                "Gerade im Falle des X soll die irische Leistung die deutschen Leistungen signifikant erweitern.",
+                "Die erste Gruppe erhält die deutsche Conterganrente nur gekürzt; die zweite Gruppe erhält sie ungekürzt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die Vergleichsgruppen und die Ungleichbehandlung unmittelbar im Rahmen von Art. 3 Abs. 1 GG. Sie benennt die beiden Gruppen, verknüpft sie mit der konkreten Kürzung nach § 15 Abs. 2 Satz 2 ContStifG, erörtert die Rechtfertigung und gelangt zu einem eigenen Ergebnis. Damit ist der criterion-spezifische Prüfungsweg methodisch vollständig.",
+              "evidence": [
+                "§ 15 Abs. 2 Satz 2 ContStifG unterscheidet zwischen Leistungsberechtigten, die neben der Conterganrente Leistungen anderer, insbesondere ausländischer Staaten erhalten, und Leistungsberechtigten, die solche Leistungen nicht erhalten. Die erste Gruppe erhält die deutsche Conterganrente nur gekürzt; die zweite Gruppe erhält sie ungekürzt.",
+                "Sie knüpft vielmehr daran an, ob ein anderer Staat oder ein anderer Dritter eine Leistung erbringt.",
+                "Die Ungleichbehandlung ist daher sachlich nicht hinreichend gerechtfertigt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Der Gutachtenstil ist bezüglich der Bildung von Vergleichsgruppen und der Feststellung der Ungleichbehandlung methodisch vollständig durchgeführt (Obersatz, Subsumtion anhand der Rechtsfolge des § 15 Abs. 2 Satz 2 ContStifG und Feststellung der Ungleichbehandlung).",
+              "evidence": [
+                "§ 15 Abs. 2 Satz 2 ContStifG unterscheidet zwischen Leistungsberechtigten, die neben der Conterganrente Leistungen anderer, insbesondere ausländischer Staaten erhalten, und Leistungsberechtigten, die solche Leistungen nicht erhalten. Die erste Gruppe erhält die deutsche Conterganrente nur gekürzt; die zweite Gruppe erhält sie ungekürzt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

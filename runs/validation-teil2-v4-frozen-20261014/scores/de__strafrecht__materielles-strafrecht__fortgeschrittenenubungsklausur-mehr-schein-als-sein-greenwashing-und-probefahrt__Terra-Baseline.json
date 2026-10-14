@@ -1,0 +1,633 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-mehr-schein-als-sein-greenwashing-und-probefahrt",
+    "title": "Fortgeschrittenenübungsklausur: Mehr Schein als Sein – Greenwashing und „Probefahrt“"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenubungsklausur-mehr-schein-als-sein-greenwashing-und-probefahrt/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-mehr-schein-als-sein-greenwashing-und-probefahrt/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:34:00.328013+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Tatkomplex: Verkauf des Autos an V": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Tatkomplex: Verkauf des Autos an V › Strafbarkeit des T gem. § 263 Abs. 1 StGB durch den Verkauf an V, zulasten und gegenüber V": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 22687,
+    "output_tokens": 6666,
+    "total_tokens": 29353,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 7066
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 22687,
+    "output_tokens": 6666,
+    "total_tokens": 29353,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 7066
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-040",
+      "title": "Irrtum des V über Ts Verkaufsberechtigung",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Lösung stellt ausdrücklich Vs Annahme fest, T sei berechtigt, und beschreibt den erwarteten Erwerb als rechtlich gesichert. Die Vorstellung ordnungsgemäßer Herkunft ist durch die Annahme eines redlichen Veräußerers mit umfasst.",
+      "evidence": [
+        "für einen berechtigten und redlichen Veräußerer",
+        "Er ging davon aus, ein rechtlich gesichertes und gewöhnlich verwendbares Fahrzeug zu erwerben."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung stellt ausdrücklich Vs Annahme fest, T sei berechtigt, und beschreibt den erwarteten Erwerb als rechtlich gesichert. Die Vorstellung ordnungsgemäßer Herkunft ist durch die Annahme eines redlichen Veräußerers mit umfasst.",
+          "evidence": [
+            "für einen berechtigten und redlichen Veräußerer",
+            "Er ging davon aus, ein rechtlich gesichertes und gewöhnlich verwendbares Fahrzeug zu erwerben."
+          ],
+          "component_checks": [
+            {
+              "requirement": "V hat zumindest sachgedanklich angenommen, T sei zum Verkauf des VW Golf berechtigt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "V hat zumindest sachgedanklich angenommen, hinsichtlich Herkunft und Eigentumslage des Fahrzeugs sei alles in Ordnung.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "V; Irrtum beim Verkauf des VW Golf an V über Ts Verkaufsberechtigung sowie die Ordnungsmäßigkeit von Herkunft und Eigentumslage",
+            "evidence_scope": "V; Irrtum beim Verkauf des VW Golf an V über Ts Berechtigung und den rechtlich gesicherten Erwerb",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "V schloss aus Ts Auftreten als Verkäufer, den Fahrzeugpapieren und der Erklärung, alles sei in Ordnung, auf einen berechtigten und redlichen Veräußerer sowie ein rechtlich gesichertes Fahrzeug.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Falllösung stellt im einschlägigen Prüfungspunkt ausdrücklich fest, dass V T für einen berechtigten und redlichen Veräußerer hielt und von einem rechtlich gesicherten Fahrzeug ausging. Darin liegt die Annahme der Verkaufsberechtigung und der Eigentums-/Verwertungsbefugnis; die Herkunftsseite ist durch die Figur des redlichen Veräußerers mitumfasst. Der Irrtum wird nicht wegen fehlender ausdrücklicher Gedanken des V verneint.",
+          "evidence": [
+            "V hielt T aufgrund des Auftretens als Verkäufer, der übergebenen Fahrzeugpapiere und der Erklärung, alles sei in Ordnung, für einen berechtigten und redlichen Veräußerer. Er ging davon aus, ein rechtlich gesichertes und gewöhnlich verwendbares Fahrzeug zu erwerben. V unterlag damit einem Irrtum über die Eigentums- und Verwertungsbefugnis des T."
+          ],
+          "component_checks": [
+            {
+              "requirement": "V geht zumindest sachgedanklich davon aus, dass T zum Verkauf des VW Golf berechtigt ist.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "V geht davon aus, dass hinsichtlich Herkunft und Eigentumslage alles in Ordnung ist.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Irrtum des V im Betrug zum Nachteil des V über T s Verkaufsberechtigung sowie Herkunft und Eigentumslage des VW Golf",
+            "evidence_scope": "Betrug zum Nachteil des V, Prüfungspunkt Irrtum, Verkauf des VW Golf durch T",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "V hielt T wegen dessen Auftretens als Verkäufer, der Fahrzeugpapiere und der Erklärung „alles in Ordnung“ für einen berechtigten und redlichen Veräußerer und ging von einem rechtlich gesicherten Fahrzeug aus.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Das Kriterium ist erfüllt, da die Falllösung ausdrücklich feststellt, dass V den T für berechtigt hielt und über dessen Eigentums- und Verwertungsbefugnis irrte.",
+          "evidence": [
+            "V hielt T aufgrund des Auftretens als Verkäufer, der übergebenen Fahrzeugpapiere und der Erklärung, alles sei in Ordnung, für einen berechtigten und redlichen Veräußerer.",
+            "V unterlag damit einem Irrtum über die Eigentums- und Verwertungsbefugnis des T."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Feststellung, dass V zumindest ein sachgedankliches Mitbewusstsein hatte, T sei zum Verkauf des Golfs berechtigt bzw. Eigentumslage sei in Ordnung",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "V / Betrug durch T beim Autoverkauf / Tatbestandsmerkmal Irrtum",
+            "evidence_scope": "V / Betrug durch T beim Autoverkauf / Tatbestandsmerkmal Irrtum",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "V hielt T für einen berechtigten Veräußerer und ging vom Erwerb eines rechtlich gesicherten Fahrzeugs aus, weshalb ein Irrtum über die Eigentums- und Verwertungsbefugnis vorlag.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 22687,
+        "output_tokens": 6666,
+        "total_tokens": 29353,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 7066
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung stellt ausdrücklich Vs Annahme fest, T sei berechtigt, und beschreibt den erwarteten Erwerb als rechtlich gesichert. Die Vorstellung ordnungsgemäßer Herkunft ist durch die Annahme eines redlichen Veräußerers mit umfasst.",
+              "evidence": [
+                "für einen berechtigten und redlichen Veräußerer",
+                "Er ging davon aus, ein rechtlich gesichertes und gewöhnlich verwendbares Fahrzeug zu erwerben."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "V hat zumindest sachgedanklich angenommen, T sei zum Verkauf des VW Golf berechtigt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "V hat zumindest sachgedanklich angenommen, hinsichtlich Herkunft und Eigentumslage des Fahrzeugs sei alles in Ordnung.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "V; Irrtum beim Verkauf des VW Golf an V über Ts Verkaufsberechtigung sowie die Ordnungsmäßigkeit von Herkunft und Eigentumslage",
+                "evidence_scope": "V; Irrtum beim Verkauf des VW Golf an V über Ts Berechtigung und den rechtlich gesicherten Erwerb",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "V schloss aus Ts Auftreten als Verkäufer, den Fahrzeugpapieren und der Erklärung, alles sei in Ordnung, auf einen berechtigten und redlichen Veräußerer sowie ein rechtlich gesichertes Fahrzeug.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Falllösung stellt im einschlägigen Prüfungspunkt ausdrücklich fest, dass V T für einen berechtigten und redlichen Veräußerer hielt und von einem rechtlich gesicherten Fahrzeug ausging. Darin liegt die Annahme der Verkaufsberechtigung und der Eigentums-/Verwertungsbefugnis; die Herkunftsseite ist durch die Figur des redlichen Veräußerers mitumfasst. Der Irrtum wird nicht wegen fehlender ausdrücklicher Gedanken des V verneint.",
+              "evidence": [
+                "V hielt T aufgrund des Auftretens als Verkäufer, der übergebenen Fahrzeugpapiere und der Erklärung, alles sei in Ordnung, für einen berechtigten und redlichen Veräußerer. Er ging davon aus, ein rechtlich gesichertes und gewöhnlich verwendbares Fahrzeug zu erwerben. V unterlag damit einem Irrtum über die Eigentums- und Verwertungsbefugnis des T."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "V geht zumindest sachgedanklich davon aus, dass T zum Verkauf des VW Golf berechtigt ist.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "V geht davon aus, dass hinsichtlich Herkunft und Eigentumslage alles in Ordnung ist.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Irrtum des V im Betrug zum Nachteil des V über T s Verkaufsberechtigung sowie Herkunft und Eigentumslage des VW Golf",
+                "evidence_scope": "Betrug zum Nachteil des V, Prüfungspunkt Irrtum, Verkauf des VW Golf durch T",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "V hielt T wegen dessen Auftretens als Verkäufer, der Fahrzeugpapiere und der Erklärung „alles in Ordnung“ für einen berechtigten und redlichen Veräußerer und ging von einem rechtlich gesicherten Fahrzeug aus.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Das Kriterium ist erfüllt, da die Falllösung ausdrücklich feststellt, dass V den T für berechtigt hielt und über dessen Eigentums- und Verwertungsbefugnis irrte.",
+              "evidence": [
+                "V hielt T aufgrund des Auftretens als Verkäufer, der übergebenen Fahrzeugpapiere und der Erklärung, alles sei in Ordnung, für einen berechtigten und redlichen Veräußerer.",
+                "V unterlag damit einem Irrtum über die Eigentums- und Verwertungsbefugnis des T."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Feststellung, dass V zumindest ein sachgedankliches Mitbewusstsein hatte, T sei zum Verkauf des Golfs berechtigt bzw. Eigentumslage sei in Ordnung",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "V / Betrug durch T beim Autoverkauf / Tatbestandsmerkmal Irrtum",
+                "evidence_scope": "V / Betrug durch T beim Autoverkauf / Tatbestandsmerkmal Irrtum",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "V hielt T für einen berechtigten Veräußerer und ging vom Erwerb eines rechtlich gesicherten Fahrzeugs aus, weshalb ein Irrtum über die Eigentums- und Verwertungsbefugnis vorlag.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-040",
+      "title": "Irrtum des V über Ts Verkaufsberechtigung",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Lösung verknüpft Vs konkrete Wahrnehmung des Verkaufsauftritts, der Fahrzeugpapiere und der Erklärung mit seiner Annahme der Berechtigung des T und zieht daraus ausdrücklich den Irrtum über dessen Verwertungsbefugnis.",
+      "evidence": [
+        "V hielt T aufgrund des Auftretens als Verkäufer, der übergebenen Fahrzeugpapiere und der Erklärung, alles sei in Ordnung, für einen berechtigten und redlichen Veräußerer.",
+        "V unterlag damit einem Irrtum über die Eigentums- und Verwertungsbefugnis des T."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Lösung verknüpft Vs konkrete Wahrnehmung des Verkaufsauftritts, der Fahrzeugpapiere und der Erklärung mit seiner Annahme der Berechtigung des T und zieht daraus ausdrücklich den Irrtum über dessen Verwertungsbefugnis.",
+          "evidence": [
+            "V hielt T aufgrund des Auftretens als Verkäufer, der übergebenen Fahrzeugpapiere und der Erklärung, alles sei in Ordnung, für einen berechtigten und redlichen Veräußerer.",
+            "V unterlag damit einem Irrtum über die Eigentums- und Verwertungsbefugnis des T."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Passage prüft den Irrtum des V im Betrug zum Nachteil des V. Sie verknüpft konkrete Umstände – Auftreten als Verkäufer, Übergabe von Fahrzeugpapieren und Erklärung „alles in Ordnung“ – mit der Annahme der Verkaufsberechtigung und schließt mit dem Irrtum über Eigentums- und Verwertungsbefugnis. Damit liegt eine funktionale Anwendung der criterion-spezifischen Prüfung vor.",
+          "evidence": [
+            "V hielt T aufgrund des Auftretens als Verkäufer, der übergebenen Fahrzeugpapiere und der Erklärung, alles sei in Ordnung, für einen berechtigten und redlichen Veräußerer. Er ging davon aus, ein rechtlich gesichertes und gewöhnlich verwendbares Fahrzeug zu erwerben. V unterlag damit einem Irrtum über die Eigentums- und Verwertungsbefugnis des T."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Fallprüfung verknüpft unter der Prüfungsstation des Irrtums die konkreten Tatsachen (Auftreten als Verkäufer, Erklärung) mit der Annahme des V und schließt auf einen Irrtum über die Verwertungs- und Verfügungsbefugnis.",
+          "evidence": [
+            "V hielt T aufgrund des Auftretens als Verkäufer, der übergebenen Fahrzeugpapiere und der Erklärung, alles sei in Ordnung, für einen berechtigten und redlichen Veräußerer. Er ging davon aus, ein rechtlich gesichertes und gewöhnlich verwendbares Fahrzeug zu erwerben. V unterlag damit einem Irrtum über die Eigentums- und Verwertungsbefugnis des T."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Lösung verknüpft Vs konkrete Wahrnehmung des Verkaufsauftritts, der Fahrzeugpapiere und der Erklärung mit seiner Annahme der Berechtigung des T und zieht daraus ausdrücklich den Irrtum über dessen Verwertungsbefugnis.",
+              "evidence": [
+                "V hielt T aufgrund des Auftretens als Verkäufer, der übergebenen Fahrzeugpapiere und der Erklärung, alles sei in Ordnung, für einen berechtigten und redlichen Veräußerer.",
+                "V unterlag damit einem Irrtum über die Eigentums- und Verwertungsbefugnis des T."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Passage prüft den Irrtum des V im Betrug zum Nachteil des V. Sie verknüpft konkrete Umstände – Auftreten als Verkäufer, Übergabe von Fahrzeugpapieren und Erklärung „alles in Ordnung“ – mit der Annahme der Verkaufsberechtigung und schließt mit dem Irrtum über Eigentums- und Verwertungsbefugnis. Damit liegt eine funktionale Anwendung der criterion-spezifischen Prüfung vor.",
+              "evidence": [
+                "V hielt T aufgrund des Auftretens als Verkäufer, der übergebenen Fahrzeugpapiere und der Erklärung, alles sei in Ordnung, für einen berechtigten und redlichen Veräußerer. Er ging davon aus, ein rechtlich gesichertes und gewöhnlich verwendbares Fahrzeug zu erwerben. V unterlag damit einem Irrtum über die Eigentums- und Verwertungsbefugnis des T."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Fallprüfung verknüpft unter der Prüfungsstation des Irrtums die konkreten Tatsachen (Auftreten als Verkäufer, Erklärung) mit der Annahme des V und schließt auf einen Irrtum über die Verwertungs- und Verfügungsbefugnis.",
+              "evidence": [
+                "V hielt T aufgrund des Auftretens als Verkäufer, der übergebenen Fahrzeugpapiere und der Erklärung, alles sei in Ordnung, für einen berechtigten und redlichen Veräußerer. Er ging davon aus, ein rechtlich gesichertes und gewöhnlich verwendbares Fahrzeug zu erwerben. V unterlag damit einem Irrtum über die Eigentums- und Verwertungsbefugnis des T."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

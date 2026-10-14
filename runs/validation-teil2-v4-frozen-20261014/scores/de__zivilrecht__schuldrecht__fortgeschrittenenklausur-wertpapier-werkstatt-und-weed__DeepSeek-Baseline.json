@@ -1,0 +1,847 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-wertpapier-werkstatt-und-weed",
+    "title": "Fortgeschrittenenklausur: Wertpapier, Werkstatt und Weed"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__zivilrecht__schuldrecht__fortgeschrittenenklausur-wertpapier-werkstatt-und-weed/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-wertpapier-werkstatt-und-weed/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:52:08.890275+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Wirksamkeit der Kündigung": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Wirksamkeit der Kündigung › Wirksamkeit der außerordentlichen Kündigung": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 17836,
+    "output_tokens": 14301,
+    "total_tokens": 32137,
+    "cached_input_tokens": 9834,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 17836,
+    "output_tokens": 14301,
+    "total_tokens": 32137,
+    "cached_input_tokens": 9834,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-034",
+      "title": "Konkrete Auswirkungen des Cannabisanbaus",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort berücksichtigt die maßgeblichen tatsächlichen Umstände und verneint ausdrücklich eine konkrete Störung. Der Bezug zu § 569 Abs. 2 BGB ist funktional hergestellt, auch wenn die Vorschrift nicht ausdrücklich zitiert wird.",
+      "evidence": [
+        "Andere Mitbewohner nehmen keine Beeinträchtigungen wahr.",
+        "Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort berücksichtigt die maßgeblichen tatsächlichen Umstände und verneint ausdrücklich eine konkrete Störung. Der Bezug zu § 569 Abs. 2 BGB ist funktional hergestellt, auch wenn die Vorschrift nicht ausdrücklich zitiert wird.",
+          "evidence": [
+            "Andere Mitbewohner nehmen keine Beeinträchtigungen wahr.",
+            "Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die ausschließliche Zuweisung, Abgeschlossenheit und Geruchsdichtigkeit des Kellerabteils sowie die fehlende Wahrnehmung durch andere Bewohner werden auf den mietrechtlichen Maßstab des § 569 Abs. 2 BGB angewendet.",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Aus diesen Umständen wird eine konkrete Außenwirkung des Cannabisanbaus verneint.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Es werden keine Gerüche, erhöhten Besucherzahlen, Brandgefahren oder sonstigen Störungen entgegen dem Sachverhalt unterstellt.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Die konkreten Auswirkungen des Cannabisanbaus durch Y auf das Mietverhältnis, insbesondere nach § 569 Abs. 2 BGB.",
+            "evidence_scope": "Die Auswirkungen des Anbaus durch Y im ihm zugewiesenen Kellerabteil auf Hausfrieden und Mietsubstanz.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Anbau findet in einem abgeschlossenen, geruchsdichten Kellerabteil statt und wird von den anderen Mitbewohnern nicht wahrgenommen; deshalb liegt keine konkrete Störung des Hausfriedens oder der Mietsubstanz vor.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verwendet die im Sachverhalt angelegten Umstände und verneint daraus eine konkrete mietvertragliche Beeinträchtigung. § 569 Abs. 2 BGB wird nicht ausdrücklich zitiert, die maßgebliche Frage der konkreten Außenwirkung wird aber inhaltlich mit dem Kriterium der Störung des Hausfriedens geprüft. Erfundene Gerüche, Besucherzahlen oder Brandgefahren werden nicht unterstellt.",
+          "evidence": [
+            "Y baut in seinem ausschließlich zugewiesenen Kellerabteil fünf Cannabispflanzen an.",
+            "Der Anbau erfolgt in einem abgeschlossenen, geruchsdichten Kellerabteil. Andere Mitbewohner nehmen keine Beeinträchtigungen wahr. Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Berücksichtigung des ausschließlich Y zugewiesenen, abgeschlossenen und geruchsdichten Kellerabteils",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Berücksichtigung der fehlenden Wahrnehmung durch andere Bewohner",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Anwendung auf die Frage konkreter Störungen/Außenwirkungen nach § 569 Abs. 2 BGB",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Verneinung einer konkreten Außenwirkung/Beeinträchtigung",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Konkrete Auswirkungen des Cannabisanbaus durch Y im Rahmen des § 569 Abs. 2 BGB bei der außerordentlichen Kündigung des Mietvertrags",
+            "evidence_scope": "Cannabisanbau durch Y, abgeschlossenes und geruchsdichtes Kellerabteil, fehlende Wahrnehmung durch andere Bewohner, Verneinung einer konkreten Störung des Hausfriedens",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Anbau erfolgt in einem abgeschlossenen, geruchsdichten Kellerabteil; andere Bewohner nehmen keine Beeinträchtigungen wahr; daher liegt keine konkrete Störung des Hausfriedens oder der Mietsubstanz vor.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort wendet die maßgeblichen Sachverhaltstatsachen zutreffend an und verneint damit eine konkrete Außenwirkung bzw. Störung des Hausfriedens, ohne sachverhaltswidrige Beeinträchtigungen zu erfinden.",
+          "evidence": [
+            "Der Anbau erfolgt in einem abgeschlossenen, geruchsdichten Kellerabteil. Andere Mitbewohner nehmen keine Beeinträchtigungen wahr. Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Heranziehung des ausschließlich zugewiesenen, abgeschlossenen und geruchsdichten Kellerabteils sowie der fehlenden Wahrnehmung durch andere Mitbewohner",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Anwendung auf die Störung des Hausfriedens (§ 569 Abs. 2 BGB bzw. im Rahmen von § 543 Abs. 1 BGB) und Verneinung einer konkreten Außenwirkung/Störung",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Kein Unterstellen sachverhaltswidriger Störungen (Gerüche, Brandgefahren, Besucherzahlen)",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Außerordentliche Kündigung des Y wegen Cannabisanbaus, Prüfung konkreter Auswirkungen/Störung des Hausfriedens",
+            "evidence_scope": "Außerordentliche Kündigung des Y wegen Cannabisanbaus, Prüfung einer Störung des Hausfriedens unter § 543 Abs. 1 BGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Anbau erfolgt in einem abgeschlossenen, geruchsdichten Kellerabteil und wird von Mitbewohnern nicht wahrgenommen, weshalb keine konkrete Störung des Hausfriedens vorliegt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 17836,
+        "output_tokens": 14301,
+        "total_tokens": 32137,
+        "cached_input_tokens": 9834,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort verneint konkrete Beeinträchtigungen anhand der maßgeblichen Tatsachen, wendet diese aber nicht auf § 569 Abs. 2 BGB an und erwähnt auch nicht, dass das Kellerabteil ausschließlich Y zugewiesen ist. Damit fehlt ein erforderlicher Teil der Prüfung.",
+              "evidence": [
+                "in einem abgeschlossenen, geruchsdichten Kellerabteil",
+                "Andere Mitbewohner nehmen keine Beeinträchtigungen wahr.",
+                "Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Das ausschließlich Y zugewiesene Kellerabteil wird berücksichtigt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Das abgeschlossene und geruchsdichte Kellerabteil sowie die fehlende Wahrnehmung durch andere Bewohner werden berücksichtigt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Tatsachen werden auf § 569 Abs. 2 BGB angewendet.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Eine konkrete Außenwirkung wird deshalb verneint.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Y, Cannabisanbau und konkrete Auswirkungen im Rahmen der außerordentlichen Kündigung, insbesondere § 569 Abs. 2 BGB",
+                "evidence_scope": "Y, Cannabisanbau und konkrete Störungen im Rahmen der Kündigungsprüfung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Anbau geschieht im abgeschlossenen, geruchsdichten Kellerabteil; andere Bewohner nehmen keine Beeinträchtigungen wahr, und eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint eine konkrete Außenwirkung gerade aufgrund der im Sachverhalt angelegten Umstände. Sie unterstellt keine Gerüche, erhöhten Besucherzahlen, Brandgefahren oder sonstige Störungen. Die Prüfung erfolgt zwar über § 543 Abs. 1 BGB, nimmt aber die Wertung des § 569 Abs. 2 BGB auf.",
+              "evidence": [
+                "Y baut in seinem ausschließlich zugewiesenen Kellerabteil fünf Cannabispflanzen an.",
+                "Der Anbau erfolgt in einem abgeschlossenen, geruchsdichten Kellerabteil. Andere Mitbewohner nehmen keine Beeinträchtigungen wahr. Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor.",
+                "Der Cannabisanbau stellt keinen wichtigen Grund i.S.d. § 543 Abs. 1 BGB dar."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "ausschließlich Y zugewiesenes Kellerabteil",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "abgeschlossenes und geruchsdichtes Kellerabteil",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "fehlende Wahrnehmung durch andere Bewohner",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Anwendung der Tatsachen auf die Wertung des § 569 Abs. 2 BGB bzw. den wichtigen Grund nach § 543 Abs. 1 BGB",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Verneinung einer konkreten Außenwirkung",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Cannabisanbau des Y als Kündigungsgrund und konkrete mietvertragliche Auswirkungen im Rahmen des § 569 Abs. 2 BGB",
+                "evidence_scope": "Cannabisanbau des Y im Rahmen der außerordentlichen Kündigung nach § 543 Abs. 1 BGB; konkrete Störung des Hausfriedens oder der Mietsubstanz wird verneint",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "abgeschlossenes, geruchsdichtes Kellerabteil, fehlende Wahrnehmung anderer Bewohner und daraus folgend keine konkrete Störung des Hausfriedens oder der Mietsubstanz",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft die konkreten Auswirkungen des Anbaus sachverhaltsgetreu und verneint unter Verweis auf das abgeschlossene, geruchsdichte Kellerabteil und das Ausbleiben von Wahrnehmungen Dritter eine Störung des Hausfriedens (Materie des § 569 Abs. 2 BGB). Sachverhaltswidrige Störungen werden nicht unterstellt.",
+              "evidence": [
+                "Der Anbau erfolgt in einem abgeschlossenen, geruchsdichten Kellerabteil. Andere Mitbewohner nehmen keine Beeinträchtigungen wahr. Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Heranziehung des abgeschlossenen und geruchsdichten Kellerabteils sowie der fehlenden Wahrnehmung durch Mitbewohner",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Anwendung auf die Störung des Hausfriedens (§ 569 Abs. 2 BGB) bzw. Verneinung einer konkreten Außenwirkung/Beeinträchtigung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Kein Unterstellen sachverhaltswidriger Störungen (Gerüche, Brandgefahren etc.)",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "R gegen Y, Kündigung wegen Cannabisanbaus, konkrete Auswirkungen/Außenwirkung gem. § 569 Abs. 2 BGB",
+                "evidence_scope": "R gegen Y, Kündigung wegen Cannabisanbaus, Prüfung der Störung des Hausfriedens",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Anbau im abgeschlossenen, geruchsdichten Kellerabteil wird von anderen Mitbewohnern nicht wahrgenommen, weshalb keine konkrete Störung des Hausfriedens vorliegt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort berücksichtigt die maßgeblichen tatsächlichen Umstände und verneint ausdrücklich eine konkrete Störung. Der Bezug zu § 569 Abs. 2 BGB ist funktional hergestellt, auch wenn die Vorschrift nicht ausdrücklich zitiert wird.",
+              "evidence": [
+                "Andere Mitbewohner nehmen keine Beeinträchtigungen wahr.",
+                "Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die ausschließliche Zuweisung, Abgeschlossenheit und Geruchsdichtigkeit des Kellerabteils sowie die fehlende Wahrnehmung durch andere Bewohner werden auf den mietrechtlichen Maßstab des § 569 Abs. 2 BGB angewendet.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Aus diesen Umständen wird eine konkrete Außenwirkung des Cannabisanbaus verneint.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Es werden keine Gerüche, erhöhten Besucherzahlen, Brandgefahren oder sonstigen Störungen entgegen dem Sachverhalt unterstellt.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Die konkreten Auswirkungen des Cannabisanbaus durch Y auf das Mietverhältnis, insbesondere nach § 569 Abs. 2 BGB.",
+                "evidence_scope": "Die Auswirkungen des Anbaus durch Y im ihm zugewiesenen Kellerabteil auf Hausfrieden und Mietsubstanz.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Anbau findet in einem abgeschlossenen, geruchsdichten Kellerabteil statt und wird von den anderen Mitbewohnern nicht wahrgenommen; deshalb liegt keine konkrete Störung des Hausfriedens oder der Mietsubstanz vor.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verwendet die im Sachverhalt angelegten Umstände und verneint daraus eine konkrete mietvertragliche Beeinträchtigung. § 569 Abs. 2 BGB wird nicht ausdrücklich zitiert, die maßgebliche Frage der konkreten Außenwirkung wird aber inhaltlich mit dem Kriterium der Störung des Hausfriedens geprüft. Erfundene Gerüche, Besucherzahlen oder Brandgefahren werden nicht unterstellt.",
+              "evidence": [
+                "Y baut in seinem ausschließlich zugewiesenen Kellerabteil fünf Cannabispflanzen an.",
+                "Der Anbau erfolgt in einem abgeschlossenen, geruchsdichten Kellerabteil. Andere Mitbewohner nehmen keine Beeinträchtigungen wahr. Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Berücksichtigung des ausschließlich Y zugewiesenen, abgeschlossenen und geruchsdichten Kellerabteils",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Berücksichtigung der fehlenden Wahrnehmung durch andere Bewohner",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Anwendung auf die Frage konkreter Störungen/Außenwirkungen nach § 569 Abs. 2 BGB",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Verneinung einer konkreten Außenwirkung/Beeinträchtigung",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Konkrete Auswirkungen des Cannabisanbaus durch Y im Rahmen des § 569 Abs. 2 BGB bei der außerordentlichen Kündigung des Mietvertrags",
+                "evidence_scope": "Cannabisanbau durch Y, abgeschlossenes und geruchsdichtes Kellerabteil, fehlende Wahrnehmung durch andere Bewohner, Verneinung einer konkreten Störung des Hausfriedens",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Anbau erfolgt in einem abgeschlossenen, geruchsdichten Kellerabteil; andere Bewohner nehmen keine Beeinträchtigungen wahr; daher liegt keine konkrete Störung des Hausfriedens oder der Mietsubstanz vor.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort wendet die maßgeblichen Sachverhaltstatsachen zutreffend an und verneint damit eine konkrete Außenwirkung bzw. Störung des Hausfriedens, ohne sachverhaltswidrige Beeinträchtigungen zu erfinden.",
+              "evidence": [
+                "Der Anbau erfolgt in einem abgeschlossenen, geruchsdichten Kellerabteil. Andere Mitbewohner nehmen keine Beeinträchtigungen wahr. Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Heranziehung des ausschließlich zugewiesenen, abgeschlossenen und geruchsdichten Kellerabteils sowie der fehlenden Wahrnehmung durch andere Mitbewohner",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Anwendung auf die Störung des Hausfriedens (§ 569 Abs. 2 BGB bzw. im Rahmen von § 543 Abs. 1 BGB) und Verneinung einer konkreten Außenwirkung/Störung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Kein Unterstellen sachverhaltswidriger Störungen (Gerüche, Brandgefahren, Besucherzahlen)",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Außerordentliche Kündigung des Y wegen Cannabisanbaus, Prüfung konkreter Auswirkungen/Störung des Hausfriedens",
+                "evidence_scope": "Außerordentliche Kündigung des Y wegen Cannabisanbaus, Prüfung einer Störung des Hausfriedens unter § 543 Abs. 1 BGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Anbau erfolgt in einem abgeschlossenen, geruchsdichten Kellerabteil und wird von Mitbewohnern nicht wahrgenommen, weshalb keine konkrete Störung des Hausfriedens vorliegt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-034",
+      "title": "Konkrete Auswirkungen des Cannabisanbaus",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort stellt den Maßstab der Interessenabwägung dar, verknüpft die konkreten Umstände des Kelleranbaus mit dem Fehlen einer Hausfriedensstörung und zieht daraus ein Ergebnis zur Kündigung wegen des Anbaus.",
+      "evidence": [
+        "Entscheidend ist eine umfassende Abwägung der beiderseitigen Interessen.",
+        "Andere Mitbewohner nehmen keine Beeinträchtigungen wahr. Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor.",
+        "Der Cannabisanbau stellt keinen wichtigen Grund i.S.d. § 543 Abs. 1 BGB dar."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort stellt den Maßstab der Interessenabwägung dar, verknüpft die konkreten Umstände des Kelleranbaus mit dem Fehlen einer Hausfriedensstörung und zieht daraus ein Ergebnis zur Kündigung wegen des Anbaus.",
+          "evidence": [
+            "Entscheidend ist eine umfassende Abwägung der beiderseitigen Interessen.",
+            "Andere Mitbewohner nehmen keine Beeinträchtigungen wahr. Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor.",
+            "Der Cannabisanbau stellt keinen wichtigen Grund i.S.d. § 543 Abs. 1 BGB dar."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verbindet die Prüfung des wichtigen Grundes mit den konkreten Tatsachen des abgeschlossenen, geruchsdichten Kellerabteils und der fehlenden Wahrnehmung durch andere Bewohner und zieht daraus den Schluss, dass keine konkrete Störung vorliegt. Das ist eine methodisch nachvollziehbare Anwendung, auch wenn § 569 Abs. 2 BGB nicht ausdrücklich zitiert wird.",
+          "evidence": [
+            "Eine Pflichtverletzung begründet nur dann einen wichtigen Grund zur außerordentlichen Kündigung, wenn sie so schwer wiegt, dass dem Vermieter die Fortsetzung des Mietverhältnisses nicht zugemutet werden kann",
+            "Der Anbau erfolgt in einem abgeschlossenen, geruchsdichten Kellerabteil. Andere Mitbewohner nehmen keine Beeinträchtigungen wahr. Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor.",
+            "Der Cannabisanbau stellt keinen wichtigen Grund i.S.d. § 543 Abs. 1 BGB dar."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verknüpft die konkreten Sachverhaltsangaben (abgeschlossenes, geruchsdichtes Kellerabteil, keine Wahrnehmung durch Mitbewohner) im Rahmen der Kündigungsprüfung folgerichtig mit dem rechtlichen Zwischenergebnis, dass keine Störung des Hausfriedens vorliegt.",
+          "evidence": [
+            "Der Anbau erfolgt in einem abgeschlossenen, geruchsdichten Kellerabteil. Andere Mitbewohner nehmen keine Beeinträchtigungen wahr. Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort stellt den Maßstab der Interessenabwägung dar, verknüpft die konkreten Umstände des Kelleranbaus mit dem Fehlen einer Hausfriedensstörung und zieht daraus ein Ergebnis zur Kündigung wegen des Anbaus.",
+              "evidence": [
+                "Entscheidend ist eine umfassende Abwägung der beiderseitigen Interessen.",
+                "Andere Mitbewohner nehmen keine Beeinträchtigungen wahr. Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor.",
+                "Der Cannabisanbau stellt keinen wichtigen Grund i.S.d. § 543 Abs. 1 BGB dar."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verbindet die Prüfung des wichtigen Grundes mit den konkreten Tatsachen des abgeschlossenen, geruchsdichten Kellerabteils und der fehlenden Wahrnehmung durch andere Bewohner und zieht daraus den Schluss, dass keine konkrete Störung vorliegt. Das ist eine methodisch nachvollziehbare Anwendung, auch wenn § 569 Abs. 2 BGB nicht ausdrücklich zitiert wird.",
+              "evidence": [
+                "Eine Pflichtverletzung begründet nur dann einen wichtigen Grund zur außerordentlichen Kündigung, wenn sie so schwer wiegt, dass dem Vermieter die Fortsetzung des Mietverhältnisses nicht zugemutet werden kann",
+                "Der Anbau erfolgt in einem abgeschlossenen, geruchsdichten Kellerabteil. Andere Mitbewohner nehmen keine Beeinträchtigungen wahr. Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor.",
+                "Der Cannabisanbau stellt keinen wichtigen Grund i.S.d. § 543 Abs. 1 BGB dar."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verknüpft die konkreten Sachverhaltsangaben (abgeschlossenes, geruchsdichtes Kellerabteil, keine Wahrnehmung durch Mitbewohner) im Rahmen der Kündigungsprüfung folgerichtig mit dem rechtlichen Zwischenergebnis, dass keine Störung des Hausfriedens vorliegt.",
+              "evidence": [
+                "Der Anbau erfolgt in einem abgeschlossenen, geruchsdichten Kellerabteil. Andere Mitbewohner nehmen keine Beeinträchtigungen wahr. Eine konkrete Störung des Hausfriedens oder der Mietsubstanz liegt nicht vor."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

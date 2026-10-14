@@ -1,0 +1,1132 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-zu-korperverletzungs-und-strassenverkehrsdelikten-grillen-m",
+    "title": "Fortgeschrittenenübungsklausur zu Körperverletzungs- und Straßenverkehrsdelikten: Grillen mit Hindernissen"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenubungsklausur-zu-korperverletzungs-und-strassenverkehrsdelikten-grillen-m/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-zu-korperverletzungs-und-strassenverkehrsdelikten-grillen-m/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:32:08.618058+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 2,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.5,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 1,
+    "root_pass_rate": 0.5,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 4,
+    "pass_rate": 0.5,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Die Straßenbahn": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "Endergebnis und Konkurrenzen": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Die Straßenbahn › § 315 Abs. 3 Nr. 1 lit. b Var. 2 StGB durch das Werfen der Schrauben auf die Gleise": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "Endergebnis und Konkurrenzen": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "conclusion": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 50141,
+    "output_tokens": 18215,
+    "total_tokens": 68356,
+    "cached_input_tokens": 17545,
+    "cache_write_tokens": 7595
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 50141,
+    "output_tokens": 18215,
+    "total_tokens": 68356,
+    "cached_input_tokens": 17545,
+    "cache_write_tokens": 7595
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-016",
+      "title": "Teilnahme der Straßenbahn am Straßenverkehr",
+      "verdict": "fail",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort erwähnt die relevante Gleisführung und eine mögliche Auswirkung auf die Sicherheit des Straßenverkehrs. Sie behandelt die Straßenbahn damit aber nicht als Teilnehmerin am Straßenverkehr, sondern ordnet den Schwerpunkt dem Schienenbahnverkehr zu und lässt die gesonderte Prüfung dahinstehen.",
+      "evidence": [
+        "sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+        "O gezielt auf die Gleise und nicht auf die Fahrbahn warf"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erwähnt die relevante Gleisführung und eine mögliche Auswirkung auf die Sicherheit des Straßenverkehrs. Sie behandelt die Straßenbahn damit aber nicht als Teilnehmerin am Straßenverkehr, sondern ordnet den Schwerpunkt dem Schienenbahnverkehr zu und lässt die gesonderte Prüfung dahinstehen.",
+          "evidence": [
+            "sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+            "O gezielt auf die Gleise und nicht auf die Fahrbahn warf"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort behandelt die fahrende Straßenbahn wegen der parallel zur Autofahrbahn verlaufenden und diese teilweise kreuzenden Gleise als Teilnehmerin am Straßenverkehr.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Die Straßenbahn als Teilnehmerin am Straßenverkehr wegen der Gleisführung; § 315b-Prüfung im zweiten Handlungskomplex",
+            "evidence_scope": "Mögliche Beeinträchtigung der Sicherheit des Straßenverkehrs durch den Eingriff auf den parallel verlaufenden bzw. kreuzenden Gleisen; § 315b im zweiten Handlungskomplex",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Gleise verlaufen parallel zur Autofahrbahn bzw. kreuzen sie teilweise, sodass ein Eingriff auf den Gleisen die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort würdigt zwar die parallele bzw. kreuzende Gleisführung, behandelt die Straßenbahn aber nicht als Teilnehmerin am Straßenverkehr. Sie ordnet das Geschehen dem Schienenbahnverkehr zu und lässt die §315b-Frage dahinstehen. Der PASS-Teil ist daher nicht erfüllt.",
+          "evidence": [
+            "Die Straßenbahngleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese teilweise, sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+            "Allerdings ist hier der Schwerpunkt des Geschehens im Schienenbahnverkehr zu sehen",
+            "Spezialität des §315 für den Schienenbahnverkehr"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die fahrende Straßenbahn ist Bezugsobjekt der Prüfung.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die parallele bzw. kreuzende Gleisführung zur Autofahrbahn wird gewürdigt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Straßenbahn wird wegen dieser Gleisführung als Teilnehmerin am Straßenverkehr behandelt.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "fahrende Straßenbahn als Teilnehmerin am Straßenverkehr wegen parallel zur Autofahrbahn verlaufender und diese teilweise kreuzender Gleise",
+            "evidence_scope": "Gleisführung und Sicherheit des Straßenverkehrs im Rahmen von §315b; anschließend Schwerpunkt im Schienenbahnverkehr und Spezialität des §315",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Gleise verlaufen parallel bzw. kreuzen die Autofahrbahn, sodass ein Eingriff die Sicherheit des Straßenverkehrs beeinträchtigen kann; der Schwerpunkt liege aber im Schienenbahnverkehr; die Frage könne dahinstehen.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Das Kriterium verlangt, dass die Straßenbahn aufgrund der Gleisführung als Teilnehmerin am Straßenverkehr behandelt wird. Die Antwort erwähnt die Gleise zwar kurz, ordnet das Geschehen aber gerade dem Schienenbahnverkehr zu (§ 315 I StGB) und lässt die Prüfung der straßenverkehrsrechtlichen Einordnung nach § 315b I StGB ausdrücklich dahinstehen.",
+          "evidence": [
+            "Allerdings ist hier der Schwerpunkt des Geschehens im Schienenbahnverkehr zu sehen, zumal O gezielt auf die Gleise und nicht auf die Fahrbahn warf",
+            "Eine gesonderte Prüfung ist daher entbehrlich."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Behandlung der fahrenden Straßenbahn wegen der Gleisführung als Teilnehmerin am Straßenverkehr",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Einordnung der Straßenbahn als Teilnehmerin am Straßenverkehr",
+            "evidence_scope": "Prüfung von § 315b I StGB bzw. Zuordnung zum Schienenbahnverkehr gem. § 315 I StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Gleisführung berühre zwar möglicherweise die Sicherheit des Straßenverkehrs, der Schwerpunkt liege aber im Schienenbahnverkehr, weshalb eine Prüfung entbehrlich sei.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 25422,
+        "output_tokens": 12328,
+        "total_tokens": 37750,
+        "cached_input_tokens": 16521,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt einen möglichen Einfluss des Eingriffs auf die Sicherheit des Straßenverkehrs fest, ordnet die Straßenbahn aber nicht als Teilnehmerin am Straßenverkehr ein. Sie lässt die einschlägige Frage vielmehr ausdrücklich offen.",
+              "evidence": [
+                "sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+                "Die Frage kann jedoch mangels weitergehender Konsequenzen für das Ergebnis dahinstehen"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort behandelt die fahrende Straßenbahn wegen der parallelen und teilweise kreuzenden Gleise als Teilnehmerin am Straßenverkehr.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Einordnung der fahrenden Straßenbahn als Teilnehmerin am Straßenverkehr aufgrund der Gleisführung",
+                "evidence_scope": "Mögliche Beeinträchtigung der Sicherheit des Straßenverkehrs durch einen Eingriff auf den Gleisen im Rahmen der Prüfung von § 315b StGB",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die parallel zur Autofahrbahn verlaufenden und diese teilweise kreuzenden Gleise könnten dazu führen, dass ein Eingriff auf den Gleisen die Sicherheit des Straßenverkehrs beeinträchtigt.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort erkennt die Gleisführung ausdrücklich als Anknüpfung dafür, dass der Straßenbahnbereich den Straßenverkehr berühren kann, und erörtert deshalb § 315b. Damit wird die Straßenbahn nicht ohne Würdigung der Gleisführung ausschließlich dem selbstständigen Bahnverkehr zugeordnet. Die Kriteriumsfrage ist inhaltlich erfüllt.",
+              "evidence": [
+                "Daneben könnte sich O wegen eines gefährlichen Eingriffs in den Straßenverkehr gem. § 315b I StGB strafbar gemacht haben.",
+                "Die Straßenbahngleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese teilweise, sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort würdigt die parallel zur Autofahrbahn verlaufenden und diese teilweise kreuzenden Gleise.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die fahrende Straßenbahn wird wegen dieser Gleisführung als Teilnehmerin am Straßenverkehr behandelt.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Es liegt keine ausschließliche Zuordnung zum selbstständigen Bahnverkehr ohne Würdigung der Gleisführung vor.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Straßenbahn als Teilnehmerin am Straßenverkehr wegen parallel verlaufender und teilweise kreuzender Gleise, im Rahmen der § 315b-Prüfung",
+                "evidence_scope": "O wirft Schrauben auf Straßenbahngleise; § 315b-Erwägung mit Gleisführung parallel/kreuzend und möglicher Beeinträchtigung des Straßenverkehrs",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Wegen der parallel zur Autofahrbahn verlaufenden und diese teilweise kreuzenden Gleise kann ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen; der Schwerpunkt wird anschließend im Schienenbahnverkehr gesehen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort behandelt die Straßenbahn gerade nicht als Teilnehmerin am Straßenverkehr, sondern ordnet das Geschehen wegen des Schwerpunkts und vermeintlicher Spezialität primär dem Schienenbahnverkehr (§ 315 StGB) zu und lässt die Anwendbarkeit des § 315b StGB ausdrücklich dahinstehen.",
+              "evidence": [
+                "Allerdings ist hier der Schwerpunkt des Geschehens im Schienenbahnverkehr zu sehen, zumal O gezielt auf die Gleise und nicht auf die Fahrbahn warf",
+                "Die Frage kann jedoch mangels weitergehender Konsequenzen für das Ergebnis dahinstehen, da § 315b I StGB zu § 315 I StGB jedenfalls in Gesetzeskonkurrenz (Spezialität des § 315 für den Schienenbahnverkehr) steht"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Behandlung der fahrenden Straßenbahn wegen der parallel verlaufenden und kreuzenden Gleisführung als Teilnehmerin am Straßenverkehr",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Einordnung der Straßenbahn als Teilnehmerin am Straßenverkehr (§ 315b StGB)",
+                "evidence_scope": "Einordnung der Straßenbahn im Rahmen von § 315b I StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Gleisführung könne zwar den Straßenverkehr beeinträchtigen, der Schwerpunkt liege aber im Schienenbahnverkehr und § 315 StGB sei spezieller, weshalb die Einordnung dahinstehen könne.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erwähnt die relevante Gleisführung und eine mögliche Auswirkung auf die Sicherheit des Straßenverkehrs. Sie behandelt die Straßenbahn damit aber nicht als Teilnehmerin am Straßenverkehr, sondern ordnet den Schwerpunkt dem Schienenbahnverkehr zu und lässt die gesonderte Prüfung dahinstehen.",
+              "evidence": [
+                "sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+                "O gezielt auf die Gleise und nicht auf die Fahrbahn warf"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort behandelt die fahrende Straßenbahn wegen der parallel zur Autofahrbahn verlaufenden und diese teilweise kreuzenden Gleise als Teilnehmerin am Straßenverkehr.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Die Straßenbahn als Teilnehmerin am Straßenverkehr wegen der Gleisführung; § 315b-Prüfung im zweiten Handlungskomplex",
+                "evidence_scope": "Mögliche Beeinträchtigung der Sicherheit des Straßenverkehrs durch den Eingriff auf den parallel verlaufenden bzw. kreuzenden Gleisen; § 315b im zweiten Handlungskomplex",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Gleise verlaufen parallel zur Autofahrbahn bzw. kreuzen sie teilweise, sodass ein Eingriff auf den Gleisen die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort würdigt zwar die parallele bzw. kreuzende Gleisführung, behandelt die Straßenbahn aber nicht als Teilnehmerin am Straßenverkehr. Sie ordnet das Geschehen dem Schienenbahnverkehr zu und lässt die §315b-Frage dahinstehen. Der PASS-Teil ist daher nicht erfüllt.",
+              "evidence": [
+                "Die Straßenbahngleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese teilweise, sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+                "Allerdings ist hier der Schwerpunkt des Geschehens im Schienenbahnverkehr zu sehen",
+                "Spezialität des §315 für den Schienenbahnverkehr"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die fahrende Straßenbahn ist Bezugsobjekt der Prüfung.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die parallele bzw. kreuzende Gleisführung zur Autofahrbahn wird gewürdigt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Straßenbahn wird wegen dieser Gleisführung als Teilnehmerin am Straßenverkehr behandelt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "fahrende Straßenbahn als Teilnehmerin am Straßenverkehr wegen parallel zur Autofahrbahn verlaufender und diese teilweise kreuzender Gleise",
+                "evidence_scope": "Gleisführung und Sicherheit des Straßenverkehrs im Rahmen von §315b; anschließend Schwerpunkt im Schienenbahnverkehr und Spezialität des §315",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Gleise verlaufen parallel bzw. kreuzen die Autofahrbahn, sodass ein Eingriff die Sicherheit des Straßenverkehrs beeinträchtigen kann; der Schwerpunkt liege aber im Schienenbahnverkehr; die Frage könne dahinstehen.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium verlangt, dass die Straßenbahn aufgrund der Gleisführung als Teilnehmerin am Straßenverkehr behandelt wird. Die Antwort erwähnt die Gleise zwar kurz, ordnet das Geschehen aber gerade dem Schienenbahnverkehr zu (§ 315 I StGB) und lässt die Prüfung der straßenverkehrsrechtlichen Einordnung nach § 315b I StGB ausdrücklich dahinstehen.",
+              "evidence": [
+                "Allerdings ist hier der Schwerpunkt des Geschehens im Schienenbahnverkehr zu sehen, zumal O gezielt auf die Gleise und nicht auf die Fahrbahn warf",
+                "Eine gesonderte Prüfung ist daher entbehrlich."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Behandlung der fahrenden Straßenbahn wegen der Gleisführung als Teilnehmerin am Straßenverkehr",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Einordnung der Straßenbahn als Teilnehmerin am Straßenverkehr",
+                "evidence_scope": "Prüfung von § 315b I StGB bzw. Zuordnung zum Schienenbahnverkehr gem. § 315 I StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Gleisführung berühre zwar möglicherweise die Sicherheit des Straßenverkehrs, der Schwerpunkt liege aber im Schienenbahnverkehr, weshalb eine Prüfung entbehrlich sei.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    },
+    {
+      "id": "C-037",
+      "title": "Tatmehrheit zwischen Stuhlmanipulation und Schraubenwurf",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort verneint aufgrund ihrer Aberratio-ictus-Lösung eine vollendete vorsätzliche Körperverletzung an P; die Versuchsstrafbarkeit zum Nachteil der N wird laut Bearbeitungshinweis nicht geprüft. Damit greift die ausdrücklich zugelassene Alternative, dass die Konkurrenz mangels vollendeter Körperverletzung entfallen darf. Zusätzlich ordnet die Antwort die verbleibende § 315 I-StGB-Strafbarkeit und den Versuch aus der Stuhlpräparation ausdrücklich als Tatmehrheit nach § 53 StGB ein, begründet mit den eigenständigen Taten.",
+      "evidence": [
+        "Die im zweiten Handlungskomplex gegebene Strafbarkeit gem. § 315 I StGB und die — nicht zu prüfende — Versuchsstrafbarkeit aus dem ersten Handlungskomplex stellen eigenständige Taten dar, die im Verhältnis der Tatmehrheit (§ 53 StGB) zueinander stehen."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verneint aufgrund ihrer Aberratio-ictus-Lösung eine vollendete vorsätzliche Körperverletzung an P; die Versuchsstrafbarkeit zum Nachteil der N wird laut Bearbeitungshinweis nicht geprüft. Damit greift die ausdrücklich zugelassene Alternative, dass die Konkurrenz mangels vollendeter Körperverletzung entfallen darf. Zusätzlich ordnet die Antwort die verbleibende § 315 I-StGB-Strafbarkeit und den Versuch aus der Stuhlpräparation ausdrücklich als Tatmehrheit nach § 53 StGB ein, begründet mit den eigenständigen Taten.",
+          "evidence": [
+            "Die im zweiten Handlungskomplex gegebene Strafbarkeit gem. § 315 I StGB und die — nicht zu prüfende — Versuchsstrafbarkeit aus dem ersten Handlungskomplex stellen eigenständige Taten dar, die im Verhältnis der Tatmehrheit (§ 53 StGB) zueinander stehen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bei Bejahung beider Straftaten die Körperverletzung durch die Stuhlmanipulation und den Schraubenwurf als Tatmehrheit nach § 53 Abs. 1 StGB einordnen, oder bei konsequenter Aberratio-ictus-Lösung die Konkurrenz mangels vollendeter Körperverletzung entfallen lassen.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "O; Konkurrenz zwischen der Körperverletzung durch die Stuhlmanipulation und dem späteren gefährlichen Eingriff durch den Schraubenwurf",
+            "evidence_scope": "O; Konkurrenz zwischen der § 315 I-StGB-Strafbarkeit aus dem Schraubenwurf und der Versuchsstrafbarkeit aus der Stuhlpräparation",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die beiden Handlungen stellen eigenständige Taten dar.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht den Schraubenwurf als § 315 I Nr. 2 StGB und lehnt wegen der konsequenten Aberratio-ictus-Lösung eine vollendete gefährliche Körperverletzung durch die Stuhlmanipulation ab. Damit darf die Konkurrenz mangels vollendeter Körperverletzung entfallen. Tateinheit wird nicht angenommen; die eigenständigen Taten werden ausdrücklich als Tatmehrheit nach § 53 StGB eingeordnet.",
+          "evidence": [
+            "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen.",
+            "Die im zweiten Handlungskomplex gegebene Strafbarkeit gem. § 315 I StGB und die — nicht zu prüfende — Versuchsstrafbarkeit aus dem ersten Handlungskomplex stellen eigenständige Taten dar, die im Verhältnis der Tatmehrheit (§ 53 StGB) zueinander stehen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort bejaht den späteren qualifizierten gefährlichen Eingriff durch den Schraubenwurf.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort folgt der Aberratio-ictus-Lösung und lehnt eine vollendete vorsätzliche Körperverletzung durch die Stuhlmanipulation ab, sodass die Konkurrenz mangels vollendeter Körperverletzung entfallen darf.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Es wird keine Tateinheit zwischen Stuhlmanipulation und Schraubenwurf angenommen; die eigenständigen Taten werden als Tatmehrheit nach § 53 StGB behandelt.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Stuhlmanipulation (gefährliche Körperverletzung) und Schraubenwurf (qualifizierter gefährlicher Eingriff) im Konkurrenzverhältnis Tatmehrheit/Tateinheit",
+            "evidence_scope": "Erster Handlungskomplex (Stuhlpräparation; Aberratio-ictus-Ablehnung der vollendeten vorsätzlichen KV) und zweiter Handlungskomplex (§ 315 I StGB), Gesamtergebnis Konkurrenzen",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Wegen konsequenter Konkretisierungstheorie/aberratio ictus keine vollendete vorsätzliche Körperverletzung durch die Stuhlmanipulation; der Schraubenwurf wird als § 315 I StGB bejaht; er und der erste Komplex stehen als eigenständige Taten in Tatmehrheit nach § 53 StGB.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort wendet konsequent die Regeln der aberratio ictus an und verneint eine vollendete vorsätzliche Körperverletzung. Zudem stellt sie im Gesamtergebnis klar, dass die Handlungen im Verhältnis der Tatmehrheit (§ 53 StGB) stehen. Damit ist das Kriterium voll erfüllt.",
+          "evidence": [
+            "Es liegt ein Fall der aberratio ictus (Fehlgehen der Tat) vor: O zielte auf die Verletzung der N ab, traf aber tatsächlich die P.",
+            "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen.",
+            "Die im zweiten Handlungskomplex gegebene Strafbarkeit gem. § 315 I StGB und die — nicht zu prüfende — Versuchsstrafbarkeit aus dem ersten Handlungskomplex stellen eigenständige Taten dar, die im Verhältnis der Tatmehrheit (§ 53 StGB) zueinander stehen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Einordnung als Tatmehrheit nach § 53 StGB bei Bejahung beider Taten ODER Entfallen der Konkurrenz infolge konsequenter Aberratio-ictus-Lösung (bzw. Annahme von Tatmehrheit zur versuchten Tat)",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Konkurrenzverhältnis zwischen Stuhlmanipulation und Schraubenwurf (§ 53 StGB) bzw. Entbehrlichkeit bei Aberratio ictus",
+            "evidence_scope": "Konkurrenzverhältnis zwischen erstem und zweitem Handlungskomplex sowie Aberratio-ictus-Lösung",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Verneinung vollendeter Körperverletzung nach den Grundsätzen der aberratio ictus (Konkretisierungstheorie) sowie hilfsweise Feststellung von Tatmehrheit (§ 53 StGB)",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 24719,
+        "output_tokens": 5887,
+        "total_tokens": 30606,
+        "cached_input_tokens": 1024,
+        "cache_write_tokens": 7595
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verneint aufgrund ihrer Aberratio-ictus-Lösung eine vollendete vorsätzliche Körperverletzung an P; die Versuchsstrafbarkeit zum Nachteil der N wird laut Bearbeitungshinweis nicht geprüft. Damit greift die ausdrücklich zugelassene Alternative, dass die Konkurrenz mangels vollendeter Körperverletzung entfallen darf. Zusätzlich ordnet die Antwort die verbleibende § 315 I-StGB-Strafbarkeit und den Versuch aus der Stuhlpräparation ausdrücklich als Tatmehrheit nach § 53 StGB ein, begründet mit den eigenständigen Taten.",
+              "evidence": [
+                "Die im zweiten Handlungskomplex gegebene Strafbarkeit gem. § 315 I StGB und die — nicht zu prüfende — Versuchsstrafbarkeit aus dem ersten Handlungskomplex stellen eigenständige Taten dar, die im Verhältnis der Tatmehrheit (§ 53 StGB) zueinander stehen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bei Bejahung beider Straftaten die Körperverletzung durch die Stuhlmanipulation und den Schraubenwurf als Tatmehrheit nach § 53 Abs. 1 StGB einordnen, oder bei konsequenter Aberratio-ictus-Lösung die Konkurrenz mangels vollendeter Körperverletzung entfallen lassen.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "O; Konkurrenz zwischen der Körperverletzung durch die Stuhlmanipulation und dem späteren gefährlichen Eingriff durch den Schraubenwurf",
+                "evidence_scope": "O; Konkurrenz zwischen der § 315 I-StGB-Strafbarkeit aus dem Schraubenwurf und der Versuchsstrafbarkeit aus der Stuhlpräparation",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die beiden Handlungen stellen eigenständige Taten dar.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht den Schraubenwurf als § 315 I Nr. 2 StGB und lehnt wegen der konsequenten Aberratio-ictus-Lösung eine vollendete gefährliche Körperverletzung durch die Stuhlmanipulation ab. Damit darf die Konkurrenz mangels vollendeter Körperverletzung entfallen. Tateinheit wird nicht angenommen; die eigenständigen Taten werden ausdrücklich als Tatmehrheit nach § 53 StGB eingeordnet.",
+              "evidence": [
+                "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen.",
+                "Die im zweiten Handlungskomplex gegebene Strafbarkeit gem. § 315 I StGB und die — nicht zu prüfende — Versuchsstrafbarkeit aus dem ersten Handlungskomplex stellen eigenständige Taten dar, die im Verhältnis der Tatmehrheit (§ 53 StGB) zueinander stehen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort bejaht den späteren qualifizierten gefährlichen Eingriff durch den Schraubenwurf.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort folgt der Aberratio-ictus-Lösung und lehnt eine vollendete vorsätzliche Körperverletzung durch die Stuhlmanipulation ab, sodass die Konkurrenz mangels vollendeter Körperverletzung entfallen darf.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Es wird keine Tateinheit zwischen Stuhlmanipulation und Schraubenwurf angenommen; die eigenständigen Taten werden als Tatmehrheit nach § 53 StGB behandelt.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Stuhlmanipulation (gefährliche Körperverletzung) und Schraubenwurf (qualifizierter gefährlicher Eingriff) im Konkurrenzverhältnis Tatmehrheit/Tateinheit",
+                "evidence_scope": "Erster Handlungskomplex (Stuhlpräparation; Aberratio-ictus-Ablehnung der vollendeten vorsätzlichen KV) und zweiter Handlungskomplex (§ 315 I StGB), Gesamtergebnis Konkurrenzen",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Wegen konsequenter Konkretisierungstheorie/aberratio ictus keine vollendete vorsätzliche Körperverletzung durch die Stuhlmanipulation; der Schraubenwurf wird als § 315 I StGB bejaht; er und der erste Komplex stehen als eigenständige Taten in Tatmehrheit nach § 53 StGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort wendet konsequent die Regeln der aberratio ictus an und verneint eine vollendete vorsätzliche Körperverletzung. Zudem stellt sie im Gesamtergebnis klar, dass die Handlungen im Verhältnis der Tatmehrheit (§ 53 StGB) stehen. Damit ist das Kriterium voll erfüllt.",
+              "evidence": [
+                "Es liegt ein Fall der aberratio ictus (Fehlgehen der Tat) vor: O zielte auf die Verletzung der N ab, traf aber tatsächlich die P.",
+                "Daher ist mit der herrschenden Konkretisierungstheorie eine vollendete vorsätzliche Körperverletzung gem. § 223 I StGB zum Nachteil der P abzulehnen.",
+                "Die im zweiten Handlungskomplex gegebene Strafbarkeit gem. § 315 I StGB und die — nicht zu prüfende — Versuchsstrafbarkeit aus dem ersten Handlungskomplex stellen eigenständige Taten dar, die im Verhältnis der Tatmehrheit (§ 53 StGB) zueinander stehen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Einordnung als Tatmehrheit nach § 53 StGB bei Bejahung beider Taten ODER Entfallen der Konkurrenz infolge konsequenter Aberratio-ictus-Lösung (bzw. Annahme von Tatmehrheit zur versuchten Tat)",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Konkurrenzverhältnis zwischen Stuhlmanipulation und Schraubenwurf (§ 53 StGB) bzw. Entbehrlichkeit bei Aberratio ictus",
+                "evidence_scope": "Konkurrenzverhältnis zwischen erstem und zweitem Handlungskomplex sowie Aberratio-ictus-Lösung",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Verneinung vollendeter Körperverletzung nach den Grundsätzen der aberratio ictus (Konkretisierungstheorie) sowie hilfsweise Feststellung von Tatmehrheit (§ 53 StGB)",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-016",
+      "title": "Teilnahme der Straßenbahn am Straßenverkehr",
+      "verdict": "fail",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Gleisführung wird ausdrücklich mit einer möglichen Beeinträchtigung der Sicherheit des Straßenverkehrs verknüpft. Es fehlt aber eine kriterienspezifische Prüfung, ob die fahrende Straßenbahn dadurch als Teilnehmerin am Straßenverkehr zu behandeln ist; stattdessen wird die Erörterung mit einem Hinweis auf den Schwerpunkt im Schienenbahnverkehr abgekürzt.",
+      "evidence": [
+        "Die Straßenbahngleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese teilweise, sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+        "Allerdings ist hier der Schwerpunkt des Geschehens im Schienenbahnverkehr zu sehen"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Gleisführung wird ausdrücklich mit einer möglichen Beeinträchtigung der Sicherheit des Straßenverkehrs verknüpft. Es fehlt aber eine kriterienspezifische Prüfung, ob die fahrende Straßenbahn dadurch als Teilnehmerin am Straßenverkehr zu behandeln ist; stattdessen wird die Erörterung mit einem Hinweis auf den Schwerpunkt im Schienenbahnverkehr abgekürzt.",
+          "evidence": [
+            "Die Straßenbahngleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese teilweise, sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+            "Allerdings ist hier der Schwerpunkt des Geschehens im Schienenbahnverkehr zu sehen"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": true,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Passage verknüpft die Gleisführung mit einer möglichen Beeinträchtigung des Straßenverkehrs, lässt die Frage der Teilnahme der Straßenbahn aber ausdrücklich dahinstehen und ordnet den Schwerpunkt dem Schienenbahnverkehr zu. Damit fehlt eine abgeschlossene Ableitung zum Kriterium.",
+          "evidence": [
+            "Die Straßenbahngleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese teilweise, sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+            "Die Frage kann jedoch mangels weitergehender Konsequenzen für das Ergebnis dahinstehen"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort nennt zwar die Besonderheit der Gleisführung, stellt aber keinen rechtlichen Obersatz zur straßenverkehrsrechtlichen Einordnung von Straßenbahnen auf und bricht die Prüfung ab, ohne den Gedankengang zur straßenverkehrsrechtlichen Verkehrsteilnahme zu Ende zu führen.",
+          "evidence": [
+            "Die Straßenbahngleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese teilweise, sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann. Allerdings ist hier der Schwerpunkt des Geschehens im Schienenbahnverkehr zu sehen",
+            "Eine gesonderte Prüfung ist daher entbehrlich."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": true,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Gleisführung wird zwar mit einer möglichen Beeinträchtigung der Sicherheit des Straßenverkehrs verknüpft. Die Antwort prüft aber nicht, ob die fahrende Straßenbahn deshalb als Teilnehmerin am Straßenverkehr einzuordnen ist, sondern lässt die Frage ausdrücklich dahinstehen. Der konkrete Prüfungspfad bleibt somit unvollständig.",
+              "evidence": [
+                "Die Straßenbahngleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese teilweise, sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+                "Die Frage kann jedoch mangels weitergehender Konsequenzen für das Ergebnis dahinstehen"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verknüpft im Rahmen der § 315b-Prüfung die konkrete Gleisführung mit der möglichen Beeinträchtigung des Straßenverkehrs und zieht daraus eine argumentative Konsequenz zur Einordnung. Das genügt für einen funktionalen rechtlichen Argumentationsstil, unabhängig davon, ob das Ergebnis überzeugt.",
+              "evidence": [
+                "Daneben könnte sich O wegen eines gefährlichen Eingriffs in den Straßenverkehr gem. § 315b I StGB strafbar gemacht haben.",
+                "Die Straßenbahngleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese teilweise, sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+                "Allerdings ist hier der Schwerpunkt des Geschehens im Schienenbahnverkehr zu sehen..."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt keinen rechtlichen Maßstab dafür auf, unter welchen Voraussetzungen eine Straßenbahn als Verkehrsteilnehmerin am Straßenverkehr teilnimmt (z. B. Abgrenzung unabhängiger Bahnkörper vs. straßenbündiger Verkehrsraum). Zudem wird der Prüfungsweg nicht abgeschlossen, sondern das Vorliegen der Voraussetzungen des § 315b StGB offengelassen.",
+              "evidence": [
+                "Die Straßenbahngleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese teilweise, sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann. Allerdings ist hier der Schwerpunkt des Geschehens im Schienenbahnverkehr zu sehen",
+                "Die Frage kann jedoch mangels weitergehender Konsequenzen für das Ergebnis dahinstehen, da § 315b I StGB zu § 315 I StGB jedenfalls in Gesetzeskonkurrenz (Spezialität des § 315 für den Schienenbahnverkehr) steht"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Gleisführung wird ausdrücklich mit einer möglichen Beeinträchtigung der Sicherheit des Straßenverkehrs verknüpft. Es fehlt aber eine kriterienspezifische Prüfung, ob die fahrende Straßenbahn dadurch als Teilnehmerin am Straßenverkehr zu behandeln ist; stattdessen wird die Erörterung mit einem Hinweis auf den Schwerpunkt im Schienenbahnverkehr abgekürzt.",
+              "evidence": [
+                "Die Straßenbahngleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese teilweise, sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+                "Allerdings ist hier der Schwerpunkt des Geschehens im Schienenbahnverkehr zu sehen"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Passage verknüpft die Gleisführung mit einer möglichen Beeinträchtigung des Straßenverkehrs, lässt die Frage der Teilnahme der Straßenbahn aber ausdrücklich dahinstehen und ordnet den Schwerpunkt dem Schienenbahnverkehr zu. Damit fehlt eine abgeschlossene Ableitung zum Kriterium.",
+              "evidence": [
+                "Die Straßenbahngleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese teilweise, sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann.",
+                "Die Frage kann jedoch mangels weitergehender Konsequenzen für das Ergebnis dahinstehen"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort nennt zwar die Besonderheit der Gleisführung, stellt aber keinen rechtlichen Obersatz zur straßenverkehrsrechtlichen Einordnung von Straßenbahnen auf und bricht die Prüfung ab, ohne den Gedankengang zur straßenverkehrsrechtlichen Verkehrsteilnahme zu Ende zu führen.",
+              "evidence": [
+                "Die Straßenbahngleise verlaufen parallel zur Autofahrbahn bzw. kreuzen diese teilweise, sodass ein Eingriff auf den Gleisen auch die Sicherheit des Straßenverkehrs beeinträchtigen kann. Allerdings ist hier der Schwerpunkt des Geschehens im Schienenbahnverkehr zu sehen",
+                "Eine gesonderte Prüfung ist daher entbehrlich."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ]
+}

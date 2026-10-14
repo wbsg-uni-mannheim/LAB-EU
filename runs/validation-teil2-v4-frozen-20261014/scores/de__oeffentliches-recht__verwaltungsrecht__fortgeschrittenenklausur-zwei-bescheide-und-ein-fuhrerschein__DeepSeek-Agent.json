@@ -1,0 +1,568 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/verwaltungsrecht/fortgeschrittenenklausur-zwei-bescheide-und-ein-fuhrerschein",
+    "title": "Fortgeschrittenenklausur: Zwei Bescheide und ein Führerschein"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__oeffentliches-recht__verwaltungsrecht__fortgeschrittenenklausur-zwei-bescheide-und-ein-fuhrerschein/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/verwaltungsrecht/fortgeschrittenenklausur-zwei-bescheide-und-ein-fuhrerschein/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:36:20.883179+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 1,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 1,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 1,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 3,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Begründetheit": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Begründetheit › Materielle Rechtswidrigkeit": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "rule_statement": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "3 (ergebnistragend)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 30983,
+    "output_tokens": 6507,
+    "total_tokens": 37490,
+    "cached_input_tokens": 28835,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 30983,
+    "output_tokens": 6507,
+    "total_tokens": 37490,
+    "cached_input_tokens": 28835,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-032",
+      "title": "Maßgeblicher Beurteilungszeitpunkt",
+      "verdict": "fail",
+      "resolution": "unresolved",
+      "reasoning": "The committee majority changed between two independent rounds; the criterion is conservatively unresolved.",
+      "evidence": [],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort stellt ausdrücklich auf den Widerspruchsbescheid vom 1.3.2022 ab und wendet dies auf die fehlenden Informationen an. Sie leitet den Zeitpunkt aber nur aus einem allgemeinen Grundsatz zur Rechtmäßigkeit von Verwaltungsakten ab; dass der maßgebliche Zeitpunkt aus dem materiellen Fahrerlaubnisrecht folgt und § 28 Abs. 4 FeV keine abweichende Regelung enthält, prüft sie nicht. Damit fehlt ein verlangter Bestandteil.",
+          "evidence": [
+            "Als Ermächtigungsgrundlage für den feststellenden Verwaltungsakt kommt § 28 IV 4 FeV i.V.m. § 28 IV 1 Nr. 2 FeV in Betracht.",
+            "Für die Beurteilung der Rechtmäßigkeit eines Verwaltungsakts ist grundsätzlich auf den Zeitpunkt der letzten Behördenentscheidung – hier den Erlass des Widerspruchsbescheids am 1.3.2022 – abzustellen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Den maßgeblichen Zeitpunkt aus dem materiellen Fahrerlaubnisrecht bestimmen.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Mangels abweichender Regelung in § 28 Abs. 4 FeV auf die letzte Behördenentscheidung, hier den Widerspruchsbescheid vom 1.3.2022, abstellen.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A; maßgeblicher Beurteilungszeitpunkt der materiellen Rechtmäßigkeit des Feststellungsbescheids nach § 28 Abs. 4 FeV.",
+            "evidence_scope": "A; Rechtmäßigkeit des Feststellungsbescheids nach § 28 Abs. 4 FeV und Zeitpunkt der letzten Behördenentscheidung.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Rechtmäßigkeit eines Verwaltungsakts sei grundsätzlich nach dem Zeitpunkt der letzten Behördenentscheidung zu beurteilen; eine Abweichung in § 28 Abs. 4 FeV wird nicht angesprochen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bestimmt den maßgeblichen Beurteilungszeitpunkt für die materielle Rechtmäßigkeit des angefochtenen Bescheids und stellt ausdrücklich auf die letzte Behördenentscheidung, den Widerspruchsbescheid vom 1.3.2022, ab. Sie lehnt damit die Berücksichtigung des späteren Eingangs vom 2.5.2022 ab. Der erforderliche Zeitpunkt wird zwar nicht ausdrücklich mit § 28 Abs. 4 FeV begründet, ergibt sich aber implizit aus der Prüfung dieser Norm und der Anwendung des Grundsatzes der letzten Behördenentscheidung.",
+          "evidence": [
+            "Für die Beurteilung der Rechtmäßigkeit eines Verwaltungsakts ist grundsätzlich auf den Zeitpunkt der letzten Behördenentscheidung – hier den Erlass des Widerspruchsbescheids am 1.3.2022 – abzustellen.",
+            "Daran ändert auch der Umstand nichts, dass am 2.5.2022 – also während des gerichtlichen Verfahrens – eine entsprechende Mitteilung der tschechischen Behörde einging."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Abstellen auf die letzte Behördenentscheidung, hier den Widerspruchsbescheid vom 1.3.2022",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Bestimmung des maßgeblichen Zeitpunkts im Rahmen des materiellen Fahrerlaubnisrechts bzw. mangels abweichender Regelung des § 28 Abs. 4 FeV",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "materielle Rechtmäßigkeit des Bescheids nach § 28 Abs. 4 FeV; maßgeblicher Beurteilungszeitpunkt ist die letzte Behördenentscheidung, der Widerspruchsbescheid vom 1.3.2022",
+            "evidence_scope": "materielle Rechtmäßigkeit des Bescheids nach § 28 Abs. 4 FeV; Ablehnung der Berücksichtigung des nachträglichen Eingangs am 2.5.2022 und Abstellen auf den Widerspruchsbescheid vom 1.3.2022",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Für die Rechtmäßigkeit eines Verwaltungsakts ist grundsätzlich auf den Zeitpunkt der letzten Behördenentscheidung abzustellen; daher bleibt die spätere Mitteilung vom 2.5.2022 außer Betracht.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort stellt zwar im Ergebnis auf den Erlass des Widerspruchsbescheids am 1.3.2022 ab, leitet diesen maßgeblichen Zeitpunkt jedoch nicht aus dem materiellen Fahrerlaubnisrecht ab und erwähnt das Fehlen einer abweichenden Regelung in § 28 Abs. 4 FeV nicht, sondern beruft sich lediglich pauschal auf einen vermeintlich allgemeinen Grundsatz.",
+          "evidence": [
+            "Für die Beurteilung der Rechtmäßigkeit eines Verwaltungsakts ist grundsätzlich auf den Zeitpunkt der letzten Behördenentscheidung – hier den Erlass des Widerspruchsbescheids am 1.3.2022 – abzustellen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bestimmung des maßgeblichen Zeitpunkts aus dem materiellen Fahrerlaubnisrecht (mangels abweichender Regelung in § 28 Abs. 4 FeV)",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Abstellen auf die letzte Behördenentscheidung (Widerspruchsbescheid vom 1.3.2022)",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Maßgeblicher Zeitpunkt der Beurteilung der Sach- und Rechtslage für den Feststellungsbescheid",
+            "evidence_scope": "Maßgeblicher Zeitpunkt der Beurteilung der Rechtmäßigkeit des Bescheids",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Allgemeine verwaltungsrechtliche Grundregel ohne Herleitung aus dem materiellen Fahrerlaubnisrecht (§ 28 Abs. 4 FeV)",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 30983,
+        "output_tokens": 6507,
+        "total_tokens": 37490,
+        "cached_input_tokens": 28835,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort stellt ausdrücklich auf den Widerspruchsbescheid vom 1.3.2022 ab und wendet diesen Zeitpunkt auf die nach § 28 Abs. 4 FeV erforderlichen Informationen an. Sie behauptet keinen abweichenden Beurteilungszeitpunkt; die Anwendung der allgemeinen Regel im konkreten Fahrerlaubnisfall macht das Fehlen einer abweichenden Regelung hinreichend deutlich.",
+              "evidence": [
+                "Für die Beurteilung der Rechtmäßigkeit eines Verwaltungsakts ist grundsätzlich auf den Zeitpunkt der letzten Behördenentscheidung – hier den Erlass des Widerspruchsbescheids am 1.3.2022 – abzustellen.",
+                "Zu diesem Zeitpunkt fehlte es an den erforderlichen Informationen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Den maßgeblichen Beurteilungszeitpunkt für die Feststellung nach § 28 Abs. 4 FeV aus dem materiellen Fahrerlaubnisrecht bestimmen.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Mangels abweichender Regelung in § 28 Abs. 4 FeV auf die letzte Behördenentscheidung, hier den Widerspruchsbescheid vom 1.3.2022, abstellen.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; maßgeblicher Beurteilungszeitpunkt der Rechtmäßigkeit des feststellenden Bescheids nach § 28 Abs. 4 FeV.",
+                "evidence_scope": "A; Beurteilungszeitpunkt der Rechtmäßigkeit des Bescheids vom 29.11.2021 im Fahrerlaubnisrecht.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Für die Rechtmäßigkeit eines Verwaltungsakts sei grundsätzlich der Zeitpunkt der letzten Behördenentscheidung maßgeblich; das sei hier der Widerspruchsbescheid vom 1.3.2022.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verlegt den maßgeblichen Beurteilungszeitpunkt auf die letzte Behördenentscheidung, den Widerspruchsbescheid vom 1.3.2022, und lehnt den späteren Eingang vom 2.5.2022 ausdrücklich als maßgeblich ab. Das geschieht im Rahmen der Prüfung des § 28 Abs. 4 FeV; damit ist die fachrechtliche Verortung ausreichend erkennbar.",
+              "evidence": [
+                "Für die Beurteilung der Rechtmäßigkeit eines Verwaltungsakts ist grundsätzlich auf den Zeitpunkt der letzten Behördenentscheidung – hier den Erlass des Widerspruchsbescheids am 1.3.2022 – abzustellen.",
+                "Daran ändert auch der Umstand nichts, dass am 2.5.2022 – also während des gerichtlichen Verfahrens – eine entsprechende Mitteilung der tschechischen Behörde einging."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bestimmung des maßgeblichen Beurteilungszeitpunkts für die Rechtmäßigkeit des Bescheids vom 29.11.2021",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Abstellen auf die letzte Behördenentscheidung, hier den Widerspruchsbescheid vom 1.3.2022",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Fachrechtliche Verortung im materiellen Fahrerlaubnisrecht des § 28 Abs. 4 FeV mangels abweichender Regelung",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Nicht-Abstellen auf den 2.5.2022 als maßgeblichen Zeitpunkt",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "materielle Rechtmäßigkeit des Bescheids vom 29.11.2021 nach § 28 Abs. 4 FeV, maßgeblicher Zeitpunkt",
+                "evidence_scope": "materielle Rechtmäßigkeit des Bescheids vom 29.11.2021 nach § 28 Abs. 4 FeV, insbesondere Tatbestand des § 28 Abs. 4 Nr. 2 FeV",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Für die Beurteilung der Rechtmäßigkeit eines Verwaltungsakts ist grundsätzlich auf den Zeitpunkt der letzten Behördenentscheidung – hier den Widerspruchsbescheid vom 1.3.2022 – abzustellen; die spätere Mitteilung vom 2.5.2022 ändert daran nichts.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Das Kriterium verlangt ausdrücklich, dass der maßgebliche Zeitpunkt aus dem materiellen Fahrerlaubnisrecht bestimmt wird und mangels einer abweichenden Regelung in § 28 Abs. 4 FeV auf den Widerspruchsbescheid vom 1.3.2022 abgestellt wird. Die Falllösung stellt zwar im Ergebnis auf den Widerspruchsbescheid vom 1.3.2022 ab, leitet dies jedoch lediglich aus dem allgemeinen Grundsatz zur Beurteilung von Verwaltungsakten ab, ohne das materielle Fahrerlaubnisrecht oder das Fehlen einer abweichenden Regelung in § 28 Abs. 4 FeV auch nur zu erwähnen.",
+              "evidence": [
+                "Für die Beurteilung der Rechtmäßigkeit eines Verwaltungsakts ist grundsätzlich auf den Zeitpunkt der letzten Behördenentscheidung – hier den Erlass des Widerspruchsbescheids am 1.3.2022 – abzustellen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bestimmung des maßgeblichen Beurteilungszeitpunkts aus dem materiellen Fahrerlaubnisrecht",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Abstellen auf die letzte Behördenentscheidung (Widerspruchsbescheid vom 1.3.2022) mangels abweichender Regelung in § 28 Abs. 4 FeV",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Maßgeblicher Beurteilungszeitpunkt für die Rechtmäßigkeit des Bescheids nach materiellem Fahrerlaubnisrecht (§ 28 Abs. 4 FeV)",
+                "evidence_scope": "Maßgeblicher Zeitpunkt für die Rechtmäßigkeit des Bescheids unter allgemeinem Verwaltungsrecht",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Für die Beurteilung der Rechtmäßigkeit eines Verwaltungsakts ist grundsätzlich auf den Zeitpunkt der letzten Behördenentscheidung abzustellen.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt ausdrücklich auf den Widerspruchsbescheid vom 1.3.2022 ab und wendet dies auf die fehlenden Informationen an. Sie leitet den Zeitpunkt aber nur aus einem allgemeinen Grundsatz zur Rechtmäßigkeit von Verwaltungsakten ab; dass der maßgebliche Zeitpunkt aus dem materiellen Fahrerlaubnisrecht folgt und § 28 Abs. 4 FeV keine abweichende Regelung enthält, prüft sie nicht. Damit fehlt ein verlangter Bestandteil.",
+              "evidence": [
+                "Als Ermächtigungsgrundlage für den feststellenden Verwaltungsakt kommt § 28 IV 4 FeV i.V.m. § 28 IV 1 Nr. 2 FeV in Betracht.",
+                "Für die Beurteilung der Rechtmäßigkeit eines Verwaltungsakts ist grundsätzlich auf den Zeitpunkt der letzten Behördenentscheidung – hier den Erlass des Widerspruchsbescheids am 1.3.2022 – abzustellen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Den maßgeblichen Zeitpunkt aus dem materiellen Fahrerlaubnisrecht bestimmen.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Mangels abweichender Regelung in § 28 Abs. 4 FeV auf die letzte Behördenentscheidung, hier den Widerspruchsbescheid vom 1.3.2022, abstellen.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; maßgeblicher Beurteilungszeitpunkt der materiellen Rechtmäßigkeit des Feststellungsbescheids nach § 28 Abs. 4 FeV.",
+                "evidence_scope": "A; Rechtmäßigkeit des Feststellungsbescheids nach § 28 Abs. 4 FeV und Zeitpunkt der letzten Behördenentscheidung.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Rechtmäßigkeit eines Verwaltungsakts sei grundsätzlich nach dem Zeitpunkt der letzten Behördenentscheidung zu beurteilen; eine Abweichung in § 28 Abs. 4 FeV wird nicht angesprochen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bestimmt den maßgeblichen Beurteilungszeitpunkt für die materielle Rechtmäßigkeit des angefochtenen Bescheids und stellt ausdrücklich auf die letzte Behördenentscheidung, den Widerspruchsbescheid vom 1.3.2022, ab. Sie lehnt damit die Berücksichtigung des späteren Eingangs vom 2.5.2022 ab. Der erforderliche Zeitpunkt wird zwar nicht ausdrücklich mit § 28 Abs. 4 FeV begründet, ergibt sich aber implizit aus der Prüfung dieser Norm und der Anwendung des Grundsatzes der letzten Behördenentscheidung.",
+              "evidence": [
+                "Für die Beurteilung der Rechtmäßigkeit eines Verwaltungsakts ist grundsätzlich auf den Zeitpunkt der letzten Behördenentscheidung – hier den Erlass des Widerspruchsbescheids am 1.3.2022 – abzustellen.",
+                "Daran ändert auch der Umstand nichts, dass am 2.5.2022 – also während des gerichtlichen Verfahrens – eine entsprechende Mitteilung der tschechischen Behörde einging."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Abstellen auf die letzte Behördenentscheidung, hier den Widerspruchsbescheid vom 1.3.2022",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Bestimmung des maßgeblichen Zeitpunkts im Rahmen des materiellen Fahrerlaubnisrechts bzw. mangels abweichender Regelung des § 28 Abs. 4 FeV",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "materielle Rechtmäßigkeit des Bescheids nach § 28 Abs. 4 FeV; maßgeblicher Beurteilungszeitpunkt ist die letzte Behördenentscheidung, der Widerspruchsbescheid vom 1.3.2022",
+                "evidence_scope": "materielle Rechtmäßigkeit des Bescheids nach § 28 Abs. 4 FeV; Ablehnung der Berücksichtigung des nachträglichen Eingangs am 2.5.2022 und Abstellen auf den Widerspruchsbescheid vom 1.3.2022",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Für die Rechtmäßigkeit eines Verwaltungsakts ist grundsätzlich auf den Zeitpunkt der letzten Behördenentscheidung abzustellen; daher bleibt die spätere Mitteilung vom 2.5.2022 außer Betracht.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort stellt zwar im Ergebnis auf den Erlass des Widerspruchsbescheids am 1.3.2022 ab, leitet diesen maßgeblichen Zeitpunkt jedoch nicht aus dem materiellen Fahrerlaubnisrecht ab und erwähnt das Fehlen einer abweichenden Regelung in § 28 Abs. 4 FeV nicht, sondern beruft sich lediglich pauschal auf einen vermeintlich allgemeinen Grundsatz.",
+              "evidence": [
+                "Für die Beurteilung der Rechtmäßigkeit eines Verwaltungsakts ist grundsätzlich auf den Zeitpunkt der letzten Behördenentscheidung – hier den Erlass des Widerspruchsbescheids am 1.3.2022 – abzustellen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bestimmung des maßgeblichen Zeitpunkts aus dem materiellen Fahrerlaubnisrecht (mangels abweichender Regelung in § 28 Abs. 4 FeV)",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Abstellen auf die letzte Behördenentscheidung (Widerspruchsbescheid vom 1.3.2022)",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Maßgeblicher Zeitpunkt der Beurteilung der Sach- und Rechtslage für den Feststellungsbescheid",
+                "evidence_scope": "Maßgeblicher Zeitpunkt der Beurteilung der Rechtmäßigkeit des Bescheids",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Allgemeine verwaltungsrechtliche Grundregel ohne Herleitung aus dem materiellen Fahrerlaubnisrecht (§ 28 Abs. 4 FeV)",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "majority_flip"
+    }
+  ],
+  "style_results": []
+}

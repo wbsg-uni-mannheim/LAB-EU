@@ -1,0 +1,915 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/examensubungsklausur-strafrecht-nur-bares-ist-wahres",
+    "title": "Examensübungsklausur Strafrecht: Nur Bares ist Wahres!"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__strafrecht__materielles-strafrecht__examensubungsklausur-strafrecht-nur-bares-ist-wahres/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/examensubungsklausur-strafrecht-nur-bares-ist-wahres/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:43:13.099540+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 1,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 0.667,
+  "n_unanimous": 0,
+  "breakdown_by_station": {
+    "Materielles Strafrecht": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Materielles Strafrecht › Strafbarkeit von A und E": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 30923,
+    "output_tokens": 11978,
+    "total_tokens": 42901,
+    "cached_input_tokens": 20213,
+    "cache_write_tokens": 0
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 30923,
+    "output_tokens": 11978,
+    "total_tokens": 42901,
+    "cached_input_tokens": 20213,
+    "cache_write_tokens": 0
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-047",
+      "title": "Vorsatz zur gefährlichen Körperverletzung",
+      "verdict": "pass",
+      "resolution": "stable_with_dissent",
+      "reasoning": "Die Antwort leitet den Vorsatz beider Täter ausdrücklich aus den planmäßigen Tatbeiträgen und den konkreten Verletzungen ab. Die gezielte Verwendung der Zigaretten und das arbeitsteilige Zusammenwirken tragen auch die bejahten Qualifikationen; eine Behandlung der Verletzungen oder Qualifikationsumstände als fahrlässig oder unvorhergesehen erfolgt nicht.",
+      "evidence": [
+        "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan.",
+        "A schlug O gegen die Brust",
+        "drückten brennende Zigaretten in seinem Gesicht aus",
+        "Beide hatten Tatherrschaft und handelten vorsätzlich.",
+        "Damit wurden die Körperverletzungen mittels eines gefährlichen Werkzeugs begangen.",
+        "A und E waren beide vor Ort und wirkten arbeitsteilig zusammen."
+      ],
+      "vote_counts": {
+        "pass": 2,
+        "fail": 1,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort leitet den Vorsatz beider Täter ausdrücklich aus den planmäßigen Tatbeiträgen und den konkreten Verletzungen ab. Die gezielte Verwendung der Zigaretten und das arbeitsteilige Zusammenwirken tragen auch die bejahten Qualifikationen; eine Behandlung der Verletzungen oder Qualifikationsumstände als fahrlässig oder unvorhergesehen erfolgt nicht.",
+          "evidence": [
+            "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan.",
+            "A schlug O gegen die Brust",
+            "drückten brennende Zigaretten in seinem Gesicht aus",
+            "Beide hatten Tatherrschaft und handelten vorsätzlich.",
+            "Damit wurden die Körperverletzungen mittels eines gefährlichen Werkzeugs begangen.",
+            "A und E waren beide vor Ort und wirkten arbeitsteilig zusammen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Vorsatz von A und E hinsichtlich der Körperverletzung aus dem gemeinsamen Tatplan und den konkreten Verletzungshandlungen",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Vorsatz hinsichtlich des Einsatzes der brennenden Zigaretten als gefährliches Werkzeug",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Vorsatz hinsichtlich der gemeinschaftlichen Begehung nach § 224 Abs. 1 Nr. 4 StGB",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und E; Vorsatz zur gefährlichen Körperverletzung einschließlich der bejahten Qualifikationen nach § 224 Abs. 1 Nr. 2 und Nr. 4 StGB",
+            "evidence_scope": "A und E; gefährliche Körperverletzung nach § 224 Abs. 1 Nr. 2 und Nr. 4 StGB",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan; A und E wirkten arbeitsteilig zusammen und handelten vorsätzlich.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bejaht den Vorsatz von A und E für die gefährliche Körperverletzung und knüpft ihn an den gemeinsamen Plan sowie an die gezielte Verwendung brennender Zigaretten und das arbeitsteilige Zusammenwirken. Ein Abstellen auf bloße Fahrlässigkeit oder Unvorhersehbarkeit liegt nicht vor.",
+          "evidence": [
+            "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan.",
+            "Beide hatten Tatherrschaft und handelten vorsätzlich.",
+            "Die brennenden Zigaretten wurden gezielt im Gesicht des O ausgedrückt",
+            "A und E waren beide vor Ort und wirkten arbeitsteilig zusammen."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Vorsatz von A und E hinsichtlich der Körperverletzung aus dem gemeinsamen Plan",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Vorsatz hinsichtlich der qualifizierenden Verwendung brennender Zigaretten als gefährliches Werkzeug",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Vorsatz hinsichtlich der gemeinschaftlichen Begehung nach § 224 Abs. 1 Nr. 4 StGB",
+              "satisfied": true,
+              "basis": "implied"
+            },
+            {
+              "requirement": "Keine Behandlung der planmäßigen Verletzungen oder Qualifikationsumstände als bloß fahrlässig oder unvorhergesehen",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und E; gefährliche Körperverletzung nach §§ 223, 224 StGB; Vorsatz einschließlich der bejahten Qualifikationsumstände",
+            "evidence_scope": "A und E; gefährliche Körperverletzung nach §§ 223, 224 Abs. 1 Nr. 2 und Nr. 4 StGB; Vorsatz",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan; beide handelten vorsätzlich; brennende Zigaretten wurden gezielt im Gesicht ausgedrückt; beide wirkten arbeitsteilig zusammen.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort leitet den Vorsatz hinsichtlich der bejahten Qualifikationsumstände (§ 224 Abs. 1 Nr. 2 und Nr. 4 StGB) nicht aus dem gemeinsamen Plan ab. Zum Grundtatbestand wird der Vorsatz lediglich kursorisch behauptet; bei den Qualifikationen fehlt eine entsprechende Ableitung des Vorsatzes aus der Vorbereitung und Absprache gänzlich.",
+          "evidence": [
+            "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan. Während A insbesondere schlug und die Forderungen formulierte, sicherte E die Tat mit der Pistole ab und beteiligte sich an den weiteren Misshandlungen. Beide hatten Tatherrschaft und handelten vorsätzlich."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Ableitung des Vorsatzes hinsichtlich der Körperverletzung und der jeweils bejahten Qualifikationsumstände aus dem gemeinsamen Plan (Hinterhalt/Parkplatz, gemeinsame Misshandlung, Zigarettenverbrennungen im Gesicht)",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und E, Vorsatz zur gefährlichen Körperverletzung (§§ 223, 224 StGB)",
+            "evidence_scope": "A und E, Vorsatz zur gefährlichen Körperverletzung (§§ 223, 224 StGB)",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Beide hatten Tatherrschaft und handelten entsprechend dem gemeinsamen Plan vorsätzlich.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 30923,
+        "output_tokens": 11978,
+        "total_tokens": 42901,
+        "cached_input_tokens": 20213,
+        "cache_write_tokens": 0
+      },
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt die Verletzungen und die bejahten Qualifikationsumstände als vorsätzliches, planmäßiges und arbeitsteiliges Handeln, nicht als fahrlässig oder unvorhergesehen.",
+              "evidence": [
+                "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan.",
+                "Beide hatten Tatherrschaft und handelten vorsätzlich.",
+                "Die brennenden Zigaretten wurden gezielt im Gesicht des O ausgedrückt und verursachten dort Brandwunden.",
+                "A und E waren beide vor Ort und wirkten arbeitsteilig zusammen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Vorsatz von A und E hinsichtlich der Körperverletzung wird aus ihrem gemeinsamen Tatplan und den gemeinsamen Misshandlungen hergeleitet.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Vorsatz hinsichtlich der bejahten Qualifikation durch Verwendung der brennenden Zigaretten wird angesichts des gezielten Ausdrückens im Gesicht bejaht.",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Vorsatz hinsichtlich des gemeinschaftlichen Zusammenwirkens wird durch das arbeitsteilige Vorgehen bejaht.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und E; Vorsatz zur gefährlichen Körperverletzung und zu den bejahten Qualifikationsumständen",
+                "evidence_scope": "A und E; Prüfung der Körperverletzung nach §§ 223, 224 StGB einschließlich der bejahten Qualifikationen",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Tatbeiträge entsprachen dem gemeinsamen Plan; beide handelten vorsätzlich, und die Zigaretten wurden gezielt im Gesicht des O ausgedrückt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort leitet den Vorsatz der Beteiligten aus dem gemeinsamen Plan und den gezielten Misshandlungen ab. Die bejahten Qualifikationen nach § 224 Abs. 1 Nr. 2 und Nr. 4 werden nicht als bloß fahrlässig oder unvorhergesehen, sondern als planmäßig und vorsätzlich behandelt.",
+              "evidence": [
+                "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan.",
+                "Beide hatten Tatherrschaft und handelten vorsätzlich.",
+                "Die brennenden Zigaretten wurden gezielt im Gesicht des O ausgedrückt und verursachten dort Brandwunden.",
+                "Damit wurden die Körperverletzungen mittels eines gefährlichen Werkzeugs begangen.",
+                "A und E waren beide vor Ort und wirkten arbeitsteilig zusammen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Vorsatz von A und E hinsichtlich der Körperverletzung",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Vorsatz hinsichtlich der bejahten Qualifikation des § 224 Abs. 1 Nr. 2 StGB durch brennende Zigaretten als gefährliches Werkzeug",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Vorsatz hinsichtlich der bejahten Qualifikation des § 224 Abs. 1 Nr. 4 StGB durch gemeinschaftliche Begehung",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Ableitung aus dem gemeinsamen Plan",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und E; Vorsatz zur gefährlichen Körperverletzung einschließlich der bejahten Qualifikationsumstände aus dem gemeinsamen Plan",
+                "evidence_scope": "A und E; gefährliche Körperverletzung nach §§ 223, 224 StGB, insbesondere § 224 Abs. 1 Nr. 2 und Nr. 4",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan; beide handelten vorsätzlich; die brennenden Zigaretten wurden gezielt im Gesicht ausgedrückt; A und E wirkten arbeitsteilig zusammen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Der Vorsatz bezüglich der Körperverletzung und insbesondere der Qualifikationsumstände (§ 224 Abs. 1 Nr. 2 und Nr. 4 StGB) wird nicht aus dem gemeinsamen Tatplan abgeleitet, sondern lediglich pauschal behauptet.",
+              "evidence": [
+                "Beide hatten Tatherrschaft und handelten vorsätzlich.",
+                "Die brennenden Zigaretten wurden gezielt im Gesicht des O ausgedrückt und verursachten dort Brandwunden."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Ableitung des Vorsatzes von A und E hinsichtlich der Körperverletzung und der bejahten Qualifikationsumstände aus ihrem gemeinsamen Plan (Locken unter Vorwand, gemeinsame Misshandlung, Verletzung mit Zigaretten)",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Vorsatz von A und E bezüglich Körperverletzung und Qualifikationen gemäß § 224 StGB",
+                "evidence_scope": "Vorsatz von A und E bei § 223/§ 224 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort leitet den Vorsatz beider Täter ausdrücklich aus den planmäßigen Tatbeiträgen und den konkreten Verletzungen ab. Die gezielte Verwendung der Zigaretten und das arbeitsteilige Zusammenwirken tragen auch die bejahten Qualifikationen; eine Behandlung der Verletzungen oder Qualifikationsumstände als fahrlässig oder unvorhergesehen erfolgt nicht.",
+              "evidence": [
+                "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan.",
+                "A schlug O gegen die Brust",
+                "drückten brennende Zigaretten in seinem Gesicht aus",
+                "Beide hatten Tatherrschaft und handelten vorsätzlich.",
+                "Damit wurden die Körperverletzungen mittels eines gefährlichen Werkzeugs begangen.",
+                "A und E waren beide vor Ort und wirkten arbeitsteilig zusammen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Vorsatz von A und E hinsichtlich der Körperverletzung aus dem gemeinsamen Tatplan und den konkreten Verletzungshandlungen",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Vorsatz hinsichtlich des Einsatzes der brennenden Zigaretten als gefährliches Werkzeug",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Vorsatz hinsichtlich der gemeinschaftlichen Begehung nach § 224 Abs. 1 Nr. 4 StGB",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und E; Vorsatz zur gefährlichen Körperverletzung einschließlich der bejahten Qualifikationen nach § 224 Abs. 1 Nr. 2 und Nr. 4 StGB",
+                "evidence_scope": "A und E; gefährliche Körperverletzung nach § 224 Abs. 1 Nr. 2 und Nr. 4 StGB",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan; A und E wirkten arbeitsteilig zusammen und handelten vorsätzlich.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bejaht den Vorsatz von A und E für die gefährliche Körperverletzung und knüpft ihn an den gemeinsamen Plan sowie an die gezielte Verwendung brennender Zigaretten und das arbeitsteilige Zusammenwirken. Ein Abstellen auf bloße Fahrlässigkeit oder Unvorhersehbarkeit liegt nicht vor.",
+              "evidence": [
+                "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan.",
+                "Beide hatten Tatherrschaft und handelten vorsätzlich.",
+                "Die brennenden Zigaretten wurden gezielt im Gesicht des O ausgedrückt",
+                "A und E waren beide vor Ort und wirkten arbeitsteilig zusammen."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Vorsatz von A und E hinsichtlich der Körperverletzung aus dem gemeinsamen Plan",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Vorsatz hinsichtlich der qualifizierenden Verwendung brennender Zigaretten als gefährliches Werkzeug",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Vorsatz hinsichtlich der gemeinschaftlichen Begehung nach § 224 Abs. 1 Nr. 4 StGB",
+                  "satisfied": true,
+                  "basis": "implied"
+                },
+                {
+                  "requirement": "Keine Behandlung der planmäßigen Verletzungen oder Qualifikationsumstände als bloß fahrlässig oder unvorhergesehen",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und E; gefährliche Körperverletzung nach §§ 223, 224 StGB; Vorsatz einschließlich der bejahten Qualifikationsumstände",
+                "evidence_scope": "A und E; gefährliche Körperverletzung nach §§ 223, 224 Abs. 1 Nr. 2 und Nr. 4 StGB; Vorsatz",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan; beide handelten vorsätzlich; brennende Zigaretten wurden gezielt im Gesicht ausgedrückt; beide wirkten arbeitsteilig zusammen.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort leitet den Vorsatz hinsichtlich der bejahten Qualifikationsumstände (§ 224 Abs. 1 Nr. 2 und Nr. 4 StGB) nicht aus dem gemeinsamen Plan ab. Zum Grundtatbestand wird der Vorsatz lediglich kursorisch behauptet; bei den Qualifikationen fehlt eine entsprechende Ableitung des Vorsatzes aus der Vorbereitung und Absprache gänzlich.",
+              "evidence": [
+                "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan. Während A insbesondere schlug und die Forderungen formulierte, sicherte E die Tat mit der Pistole ab und beteiligte sich an den weiteren Misshandlungen. Beide hatten Tatherrschaft und handelten vorsätzlich."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Ableitung des Vorsatzes hinsichtlich der Körperverletzung und der jeweils bejahten Qualifikationsumstände aus dem gemeinsamen Plan (Hinterhalt/Parkplatz, gemeinsame Misshandlung, Zigarettenverbrennungen im Gesicht)",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und E, Vorsatz zur gefährlichen Körperverletzung (§§ 223, 224 StGB)",
+                "evidence_scope": "A und E, Vorsatz zur gefährlichen Körperverletzung (§§ 223, 224 StGB)",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Beide hatten Tatherrschaft und handelten entsprechend dem gemeinsamen Plan vorsätzlich.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "stable_with_dissent"
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-047",
+      "title": "Vorsatz zur gefährlichen Körperverletzung",
+      "verdict": "fail",
+      "resolution": "unresolved",
+      "reasoning": "The committee majority changed between two independent rounds; the criterion is conservatively unresolved.",
+      "evidence": [],
+      "vote_counts": {
+        "pass": 1,
+        "fail": 2,
+        "error": 0
+      },
+      "judge_agreement": 0.667,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verknüpft den gemeinsamen Tatplan mit den konkreten Körperverletzungsbeiträgen von A und E und schließt daraus ausdrücklich auf vorsätzliches Handeln. Auch die mit Zigaretten verursachten Verletzungen und das gemeinschaftliche Zusammenwirken werden anschließend jeweils geprüft und bejaht.",
+          "evidence": [
+            "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan.",
+            "Während A insbesondere schlug ... sicherte E die Tat mit der Pistole ab und beteiligte sich an den weiteren Misshandlungen.",
+            "Beide hatten Tatherrschaft und handelten vorsätzlich."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Für den Vorsatz der gefährlichen Körperverletzung wird kein Vorsatzmaßstab entfaltet und keine ausdrückliche Verknüpfung zwischen gemeinsamer Planung, den qualifizierenden Umständen und dem Vorsatz hergestellt. Die Feststellung 'handelten vorsätzlich' bleibt eine bloße Behauptung.",
+          "evidence": [
+            "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan.",
+            "Beide hatten Tatherrschaft und handelten vorsätzlich."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Es fehlt an einem kriterienspezifischen Maßstab für den Vorsatz bezüglich der Körperverletzung und der Qualifikationsmerkmale des § 224 Abs. 1 StGB (Wissen und Wollen). Der Vorsatz wird lediglich thesenhaft behauptet ('handelten vorsätzlich'), ohne eine syllogistische Subsumtion anhand des Tatplans und der konkreten Tathandlungen vorzunehmen.",
+          "evidence": [
+            "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan. Während A insbesondere schlug und die Forderungen formulierte, sicherte E die Tat mit der Pistole ab und beteiligte sich an den weiteren Misshandlungen. Beide hatten Tatherrschaft und handelten vorsätzlich."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 2,
+            "fail": 1,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verknüpft den gemeinsamen Tatplan und die konkreten Misshandlungen mit der ausdrücklichen Feststellung vorsätzlichen Handelns und führt die Prüfung der bejahten Qualifikationen zu einem Ergebnis.",
+              "evidence": [
+                "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan.",
+                "Beide hatten Tatherrschaft und handelten vorsätzlich.",
+                "Die brennenden Zigaretten wurden gezielt im Gesicht des O ausgedrückt und verursachten dort Brandwunden.",
+                "§ 224 Abs. 1 Nr. 2 StGB ist erfüllt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Prüfung im Abschnitt zur gefährlichen Körperverletzung verbindet den gemeinsamen Plan und die konkreten Misshandlungen mit der Feststellung vorsätzlichen Handelns sowie den Ergebnissen zu den Qualifikationen. Die Darstellung ist knapp, enthält aber eine erkennbare rechtliche Ableitung.",
+              "evidence": [
+                "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan.",
+                "Beide hatten Tatherrschaft und handelten vorsätzlich.",
+                "Die brennenden Zigaretten wurden gezielt im Gesicht des O ausgedrückt und verursachten dort Brandwunden.",
+                "A und E waren beide vor Ort und wirkten arbeitsteilig zusammen.",
+                "§ 224 Abs. 1 Nr. 4 StGB ist erfüllt."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Prüfung des subjektiven Tatbestands bzw. des Vorsatzes bezüglich der Körperverletzung und der Qualifikationsmerkmale erfolgt nicht im Rahmen einer methodischen Subsumtion (Obersatz zum Vorsatz, Subsumtion anhand konkreter Tatsachen, Schlusssatz), sondern erschöpft sich in einer bloßen Feststellung (\"handelten vorsätzlich\").",
+              "evidence": [
+                "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan. Während A insbesondere schlug und die Forderungen formulierte, sicherte E die Tat mit der Pistole ab und beteiligte sich an den weiteren Misshandlungen. Beide hatten Tatherrschaft und handelten vorsätzlich."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 1,
+            "fail": 2,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verknüpft den gemeinsamen Tatplan mit den konkreten Körperverletzungsbeiträgen von A und E und schließt daraus ausdrücklich auf vorsätzliches Handeln. Auch die mit Zigaretten verursachten Verletzungen und das gemeinschaftliche Zusammenwirken werden anschließend jeweils geprüft und bejaht.",
+              "evidence": [
+                "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan.",
+                "Während A insbesondere schlug ... sicherte E die Tat mit der Pistole ab und beteiligte sich an den weiteren Misshandlungen.",
+                "Beide hatten Tatherrschaft und handelten vorsätzlich."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Für den Vorsatz der gefährlichen Körperverletzung wird kein Vorsatzmaßstab entfaltet und keine ausdrückliche Verknüpfung zwischen gemeinsamer Planung, den qualifizierenden Umständen und dem Vorsatz hergestellt. Die Feststellung 'handelten vorsätzlich' bleibt eine bloße Behauptung.",
+              "evidence": [
+                "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan.",
+                "Beide hatten Tatherrschaft und handelten vorsätzlich."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Es fehlt an einem kriterienspezifischen Maßstab für den Vorsatz bezüglich der Körperverletzung und der Qualifikationsmerkmale des § 224 Abs. 1 StGB (Wissen und Wollen). Der Vorsatz wird lediglich thesenhaft behauptet ('handelten vorsätzlich'), ohne eine syllogistische Subsumtion anhand des Tatplans und der konkreten Tathandlungen vorzunehmen.",
+              "evidence": [
+                "Die Tatbeiträge erfolgten entsprechend dem gemeinsamen Plan. Während A insbesondere schlug und die Forderungen formulierte, sicherte E die Tat mit der Pistole ab und beteiligte sich an den weiteren Misshandlungen. Beide hatten Tatherrschaft und handelten vorsätzlich."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ],
+      "committee_status": "majority_flip"
+    }
+  ]
+}

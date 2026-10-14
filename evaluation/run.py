@@ -614,7 +614,7 @@ def _judge_call_responses(client: OpenAI, model: str, prompt: str,
     ``service_tier="flex"`` bills at Batch-API rates AND keeps prompt caching,
     which the Batch API itself does not (see docs/judging-cost.md).
     """
-    explicit_cache = bool(cache_key) and model.lower().startswith("gpt-5.6")
+    explicit_cache = bool(cache_key) and model.lower().startswith(("gpt-5.6", "gpt-6"))
     request: dict[str, Any] = {
         "model": model,
         "input": (

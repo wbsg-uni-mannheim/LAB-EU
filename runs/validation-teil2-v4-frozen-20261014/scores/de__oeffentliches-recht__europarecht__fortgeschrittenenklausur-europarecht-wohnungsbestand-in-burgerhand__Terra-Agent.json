@@ -1,0 +1,413 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/europarecht/fortgeschrittenenklausur-europarecht-wohnungsbestand-in-burgerhand",
+    "title": "Fortgeschrittenenklausur Europarecht: Wohnungsbestand in Bürgerhand?"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__europarecht__fortgeschrittenenklausur-europarecht-wohnungsbestand-in-burgerhand/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/europarecht/fortgeschrittenenklausur-europarecht-wohnungsbestand-in-burgerhand/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:18:42.597370+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Zulässigkeit der Klage": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Zulässigkeit der Klage › Zuständigkeit des EuGH": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "conclusion": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 18477,
+    "output_tokens": 2628,
+    "total_tokens": 21105,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 5747
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 18477,
+    "output_tokens": 2628,
+    "total_tokens": 21105,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 5747
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-003",
+      "title": "Zuständigkeit des EuGH",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort bestimmt ausdrücklich den Gerichtshof als zuständigen Spruchkörper für die Vertragsverletzungsklage. Der Verweis auf Art. 258 AEUV ist mit der Zuständigkeit nach Art. 258 Abs. 2 AEUV vereinbar.",
+      "evidence": [
+        "Der Gerichtshof ist hierfür nach Art. 19 Abs. 1 Unterabs. 1 EUV und Art. 258 AEUV zuständig."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bestimmt ausdrücklich den Gerichtshof als zuständigen Spruchkörper für die Vertragsverletzungsklage. Der Verweis auf Art. 258 AEUV ist mit der Zuständigkeit nach Art. 258 Abs. 2 AEUV vereinbar.",
+          "evidence": [
+            "Der Gerichtshof ist hierfür nach Art. 19 Abs. 1 Unterabs. 1 EUV und Art. 258 AEUV zuständig."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Der EuGH ist als Spruchkörper für die Entscheidung der Vertragsverletzungsklage nach Art. 258 Abs. 2 AEUV zuständig.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Zuständigkeit des EuGH als Spruchkörper für die Vertragsverletzungsklage nach Art. 258 Abs. 2 AEUV",
+            "evidence_scope": "Zuständigkeit des Gerichtshofs für die gegen Deutschland gerichtete Vertragsverletzungsklage nach Art. 258 AEUV",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Gerichtshof ist nach Art. 19 Abs. 1 Unterabs. 1 EUV und Art. 258 AEUV zuständig.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort bestimmt den Gerichtshof ausdrücklich als zuständigen Spruchkörper für die Vertragsverletzungsklage nach Art. 258 AEUV. Damit wird die Zuständigkeit des EuGH für die Entscheidung der Vertragsverletzungsklage bejaht; ein anderes Gericht wird nicht für zuständig gehalten.",
+          "evidence": [
+            "Statthaft ist die Vertragsverletzungsklage nach Art. 258 AEUV.",
+            "Der Gerichtshof ist hierfür nach Art. 19 Abs. 1 Unterabs. 1 EUV und Art. 258 AEUV zuständig."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Der EuGH bzw. Gerichtshof wird als zuständiger Spruchkörper bestimmt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Zuständigkeit bezieht sich auf die Vertragsverletzungsklage nach Art. 258 AEUV bzw. Art. 258 Abs. 2 AEUV.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "EuGH als zuständiger Spruchkörper für die Vertragsverletzungsklage nach Art. 258 Abs. 2 AEUV",
+            "evidence_scope": "Gerichtshof als zuständig für die Vertragsverletzungsklage nach Art. 258 AEUV",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Gerichtshof ist für die Vertragsverletzungsklage nach Art. 258 AEUV zuständig.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Falllösung bestimmt unter Abschnitt A. I. ausdrücklich den Gerichtshof gestützt auf Art. 19 Abs. 1 UAbs. 1 EUV und Art. 258 AEUV als zuständiges Gericht für die Vertragsverletzungsklage. Weder das EuG noch ein nationales Gericht werden für zuständig gehalten.",
+          "evidence": [
+            "Statthaft ist die Vertragsverletzungsklage nach Art. 258 AEUV. Der Gerichtshof ist hierfür nach Art. 19 Abs. 1 Unterabs. 1 EUV und Art. 258 AEUV zuständig."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Der EuGH wird als zuständiger Spruchkörper für die Vertragsverletzungsklage nach Art. 258 AEUV bestimmt (und weder das EuG noch ein nationales Gericht als zuständig erachtet).",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Zuständigkeit des EuGH für die Vertragsverletzungsklage nach Art. 258 AEUV",
+            "evidence_scope": "Zuständigkeit des EuGH für die Vertragsverletzungsklage nach Art. 258 AEUV",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Gerichtshof ist nach Art. 19 Abs. 1 UAbs. 1 EUV und Art. 258 AEUV für die Vertragsverletzungsklage zuständig.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 18477,
+        "output_tokens": 2628,
+        "total_tokens": 21105,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 5747
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bestimmt ausdrücklich den Gerichtshof als zuständigen Spruchkörper für die Vertragsverletzungsklage. Der Verweis auf Art. 258 AEUV ist mit der Zuständigkeit nach Art. 258 Abs. 2 AEUV vereinbar.",
+              "evidence": [
+                "Der Gerichtshof ist hierfür nach Art. 19 Abs. 1 Unterabs. 1 EUV und Art. 258 AEUV zuständig."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Der EuGH ist als Spruchkörper für die Entscheidung der Vertragsverletzungsklage nach Art. 258 Abs. 2 AEUV zuständig.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Zuständigkeit des EuGH als Spruchkörper für die Vertragsverletzungsklage nach Art. 258 Abs. 2 AEUV",
+                "evidence_scope": "Zuständigkeit des Gerichtshofs für die gegen Deutschland gerichtete Vertragsverletzungsklage nach Art. 258 AEUV",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Gerichtshof ist nach Art. 19 Abs. 1 Unterabs. 1 EUV und Art. 258 AEUV zuständig.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort bestimmt den Gerichtshof ausdrücklich als zuständigen Spruchkörper für die Vertragsverletzungsklage nach Art. 258 AEUV. Damit wird die Zuständigkeit des EuGH für die Entscheidung der Vertragsverletzungsklage bejaht; ein anderes Gericht wird nicht für zuständig gehalten.",
+              "evidence": [
+                "Statthaft ist die Vertragsverletzungsklage nach Art. 258 AEUV.",
+                "Der Gerichtshof ist hierfür nach Art. 19 Abs. 1 Unterabs. 1 EUV und Art. 258 AEUV zuständig."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Der EuGH bzw. Gerichtshof wird als zuständiger Spruchkörper bestimmt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Zuständigkeit bezieht sich auf die Vertragsverletzungsklage nach Art. 258 AEUV bzw. Art. 258 Abs. 2 AEUV.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "EuGH als zuständiger Spruchkörper für die Vertragsverletzungsklage nach Art. 258 Abs. 2 AEUV",
+                "evidence_scope": "Gerichtshof als zuständig für die Vertragsverletzungsklage nach Art. 258 AEUV",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Gerichtshof ist für die Vertragsverletzungsklage nach Art. 258 AEUV zuständig.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Falllösung bestimmt unter Abschnitt A. I. ausdrücklich den Gerichtshof gestützt auf Art. 19 Abs. 1 UAbs. 1 EUV und Art. 258 AEUV als zuständiges Gericht für die Vertragsverletzungsklage. Weder das EuG noch ein nationales Gericht werden für zuständig gehalten.",
+              "evidence": [
+                "Statthaft ist die Vertragsverletzungsklage nach Art. 258 AEUV. Der Gerichtshof ist hierfür nach Art. 19 Abs. 1 Unterabs. 1 EUV und Art. 258 AEUV zuständig."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Der EuGH wird als zuständiger Spruchkörper für die Vertragsverletzungsklage nach Art. 258 AEUV bestimmt (und weder das EuG noch ein nationales Gericht als zuständig erachtet).",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Zuständigkeit des EuGH für die Vertragsverletzungsklage nach Art. 258 AEUV",
+                "evidence_scope": "Zuständigkeit des EuGH für die Vertragsverletzungsklage nach Art. 258 AEUV",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Gerichtshof ist nach Art. 19 Abs. 1 UAbs. 1 EUV und Art. 258 AEUV für die Vertragsverletzungsklage zuständig.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": []
+}

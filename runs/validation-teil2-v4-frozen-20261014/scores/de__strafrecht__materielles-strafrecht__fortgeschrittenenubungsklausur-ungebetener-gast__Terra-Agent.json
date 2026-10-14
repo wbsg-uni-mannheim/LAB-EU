@@ -1,0 +1,914 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-ungebetener-gast",
+    "title": "Fortgeschrittenenübungsklausur: Ungebetener Gast"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__strafrecht__materielles-strafrecht__fortgeschrittenenubungsklausur-ungebetener-gast/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/strafrecht/materielles-strafrecht/fortgeschrittenenubungsklausur-ungebetener-gast/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:38:58.470285+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 2,
+  "n_passed": 0,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.0,
+  "content_score": {
+    "n_passed": 0,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 0,
+    "root_pass_rate": 0.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 0,
+    "points_available": 2,
+    "pass_rate": 0.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 1,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 2,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 0,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Strafbarkeit von A und B": {
+      "n_criteria": 2,
+      "n_passed": 0,
+      "n_failed": 2,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Strafbarkeit von A und B › §§ 242 Abs. 1, 244 Abs. 1 Nr. 1 lit. b, Nr. 3, Abs. 4, 25 Abs. 2 StGB": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "Strafbarkeit von A und B › §§ 242 Abs. 1, 244 Abs. 4, 25 Abs. 2, 22, 23 Abs. 1 StGB": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "rule_statement": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    },
+    "application": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 2,
+      "n_passed": 0,
+      "n_failed": 2,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 28267,
+    "output_tokens": 12574,
+    "total_tokens": 40841,
+    "cached_input_tokens": 1792,
+    "cache_write_tokens": 8900
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 28267,
+    "output_tokens": 12574,
+    "total_tokens": 40841,
+    "cached_input_tokens": 1792,
+    "cache_write_tokens": 8900
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-024",
+      "title": "Sonstiges Mittel bei § 244 Abs. 1 Nr. 1 lit. b StGB",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort erkennt zwar bei § 250 Abs. 1 Nr. 1 Buchst. b, dass ein Schal als sonstiges Werkzeug oder Mittel in Betracht kommt. Das ist aber die Raubqualifikation und nicht die vom Kriterium verlangte Diebstahlsqualifikation nach § 244 Abs. 1 Nr. 1 lit. b. Die Erörterung zu § 244 behandelt nur Nr. 3; eine Übertragung der Erwägung zum Schal auf diese andere Prüfung ist nicht möglich.",
+      "evidence": [
+        "Ein Schal ist zwar weder Waffe noch gefährliches Werkzeug, kann aber ein sonstiges Werkzeug oder Mittel im Sinne des § 250 Abs. 1 Nr. 1 Buchst. b StGB sein.",
+        "A und B begingen den Diebstahl daher unter Einbrechen in eine Wohnung."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort erkennt zwar bei § 250 Abs. 1 Nr. 1 Buchst. b, dass ein Schal als sonstiges Werkzeug oder Mittel in Betracht kommt. Das ist aber die Raubqualifikation und nicht die vom Kriterium verlangte Diebstahlsqualifikation nach § 244 Abs. 1 Nr. 1 lit. b. Die Erörterung zu § 244 behandelt nur Nr. 3; eine Übertragung der Erwägung zum Schal auf diese andere Prüfung ist nicht möglich.",
+          "evidence": [
+            "Ein Schal ist zwar weder Waffe noch gefährliches Werkzeug, kann aber ein sonstiges Werkzeug oder Mittel im Sinne des § 250 Abs. 1 Nr. 1 Buchst. b StGB sein.",
+            "A und B begingen den Diebstahl daher unter Einbrechen in eine Wohnung."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bei der Diebstahlsqualifikation nach § 244 Abs. 1 Nr. 1 lit. b erkennen, dass auch objektiv ungefährliche Alltagsgegenstände als sonstige Werkzeuge oder Mittel erfasst sein können und der Schal grundsätzlich tauglich ist.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A; Diebstahlsqualifikation nach § 244 Abs. 1 Nr. 1 lit. b StGB; sonstiges Werkzeug oder Mittel",
+            "evidence_scope": "A; Raubqualifikation nach § 250 Abs. 1 Nr. 1 Buchst. b StGB; Schal als sonstiges Werkzeug oder Mittel. Bei § 244 prüft die Antwort allein Nr. 3.",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Für § 244 Abs. 1 Nr. 1 lit. b wird kein Grund angegeben; die Schal-Erörterung betrifft ausdrücklich § 250 Abs. 1 Nr. 1 Buchst. b.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort behandelt den Schal als sonstiges Mittel nur bei der Raubqualifikation des § 250 Abs. 1 Nr. 1 Buchst. b StGB. Die criterion verlangt diese Erkenntnis aber bei der Diebstahlsqualifikation des § 244 Abs. 1 Nr. 1 lit. b StGB. Da die Erwägung zu einer anderen Vorschrift gehört und nicht auf § 244 übertragen werden darf, ist die criterion nicht erfüllt.",
+          "evidence": [
+            "A führte während des Raubes einen Schal bei sich, den er unmittelbar zum Fesseln der T einsetzte.",
+            "Ein Schal ist zwar weder Waffe noch gefährliches Werkzeug, kann aber ein sonstiges Werkzeug oder Mittel im Sinne des § 250 Abs. 1 Nr. 1 Buchst. b StGB sein.",
+            "A und B begingen den Diebstahl daher unter Einbrechen in eine Wohnung."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort prüft § 244 Abs. 1 Nr. 1 lit. b StGB bei der Diebstahlsqualifikation.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Sie erkennt bei § 244 Abs. 1 Nr. 1 lit. b StGB, dass objektiv ungefährliche Alltagsgegenstände als sonstige Werkzeuge oder Mittel erfasst werden.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Sie hält den Schal bei § 244 Abs. 1 Nr. 1 lit. b StGB grundsätzlich für tauglich.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Diebstahlsqualifikation nach § 244 Abs. 1 Nr. 1 lit. b StGB; Schal als sonstiges Werkzeug oder Mittel",
+            "evidence_scope": "Qualifikation des schweren Raubes nach § 250 Abs. 1 Nr. 1 Buchst. b StGB; Schal als sonstiges Werkzeug oder Mittel",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Der Schal sei weder Waffe noch gefährliches Werkzeug, könne aber ein sonstiges Werkzeug oder Mittel im Sinne des § 250 Abs. 1 Nr. 1 Buchst. b StGB sein.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Falllösung prüft den Schal ausschließlich im Rahmen der Raubqualifikation (§ 250 Abs. 1 Nr. 1 lit. b StGB). Eine Prüfung der Diebstahlsqualifikation nach § 244 Abs. 1 Nr. 1 lit. b StGB (und die Einordnung des Schals hierunter) fehlt vollständig; bei § 244 StGB wird lediglich die Nr. 3 geprüft.",
+          "evidence": [
+            "Ein Schal ist zwar weder Waffe noch gefährliches Werkzeug, kann aber ein sonstiges Werkzeug oder Mittel im Sinne des § 250 Abs. 1 Nr. 1 Buchst. b StGB sein."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Prüfung bei der Diebstahlsqualifikation (§ 244 Abs. 1 Nr. 1 lit. b StGB)",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Erkenntnis bei § 244 Abs. 1 Nr. 1 lit. b StGB, dass auch objektiv ungefährliche Alltagsgegenstände als sonstige Werkzeuge oder Mittel erfasst werden und der Schal grundsätzlich tauglich ist",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Diebstahlsqualifikation (§ 244 Abs. 1 Nr. 1 lit. b StGB) bezüglich des Schals",
+            "evidence_scope": "Schwerer Raub (§ 250 Abs. 1 Nr. 1 lit. b StGB) bezüglich des Schals",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 13727,
+        "output_tokens": 5263,
+        "total_tokens": 18990,
+        "cached_input_tokens": 1024,
+        "cache_write_tokens": 4320
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort erkennt zwar bei § 250 Abs. 1 Nr. 1 Buchst. b, dass ein Schal als sonstiges Werkzeug oder Mittel in Betracht kommt. Das ist aber die Raubqualifikation und nicht die vom Kriterium verlangte Diebstahlsqualifikation nach § 244 Abs. 1 Nr. 1 lit. b. Die Erörterung zu § 244 behandelt nur Nr. 3; eine Übertragung der Erwägung zum Schal auf diese andere Prüfung ist nicht möglich.",
+              "evidence": [
+                "Ein Schal ist zwar weder Waffe noch gefährliches Werkzeug, kann aber ein sonstiges Werkzeug oder Mittel im Sinne des § 250 Abs. 1 Nr. 1 Buchst. b StGB sein.",
+                "A und B begingen den Diebstahl daher unter Einbrechen in eine Wohnung."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bei der Diebstahlsqualifikation nach § 244 Abs. 1 Nr. 1 lit. b erkennen, dass auch objektiv ungefährliche Alltagsgegenstände als sonstige Werkzeuge oder Mittel erfasst sein können und der Schal grundsätzlich tauglich ist.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A; Diebstahlsqualifikation nach § 244 Abs. 1 Nr. 1 lit. b StGB; sonstiges Werkzeug oder Mittel",
+                "evidence_scope": "A; Raubqualifikation nach § 250 Abs. 1 Nr. 1 Buchst. b StGB; Schal als sonstiges Werkzeug oder Mittel. Bei § 244 prüft die Antwort allein Nr. 3.",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Für § 244 Abs. 1 Nr. 1 lit. b wird kein Grund angegeben; die Schal-Erörterung betrifft ausdrücklich § 250 Abs. 1 Nr. 1 Buchst. b.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort behandelt den Schal als sonstiges Mittel nur bei der Raubqualifikation des § 250 Abs. 1 Nr. 1 Buchst. b StGB. Die criterion verlangt diese Erkenntnis aber bei der Diebstahlsqualifikation des § 244 Abs. 1 Nr. 1 lit. b StGB. Da die Erwägung zu einer anderen Vorschrift gehört und nicht auf § 244 übertragen werden darf, ist die criterion nicht erfüllt.",
+              "evidence": [
+                "A führte während des Raubes einen Schal bei sich, den er unmittelbar zum Fesseln der T einsetzte.",
+                "Ein Schal ist zwar weder Waffe noch gefährliches Werkzeug, kann aber ein sonstiges Werkzeug oder Mittel im Sinne des § 250 Abs. 1 Nr. 1 Buchst. b StGB sein.",
+                "A und B begingen den Diebstahl daher unter Einbrechen in eine Wohnung."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort prüft § 244 Abs. 1 Nr. 1 lit. b StGB bei der Diebstahlsqualifikation.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Sie erkennt bei § 244 Abs. 1 Nr. 1 lit. b StGB, dass objektiv ungefährliche Alltagsgegenstände als sonstige Werkzeuge oder Mittel erfasst werden.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Sie hält den Schal bei § 244 Abs. 1 Nr. 1 lit. b StGB grundsätzlich für tauglich.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Diebstahlsqualifikation nach § 244 Abs. 1 Nr. 1 lit. b StGB; Schal als sonstiges Werkzeug oder Mittel",
+                "evidence_scope": "Qualifikation des schweren Raubes nach § 250 Abs. 1 Nr. 1 Buchst. b StGB; Schal als sonstiges Werkzeug oder Mittel",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Der Schal sei weder Waffe noch gefährliches Werkzeug, könne aber ein sonstiges Werkzeug oder Mittel im Sinne des § 250 Abs. 1 Nr. 1 Buchst. b StGB sein.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Falllösung prüft den Schal ausschließlich im Rahmen der Raubqualifikation (§ 250 Abs. 1 Nr. 1 lit. b StGB). Eine Prüfung der Diebstahlsqualifikation nach § 244 Abs. 1 Nr. 1 lit. b StGB (und die Einordnung des Schals hierunter) fehlt vollständig; bei § 244 StGB wird lediglich die Nr. 3 geprüft.",
+              "evidence": [
+                "Ein Schal ist zwar weder Waffe noch gefährliches Werkzeug, kann aber ein sonstiges Werkzeug oder Mittel im Sinne des § 250 Abs. 1 Nr. 1 Buchst. b StGB sein."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Prüfung bei der Diebstahlsqualifikation (§ 244 Abs. 1 Nr. 1 lit. b StGB)",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Erkenntnis bei § 244 Abs. 1 Nr. 1 lit. b StGB, dass auch objektiv ungefährliche Alltagsgegenstände als sonstige Werkzeuge oder Mittel erfasst werden und der Schal grundsätzlich tauglich ist",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Diebstahlsqualifikation (§ 244 Abs. 1 Nr. 1 lit. b StGB) bezüglich des Schals",
+                "evidence_scope": "Schwerer Raub (§ 250 Abs. 1 Nr. 1 lit. b StGB) bezüglich des Schals",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-033",
+      "title": "Unmittelbares Ansetzen zu § 244 Abs. 4 StGB",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort bejaht weder ausdrücklich noch sinngemäß das unmittelbare Ansetzen zum Versuch des § 244 Abs. 4 StGB für A und B. Ihre Ausführungen betreffen den vollendeten Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB.",
+      "evidence": [
+        "§§ 242 Abs. 1, 244 Abs. 1 Nr. 3, 25 Abs. 2 StGB",
+        "B schlug die Glasscheibe der verschlossenen Terrassentür ein"
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort bejaht weder ausdrücklich noch sinngemäß das unmittelbare Ansetzen zum Versuch des § 244 Abs. 4 StGB für A und B. Ihre Ausführungen betreffen den vollendeten Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB.",
+          "evidence": [
+            "§§ 242 Abs. 1, 244 Abs. 1 Nr. 3, 25 Abs. 2 StGB",
+            "B schlug die Glasscheibe der verschlossenen Terrassentür ein"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Unmittelbares Ansetzen von A zum Versuch des § 244 Abs. 4 StGB spätestens mit dem Einschlagen der Scheibe und dem Eindringen bejahen",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Unmittelbares Ansetzen von B zum Versuch des § 244 Abs. 4 StGB spätestens mit dem Einschlagen der Scheibe und dem Eindringen bejahen",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und B; unmittelbares Ansetzen zum Versuch des § 244 Abs. 4 StGB",
+            "evidence_scope": "A und B; vollendeter Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Antwort ordnet das Einschlagen der Scheibe und den Zutritt als Einbrechen für den vollendeten Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB ein; zum unmittelbaren Ansetzen nach § 244 Abs. 4 StGB nennt sie keinen Grund.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort bejaht den vollendeten Wohnungseinbruchdiebstahl, erörtert aber die Versuchsstrafbarkeit nach § 244 Abs. 4 StGB und deren unmittelbares Ansetzen nicht. Damit fehlt die vom Kriterium verlangte Bejahung gerade der Versuchsschwelle bei Scheibeneinschlag und Eindringen.",
+          "evidence": [
+            "Durch das Einschlagen der Scheibe der verschlossenen Terrassentür brach B in die Wohnung ein.",
+            "A und B begingen den Diebstahl daher unter Einbrechen in eine Wohnung.",
+            "B hat sich wegen Wohnungseinbruchdiebstahls gemäß §§ 242 Abs. 1, 244 Abs. 1 Nr. 3, 25 Abs. 2 StGB strafbar gemacht."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Bejahung des unmittelbaren Ansetzens zum Versuch des § 244 Abs. 4 StGB",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Ansetzen spätestens mit Einschlagen der Scheibe und Eindringen in das Haus",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und B; unmittelbares Ansetzen zum Versuch des § 244 Abs. 4 StGB",
+            "evidence_scope": "A und B; vollendeter Wohnungseinbruchdiebstahl nach §§ 242 Abs. 1, 244 Abs. 1 Nr. 3, 25 Abs. 2 StGB",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Das Einschlagen der Glasscheibe wird als Einbrechen und qualifikationsbegründender Tatbeitrag für den vollendeten Wohnungseinbruchdiebstahl behandelt.",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Der Tatbestand des § 244 Abs. 4 StGB bzw. dessen Versuch sowie das unmittelbare Ansetzen hierzu werden im Gutachten an keiner Stelle geprüft.",
+          "evidence": [],
+          "component_checks": [
+            {
+              "requirement": "Bejahung des unmittelbaren Ansetzens von A und B zum Versuch des § 244 Abs. 4 StGB spätestens mit dem Einschlagen der Scheibe und dem Eindringen",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "A und B, Versuch des § 244 Abs. 4 StGB, Tatentschluss/unmittelbares Ansetzen",
+            "evidence_scope": "A und B, vollendeter Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 14540,
+        "output_tokens": 7311,
+        "total_tokens": 21851,
+        "cached_input_tokens": 768,
+        "cache_write_tokens": 4580
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht weder ausdrücklich noch sinngemäß das unmittelbare Ansetzen zum Versuch des § 244 Abs. 4 StGB für A und B. Ihre Ausführungen betreffen den vollendeten Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB.",
+              "evidence": [
+                "§§ 242 Abs. 1, 244 Abs. 1 Nr. 3, 25 Abs. 2 StGB",
+                "B schlug die Glasscheibe der verschlossenen Terrassentür ein"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Unmittelbares Ansetzen von A zum Versuch des § 244 Abs. 4 StGB spätestens mit dem Einschlagen der Scheibe und dem Eindringen bejahen",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Unmittelbares Ansetzen von B zum Versuch des § 244 Abs. 4 StGB spätestens mit dem Einschlagen der Scheibe und dem Eindringen bejahen",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und B; unmittelbares Ansetzen zum Versuch des § 244 Abs. 4 StGB",
+                "evidence_scope": "A und B; vollendeter Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Antwort ordnet das Einschlagen der Scheibe und den Zutritt als Einbrechen für den vollendeten Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB ein; zum unmittelbaren Ansetzen nach § 244 Abs. 4 StGB nennt sie keinen Grund.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort bejaht den vollendeten Wohnungseinbruchdiebstahl, erörtert aber die Versuchsstrafbarkeit nach § 244 Abs. 4 StGB und deren unmittelbares Ansetzen nicht. Damit fehlt die vom Kriterium verlangte Bejahung gerade der Versuchsschwelle bei Scheibeneinschlag und Eindringen.",
+              "evidence": [
+                "Durch das Einschlagen der Scheibe der verschlossenen Terrassentür brach B in die Wohnung ein.",
+                "A und B begingen den Diebstahl daher unter Einbrechen in eine Wohnung.",
+                "B hat sich wegen Wohnungseinbruchdiebstahls gemäß §§ 242 Abs. 1, 244 Abs. 1 Nr. 3, 25 Abs. 2 StGB strafbar gemacht."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung des unmittelbaren Ansetzens zum Versuch des § 244 Abs. 4 StGB",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Ansetzen spätestens mit Einschlagen der Scheibe und Eindringen in das Haus",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und B; unmittelbares Ansetzen zum Versuch des § 244 Abs. 4 StGB",
+                "evidence_scope": "A und B; vollendeter Wohnungseinbruchdiebstahl nach §§ 242 Abs. 1, 244 Abs. 1 Nr. 3, 25 Abs. 2 StGB",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Das Einschlagen der Glasscheibe wird als Einbrechen und qualifikationsbegründender Tatbeitrag für den vollendeten Wohnungseinbruchdiebstahl behandelt.",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Der Tatbestand des § 244 Abs. 4 StGB bzw. dessen Versuch sowie das unmittelbare Ansetzen hierzu werden im Gutachten an keiner Stelle geprüft.",
+              "evidence": [],
+              "component_checks": [
+                {
+                  "requirement": "Bejahung des unmittelbaren Ansetzens von A und B zum Versuch des § 244 Abs. 4 StGB spätestens mit dem Einschlagen der Scheibe und dem Eindringen",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "A und B, Versuch des § 244 Abs. 4 StGB, Tatentschluss/unmittelbares Ansetzen",
+                "evidence_scope": "A und B, vollendeter Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-033",
+      "title": "Unmittelbares Ansetzen zu § 244 Abs. 4 StGB",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Antwort verknüpft den Einbruch mit dem vollendeten Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB. Sie prüft aber nicht den Versuch nach § 244 Abs. 4 StGB oder dessen unmittelbares Ansetzen; eine vollständige, kriterienspezifische Prüfung fehlt.",
+      "evidence": [
+        "A und B begingen den Diebstahl daher unter Einbrechen in eine Wohnung.",
+        "Durch das Einschlagen der Scheibe der verschlossenen Terrassentür brach B in die Wohnung ein."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort verknüpft den Einbruch mit dem vollendeten Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB. Sie prüft aber nicht den Versuch nach § 244 Abs. 4 StGB oder dessen unmittelbares Ansetzen; eine vollständige, kriterienspezifische Prüfung fehlt.",
+          "evidence": [
+            "A und B begingen den Diebstahl daher unter Einbrechen in eine Wohnung.",
+            "Durch das Einschlagen der Scheibe der verschlossenen Terrassentür brach B in die Wohnung ein."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Antwort prüft den vollendeten Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB. Ein unmittelbares Ansetzen zum Versuch nach § 244 Abs. 4 StGB wird nicht als eigener Prüfungspunkt entwickelt; das Einschlagen der Scheibe wird nur als Tatbestandsmerkmal des vollendeten Einbruchs verwertet.",
+          "evidence": [
+            "Durch das Einschlagen der Scheibe der verschlossenen Terrassentür brach B in die Wohnung ein.",
+            "A und B begingen den Diebstahl daher unter Einbrechen in eine Wohnung.",
+            "B hat sich wegen Wohnungseinbruchdiebstahls gemäß §§ 242 Abs. 1, 244 Abs. 1 Nr. 3, 25 Abs. 2 StGB strafbar gemacht."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Falllösung prüft weder für A noch für B einen Versuch des § 244 Abs. 4 StGB noch thematisiert sie das unmittelbare Ansetzen dazu; geprüft wird lediglich ein vollendeter Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB.",
+          "evidence": [],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort verknüpft den Einbruch mit dem vollendeten Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB. Sie prüft aber nicht den Versuch nach § 244 Abs. 4 StGB oder dessen unmittelbares Ansetzen; eine vollständige, kriterienspezifische Prüfung fehlt.",
+              "evidence": [
+                "A und B begingen den Diebstahl daher unter Einbrechen in eine Wohnung.",
+                "Durch das Einschlagen der Scheibe der verschlossenen Terrassentür brach B in die Wohnung ein."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Antwort prüft den vollendeten Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB. Ein unmittelbares Ansetzen zum Versuch nach § 244 Abs. 4 StGB wird nicht als eigener Prüfungspunkt entwickelt; das Einschlagen der Scheibe wird nur als Tatbestandsmerkmal des vollendeten Einbruchs verwertet.",
+              "evidence": [
+                "Durch das Einschlagen der Scheibe der verschlossenen Terrassentür brach B in die Wohnung ein.",
+                "A und B begingen den Diebstahl daher unter Einbrechen in eine Wohnung.",
+                "B hat sich wegen Wohnungseinbruchdiebstahls gemäß §§ 242 Abs. 1, 244 Abs. 1 Nr. 3, 25 Abs. 2 StGB strafbar gemacht."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Falllösung prüft weder für A noch für B einen Versuch des § 244 Abs. 4 StGB noch thematisiert sie das unmittelbare Ansetzen dazu; geprüft wird lediglich ein vollendeter Wohnungseinbruchdiebstahl nach § 244 Abs. 1 Nr. 3 StGB.",
+              "evidence": [],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1124 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/europarecht/fortgeschrittenenklausur-europarecht-wohnungsbestand-in-burgerhand",
+    "title": "Fortgeschrittenenklausur Europarecht: Wohnungsbestand in Bürgerhand?"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__europarecht__fortgeschrittenenklausur-europarecht-wohnungsbestand-in-burgerhand/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/oeffentliches-recht/europarecht/fortgeschrittenenklausur-europarecht-wohnungsbestand-in-burgerhand/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:34:01.926363+00:00",
+  "score": 0.0,
+  "all_pass": false,
+  "n_criteria": 2,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 0.5,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 2,
+    "n_scored": 2,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 2,
+    "n_root_passed": 1,
+    "root_pass_rate": 0.5,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 1,
+    "points_available": 3,
+    "pass_rate": 0.3333333333333333,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 1,
+    "n_eligible": 2,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.5,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 1,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 2,
+  "breakdown_by_station": {
+    "Zulässigkeit der Klage": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "breakdown_by_outline": {
+    "Zulässigkeit der Klage › Beteiligungsfähigkeit": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "Zulässigkeit der Klage › Klagegegenstand": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "breakdown_by_function": {
+    "application": {
+      "n_criteria": 2,
+      "n_passed": 1,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.5
+    }
+  },
+  "breakdown_by_criticality": {
+    "1 (eher unwichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    },
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 0,
+      "n_failed": 1,
+      "n_errors": 0,
+      "pass_rate": 0.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 51674,
+    "output_tokens": 14668,
+    "total_tokens": 66342,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 15992
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 51674,
+    "output_tokens": 14668,
+    "total_tokens": 66342,
+    "cached_input_tokens": 0,
+    "cache_write_tokens": 15992
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-004",
+      "title": "Aktive Beteiligungsfähigkeit der Kommission",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort behandelt die Kommission ausdrücklich als zur Klage gegen einen Mitgliedstaat nach Art. 258 AEUV befugt. Ein entgegenstehender FAIL-Grund liegt nicht vor.",
+      "evidence": [
+        "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben"
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die Kommission ausdrücklich als zur Klage gegen einen Mitgliedstaat nach Art. 258 AEUV befugt. Ein entgegenstehender FAIL-Grund liegt nicht vor.",
+          "evidence": [
+            "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Kommission wird nach Art. 258 AEUV als aktiv beteiligungsfähige Klägerin behandelt.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Aktive Beteiligungsfähigkeit der Europäischen Kommission als Klägerin im Verfahren nach Art. 258 AEUV.",
+            "evidence_scope": "Die Kommission als Klägerin einer Klage gegen einen Mitgliedstaat nach Art. 258 AEUV.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Art. 258 AEUV ermöglicht der Kommission, gegen einen Mitgliedstaat Klage zu erheben.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort behandelt die Europäische Kommission ausdrücklich als Klägerin im Verfahren nach Art. 258 AEUV gegen die Bundesrepublik Deutschland. Damit ist die aktiv beteiligungsfähige Klägerin im Sinne der Kriteriums erfüllt; die abweichenden FAIL-Konstellationen liegen nicht vor.",
+          "evidence": [
+            "Die Klage der Europäischen Kommission gegen die Bundesrepublik Deutschland hat Erfolg, wenn sie zulässig und begründet ist.",
+            "Die Klage ist nach Art. 258 AEUV zulässig.",
+            "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Europäische Kommission wird als Klägerin behandelt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Klägerstellung der Kommission wird auf Art. 258 AEUV gestützt.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Der Kommission wird die Klägerstellung nicht abgesprochen und kein anderes Unionsorgan als notwendiger Kläger bezeichnet.",
+              "satisfied": true,
+              "basis": "implied"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Europäische Kommission als aktiv beteiligungsfähige Klägerin nach Art. 258 Abs. 1 und 2 AEUV",
+            "evidence_scope": "Europäische Kommission als Klägerin gegen die Bundesrepublik Deutschland nach Art. 258 AEUV",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Die Kommission kann nach Art. 258 AEUV gegen einen Mitgliedstaat Klage erheben, wenn sie einen Vertragsverstoß annimmt; die Klage ist daher zulässig.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Klägerstellung der Europäischen Kommission aus Art. 258 AEUV wird ausdrücklich bejaht und zugrunde gelegt.",
+          "evidence": [
+            "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Europäische Kommission wird nach Art. 258 AEUV als aktiv beteiligungsfähige Klägerin behandelt",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Europäische Kommission, aktive Beteiligungsfähigkeit nach Art. 258 AEUV",
+            "evidence_scope": "Europäische Kommission, aktive Beteiligungsfähigkeit nach Art. 258 AEUV",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Nach Art. 258 AEUV ist die Kommission berechtigt, gegen einen Mitgliedstaat Klage zu erheben.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 25794,
+        "output_tokens": 4789,
+        "total_tokens": 30583,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 7984
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt die Kommission ausdrücklich als zur Klage gegen einen Mitgliedstaat nach Art. 258 AEUV befugt. Ein entgegenstehender FAIL-Grund liegt nicht vor.",
+              "evidence": [
+                "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Kommission wird nach Art. 258 AEUV als aktiv beteiligungsfähige Klägerin behandelt.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Aktive Beteiligungsfähigkeit der Europäischen Kommission als Klägerin im Verfahren nach Art. 258 AEUV.",
+                "evidence_scope": "Die Kommission als Klägerin einer Klage gegen einen Mitgliedstaat nach Art. 258 AEUV.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Art. 258 AEUV ermöglicht der Kommission, gegen einen Mitgliedstaat Klage zu erheben.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort behandelt die Europäische Kommission ausdrücklich als Klägerin im Verfahren nach Art. 258 AEUV gegen die Bundesrepublik Deutschland. Damit ist die aktiv beteiligungsfähige Klägerin im Sinne der Kriteriums erfüllt; die abweichenden FAIL-Konstellationen liegen nicht vor.",
+              "evidence": [
+                "Die Klage der Europäischen Kommission gegen die Bundesrepublik Deutschland hat Erfolg, wenn sie zulässig und begründet ist.",
+                "Die Klage ist nach Art. 258 AEUV zulässig.",
+                "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Europäische Kommission wird als Klägerin behandelt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Klägerstellung der Kommission wird auf Art. 258 AEUV gestützt.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Der Kommission wird die Klägerstellung nicht abgesprochen und kein anderes Unionsorgan als notwendiger Kläger bezeichnet.",
+                  "satisfied": true,
+                  "basis": "implied"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Europäische Kommission als aktiv beteiligungsfähige Klägerin nach Art. 258 Abs. 1 und 2 AEUV",
+                "evidence_scope": "Europäische Kommission als Klägerin gegen die Bundesrepublik Deutschland nach Art. 258 AEUV",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Die Kommission kann nach Art. 258 AEUV gegen einen Mitgliedstaat Klage erheben, wenn sie einen Vertragsverstoß annimmt; die Klage ist daher zulässig.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Klägerstellung der Europäischen Kommission aus Art. 258 AEUV wird ausdrücklich bejaht und zugrunde gelegt.",
+              "evidence": [
+                "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Europäische Kommission wird nach Art. 258 AEUV als aktiv beteiligungsfähige Klägerin behandelt",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Europäische Kommission, aktive Beteiligungsfähigkeit nach Art. 258 AEUV",
+                "evidence_scope": "Europäische Kommission, aktive Beteiligungsfähigkeit nach Art. 258 AEUV",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Nach Art. 258 AEUV ist die Kommission berechtigt, gegen einen Mitgliedstaat Klage zu erheben.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-006",
+      "title": "Kapitalverkehrsfreiheit als Klagegegenstand",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Der allgemeine Art.-258-Maßstab und der Hinweis auf Verstöße gegen Grundfreiheiten behandeln die konkrete Kapitalverkehrsrüge nicht ausdrücklich in der Zulässigkeit. Die spätere Prüfung des Art. 63 AEUV in der Begründetheit kann diese fehlende Zuordnung zur Zulässigkeitsstation nicht ersetzen.",
+      "evidence": [
+        "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat.",
+        "die behaupteten Verstöße gegen die Grundfreiheiten und die Grundrechtecharta konkret bezeichnete",
+        "Die Klage ist zulässig."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Der allgemeine Art.-258-Maßstab und der Hinweis auf Verstöße gegen Grundfreiheiten behandeln die konkrete Kapitalverkehrsrüge nicht ausdrücklich in der Zulässigkeit. Die spätere Prüfung des Art. 63 AEUV in der Begründetheit kann diese fehlende Zuordnung zur Zulässigkeitsstation nicht ersetzen.",
+          "evidence": [
+            "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat.",
+            "die behaupteten Verstöße gegen die Grundfreiheiten und die Grundrechtecharta konkret bezeichnete",
+            "Die Klage ist zulässig."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Der behauptete Verstoß gegen Art. 63 Abs. 1 AEUV wird in der Zulässigkeit als möglicher primärrechtlicher Verpflichtungsverstoß behandelt.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Der behauptete Verstoß gegen Art. 63 Abs. 1 AEUV wird in der Zulässigkeit als tauglicher Klagegegenstand nach Art. 258 AEUV behandelt.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Zulässigkeit: behaupteter Verstoß des Bürgerhandgesetzes gegen Art. 63 Abs. 1 AEUV als möglicher primärrechtlicher Verpflichtungsverstoß und tauglicher Klagegegenstand nach Art. 258 AEUV.",
+            "evidence_scope": "Zulässigkeit: allgemeiner Art.-258-Maßstab und pauschaler Bezug auf Verstöße gegen Grundfreiheiten; Art. 63 AEUV wird erst bei der Begründetheit ausdrücklich geprüft.",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "Art. 258 AEUV ermöglicht eine Klage, wenn ein Mitgliedstaat möglicherweise gegen eine Verpflichtung aus den Verträgen verstößt.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "In der Zulässigkeit wird die Kapitalverkehrsrüge nicht behandelt; Art. 63 AEUV erscheint erst in der Begründetheit. Damit ist die Kapitalverkehrsfreiheit als Klagegegenstand in der Zulässigkeitsstation übergangen.",
+          "evidence": [
+            "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat.",
+            "gab die Kommission eine Stellungnahme ab, in welcher sie die behaupteten Verstöße gegen die Grundfreiheiten und die Grundrechtecharta konkret bezeichnete und eine Frist zur Abhilfe setzte.",
+            "Die Klage ist begründet, wenn Deutschland durch das Bürgerhandgesetz gegen Verpflichtungen aus Art. 63 AEUV sowie gegen die im Anwendungsbereich des Unionsrechts verbindlichen Grundrechte aus der GRCh verstoßen hat."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Behaupteter Verstoß des Bürgerhandgesetzes gegen Art. 63 Abs. 1 AEUV wird in der Zulässigkeit behandelt.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Kapitalverkehrsrüge wird in der Zulässigkeit als möglicher primärrechtlicher Verpflichtungsverstoß nach Art. 258 AEUV geprüft.",
+              "satisfied": false,
+              "basis": "absent"
+            },
+            {
+              "requirement": "Die Kapitalverkehrsrüge wird als tauglicher Klagegegenstand nach Art. 258 AEUV behandelt und nicht verworfen oder übergangen.",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Art. 63 Abs. 1 AEUV-Verstoß des Bürgerhandgesetzes als möglicher Klagegegenstand in der Zulässigkeitsprüfung nach Art. 258 AEUV",
+            "evidence_scope": "Zulässigkeit prüft Art. 258 AEUV allgemein; Art. 63 AEUV wird erst in der Begründetheit geprüft.",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Der Prüfungspunkt eines tauglichen Klagegegenstands bzw. des Art. 63 Abs. 1 AEUV als rügefähiger primärrechtlicher Verpflichtungsverstoß wird in der Zulässigkeit übergangen.",
+          "evidence": [
+            "A. Zulässigkeit der Klage",
+            "I. Zuständigkeit und Beteiligtenstellung",
+            "II. Ordnungsgemäßes Vorverfahren",
+            "III. Rechtsschutzbedürfnis"
+          ],
+          "component_checks": [
+            {
+              "requirement": "Behandlung des behaupteten Verstoßes gegen Art. 63 Abs. 1 AEUV in der Zulässigkeit als möglicher primärrechtlicher Verpflichtungsverstoß und tauglicher Klagegegenstand",
+              "satisfied": false,
+              "basis": "absent"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Zulässigkeit der Vertragsverletzungsklage: Art. 63 Abs. 1 AEUV als tauglicher Klagegegenstand / Verpflichtungsverstoß",
+            "evidence_scope": "Zulässigkeit der Vertragsverletzungsklage: Zuständigkeit, Vorverfahren, Rechtsschutzbedürfnis ohne Prüfung des Klagegegenstands",
+            "same_scope": false
+          },
+          "stated_reason_check": {
+            "answer_reason": "none",
+            "legally_compatible": false
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 25880,
+        "output_tokens": 9879,
+        "total_tokens": 35759,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 8008
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Der allgemeine Art.-258-Maßstab und der Hinweis auf Verstöße gegen Grundfreiheiten behandeln die konkrete Kapitalverkehrsrüge nicht ausdrücklich in der Zulässigkeit. Die spätere Prüfung des Art. 63 AEUV in der Begründetheit kann diese fehlende Zuordnung zur Zulässigkeitsstation nicht ersetzen.",
+              "evidence": [
+                "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat.",
+                "die behaupteten Verstöße gegen die Grundfreiheiten und die Grundrechtecharta konkret bezeichnete",
+                "Die Klage ist zulässig."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Der behauptete Verstoß gegen Art. 63 Abs. 1 AEUV wird in der Zulässigkeit als möglicher primärrechtlicher Verpflichtungsverstoß behandelt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Der behauptete Verstoß gegen Art. 63 Abs. 1 AEUV wird in der Zulässigkeit als tauglicher Klagegegenstand nach Art. 258 AEUV behandelt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Zulässigkeit: behaupteter Verstoß des Bürgerhandgesetzes gegen Art. 63 Abs. 1 AEUV als möglicher primärrechtlicher Verpflichtungsverstoß und tauglicher Klagegegenstand nach Art. 258 AEUV.",
+                "evidence_scope": "Zulässigkeit: allgemeiner Art.-258-Maßstab und pauschaler Bezug auf Verstöße gegen Grundfreiheiten; Art. 63 AEUV wird erst bei der Begründetheit ausdrücklich geprüft.",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "Art. 258 AEUV ermöglicht eine Klage, wenn ein Mitgliedstaat möglicherweise gegen eine Verpflichtung aus den Verträgen verstößt.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "In der Zulässigkeit wird die Kapitalverkehrsrüge nicht behandelt; Art. 63 AEUV erscheint erst in der Begründetheit. Damit ist die Kapitalverkehrsfreiheit als Klagegegenstand in der Zulässigkeitsstation übergangen.",
+              "evidence": [
+                "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat.",
+                "gab die Kommission eine Stellungnahme ab, in welcher sie die behaupteten Verstöße gegen die Grundfreiheiten und die Grundrechtecharta konkret bezeichnete und eine Frist zur Abhilfe setzte.",
+                "Die Klage ist begründet, wenn Deutschland durch das Bürgerhandgesetz gegen Verpflichtungen aus Art. 63 AEUV sowie gegen die im Anwendungsbereich des Unionsrechts verbindlichen Grundrechte aus der GRCh verstoßen hat."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Behaupteter Verstoß des Bürgerhandgesetzes gegen Art. 63 Abs. 1 AEUV wird in der Zulässigkeit behandelt.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Kapitalverkehrsrüge wird in der Zulässigkeit als möglicher primärrechtlicher Verpflichtungsverstoß nach Art. 258 AEUV geprüft.",
+                  "satisfied": false,
+                  "basis": "absent"
+                },
+                {
+                  "requirement": "Die Kapitalverkehrsrüge wird als tauglicher Klagegegenstand nach Art. 258 AEUV behandelt und nicht verworfen oder übergangen.",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Art. 63 Abs. 1 AEUV-Verstoß des Bürgerhandgesetzes als möglicher Klagegegenstand in der Zulässigkeitsprüfung nach Art. 258 AEUV",
+                "evidence_scope": "Zulässigkeit prüft Art. 258 AEUV allgemein; Art. 63 AEUV wird erst in der Begründetheit geprüft.",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Der Prüfungspunkt eines tauglichen Klagegegenstands bzw. des Art. 63 Abs. 1 AEUV als rügefähiger primärrechtlicher Verpflichtungsverstoß wird in der Zulässigkeit übergangen.",
+              "evidence": [
+                "A. Zulässigkeit der Klage",
+                "I. Zuständigkeit und Beteiligtenstellung",
+                "II. Ordnungsgemäßes Vorverfahren",
+                "III. Rechtsschutzbedürfnis"
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Behandlung des behaupteten Verstoßes gegen Art. 63 Abs. 1 AEUV in der Zulässigkeit als möglicher primärrechtlicher Verpflichtungsverstoß und tauglicher Klagegegenstand",
+                  "satisfied": false,
+                  "basis": "absent"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Zulässigkeit der Vertragsverletzungsklage: Art. 63 Abs. 1 AEUV als tauglicher Klagegegenstand / Verpflichtungsverstoß",
+                "evidence_scope": "Zulässigkeit der Vertragsverletzungsklage: Zuständigkeit, Vorverfahren, Rechtsschutzbedürfnis ohne Prüfung des Klagegegenstands",
+                "same_scope": false
+              },
+              "stated_reason_check": {
+                "answer_reason": "none",
+                "legally_compatible": false
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": [
+    {
+      "id": "C-004",
+      "title": "Aktive Beteiligungsfähigkeit der Kommission",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort benennt die Kommission als Klägerin, führt Art. 258 AEUV als Ermächtigungsgrundlage an und ordnet die Klage ausdrücklich als zulässig ein. Damit ist die Prüfung der aktiven Beteiligungsfähigkeit methodisch abgeschlossen.",
+      "evidence": [
+        "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben",
+        "Die Klage ist nach Art. 258 AEUV zulässig."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort benennt die Kommission als Klägerin, führt Art. 258 AEUV als Ermächtigungsgrundlage an und ordnet die Klage ausdrücklich als zulässig ein. Damit ist die Prüfung der aktiven Beteiligungsfähigkeit methodisch abgeschlossen.",
+          "evidence": [
+            "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben",
+            "Die Klage ist nach Art. 258 AEUV zulässig."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort verbindet im Zulässigkeitsabschnitt den Maßstab des Art. 258 AEUV mit der konkreten Klage der Europäischen Kommission gegen Deutschland und dem Ergebnis, dass die Klage zulässig ist. Damit wird die Beteiligungsfähigkeit der Kommission methodisch geprüft, nicht nur beiläufig erwähnt.",
+          "evidence": [
+            "Die Klage der Europäischen Kommission gegen die Bundesrepublik Deutschland hat Erfolg, wenn sie zulässig und begründet ist.",
+            "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat.",
+            "Die Klage ist nach Art. 258 AEUV zulässig."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Klausurlösung nennt den Obersatz des Art. 258 AEUV zur Klägerstellung der Kommission und wendet diesen schlüssig auf das vorliegende Vertragsverletzungsverfahren an.",
+          "evidence": [
+            "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": true,
+            "criterion_specific_premise": true,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort benennt die Kommission als Klägerin, führt Art. 258 AEUV als Ermächtigungsgrundlage an und ordnet die Klage ausdrücklich als zulässig ein. Damit ist die Prüfung der aktiven Beteiligungsfähigkeit methodisch abgeschlossen.",
+              "evidence": [
+                "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben",
+                "Die Klage ist nach Art. 258 AEUV zulässig."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort verbindet im Zulässigkeitsabschnitt den Maßstab des Art. 258 AEUV mit der konkreten Klage der Europäischen Kommission gegen Deutschland und dem Ergebnis, dass die Klage zulässig ist. Damit wird die Beteiligungsfähigkeit der Kommission methodisch geprüft, nicht nur beiläufig erwähnt.",
+              "evidence": [
+                "Die Klage der Europäischen Kommission gegen die Bundesrepublik Deutschland hat Erfolg, wenn sie zulässig und begründet ist.",
+                "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat.",
+                "Die Klage ist nach Art. 258 AEUV zulässig."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Klausurlösung nennt den Obersatz des Art. 258 AEUV zur Klägerstellung der Kommission und wendet diesen schlüssig auf das vorliegende Vertragsverletzungsverfahren an.",
+              "evidence": [
+                "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": true,
+                "criterion_specific_premise": true,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C-006",
+      "title": "Kapitalverkehrsfreiheit als Klagegegenstand",
+      "verdict": "fail",
+      "resolution": "stable",
+      "reasoning": "Die Zulässigkeit wird mit dem allgemeinen Maßstab des Art. 258 AEUV, den konkret bezeichneten Verstößen gegen Grundfreiheiten und einem Ergebnis begründet. Art. 63 AEUV wird an dieser Prüfungsstation aber nicht identifiziert; die Verbindung zur Kapitalverkehrsfreiheit ergibt sich erst aus der späteren Begründetheitsprüfung.",
+      "evidence": [
+        "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat.",
+        "die behaupteten Verstöße gegen die Grundfreiheiten und die Grundrechtecharta konkret bezeichnete",
+        "Die Klage ist zulässig."
+      ],
+      "vote_counts": {
+        "pass": 0,
+        "fail": 3,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "fail",
+          "reasoning": "Die Zulässigkeit wird mit dem allgemeinen Maßstab des Art. 258 AEUV, den konkret bezeichneten Verstößen gegen Grundfreiheiten und einem Ergebnis begründet. Art. 63 AEUV wird an dieser Prüfungsstation aber nicht identifiziert; die Verbindung zur Kapitalverkehrsfreiheit ergibt sich erst aus der späteren Begründetheitsprüfung.",
+          "evidence": [
+            "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat.",
+            "die behaupteten Verstöße gegen die Grundfreiheiten und die Grundrechtecharta konkret bezeichnete",
+            "Die Klage ist zulässig."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": true,
+            "completed_path": true,
+            "not_reconstructed_elsewhere": false
+          },
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "Die Zulässigkeitsprüfung enthält nur allgemeine Ausführungen zu Art. 258 AEUV; ein spezifischer Klagegegenstand Art. 63 Abs. 1 AEUV wird dort nicht mit Regel, Tatsachenbezug und Ergebnis verbunden. Die spätere Begründetheit ersetzt diese Prüfung an anderer Stelle nicht.",
+          "evidence": [
+            "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat.",
+            "Die Klage ist zulässig.",
+            "Die Klage ist begründet, wenn Deutschland durch das Bürgerhandgesetz gegen Verpflichtungen aus Art. 63 AEUV sowie gegen die im Anwendungsbereich des Unionsrechts verbindlichen Grundrechte aus der GRCh verstoßen hat."
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": false
+          },
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "fail",
+          "reasoning": "In der Zulässigkeitsprüfung wird ein tauglicher Klagegegenstand bzw. der Verstoß gegen Art. 63 Abs. 1 AEUV als möglicher primärrechtlicher Verpflichtungsverstoß weder gesondert aufgeworfen noch im Rahmen eines methodischen Subsumtionsschritts geprüft.",
+          "evidence": [
+            "Die Klage ist nach Art. 258 AEUV zulässig.",
+            "in welcher sie die behaupteten Verstöße gegen die Grundfreiheiten und die Grundrechtecharta konkret bezeichnete"
+          ],
+          "component_checks": [],
+          "scope_check": {},
+          "stated_reason_check": {},
+          "method_checks": {
+            "same_scope": false,
+            "criterion_specific_premise": false,
+            "explicit_fact_link": false,
+            "completed_path": false,
+            "not_reconstructed_elsewhere": true
+          },
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {},
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "fail",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 0,
+            "fail": 3,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "fail",
+              "reasoning": "Die Zulässigkeit wird mit dem allgemeinen Maßstab des Art. 258 AEUV, den konkret bezeichneten Verstößen gegen Grundfreiheiten und einem Ergebnis begründet. Art. 63 AEUV wird an dieser Prüfungsstation aber nicht identifiziert; die Verbindung zur Kapitalverkehrsfreiheit ergibt sich erst aus der späteren Begründetheitsprüfung.",
+              "evidence": [
+                "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat.",
+                "die behaupteten Verstöße gegen die Grundfreiheiten und die Grundrechtecharta konkret bezeichnete",
+                "Die Klage ist zulässig."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": true,
+                "completed_path": true,
+                "not_reconstructed_elsewhere": false
+              },
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "Die Zulässigkeitsprüfung enthält nur allgemeine Ausführungen zu Art. 258 AEUV; ein spezifischer Klagegegenstand Art. 63 Abs. 1 AEUV wird dort nicht mit Regel, Tatsachenbezug und Ergebnis verbunden. Die spätere Begründetheit ersetzt diese Prüfung an anderer Stelle nicht.",
+              "evidence": [
+                "Nach Art. 258 AEUV kann die Kommission gegen einen Mitgliedstaat Klage erheben, wenn sie der Auffassung ist, dass dieser gegen eine Verpflichtung aus den Verträgen verstoßen hat.",
+                "Die Klage ist zulässig.",
+                "Die Klage ist begründet, wenn Deutschland durch das Bürgerhandgesetz gegen Verpflichtungen aus Art. 63 AEUV sowie gegen die im Anwendungsbereich des Unionsrechts verbindlichen Grundrechte aus der GRCh verstoßen hat."
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": false
+              },
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "fail",
+              "reasoning": "In der Zulässigkeitsprüfung wird ein tauglicher Klagegegenstand bzw. der Verstoß gegen Art. 63 Abs. 1 AEUV als möglicher primärrechtlicher Verpflichtungsverstoß weder gesondert aufgeworfen noch im Rahmen eines methodischen Subsumtionsschritts geprüft.",
+              "evidence": [
+                "Die Klage ist nach Art. 258 AEUV zulässig.",
+                "in welcher sie die behaupteten Verstöße gegen die Grundfreiheiten und die Grundrechtecharta konkret bezeichnete"
+              ],
+              "component_checks": [],
+              "scope_check": {},
+              "stated_reason_check": {},
+              "method_checks": {
+                "same_scope": false,
+                "criterion_specific_premise": false,
+                "explicit_fact_link": false,
+                "completed_path": false,
+                "not_reconstructed_elsewhere": true
+              },
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

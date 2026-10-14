@@ -1,0 +1,470 @@
+{
+  "schema_version": "0.2",
+  "evaluator": "rubric",
+  "task": {
+    "path": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/anfangerklausur-zwei-autokaufe",
+    "title": "Anfängerklausur: Zwei Autokäufe"
+  },
+  "submission": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/om/runs/agent-gpt-5.6-sol-high/20260730T221733Z/tasks/de__zivilrecht__schuldrecht__anfangerklausur-zwei-autokaufe/submission",
+  "rubric": "/private/tmp/claude-501/-Users-aaronsteiner-Documents-GitHub-LAB-EU/996ea09d-7690-422e-a2f4-0798ce1c84a3/scratchpad/snap/tasks/de/zivilrecht/schuldrecht/anfangerklausur-zwei-autokaufe/evals/rubric.json",
+  "judge_model": "committee",
+  "judge_api_base": "mixed",
+  "judge_reasoning_effort": null,
+  "judge_committee": [
+    {
+      "name": "luna6",
+      "model": "gpt-6-luna",
+      "api_base": "https://api.openai.com/v1",
+      "reasoning_effort": "medium",
+      "parallel": 8
+    },
+    {
+      "name": "deepseek-v4.1-flash",
+      "model": "deepseek/deepseek-v4.1-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    },
+    {
+      "name": "gemini-3.8-flash",
+      "model": "google/gemini-3.8-flash",
+      "api_base": "https://openrouter.ai/api/v1",
+      "reasoning_effort": "medium",
+      "parallel": 4
+    }
+  ],
+  "votes_per_criterion": 3,
+  "adaptive_voting": false,
+  "committee_voting_mode": "full_committee",
+  "primary_votes_per_criterion": null,
+  "tiebreaker_votes_per_conflict": null,
+  "committee_conflict_recheck": true,
+  "committee_tiebreaker": false,
+  "committee_error_retries": 2,
+  "scored_at": "2026-10-14T08:32:03.270064+00:00",
+  "score": 1.0,
+  "all_pass": true,
+  "n_criteria": 1,
+  "n_passed": 1,
+  "n_errors": 0,
+  "n_criteria_with_error_votes": 0,
+  "n_unresolved": 0,
+  "criterion_pass_rate": 1.0,
+  "content_score": {
+    "n_passed": 1,
+    "n_criteria": 1,
+    "n_scored": 1,
+    "n_not_applicable": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 1.0
+  },
+  "cascade_report": {
+    "declared": false,
+    "n_root_criteria": 1,
+    "n_root_passed": 1,
+    "root_pass_rate": 1.0,
+    "n_failures_behind_failed_roots": 0,
+    "cascades": [],
+    "unknown_dependencies": []
+  },
+  "criticality_weighted_content_score": {
+    "points_earned": 2,
+    "points_available": 2,
+    "pass_rate": 1.0,
+    "weights": {
+      "criticality_3": 3,
+      "criticality_2": 2,
+      "criticality_1": 1
+    },
+    "status": "diagnostic_only"
+  },
+  "style_score": {
+    "n_passed": 0,
+    "n_eligible": 0,
+    "n_errors": 0,
+    "n_unresolved": 0,
+    "pass_rate": 0.0,
+    "denominator_rule": "all application/argumentation criteria regardless of content verdict; untagged legacy criteria remain eligible"
+  },
+  "style_evaluation_mode": "combined",
+  "judge_prompt_version": "v4",
+  "content_votes_by_judge": {
+    "luna6": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "deepseek-v4.1-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    },
+    "gemini-3.8-flash": {
+      "pass": 1,
+      "fail": 0,
+      "error": 0,
+      "cache_hits": 0
+    }
+  },
+  "style_votes_by_judge": {},
+  "mean_judge_agreement": 1.0,
+  "n_unanimous": 1,
+  "breakdown_by_station": {
+    "Anspruch der H gegen G auf Zahlung von 5.500 € nach § 433 Abs. 2 BGB": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_outline": {
+    "Anspruch der H gegen G auf Zahlung von 5.500 € nach § 433 Abs. 2 BGB › Ergebnis": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_function": {
+    "conclusion": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "breakdown_by_criticality": {
+    "2 (wichtig)": {
+      "n_criteria": 1,
+      "n_passed": 1,
+      "n_failed": 0,
+      "n_errors": 0,
+      "pass_rate": 1.0
+    }
+  },
+  "judge_usage_total": {
+    "input_tokens": 16874,
+    "output_tokens": 3234,
+    "total_tokens": 20108,
+    "cached_input_tokens": 1024,
+    "cache_write_tokens": 5251
+  },
+  "content_judge_usage_total": {
+    "input_tokens": 16874,
+    "output_tokens": 3234,
+    "total_tokens": 20108,
+    "cached_input_tokens": 1024,
+    "cache_write_tokens": 5251
+  },
+  "style_judge_usage_total": {},
+  "criteria_results": [
+    {
+      "id": "C-020",
+      "title": "Anspruch der H gegen G",
+      "verdict": "pass",
+      "resolution": "stable",
+      "reasoning": "Die Antwort prüft ausdrücklich den Anspruch der H gegen G wegen des Smart-Kaufs. Sie verneint eine Anscheinsvollmacht mit fallbezogenen Gründen und leitet daraus widerspruchsfrei ab, dass H keinen Kaufpreisanspruch gegen G hat.",
+      "evidence": [
+        "H könnte gegen G einen Anspruch auf Zahlung von 5.500 Euro aus § 433 Abs. 2 BGB haben.",
+        "Auch eine Anscheinsvollmacht liegt nicht vor. H kannte keine früheren, G zurechenbaren Auftritte des A.",
+        "G hatte A vielmehr aus dem Einkauf abgezogen und ihre bisherigen Geschäftspartner vorsorglich informiert.",
+        "H hat deshalb gegen G keinen Anspruch aus § 433 Abs. 2 BGB auf Zahlung von 5.500 Euro."
+      ],
+      "vote_counts": {
+        "pass": 3,
+        "fail": 0,
+        "error": 0
+      },
+      "judge_agreement": 1.0,
+      "votes": [
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort prüft ausdrücklich den Anspruch der H gegen G wegen des Smart-Kaufs. Sie verneint eine Anscheinsvollmacht mit fallbezogenen Gründen und leitet daraus widerspruchsfrei ab, dass H keinen Kaufpreisanspruch gegen G hat.",
+          "evidence": [
+            "H könnte gegen G einen Anspruch auf Zahlung von 5.500 Euro aus § 433 Abs. 2 BGB haben.",
+            "Auch eine Anscheinsvollmacht liegt nicht vor. H kannte keine früheren, G zurechenbaren Auftritte des A.",
+            "G hatte A vielmehr aus dem Einkauf abgezogen und ihre bisherigen Geschäftspartner vorsorglich informiert.",
+            "H hat deshalb gegen G keinen Anspruch aus § 433 Abs. 2 BGB auf Zahlung von 5.500 Euro."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort prüft den Anspruch der H gegen G aus § 433 Abs. 2 BGB für den Smart-Kaufpreis von 5.500 €.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort verneint eine tatsächliche und G zurechenbare Anscheinsvollmacht für den Smart-Kauf.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort begründet die Verneinung anhand der Umstände des Smart-Kaufs und des fehlenden zurechenbaren Rechtsscheins.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort verneint folgerichtig den Anspruch der H gegen G auf Zahlung des Kaufpreises.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Anspruch der H gegen G aus § 433 Abs. 2 BGB auf den Kaufpreis von 5.500 € für den Smart; Prüfung der Anscheinsvollmacht.",
+            "evidence_scope": "Anspruch der H gegen G aus § 433 Abs. 2 BGB auf 5.500 € für den Smart; Prüfung der Vertretungsmacht und Anscheinsvollmacht des A.",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "H kannte keine früheren, G zurechenbaren Auftritte des A; G hatte A aus dem Einkauf abgezogen und ihre bisherigen Geschäftspartner vorsorglich informiert, sodass kein der G zurechenbarer Rechtsschein vorlag.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "luna6",
+            "model": "gpt-6-luna",
+            "api_base": "https://api.openai.com/v1",
+            "reasoning_effort": "medium",
+            "parallel": 8
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Antwort überträgt die Lösung zur Anscheinsvollmacht folgerichtig auf den Smart-Kaufpreis von 5.500 €: Sie verneint eine tatsächliche und zurechenbare Rechtsscheinsvollmacht und verneint dementsprechend den Anspruch der H gegen G aus § 433 Abs. 2 BGB. Ergebnis und Vollmachtsprüfung sind widerspruchsfrei.",
+          "evidence": [
+            "H könnte gegen G einen Anspruch auf Zahlung von 5.500 Euro aus § 433 Abs. 2 BGB haben.",
+            "Auch eine Anscheinsvollmacht liegt nicht vor. H kannte keine früheren, G zurechenbaren Auftritte des A.",
+            "Ein nachlässiges Verhalten der G, durch das sie den konkreten Rechtsschein gegenüber H hätte verhindern müssen, ist nicht ersichtlich.",
+            "H hat deshalb gegen G keinen Anspruch aus § 433 Abs. 2 BGB auf Zahlung von 5.500 Euro."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Die Antwort prüft den Anspruch der H gegen G aus § 433 Abs. 2 BGB für den Smart-Kaufpreis von 5.500 €.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort verneint eine tatsächliche und der G zurechenbare Rechtsscheinsvollmacht bzw. Anscheinsvollmacht.",
+              "satisfied": true,
+              "basis": "express"
+            },
+            {
+              "requirement": "Die Antwort verneint folgerichtig den Anspruch der H gegen G aus § 433 Abs. 2 BGB auf Zahlung von 5.500 €.",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "Anspruch der H gegen G aus § 433 Abs. 2 BGB wegen des Smart-Kaufpreises von 5.500 €; Prüfung der Anscheins-/Rechtsscheinsvollmacht",
+            "evidence_scope": "Anspruch der H gegen G aus § 433 Abs. 2 BGB wegen des Smart-Kaufpreises von 5.500 €; Verneinung der Anscheinsvollmacht",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Keine der G zurechenbare Rechtsscheinsvollmacht; H kannte keine früheren G zurechenbaren Auftritte des A, und ein nachlässiges Verhalten der G zur Verhinderung eines Rechtsscheins gegenüber H ist nicht ersichtlich.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "deepseek-v4.1-flash",
+            "model": "deepseek/deepseek-v4.1-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        },
+        {
+          "verdict": "pass",
+          "reasoning": "Die Falllösung verneint eine Anscheinsvollmacht substantiiert mit nachvollziehbarer Begründung (fehlende Zurechenbarkeit des Rechtsscheins, kein pflichtwidriges Verhalten von G) und verneint folgerichtig den Anspruch der H gegen G aus § 433 Abs. 2 BGB auf Zahlung der 5.500 €.",
+          "evidence": [
+            "Auch eine Anscheinsvollmacht liegt nicht vor. H kannte keine früheren, G zurechenbaren Auftritte des A. Dass A sich selbst als Einkäufer bezeichnete, sachkundig und souverän auftrat und G nach dem Hörensagen als verlässliche Geschäftsfrau galt, schafft keinen der G zurechenbaren Rechtsschein.",
+            "A handelte somit auch gegenüber H ohne Vertretungsmacht.",
+            "H hat deshalb gegen G keinen Anspruch aus § 433 Abs. 2 BGB auf Zahlung von 5.500 Euro."
+          ],
+          "component_checks": [
+            {
+              "requirement": "Folgerichtige Übertragung der gewählten Lösung zur Anscheinsvollmacht auf den Anspruch der H gegen G aus § 433 Abs. 2 BGB über 5.500 € (bei Verneinung der Zurechnung Verneinung des Anspruchs; nicht nur schlagwortartig)",
+              "satisfied": true,
+              "basis": "express"
+            }
+          ],
+          "scope_check": {
+            "criterion_scope": "H gegen G, Anspruch aus § 433 Abs. 2 BGB (Smart-Kaufpreis 5.500 €), Anscheinsvollmacht",
+            "evidence_scope": "H gegen G, Anspruch aus § 433 Abs. 2 BGB (Smart-Kaufpreis 5.500 €), Anscheinsvollmacht",
+            "same_scope": true
+          },
+          "stated_reason_check": {
+            "answer_reason": "Eine Anscheinsvollmacht scheidet aus, weil kein G zurechenbarer Rechtsschein vorlag und kein pflichtwidriges Verhalten der G ersichtlich ist; mangels Vertretungsmacht und Genehmigung besteht kein Anspruch aus § 433 Abs. 2 BGB.",
+            "legally_compatible": true
+          },
+          "method_checks": {},
+          "judge": {
+            "name": "gemini-3.8-flash",
+            "model": "google/gemini-3.8-flash",
+            "api_base": "https://openrouter.ai/api/v1",
+            "reasoning_effort": "medium",
+            "parallel": 4
+          },
+          "cache_hit": false
+        }
+      ],
+      "usage": {
+        "input_tokens": 16874,
+        "output_tokens": 3234,
+        "total_tokens": 20108,
+        "cached_input_tokens": 1024,
+        "cache_write_tokens": 5251
+      },
+      "committee_status": "stable",
+      "voting_rounds": [
+        {
+          "round": 1,
+          "verdict": "pass",
+          "resolution": "resolved",
+          "vote_counts": {
+            "pass": 3,
+            "fail": 0,
+            "error": 0
+          },
+          "votes": [
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort prüft ausdrücklich den Anspruch der H gegen G wegen des Smart-Kaufs. Sie verneint eine Anscheinsvollmacht mit fallbezogenen Gründen und leitet daraus widerspruchsfrei ab, dass H keinen Kaufpreisanspruch gegen G hat.",
+              "evidence": [
+                "H könnte gegen G einen Anspruch auf Zahlung von 5.500 Euro aus § 433 Abs. 2 BGB haben.",
+                "Auch eine Anscheinsvollmacht liegt nicht vor. H kannte keine früheren, G zurechenbaren Auftritte des A.",
+                "G hatte A vielmehr aus dem Einkauf abgezogen und ihre bisherigen Geschäftspartner vorsorglich informiert.",
+                "H hat deshalb gegen G keinen Anspruch aus § 433 Abs. 2 BGB auf Zahlung von 5.500 Euro."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort prüft den Anspruch der H gegen G aus § 433 Abs. 2 BGB für den Smart-Kaufpreis von 5.500 €.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort verneint eine tatsächliche und G zurechenbare Anscheinsvollmacht für den Smart-Kauf.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort begründet die Verneinung anhand der Umstände des Smart-Kaufs und des fehlenden zurechenbaren Rechtsscheins.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort verneint folgerichtig den Anspruch der H gegen G auf Zahlung des Kaufpreises.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Anspruch der H gegen G aus § 433 Abs. 2 BGB auf den Kaufpreis von 5.500 € für den Smart; Prüfung der Anscheinsvollmacht.",
+                "evidence_scope": "Anspruch der H gegen G aus § 433 Abs. 2 BGB auf 5.500 € für den Smart; Prüfung der Vertretungsmacht und Anscheinsvollmacht des A.",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "H kannte keine früheren, G zurechenbaren Auftritte des A; G hatte A aus dem Einkauf abgezogen und ihre bisherigen Geschäftspartner vorsorglich informiert, sodass kein der G zurechenbarer Rechtsschein vorlag.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "luna6",
+                "model": "gpt-6-luna",
+                "api_base": "https://api.openai.com/v1",
+                "reasoning_effort": "medium",
+                "parallel": 8
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Antwort überträgt die Lösung zur Anscheinsvollmacht folgerichtig auf den Smart-Kaufpreis von 5.500 €: Sie verneint eine tatsächliche und zurechenbare Rechtsscheinsvollmacht und verneint dementsprechend den Anspruch der H gegen G aus § 433 Abs. 2 BGB. Ergebnis und Vollmachtsprüfung sind widerspruchsfrei.",
+              "evidence": [
+                "H könnte gegen G einen Anspruch auf Zahlung von 5.500 Euro aus § 433 Abs. 2 BGB haben.",
+                "Auch eine Anscheinsvollmacht liegt nicht vor. H kannte keine früheren, G zurechenbaren Auftritte des A.",
+                "Ein nachlässiges Verhalten der G, durch das sie den konkreten Rechtsschein gegenüber H hätte verhindern müssen, ist nicht ersichtlich.",
+                "H hat deshalb gegen G keinen Anspruch aus § 433 Abs. 2 BGB auf Zahlung von 5.500 Euro."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Die Antwort prüft den Anspruch der H gegen G aus § 433 Abs. 2 BGB für den Smart-Kaufpreis von 5.500 €.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort verneint eine tatsächliche und der G zurechenbare Rechtsscheinsvollmacht bzw. Anscheinsvollmacht.",
+                  "satisfied": true,
+                  "basis": "express"
+                },
+                {
+                  "requirement": "Die Antwort verneint folgerichtig den Anspruch der H gegen G aus § 433 Abs. 2 BGB auf Zahlung von 5.500 €.",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "Anspruch der H gegen G aus § 433 Abs. 2 BGB wegen des Smart-Kaufpreises von 5.500 €; Prüfung der Anscheins-/Rechtsscheinsvollmacht",
+                "evidence_scope": "Anspruch der H gegen G aus § 433 Abs. 2 BGB wegen des Smart-Kaufpreises von 5.500 €; Verneinung der Anscheinsvollmacht",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Keine der G zurechenbare Rechtsscheinsvollmacht; H kannte keine früheren G zurechenbaren Auftritte des A, und ein nachlässiges Verhalten der G zur Verhinderung eines Rechtsscheins gegenüber H ist nicht ersichtlich.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "deepseek-v4.1-flash",
+                "model": "deepseek/deepseek-v4.1-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            },
+            {
+              "verdict": "pass",
+              "reasoning": "Die Falllösung verneint eine Anscheinsvollmacht substantiiert mit nachvollziehbarer Begründung (fehlende Zurechenbarkeit des Rechtsscheins, kein pflichtwidriges Verhalten von G) und verneint folgerichtig den Anspruch der H gegen G aus § 433 Abs. 2 BGB auf Zahlung der 5.500 €.",
+              "evidence": [
+                "Auch eine Anscheinsvollmacht liegt nicht vor. H kannte keine früheren, G zurechenbaren Auftritte des A. Dass A sich selbst als Einkäufer bezeichnete, sachkundig und souverän auftrat und G nach dem Hörensagen als verlässliche Geschäftsfrau galt, schafft keinen der G zurechenbaren Rechtsschein.",
+                "A handelte somit auch gegenüber H ohne Vertretungsmacht.",
+                "H hat deshalb gegen G keinen Anspruch aus § 433 Abs. 2 BGB auf Zahlung von 5.500 Euro."
+              ],
+              "component_checks": [
+                {
+                  "requirement": "Folgerichtige Übertragung der gewählten Lösung zur Anscheinsvollmacht auf den Anspruch der H gegen G aus § 433 Abs. 2 BGB über 5.500 € (bei Verneinung der Zurechnung Verneinung des Anspruchs; nicht nur schlagwortartig)",
+                  "satisfied": true,
+                  "basis": "express"
+                }
+              ],
+              "scope_check": {
+                "criterion_scope": "H gegen G, Anspruch aus § 433 Abs. 2 BGB (Smart-Kaufpreis 5.500 €), Anscheinsvollmacht",
+                "evidence_scope": "H gegen G, Anspruch aus § 433 Abs. 2 BGB (Smart-Kaufpreis 5.500 €), Anscheinsvollmacht",
+                "same_scope": true
+              },
+              "stated_reason_check": {
+                "answer_reason": "Eine Anscheinsvollmacht scheidet aus, weil kein G zurechenbarer Rechtsschein vorlag und kein pflichtwidriges Verhalten der G ersichtlich ist; mangels Vertretungsmacht und Genehmigung besteht kein Anspruch aus § 433 Abs. 2 BGB.",
+                "legally_compatible": true
+              },
+              "method_checks": {},
+              "judge": {
+                "name": "gemini-3.8-flash",
+                "model": "google/gemini-3.8-flash",
+                "api_base": "https://openrouter.ai/api/v1",
+                "reasoning_effort": "medium",
+                "parallel": 4
+              },
+              "cache_hit": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "style_results": []
+}
