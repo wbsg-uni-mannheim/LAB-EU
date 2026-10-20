@@ -39,7 +39,7 @@ Semicolon as separator, one header line, 3,444 data lines, 26 columns, column na
 | `Kriterium` | Criterion identifier in the case rubric |
 | `Kritikalität` | Criticality of the criterion in the rubric, 1 to 3 stars |
 | `Funktion` | Function tag of the criterion in the rubric |
-| `Klasse_Claude`, `Klasse_Codex` | Class: K1 to K7, OK, R or S (K1 without its level). The reasoning may say „Normbeleg“ for what the error classes call „Normzitat“ |
+| `Klasse_Claude`, `Klasse_Codex` | Class: K1 to K5, K7, OK, R or S (K1 without its level). The annotators' scheme also had K6 (self-contradiction). Its three findings also met K2 or K3, which take precedence, and were assigned there by the author (`Entscheidung_Autor`). The reasoning may say „Normbeleg“ for what the error classes call „Normzitat“ |
 | `Einig` | `ja` if both annotators chose the same class |
 | `Stufe_Claude`, `Stufe_Codex` | Level within K1 (K1a to K1d), empty for other classes |
 | `Einig_fein` | `ja` if both chose the same class and, for K1, the same level |
@@ -47,7 +47,7 @@ Semicolon as separator, one header line, 3,444 data lines, 26 columns, column na
 | `Sicherheit_Claude`, `Sicherheit_Codex` | Stated confidence: hoch, mittel, niedrig. Not used in the analysis |
 | `Vermerk_Claude`, `Vermerk_Codex` | Rubric flag: the concrete legal question if the rubric requirement is doubtful. Does not change the class |
 | `Zusatzbefund_Claude`, `Zusatzbefund_Codex` | For content FAILs assigned to K1: whether a misstated rule (K3), an altered fact (K4) or both additionally stand at the same place, else `nein`. Empty for other classes |
-| `Entscheidung_Autor` | The author's decision on a contested content FAIL: the class, for K1 with its level (for example `K1b`). Empty where both annotators agree |
+| `Entscheidung_Autor` | The author's decision on a contested content FAIL, and on the three former K6 findings: the class, for K1 with its level (for example `K1b`). Empty where both annotators agree otherwise |
 | `Klasse_final` | Class that enters the frequencies: the author's decision, else the unanimous class, else empty |
 | `Stufe_final` | K1 level that enters the level table: the author's decision, else the unanimous level, else empty |
 | `Folgefehler_Claude`, `Folgefehler_Codex` | Origin criterion if the annotator flagged the finding as a consequence of another error finding of the same answer („Folgefehler von“, taken from the reasoning or the flag), else empty. Only origins that are themselves content FAILs of the same answer with an error class are listed |

@@ -80,8 +80,7 @@ Mögliche Stellschraube (Skill): für bestätigte Lücken eher ein Skill als ein
 
 Gemeint ist: Ein Kriterium fällt bei der Baseline durch und besteht beim Agent, oder umgekehrt. Das kann auch an den Judges liegen. Wie stark das Komitee der Studie bei derselben Antwort schwankt, wurde nie direkt gemessen. Es gibt nur zwei Hinweise. Im Hauptlauf waren sich die beiden ersten Judges bei 830 von 8.922 Bewertungen (9 %) uneinig, dort hat der dritte entschieden. Und bei einer Nachbewertung zweier Zivilrechtsfälle mit einem anderen Komitee änderte sich das Ergebnis bei 5 bis 8 von 100 Kriterien.
 
-Nehmen wir grob an, die Judges der Studie schwanken ähnlich wie bei der Nachbewertung. Dann könnte bei Sol, Terra und DeepSeek ein Fünftel bis die Hälfte der Wechsel zwischen Baseline und Agent nur von den Judges kommen. Das ist eine grobe Schätzung. Für Codex lässt sich das nicht sagen, weil die Judges dort andere Rollen haben. Bei Codex bewerten gemini-3.6-flash und luna zuerst, bei Uneinigkeit entscheidet terra. Bei den übrigen sechs Armen bewerten luna und terra zuerst, und gemini-3.6-flash entscheidet.
+Dazu kommt, dass die Antworten selbst von Lauf zu Lauf schwanken. Das ist nicht gemessen, weil jeder Arm nur einmal lief.
 
-Dazu kommt, dass die Antworten selbst von Lauf zu Lauf schwanken. Das ist nicht gemessen, weil jeder Arm nur einmal lief. Der Anteil der Wechsel, der nur Zufall ist, kann also noch höher sein.
+Die Judges können also bei derselben Antwort schwanken, und die Antworten selbst auch. Kleine Unterschiede zwischen zwei Armen können deshalb allein daher kommen und zeigen nicht zwingend einen Unterschied zwischen den Armen.
 
-Verlassen kann man sich deshalb nur auf die Summe über viele Fälle, also wie viele Kriterien mit Agent insgesamt mehr bestanden werden. Ein einzelner Wechsel sagt wenig.
