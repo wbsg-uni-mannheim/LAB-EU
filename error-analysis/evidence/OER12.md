@@ -2,7 +2,7 @@
 
 78 Inhalts-FAILs über acht Arme. Klassen nach [error-classes.pdf](../error-classes.pdf). Zwei KI-Annotatoren haben unabhängig zugeordnet, Abweichungen entscheidet Luis. Noch offen: 0.
 
-Kriterien in der Reihenfolge der Rubric, darunter je Arm die FAIL-Bewertung in der Reihenfolge SB, SA, TB, TA, DB, DA, CN, CW. Fehlt ein Arm bei einem Kriterium, hat er dort PASS.
+Kriterien in der Reihenfolge der Rubric, darunter je Arm die FAIL-Bewertung in der Reihenfolge SB, SA, TB, TA, DB, DA, CN, CW. Fehlt ein Arm bei einem Kriterium, hat er dort PASS. In den Zeilen der Annotatoren stehen die Klassennamen zur Zeit der Annotation (siehe README).
 
 Quellen auf Commit [`787163a`](https://github.com/wbsg-uni-mannheim/LAB-EU/tree/787163a4e06b651545ae73ec54ce7e984624f8c1): [Sachverhalt](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/tasks/de/oeffentliches-recht/verwaltungsrecht/anfechtungsklage/fall-02-anfechtungsklage-bei-nebenbestimmungen/documents/sachverhalt.md), [Musterlösung](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/tasks/de/oeffentliches-recht/verwaltungsrecht/anfechtungsklage/fall-02-anfechtungsklage-bei-nebenbestimmungen/evals/loesung.md), [Rubric](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/tasks/de/oeffentliches-recht/verwaltungsrecht/anfechtungsklage/fall-02-anfechtungsklage-bei-nebenbestimmungen/evals/rubric.json)
 
@@ -549,7 +549,7 @@ Kritikalität 2, Funktion rule_statement
 
 > ERFÜLLT, wenn die Antwort erkennt, dass § 36 Abs. 1 SVwVfG der Behörde beim Erlass der Auflage Ermessen einräumt, das nach § 114 VwGO auf Fehler zu kontrollieren ist, und eine unverhältnismäßige Auflage als Ermessensüberschreitung behandelt. NICHT ERFÜLLT, wenn sie den Erlass gerade dieser Auflage als vollständig gebunden ansieht, die Ermessenskontrolle auslässt oder eine freie gerichtliche Zweckmäßigkeitskontrolle vornimmt.
 
-### Arm SA: **K7** (beide Annotatoren einig)
+### Arm SA: **K6** (beide Annotatoren einig)
 
 - **Claude K7** (mittel): SA prüft in Z. 81 bis 89 Verhältnismäßigkeit und fehlerfreie Ermessensausübung gemeinsam, nennt in Z. 83 die Kontrolle nach § 114 Satz 1 VwGO und schließt in Z. 89, Ermessensfehler seien nicht ersichtlich. Es fehlt nur die ausdrückliche Bezeichnung einer unverhältnismäßigen Auflage als Ermessensüberschreitung und die Zuordnung des Ermessens zu § 36 Abs. 1 SVwVfG. Die Prüfung ist vorhanden und nur Fachbegriff und Zuordnung fehlen, daher K7.
 - **Codex K7** (hoch): Die Antwort stellt in Z. 83 die Ermessensfehlerkontrolle nach § 114 Satz 1 VwGO vor und prüft in Z. 85 bis 89 die Verhältnismäßigkeit mit dem Ergebnis fehlender Ermessensfehler. Sie bezeichnet einen Verstoß gegen die Verhältnismäßigkeit nicht ausdrücklich als Ermessensüberschreitung. Bei vorhandener Ermessensprüfung fehlt damit die verlangte genauere Einordnung des Fehlertyps, was K7 ergibt. *Rubric-Anforderung fraglich: Ist bei einer ausdrücklich nach § 114 VwGO durchgeführten Verhältnismäßigkeitskontrolle zusätzlich die Bezeichnung einer Unverhältnismäßigkeit als Ermessensüberschreitung erforderlich?*

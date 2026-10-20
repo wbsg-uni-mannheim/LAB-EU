@@ -2,7 +2,7 @@
 
 102 Inhalts-FAILs über acht Arme. Klassen nach [error-classes.pdf](../error-classes.pdf). Zwei KI-Annotatoren haben unabhängig zugeordnet, Abweichungen entscheidet Luis. Noch offen: 0.
 
-Kriterien in der Reihenfolge der Rubric, darunter je Arm die FAIL-Bewertung in der Reihenfolge SB, SA, TB, TA, DB, DA, CN, CW. Fehlt ein Arm bei einem Kriterium, hat er dort PASS.
+Kriterien in der Reihenfolge der Rubric, darunter je Arm die FAIL-Bewertung in der Reihenfolge SB, SA, TB, TA, DB, DA, CN, CW. Fehlt ein Arm bei einem Kriterium, hat er dort PASS. In den Zeilen der Annotatoren stehen die Klassennamen zur Zeit der Annotation (siehe README).
 
 Quellen auf Commit [`787163a`](https://github.com/wbsg-uni-mannheim/LAB-EU/tree/787163a4e06b651545ae73ec54ce7e984624f8c1): [Sachverhalt](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/tasks/de/oeffentliches-recht/verwaltungsrecht/examensklausur-40-000-t-schredder-schrott/documents/sachverhalt.md), [Musterlösung](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/tasks/de/oeffentliches-recht/verwaltungsrecht/examensklausur-40-000-t-schredder-schrott/evals/loesung.md), [Rubric](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/tasks/de/oeffentliches-recht/verwaltungsrecht/examensklausur-40-000-t-schredder-schrott/evals/rubric.json)
 
@@ -305,14 +305,14 @@ Kritikalität 2, Funktion application
 
 > ERFÜLLT, wenn die Antwort nach dem baden-württembergischen Rechtsträgerprinzip die Stadt Mannheim als Rechtsträgerin der handelnden Behörde und gemäß § 78 Abs. 1 Nr. 1 VwGO analog als Antragsgegnerin bestimmt. Bei ausdrücklich nach dem Bearbeitervermerk angewandtem Landesrecht mit Behördenprinzip ist die handelnde Behörde nur dann akzeptabel, wenn dieses Landesrecht und das Behördenprinzip benannt werden. NICHT ERFÜLLT, wenn K, R, D oder ohne passende landesrechtliche Begründung eine Behörde als Antragsgegner bezeichnet wird.
 
-### Arm SB: **K7** (beide Annotatoren einig)
+### Arm SB: **K6** (beide Annotatoren einig)
 
 - **Claude K7** (hoch): Die Antwort bestimmt in Z. 35, dass der Antrag gegen den Rechtsträger der erlassenden Behörde nach § 78 Abs. 1 VwGO analog zu richten ist. Die Stadt Mannheim wird als Antragsgegnerin nicht benannt. Da die Regel steht und nur die konkrete Zuordnung fehlt, welcher Rechtsträger gemeint ist, liegt K7 vor.
 - **Codex K7** (hoch): Zeile 35 bestimmt die Rechtsträgerin der Behörde, die die Beseitigungsverfügung erlassen hat, unter Verweis auf § 78 Abs. 1 VwGO als Antragsgegnerin. Es fehlt ihre konkrete Bezeichnung als Stadt Mannheim. Die rechtliche Zuordnung ist vorhanden und lediglich die verlangte Benennung bleibt aus. *Rubric-Anforderung fraglich: Genügt die Bestimmung der Antragsgegnerin als Rechtsträgerin der Ausgangsbehörde, oder muss zusätzlich die Stadt Mannheim benannt werden?*
 
 Beleg: [Antwort SB](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md) · [Z. 35](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md#L35)
 
-### Arm SA: **K7** (beide Annotatoren einig)
+### Arm SA: **K6** (beide Annotatoren einig)
 
 - **Claude K7** (mittel): SA prüft in Z. 31 bis 33 den richtigen Antragsgegner und stellt fest, dass der Antrag entsprechend § 78 Abs. 1 Nr. 1 VwGO gegen den Rechtsträger der Ausgangsbehörde zu richten ist. Die Stadt Mannheim wird in der gesamten Antwort nicht als Rechtsträgerin und Antragsgegnerin benannt, und der Vorbehalt zu § 78 Abs. 1 Nr. 2 VwGO bleibt ohne Festlegung auf das baden-württembergische Rechtsträgerprinzip. Regel, Norm und Prüfungsort stehen im Text, es fehlt nur die konkrete Zuordnung, welcher Rechtsträger gemeint ist, daher K7.
 - **Codex K7** (hoch): SA legt baden-württembergisches Polizeirecht zugrunde und bestimmt unter entsprechender Anwendung des § 78 Abs. 1 Nr. 1 VwGO den Rechtsträger der Ausgangsbehörde zum Antragsgegner (Zeilen 17 und 33). Die konkrete Benennung der Stadt Mannheim als dieser Rechtsträgerin fehlt. Da die rechtliche Zuordnung vorhanden ist und nur die verlangte Bezeichnung der Antragsgegnerin nachzutragen wäre, liegt K7 vor.
@@ -367,56 +367,56 @@ Kritikalität 1, Funktion application
 
 > ERFÜLLT, wenn die Antwort den Antrag nach § 80 Abs. 5 S. 1 VwGO dem bereits mit der Anfechtungsklage befassten Gericht der Hauptsache zuweist und nach baden-württembergischem Recht das VG Karlsruhe nennt. NICHT ERFÜLLT, wenn sie den Antrag an die Behörde, ein Zivilgericht, das Bundesverwaltungsgericht oder ein anderes unzuständiges Verwaltungsgericht verweist.
 
-### Arm SB: **K7** (beide Annotatoren einig)
+### Arm SB: **K6** (beide Annotatoren einig)
 
 - **Claude K7** (hoch): Die Antwort weist den Antrag in Z. 35 nach § 80 Abs. 5 S. 1 VwGO dem Gericht der Hauptsache zu, also dem bereits mit der Anfechtungsklage befassten Verwaltungsgericht. Das VG Karlsruhe wird nicht genannt. Da die Zuweisung stimmt und nur die konkrete Bezeichnung des Gerichts fehlt, liegt K7 vor. *Rubric-Anforderung fraglich: Ist die Nennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt nur vom zuständigen Verwaltungsgericht spricht und dieses bereits mit der Hauptsache befasst ist?*
 - **Codex K7** (hoch): Zeile 35 ordnet den Antrag nach § 80 Abs. 5 Satz 1 VwGO dem bereits mit der Anfechtungsklage befassten Verwaltungsgericht zu. Die konkrete Benennung als VG Karlsruhe fehlt. Bei vorhandener Zuständigkeitszuordnung bleibt damit nur die verlangte genauere Gerichtsbezeichnung aus. *Rubric-Anforderung fraglich: Ist die Benennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt die Hauptsache bereits beim zuständigen Verwaltungsgericht verortet?*
 
 Beleg: [Antwort SB](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md) · [Z. 35](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-sol-high/20260730T221734Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md#L35)
 
-### Arm SA: **K7** (beide Annotatoren einig)
+### Arm SA: **K6** (beide Annotatoren einig)
 
 - **Claude K7** (hoch): Die Antwort weist den Antrag in Z. 33 dem Gericht der Hauptsache zu, also dem bereits mit der Anfechtungsklage befassten Verwaltungsgericht. Das VG Karlsruhe wird nicht genannt. Nur die konkrete Bezeichnung des Gerichts fehlt, daher K7. *Rubric-Anforderung fraglich: Ist die Nennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt nur vom zuständigen Verwaltungsgericht spricht und dieses bereits mit der Hauptsache befasst ist?*
 - **Codex K7** (hoch): Zeile 33 bestimmt nach § 80 Abs. 5 Satz 1 VwGO das bereits mit der Anfechtungsklage befasste Verwaltungsgericht als Gericht der Hauptsache. Die konkrete Benennung als VG Karlsruhe fehlt. Bei vorhandener Zuständigkeitszuordnung bleibt damit nur die verlangte genauere Gerichtsbezeichnung aus. *Rubric-Anforderung fraglich: Ist die Benennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt die Hauptsache bereits beim zuständigen Verwaltungsgericht verortet?*
 
 Beleg: [Antwort SA](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-gpt-5.6-sol-high/20260730T221733Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md) · [Z. 33](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-gpt-5.6-sol-high/20260730T221733Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md#L33)
 
-### Arm TB: **K7** (beide Annotatoren einig)
+### Arm TB: **K6** (beide Annotatoren einig)
 
 - **Claude K7** (hoch): Die Antwort weist den Antrag in Z. 39 nach § 80 Abs. 5 S. 1 VwGO dem Verwaltungsgericht zu, bei dem K bereits Anfechtungsklage erhoben hat. Das VG Karlsruhe wird nicht genannt. Nur die konkrete Bezeichnung des Gerichts fehlt, daher K7. *Rubric-Anforderung fraglich: Ist die Nennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt nur vom zuständigen Verwaltungsgericht spricht und dieses bereits mit der Hauptsache befasst ist?*
 - **Codex K7** (hoch): Zeile 39 weist den Antrag nach § 80 Abs. 5 Satz 1 VwGO dem Verwaltungsgericht zu, bei dem die Anfechtungsklage bereits erhoben wurde. Die konkrete Benennung als VG Karlsruhe fehlt. Bei vorhandener Zuständigkeitszuordnung bleibt damit nur die verlangte genauere Gerichtsbezeichnung aus. *Rubric-Anforderung fraglich: Ist die Benennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt die Hauptsache bereits beim zuständigen Verwaltungsgericht verortet?*
 
 Beleg: [Antwort TB](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md) · [Z. 39](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-gpt-5.6-terra-high/20260730T221744Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md#L39)
 
-### Arm TA: **K7** (beide Annotatoren einig)
+### Arm TA: **K6** (beide Annotatoren einig)
 
 - **Claude K7** (hoch): Die Antwort weist den Antrag in Z. 15 dem Gericht der Hauptsache, hier dem Verwaltungsgericht, zu und wiederholt dies in Z. 119. Das VG Karlsruhe wird nicht genannt. Nur die konkrete Bezeichnung des Gerichts fehlt, daher K7. *Rubric-Anforderung fraglich: Ist die Nennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt nur vom zuständigen Verwaltungsgericht spricht und dieses bereits mit der Hauptsache befasst ist?*
 - **Codex K7** (hoch): Zeile 15 nennt unter Bezugnahme auf § 80 Abs. 5 Satz 1 VwGO das Verwaltungsgericht als Gericht der Hauptsache. Die konkrete Benennung als VG Karlsruhe fehlt. Bei vorhandener Zuständigkeitszuordnung bleibt damit nur die verlangte genauere Gerichtsbezeichnung aus. *Rubric-Anforderung fraglich: Ist die Benennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt die Hauptsache bereits beim zuständigen Verwaltungsgericht verortet?*
 
 Beleg: [Antwort TA](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md) · [Z. 15](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md#L15), [Z. 119](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-gpt-5.6-terra-high/20260730T221733Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md#L119)
 
-### Arm DB: **K7** (beide Annotatoren einig)
+### Arm DB: **K6** (beide Annotatoren einig)
 
 - **Claude K7** (hoch): Die Antwort bestimmt in Z. 43 das Verwaltungsgericht, bei dem die Hauptsache anhängig ist, als nach § 80 Abs. 5 S. 1 VwGO zuständig. Das VG Karlsruhe wird nicht genannt. Nur die konkrete Bezeichnung des Gerichts fehlt, daher K7. *Rubric-Anforderung fraglich: Ist die Nennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt nur vom zuständigen Verwaltungsgericht spricht und dieses bereits mit der Hauptsache befasst ist?*
 - **Codex K7** (hoch): Die Zeilen 19 und 43 bestimmen das bereits mit der Hauptsache befasste Verwaltungsgericht als zuständiges Gericht nach § 80 Abs. 5 Satz 1 VwGO. Die konkrete Benennung als VG Karlsruhe fehlt. Bei vorhandener Zuständigkeitszuordnung bleibt damit nur die verlangte genauere Gerichtsbezeichnung aus. *Rubric-Anforderung fraglich: Ist die Benennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt die Hauptsache bereits beim zuständigen Verwaltungsgericht verortet?*
 
 Beleg: [Antwort DB](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md) · [Z. 19](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md#L19), [Z. 43](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md#L43)
 
-### Arm DA: **K7** (beide Annotatoren einig)
+### Arm DA: **K6** (beide Annotatoren einig)
 
 - **Claude K7** (hoch): Die Antwort verlangt in Z. 11 den Antrag beim Verwaltungsgericht der Hauptsache nach § 80 Abs. 5 S. 1 VwGO. Das VG Karlsruhe wird nicht genannt. Nur die konkrete Bezeichnung des Gerichts fehlt, daher K7. *Rubric-Anforderung fraglich: Ist die Nennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt nur vom zuständigen Verwaltungsgericht spricht und dieses bereits mit der Hauptsache befasst ist?*
 - **Codex K7** (hoch): Zeile 11 weist den Antrag ausdrücklich nach § 80 Abs. 5 Satz 1 VwGO dem Verwaltungsgericht der Hauptsache zu. Die konkrete Benennung als VG Karlsruhe fehlt. Bei vorhandener Zuständigkeitszuordnung bleibt damit nur die verlangte genauere Gerichtsbezeichnung aus. *Rubric-Anforderung fraglich: Ist die Benennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt die Hauptsache bereits beim zuständigen Verwaltungsgericht verortet?*
 
 Beleg: [Antwort DA](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md) · [Z. 11](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/agent-deepseek-v4-pro-medium/20260730T214602Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md#L11)
 
-### Arm CN: **K7** (beide Annotatoren einig)
+### Arm CN: **K6** (beide Annotatoren einig)
 
 - **Claude K7** (hoch): Die Antwort verlangt in Z. 5 den Antrag beim Gericht der Hauptsache und in Z. 139 beim bereits mit der Anfechtungsklage befassten Verwaltungsgericht. Das VG Karlsruhe wird nicht genannt. Nur die konkrete Bezeichnung des Gerichts fehlt, daher K7. *Rubric-Anforderung fraglich: Ist die Nennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt nur vom zuständigen Verwaltungsgericht spricht und dieses bereits mit der Hauptsache befasst ist?*
 - **Codex K7** (hoch): Die Zeilen 5 und 21 verweisen nach § 80 Abs. 5 Satz 1 VwGO auf das Gericht der Hauptsache, und Zeile 139 nennt das bereits mit der Klage befasste Verwaltungsgericht. Die konkrete Benennung als VG Karlsruhe fehlt. Bei vorhandener Zuständigkeitszuordnung bleibt damit nur die verlangte genauere Gerichtsbezeichnung aus. *Rubric-Anforderung fraglich: Ist die Benennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt die Hauptsache bereits beim zuständigen Verwaltungsgericht verortet?*
 
 Beleg: [Antwort CN](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/codex-no-web-45/20260806T190042Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md) · [Z. 5](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/codex-no-web-45/20260806T190042Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md#L5), [Z. 21](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/codex-no-web-45/20260806T190042Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md#L21), [Z. 139](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/codex-no-web-45/20260806T190042Z/tasks/de__oeffentliches-recht__verwaltungsrecht__examensklausur-40-000-t-schredder-schrott/submission/fallloesung.md#L139)
 
-### Arm CW: **K7** (beide Annotatoren einig)
+### Arm CW: **K6** (beide Annotatoren einig)
 
 - **Claude K7** (hoch): Die Antwort weist den Antrag in Z. 7 und Z. 17 dem Gericht der Hauptsache zu, also dem bereits mit der Anfechtungsklage befassten Verwaltungsgericht. Das VG Karlsruhe wird nicht genannt. Nur die konkrete Bezeichnung des Gerichts fehlt, daher K7. *Rubric-Anforderung fraglich: Ist die Nennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt nur vom zuständigen Verwaltungsgericht spricht und dieses bereits mit der Hauptsache befasst ist?*
 - **Codex K7** (hoch): Die Zeilen 7 und 17 bestimmen nach § 80 Abs. 5 Satz 1 VwGO das bereits mit der Anfechtungsklage befasste Verwaltungsgericht als zuständig. Die konkrete Benennung als VG Karlsruhe fehlt. Bei vorhandener Zuständigkeitszuordnung bleibt damit nur die verlangte genauere Gerichtsbezeichnung aus. *Rubric-Anforderung fraglich: Ist die Benennung des VG Karlsruhe erforderlich, obwohl der Sachverhalt die Hauptsache bereits beim zuständigen Verwaltungsgericht verortet?*

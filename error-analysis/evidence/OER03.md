@@ -2,7 +2,7 @@
 
 100 Inhalts-FAILs über acht Arme. Klassen nach [error-classes.pdf](../error-classes.pdf). Zwei KI-Annotatoren haben unabhängig zugeordnet, Abweichungen entscheidet Luis. Noch offen: 0.
 
-Kriterien in der Reihenfolge der Rubric, darunter je Arm die FAIL-Bewertung in der Reihenfolge SB, SA, TB, TA, DB, DA, CN, CW. Fehlt ein Arm bei einem Kriterium, hat er dort PASS.
+Kriterien in der Reihenfolge der Rubric, darunter je Arm die FAIL-Bewertung in der Reihenfolge SB, SA, TB, TA, DB, DA, CN, CW. Fehlt ein Arm bei einem Kriterium, hat er dort PASS. In den Zeilen der Annotatoren stehen die Klassennamen zur Zeit der Annotation (siehe README).
 
 Quellen auf Commit [`787163a`](https://github.com/wbsg-uni-mannheim/LAB-EU/tree/787163a4e06b651545ae73ec54ce7e984624f8c1): [Sachverhalt](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/tasks/de/oeffentliches-recht/europarecht/fortgeschrittenenklausur-europarecht-wohnungsbestand-in-burgerhand/documents/sachverhalt.md), [Musterlösung](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/tasks/de/oeffentliches-recht/europarecht/fortgeschrittenenklausur-europarecht-wohnungsbestand-in-burgerhand/evals/loesung.md), [Rubric](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/tasks/de/oeffentliches-recht/europarecht/fortgeschrittenenklausur-europarecht-wohnungsbestand-in-burgerhand/evals/rubric.json)
 
@@ -49,7 +49,7 @@ Beleg: [Antwort TA](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06
 
 Beleg: [Antwort DB](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__europarecht__fortgeschrittenenklausur-europarecht-wohnungsbestand-in-burgerhand/submission/fallloesung.md) · [Z. 8](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__europarecht__fortgeschrittenenklausur-europarecht-wohnungsbestand-in-burgerhand/submission/fallloesung.md#L8), [Z. 98](https://github.com/wbsg-uni-mannheim/LAB-EU/blob/787163a4e06b651545ae73ec54ce7e984624f8c1/runs/baseline-deepseek-v4-pro/20260730T221734Z/tasks/de__oeffentliches-recht__europarecht__fortgeschrittenenklausur-europarecht-wohnungsbestand-in-burgerhand/submission/fallloesung.md#L98)
 
-### Arm DA: **K7** (Entscheidung Luis, 2026-10-03)
+### Arm DA: **K6** (Entscheidung Luis, 2026-10-03)
 
 Z. 13 bestimmt nach Art. 256 Abs. 1 AEUV und der Satzung den Gerichtshof und nicht das Gericht als zuständig; der rechtliche Inhalt stimmt. Z. 9 schreibt „Gerichtshof der Europäischen Union (EuGH)“ und setzt damit die Gesamtinstitution sprachlich mit dem Spruchkörper gleich. Es fehlt nur die genaue Bezeichnung (K7); ein ungenauer Ausdruck bei richtiger Regel ist kein K3.
 

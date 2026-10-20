@@ -2,6 +2,8 @@
 
 Eine Datei je Fall. Klassen nach [error-classes.pdf](../error-classes.pdf).
 
+In den Zeilen der Annotatoren und in ihren Begründungen stehen die Klassennamen zur Zeit der Annotation. K7 ist dort das heutige K6 (Bezeichnung fehlt). K6 war dort der Widerspruch, eine Klasse, die entfallen ist: Ihre drei Befunde erfüllten zugleich K2 oder K3, die Vorrang haben, und sind dort entschieden.
+
 | Fall | Titel | Inhalts-FAILs | offen |
 |---|---|---|---|
 | [ÖR 01](OER01.md) | Abschlussklausur Europarecht: „Germany first“ | 71 | 0 |
