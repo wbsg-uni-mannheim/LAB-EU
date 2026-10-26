@@ -168,7 +168,9 @@ der blinde Zweitgutachter (Abschnitt 7) bleibt wichtig.
 
 Entscheidung: Die Regel aus Abschnitt 5 ist erfüllt. Der eingefrorene Judge ersetzt den veröffentlichten. Seine
 Urteile liegen als `scores-v4-frozen.json` neben jeder `scores.json` der sechs Hauptarme (Agent und Baseline
-für Sol, Terra, DeepSeek), die Konfiguration als `judge_config.scores-v4-frozen.json` im Laufordner. DeepSeek
+für Sol, Terra, DeepSeek), die Konfiguration als `judge_config.scores-v4-frozen.json` im Laufordner. Für
+Claude Opus 5.5 und GPT-6 Astra (`runs/cli-high-no-web-45-20261013`) liegt sie unter
+`submission/scores-v4-frozen.json`. DeepSeek
 Agent hat bei `anfanger-innenhausarbeit-bundeszwang-und-rededrang` keine Abgabe und daher keine neue Datei.
 
 ## 6. Reproduktion

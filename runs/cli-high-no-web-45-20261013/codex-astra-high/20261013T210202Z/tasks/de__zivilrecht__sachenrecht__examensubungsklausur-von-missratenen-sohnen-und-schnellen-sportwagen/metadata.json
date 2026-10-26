@@ -1,0 +1,142 @@
+{
+  "schema_version": "0.1",
+  "harness": "codex-cli-ephemeral-web",
+  "task_id": "de/zivilrecht/sachenrecht/examensubungsklausur-von-missratenen-sohnen-und-schnellen-sportwagen",
+  "solver_case_id": "case-036",
+  "task_identity_anonymized": true,
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/cli-high-no-web-45-20261013/input-snapshot/de/zivilrecht/sachenrecht/examensubungsklausur-von-missratenen-sohnen-und-schnellen-sportwagen",
+  "source_task_dir_relative": "runs/cli-high-no-web-45-20261013/input-snapshot/de/zivilrecht/sachenrecht/examensubungsklausur-von-missratenen-sohnen-und-schnellen-sportwagen",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "high",
+  "solver_configuration": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "high",
+    "model_source": "cli-override",
+    "reasoning_effort_source": "cli-override",
+    "event_stream_verified": false,
+    "note": "Codex JSONL does not report the resolved model and reasoning effort. Pin both CLI options for a fully self-contained run record."
+  },
+  "tool_access": "workspace",
+  "live_web_search": false,
+  "web_search_mode": "disabled",
+  "blocked_domains": [
+    "zjs-online.com"
+  ],
+  "blocked_domain_policy": {
+    "blocked_domains": [
+      "zjs-online.com"
+    ],
+    "passed": true,
+    "violations": []
+  },
+  "web_access_policy": {
+    "web_search_allowed": false,
+    "passed": true,
+    "violations": []
+  },
+  "search_leakage_audit": {
+    "enforcement": "informational-only",
+    "flagged": false,
+    "flags": []
+  },
+  "memories_enabled": false,
+  "ephemeral": true,
+  "project_context": false,
+  "user_config_and_configured_tools_loaded": false,
+  "command": [
+    "codex",
+    "--config",
+    "web_search=\"disabled\"",
+    "--sandbox",
+    "workspace-write",
+    "--ask-for-approval",
+    "never",
+    "--cd",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-_6bn8k03",
+    "--disable",
+    "memories",
+    "--model",
+    "gpt-6-astra",
+    "--config",
+    "model_reasoning_effort=\"high\"",
+    "exec",
+    "--ignore-user-config",
+    "--ignore-rules",
+    "--config",
+    "web_search=\"disabled\"",
+    "--config",
+    "sandbox_workspace_write.network_access=false",
+    "--config",
+    "project_doc_max_bytes=0",
+    "--config",
+    "features.apps=false",
+    "--config",
+    "features.multi_agent=false",
+    "--config",
+    "features.hooks=false",
+    "--config",
+    "features.browser_use=false",
+    "--config",
+    "features.browser_use_external=false",
+    "--config",
+    "features.computer_use=false",
+    "--config",
+    "features.in_app_browser=false",
+    "--config",
+    "plugins={}",
+    "--config",
+    "mcp_servers={}",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--json",
+    "--output-last-message",
+    "/var/folders/0q/8f0zskws27x_14w3qmfndjfw0000gn/T/lab-eu-codex-_6bn8k03/.codex-final-message.md",
+    "-"
+  ],
+  "attempt_count": 1,
+  "attempts": [
+    {
+      "attempt": 1,
+      "outcome": "ok",
+      "reason": "deliverable captured",
+      "exit_code": 0,
+      "timed_out": false,
+      "started_at": "2026-10-13T22:26:53.645577+00:00",
+      "ended_at": "2026-10-13T22:38:17.385365+00:00",
+      "duration_seconds": 683.738
+    }
+  ],
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 39662,
+      "sha256": "339c254df8cfe84e419f437dbb3440148869fe76b1a1b42c2c0fd1ed01fce695"
+    }
+  ],
+  "missing_deliverables": [],
+  "unexpected_files": [],
+  "used_final_message_fallback": false,
+  "source_audit": {
+    "search_queries": 0,
+    "recorded_open_or_fetch_urls": 0,
+    "used_urls": 0,
+    "cited_urls": 0,
+    "unique_used_source_urls": 0,
+    "unique_used_source_domains": 0,
+    "unique_source_urls": 0,
+    "unique_source_domains": 0,
+    "blocked_domain_violations": 0,
+    "search_leakage_flags": 0,
+    "web_access_violations": 0
+  },
+  "source_audit_json": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/cli-high-no-web-45-20261013/codex-astra-high/20261013T210202Z/tasks/de__zivilrecht__sachenrecht__examensubungsklausur-von-missratenen-sohnen-und-schnellen-sportwagen/sources.json",
+  "source_audit_markdown": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/cli-high-no-web-45-20261013/codex-astra-high/20261013T210202Z/tasks/de__zivilrecht__sachenrecht__examensubungsklausur-von-missratenen-sohnen-und-schnellen-sportwagen/sources.md",
+  "exit_code": 0,
+  "external_research_mode": "none",
+  "mcp_servers_enabled": false,
+  "protocol": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/cli-high-no-web-45-20261013/protocol.json"
+}

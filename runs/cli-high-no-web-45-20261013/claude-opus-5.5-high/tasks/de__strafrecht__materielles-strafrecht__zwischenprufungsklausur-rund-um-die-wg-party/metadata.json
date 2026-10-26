@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1",
+  "harness": "claude-code-cli-isolated-no-web",
+  "task_id": "de/strafrecht/materielles-strafrecht/zwischenprufungsklausur-rund-um-die-wg-party",
+  "solver_case_id": "case-029",
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/cli-high-no-web-45-20261013/input-snapshot/de/strafrecht/materielles-strafrecht/zwischenprufungsklausur-rund-um-die-wg-party",
+  "source_task_dir_relative": "runs/cli-high-no-web-45-20261013/input-snapshot/de/strafrecht/materielles-strafrecht/zwischenprufungsklausur-rund-um-die-wg-party",
+  "model": "claude-opus-5-5",
+  "reasoning_effort": "high",
+  "command": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--safe-mode",
+    "--restricted",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--setting-sources",
+    "",
+    "--disable-slash-commands",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--tools",
+    "Read,Write,Edit,Glob,Grep",
+    "--allowedTools",
+    "Read,Write,Edit,Glob,Grep",
+    "--permission-mode",
+    "acceptEdits",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "model_verified": true,
+  "live_web_search": false,
+  "memories_enabled": false,
+  "project_context": false,
+  "ephemeral": true,
+  "task_identity_anonymized": true,
+  "attempt_count": 1,
+  "started_at": "2026-10-13T22:09:24.803849+00:00",
+  "ended_at": "2026-10-13T22:17:08.467129+00:00",
+  "duration_seconds": 463.662,
+  "process_exit_code": 0,
+  "timed_out": false,
+  "exit_code": 0,
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 40439,
+      "sha256": "a4d6a00d609635a3fed4f0159b2058cfdf87fad97fa8a61c02afcf788e77171c"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "unexpected_files": [],
+  "policy_violations": [],
+  "model_usage": {
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 55894,
+      "cacheReadInputTokens": 41279,
+      "cacheCreationInputTokens": 39232,
+      "webSearchRequests": 0,
+      "costUSD": 1.4400238,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 15219,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed"
+}

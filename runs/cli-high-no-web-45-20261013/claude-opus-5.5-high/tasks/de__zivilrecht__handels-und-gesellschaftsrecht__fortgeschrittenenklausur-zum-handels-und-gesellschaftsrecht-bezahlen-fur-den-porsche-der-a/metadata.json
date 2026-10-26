@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1",
+  "harness": "claude-code-cli-isolated-no-web",
+  "task_id": "de/zivilrecht/handels-und-gesellschaftsrecht/fortgeschrittenenklausur-zum-handels-und-gesellschaftsrecht-bezahlen-fur-den-porsche-der-a",
+  "solver_case_id": "case-043",
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/cli-high-no-web-45-20261013/input-snapshot/de/zivilrecht/handels-und-gesellschaftsrecht/fortgeschrittenenklausur-zum-handels-und-gesellschaftsrecht-bezahlen-fur-den-porsche-der-a",
+  "source_task_dir_relative": "runs/cli-high-no-web-45-20261013/input-snapshot/de/zivilrecht/handels-und-gesellschaftsrecht/fortgeschrittenenklausur-zum-handels-und-gesellschaftsrecht-bezahlen-fur-den-porsche-der-a",
+  "model": "claude-opus-5-5",
+  "reasoning_effort": "high",
+  "command": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--safe-mode",
+    "--restricted",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--setting-sources",
+    "",
+    "--disable-slash-commands",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--tools",
+    "Read,Write,Edit,Glob,Grep",
+    "--allowedTools",
+    "Read,Write,Edit,Glob,Grep",
+    "--permission-mode",
+    "acceptEdits",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "model_verified": true,
+  "live_web_search": false,
+  "memories_enabled": false,
+  "project_context": false,
+  "ephemeral": true,
+  "task_identity_anonymized": true,
+  "attempt_count": 1,
+  "started_at": "2026-10-13T22:45:17.022235+00:00",
+  "ended_at": "2026-10-13T22:49:47.132942+00:00",
+  "duration_seconds": 270.11,
+  "process_exit_code": 0,
+  "timed_out": false,
+  "exit_code": 0,
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 23416,
+      "sha256": "b730792e8479c04ccf007b73acf62bf7ad7c30c07bd1fd9ff706f51b2463575c"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "unexpected_files": [],
+  "policy_violations": [],
+  "model_usage": {
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 33134,
+      "cacheReadInputTokens": 34000,
+      "cacheCreationInputTokens": 24094,
+      "webSearchRequests": 0,
+      "costUSD": 0.862264,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 9232,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed"
+}

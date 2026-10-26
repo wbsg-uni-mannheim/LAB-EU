@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1",
+  "harness": "claude-code-cli-isolated-no-web",
+  "task_id": "de/zivilrecht/schuldrecht/fortgeschrittenenklausur-paypal-kauferschutz-schutzt-vor-klagen-nicht",
+  "solver_case_id": "case-031",
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/cli-high-no-web-45-20261013/input-snapshot/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-paypal-kauferschutz-schutzt-vor-klagen-nicht",
+  "source_task_dir_relative": "runs/cli-high-no-web-45-20261013/input-snapshot/de/zivilrecht/schuldrecht/fortgeschrittenenklausur-paypal-kauferschutz-schutzt-vor-klagen-nicht",
+  "model": "claude-opus-5-5",
+  "reasoning_effort": "high",
+  "command": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--safe-mode",
+    "--restricted",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--setting-sources",
+    "",
+    "--disable-slash-commands",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--tools",
+    "Read,Write,Edit,Glob,Grep",
+    "--allowedTools",
+    "Read,Write,Edit,Glob,Grep",
+    "--permission-mode",
+    "acceptEdits",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "model_verified": true,
+  "live_web_search": false,
+  "memories_enabled": false,
+  "project_context": false,
+  "ephemeral": true,
+  "task_identity_anonymized": true,
+  "attempt_count": 1,
+  "started_at": "2026-10-13T22:10:59.925886+00:00",
+  "ended_at": "2026-10-13T22:15:43.559321+00:00",
+  "duration_seconds": 283.633,
+  "process_exit_code": 0,
+  "timed_out": false,
+  "exit_code": 0,
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 26772,
+      "sha256": "464b1509683e41d16e32d6e9b1cdce740be39532634ab89487d15665111426a2"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "unexpected_files": [],
+  "policy_violations": [],
+  "model_usage": {
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 35265,
+      "cacheReadInputTokens": 35701,
+      "cacheCreationInputTokens": 25804,
+      "webSearchRequests": 0,
+      "costUSD": 0.9189042000000001,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 7925,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed"
+}

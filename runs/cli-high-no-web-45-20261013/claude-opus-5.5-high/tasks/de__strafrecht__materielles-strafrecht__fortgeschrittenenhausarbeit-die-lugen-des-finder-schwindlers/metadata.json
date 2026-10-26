@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1",
+  "harness": "claude-code-cli-isolated-no-web",
+  "task_id": "de/strafrecht/materielles-strafrecht/fortgeschrittenenhausarbeit-die-lugen-des-finder-schwindlers",
+  "solver_case_id": "case-021",
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/cli-high-no-web-45-20261013/input-snapshot/de/strafrecht/materielles-strafrecht/fortgeschrittenenhausarbeit-die-lugen-des-finder-schwindlers",
+  "source_task_dir_relative": "runs/cli-high-no-web-45-20261013/input-snapshot/de/strafrecht/materielles-strafrecht/fortgeschrittenenhausarbeit-die-lugen-des-finder-schwindlers",
+  "model": "claude-opus-5-5",
+  "reasoning_effort": "high",
+  "command": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--safe-mode",
+    "--restricted",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--setting-sources",
+    "",
+    "--disable-slash-commands",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--tools",
+    "Read,Write,Edit,Glob,Grep",
+    "--allowedTools",
+    "Read,Write,Edit,Glob,Grep",
+    "--permission-mode",
+    "acceptEdits",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "model_verified": true,
+  "live_web_search": false,
+  "memories_enabled": false,
+  "project_context": false,
+  "ephemeral": true,
+  "task_identity_anonymized": true,
+  "attempt_count": 1,
+  "started_at": "2026-10-13T21:48:36.186442+00:00",
+  "ended_at": "2026-10-13T22:04:15.414677+00:00",
+  "duration_seconds": 939.226,
+  "process_exit_code": 0,
+  "timed_out": false,
+  "exit_code": 0,
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 48092,
+      "sha256": "42cc808dc91d8d4184c323d2529b5ea6686575db8bf1a6886e8d6e40c51359fc"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "unexpected_files": [],
+  "policy_violations": [],
+  "model_usage": {
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 106596,
+      "cacheReadInputTokens": 86377,
+      "cacheCreationInputTokens": 87035,
+      "webSearchRequests": 0,
+      "costUSD": 2.8455074,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 57740,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed"
+}

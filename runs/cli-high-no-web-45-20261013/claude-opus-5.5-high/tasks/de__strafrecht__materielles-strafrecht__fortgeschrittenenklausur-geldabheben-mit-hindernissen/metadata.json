@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1",
+  "harness": "claude-code-cli-isolated-no-web",
+  "task_id": "de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-geldabheben-mit-hindernissen",
+  "solver_case_id": "case-016",
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/cli-high-no-web-45-20261013/input-snapshot/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-geldabheben-mit-hindernissen",
+  "source_task_dir_relative": "runs/cli-high-no-web-45-20261013/input-snapshot/de/strafrecht/materielles-strafrecht/fortgeschrittenenklausur-geldabheben-mit-hindernissen",
+  "model": "claude-opus-5-5",
+  "reasoning_effort": "high",
+  "command": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--safe-mode",
+    "--restricted",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--setting-sources",
+    "",
+    "--disable-slash-commands",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--tools",
+    "Read,Write,Edit,Glob,Grep",
+    "--allowedTools",
+    "Read,Write,Edit,Glob,Grep",
+    "--permission-mode",
+    "acceptEdits",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "model_verified": true,
+  "live_web_search": false,
+  "memories_enabled": false,
+  "project_context": false,
+  "ephemeral": true,
+  "task_identity_anonymized": true,
+  "attempt_count": 1,
+  "started_at": "2026-10-13T21:37:15.926016+00:00",
+  "ended_at": "2026-10-13T21:43:52.287476+00:00",
+  "duration_seconds": 396.361,
+  "process_exit_code": 0,
+  "timed_out": false,
+  "exit_code": 0,
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 30312,
+      "sha256": "ee7cdacc327f69c59f024b7a92736ebace3dba74f471313232fd96de7fe353b1"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "unexpected_files": [],
+  "policy_violations": [],
+  "model_usage": {
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 45653,
+      "cacheReadInputTokens": 41120,
+      "cacheCreationInputTokens": 33913,
+      "webSearchRequests": 0,
+      "costUSD": 1.19262,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 15638,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed"
+}

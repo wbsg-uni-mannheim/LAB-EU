@@ -1,0 +1,42 @@
+{
+  "n_tasks": 45,
+  "replicates_per_arm": 1,
+  "arms": {
+    "codex": {
+      "model": "gpt-6-astra",
+      "reasoning_effort": "high"
+    },
+    "claude": {
+      "model": "claude-opus-5-5",
+      "reasoning_effort": "high"
+    }
+  },
+  "external_research": "disabled",
+  "parallel_per_arm": 3,
+  "timeout_seconds_per_task": 3600,
+  "grading": "deferred per explicit user request",
+  "source_commit": "6da840508a4f4248bb281772789fb54909041621",
+  "input_snapshot": "input-snapshot",
+  "rubric_note": "Snapshot of current working tree, including pre-existing uncommitted rubric edits; not exposed to solvers.",
+  "cli_versions": {
+    "codex": "0.153.4",
+    "claude": "2.1.282"
+  },
+  "no_web_enforcement": {
+    "codex": "web_search disabled; workspace-write command sandbox with network_access=false; user config, rules, memories, apps, MCP, browsers, computer use, hooks and multi-agent disabled. Out-of-workspace reads prohibited by prompt, not fully OS read-confined.",
+    "claude": "safe-mode, restricted file tools, strict empty MCP config; only Read/Write/Edit/Glob/Grep; no shell/web tools, skills or memory."
+  },
+  "generation_prompt_difference": "Identical shared prompt renderer; first sentence changes Codex CLI to Claude Code CLI. Renderer supplies generation date per case.",
+  "generation_only": true,
+  "validation": {
+    "targeted_tests_passed": 30,
+    "ruff": "passed",
+    "git_diff_check": "passed"
+  },
+  "runner_prompt_hashes": {
+    "scripts/run_codex_taskset.py": "d77836b7f56db9231af800987b264f73eef0e9e3265ee78f145f10dcc90ce806",
+    "scripts/run_claude_taskset.py": "a541dafed5e00d1377ff9486681308576bbf9d87fd76bb596a6569ddda52982f",
+    "prompts/harness/solve_task_codex_web.txt": "e05bb85b3c055bbfa74a814bf0539712b79736d68e08d59ba6834328b47f0a65",
+    "prompts/harness/solve_task_codex_web_multi.txt": "24fe7c22745948986106048dc0b7e3b2a7d2d177cc112a3562cc972d17213d5d"
+  }
+}

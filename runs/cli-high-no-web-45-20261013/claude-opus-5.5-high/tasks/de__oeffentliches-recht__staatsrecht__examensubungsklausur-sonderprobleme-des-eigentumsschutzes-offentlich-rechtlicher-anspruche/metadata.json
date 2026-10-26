@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1",
+  "harness": "claude-code-cli-isolated-no-web",
+  "task_id": "de/oeffentliches-recht/staatsrecht/examensubungsklausur-sonderprobleme-des-eigentumsschutzes-offentlich-rechtlicher-anspruche",
+  "solver_case_id": "case-011",
+  "source_task_dir": "/Users/aaronsteiner/Documents/GitHub/LAB-EU/runs/cli-high-no-web-45-20261013/input-snapshot/de/oeffentliches-recht/staatsrecht/examensubungsklausur-sonderprobleme-des-eigentumsschutzes-offentlich-rechtlicher-anspruche",
+  "source_task_dir_relative": "runs/cli-high-no-web-45-20261013/input-snapshot/de/oeffentliches-recht/staatsrecht/examensubungsklausur-sonderprobleme-des-eigentumsschutzes-offentlich-rechtlicher-anspruche",
+  "model": "claude-opus-5-5",
+  "reasoning_effort": "high",
+  "command": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-opus-5-5",
+    "--effort",
+    "high",
+    "--safe-mode",
+    "--restricted",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--setting-sources",
+    "",
+    "--disable-slash-commands",
+    "--no-chrome",
+    "--no-session-persistence",
+    "--tools",
+    "Read,Write,Edit,Glob,Grep",
+    "--allowedTools",
+    "Read,Write,Edit,Glob,Grep",
+    "--permission-mode",
+    "acceptEdits",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "model_verified": true,
+  "live_web_search": false,
+  "memories_enabled": false,
+  "project_context": false,
+  "ephemeral": true,
+  "task_identity_anonymized": true,
+  "attempt_count": 1,
+  "started_at": "2026-10-13T21:24:27.980561+00:00",
+  "ended_at": "2026-10-13T21:30:25.844852+00:00",
+  "duration_seconds": 357.863,
+  "process_exit_code": 0,
+  "timed_out": false,
+  "exit_code": 0,
+  "expected_deliverables": [
+    "fallloesung.md"
+  ],
+  "actual_deliverables": [
+    {
+      "path": "fallloesung.md",
+      "found": true,
+      "bytes": 37638,
+      "sha256": "191818e1a631c8f39fbb5d7a1e1cc3b57a0221115a5cf56e73774633e7af7c9a"
+    }
+  ],
+  "missing_deliverables": [],
+  "used_final_message_fallback": false,
+  "unexpected_files": [],
+  "policy_violations": [],
+  "model_usage": {
+    "claude-opus-5-5": {
+      "inputTokens": 8,
+      "outputTokens": 45146,
+      "cacheReadInputTokens": 39588,
+      "cacheCreationInputTokens": 32895,
+      "webSearchRequests": 0,
+      "costUSD": 1.1740296000000003,
+      "contextWindow": 1000000,
+      "maxOutputTokens": 128000,
+      "thinkingTokens": 7615,
+      "canonicalModel": "claude-opus-5-5",
+      "provider": "firstParty",
+      "costBasis": "list"
+    }
+  },
+  "permission_denials": [],
+  "terminal_reason": "completed"
+}
