@@ -45,6 +45,18 @@ Klärungen erfolgten nach Sicht auf Abweichungen der Judges. Beide Stände werde
 | zu großzügig | 1 | 2 |
 | Cohens κ | 0,79 | 0,80 |
 
+Finale Labels (14.10.2026): Benedikt hat die offenen Zeilen selbst festgelegt (Datei
+`00_Validierung_Stichprobe-1.xlsx`). Nur Nr. 83 und 96 bleiben unklar, weil dort schon das Kriterium nur
+teilweise korrekt ist. Die Klärungsdatei vom 13.10. ist damit überholt. Nr. 32 behält sein ursprüngliches Label.
+
+| Judge | richtig (von 98) | Übereinstimmung | κ | zu streng | zu großzügig | Erfolgsquote laut Judge |
+|---|---:|---:|---:|---:|---:|---:|
+| veröffentlicht | 87 | 88,8 % (KI 81,0 bis 93,6) | 0,76 | 9 | 2 | 59,2 % |
+| eingefroren (Abschnitt 5) | 88 | 89,8 % (KI 82,2 bis 94,4) | 0,78 | 7 | 3 | 62,2 % |
+
+Erfolgsquote laut Gutachter: 66,3 %. Weitere Konfigurationen mit finalen Labels: nur DeepSeek V4.1 Flash (v4)
+88, nur Gemini 3.6 Flash (v4) 89, GPT-6 Sol (v4) 79.
+
 Nach Klärung: Sensitivität 0,887, Spezifität 0,938. Erfolgsquote laut Judge 60,6 %, laut Gutachter 66,0 %.
 Die Rogan-Gladen-Korrektur mit diesen Raten ergibt 66,0 %. Die Scores des Judges sind damit eher eine
 Untergrenze.
@@ -113,13 +125,51 @@ Entscheidung: Komitee aus drei Modellfamilien, keine stellt die Mehrheit.
   Flash als Primärjudges, Gemini 3.8 Flash nur bei Dissens, alle mit Reasoning medium
 - Modus: `--committee-tiebreaker --style-evaluation --judge-prompt-version v4`, 2 Wiederholungen bei Fehlern
 
-Auf Teil 1 gleichauf mit dem veröffentlichten Judge (85 von 94), mit ausgewogeneren Fehlern. Da v4 auf Teil 1
+Auf Teil 1 gleichauf mit dem veröffentlichten Judge (nach Klärung 85 von 94, mit finalen Labels 88 von 98 gegenüber 87 von 98), mit ausgewogeneren Fehlern. Da v4 auf Teil 1
 entwickelt wurde, entscheidet Teil 2 über die Übernahme. Die Vorhersagen des eingefrorenen Judges für Teil 2
 wurden vor Eingang der Labels berechnet (`runs/validation-teil2-v4-frozen-*`).
+
+Änderung am 14.10.2026 (vor Beginn von Teil 2): Teil 2 zeigt nicht mehr die Urteile des veröffentlichten,
+sondern des eingefrorenen Judges aus der Neubewertung aller Läufe (`scores-v4-frozen.json`, aktueller
+Rubrikstand). Die gezeigte Antwort wurde für Nr. 101 bis 250 neu und ausgewogen aus acht Systemen gezogen
+(je 18 bis 19 Zeilen, Seed 20261015): Sol, Terra, DeepSeek (je Agent und Baseline), Claude Opus 5.5, GPT-6
+Astra. Neue Spalte "Begründung des Judges trägt?". Teil 2 misst damit die Genauigkeit des finalen Judges im
+selben Verfahren wie Teil 1. Ein Vergleich alt gegen neu auf Teil 2 ist dadurch nicht mehr unverzerrt, weil
+der Gutachter das neue Urteil sieht. Die Vorhersagen in `runs/validation-teil2-v4-frozen-20261014` beziehen
+sich auf die frühere Zuordnung und dienen nur noch als Nachweis.
 
 Entscheidungsregel für Teil 2: Der eingefrorene Judge ersetzt den veröffentlichten, wenn er auf Teil 2 nicht
 schlechter abschneidet und keine deutlich höhere Rate zu großzügiger Urteile hat. Dann werden alle Läufe neu
 bewertet.
+
+## 5a. Ergebnis Teil 2 (19.10.2026)
+
+Datei `00_Validierung_Stichprobe-2.xlsx`, Nr. 101 bis 200, gezeigt wird das Urteil des eingefrorenen Judges.
+
+| Kriterium juristisch korrekt? | Anzahl |
+|---|---:|
+| ja | 96 |
+| teilweise | 2 (Nr. 175, 183) |
+| nein | 2 (Nr. 116, 151) |
+
+| | Wert |
+|---|---:|
+| Zeilen mit Label | 98 (Nr. 121 leere Abgabe wie Nr. 87, eine Zeile "unklar") |
+| Urteil richtig | 96 (98,0 %, 95-%-KI 92,9 bis 99,4) |
+| zu streng | 2 (Nr. 113, 165, beide GPT-6-Astra-Antworten, implizite Erfüllung) |
+| zu großzügig | 0 |
+| Cohens κ | 0,96 |
+
+Die Spalte "Begründung des Judges trägt?" ist nur bei 8 Zeilen als Freitext gefüllt, alle kritisch. Hinweise
+auf veraltetes Recht: Nr. 104 (HGB vor MoPeG), Nr. 151 (ältere Rechtsprechung).
+
+Vorbehalt: Der Gutachter sah das Urteil des Judges (Ankereffekt). Die Quote ist deshalb eher eine Obergrenze,
+der blinde Zweitgutachter (Abschnitt 7) bleibt wichtig.
+
+Entscheidung: Die Regel aus Abschnitt 5 ist erfüllt. Der eingefrorene Judge ersetzt den veröffentlichten. Seine
+Urteile liegen als `scores-v4-frozen.json` neben jeder `scores.json` der sechs Hauptarme (Agent und Baseline
+für Sol, Terra, DeepSeek), die Konfiguration als `judge_config.scores-v4-frozen.json` im Laufordner. DeepSeek
+Agent hat bei `anfanger-innenhausarbeit-bundeszwang-und-rededrang` keine Abgabe und daher keine neue Datei.
 
 ## 6. Reproduktion
 
@@ -142,6 +192,5 @@ Die veröffentlichten Urteile (`runs/<arm>/<run>/tasks/*/scores.json`) liegen au
 ## 7. Offen
 
 - Zweiter Jurist bewertet etwa 50 Zeilen ohne Judge-Urteil, für die Übereinstimmung zwischen Menschen.
-- Benedikt klärt die übrigen "unklar"-Zeilen (57, 70, 82, 83, 96) und Nr. 32.
-- Teil 2 (Nr. 101 bis 200) bis 20.10.2026, danach Auswertung nach der Regel in Abschnitt 5.
+- Zeilen 201 bis 250 sind noch nicht bewertet.
 - Die acht "teilweise"-Kriterien in der Rubrik nachschärfen und als Revision dokumentieren.
