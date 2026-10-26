@@ -24,7 +24,7 @@ The error classes (`error-classes.pdf`) and the evidence files are in German, th
 
 - 30 cases (15 public law, 15 civil law), eight arms, 3,444 content FAILs, each assigned independently by two AI annotators (Claude and Codex).
 - The annotators disagreed on 693 content FAILs: 217 on the class (K1a to K1d merged) and 476 that agree on K1 and differ only in its level. The author decided all of them (column `Entscheidung_Autor`, justification in `evidence/`). During this step three clarifications were added to the error classes: the other solution path, K4 only if the criterion fails because of the deviating fact, and K6 against OK.
-- Each content FAIL gets one class, the first that applies in the order of checks. A second error at the same place is only mentioned in the reasoning of Claude or Codex (`Begründung_Claude`, `Begründung_Codex`). For K1 the annotators additionally recorded whether a misstated rule (K3) or an altered fact (K4) stands at the same place (`Zusatzbefund_*`, counted in `results.pdf`, Table 7). For the other classes this was not asked.
+- Each content FAIL gets one class, the first that applies in the order of checks. A second error at the same place is only mentioned in the reasoning of Claude or Codex (`Begründung_Claude`, `Begründung_Codex`). For K1 the annotators additionally recorded whether a misstated rule (K3) or an altered fact (K4) stands at the same place (`Zusatzbefund_*`, counted in `results.pdf`). For the other classes this was not asked.
 - Observations on PASS ratings and outside the criteria are not part of this folder.
 
 ## `assignments.csv`
@@ -61,7 +61,7 @@ Links in `evidence/` point to the private repository `wbsg-uni-mannheim/LAB-EU` 
 
 Rules that are applied in the data and should be confirmed with the supervisors, and one choice still to be made.
 
-1. **One class per finding.** The order of checks records only the primary error at a place. A subordinate error (for example a misstated rule behind missing content) is named in the reasoning but not counted; `results.pdf`, Table 7, measures what this hides for K3 and K4. The alternative would be to record several classes per finding.
+1. **One class per finding.** The order of checks records only the primary error at a place. A subordinate error (for example a misstated rule behind missing content) is named in the reasoning but not counted; `results.pdf` measures what this hides for K3 and K4. The alternative would be to record several classes per finding.
 2. **Error count and Folgefehler.** Findings that capture the same gap are merged: one wholly missing part of a task is one error, and dependent criteria carry the flag "Folgefehler von". This also decides how chains such as a misstated rule followed by misapplied facts are counted. Two readings of this rule were applied and should be confirmed: a claim or examination that is only named or answered with a blanket sentence counts as wholly missing, and the same missing statement required at two places of the answer counts as one error. Both rules are defined in `error-classes.pdf`, Auswertungsregeln.
 3. **Rubric flags.** Both annotators flagged a large share of the content FAILs as "rubric requirement doubtful" (`Vermerk_*`). How these flags are used, and whether they are set too liberally, is to be decided.
 
